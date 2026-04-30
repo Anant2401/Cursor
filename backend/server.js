@@ -151,11 +151,6 @@ app.post("/api/otp/send-email", async (req, res) => {
   try {
     const email = String(req.body.email || "").trim().toLowerCase();
     if (!email.includes("@")) return res.status(400).json({ message: "Enter a valid email address." });
-    if (!transporter) {
-      return res.status(500).json({
-        message: "Email OTP is not configured yet. Add SMTP credentials in backend .env.",
-      });
-    }
     const otp = generateOtp();
     const now = Date.now();
     const expiresAt = now + 5 * 60 * 1000;
@@ -172,12 +167,16 @@ app.post("/api/otp/send-email", async (req, res) => {
     }
 
     try {
-      await transporter.sendMail({
+      const sendMailPromise = transporter.sendMail({
         from: process.env.OTP_EMAIL_FROM || process.env.SMTP_USER,
         to: email,
         subject: "Pehchaan Careers OTP Verification",
         text: `Your OTP is ${otp}. It is valid for 5 minutes.`,
       });
+      const timeoutPromise = new Promise((_, reject) => {
+        setTimeout(() => reject(new Error("SMTP timeout after 5 seconds")), 5000);
+      });
+      await Promise.race([sendMailPromise, timeoutPromise]);
       return res.json({ message: "Email OTP sent successfully." });
     } catch (sendError) {
       return res.json({

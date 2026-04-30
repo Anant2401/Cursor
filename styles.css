@@ -62,7 +62,7 @@ body {
 }
 
 .brand img {
-  height: 68px;
+  height: 204px;
   width: auto;
   display: block;
 }
@@ -456,7 +456,7 @@ h1 {
 }
 
 .footer-grid img {
-  height: 64px;
+  height: 204px;
   width: auto;
   display: block;
 }
@@ -475,7 +475,7 @@ h1 {
 @media (max-width: 860px) {
   .brand img,
   .footer-grid img {
-    height: 52px;
+    height: 156px;
   }
 
   .hero-grid,
