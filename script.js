@@ -29,7 +29,7 @@ const state = {
 };
 
 const LOCAL_API_BASE = "http://localhost:8787/api";
-const PRODUCTION_API_BASE = "/api";
+const PRODUCTION_API_BASE = "https://pehchaan-api.onrender.com/api";
 
 function resolveApiBase() {
   const host = window.location.hostname;
