@@ -3,7 +3,6 @@ import cors from "cors";
 import dotenv from "dotenv";
 import sqlite3 from "sqlite3";
 import nodemailer from "nodemailer";
-import twilio from "twilio";
 import fs from "fs";
 import path from "path";
 
@@ -56,17 +55,6 @@ db.serialize(() => {
     )
   `);
 });
-
-const twilioReady =
-  !!process.env.TWILIO_ACCOUNT_SID &&
-  process.env.TWILIO_ACCOUNT_SID.startsWith("AC") &&
-  !!process.env.TWILIO_AUTH_TOKEN &&
-  !process.env.TWILIO_AUTH_TOKEN.startsWith("REPLACE_WITH_") &&
-  !!process.env.TWILIO_FROM_PHONE &&
-  process.env.TWILIO_FROM_PHONE.startsWith("+");
-const twilioClient = twilioReady
-  ? twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN)
-  : null;
 
 const smtpReady =
   !!process.env.SMTP_HOST &&
@@ -127,24 +115,13 @@ app.post("/api/otp/send-phone", async (req, res) => {
     const now = Date.now();
     const expiresAt = now + 5 * 60 * 1000;
 
-    if (twilioClient) {
-      await twilioClient.messages.create({
-        body: `Your Pehchaan Careers OTP is ${otp}. It expires in 5 minutes.`,
-        from: process.env.TWILIO_FROM_PHONE,
-        to: phone,
-      });
-    }
-
     await runQuery(
       `INSERT INTO otp_codes (channel, target, otp, expires_at, created_at) VALUES (?, ?, ?, ?, ?)`,
       ["phone", phone, otp, expiresAt, now]
     );
-    if (!twilioClient) {
-      return res.json({
-        message: `Mobile OTP generated in demo mode (Twilio not configured). OTP: ${otp}`,
-      });
-    }
-    res.json({ message: "Mobile OTP sent successfully." });
+    res.json({
+      message: `Mobile OTP generated in demo mode. OTP: ${otp}`,
+    });
   } catch (error) {
     res.status(500).json({ message: `Could not send mobile OTP. ${String(error.message || "")}` });
   }
@@ -183,18 +160,30 @@ app.post("/api/otp/send-email", async (req, res) => {
     const now = Date.now();
     const expiresAt = now + 5 * 60 * 1000;
 
-    await transporter.sendMail({
-      from: process.env.OTP_EMAIL_FROM || process.env.SMTP_USER,
-      to: email,
-      subject: "Pehchaan Careers OTP Verification",
-      text: `Your OTP is ${otp}. It is valid for 5 minutes.`,
-    });
-
     await runQuery(
       `INSERT INTO otp_codes (channel, target, otp, expires_at, created_at) VALUES (?, ?, ?, ?, ?)`,
       ["email", email, otp, expiresAt, now]
     );
-    res.json({ message: "Email OTP sent successfully." });
+
+    if (!transporter) {
+      return res.json({
+        message: `Email OTP generated in fallback mode. OTP: ${otp}`,
+      });
+    }
+
+    try {
+      await transporter.sendMail({
+        from: process.env.OTP_EMAIL_FROM || process.env.SMTP_USER,
+        to: email,
+        subject: "Pehchaan Careers OTP Verification",
+        text: `Your OTP is ${otp}. It is valid for 5 minutes.`,
+      });
+      return res.json({ message: "Email OTP sent successfully." });
+    } catch (sendError) {
+      return res.json({
+        message: `Email delivery timed out. Use fallback OTP: ${otp}`,
+      });
+    }
   } catch (error) {
     res.status(500).json({ message: `Could not send email OTP. ${String(error.message || "")}` });
   }

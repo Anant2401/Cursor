@@ -272,6 +272,36 @@ h1 {
   white-space: nowrap;
 }
 
+.otp-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.9;
+}
+
+.otp-btn.btn-loading {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.otp-btn.btn-loading::before {
+  content: "";
+  position: absolute;
+  left: 0.8rem;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: otp-spin 0.7s linear infinite;
+}
+
+@keyframes otp-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .otp-note {
   margin: 0.1rem 0 0.3rem;
   color: var(--gray-text);

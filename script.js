@@ -72,6 +72,20 @@ function setNote(id, text, kind = "") {
   if (kind) el.classList.add(kind);
 }
 
+function setButtonLoading(button, isLoading, loadingText = "Sending...") {
+  if (!button) return;
+  if (isLoading) {
+    if (!button.dataset.defaultText) button.dataset.defaultText = button.textContent;
+    button.textContent = loadingText;
+    button.classList.add("btn-loading");
+    button.disabled = true;
+  } else {
+    button.textContent = button.dataset.defaultText || button.textContent;
+    button.classList.remove("btn-loading");
+    button.disabled = false;
+  }
+}
+
 function updateAssessmentAccess() {
   const startBtn = document.getElementById("start-assessment-btn");
   if (!startBtn) return;
@@ -92,6 +106,7 @@ if (sendPhoneOtpBtn) {
       setNote("phone-otp-note", "Enter a valid 10-digit mobile number first.", "err");
       return;
     }
+    setButtonLoading(sendPhoneOtpBtn, true);
     try {
       const data = await apiPost(
         "/otp/send-phone",
@@ -102,6 +117,8 @@ if (sendPhoneOtpBtn) {
       setNote("phone-otp-note", data.message || "Mobile OTP sent.", "ok");
     } catch (error) {
       setNote("phone-otp-note", error.message, "err");
+    } finally {
+      setButtonLoading(sendPhoneOtpBtn, false);
     }
     updateAssessmentAccess();
   });
@@ -138,6 +155,7 @@ if (sendEmailOtpBtn) {
       setNote("email-otp-note", "Enter a valid email first.", "err");
       return;
     }
+    setButtonLoading(sendEmailOtpBtn, true);
     try {
       const data = await apiPost(
         "/otp/send-email",
@@ -149,6 +167,8 @@ if (sendEmailOtpBtn) {
       setNote("email-otp-note", `${baseMsg} If not found, please check your Spam/Junk folder.`, "ok");
     } catch (error) {
       setNote("email-otp-note", error.message, "err");
+    } finally {
+      setButtonLoading(sendEmailOtpBtn, false);
     }
     updateAssessmentAccess();
   });
