@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Interest Test – Pehchaan Careers</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal:        #1D9E75;
+    --teal-dark:   #085041;
+    --teal-light:  #E1F5EE;
+    --amber:       #EF9F27;
+    --amber-light: #FAEEDA;
+    --navy:        #1A1A2E;
+    --white:       #FFFFFF;
+    --card-bg:     #F8FAFC;
+    --gray-text:   #64748B;
+    --red:         #E24B4A;
+    --red-light:   #FCEBEB;
+    --purple:      #7F77DD;
+    --blue:        #378ADD;
+    --coral:       #D85A30;
+    --green:       #639922;
+    --border:      #D1E8DF;
+    --text:        #1A1A2E;
+    --radius:      14px;
+    --shadow:      0 1px 4px rgba(8,80,65,0.10);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Poppins', sans-serif; background: #F0FAF5; color: var(--text); min-height: 100vh; font-size: 14px; }
+  .container { max-width: 700px; margin: 0 auto; padding: 20px 16px 60px; }
+  .hidden { display: none !important; }
+
+  /* TOP BAR */
+  .topbar { display: flex; align-items: center; gap: 12px; padding: 14px 0 22px; }
+  .topbar-logo {
+    width: 40px; height: 40px; background: var(--teal-dark);
+    border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .topbar-logo svg { width: 24px; height: 24px; }
+  .topbar-name { font-size: 15px; font-weight: 700; color: var(--teal-dark); }
+  .topbar-tag { font-size: 11px; color: var(--gray-text); }
+
+  /* HERO */
+  .hero-card {
+    background: var(--teal-dark);
+    border-radius: 22px; padding: 34px 28px; color: var(--white);
+    margin-bottom: 16px; position: relative; overflow: hidden;
+  }
+  .hero-card::before {
+    content: ''; position: absolute; top: -50px; right: -50px;
+    width: 180px; height: 180px; background: rgba(255,255,255,.05); border-radius: 50%;
+  }
+  .hero-card::after {
+    content: ''; position: absolute; bottom: -30px; right: 30px;
+    width: 110px; height: 110px; background: rgba(239,159,39,.12); border-radius: 50%;
+  }
+  .hero-tag {
+    display: inline-block; background: rgba(239,159,39,.2);
+    border: 1px solid rgba(239,159,39,.4);
+    color: var(--amber); font-size: 11px; font-weight: 600;
+    padding: 4px 14px; border-radius: 20px; margin-bottom: 16px; letter-spacing: .03em;
+  }
+  .hero-card h1 { font-size: 26px; font-weight: 700; line-height: 1.25; margin-bottom: 10px; }
+  .hero-card h1 span { color: var(--amber); }
+  .hero-card p { font-size: 13px; opacity: .85; line-height: 1.75; margin-bottom: 22px; }
+  .hero-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 22px; }
+  .hero-stat { background: rgba(255,255,255,.1); border-radius: 12px; padding: 14px 8px; text-align: center; border: 1px solid rgba(255,255,255,.12); }
+  .hero-stat .v { font-size: 24px; font-weight: 700; color: var(--amber); }
+  .hero-stat .l { font-size: 11px; opacity: .75; margin-top: 2px; }
+  .scale-note {
+    background: rgba(29,158,117,.25); border: 1px solid rgba(29,158,117,.4);
+    border-radius: 10px; padding: 11px 16px; font-size: 12px; line-height: 1.65; margin-bottom: 22px;
+  }
+  .scale-note strong { color: var(--amber); }
+  .btn-begin {
+    width: 100%; background: var(--amber); color: var(--teal-dark);
+    border: none; border-radius: var(--radius); padding: 16px;
+    font-size: 15px; font-weight: 700; cursor: pointer;
+    font-family: 'Poppins', sans-serif; transition: transform .15s, box-shadow .15s;
+    letter-spacing: .01em;
+  }
+  .btn-begin:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(239,159,39,.4); }
+  .btn-begin:active { transform: translateY(0); }
+
+  /* SECTIONS PREVIEW */
+  .sections-preview {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: 20px; padding: 20px; margin-bottom: 16px;
+    box-shadow: var(--shadow);
+  }
+  .sections-preview h3 {
+    font-size: 11px; font-weight: 700; color: var(--teal-dark);
+    text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px;
+  }
+  .sec-item { display: flex; align-items: center; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--teal-light); }
+  .sec-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .sec-emoji { font-size: 18px; width: 38px; height: 38px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .sec-info { flex: 1; }
+  .sec-info-name { font-size: 13px; font-weight: 600; }
+  .sec-info-sub { font-size: 11px; color: var(--gray-text); margin-top: 2px; line-height: 1.4; }
+  .sec-count { font-size: 11px; color: var(--teal-dark); background: var(--teal-light); padding: 3px 10px; border-radius: 20px; font-weight: 600; }
+
+  /* QUIZ */
+  .quiz-header { margin-bottom: 18px; }
+  .quiz-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .quiz-meta-left { font-size: 12px; color: var(--gray-text); font-weight: 500; }
+  .quiz-meta-right { font-size: 12px; font-weight: 700; color: var(--teal); }
+  .prog-track { background: var(--teal-light); border-radius: 6px; height: 7px; }
+  .prog-fill { height: 7px; border-radius: 6px; background: var(--teal); transition: width .5s ease; }
+
+  .sec-banner {
+    border-radius: 16px; padding: 18px 20px; display: flex; align-items: center; gap: 14px;
+    margin-bottom: 18px; border: 1.5px solid var(--border); background: var(--white);
+    box-shadow: var(--shadow);
+  }
+  .sec-banner-icon { font-size: 26px; width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .sec-banner-name { font-size: 16px; font-weight: 700; margin-bottom: 3px; color: var(--teal-dark); }
+  .sec-banner-desc { font-size: 12px; color: var(--gray-text); line-height: 1.5; }
+
+  .q-list { display: flex; flex-direction: column; gap: 14px; }
+  .q-card {
+    background: var(--white); border: 1.5px solid var(--border);
+    border-radius: var(--radius); padding: 18px 18px 16px;
+    box-shadow: var(--shadow); transition: border-color .2s;
+  }
+  .q-card.answered { border-color: var(--teal); background: #FBFFFE; }
+  .q-num { font-size: 10px; font-weight: 700; color: var(--teal); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 7px; }
+  .q-text { font-size: 13.5px; color: var(--text); line-height: 1.65; margin-bottom: 8px; font-weight: 500; }
+  .q-example {
+    font-size: 12px; color: var(--gray-text); line-height: 1.6; margin-bottom: 14px;
+    padding: 9px 13px; background: var(--teal-light); border-radius: 8px;
+    border-left: 3px solid var(--teal);
+  }
+  .scale-lbl-row { display: flex; justify-content: space-between; font-size: 10px; color: var(--gray-text); padding: 0 2px; margin-bottom: 6px; }
+  .btn-row { display: flex; gap: 6px; }
+  .opt {
+    flex: 1; border: 1.5px solid var(--border); background: var(--white);
+    border-radius: 9px; padding: 11px 4px; font-size: 13px; font-weight: 700;
+    color: var(--gray-text); cursor: pointer; text-align: center;
+    transition: all .15s; font-family: 'Poppins', sans-serif;
+    -webkit-tap-highlight-color: transparent; user-select: none;
+  }
+  .opt:hover { border-color: var(--teal); color: var(--teal); background: var(--teal-light); }
+  .opt.sel { background: var(--teal); color: var(--white); border-color: var(--teal); }
+
+  .warn-box {
+    background: var(--red-light); border: 1px solid #F5A5A4;
+    color: var(--red); border-radius: 10px;
+    padding: 10px 14px; font-size: 12px; margin-top: 12px; display: none;
+  }
+  .nav-row { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; gap: 10px; }
+  .btn-back {
+    border: 1.5px solid var(--border); background: var(--white);
+    border-radius: var(--radius); padding: 13px 22px; font-size: 13px; font-weight: 600;
+    cursor: pointer; color: var(--gray-text); font-family: 'Poppins', sans-serif;
+  }
+  .btn-back:hover { background: var(--teal-light); border-color: var(--teal); color: var(--teal-dark); }
+  .nav-mid { font-size: 12px; color: var(--gray-text); }
+  .btn-next {
+    background: var(--teal); color: var(--white); border: none;
+    border-radius: var(--radius); padding: 13px 28px; font-size: 13px; font-weight: 700;
+    cursor: pointer; font-family: 'Poppins', sans-serif; transition: background .2s;
+  }
+  .btn-next:hover { background: var(--teal-dark); }
+
+  /* RESULTS */
+  .res-hero {
+    background: var(--teal-dark); border-radius: 22px;
+    padding: 30px 24px; color: var(--white); text-align: center; margin-bottom: 16px;
+    position: relative; overflow: hidden;
+  }
+  .res-hero::before {
+    content: ''; position: absolute; top: -40px; right: -40px;
+    width: 150px; height: 150px; background: rgba(239,159,39,.1); border-radius: 50%;
+  }
+  .res-hero h2 { font-size: 22px; font-weight: 700; margin-bottom: 5px; }
+  .res-hero p { font-size: 12px; opacity: .75; margin-bottom: 16px; }
+  .profile-code-box {
+    display: inline-block; background: rgba(239,159,39,.2);
+    border: 1.5px solid var(--amber); border-radius: 30px;
+    padding: 9px 24px; font-size: 14px; font-weight: 700;
+    letter-spacing: .06em; color: var(--amber);
+  }
+
+  .card-section {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: 20px; padding: 20px; margin-bottom: 14px;
+    box-shadow: var(--shadow);
+  }
+  .card-section h3 {
+    font-size: 11px; font-weight: 700; color: var(--teal-dark);
+    text-transform: uppercase; letter-spacing: .07em; margin-bottom: 14px;
+  }
+
+  .score-list { display: flex; flex-direction: column; gap: 11px; }
+  .score-item { display: flex; align-items: center; gap: 12px; }
+  .score-emoji { font-size: 16px; width: 28px; text-align: center; flex-shrink: 0; }
+  .score-name { font-size: 13px; font-weight: 600; min-width: 130px; color: var(--teal-dark); }
+  .score-track { flex: 1; background: var(--teal-light); border-radius: 4px; height: 9px; overflow: hidden; }
+  .score-fill { height: 9px; border-radius: 4px; width: 0; transition: width 1.2s ease; }
+  .score-val { font-size: 12px; font-weight: 700; color: var(--teal-dark); min-width: 36px; text-align: right; }
+
+  .insight-box {
+    background: var(--amber-light); border: 1.5px solid #F5C878;
+    border-radius: 14px; padding: 18px 20px; margin-bottom: 14px;
+  }
+  .insight-box p { font-size: 13px; color: #7A4A00; line-height: 1.8; }
+
+  .career-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag {
+    padding: 7px 13px; border-radius: 8px; font-size: 12px; font-weight: 500;
+    border: 1px solid var(--border); background: var(--card-bg); color: var(--gray-text);
+  }
+  .tag.top {
+    background: var(--teal-light); border-color: var(--teal);
+    color: var(--teal-dark); font-weight: 700;
+  }
+
+  .detail-block { margin-bottom: 16px; }
+  .detail-block:last-child { margin-bottom: 0; }
+  .detail-label { font-size: 11px; font-weight: 700; color: var(--teal); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
+  .detail-text { font-size: 13px; color: var(--text); line-height: 1.8; }
+
+  .steps-list { display: flex; flex-direction: column; gap: 11px; }
+  .step-item { display: flex; gap: 13px; align-items: flex-start; }
+  .step-num {
+    width: 26px; height: 26px; border-radius: 50%; flex-shrink: 0; margin-top: 1px;
+    background: var(--amber); color: var(--teal-dark);
+    font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center;
+  }
+  .step-text { font-size: 13px; color: var(--text); line-height: 1.65; }
+
+  .res-actions { margin-top: 14px; }
+  .btn-restart {
+    width: 100%; border: 1.5px solid var(--teal); background: var(--white);
+    border-radius: var(--radius); padding: 13px; font-size: 13px; font-weight: 700;
+    cursor: pointer; color: var(--teal-dark); font-family: 'Poppins', sans-serif;
+  }
+  .btn-restart:hover { background: var(--teal-light); }
+
+  /* FOOTER BRAND */
+  .brand-footer {
+    text-align: center; margin-top: 28px; padding-top: 20px;
+    border-top: 1px solid var(--teal-light);
+  }
+  .brand-footer p { font-size: 11px; color: var(--gray-text); line-height: 1.8; }
+  .brand-footer strong { color: var(--teal-dark); }
+  .brand-tagline { font-size: 13px; font-weight: 600; color: var(--teal); margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- COVER -->
+  <div id="screen-cover">
+    <div class="topbar">
+      <div class="topbar-logo">
+        <!-- Sunrise + path logo mark in brand colours -->
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="22" r="8" fill="#EF9F27"/>
+          <line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="30.5" y1="11.5" x2="33.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="9.5" y1="11.5" x2="6.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="34" y1="22" x2="38" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="6" y1="22" x2="2" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M8 34 L20 26 L32 34" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M4 34 L20 28 L36 34" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/>
+        </svg>
+      </div>
+      <div>
+        <div class="topbar-name">Pehchaan Careers</div>
+        <div class="topbar-tag">Your identity. Your path.</div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="hero-tag">Scientifically Based Career Assessment</div>
+      <h1>Which Career Is the <span>Right Fit</span> for You?</h1>
+      <p>There are no right or wrong answers here. Just read each statement honestly and rate how much it sounds like you. This test will reveal your natural strengths and the careers that will suit you best.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="v">60</div><div class="l">Questions</div></div>
+        <div class="hero-stat"><div class="v">6</div><div class="l">Areas</div></div>
+        <div class="hero-stat"><div class="v">~15</div><div class="l">Minutes</div></div>
+      </div>
+      <div class="scale-note">
+        Rate each statement from <strong>1 to 5</strong><br>
+        <strong>1</strong> = This does not sound like me at all &nbsp;·&nbsp; <strong>5</strong> = Yes, this is very much like me
+      </div>
+      <button class="btn-begin" id="btn-begin">Start the Test →</button>
+    </div>
+
+    <div class="sections-preview">
+      <h3>What this test covers</h3>
+      <div class="sec-item">
+        <div class="sec-emoji" style="background:#E1F5EE">🔧</div>
+        <div class="sec-info"><div class="sec-info-name" style="color:#085041">Practical Skills</div><div class="sec-info-sub">Working with hands, tools, machines and physical tasks</div></div>
+        <div class="sec-count">10 Qs</div>
+      </div>
+      <div class="sec-item">
+        <div class="sec-emoji" style="background:#E1F5EE">🔬</div>
+        <div class="sec-info"><div class="sec-info-name" style="color:#085041">Research and Analysis</div><div class="sec-info-sub">Thinking deeply, science, maths and solving problems</div></div>
+        <div class="sec-count">10 Qs</div>
+      </div>
+      <div class="sec-item">
+        <div class="sec-emoji" style="background:#FAEEDA">🎨</div>
+        <div class="sec-info"><div class="sec-info-name" style="color:#7A4A00">Creative Expression</div><div class="sec-info-sub">Art, music, writing, design and imagination</div></div>
+        <div class="sec-count">10 Qs</div>
+      </div>
+      <div class="sec-item">
+        <div class="sec-emoji" style="background:#E1F5EE">🤝</div>
+        <div class="sec-info"><div class="sec-info-name" style="color:#085041">Helping People</div><div class="sec-info-sub">Teaching, caring, counselling and working with others</div></div>
+        <div class="sec-count">10 Qs</div>
+      </div>
+      <div class="sec-item">
+        <div class="sec-emoji" style="background:#E1F5EE">🚀</div>
+        <div class="sec-info"><div class="sec-info-name" style="color:#085041">Leadership and Business</div><div class="sec-info-sub">Leading teams, business ideas, convincing others</div></div>
+        <div class="sec-count">10 Qs</div>
+      </div>
+      <div class="sec-item">
+        <div class="sec-emoji" style="background:#FAEEDA">📊</div>
+        <div class="sec-info"><div class="sec-info-name" style="color:#7A4A00">Organisation and Systems</div><div class="sec-info-sub">Records, numbers, planning and following processes</div></div>
+        <div class="sec-count">10 Qs</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUIZ -->
+  <div id="screen-quiz" class="hidden">
+    <div class="quiz-header">
+      <div class="quiz-meta">
+        <span class="quiz-meta-left" id="quiz-label"></span>
+        <span class="quiz-meta-right" id="quiz-count"></span>
+      </div>
+      <div class="prog-track"><div class="prog-fill" id="prog-fill" style="width:0%"></div></div>
+    </div>
+    <div class="sec-banner">
+      <div class="sec-banner-icon" id="sec-icon"></div>
+      <div>
+        <div class="sec-banner-name" id="sec-name"></div>
+        <div class="sec-banner-desc" id="sec-desc"></div>
+      </div>
+    </div>
+    <div class="q-list" id="q-list"></div>
+    <div class="warn-box" id="warn-box">⚠ Please answer all 10 questions before moving to the next section.</div>
+    <div class="nav-row">
+      <button class="btn-back" id="btn-back">← Back</button>
+      <span class="nav-mid" id="nav-mid"></span>
+      <button class="btn-next" id="btn-next">Next →</button>
+    </div>
+  </div>
+
+  <!-- RESULTS -->
+  <div id="screen-results" class="hidden">
+    <div class="res-hero">
+      <h2>Your Career Interest Profile</h2>
+      <p>Based on all 60 of your answers</p>
+      <div class="profile-code-box" id="profile-code"></div>
+    </div>
+
+    <div class="card-section">
+      <h3>Your Scores Across All 6 Areas</h3>
+      <div class="score-list" id="score-list"></div>
+    </div>
+
+    <div class="insight-box"><p id="insight-text"></p></div>
+
+    <div class="card-section">
+      <h3>Career Directions That Suit You — Top Matches Highlighted</h3>
+      <div class="career-tags" id="career-tags"></div>
+    </div>
+
+    <div class="card-section">
+      <div class="detail-block">
+        <div class="detail-label">Your Natural Strengths</div>
+        <div class="detail-text" id="strengths-text"></div>
+      </div>
+      <div class="detail-block">
+        <div class="detail-label">Work Environment That Will Suit You</div>
+        <div class="detail-text" id="env-text"></div>
+      </div>
+    </div>
+
+    <div class="card-section">
+      <h3>What You Can Do Next</h3>
+      <div class="steps-list" id="steps-list"></div>
+    </div>
+
+    <div class="res-actions">
+      <button class="btn-restart" id="btn-restart">↺ Take the Test Again</button>
+    </div>
+
+    <div class="brand-footer">
+      <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
+      <p>This assessment is brought to you by <strong>Pehchaan Careers</strong><br>
+      hello.pehchaan@gmail.com &nbsp;·&nbsp; @pehchaancareers &nbsp;·&nbsp; pehchaancareers.in</p>
+    </div>
+  </div>
+
+</div>
+<script>
+var SECTION_COLORS = {
+  R: { color: '#085041', bg: '#E1F5EE', bar: '#1D9E75' },
+  I: { color: '#085041', bg: '#E1F5EE', bar: '#1D9E75' },
+  A: { color: '#7A4A00', bg: '#FAEEDA', bar: '#EF9F27' },
+  S: { color: '#085041', bg: '#E1F5EE', bar: '#1D9E75' },
+  E: { color: '#085041', bg: '#E1F5EE', bar: '#1D9E75' },
+  C: { color: '#7A4A00', bg: '#FAEEDA', bar: '#EF9F27' }
+};
+
+var SECTIONS = [
+  {
+    id:"R", name:"Practical Skills", emoji:"🔧",
+    desc:"This section is about working with your hands, tools, machines and physical activities.",
+    questions:[
+      { q:"Do you enjoy building or repairing things with your hands?", ex:"For example — fixing a cycle puncture, putting together furniture, repairing an electrical switch at home, or building a school project model." },
+      { q:"Do you like working in outdoor or physical environments rather than sitting in an office or classroom?", ex:"For example — working on a farm, at a construction site, in a garden, or anywhere that involves being outside and moving around." },
+      { q:"Do you enjoy using tools or machines to get a job done?", ex:"For example — using a drill, operating a lathe machine in a workshop, working with a computer for hardware tasks, or using electrical equipment." },
+      { q:"Do you feel a strong sense of satisfaction when you finish something and can see the physical result in front of you?", ex:"For example — finishing a carpentry project, completing a wiring circuit that actually works, finishing a piece of stitching or a rangoli design." },
+      { q:"Do you prefer solving practical, real-world problems over answering theoretical questions?", ex:"Practical: 'Why is this water pump not working and how do I fix it?' Theoretical: 'Explain the concept of fluid mechanics in 500 words.'" },
+      { q:"Do you enjoy activities that need good coordination between your hands and eyes or your body?", ex:"For example — playing cricket or kabaddi, doing pottery, making detailed sketches, or any craft where your hands and eyes must work together." },
+      { q:"When you see a machine or gadget, do you feel curious to open it and understand how it works?", ex:"For example — opening an old radio or clock to see the parts inside, looking at a computer motherboard, or checking why a motor stopped working." },
+      { q:"Do you feel comfortable working with plants, animals or nature?", ex:"For example — gardening, working on a farm, taking care of animals, doing wildlife activities, or going for nature treks." },
+      { q:"Do you prefer actually doing a task over spending a long time planning or discussing it?", ex:"For example — you would rather start painting a wall than sit through three meetings about which colour to choose." },
+      { q:"Do you enjoy physical activities like sports, gym, dance or any kind of body-based work?", ex:"For example — playing football, doing yoga, swimming, going to the gym, or any sport or physical activity you genuinely enjoy." }
+    ]
+  },
+  {
+    id:"I", name:"Research and Analysis", emoji:"🔬",
+    desc:"This section is about how much you enjoy thinking deeply, researching, analysing and solving complex problems.",
+    questions:[
+      { q:"Do you enjoy doing research or experiments to find answers to questions?", ex:"For example — doing a science experiment in school, researching a topic online just out of curiosity, or testing out different approaches to solve a problem." },
+      { q:"Do you like finding patterns or meaning inside data and numbers?", ex:"For example — looking at a cricket scorecard and drawing conclusions, comparing exam results to spot trends, or noticing patterns in charts and tables." },
+      { q:"Are you naturally curious about how and why things work the way they do?", ex:"For example — wondering how a mobile phone sends messages, why earthquakes happen, how a vaccine protects the body, or how aeroplanes stay in the air." },
+      { q:"Do you enjoy solving problems that are complex and require careful, step-by-step thinking?", ex:"For example — difficult maths problems, logic puzzles, mystery-style questions, or competitive exam problems that need multiple steps to solve." },
+      { q:"Before forming an opinion, do you prefer to research and gather all the facts first?", ex:"For example — before buying a phone you read 10 reviews and compare specs. Before arguing a point you check whether the facts actually support you." },
+      { q:"Do you like reading or watching content about science, technology or new discoveries?", ex:"For example — following ISRO mission news, reading about AI, watching YouTube videos on physics or biology, or reading about medical breakthroughs." },
+      { q:"Do you enjoy tasks that require logical, step-by-step thinking?", ex:"For example — solving maths problems, writing code, playing chess or Sudoku, or working through a difficult reasoning question in a competitive exam." },
+      { q:"Do subjects like Maths, Biology, Chemistry or Physics interest you — even when they are difficult?", ex:"You do not have to be a topper in these. The question is whether they feel interesting and worth understanding deeply — not just for marks." },
+      { q:"When something goes wrong, do you try to find the root cause before jumping to a solution?", ex:"For example — if your mobile is running slow, you do not just restart it. You think about whether storage is full, if there is a virus, or if the RAM is overused." },
+      { q:"Do you enjoy working alone on a difficult intellectual task for a long period of time?", ex:"For example — spending hours on a tough problem set, reading deeply into one topic, or working on a project that requires deep concentration over many days." }
+    ]
+  },
+  {
+    id:"A", name:"Creative Expression", emoji:"🎨",
+    desc:"This section is about creativity — art, music, writing, design and original thinking.",
+    questions:[
+      { q:"Do you enjoy drawing, sketching, painting or any kind of visual art?", ex:"For example — making sketches in your notebook, creating rangoli, designing posters for school events, or editing photos and videos on your phone." },
+      { q:"Do you enjoy writing stories, poems, essays or any kind of creative content?", ex:"For example — writing in a diary, creating funny captions, writing for the school magazine, or making up your own stories just for fun." },
+      { q:"Do you have a deep interest in music — whether listening, singing or playing an instrument?", ex:"For example — learning guitar, tabla or keyboard, singing seriously, analysing song compositions, or creating your own beats or tunes." },
+      { q:"Do you often come up with new or unusual ideas that other people do not think of?", ex:"For example — presenting a school project in a completely different format, or finding a creative solution to a problem everyone else solves the boring way." },
+      { q:"Do you naturally notice colours, shapes, design and beauty in everyday things around you?", ex:"For example — noticing that a building has a beautiful design, feeling a good colour combination in an outfit, or seeing patterns in nature that others miss." },
+      { q:"Do you enjoy performing in front of others — on stage, in videos or in any public setting?", ex:"For example — acting in a school play, doing anchoring at an event, dancing at a function, or making videos to post online." },
+      { q:"Do you enjoy creative projects where you are free to work in your own style without strict rules?", ex:"For example — an assignment where you can use any format you want, a project with no fixed template, or a task where your personal style is welcomed." },
+      { q:"Do you express your feelings better through art, music or creativity than through plain words?", ex:"For example — when you are happy you feel like making something. When you are sad you write or draw rather than just talk about it." },
+      { q:"Do you have a genuine interest in photography, filmmaking, fashion or interior design?", ex:"For example — taking creative photos on your phone, planning how to decorate your room, following design pages, or making short videos." },
+      { q:"Do you find fixed routines and strict formats boring — and prefer work that allows you to be original?", ex:"For example — copy-paste style assignments feel dull to you. You prefer a job where you can bring your own ideas and personal style every single day." }
+    ]
+  },
+  {
+    id:"S", name:"Helping People", emoji:"🤝",
+    desc:"This section is about how much you enjoy teaching, caring for others and working closely with people.",
+    questions:[
+      { q:"Do you genuinely enjoy helping people who are going through a personal problem or feeling upset?", ex:"For example — listening patiently to a friend who is stressed, helping a family member feel better, or staying with someone who needs support." },
+      { q:"Do you enjoy explaining things to others or teaching someone a new skill?", ex:"For example — teaching your younger sibling a school concept, helping a classmate understand something they missed, or showing a neighbour how to use a phone app." },
+      { q:"Do you feel more energetic and happy after spending time with people — not drained or tired?", ex:"If a long get-together with friends and family leaves you feeling fresh and good — that is a 5. If it leaves you exhausted and wanting to be alone — that is a 1." },
+      { q:"Do you care deeply about social issues like poverty, education for all, gender equality or the environment?", ex:"For example — feeling strongly about girls being allowed to study, wanting to do something about child labour, or caring about pollution in your town." },
+      { q:"Do you enjoy volunteering or doing community service?", ex:"For example — helping at a flood relief camp, visiting an old age home, organising a cleanliness drive in your colony, or teaching children in a nearby slum school." },
+      { q:"Do people come to you with their problems because you listen well and make them feel understood?", ex:"If friends or family often say 'I feel better after talking to you' or 'you always understand me' — this is that quality in action." },
+      { q:"Do you enjoy working in a team and collaborating with others to finish something together?", ex:"For example — enjoying group projects, feeling motivated when you work with others, or finding that you do better work when there is a team around you." },
+      { q:"Do you enjoy guiding or mentoring younger students or children?", ex:"For example — helping a junior student with their studies, giving career advice to a neighbour's child, or coaching younger kids in a sport or hobby." },
+      { q:"Do you feel deep happiness when someone improves or does better because of your help?", ex:"For example — when a student you taught scores well, or when a friend makes a better decision because of advice you gave — does that give you strong satisfaction?" },
+      { q:"Would you prefer a job where you are directly helping people every day, over a desk-based job?", ex:"For example — a teacher, doctor, nurse or counsellor deals with people all day. An accountant or data analyst mostly works alone with files and screens." }
+    ]
+  },
+  {
+    id:"E", name:"Leadership and Business", emoji:"🚀",
+    desc:"This section is about your interest in leading, persuading, taking initiative and business thinking.",
+    questions:[
+      { q:"Do you naturally take charge and lead the group when there is a task to be done?", ex:"For example — in a school group project, you are the one who divides the work, keeps track of progress and pushes the team to finish on time." },
+      { q:"Are you good at convincing people to agree with your point of view?", ex:"For example — persuading a teacher to change a deadline, convincing your parents to let you go on a trip, or making a strong argument in a debate." },
+      { q:"Are you genuinely interested in business, selling or starting something of your own?", ex:"For example — thinking about starting a small business, selling something at a school mela, dreaming about your own startup, or being interested in how companies make money." },
+      { q:"Do you set clear goals for yourself and make a proper plan to achieve them?", ex:"For example — setting a target exam score and working backwards to plan your study schedule, or deciding to win a competition and then planning your preparation step by step." },
+      { q:"Are you comfortable taking a calculated risk when the reward could be worth it?", ex:"For example — joining a tough competitive exam without a guarantee of passing, trying a new business idea without knowing if it will work, or giving a bold answer in class." },
+      { q:"Do you feel motivated by competition — does wanting to win push you to work harder?", ex:"For example — wanting to top the class, win a sports event, or beat a competitor. Does competition energise you rather than stress you out?" },
+      { q:"Do you feel comfortable speaking in front of a group or presenting your ideas confidently?", ex:"For example — giving a class presentation, speaking at a school assembly, participating in a debate or elocution competition, or pitching your idea to others." },
+      { q:"Do you start new projects or take initiative on your own without waiting for someone to tell you?", ex:"For example — starting a YouTube channel on your own, forming a club in school, or coming up with a new idea and actually beginning to work on it yourself." },
+      { q:"Do you enjoy organising people, budgets or resources to get things done?", ex:"For example — managing the budget for a school event, assigning roles in a group project, or keeping track of everyone's tasks and making sure work gets done." },
+      { q:"Do you consider yourself ambitious — do you have big goals and seriously work towards achieving them?", ex:"You are not just dreaming about a big future — you are actually thinking about what steps to take, what skills to build, and how to get there." }
+    ]
+  },
+  {
+    id:"C", name:"Organisation and Systems", emoji:"📊",
+    desc:"This section is about how much you enjoy working with numbers, records, systems and structured processes.",
+    questions:[
+      { q:"Do you enjoy organising information, keeping files in order or maintaining records?", ex:"For example — keeping your notes neat and well-labelled, organising folders on your computer properly, or maintaining a list of important dates and tasks." },
+      { q:"Do you work better when instructions are clear and the process is well-defined?", ex:"For example — when a teacher gives a step-by-step assignment with a clear format, you feel confident and produce your best work. Vague tasks make you uncomfortable." },
+      { q:"Do you enjoy working with numbers, spreadsheets or financial records?", ex:"For example — maintaining a household budget, entering data into Excel, tracking expenses carefully, or working through accounting-style problems in school." },
+      { q:"Are you comfortable with routine and a predictable schedule — does it feel stable rather than boring?", ex:"Having a fixed timetable and knowing exactly what to expect at work gives you confidence and peace of mind rather than making you feel bored." },
+      { q:"Are you very careful about details — do you almost never make small careless mistakes?", ex:"For example — after filling a form you re-read it completely before submitting. In an exam you always check your paper at the end. You catch errors others miss." },
+      { q:"Do you feel more comfortable when there are clear rules and proper procedures to follow?", ex:"You do not find rules limiting. Having a proper system and a defined way of doing things helps you perform better and feel more in control." },
+      { q:"Are you comfortable doing computer-based tasks like data entry, record keeping or preparing reports?", ex:"For example — entering attendance records, maintaining a stock register, preparing a summary table in Excel, or managing files and documents on a computer." },
+      { q:"Do you find official processes and administrative tasks useful and satisfying rather than pointless?", ex:"Tasks like filling forms correctly, sorting files, preparing proper documentation or compiling records feel important and satisfying to you — not like a waste of time." },
+      { q:"Do you prefer roles where your responsibilities are clearly defined and expectations are well-communicated?", ex:"You perform best when you know exactly what is expected, what the deadline is, and what success looks like. Unclear roles and vague goals make you anxious." },
+      { q:"Do you naturally enjoy making schedules, to-do lists and keeping your life well-organised?", ex:"For example — maintaining a daily diary, keeping a study timetable, organising your room properly, or always knowing where everything is." }
+    ]
+  }
+];
+
+var CAREERS = {
+  R:["Civil Engineering","Mechanical Engineering","Polytechnic Diploma","Architecture","Agricultural Science","Automobile Engineering","Electrical Engineering","ITI Trades","Environmental Science","Industrial Design"],
+  I:["MBBS / Medicine","Pharmacy","Biotechnology","Data Science and AI","Research Scientist","Computer Science","Forensic Science","Maths and Statistics","Astrophysics","Neuroscience"],
+  A:["Fine Arts / BFA","Graphic and UX Design","Fashion Design","Film and Media Production","Music Production","Creative Writing","Interior Design","Animation and VFX","Journalism and Mass Comm","Game Design"],
+  S:["B.Ed / Teaching","Psychology and Counselling","Social Work","Nursing / ANM / GNM","Human Resources","Public Health","NGO and Development Work","Occupational Therapy","Child Development","Community Medicine"],
+  E:["BBA / MBA","Law — LLB","Marketing and Sales","Entrepreneurship","Finance and Banking","Civil Services — IAS","Event Management","Media and PR","Hotel Management","International Relations"],
+  C:["CA / CMA","Company Secretary","Banking and Finance","Statistics","Supply Chain and Logistics","Business Analytics","Govt Jobs — SSC / Bank PO","Tax and Accounting","Insurance","Actuarial Science"]
+};
+
+var INSIGHTS = {
+  R:"You are a practical, action-oriented person. You learn by doing, not just by thinking or reading. You feel most satisfied when you can see and touch the result of your work. Technical fields, engineering, trades and hands-on professions are where you will naturally thrive. You have a builder's mindset — and that is a huge strength in India's growing infrastructure and manufacturing sectors.",
+  I:"You have a serious intellectual curiosity. You are not satisfied with surface answers — you want to understand things deeply and find the 'why' behind everything. Research, medicine, science, data and technology are fields where your analytical mind will be your greatest advantage.",
+  A:"You see the world in colours, emotions and possibilities. You have a natural originality that most people simply do not have. Design, media, content creation and entertainment are fields where your kind of thinking is genuinely valued — especially in today's digital world where India's creative economy is growing fast.",
+  S:"You are a people person with strong emotional intelligence. You naturally understand what others are feeling and you genuinely want to help. Teaching, healthcare, counselling and social work are not just jobs for you — they are areas where you will create real, lasting impact and feel deeply fulfilled.",
+  E:"You are ambitious, bold and naturally take charge. You see challenges as opportunities, not obstacles. Business, law, politics and leadership roles are where you can use your full potential. You have the drive and energy needed to build something truly significant.",
+  C:"You are reliable, accurate and systematic. When everything around you is chaotic, you are the one who brings order. Banking, accounting, government administration and data management are fields where your precision and dependability will be highly valued — and in India, these careers offer strong security and growth."
+};
+
+var STRENGTHS = {
+  R:"Working with hands and tools · Technical problem solving · Spatial thinking · Understanding machines · Practical and results-focused mindset",
+  I:"Analytical thinking · Logical reasoning · Deep research · Scientific approach · Ability to work independently on complex problems",
+  A:"Creative thinking · Original ideas · Strong aesthetic sense · Emotional expression · Imaginative approach to challenges",
+  S:"Empathy · Active listening · Communication · Teamwork · Patience · Natural ability to motivate and support others",
+  E:"Leadership · Persuasion · Strategic planning · Ambition · Risk-taking ability · Starting things without being told to",
+  C:"Organisation · Accuracy · Working with numbers · Reliability · Following processes carefully · Excellent attention to detail"
+};
+
+var ENV = {
+  R:"Workshops, construction sites, labs and outdoor locations — places where the results of your work are visible and tangible.",
+  I:"Research labs, universities, hospitals, tech companies — places where deep thinking and curiosity are genuinely respected.",
+  A:"Studios, media houses, design agencies and content platforms — spaces where originality, creativity and self-expression are celebrated.",
+  S:"Schools, hospitals, NGOs, counselling centres and community organisations — places where helping people is the core of the work.",
+  E:"Startups, corporate offices, courtrooms and boardrooms — competitive environments where leadership, ambition and results matter.",
+  C:"Banks, government offices, accounting firms and data centres — structured, process-driven environments with clear rules and systems."
+};
+
+var NEXT_STEPS = {
+  R:["After Class 12, explore B.Tech or BE in Mechanical, Civil or Electrical Engineering — or a Polytechnic Diploma if you want a faster, more practical route.","ITI (Industrial Training Institute) trades are excellent options if you want to start working sooner with strong technical skills.","Start preparing for JEE (for IITs and NITs) or state-level engineering entrance exams depending on your target college.","Visit your nearest polytechnic college or ITI to see what the workshops and labs look like — this will help you decide quickly."],
+  I:["Keep Science in Class 11 and 12 — with Physics, Chemistry and either Maths or Biology based on your specific interest.","If medicine interests you, start NEET preparation early. If research or tech is your direction, focus on JEE or BSc programmes.","Look into KVPY and INSPIRE scholarships — these are specifically designed for students who love science and research.","Try doing small experiments or research projects at home or in school — this habit will serve you very well in the future."],
+  A:["Start building a portfolio right now — collect your best drawings, designs, photos, videos or written work in one place.","Look into NIFT (fashion), NID (design), BFA programmes, FTII (film) or Mass Communication colleges in your state.","Platforms like Instagram, Behance and YouTube are free and powerful — start sharing your creative work online today.","You do not need to be in a metro city to start. Many of India's best designers, writers and creators come from smaller cities."],
+  S:["Look into B.Ed (teaching), BSW (social work), BSc Nursing, or Psychology programmes — all have very strong career paths.","Start volunteering with a local NGO, school or community programme — this experience will help you in both admissions and in life.","If teaching is your goal, research CTET and State TET exams — these are the government teaching certification tests you will need.","If medicine or nursing is your direction, start NEET preparation and also look at GNM and ANM nursing diploma programmes."],
+  E:["Look into BBA, B.Com, Law (CLAT entrance exam) or integrated MBA programmes after Class 12.","Take up a leadership role in your school or college — lead a club, organise an event or start a small initiative. Real experience matters.","Try selling something small — a service, a product, a skill. Even a small success will teach you more than any textbook on business.","Research CAT (for MBA), CLAT (for law) and UPSC or State PSC exams (for civil services) — all strong options for leadership-oriented students."],
+  C:["Look into B.Com, BBA Finance, or start the CA Foundation course — Chartered Accountancy is one of India's most respected careers.","Government competitive exams like SSC CGL, IBPS Bank PO and RRB are excellent career paths with strong job security and good salaries.","Learn basic Tally, Excel and accounting software — these practical skills make you significantly more employable from day one.","Look into Statistics degrees, Actuarial Science or Business Analytics — these are growing fields with very strong salaries in India."]
+};
+
+var answers = {};
+var curSec = 0;
+
+function showScreen(id) {
+  ['screen-cover','screen-quiz','screen-results'].forEach(function(s){
+    document.getElementById(s).classList.add('hidden');
+  });
+  document.getElementById(id).classList.remove('hidden');
+}
+
+function renderQuiz(idx) {
+  var sec = SECTIONS[idx];
+  var sc = SECTION_COLORS[sec.id];
+  document.getElementById('quiz-label').textContent = 'Part ' + (idx+1) + ' of 6 — ' + sec.name;
+  document.getElementById('quiz-count').textContent = 'Q ' + (idx*10+1) + '–' + (idx*10+10) + ' of 60';
+  document.getElementById('prog-fill').style.width = (idx/6*100) + '%';
+  document.getElementById('sec-icon').textContent = sec.emoji;
+  document.getElementById('sec-icon').style.background = sc.bg;
+  document.getElementById('sec-name').textContent = sec.name;
+  document.getElementById('sec-name').style.color = sc.color;
+  document.getElementById('sec-desc').textContent = sec.desc;
+  document.getElementById('nav-mid').textContent = 'Section ' + (idx+1) + ' of 6';
+  document.getElementById('btn-back').style.visibility = idx === 0 ? 'hidden' : 'visible';
+  document.getElementById('btn-next').textContent = idx === 5 ? 'See My Results →' : 'Next →';
+  document.getElementById('warn-box').style.display = 'none';
+
+  var html = '';
+  for (var i = 0; i < 10; i++) {
+    var key = sec.id + '_' + i;
+    var saved = answers[key];
+    var qdata = sec.questions[i];
+    html += '<div class="q-card' + (saved !== undefined ? ' answered' : '') + '" id="qcard-' + key + '">';
+    html += '<div class="q-num">Question ' + (idx*10+i+1) + ' of 60</div>';
+    html += '<div class="q-text">' + qdata.q + '</div>';
+    html += '<div class="q-example">For example: ' + qdata.ex + '</div>';
+    html += '<div class="scale-lbl-row"><span>1 — Does not sound like me at all</span><span>5 — Yes, very much like me</span></div>';
+    html += '<div class="btn-row" data-key="' + key + '">';
+    for (var v = 1; v <= 5; v++) {
+      html += '<button class="opt' + (saved === v ? ' sel' : '') + '" data-key="' + key + '" data-val="' + v + '">' + v + '</button>';
+    }
+    html += '</div></div>';
+  }
+  document.getElementById('q-list').innerHTML = html;
+  window.scrollTo(0, 0);
+}
+
+document.getElementById('btn-begin').addEventListener('click', function() {
+  showScreen('screen-quiz');
+  renderQuiz(0);
+});
+
+document.getElementById('q-list').addEventListener('click', function(e) {
+  var t = e.target;
+  if (!t.classList.contains('opt')) return;
+  var key = t.getAttribute('data-key');
+  var val = parseInt(t.getAttribute('data-val'));
+  answers[key] = val;
+  var row = document.querySelector('.btn-row[data-key="' + key + '"]');
+  if (row) {
+    var btns = row.querySelectorAll('.opt');
+    for (var i = 0; i < btns.length; i++) btns[i].classList.remove('sel');
+  }
+  t.classList.add('sel');
+  var card = document.getElementById('qcard-' + key);
+  if (card) card.classList.add('answered');
+});
+
+document.getElementById('btn-back').addEventListener('click', function() {
+  if (curSec > 0) { curSec--; renderQuiz(curSec); }
+});
+
+document.getElementById('btn-next').addEventListener('click', function() {
+  var sec = SECTIONS[curSec];
+  for (var i = 0; i < 10; i++) {
+    if (answers[sec.id + '_' + i] === undefined) {
+      document.getElementById('warn-box').style.display = 'block';
+      return;
+    }
+  }
+  document.getElementById('warn-box').style.display = 'none';
+  if (curSec === 5) { buildResults(); }
+  else { curSec++; renderQuiz(curSec); }
+});
+
+document.getElementById('btn-restart').addEventListener('click', function() {
+  answers = {}; curSec = 0; showScreen('screen-cover');
+});
+
+function buildResults() {
+  var scores = {};
+  SECTIONS.forEach(function(sec) {
+    var t = 0;
+    for (var i = 0; i < 10; i++) t += (answers[sec.id + '_' + i] || 0);
+    scores[sec.id] = t;
+  });
+  var sorted = SECTIONS.slice().sort(function(a,b){ return scores[b.id]-scores[a.id]; });
+  var top = sorted[0];
+  var top3 = [sorted[0].id, sorted[1].id, sorted[2].id];
+
+  document.getElementById('profile-code').textContent = 'Your Profile: ' + top3.join(' – ');
+
+  var listHtml = '';
+  sorted.forEach(function(sec) {
+    var pct = Math.round(scores[sec.id]/50*100);
+    var sc = SECTION_COLORS[sec.id];
+    listHtml += '<div class="score-item">';
+    listHtml += '<div class="score-emoji">' + sec.emoji + '</div>';
+    listHtml += '<div class="score-name" style="color:' + sc.color + '">' + sec.name + '</div>';
+    listHtml += '<div class="score-track"><div class="score-fill" style="background:' + sc.bar + '" data-pct="' + pct + '"></div></div>';
+    listHtml += '<div class="score-val">' + pct + '%</div>';
+    listHtml += '</div>';
+  });
+  document.getElementById('score-list').innerHTML = listHtml;
+
+  document.getElementById('insight-text').textContent = INSIGHTS[top.id];
+
+  var seen = {}, tagsHtml = '';
+  top3.forEach(function(id) {
+    CAREERS[id].forEach(function(c) {
+      if (!seen[c]) { seen[c] = true; tagsHtml += '<span class="tag top">' + c + '</span>'; }
+    });
+  });
+  sorted.slice(3).forEach(function(s) {
+    CAREERS[s.id].forEach(function(c) {
+      if (!seen[c]) { seen[c] = true; tagsHtml += '<span class="tag">' + c + '</span>'; }
+    });
+  });
+  document.getElementById('career-tags').innerHTML = tagsHtml;
+  document.getElementById('strengths-text').textContent = top3.map(function(id){ return STRENGTHS[id]; }).join(' | ');
+  document.getElementById('env-text').textContent = ENV[top.id];
+
+  var steps = NEXT_STEPS[top.id];
+  var stepsHtml = '';
+  steps.forEach(function(s, i) {
+    stepsHtml += '<div class="step-item"><div class="step-num">' + (i+1) + '</div><div class="step-text">' + s + '</div></div>';
+  });
+  document.getElementById('steps-list').innerHTML = stepsHtml;
+
+  showScreen('screen-results');
+  setTimeout(function() {
+    document.querySelectorAll('.score-fill').forEach(function(b){
+      b.style.width = b.getAttribute('data-pct') + '%';
+    });
+  }, 150);
+}
+</script>
+</body>
+</html>

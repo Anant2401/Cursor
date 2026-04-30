@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" width="520" height="160">
+
+  <!-- Dark background -->
+  <rect x="0" y="0" width="520" height="160" rx="16" fill="#1A1A2E"/>
+
+  <!-- Ground line -->
+  <line x1="38" y1="108" x2="142" y2="108" stroke="#1D9E75" stroke-width="1" opacity="0.35"/>
+
+  <!-- Path: two converging lines -->
+  <line x1="90" y1="108" x2="38"  y2="138" stroke="#1D9E75" stroke-width="3"   stroke-linecap="round"/>
+  <line x1="90" y1="108" x2="142" y2="138" stroke="#1D9E75" stroke-width="3"   stroke-linecap="round"/>
+
+  <!-- Road centre dashes -->
+  <line x1="90" y1="114" x2="90" y2="123" stroke="#1D9E75" stroke-width="1.2" stroke-dasharray="4 5" opacity="0.45" stroke-linecap="round"/>
+  <line x1="90" y1="129" x2="90" y2="137" stroke="#1D9E75" stroke-width="1.2" stroke-dasharray="4 5" opacity="0.45" stroke-linecap="round"/>
+
+  <!-- Solid sun semicircle on horizon -->
+  <path d="M64 108 A26 26 0 0 1 116 108" fill="#EF9F27"/>
+
+  <!-- 5 clean symmetric rays -->
+  <line x1="90"  y1="79"  x2="90"  y2="67"  stroke="#EF9F27" stroke-width="2.8" stroke-linecap="round"/>
+  <line x1="108" y1="84"  x2="114" y2="73"  stroke="#EF9F27" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="72"  y1="84"  x2="66"  y2="73"  stroke="#EF9F27" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="122" y1="96"  x2="131" y2="88"  stroke="#EF9F27" stroke-width="2"   stroke-linecap="round" opacity="0.8"/>
+  <line x1="58"  y1="96"  x2="49"  y2="88"  stroke="#EF9F27" stroke-width="2"   stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Wordmark: pehchaan -->
+  <text x="165" y="93"
+    font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-size="38"
+    font-weight="300"
+    letter-spacing="1.5"
+    fill="#FFFFFF">Pehchaan</text>
+
+  <!-- CAREERS letterspaced -->
+  <text x="168" y="116"
+    font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-size="12"
+    font-weight="400"
+    letter-spacing="5"
+    fill="#1D9E75">CAREERS</text>
+
+  <!-- Tagline -->
+  <text x="168" y="136"
+    font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+    font-size="12"
+    font-style="italic"
+    fill="#5DCAA5">Aapki pehchaan, aapki raah.</text>
+
+</svg>

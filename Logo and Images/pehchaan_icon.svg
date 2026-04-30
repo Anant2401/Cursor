@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+
+  <!-- Rounded square dark background -->
+  <rect x="0" y="0" width="160" height="160" rx="36" fill="#1A1A2E"/>
+
+  <!-- Ground line -->
+  <line x1="28" y1="105" x2="132" y2="105" stroke="#1D9E75" stroke-width="1" opacity="0.3"/>
+
+  <!-- Path -->
+  <line x1="80" y1="105" x2="22"  y2="138" stroke="#1D9E75" stroke-width="4"   stroke-linecap="round"/>
+  <line x1="80" y1="105" x2="138" y2="138" stroke="#1D9E75" stroke-width="4"   stroke-linecap="round"/>
+  <line x1="80" y1="112" x2="80"  y2="122" stroke="#1D9E75" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.4" stroke-linecap="round"/>
+  <line x1="80" y1="129" x2="80"  y2="137" stroke="#1D9E75" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.4" stroke-linecap="round"/>
+
+  <!-- Solid sun semicircle -->
+  <path d="M52 105 A28 28 0 0 1 108 105" fill="#EF9F27"/>
+
+  <!-- 5 rays -->
+  <line x1="80"  y1="73"  x2="80"  y2="59"  stroke="#EF9F27" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="101" y1="79"  x2="108" y2="66"  stroke="#EF9F27" stroke-width="3"   stroke-linecap="round"/>
+  <line x1="59"  y1="79"  x2="52"  y2="66"  stroke="#EF9F27" stroke-width="3"   stroke-linecap="round"/>
+  <line x1="116" y1="93"  x2="126" y2="84"  stroke="#EF9F27" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+  <line x1="44"  y1="93"  x2="34"  y2="84"  stroke="#EF9F27" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+
+</svg>
