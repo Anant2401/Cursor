@@ -151,7 +151,7 @@ body {
   background: var(--teal-dark);
 }
 
-/* ---------- Hero ---------- */
+/* Hero */
 #home {
   background: linear-gradient(135deg, #085041 0%, #0d6b55 60%, #1d9e75 100%);
   padding: 80px 0 70px;
@@ -419,12 +419,6 @@ h1 {
   color: var(--primary-dark);
 }
 
-.cta-row {
-  display: flex;
-  gap: 0.8rem;
-  margin-top: 1.2rem;
-}
-
 .section {
   padding: 3rem 0;
 }
@@ -445,7 +439,7 @@ h1 {
   border-bottom: 1px solid var(--border);
 }
 
-/* Keep a clear alternating rhythm in lower half sections */
+/* Alternating lower-section backgrounds */
 #brochure {
   background: linear-gradient(180deg, rgba(240, 250, 245, 0.72) 0%, rgba(255, 255, 255, 0.86) 100%);
   border-top: 1px solid var(--border);
@@ -645,7 +639,7 @@ h1 {
   box-shadow: 0 1px 4px rgba(8, 80, 65, 0.08);
 }
 
-/* Single glass panel — avoid stacked “floating” boxes */
+/* Shared panel treatment for assessment/founder blocks */
 .assessment-wrap .assessment-card {
   background: transparent;
   border: none;
