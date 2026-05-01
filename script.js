@@ -64,6 +64,16 @@ function initToolsTabs() {
         "Supports realistic planning with role progression context",
       ],
     },
+    roadmap: {
+      bestFor: "Students planning exam timelines and preparation",
+      time: "7-10 minutes",
+      output: "Personalised exam roadmap + action guidance",
+      highlights: [
+        "Maps your class, stream, and career interests to relevant exams",
+        "Surfaces registration windows, exam dates, and preparation stages",
+        "Gives structured next steps so you can start with clarity",
+      ],
+    },
   };
 
   const setCardExpanded = (card, expanded) => {
@@ -155,11 +165,15 @@ function initToolsTabs() {
       if (show) visibleCount += 1;
     });
 
+    if (selectedTool === "all") {
+      toolCards.forEach((card) => setCardExpanded(card, false));
+    }
+
     allPanel.classList.add("is-active");
     allPanel.hidden = false;
     allPanel.classList.toggle("single-tool-view", visibleCount === 1);
 
-    if (visibleCount === 1) {
+    if (selectedTool !== "all" && visibleCount === 1) {
       const visibleCard = Array.from(toolCards).find((card) => !card.hidden);
       if (visibleCard) setCardExpanded(visibleCard, true);
     }
