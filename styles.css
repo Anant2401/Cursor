@@ -810,15 +810,6 @@ h1 {
   color: var(--teal-dark);
 }
 
-.story-wrap {
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 18px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(248, 250, 252, 0.72));
-  backdrop-filter: blur(8px);
-  padding: 1.2rem;
-  box-shadow: 0 14px 28px rgba(15, 110, 86, 0.12);
-}
-
 .founder-tagline-quote {
   display: block;
   font-size: 15px;
@@ -863,12 +854,6 @@ h1 {
   line-height: 1.5;
 }
 
-.social-row {
-  display: flex;
-  gap: 0.9rem;
-  flex-wrap: wrap;
-}
-
 .contact-wrap {
   border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: 18px;
@@ -876,51 +861,6 @@ h1 {
   backdrop-filter: blur(8px);
   padding: 1.2rem;
   box-shadow: 0 16px 30px rgba(15, 110, 86, 0.12);
-}
-
-.contact-social {
-  margin-top: 0.4rem;
-}
-
-.contact-connect-text {
-  margin-top: 1rem;
-}
-
-.social-btn {
-  border: 1px solid transparent;
-  background: var(--teal-dark);
-  border-radius: 12px;
-  padding: 0.55rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
-  width: 46px;
-  height: 46px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-btn:hover {
-  transform: translateY(-2px);
-  filter: brightness(1.05);
-  box-shadow: 0 10px 20px rgba(8, 80, 65, 0.28);
-}
-
-.contact-social .social-btn:first-child {
-  background: radial-gradient(circle at 30% 30%, #feda75 0%, #d62976 45%, #4f5bd5 100%);
-}
-
-.contact-social .social-btn:last-child {
-  background: #ff0000;
-}
-
-.social-btn svg {
-  width: 24px;
-  height: 24px;
-  fill: none;
-  stroke: var(--white);
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
 }
 
 .contact-form {
@@ -1135,8 +1075,7 @@ footer {
     display: inline-block;
   }
 
-  .two-col,
-  .otp-row {
+  .two-col {
     grid-template-columns: 1fr;
   }
 

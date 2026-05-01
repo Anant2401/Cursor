@@ -344,27 +344,29 @@
     </section>
 
     <section id="brochure" class="section">
-      <div class="container brochure-wrap reveal">
-        <div>
-          <h2>Download About Us PDF</h2>
+      <div class="container">
+        <h2>Download About Us PDF</h2>
+        <div class="brochure-wrap reveal">
+          <div>
           <p>
             Get complete details about Pehchaan Careers, our mission, and how we support students.
             You can download the brochure in English or Hindi.
           </p>
-        </div>
-        <div class="download-row">
-          <a
-            class="btn primary"
-            href="Presentation/pdf/Pehchaan_Careers_English.pdf"
-            download="Pehchaan_Careers_English.pdf"
-            >Download English PDF</a
-          >
-          <a
-            class="btn ghost"
-            href="Presentation/pdf/Pehchaan_Careers_Hindi.pdf"
-            download="Pehchaan_Careers_Hindi.pdf"
-            >Download Hindi PDF</a
-          >
+          </div>
+          <div class="download-row">
+            <a
+              class="btn primary"
+              href="Presentation/pdf/Pehchaan_Careers_English.pdf"
+              download="Pehchaan_Careers_English.pdf"
+              >Download English PDF</a
+            >
+            <a
+              class="btn ghost"
+              href="Presentation/pdf/Pehchaan_Careers_Hindi.pdf"
+              download="Pehchaan_Careers_Hindi.pdf"
+              >Download Hindi PDF</a
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -473,46 +475,48 @@
     </section>
 
     <section id="contact" class="section">
-      <div class="container contact-wrap reveal">
+      <div class="container">
         <h2>Reach Out To Us</h2>
-        <p class="small">Fill this form and we will connect with you soon.</p>
-        <form class="contact-form" id="contact-form">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" required />
+        <div class="contact-wrap reveal">
+          <p class="small">Fill this form and we will connect with you soon.</p>
+          <form class="contact-form" id="contact-form">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
 
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
 
-          <label for="phone">Phone</label>
-          <input id="phone" name="phone" type="tel" />
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" />
 
-          <div class="two-col">
-            <div>
-              <label for="contact-city">City</label>
-              <input id="contact-city" name="city" type="text" required />
+            <div class="two-col">
+              <div>
+                <label for="contact-city">City</label>
+                <input id="contact-city" name="city" type="text" required />
+              </div>
+              <div>
+                <label for="contact-state">State</label>
+                <input id="contact-state" name="state" type="text" required />
+              </div>
             </div>
-            <div>
-              <label for="contact-state">State</label>
-              <input id="contact-state" name="state" type="text" required />
-            </div>
-          </div>
 
-          <label for="contact-qualification">Current Qualification</label>
-          <select id="contact-qualification" name="current_qualification" required>
-            <option value="">Select qualification</option>
-            <option value="10TH_PASS">10th Pass</option>
-            <option value="12TH_PASS">12th Pass</option>
-            <option value="GRADUATE">Graduate</option>
-            <option value="POST_GRADUATE">Post Graduate</option>
-            <option value="OTHERS">Others</option>
-          </select>
+            <label for="contact-qualification">Current Qualification</label>
+            <select id="contact-qualification" name="current_qualification" required>
+              <option value="">Select qualification</option>
+              <option value="10TH_PASS">10th Pass</option>
+              <option value="12TH_PASS">12th Pass</option>
+              <option value="GRADUATE">Graduate</option>
+              <option value="POST_GRADUATE">Post Graduate</option>
+              <option value="OTHERS">Others</option>
+            </select>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
-          <button type="submit" class="btn primary">Send Message</button>
-          <p class="otp-note" id="contact-save-note"></p>
-        </form>
+            <button type="submit" class="btn primary">Send Message</button>
+            <p class="otp-note" id="contact-save-note"></p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
