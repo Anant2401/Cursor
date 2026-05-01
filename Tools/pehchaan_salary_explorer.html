@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career & Salary Explorer – Pehchaan Careers</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%23085041'/><path d='M8 22 A12 12 0 0 1 32 22 Z' fill='%23EF9F27'/><path d='M6 36 L20 24 L34 36' stroke='%231D9E75' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal:        #1D9E75;
+    --teal-dark:   #085041;
+    --teal-light:  #E1F5EE;
+    --amber:       #EF9F27;
+    --amber-light: #FAEEDA;
+    --navy:        #1A1A2E;
+    --white:       #FFFFFF;
+    --card-bg:     #F8FAFC;
+    --gray-text:   #64748B;
+    --red:         #E24B4A;
+    --red-light:   #FCEBEB;
+    --purple:      #7F77DD;
+    --purple-light:#EEEDFE;
+    --blue:        #378ADD;
+    --blue-light:  #E6F1FB;
+    --coral:       #D85A30;
+    --green:       #639922;
+    --border:      #D1E8DF;
+    --text:        #1A1A2E;
+    --radius:      14px;
+    --shadow:      0 1px 4px rgba(8,80,65,0.10);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Poppins', sans-serif; background: radial-gradient(1200px 520px at 8% -10%, rgba(127,119,221,.12), transparent 65%), radial-gradient(900px 420px at 92% 6%, rgba(55,138,221,.1), transparent 62%), linear-gradient(180deg, #eef8f4 0%, #e5f3ee 42%, #e8f5f0 100%); color: var(--text); min-height: 100vh; font-size: 14px; }
+
+  body::before {
+    content: 'Pehchaan Careers';
+    position: fixed; top: 50%; left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    font-size: 52px; font-weight: 800;
+    color: rgba(8,80,65,0.045);
+    white-space: nowrap; pointer-events: none;
+    z-index: 0; letter-spacing: .08em; user-select: none;
+  }
+
+  .container { max-width: 700px; margin: 0 auto; padding: 20px 16px 60px; position: relative; z-index: 1; }
+
+  .topbar { display: flex; align-items: center; gap: 12px; padding: 14px 0 22px; }
+  .topbar-logo { width: 40px; height: 40px; background: var(--teal-dark); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .topbar-logo svg { width: 24px; height: 24px; }
+  .topbar-name { font-size: 15px; font-weight: 700; color: var(--teal-dark); }
+  .topbar-tag { font-size: 11px; color: var(--gray-text); }
+
+  .hero-card { background: var(--teal-dark); border-radius: 22px; padding: 34px 28px; color: var(--white); margin-bottom: 16px; position: relative; overflow: hidden; }
+  .hero-card::before { content: ''; position: absolute; top: -50px; right: -50px; width: 180px; height: 180px; background: rgba(255,255,255,.05); border-radius: 50%; }
+  .hero-card::after { content: ''; position: absolute; bottom: -30px; right: 30px; width: 110px; height: 110px; background: rgba(239,159,39,.12); border-radius: 50%; }
+  .hero-tag { display: inline-block; background: rgba(239,159,39,.2); border: 1px solid rgba(239,159,39,.4); color: var(--amber); font-size: 11px; font-weight: 600; padding: 4px 14px; border-radius: 20px; margin-bottom: 16px; letter-spacing: .03em; }
+  .hero-card h1 { font-size: 26px; font-weight: 700; line-height: 1.25; margin-bottom: 10px; }
+  .hero-card h1 span { color: var(--amber); }
+  .hero-card p { font-size: 13px; opacity: .85; line-height: 1.75; margin-bottom: 0; }
+  .hero-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin: 18px 0 0; }
+  .hero-stat { background: rgba(255,255,255,.1); border-radius: 12px; padding: 14px 8px; text-align: center; border: 1px solid rgba(255,255,255,.12); }
+  .hero-stat .v { font-size: 24px; font-weight: 700; color: var(--amber); }
+  .hero-stat .l { font-size: 11px; opacity: .75; margin-top: 2px; }
+
+  .filter-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 18px 20px; margin-bottom: 16px; box-shadow: var(--shadow); }
+  .filter-card h3 { font-size: 11px; font-weight: 700; color: var(--teal-dark); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px; }
+  .search-wrap { position: relative; margin-bottom: 14px; }
+  .search-input { width: 100%; padding: 12px 16px 12px 42px; border: 1.5px solid var(--border); border-radius: 12px; font-family: 'Poppins', sans-serif; font-size: 13px; color: var(--text); outline: none; transition: border-color .2s, box-shadow .2s; background: var(--card-bg); }
+  .search-input:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(29,158,117,.12); background: var(--white); }
+  .search-input::placeholder { color: #b0c4bb; }
+  .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: 16px; pointer-events: none; }
+  .filter-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .filter-btn { border: 1.5px solid var(--border); background: var(--white); border-radius: 20px; padding: 7px 14px; font-size: 12px; font-weight: 600; color: var(--gray-text); cursor: pointer; font-family: 'Poppins', sans-serif; transition: all .15s; white-space: nowrap; }
+  .filter-btn:hover { border-color: var(--teal); color: var(--teal-dark); background: var(--teal-light); }
+  .filter-btn.active { background: var(--teal-dark); color: var(--amber); border-color: var(--teal-dark); }
+  .sort-row { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
+  .sort-label { font-size: 11px; font-weight: 700; color: var(--teal-dark); text-transform: uppercase; letter-spacing: .06em; }
+  .sort-select {
+    flex: 1;
+    border: 1.5px solid var(--border);
+    border-radius: 11px;
+    padding: 9px 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: var(--text);
+    background: var(--card-bg);
+    outline: none;
+  }
+  .sort-select:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(29,158,117,.12); background: var(--white); }
+  .results-count { font-size: 11px; color: var(--gray-text); margin-top: 10px; }
+
+  .career-grid { display: flex; flex-direction: column; gap: 12px; }
+
+  .career-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; cursor: pointer; transition: border-color .2s, box-shadow .2s; box-shadow: var(--shadow); }
+  .career-card:hover { border-color: var(--teal); box-shadow: 0 4px 12px rgba(8,80,65,0.12); }
+  .career-card.open { border-color: var(--teal); }
+
+  .career-head { display: flex; align-items: center; gap: 14px; padding: 18px 20px 10px; }
+  .career-emoji { font-size: 24px; width: 48px; height: 48px; border-radius: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .career-head-info { flex: 1; min-width: 0; }
+  .career-name { font-size: 14px; font-weight: 700; color: var(--teal-dark); margin-bottom: 5px; }
+  .career-tags-row { display: flex; flex-wrap: wrap; gap: 4px; }
+  .ctag { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
+  .ctag-stream { background: var(--teal-light); color: var(--teal-dark); border: 1px solid var(--teal); }
+  .ctag-type { background: var(--amber-light); color: #7A4A00; border: 1px solid #F5C878; }
+  .ctag-govt { background: var(--blue-light); color: #185FA5; border: 1px solid #85B7EB; }
+  .ctag-creative { background: var(--purple-light); color: #3C3489; border: 1px solid #C4C0F5; }
+  .salary-preview { text-align: right; flex-shrink: 0; padding-left: 8px; }
+  .salary-entry { font-size: 13px; font-weight: 700; color: var(--teal-dark); white-space: nowrap; }
+  .salary-entry-lbl { font-size: 10px; color: var(--gray-text); }
+  .career-chevron { font-size: 11px; color: var(--gray-text); margin-left: 6px; transition: transform .2s; flex-shrink: 0; }
+  .career-chevron.open { transform: rotate(180deg); }
+
+  .reality-row { display: flex; align-items: center; gap: 10px; padding: 0 20px 14px; }
+  .reality-label { font-size: 11px; color: var(--gray-text); font-weight: 500; min-width: 80px; }
+  .reality-track { flex: 1; background: #F0F4F0; border-radius: 4px; height: 6px; overflow: hidden; }
+  .reality-fill { height: 6px; border-radius: 4px; width: 0; transition: width 0.8s ease; }
+  .reality-score { font-size: 11px; font-weight: 700; min-width: 80px; text-align: right; }
+
+  .career-body { display: none; border-top: 1px solid var(--teal-light); padding: 20px; }
+  .career-body.open { display: block; }
+
+  .salary-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 16px; }
+  .sal-box { border-radius: 12px; padding: 14px 10px; text-align: center; }
+  .sal-box .sal-amt { font-size: 16px; font-weight: 700; margin-bottom: 3px; }
+  .sal-box .sal-lbl { font-size: 10px; font-weight: 500; opacity: .85; }
+
+  .career-section { margin-bottom: 14px; }
+  .career-section h4 { font-size: 11px; font-weight: 700; color: var(--teal-dark); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 8px; }
+  .career-section p { font-size: 12px; color: var(--gray-text); line-height: 1.75; }
+  .career-section ul { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+  .career-section ul li { font-size: 12px; color: var(--text); line-height: 1.6; padding-left: 16px; position: relative; }
+  .career-section ul li::before { content: '→'; position: absolute; left: 0; color: var(--teal); font-size: 11px; top: 1px; }
+
+  .path-row { display: flex; gap: 7px; flex-wrap: wrap; }
+  .path-chip { font-size: 11px; font-weight: 500; padding: 4px 11px; border-radius: 20px; border: 1px solid var(--border); background: var(--card-bg); color: var(--text); }
+
+  .honest-box { background: var(--amber-light); border: 1.5px solid #F5C878; border-radius: 12px; padding: 13px 16px; margin-bottom: 10px; }
+  .honest-box p { font-size: 12px; color: #5A3200; line-height: 1.8; }
+  .honest-box strong { color: #7A4A00; }
+
+  .cg-box { background: var(--teal-light); border-left: 4px solid var(--teal); border-radius: 0 10px 10px 0; padding: 12px 16px; }
+  .cg-box p { font-size: 12px; color: var(--teal-dark); line-height: 1.8; }
+  .cg-box strong { font-weight: 700; }
+
+  .no-results { text-align: center; padding: 48px 20px; color: var(--gray-text); }
+  .no-results .nr-icon { font-size: 40px; margin-bottom: 12px; }
+  .no-results p { font-size: 14px; }
+
+  .disclaimer-box { background: #F8F7FF; border: 1px solid #C4C0F5; border-radius: 14px; padding: 16px 20px; margin-bottom: 14px; margin-top: 16px; }
+  .disclaimer-box h4 { font-size: 12px; font-weight: 700; color: #4B46A0; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; }
+  .disclaimer-box p { font-size: 12px; color: var(--gray-text); line-height: 1.75; }
+
+  .brand-footer { text-align: center; margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--teal-light); }
+  .brand-footer p { font-size: 11px; color: var(--gray-text); line-height: 1.8; }
+  .brand-footer strong { color: var(--teal-dark); }
+  .brand-tagline { font-size: 13px; font-weight: 600; color: var(--teal); margin-top: 4px; }
+
+  @media (max-width: 480px) {
+    .hero-card h1 { font-size: 21px; }
+    .salary-grid { grid-template-columns: repeat(3,1fr); }
+    .sal-box .sal-amt { font-size: 13px; }
+    .filter-btn { padding: 6px 10px; font-size: 11px; }
+    .career-head { gap: 10px; padding: 14px 14px 8px; }
+    .career-body { padding: 16px; }
+    .reality-row { padding: 0 14px 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="topbar">
+    <div class="topbar-logo">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/>
+        <line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/>
+      </svg>
+    </div>
+    <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your identity. Your path.</div></div>
+  </div>
+
+  <div class="hero-card">
+    <div class="hero-tag">Free Tool — Career &amp; Salary Explorer</div>
+    <h1>What Do Careers <span>Actually Pay</span> in India?</h1>
+    <p>Browse 40 careers. See real salary ranges, which stream you need, which exams to crack, how long it takes, and an honest reality check. Every career includes a special note for students from Chhattisgarh.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="v">40</div><div class="l">Careers</div></div>
+      <div class="hero-stat"><div class="v">2025</div><div class="l">Data</div></div>
+      <div class="hero-stat"><div class="v">100%</div><div class="l">Free</div></div>
+    </div>
+  </div>
+
+  <div class="filter-card">
+    <h3>Search and filter</h3>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" class="search-input" id="search-input" placeholder="Search any career — e.g. Doctor, CA, Engineer..." oninput="applyFilters()">
+    </div>
+    <div class="filter-row">
+      <button class="filter-btn active" onclick="setFilter('all',this)">All (40)</button>
+      <button class="filter-btn" onclick="setFilter('science',this)">🔬 Science</button>
+      <button class="filter-btn" onclick="setFilter('commerce',this)">📊 Commerce</button>
+      <button class="filter-btn" onclick="setFilter('arts',this)">🎨 Arts</button>
+      <button class="filter-btn" onclick="setFilter('govt',this)">🏛️ Govt Job</button>
+      <button class="filter-btn" onclick="setFilter('any',this)">✅ Any Stream</button>
+    </div>
+    <div class="sort-row">
+      <label class="sort-label" for="sort-select">Sort by</label>
+      <select id="sort-select" class="sort-select" onchange="applyFilters()">
+        <option value="default">Default order</option>
+        <option value="salary-asc">Starting salary: low to high</option>
+        <option value="salary-desc">Starting salary: high to low</option>
+        <option value="ease-desc">Entry ease: very accessible to very tough</option>
+        <option value="ease-asc">Entry ease: very tough to very accessible</option>
+      </select>
+    </div>
+    <div class="results-count" id="results-count">Showing all 40 careers</div>
+  </div>
+
+  <div class="career-grid" id="career-grid"></div>
+
+  <div class="disclaimer-box">
+    <h4>&#9888;&#65039; Important — Please Read</h4>
+    <p>Salary figures are <strong>approximate ranges</strong> based on data from AmbitionBox, Glassdoor, LinkedIn Salary and India Skills Report 2025. Actual salaries vary significantly based on college tier, city, skills, company size and individual performance. <strong>Top-end figures reflect exceptional candidates at top institutions</strong> — not average outcomes. Use this tool to explore with realistic expectations. Career decisions should involve your parents, teachers and a qualified counsellor who knows your specific situation.</p>
+  </div>
+
+  <div class="brand-footer">
+    <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
+    <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
+    hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+  </div>
+
+</div>
+<script>
+var CAREERS = [
+  { id:1,  name:"Software Engineer / Developer",      emoji:"💻", stream:["science","any"],     tags:["Science","Tech","Private"],            entryLPA:"3–8",   midLPA:"10–22",  seniorLPA:"25–60+",   reality:88, time:"4 years (BTech) + skills", exams:["JEE Main (for NIT/IIIT/IIT)","CUET / State CET (for private colleges)","No exam needed for self-taught path — portfolio matters"], paths:["BTech CSE / IT","BCA + MCA","BSc Computer Science","Self-taught + certifications (Coursera, freeCodeCamp)"], skills:["Python / Java / JavaScript","Data Structures and Algorithms (DSA)","Git / GitHub","System Design (for senior roles)"], honest:"<strong>Most honest fact:</strong> College rank matters much less than your coding portfolio. A student from a private college in Bilaspur who solves 200 LeetCode problems and has 3 real projects on GitHub gets better offers than a student from a decent college who only studied theory. Start building on GitHub from Class 11.", cg:"<strong>From Chhattisgarh:</strong> TCS, Infosys, Wipro and HCL hire in bulk from engineering colleges in Raipur and Bhilai. Getting into a good engineering college in CG (SSCET, CSIT, SSTC) followed by genuine skill-building is a completely realistic path to ₹5–8 LPA within a year of graduation. Remote work makes location irrelevant once you have 2–3 years of experience." },
+  { id:2,  name:"Chartered Accountant (CA)",          emoji:"📒", stream:["commerce"],           tags:["Commerce","Finance","High-Prestige"],  entryLPA:"6–12",  midLPA:"15–30",  seniorLPA:"30–80+",   reality:72, time:"4.5–5 years after Class 12", exams:["CA Foundation (after Class 12)","CA Intermediate (2 groups)","CA Final (ICAI — India's toughest professional exam)"], paths:["BCom + CA (parallel — recommended)","BBA + CA","Start CA Foundation immediately after Class 12"], skills:["Accounting and Taxation","Audit skills and compliance","Tally / Excel / SAP","GST and Company Law"], honest:"<strong>Most honest fact:</strong> CA Final first-attempt pass rate is around 10–15% — one of India's hardest exams. But once you qualify, the salary jump is dramatic. Most students take 5–7 years total. During articleship (3 years of practical training) you earn a stipend of ₹2,000–15,000/month. The path is hard but completely structured.", cg:"<strong>From Chhattisgarh:</strong> CA is one of the most respected careers in Korba, Bilaspur and Raipur. NTPC, SECL, SAIL Bhilai, and every major CG company need CAs. You do not need to move to a metro city — many successful CAs in CG cities have built thriving practices locally, serving coal companies, government departments, and local businesses." },
+  { id:3,  name:"Doctor (MBBS / MD)",                 emoji:"🩺", stream:["science"],            tags:["Science","Healthcare","High-Prestige"],entryLPA:"6–15",  midLPA:"15–40",  seniorLPA:"40–200+",  reality:58, time:"5.5 years MBBS + 3 years MD (specialist)", exams:["NEET UG (mandatory for MBBS and BDS)","NEET PG (for MD/MS specialisation)"], paths:["Class 12 PCB → NEET → MBBS → MD/MS → Specialist practice"], skills:["NEET preparation (Biology + Physics + Chemistry)","Clinical skills built during MBBS","Specialisation skills during MD/MS residency"], honest:"<strong>Most honest fact:</strong> NEET is extremely competitive — 2 million+ students appear for roughly 90,000 government MBBS seats. Private MBBS colleges charge ₹50 lakh–1.2 crore in fees. If your family cannot fund private MBBS and your NEET rank misses government colleges, the ROI needs very careful thought before taking large loans.", cg:"<strong>From Chhattisgarh:</strong> Government medical colleges in CG — RIMS Raipur, CIMS Bilaspur, MIMS Jagdalpur — offer seats to NEET qualifiers. Healthcare is severely underserved in CG. A doctor who returns to a Tier 3 city after MBBS has enormous impact, good income, and almost no competition compared to metro cities." },
+  { id:4,  name:"IAS / IPS Officer (UPSC)",           emoji:"🏛️", stream:["arts","any"],         tags:["Arts","Govt Job","High-Prestige"],      entryLPA:"8–12+", midLPA:"16–22+", seniorLPA:"20–30+",   reality:40, time:"3–7 years of serious preparation after graduation", exams:["UPSC Civil Services Exam — Prelims → Mains (9 papers) → Interview","Any graduation degree required (stream does not matter for eligibility)"], paths:["Any graduation + dedicated UPSC preparation (2–4 years)","BA / BCom / BSc — all eligible"], skills:["Current affairs (daily newspaper reading mandatory)","Essay and answer writing in Hindi or English","General Studies (4 GS papers covering wide range)","One optional subject mastery"], honest:"<strong>Most honest fact:</strong> UPSC selects approximately 1,000 candidates from 1 million applicants each year. The salary itself is moderate — the real value is the government-provided housing, car, staff, and extraordinary power to shape policy. Most successful candidates spend 2–4 years of focused preparation. Have a genuine backup plan.", cg:"<strong>From Chhattisgarh:</strong> CG has produced IAS officers from Korba, Bilaspur and Raigarh. CGPSC (State PSC) is a much more accessible alternative — similar prestige within the state, significantly lower competition. CGPSC selects 200–400 officers per year for CG only. This is the more realistic target for most CG students." },
+  { id:5,  name:"Data Scientist / Analyst",           emoji:"📊", stream:["science","commerce"],  tags:["Science","Commerce","Tech"],           entryLPA:"4–9",   midLPA:"12–25",  seniorLPA:"25–55+",   reality:80, time:"4 years degree + 6–12 months skill-building", exams:["JEE / CUET (for college admission)","Google Data Analytics / IBM Data Science certifications (free on Coursera)"], paths:["BTech CSE / IT → Python + ML","BSc Statistics + Python + SQL","BCA + certifications","BCom + Excel + Power BI + SQL (Data Analyst path)"], skills:["Python or R programming","SQL for data querying","Machine Learning basics","Tableau or Power BI for visualisation","Excel (advanced)"], honest:"<strong>Most honest fact:</strong> 'Data Scientist' requires strong statistics + coding foundations. 'Data Analyst' is a more accessible entry with Excel, SQL and Power BI. Entry-level analyst roles at ₹4–6 LPA are realistic from a Tier 2/3 college with genuine skills. This is one of the fastest-growing roles in India right now.", cg:"<strong>From Chhattisgarh:</strong> Remote work has made location entirely irrelevant in this field. A student from Korba who learns Python and SQL seriously can get a remote job with a Bengaluru company without relocating. This is one of the most location-flexible careers available — the skills travel with you." },
+  { id:6,  name:"Lawyer / Advocate",                 emoji:"⚖️", stream:["arts","any"],         tags:["Arts","Law","Govt & Private"],         entryLPA:"2–6",   midLPA:"8–25",   seniorLPA:"30–200+",  reality:62, time:"5 years (BA LLB integrated) or 3 years LLB after graduation", exams:["CLAT (for National Law Universities — NLUs)","CUET / State Law Entrance for other colleges","Bar Council of India exam after degree (mandatory to practice)"], paths:["Class 12 → CLAT → BA LLB 5 years → Practice or corporate law","Any graduation → LLB 3 years → Litigation or corporate role"], skills:["Legal research and case analysis","Drafting contracts and petitions","Oral argument and courtroom procedure","Specialisation in corporate / criminal / family law"], honest:"<strong>Most honest fact:</strong> Law income is extremely uneven. Top corporate lawyers at elite firms earn crores. A general advocate in a small city earns ₹15,000–40,000/month for the first 5 years. The real money is in corporate law at top firms, which requires NLU degrees or top LLB colleges. Local practice in small cities is viable but takes years to build.", cg:"<strong>From Chhattisgarh:</strong> HNLU (Hidayatullah National Law University) in Raipur is one of India's top NLUs — CG students have a home advantage. District courts in Bilaspur, Korba and Raigarh always need competent lawyers. Corporate litigation linked to mining, coal and PSU contracts in CG offers solid local income." },
+  { id:7,  name:"Teacher / Professor",               emoji:"📖", stream:["arts","science","commerce","any"], tags:["Any Stream","Govt Job"],  entryLPA:"2–5",   midLPA:"5–12",   seniorLPA:"10–20",    reality:85, time:"3–4 years degree + B.Ed 2 years + CTET or State TET", exams:["CTET (Central Teacher Eligibility Test)","CGTET / State TET (for state government schools)","UGC NET (for college and university lecturer post)"], paths:["Any BA/BSc/BCom → B.Ed → TET → Government school teaching","Graduation + UGC NET → College lecturer"], skills:["Subject mastery in chosen teaching subject","Classroom communication and management","Lesson planning","Patience and empathy with students"], honest:"<strong>Most honest fact:</strong> Government school teaching (after CTET/State TET) is one of the most stable and respected careers in Tier 3 cities. Salary + DA in CG government schools reaches ₹40,000–60,000/month at mid-career. Private school teaching pays much less. Target government — not private — school jobs here.", cg:"<strong>From Chhattisgarh:</strong> CGVYAPAM recruits hundreds of government teachers regularly. This is one of the most reliable paths to a secure, respected life in Korba or Champa — especially for students from middle-class families who want to stay close to home and serve their community." },
+  { id:8,  name:"Bank PO / Clerk (IBPS / SBI)",      emoji:"🏦", stream:["commerce","any"],      tags:["Commerce","Govt Job","Any Stream"],    entryLPA:"4–7",   midLPA:"8–14",   seniorLPA:"14–22",    reality:90, time:"1–2 years of preparation after graduation", exams:["IBPS PO (Probationary Officer)","IBPS Clerk","SBI PO / SBI Clerk (separate from IBPS)","RBI Grade B (advanced — higher salary)"], paths:["Any graduation → 8–12 months of structured IBPS preparation → Selection"], skills:["Quantitative Aptitude (number series, DI, arithmetic)","Reasoning Ability (puzzles, seating arrangement)","English Language","General and Financial Awareness","Computer Basics"], honest:"<strong>Most honest fact:</strong> Banking is one of the most achievable government careers in India. IBPS PO and SBI PO are competitive (10,000+ vacancies per year nationally) but structured and transparent. Students who prepare consistently for 8–12 months clear them. The job offers excellent stability, pension, housing allowance and deep respect.", cg:"<strong>From Chhattisgarh:</strong> SBI, Bank of Baroda, Central Bank, and all major PSU banks have large offices in Bilaspur, Korba and Raipur. Getting a Bank PO job means you can stay in CG, build a comfortable life, and serve your community. This is one of the most popular and realistic career goals for students from Tier 3 CG cities." },
+  { id:9,  name:"SSC CGL / CHSL (Government Job)",   emoji:"🏅", stream:["any"],                 tags:["Govt Job","Any Stream"],               entryLPA:"4–7",   midLPA:"7–12",   seniorLPA:"12–18",    reality:82, time:"1–2 years of preparation after graduation", exams:["SSC CGL (Combined Graduate Level) — for Grade B and C posts","SSC CHSL — for LDC / DEO posts","SSC MTS (Class 12 onwards — no graduation needed)"], paths:["Any graduation → SSC exam coaching and preparation → Central government post"], skills:["Quantitative Aptitude","Reasoning (verbal and non-verbal)","English language","General Knowledge and Current Affairs","Typing and computer proficiency"], honest:"<strong>Most honest fact:</strong> SSC CGL selects Income Tax Inspectors, Assistant Section Officers, Auditors and Statistical Investigators. These are central government posts with full job security, pension, housing allowance and excellent work-life balance. Competition is high but consistent preparation works — hundreds of students from smaller cities qualify every year.", cg:"<strong>From Chhattisgarh:</strong> Central government offices in Raipur, Bilaspur and Jagdalpur regularly absorb SSC CGL candidates. This career lets you live in CG in a pensioned, respected government position. Extremely popular and realistic goal for students from Korba, Champa and Raigarh." },
+  { id:10, name:"Nursing (BSc / GNM)",               emoji:"💉", stream:["science"],            tags:["Science","Healthcare","Govt & Private"],entryLPA:"2–5",   midLPA:"5–12",   seniorLPA:"10–25",    reality:92, time:"3–4 years BSc Nursing or 3.5 years GNM Diploma", exams:["NEET (for BSc Nursing at government colleges)","State nursing entrance exams","No NEET required for many private nursing colleges"], paths:["Class 12 PCB → BSc Nursing → Government hospital / private hospital","Class 12 PCB → GNM Diploma → Registration → Practice"], skills:["Clinical nursing procedures","Patient communication and care","Medical equipment operation","ICU / OT specialisation (advanced level)"], honest:"<strong>Most honest fact:</strong> Government hospital nurses earn ₹30,000–55,000/month at mid-level. Private hospital starting salaries are lower (₹12,000–20,000/month) but grow with experience and specialisation. International demand from Middle East, UK and Canada for qualified Indian nurses is very high — a real option for those who qualify and want to go abroad.", cg:"<strong>From Chhattisgarh:</strong> AIIMS Raipur, CIMS Bilaspur and government hospitals across CG constantly need qualified nurses. BSc Nursing from a government college in CG (very low fees) followed by a government hospital job is one of the most secure and respected paths for PCB students who want healthcare careers." },
+  { id:11, name:"Civil / Mechanical Engineer",       emoji:"🏗️", stream:["science"],            tags:["Science","Engineering","Govt & Private"],entryLPA:"2–6", midLPA:"6–16",   seniorLPA:"15–35",    reality:74, time:"4 years BTech + optional GATE for PSU", exams:["JEE Main / State CET (for BTech admission)","GATE (for PSU jobs and higher studies — very important in CG)"], paths:["BTech Civil / Mechanical → Private construction or manufacturing company","BTech → GATE exam → PSU (NTPC, BHEL, SAIL, SECL) → Government-level job"], skills:["AutoCAD / Revit / SolidWorks (CAD software)","Site management and supervision","Structural or mechanical design principles","GATE subject preparation (for PSU route)"], honest:"<strong>Most honest fact:</strong> Private company starting salaries are low (₹2–4 LPA) but grow steadily. The real prize is cracking GATE — PSU companies like NTPC, BHEL, SAIL and SECL offer ₹8–12 LPA with full government benefits and pension. GATE rank below 1000 opens PSU doors. This is the path to aim for in CG.", cg:"<strong>From Chhattisgarh:</strong> NTPC Korba, SECL coal operations, SAIL Bhilai, and massive infrastructure projects in CG create exceptional local demand for Civil and Mechanical engineers who pass GATE. You do not need to leave CG for an excellent engineering career — this state has more engineering job opportunities per capita than most states." },
+  { id:12, name:"Digital Marketing Professional",    emoji:"📱", stream:["any"],                 tags:["Any Stream","Creative","Private"],     entryLPA:"2–5",   midLPA:"6–15",   seniorLPA:"15–40+",   reality:87, time:"6 months skill-building + any degree or even no degree", exams:["Google Digital Marketing Certificate (free)","Meta Blueprint — Facebook and Instagram Ads (free)","HubSpot Content Marketing Certificate (free)"], paths:["Any degree + free Google/Meta certifications → Entry-level job","Start Instagram/YouTube to build real portfolio → Freelance from Day 1"], skills:["SEO (Search Engine Optimisation)","Google Ads and Meta Ads management","Content creation and strategy","Email marketing and analytics","Canva for creative assets"], honest:"<strong>Most honest fact:</strong> This is one of the most accessible career paths in India today. You can start learning free on Google Skillshop right now, build a portfolio on Instagram, and get a job within 6 months. The ceiling is also high — a skilled performance marketer at a startup earns ₹15–30 LPA. Completely stream-agnostic.", cg:"<strong>From Chhattisgarh:</strong> Businesses in Korba, Bilaspur and Raipur — shops, hospitals, schools, real estate firms — desperately need digital marketing help. A student who learns this skill can freelance locally, charge ₹5,000–25,000 per client per month, and build real income while still in college. No need to move to a metro." },
+  { id:13, name:"Journalist / Content Writer",       emoji:"✍️", stream:["arts","any"],         tags:["Arts","Creative","Private"],          entryLPA:"2–5",   midLPA:"5–14",   seniorLPA:"12–35+",   reality:68, time:"3 years BA Journalism / Mass Communication", exams:["IIMC entrance (for India's top journalism school in New Delhi)","State mass communication college entrances","No exam needed for freelance content writing"], paths:["BA Journalism / Mass Communication → Media organisation","BA English + strong writing portfolio + practice → Content role","Direct freelance writing — no degree required"], skills:["Writing that is clear, fast and accurate","Research and fact-checking","SEO writing for digital content roles","Video or audio editing for media organisations"], honest:"<strong>Most honest fact:</strong> Traditional print journalism pays poorly (₹15,000–25,000/month at local newspapers). Digital content writing pays much better (₹3–8 LPA for a skilled writer with one year of experience). The real growth is in content strategy and branded content, not newspaper reporting. Start writing online today — Medium, LinkedIn, your own blog.", cg:"<strong>From Chhattisgarh:</strong> Local Hindi and English news channels, newspapers and digital portals are always hiring in Raipur and Bilaspur. Haribhoomi, Nai Dunia and ETV MP-CG recruit locally. For content writing, location is completely irrelevant — you can work remotely from Korba for companies in Mumbai or Bengaluru." },
+  { id:14, name:"Graphic / UI-UX Designer",          emoji:"🎨", stream:["any"],                 tags:["Any Stream","Creative","Private"],     entryLPA:"2–5",   midLPA:"6–18",   seniorLPA:"18–45+",   reality:78, time:"6–12 months of dedicated learning + portfolio building", exams:["NIFT entrance exam (for formal fashion and design degree)","NID entrance (for product and communication design)","No exam required for self-taught designers — portfolio is everything"], paths:["NIFT or NID → Top design career","Any degree + Figma + Canva + Adobe → Freelance or agency","BFA Design from arts college"], skills:["Figma (industry-standard UI design tool)","Adobe Photoshop and Illustrator","User research and wireframing (for UX roles)","Portfolio on Behance"], honest:"<strong>Most honest fact:</strong> A self-taught designer with a strong Behance portfolio earns more than a design graduate with a weak portfolio. Employers look at your work — not your degree. Start practising Figma and Canva today. Build 5 real projects: redesign existing apps, create posters for local businesses, design a complete brand identity.", cg:"<strong>From Chhattisgarh:</strong> Freelance design is entirely location-independent. A designer in Raigarh working on Fiverr or with direct clients earns the same as one in Mumbai. Local demand exists too — schools, hospitals, businesses and political parties in CG constantly need design work. This career can start today, from anywhere." },
+  { id:15, name:"Pharmacist",                        emoji:"💊", stream:["science"],            tags:["Science","Healthcare","Govt & Private"],entryLPA:"2–5", midLPA:"5–10",   seniorLPA:"10–20",    reality:83, time:"4 years B.Pharm or 2 years D.Pharm diploma", exams:["State Pharmacy Entrance (for B.Pharm government college)","GPAT (for M.Pharm and research)","Drug Inspector exam (for government regulatory role)"], paths:["Class 12 PCB or PCM → D.Pharm → Open own medical store / hospital","Class 12 → B.Pharm → Hospital pharmacy / pharma company / drug inspector"], skills:["Drug knowledge and safe dispensing","Patient counselling and medication advice","Quality control in pharma manufacturing","Pharmaceutical marketing (for industry roles)"], honest:"<strong>Most honest fact:</strong> D.Pharm (2 years, low fees at government pharmacy colleges) lets you open your own medical store — a very viable, stable, respected career in any town or city. Government drug inspector posts are competitive but highly rewarding. Pharma company medical rep roles offer ₹3–6 LPA to start.", cg:"<strong>From Chhattisgarh:</strong> Every town in CG needs pharmacists. Opening a medical store in Korba, Champa or Raigarh after D.Pharm is a completely realistic path to ₹35,000–80,000/month income within 3–5 years. Government pharmacy jobs at district hospitals are regularly advertised through CGVYAPAM — very accessible for PCB students." },
+  { id:16, name:"Architect",                         emoji:"🏙️", stream:["science"],            tags:["Science","Engineering","Creative"],    entryLPA:"3–7",   midLPA:"8–20",   seniorLPA:"20–60+",   reality:65, time:"5 years B.Arch degree", exams:["NATA (National Aptitude Test in Architecture) — taken after Class 12","JEE Paper 2 (for NIT architecture programmes)"], paths:["Class 12 PCM → NATA score + Class 12 marks → B.Arch admission → Architecture firm or own practice"], skills:["AutoCAD / Revit / SketchUp (design software)","Design thinking and spatial reasoning","Site management and construction knowledge","3D visualisation and rendering"], honest:"<strong>Most honest fact:</strong> Architecture is a 5-year degree with a slow salary start (₹15,000–25,000/month initially). Growth is good at 5–10 years — experienced architects earn well, especially in real estate and urban development. Requires genuine creative and technical passion to sustain through the long degree and early career.", cg:"<strong>From Chhattisgarh:</strong> CG is undergoing massive infrastructure development — smart city projects in Raipur, Naya Raipur township, industrial expansion in Korba and Bhilai. NMDC and the state government regularly commission design work. Architects with CG-specific market knowledge have strong local demand." },
+  { id:17, name:"Psychologist / Counsellor",         emoji:"🧠", stream:["arts","science"],      tags:["Arts","Healthcare","Private"],         entryLPA:"2–5",   midLPA:"5–12",   seniorLPA:"12–30+",   reality:70, time:"3 years BA Psychology + 2 years MA + RCI registration for clinical practice", exams:["CUET / BA Psychology entrance at university","RCI (Rehabilitation Council of India) registration mandatory for clinical psychologists"], paths:["BA Psychology → MA Clinical Psychology → Private practice or hospital","BA → MA → School counsellor / HR psychology role (no RCI needed)","BA → MA → PhD → Research or academia"], skills:["Listening and structured empathy","Psychological assessment techniques","Counselling methodologies (CBT, person-centred)","Case documentation and report writing"], honest:"<strong>Most honest fact:</strong> Income in private psychology practice takes years to build. School counsellors earn ₹15,000–30,000/month. Clinical psychologists with established private practice earn ₹40,000–1,20,000/month after 5–10 years. HR psychology and corporate wellness roles pay ₹5–15 LPA — faster income growth than clinical practice.", cg:"<strong>From Chhattisgarh:</strong> Mental health services are severely underserved in CG. A qualified counsellor in Korba or Bilaspur has virtually no competition and enormous community need. Schools, coal company employees and families dealing with stress all need support. The societal impact here is extraordinary." },
+  { id:18, name:"BBA + MBA (Management)",            emoji:"💼", stream:["commerce","any"],      tags:["Commerce","Business","Private"],       entryLPA:"3–7",   midLPA:"8–20",   seniorLPA:"20–80+",   reality:72, time:"3 years BBA + 2 years MBA = 5 years total", exams:["CAT (for IIMs — India's most competitive MBA entrance)","MAT / XAT / SNAP / CMAT (for other MBA colleges)","CUET (for BBA undergraduate entry)"], paths:["BBA → CAT preparation → IIM or top MBA → Corporate career","BCom / BA + 2 years work experience → CAT → MBA","BBA → Direct management trainee at company (no MBA needed)"], skills:["Communication and leadership under pressure","Financial analysis and modelling","Marketing and strategy fundamentals","Excel / PowerPoint / data interpretation","Networking and relationship building"], honest:"<strong>Most honest fact:</strong> MBA from IIM (₹20–30 LPA average placement) is a genuine life-changer. MBA from an unknown college charging ₹5–10 lakh in fees may not justify the investment. College matters enormously in MBA. A BBA + work experience + strong CAT score is the right sequence. Do not take large loans for unknown MBA colleges.", cg:"<strong>From Chhattisgarh:</strong> NIT Raipur Management, Symbiosis Raipur and KIIT offer decent BBA programmes. NTPC, SECL and large CG-based companies hire management trainees locally. The MBA-to-PSU path (joining a public sector company after MBA) is particularly strong in a resource-heavy state like CG." },
+  { id:19, name:"Defence Officer (NDA / CDS)",       emoji:"⚔️", stream:["science","any"],       tags:["Govt Job","Any Stream"],               entryLPA:"7–12+", midLPA:"12–18+", seniorLPA:"18–25+",   reality:55, time:"3–4 years NDA training after Class 12 or CDS after graduation", exams:["NDA exam — for Class 12 students aiming for Army, Navy or Air Force","CDS (Combined Defence Services) — after graduation for all three services","AFCAT — for Air Force commissioned officer after graduation"], paths:["Class 12 PCM → NDA exam → 3 years joint training → Commissioned Officer","Any graduation → CDS exam → IMA / OTA training → Commissioned Officer"], skills:["Physical fitness (mandatory and tested rigorously)","NDA/CDS written exam preparation (Maths + English + GK)","SSB Interview preparation (5-day psychological and physical selection)","Leadership under pressure"], honest:"<strong>Most honest fact:</strong> NDA selection is rigorous — written exam followed by SSB Interview (5-day psychological and physical evaluation). Only about 1 in 50 SSB aspirants is recommended. But those who join get a life of purpose, complete financial security, free housing and one of India's most respected careers. Pension after 20 years of service is for life.", cg:"<strong>From Chhattisgarh:</strong> CG has strong representation in the Army, particularly in infantry regiments. Physical fitness culture in smaller cities is a genuine advantage in NDA/CDS selection. NDA coaching is available in Raipur and Bilaspur. This is among the most respected careers in every Tier 3 city in CG." },
+  { id:20, name:"ITI / Polytechnic (Skilled Trades)",emoji:"🔧", stream:["any"],                 tags:["Any Stream","Govt & Private","Technical"],entryLPA:"1.5–4",midLPA:"4–9",   seniorLPA:"8–18",     reality:95, time:"1–2 years ITI or 3 years Polytechnic Diploma after Class 10", exams:["State ITI entrance (merit-based in CG — Class 10 marks)","Polytechnic entrance (CGCET)","NTPC / BHEL / SECL apprenticeship selection (after ITI)"], paths:["Class 10 → ITI (Electrician / Fitter / Welder / Machinist) → NTPC / SECL / Private company","Class 10 or 12 → Polytechnic Diploma → Engineer designation with work experience"], skills:["Trade-specific technical skills (depends on chosen ITI trade)","Industrial safety protocols","Machine and equipment operation","Maintenance procedures"], honest:"<strong>Most honest fact:</strong> NTPC Korba, SECL, SAIL Bhilai and hundreds of factories in CG hire ITI-qualified workers as permanent employees with full government-level benefits, overtime and career advancement. An ITI Electrician at NTPC earns ₹35,000–55,000/month total compensation at mid-career. No education debt. No years of uncertainty. This path is deeply underrated.", cg:"<strong>From Chhattisgarh:</strong> This path was built for CG. NTPC Korba, BHEL Raipur, SECL mines and SAIL Bhilai hire hundreds of ITI-qualified technicians every year. Government ITI colleges in Korba and Bilaspur charge almost nothing in fees. This is genuinely one of the highest-ROI careers available to a student from any Tier 3 CG city." },
+  { id:21, name:"Social Worker / NGO Professional",  emoji:"🤲", stream:["arts","any"],         tags:["Arts","Any Stream","Social Impact"],   entryLPA:"2–4",   midLPA:"5–12",   seniorLPA:"10–25",    reality:75, time:"3 years BSW or 2 years MSW after any graduation", exams:["CUET / State BSW entrance","TISS entrance (for MSW — highly competitive but very worth it)"], paths:["BSW → NGO / social enterprise / government social welfare department","Any graduation → MSW → UNICEF / UN agencies / corporate CSR roles"], skills:["Community development and mobilisation","Grant writing and project proposals","Research and impact documentation","Communication in local languages (Hindi, Chhattisgarhi)"], honest:"<strong>Most honest fact:</strong> Social work salaries at small Indian NGOs start low (₹15,000–30,000/month). But TISS MSW graduates go to UN agencies, international NGOs and government positions earning ₹8–20 LPA. Corporate CSR roles at NTPC, SAIL and Tata pay ₹5–10 LPA and are excellent for CG-based social workers who understand the local context.", cg:"<strong>From Chhattisgarh:</strong> CG PSUs — NTPC, SECL, SAIL — spend hundreds of crores on CSR every year and actively hire social work professionals to implement programmes in CG communities. This is a genuinely high-impact career that lets you help your own community while earning a decent salary." },
+  { id:22, name:"Commercial Pilot",                  emoji:"✈️", stream:["science"],            tags:["Science","Private","High-Prestige"],   entryLPA:"8–18",  midLPA:"20–40",  seniorLPA:"40–80+",   reality:42, time:"2–3 years CPL training after Class 12 PCM", exams:["Class 12 PCM mandatory (no exceptions)","DGCA India CPL examinations — 9 separate papers","200 flight hours mandatory before commercial licence"], paths:["Class 12 PCM → Flying school India or abroad → CPL licence → Airline cadet programme → First Officer"], skills:["PCM fundamentals (aviation physics is applied physics)","Radio communication and ATC procedures","Navigation, meteorology and flight planning","Multi-crew communication"], honest:"<strong>Most honest fact:</strong> Flying school fees are ₹35–60 lakh in India and ₹45–80 lakh abroad. Airline hiring is deeply cyclical — IndiGo and Air India hire heavily during expansion and barely at all during downturns. If your family can genuinely afford CPL without large unsecured loans and you have strong PCM + absolute passion, the long-term career is excellent.", cg:"<strong>From Chhattisgarh:</strong> A flying training organisation operates in Raipur. NDA Air Force route is a fully funded alternative — the government pays for your training and you serve as a commissioned Air Force officer. For students from Korba or Bilaspur whose families cannot fund CPL privately, Air Force via NDA or AFCAT is the realistic path to flying." },
+  { id:23, name:"Fashion Designer",                  emoji:"👗", stream:["any"],                 tags:["Any Stream","Creative","Private"],     entryLPA:"2–5",   midLPA:"5–15",   seniorLPA:"15–60+",   reality:62, time:"4 years NIFT or 3 years private design college", exams:["NIFT entrance exam — design aptitude test + situation test (creative task)","NID entrance","PEARL / Symbiosis design college entrance"], paths:["NIFT → Top fashion brand or own label","Private design college → Small brand / boutique / export house","Any background → Short design course + portfolio → Local client work"], skills:["Sketching, pattern making and garment construction","Textile and fabric knowledge","Trend forecasting and mood boards","Portfolio development (essential for all roles)"], honest:"<strong>Most honest fact:</strong> NIFT Delhi graduates are placed at Zara, H&M, Myntra and leading Indian design houses. Private college graduates have a much harder path with lower starting salaries. The top of this career is very real — but requires either NIFT-level entry or genuine entrepreneurial drive to build your own brand.", cg:"<strong>From Chhattisgarh:</strong> CG has a rich textile tradition — Kosa silk, Chanderi weaves, tribal craft patterns. A fashion designer from CG who specialises in and modernises these traditional crafts has a genuine national and international niche. Government Ministry of Textiles programmes and export houses actively support this kind of work." },
+  { id:24, name:"Event Manager",                     emoji:"🎪", stream:["any"],                 tags:["Any Stream","Creative","Private"],     entryLPA:"2–5",   midLPA:"5–12",   seniorLPA:"12–35+",   reality:76, time:"3 years BBA Event Management or any degree + experience", exams:["Amity / Pearl event management entrance","No formal exam for most entry-level roles — internship and portfolio matter most"], paths:["BBA Event Management → Event company → Senior planner","Any graduation → Event company internship → Self-employment or own firm"], skills:["Vendor management and logistics coordination","Budget management and cost negotiation","Client communication and expectation management","Social media and event marketing"], honest:"<strong>Most honest fact:</strong> This career rewards hustle more than degrees. The most successful event managers built their reputation through actual events — weddings, corporate conferences, political rallies. Starting salary is low (₹12,000–20,000/month). Own business by age 28–30 is realistic for driven, organised individuals who love the energy.", cg:"<strong>From Chhattisgarh:</strong> Weddings, political events, corporate functions and cultural festivals in CG are a multi-crore industry. A skilled event manager based in Bilaspur or Raipur serving the entire state market has excellent income potential with very low competition compared to metro city markets. Start by assisting at local events immediately." },
+  { id:25, name:"Biotechnology / Life Sciences",     emoji:"🧬", stream:["science"],            tags:["Science","Research","Private"],        entryLPA:"2–5",   midLPA:"6–14",   seniorLPA:"14–30+",   reality:60, time:"4 years BTech or BSc Biotechnology", exams:["JEE / State CET (for BTech Biotech)","CUET (for BSc Biotechnology)","CSIR NET / GATE BT (for research career or PSU entry)"], paths:["BSc / BTech Biotech → MSc / MTech → Research lab or pharma company","BTech → GATE → PSU or PhD programme in India or abroad"], skills:["Lab techniques (PCR, cell culture, ELISA, gel electrophoresis)","Bioinformatics (for higher-salary data-biology hybrid roles)","Scientific writing and research methodology"], honest:"<strong>Most honest fact:</strong> Biotechnology starting salaries at private companies are genuinely low (₹2–4 LPA). Real income growth comes with a Master's degree or PhD. The exception is bioinformatics — combining biology with Python and data science opens higher-salary data roles (₹6–15 LPA) much faster. If you love biology and also enjoy computers, this hybrid path is very underrated.", cg:"<strong>From Chhattisgarh:</strong> Agricultural biotechnology and herbal medicine research relevant to CG's forest and tribal heritage is a genuinely unexplored niche. AIIMS Raipur and NIT Raipur have active research programmes. For PCB students who want science careers without the NEET path, biotechnology is a strong alternative." },
+  { id:26, name:"HR Manager / Human Resources",      emoji:"👥", stream:["arts","commerce","any"],tags:["Commerce","Any Stream","Private"],    entryLPA:"2–5",   midLPA:"6–16",   seniorLPA:"15–40+",   reality:78, time:"3 years BBA or BA + MBA HR or PGDM", exams:["CAT / MAT / XAT (for MBA with HR specialisation)","No specific entrance — degree + communication skills + internship experience matter"], paths:["BBA / BA → MBA HR → Corporate HR generalist → HRBP → HR Director","Any graduation → SHRM or NIPM certification → HR coordinator → HR manager"], skills:["Recruitment and talent acquisition","Payroll, compliance and labour laws","Communication, empathy and conflict resolution","Excel and HRMS software (SAP SuccessFactors, Workday)"], honest:"<strong>Most honest fact:</strong> HR is a deeply misunderstood career. Students think it is soft — Senior HR Directors at large companies earn ₹30–60 LPA. The path requires strong business understanding, not just people skills. Starting in recruitment at ₹2–4 LPA and systematically moving to HR business partnering is the standard progression.", cg:"<strong>From Chhattisgarh:</strong> NTPC, SECL, SAIL and ESSAR all have large HR departments in CG. MBA colleges in Raipur offer HR specialisation. This is a viable career path that does not require relocating to a metro — large industrial CG companies have genuine HR needs." },
+  { id:27, name:"Animator / Game Designer",          emoji:"🎮", stream:["any"],                 tags:["Any Stream","Creative","Private"],     entryLPA:"2–5",   midLPA:"6–15",   seniorLPA:"15–40+",   reality:65, time:"2–3 years MAAC/Arena animation course or 3–4 years BSc/BDes Animation", exams:["NID / NIFT for design-adjacent programmes","No entrance for MAAC or Arena animation courses — portfolio and aptitude interview only"], paths:["Short MAAC / Arena course (2–3 years) → Freelance or animation studio","BSc / BDes Animation → OTT platform / gaming company / advertising agency"], skills:["Adobe After Effects and Premiere","Maya or Blender for 3D animation","Unity or Unreal Engine for game design","Concept art and storyboarding"], honest:"<strong>Most honest fact:</strong> India's gaming industry (₹30,000 crore, growing fast) genuinely needs animators and game designers. Quality of portfolio on ArtStation matters far more than degree. 2 years of consistent self-practice with YouTube tutorials + a strong portfolio equals real employment at ₹4–8 LPA.", cg:"<strong>From Chhattisgarh:</strong> Animation and game design is entirely remote — a game designer from Korba earning ₹8–15 LPA working remotely for a Bengaluru studio is completely realistic. The barrier is skills and portfolio quality, not geography. Start practising Blender or Figma today — both are free." },
+  { id:28, name:"Actuarial Scientist",               emoji:"📐", stream:["science","commerce"],  tags:["Science","Commerce","Finance"],        entryLPA:"5–10",  midLPA:"15–35",  seniorLPA:"40–100+",  reality:52, time:"5–10 years for full qualification (15 IAI exams over several years)", exams:["IAI (Institute of Actuaries of India) — 15 progressive papers","IFoA (UK Institute and Faculty of Actuaries) — internationally recognised"], paths:["BSc Maths / Statistics / BTech → IAI exam registration → Insurance or consulting company employment while studying"], skills:["Advanced Mathematics and Probability theory","Statistical modelling and risk analysis","Excel, R and Python","Financial product and insurance understanding"], honest:"<strong>Most honest fact:</strong> Actuary is one of India's highest-paying but almost entirely unknown careers. A fully qualified Fellow of IAI earns ₹40–80 LPA average. But qualifying takes 7–10 years on average (15 progressively harder exams). If you love Maths deeply, are highly patient and systematic, and discover this career early, you have a significant head start over competitors.", cg:"<strong>From Chhattisgarh:</strong> Actuarial science eventually requires relocating to insurance or consulting hubs (Mumbai, Bengaluru, Delhi). But every exam can be prepared for from Bilaspur or Korba — all papers are online. Mathematically strong CG students who discover this path early have a genuine competitive advantage." },
+  { id:29, name:"Supply Chain / Logistics Manager",  emoji:"🚛", stream:["commerce","any"],      tags:["Commerce","Any Stream","Private"],     entryLPA:"3–6",   midLPA:"8–18",   seniorLPA:"18–45+",   reality:82, time:"3 years BBA / BTech + optional MBA Supply Chain", exams:["No specific entrance — degree + APICS CSCP or Six Sigma certification preferred","CAT / MAT (for MBA Supply Chain)"], paths:["BBA / BTech Industrial → Supply chain executive → Manager","BCom → Logistics company → Operations manager","BTech Mechanical → Manufacturing company operations"], skills:["Inventory management and demand forecasting","ERP systems (SAP, Oracle)","Vendor and supplier management","Data analysis and Excel-based reporting"], honest:"<strong>Most honest fact:</strong> Supply chain is invisible to most students — but it is one of the highest-demand fields as India's manufacturing and e-commerce sectors grow. Amazon, Flipkart, Delhivery and every FMCG company urgently need supply chain professionals. Salary growth after 5 years is steep.", cg:"<strong>From Chhattisgarh:</strong> CG is a major logistics hub — coal, steel, and cement move through the state in enormous volumes. SECL, NTPC, SAIL and NMDC all have large supply chain operations based in CG. This is an excellent local career path for students with commerce or engineering backgrounds who want to stay in CG." },
+  { id:30, name:"AYUSH Doctor (BAMS / BHMS)",        emoji:"🌿", stream:["science"],            tags:["Science","Healthcare","Govt Job"],     entryLPA:"4–8",   midLPA:"8–16",   seniorLPA:"15–28",    reality:80, time:"5.5 years BAMS (Ayurveda) or 5.5 years BHMS (Homeopathy) after Class 12", exams:["NEET UG — mandatory for BAMS and BHMS (lower qualifying rank needed than MBBS)"], paths:["Class 12 PCB → NEET → BAMS (Ayurveda) → Government hospital appointment","Class 12 PCB → NEET → BHMS (Homeopathy) → Government or private practice"], skills:["Ayurvedic or Homeopathic clinical medicine","NEET preparation (PCB syllabus)","Government exam preparation for CGVYAPAM state health posts"], honest:"<strong>Most honest fact:</strong> BAMS requires NEET but needs a significantly lower rank than MBBS — making it genuinely accessible to sincere PCB students who narrowly miss MBBS government cutoffs. Government AYUSH doctors are recruited in CG through CGVYAPAM at respectable starting salaries with full government benefits.", cg:"<strong>From Chhattisgarh:</strong> CG government regularly recruits AYUSH doctors for primary health centres across the state — especially in tribal areas of Bastar and Sarguja where conventional doctors are scarce. A BAMS or BHMS doctor from CG who chooses government service has exceptional job security, deep community respect, and genuine impact." },
+  { id:31, name:"Content Creator / YouTuber",        emoji:"🎥", stream:["any"],                 tags:["Any Stream","Creative","Self-employed"],entryLPA:"0–3",  midLPA:"5–20",   seniorLPA:"20–200+",  reality:46, time:"1–3 years to build a monetisable audience consistently", exams:["No exam — YouTube monetisation requires 1,000 subscribers + 4,000 watch hours","Instagram does not have a formal threshold — brand deals start much earlier"], paths:["Start a focused channel on a topic you know deeply → Build genuine audience → Monetise through ads + brand deals + paid courses or workshops"], skills:["Video shooting and editing (CapCut, DaVinci Resolve, Premiere — start with CapCut, it is free)","Scripting, storytelling and thumbnail design","Understanding YouTube and Instagram algorithm basics","Consistency over 2+ years — this is the hardest skill"], honest:"<strong>Most honest fact:</strong> 80% of creators earn under ₹10,000/month. The 20% who earn serious money treated it like a business — specific niche, consistent posting, community building, multiple income streams. Build this alongside a stable career or skill, not instead of one, until income is proven and growing.", cg:"<strong>From Chhattisgarh:</strong> CG Hindi-language content — education, local news, culture, career guidance — is genuinely underserved on YouTube and Instagram. A creator making honest career guidance content for CG students in their language can build an audience of lakhs with very low competition. This is a real gap in the market." },
+  { id:32, name:"Electrician / Electrical Tech (ITI)",emoji:"⚡", stream:["any"],               tags:["Any Stream","Govt & Private","Technical"],entryLPA:"1.5–3.5",midLPA:"4–8", seniorLPA:"8–18",     reality:96, time:"2 years ITI Electrician trade after Class 10", exams:["State ITI entrance (merit-based on Class 10 marks)","NTPC / BHEL / SECL apprenticeship selection after ITI graduation"], paths:["Class 10 → ITI Electrician (2 years) → NTPC or SECL apprenticeship → Permanent employee"], skills:["Electrical wiring, installation and testing","PLC and industrial automation basics","HV and LV switchgear maintenance","Industrial safety protocols (OSHA, NEBOSH basic)"], honest:"<strong>Most honest fact:</strong> An ITI Electrician employed at NTPC Korba earns ₹35,000–55,000/month total compensation (basic salary + DA + HRA + allowances) at mid-career. With a private contractor or own electrical business, income is even higher. This path has zero glamour and enormous stability — one of the most undervalued routes available.", cg:"<strong>From Chhattisgarh:</strong> NTPC Korba — one of India's largest power plants — regularly absorbs ITI Electricians as apprentices and then permanent employees. Government ITI Korba offers this 2-year course at almost no fees. This is the single most direct path from Korba → stable, well-paying, government-level career without education debt." },
+  { id:33, name:"Dietitian / Nutritionist",          emoji:"🥗", stream:["science"],            tags:["Science","Healthcare","Private"],      entryLPA:"2–5",   midLPA:"5–12",   seniorLPA:"10–25",    reality:72, time:"3–4 years BSc Nutrition / Food Science / Home Science", exams:["State BSc Nutrition entrance","Indian Dietetic Association registration (after degree, for clinical practice)"], paths:["Class 12 PCB → BSc Nutrition / Dietetics → Hospital dietitian or clinical practice","BSc → MSc → Research / corporate wellness / sports nutrition consulting"], skills:["Clinical nutrition assessment and diet planning","Patient counselling and behaviour change","Food science and safety fundamentals","Building online practice (Instagram, Practo)"], honest:"<strong>Most honest fact:</strong> Hospital dietitian starting salaries are low (₹15,000–25,000/month). The real income growth is in private practice — corporate wellness, sports nutrition, online consulting. An online nutrition practice via Instagram and Practo can generate ₹50,000–1,50,000/month within 5 years. Location-independent income is genuinely possible.", cg:"<strong>From Chhattisgarh:</strong> NTPC and SECL employee hospitals and canteens create institutional demand for dietitians in CG. Sports nutrition for the growing fitness culture in Bilaspur and Raipur is also emerging. Very few trained nutritionists practice in smaller CG cities — low competition, real need." },
+  { id:34, name:"Environmental Science / Green Energy",emoji:"🌱", stream:["science","any"],    tags:["Science","Future-Ready","Govt & Private"],entryLPA:"3–6", midLPA:"7–16",   seniorLPA:"15–35",    reality:73, time:"3–4 years BSc Environmental Science or BTech Renewable Energy", exams:["State or university entrance for BSc","GATE Environmental Engineering (for PSU jobs and higher studies)","PSU exams (NTPC, NHPC, SECI for solar/renewable energy roles)"], paths:["BSc Environmental Science → NGO / CG Pollution Control Board / EIA consulting firm","BTech Renewable Energy → Solar or wind energy company → PSU assignment"], skills:["Environmental impact assessment (EIA)","GIS and remote sensing software","Renewable energy systems design basics","Environmental law and policy knowledge"], honest:"<strong>Most honest fact:</strong> India's commitment to 500 GW renewable energy by 2030 means this field will grow enormously over the next decade. NTPC is building large solar parks nationally and in CG. State Pollution Control Boards hire continuously. Early entry in an emerging field gives you a real first-mover advantage.", cg:"<strong>From Chhattisgarh:</strong> CG has enormous renewable energy potential — solar, small hydro and biomass. NTPC is actively commissioning solar parks in CG. The State Pollution Control Board hires environmental scientists for coal mine and industrial compliance work. This career aligns perfectly with CG's industrial economy transitioning toward clean energy." },
+  { id:35, name:"Statistician / Data Analyst (BSc)", emoji:"📈", stream:["science","commerce"],  tags:["Science","Commerce","Finance"],        entryLPA:"3–7",   midLPA:"8–18",   seniorLPA:"18–45",    reality:80, time:"3 years BSc Statistics + certifications or 2 years MSc", exams:["CUET / State BSc Statistics entrance","ISI Kolkata entrance (elite statistics institute — extremely competitive)","CMI Chennai entrance (for statistics + CS combined)"], paths:["BSc Statistics → Python + SQL + Power BI → Data Analyst role","BSc → ISI MStat → Government Statistical Service or research organisation"], skills:["Statistics and probability (strong foundation)","Python or R for statistical computing","SQL for database querying","Data visualisation (Power BI, Tableau)","Machine learning basics (adds significant value)"], honest:"<strong>Most honest fact:</strong> BSc Statistics is the most underrated path to a data career in India. It gives a stronger mathematical foundation than most BCA or even BTech CS graduates. Adding Python and SQL skills after BSc Statistics takes 3–4 months. The combination leads to Data Analyst roles at ₹4–8 LPA even from a Tier 3 college.", cg:"<strong>From Chhattisgarh:</strong> Government Statistical Service, NSSO and state data collection agencies hire statisticians for CG-level work. Private data roles are fully remote-friendly. An excellent path for mathematically strong students in CG who want tech-adjacent careers without the engineering entrance examination pressure." },
+  { id:36, name:"CGPSC Officer (State Civil Services)",emoji:"🗳️", stream:["arts","any"],      tags:["Arts","Govt Job","Any Stream"],         entryLPA:"7–10+", midLPA:"14–20+", seniorLPA:"18–28+",   reality:68, time:"3 years graduation + 2–4 years CGPSC preparation", exams:["CGPSC (Chhattisgarh Public Service Commission) — Prelims + Mains + Interview","CGVYAPAM for lower-level government posts in CG"], paths:["BA Political Science / History / any subject → CGPSC preparation → Deputy Collector / DSP / Block Development Officer"], skills:["Current affairs — CG and national level (daily newspaper reading essential)","Essay and answer writing in Hindi or English","CGPSC syllabus — General Studies covering CG history, culture, economy, geography","Optional subject mastery (History, Geography, Public Administration most popular)"], honest:"<strong>Most honest fact:</strong> CGPSC is significantly more accessible than UPSC — selecting 200–400 officers annually for CG only. A Deputy Collector or DSP from CG earns a total compensation package (salary + housing + perks) worth ₹60,000–1,20,000/month equivalent value. Extremely prestigious and impactful career that keeps you in your home state.", cg:"<strong>From Chhattisgarh:</strong> CGPSC is specifically designed for CG students — the syllabus includes CG history, culture, tribal society, economy and geography. A student from Korba or Bilaspur who knows CG intimately has a natural advantage. CG Civil Services Institute in Raipur provides free and subsidised coaching for CGPSC aspirants." },
+  { id:37, name:"Hotel Management / Hospitality",    emoji:"🏨", stream:["any"],                 tags:["Any Stream","Private","Service"],      entryLPA:"2–5",   midLPA:"6–15",   seniorLPA:"15–40",    reality:76, time:"3 years BHMCT degree or 1–2 years craft course", exams:["NCHM JEE (National Council Hotel Management entrance) — for IHM government institutes","State hotel management college entrance exams"], paths:["Class 12 → NCHM JEE → IHM (government hotel management institute — very affordable) → 5-star hotel career","Class 12 → State HM college → Hospitality operations"], skills:["Front office management and guest relations","Food and beverage service and management","Housekeeping operations","F&B cost control (for management track roles)"], honest:"<strong>Most honest fact:</strong> IHM graduates placed at Taj, Marriott and Hilton start at ₹18,000–25,000/month but rise quickly with international postings. Private hotel management college graduates start lower and grow more slowly. The international opportunity is genuinely transformative — Middle East and cruise line hospitality pays ₹2–8 lakh/month in-hand for experienced professionals.", cg:"<strong>From Chhattisgarh:</strong> CG tourism — Chitrakote Falls, Bastar tribal culture, Sirpur heritage — is being actively developed by the state government. New resorts, heritage hotels and eco-tourism properties are opening and need trained hospitality staff. This is a growing local opportunity that very few CG students are currently pursuing." },
+  { id:38, name:"Fitness Trainer / Sports Coach",    emoji:"🏋️", stream:["any"],               tags:["Any Stream","Self-employed","Private"], entryLPA:"1.5–4", midLPA:"4–10",   seniorLPA:"10–30+",   reality:78, time:"1–2 years fitness certification or 3 years BSc Physical Education", exams:["BSc Physical Education entrance (state sports universities)","ACE / ISSA / NASM certification (internationally recognised, taken online)","SGFI coaching certification (for school coaching roles)"], paths:["BSc Physical Education → School sports teacher / government PE teacher (CGVYAPAM)","Short NASM / ISSA certification → Gym trainer → Online coaching → Own studio"], skills:["Exercise science and anatomy fundamentals","Personalised programme design","Nutrition basics for sports performance","Online coaching tools and Instagram content for client acquisition"], honest:"<strong>Most honest fact:</strong> A gym trainer at a premium fitness centre earns ₹15,000–25,000/month. An online fitness coach with 5,000 engaged Instagram followers earns ₹60,000–2,00,000/month. The platform is the leverage. Students who combine genuine fitness knowledge with systematic online presence building are creating high-income careers in this space.", cg:"<strong>From Chhattisgarh:</strong> Fitness culture in Korba, Bilaspur and Raipur is growing rapidly. New gyms are opening every year. Government PE teacher recruitment happens through CGVYAPAM. Khelo India government sports programme creates coaching opportunities across CG districts for qualified coaches." },
+  { id:39, name:"Public Health Professional",        emoji:"🏥", stream:["science","arts"],      tags:["Science","Arts","Healthcare"],         entryLPA:"3–7",   midLPA:"8–18",   seniorLPA:"15–35",    reality:72, time:"3 years BSc + 2 years MPH or 2 years MBA Hospital Administration", exams:["AIIMS MPH entrance","TISS MPH entrance (competitive — one of India's best public health programmes)","State BSc Public Health entrance"], paths:["BSc Public Health / Community Health → State NHM / government health department / international NGO","MBBS or Nursing + MPH → Senior public health programme management roles"], skills:["Epidemiology and biostatistics basics","Health programme planning and monitoring","Research design and data analysis","Community communication in local languages"], honest:"<strong>Most honest fact:</strong> Public health became one of India's most important careers after COVID-19. WHO, UNICEF, Gates Foundation India and state health departments all hire MPH graduates. Starting pay is moderate but international organisations pay ₹10–25 LPA at mid-level. TISS MPH is particularly respected nationally.", cg:"<strong>From Chhattisgarh:</strong> National Health Mission CG runs one of India's largest rural health programmes and regularly recruits public health professionals at district and state levels. Working in public health in CG means directly improving healthcare for millions in tribal and rural communities — with a genuine government salary and career progression." },
+  { id:40, name:"Occupational Therapist",            emoji:"🤸", stream:["science"],            tags:["Science","Healthcare","Private"],      entryLPA:"2–5",   midLPA:"5–12",   seniorLPA:"10–25",    reality:70, time:"4.5 years BOT (Bachelor of Occupational Therapy) degree", exams:["State health university entrance — some states use NEET score, others have separate OT entrance"], paths:["Class 12 PCB → BOT degree → Government hospital / private rehabilitation centre / special school"], skills:["Patient assessment and functional evaluation","Therapeutic activity design and planning","Assistive technology and device training","Documentation and clinical case management"], honest:"<strong>Most honest fact:</strong> Occupational therapy helps patients with physical disabilities, children with autism and ADHD, and stroke survivors regain independence in daily life. Demand is growing significantly with increased awareness. Government hospitals, corporate hospitals and special schools all hire OTs. International opportunities — Canada and Australia — are genuinely strong for qualified Indian OTs.", cg:"<strong>From Chhattisgarh:</strong> Industrial accidents in coal mining, stroke rehabilitation and special education for tribal children create genuine local demand for OTs in CG. Very few trained occupational therapists practice in smaller CG cities — low competition, high community need, and real salary premium for the first qualified OT in a district." }
+];
+
+var currentFilter = 'all';
+
+function parseStartingSalary(entryLPA) {
+  var nums = (entryLPA || '').match(/\d+(\.\d+)?/g);
+  if (!nums || nums.length === 0) return 0;
+  return parseFloat(nums[0]) || 0;
+}
+
+function realityColor(r) {
+  if (r >= 85) return '#1D9E75';
+  if (r >= 65) return '#EF9F27';
+  return '#E24B4A';
+}
+function realityLabel(r) {
+  if (r >= 90) return 'Very Accessible';
+  if (r >= 75) return 'Accessible';
+  if (r >= 60) return 'Moderate';
+  if (r >= 45) return 'Competitive';
+  return 'Very Tough';
+}
+function streamBg(stream) {
+  if (stream.includes('science') && !stream.includes('commerce') && !stream.includes('arts')) return 'var(--teal-light)';
+  if (stream.includes('commerce') && !stream.includes('science')) return 'var(--amber-light)';
+  if (stream.includes('arts') && !stream.includes('science')) return 'var(--purple-light)';
+  return 'var(--card-bg)';
+}
+function tagClass(t) {
+  if (['Science','Commerce','Arts','Any Stream'].includes(t)) return 'ctag ctag-stream';
+  if (t === 'Govt Job' || t === 'Govt & Private') return 'ctag ctag-govt';
+  if (['Creative','Self-employed','Social Impact'].includes(t)) return 'ctag ctag-creative';
+  return 'ctag ctag-type';
+}
+
+function renderCard(c) {
+  var rc = realityColor(c.reality);
+  var rl = realityLabel(c.reality);
+  var tagHTML = c.tags.map(function(t){ return '<span class="'+tagClass(t)+'">'+t+'</span>'; }).join('');
+  var pathHTML = c.paths.map(function(p){ return '<span class="path-chip">'+p+'</span>'; }).join('');
+  var skillHTML = c.skills.map(function(s){ return '<li>'+s+'</li>'; }).join('');
+  var examHTML = c.exams.map(function(e){ return '<li>'+e+'</li>'; }).join('');
+
+  return '<div class="career-card" id="card-'+c.id+'" onclick="toggleCard('+c.id+')">'+
+    '<div class="career-head">'+
+      '<div class="career-emoji" style="background:'+streamBg(c.stream)+'">'+c.emoji+'</div>'+
+      '<div class="career-head-info">'+
+        '<div class="career-name">'+c.name+'</div>'+
+        '<div class="career-tags-row">'+tagHTML+'</div>'+
+      '</div>'+
+      '<div class="salary-preview">'+
+        '<div class="salary-entry">&#8377;'+c.entryLPA+'L</div>'+
+        '<div class="salary-entry-lbl">starting</div>'+
+      '</div>'+
+      '<span class="career-chevron" id="chev-'+c.id+'">&#9660;</span>'+
+    '</div>'+
+    '<div class="reality-row">'+
+      '<div class="reality-label">Entry ease</div>'+
+      '<div class="reality-track"><div class="reality-fill" id="rfill-'+c.id+'" style="background:'+rc+'" data-pct="'+c.reality+'"></div></div>'+
+      '<div class="reality-score" style="color:'+rc+'">'+rl+'</div>'+
+    '</div>'+
+    '<div class="career-body" id="body-'+c.id+'">'+
+      '<div class="salary-grid">'+
+        '<div class="sal-box" style="background:var(--teal-light)"><div class="sal-amt" style="color:var(--teal-dark)">&#8377;'+c.entryLPA+'L</div><div class="sal-lbl" style="color:var(--teal-dark)">Starting salary</div></div>'+
+        '<div class="sal-box" style="background:var(--amber-light)"><div class="sal-amt" style="color:#7A4A00">&#8377;'+c.midLPA+'L</div><div class="sal-lbl" style="color:#7A4A00">After 5 years</div></div>'+
+        '<div class="sal-box" style="background:var(--purple-light)"><div class="sal-amt" style="color:#3C3489">&#8377;'+c.seniorLPA+'L</div><div class="sal-lbl" style="color:#3C3489">Senior level</div></div>'+
+      '</div>'+
+      '<div class="career-section"><h4>&#9201; Time to first job</h4><p>'+c.time+'</p></div>'+
+      '<div class="career-section"><h4>&#128221; Key exams</h4><ul>'+examHTML+'</ul></div>'+
+      '<div class="career-section"><h4>&#128739; Realistic entry paths</h4><div class="path-row">'+pathHTML+'</div></div>'+
+      '<div class="career-section"><h4>&#128295; Skills that actually matter</h4><ul>'+skillHTML+'</ul></div>'+
+      '<div class="honest-box"><p>'+c.honest+'</p></div>'+
+      '<div class="cg-box"><p>'+c.cg+'</p></div>'+
+    '</div>'+
+  '</div>';
+}
+
+function toggleCard(id) {
+  var body = document.getElementById('body-'+id);
+  var card = document.getElementById('card-'+id);
+  var chev = document.getElementById('chev-'+id);
+  var isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  card.classList.toggle('open', !isOpen);
+  chev.classList.toggle('open', !isOpen);
+  if (!isOpen) {
+    setTimeout(function(){
+      var f = document.getElementById('rfill-'+id);
+      if (f) f.style.width = f.getAttribute('data-pct')+'%';
+    }, 40);
+  }
+}
+
+function setFilter(f, btn) {
+  currentFilter = f;
+  document.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+  applyFilters();
+}
+
+function applyFilters() {
+  var search = (document.getElementById('search-input').value || '').toLowerCase().trim();
+  var sortBy = (document.getElementById('sort-select') || {}).value || 'default';
+  var filtered = CAREERS.filter(function(c) {
+    var sm = currentFilter === 'all' ||
+      (currentFilter === 'science'  && c.stream.includes('science'))  ||
+      (currentFilter === 'commerce' && c.stream.includes('commerce')) ||
+      (currentFilter === 'arts'     && c.stream.includes('arts'))     ||
+      (currentFilter === 'govt'     && c.tags.some(function(t){ return t === 'Govt Job'; })) ||
+      (currentFilter === 'any'      && c.stream.includes('any'));
+    var qm = !search ||
+      c.name.toLowerCase().includes(search) ||
+      c.tags.some(function(t){ return t.toLowerCase().includes(search); }) ||
+      c.cg.toLowerCase().includes(search) ||
+      c.exams.some(function(e){ return e.toLowerCase().includes(search); });
+    return sm && qm;
+  });
+
+  if (sortBy !== 'default') {
+    filtered.sort(function(a, b) {
+      if (sortBy === 'salary-asc') return parseStartingSalary(a.entryLPA) - parseStartingSalary(b.entryLPA);
+      if (sortBy === 'salary-desc') return parseStartingSalary(b.entryLPA) - parseStartingSalary(a.entryLPA);
+      if (sortBy === 'ease-desc') return b.reality - a.reality;
+      if (sortBy === 'ease-asc') return a.reality - b.reality;
+      return a.id - b.id;
+    });
+  }
+
+  var grid = document.getElementById('career-grid');
+  grid.innerHTML = filtered.length === 0
+    ? '<div class="no-results"><div class="nr-icon">&#128269;</div><p>No careers found. Try a different search or filter.</p></div>'
+    : filtered.map(renderCard).join('');
+  document.getElementById('results-count').textContent = 'Showing '+filtered.length+' of '+CAREERS.length+' careers';
+  setTimeout(function(){
+    document.querySelectorAll('.reality-fill').forEach(function(b){ b.style.width = b.getAttribute('data-pct')+'%'; });
+  }, 300);
+}
+
+applyFilters();
+</script>
+</body>
+</html>

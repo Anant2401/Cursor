@@ -1,3 +1,5 @@
+document.getElementById("footer-year").textContent = new Date().getFullYear();
+
 const menuButton = document.getElementById("menu-btn");
 const nav = document.getElementById("main-nav");
 
@@ -21,6 +23,174 @@ const observer = new IntersectionObserver(
 );
 
 reveals.forEach((item) => observer.observe(item));
+
+function initToolsTabs() {
+  const toolsSection = document.getElementById("tools");
+  if (!toolsSection) return;
+
+  const toolTabs = toolsSection.querySelectorAll(".tools-tab");
+  const allPanel = toolsSection.querySelector("#tools-panel-all");
+  const toolCards = toolsSection.querySelectorAll("#tools-grid .tool-card[data-tool]");
+  if (!toolTabs.length || !allPanel || !toolCards.length) return;
+
+  const toolInsights = {
+    assessment: {
+      bestFor: "Students unsure about best-fit careers",
+      time: "8-10 minutes",
+      output: "Top-fit career directions + next actions",
+      highlights: [
+        "Maps strengths and interests to practical career options",
+        "Helps you shortlist paths before spending on courses",
+        "Gives action-first guidance you can apply immediately",
+      ],
+    },
+    stream: {
+      bestFor: "Class 10 students choosing a stream",
+      time: "6-8 minutes",
+      output: "Stream recommendation with reasoning",
+      highlights: [
+        "Compares Science, Commerce, and Arts on your preferences",
+        "Explains what each stream can lead to in real jobs",
+        "Reduces confusion from social pressure and mixed advice",
+      ],
+    },
+    salary: {
+      bestFor: "Students evaluating long-term earning potential",
+      time: "5-7 minutes",
+      output: "Career salary journey snapshots",
+      highlights: [
+        "Shows entry-to-growth salary ranges across career tracks",
+        "Lets you compare opportunities before you commit",
+        "Supports realistic planning with role progression context",
+      ],
+    },
+  };
+
+  const setCardExpanded = (card, expanded) => {
+    const details = card.querySelector(".tool-card-details");
+    const toggle = card.querySelector(".tool-card-expand-btn");
+    if (!details || !toggle) return;
+
+    card.classList.toggle("is-expanded", expanded);
+    details.hidden = !expanded;
+    toggle.setAttribute("aria-expanded", String(expanded));
+    toggle.textContent = expanded ? "Hide details" : "View details";
+  };
+
+  const refreshPanelExpansionState = (panel) => {
+    if (!panel) return;
+    const hasExpanded = !!panel.querySelector(".tool-card.is-expanded");
+    panel.classList.toggle("has-expanded", hasExpanded);
+  };
+
+  const enrichToolCards = () => {
+    const cards = toolsSection.querySelectorAll(".tool-card[data-tool]");
+    cards.forEach((card) => {
+      if (card.querySelector(".tool-card-details")) return;
+
+      const detailsConfig = toolInsights[card.dataset.tool];
+      const launchButton = card.querySelector(".btn-assessment-primary");
+      if (!detailsConfig || !launchButton) return;
+
+      const toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.className = "tool-card-expand-btn";
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.textContent = "View details";
+
+      const details = document.createElement("div");
+      details.className = "tool-card-details";
+      details.hidden = true;
+      details.innerHTML = `
+        <div class="tool-details-meta">
+          <span><strong>Best for:</strong> ${detailsConfig.bestFor}</span>
+          <span><strong>Time:</strong> ${detailsConfig.time}</span>
+          <span><strong>You get:</strong> ${detailsConfig.output}</span>
+        </div>
+        <ul class="tool-details-list">
+          ${detailsConfig.highlights.map((item) => `<li>${item}</li>`).join("")}
+        </ul>
+      `;
+
+      toggle.addEventListener("click", () => {
+        const isExpanded = card.classList.contains("is-expanded");
+        const panel = card.closest(".tools-panel");
+        const panelCards = panel?.querySelectorAll(".tool-card[data-tool]") || [];
+
+        panelCards.forEach((panelCard) => {
+          if (panelCard !== card) setCardExpanded(panelCard, false);
+        });
+
+        const shouldExpand = !isExpanded;
+        setCardExpanded(card, shouldExpand);
+        refreshPanelExpansionState(panel);
+
+        if (shouldExpand) {
+          requestAnimationFrame(() => {
+            card.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "nearest" });
+          });
+        }
+      });
+
+      card.insertBefore(toggle, launchButton);
+      card.insertBefore(details, launchButton);
+    });
+  };
+
+  const applyActiveTab = (activeTab) => {
+    const selectedTool = activeTab.dataset.toolTab || "all";
+
+    toolTabs.forEach((tab) => {
+      const isActive = tab === activeTab;
+      tab.classList.toggle("is-active", isActive);
+      tab.setAttribute("aria-selected", String(isActive));
+      tab.tabIndex = isActive ? 0 : -1;
+    });
+
+    let visibleCount = 0;
+    toolCards.forEach((card) => {
+      const show = selectedTool === "all" || card.dataset.tool === selectedTool;
+      card.hidden = !show;
+      if (!show) setCardExpanded(card, false);
+      if (show) visibleCount += 1;
+    });
+
+    allPanel.classList.add("is-active");
+    allPanel.hidden = false;
+    allPanel.classList.toggle("single-tool-view", visibleCount === 1);
+
+    if (visibleCount === 1) {
+      const visibleCard = Array.from(toolCards).find((card) => !card.hidden);
+      if (visibleCard) setCardExpanded(visibleCard, true);
+    }
+
+    refreshPanelExpansionState(allPanel);
+  };
+
+  toolTabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => applyActiveTab(tab));
+    tab.addEventListener("keydown", (event) => {
+      let nextIndex = index;
+      if (event.key === "ArrowRight") nextIndex = (index + 1) % toolTabs.length;
+      if (event.key === "ArrowLeft") nextIndex = (index - 1 + toolTabs.length) % toolTabs.length;
+      if (event.key === "Home") nextIndex = 0;
+      if (event.key === "End") nextIndex = toolTabs.length - 1;
+
+      if (nextIndex !== index) {
+        event.preventDefault();
+        const nextTab = toolTabs[nextIndex];
+        applyActiveTab(nextTab);
+        nextTab.focus();
+      }
+    });
+  });
+
+  const defaultTab = toolsSection.querySelector('.tools-tab[aria-selected="true"]') || toolTabs[0];
+  enrichToolCards();
+  applyActiveTab(defaultTab);
+}
+
+initToolsTabs();
 
 const LOCAL_API_BASE = "http://localhost:8787/api";
 const PRODUCTION_API_BASE = "https://pehchaan-api.onrender.com/api";

@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stream Advisor – Pehchaan Careers</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%23085041'/><circle cx='20' cy='22' r='8' fill='%23EF9F27'/><line x1='20' y1='8' x2='20' y2='4' stroke='%23EF9F27' stroke-width='2.2' stroke-linecap='round'/><line x1='30.5' y1='11.5' x2='33.5' y2='8.5' stroke='%23EF9F27' stroke-width='2.2' stroke-linecap='round'/><line x1='9.5' y1='11.5' x2='6.5' y2='8.5' stroke='%23EF9F27' stroke-width='2.2' stroke-linecap='round'/><path d='M8 34 L20 26 L32 34' stroke='%231D9E75' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal:        #1D9E75;
+    --teal-dark:   #085041;
+    --teal-light:  #E1F5EE;
+    --amber:       #EF9F27;
+    --amber-light: #FAEEDA;
+    --navy:        #1A1A2E;
+    --white:       #FFFFFF;
+    --card-bg:     #F8FAFC;
+    --gray-text:   #64748B;
+    --red:         #E24B4A;
+    --red-light:   #FCEBEB;
+    --purple:      #7F77DD;
+    --blue:        #378ADD;
+    --coral:       #D85A30;
+    --green:       #639922;
+    --border:      #D1E8DF;
+    --text:        #1A1A2E;
+    --radius:      14px;
+    --shadow:      0 1px 4px rgba(8,80,65,0.10);
+
+    /* Stream colours */
+    --science-col:  #1D9E75;
+    --science-bg:   #E1F5EE;
+    --commerce-col: #EF9F27;
+    --commerce-bg:  #FAEEDA;
+    --arts-col:     #7F77DD;
+    --arts-bg:      #EEEDFE;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Poppins', sans-serif; background: radial-gradient(1200px 520px at 8% -10%, rgba(127,119,221,.12), transparent 65%), radial-gradient(900px 420px at 92% 6%, rgba(55,138,221,.1), transparent 62%), linear-gradient(180deg, #eef8f4 0%, #e5f3ee 42%, #e8f5f0 100%); color: var(--text); min-height: 100vh; font-size: 14px; }
+  .container { max-width: 700px; margin: 0 auto; padding: 20px 16px 60px; }
+  .hidden { display: none !important; }
+
+  /* TOP BAR */
+  .topbar { display: flex; align-items: center; gap: 12px; padding: 14px 0 22px; }
+  .topbar-logo {
+    width: 40px; height: 40px; background: var(--teal-dark);
+    border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .topbar-logo svg { width: 24px; height: 24px; }
+  .topbar-name { font-size: 15px; font-weight: 700; color: var(--teal-dark); }
+  .topbar-tag { font-size: 11px; color: var(--gray-text); }
+
+  /* HERO */
+  .hero-card {
+    background: var(--teal-dark);
+    border-radius: 22px; padding: 34px 28px; color: var(--white);
+    margin-bottom: 16px; position: relative; overflow: hidden;
+  }
+  .hero-card::before {
+    content: ''; position: absolute; top: -50px; right: -50px;
+    width: 180px; height: 180px; background: rgba(255,255,255,.05); border-radius: 50%;
+  }
+  .hero-card::after {
+    content: ''; position: absolute; bottom: -30px; right: 30px;
+    width: 110px; height: 110px; background: rgba(239,159,39,.12); border-radius: 50%;
+  }
+  .hero-tag {
+    display: inline-block; background: rgba(239,159,39,.2);
+    border: 1px solid rgba(239,159,39,.4);
+    color: var(--amber); font-size: 11px; font-weight: 600;
+    padding: 4px 14px; border-radius: 20px; margin-bottom: 16px; letter-spacing: .03em;
+  }
+  .hero-card h1 { font-size: 26px; font-weight: 700; line-height: 1.25; margin-bottom: 10px; }
+  .hero-card h1 span { color: var(--amber); }
+  .hero-card p { font-size: 13px; opacity: .85; line-height: 1.75; margin-bottom: 22px; }
+  .hero-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 22px; }
+  .hero-stat { background: rgba(255,255,255,.1); border-radius: 12px; padding: 14px 8px; text-align: center; border: 1px solid rgba(255,255,255,.12); }
+  .hero-stat .v { font-size: 24px; font-weight: 700; color: var(--amber); }
+  .hero-stat .l { font-size: 11px; opacity: .75; margin-top: 2px; }
+
+  /* NAME FORM */
+  .name-card {
+    background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+    border-radius: 14px; padding: 18px 20px; margin-bottom: 18px;
+  }
+  .name-card label { font-size: 13px; font-weight: 600; display: block; margin-bottom: 10px; }
+  .name-input {
+    width: 100%; padding: 13px 16px; border-radius: 10px;
+    border: 1.5px solid rgba(255,255,255,.25); background: rgba(255,255,255,.12);
+    color: var(--white); font-family: 'Poppins', sans-serif; font-size: 14px;
+    outline: none; transition: border-color .2s;
+  }
+  .name-input::placeholder { color: rgba(255,255,255,.45); }
+  .name-input:focus { border-color: var(--amber); }
+
+  .btn-begin {
+    width: 100%; background: var(--amber); color: var(--teal-dark);
+    border: none; border-radius: var(--radius); padding: 16px;
+    font-size: 15px; font-weight: 700; cursor: pointer;
+    font-family: 'Poppins', sans-serif; transition: transform .15s, box-shadow .15s;
+    letter-spacing: .01em;
+  }
+  .btn-begin:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(239,159,39,.4); }
+  .btn-begin:active { transform: translateY(0); }
+
+  /* INFO CARDS */
+  .info-card {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: 20px; padding: 20px; margin-bottom: 16px;
+    box-shadow: var(--shadow);
+  }
+  .info-card h3 {
+    font-size: 11px; font-weight: 700; color: var(--teal-dark);
+    text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px;
+  }
+  .stream-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+  .stream-chip { border-radius: 12px; padding: 16px 12px; text-align: center; }
+  .stream-chip .s-icon { font-size: 22px; margin-bottom: 6px; }
+  .stream-chip .s-name { font-size: 12px; font-weight: 700; margin-bottom: 4px; }
+  .stream-chip .s-eg { font-size: 10px; line-height: 1.5; opacity: .8; }
+
+  /* QUIZ */
+  .quiz-header { margin-bottom: 18px; }
+  .quiz-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .quiz-meta-left { font-size: 12px; color: var(--gray-text); font-weight: 500; }
+  .quiz-meta-right { font-size: 12px; font-weight: 700; color: var(--teal); }
+  .prog-track { background: var(--teal-light); border-radius: 6px; height: 7px; }
+  .prog-fill { height: 7px; border-radius: 6px; background: var(--teal); transition: width .5s ease; }
+
+  .q-card {
+    background: var(--white); border: 1.5px solid var(--border);
+    border-radius: var(--radius); padding: 20px 18px 18px;
+    box-shadow: var(--shadow); transition: border-color .2s; margin-bottom: 14px;
+  }
+  .q-card.answered { border-color: var(--teal); background: #FBFFFE; }
+  .q-num { font-size: 10px; font-weight: 700; color: var(--teal); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 8px; }
+  .q-text { font-size: 14px; color: var(--text); line-height: 1.65; margin-bottom: 16px; font-weight: 600; }
+  .q-context { font-size: 12px; color: var(--gray-text); line-height: 1.6; margin-bottom: 14px; padding: 9px 13px; background: var(--teal-light); border-radius: 8px; border-left: 3px solid var(--teal); }
+
+  /* OPTION BUTTONS — MCQ style for stream advisor */
+  .opts-col { display: flex; flex-direction: column; gap: 8px; }
+  .opt-btn {
+    width: 100%; border: 1.5px solid var(--border); background: var(--white);
+    border-radius: 10px; padding: 12px 16px; font-size: 13px; font-weight: 500;
+    color: var(--text); cursor: pointer; text-align: left;
+    transition: all .15s; font-family: 'Poppins', sans-serif;
+    -webkit-tap-highlight-color: transparent; user-select: none;
+    display: flex; align-items: center; gap: 10px; line-height: 1.4;
+  }
+  .opt-btn .opt-dot {
+    width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--border);
+    flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+    transition: all .15s;
+  }
+  .opt-btn:hover { border-color: var(--teal); color: var(--teal-dark); background: var(--teal-light); }
+  .opt-btn:hover .opt-dot { border-color: var(--teal); }
+  .opt-btn.sel { background: var(--teal-light); border-color: var(--teal); color: var(--teal-dark); }
+  .opt-btn.sel .opt-dot { background: var(--teal); border-color: var(--teal); }
+  .opt-btn.sel .opt-dot::after { content: ''; width: 6px; height: 6px; background: var(--white); border-radius: 50%; display: block; }
+
+  .warn-box {
+    background: var(--red-light); border: 1px solid #F5A5A4;
+    color: var(--red); border-radius: 10px;
+    padding: 10px 14px; font-size: 12px; margin-top: 12px; display: none;
+  }
+  .nav-row { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; gap: 10px; }
+  .btn-back {
+    border: 1.5px solid var(--border); background: var(--white);
+    border-radius: var(--radius); padding: 13px 22px; font-size: 13px; font-weight: 600;
+    cursor: pointer; color: var(--gray-text); font-family: 'Poppins', sans-serif;
+  }
+  .btn-back:hover { background: var(--teal-light); border-color: var(--teal); color: var(--teal-dark); }
+  .nav-mid { font-size: 12px; color: var(--gray-text); }
+  .btn-next {
+    background: var(--teal); color: var(--white); border: none;
+    border-radius: var(--radius); padding: 13px 28px; font-size: 13px; font-weight: 700;
+    cursor: pointer; font-family: 'Poppins', sans-serif; transition: background .2s;
+  }
+  .btn-next:hover { background: var(--teal-dark); }
+
+  /* RESULTS */
+  .res-hero {
+    border-radius: 22px; padding: 32px 24px;
+    color: var(--white); text-align: center; margin-bottom: 16px;
+    position: relative; overflow: hidden;
+  }
+  .res-hero::before {
+    content: ''; position: absolute; top: -40px; right: -40px;
+    width: 150px; height: 150px; background: rgba(239,159,39,.1); border-radius: 50%;
+  }
+  .res-hero::after {
+    content: ''; position: absolute; bottom: -30px; left: 20px;
+    width: 100px; height: 100px; background: rgba(255,255,255,.07); border-radius: 50%;
+  }
+  .res-hero .greeting { font-size: 14px; opacity: .8; margin-bottom: 6px; font-weight: 500; }
+  .res-hero h2 { font-size: 24px; font-weight: 700; margin-bottom: 6px; line-height: 1.2; }
+  .res-hero .stream-badge {
+    display: inline-block; background: rgba(239,159,39,.25);
+    border: 1.5px solid var(--amber); border-radius: 30px;
+    padding: 9px 28px; font-size: 16px; font-weight: 700;
+    letter-spacing: .04em; color: var(--amber); margin: 10px 0;
+  }
+  .res-hero .stream-sub { font-size: 12px; opacity: .75; line-height: 1.6; margin-top: 8px; }
+
+  /* SCORES */
+  .card-section {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: 20px; padding: 20px; margin-bottom: 14px;
+    box-shadow: var(--shadow);
+  }
+  .card-section h3 {
+    font-size: 11px; font-weight: 700; color: var(--teal-dark);
+    text-transform: uppercase; letter-spacing: .07em; margin-bottom: 14px;
+  }
+  .score-list { display: flex; flex-direction: column; gap: 12px; }
+  .score-item { display: flex; align-items: center; gap: 12px; }
+  .score-label { font-size: 13px; font-weight: 600; min-width: 100px; }
+  .score-track { flex: 1; border-radius: 5px; height: 10px; overflow: hidden; }
+  .score-fill { height: 10px; border-radius: 5px; width: 0; transition: width 1.2s ease; }
+  .score-pct { font-size: 12px; font-weight: 700; min-width: 36px; text-align: right; }
+
+  /* SUBJECT RECOMMENDATIONS */
+  .subj-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; }
+  .subj-card {
+    border-radius: 12px; padding: 14px 14px; border: 1.5px solid transparent;
+  }
+  .subj-card .subj-name { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+  .subj-card .subj-why { font-size: 11px; line-height: 1.55; opacity: .85; }
+
+  /* INSIGHT */
+  .insight-box {
+    background: var(--amber-light); border: 1.5px solid #F5C878;
+    border-radius: 14px; padding: 18px 20px; margin-bottom: 14px;
+  }
+  .insight-box .insight-head { font-size: 11px; font-weight: 700; color: #7A4A00; text-transform: uppercase; letter-spacing: .07em; margin-bottom: 8px; }
+  .insight-box p { font-size: 13px; color: #5A3200; line-height: 1.85; }
+
+  /* AI NARRATIVE */
+  .ai-box {
+    background: var(--teal-dark); border-radius: 18px; padding: 22px 20px; margin-bottom: 14px;
+    color: var(--white); position: relative; overflow: hidden;
+  }
+  .ai-box::after { content: ''; position: absolute; top: -30px; right: -30px; width: 120px; height: 120px; background: rgba(239,159,39,.08); border-radius: 50%; }
+  .ai-box h3 { font-size: 11px; font-weight: 700; color: var(--amber); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 12px; }
+  .ai-box p { font-size: 13px; line-height: 1.85; opacity: .9; }
+  .ai-loading { display: flex; align-items: center; gap: 10px; font-size: 13px; opacity: .7; }
+  .ai-dots span { display: inline-block; animation: dot 1.4s infinite; opacity: 0; }
+  .ai-dots span:nth-child(2) { animation-delay: .2s; }
+  .ai-dots span:nth-child(3) { animation-delay: .4s; }
+  @keyframes dot { 0%,80%,100%{opacity:0} 40%{opacity:1} }
+
+  /* CAREERS LIST */
+  .career-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag { padding: 7px 13px; border-radius: 8px; font-size: 12px; font-weight: 500; border: 1px solid var(--border); background: var(--card-bg); color: var(--gray-text); }
+  .tag.top { background: var(--teal-light); border-color: var(--teal); color: var(--teal-dark); font-weight: 700; }
+
+  /* NEXT STEPS */
+  .steps-list { display: flex; flex-direction: column; gap: 12px; }
+  .step-item { display: flex; gap: 13px; align-items: flex-start; }
+  .step-num { width: 26px; height: 26px; border-radius: 50%; flex-shrink: 0; margin-top: 1px; background: var(--amber); color: var(--teal-dark); font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .step-text { font-size: 13px; color: var(--text); line-height: 1.65; }
+
+  .btn-restart {
+    width: 100%; border: 1.5px solid var(--teal); background: var(--white);
+    border-radius: var(--radius); padding: 13px; font-size: 13px; font-weight: 700;
+    cursor: pointer; color: var(--teal-dark); font-family: 'Poppins', sans-serif;
+  }
+  .btn-restart:hover { background: var(--teal-light); }
+
+  /* FOOTER */
+  .brand-footer { text-align: center; margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--teal-light); }
+  .brand-footer p { font-size: 11px; color: var(--gray-text); line-height: 1.8; }
+  .brand-footer strong { color: var(--teal-dark); }
+  .brand-tagline { font-size: 13px; font-weight: 600; color: var(--teal); margin-top: 4px; }
+
+  /* IMPORTANT: mobile tap areas */
+  @media(max-width:480px) {
+    .hero-card h1 { font-size: 22px; }
+    .stream-row { grid-template-columns: 1fr; }
+    .subj-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- ==================== COVER ==================== -->
+<div id="screen-cover">
+  <div class="topbar">
+    <div class="topbar-logo">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="22" r="8" fill="#EF9F27"/>
+        <line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="30.5" y1="11.5" x2="33.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="9.5" y1="11.5" x2="6.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="34" y1="22" x2="38" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="6" y1="22" x2="2" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M8 34 L20 26 L32 34" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M4 34 L20 28 L36 34" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/>
+      </svg>
+    </div>
+    <div>
+      <div class="topbar-name">Pehchaan Careers</div>
+      <div class="topbar-tag">Your identity. Your path.</div>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <div class="hero-tag">Free Tool — Class 10 Stream Advisor</div>
+    <h1>Science, Commerce, or Arts — <span>Which Stream Is Right for You?</span></h1>
+    <p>You have completed your Class 10 now. Everyone around you is giving advice. But only one person knows the right answer — you. Answer 15 honest questions and we will tell you which stream matches your real strengths and future.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="v">15</div><div class="l">Questions</div></div>
+      <div class="hero-stat"><div class="v">3</div><div class="l">Streams</div></div>
+      <div class="hero-stat"><div class="v">~5</div><div class="l">Minutes</div></div>
+    </div>
+    <div class="name-card">
+      <label>What is your name? (So your result feels personal)</label>
+      <input type="text" class="name-input" id="student-name" placeholder="Type your first name here..." maxlength="40">
+    </div>
+    <button class="btn-begin" id="btn-begin">Find My Stream →</button>
+  </div>
+
+  <div class="info-card">
+    <h3>The three streams — what they lead to</h3>
+    <div class="stream-row">
+      <div class="stream-chip" style="background:var(--science-bg)">
+        <div class="s-icon">🔬</div>
+        <div class="s-name" style="color:var(--science-col)">Science</div>
+        <div class="s-eg" style="color:#085041">Engineering, Medicine, Research, Defence, Data Science</div>
+      </div>
+      <div class="stream-chip" style="background:var(--commerce-bg)">
+        <div class="s-icon">📊</div>
+        <div class="s-name" style="color:#7A4A00">Commerce</div>
+        <div class="s-eg" style="color:#7A4A00">CA, Banking, Finance, MBA, Business, Govt Exams</div>
+      </div>
+      <div class="stream-chip" style="background:var(--arts-bg)">
+        <div class="s-icon">🎨</div>
+        <div class="s-name" style="color:var(--arts-col)">Arts / Humanities</div>
+        <div class="s-eg" style="color:#3C3489">Law, Journalism, Design, Teaching, UPSC, Psychology</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-card">
+    <h3>Important — before you start</h3>
+    <p style="font-size:13px;color:var(--gray-text);line-height:1.8">There are no right or wrong answers. This is not a marks test. Answer based on what <strong style="color:var(--teal-dark)">you genuinely enjoy and find interesting</strong> — not what your parents want, not what your friends chose. The more honest you are, the more useful your result will be.</p>
+  </div>
+</div>
+
+<!-- ==================== QUIZ ==================== -->
+<div id="screen-quiz" class="hidden">
+  <div class="topbar">
+    <div class="topbar-logo">
+      <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="22" r="8" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="30.5" y1="11.5" x2="33.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="9.5" y1="11.5" x2="6.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="34" y1="22" x2="38" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="6" y1="22" x2="2" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M8 34 L20 26 L32 34" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 34 L20 28 L36 34" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/></svg>
+    </div>
+    <div>
+      <div class="topbar-name">Stream Advisor</div>
+      <div class="topbar-tag" id="quiz-label">Question 1 of 15</div>
+    </div>
+    <div style="margin-left:auto;font-size:12px;font-weight:700;color:var(--teal)" id="quiz-count">Q 1 of 15</div>
+  </div>
+
+  <div class="prog-track" style="margin-bottom:20px">
+    <div class="prog-fill" id="prog-fill" style="width:0%"></div>
+  </div>
+
+  <div id="q-container"></div>
+
+  <div class="warn-box" id="warn-box">⚠ Please select an answer before continuing.</div>
+
+  <div class="nav-row">
+    <button class="btn-back" id="btn-back" style="visibility:hidden">← Back</button>
+    <span class="nav-mid" id="nav-mid">Question 1 of 15</span>
+    <button class="btn-next" id="btn-next">Next →</button>
+  </div>
+</div>
+
+<!-- ==================== RESULTS ==================== -->
+<div id="screen-results" class="hidden">
+  <div class="topbar">
+    <div class="topbar-logo">
+      <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="22" r="8" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="30.5" y1="11.5" x2="33.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="9.5" y1="11.5" x2="6.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="34" y1="22" x2="38" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="6" y1="22" x2="2" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M8 34 L20 26 L32 34" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 34 L20 28 L36 34" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/></svg>
+    </div>
+    <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your stream result</div></div>
+  </div>
+
+  <div class="res-hero" id="res-hero">
+    <div class="greeting" id="res-greeting">Hello!</div>
+    <h2 id="res-headline">Your best-fit stream is</h2>
+    <div class="stream-badge" id="res-stream-badge">Science</div>
+    <div class="res-stream-sub" id="res-stream-sub"></div>
+  </div>
+
+  <!-- SCORE BREAKDOWN -->
+  <div class="card-section">
+    <h3>How you scored across all three streams</h3>
+    <div class="score-list" id="score-list"></div>
+  </div>
+
+  <!-- INSIGHT -->
+  <div class="insight-box">
+    <div class="insight-head">What this means for you</div>
+    <p id="insight-text"></p>
+  </div>
+
+  <!-- AI NARRATIVE -->
+  <div class="ai-box">
+    <h3>Pehchaan's personal note for you</h3>
+    <div id="ai-content">
+      <div class="ai-loading">✨ Writing your personal result... <span class="ai-dots"><span>.</span><span>.</span><span>.</span></span></div>
+    </div>
+  </div>
+
+  <!-- RECOMMENDED SUBJECTS -->
+  <div class="card-section">
+    <h3>Recommended subject combination</h3>
+    <div class="subj-grid" id="subj-grid"></div>
+  </div>
+
+  <!-- CAREERS -->
+  <div class="card-section">
+    <h3>Careers this stream opens up for you</h3>
+    <div class="career-tags" id="career-tags"></div>
+  </div>
+
+  <!-- NEXT STEPS -->
+  <div class="card-section">
+    <h3>Your honest next steps</h3>
+    <div class="steps-list" id="steps-list"></div>
+  </div>
+
+  <!-- CTAs -->
+  <div class="res-actions">
+    <button class="btn-restart" id="btn-restart">↺ Take the Test Again</button>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="card-section" style="border-color:#F5C878;background:var(--amber-light)">
+    <h3 style="color:#7A4A00">Important Disclaimer</h3>
+    <p style="font-size:12px;color:#5A3200;line-height:1.85">This Stream Advisor is a free self-reflection tool designed to help Class 10 students explore their interests and tendencies. It is <strong>not a psychometric test, not a professional career assessment, and not a substitute for qualified career counselling.</strong> Results are based on your self-reported answers and are intended as a starting point for conversation — not a final verdict. Stream selection is an important decision that should involve your parents, teachers, and ideally a qualified career counsellor who understands your full situation. Pehchaan Careers does not guarantee any specific outcome based on this result. All career and salary information provided is general and may vary based on individual effort, institutional quality, and market conditions.</p>
+  </div>
+
+  <div class="brand-footer">
+    <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
+    <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
+    hello.pehchaan@gmail.com &nbsp;·&nbsp; @pehchaancareers &nbsp;·&nbsp; pehchaancareers.in</p>
+  </div>
+</div>
+
+</div><!-- /container -->
+
+<script>
+/* =====================================================
+   PEHCHAAN CAREERS — STREAM ADVISOR
+   15 questions, 3 streams (S=Science, C=Commerce, A=Arts)
+   Each question assigns weighted points to streams
+   ===================================================== */
+
+var QUESTIONS = [
+  {
+    q: "When you study for exams, which type of chapter do you find yourself actually enjoying — not just tolerating?",
+    ctx: "Think about subjects like Science, Maths, History, Economics, or English — which one made you think 'this is actually interesting'?",
+    opts: [
+      { text: "Physics, Chemistry or Biology problems — I like figuring out how things work", scores: {S:3,C:0,A:0} },
+      { text: "Maths and calculations — numbers and logic make sense to me", scores: {S:2,C:2,A:0} },
+      { text: "Economics or Business Studies — how money and markets work interests me", scores: {S:0,C:3,A:0} },
+      { text: "History, Geography or Civics — I like understanding society and the world", scores: {S:0,C:0,A:3} },
+      { text: "Hindi, English or Literature — I enjoy reading, writing and language", scores: {S:0,C:0,A:3} }
+    ]
+  },
+  {
+    q: "You have 2 free hours on a Sunday afternoon. What are you most likely to do?",
+    ctx: "Be honest — not what you think sounds impressive, but what you actually do.",
+    opts: [
+      { text: "Watch something on YouTube about science, technology, space or how things are built", scores: {S:3,C:0,A:0} },
+      { text: "Read news, watch business or stock market videos, or think about money and savings", scores: {S:0,C:3,A:0} },
+      { text: "Draw, write, make music, read stories, or watch films and documentaries", scores: {S:0,C:0,A:3} },
+      { text: "Play games, scroll social media, or do a mix of everything", scores: {S:1,C:1,A:1} },
+      { text: "Research colleges, careers or read about successful people", scores: {S:1,C:2,A:1} }
+    ]
+  },
+  {
+    q: "A friend comes to you with a problem. What do you naturally do?",
+    ctx: "This tells us about how you think — are you a fixer, a planner, a speaker, or a listener?",
+    opts: [
+      { text: "Try to analyse the situation logically and find the most practical solution", scores: {S:3,C:1,A:0} },
+      { text: "Help them think through the financial or practical side — what will it cost, what is the risk?", scores: {S:0,C:3,A:0} },
+      { text: "Listen carefully, empathise, and help them see different perspectives", scores: {S:0,C:0,A:3} },
+      { text: "Suggest who they should talk to or what resources exist that could help them", scores: {S:1,C:1,A:2} },
+      { text: "Help them make a plan — steps, timeline, what to do first", scores: {S:1,C:2,A:1} }
+    ]
+  },
+  {
+    q: "Which of these future careers sounds most exciting to you — even if you are not sure how to get there?",
+    ctx: "Do not think about difficulty or marks. Just which one makes you feel something.",
+    opts: [
+      { text: "Engineer, Doctor, Scientist, Pilot, Data Analyst or Software Developer", scores: {S:3,C:0,A:0} },
+      { text: "CA, Banker, Stock Market Analyst, Business Owner or Finance Manager", scores: {S:0,C:3,A:0} },
+      { text: "Lawyer, IAS Officer, Journalist, Psychologist, Teacher or Social Worker", scores: {S:0,C:0,A:3} },
+      { text: "Designer, Writer, Filmmaker, Musician, Photographer or Architect", scores: {S:0,C:0,A:3} },
+      { text: "Marketing Manager, HR Professional, Event Manager or Digital Creator", scores: {S:0,C:1,A:2} }
+    ]
+  },
+  {
+    q: "How do you feel about Maths? Be completely honest.",
+    ctx: "This matters because Science stream requires Maths, and Commerce can include or exclude it depending on your choice.",
+    opts: [
+      { text: "I genuinely like Maths — it challenges me in a good way", scores: {S:3,C:1,A:0} },
+      { text: "I manage Maths fine — it is not my favourite but I can handle it", scores: {S:1,C:2,A:0} },
+      { text: "I find Maths very difficult and stressful", scores: {S:0,C:1,A:2} },
+      { text: "I am okay with basic Maths (accounts, statistics) but not advanced Maths", scores: {S:0,C:3,A:0} },
+      { text: "Maths is not for me at all — I prefer words, ideas and creativity", scores: {S:0,C:0,A:3} }
+    ]
+  },
+  {
+    q: "When you read a newspaper or watch the news, what do you find yourself paying attention to?",
+    ctx: "Your natural curiosity points toward your stream. What catches your eye first?",
+    opts: [
+      { text: "Technology news — new inventions, space missions, scientific discoveries", scores: {S:3,C:0,A:0} },
+      { text: "Business and economy — stock markets, company news, budget announcements", scores: {S:0,C:3,A:0} },
+      { text: "Politics, government decisions, social issues, court cases", scores: {S:0,C:0,A:3} },
+      { text: "Sports, entertainment, films, social media trends", scores: {S:0,C:0,A:1} },
+      { text: "I do not follow news much — I find most of it boring", scores: {S:1,C:1,A:1} }
+    ]
+  },
+  {
+    q: "Imagine you are starting a small project with three classmates. What role do you naturally take?",
+    ctx: "Groups always find a natural order. Which role feels most like you?",
+    opts: [
+      { text: "The one who researches deeply, builds the technical part, or figures out how things actually work", scores: {S:3,C:0,A:0} },
+      { text: "The one who manages the budget, plans resources, and keeps everyone organised", scores: {S:0,C:3,A:0} },
+      { text: "The one who does the writing, presentations, design, or communication", scores: {S:0,C:0,A:3} },
+      { text: "The one who brings the team together, resolves conflicts, and keeps morale up", scores: {S:0,C:1,A:2} },
+      { text: "The one who comes up with creative ideas and new approaches", scores: {S:1,C:0,A:2} }
+    ]
+  },
+  {
+    q: "Which of these activities would you be willing to do for 2 hours without getting bored?",
+    ctx: "The things you can do for hours without checking your phone are usually the things you should build a career around.",
+    opts: [
+      { text: "Running an experiment, solving a complex problem, or coding something", scores: {S:3,C:0,A:0} },
+      { text: "Analysing financial data, calculating returns, or reading a business case study", scores: {S:0,C:3,A:0} },
+      { text: "Writing an essay, reading a book, or discussing a social or political topic", scores: {S:0,C:0,A:3} },
+      { text: "Drawing, designing, making something creative, or editing a video", scores: {S:0,C:0,A:3} },
+      { text: "Researching career options, watching skill-building videos, planning your future", scores: {S:1,C:1,A:1} }
+    ]
+  },
+  {
+    q: "Your Class 10 marks are out. In which subject did you score the best AND feel the least stressed while studying it?",
+    ctx: "Best marks under least stress = natural talent. This is important information.",
+    opts: [
+      { text: "Science (Physics / Chemistry / Biology)", scores: {S:3,C:0,A:0} },
+      { text: "Mathematics", scores: {S:2,C:2,A:0} },
+      { text: "Social Science (History / Geography / Civics / Economics)", scores: {S:0,C:1,A:3} },
+      { text: "Hindi or English (Language / Literature)", scores: {S:0,C:0,A:3} },
+      { text: "All subjects were about the same for me", scores: {S:1,C:1,A:1} }
+    ]
+  },
+  {
+    q: "Think about the adults in your life you genuinely admire — what kind of work do they do?",
+    ctx: "We are shaped by the people we look up to. This question reveals hidden aspirations.",
+    opts: [
+      { text: "Engineers, doctors, scientists, or people who build or fix physical things", scores: {S:3,C:0,A:0} },
+      { text: "Business people, bank officers, CAs, or people who manage money and organisations", scores: {S:0,C:3,A:0} },
+      { text: "Teachers, lawyers, journalists, government officers, or social workers", scores: {S:0,C:0,A:3} },
+      { text: "Artists, writers, filmmakers, or creative professionals", scores: {S:0,C:0,A:3} },
+      { text: "I admire people from all kinds of backgrounds — no specific type", scores: {S:1,C:1,A:1} }
+    ]
+  },
+  {
+    q: "Which of these challenges would you actually enjoy working on — even if it was hard?",
+    ctx: "The right career is not the one with no difficulty — it is the one where the difficulty feels worth it.",
+    opts: [
+      { text: "Building a device, writing a program, or proving a scientific theory", scores: {S:3,C:0,A:0} },
+      { text: "Growing a business from nothing, managing finances, or passing competitive banking exams", scores: {S:0,C:3,A:0} },
+      { text: "Arguing a legal case, writing a powerful article, or helping someone get justice", scores: {S:0,C:0,A:3} },
+      { text: "Creating something beautiful that many people connect with emotionally", scores: {S:0,C:0,A:3} },
+      { text: "Leading a team and making a visible difference in people's lives", scores: {S:0,C:1,A:2} }
+    ]
+  },
+  {
+    q: "How do you feel about the idea of studying for 3–5 years after Class 12 for a specific qualification?",
+    ctx: "Different streams require very different commitments. Knowing this helps us give you an honest picture.",
+    opts: [
+      { text: "I am willing to put in years of hard work if it leads to a stable, respected career", scores: {S:2,C:2,A:1} },
+      { text: "I want a clear qualification and exam path — I like knowing exactly what I need to do", scores: {S:1,C:3,A:1} },
+      { text: "I want flexibility — I do not want to be locked into one narrow career path", scores: {S:0,C:0,A:3} },
+      { text: "I want to start earning or gaining experience as early as possible", scores: {S:0,C:2,A:1} },
+      { text: "I am willing to work for a longer time if the career is something I truly care about", scores: {S:1,C:0,A:3} }
+    ]
+  },
+  {
+    q: "Which government exam sounds most aligned with your interests — even if you have not fully decided yet?",
+    ctx: "Government exams are a major career path in smaller cities. Your answer here is genuinely useful.",
+    opts: [
+      { text: "GATE or ESE (Engineering), NDA (Defence), or JEE / NEET after 12th", scores: {S:3,C:0,A:0} },
+      { text: "IBPS Bank PO / Clerk, SSC CGL, or CA Foundation", scores: {S:0,C:3,A:0} },
+      { text: "UPSC Civil Services (IAS/IPS), State PSC, or CLAT (Law)", scores: {S:0,C:0,A:3} },
+      { text: "CTET / State TET (Teaching) or exams for Social Work or Journalism", scores: {S:0,C:0,A:3} },
+      { text: "I have not thought about this at all yet", scores: {S:1,C:1,A:1} }
+    ]
+  },
+  {
+    q: "Which statement sounds most like something YOU would say?",
+    ctx: "Pick the one that feels most true, not the one that sounds most impressive.",
+    opts: [
+      { text: "I want to understand how the world works at a deep level — science, technology, systems", scores: {S:3,C:0,A:0} },
+      { text: "I want financial security and a stable career — I like planning ahead and managing resources", scores: {S:0,C:3,A:0} },
+      { text: "I want to express myself, tell stories, and create things that matter to people", scores: {S:0,C:0,A:3} },
+      { text: "I want to understand people, society and power — and maybe change something for the better", scores: {S:0,C:0,A:3} },
+      { text: "I want to be in a leadership role someday — running something, managing people, making decisions", scores: {S:1,C:2,A:1} }
+    ]
+  },
+  {
+    q: "Last question — and the most important one. Which subject do you wish your school had MORE of?",
+    ctx: "Not more marks — more time, more depth, more teaching. What subject do you feel you never had enough of?",
+    opts: [
+      { text: "Science experiments, technology labs, or more advanced Maths", scores: {S:3,C:0,A:0} },
+      { text: "Economics, business studies, or practical finance lessons", scores: {S:0,C:3,A:0} },
+      { text: "History, political science, law, or social issues", scores: {S:0,C:0,A:3} },
+      { text: "Creative writing, art, music, drama, or media studies", scores: {S:0,C:0,A:3} },
+      { text: "Life skills — career planning, communication, and practical knowledge", scores: {S:1,C:1,A:1} }
+    ]
+  }
+];
+
+/* ===== STREAM DATA ===== */
+var STREAM_DATA = {
+  S: {
+    name: "Science",
+    emoji: "🔬",
+    color: "#085041",
+    bg: "#E1F5EE",
+    bar: "#1D9E75",
+    heroBg: "linear-gradient(135deg, #085041 0%, #0d6b50 100%)",
+    tagline: "The stream for people who want to understand and build the world",
+    insight: "Your answers show a natural curiosity about how things work — systems, problems, experiments and logic. Science stream will feel like home for you. It keeps the most doors open: you can go into Engineering, Medicine, Defence, Data Science, Research, or even switch to Commerce or Civil Services later. The competitive exams are tough, but students who genuinely enjoy the subjects have a real advantage.",
+    subjects: [
+      { name: "Physics", why: "Foundation for Engineering, Defence, Data Science", col: "#085041", bg: "#E1F5EE" },
+      { name: "Chemistry", why: "Required for Medicine, Pharmacy, Material Science", col: "#085041", bg: "#E1F5EE" },
+      { name: "Mathematics", why: "Essential for most high-salary careers in tech and finance", col: "#085041", bg: "#E1F5EE" },
+      { name: "Biology (optional)", why: "Take this if Medicine, Nursing or BioTech interests you", col: "#085041", bg: "#E1F5EE" }
+    ],
+    careers: ["Engineering (CSE/Mechanical/Civil)", "MBBS / Medical", "Data Science", "Pilot (NDA/CPL)", "Architecture", "Defence Officer (NDA)", "BCA / MCA", "Research Scientist", "Pharmacy", "Biotechnology", "Environmental Science", "Marine Engineering"],
+    steps: [
+      "If JEE is your goal — start now. One hour of Physics and Maths daily from Class 11 Day 1 is not optional.",
+      "If Medicine is your goal — NEET requires consistent Biology and Chemistry from Class 11. Start building your base immediately.",
+      "If you are unsure between Engineering and Medicine — take PCM + Biology (PCMB). Keep both doors open until Class 12.",
+      "Download the free NCERT books for Class 11 Science now and start reading Chapter 1 before classes begin. It will give you a head start that most students waste.",
+      "Find one Pehchaan session — let us map your exact path based on your Class 10 marks and your family's situation."
+    ]
+  },
+  C: {
+    name: "Commerce",
+    emoji: "📊",
+    color: "#7A4A00",
+    bg: "#FAEEDA",
+    bar: "#EF9F27",
+    heroBg: "linear-gradient(135deg, #7A3D00 0%, #a85500 100%)",
+    tagline: "The stream for people who want to understand money, business and organisations",
+    insight: "Your pattern shows a practical, organised mind that is drawn to how money works, how businesses run, and how systems are managed. Commerce is one of India's most underrated streams — Chartered Accountancy, Banking, Finance, and Business Management are all high-earning, high-respect careers. Commerce also has the most accessible government exam paths: IBPS, SSC, and RBI exams are highly competitive but well-structured for students who plan well.",
+    subjects: [
+      { name: "Accountancy", why: "Core skill for CA, Banking, Finance — master this first", col: "#7A4A00", bg: "#FAEEDA" },
+      { name: "Business Studies", why: "Foundation for MBA, Marketing, Management careers", col: "#7A4A00", bg: "#FAEEDA" },
+      { name: "Economics", why: "Required for UPSC, MBA, Banking — highly useful", col: "#7A4A00", bg: "#FAEEDA" },
+      { name: "Maths or IP", why: "Take Maths if CA or Data Analytics interests you. IP is fine otherwise.", col: "#7A4A00", bg: "#FAEEDA" }
+    ],
+    careers: ["Chartered Accountant (CA)", "IBPS Bank PO / Clerk", "SSC CGL", "MBA / BBA", "Stock Market Analyst", "Business Owner", "Tax Consultant", "Financial Planner", "Cost Accountant", "RBI Grade B", "Insurance Manager", "Supply Chain Manager"],
+    steps: [
+      "Start the CA Foundation course as soon as you complete Class 12 — or even register during Class 12. CA is a 4-5 year journey that many students delay unnecessarily.",
+      "Open a zero-balance savings account and start tracking your expenses. Every student in Commerce should understand basic personal finance before they study it in a textbook.",
+      "Subscribe to one good business newspaper (The Economic Times or Business Standard) and read just the headlines every morning. This habit alone sets you apart.",
+      "Look at IBPS PO syllabus now — start with Quantitative Aptitude and Reasoning basics. Students who start in Class 11 are far better prepared than those who start after Class 12.",
+      "Book one Pehchaan session to map your Commerce path — CA vs. Banking vs. MBA vs. Govt exams — based on your strengths and family situation."
+    ]
+  },
+  A: {
+    name: "Arts / Humanities",
+    emoji: "🎨",
+    color: "#3C3489",
+    bg: "#EEEDFE",
+    bar: "#7F77DD",
+    heroBg: "linear-gradient(135deg, #26215C 0%, #3C3489 100%)",
+    tagline: "The stream for people who want to understand people, society and expression",
+    insight: "Your answers reveal a thoughtful, curious person who is drawn to language, ideas, people, and society. Arts and Humanities is deeply misunderstood in India — it is NOT the stream for students who 'could not get into Science.' It is the stream that produces IAS officers, lawyers, journalists, psychologists, writers, designers and diplomats. UPSC Civil Services — India's most prestigious exam — is primarily an Arts stream career path. Your stream choice is strong, and your future is wide open.",
+    subjects: [
+      { name: "History / Political Science", why: "Essential for UPSC, Law, Journalism, Teaching", col: "#3C3489", bg: "#EEEDFE" },
+      { name: "Geography / Economics", why: "Strong for UPSC, MBA, Urban Planning, Research", col: "#3C3489", bg: "#EEEDFE" },
+      { name: "Hindi / English Literature", why: "Foundation for Writing, Journalism, Law, Communication", col: "#3C3489", bg: "#EEEDFE" },
+      { name: "Psychology / Sociology", why: "For Counselling, Social Work, HR, Education paths", col: "#3C3489", bg: "#EEEDFE" }
+    ],
+    careers: ["IAS / IPS (UPSC)", "Lawyer (CLAT)", "Journalist / Editor", "Teacher / Professor", "Psychologist / Counsellor", "Social Worker (BSW)", "Graphic Designer / UX Designer", "Content Writer / Author", "HR Manager", "NGO / Development Work", "Fashion Designer (NIFT)", "Political Analyst"],
+    steps: [
+      "Ignore anyone who says Arts has no future. UPSC Civil Services, India's most competitive exam, is primarily cleared by Arts and Humanities students. Your stream is strong.",
+      "If Law interests you — prepare for CLAT from Class 11. It is competitive but very achievable with consistent reading and practice.",
+      "Read one newspaper thoroughly every day. UPSC and most Arts-track careers require general knowledge that can only be built over time, not crammed before an exam.",
+      "Start writing regularly — a journal, a blog, anything. Writing is the single most transferable skill in an Arts career and it only develops through practice.",
+      "Book one Pehchaan session. Let us map the path that fits your family situation — government job vs. private sector vs. higher studies — so you can plan your Class 11 and 12 years with a clear goal."
+    ]
+  }
+};
+
+/* ===== STATE ===== */
+var curQ = 0;
+var answers = {};
+var studentName = '';
+
+/* ===== HELPERS ===== */
+function showScreen(id) {
+  ['screen-cover','screen-quiz','screen-results'].forEach(function(s){
+    document.getElementById(s).classList.add('hidden');
+  });
+  document.getElementById(id).classList.remove('hidden');
+  window.scrollTo(0,0);
+}
+
+function renderQuestion(idx) {
+  var q = QUESTIONS[idx];
+  document.getElementById('quiz-label').textContent = 'Question ' + (idx+1) + ' of 15';
+  document.getElementById('quiz-count').textContent = 'Q ' + (idx+1) + ' of 15';
+  document.getElementById('nav-mid').textContent = 'Question ' + (idx+1) + ' of 15';
+  document.getElementById('prog-fill').style.width = (idx/15*100) + '%';
+  document.getElementById('btn-back').style.visibility = idx === 0 ? 'hidden' : 'visible';
+  document.getElementById('btn-next').textContent = idx === 14 ? 'See My Result →' : 'Next →';
+  document.getElementById('warn-box').style.display = 'none';
+
+  var saved = answers[idx];
+  var html = '<div class="q-card' + (saved !== undefined ? ' answered' : '') + '">';
+  html += '<div class="q-num">Question ' + (idx+1) + ' of 15</div>';
+  html += '<div class="q-text">' + q.q + '</div>';
+  if (q.ctx) html += '<div class="q-context">' + q.ctx + '</div>';
+  html += '<div class="opts-col">';
+  q.opts.forEach(function(opt, oi) {
+    html += '<button class="opt-btn' + (saved === oi ? ' sel' : '') + '" data-qi="' + idx + '" data-oi="' + oi + '">';
+    html += '<span class="opt-dot"></span>';
+    html += '<span>' + opt.text + '</span></button>';
+  });
+  html += '</div></div>';
+  document.getElementById('q-container').innerHTML = html;
+  window.scrollTo(0,0);
+}
+
+document.getElementById('btn-begin').addEventListener('click', function() {
+  studentName = (document.getElementById('student-name').value || '').trim();
+  if (!studentName) studentName = 'Friend';
+  showScreen('screen-quiz');
+  renderQuestion(0);
+});
+
+document.getElementById('q-container').addEventListener('click', function(e) {
+  var btn = e.target.closest('.opt-btn');
+  if (!btn) return;
+  var qi = parseInt(btn.getAttribute('data-qi'));
+  var oi = parseInt(btn.getAttribute('data-oi'));
+  answers[qi] = oi;
+  var card = btn.closest('.q-card');
+  if (card) card.classList.add('answered');
+  document.querySelectorAll('#q-container .opt-btn').forEach(function(b){ b.classList.remove('sel'); });
+  btn.classList.add('sel');
+});
+
+document.getElementById('btn-back').addEventListener('click', function() {
+  if (curQ > 0) { curQ--; renderQuestion(curQ); }
+});
+
+document.getElementById('btn-next').addEventListener('click', function() {
+  if (answers[curQ] === undefined) {
+    document.getElementById('warn-box').style.display = 'block';
+    return;
+  }
+  document.getElementById('warn-box').style.display = 'none';
+  if (curQ === 14) { buildResults(); }
+  else { curQ++; renderQuestion(curQ); }
+});
+
+document.getElementById('btn-restart').addEventListener('click', function() {
+  answers = {}; curQ = 0; showScreen('screen-cover');
+});
+
+/* ===== BUILD RESULTS ===== */
+function buildResults() {
+  var totals = {S:0, C:0, A:0};
+  QUESTIONS.forEach(function(q, qi) {
+    var oi = answers[qi];
+    if (oi !== undefined) {
+      var s = q.opts[oi].scores;
+      totals.S += s.S; totals.C += s.C; totals.A += s.A;
+    }
+  });
+
+  var max = Math.max(totals.S, totals.C, totals.A);
+  var topStream = totals.S >= totals.C && totals.S >= totals.A ? 'S' : totals.C >= totals.A ? 'C' : 'A';
+  var sd = STREAM_DATA[topStream];
+
+  /* Hero */
+  var hero = document.getElementById('res-hero');
+  hero.style.background = sd.heroBg;
+  document.getElementById('res-greeting').textContent = studentName + ', your result is ready.';
+  document.getElementById('res-headline').textContent = 'Your best-fit stream is';
+  document.getElementById('res-stream-badge').textContent = sd.emoji + '  ' + sd.name;
+  document.getElementById('res-stream-badge').style.color = 'var(--amber)';
+
+  var pctTop = Math.round(totals[topStream] / Math.max(max,1) * 100);
+  document.getElementById('res-stream-sub') && (document.getElementById('res-stream-sub').textContent = '');
+
+  /* Scores */
+  var totalPts = totals.S + totals.C + totals.A || 1;
+  var streams = [{id:'S',label:'Science',emoji:'🔬'},{id:'C',label:'Commerce',emoji:'📊'},{id:'A',label:'Arts',emoji:'🎨'}];
+  var scoreHtml = '';
+  streams.sort(function(a,b){return totals[b.id]-totals[a.id];}).forEach(function(st) {
+    var pct = Math.round(totals[st.id]/totalPts*100);
+    var bar = STREAM_DATA[st.id].bar;
+    var col = STREAM_DATA[st.id].color;
+    scoreHtml += '<div class="score-item">';
+    scoreHtml += '<div class="score-label" style="color:' + col + '">' + st.emoji + ' ' + st.label + '</div>';
+    scoreHtml += '<div class="score-track" style="background:' + STREAM_DATA[st.id].bg + '"><div class="score-fill" style="background:' + bar + '" data-pct="' + pct + '"></div></div>';
+    scoreHtml += '<div class="score-pct" style="color:' + col + '">' + pct + '%</div>';
+    scoreHtml += '</div>';
+  });
+  document.getElementById('score-list').innerHTML = scoreHtml;
+
+  /* Insight */
+  document.getElementById('insight-text').textContent = sd.insight;
+
+  /* Subjects */
+  var subjHtml = '';
+  sd.subjects.forEach(function(s) {
+    subjHtml += '<div class="subj-card" style="background:' + s.bg + ';border-color:' + s.col + '20">';
+    subjHtml += '<div class="subj-name" style="color:' + s.col + '">' + s.name + '</div>';
+    subjHtml += '<div class="subj-why" style="color:' + s.col + '">' + s.why + '</div></div>';
+  });
+  document.getElementById('subj-grid').innerHTML = subjHtml;
+
+  /* Careers */
+  var careerHtml = '';
+  sd.careers.forEach(function(c,i) {
+    careerHtml += '<span class="tag' + (i<4 ? ' top' : '') + '">' + c + '</span>';
+  });
+  document.getElementById('career-tags').innerHTML = careerHtml;
+
+  /* Next steps */
+  var stepsHtml = '';
+  sd.steps.forEach(function(s,i) {
+    stepsHtml += '<div class="step-item"><div class="step-num">' + (i+1) + '</div><div class="step-text">' + s + '</div></div>';
+  });
+  document.getElementById('steps-list').innerHTML = stepsHtml;
+
+  showScreen('screen-results');
+
+  /* Animate bars */
+  setTimeout(function() {
+    document.querySelectorAll('.score-fill').forEach(function(b){
+      b.style.width = b.getAttribute('data-pct') + '%';
+    });
+  }, 150);
+
+  /* Claude AI narrative */
+  fetchAINarrative(studentName, sd.name, totals, topStream);
+}
+
+/* ===== CLAUDE API — PERSONALISED NARRATIVE ===== */
+async function fetchAINarrative(name, stream, totals, topId) {
+  var total = totals.S + totals.C + totals.A || 1;
+  var sPct = Math.round(totals.S/total*100);
+  var cPct = Math.round(totals.C/total*100);
+  var aPct = Math.round(totals.A/total*100);
+
+  var prompt = 'You are Pehchaan Careers — an honest, warm elder-sibling career guide for students aged 15-17 in Tier 3 cities of Chhattisgarh, India (Korba, Bilaspur, Raigarh). Write a SHORT, warm, personal message (3-4 sentences, under 120 words) for ' + name + ' who just completed the Stream Advisor test. Their result: ' + stream + ' stream (Science ' + sPct + '%, Commerce ' + cPct + '%, Arts ' + aPct + '%). Write directly to them using their name. Be encouraging but honest. Do not use flowery language. Sound like an elder sibling who genuinely cares. Write in simple English — clear sentences, no jargon. End with one encouraging sentence about their specific stream. Do not start with "Hello" or "Hi".';
+
+  try {
+    var res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 200,
+        messages: [{ role: 'user', content: prompt }]
+      })
+    });
+    var data = await res.json();
+    var text = (data.content && data.content[0] && data.content[0].text) || '';
+    if (text) {
+      document.getElementById('ai-content').innerHTML = '<p>' + text + '</p>';
+    } else {
+      setFallbackNarrative(name, topId);
+    }
+  } catch(e) {
+    setFallbackNarrative(name, topId);
+  }
+}
+
+function setFallbackNarrative(name, topId) {
+  var msgs = {
+    S: name + ', you chose answers that show a mind that genuinely wants to understand how things work — not just memorise, but really understand. That is exactly the kind of thinking that drives good engineers, doctors and scientists. Science stream will feel challenging, but the right kind of challenging. Thousands of students from smaller cities have cracked JEE and NEET — hard work from day one makes all the difference.',
+    C: name + ', your answers show someone who thinks practically about resources, planning and outcomes. That is an incredibly valuable way of thinking — and it is exactly what Commerce stream is built for. The path from here to CA, Banking or Business is clear and structured. You are not choosing the easy stream — you are choosing the smart one for your strengths.',
+    A: name + ', the fact that you scored highest in Arts tells me you think deeply about people, society and ideas. That is not a weakness — it is a strength that most students in India have been told to ignore. The students who crack UPSC, become lawyers or build media careers are often exactly the kind of thinkers you describe yourself as being. Your stream is one of quiet power.'
+  };
+  document.getElementById('ai-content').innerHTML = '<p>' + msgs[topId] + '</p>';
+}
+
+/* Enter key on name field */
+document.getElementById('student-name').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') document.getElementById('btn-begin').click();
+});
+</script>
+</body>
+</html>
