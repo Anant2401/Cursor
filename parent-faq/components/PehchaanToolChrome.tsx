@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 
-/** Relative link works when this app is deployed under /Tools/parents-guide/ next to the main site index. */
-export const PEHCHAAN_HOME_RELATIVE = "../index.html";
+/** Root-relative home link — correct from /Tools/parents-guide/ (../ would resolve to /Tools/index.html). */
+export const PEHCHAAN_HOME_RELATIVE = "/index.html";
 
 function LogoSvg() {
   return (
