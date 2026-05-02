@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Career Interest Test – Pehchaan Careers</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
     --teal:        #1D9E75;
@@ -28,7 +28,16 @@
     --shadow:      0 1px 4px rgba(8,80,65,0.10);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Poppins', sans-serif; background: radial-gradient(1200px 520px at 8% -10%, rgba(127,119,221,.12), transparent 65%), radial-gradient(900px 420px at 92% 6%, rgba(55,138,221,.1), transparent 62%), linear-gradient(180deg, #eef8f4 0%, #e5f3ee 42%, #e8f5f0 100%); color: var(--text); min-height: 100vh; font-size: 14px; }
+  html { overflow-x: hidden; max-width: 100%; }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(1200px 520px at 8% -10%, rgba(127,119,221,.12), transparent 65%), radial-gradient(900px 420px at 92% 6%, rgba(55,138,221,.1), transparent 62%), linear-gradient(180deg, #eef8f4 0%, #e5f3ee 42%, #e8f5f0 100%);
+    color: var(--text);
+    min-height: 100vh;
+    font-size: 14px;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
 
   /* WATERMARK */
   body::before {
@@ -41,11 +50,11 @@
     z-index: 0; letter-spacing: .08em; user-select: none;
   }
 
-  .container { max-width: 700px; margin: 0 auto; padding: 20px 16px 60px; position: relative; z-index: 1; }
+  .container { max-width: 700px; width: 100%; margin: 0 auto; padding: 20px 16px 60px; position: relative; z-index: 1; min-width: 0; }
   .hidden { display: none !important; }
 
   /* TOP BAR */
-  .topbar { display: flex; align-items: center; gap: 12px; padding: 14px 0 22px; }
+  .topbar { display: flex; align-items: center; gap: 12px; padding: 14px 0 22px; min-width: 0; max-width: 100%; flex-wrap: nowrap; }
   .topbar-logo { width: 40px; height: 40px; background: var(--teal-dark); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .topbar-logo svg { width: 24px; height: 24px; }
   .topbar-name { font-size: 15px; font-weight: 700; color: var(--teal-dark); }

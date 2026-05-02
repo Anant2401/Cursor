@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Stream Advisor – Pehchaan Careers</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%23085041'/><circle cx='20' cy='22' r='8' fill='%23EF9F27'/><line x1='20' y1='8' x2='20' y2='4' stroke='%23EF9F27' stroke-width='2.2' stroke-linecap='round'/><line x1='30.5' y1='11.5' x2='33.5' y2='8.5' stroke='%23EF9F27' stroke-width='2.2' stroke-linecap='round'/><line x1='9.5' y1='11.5' x2='6.5' y2='8.5' stroke='%23EF9F27' stroke-width='2.2' stroke-linecap='round'/><path d='M8 34 L20 26 L32 34' stroke='%231D9E75' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --teal:        #1D9E75;
@@ -37,12 +37,21 @@
     --arts-bg:      #EEEDFE;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Poppins', sans-serif; background: radial-gradient(1200px 520px at 8% -10%, rgba(127,119,221,.12), transparent 65%), radial-gradient(900px 420px at 92% 6%, rgba(55,138,221,.1), transparent 62%), linear-gradient(180deg, #eef8f4 0%, #e5f3ee 42%, #e8f5f0 100%); color: var(--text); min-height: 100vh; font-size: 14px; }
-  .container { max-width: 700px; margin: 0 auto; padding: 20px 16px 60px; }
+  html { overflow-x: hidden; max-width: 100%; }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(1200px 520px at 8% -10%, rgba(127,119,221,.12), transparent 65%), radial-gradient(900px 420px at 92% 6%, rgba(55,138,221,.1), transparent 62%), linear-gradient(180deg, #eef8f4 0%, #e5f3ee 42%, #e8f5f0 100%);
+    color: var(--text);
+    min-height: 100vh;
+    font-size: 14px;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  .container { max-width: 700px; width: 100%; margin: 0 auto; padding: 20px 16px 60px; min-width: 0; }
   .hidden { display: none !important; }
 
   /* TOP BAR */
-  .topbar { display: flex; align-items: center; gap: 12px; padding: 14px 0 22px; }
+  .topbar { display: flex; align-items: center; gap: 12px; padding: 14px 0 22px; min-width: 0; max-width: 100%; flex-wrap: nowrap; }
   .topbar-logo {
     width: 40px; height: 40px; background: var(--teal-dark);
     border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;

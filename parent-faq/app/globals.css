@@ -11,6 +11,11 @@
   --font-sans: var(--font-poppins);
 }
 
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   background: radial-gradient(
       1200px 520px at 8% -10%,
@@ -21,6 +26,8 @@ body {
     linear-gradient(180deg, #eef8f4 0%, #e5f3ee 42%, #e8f5f0 100%);
   color: var(--foreground);
   min-height: 100vh;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body::before {

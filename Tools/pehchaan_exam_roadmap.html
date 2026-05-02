@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Exam Roadmap Builder – Pehchaan Careers</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%23085041'/><path d='M8 22 A12 12 0 0 1 32 22 Z' fill='%23EF9F27'/><path d='M6 36 L20 24 L34 36' stroke='%231D9E75' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
     --teal:#1D9E75; --teal-dark:#085041; --teal-light:#E1F5EE;
@@ -18,12 +18,13 @@
     --radius:14px; --shadow:0 1px 4px rgba(8,80,65,0.10);
   }
   *{box-sizing:border-box;margin:0;padding:0;}
-  body{font-family:'Poppins',sans-serif;background:#F0FAF5;color:var(--text);min-height:100vh;font-size:14px;}
-  .container{max-width:700px;margin:0 auto;padding:20px 16px 60px;position:relative;z-index:1;}
+  html{overflow-x:hidden;max-width:100%;}
+  body{font-family:'Poppins',sans-serif;background:#F0FAF5;color:var(--text);min-height:100vh;font-size:14px;overflow-x:hidden;max-width:100%;}
+  .container{max-width:700px;width:100%;margin:0 auto;padding:20px 16px 60px;position:relative;z-index:1;min-width:0;}
   .hidden{display:none !important;}
 
   /* TOPBAR */
-  .topbar{display:flex;align-items:center;gap:12px;padding:14px 0 22px;}
+  .topbar{display:flex;align-items:center;gap:12px;padding:14px 0 22px;min-width:0;max-width:100%;}
   .topbar-logo{width:40px;height:40px;background:var(--teal-dark);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
   .topbar-logo svg{width:24px;height:24px;}
   .topbar-name{font-size:15px;font-weight:700;color:var(--teal-dark);}

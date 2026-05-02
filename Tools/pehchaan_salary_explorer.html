@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Career & Salary Explorer – Pehchaan Careers</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%23085041'/><path d='M8 22 A12 12 0 0 1 32 22 Z' fill='%23EF9F27'/><path d='M6 36 L20 24 L34 36' stroke='%231D9E75' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
     --teal:        #1D9E75;
@@ -31,7 +31,16 @@
     --shadow:      0 1px 4px rgba(8,80,65,0.10);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Poppins', sans-serif; background: radial-gradient(1200px 520px at 8% -10%, rgba(127,119,221,.12), transparent 65%), radial-gradient(900px 420px at 92% 6%, rgba(55,138,221,.1), transparent 62%), linear-gradient(180deg, #eef8f4 0%, #e5f3ee 42%, #e8f5f0 100%); color: var(--text); min-height: 100vh; font-size: 14px; }
+  html { overflow-x: hidden; max-width: 100%; }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(1200px 520px at 8% -10%, rgba(127,119,221,.12), transparent 65%), radial-gradient(900px 420px at 92% 6%, rgba(55,138,221,.1), transparent 62%), linear-gradient(180deg, #eef8f4 0%, #e5f3ee 42%, #e8f5f0 100%);
+    color: var(--text);
+    min-height: 100vh;
+    font-size: 14px;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
 
   body::before {
     content: 'Pehchaan Careers';
@@ -43,9 +52,9 @@
     z-index: 0; letter-spacing: .08em; user-select: none;
   }
 
-  .container { max-width: 700px; margin: 0 auto; padding: 20px 16px 60px; position: relative; z-index: 1; }
+  .container { max-width: 700px; width: 100%; margin: 0 auto; padding: 20px 16px 60px; position: relative; z-index: 1; min-width: 0; }
 
-  .topbar { display: flex; align-items: center; gap: 12px; padding: 14px 0 22px; }
+  .topbar { display: flex; align-items: center; gap: 12px; padding: 14px 0 22px; min-width: 0; max-width: 100%; flex-wrap: nowrap; }
   .topbar-logo { width: 40px; height: 40px; background: var(--teal-dark); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .topbar-logo svg { width: 24px; height: 24px; }
   .topbar-name { font-size: 15px; font-weight: 700; color: var(--teal-dark); }
@@ -76,7 +85,7 @@
   .hero-stat .v { font-size: 24px; font-weight: 700; color: var(--amber); }
   .hero-stat .l { font-size: 11px; opacity: .75; margin-top: 2px; }
 
-  .filter-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 18px 20px; margin-bottom: 16px; box-shadow: var(--shadow); }
+  .filter-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 18px 20px; margin-bottom: 16px; box-shadow: var(--shadow); min-width: 0; max-width: 100%; }
   .filter-card h3 { font-size: 11px; font-weight: 700; color: var(--teal-dark); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px; }
   .search-wrap { position: relative; margin-bottom: 14px; }
   .search-input { width: 100%; padding: 12px 16px 12px 42px; border: 1.5px solid var(--border); border-radius: 12px; font-family: 'Poppins', sans-serif; font-size: 13px; color: var(--text); outline: none; transition: border-color .2s, box-shadow .2s; background: var(--card-bg); }
@@ -87,10 +96,21 @@
   .filter-btn { border: 1.5px solid var(--border); background: var(--white); border-radius: 20px; padding: 7px 14px; font-size: 12px; font-weight: 600; color: var(--gray-text); cursor: pointer; font-family: 'Poppins', sans-serif; transition: all .15s; white-space: nowrap; }
   .filter-btn:hover { border-color: var(--teal); color: var(--teal-dark); background: var(--teal-light); }
   .filter-btn.active { background: var(--teal-dark); color: var(--amber); border-color: var(--teal-dark); }
-  .sort-row { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
-  .sort-label { font-size: 11px; font-weight: 700; color: var(--teal-dark); text-transform: uppercase; letter-spacing: .06em; }
+  /* Stack label + select on narrow screens — native <select> has a large min-content width */
+  .sort-row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    margin-top: 12px;
+    width: 100%;
+    min-width: 0;
+  }
+  .sort-label { font-size: 11px; font-weight: 700; color: var(--teal-dark); text-transform: uppercase; letter-spacing: .06em; flex-shrink: 0; }
   .sort-select {
-    flex: 1;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
     border: 1.5px solid var(--border);
     border-radius: 11px;
     padding: 9px 12px;
@@ -101,6 +121,29 @@
     outline: none;
   }
   .sort-select:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(29,158,117,.12); background: var(--white); }
+  @media (min-width: 481px) {
+    .sort-row {
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+    .sort-select {
+      flex: 1 1 0;
+      width: auto;
+      min-width: 0;
+    }
+    .career-head {
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    .salary-preview {
+      flex: 0 0 auto;
+      margin-top: 0;
+      margin-left: auto;
+      text-align: right;
+      padding-left: 8px;
+    }
+  }
   .results-count { font-size: 11px; color: var(--gray-text); margin-top: 10px; }
 
   .career-grid { display: flex; flex-direction: column; gap: 12px; }
@@ -109,7 +152,7 @@
   .career-card:hover { border-color: var(--teal); box-shadow: 0 4px 12px rgba(8,80,65,0.12); }
   .career-card.open { border-color: var(--teal); }
 
-  .career-head { display: flex; align-items: center; gap: 14px; padding: 18px 20px 10px; }
+  .career-head { display: flex; align-items: flex-start; gap: 14px; padding: 18px 20px 10px; min-width: 0; flex-wrap: wrap; }
   .career-emoji { font-size: 24px; width: 48px; height: 48px; border-radius: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
   .career-head-info { flex: 1; min-width: 0; }
   .career-name { font-size: 14px; font-weight: 700; color: var(--teal-dark); margin-bottom: 5px; }
@@ -119,7 +162,7 @@
   .ctag-type { background: var(--amber-light); color: #7A4A00; border: 1px solid #F5C878; }
   .ctag-govt { background: var(--blue-light); color: #185FA5; border: 1px solid #85B7EB; }
   .ctag-creative { background: var(--purple-light); color: #3C3489; border: 1px solid #C4C0F5; }
-  .salary-preview { text-align: right; flex-shrink: 0; padding-left: 8px; }
+  .salary-preview { text-align: right; flex-shrink: 0; padding-left: 8px; margin-left: auto; min-width: 0; }
   .salary-entry { font-size: 13px; font-weight: 700; color: var(--teal-dark); white-space: nowrap; }
   .salary-entry-lbl { font-size: 10px; color: var(--gray-text); }
   .career-chevron { font-size: 11px; color: var(--gray-text); margin-left: 6px; transition: transform .2s; flex-shrink: 0; }
@@ -172,10 +215,13 @@
 
   @media (max-width: 480px) {
     .hero-card h1 { font-size: 22px; }
+    .filter-card { padding: 16px 14px; }
     .salary-grid { grid-template-columns: repeat(3,1fr); }
     .sal-box .sal-amt { font-size: 13px; }
     .filter-btn { padding: 6px 10px; font-size: 11px; }
     .career-head { gap: 10px; padding: 14px 14px 8px; }
+    .career-head-info { flex: 1 1 160px; min-width: 0; }
+    .salary-preview { flex: 1 1 100%; margin-left: 0; padding-left: 0; text-align: left; margin-top: 4px; }
     .career-body { padding: 16px; }
     .reality-row { padding: 0 14px 12px; }
   }
