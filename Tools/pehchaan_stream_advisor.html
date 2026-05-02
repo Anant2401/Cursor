@@ -50,6 +50,19 @@
   .topbar-logo svg { width: 24px; height: 24px; }
   .topbar-name { font-size: 15px; font-weight: 700; color: var(--teal-dark); }
   .topbar-tag { font-size: 11px; color: var(--gray-text); }
+  .topbar-back {
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    width: 40px; height: 40px; border-radius: 12px;
+    background: rgba(29,158,117,.12); color: var(--teal-dark);
+    font-size: 18px; font-weight: 700; text-decoration: none; line-height: 1;
+    transition: background .15s;
+  }
+  .topbar-back:hover { background: rgba(29,158,117,.22); }
+  .topbar-brand {
+    display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit;
+    flex: 1; min-width: 0;
+  }
+  .topbar-brand:hover .topbar-name { color: var(--teal); }
 
   /* HERO */
   .hero-card {
@@ -288,6 +301,8 @@
 <!-- ==================== COVER ==================== -->
 <div id="screen-cover">
   <div class="topbar">
+    <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+    <a class="topbar-brand" href="../index.html">
     <div class="topbar-logo">
       <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="20" cy="22" r="8" fill="#EF9F27"/>
@@ -304,6 +319,7 @@
       <div class="topbar-name">Pehchaan Careers</div>
       <div class="topbar-tag">Your identity. Your path.</div>
     </div>
+    </a>
   </div>
 
   <div class="hero-card">
@@ -352,6 +368,8 @@
 <!-- ==================== QUIZ ==================== -->
 <div id="screen-quiz" class="hidden">
   <div class="topbar">
+    <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+    <a class="topbar-brand" href="../index.html">
     <div class="topbar-logo">
       <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="22" r="8" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="30.5" y1="11.5" x2="33.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="9.5" y1="11.5" x2="6.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="34" y1="22" x2="38" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="6" y1="22" x2="2" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M8 34 L20 26 L32 34" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 34 L20 28 L36 34" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/></svg>
     </div>
@@ -359,6 +377,7 @@
       <div class="topbar-name">Pehchaan Careers</div>
       <div class="topbar-tag" id="quiz-label">Class 10 Stream Advisor</div>
     </div>
+    </a>
     <div style="margin-left:auto;font-size:12px;font-weight:700;color:var(--teal)" id="quiz-count">Q 1 of 15</div>
   </div>
 
@@ -380,10 +399,13 @@
 <!-- ==================== RESULTS ==================== -->
 <div id="screen-results" class="hidden">
   <div class="topbar">
+    <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+    <a class="topbar-brand" href="../index.html">
     <div class="topbar-logo">
       <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="22" r="8" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="30.5" y1="11.5" x2="33.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="9.5" y1="11.5" x2="6.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="34" y1="22" x2="38" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="6" y1="22" x2="2" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M8 34 L20 26 L32 34" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 34 L20 28 L36 34" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/></svg>
     </div>
     <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your stream result</div></div>
+    </a>
   </div>
 
   <div class="res-hero" id="res-hero">

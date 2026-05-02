@@ -74,6 +74,30 @@ function initToolsTabs() {
         "Gives structured next steps so you can start with clarity",
       ],
     },
+    mentor: {
+      bestFor:
+        "Students who want proof, not hype, that someone from their place reached the goal they are chasing",
+      time: "About 5–8 minutes",
+      output: "People to learn from, draft messages in your name, and LinkedIn paths to explore",
+      highlights: [
+        "Turn the silent question in your head into proof: real people, real journeys, and a first message you can send with dignity",
+        "Search from your hometown toward your dream company or role, so every result feels relevant, not random",
+        "Three layers: mentors who chose to help students, public profiles to verify, and one-tap LinkedIn searches with filters ready",
+        "Draft outreach uses your first name so your hello sounds human; you edit the rest before you send",
+      ],
+    },
+    parentguide: {
+      bestFor: "Parents in Tier 2/3 cities anxious about marks, sarkari vs private, arts, safety, and new careers",
+      time: "2–5 minutes to browse; search is instant",
+      output:
+        "170+ Q&As in English or Hinglish, many topics (CG jobs, money, health, low marks) — contact if you need more",
+      highlights: [
+        "Fuzzy search (Fuse.js) handles typos and Hinglish — e.g. “Sarkari” still finds government-job topics",
+        "Tags are weighted in search so parent-style words match the right worry, not random keywords",
+        "Browse all answers or filter by category — from Marks & Streams to new batches like low marks and local industries",
+        "Switch English ↔ Hinglish anytime; expand one answer at a time without clutter",
+      ],
+    },
   };
 
   const setCardExpanded = (card, expanded) => {

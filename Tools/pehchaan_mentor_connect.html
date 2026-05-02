@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentor Connect | Pehchaan Careers</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%23085041'/><path d='M8 22 A12 12 0 0 1 32 22 Z' fill='%23EF9F27'/><path d='M6 36 L20 24 L34 36' stroke='%231D9E75' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --teal:#1D9E75; --teal-dark:#085041; --teal-light:#E1F5EE;
+  --amber:#EF9F27; --amber-light:#FAEEDA;
+  --navy:#1A1A2E; --white:#FFFFFF; --card-bg:#F8FAFC;
+  --gray-text:#64748B; --red:#E24B4A; --red-light:#FCEBEB;
+  --purple:#7F77DD; --purple-light:#EEEDFE;
+  --blue:#378ADD; --blue-light:#E6F1FB;
+  --border:#D1E8DF; --text:#1A1A2E;
+  --radius:14px; --shadow:0 1px 4px rgba(8,80,65,0.10);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at 8% -10%,rgba(127,119,221,.12),transparent 65%),radial-gradient(900px 420px at 92% 6%,rgba(55,138,221,.1),transparent 62%),linear-gradient(180deg,#eef8f4 0%,#e5f3ee 42%,#e8f5f0 100%);color:var(--text);min-height:100vh;font-size:14px;}
+body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-35deg);font-size:52px;font-weight:800;color:rgba(8,80,65,0.045);white-space:nowrap;pointer-events:none;z-index:0;letter-spacing:.08em;user-select:none;}
+.container{max-width:700px;margin:0 auto;padding:20px 16px 60px;position:relative;z-index:1;}
+.hidden{display:none !important;}
+
+/* TOPBAR */
+.topbar{display:flex;align-items:center;gap:12px;padding:14px 0 22px;}
+.topbar-logo{width:40px;height:40px;background:var(--teal-dark);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.topbar-logo svg{width:24px;height:24px;}
+.topbar-name{font-size:15px;font-weight:700;color:var(--teal-dark);}
+.topbar-tag{font-size:11px;color:var(--gray-text);}
+.topbar-back{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:40px;height:40px;border-radius:12px;background:rgba(29,158,117,.12);color:var(--teal-dark);font-size:18px;font-weight:700;text-decoration:none;line-height:1;transition:background .15s;}
+.topbar-back:hover{background:rgba(29,158,117,.22);}
+.topbar-brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;flex:1;min-width:0;}
+.topbar-brand:hover .topbar-name{color:var(--teal);}
+
+/* HERO */
+.hero-card{background:var(--teal-dark);border-radius:22px;padding:34px 28px;color:var(--white);margin-bottom:16px;position:relative;overflow:hidden;}
+.hero-card::before{content:'';position:absolute;top:-50px;right:-50px;width:180px;height:180px;background:rgba(255,255,255,.05);border-radius:50%;}
+.hero-card::after{content:'';position:absolute;bottom:-30px;right:30px;width:110px;height:110px;background:rgba(239,159,39,.12);border-radius:50%;}
+.hero-tag{display:inline-block;background:rgba(239,159,39,.2);border:1px solid rgba(239,159,39,.4);color:var(--amber);font-size:11px;font-weight:600;padding:4px 14px;border-radius:20px;margin-bottom:16px;letter-spacing:.03em;}
+.hero-card h1{font-size:26px;font-weight:700;line-height:1.25;margin-bottom:10px;}
+.hero-card h1 span{color:var(--amber);}
+.hero-card p{font-size:13px;opacity:.85;line-height:1.75;margin-bottom:22px;}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0 0;}
+.hero-stat{background:rgba(255,255,255,.1);border-radius:12px;padding:14px 8px;text-align:center;border:1px solid rgba(255,255,255,.12);}
+.hero-stat .v{font-size:22px;font-weight:700;color:var(--amber);}
+.hero-stat .l{font-size:11px;opacity:.75;margin-top:2px;}
+.name-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:16px 18px;margin-top:16px;}
+.name-card label{font-size:13px;font-weight:600;display:block;margin-bottom:10px;}
+.name-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.name-input{width:100%;padding:11px 12px;border-radius:10px;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);color:var(--white);font-family:'Poppins',sans-serif;font-size:13px;outline:none;transition:border-color .2s;}
+.name-input:focus{border-color:var(--amber);}
+.name-input::placeholder{color:rgba(255,255,255,.5);}
+
+/* CARD */
+.card{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:22px 20px;margin-bottom:14px;box-shadow:var(--shadow);}
+.card h3{font-size:11px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;}
+
+/* FORM */
+.form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
+.form-group label{font-size:12px;font-weight:600;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.05em;}
+.form-group input,.form-group select{border:1.5px solid var(--border);border-radius:10px;padding:13px 14px;font-size:13px;font-family:'Poppins',sans-serif;color:var(--text);background:var(--white);outline:none;transition:border-color .2s,box-shadow .2s;width:100%;}
+.form-group input:focus,.form-group select:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,158,117,.12);}
+.form-group input::placeholder{color:#b0c4bb;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.form-hint{font-size:11px;color:var(--gray-text);line-height:1.5;margin-top:-8px;margin-bottom:6px;}
+.btn-search{width:100%;background:var(--amber);color:var(--teal-dark);border:none;border-radius:var(--radius);padding:15px;font-size:15px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;transition:transform .15s,box-shadow .15s;margin-top:4px;}
+.btn-search:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(239,159,39,.4);}
+.btn-search:disabled{opacity:.4;cursor:not-allowed;transform:none;box-shadow:none;}
+
+/* API KEY NOTICE */
+.api-notice{background:var(--amber-light);border:1.5px solid #F5C878;border-radius:12px;padding:14px 16px;margin-bottom:14px;}
+.api-notice p{font-size:12px;color:#7A4A00;line-height:1.75;}
+.api-notice strong{color:#5A3200;}
+.api-notice a{color:var(--teal-dark);font-weight:600;}
+
+/* LOADING */
+.loading-box{text-align:center;padding:40px 20px;}
+.loading-spinner{width:40px;height:40px;border:3px solid var(--teal-light);border-top-color:var(--teal);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 14px;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.loading-box p{font-size:13px;color:var(--gray-text);}
+
+/* RESULTS HEADER */
+.results-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:8px;}
+.results-title{font-size:15px;font-weight:700;color:var(--teal-dark);}
+.results-count{font-size:12px;color:var(--gray-text);background:var(--teal-light);padding:4px 12px;border-radius:20px;}
+
+/* LAYER BADGE */
+.layer-badge{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:10px;}
+.layer-curated{background:var(--teal-light);color:var(--teal-dark);}
+.layer-google{background:var(--blue-light);color:#0C447C;}
+.layer-smart{background:var(--amber-light);color:#7A4A00;}
+
+/* MENTOR CARD — CURATED */
+.mentor-card{background:var(--white);border:1.5px solid var(--border);border-radius:18px;padding:20px;margin-bottom:12px;box-shadow:var(--shadow);transition:border-color .2s;}
+.mentor-card:hover{border-color:var(--teal);}
+.mentor-card-top{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
+.mentor-avatar{width:52px;height:52px;border-radius:50%;background:var(--teal-dark);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;color:var(--amber);flex-shrink:0;border:2.5px solid var(--teal-light);}
+.mentor-info{flex:1;}
+.mentor-name{font-size:15px;font-weight:700;color:var(--teal-dark);}
+.mentor-title{font-size:12px;color:var(--gray-text);margin-top:2px;}
+.mentor-company{display:inline-block;background:var(--teal-light);color:var(--teal-dark);font-size:11px;font-weight:700;padding:2px 10px;border-radius:20px;margin-top:4px;}
+.journey-box{background:var(--card-bg);border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:12px;}
+.journey-label{font-size:10px;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.06em;margin-bottom:5px;}
+.journey-text{font-size:12px;color:var(--text);line-height:1.7;}
+.journey-path{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:8px;}
+.journey-step{font-size:11px;font-weight:600;color:var(--teal-dark);background:var(--teal-light);padding:3px 10px;border-radius:20px;}
+.journey-arrow{font-size:12px;color:var(--teal);}
+
+/* ICEBREAKER */
+.icebreaker-box{background:var(--teal-dark);border-radius:12px;padding:16px;margin-bottom:12px;color:var(--white);}
+.icebreaker-label{font-size:10px;font-weight:700;color:var(--amber);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;}
+.icebreaker-text{font-size:12px;line-height:1.8;opacity:.9;font-style:italic;}
+.icebreaker-hint{font-size:11px;opacity:.65;margin-top:8px;}
+.btn-copy{background:var(--amber);color:var(--teal-dark);border:none;border-radius:8px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;transition:transform .15s;}
+.btn-copy:hover{transform:translateY(-1px);}
+.btn-copy.copied{background:var(--teal);color:var(--white);}
+.btn-li{display:inline-flex;align-items:center;gap:6px;background:var(--blue);color:var(--white);border:none;border-radius:8px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;text-decoration:none;transition:transform .15s;}
+.btn-li:hover{transform:translateY(-1px);background:#185FA5;}
+.card-actions{display:flex;gap:8px;flex-wrap:wrap;}
+
+/* GOOGLE RESULT CARD */
+.google-card{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:16px 18px;margin-bottom:10px;box-shadow:var(--shadow);}
+.google-card-top{display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;}
+.google-avatar{width:44px;height:44px;border-radius:50%;background:var(--blue-light);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:#0C447C;flex-shrink:0;}
+.google-name{font-size:14px;font-weight:700;color:var(--teal-dark);margin-bottom:2px;}
+.google-snippet{font-size:12px;color:var(--gray-text);line-height:1.65;}
+.google-url{font-size:11px;color:var(--teal);word-break:break-all;margin-top:4px;text-decoration:none;}
+.google-note{font-size:11px;color:var(--gray-text);background:var(--teal-light);border-radius:8px;padding:6px 10px;margin-top:8px;line-height:1.5;}
+
+/* SMART SEARCH SECTION */
+.smart-search-card{background:var(--teal-dark);border-radius:18px;padding:22px 20px;margin-bottom:14px;color:var(--white);}
+.smart-search-card h3{font-size:13px;font-weight:700;color:var(--amber);margin-bottom:8px;}
+.smart-search-card p{font-size:12px;opacity:.85;line-height:1.7;margin-bottom:14px;}
+.smart-links{display:flex;flex-direction:column;gap:8px;}
+.smart-link{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:12px 14px;text-decoration:none;color:var(--white);transition:background .15s;cursor:pointer;}
+.smart-link:hover{background:rgba(255,255,255,.18);}
+.smart-link-icon{font-size:18px;flex-shrink:0;}
+.smart-link-text{flex:1;}
+.smart-link-title{font-size:13px;font-weight:600;}
+.smart-link-sub{font-size:11px;opacity:.7;margin-top:2px;}
+.smart-link-arrow{font-size:14px;opacity:.6;}
+
+/* BE A MENTOR CTA */
+.mentor-cta{background:var(--amber-light);border:1.5px solid #F5C878;border-radius:18px;padding:20px;margin-bottom:14px;}
+.mentor-cta h3{font-size:14px;font-weight:700;color:#5A3200;margin-bottom:8px;}
+.mentor-cta p{font-size:12px;color:#7A4A00;line-height:1.75;margin-bottom:14px;}
+.btn-mentor,.btn-mentor:link,.btn-mentor:visited{background:var(--teal-dark);color:var(--amber);border:none;border-radius:var(--radius);padding:13px 22px;font-size:13px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;transition:transform .15s;text-decoration:none;display:inline-block;}
+.btn-mentor:hover{transform:translateY(-1px);}
+
+/* NO RESULTS */
+.no-results{text-align:center;padding:32px 20px;}
+.no-results-icon{font-size:36px;margin-bottom:12px;}
+.no-results p{font-size:13px;color:var(--gray-text);line-height:1.7;}
+
+/* ERROR BOX */
+.error-box{background:var(--red-light);border:1.5px solid #F5A5A4;border-radius:12px;padding:14px 16px;margin-bottom:12px;}
+.error-box p{font-size:12px;color:var(--red);line-height:1.7;}
+
+/* DISCLAIMER */
+.disclaimer-box{background:#F8F7FF;border:1px solid #C4C0F5;border-radius:14px;padding:16px 20px;margin-bottom:14px;}
+.disclaimer-box h4{font-size:12px;font-weight:700;color:#4B46A0;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;}
+.disclaimer-box p{font-size:12px;color:var(--gray-text);line-height:1.75;}
+.brand-footer{text-align:center;margin-top:28px;padding-top:20px;border-top:1px solid var(--teal-light);}
+.brand-footer p{font-size:11px;color:var(--gray-text);line-height:1.8;}
+.brand-footer strong{color:var(--teal-dark);}
+.brand-tagline{font-size:13px;font-weight:600;color:var(--teal);margin-top:4px;}
+
+.btn-new-search{width:100%;border:1.5px solid var(--teal);background:var(--white);border-radius:var(--radius);padding:13px;font-size:13px;font-weight:700;cursor:pointer;color:var(--teal-dark);font-family:'Poppins',sans-serif;margin-bottom:14px;}
+.btn-new-search:hover{background:var(--teal-light);}
+
+/* Setup card (Serper) — match other tool cards */
+.setup-highlight{background:var(--teal-light);border-radius:10px;padding:12px 14px;margin-bottom:16px;}
+.setup-title{font-size:13px;font-weight:700;color:var(--teal-dark);margin-bottom:6px;}
+.setup-steps{display:flex;flex-direction:column;gap:6px;}
+.setup-step{display:flex;gap:8px;align-items:flex-start;}
+.setup-step-num{background:var(--teal);color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;}
+.setup-step-text{font-size:12px;color:var(--teal-dark);line-height:1.5;}
+.setup-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.btn-save-key{background:var(--teal);color:#fff;border:none;border-radius:10px;padding:11px 22px;font-size:13px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;}
+.setup-footnote{font-size:11px;color:var(--gray-text);margin-top:10px;line-height:1.6;}
+.api-saved-msg{font-size:12px;color:var(--teal);display:none;font-weight:600;}
+.setup-card-accent{border:1.5px solid var(--teal);}
+
+/* How it works steps */
+.hiw-steps{display:flex;flex-direction:column;gap:12px;}
+.hiw-step{display:flex;gap:12px;align-items:flex-start;}
+.hiw-num{width:28px;height:28px;border-radius:50%;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.hiw-num.teal{background:var(--teal-light);color:var(--teal-dark);}
+.hiw-num.blue{background:var(--blue-light);color:#0C447C;}
+.hiw-num.amber{background:var(--amber-light);color:#7A4A00;}
+.hiw-step-title{font-size:13px;font-weight:600;color:var(--teal-dark);margin-bottom:2px;}
+.hiw-step-desc{font-size:12px;color:var(--gray-text);line-height:1.6;}
+
+/* Results hero — aligns with Exam Roadmap / Stream Advisor pattern */
+.res-hero{background:var(--teal-dark);border-radius:22px;padding:28px 24px;color:var(--white);margin-bottom:16px;position:relative;overflow:hidden;}
+.res-hero::before{content:'';position:absolute;top:-40px;right:-40px;width:150px;height:150px;background:rgba(239,159,39,.1);border-radius:50%;}
+.res-hero::after{content:'';position:absolute;bottom:-30px;left:-30px;width:120px;height:120px;background:rgba(255,255,255,.04);border-radius:50%;}
+.res-hero-label{font-size:12px;opacity:.75;margin-bottom:4px;}
+.res-hero-name{font-size:20px;font-weight:700;color:var(--amber);margin-bottom:6px;line-height:1.35;}
+.res-hero-sub{font-size:13px;opacity:.85;line-height:1.6;margin-bottom:8px;}
+.res-hero-target{font-size:12px;opacity:.8;margin-bottom:14px;line-height:1.5;}
+.res-profile-row{display:flex;flex-wrap:wrap;gap:8px;}
+.res-badge{display:inline-block;border-radius:20px;padding:4px 12px;font-size:11px;font-weight:700;}
+.res-badge-teal{background:rgba(29,158,117,.35);border:1px solid rgba(29,158,117,.5);color:#9FE1CB;}
+.res-badge-blue{background:rgba(55,138,221,.3);border:1px solid rgba(55,138,221,.4);color:#B5D4F4;}
+.res-badge-amber{background:rgba(239,159,39,.3);border:1px solid rgba(239,159,39,.4);color:#FAC775;}
+.res-hero-encouragement{font-size:12px;opacity:.88;line-height:1.65;margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.12);font-weight:500;}
+
+@media(max-width:480px){
+  .hero-card h1{font-size:22px;}
+  .form-row{grid-template-columns:1fr;}
+  .card-actions{flex-direction:column;}
+  .btn-copy,.btn-li{width:100%;justify-content:center;}
+  .name-grid{grid-template-columns:1fr;}
+  .res-hero-name{font-size:17px;}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+  <a class="topbar-brand" href="../index.html">
+  <div class="topbar-logo">
+    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/>
+      <line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/>
+    </svg>
+  </div>
+  <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your identity. Your path.</div></div>
+  </a>
+</div>
+
+<!-- SCREEN 1: SEARCH -->
+<div id="screen-search">
+  <div class="hero-card">
+    <div class="hero-tag">Mentor Connect</div>
+    <h1>Find Someone from <span>Your Place</span> Who Made It</h1>
+    <p>You are not looking for random advice — you want real proof that someone from your lane, your school, or your city reached the goal you are chasing. That feeling matters. Use this space to discover those people, draft your own words, and take one brave small step.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="v">🤝</div><div class="l">Real connection</div></div>
+      <div class="hero-stat"><div class="v">3</div><div class="l">Ways to search</div></div>
+      <div class="hero-stat"><div class="v">100%</div><div class="l">Free for you</div></div>
+    </div>
+    <div class="name-card">
+      <label>Your first name (we weave it into draft messages so you sound like yourself, not a template)</label>
+      <div class="name-grid">
+        <input class="name-input" id="input-first-name" type="text" placeholder="First name" autocomplete="given-name">
+        <input class="name-input" id="input-last-name" type="text" placeholder="Last name (optional)" autocomplete="family-name">
+      </div>
+    </div>
+  </div>
+
+  <!-- SERPER API SETUP — dead simple, one field -->
+  <div class="card setup-card-accent">
+    <h3>⚡ Optional — stronger profile suggestions (~2 minutes)</h3>
+    <div class="setup-highlight">
+      <div class="setup-title">How to get your free API key (2,500 free searches/month):</div>
+      <div class="setup-steps">
+        <div class="setup-step"><span class="setup-step-num">1</span><span class="setup-step-text">Go to <strong><a href="https://serper.dev" target="_blank" rel="noopener noreferrer" style="color:var(--teal-dark);">serper.dev</a></strong> and click &quot;Get Started Free&quot;</span></div>
+        <div class="setup-step"><span class="setup-step-num">2</span><span class="setup-step-text">Sign up with your email — no credit card required</span></div>
+        <div class="setup-step"><span class="setup-step-num">3</span><span class="setup-step-text">Your API key appears on the dashboard — copy it and paste below. That is it.</span></div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Paste Your Serper API Key Here</label>
+      <input type="text" id="api-key" placeholder="Paste your key here — e.g. a1b2c3d4e5f6..." autocomplete="off">
+      <div class="form-hint">Your key is saved in your browser only. Nobody else can see it. 2,500 free searches per month — more than enough.</div>
+    </div>
+    <div class="setup-actions">
+      <button type="button" class="btn-save-key" onclick="saveApiKey()">Save Key</button>
+      <span id="api-saved-msg" class="api-saved-msg">✓ Key saved!</span>
+    </div>
+    <div class="setup-footnote">No API key? The tool still works — it will show Smart LinkedIn Search links that open LinkedIn with your filters pre-filled.</div>
+  </div>
+
+  <!-- MAIN SEARCH FORM -->
+  <div class="card">
+    <h3>🔍 Tell us what you are dreaming toward</h3>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Your Hometown / City</label>
+        <input type="text" id="input-city" placeholder="e.g. Bilaspur, Korba, Raipur">
+      </div>
+      <div class="form-group">
+        <label>Your State</label>
+        <select id="input-state">
+          <option value="Chhattisgarh">Chhattisgarh</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+          <option value="Jharkhand">Jharkhand</option>
+          <option value="Odisha">Odisha</option>
+          <option value="Bihar">Bihar</option>
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Other">Other state</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Dream Company or Role</label>
+        <input type="text" id="input-company" placeholder="e.g. TCS, Google, NTPC, IAS, CA">
+      </div>
+      <div class="form-group">
+        <label>Target City / Field</label>
+        <input type="text" id="input-target" placeholder="e.g. Bengaluru, Delhi, Banking, Tech">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Your College / School (optional)</label>
+      <input type="text" id="input-college" placeholder="e.g. Bilaspur University, Govt Engineering College Raipur">
+      <div class="form-hint">If you add your college, we can surface people who walked the same campus before you — that shared history can make the first hello easier.</div>
+    </div>
+    <button class="btn-search" id="btn-search" onclick="runSearch()">Show me people to learn from →</button>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <div class="card">
+    <h3>How we search — three layers, all for you</h3>
+    <div class="hiw-steps">
+      <div class="hiw-step">
+        <div class="hiw-num teal">1</div>
+        <div><div class="hiw-step-title">Pehchaan mentors who chose to help</div><div class="hiw-step-desc">Real professionals who opted in — their journey, their college, and a draft message you can edit in your voice before you send.</div></div>
+      </div>
+      <div class="hiw-step">
+        <div class="hiw-num blue">2</div>
+        <div><div class="hiw-step-title">Public LinkedIn profiles (via Google)</div><div class="hiw-step-desc">We help you find publicly listed profiles that match your place and your dream company — so you spend less time guessing what to search.</div></div>
+      </div>
+      <div class="hiw-step">
+        <div class="hiw-num amber">3</div>
+        <div><div class="hiw-step-title">Ready-made LinkedIn searches</div><div class="hiw-step-desc">One tap opens LinkedIn with filters filled — you explore at your pace and decide who feels right to message.</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SCREEN 2: LOADING -->
+<div id="screen-loading" class="hidden">
+  <div class="topbar">
+    <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+    <a class="topbar-brand" href="../index.html">
+    <div class="topbar-logo">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/>
+        <line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/>
+      </svg>
+    </div>
+    <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Gathering stories that might inspire you…</div></div>
+    </a>
+  </div>
+  <div class="loading-box">
+    <div class="loading-spinner"></div>
+    <p id="loading-msg">Looking for mentors who said yes to helping students…</p>
+  </div>
+</div>
+
+<!-- SCREEN 3: RESULTS -->
+<div id="screen-results" class="hidden">
+  <div id="results-container"></div>
+
+  <div class="disclaimer-box">
+    <h4>Before you message anyone</h4>
+    <p>Google results show public information that LinkedIn allowed to be indexed — Pehchaan does not store or scrape LinkedIn. Links open on LinkedIn so you can check the person is really who you think. The draft messages are <strong>starting points in your voice</strong>: add one honest detail you noticed on their profile. Message one person thoughtfully rather than many people at once. Respect their time the way you would want yours respected.</p>
+  </div>
+
+  <button class="btn-new-search" onclick="newSearch()">← Change my details and search again</button>
+
+  <div class="brand-footer">
+    <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
+    <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
+    hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+  </div>
+</div>
+
+</div><!-- /container -->
+
+<script>
+// ─────────────────────────────────────────────────────────────────
+// CURATED MENTOR DATABASE
+// Add opt-in mentors here as they sign up via the Be a Mentor form
+// Each entry: name, initials, title, company, city (current), hometown,
+// college, journey (short story), linkedin (profile URL), tags (array)
+// ─────────────────────────────────────────────────────────────────
+var MENTOR_DB = [
+  {
+    name: 'Anant Tripathi',
+    initials: 'AT',
+    title: 'Career Guidance Counsellor & Corporate Professional',
+    company: 'Pehchaan Careers',
+    city: 'India',
+    hometown: 'Chhattisgarh',
+    state: 'Chhattisgarh',
+    college: 'Engineering College CG',
+    journeyStory: '16 years in corporate India — HCL BPO, operations, finance, business services. Navigated the journey from a Tier 3 city to building a career guidance platform for students who need honest advice.',
+    journeyPath: ['Tier 3 CG city', 'Engineering (BE Comp Sci)', 'HCL BPO', '16 years corporate', 'Pehchaan Careers'],
+    linkedin: 'https://www.linkedin.com/in/anant-tripathi-24011989/',
+    tags: ['career guidance', 'corporate', 'Chhattisgarh', 'operations', 'finance', 'HCL']
+  }
+  // ── ADD MORE MENTORS HERE AS THEY OPT IN ──
+  // {
+  //   name: 'Rahul Sharma',
+  //   initials: 'RS',
+  //   title: 'Data Scientist',
+  //   company: 'Amazon',
+  //   city: 'Hyderabad',
+  //   hometown: 'Durg',
+  //   state: 'Chhattisgarh',
+  //   college: 'Govt Engineering College Bilaspur',
+  //   journeyStory: 'From a govt school in Durg to Data Scientist at Amazon in Hyderabad.',
+  //   journeyPath: ['Govt school Durg', 'BTech Bilaspur', 'Campus placement', 'Amazon Hyderabad'],
+  //   linkedin: 'https://linkedin.com/in/rahulsharma',
+  //   tags: ['data science', 'Amazon', 'tech', 'Chhattisgarh', 'Durg']
+  // }
+];
+
+// ─────────────────────────────────────────────────────────────────
+// STATE
+// ─────────────────────────────────────────────────────────────────
+var searchState = {};
+
+// ─────────────────────────────────────────────────────────────────
+// API KEY MANAGEMENT
+// ─────────────────────────────────────────────────────────────────
+function saveApiKey() {
+  var key = document.getElementById('api-key').value.trim();
+  if (key) {
+    localStorage.setItem('pehchaan_serper_key', key);
+    var msg = document.getElementById('api-saved-msg');
+    msg.style.display = 'inline';
+    setTimeout(function(){ msg.style.display = 'none'; }, 2500);
+  }
+}
+
+window.addEventListener('load', function() {
+  var k = localStorage.getItem('pehchaan_serper_key');
+  if (k) document.getElementById('api-key').value = k;
+});
+
+// ─────────────────────────────────────────────────────────────────
+// MAIN SEARCH
+// ─────────────────────────────────────────────────────────────────
+function getStudentDisplayName(first, last) {
+  var f = String(first || '').trim();
+  var l = String(last || '').trim();
+  if (!f) return '';
+  return l ? f + ' ' + l : f;
+}
+
+function runSearch() {
+  var firstName = document.getElementById('input-first-name').value.trim();
+  var lastName  = document.getElementById('input-last-name').value.trim();
+  var city      = document.getElementById('input-city').value.trim();
+  var state     = document.getElementById('input-state').value;
+  var company   = document.getElementById('input-company').value.trim();
+  var target    = document.getElementById('input-target').value.trim();
+  var college   = document.getElementById('input-college').value.trim();
+
+  if (!firstName) {
+    alert('Add your first name — we use it in your draft messages so you show up as a real student, not spam.');
+    return;
+  }
+  if (!city || !company) {
+    alert('Tell us your hometown and the company or role you are aiming for. That is how we find people whose path might match yours.');
+    return;
+  }
+
+  searchState = { city, state, company, target, college, firstName, lastName };
+
+  showScreen('screen-loading');
+  updateLoading('Checking mentors who raised their hand to help students…');
+
+  // Step 1: search curated DB
+  var curatedMatches = searchCuratedDB(city, state, company, college);
+
+  // Step 2: run Google API search
+  var apiKey = localStorage.getItem('pehchaan_serper_key') || '';
+
+  if (apiKey) {
+    updateLoading('Scanning public profiles that might fit your story…');
+    searchSerperAPI(city, state, company, college, apiKey, function(googleResults, err) {
+      buildResults(curatedMatches, googleResults, err);
+    });
+  } else {
+    setTimeout(function() {
+      buildResults(curatedMatches, [], null);
+    }, 800);
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────
+// LAYER 1: CURATED DB SEARCH
+// ─────────────────────────────────────────────────────────────────
+function searchCuratedDB(city, state, company, college) {
+  var q = (city + ' ' + state + ' ' + company + ' ' + college).toLowerCase();
+  return MENTOR_DB.filter(function(m) {
+    var haystack = (m.name + ' ' + m.hometown + ' ' + m.state + ' ' + m.company + ' ' + m.college + ' ' + m.journeyStory + ' ' + (m.tags || []).join(' ')).toLowerCase();
+    // match if hometown/state matches AND company/career matches
+    var locationMatch = haystack.includes(city.toLowerCase()) || haystack.includes(state.toLowerCase());
+    var careerMatch   = haystack.includes(company.toLowerCase());
+    return locationMatch || careerMatch;
+  });
+}
+
+// ─────────────────────────────────────────────────────────────────
+// LAYER 2: SERPER API — Google search results, simple single key
+// serper.dev — 2,500 free searches/month, no credit card
+// Searches: site:linkedin.com/in "[city]" "[company]"
+// ─────────────────────────────────────────────────────────────────
+function searchSerperAPI(city, state, company, college, apiKey, callback) {
+  // Build smart query targeting public LinkedIn profiles
+  var parts = ['site:linkedin.com/in'];
+  if (city)    parts.push('"' + city + '"');
+  else if (state) parts.push('"' + state + '"');
+  if (company) parts.push('"' + company + '"');
+  var q = parts.join(' ');
+
+  fetch('https://google.serper.dev/search', {
+    method: 'POST',
+    headers: {
+      'X-API-KEY': apiKey,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ q: q, num: 8, gl: 'in', hl: 'en' })
+  })
+  .then(function(r) {
+    if (!r.ok) throw new Error('API error: ' + r.status);
+    return r.json();
+  })
+  .then(function(data) {
+    var organic = data.organic || [];
+    var items = organic.map(function(item) {
+      if (!item.link || !item.link.includes('linkedin.com/in/')) return null;
+      // LinkedIn titles are usually "Name - Title | LinkedIn"
+      var rawTitle = item.title || '';
+      var namePart = rawTitle.split(' - ')[0].split(' | ')[0].trim();
+      return {
+        name: namePart || 'LinkedIn Profile',
+        snippet: item.snippet || '',
+        link: item.link,
+        displayLink: 'linkedin.com'
+      };
+    }).filter(Boolean);
+    callback(items, null);
+  })
+  .catch(function(err) {
+    callback([], 'Could not reach Serper API. Check your key is correct and you have internet access.');
+  });
+}
+
+// ─────────────────────────────────────────────────────────────────
+// BUILD RESULTS PAGE
+// ─────────────────────────────────────────────────────────────────
+function buildResults(curated, google, googleErr) {
+  var city    = searchState.city;
+  var state   = searchState.state;
+  var company = searchState.company;
+  var target  = searchState.target;
+  var college = searchState.college;
+  var studentDisplay = getStudentDisplayName(searchState.firstName, searchState.lastName);
+
+  var html = '';
+
+  // ── SUMMARY HEADER (matches Exam Roadmap res-hero; student-first tone) ──
+  html += '<div class="res-hero">';
+  html += '<div class="res-hero-label">Mentor Connect — your space</div>';
+  if (studentDisplay) {
+    html += '<div class="res-hero-name">Hi, ' + escHtml(studentDisplay) + '</div>';
+  }
+  html += '<div class="res-hero-sub">From ' + escHtml(city) + ' · dreaming toward ' + escHtml(company) + '</div>';
+  if (target) {
+    html += '<div class="res-hero-target">Focus area: ' + escHtml(target) + '</div>';
+  }
+  html += '<div class="res-profile-row">';
+  if (curated.length) {
+    html += '<span class="res-badge res-badge-teal">✓ ' + curated.length + ' mentor' + (curated.length > 1 ? 's' : '') + ' who chose to be here for students</span>';
+  }
+  if (google.length) {
+    html += '<span class="res-badge res-badge-blue">🔍 ' + google.length + ' public profile' + (google.length > 1 ? 's' : '') + ' to explore</span>';
+  }
+  html += '<span class="res-badge res-badge-amber">🔗 LinkedIn searches ready for you</span>';
+  html += '</div>';
+  html += '<p class="res-hero-encouragement">There is no rush. Read a journey that sparks hope, edit the draft message in your own words, and send one respectful note when it feels right. Courage is showing up as yourself.</p>';
+  html += '</div>';
+
+  // ── LAYER 1: CURATED MENTORS ──
+  if (curated.length > 0) {
+    html += '<div style="margin-bottom:6px;"><span class="layer-badge layer-curated">⭐ They volunteered to back students — real humans, real journeys</span></div>';
+    curated.forEach(function(m) {
+      html += buildMentorCard(m, city, company);
+    });
+  }
+
+  // ── LAYER 2: GOOGLE RESULTS ──
+  var apiKey = localStorage.getItem('pehchaan_serper_key') || '';
+  if (apiKey) {
+    if (googleErr) {
+      html += '<div class="error-box"><p><strong>Google search error:</strong> ' + escHtml(googleErr) + ' Check your Serper API key in the setup section on the first screen.</p></div>';
+    } else if (google.length > 0) {
+      html += '<div style="margin-bottom:6px;"><span class="layer-badge layer-google">🔍 From public search — always double-check on LinkedIn before you write</span></div>';
+      google.forEach(function(r, idx) {
+        html += buildGoogleCard(r, city, company, idx);
+      });
+    } else {
+      html += '<div class="card"><p style="font-size:13px;color:var(--gray-text);line-height:1.65;">No public profiles turned up for this exact mix — it happens. Scroll down to the Smart LinkedIn searches: one of those lists might surface the right person when you look with your own eyes.</p></div>';
+    }
+  } else {
+    // No API key configured
+    html += '<div class="card" style="border:1.5px dashed var(--teal);">';
+    html += '<div style="font-size:13px;color:var(--teal-dark);font-weight:600;margin-bottom:6px;">You can go deeper with a free API key (optional)</div>';
+    html += '<p style="font-size:12px;color:var(--gray-text);line-height:1.7;">If you paste a Serper key from <strong>serper.dev</strong> on the first screen, we can also suggest public profiles from Google — still worth verifying on LinkedIn yourself. No card needed; 2,500 free searches a month. Skip this entirely if you prefer — Smart LinkedIn links below still work.</p>';
+    html += '</div>';
+  }
+
+  // ── LAYER 3: SMART LINKEDIN SEARCH ──
+  html += buildSmartLinks(city, state, company, target, college);
+
+  // ── ICEBREAKER GENERATOR ──
+  html += buildIcebreakerGenerator(city, college, company, target);
+
+  // ── BE A MENTOR CTA ──
+  html += buildMentorCTA(city, state, company);
+
+  document.getElementById('results-container').innerHTML = html;
+  showScreen('screen-results');
+}
+
+// ─────────────────────────────────────────────────────────────────
+// CARD BUILDERS
+// ─────────────────────────────────────────────────────────────────
+function buildMentorCard(m, searchCity, searchCompany) {
+  var sd = getStudentDisplayName(searchState.firstName, searchState.lastName);
+  var icebreaker = generateIcebreaker(m.name, m.hometown || searchCity, m.college || '', m.company, m.city || '', sd);
+  var pathHtml = m.journeyPath.map(function(p, i) {
+    return '<span class="journey-step">' + escHtml(p) + '</span>' + (i < m.journeyPath.length - 1 ? '<span class="journey-arrow">→</span>' : '');
+  }).join('');
+
+  return '<div class="mentor-card">'
+    + '<div style="margin-bottom:8px"><span class="layer-badge layer-curated">⭐ Pehchaan Mentor</span></div>'
+    + '<div class="mentor-card-top">'
+    + '<div class="mentor-avatar">' + escHtml(m.initials) + '</div>'
+    + '<div class="mentor-info">'
+    + '<div class="mentor-name">' + escHtml(m.name) + '</div>'
+    + '<div class="mentor-title">' + escHtml(m.title) + '</div>'
+    + '<span class="mentor-company">' + escHtml(m.company) + '</span>'
+    + '</div></div>'
+    + '<div class="journey-box">'
+    + '<div class="journey-label">Their Journey</div>'
+    + '<div class="journey-text">' + escHtml(m.journeyStory) + '</div>'
+    + '<div class="journey-path" style="margin-top:10px;">' + pathHtml + '</div>'
+    + '</div>'
+    + '<div class="icebreaker-box">'
+    + '<div class="icebreaker-label">✉️ A draft in your voice — edit before you send</div>'
+    + '<div class="icebreaker-text" id="ice-' + m.initials + '">' + escHtml(icebreaker) + '</div>'
+    + '<div class="icebreaker-hint">Tweak a line or two so it sounds like you. They were a student once too — lead with respect and curiosity.</div>'
+    + '</div>'
+    + '<div class="card-actions">'
+    + '<button class="btn-copy" onclick="copyIcebreaker(\'' + m.initials + '\', this)">📋 Copy Message</button>'
+    + (m.linkedin && m.linkedin !== 'https://linkedin.com/in/' ? '<a class="btn-li" href="' + m.linkedin + '" target="_blank">🔗 View on LinkedIn</a>' : '')
+    + '</div>'
+    + '</div>';
+}
+
+function buildGoogleCard(r, searchCity, searchCompany, idx) {
+  var initials = r.name.split(' ').slice(0, 2).map(function(w){ return w[0] || '?'; }).join('').toUpperCase();
+  var cleanLink = r.link;
+  var sd = getStudentDisplayName(searchState.firstName, searchState.lastName);
+  var icebreaker = generateIcebreaker(r.name, searchCity, '', searchCompany, '', sd);
+  var iceId = 'gice-' + String(idx);
+
+  return '<div class="google-card">'
+    + '<div style="margin-bottom:8px"><span class="layer-badge layer-google">🔍 Google-indexed public profile</span></div>'
+    + '<div class="google-card-top">'
+    + '<div class="google-avatar">' + escHtml(initials) + '</div>'
+    + '<div style="flex:1;">'
+    + '<div class="google-name">' + escHtml(r.name) + '</div>'
+    + '<div class="google-snippet">' + escHtml(r.snippet) + '</div>'
+    + '<a class="google-url" href="' + escHtml(cleanLink) + '" target="_blank">' + escHtml(cleanLink) + '</a>'
+    + '</div></div>'
+    + '<div class="google-note">This came from a public search result — open LinkedIn, read their headline and posts, and make sure it is really them before you message.</div>'
+    + '<div class="icebreaker-box" style="margin-top:12px;">'
+    + '<div class="icebreaker-label">✉️ Draft message — make it yours</div>'
+    + '<div class="icebreaker-text" id="' + iceId + '">' + escHtml(icebreaker) + '</div>'
+    + '</div>'
+    + '<div class="card-actions" style="margin-top:10px;">'
+    + '<button class="btn-copy" onclick="copyText(\'' + escJs(icebreaker) + '\', this)">📋 Copy Message</button>'
+    + '<a class="btn-li" href="' + escHtml(cleanLink) + '" target="_blank">🔗 Open LinkedIn Profile</a>'
+    + '</div>'
+    + '</div>';
+}
+
+function buildSmartLinks(city, state, company, target, college) {
+  var q1 = buildLIQuery([city, company]);
+  var q2 = buildLIQuery([state, 'Chhattisgarh', company]);
+  var q3 = college ? buildLIQuery([college, company]) : buildLIQuery([city, target]);
+  var q4 = buildLIQuery([city, state]);
+
+  return '<div class="smart-search-card">'
+    + '<h3>🔗 Open LinkedIn with your filters ready</h3>'
+    + '<p>You stay in control — these links just save you typing. Tap one, scroll slowly, and when someone\'s story hits home, use the draft message below and make it personal.</p>'
+    + '<div class="smart-links">'
+    + smartLink('🎯', escHtml(city) + ' + ' + escHtml(company), 'Find people from your city at your target company', q1)
+    + smartLink('🏛️', escHtml(state) + ' + ' + escHtml(company), 'Broader search — anyone from ' + escHtml(state) + ' at ' + escHtml(company), q2)
+    + (college
+        ? smartLink('🎓', escHtml(college) + ' + ' + escHtml(company), 'Alumni from your own college who work at this company', q3)
+        : smartLink('🌆', escHtml(city) + ' + ' + escHtml(target || company), 'Explore all professionals from ' + escHtml(city) + ' in ' + escHtml(target || company), q3))
+    + smartLink('🤝', 'All professionals from ' + escHtml(city), 'Browse everyone from your city on LinkedIn — find unexpected role models', q4)
+    + '</div></div>';
+}
+
+function smartLink(icon, title, sub, query) {
+  var url = 'https://www.linkedin.com/search/results/people/?keywords=' + encodeURIComponent(query);
+  return '<a class="smart-link" href="' + url + '" target="_blank">'
+    + '<div class="smart-link-icon">' + icon + '</div>'
+    + '<div class="smart-link-text"><div class="smart-link-title">' + title + '</div><div class="smart-link-sub">' + sub + '</div></div>'
+    + '<div class="smart-link-arrow">↗</div>'
+    + '</a>';
+}
+
+function buildLIQuery(parts) {
+  return parts.filter(Boolean).join(' ');
+}
+
+function buildIcebreakerGenerator(city, college, company, target) {
+  var sd = getStudentDisplayName(searchState.firstName, searchState.lastName);
+  var generic = generateIcebreaker('[Mentor Name]', city, college, company, target, sd);
+  return '<div class="card">'
+    + '<h3>✉️ A starter message for anyone you pick</h3>'
+    + '<p style="font-size:12px;color:var(--gray-text);line-height:1.7;margin-bottom:14px;">When you find someone on LinkedIn who fits, start from here — then add one sentence only you could write (a detail from their profile, a shared town, a question you truly care about).</p>'
+    + '<div class="icebreaker-box">'
+    + '<div class="icebreaker-label">Your draft — edit every time</div>'
+    + '<div class="icebreaker-text" id="generic-ice">' + escHtml(generic) + '</div>'
+    + '<div class="icebreaker-hint" style="margin-top:10px;">Swap [Mentor Name] for their name. If the message feels long, shorten it — short and honest often wins.</div>'
+    + '</div>'
+    + '<div class="card-actions" style="margin-top:12px;">'
+    + '<button class="btn-copy" onclick="copyText(\'' + escJs(generic) + '\', this)">📋 Copy This Message</button>'
+    + '</div></div>';
+}
+
+function buildMentorCTA(city, state, company) {
+  var contactHref = 'https://pehchaancareers.in/#contact';
+
+  return '<div class="mentor-cta">'
+    + '<h3>Already working in ' + escHtml(company) + ' (or something close) and from ' + escHtml(state) + '?</h3>'
+    + '<p>Students using this tool are looking for someone whose story feels possible — not perfect. If you can spare an occasional message to a sincere student, your journey listed here can change what they believe about themselves. Five minutes to share your path; no pressure beyond what you choose to give.</p>'
+    + '<a class="btn-mentor" href="' + escHtml(contactHref) + '">🙋 I want to be a mentor</a>'
+    + '</div>';
+}
+
+// ─────────────────────────────────────────────────────────────────
+// ICEBREAKER GENERATOR
+// ─────────────────────────────────────────────────────────────────
+function studentIcebreakerIntro(city, college, studentDisplay) {
+  if (studentDisplay) {
+    return 'I am ' + studentDisplay + ', a student from ' + city + (college ? ', currently at ' + college : '');
+  }
+  return 'I am a student from ' + city + (college ? ', currently at ' + college : '');
+}
+
+function generateIcebreaker(name, city, college, company, targetCity, studentDisplay) {
+  var intro = studentIcebreakerIntro(city, college, studentDisplay);
+  var introShort = studentDisplay
+    ? ('I am ' + studentDisplay + ' from ' + city)
+    : ('I am from ' + city);
+  var variants = [
+    'Hello ' + name + ', ' + intro + '. I came across your profile on Pehchaan Careers and was genuinely inspired to see someone from my part of the country working at ' + company + (targetCity ? ' in ' + targetCity : '') + '. I have a few questions about how you navigated the journey from ' + city + ' to where you are now. Would you be open to a 5-minute chat — whenever it is convenient for you? Your story could make a real difference to someone starting out from the same place.',
+    'Hi ' + name + ', I found your profile through Pehchaan Careers — a career guidance platform for students from Tier 3 cities. ' + introShort + ' and I am working toward a career in ' + company + '. Seeing your journey gives me genuine hope that it is possible. Would you be willing to share some advice about how you made the transition? Even 10 minutes of your time would be incredibly valuable. Thank you for considering this.',
+    'Hello ' + name + '! ' + intro + ', and I discovered your profile on Pehchaan Careers. I am currently exploring a career path toward ' + company + ' and your journey is exactly the kind of proof I needed that someone from our background can get there. I would be deeply grateful for any guidance you could offer — even a brief message sharing what you wish someone had told you when you were starting out.'
+  ];
+  return variants[Math.floor(Math.random() * variants.length)];
+}
+
+// ─────────────────────────────────────────────────────────────────
+// UTILS
+// ─────────────────────────────────────────────────────────────────
+function showScreen(id) {
+  ['screen-search','screen-loading','screen-results'].forEach(function(s){
+    document.getElementById(s).classList.add('hidden');
+  });
+  document.getElementById(id).classList.remove('hidden');
+  window.scrollTo(0, 0);
+}
+
+function updateLoading(msg) {
+  var el = document.getElementById('loading-msg');
+  if (el) el.textContent = msg;
+}
+
+function newSearch() {
+  showScreen('screen-search');
+}
+
+function escHtml(str) {
+  return String(str || '')
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;')
+    .replace(/'/g,'&#39;');
+}
+
+function escJs(str) {
+  return String(str || '').replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/\n/g,'\\n');
+}
+
+function copyIcebreaker(id, btn) {
+  var el = document.getElementById('ice-' + id);
+  if (el) copyText(el.textContent, btn);
+}
+
+function copyText(text, btn) {
+  navigator.clipboard.writeText(text).then(function() {
+    var orig = btn.textContent;
+    btn.textContent = '✓ Copied!';
+    btn.classList.add('copied');
+    setTimeout(function(){ btn.textContent = orig; btn.classList.remove('copied'); }, 2000);
+  }).catch(function() {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    var orig = btn.textContent;
+    btn.textContent = '✓ Copied!';
+    btn.classList.add('copied');
+    setTimeout(function(){ btn.textContent = orig; btn.classList.remove('copied'); }, 2000);
+  });
+}
+
+// Enter key triggers search
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') {
+    var active = document.getElementById('screen-search');
+    if (!active.classList.contains('hidden')) runSearch();
+  }
+});
+</script>
+</body>
+</html>

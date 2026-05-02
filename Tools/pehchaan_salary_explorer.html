@@ -50,6 +50,19 @@
   .topbar-logo svg { width: 24px; height: 24px; }
   .topbar-name { font-size: 15px; font-weight: 700; color: var(--teal-dark); }
   .topbar-tag { font-size: 11px; color: var(--gray-text); }
+  .topbar-back {
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    width: 40px; height: 40px; border-radius: 12px;
+    background: rgba(29,158,117,.12); color: var(--teal-dark);
+    font-size: 18px; font-weight: 700; text-decoration: none; line-height: 1;
+    transition: background .15s;
+  }
+  .topbar-back:hover { background: rgba(29,158,117,.22); }
+  .topbar-brand {
+    display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit;
+    flex: 1; min-width: 0;
+  }
+  .topbar-brand:hover .topbar-name { color: var(--teal); }
 
   .hero-card { background: var(--teal-dark); border-radius: 22px; padding: 34px 28px; color: var(--white); margin-bottom: 16px; position: relative; overflow: hidden; }
   .hero-card::before { content: ''; position: absolute; top: -50px; right: -50px; width: 180px; height: 180px; background: rgba(255,255,255,.05); border-radius: 50%; }
@@ -172,6 +185,8 @@
 <div class="container">
 
   <div class="topbar">
+    <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+    <a class="topbar-brand" href="../index.html">
     <div class="topbar-logo">
       <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/>
@@ -185,6 +200,7 @@
       </svg>
     </div>
     <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your identity. Your path.</div></div>
+    </a>
   </div>
 
   <div class="hero-card">
