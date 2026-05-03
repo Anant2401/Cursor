@@ -1,5 +1,7 @@
 import express from "express";
 import cors from "cors";
+import helmet from "helmet";
+import rateLimit from "express-rate-limit";
 import dotenv from "dotenv";
 import sqlite3 from "sqlite3";
 import nodemailer from "nodemailer";
@@ -9,8 +11,94 @@ import path from "path";
 dotenv.config();
 
 const app = express();
-app.use(express.json());
-app.use(cors({ origin: process.env.FRONTEND_ORIGIN || "*" }));
+
+if (process.env.NODE_ENV === "production" || process.env.TRUST_PROXY === "1") {
+  app.set("trust proxy", 1);
+}
+
+app.disable("x-powered-by");
+
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+    crossOriginResourcePolicy: { policy: "cross-origin" },
+  })
+);
+
+/** Comma-separated list in FRONTEND_ORIGIN, e.g. https://pehchaancareers.in,https://www.pehchaancareers.in */
+function parseAllowedOrigins() {
+  const raw = String(process.env.FRONTEND_ORIGIN || "").trim();
+  if (!raw) return null;
+  const list = raw
+    .split(",")
+    .map((o) => o.trim())
+    .filter(Boolean);
+  return list.length ? list : null;
+}
+
+const allowedOrigins = parseAllowedOrigins();
+
+app.use(
+  cors({
+    origin(origin, callback) {
+      if (!allowedOrigins) {
+        return callback(null, true);
+      }
+      if (!origin) {
+        return callback(null, true);
+      }
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+      return callback(null, false);
+    },
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type"],
+    maxAge: 86400,
+  })
+);
+
+app.use(express.json({ limit: "64kb" }));
+
+const skipOptions = (req) => req.method === "OPTIONS";
+
+const apiGeneralLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 500,
+  standardHeaders: true,
+  legacyHeaders: false,
+  skip: (req) => skipOptions(req) || req.path === "/health",
+  message: { message: "Too many requests. Please try again later." },
+});
+
+const otpLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 40,
+  standardHeaders: true,
+  legacyHeaders: false,
+  skip: skipOptions,
+  message: { message: "Too many OTP requests from this network. Please wait and try again." },
+});
+
+const otpVerifyLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 80,
+  standardHeaders: true,
+  legacyHeaders: false,
+  skip: skipOptions,
+  message: { message: "Too many verification attempts. Please wait and try again." },
+});
+
+const formLimiter = rateLimit({
+  windowMs: 60 * 60 * 1000,
+  max: 80,
+  standardHeaders: true,
+  legacyHeaders: false,
+  skip: skipOptions,
+  message: { message: "Too many submissions. Please try again later." },
+});
+
+app.use("/api", apiGeneralLimiter);
 
 const dbDir = path.join(process.cwd(), "data");
 if (!fs.existsSync(dbDir)) fs.mkdirSync(dbDir, { recursive: true });
@@ -106,7 +194,7 @@ app.get("/api/health", (_, res) => {
   res.json({ ok: true });
 });
 
-app.post("/api/otp/send-phone", async (req, res) => {
+app.post("/api/otp/send-phone", otpLimiter, async (req, res) => {
   try {
     const phone = normalizePhone(req.body.phone);
     if (!phone) return res.status(400).json({ message: "Enter a valid 10-digit mobile number." });
@@ -127,7 +215,7 @@ app.post("/api/otp/send-phone", async (req, res) => {
   }
 });
 
-app.post("/api/otp/verify-phone", async (req, res) => {
+app.post("/api/otp/verify-phone", otpVerifyLimiter, async (req, res) => {
   try {
     const phone = normalizePhone(req.body.phone);
     const otp = String(req.body.otp || "").trim();
@@ -147,7 +235,7 @@ app.post("/api/otp/verify-phone", async (req, res) => {
   }
 });
 
-app.post("/api/otp/send-email", async (req, res) => {
+app.post("/api/otp/send-email", otpLimiter, async (req, res) => {
   try {
     const email = String(req.body.email || "").trim().toLowerCase();
     if (!email.includes("@")) return res.status(400).json({ message: "Enter a valid email address." });
@@ -188,7 +276,7 @@ app.post("/api/otp/send-email", async (req, res) => {
   }
 });
 
-app.post("/api/otp/verify-email", async (req, res) => {
+app.post("/api/otp/verify-email", otpVerifyLimiter, async (req, res) => {
   try {
     const email = String(req.body.email || "").trim().toLowerCase();
     const otp = String(req.body.otp || "").trim();
@@ -208,7 +296,7 @@ app.post("/api/otp/verify-email", async (req, res) => {
   }
 });
 
-app.post("/api/assessment/submit", async (req, res) => {
+app.post("/api/assessment/submit", formLimiter, async (req, res) => {
   try {
     const { full_name, city, state, phone, email, qualification } = req.body;
     if (!full_name || !city || !state || !phone || !email || !qualification) {
@@ -245,7 +333,7 @@ app.post("/api/assessment/submit", async (req, res) => {
   }
 });
 
-app.post("/api/contact/submit", async (req, res) => {
+app.post("/api/contact/submit", formLimiter, async (req, res) => {
   try {
     const { name, email, phone, city, state, current_qualification, message } = req.body;
     if (!name || !email || !city || !state || !current_qualification || !message) {

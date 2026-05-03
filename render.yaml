@@ -11,6 +11,7 @@ services:
     envVars:
       - key: NODE_VERSION
         value: "20"
+      # Comma-separated if you add www or a staging domain, e.g. https://pehchaancareers.in,https://www.pehchaancareers.in
       - key: FRONTEND_ORIGIN
         value: https://pehchaancareers.in
 

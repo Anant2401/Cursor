@@ -1,6 +1,22 @@
 [build]
   publish = "."
 
+# Security headers for static HTML/tools (no CSP: pages rely on inline script/style)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+
+[[headers]]
+  for = "/DB/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Cache-Control = "public, max-age=3600"
+
 [[redirects]]
   from = "/api/*"
   to = "https://pehchaan-api.onrender.com/api/:splat"

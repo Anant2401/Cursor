@@ -182,12 +182,6 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 .btn-mentor-home:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(239,159,39,.4);}
 .btn-mentor-home-secondary{width:100%;margin-top:10px;background:var(--teal);color:var(--white);border:none;border-radius:var(--radius);padding:14px 16px;font-size:13px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;transition:filter .15s,transform .15s;}
 .btn-mentor-home-secondary:hover{filter:brightness(1.06);transform:translateY(-1px);}
-details.mentor-tech-details{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:0;margin-bottom:14px;box-shadow:var(--shadow);overflow:hidden;}
-details.mentor-tech-details > summary{list-style:none;cursor:pointer;padding:16px 18px;font-size:12px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.06em;}
-details.mentor-tech-details > summary::-webkit-details-marker{display:none;}
-details.mentor-tech-details > summary::after{content:'▾';float:right;opacity:.6;}
-details.mentor-tech-details[open] > summary::after{transform:rotate(180deg);display:inline-block;}
-details.mentor-tech-details .mentor-tech-inner{padding:0 18px 18px;}
 
 /* NO RESULTS */
 .no-results{text-align:center;padding:32px 20px;}
@@ -337,21 +331,6 @@ details.mentor-tech-details .mentor-tech-inner{padding:0 18px 18px;}
     </div>
     <div class="setup-footnote">No API key? The tool still works — it will show Smart LinkedIn Search links that open LinkedIn with your filters pre-filled.</div>
   </div>
-
-  <details class="mentor-tech-details">
-    <summary>Technical — mentor Sheet URL (optional)</summary>
-    <div class="mentor-tech-inner">
-      <p class="form-hint" style="margin-bottom:10px;">Only needed if you host a copy of this page without the default URL in code. Otherwise you can ignore this.</p>
-      <div class="form-group">
-        <label>Apps Script Web App URL</label>
-        <input type="url" id="mentor-web-app-url" placeholder="https://script.google.com/macros/s/…/exec" autocomplete="off">
-      </div>
-      <div class="setup-actions">
-        <button type="button" class="btn-save-key" onclick="saveMentorWebAppUrl()">Save mentor URL</button>
-        <span id="mentor-url-saved-msg" class="api-saved-msg">✓ Saved — refreshing list</span>
-      </div>
-    </div>
-  </details>
 
   <!-- MAIN SEARCH FORM -->
   <div class="card" id="student-search-card">
@@ -580,7 +559,7 @@ details.mentor-tech-details .mentor-tech-inner{padding:0 18px 18px;}
 // ─────────────────────────────────────────────────────────────────
 // MENTOR DATABASE (Google Sheets via Apps Script Web App)
 // Deploy backend from Tools/mentor_connect_google_apps_script.gs (bound to your Sheet).
-// Paste your Web App URL here and/or use “Save mentor URL” on the page (localStorage).
+// Set MENTOR_WEB_APP_URL below to your deployed Apps Script Web App /exec URL.
 // ─────────────────────────────────────────────────────────────────
 var MENTOR_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycby42iMS0ii2BIrt3ZZO-i-EMJc8Y-HsmjlzuajHbx9grBOq7dXWMSw-dK-iDt1ijAsE/exec';
 
@@ -597,10 +576,6 @@ function getMentorWebAppUrl() {
   if (typeof MENTOR_WEB_APP_URL !== 'undefined' && MENTOR_WEB_APP_URL && String(MENTOR_WEB_APP_URL).trim()) {
     return String(MENTOR_WEB_APP_URL).trim();
   }
-  var stored = localStorage.getItem('pehchaan_mentor_web_app_url');
-  if (stored && stored.trim()) return stored.trim();
-  var inp = document.getElementById('mentor-web-app-url');
-  if (inp && inp.value.trim()) return inp.value.trim();
   return '';
 }
 
@@ -735,7 +710,7 @@ function updateMentorDbBanner(mode) {
     }
   } else if (mode === 'no-url') {
     el.classList.add('warn');
-    el.textContent = 'No mentor Web App URL yet — add one above or set MENTOR_WEB_APP_URL in this file. Curated volunteer cards stay hidden until then; LinkedIn search layers still work.';
+    el.textContent = 'No mentor Web App URL configured — set MENTOR_WEB_APP_URL in this file. Curated volunteer cards stay hidden until then; LinkedIn search layers still work.';
   } else if (mode === 'error') {
     el.classList.add('warn');
     el.textContent = 'Database currently updating — we could not load volunteer mentors. Smart search and LinkedIn links still work; try again after a few minutes.';
@@ -772,26 +747,6 @@ async function syncMentorDatabase() {
     mentorDbReady = true;
     updateMentorDbBanner('error');
   }
-}
-
-function saveMentorWebAppUrl() {
-  var inp = document.getElementById('mentor-web-app-url');
-  if (!inp) return;
-  var v = inp.value.trim();
-  if (!v) {
-    localStorage.removeItem('pehchaan_mentor_web_app_url');
-    updateMentorDbBanner('no-url');
-    syncMentorDatabase();
-    return;
-  }
-  localStorage.setItem('pehchaan_mentor_web_app_url', v);
-  var msg = document.getElementById('mentor-url-saved-msg');
-  if (msg) {
-    msg.style.display = 'inline';
-    setTimeout(function () { msg.style.display = 'none'; }, 2500);
-  }
-  updateMentorDbBanner('loading');
-  syncMentorDatabase();
 }
 
 function resetMentorForm() {
@@ -834,7 +789,7 @@ async function submitMentor(ev) {
   }
   var url = getMentorWebAppUrl();
   if (!url) {
-    alert('We need a Web App URL to save mentor profiles. If you are setting this up: ask your site admin, or open “Technical — mentor Sheet URL” on the main page and paste the Apps Script /exec link (or set MENTOR_WEB_APP_URL in this file).');
+    alert('We need a Web App URL to save mentor profiles. If you are setting this up: ask your site admin, or set MENTOR_WEB_APP_URL in this file to your Apps Script /exec link.');
     return;
   }
   var errP = document.getElementById('mentor-submit-error');
@@ -922,9 +877,6 @@ function saveApiKey() {
 window.addEventListener('load', function () {
   var k = localStorage.getItem('pehchaan_serper_key');
   if (k) document.getElementById('api-key').value = k;
-  var mw = localStorage.getItem('pehchaan_mentor_web_app_url');
-  var mInp = document.getElementById('mentor-web-app-url');
-  if (mw && mInp) mInp.value = mw;
   updateMentorDbBanner('loading');
   syncMentorDatabase();
 });
