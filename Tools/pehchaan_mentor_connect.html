@@ -637,12 +637,14 @@ function extractLinkedInUrlFromString_(s) {
 }
 
 function mentorPickLinkedIn_(m) {
-  var direct = extractLinkedInUrlFromString_(String(m.linkedin || m.LinkedIn || '').trim());
+  var direct = extractLinkedInUrlFromString_(
+    String(m.linkedin || m.LinkedIn || m.linkedInProfile || m.linkedinProfile || m['LinkedIn Profile'] || '').trim()
+  );
   if (direct) return direct;
   for (var k in m) {
     if (!Object.prototype.hasOwnProperty.call(m, k)) continue;
     var low = String(k).toLowerCase();
-    if (low.indexOf('linkedin') >= 0 || low.indexOf('lnkd') >= 0 || low === 'social' || low === 'profile url') {
+    if (low.indexOf('linkedin') >= 0 || low.indexOf('lnkd') >= 0 || low === 'social' || low === 'profile url' || low === 'linkedin profile') {
       var ex = extractLinkedInUrlFromString_(String(m[k] == null ? '' : m[k]));
       if (ex) return ex;
     }
@@ -690,7 +692,7 @@ function normalizeMentorRow(m) {
     city: String(m.city || ''),
     hometown: String(m.hometown || ''),
     state: String(m.state || ''),
-    college: String(m.college || ''),
+    college: String(m.college || m.university || m.University || ''),
     journeyStory: String(m.journeyStory || m['Journey Story'] || ''),
     journeyPath: jp,
     linkedin: mentorPickLinkedIn_(m),

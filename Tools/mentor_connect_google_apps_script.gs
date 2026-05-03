@@ -2,8 +2,10 @@
  * Pehchaan Mentor Connect — Google Apps Script backend
  *
  * SETUP
- * 1. Create a new Google Sheet. Row 1 must be exactly these headers (same order helps appendRow):
- *    Timestamp | Name | Initials | Title | Company | City | Hometown | State | College | Journey Story | Journey Path | LinkedIn | Tags
+ * 1. Your header row can match the Pehchaan template or this common layout (order for new rows from the form):
+ *    Time Stamp | Full Name | Initials | Title | Company | City | Hometown | State | University |
+ *    Journey Story | Journey Path | LinkedIn Profile | Tags
+ *    (Aliases like Name, College, LinkedIn, Timestamp are also recognised.)
  * 2. Extensions → Apps Script → paste this file → Save → Deploy → **New deployment**
  *    (use “New version” after edits — old deployments keep old code until you redeploy.)
  *    Type: Web app
@@ -98,8 +100,9 @@ function getCellByAliases_(headerMap, headers, row, aliases) {
 
 /** Known column titles (normalized) — used to find which row is the real header row. */
 var HEADER_HINTS_ = [
-  'name', 'full name', 'timestamp', 'initials', 'title', 'company', 'city', 'hometown', 'state',
-  'college', 'journey story', 'journey path', 'linkedin', 'linkedin profile', 'linkedin url', 'tags', 'email', 'phone'
+  'name', 'full name', 'timestamp', 'time stamp', 'initials', 'title', 'company', 'city', 'hometown', 'state',
+  'college', 'university', 'journey story', 'journey path', 'linkedin', 'linkedin profile', 'linkedin url', 'tags',
+  'email', 'phone'
 ];
 
 function headerRowScore_(row) {
@@ -140,8 +143,8 @@ function findHeaderRowIndex_(values) {
   if (bestScore >= 2) return bestR;
   if (bestScore === 1) {
     for (var c = 0; c < values[bestR].length; c++) {
-      if (normalizeHeaderKey_(values[bestR][c]) === 'name') return bestR;
-      if (normalizeHeaderKey_(values[bestR][c]) === 'full name') return bestR;
+      var nk = normalizeHeaderKey_(values[bestR][c]);
+      if (nk === 'name' || nk === 'full name' || nk === 'time stamp' || nk === 'timestamp') return bestR;
     }
   }
   return 0;
@@ -245,8 +248,9 @@ function rowToMentor_(headers, row, formulaRow) {
   var tg = get(['Tags', 'Tag']);
   var story = get(['Journey Story', 'Journey story', 'Story', 'Bio', 'About']);
   var li = get([
+    'LinkedIn Profile',
     'LinkedIn', 'Linkedin', 'LinkedIn URL', 'Linkedin url', 'LinkedIn profile', 'Linkedin profile',
-    'LinkedIn Profile', 'LinkedIn Profile URL', 'Linkedin Profile URL', 'Linkedin link', 'LinkedIn Link',
+    'LinkedIn Profile URL', 'Linkedin Profile URL', 'Linkedin link', 'LinkedIn Link',
     'Profile URL', 'Profile link', 'Social', 'Social link', 'Linked In', 'LI URL'
   ]);
   if (!li) li = findLinkedInUrlInRow_(row, formulaRow);
@@ -258,7 +262,7 @@ function rowToMentor_(headers, row, formulaRow) {
     city: get(['City', 'Current city']),
     hometown: get(['Hometown', 'Home town', 'Home Town']),
     state: get(['State']),
-    college: get(['College', 'School', 'University']),
+    college: get(['University', 'College', 'School', 'Uni', 'University / College']),
     journeyStory: story,
     journeyPath: jp ? jp.split(',').map(function (s) { return s.trim(); }).filter(Boolean) : [],
     linkedin: li,
