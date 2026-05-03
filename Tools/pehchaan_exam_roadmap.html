@@ -158,13 +158,110 @@
     .resource-grid{grid-template-columns:1fr;}
     .name-grid{grid-template-columns:1fr;}
   }
+
+  /* Data bootstrap — loading & error (Phase 1) */
+  body.app-not-ready .container{opacity:.55;pointer-events:none;user-select:none;}
+  body.app-ready .container{opacity:1;pointer-events:auto;}
+  .app-bootstrap{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(240,250,245,.94);backdrop-filter:blur(5px);transition:opacity .28s ease,visibility .28s;}
+  .app-bootstrap.hidden{opacity:0;visibility:hidden;pointer-events:none;}
+  .app-bootstrap-inner{text-align:center;max-width:340px;padding:28px 24px;}
+  .app-bootstrap-logo{width:56px;height:56px;margin:0 auto 18px;border-radius:14px;background:var(--teal-dark);}
+  .skel-pulse{animation:skelPulse 1.15s ease-in-out infinite;}
+  @keyframes skelPulse{0%,100%{opacity:.5}50%{opacity:1}}
+  .app-bootstrap-text{font-size:14px;font-weight:600;color:var(--teal-dark);margin-bottom:22px;line-height:1.45;}
+  .skel-bar{height:11px;border-radius:8px;margin:0 auto 12px;max-width:100%;background:linear-gradient(90deg,var(--teal-light) 0%,#bfe5d6 50%,var(--teal-light) 100%);background-size:220% 100%;animation:skelSh 1.35s ease infinite;}
+  @keyframes skelSh{0%{background-position:100% 0}100%{background-position:-100% 0}}
+  .app-error-panel{max-width:400px;margin:0 auto;background:var(--white);border:2px solid #f0b4b3;border-radius:18px;padding:26px 22px;box-shadow:var(--shadow);}
+  .app-error-panel h2{font-size:17px;font-weight:700;color:var(--red);margin-bottom:10px;}
+  .app-error-panel p{font-size:13px;color:var(--gray-text);line-height:1.65;margin-bottom:18px;word-break:break-word;}
+  .btn-retry{width:100%;padding:13px;border-radius:var(--radius);border:none;background:var(--teal);color:var(--white);font-weight:700;font-family:'Poppins',sans-serif;cursor:pointer;font-size:14px;}
+  .btn-retry:hover{background:var(--teal-dark);}
+
+  /* Trending chips (Phase 4) */
+  .trending-wrap{margin-top:10px;padding-top:12px;border-top:1px dashed var(--border);}
+  .trending-label{font-size:10px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px;}
+  .trending-chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .trend-chip{border:1.5px solid var(--border);background:var(--teal-light);color:var(--teal-dark);border-radius:20px;padding:10px 14px;font-size:12px;font-weight:600;cursor:pointer;font-family:'Poppins',sans-serif;min-height:44px;display:inline-flex;align-items:center;}
+  .trend-chip:hover{border-color:var(--teal);background:var(--white);}
+
+  /* Result — career fit (Phase 4) */
+  .res-fit-summary{font-size:13px;line-height:1.65;color:rgba(255,255,255,.92);background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:14px 16px;margin:14px 0 4px;}
+
+  /* Timeline countdown (Phase 4) */
+  .timeline-countdown{font-size:13px;font-weight:600;color:var(--teal-dark);background:var(--teal-light);border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:14px;}
+
+  /* Exam card extras (Phase 2) + mobile (Phase 5) */
+  .exam-meta-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:8px 0 6px;}
+  .verified-badge{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:600;color:#166534;background:#DCFCE7;border:1px solid #86EFAC;border-radius:20px;padding:5px 10px;white-space:normal;max-width:100%;}
+  .verified-badge svg{width:12px;height:12px;flex-shrink:0;}
+  .btn-official{display:inline-flex;align-items:center;justify-content:center;width:100%;min-height:44px;margin-top:10px;padding:10px 14px;border-radius:10px;border:none;background:var(--teal-dark);color:var(--amber);font-size:13px;font-weight:700;font-family:'Poppins',sans-serif;cursor:pointer;text-decoration:none;text-align:center;transition:opacity .15s;}
+  .btn-official:hover{opacity:.92;}
+  .exam-subhead{font-size:10px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.06em;margin:12px 0 6px;}
+  .topic-pills{display:flex;flex-wrap:wrap;gap:6px;}
+  .topic-pill{font-size:11px;font-weight:600;color:var(--teal-dark);background:var(--white);border:1px solid var(--border);border-radius:8px;padding:6px 10px;max-width:100%;word-break:break-word;}
+  .scholarship-list{margin-top:10px;padding-top:10px;border-top:1px dashed var(--border);}
+  .scholarship-list ul{list-style:none;margin:0;padding:0;}
+  .scholarship-list li{margin-bottom:8px;font-size:12px;}
+  .scholarship-list a{color:var(--blue);font-weight:600;text-decoration:underline;word-break:break-all;}
+  .intensity-wrap{margin-top:10px;}
+  .intensity-label-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;font-size:11px;font-weight:600;color:var(--teal-dark);}
+  .intensity-track{height:12px;border-radius:6px;background:#E2E8F0;overflow:hidden;display:flex;}
+  .intensity-fill{height:100%;border-radius:6px;transition:width .2s ease;}
+  .intensity-low{background:#166534;}
+  .intensity-mid{background:#CA8A04;}
+  .intensity-high{background:#B91C1C;}
+  .intensity-segments{display:flex;gap:3px;margin-top:6px;}
+  .intensity-seg{flex:1;height:8px;border-radius:3px;background:#E2E8F0;}
+  .intensity-seg.on-low{background:#BBF7D0;}
+  .intensity-seg.on-mid{background:#FDE68A;}
+  .intensity-seg.on-high{background:#FECACA;}
+
+  /* Guidance checklists (Phase 3) */
+  .step-check-label{display:flex;gap:10px;align-items:flex-start;cursor:pointer;padding:8px 0;border-bottom:1px solid var(--border);}
+  .step-check-label:last-child{border-bottom:none;}
+  .step-check-label input[type=checkbox]{width:20px;height:20px;min-width:20px;min-height:20px;margin-top:2px;accent-color:var(--teal);cursor:pointer;}
+  .step-check-text{font-size:13px;color:var(--text);line-height:1.65;flex:1;}
+
+  /* PDF + print (Phase 3) */
+  .res-actions-row{display:flex;flex-direction:column;gap:10px;margin-top:4px;}
+  .btn-pdf{width:100%;min-height:44px;border:2px solid var(--teal-dark);background:var(--white);border-radius:var(--radius);padding:12px;font-size:13px;font-weight:700;cursor:pointer;color:var(--teal-dark);font-family:'Poppins',sans-serif;}
+  .btn-pdf:hover{background:var(--teal-light);}
+  .print-header{display:none;}
+  @media print{
+    @page{size:A4;margin:14mm;}
+    body{background:#fff !important;}
+    .no-print,.app-bootstrap,.topbar{display:none !important;}
+    #screen-selector{display:none !important;}
+    .exam-block:hover{border-color:var(--border) !important;}
+    .container{max-width:100%;padding:12px 0 24px;}
+    .print-header{display:block !important;text-align:center;margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--teal-dark);}
+    .print-header .ph-logo{font-size:18px;font-weight:800;color:var(--teal-dark);}
+    .print-header .ph-tag{font-size:11px;color:var(--gray-text);}
+  }
+
+  @media(max-width:767px){
+    .exam-block-top{flex-wrap:wrap;}
+    .exam-urgency{margin-left:auto;}
+    .res-fit-summary{font-size:12px;padding:12px;}
+    .trending-chips{flex-direction:column;}
+    .trend-chip{width:100%;justify-content:center;}
+  }
 </style>
 </head>
-<body>
+<body class="app-not-ready">
+<div id="app-bootstrap" class="app-bootstrap no-print" role="status" aria-live="polite" aria-busy="true">
+  <div class="app-bootstrap-inner" id="app-bootstrap-inner">
+    <div class="app-bootstrap-logo skel-pulse" aria-hidden="true"></div>
+    <p class="app-bootstrap-text">Loading your exam roadmap data…</p>
+    <div class="skel-bar" style="width:90%" aria-hidden="true"></div>
+    <div class="skel-bar" style="width:74%" aria-hidden="true"></div>
+    <div class="skel-bar" style="width:82%" aria-hidden="true"></div>
+  </div>
+</div>
 <div class="container">
 
 <!-- TOPBAR -->
-<div class="topbar">
+<div class="topbar no-print">
   <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
   <a class="topbar-brand" href="../index.html">
   <div class="topbar-logo">
@@ -189,10 +286,10 @@
     <div class="hero-tag">Exam Roadmap Builder</div>
     <h1>Your Personal <span>Exam Roadmap</span> — 2026 and 2027</h1>
     <p>Tell us where you are and where you want to go. We will build you a personalised roadmap of every exam you need to appear for, every registration deadline, and exactly when to start preparing — with honest guidance at every step.</p>
-    <div class="hero-stats">
-      <div class="hero-stat"><div class="v">25+</div><div class="l">Exams Covered</div></div>
-      <div class="hero-stat"><div class="v">50+</div><div class="l">Career Paths</div></div>
-      <div class="hero-stat"><div class="v">2026–27</div><div class="l">Live Dates</div></div>
+    <div class="hero-stats" id="hero-stats-row">
+      <div class="hero-stat"><div class="v" id="hero-stat-exams">—</div><div class="l">Exams in Database</div></div>
+      <div class="hero-stat"><div class="v" id="hero-stat-careers">—</div><div class="l">Career Paths</div></div>
+      <div class="hero-stat"><div class="v" id="hero-stat-updated">—</div><div class="l">Data Refreshed</div></div>
     </div>
     <div class="name-card">
       <label>What is your name? (So your roadmap feels personal)</label>
@@ -232,7 +329,11 @@
   <div class="sel-card" id="step3-card" style="display:none">
     <h3>Step 3 of 3 — What career are you thinking about?</h3>
     <span class="sel-label">Search or select up to 3 career interests</span>
-    <input type="text" class="career-search" id="career-search" placeholder="Search career — e.g. Doctor, Engineer, IAS, CA..." oninput="filterCareers()">
+    <input type="text" class="career-search no-print" id="career-search" placeholder="Search career — e.g. Doctor, Engineer, IAS, CA..." oninput="filterCareers()">
+    <div class="trending-wrap no-print" id="trending-wrap" style="display:none">
+      <div class="trending-label">Trending — tap to search</div>
+      <div class="trending-chips" id="trending-chips" role="group" aria-label="Trending career filters"></div>
+    </div>
     <div class="sel-grid" id="career-grid" style="max-height:260px;overflow-y:auto;padding:4px 2px;"></div>
     <div style="font-size:11px;color:var(--gray-text);margin-top:8px;" id="career-count-label">Select up to 3 careers</div>
     <button class="btn-build" id="btn-build" onclick="buildRoadmap()" disabled>Build My Roadmap →</button>
@@ -243,9 +344,14 @@
 <div id="screen-results" class="hidden">
 
   <div class="res-hero" id="res-hero">
+    <div class="print-header" aria-hidden="true">
+      <div class="ph-logo">Pehchaan Careers</div>
+      <div class="ph-tag">Exam Roadmap — pehchaancareers.in</div>
+    </div>
     <div class="res-hero-label">Your personalised exam roadmap</div>
     <div class="res-hero-name" id="res-title"></div>
     <div class="res-hero-sub" id="res-sub"></div>
+    <div class="res-fit-summary" id="res-fit-summary" style="display:none"></div>
     <div class="res-profile-row" id="res-badges"></div>
   </div>
 
@@ -255,6 +361,7 @@
   <div class="card-section">
     <h3>Your Exam Calendar — May 2026 to December 2027</h3>
     <div class="section-sub">Every exam relevant to your path, with registration deadlines and preparation guidance. Always verify exact dates on the official exam website before registering.</div>
+    <div id="timeline-countdown" class="timeline-countdown" style="display:none" aria-live="polite"></div>
     <div class="legend-row">
       <div class="legend-item"><div class="legend-dot" style="background:var(--red)"></div> Register Now</div>
       <div class="legend-item"><div class="legend-dot" style="background:var(--amber)"></div> Exam Soon</div>
@@ -284,8 +391,9 @@
     <p>Exam dates shown are based on official announcements and historical patterns as of May 2026. Dates for 2027 exams are <strong>expected/tentative</strong> based on past trends — always confirm on official exam websites before registering. Pehchaan Careers does not guarantee the accuracy of future exam schedules. This roadmap is a starting point for planning — not a substitute for official notifications from UPSC, NTA, IBPS, SSC, or other exam bodies.</p>
   </div>
 
-  <div class="res-actions">
-    <button class="btn-restart" onclick="restart()">← Build a Different Roadmap</button>
+  <div class="res-actions res-actions-row no-print">
+    <button type="button" class="btn-pdf" onclick="window.print()">Save Roadmap as PDF</button>
+    <button type="button" class="btn-restart" onclick="restart()">← Build a Different Roadmap</button>
   </div>
 
   <div class="brand-footer">
@@ -305,464 +413,159 @@ var selClass = null, selStream = null, selCareers = [];
 var firstName = '', lastName = '';
 
 // ─────────────────────────────────────────────
-// ALL CAREER OPTIONS — 50 careers across streams
+// GLOBAL DATA (loaded from ../ExamDB/pehchaan_exam_data.json)
 // ─────────────────────────────────────────────
-var ALL_CAREERS = [
-  // SCIENCE
-  {id:'jee',      label:'Engineering (JEE)',        stream:['science'],           group:'Engineering & Tech'},
-  {id:'neet',     label:'Doctor (MBBS / NEET)',      stream:['science'],           group:'Medicine & Health'},
-  {id:'neetbds',  label:'Dentist (BDS / NEET)',      stream:['science'],           group:'Medicine & Health'},
-  {id:'nursing',  label:'Nursing (BSc / GNM)',       stream:['science'],           group:'Medicine & Health'},
-  {id:'pharma',   label:'Pharmacist (B.Pharm)',      stream:['science'],           group:'Medicine & Health'},
-  {id:'ayush',    label:'AYUSH Doctor (BAMS/BHMS)',  stream:['science'],           group:'Medicine & Health'},
-  {id:'nda',      label:'Defence Officer (NDA)',     stream:['science','any'],     group:'Defence & Government'},
-  {id:'gate',     label:'PSU / GATE (Engineering)',  stream:['science'],           group:'Engineering & Tech'},
-  {id:'arch',     label:'Architect (NATA)',          stream:['science'],           group:'Engineering & Tech'},
-  {id:'biotech',  label:'Biotechnology / Research',  stream:['science'],           group:'Engineering & Tech'},
-  {id:'bsc',      label:'BSc Science / Research',    stream:['science'],           group:'Engineering & Tech'},
-  {id:'nift',     label:'Fashion Design (NIFT/NID)', stream:['science','arts','any'],group:'Design & Creative'},
-  {id:'pilot',    label:'Commercial Pilot (CPL)',    stream:['science'],           group:'Defence & Government'},
-  {id:'ds',       label:'Data Science / Analytics',  stream:['science','commerce'],group:'Engineering & Tech'},
-  {id:'enviro',   label:'Environmental Science',     stream:['science','any'],     group:'Engineering & Tech'},
-  // COMMERCE
-  {id:'ca',       label:'Chartered Accountant (CA)', stream:['commerce'],          group:'Finance & Business'},
-  {id:'ibps',     label:'Bank PO / Clerk (IBPS/SBI)',stream:['commerce','any'],    group:'Banking & Finance'},
-  {id:'rbi',      label:'RBI Grade B (Banking)',     stream:['commerce','any'],    group:'Banking & Finance'},
-  {id:'cat',      label:'MBA / CAT (IIM)',            stream:['commerce','any'],    group:'Finance & Business'},
-  {id:'cds',      label:'Defence Officer (CDS)',     stream:['commerce','any'],    group:'Defence & Government'},
-  {id:'ssccom',   label:'SSC CGL / CHSL',            stream:['commerce','any'],    group:'Government Jobs'},
-  {id:'actuarial',label:'Actuarial Science',          stream:['commerce','science'],group:'Finance & Business'},
-  {id:'bba',      label:'BBA / Management',          stream:['commerce','any'],    group:'Finance & Business'},
-  {id:'insurance',label:'Insurance / Finance Career',stream:['commerce','any'],    group:'Finance & Business'},
-  // ARTS
-  {id:'upsc',     label:'IAS / IPS (UPSC CSE)',      stream:['arts','any'],        group:'Defence & Government'},
-  {id:'cgpsc',    label:'CGPSC (CG Civil Services)', stream:['arts','any'],        group:'Defence & Government'},
-  {id:'clat',     label:'Lawyer (CLAT / LLB)',       stream:['arts','any'],        group:'Law & Justice'},
-  {id:'teaching', label:'Teacher / B.Ed / CTET',    stream:['arts','science','commerce','any'], group:'Education'},
-  {id:'ugcnet',   label:'Professor / UGC NET',       stream:['arts','science','commerce','any'], group:'Education'},
-  {id:'psych',    label:'Psychologist / Counsellor', stream:['arts','science'],    group:'Education'},
-  {id:'journal',  label:'Journalism / Mass Comm',    stream:['arts','any'],        group:'Design & Creative'},
-  {id:'social',   label:'Social Work / NGO (TISS)',  stream:['arts','any'],        group:'Education'},
-  {id:'mph',      label:'Public Health (MPH)',       stream:['arts','science'],    group:'Medicine & Health'},
-  {id:'law',      label:'Judicial Services',         stream:['arts','any'],        group:'Law & Justice'},
-  {id:'polsci',   label:'Political Science Career',  stream:['arts'],              group:'Defence & Government'},
-  // ANY STREAM
-  {id:'ssc',      label:'SSC CGL / CHSL (Govt Job)', stream:['any','commerce','arts','science'], group:'Government Jobs'},
-  {id:'rrb',      label:'Railways (RRB NTPC / JE)',  stream:['any'],               group:'Government Jobs'},
-  {id:'cgvyapam', label:'CGVYAPAM / State Govt Jobs',stream:['any'],               group:'Government Jobs'},
-  {id:'hotel',    label:'Hotel Management (NCHM)',   stream:['any'],               group:'Hospitality'},
-  {id:'digimkt',  label:'Digital Marketing',         stream:['any'],               group:'Design & Creative'},
-  {id:'design',   label:'Graphic / UI-UX Design',   stream:['any'],               group:'Design & Creative'},
-  {id:'content',  label:'Content Creator / Writer',  stream:['any'],               group:'Design & Creative'},
-  {id:'itifit',   label:'ITI / Polytechnic Trades',  stream:['any'],               group:'Government Jobs'},
-  {id:'sports',   label:'Sports Coach / PE Teacher', stream:['any'],               group:'Education'},
-  {id:'cuet',     label:'Central University (CUET)', stream:['any'],               group:'Engineering & Tech'},
-  {id:'fitness',  label:'Fitness / Nutrition Career',stream:['science','any'],     group:'Medicine & Health'},
-  {id:'event',    label:'Event Management',          stream:['any'],               group:'Hospitality'},
-  {id:'game',     label:'Animation / Game Design',   stream:['any'],               group:'Design & Creative'},
-  {id:'supchain', label:'Supply Chain / Logistics',  stream:['commerce','any'],    group:'Finance & Business'},
-  {id:'cs',       label:'Company Secretary (CS)',    stream:['commerce'],          group:'Finance & Business'},
-];
-
-// ─────────────────────────────────────────────
-// COMPREHENSIVE EXAM DATABASE — verified 2026 dates
-// ─────────────────────────────────────────────
-var ALL_EXAMS = [
-  // ═══════════ COMPLETED / PAST 2026 ═══════════
-  {
-    id:'jee26s1', name:'JEE Main 2026 Session 1', emoji:'🔬',
-    careers:['jee','gate','arch','ds','biotech','bsc'],
-    month:'Jan 2026', status:'done',
-    regDate:'Nov–Dec 2025', examDate:'Jan 21–29, 2026', resultDate:'Feb 2026',
-    desc:'Session 1 completed. If you appeared, your score stands.',
-    guidance:'Session 1 result is out. If your score is not satisfactory, Session 2 was in April 2026. JEE Advanced 2026 is on May 17, 2026 — IIT Roorkee conducting.',
-    official:'https://jeemain.nta.nic.in'
-  },
-  {
-    id:'jee26s2', name:'JEE Main 2026 Session 2', emoji:'🔬',
-    careers:['jee','gate','arch','ds','biotech','bsc'],
-    month:'Apr 2026', status:'done',
-    regDate:'Feb 1–25, 2026', examDate:'Apr 2–9, 2026', resultDate:'Apr 2026',
-    desc:'Session 2 completed. Best of both sessions counts for final rank.',
-    guidance:'JEE Main 2026 is done for this cycle. If you are in Class 11 now, JEE 2027 registration opens around October 2026. Use this time to build your foundation in Physics, Chemistry and Maths.',
-    official:'https://jeemain.nta.nic.in'
-  },
-  {
-    id:'neet26', name:'NEET UG 2026', emoji:'🩺',
-    careers:['neet','neetbds','ayush','biotech'],
-    month:'May 2026', status:'done',
-    regDate:'Feb 8–Mar 8, 2026', examDate:'May 3, 2026 (Sunday)', resultDate:'Jun 2026',
-    desc:'NEET UG 2026 conducted on May 3, 2026 in offline mode across India.',
-    guidance:'NEET 2026 is done. If you appeared, results come in June. If you are preparing for NEET 2027, start your preparation now — Biology NCERT is the foundation. One year of consistent daily study is the minimum to crack a government medical college.',
-    official:'https://neet.nta.nic.in'
-  },
-  {
-    id:'clat26', name:'CLAT 2026 (Law Entrance)', emoji:'⚖️',
-    careers:['clat','law','upsc'],
-    month:'Dec 2025', status:'done',
-    regDate:'Aug 1–Oct 31, 2025', examDate:'Dec 7, 2025', resultDate:'Dec 16, 2025',
-    desc:'CLAT 2026 was conducted on December 7, 2025. Results out December 16, 2025.',
-    guidance:'CLAT 2026 cycle is complete. CLAT 2027 registration will open around August 2026. If you are targeting NLUs, start reading newspapers daily and practising legal reasoning from now.',
-    official:'https://consortiumofnlus.ac.in'
-  },
-  {
-    id:'upsc26pre', name:'UPSC CSE Prelims 2026', emoji:'🏛️',
-    careers:['upsc','cgpsc','polsci'],
-    month:'May 2026', status:'done',
-    regDate:'Feb 4–24, 2026', examDate:'May 24, 2026 (Sunday)', resultDate:'Jun–Jul 2026',
-    desc:'UPSC Civil Services Prelims 2026 conducted on May 24, 2026. 933 vacancies.',
-    guidance:'Prelims result expected in June-July 2026. Qualified candidates move to Mains in August 2026. If you are not appearing this cycle, UPSC 2027 notification comes in January 2027.',
-    official:'https://upsc.gov.in'
-  },
-  // ═══════════ ACTIVE / VERY SOON ═══════════
-  {
-    id:'jeeadv26', name:'JEE Advanced 2026', emoji:'🏆',
-    careers:['jee'],
-    month:'May 2026', status:'soon',
-    regDate:'Late Apr – early May 2026', examDate:'May 17, 2026', resultDate:'Jun 2026',
-    desc:'IIT Roorkee conducting JEE Advanced 2026. Only top ~2.5 lakh JEE Main qualifiers eligible.',
-    guidance:'<strong>If you qualified JEE Main:</strong> Register immediately — window is very short. Solve previous 10 years of JEE Advanced papers. Focus on deep concept clarity, not formula memorisation. IIT Advanced is a different beast from JEE Main.',
-    official:'https://jeeadv.ac.in'
-  },
-  {
-    id:'upsc26mains', name:'UPSC CSE Mains 2026', emoji:'🏛️',
-    careers:['upsc','polsci'],
-    month:'Aug 2026', status:'upcoming',
-    regDate:'After Prelims result', examDate:'Aug 21–25, 2026 (5 days)', resultDate:'Nov 2026',
-    desc:'For Prelims qualifiers only. 9 papers including Essay, 4 GS papers, and Optional Subject.',
-    guidance:'<strong>If you cleared Prelims:</strong> You have roughly 6–8 weeks. Prioritise: Essay (1 paper), GS 2 (Polity, Governance), GS 3 (Economy, Environment), and your Optional Subject. Write every day — answer writing is the single biggest differentiator in Mains.',
-    official:'https://upsc.gov.in'
-  },
-  {
-    id:'nda26_2', name:'NDA & NA (II) 2026', emoji:'⚔️',
-    careers:['nda'],
-    month:'Sep 2026', status:'upcoming',
-    regDate:'May–Jun 2026', examDate:'Sep 13, 2026', resultDate:'Nov 2026',
-    desc:'Second NDA exam of 2026. For Class 12 students and freshers. Army, Navy and Air Force.',
-    guidance:'<strong>Start preparing now:</strong> NDA has two parts — written (Maths + GAT) and SSB Interview. Written is clearable in 3–4 months with the right books. SSB is a 5-day psychological test — no coaching can fully prepare you, but personality development and physical fitness matter enormously.',
-    official:'https://upsc.gov.in'
-  },
-  {
-    id:'cds26_2', name:'CDS (II) 2026', emoji:'⚔️',
-    careers:['cds','nda'],
-    month:'Sep 2026', status:'upcoming',
-    regDate:'May–Jun 2026', examDate:'Sep 13, 2026', resultDate:'Nov 2026',
-    desc:'Combined Defence Services Exam II 2026. For graduates. IMA, INA, AFA, OTA.',
-    guidance:'CDS is for graduates. If you are in final year, start now. Syllabus covers English, GK, and Elementary Maths (for IMA/INA/AFA — not needed for OTA which is for non-maths backgrounds too).',
-    official:'https://upsc.gov.in'
-  },
-  {
-    id:'ibps26po', name:'IBPS PO 2026 (Bank PO)', emoji:'🏦',
-    careers:['ibps','rbi','insurance'],
-    month:'Jul–Aug 2026', status:'upcoming',
-    regDate:'Jul 2026 (expected)', examDate:'Oct–Nov 2026 (expected)', resultDate:'Dec 2026–Jan 2027',
-    desc:'IBPS PO 2026 — Probationary Officer recruitment for nationalised banks. ~5000+ vacancies expected.',
-    guidance:'<strong>Start preparing now</strong> — 4–5 months of structured preparation is enough to crack IBPS PO. Focus areas: Quantitative Aptitude (number series, DI, arithmetic), Reasoning (puzzles, seating arrangement), English (reading comprehension, fill in the blanks), Banking Awareness. Practice 2 mock tests per week minimum.',
-    official:'https://ibps.in'
-  },
-  {
-    id:'ibps26clerk', name:'IBPS Clerk 2026', emoji:'🏦',
-    careers:['ibps'],
-    month:'Sep 2026', status:'upcoming',
-    regDate:'Aug–Sep 2026 (expected)', examDate:'Nov–Dec 2026 (expected)', resultDate:'Jan–Feb 2027',
-    desc:'IBPS Clerk 2026 — Office Assistant recruitment across public sector banks.',
-    guidance:'IBPS Clerk is a good entry point into banking if PO seems too competitive. Same syllabus as PO but lower difficulty. Clerk-to-PO internal promotion is common. Use Gradeup, Testbook, or Oliveboard for free mock tests.',
-    official:'https://ibps.in'
-  },
-  {
-    id:'sbi26po', name:'SBI PO 2026', emoji:'🏦',
-    careers:['ibps','rbi'],
-    month:'Jul 2026', status:'upcoming',
-    regDate:'Jun–Jul 2026 (expected)', examDate:'Sep–Oct 2026 (expected)', resultDate:'Nov 2026',
-    desc:'SBI PO 2026 — State Bank of India Probationary Officer. Most prestigious bank PO exam.',
-    guidance:'SBI PO is separate from IBPS — same preparation but independent registration. SBI PO selection is slightly tougher. Aiming for both SBI PO and IBPS PO simultaneously is the standard strategy — they share the same preparation.',
-    official:'https://sbi.co.in/careers'
-  },
-  {
-    id:'ssc26cgl', name:'SSC CGL 2026', emoji:'🏅',
-    careers:['ssc','ssccom'],
-    month:'May–Jun 2026', status:'upcoming',
-    regDate:'Mar–Apr 2026 (notification released)', examDate:'May–Jul 2026', resultDate:'Sep 2026',
-    desc:'SSC CGL 2026 — Combined Graduate Level. Income Tax Inspector, ASO, Auditor, Statistical Investigator.',
-    guidance:'<strong>Registration is open now</strong> — check official SSC website immediately. CGL Tier 1 (CBT, 100 questions, 60 min) covers GK, Reasoning, Quantitative Aptitude, and English. Tier 1 is the filter — aim for 170+ out of 200. Start with Reasoning and Quant — these sections decide your rank.',
-    official:'https://ssc.gov.in'
-  },
-  {
-    id:'ssc26chsl', name:'SSC CHSL 2026', emoji:'🏅',
-    careers:['ssc','ssccom'],
-    month:'Jun–Jul 2026', status:'upcoming',
-    regDate:'Apr–May 2026', examDate:'Jun–Jul 2026', resultDate:'Sep–Oct 2026',
-    desc:'SSC CHSL 2026 — for Class 12 pass students. LDC, DEO, PA/SA posts.',
-    guidance:'CHSL is a great option if you have passed Class 12 and want a central government job immediately. Same preparation as CGL but easier. Postal Assistant / Sorting Assistant and LDC posts are the most common outputs.',
-    official:'https://ssc.gov.in'
-  },
-  {
-    id:'cuet26', name:'CUET UG 2026 (Central Universities)', emoji:'🎓',
-    careers:['cuet','arts','upsc','bba','social','psych','journal'],
-    month:'May–Jun 2026', status:'upcoming',
-    regDate:'Mar–Apr 2026', examDate:'May–Jun 2026', resultDate:'Jul 2026',
-    desc:'Common University Entrance Test for admission to DU, JNU, BHU, AMU, and 200+ central universities.',
-    guidance:'<strong>CUET is now mandatory for all Central University UG admissions.</strong> If you are in Class 12 and want Delhi University, JNU or BHU — register for CUET immediately. The exam tests subject knowledge (from Class 12 syllabus), English, and General Test. Domain subjects from your Class 12 board syllabus are directly asked.',
-    official:'https://cuet.samarth.ac.in'
-  },
-  {
-    id:'nchm26', name:'NCHM JEE 2026 (Hotel Management)', emoji:'🏨',
-    careers:['hotel','event'],
-    month:'May 2026', status:'upcoming',
-    regDate:'Mar–Apr 2026 (extended)', examDate:'May 2026', resultDate:'Jun 2026',
-    desc:'National Council for Hotel Management entrance — admission to IHMs (government hotel management institutes).',
-    guidance:'IHM (government hotel management) is excellent value — low fees, strong placement at Taj, Marriott, Hyatt. NCHM JEE tests Numerical Ability, Reasoning, GK, English and Aptitude for Service. Application extended — check official NTA website for closing date.',
-    official:'https://nta.ac.in'
-  },
-  {
-    id:'cat26', name:'CAT 2026 (MBA at IIMs)', emoji:'💼',
-    careers:['cat','bba','supchain'],
-    month:'Nov 2026', status:'upcoming',
-    regDate:'Aug–Sep 2026 (expected)', examDate:'Nov 29, 2026 (expected)', resultDate:'Jan 2027',
-    desc:'Common Admission Test 2026 — gateway to IIMs, FMS, SPJIMR and 1300+ B-schools. Conducted by IIM Indore.',
-    guidance:'<strong>Start preparing now if MBA is your goal.</strong> CAT tests VARC (reading comprehension), DILR (data interpretation + logical reasoning), and QA (quantitative ability). 4–5 months of structured preparation minimum. Take one full mock test per week from July onwards. CAT percentile above 95 opens IIM B/C/L doors; 99+ for IIMA/B/C top campuses.',
-    official:'https://iimcat.ac.in'
-  },
-  {
-    id:'ctet26', name:'CTET 2026 (Central Teacher Test)', emoji:'📖',
-    careers:['teaching','sports'],
-    month:'Jul–Aug 2026', status:'upcoming',
-    regDate:'May–Jun 2026 (expected)', examDate:'Jul–Aug 2026', resultDate:'Sep 2026',
-    desc:'Central Teacher Eligibility Test — mandatory for teaching in Kendriya Vidyalayas and central schools. Paper 1 (Class 1–5), Paper 2 (Class 6–8).',
-    guidance:'CTET certification is valid for life. You can appear as many times as needed. Paper 2 (upper primary) is more useful for secondary school teaching positions. Subjects: Child Development, Language 1, Language 2, and Subject-specific (Maths/Science or Social Studies).',
-    official:'https://ctet.nic.in'
-  },
-  {
-    id:'ugcnet26', name:'UGC NET Dec 2026 (Professor)', emoji:'🎓',
-    careers:['ugcnet','teaching','psych','social'],
-    month:'Nov–Dec 2026', status:'upcoming',
-    regDate:'Sep–Oct 2026', examDate:'Nov–Dec 2026', resultDate:'Jan 2027',
-    desc:'UGC NET Dec 2026 — for Assistant Professor and Junior Research Fellowship. 83+ subjects.',
-    guidance:'UGC NET is held twice yearly (June and December). JRF qualifiers get a monthly fellowship (₹37,000/month) for PhD research. Assistant Professor qualification allows teaching in colleges. Required for any government college lecturer position.',
-    official:'https://ugcnet.nta.nic.in'
-  },
-  {
-    id:'niftee27', name:'NIFT Entrance 2027 (Fashion Design)', emoji:'👗',
-    careers:['nift','design','game'],
-    month:'Jan 2027', status:'future',
-    regDate:'Oct–Nov 2026 (expected)', examDate:'Jan 2027', resultDate:'Mar 2027',
-    desc:'NIFT Entrance Exam 2027 — admission to National Institute of Fashion Technology. Creative Ability Test + Situation Test.',
-    guidance:'NIFT is India\'s top fashion design institute. The Creative Ability Test is unique — it tests design thinking, not just drawing skill. Start building a sketchbook portfolio now. Practice situation tests: given a material, create something in 3 hours. Also appear for NID entrance if product design interests you.',
-    official:'https://nta.ac.in'
-  },
-  // ═══════════ 2027 EXAMS ═══════════
-  {
-    id:'jee27s1', name:'JEE Main 2027 Session 1', emoji:'🔬',
-    careers:['jee','gate','arch','ds','biotech'],
-    month:'Jan 2027', status:'future',
-    regDate:'Oct–Nov 2026 (expected)', examDate:'Jan 2027', resultDate:'Feb 2027',
-    desc:'JEE Main 2027 Session 1 — for students currently in Class 11 or 12.',
-    guidance:'<strong>If you are currently in Class 11:</strong> This is your first JEE attempt. You have roughly 18 months. Build your Physics, Chemistry and Maths foundations deeply — not speed, but understanding. Aim to complete the full Class 11 syllabus by December 2026, then Class 12 by September 2027. NCERT is non-negotiable — read every line.',
-    official:'https://jeemain.nta.nic.in'
-  },
-  {
-    id:'neet27', name:'NEET UG 2027', emoji:'🩺',
-    careers:['neet','neetbds','ayush','nursing','pharma'],
-    month:'May 2027', status:'future',
-    regDate:'Feb 2027 (expected)', examDate:'May 2027', resultDate:'Jun 2027',
-    desc:'NEET UG 2027 — for students currently in Class 11 or repeaters from 2026.',
-    guidance:'<strong>If you are currently in Class 11:</strong> NEET requires the deepest Biology knowledge of any entrance exam. Start with NCERT Biology — all of Class 11 and 12 NCERT must be read line by line. Physics and Chemistry also from NCERT first. Target: complete Class 11 NEET syllabus by December 2026. 1000 hours of quality study over 18 months is roughly what top scorers put in.',
-    official:'https://neet.nta.nic.in'
-  },
-  {
-    id:'upsc27', name:'UPSC CSE 2027', emoji:'🏛️',
-    careers:['upsc','cgpsc','polsci'],
-    month:'May 2027', status:'future',
-    regDate:'Jan–Feb 2027 (expected)', examDate:'May 2027', resultDate:'Jun 2027',
-    desc:'UPSC Civil Services Exam 2027 — Prelims expected May 2027.',
-    guidance:'If you are in graduation now, UPSC 2027 is realistic if you start serious preparation from today. Read The Hindu or Indian Express daily. Build a strong foundation in Indian Polity (Laxmikanth), History (NCERT 6–12), Geography (NCERT), and Economy (Ramesh Singh). The first year of preparation is about building this base — not coaching, not shortcuts.',
-    official:'https://upsc.gov.in'
-  },
-  {
-    id:'clat27', name:'CLAT 2027 (Law Entrance)', emoji:'⚖️',
-    careers:['clat','law'],
-    month:'Dec 2026', status:'future',
-    regDate:'Aug–Oct 2026 (expected)', examDate:'Dec 2026', resultDate:'Dec 2026',
-    desc:'CLAT 2027 — for students currently in Class 11 or 12 targeting NLUs.',
-    guidance:'<strong>If you are in Class 11 targeting CLAT:</strong> Reading is your most important preparation. Read good English newspapers daily, practice comprehension passages, and study Legal Reasoning through sample questions from past CLAT papers. Current Affairs and GK section covers national and international events — a daily 20-minute newspaper habit is non-negotiable.',
-    official:'https://consortiumofnlus.ac.in'
-  },
-  {
-    id:'cat27', name:'CAT 2027 (MBA)', emoji:'💼',
-    careers:['cat','bba','supchain'],
-    month:'Nov 2027', status:'future',
-    regDate:'Aug 2027 (expected)', examDate:'Nov 2027', resultDate:'Jan 2028',
-    desc:'CAT 2027 — for students graduating in 2027 or those wanting 2–3 years work experience before MBA.',
-    guidance:'Work experience (2–3 years) significantly strengthens IIM applications — most top IIM cohorts have average work experience of 2+ years. If you are graduating in 2026 or 2027, working for a couple of years before CAT actually improves your chances at top IIMs, not just your preparation quality.',
-    official:'https://iimcat.ac.in'
-  },
-  {
-    id:'cgpsc27', name:'CGPSC 2026–27 (CG Civil Services)', emoji:'🗳️',
-    careers:['cgpsc','polsci','social'],
-    month:'2026–27', status:'upcoming',
-    regDate:'Check CGPSC official site', examDate:'2026–27 (Prelims then Mains)', resultDate:'2027',
-    desc:'Chhattisgarh Public Service Commission — Deputy Collector, DSP, CDPO, and 200+ state government posts.',
-    guidance:'<strong>Most important exam for CG students.</strong> CGPSC Prelims and Mains syllabus includes CG history, culture, economy, geography, tribal affairs, and Chhattisgarh Lok Seva Guarantee Act. Students from Korba, Bilaspur and Raigarh have a natural advantage — they already know the state. Check cgpsc.choice.gov.in regularly.',
-    official:'https://cgpsc.choice.gov.in'
-  },
-  {
-    id:'cgvyapam27', name:'CGVYAPAM (CG Govt Jobs)', emoji:'🏅',
-    careers:['cgvyapam','teaching','ssc'],
-    month:'Year-round', status:'upcoming',
-    regDate:'Multiple notifications throughout year', examDate:'Multiple dates', resultDate:'Varies',
-    desc:'Chhattisgarh Professional Examination Board — teacher recruitment, lab assistant, forest guard, patwari, and 100+ other CG government jobs.',
-    guidance:'<strong>Check CGVYAPAM every month</strong> — vyapam.cgstate.gov.in. CG Teacher recruitment (Class 1–5, Class 6–8, Class 9–12) comes through CGVYAPAM. Patwari (revenue department), Forest Guard, Lab Assistant, Food Inspector all come here. These are CG-specific exams with CG-specific syllabus — local advantage is real.',
-    official:'https://vyapam.cgstate.gov.in'
-  },
-  {
-    id:'ibps27po', name:'IBPS PO 2027', emoji:'🏦',
-    careers:['ibps','rbi'],
-    month:'Oct–Nov 2027', status:'future',
-    regDate:'Jul 2027 (expected)', examDate:'Oct–Nov 2027', resultDate:'Dec 2027',
-    desc:'IBPS PO 2027 — if you are currently in college, this is your target after graduation.',
-    guidance:'Start building your Quantitative Aptitude and Reasoning skills now, even if your exam is in 2027. These skills take time to build — last-minute cramming does not work for banking exams. Use Oliveboard, Gradeup or YouTube (Mahendras, Adda247) for free content.',
-    official:'https://ibps.in'
-  },
-  {
-    id:'gate27', name:'GATE 2027 (PSU / Higher Studies)', emoji:'⚙️',
-    careers:['gate','jee','ds','biotech','enviro'],
-    month:'Feb 2027', status:'future',
-    regDate:'Aug–Sep 2026 (expected)', examDate:'Feb 2027', resultDate:'Mar 2027',
-    desc:'Graduate Aptitude Test in Engineering 2027 — for PSU jobs (NTPC, BHEL, SAIL, SECL) and IIT/NIT MTech.',
-    guidance:'<strong>GATE is extremely important for CG engineering students.</strong> NTPC Korba, SECL, SAIL Bhilai and BHEL Raipur all recruit through GATE scores. A GATE rank under 1000 opens multiple PSU doors offering ₹8–12 LPA starting salary with government benefits. Start GATE preparation from 3rd year of engineering — 12 months minimum.',
-    official:'https://gate.iitkgp.ac.in'
-  },
-  {
-    id:'nda27', name:'NDA & NA (I) 2027', emoji:'⚔️',
-    careers:['nda'],
-    month:'Apr 2027', status:'future',
-    regDate:'Jan–Feb 2027 (expected)', examDate:'Apr 2027', resultDate:'Jun 2027',
-    desc:'NDA & NA (I) 2027 — for Class 12 students of 2027 batch.',
-    guidance:'Physical fitness preparation should start immediately regardless of when you plan to appear. Minimum required: 1600m run in under 5 minutes 30 seconds, pull-ups, sit-ups, and overall physical conditioning. Written exam covers Maths and General Ability Test (English + General Knowledge). NDA selection includes a 5-day SSB — start developing leadership qualities, communication and presence now.',
-    official:'https://upsc.gov.in'
-  },
-  {
-    id:'caexam', name:'CA Foundation / Intermediate / Final', emoji:'📒',
-    careers:['ca','cs','insurance'],
-    month:'May & Nov each year', status:'upcoming',
-    regDate:'Register anytime on ICAI portal', examDate:'May 2026 / Nov 2026 / May 2027', resultDate:'2 months after exam',
-    desc:'ICAI CA exams — Foundation (after Class 12), Intermediate (2 groups), Final. Held twice a year in May and November.',
-    guidance:'<strong>CA Foundation November 2026:</strong> Register by April 2026 on ICAI website. 4 subjects: Principles of Accounting, Business Laws, Maths/Statistics, Economics. Start articleship (3 years of practical training) after clearing Intermediate. The May and November exam cycle means you always have the next attempt 6 months away — do not delay registration.',
-    official:'https://icai.org'
-  },
-  {
-    id:'csexam', name:'Company Secretary (CS) Foundation', emoji:'📑',
-    careers:['cs','ca'],
-    month:'Jun & Dec each year', status:'upcoming',
-    regDate:'Register on ICSI portal', examDate:'Jun 2026 / Dec 2026', resultDate:'2 months after',
-    desc:'CS Foundation exam — for Class 12 and commerce students wanting a career in corporate law and compliance.',
-    guidance:'CS is less well-known than CA but equally respected in corporate India. CS professionals are required by law for all large companies. Fees are much lower than CA coaching. CS Foundation covers Business Environment, Business Management, Business Economics and Fundamentals of Accounting.',
-    official:'https://icsi.edu'
-  },
-  {
-    id:'rbi26', name:'RBI Grade B 2026', emoji:'🏦',
-    careers:['rbi','ibps'],
-    month:'Aug–Sep 2026', status:'upcoming',
-    regDate:'Jun–Jul 2026 (expected)', examDate:'Aug–Sep 2026', resultDate:'Nov 2026',
-    desc:'RBI Grade B Officer recruitment 2026. One of the most prestigious banking careers — 200–300 vacancies.',
-    guidance:'RBI Grade B is harder than IBPS PO but the most prestigious bank job in India. Requires graduation with 60% marks. Three phases: Phase 1 (objective), Phase 2 (descriptive + Finance/Management), Interview. Economics, Finance and Management knowledge is tested in Phase 2 — not just banking awareness.',
-    official:'https://rbi.org.in/opportunities'
-  }
-];
-
-// ─────────────────────────────────────────────
-// CAREER GUIDANCE DATA
-// ─────────────────────────────────────────────
-var CAREER_GUIDANCE = {
-  jee: {
-    now: 'Every single day from Class 11 Day 1: Physics, Chemistry and Maths. Not coaching — understanding. Read NCERT completely first, then go deeper.',
-    phases: [
-      { phase: 'Class 11 (Now → Jun 2026)', steps: ['Complete NCERT for Physics, Chemistry and Maths — every line, every example','Build conceptual clarity in Mechanics (Physics), Atomic Structure (Chemistry), Algebra and Calculus (Maths)','Solve NCERT examples and exercises daily — do not skip to advanced books yet','Take one monthly test of Class 11 syllabus to track progress'] },
-      { phase: 'Class 12 (Jul 2026 → Nov 2026)', steps: ['Complete Class 12 syllabus alongside boards preparation — JEE and boards share 70% syllabus','Start solving previous 5 years of JEE Main papers (chapter-wise)','Target: 180+ in JEE Main mock tests consistently by November 2026','Register for JEE Main 2027 Session 1 (registration opens Oct 2026)'] },
-      { phase: 'Board + JEE Season (Dec 2026 → Apr 2027)', steps: ['Balance board preparation with JEE — boards require 75% attendance','Attempt JEE Main Session 1 (January 2027) — treat it as a practice attempt','After boards (March), focus entirely on JEE Main Session 2 and JEE Advanced','For JEE Advanced: only top ~2.5 lakh JEE Main qualifiers are eligible'] },
-    ],
-    resources: [{name:'Khan Academy Physics',desc:'Free, excellent concept videos'},{name:'NCERT exemplar',desc:'Free download from ncert.nic.in'},{name:'JEE Previous Papers',desc:'Free on jeemain.nta.nic.in'},{name:'YouTube: Physics Wallah',desc:'Free Class 11-12 lectures'}]
-  },
-  neet: {
-    now: 'Biology NCERT is your holy book. Read it completely before touching any other book. Every diagram, every table, every example.',
-    phases: [
-      { phase: 'Class 11 (Now → Jun 2026)', steps: ['Read NCERT Biology Class 11 completely — 3 times is not too many','Build strong base in Physics (Mechanics, Thermodynamics) and Chemistry (Organic, Inorganic)','Make your own short notes for every Biology chapter','Attempt AIIMS-style MCQs after each chapter'] },
-      { phase: 'Class 12 (Jul 2026 → Feb 2027)', steps: ['Complete NCERT Biology Class 12 — Genetics, Biotechnology, and Ecology are high weightage','Revise Class 11 Biology alongside Class 12 — NEET tests both equally','Start full mock tests monthly from October 2026','Register for NEET 2027 in February 2027'] },
-      { phase: 'NEET Season (Mar–May 2027)', steps: ['Last 60 days: Revise only NCERT — no new books','Solve the last 10 years of NEET papers in exam conditions','Aim for 600+ out of 720 for a government MBBS seat','Physics and Chemistry are score differentiators — do not neglect them'] },
-    ],
-    resources: [{name:'NCERT Biology (free)',desc:'ncert.nic.in — your primary textbook'},{name:'NTA NEET Mock Tests',desc:'Free on NTA Abhyas app'},{name:'YouTube: Vedantu NEET',desc:'Free Biology lectures'},{name:'NEET Previous Papers',desc:'Free on neet.nta.nic.in'}]
-  },
-  upsc: {
-    now: 'Start reading The Hindu or Indian Express daily — even 30 minutes. This is the single best thing you can do today.',
-    phases: [
-      { phase: 'Foundation Building (Now → Dec 2026)', steps: ['Read Laxmikanth\'s Indian Polity — the most important UPSC book','Read NCERT History 6th–12th (Old NCERTs preferred)','Read NCERT Geography 6th–12th','Build current affairs habit: newspaper daily, monthly magazine (Vision IAS or Insights)','Do NOT join coaching yet — build your own foundation first'] },
-      { phase: 'Serious Preparation (Jan 2027 → Mar 2027)', steps: ['Complete Economy (Ramesh Singh or NCERT 11-12)','Complete Environment and Ecology (Shankar IAS or NCERT)','Start answer writing practice — one answer daily, 250 words','Choose your Optional Subject (select what you know deeply or enjoy most)'] },
-      { phase: 'UPSC 2027 (Apr–May 2027)', steps: ['Register for UPSC CSE 2027 in January–February 2027','Revise all GS through concise notes','Solve last 10 years of Prelims MCQs — CSAT (Paper 2) must score 33% minimum','Prelims is a elimination test — 100+ marks in GS Paper 1 is the typical cutoff'] },
-    ],
-    resources: [{name:'NCERT books (free)',desc:'ncert.nic.in — 6th to 12th all subjects'},{name:'Insights on India',desc:'Free daily current affairs'},{name:'Vision IAS PT365',desc:'Free current affairs compilation'},{name:'YouTube: StudyIQ',desc:'Free UPSC video lectures'}]
-  },
-  cgpsc: {
-    now: 'Download the official CGPSC syllabus from cgpsc.choice.gov.in today. Know exactly what is tested.',
-    phases: [
-      { phase: 'Foundation (Now → Sep 2026)', steps: ['Study CG-specific topics: CG history (from the region\'s own perspective), geography, economy, tribal areas, culture','Parallel: study general GS (same as UPSC — Polity, History, Geography, Economy)','Read CG-specific newspapers: Patrika, Nava Bharat, Dainik Bhaskar (CG edition)','Make notes on CG steel, coal, minerals, tribes, and Bastar-Sarguja geography'] },
-      { phase: 'Mains Preparation (Oct 2026 → Mar 2027)', steps: ['CGPSC Mains tests writing ability — practice answer writing daily','Optional subject: History, Geography, or Public Administration are popular choices','Study CG government schemes, CGVYAPAM structure, and local governance','Solve CGPSC previous years papers — patterns repeat significantly'] },
-    ],
-    resources: [{name:'CGPSC official site',desc:'cgpsc.choice.gov.in — official syllabus'},{name:'CG Patrika News',desc:'CG-specific current affairs daily'},{name:'YouTube: CG Exam',desc:'Free CGPSC lectures in Hindi'},{name:'CGVYAPAM Portal',desc:'vyapam.cgstate.gov.in — CG govt jobs'}]
-  },
-  ibps: {
-    now: 'Open Oliveboard or Testbook today and take one free IBPS PO mock test — even if you score poorly, you will know exactly what to prepare.',
-    phases: [
-      { phase: 'Foundation (Now → Jun 2026)', steps: ['Learn all QA topics: number series, simplification, percentage, ratio, DI, time-work','Reasoning: puzzles, seating arrangement, syllogisms, blood relations, direction sense','English: reading comprehension, fill in the blanks, error spotting','Financial Awareness: know basic banking terms, RBI policies, recent economic news'] },
-      { phase: 'Practice Phase (Jul–Sep 2026)', steps: ['2 mock tests per week — analyse every wrong answer the same day','Speed is as important as accuracy — IBPS PO gives 20 minutes per section','Maintain a formula notebook for Quant — revise daily','Start section-wise timed practice: 20 questions in 12 minutes target'] },
-      { phase: 'Final Preparation (Oct–Nov 2026)', steps: ['Full-length mocks daily in the last 3 weeks','Banking awareness: last 6 months of banking news is key','Interview preparation if cleared Prelims: know your hometown\'s bank branches, RBI Governor, recent monetary policy'] },
-    ],
-    resources: [{name:'Oliveboard (free tier)',desc:'Free mock tests and daily quizzes'},{name:'Adda247 YouTube',desc:'Free banking exam preparation'},{name:'RBI official site',desc:'Free monetary policy and banking news'},{name:'Testbook',desc:'Free sectional practice tests'}]
-  },
-  ssc: {
-    now: 'SSC CGL 2026 notification is already out — check ssc.gov.in and register before the deadline.',
-    phases: [
-      { phase: 'Tier 1 Preparation (Now → Jun 2026)', steps: ['QA: focus on Number System, Percentage, Time-Speed-Distance, Algebra, Geometry','Reasoning: Mirror images, Venn diagrams, series, analogies, puzzles','English: Idioms, One-word substitution, Active-Passive, Spelling','GK: Static GK (History, Geography, Polity) + Current Affairs (last 6 months)'] },
-      { phase: 'Tier 2 Preparation (After Tier 1 result)', steps: ['Tier 2 tests QA and English in depth — 200 questions per paper','For Statistical Investigator or Compiler post: Statistics paper is mandatory','For Assistant Audit Officer: Finance and Accounts paper','Writing skills matter in Tier 2 for descriptive paper'] },
-    ],
-    resources: [{name:'SSC Official Website',desc:'ssc.gov.in — free official papers'},{name:'YouTube: Wifistudy',desc:'Free SSC CGL lectures'},{name:'KD Campus / GradeUp',desc:'Free daily quiz and mock tests'},{name:'Previous Year Papers',desc:'Solve last 10 years before exam'}]
-  },
-  ca: {
-    now: 'Register on icai.org for CA Foundation today if you have passed Class 12. Foundation registration is open year-round.',
-    phases: [
-      { phase: 'CA Foundation (Nov 2026 exam)', steps: ['Register by April 2026 for November 2026 Foundation exam','4 subjects: Accounting Principles, Business Laws, Maths/Statistics, Economics','Study minimum 6 hours daily — Foundation is manageable with discipline','Solve ICAI Study Material (free download on icai.org) — official material is the best prep'] },
-      { phase: 'CA Intermediate (after Foundation)', steps: ['Intermediate has 2 groups (6 papers total) — can clear both together or separately','Articleship (3 years of practical training) begins after clearing both groups of Intermediate or one group','Articleship firms in Bilaspur, Raipur, and Korba are available — local articleship is perfectly valid'] },
-      { phase: 'CA Final (3–4 years from now)', steps: ['Final has 2 groups, 6 papers — both must be cleared to qualify as CA','Average total time to qualify: 4.5–5 years from Class 12','Once qualified, SECL, NTPC, SAIL Bhilai and every major CG company need CAs'] },
-    ],
-    resources: [{name:'ICAI Study Material',desc:'Free download on icai.org — use it'},{name:'ICAI YouTube',desc:'Free Foundation and Inter lectures'},{name:'ICAI Mock Tests',desc:'Free on ICAI portal — take before every attempt'},{name:'Tally ERP',desc:'Learn free — every accounting job needs this'}]
-  },
-  clat: {
-    now: 'Read a quality English newspaper for 30 minutes today. And every day after. There is no shortcut to CLAT — reading is the preparation.',
-    phases: [
-      { phase: 'Building Reading Foundation (Now → Aug 2026)', steps: ['Read The Hindu or Indian Express — focus on editorial section for complex comprehension practice','Solve 2 comprehension passages daily — CLAT is 80% reading comprehension','Current Affairs: maintain a monthly diary of important events, appointments, and verdicts','Legal Reasoning: study basic legal principles from CLAT prep books — no law degree needed'] },
-      { phase: 'Intense Preparation (Sep–Oct 2026)', steps: ['Solve all CLAT previous years papers (2008–2025) — patterns are consistent','Time management: 120 questions in 120 minutes — 1 minute per question maximum','Logical Reasoning: practice analogies, critical reasoning, and argument evaluation','Quantitative Techniques: basic arithmetic and data interpretation — not complex Maths'] },
-      { phase: 'CLAT 2027 (Dec 2026)', steps: ['Register in August 2026','Select exam centre carefully: Raipur and Bilaspur are CG CLAT centres','Review last 3 months of current affairs intensively in October–November','Mock tests in exam conditions — full 2 hours without stopping'] },
-    ],
-    resources: [{name:'CLAT Previous Papers',desc:'Free on consortiumofnlus.ac.in'},{name:'LegalEdge / LawSchoolTutorial',desc:'Free YouTube CLAT prep'},{name:'The Hindu Editorial',desc:'Read daily — builds comprehension speed'},{name:'Legal Bites',desc:'Free legal reasoning basics online'}]
-  },
-  gate: {
-    now: 'Download the GATE 2027 syllabus for your engineering branch from gate.iitkgp.ac.in — know exactly what 100+ topics you need to master.',
-    phases: [
-      { phase: '3rd Year Engineering (Now → May 2026)', steps: ['GATE tests core engineering subjects thoroughly — take every college exam seriously','Build strong concepts in your core branch subjects — do not just pass, understand deeply','Mathematics section (Maths for GATE) covers Calculus, Linear Algebra, Probability — revise from 3rd year','Start collecting previous GATE papers for your branch — last 15 years are available free online'] },
-      { phase: 'Dedicated GATE Preparation (Jun–Dec 2026)', steps: ['Study each GATE topic in depth — average GATE topper studies 6–8 hours daily for 6 months','Engineering Mathematics is 15 marks in GATE — high-ROI section, revise completely','Aptitude section is 15 marks and straightforward — do not lose these marks','Take full GATE mock tests from October 2026 onwards'] },
-      { phase: 'GATE 2027 (Jan–Feb 2027)', steps: ['Register in August 2026 (expected)','Target GATE rank under 1000 for PSU consideration (NTPC, SECL, BHEL, SAIL)','Rank under 200 opens IIT/NIT MTech with stipend','GATE score is valid for 3 years — one attempt is often enough if preparation is solid'] },
-    ],
-    resources: [{name:'NPTEL courses',desc:'Free IIT lectures at nptel.ac.in'},{name:'GATE Previous Papers',desc:'Free at gate.iitkgp.ac.in'},{name:'YouTube: GATE Wallah',desc:'Free branch-wise GATE lectures'},{name:'Made Easy Books',desc:'Standard GATE preparation — available in PDF'}]
-  },
-  default: {
-    now: 'Start by identifying the specific exams relevant to your chosen path. Every career has 1–2 entry exams — focus your energy there first.',
-    phases: [
-      { phase: 'Foundation Phase (Next 6 months)', steps: ['Identify the 2–3 most important exams for your career path from the roadmap above','Gather official syllabuses from each exam\'s website','Set a daily study schedule — even 2 focused hours beats 5 distracted hours','Find one mentor, teacher, or senior who has already done what you are trying to do'] },
-      { phase: 'Preparation Phase (6–12 months)', steps: ['Take mock tests monthly — track your improvement with numbers','Join free online communities: Telegram groups for your specific exam have daily practice questions and updates','Learn from toppers\' interviews — most share their strategies for free on YouTube','Focus on your weak subjects — spend 60% of time on areas where you are losing marks'] },
-      { phase: 'Exam Phase', steps: ['Register early — never wait until the last day (server crashes, payment failures)','Prepare your documents: 10th marksheet, 12th marksheet, photo IDs, passport photo — have these ready','Sleep 7 hours before exam day — performance drops sharply with less sleep','On exam day: attempt easy questions first, come back to difficult ones'] },
-    ],
-    resources: [{name:'YouTube (free)',desc:'Search your specific exam name + preparation'},{name:'Telegram Groups',desc:'Join exam-specific groups for daily updates'},{name:'Unacademy (free tier)',desc:'Free lectures on many competitive exams'},{name:'Previous Year Papers',desc:'Single best resource — always available free online'}]
-  }
+var PehchaanExamDB = {
+  career_fit_summaries: {},
+  careers: [],
+  exams: [],
+  career_guidance: {},
+  meta: {}
 };
+
+/** Resolved URL for the exam JSON (Tools/ → ../ExamDB/). */
+var EXAM_DATA_JSON_URL = (function () {
+  try {
+    return new URL('../ExamDB/pehchaan_exam_data.json', window.location.href).href;
+  } catch (e) {
+    return '../ExamDB/pehchaan_exam_data.json';
+  }
+})();
+
+function findCareerById(id) {
+  for (var i = 0; i < PehchaanExamDB.careers.length; i++) {
+    if (PehchaanExamDB.careers[i].id === id) return PehchaanExamDB.careers[i];
+  }
+  return null;
+}
+
+function validateExamPayload(data) {
+  if (!data || typeof data !== 'object') return 'Server returned an invalid payload.';
+  if (!Array.isArray(data.careers) || data.careers.length === 0) return 'JSON is missing a non-empty "careers" array.';
+  if (!Array.isArray(data.exams) || data.exams.length === 0) return 'JSON is missing a non-empty "exams" array.';
+  if (!data.career_fit_summaries || typeof data.career_fit_summaries !== 'object') {
+    return 'JSON is missing "career_fit_summaries" object.';
+  }
+  return '';
+}
+
+function getDefaultGuidance() {
+  return {
+    now: 'Start by identifying the specific exams relevant to your chosen path.',
+    phases: [
+      { phase: 'Next steps', steps: ['Use the timeline above', 'Verify dates on official websites', 'Plan weekly study blocks'] }
+    ],
+    resources: [{ name: 'Official exam portals', desc: 'Always confirm notifications on the official site.' }]
+  };
+}
+
+function applyHeroStatsFromData() {
+  var nEx = PehchaanExamDB.exams.length;
+  var nCar = PehchaanExamDB.careers.length;
+  var elE = document.getElementById('hero-stat-exams');
+  var elC = document.getElementById('hero-stat-careers');
+  var elU = document.getElementById('hero-stat-updated');
+  if (elE) elE.textContent = String(nEx);
+  if (elC) elC.textContent = String(nCar);
+  if (elU) {
+    var d = PehchaanExamDB.meta && PehchaanExamDB.meta.last_updated_global;
+    elU.textContent = d ? d : '2026–27';
+  }
+}
+
+function renderBootstrapLoadingUI() {
+  var inner = document.getElementById('app-bootstrap-inner');
+  if (!inner) return;
+  inner.innerHTML =
+    '<div class="app-bootstrap-logo skel-pulse" aria-hidden="true"></div>' +
+    '<p class="app-bootstrap-text">Loading your exam roadmap data…</p>' +
+    '<div class="skel-bar" style="width:90%" aria-hidden="true"></div>' +
+    '<div class="skel-bar" style="width:74%" aria-hidden="true"></div>' +
+    '<div class="skel-bar" style="width:82%" aria-hidden="true"></div>';
+  var boot = document.getElementById('app-bootstrap');
+  if (boot) {
+    boot.classList.remove('hidden');
+    boot.setAttribute('aria-busy', 'true');
+  }
+}
+
+function showExamDataError(message) {
+  var inner = document.getElementById('app-bootstrap-inner');
+  if (!inner) return;
+  var safe = String(message || 'Unknown error').replace(/&/g, '&amp;').replace(/</g, '&lt;');
+  inner.innerHTML =
+    '<div class="app-error-panel" role="alert">' +
+    '<h2>Could not load exam data</h2>' +
+    '<p>' + safe + '</p>' +
+    '<p style="font-size:12px;margin-bottom:14px;">Check your connection, then try again. If you opened this file directly from disk, use a local web server so <code>fetch</code> can read the JSON file.</p>' +
+    '<button type="button" class="btn-retry" onclick="retryLoadExamData()">Try again</button>' +
+    '</div>';
+  var boot = document.getElementById('app-bootstrap');
+  if (boot) {
+    boot.classList.remove('hidden');
+    boot.setAttribute('aria-busy', 'false');
+  }
+}
+
+function hideBootstrapOverlay() {
+  var boot = document.getElementById('app-bootstrap');
+  if (boot) {
+    boot.classList.add('hidden');
+    boot.setAttribute('aria-busy', 'false');
+  }
+  document.body.classList.remove('app-not-ready');
+  document.body.classList.add('app-ready');
+  renderTrendingChips();
+}
+
+function assignParsedPayload(data) {
+  PehchaanExamDB.career_fit_summaries = data.career_fit_summaries || {};
+  PehchaanExamDB.careers = data.careers;
+  PehchaanExamDB.exams = data.exams;
+  PehchaanExamDB.career_guidance = data.career_guidance && typeof data.career_guidance === 'object'
+    ? data.career_guidance
+    : {};
+  PehchaanExamDB.meta = {
+    last_updated_global: data.last_updated_global || '',
+    schema_version: data.schema_version || '',
+    notes: data.notes || ''
+  };
+  if (!PehchaanExamDB.career_guidance.default) {
+    PehchaanExamDB.career_guidance.default = getDefaultGuidance();
+  }
+}
+
+async function loadPehchaanExamData() {
+  renderBootstrapLoadingUI();
+  document.body.classList.add('app-not-ready');
+  document.body.classList.remove('app-ready');
+  try {
+    var res = await fetch(EXAM_DATA_JSON_URL, { cache: 'no-store' });
+    if (!res.ok) throw new Error('Could not load data (HTTP ' + res.status + ').');
+    var data = await res.json();
+    var err = validateExamPayload(data);
+    if (err) throw new Error(err);
+    assignParsedPayload(data);
+    applyHeroStatsFromData();
+    hideBootstrapOverlay();
+  } catch (e) {
+    var msg = (e && e.message) ? e.message : String(e);
+    if (e && e.name === 'SyntaxError') msg = 'The JSON file could not be parsed. Check for invalid syntax.';
+    showExamDataError(msg);
+  }
+}
+
+function retryLoadExamData() {
+  loadPehchaanExamData();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', loadPehchaanExamData);
+} else {
+  loadPehchaanExamData();
+}
+
+
 
 // ─────────────────────────────────────────────
 // UI LOGIC
@@ -786,7 +589,7 @@ function selectStream(btn) {
 
 function renderCareerButtons() {
   var search = (document.getElementById('career-search').value || '').toLowerCase().trim();
-  var filtered = ALL_CAREERS.filter(function(c) {
+  var filtered = PehchaanExamDB.careers.filter(function(c) {
     var streamMatch = selStream === 'any' || c.stream.includes(selStream) || c.stream.includes('any');
     var searchMatch = !search || c.label.toLowerCase().includes(search) || c.group.toLowerCase().includes(search);
     return streamMatch && searchMatch;
@@ -848,7 +651,7 @@ function updateBuildBtn() {
   } else {
     btn.disabled = false;
     var names = selCareers.map(function(id) {
-      var c = ALL_CAREERS.find(function(x){ return x.id === id; });
+      var c = findCareerById(id);
       return c ? c.label : id;
     }).join(', ');
     lbl.textContent = 'Selected: ' + names;
@@ -868,7 +671,7 @@ function buildRoadmap() {
   };
   var streamLabels = {science:'Science (PCM / PCB)', commerce:'Commerce', arts:'Arts / Humanities', any:'Any Stream'};
   var careerNames = selCareers.map(function(id){
-    var c = ALL_CAREERS.find(function(x){ return x.id === id; });
+    var c = findCareerById(id);
     return c ? c.label : id;
   });
   var studentName = (firstName + ' ' + lastName).trim();
@@ -876,13 +679,26 @@ function buildRoadmap() {
 
   // Header — class and stream on separate lines to avoid wrapping
   document.getElementById('res-title').innerHTML =
-    'Great choice, ' + studentName + '! ' +
-    '<span style="display:block;font-size:16px;font-weight:600;color:var(--white);opacity:.95;margin-top:3px;">' + careerCelebration + '</span>' +
-    '<span style="display:block;font-size:15px;font-weight:600;opacity:.9;margin-top:8px;">' + classLabels[selClass] + '</span>' +
+    'Great choice, ' + escapeHtml(studentName) + '! ' +
+    '<span style="display:block;font-size:16px;font-weight:600;color:var(--white);opacity:.95;margin-top:3px;">' + escapeHtml(careerCelebration) + '</span>' +
+    '<span style="display:block;font-size:15px;font-weight:600;opacity:.9;margin-top:8px;">' + escapeHtml(classLabels[selClass]) + '</span>' +
     '<span style="display:block;font-size:14px;font-weight:500;opacity:.8;margin-top:2px;">' +
-    streamLabels[selStream] + '</span>';
+    escapeHtml(streamLabels[selStream]) + '</span>';
   document.getElementById('res-sub').textContent = 'You are seen, supported, and capable. Here is your personalised roadmap for: ' + careerNames.join(', ');
-  var badgesHtml = careerNames.map(function(n){ return '<span class="res-badge">' + n + '</span>'; }).join('');
+  var fitEl = document.getElementById('res-fit-summary');
+  if (fitEl) {
+    var summaries = PehchaanExamDB.career_fit_summaries || {};
+    var sum = summaries[selStream];
+    if (!sum && selStream !== 'any') sum = summaries.any;
+    if (sum) {
+      fitEl.style.display = 'block';
+      fitEl.textContent = sum;
+    } else {
+      fitEl.style.display = 'none';
+      fitEl.textContent = '';
+    }
+  }
+  var badgesHtml = careerNames.map(function(n){ return '<span class="res-badge">' + escapeHtml(n) + '</span>'; }).join('');
   document.getElementById('res-badges').innerHTML = badgesHtml;
 
   // Insight
@@ -890,12 +706,13 @@ function buildRoadmap() {
   document.getElementById('res-insight').innerHTML = '<p>' + insightText + '</p>';
 
   // Filter relevant exams
-  var relevantExams = ALL_EXAMS.filter(function(e) {
+  var relevantExams = PehchaanExamDB.exams.filter(function(e) {
     return e.careers.some(function(c){ return selCareers.indexOf(c) >= 0; });
   });
 
   // Build timeline
   buildTimeline(relevantExams);
+  updateTimelineCountdown(relevantExams);
 
   // Build guidance
   buildGuidance(selCareers, selClass);
@@ -910,10 +727,10 @@ function buildRoadmap() {
 }
 
 function getInsight(cls, careers, fname) {
-  var urgentExams = ALL_EXAMS.filter(function(e){
+  var urgentExams = PehchaanExamDB.exams.filter(function(e){
     return e.status === 'soon' && careers.some(function(c){ return e.careers.indexOf(c) >= 0; });
   });
-  var upcoming = ALL_EXAMS.filter(function(e){
+  var upcoming = PehchaanExamDB.exams.filter(function(e){
     return e.status === 'upcoming' && careers.some(function(c){ return e.careers.indexOf(c) >= 0; });
   });
 
@@ -926,10 +743,150 @@ function getInsight(cls, careers, fname) {
 
   var examWarning = '';
   if (urgentExams.length > 0) {
-    examWarning = ' <strong>Important: ' + urgentExams[0].name + ' is happening soon — check registration status immediately.</strong>';
+    examWarning = ' <strong>Important: ' + escapeHtml(urgentExams[0].name) + ' is happening soon — check registration status immediately.</strong>';
   }
 
-  return 'All the best, ' + fname + '! ' + timeMsg + examWarning + ' The roadmap below covers every exam you need, every deadline, and exactly when to start preparing.';
+  return 'All the best, ' + escapeHtml(fname) + '! ' + timeMsg + examWarning + ' The roadmap below covers every exam you need, every deadline, and exactly when to start preparing.';
+}
+
+function escapeHtml(str) {
+  if (str == null) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function formatLastVerifiedBadge(isoStr) {
+  if (!isoStr || typeof isoStr !== 'string') return '';
+  var m = isoStr.trim().match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!m) return '';
+  var parsed = new Date(parseInt(m[1], 10), parseInt(m[2], 10) - 1, parseInt(m[3], 10));
+  if (isNaN(parsed.getTime())) return '';
+  var today = new Date();
+  var t0 = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+  var diffMs = t0 - parsed;
+  var days = Math.round(diffMs / (24 * 60 * 60 * 1000));
+  if (days === 0) return 'Verified today';
+  if (days === 1) return 'Verified yesterday';
+  if (days > 1 && days < 14) return 'Verified ' + days + ' days ago';
+  if (days >= 14 && days < 75) return 'Verified ' + Math.round(days / 7) + ' weeks ago';
+  if (days >= 75) return 'Verified ' + Math.round(days / 30) + ' months ago';
+  if (days < 0) return 'Verification dated in the future';
+  return 'Verified ' + isoStr;
+}
+
+function getExamIntensityScore(exam) {
+  var n = parseInt(exam.intensity_score, 10);
+  if (isNaN(n)) n = 5;
+  return Math.max(1, Math.min(10, n));
+}
+
+function intensityTier(score) {
+  if (score <= 4) return 'low';
+  if (score <= 7) return 'mid';
+  return 'high';
+}
+
+function buildIntensityMeterHtml(score) {
+  var tier = intensityTier(score);
+  var fillClass = tier === 'low' ? 'intensity-low' : tier === 'mid' ? 'intensity-mid' : 'intensity-high';
+  var segs = '';
+  for (var si = 1; si <= 10; si++) {
+    segs += '<div class="intensity-seg' + (si <= score ? ' on-' + tier : '') + '"></div>';
+  }
+  return '<div class="intensity-wrap">' +
+    '<div class="intensity-label-row"><span>Difficulty / Competition Level</span><span>' + score + '/10</span></div>' +
+    '<div class="intensity-track" role="img" aria-label="Difficulty ' + score + ' out of 10">' +
+    '<div class="intensity-fill ' + fillClass + '" style="width:' + (score * 10) + '%"></div></div>' +
+    '<div class="intensity-segments" aria-hidden="true">' + segs + '</div></div>';
+}
+
+function parseExamRoughDate(exam) {
+  var parts = [exam.examDate, exam.month];
+  for (var p = 0; p < parts.length; p++) {
+    var t = (parts[p] || '').trim();
+    if (!t) continue;
+    t = t.replace(/\u2013/g, '-').replace(/\u2014/g, '-');
+    t = t.replace(/(\b[A-Za-z]{3,}\s+\d{1,2})\s*[-\u2013]\s*\d{1,2}(\s*,?\s*\d{4})/, '$1$2');
+    var ms = Date.parse(t);
+    if (!isNaN(ms)) {
+      var dt = new Date(ms);
+      if (!isNaN(dt.getTime())) return dt;
+    }
+  }
+  return null;
+}
+
+function updateTimelineCountdown(exams) {
+  var el = document.getElementById('timeline-countdown');
+  if (!el) return;
+  var start = new Date();
+  start.setHours(0, 0, 0, 0);
+  var best = null;
+  exams.forEach(function(ex) {
+    var dt = parseExamRoughDate(ex);
+    if (!dt) return;
+    dt.setHours(0, 0, 0, 0);
+    if (dt >= start && (!best || dt < best)) best = dt;
+  });
+  if (!best) {
+    el.style.display = 'none';
+    el.textContent = '';
+    return;
+  }
+  var diff = Math.ceil((best - start) / (24 * 60 * 60 * 1000));
+  el.style.display = 'block';
+  el.innerHTML = 'Next exam in: <strong>' + diff + '</strong> day' + (diff === 1 ? '' : 's') +
+    ' <span style="font-weight:500;color:var(--gray-text)">(from the nearest parsed date in your list — confirm on the official notification.)</span>';
+}
+
+function renderTrendingChips() {
+  var wrap = document.getElementById('trending-wrap');
+  var row = document.getElementById('trending-chips');
+  if (!wrap || !row) return;
+  if (!PehchaanExamDB.careers || !PehchaanExamDB.careers.length) {
+    wrap.style.display = 'none';
+    return;
+  }
+  var trending = PehchaanExamDB.careers.filter(function(c) { return c.trending === true; });
+  if (!trending.length) {
+    wrap.style.display = 'none';
+    return;
+  }
+  wrap.style.display = 'block';
+  row.innerHTML = trending.map(function(c) {
+    var tag = '#' + String(c.id).replace(/[^a-z0-9]/gi, '').toUpperCase();
+    return '<button type="button" class="trend-chip" data-search="' + escapeHtml(c.label) + '">' + escapeHtml(tag) + '</button>';
+  }).join('');
+  row.querySelectorAll('.trend-chip').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var inp = document.getElementById('career-search');
+      if (inp) inp.value = btn.getAttribute('data-search') || '';
+      filterCareers();
+      if (inp) inp.focus();
+    });
+  });
+}
+
+function readChecklistStore() {
+  try {
+    var r = localStorage.getItem('pehchaan_roadmap_checks_v1');
+    return r ? JSON.parse(r) : {};
+  } catch (err) {
+    return {};
+  }
+}
+
+function onGuidanceCheckboxChange(ev) {
+  var t = ev.target;
+  if (!t || t.type !== 'checkbox' || !t.classList.contains('pc-roadmap-chk')) return;
+  var store = readChecklistStore();
+  store[t.id] = !!t.checked;
+  try {
+    localStorage.setItem('pehchaan_roadmap_checks_v1', JSON.stringify(store));
+  } catch (err) { /* storage full or disabled */ }
 }
 
 function getCareerCelebration(careerId, fname) {
@@ -959,7 +916,7 @@ function getCareerCelebration(careerId, fname) {
     game: 'Exciting direction - your imagination can become a profession.',
     default: 'Great choice - your journey is unique and you are fully capable of achieving it.'
   };
-  return (cheers[careerId] || cheers.default) + ' All the best, ' + fname + '!';
+  return (cheers[careerId] || cheers.default) + ' All the best, ' + escapeHtml(fname) + '!';
 }
 
 function dotClass(status) {
@@ -977,24 +934,59 @@ function urgencyClass(status) {
 
 function buildTimeline(exams) {
   var html = '';
-  // Sort: done last, then by approximate order
   var order = {done:99, future:10, upcoming:5, soon:2, urgent:1};
-  exams.sort(function(a,b){ return (order[a.status]||5) - (order[b.status]||5); });
+  exams.sort(function(a, b) { return (order[a.status] || 5) - (order[b.status] || 5); });
+
+  var checkSvg = '<svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 6l3 3 5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
   exams.forEach(function(e) {
+    var verifiedLabel = formatLastVerifiedBadge(e.last_verified);
+    var notifyUrl = (e.official_notification_link || e.official || '').trim();
+    var topics = Array.isArray(e.high_weightage_topics) ? e.high_weightage_topics : [];
+    var scholarships = Array.isArray(e.scholarships) ? e.scholarships : [];
+    var intensity = getExamIntensityScore(e);
+
     html += '<div class="tl-item">';
     html += '<div class="tl-dot ' + dotClass(e.status) + '"></div>';
-    html += '<div class="tl-month">' + e.month + '</div>';
+    html += '<div class="tl-month">' + escapeHtml(e.month) + '</div>';
     html += '<div class="exam-block">';
     html += '<div class="exam-block-top">';
-    html += '<div class="exam-icon">' + e.emoji + '</div>';
-    html += '<div class="exam-name">' + e.name + '</div>';
-    html += '<span class="exam-urgency ' + urgencyClass(e.status) + '">' + urgencyLabel(e.status) + '</span>';
+    html += '<div class="exam-icon">' + escapeHtml(e.emoji) + '</div>';
+    html += '<div class="exam-name">' + escapeHtml(e.name) + '</div>';
+    html += '<span class="exam-urgency ' + urgencyClass(e.status) + '">' + escapeHtml(urgencyLabel(e.status)) + '</span>';
     html += '</div>';
-    html += '<div class="exam-date">📅 <strong>Exam:</strong> ' + e.examDate + ' &nbsp;·&nbsp; 📝 <strong>Registration:</strong> ' + e.regDate + '</div>';
-    if (e.resultDate) html += '<div class="exam-date">📊 <strong>Result:</strong> ' + e.resultDate + '</div>';
-    html += '<div class="exam-desc">' + e.desc + '</div>';
-    html += '<div class="exam-guidance">' + e.guidance + '</div>';
+    if (verifiedLabel) {
+      html += '<div class="exam-meta-row"><span class="verified-badge">' + checkSvg + escapeHtml(verifiedLabel) + '</span></div>';
+    }
+    html += '<div class="exam-date">📅 <strong>Exam:</strong> ' + escapeHtml(e.examDate) + ' &nbsp;·&nbsp; 📝 <strong>Registration:</strong> ' + escapeHtml(e.regDate) + '</div>';
+    if (e.resultDate) html += '<div class="exam-date">📊 <strong>Result:</strong> ' + escapeHtml(e.resultDate) + '</div>';
+    html += '<div class="exam-desc">' + escapeHtml(e.desc) + '</div>';
+    html += buildIntensityMeterHtml(intensity);
+    if (topics.length) {
+      html += '<div class="exam-subhead">High-Weightage Topics</div><div class="topic-pills">';
+      topics.forEach(function(tp) {
+        var line = escapeHtml(tp.topic || '') + (tp.weight ? ' — ' + escapeHtml(tp.weight) : '');
+        html += '<span class="topic-pill">' + line + '</span>';
+      });
+      html += '</div>';
+    }
+    html += '<div class="exam-guidance">' + escapeHtml(e.guidance || '').replace(/\n/g, '<br>') + '</div>';
+    if (notifyUrl) {
+      html += '<a class="btn-official" href="' + escapeHtml(notifyUrl) + '" target="_blank" rel="noopener noreferrer">Check for Official Notification</a>';
+    }
+    if (scholarships.length) {
+      html += '<div class="scholarship-list"><div class="exam-subhead">Related Scholarships</div><ul>';
+      scholarships.forEach(function(sc) {
+        var url = (sc.url || '').trim();
+        var nm = escapeHtml(sc.name || 'Scholarship');
+        if (url) {
+          html += '<li><a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">' + nm + '</a></li>';
+        } else {
+          html += '<li>' + nm + '</li>';
+        }
+      });
+      html += '</ul></div>';
+    }
     html += '</div></div>';
   });
 
@@ -1009,7 +1001,7 @@ function buildGuidance(careers, cls) {
   // Find best matching guidance
   var primaryCareer = careers[0];
   var guidanceKey = primaryCareer;
-  if (!CAREER_GUIDANCE[guidanceKey]) {
+  if (!PehchaanExamDB.career_guidance[guidanceKey]) {
     // Try to find a related key
     var related = {
       'neetbds':'neet', 'ayush':'neet', 'nursing':'neet', 'pharma':'neet',
@@ -1027,17 +1019,22 @@ function buildGuidance(careers, cls) {
     };
     guidanceKey = related[primaryCareer] || 'default';
   }
-  var g = CAREER_GUIDANCE[guidanceKey] || CAREER_GUIDANCE['default'];
+  var g = PehchaanExamDB.career_guidance[guidanceKey] || PehchaanExamDB.career_guidance['default'];
 
   var html = '';
-  html += '<div class="insight-box" style="margin-bottom:16px"><p><strong>Where to start right now:</strong> ' + g.now + '</p></div>';
+  html += '<div class="insight-box" style="margin-bottom:16px"><p><strong>Where to start right now:</strong> ' + escapeHtml(g.now) + '</p></div>';
 
-  g.phases.forEach(function(ph) {
+  var store = readChecklistStore();
+  g.phases.forEach(function(ph, pi) {
     html += '<div class="guidance-phase">';
-    html += '<span class="phase-badge">' + ph.phase + '</span>';
+    html += '<span class="phase-badge">' + escapeHtml(ph.phase) + '</span>';
     html += '<div class="step-list">';
-    ph.steps.forEach(function(s, i) {
-      html += '<div class="step-item"><div class="step-num">' + (i+1) + '</div><div class="step-text">' + s + '</div></div>';
+    (ph.steps || []).forEach(function(s, i) {
+      var id = 'pc-' + guidanceKey + '-p' + pi + '-s' + i;
+      var chk = store[id] ? ' checked' : '';
+      html += '<label class="step-check-label" for="' + escapeHtml(id) + '">' +
+        '<input type="checkbox" class="pc-roadmap-chk" id="' + escapeHtml(id) + '"' + chk + '>' +
+        '<span class="step-check-text">' + escapeHtml(s) + '</span></label>';
     });
     html += '</div></div>';
   });
@@ -1059,11 +1056,11 @@ function buildResources(careers) {
     'ugcnet':'upsc','teaching':'upsc','psych':'upsc',
     'cuet':'jee','nift':'jee'
   };
-  if (!CAREER_GUIDANCE[guidanceKey]) guidanceKey = related[primaryCareer] || 'default';
-  var g = CAREER_GUIDANCE[guidanceKey] || CAREER_GUIDANCE['default'];
+  if (!PehchaanExamDB.career_guidance[guidanceKey]) guidanceKey = related[primaryCareer] || 'default';
+  var g = PehchaanExamDB.career_guidance[guidanceKey] || PehchaanExamDB.career_guidance['default'];
 
   var html = g.resources.map(function(r) {
-    return '<div class="resource-item"><div class="resource-name">' + r.name + '</div><div class="resource-desc">' + r.desc + '</div></div>';
+    return '<div class="resource-item"><div class="resource-name">' + escapeHtml(r.name) + '</div><div class="resource-desc">' + escapeHtml(r.desc) + '</div></div>';
   }).join('');
   document.getElementById('resources-grid').innerHTML = html;
 }
@@ -1081,6 +1078,8 @@ function restart() {
   document.getElementById('screen-selector').classList.remove('hidden');
   window.scrollTo(0,0);
 }
+
+document.getElementById('guidance-content').addEventListener('change', onGuidanceCheckboxChange);
 </script>
 </body>
 </html>
