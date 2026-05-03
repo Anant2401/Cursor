@@ -10,7 +10,7 @@
 :root {
   --teal:#1D9E75; --teal-dark:#085041; --teal-light:#E1F5EE;
   --amber:#EF9F27; --amber-light:#FAEEDA;
-  --navy:#1A1A2E; --white:#FFFFFF; --card-bg:#F8FAFC;
+  --navy:#1A1A2E; --white:#FFFFFF; --card-bg:#F8FAFC; --light-gray:#E2E8F0;
   --gray-text:#64748B; --red:#E24B4A; --red-light:#FCEBEB;
   --purple:#7F77DD; --purple-light:#EEEDFE;
   --blue:#378ADD; --blue-light:#E6F1FB;
@@ -61,8 +61,9 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 /* FORM */
 .form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;}
 .form-group label{font-size:12px;font-weight:600;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.05em;}
-.form-group input,.form-group select{border:1.5px solid var(--border);border-radius:10px;padding:13px 14px;font-size:13px;font-family:'Poppins',sans-serif;color:var(--text);background:var(--white);outline:none;transition:border-color .2s,box-shadow .2s;width:100%;}
-.form-group input:focus,.form-group select:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,158,117,.12);}
+.form-group input,.form-group select,.form-group textarea{border:1.5px solid var(--border);border-radius:10px;padding:13px 14px;font-size:13px;font-family:'Poppins',sans-serif;color:var(--text);background:var(--white);outline:none;transition:border-color .2s,box-shadow .2s;width:100%;}
+.form-group textarea{min-height:100px;resize:vertical;line-height:1.6;}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,158,117,.12);}
 .form-group input::placeholder{color:#b0c4bb;}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 .form-hint{font-size:11px;color:var(--gray-text);line-height:1.5;margin-top:-8px;margin-bottom:6px;}
@@ -149,6 +150,17 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 .mentor-cta p{font-size:12px;color:#7A4A00;line-height:1.75;margin-bottom:14px;}
 .btn-mentor,.btn-mentor:link,.btn-mentor:visited{background:var(--teal-dark);color:var(--amber);border:none;border-radius:var(--radius);padding:13px 22px;font-size:13px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;transition:transform .15s;text-decoration:none;display:inline-block;}
 .btn-mentor:hover{transform:translateY(-1px);}
+.btn-mentor-inline{border:none;cursor:pointer;font-family:'Poppins',sans-serif;display:block;width:100%;text-align:center;}
+
+/* Mentor DB status + registration screen */
+.mentor-db-banner{font-size:12px;color:var(--teal-dark);background:var(--teal-light);border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:14px;line-height:1.55;}
+.mentor-db-banner.warn{background:#FEF9C3;border-color:#F5C878;color:#713F12;}
+.mentor-db-banner.err{background:var(--red-light);border-color:#F5A5A4;color:var(--red);}
+.mentor-form-success{background:var(--teal-light);border:1.5px solid var(--teal);border-radius:14px;padding:20px;margin-top:8px;text-align:center;}
+.mentor-form-success h4{font-size:16px;font-weight:700;color:var(--teal-dark);margin-bottom:8px;}
+.mentor-form-success p{font-size:13px;color:var(--navy);line-height:1.65;margin-bottom:16px;}
+.btn-ghost{width:100%;border:1.5px solid var(--teal-dark);background:var(--white);border-radius:var(--radius);padding:12px;font-size:13px;font-weight:700;cursor:pointer;color:var(--teal-dark);font-family:'Poppins',sans-serif;margin-top:8px;}
+.btn-ghost:hover{background:var(--teal-light);}
 
 /* NO RESULTS */
 .no-results{text-align:center;padding:32px 20px;}
@@ -244,6 +256,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 
 <!-- SCREEN 1: SEARCH -->
 <div id="screen-search">
+  <div id="mentor-db-banner" class="mentor-db-banner" role="status" aria-live="polite">Loading volunteer mentors…</div>
   <div class="hero-card">
     <div class="hero-tag">Mentor Connect</div>
     <h1>Find Someone from <span>Your Place</span> Who Made It</h1>
@@ -283,6 +296,19 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
       <span id="api-saved-msg" class="api-saved-msg">✓ Key saved!</span>
     </div>
     <div class="setup-footnote">No API key? The tool still works — it will show Smart LinkedIn Search links that open LinkedIn with your filters pre-filled.</div>
+  </div>
+
+  <div class="card">
+    <h3>Pehchaan mentor list (Google Sheet)</h3>
+    <p class="form-hint" style="margin-bottom:10px;">Volunteer mentors load from a Google Apps Script Web App. Paste your deployed URL here (saved in this browser) or set <code>MENTOR_WEB_APP_URL</code> in the page script for a default. See <strong>Tools/mentor_connect_google_apps_script.gs</strong> for the backend.</p>
+    <div class="form-group">
+      <label>Apps Script Web App URL</label>
+      <input type="url" id="mentor-web-app-url" placeholder="https://script.google.com/macros/s/…/exec" autocomplete="off">
+    </div>
+    <div class="setup-actions">
+      <button type="button" class="btn-save-key" onclick="saveMentorWebAppUrl()">Save mentor URL</button>
+      <span id="mentor-url-saved-msg" class="api-saved-msg">✓ Saved — refreshing list</span>
+    </div>
   </div>
 
   <!-- MAIN SEARCH FORM -->
@@ -345,6 +371,101 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
   </div>
 </div>
 
+<!-- SCREEN: MENTOR REGISTRATION -->
+<div id="screen-mentor-form" class="hidden">
+  <div class="hero-card">
+    <div class="hero-tag">Become a Pehchaan Mentor</div>
+    <h1>Share <span>Your Journey</span></h1>
+    <p>Students search for someone from their place who made it. Submit your path once — it is stored in your Google Sheet and can surface when a student’s filters match your story.</p>
+  </div>
+  <div class="card">
+    <div id="mentor-form-intro">
+      <h3>Your mentor profile</h3>
+      <p class="form-hint" style="margin-bottom:12px;">Required fields are marked with *. Journey path should be comma-separated steps (for example: Govt school Bilaspur, State engineering college, GATE, M.Tech, Product company).</p>
+    </div>
+    <div id="mentor-form-success" class="mentor-form-success hidden" role="status">
+      <h4>Welcome to the Pehchaan mentor network</h4>
+      <p>Your profile was saved. It may take a moment to appear in student searches after the list refreshes.</p>
+      <button type="button" class="btn-search" onclick="leaveMentorFormSuccess()">Back to Mentor Connect</button>
+    </div>
+    <form id="form-mentor-signup" onsubmit="submitMentor(event)">
+      <div id="mentor-form-fields">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full name *</label>
+            <input type="text" id="m-name" required maxlength="120" autocomplete="name" placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label>Initials (optional)</label>
+            <input type="text" id="m-initials" maxlength="6" placeholder="e.g. AT — left blank, we derive from name">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Current title *</label>
+            <input type="text" id="m-title" required maxlength="160" placeholder="e.g. Senior Analyst, Founder">
+          </div>
+          <div class="form-group">
+            <label>Company *</label>
+            <input type="text" id="m-company" required maxlength="120" placeholder="Organisation you work with now">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Current city *</label>
+            <input type="text" id="m-city" required maxlength="80" placeholder="City you are based in">
+          </div>
+          <div class="form-group">
+            <label>Hometown *</label>
+            <input type="text" id="m-hometown" required maxlength="80" placeholder="Home town / district">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>State *</label>
+            <select id="m-state" required>
+              <option value="">Select state</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>College / school *</label>
+            <input type="text" id="m-college" required maxlength="200" placeholder="College or school that shaped your path">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Journey story *</label>
+          <textarea id="m-story" required maxlength="4000" placeholder="A short honest story (a few sentences) that a student can relate to."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Journey path * (comma-separated)</label>
+          <input type="text" id="m-path" required maxlength="500" placeholder="e.g. Tier-3 city, State college, Internship, First job, Current role">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>LinkedIn profile URL *</label>
+            <input type="url" id="m-linkedin" required maxlength="500" placeholder="https://www.linkedin.com/in/…">
+          </div>
+          <div class="form-group">
+            <label>Tags (optional)</label>
+            <input type="text" id="m-tags" maxlength="300" placeholder="Comma-separated, e.g. Chhattisgarh, banking, mentorship">
+          </div>
+        </div>
+        <p id="mentor-submit-error" class="error-box" style="display:none;padding:10px 12px;margin-bottom:10px;"><span id="mentor-submit-error-text" style="font-size:12px;"></span></p>
+        <button type="submit" class="btn-search" id="btn-mentor-submit">Submit my mentor profile</button>
+        <button type="button" class="btn-ghost" onclick="showScreen('screen-search');resetMentorForm();">← Back to search</button>
+      </div>
+    </form>
+  </div>
+</div>
+
 <!-- SCREEN 2: LOADING -->
 <div id="screen-loading" class="hidden">
   <div class="topbar">
@@ -393,47 +514,244 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 
 <script>
 // ─────────────────────────────────────────────────────────────────
-// CURATED MENTOR DATABASE
-// Add opt-in mentors here as they sign up via the Be a Mentor form
-// Each entry: name, initials, title, company, city (current), hometown,
-// college, journey (short story), linkedin (profile URL), tags (array)
+// MENTOR DATABASE (Google Sheets via Apps Script Web App)
+// Deploy backend from Tools/mentor_connect_google_apps_script.gs (bound to your Sheet).
+// Paste your Web App URL here and/or use “Save mentor URL” on the page (localStorage).
 // ─────────────────────────────────────────────────────────────────
-var MENTOR_DB = [
-  {
-    name: 'Anant Tripathi',
-    initials: 'AT',
-    title: 'Career Guidance Counsellor & Corporate Professional',
-    company: 'Pehchaan Careers',
-    city: 'India',
-    hometown: 'Chhattisgarh',
-    state: 'Chhattisgarh',
-    college: 'Engineering College CG',
-    journeyStory: '16 years in corporate India — HCL BPO, operations, finance, business services. Navigated the journey from a Tier 3 city to building a career guidance platform for students who need honest advice.',
-    journeyPath: ['Tier 3 CG city', 'Engineering (BE Comp Sci)', 'HCL BPO', '16 years corporate', 'Pehchaan Careers'],
-    linkedin: 'https://www.linkedin.com/in/anant-tripathi-24011989/',
-    tags: ['career guidance', 'corporate', 'Chhattisgarh', 'operations', 'finance', 'HCL']
-  }
-  // ── ADD MORE MENTORS HERE AS THEY OPT IN ──
-  // {
-  //   name: 'Rahul Sharma',
-  //   initials: 'RS',
-  //   title: 'Data Scientist',
-  //   company: 'Amazon',
-  //   city: 'Hyderabad',
-  //   hometown: 'Durg',
-  //   state: 'Chhattisgarh',
-  //   college: 'Govt Engineering College Bilaspur',
-  //   journeyStory: 'From a govt school in Durg to Data Scientist at Amazon in Hyderabad.',
-  //   journeyPath: ['Govt school Durg', 'BTech Bilaspur', 'Campus placement', 'Amazon Hyderabad'],
-  //   linkedin: 'https://linkedin.com/in/rahulsharma',
-  //   tags: ['data science', 'Amazon', 'tech', 'Chhattisgarh', 'Durg']
-  // }
-];
+var MENTOR_WEB_APP_URL = '';
+
+var MENTOR_DB = [];
+var mentorDbReady = false;
+var mentorDbLoadFailed = false;
 
 // ─────────────────────────────────────────────────────────────────
 // STATE
 // ─────────────────────────────────────────────────────────────────
 var searchState = {};
+
+function getMentorWebAppUrl() {
+  if (typeof MENTOR_WEB_APP_URL !== 'undefined' && MENTOR_WEB_APP_URL && String(MENTOR_WEB_APP_URL).trim()) {
+    return String(MENTOR_WEB_APP_URL).trim();
+  }
+  var stored = localStorage.getItem('pehchaan_mentor_web_app_url');
+  if (stored && stored.trim()) return stored.trim();
+  var inp = document.getElementById('mentor-web-app-url');
+  if (inp && inp.value.trim()) return inp.value.trim();
+  return '';
+}
+
+function deriveInitialsFromName(name) {
+  return String(name || '')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map(function (p) { return (p[0] || '').toUpperCase(); })
+    .join('');
+}
+
+function normalizeMentorList(data) {
+  if (!data) return [];
+  if (data.error) return [];
+  var arr = Array.isArray(data) ? data : (data.mentors && Array.isArray(data.mentors) ? data.mentors : []);
+  return arr.map(normalizeMentorRow).filter(Boolean);
+}
+
+function normalizeMentorRow(m) {
+  if (!m || typeof m !== 'object') return null;
+  var name = String(m.name || '').trim();
+  if (!name) return null;
+  var jp = m.journeyPath;
+  if (typeof jp === 'string') jp = jp.split(',').map(function (s) { return s.trim(); }).filter(Boolean);
+  if (!Array.isArray(jp)) jp = [];
+  var tags = m.tags;
+  if (typeof tags === 'string') tags = tags.split(',').map(function (s) { return s.trim().toLowerCase(); }).filter(Boolean);
+  if (!Array.isArray(tags)) tags = [];
+  var initials = String(m.initials || '').trim() || deriveInitialsFromName(name);
+  return {
+    name: name,
+    initials: initials.slice(0, 6),
+    title: String(m.title || ''),
+    company: String(m.company || ''),
+    city: String(m.city || ''),
+    hometown: String(m.hometown || ''),
+    state: String(m.state || ''),
+    college: String(m.college || ''),
+    journeyStory: String(m.journeyStory || m['Journey Story'] || ''),
+    journeyPath: jp,
+    linkedin: String(m.linkedin || m.LinkedIn || '').trim(),
+    tags: tags
+  };
+}
+
+function updateMentorDbBanner(mode) {
+  var el = document.getElementById('mentor-db-banner');
+  if (!el) return;
+  el.classList.remove('warn', 'err');
+  if (mode === 'loading') {
+    el.textContent = 'Loading volunteer mentors…';
+  } else if (mode === 'ok') {
+    var n = MENTOR_DB ? MENTOR_DB.length : 0;
+    el.textContent = 'Mentor list connected (' + n + ' volunteer profile' + (n === 1 ? '' : 's') + ').';
+  } else if (mode === 'no-url') {
+    el.classList.add('warn');
+    el.textContent = 'No mentor Web App URL yet — add one above or set MENTOR_WEB_APP_URL in this file. Curated volunteer cards stay hidden until then; LinkedIn search layers still work.';
+  } else if (mode === 'error') {
+    el.classList.add('warn');
+    el.textContent = 'Database currently updating — we could not load volunteer mentors. Smart search and LinkedIn links still work; try again after a few minutes.';
+  } else {
+    el.textContent = String(mode || '');
+  }
+}
+
+async function syncMentorDatabase() {
+  mentorDbReady = false;
+  var url = getMentorWebAppUrl();
+  if (!url) {
+    MENTOR_DB = [];
+    mentorDbLoadFailed = true;
+    mentorDbReady = true;
+    updateMentorDbBanner('no-url');
+    return;
+  }
+  try {
+    var res = await fetch(url, { method: 'GET', cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    var data = await res.json();
+    if (data && data.error) throw new Error(String(data.error));
+    MENTOR_DB = normalizeMentorList(data);
+    mentorDbLoadFailed = false;
+    mentorDbReady = true;
+    updateMentorDbBanner('ok');
+  } catch (e) {
+    console.error('Mentor DB sync failed:', e);
+    MENTOR_DB = [];
+    mentorDbLoadFailed = true;
+    mentorDbReady = true;
+    updateMentorDbBanner('error');
+  }
+}
+
+function saveMentorWebAppUrl() {
+  var inp = document.getElementById('mentor-web-app-url');
+  if (!inp) return;
+  var v = inp.value.trim();
+  if (!v) {
+    localStorage.removeItem('pehchaan_mentor_web_app_url');
+    updateMentorDbBanner('no-url');
+    syncMentorDatabase();
+    return;
+  }
+  localStorage.setItem('pehchaan_mentor_web_app_url', v);
+  var msg = document.getElementById('mentor-url-saved-msg');
+  if (msg) {
+    msg.style.display = 'inline';
+    setTimeout(function () { msg.style.display = 'none'; }, 2500);
+  }
+  updateMentorDbBanner('loading');
+  syncMentorDatabase();
+}
+
+function resetMentorForm() {
+  var f = document.getElementById('form-mentor-signup');
+  if (f) f.reset();
+  var intro = document.getElementById('mentor-form-intro');
+  var fields = document.getElementById('mentor-form-fields');
+  var suc = document.getElementById('mentor-form-success');
+  if (intro) intro.classList.remove('hidden');
+  if (fields) fields.classList.remove('hidden');
+  if (suc) suc.classList.add('hidden');
+  var errP = document.getElementById('mentor-submit-error');
+  var errT = document.getElementById('mentor-submit-error-text');
+  if (errP) errP.style.display = 'none';
+  if (errT) errT.textContent = '';
+}
+
+function leaveMentorFormSuccess() {
+  resetMentorForm();
+  showScreen('screen-search');
+}
+
+function openMentorRegistration() {
+  resetMentorForm();
+  showScreen('screen-mentor-form');
+}
+
+async function submitMentor(ev) {
+  ev.preventDefault();
+  var url = getMentorWebAppUrl();
+  if (!url) {
+    alert('Set the Apps Script Web App URL first (save it in the “Pehchaan mentor list” section or set MENTOR_WEB_APP_URL in this file).');
+    return;
+  }
+  var errP = document.getElementById('mentor-submit-error');
+  var errT = document.getElementById('mentor-submit-error-text');
+  if (errP) errP.style.display = 'none';
+  if (errT) errT.textContent = '';
+
+  var name = document.getElementById('m-name').value.trim();
+  var initialsIn = document.getElementById('m-initials').value.trim();
+  var title = document.getElementById('m-title').value.trim();
+  var company = document.getElementById('m-company').value.trim();
+  var city = document.getElementById('m-city').value.trim();
+  var hometown = document.getElementById('m-hometown').value.trim();
+  var state = document.getElementById('m-state').value;
+  var college = document.getElementById('m-college').value.trim();
+  var journeyStory = document.getElementById('m-story').value.trim();
+  var journeyPath = document.getElementById('m-path').value.trim();
+  var linkedin = document.getElementById('m-linkedin').value.trim();
+  var tags = document.getElementById('m-tags').value.trim();
+
+  var btn = document.getElementById('btn-mentor-submit');
+  var orig = btn ? btn.textContent : 'Submit';
+  if (btn) {
+    btn.disabled = true;
+    btn.textContent = 'Saving profile…';
+  }
+
+  var payload = {
+    name: name,
+    initials: initialsIn || deriveInitialsFromName(name),
+    title: title,
+    company: company,
+    city: city,
+    hometown: hometown,
+    state: state,
+    college: college,
+    journeyStory: journeyStory,
+    journeyPath: journeyPath,
+    linkedin: linkedin,
+    tags: tags
+  };
+
+  try {
+    var res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+      body: new URLSearchParams({ payload: JSON.stringify(payload) }).toString()
+    });
+    var json = await res.json().catch(function () { return {}; });
+    if (!json || json.ok !== true) {
+      throw new Error((json && json.error) ? String(json.error) : 'Could not save — check the script deployment and Sheet permissions.');
+    }
+    var intro = document.getElementById('mentor-form-intro');
+    var fields = document.getElementById('mentor-form-fields');
+    var suc = document.getElementById('mentor-form-success');
+    if (intro) intro.classList.add('hidden');
+    if (fields) fields.classList.add('hidden');
+    if (suc) suc.classList.remove('hidden');
+    await syncMentorDatabase();
+  } catch (e) {
+    var msg = (e && e.message) ? e.message : String(e);
+    if (errT) errT.textContent = msg;
+    if (errP) errP.style.display = 'block';
+  } finally {
+    if (btn) {
+      btn.disabled = false;
+      btn.textContent = orig;
+    }
+  }
+}
 
 // ─────────────────────────────────────────────────────────────────
 // API KEY MANAGEMENT
@@ -448,9 +766,14 @@ function saveApiKey() {
   }
 }
 
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
   var k = localStorage.getItem('pehchaan_serper_key');
   if (k) document.getElementById('api-key').value = k;
+  var mw = localStorage.getItem('pehchaan_mentor_web_app_url');
+  var mInp = document.getElementById('mentor-web-app-url');
+  if (mw && mInp) mInp.value = mw;
+  updateMentorDbBanner('loading');
+  syncMentorDatabase();
 });
 
 // ─────────────────────────────────────────────────────────────────
@@ -463,7 +786,7 @@ function getStudentDisplayName(first, last) {
   return l ? f + ' ' + l : f;
 }
 
-function runSearch() {
+async function runSearch() {
   var firstName = document.getElementById('input-first-name').value.trim();
   var lastName  = document.getElementById('input-last-name').value.trim();
   var city      = document.getElementById('input-city').value.trim();
@@ -484,9 +807,13 @@ function runSearch() {
   searchState = { city, state, company, target, college, firstName, lastName };
 
   showScreen('screen-loading');
+  updateLoading('Connecting to mentor list…');
+  if (!mentorDbReady) {
+    await syncMentorDatabase();
+  }
   updateLoading('Checking mentors who raised their hand to help students…');
 
-  // Step 1: search curated DB
+  // Step 1: search curated DB (live MENTOR_DB from Sheet)
   var curatedMatches = searchCuratedDB(city, state, company, college);
 
   // Step 2: run Google API search
@@ -508,13 +835,23 @@ function runSearch() {
 // LAYER 1: CURATED DB SEARCH
 // ─────────────────────────────────────────────────────────────────
 function searchCuratedDB(city, state, company, college) {
-  var q = (city + ' ' + state + ' ' + company + ' ' + college).toLowerCase();
-  return MENTOR_DB.filter(function(m) {
-    var haystack = (m.name + ' ' + m.hometown + ' ' + m.state + ' ' + m.company + ' ' + m.college + ' ' + m.journeyStory + ' ' + (m.tags || []).join(' ')).toLowerCase();
-    // match if hometown/state matches AND company/career matches
-    var locationMatch = haystack.includes(city.toLowerCase()) || haystack.includes(state.toLowerCase());
-    var careerMatch   = haystack.includes(company.toLowerCase());
-    return locationMatch || careerMatch;
+  var list = Array.isArray(MENTOR_DB) ? MENTOR_DB : [];
+  var cityL = String(city || '').toLowerCase();
+  var stateL = String(state || '').toLowerCase();
+  var companyL = String(company || '').toLowerCase();
+  var collegeL = String(college || '').toLowerCase();
+  return list.filter(function (m) {
+    if (!m || typeof m !== 'object') return false;
+    var tagsStr = Array.isArray(m.tags) ? m.tags.join(' ') : String(m.tags || '');
+    var pathStr = Array.isArray(m.journeyPath) ? m.journeyPath.join(' ') : String(m.journeyPath || '');
+    var haystack = [
+      m.name, m.hometown, m.state, m.city, m.company, m.college, m.title,
+      m.journeyStory, pathStr, tagsStr
+    ].map(function (x) { return String(x || ''); }).join(' ').toLowerCase();
+    var locationMatch = (cityL && haystack.indexOf(cityL) >= 0) || (stateL && haystack.indexOf(stateL) >= 0);
+    var careerMatch = companyL && haystack.indexOf(companyL) >= 0;
+    var collegeMatch = collegeL && haystack.indexOf(collegeL) >= 0;
+    return locationMatch || careerMatch || collegeMatch;
   });
 }
 
@@ -599,11 +936,15 @@ function buildResults(curated, google, googleErr) {
   html += '<p class="res-hero-encouragement">There is no rush. Read a journey that sparks hope, edit the draft message in your own words, and send one respectful note when it feels right. Courage is showing up as yourself.</p>';
   html += '</div>';
 
+  if (mentorDbLoadFailed && curated.length === 0) {
+    html += '<div class="card"><p style="font-size:13px;color:var(--gray-text);line-height:1.65;">Our volunteer mentor list is <strong>updating right now</strong> — we could not reach the live database. Your LinkedIn searches and optional Google results below still work. Please try again in a little while if you specifically want to see Pehchaan-listed mentors.</p></div>';
+  }
+
   // ── LAYER 1: CURATED MENTORS ──
   if (curated.length > 0) {
     html += '<div style="margin-bottom:6px;"><span class="layer-badge layer-curated">⭐ They volunteered to back students — real humans, real journeys</span></div>';
-    curated.forEach(function(m) {
-      html += buildMentorCard(m, city, company);
+    curated.forEach(function (m, idx) {
+      html += buildMentorCard(m, city, company, idx);
     });
   }
 
@@ -644,12 +985,17 @@ function buildResults(curated, google, googleErr) {
 // ─────────────────────────────────────────────────────────────────
 // CARD BUILDERS
 // ─────────────────────────────────────────────────────────────────
-function buildMentorCard(m, searchCity, searchCompany) {
+function buildMentorCard(m, searchCity, searchCompany, cardIndex) {
+  var idx = typeof cardIndex === 'number' ? cardIndex : 0;
   var sd = getStudentDisplayName(searchState.firstName, searchState.lastName);
   var icebreaker = generateIcebreaker(m.name, m.hometown || searchCity, m.college || '', m.company, m.city || '', sd);
-  var pathHtml = m.journeyPath.map(function(p, i) {
-    return '<span class="journey-step">' + escHtml(p) + '</span>' + (i < m.journeyPath.length - 1 ? '<span class="journey-arrow">→</span>' : '');
+  var steps = Array.isArray(m.journeyPath) ? m.journeyPath : [];
+  var pathHtml = steps.map(function (p, i) {
+    return '<span class="journey-step">' + escHtml(p) + '</span>' + (i < steps.length - 1 ? '<span class="journey-arrow">→</span>' : '');
   }).join('');
+  var iceId = 'ice-mentor-' + idx;
+  var li = String(m.linkedin || '').trim();
+  var hasLi = li && li.indexOf('linkedin.com') >= 0;
 
   return '<div class="mentor-card">'
     + '<div style="margin-bottom:8px"><span class="layer-badge layer-curated">⭐ Pehchaan Mentor</span></div>'
@@ -667,12 +1013,12 @@ function buildMentorCard(m, searchCity, searchCompany) {
     + '</div>'
     + '<div class="icebreaker-box">'
     + '<div class="icebreaker-label">✉️ A draft in your voice — edit before you send</div>'
-    + '<div class="icebreaker-text" id="ice-' + m.initials + '">' + escHtml(icebreaker) + '</div>'
+    + '<div class="icebreaker-text" id="' + iceId + '">' + escHtml(icebreaker) + '</div>'
     + '<div class="icebreaker-hint">Tweak a line or two so it sounds like you. They were a student once too — lead with respect and curiosity.</div>'
     + '</div>'
     + '<div class="card-actions">'
-    + '<button class="btn-copy" onclick="copyIcebreaker(\'' + m.initials + '\', this)">📋 Copy Message</button>'
-    + (m.linkedin && m.linkedin !== 'https://linkedin.com/in/' ? '<a class="btn-li" href="' + m.linkedin + '" target="_blank">🔗 View on LinkedIn</a>' : '')
+    + '<button type="button" class="btn-copy" onclick="copyIcebreaker(' + idx + ', this)">📋 Copy Message</button>'
+    + (hasLi ? '<a class="btn-li" href="' + escHtml(li) + '" target="_blank" rel="noopener noreferrer">🔗 View on LinkedIn</a>' : '')
     + '</div>'
     + '</div>';
 }
@@ -754,12 +1100,10 @@ function buildIcebreakerGenerator(city, college, company, target) {
 }
 
 function buildMentorCTA(city, state, company) {
-  var contactHref = 'https://pehchaancareers.in/#contact';
-
   return '<div class="mentor-cta">'
     + '<h3>Already working in ' + escHtml(company) + ' (or something close) and from ' + escHtml(state) + '?</h3>'
     + '<p>Students using this tool are looking for someone whose story feels possible — not perfect. If you can spare an occasional message to a sincere student, your journey listed here can change what they believe about themselves. Five minutes to share your path; no pressure beyond what you choose to give.</p>'
-    + '<a class="btn-mentor" href="' + escHtml(contactHref) + '">🙋 I want to be a mentor</a>'
+    + '<button type="button" class="btn-mentor btn-mentor-inline" onclick="openMentorRegistration()">🙋 I want to be a mentor</button>'
     + '</div>';
 }
 
@@ -790,10 +1134,12 @@ function generateIcebreaker(name, city, college, company, targetCity, studentDis
 // UTILS
 // ─────────────────────────────────────────────────────────────────
 function showScreen(id) {
-  ['screen-search','screen-loading','screen-results'].forEach(function(s){
-    document.getElementById(s).classList.add('hidden');
+  ['screen-search', 'screen-loading', 'screen-results', 'screen-mentor-form'].forEach(function (s) {
+    var el = document.getElementById(s);
+    if (el) el.classList.add('hidden');
   });
-  document.getElementById(id).classList.remove('hidden');
+  var target = document.getElementById(id);
+  if (target) target.classList.remove('hidden');
   window.scrollTo(0, 0);
 }
 
@@ -819,8 +1165,8 @@ function escJs(str) {
   return String(str || '').replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/\n/g,'\\n');
 }
 
-function copyIcebreaker(id, btn) {
-  var el = document.getElementById('ice-' + id);
+function copyIcebreaker(cardIndex, btn) {
+  var el = document.getElementById('ice-mentor-' + cardIndex);
   if (el) copyText(el.textContent, btn);
 }
 
@@ -845,10 +1191,10 @@ function copyText(text, btn) {
 }
 
 // Enter key triggers search
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', function (e) {
   if (e.key === 'Enter') {
     var active = document.getElementById('screen-search');
-    if (!active.classList.contains('hidden')) runSearch();
+    if (active && !active.classList.contains('hidden')) runSearch();
   }
 });
 </script>
