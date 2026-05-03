@@ -588,6 +588,7 @@ function deriveInitialsFromName(name) {
 
 function parseMentorJsonResponse_(text) {
   var t = String(text || '').trim();
+  t = t.replace(/^\uFEFF/, '');
   t = t.replace(/^\)\]\}'\s*/, '').replace(/^while\s*\(1\);\s*/i, '').trim();
   if (!t) return null;
   try {
@@ -602,13 +603,31 @@ function normalizeMentorList(data) {
   if (typeof data === 'string') data = parseMentorJsonResponse_(data);
   if (!data || typeof data !== 'object') return [];
   if (data.error) return [];
-  var arr = Array.isArray(data) ? data : (data.mentors && Array.isArray(data.mentors) ? data.mentors : []);
+  var arr = Array.isArray(data)
+    ? data
+    : (data.mentors && Array.isArray(data.mentors)
+      ? data.mentors
+      : (data.data && Array.isArray(data.data) ? data.data : []));
   return arr.map(normalizeMentorRow).filter(Boolean);
+}
+
+function mentorRowPickName_(m) {
+  var direct = String(m.name || m.fullName || m['Full name'] || m['Full Name'] || '').trim();
+  if (direct) return direct;
+  for (var k in m) {
+    if (!Object.prototype.hasOwnProperty.call(m, k)) continue;
+    var low = String(k).toLowerCase().replace(/\s+/g, ' ');
+    if (low === 'name' || low === 'full name' || low === 'mentor name') {
+      var v = String(m[k] == null ? '' : m[k]).trim();
+      if (v) return v;
+    }
+  }
+  return '';
 }
 
 function normalizeMentorRow(m) {
   if (!m || typeof m !== 'object') return null;
-  var name = String(m.name || m.fullName || m['Full name'] || m['Full Name'] || '').trim();
+  var name = mentorRowPickName_(m);
   if (!name) return null;
   var jp = m.journeyPath;
   if (typeof jp === 'string') jp = jp.split(',').map(function (s) { return s.trim(); }).filter(Boolean);
@@ -641,7 +660,12 @@ function updateMentorDbBanner(mode) {
     el.textContent = 'Loading volunteer mentors…';
   } else if (mode === 'ok') {
     var n = MENTOR_DB ? MENTOR_DB.length : 0;
-    el.textContent = 'Mentor list connected (' + n + ' volunteer profile' + (n === 1 ? '' : 's') + ').';
+    if (n === 0) {
+      el.classList.add('warn');
+      el.textContent = 'Mentor list connected (0 profiles). If rows exist in Google Sheets, redeploy the Apps Script (Deploy → New version), confirm the script is bound to that spreadsheet, then refresh this page.';
+    } else {
+      el.textContent = 'Mentor list connected (' + n + ' volunteer profile' + (n === 1 ? '' : 's') + ').';
+    }
   } else if (mode === 'no-url') {
     el.classList.add('warn');
     el.textContent = 'No mentor Web App URL yet — add one above or set MENTOR_WEB_APP_URL in this file. Curated volunteer cards stay hidden until then; LinkedIn search layers still work.';

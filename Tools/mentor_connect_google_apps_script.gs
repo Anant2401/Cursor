@@ -17,9 +17,9 @@
  * sends POST as application/x-www-form-urlencoded with a JSON string in `payload` so the
  * request stays a “simple” CORS request (avoids OPTIONS preflight issues with application/json).
  *
- * Optional: add a sheet named exactly "Mentors" or the first sheet is used.
+ * The script picks whichever tab yields the most parseable mentor rows (see getMentorSheet_).
  */
-var MENTOR_SHEET_NAME = 'Mentors';
+var MENTOR_SHEET_NAME = 'Mentors'; // reserved for future “always write to this tab” behaviour
 
 function jsonOutput_(obj) {
   return ContentService
@@ -28,24 +28,41 @@ function jsonOutput_(obj) {
 }
 
 /**
- * Prefer the "Mentors" tab only if it actually has data rows.
- * Otherwise many spreadsheets keep data on Sheet1 while "Mentors" exists empty — doGet would return [].
+ * Pick the tab where we can actually parse mentor rows (not just the longest tab).
+ * Fixes: empty "Mentors" tab while real rows live on "Sheet1", or title rows above headers.
  */
 function getMentorSheet_() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var named = ss.getSheetByName(MENTOR_SHEET_NAME);
-  if (named && named.getLastRow() > 1) return named;
   var sheets = ss.getSheets();
   var best = sheets[0];
-  var bestRows = 0;
-  for (var i = 0; i < sheets.length; i++) {
-    var lr = sheets[i].getLastRow();
-    if (lr > bestRows) {
-      bestRows = lr;
+  var bestScore = sheetImportScore_(best);
+  for (var i = 1; i < sheets.length; i++) {
+    var sc = sheetImportScore_(sheets[i]);
+    if (sc > bestScore) {
+      bestScore = sc;
       best = sheets[i];
     }
   }
   return best;
+}
+
+/** How many mentor rows we can parse from the first chunk of this tab (for ranking only). */
+function sheetImportScore_(sh) {
+  var lr = sh.getLastRow();
+  var lc = sh.getLastColumn();
+  if (lr < 2 || lc < 1) return -1;
+  var probeRows = Math.min(300, lr);
+  var vals = sh.getRange(1, 1, probeRows, lc).getValues();
+  var headerRow = findHeaderRowIndex_(vals);
+  var headers = vals[headerRow].map(function (h) {
+    return String(h || '').trim();
+  });
+  var count = 0;
+  for (var i = headerRow + 1; i < vals.length; i++) {
+    var m = rowToMentor_(headers, vals[i]);
+    if (m && m.name) count++;
+  }
+  return count * 100000 + lr;
 }
 
 function normalizeHeaderKey_(h) {
@@ -77,18 +94,76 @@ function getCellByAliases_(headerMap, headers, row, aliases) {
   return '';
 }
 
+/** Known column titles (normalized) — used to find which row is the real header row. */
+var HEADER_HINTS_ = [
+  'name', 'full name', 'timestamp', 'initials', 'title', 'company', 'city', 'hometown', 'state',
+  'college', 'journey story', 'journey path', 'linkedin', 'tags', 'email', 'phone'
+];
+
+function headerRowScore_(row) {
+  var score = 0;
+  for (var c = 0; c < row.length; c++) {
+    var nk = normalizeHeaderKey_(row[c]);
+    if (!nk) continue;
+    for (var h = 0; h < HEADER_HINTS_.length; h++) {
+      if (nk === HEADER_HINTS_[h]) {
+        score++;
+        break;
+      }
+    }
+  }
+  return score;
+}
+
+/**
+ * Many sheets have a title row or blank row before the real headers.
+ * Pick the row in the first 25 lines with the strongest header-like match (need at least 2 hints).
+ */
+function findHeaderRowIndex_(values) {
+  if (!values || !values.length) return 0;
+  var bestR = 0;
+  var bestScore = headerRowScore_(values[0]);
+  var maxR = Math.min(40, values.length);
+  for (var r = 1; r < maxR; r++) {
+    var sc = headerRowScore_(values[r]);
+    if (sc > bestScore) {
+      bestScore = sc;
+      bestR = r;
+    }
+  }
+  if (bestScore >= 2) return bestR;
+  if (bestScore === 1) {
+    for (var c = 0; c < values[bestR].length; c++) {
+      if (normalizeHeaderKey_(values[bestR][c]) === 'name') return bestR;
+      if (normalizeHeaderKey_(values[bestR][c]) === 'full name') return bestR;
+    }
+  }
+  return 0;
+}
+
 /** doGet — return all mentor rows as JSON array (camelCase objects). */
 function doGet() {
   try {
     var sh = getMentorSheet_();
     var values = sh.getDataRange().getValues();
     if (!values || values.length < 2) return jsonOutput_([]);
-    var headers = values[0].map(function (h) {
+    var headerRow = findHeaderRowIndex_(values);
+    var headers = values[headerRow].map(function (h) {
       return String(h || '').trim();
     });
     var out = [];
-    for (var i = 1; i < values.length; i++) {
-      var m = rowToMentor_(headers, values[i]);
+    for (var i = headerRow + 1; i < values.length; i++) {
+      var row = values[i];
+      if (!row || !row.length) continue;
+      var empty = true;
+      for (var j = 0; j < row.length; j++) {
+        if (row[j] !== '' && row[j] !== null && row[j] !== undefined) {
+          empty = false;
+          break;
+        }
+      }
+      if (empty) continue;
+      var m = rowToMentor_(headers, row);
       if (m && m.name) out.push(m);
     }
     return jsonOutput_(out);
