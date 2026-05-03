@@ -10,10 +10,10 @@
   :root {
     --teal:#1D9E75; --teal-dark:#085041; --teal-light:#E1F5EE;
     --amber:#EF9F27; --amber-light:#FAEEDA;
-    --navy:#1A1A2E; --white:#FFFFFF; --card-bg:#F8FAFC;
+    --white:#FFFFFF; --card-bg:#F8FAFC;
     --gray-text:#64748B; --red:#E24B4A; --red-light:#FCEBEB;
     --purple:#7F77DD; --purple-light:#EEEDFE;
-    --blue:#378ADD; --blue-light:#E6F1FB;
+    --blue:#378ADD;
     --border:#D1E8DF; --text:#1A1A2E;
     --radius:14px; --shadow:0 1px 4px rgba(8,80,65,0.10);
   }
@@ -32,6 +32,7 @@
   .topbar-back{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:40px;height:40px;border-radius:12px;background:rgba(29,158,117,.12);color:var(--teal-dark);font-size:18px;font-weight:700;text-decoration:none;line-height:1;transition:background .15s;}
   .topbar-back:hover{background:rgba(29,158,117,.22);}
   .topbar-brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;flex:1;min-width:0;}
+  .topbar-brand > div:not(.topbar-logo){min-width:0;}
   .topbar-brand:hover .topbar-name{color:var(--teal);}
 
   /* HERO */
@@ -42,7 +43,7 @@
   .hero-card h1{font-size:26px;font-weight:700;line-height:1.25;margin-bottom:10px;}
   .hero-card h1 span{color:var(--amber);}
   .hero-card p{font-size:13px;opacity:.85;line-height:1.75;margin-bottom:22px;}
-  .hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:0;}
+  .hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:0;}
   .hero-stat{background:rgba(255,255,255,.1);border-radius:12px;padding:14px 8px;text-align:center;border:1px solid rgba(255,255,255,.12);}
   .hero-stat .v{font-size:22px;font-weight:700;color:var(--amber);}
   .hero-stat .l{font-size:11px;opacity:.75;margin-top:2px;}
@@ -61,13 +62,17 @@
   .sel-btn{border:1.5px solid var(--border);background:var(--white);border-radius:10px;padding:9px 14px;font-size:12px;font-weight:600;color:var(--gray-text);cursor:pointer;font-family:'Poppins',sans-serif;transition:all .15s;white-space:nowrap;}
   .sel-btn:hover{border-color:var(--teal);color:var(--teal-dark);background:var(--teal-light);}
   .sel-btn.active{background:var(--teal-dark);color:var(--amber);border-color:var(--teal-dark);}
-  .sel-btn.career-btn{border-radius:20px;font-size:11px;padding:6px 13px;}
+  .sel-btn.career-btn{border-radius:20px;font-size:11px;padding:6px 13px;display:inline-flex;align-items:center;justify-content:center;}
   .sel-btn.career-btn.active{background:var(--teal);color:var(--white);border-color:var(--teal);}
 
   /* SEARCH inside career filter */
   .career-search{width:100%;padding:10px 14px;border:1.5px solid var(--border);border-radius:10px;font-family:'Poppins',sans-serif;font-size:13px;color:var(--text);outline:none;margin-bottom:12px;transition:border-color .2s;}
   .career-search:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,158,117,.1);}
   .career-search::placeholder{color:#b0c4bb;}
+  .state-filter-select{width:100%;min-height:44px;padding:10px 12px;border:1.5px solid var(--border);border-radius:10px;font-family:'Poppins',sans-serif;font-size:13px;font-weight:500;color:var(--teal-dark);background:var(--white);cursor:pointer;margin-bottom:8px;outline:none;}
+  .state-filter-select:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,158,117,.1);}
+  .sel-hint{font-size:11px;color:var(--gray-text);margin:-2px 0 14px;line-height:1.5;}
+  .res-state-line{font-size:12px;font-weight:600;color:rgba(255,255,255,.88);margin-top:10px;padding:10px 12px;background:rgba(255,255,255,.08);border-radius:10px;border:1px solid rgba(255,255,255,.15);display:none;}
 
   .btn-build{width:100%;background:var(--amber);color:var(--teal-dark);border:none;border-radius:var(--radius);padding:15px;font-size:15px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;transition:transform .15s,box-shadow .15s;margin-top:4px;}
   .btn-build:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(239,159,39,.4);}
@@ -121,9 +126,6 @@
   .guidance-phase:last-child{margin-bottom:0;}
   .phase-badge{background:var(--teal-dark);color:var(--amber);font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.04em;display:inline-block;margin-bottom:10px;}
   .step-list{display:flex;flex-direction:column;gap:8px;}
-  .step-item{display:flex;gap:12px;align-items:flex-start;}
-  .step-num{width:24px;height:24px;border-radius:50%;flex-shrink:0;margin-top:1px;background:var(--amber);color:var(--teal-dark);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;}
-  .step-text{font-size:13px;color:var(--text);line-height:1.65;}
 
   /* INSIGHT BOX */
   .insight-box{background:var(--amber-light);border:1.5px solid #F5C878;border-radius:14px;padding:16px 20px;margin-bottom:14px;}
@@ -153,8 +155,17 @@
   .legend-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
 
   @media(max-width:480px){
+    .container{padding:16px 12px 52px;}
+    .hero-card{padding:26px 18px;}
     .hero-card h1{font-size:22px;}
+    .hero-stats{gap:8px;}
+    .hero-stat{padding:12px 6px;}
+    .hero-stat .v{font-size:18px;}
+    .hero-stat .l{font-size:10px;}
+    .sel-card{padding:18px 16px;}
+    .res-hero{padding:22px 18px;}
     .res-hero-name{font-size:17px;}
+    .card-section{padding:16px 14px;}
     .resource-grid{grid-template-columns:1fr;}
     .name-grid{grid-template-columns:1fr;}
   }
@@ -177,18 +188,34 @@
   .btn-retry{width:100%;padding:13px;border-radius:var(--radius);border:none;background:var(--teal);color:var(--white);font-weight:700;font-family:'Poppins',sans-serif;cursor:pointer;font-size:14px;}
   .btn-retry:hover{background:var(--teal-dark);}
 
-  /* Trending chips (Phase 4) */
+  /* Trending — compact multi-select dropdown */
   .trending-wrap{margin-top:10px;padding-top:12px;border-top:1px dashed var(--border);}
   .trending-label{font-size:10px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px;}
-  .trending-chips{display:flex;flex-wrap:wrap;gap:8px;}
-  .trend-chip{border:1.5px solid var(--border);background:var(--teal-light);color:var(--teal-dark);border-radius:20px;padding:10px 14px;font-size:12px;font-weight:600;cursor:pointer;font-family:'Poppins',sans-serif;min-height:44px;display:inline-flex;align-items:center;}
-  .trend-chip:hover{border-color:var(--teal);background:var(--white);}
+  .trending-dd-wrap{position:relative;width:100%;}
+  .trending-dd-btn{width:100%;min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;border:1.5px solid var(--border);border-radius:10px;background:var(--white);font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;color:var(--teal-dark);cursor:pointer;text-align:left;}
+  .trending-dd-btn:hover{border-color:var(--teal);background:var(--teal-light);}
+  .trending-dd-btn[aria-expanded="true"]{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,158,117,.12);}
+  .trending-dd-chevron{font-size:10px;opacity:.75;flex-shrink:0;transition:transform .2s ease;}
+  .trending-dd-wrap.trending-dd-open .trending-dd-chevron{transform:rotate(180deg);}
+  .trending-dd-panel{display:none;position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:100;background:var(--white);border:1.5px solid var(--border);border-radius:12px;box-shadow:0 8px 24px rgba(8,80,65,.12);overflow:hidden;}
+  .trending-dd-wrap.trending-dd-open .trending-dd-panel{display:block;}
+  .trending-dd-list{max-height:min(50vh,280px);overflow-y:auto;padding:8px 10px;}
+  .trending-dd-item{display:flex;align-items:flex-start;gap:10px;padding:10px 8px;border-radius:8px;cursor:pointer;}
+  .trending-dd-item:hover{background:var(--teal-light);}
+  .trending-dd-item input{min-width:20px;min-height:20px;width:20px;height:20px;margin-top:2px;accent-color:var(--teal);cursor:pointer;flex-shrink:0;}
+  .trending-dd-item span{font-size:12px;font-weight:500;color:var(--text);line-height:1.4;}
+  .trending-dd-item .trend-hash{font-weight:700;color:var(--teal-dark);margin-right:6px;}
+  .trending-dd-footer{padding:8px 10px;border-top:1px solid var(--border);background:var(--card-bg);}
+  .trending-dd-reset{width:100%;min-height:44px;border:1.5px solid var(--border);border-radius:10px;background:var(--white);font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;color:var(--teal-dark);cursor:pointer;}
+  .trending-dd-reset:hover{background:var(--teal-light);border-color:var(--teal);}
 
   /* Result — career fit (Phase 4) */
   .res-fit-summary{font-size:13px;line-height:1.65;color:rgba(255,255,255,.92);background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:14px 16px;margin:14px 0 4px;}
 
   /* Timeline countdown (Phase 4) */
   .timeline-countdown{font-size:13px;font-weight:600;color:var(--teal-dark);background:var(--teal-light);border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin-bottom:14px;}
+  .timeline-countdown .countdown-note{display:block;font-size:11px;font-weight:500;color:var(--gray-text);margin-top:8px;line-height:1.5;}
+  .timeline-countdown.is-muted{font-weight:500;}
 
   /* Exam card extras (Phase 2) + mobile (Phase 5) */
   .exam-meta-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:8px 0 6px;}
@@ -229,22 +256,77 @@
   .print-header{display:none;}
   @media print{
     @page{size:A4;margin:14mm;}
-    body{background:#fff !important;}
+    body{background:#fff !important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
     .no-print,.app-bootstrap,.topbar{display:none !important;}
     #screen-selector{display:none !important;}
-    .exam-block:hover{border-color:var(--border) !important;}
-    .container{max-width:100%;padding:12px 0 24px;}
-    .print-header{display:block !important;text-align:center;margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--teal-dark);}
+    .container{max-width:100%;padding:0 0 20px;}
+    .print-header{display:block !important;text-align:center;margin-bottom:14px;padding-bottom:12px;border-bottom:2px solid var(--teal-dark);}
     .print-header .ph-logo{font-size:18px;font-weight:800;color:var(--teal-dark);}
     .print-header .ph-tag{font-size:11px;color:var(--gray-text);}
+    .print-header .print-subline{font-size:12px;color:var(--text);margin-top:10px;line-height:1.5;font-weight:500;}
+    #res-hero{
+      background:#fff !important;color:var(--text) !important;
+      border:2px solid var(--teal-dark);box-shadow:none !important;
+      page-break-after:avoid;
+    }
+    #res-hero::before,#res-hero::after{display:none !important;}
+    #res-hero .res-hero-label{color:var(--gray-text) !important;opacity:1 !important;}
+    #res-hero .res-hero-name{color:var(--teal-dark) !important;}
+    #res-hero .res-hero-name span{color:var(--teal-dark) !important;opacity:1 !important;}
+    #res-hero .res-hero-sub{color:var(--text) !important;opacity:1 !important;}
+    #res-hero .res-fit-summary{
+      color:var(--text) !important;background:var(--card-bg) !important;
+      border-color:var(--border) !important;
+    }
+    #res-hero .res-badge{color:var(--teal-dark) !important;background:#FFF8E7 !important;border-color:var(--amber) !important;}
+    #res-hero .res-state-line{color:var(--text) !important;background:var(--card-bg) !important;border-color:var(--border) !important;}
+    .insight-box{background:#FFFBF0 !important;border-color:#F5C878 !important;}
+    .insight-box p,.insight-box strong{color:#5A3200 !important;}
+    .exam-block{break-inside:avoid;page-break-inside:avoid;}
+    .card-section{break-inside:avoid-page;}
+    .exam-block:hover{border-color:var(--border) !important;}
+    .tl-item{break-inside:avoid-page;}
+    .timeline-countdown{background:var(--card-bg) !important;border:1px solid var(--border) !important;}
   }
 
   @media(max-width:767px){
-    .exam-block-top{flex-wrap:wrap;}
-    .exam-urgency{margin-left:auto;}
+    .container{padding:18px 14px 56px;}
+    .sel-card{padding:20px 16px;}
+    #class-grid .sel-btn,#stream-grid .sel-btn{white-space:normal;text-align:center;min-height:44px;display:inline-flex;align-items:center;justify-content:center;padding-left:12px;padding-right:12px;}
+    .exam-block{padding:12px 12px;}
+    .exam-block-top{flex-wrap:wrap;gap:8px;}
+    .exam-name{min-width:0;word-break:break-word;}
+    .exam-urgency{margin-left:auto;white-space:normal;max-width:100%;text-align:right;}
+    .exam-date,.exam-desc{font-size:11px;}
+    .exam-guidance{font-size:11px;}
+    .topic-pills{gap:8px;}
+    .topic-pill{font-size:10px;padding:10px 12px;min-height:40px;display:inline-flex;align-items:center;line-height:1.35;touch-action:manipulation;}
+    .intensity-label-row{font-size:10px;flex-wrap:wrap;gap:4px;}
+    .intensity-track{min-height:14px;}
+    .intensity-segments{gap:2px;}
+    .intensity-seg{min-width:0;}
+    .timeline-wrap{padding-left:24px;}
+    .tl-dot{left:-20px;}
+    .timeline-countdown{font-size:12px;padding:10px 12px;}
+    .timeline-countdown .countdown-note{font-size:10px;}
+    .res-hero{padding:24px 18px;}
+    .res-hero-sub{font-size:12px;}
     .res-fit-summary{font-size:12px;padding:12px;}
-    .trending-chips{flex-direction:column;}
-    .trend-chip{width:100%;justify-content:center;}
+    .res-state-line{font-size:11px;padding:10px;line-height:1.5;}
+    .res-badge{padding:8px 14px;font-size:11px;}
+    .legend-row{gap:8px;}
+    .legend-item{font-size:10px;}
+    .sel-btn.career-btn{min-height:44px;}
+    #career-grid{max-height:min(48vh,300px) !important;}
+    .step-check-label{padding:10px 0;}
+    .insight-box p{font-size:12px;}
+    .topbar-name{font-size:14px;}
+    .topbar-tag{font-size:10px;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .skel-pulse,.skel-bar,.intensity-fill{animation:none !important;}
+    .trending-dd-chevron{transition:none !important;}
   }
 </style>
 </head>
@@ -286,7 +368,7 @@
     <div class="hero-tag">Exam Roadmap Builder</div>
     <h1>Your Personal <span>Exam Roadmap</span> — 2026 and 2027</h1>
     <p>Tell us where you are and where you want to go. We will build you a personalised roadmap of every exam you need to appear for, every registration deadline, and exactly when to start preparing — with honest guidance at every step.</p>
-    <div class="hero-stats" id="hero-stats-row">
+    <div class="hero-stats">
       <div class="hero-stat"><div class="v" id="hero-stat-exams">—</div><div class="l">Exams in Database</div></div>
       <div class="hero-stat"><div class="v" id="hero-stat-careers">—</div><div class="l">Career Paths</div></div>
       <div class="hero-stat"><div class="v" id="hero-stat-updated">—</div><div class="l">Data Refreshed</div></div>
@@ -305,11 +387,11 @@
     <h3>Step 1 of 3 — Where are you right now?</h3>
     <span class="sel-label">Select your current class or stage</span>
     <div class="sel-grid" id="class-grid">
-      <button class="sel-btn" data-val="10" onclick="selectClass(this)">Class 10 / Just passed 10th</button>
-      <button class="sel-btn" data-val="11" onclick="selectClass(this)">Class 11</button>
-      <button class="sel-btn" data-val="12" onclick="selectClass(this)">Class 12 / Just passed 12th</button>
-      <button class="sel-btn" data-val="grad1" onclick="selectClass(this)">1st or 2nd Year College</button>
-      <button class="sel-btn" data-val="grad2" onclick="selectClass(this)">Final Year College / Graduate</button>
+      <button type="button" class="sel-btn" data-val="10" onclick="selectClass(this)">Class 10 / Just passed 10th</button>
+      <button type="button" class="sel-btn" data-val="11" onclick="selectClass(this)">Class 11</button>
+      <button type="button" class="sel-btn" data-val="12" onclick="selectClass(this)">Class 12 / Just passed 12th</button>
+      <button type="button" class="sel-btn" data-val="grad1" onclick="selectClass(this)">1st or 2nd Year College</button>
+      <button type="button" class="sel-btn" data-val="grad2" onclick="selectClass(this)">Final Year College / Graduate</button>
     </div>
   </div>
 
@@ -318,21 +400,36 @@
     <h3>Step 2 of 3 — What is your stream?</h3>
     <span class="sel-label">Select your current or intended stream</span>
     <div class="sel-grid" id="stream-grid">
-      <button class="sel-btn" data-val="science" onclick="selectStream(this)">🔬 Science (PCM / PCB)</button>
-      <button class="sel-btn" data-val="commerce" onclick="selectStream(this)">📊 Commerce</button>
-      <button class="sel-btn" data-val="arts" onclick="selectStream(this)">🎨 Arts / Humanities</button>
-      <button class="sel-btn" data-val="any" onclick="selectStream(this)">✅ Any / Not decided yet</button>
+      <button type="button" class="sel-btn" data-val="science" onclick="selectStream(this)">🔬 Science (PCM / PCB)</button>
+      <button type="button" class="sel-btn" data-val="commerce" onclick="selectStream(this)">📊 Commerce</button>
+      <button type="button" class="sel-btn" data-val="arts" onclick="selectStream(this)">🎨 Arts / Humanities</button>
+      <button type="button" class="sel-btn" data-val="vocational" onclick="selectStream(this)">🔧 Vocational / ITI / Polytechnic</button>
+      <button type="button" class="sel-btn" data-val="any" onclick="selectStream(this)">✅ Any / Not decided yet</button>
     </div>
   </div>
 
   <!-- STEP 3: CAREER INTEREST -->
   <div class="sel-card" id="step3-card" style="display:none">
-    <h3>Step 3 of 3 — What career are you thinking about?</h3>
+    <h3>Step 3 of 3 — Your state focus &amp; careers</h3>
+    <span class="sel-label">Home state / UT (filters your exam timeline)</span>
+    <select class="state-filter-select no-print" id="state-filter" aria-label="Home state or exam region" onchange="onStateFilterChange()"></select>
+    <p class="sel-hint">National (all-India) exams always stay visible. Pick a state to add that state’s entrance and PSC exams — or choose National only / All states.</p>
     <span class="sel-label">Search or select up to 3 career interests</span>
     <input type="text" class="career-search no-print" id="career-search" placeholder="Search career — e.g. Doctor, Engineer, IAS, CA..." oninput="filterCareers()">
     <div class="trending-wrap no-print" id="trending-wrap" style="display:none">
-      <div class="trending-label">Trending — tap to search</div>
-      <div class="trending-chips" id="trending-chips" role="group" aria-label="Trending career filters"></div>
+      <div class="trending-label">Trending — filter careers</div>
+      <div class="trending-dd-wrap" id="trending-dd-wrap">
+        <button type="button" class="trending-dd-btn" id="trending-dd-btn" aria-expanded="false" aria-haspopup="listbox" aria-controls="trending-dd-panel" onclick="toggleTrendingDropdown(event)">
+          <span id="trending-dd-btn-text">Select trending tags…</span>
+          <span class="trending-dd-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="trending-dd-panel" id="trending-dd-panel" role="listbox" aria-label="Trending career tags">
+          <div class="trending-dd-list" id="trending-dd-list"></div>
+          <div class="trending-dd-footer">
+            <button type="button" class="trending-dd-reset" onclick="resetTrendingFilters(event)">Reset all</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="sel-grid" id="career-grid" style="max-height:260px;overflow-y:auto;padding:4px 2px;"></div>
     <div style="font-size:11px;color:var(--gray-text);margin-top:8px;" id="career-count-label">Select up to 3 careers</div>
@@ -344,15 +441,17 @@
 <div id="screen-results" class="hidden">
 
   <div class="res-hero" id="res-hero">
-    <div class="print-header" aria-hidden="true">
+    <div class="print-header">
       <div class="ph-logo">Pehchaan Careers</div>
-      <div class="ph-tag">Exam Roadmap — pehchaancareers.in</div>
+      <div class="ph-tag">Personalised exam roadmap — pehchaancareers.in</div>
+      <div class="print-subline" id="print-subline"></div>
     </div>
     <div class="res-hero-label">Your personalised exam roadmap</div>
     <div class="res-hero-name" id="res-title"></div>
     <div class="res-hero-sub" id="res-sub"></div>
     <div class="res-fit-summary" id="res-fit-summary" style="display:none"></div>
     <div class="res-profile-row" id="res-badges"></div>
+    <div class="res-state-line" id="res-state-line" role="status"></div>
   </div>
 
   <div class="insight-box" id="res-insight"></div>
@@ -411,6 +510,10 @@
 // ─────────────────────────────────────────────
 var selClass = null, selStream = null, selCareers = [];
 var firstName = '', lastName = '';
+/** When non-empty, career grid shows only these trending career ids (multi-select). */
+var trendingFilterIds = [];
+/** Timeline state filter: all | national_only | exact state_name from exam data. */
+var selStateFilter = 'all';
 
 // ─────────────────────────────────────────────
 // GLOBAL DATA (loaded from ../ExamDB/pehchaan_exam_data.json)
@@ -516,6 +619,7 @@ function hideBootstrapOverlay() {
   document.body.classList.remove('app-not-ready');
   document.body.classList.add('app-ready');
   renderTrendingChips();
+  populateStateFilter();
 }
 
 function assignParsedPayload(data) {
@@ -565,36 +669,61 @@ if (document.readyState === 'loading') {
   loadPehchaanExamData();
 }
 
-
-
 // ─────────────────────────────────────────────
 // UI LOGIC
 // ─────────────────────────────────────────────
 function selectClass(btn) {
-  document.querySelectorAll('#class-grid .sel-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#class-grid .sel-btn').forEach(function(b) { b.classList.remove('active'); });
   btn.classList.add('active');
   selClass = btn.getAttribute('data-val');
-  document.getElementById('step2-card').style.display = 'block';
-  document.getElementById('step2-card').scrollIntoView({behavior:'smooth', block:'nearest'});
+  var s2 = document.getElementById('step2-card');
+  if (s2) {
+    s2.style.display = 'block';
+    s2.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
 }
 
 function selectStream(btn) {
-  document.querySelectorAll('#stream-grid .sel-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#stream-grid .sel-btn').forEach(function(b) { b.classList.remove('active'); });
   btn.classList.add('active');
   selStream = btn.getAttribute('data-val');
-  document.getElementById('step3-card').style.display = 'block';
+  var step3 = document.getElementById('step3-card');
+  if (step3) step3.style.display = 'block';
+  selStateFilter = 'all';
+  var sf = document.getElementById('state-filter');
+  if (sf) sf.value = 'all';
+  trendingFilterIds = [];
+  closeTrendingDropdown();
+  syncTrendingCheckboxDom();
+  updateTrendingBtnText();
   renderCareerButtons();
-  document.getElementById('step3-card').scrollIntoView({behavior:'smooth', block:'nearest'});
+  var s3 = document.getElementById('step3-card');
+  if (s3) s3.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function careerMatchesStream(c, stream) {
+  if (!c || !c.stream || !Array.isArray(c.stream)) return false;
+  if (stream === 'any') return c.stream.indexOf('any') >= 0;
+  if (stream === 'vocational') {
+    if (c.stream.indexOf('vocational') >= 0) return true;
+    if (c.group === 'Vocational & Technical') return true;
+    if (c.id === 'iti') return true;
+    return false;
+  }
+  return c.stream.indexOf(stream) >= 0 || c.stream.indexOf('any') >= 0;
 }
 
 function renderCareerButtons() {
-  var search = (document.getElementById('career-search').value || '').toLowerCase().trim();
+  var grid = document.getElementById('career-grid');
+  var searchEl = document.getElementById('career-search');
+  if (!grid || !PehchaanExamDB.careers || !selStream) return;
+  var search = (searchEl && searchEl.value ? searchEl.value : '').toLowerCase().trim();
   var filtered = PehchaanExamDB.careers.filter(function(c) {
-    var streamMatch = selStream === 'any' || c.stream.includes(selStream) || c.stream.includes('any');
+    var streamMatch = careerMatchesStream(c, selStream);
     var searchMatch = !search || c.label.toLowerCase().includes(search) || c.group.toLowerCase().includes(search);
-    return streamMatch && searchMatch;
+    var trendMatch = trendingFilterIds.length === 0 || trendingFilterIds.indexOf(c.id) >= 0;
+    return streamMatch && searchMatch && trendMatch;
   });
-  // Group by category
   var groups = {};
   filtered.forEach(function(c) {
     if (!groups[c.group]) groups[c.group] = [];
@@ -602,17 +731,64 @@ function renderCareerButtons() {
   });
   var html = '';
   Object.keys(groups).forEach(function(g) {
-    html += '<div style="width:100%;font-size:10px;font-weight:700;color:var(--gray-text);text-transform:uppercase;letter-spacing:.06em;margin:4px 0 2px;padding-top:6px;">' + g + '</div>';
+    html += '<div style="width:100%;font-size:10px;font-weight:700;color:var(--gray-text);text-transform:uppercase;letter-spacing:.06em;margin:4px 0 2px;padding-top:6px;">' + escapeHtml(g) + '</div>';
     groups[g].forEach(function(c) {
       var isActive = selCareers.indexOf(c.id) >= 0;
-      html += '<button class="sel-btn career-btn' + (isActive ? ' active' : '') + '" data-id="' + c.id + '" onclick="toggleCareer(this)">' + c.label + '</button>';
+      html += '<button type="button" class="sel-btn career-btn' + (isActive ? ' active' : '') + '" data-id="' + escapeHtml(c.id) + '" onclick="toggleCareer(this)">' + escapeHtml(c.label) + '</button>';
     });
   });
-  document.getElementById('career-grid').innerHTML = html;
+  grid.innerHTML = html;
   updateBuildBtn();
 }
 
 function filterCareers() { renderCareerButtons(); }
+
+function isExamNationalLevel(e) {
+  if (!e) return true;
+  var sc = String(e.scope || '').trim().toLowerCase();
+  var sn = String(e.state_name || '').trim().toLowerCase();
+  return sc === 'national' || sn === '' || sn === 'none';
+}
+
+function examMatchesStateFilter(e, key) {
+  if (!key || key === 'all') return true;
+  if (key === 'national_only') return isExamNationalLevel(e);
+  var stateName = String(e.state_name || '').trim();
+  if (isExamNationalLevel(e)) return true;
+  return stateName === key;
+}
+
+function collectDistinctExamStates() {
+  var seen = {};
+  (PehchaanExamDB.exams || []).forEach(function(ex) {
+    var sn = String(ex.state_name || '').trim();
+    if (!sn || sn.toLowerCase() === 'none') return;
+    seen[sn] = true;
+  });
+  return Object.keys(seen).sort(function(a, b) { return a.localeCompare(b); });
+}
+
+function populateStateFilter() {
+  var sel = document.getElementById('state-filter');
+  if (!sel || !PehchaanExamDB.exams) return;
+  var prev = sel.value;
+  var states = collectDistinctExamStates();
+  var opts =
+    '<option value="all">All states + national exams</option>' +
+    '<option value="national_only">National-level exams only</option>';
+  states.forEach(function(st) {
+    opts += '<option value="' + escapeHtml(st) + '">' + escapeHtml(st) + ' + national exams</option>';
+  });
+  sel.innerHTML = opts;
+  var hasPrev = prev && Array.prototype.some.call(sel.options, function(o) { return o.value === prev; });
+  sel.value = hasPrev ? prev : 'all';
+  selStateFilter = sel.value;
+}
+
+function onStateFilterChange() {
+  var sel = document.getElementById('state-filter');
+  selStateFilter = sel && sel.value ? sel.value : 'all';
+}
 
 function handleNameInput() {
   firstName = (document.getElementById('first-name').value || '').trim();
@@ -641,6 +817,7 @@ function toggleCareer(btn) {
 function updateBuildBtn() {
   var btn = document.getElementById('btn-build');
   var lbl = document.getElementById('career-count-label');
+  if (!btn || !lbl) return;
   var hasFullName = firstName && lastName;
   if (!hasFullName) {
     btn.disabled = true;
@@ -663,13 +840,25 @@ function updateBuildBtn() {
 // ─────────────────────────────────────────────
 function buildRoadmap() {
   if (selCareers.length === 0 || !firstName || !lastName) return;
+  var resTitle = document.getElementById('res-title');
+  var resSub = document.getElementById('res-sub');
+  var resInsight = document.getElementById('res-insight');
+  var scrSel = document.getElementById('screen-selector');
+  var scrRes = document.getElementById('screen-results');
+  if (!resTitle || !resSub || !resInsight || !scrSel || !scrRes) return;
 
   var classLabels = {
     '10':'Class 10 Student', '11':'Class 11 Student',
     '12':'Class 12 Student', 'grad1':'College — 1st / 2nd Year',
     'grad2':'Final Year / Graduate'
   };
-  var streamLabels = {science:'Science (PCM / PCB)', commerce:'Commerce', arts:'Arts / Humanities', any:'Any Stream'};
+  var streamLabels = {
+    science:'Science (PCM / PCB)',
+    commerce:'Commerce',
+    arts:'Arts / Humanities',
+    vocational:'Vocational / ITI / Polytechnic',
+    any:'Any Stream'
+  };
   var careerNames = selCareers.map(function(id){
     var c = findCareerById(id);
     return c ? c.label : id;
@@ -678,13 +867,19 @@ function buildRoadmap() {
   var careerCelebration = getCareerCelebration(selCareers[0], firstName);
 
   // Header — class and stream on separate lines to avoid wrapping
-  document.getElementById('res-title').innerHTML =
+  resTitle.innerHTML =
     'Great choice, ' + escapeHtml(studentName) + '! ' +
     '<span style="display:block;font-size:16px;font-weight:600;color:var(--white);opacity:.95;margin-top:3px;">' + escapeHtml(careerCelebration) + '</span>' +
-    '<span style="display:block;font-size:15px;font-weight:600;opacity:.9;margin-top:8px;">' + escapeHtml(classLabels[selClass]) + '</span>' +
+    '<span style="display:block;font-size:15px;font-weight:600;opacity:.9;margin-top:8px;">' + escapeHtml(classLabels[selClass] || '') + '</span>' +
     '<span style="display:block;font-size:14px;font-weight:500;opacity:.8;margin-top:2px;">' +
-    escapeHtml(streamLabels[selStream]) + '</span>';
-  document.getElementById('res-sub').textContent = 'You are seen, supported, and capable. Here is your personalised roadmap for: ' + careerNames.join(', ');
+    escapeHtml(streamLabels[selStream] || streamLabels.any) + '</span>';
+  resSub.textContent = 'You are seen, supported, and capable. Here is your personalised roadmap for: ' + careerNames.join(', ');
+  var printSub = document.getElementById('print-subline');
+  if (printSub) {
+    var stateNote = selStateFilter === 'all' ? 'All states + national' : selStateFilter === 'national_only' ? 'National only' : selStateFilter + ' + national';
+    printSub.textContent = studentName + ' — ' + careerNames.join(', ') + ' — Region: ' + stateNote + ' — Printed ' +
+      new Date().toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+  }
   var fitEl = document.getElementById('res-fit-summary');
   if (fitEl) {
     var summaries = PehchaanExamDB.career_fit_summaries || {};
@@ -701,37 +896,48 @@ function buildRoadmap() {
   var badgesHtml = careerNames.map(function(n){ return '<span class="res-badge">' + escapeHtml(n) + '</span>'; }).join('');
   document.getElementById('res-badges').innerHTML = badgesHtml;
 
-  // Insight
-  var insightText = getInsight(selClass, selCareers, firstName);
-  document.getElementById('res-insight').innerHTML = '<p>' + insightText + '</p>';
+  var stateLine = document.getElementById('res-state-line');
+  if (stateLine) {
+    if (selStateFilter === 'all') {
+      stateLine.style.display = 'none';
+      stateLine.textContent = '';
+    } else if (selStateFilter === 'national_only') {
+      stateLine.style.display = 'block';
+      stateLine.textContent = 'Exam timeline: national-level (all-India) entries only.';
+    } else {
+      stateLine.style.display = 'block';
+      stateLine.textContent = 'Exam timeline: ' + selStateFilter + ' state exams + all national-level exams.';
+    }
+  }
 
-  // Filter relevant exams
+  // Filter relevant exams (careers + optional state / scope)
   var relevantExams = PehchaanExamDB.exams.filter(function(e) {
-    return e.careers.some(function(c){ return selCareers.indexOf(c) >= 0; });
+    return e.careers.some(function(c){ return selCareers.indexOf(c) >= 0; }) && examMatchesStateFilter(e, selStateFilter);
   });
+
+  var insightText = getInsight(selClass, selCareers, firstName, relevantExams);
+  resInsight.innerHTML = '<p>' + insightText + '</p>';
 
   // Build timeline
   buildTimeline(relevantExams);
   updateTimelineCountdown(relevantExams);
 
   // Build guidance
-  buildGuidance(selCareers, selClass);
+  buildGuidance(selCareers);
 
   // Build resources
   buildResources(selCareers);
 
   // Show results
-  document.getElementById('screen-selector').classList.add('hidden');
-  document.getElementById('screen-results').classList.remove('hidden');
+  scrSel.classList.add('hidden');
+  scrRes.classList.remove('hidden');
   window.scrollTo(0,0);
 }
 
-function getInsight(cls, careers, fname) {
-  var urgentExams = PehchaanExamDB.exams.filter(function(e){
+function getInsight(cls, careers, fname, examPool) {
+  var pool = Array.isArray(examPool) ? examPool : PehchaanExamDB.exams;
+  var urgentExams = pool.filter(function(e){
     return e.status === 'soon' && careers.some(function(c){ return e.careers.indexOf(c) >= 0; });
-  });
-  var upcoming = PehchaanExamDB.exams.filter(function(e){
-    return e.status === 'upcoming' && careers.some(function(c){ return e.careers.indexOf(c) >= 0; });
   });
 
   var timeMsg = '';
@@ -822,6 +1028,7 @@ function parseExamRoughDate(exam) {
 function updateTimelineCountdown(exams) {
   var el = document.getElementById('timeline-countdown');
   if (!el) return;
+  if (!Array.isArray(exams)) exams = [];
   var start = new Date();
   start.setHours(0, 0, 0, 0);
   var best = null;
@@ -832,20 +1039,80 @@ function updateTimelineCountdown(exams) {
     if (dt >= start && (!best || dt < best)) best = dt;
   });
   if (!best) {
-    el.style.display = 'none';
-    el.textContent = '';
+    el.classList.add('is-muted');
+    if (!exams || !exams.length) {
+      el.style.display = 'none';
+      el.innerHTML = '';
+      el.classList.remove('is-muted');
+      return;
+    }
+    el.style.display = 'block';
+    el.innerHTML = 'We could not infer one clear upcoming date from the exam text in your list. Use each exam\'s official notification to set calendar reminders.' +
+      '<span class="countdown-note">Tip: use the “Check for Official Notification” button on each card.</span>';
     return;
   }
+  el.classList.remove('is-muted');
   var diff = Math.ceil((best - start) / (24 * 60 * 60 * 1000));
   el.style.display = 'block';
   el.innerHTML = 'Next exam in: <strong>' + diff + '</strong> day' + (diff === 1 ? '' : 's') +
-    ' <span style="font-weight:500;color:var(--gray-text)">(from the nearest parsed date in your list — confirm on the official notification.)</span>';
+    '<span class="countdown-note">Based on the nearest readable date in your list — always confirm on the official site.</span>';
+}
+
+function updateTrendingBtnText() {
+  var el = document.getElementById('trending-dd-btn-text');
+  if (!el) return;
+  var n = trendingFilterIds.length;
+  if (n === 0) el.textContent = 'Select trending tags…';
+  else if (n === 1) el.textContent = '1 trending tag selected';
+  else el.textContent = n + ' trending tags selected';
+}
+
+function closeTrendingDropdown() {
+  var w = document.getElementById('trending-dd-wrap');
+  var b = document.getElementById('trending-dd-btn');
+  if (w) w.classList.remove('trending-dd-open');
+  if (b) b.setAttribute('aria-expanded', 'false');
+}
+
+function toggleTrendingDropdown(ev) {
+  if (ev) ev.stopPropagation();
+  var w = document.getElementById('trending-dd-wrap');
+  var btn = document.getElementById('trending-dd-btn');
+  if (!w || !btn) return;
+  var open = w.classList.toggle('trending-dd-open');
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+
+function resetTrendingFilters(ev) {
+  if (ev) ev.stopPropagation();
+  trendingFilterIds = [];
+  syncTrendingCheckboxDom();
+  updateTrendingBtnText();
+  renderCareerButtons();
+  closeTrendingDropdown();
+}
+
+function syncTrendingCheckboxDom() {
+  document.querySelectorAll('.trend-filter-cb').forEach(function(cb) {
+    var id = cb.getAttribute('data-career-id');
+    cb.checked = id && trendingFilterIds.indexOf(id) >= 0;
+  });
+}
+
+function onTrendingFilterCheckboxChange() {
+  trendingFilterIds = [];
+  document.querySelectorAll('.trend-filter-cb:checked').forEach(function(cb) {
+    var id = cb.getAttribute('data-career-id');
+    if (id) trendingFilterIds.push(id);
+  });
+  updateTrendingBtnText();
+  renderCareerButtons();
 }
 
 function renderTrendingChips() {
   var wrap = document.getElementById('trending-wrap');
-  var row = document.getElementById('trending-chips');
-  if (!wrap || !row) return;
+  var list = document.getElementById('trending-dd-list');
+  if (!wrap || !list) return;
   if (!PehchaanExamDB.careers || !PehchaanExamDB.careers.length) {
     wrap.style.display = 'none';
     return;
@@ -856,19 +1123,24 @@ function renderTrendingChips() {
     return;
   }
   wrap.style.display = 'block';
-  row.innerHTML = trending.map(function(c) {
+  list.innerHTML = trending.map(function(c) {
     var tag = '#' + String(c.id).replace(/[^a-z0-9]/gi, '').toUpperCase();
-    return '<button type="button" class="trend-chip" data-search="' + escapeHtml(c.label) + '">' + escapeHtml(tag) + '</button>';
+    var checked = trendingFilterIds.indexOf(c.id) >= 0 ? ' checked' : '';
+    return '<label class="trending-dd-item">' +
+      '<input type="checkbox" class="trend-filter-cb" data-career-id="' + escapeHtml(c.id) + '"' + checked + ' onchange="onTrendingFilterCheckboxChange()">' +
+      '<span><span class="trend-hash">' + escapeHtml(tag) + '</span>' + escapeHtml(c.label) + '</span></label>';
   }).join('');
-  row.querySelectorAll('.trend-chip').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var inp = document.getElementById('career-search');
-      if (inp) inp.value = btn.getAttribute('data-search') || '';
-      filterCareers();
-      if (inp) inp.focus();
-    });
-  });
+  updateTrendingBtnText();
 }
+
+document.addEventListener('click', function(ev) {
+  var w = document.getElementById('trending-dd-wrap');
+  if (w && w.classList.contains('trending-dd-open') && !w.contains(ev.target)) closeTrendingDropdown();
+});
+
+document.addEventListener('keydown', function(ev) {
+  if (ev.key === 'Escape') closeTrendingDropdown();
+});
 
 function readChecklistStore() {
   try {
@@ -935,11 +1207,12 @@ function urgencyClass(status) {
 function buildTimeline(exams) {
   var html = '';
   var order = {done:99, future:10, upcoming:5, soon:2, urgent:1};
-  exams.sort(function(a, b) { return (order[a.status] || 5) - (order[b.status] || 5); });
+  var list = Array.isArray(exams) ? exams.slice() : [];
+  list.sort(function(a, b) { return (order[a.status] || 5) - (order[b.status] || 5); });
 
   var checkSvg = '<svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 6l3 3 5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
-  exams.forEach(function(e) {
+  list.forEach(function(e) {
     var verifiedLabel = formatLastVerifiedBadge(e.last_verified);
     var notifyUrl = (e.official_notification_link || e.official || '').trim();
     var topics = Array.isArray(e.high_weightage_topics) ? e.high_weightage_topics : [];
@@ -994,38 +1267,42 @@ function buildTimeline(exams) {
     html = '<div style="text-align:center;padding:32px 0;color:var(--gray-text);font-size:13px;">No specific exams found for this combination. Scroll down for general career guidance.</div>';
   }
 
-  document.getElementById('exam-timeline').innerHTML = html;
+  var tl = document.getElementById('exam-timeline');
+  if (tl) tl.innerHTML = html;
 }
 
-function buildGuidance(careers, cls) {
-  // Find best matching guidance
-  var primaryCareer = careers[0];
-  var guidanceKey = primaryCareer;
-  if (!PehchaanExamDB.career_guidance[guidanceKey]) {
-    // Try to find a related key
-    var related = {
-      'neetbds':'neet', 'ayush':'neet', 'nursing':'neet', 'pharma':'neet',
-      'arch':'jee', 'gate':'gate', 'biotech':'jee', 'bsc':'jee', 'ds':'jee', 'enviro':'jee',
-      'rbi':'ibps', 'sbi26po':'ibps', 'ibps26clerk':'ibps', 'insurance':'ibps',
-      'ssccom':'ssc', 'rrb':'ssc', 'cgvyapam':'ssc',
-      'cds':'nda', 'pilot':'nda',
-      'cat':'ca', 'bba':'ca', 'supchain':'ca', 'cs':'ca', 'actuarial':'ca',
-      'law':'clat', 'polsci':'upsc', 'social':'upsc', 'mph':'upsc',
-      'ugcnet':'upsc', 'teaching':'upsc', 'psych':'upsc',
-      'cuet':'jee', 'nift':'jee',
-      'hotel':'default', 'digimkt':'default', 'design':'default',
-      'content':'default', 'itifit':'default', 'sports':'default',
-      'fitness':'default', 'event':'default', 'game':'default', 'journal':'default'
-    };
-    guidanceKey = related[primaryCareer] || 'default';
-  }
+var CAREER_GUIDANCE_RELATED = {
+  neetbds: 'neet', ayush: 'neet', nursing: 'neet', pharma: 'neet',
+  arch: 'jee', gate: 'gate', biotech: 'jee', bsc: 'jee', ds: 'jee', enviro: 'jee',
+  rbi: 'ibps', insurance: 'ibps',
+  ssccom: 'ssc', rrb: 'ssc', cgvyapam: 'ssc',
+  cds: 'nda', pilot: 'nda',
+  cat: 'ca', bba: 'ca', supchain: 'ca', cs: 'ca', actuarial: 'ca',
+  law: 'clat', polsci: 'upsc', social: 'upsc', mph: 'upsc',
+  ugcnet: 'upsc', teaching: 'upsc', psych: 'upsc',
+  cuet: 'jee', nift: 'jee',
+  hotel: 'default', digimkt: 'default', design: 'default',
+  content: 'default', iti: 'default', agritech: 'default', sports: 'default',
+  fitness: 'default', event: 'default', game: 'default', journal: 'default'
+};
+
+function resolveGuidanceCareerKey(primaryCareer) {
+  if (primaryCareer == null || primaryCareer === '') return 'default';
+  if (PehchaanExamDB.career_guidance[primaryCareer]) return primaryCareer;
+  return CAREER_GUIDANCE_RELATED[primaryCareer] || 'default';
+}
+
+function buildGuidance(careers) {
+  if (!careers || !careers.length) return;
+  var guidanceKey = resolveGuidanceCareerKey(careers[0]);
   var g = PehchaanExamDB.career_guidance[guidanceKey] || PehchaanExamDB.career_guidance['default'];
+  if (!g) g = getDefaultGuidance();
 
   var html = '';
   html += '<div class="insight-box" style="margin-bottom:16px"><p><strong>Where to start right now:</strong> ' + escapeHtml(g.now) + '</p></div>';
 
   var store = readChecklistStore();
-  g.phases.forEach(function(ph, pi) {
+  (g.phases || []).forEach(function(ph, pi) {
     html += '<div class="guidance-phase">';
     html += '<span class="phase-badge">' + escapeHtml(ph.phase) + '</span>';
     html += '<div class="step-list">';
@@ -1039,47 +1316,57 @@ function buildGuidance(careers, cls) {
     html += '</div></div>';
   });
 
-  document.getElementById('guidance-content').innerHTML = html;
+  var gNode = document.getElementById('guidance-content');
+  if (gNode) gNode.innerHTML = html;
 }
 
 function buildResources(careers) {
-  var primaryCareer = careers[0];
-  var guidanceKey = primaryCareer;
-  var related = {
-    'neetbds':'neet','ayush':'neet','nursing':'neet','pharma':'neet',
-    'arch':'jee','gate':'gate','biotech':'jee','bsc':'jee','ds':'jee','enviro':'jee',
-    'rbi':'ibps','insurance':'ibps',
-    'ssccom':'ssc','rrb':'ssc','cgvyapam':'ssc',
-    'cds':'nda','pilot':'nda',
-    'cat':'ca','bba':'ca','supchain':'ca','cs':'ca','actuarial':'ca',
-    'law':'clat','polsci':'upsc','social':'upsc','mph':'upsc',
-    'ugcnet':'upsc','teaching':'upsc','psych':'upsc',
-    'cuet':'jee','nift':'jee'
-  };
-  if (!PehchaanExamDB.career_guidance[guidanceKey]) guidanceKey = related[primaryCareer] || 'default';
+  if (!careers || !careers.length) return;
+  var guidanceKey = resolveGuidanceCareerKey(careers[0]);
   var g = PehchaanExamDB.career_guidance[guidanceKey] || PehchaanExamDB.career_guidance['default'];
+  if (!g) g = getDefaultGuidance();
 
-  var html = g.resources.map(function(r) {
+  var html = (g.resources || []).map(function(r) {
     return '<div class="resource-item"><div class="resource-name">' + escapeHtml(r.name) + '</div><div class="resource-desc">' + escapeHtml(r.desc) + '</div></div>';
   }).join('');
-  document.getElementById('resources-grid').innerHTML = html;
+  var rg = document.getElementById('resources-grid');
+  if (rg) rg.innerHTML = html;
 }
 
 function restart() {
   selClass = null; selStream = null; selCareers = [];
   firstName = ''; lastName = '';
+  trendingFilterIds = [];
+  selStateFilter = 'all';
+  var sf = document.getElementById('state-filter');
+  if (sf) sf.value = 'all';
+  closeTrendingDropdown();
+  var ps = document.getElementById('print-subline');
+  if (ps) ps.textContent = '';
   document.querySelectorAll('.sel-btn').forEach(function(b){ b.classList.remove('active'); });
-  document.getElementById('step2-card').style.display = 'none';
-  document.getElementById('step3-card').style.display = 'none';
-  document.getElementById('first-name').value = '';
-  document.getElementById('last-name').value = '';
-  document.getElementById('career-search').value = '';
-  document.getElementById('screen-results').classList.add('hidden');
-  document.getElementById('screen-selector').classList.remove('hidden');
+  var s2c = document.getElementById('step2-card');
+  var s3c = document.getElementById('step3-card');
+  if (s2c) s2c.style.display = 'none';
+  if (s3c) s3c.style.display = 'none';
+  var fn = document.getElementById('first-name');
+  var ln = document.getElementById('last-name');
+  var cs = document.getElementById('career-search');
+  if (fn) fn.value = '';
+  if (ln) ln.value = '';
+  if (cs) cs.value = '';
+  var scrRes = document.getElementById('screen-results');
+  var scrSel = document.getElementById('screen-selector');
+  if (scrRes) scrRes.classList.add('hidden');
+  if (scrSel) scrSel.classList.remove('hidden');
+  renderTrendingChips();
+  updateBuildBtn();
   window.scrollTo(0,0);
 }
 
-document.getElementById('guidance-content').addEventListener('change', onGuidanceCheckboxChange);
+(function bindGuidanceChecklistListener() {
+  var gc = document.getElementById('guidance-content');
+  if (gc) gc.addEventListener('change', onGuidanceCheckboxChange);
+})();
 </script>
 </body>
 </html>
