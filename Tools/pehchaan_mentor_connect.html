@@ -168,8 +168,8 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 .home-mentor-prompt p{font-size:13px;color:var(--gray-text);line-height:1.65;margin-bottom:16px;}
 .btn-mentor-home{width:100%;background:var(--teal);color:var(--white);border:none;border-radius:var(--radius);padding:16px 18px;font-size:15px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;transition:filter .15s,transform .15s;}
 .btn-mentor-home:hover{filter:brightness(1.06);transform:translateY(-1px);}
-.btn-mentor-home-secondary{width:100%;margin-top:10px;background:transparent;color:var(--teal-dark);border:1.5px dashed var(--border);border-radius:var(--radius);padding:12px 14px;font-size:13px;font-weight:600;cursor:pointer;font-family:'Poppins',sans-serif;}
-.btn-mentor-home-secondary:hover{background:var(--teal-light);border-color:var(--teal);}
+.btn-mentor-home-secondary{width:100%;margin-top:10px;background:linear-gradient(180deg,var(--amber-light) 0%,#F5E8C8 100%);color:var(--navy);border:1.5px solid #E8B84A;border-radius:var(--radius);padding:13px 16px;font-size:13px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;box-shadow:0 2px 8px rgba(239,159,39,.2);}
+.btn-mentor-home-secondary:hover{background:linear-gradient(180deg,#FFF3D6 0%,var(--amber-light) 100%);border-color:var(--amber);transform:translateY(-1px);}
 details.mentor-tech-details{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:0;margin-bottom:14px;box-shadow:var(--shadow);overflow:hidden;}
 details.mentor-tech-details > summary{list-style:none;cursor:pointer;padding:16px 18px;font-size:12px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.06em;}
 details.mentor-tech-details > summary::-webkit-details-marker{display:none;}
@@ -294,11 +294,11 @@ details.mentor-tech-details .mentor-tech-inner{padding:0 18px 18px;}
     <h2>Are you a professional who wants to help students?</h2>
     <p>Tap the button below, fill one short form, and your profile is saved to our Google Sheet. When a student searches with details that match yours, you can appear in their results—alongside LinkedIn search tools on this page.</p>
     <button type="button" class="btn-mentor-home" onclick="openMentorRegistration()">Add my mentor profile →</button>
-    <button type="button" class="btn-mentor-home-secondary" onclick="scrollToStudentSearch()">I’m a student — jump to search ↓</button>
+    <button type="button" class="btn-mentor-home-secondary" onclick="scrollToStudentSearch()">I’m a student — jump to optional setup ↓</button>
   </div>
 
   <!-- SERPER API SETUP — dead simple, one field -->
-  <div class="card setup-card-accent">
+  <div class="card setup-card-accent" id="optional-serper-card">
     <h3>⚡ Optional — stronger profile suggestions (~2 minutes)</h3>
     <div class="setup-highlight">
       <div class="setup-title">How to get your free API key (2,500 free searches/month):</div>
@@ -482,6 +482,18 @@ details.mentor-tech-details .mentor-tech-inner{padding:0 18px 18px;}
             <input type="text" id="m-tags" maxlength="300" placeholder="Comma-separated, e.g. Chhattisgarh, banking, mentorship">
           </div>
         </div>
+        <div class="disclaimer-box" style="margin-bottom:14px;">
+          <h4>Important — please read</h4>
+          <p style="font-size:12px;color:var(--gray-text);line-height:1.75;margin-bottom:10px;">By submitting this form, you agree that the information you provide may be <strong>shown to students</strong> who use Mentor Connect (for example in search results, journey summaries, and suggested outreach drafts). It is <strong>not</strong> a job offer, endorsement, or contract with Pehchaan Careers.</p>
+          <p style="font-size:12px;color:var(--gray-text);line-height:1.75;margin-bottom:10px;">You are responsible for the accuracy of what you submit. Students may contact you via LinkedIn or other channels you list. Pehchaan does not verify employment or claims; always treat outreach as unverified until you confirm identity yourself.</p>
+          <p style="font-size:12px;color:var(--gray-text);line-height:1.75;margin:0;">We may store your row in a Google Sheet managed for this tool. Do not submit sensitive data you are not comfortable sharing in an educational context.</p>
+        </div>
+        <div class="form-group" style="margin-bottom:14px;">
+          <label style="display:flex;gap:12px;align-items:flex-start;cursor:pointer;font-size:12px;font-weight:500;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.6;">
+            <input type="checkbox" id="m-consent" required style="width:20px;height:20px;min-width:20px;margin-top:2px;accent-color:var(--teal);flex-shrink:0;">
+            <span>I understand my information may be displayed to students as described above, and I agree to these terms by submitting my profile.</span>
+          </label>
+        </div>
         <p id="mentor-submit-error" class="error-box" style="display:none;padding:10px 12px;margin-bottom:10px;"><span id="mentor-submit-error-text" style="font-size:12px;"></span></p>
         <button type="submit" class="btn-search" id="btn-mentor-submit">Submit my mentor profile</button>
         <button type="button" class="btn-ghost" onclick="showScreen('screen-search');resetMentorForm();">← Back to search</button>
@@ -574,8 +586,21 @@ function deriveInitialsFromName(name) {
     .join('');
 }
 
+function parseMentorJsonResponse_(text) {
+  var t = String(text || '').trim();
+  t = t.replace(/^\)\]\}'\s*/, '').replace(/^while\s*\(1\);\s*/i, '').trim();
+  if (!t) return null;
+  try {
+    return JSON.parse(t);
+  } catch (e) {
+    return null;
+  }
+}
+
 function normalizeMentorList(data) {
-  if (!data) return [];
+  if (data == null) return [];
+  if (typeof data === 'string') data = parseMentorJsonResponse_(data);
+  if (!data || typeof data !== 'object') return [];
   if (data.error) return [];
   var arr = Array.isArray(data) ? data : (data.mentors && Array.isArray(data.mentors) ? data.mentors : []);
   return arr.map(normalizeMentorRow).filter(Boolean);
@@ -583,7 +608,7 @@ function normalizeMentorList(data) {
 
 function normalizeMentorRow(m) {
   if (!m || typeof m !== 'object') return null;
-  var name = String(m.name || '').trim();
+  var name = String(m.name || m.fullName || m['Full name'] || m['Full Name'] || '').trim();
   if (!name) return null;
   var jp = m.journeyPath;
   if (typeof jp === 'string') jp = jp.split(',').map(function (s) { return s.trim(); }).filter(Boolean);
@@ -641,7 +666,9 @@ async function syncMentorDatabase() {
   try {
     var res = await fetch(url, { method: 'GET', cache: 'no-store' });
     if (!res.ok) throw new Error('HTTP ' + res.status);
-    var data = await res.json();
+    var rawText = await res.text();
+    var data = parseMentorJsonResponse_(rawText);
+    if (data == null) throw new Error('Response was not valid JSON');
     if (data && data.error) throw new Error(String(data.error));
     MENTOR_DB = normalizeMentorList(data);
     mentorDbLoadFailed = false;
@@ -698,7 +725,7 @@ function leaveMentorFormSuccess() {
 
 function scrollToStudentSearch() {
   showScreen('screen-search');
-  var el = document.getElementById('student-search-card');
+  var el = document.getElementById('optional-serper-card');
   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
@@ -709,6 +736,11 @@ function openMentorRegistration() {
 
 async function submitMentor(ev) {
   ev.preventDefault();
+  var consent = document.getElementById('m-consent');
+  if (!consent || !consent.checked) {
+    alert('Please tick the box to confirm you agree that your profile may be shown to students.');
+    return;
+  }
   var url = getMentorWebAppUrl();
   if (!url) {
     alert('The mentor form needs a Web App URL. Ask your site admin, or open “Technical — mentor Sheet URL” on the main page and paste the Apps Script /exec link (or set MENTOR_WEB_APP_URL in this file).');
