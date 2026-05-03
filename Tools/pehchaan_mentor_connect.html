@@ -162,6 +162,21 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 .btn-ghost{width:100%;border:1.5px solid var(--teal-dark);background:var(--white);border-radius:var(--radius);padding:12px;font-size:13px;font-weight:700;cursor:pointer;color:var(--teal-dark);font-family:'Poppins',sans-serif;margin-top:8px;}
 .btn-ghost:hover{background:var(--teal-light);}
 
+/* Home — obvious mentor signup */
+.home-mentor-prompt{background:var(--white);border:2px solid var(--teal);border-radius:20px;padding:22px 20px;margin-bottom:16px;box-shadow:var(--shadow);}
+.home-mentor-prompt h2{font-size:17px;font-weight:800;color:var(--teal-dark);margin-bottom:10px;line-height:1.3;}
+.home-mentor-prompt p{font-size:13px;color:var(--gray-text);line-height:1.65;margin-bottom:16px;}
+.btn-mentor-home{width:100%;background:var(--teal);color:var(--white);border:none;border-radius:var(--radius);padding:16px 18px;font-size:15px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;transition:filter .15s,transform .15s;}
+.btn-mentor-home:hover{filter:brightness(1.06);transform:translateY(-1px);}
+.btn-mentor-home-secondary{width:100%;margin-top:10px;background:transparent;color:var(--teal-dark);border:1.5px dashed var(--border);border-radius:var(--radius);padding:12px 14px;font-size:13px;font-weight:600;cursor:pointer;font-family:'Poppins',sans-serif;}
+.btn-mentor-home-secondary:hover{background:var(--teal-light);border-color:var(--teal);}
+details.mentor-tech-details{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:0;margin-bottom:14px;box-shadow:var(--shadow);overflow:hidden;}
+details.mentor-tech-details > summary{list-style:none;cursor:pointer;padding:16px 18px;font-size:12px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.06em;}
+details.mentor-tech-details > summary::-webkit-details-marker{display:none;}
+details.mentor-tech-details > summary::after{content:'▾';float:right;opacity:.6;}
+details.mentor-tech-details[open] > summary::after{transform:rotate(180deg);display:inline-block;}
+details.mentor-tech-details .mentor-tech-inner{padding:0 18px 18px;}
+
 /* NO RESULTS */
 .no-results{text-align:center;padding:32px 20px;}
 .no-results-icon{font-size:36px;margin-bottom:12px;}
@@ -275,6 +290,13 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
     </div>
   </div>
 
+  <div class="home-mentor-prompt">
+    <h2>Are you a professional who wants to help students?</h2>
+    <p>Tap the button below, fill one short form, and your profile is saved to our Google Sheet. When a student searches with details that match yours, you can appear in their results—alongside LinkedIn search tools on this page.</p>
+    <button type="button" class="btn-mentor-home" onclick="openMentorRegistration()">Add my mentor profile →</button>
+    <button type="button" class="btn-mentor-home-secondary" onclick="scrollToStudentSearch()">I’m a student — jump to search ↓</button>
+  </div>
+
   <!-- SERPER API SETUP — dead simple, one field -->
   <div class="card setup-card-accent">
     <h3>⚡ Optional — stronger profile suggestions (~2 minutes)</h3>
@@ -298,21 +320,23 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
     <div class="setup-footnote">No API key? The tool still works — it will show Smart LinkedIn Search links that open LinkedIn with your filters pre-filled.</div>
   </div>
 
-  <div class="card">
-    <h3>Pehchaan mentor list (Google Sheet)</h3>
-    <p class="form-hint" style="margin-bottom:10px;">Volunteer mentors load from a Google Apps Script Web App. Paste your deployed URL here (saved in this browser) or set <code>MENTOR_WEB_APP_URL</code> in the page script for a default. See <strong>Tools/mentor_connect_google_apps_script.gs</strong> for the backend.</p>
-    <div class="form-group">
-      <label>Apps Script Web App URL</label>
-      <input type="url" id="mentor-web-app-url" placeholder="https://script.google.com/macros/s/…/exec" autocomplete="off">
+  <details class="mentor-tech-details">
+    <summary>Technical — mentor Sheet URL (optional)</summary>
+    <div class="mentor-tech-inner">
+      <p class="form-hint" style="margin-bottom:10px;">Only needed if you host a copy of this page without the default URL in code. Otherwise you can ignore this.</p>
+      <div class="form-group">
+        <label>Apps Script Web App URL</label>
+        <input type="url" id="mentor-web-app-url" placeholder="https://script.google.com/macros/s/…/exec" autocomplete="off">
+      </div>
+      <div class="setup-actions">
+        <button type="button" class="btn-save-key" onclick="saveMentorWebAppUrl()">Save mentor URL</button>
+        <span id="mentor-url-saved-msg" class="api-saved-msg">✓ Saved — refreshing list</span>
+      </div>
     </div>
-    <div class="setup-actions">
-      <button type="button" class="btn-save-key" onclick="saveMentorWebAppUrl()">Save mentor URL</button>
-      <span id="mentor-url-saved-msg" class="api-saved-msg">✓ Saved — refreshing list</span>
-    </div>
-  </div>
+  </details>
 
   <!-- MAIN SEARCH FORM -->
-  <div class="card">
+  <div class="card" id="student-search-card">
     <h3>🔍 Tell us what you are dreaming toward</h3>
     <div class="form-row">
       <div class="form-group">
@@ -376,7 +400,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
   <div class="hero-card">
     <div class="hero-tag">Become a Pehchaan Mentor</div>
     <h1>Share <span>Your Journey</span></h1>
-    <p>Students search for someone from their place who made it. Submit your path once — it is stored in your Google Sheet and can surface when a student’s filters match your story.</p>
+    <p>Fill this form once. Your answers are saved to our mentor Google Sheet. When a student runs a search that matches your city, state, company, college, or tags, you can show up in their results.</p>
   </div>
   <div class="card">
     <div id="mentor-form-intro">
@@ -672,6 +696,12 @@ function leaveMentorFormSuccess() {
   showScreen('screen-search');
 }
 
+function scrollToStudentSearch() {
+  showScreen('screen-search');
+  var el = document.getElementById('student-search-card');
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 function openMentorRegistration() {
   resetMentorForm();
   showScreen('screen-mentor-form');
@@ -681,7 +711,7 @@ async function submitMentor(ev) {
   ev.preventDefault();
   var url = getMentorWebAppUrl();
   if (!url) {
-    alert('Set the Apps Script Web App URL first (save it in the “Pehchaan mentor list” section or set MENTOR_WEB_APP_URL in this file).');
+    alert('The mentor form needs a Web App URL. Ask your site admin, or open “Technical — mentor Sheet URL” on the main page and paste the Apps Script /exec link (or set MENTOR_WEB_APP_URL in this file).');
     return;
   }
   var errP = document.getElementById('mentor-submit-error');
