@@ -125,7 +125,7 @@ function main() {
     try {
       arr = JSON.parse(raw);
     } catch {
-      console.warn("Skip non-array JSON:", f);
+      console.warn("Skip non-array JSON:", filePath);
       continue;
     }
     if (!Array.isArray(arr)) continue;

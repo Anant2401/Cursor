@@ -100,24 +100,22 @@
   .sec-info-sub { font-size: 11px; color: var(--gray-text); margin-top: 2px; line-height: 1.4; }
   .sec-count { font-size: 11px; color: var(--teal-dark); background: var(--teal-light); padding: 3px 10px; border-radius: 20px; font-weight: 600; }
 
-  /* NAME SCREEN */
-  .name-hero { background: var(--teal-dark); border-radius: 22px; padding: 30px 28px; color: var(--white); margin-bottom: 16px; position: relative; overflow: hidden; }
-  .name-hero::before { content: ''; position: absolute; top: -40px; right: -40px; width: 160px; height: 160px; background: rgba(255,255,255,.05); border-radius: 50%; }
-  .name-hero::after { content: ''; position: absolute; bottom: -20px; left: 30px; width: 90px; height: 90px; background: rgba(239,159,39,.1); border-radius: 50%; }
-  .name-hero-emoji { font-size: 36px; margin-bottom: 12px; }
-  .name-hero h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
-  .name-hero h2 span { color: var(--amber); }
-  .name-hero p { font-size: 13px; opacity: .85; line-height: 1.7; }
-  .name-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 28px 28px; box-shadow: var(--shadow); }
-  .name-card .name-intro { font-size: 13px; color: var(--gray-text); line-height: 1.7; margin-bottom: 22px; }
-  .name-card .name-intro strong { color: var(--teal-dark); }
-  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 20px; }
-  .form-group { display: flex; flex-direction: column; gap: 6px; }
-  .form-group label { font-size: 12px; font-weight: 600; color: var(--teal-dark); text-transform: uppercase; letter-spacing: .05em; }
-  .form-group input { border: 1.5px solid var(--border); border-radius: 10px; padding: 13px 14px; font-size: 14px; font-family: 'Poppins', sans-serif; color: var(--text); background: var(--white); outline: none; transition: border-color .2s, box-shadow .2s; }
-  .form-group input:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(29,158,117,.12); }
-  .form-group input::placeholder { color: #b0c4bb; }
-  .name-error { font-size: 12px; color: var(--red); background: var(--red-light); border: 1px solid #F5A5A4; border-radius: 8px; padding: 8px 12px; margin-bottom: 14px; display: none; }
+  /* NAME SCREEN — frosted name block inside teal hero (same pattern as Exam Roadmap, Stream Advisor, Mentor Connect) */
+  .hero-card .name-welcome-emoji { font-size: 34px; margin-bottom: 10px; line-height: 1; }
+  .hero-card h2.name-screen-title { font-size: 22px; font-weight: 700; margin-bottom: 8px; line-height: 1.25; }
+  .hero-card h2.name-screen-title span { color: var(--amber); }
+  .hero-card .name-screen-lead { font-size: 13px; opacity: .85; line-height: 1.7; margin-bottom: 18px; }
+  .hero-card .name-screen-lead strong { color: var(--amber); font-weight: 700; }
+  .hero-card .name-card { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2); border-radius: 14px; padding: 16px 18px; margin-bottom: 14px; box-shadow: none; }
+  .hero-card .name-card .name-card-lead { font-size: 13px; font-weight: 600; display: block; margin-bottom: 12px; line-height: 1.45; }
+  .name-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .name-field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .name-field-label { font-size: 11px; font-weight: 600; opacity: .88; letter-spacing: .02em; }
+  .name-field-label .name-optional { font-weight: 500; opacity: .72; }
+  .name-input { width: 100%; padding: 11px 12px; border-radius: 10px; border: 1.5px solid rgba(255,255,255,.25); background: rgba(255,255,255,.12); color: var(--white); font-family: 'Poppins', sans-serif; font-size: 13px; outline: none; transition: border-color .2s; }
+  .name-input:focus { border-color: var(--amber); }
+  .name-input::placeholder { color: rgba(255,255,255,.5); }
+  .hero-card .name-error { font-size: 12px; color: var(--red); background: rgba(252, 235, 235, 0.96); border: 1px solid #F5A5A4; border-radius: 8px; padding: 8px 12px; margin-bottom: 14px; display: none; }
   .btn-continue { width: 100%; background: var(--amber); color: var(--teal-dark); border: none; border-radius: var(--radius); padding: 15px; font-size: 15px; font-weight: 700; cursor: pointer; font-family: 'Poppins', sans-serif; transition: transform .15s, box-shadow .15s; }
   .btn-continue:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(239,159,39,.4); }
 
@@ -253,7 +251,7 @@
   .brand-tagline { font-size: 13px; font-weight: 600; color: var(--teal); margin-top: 4px; }
 
   @media (max-width: 480px) {
-    .form-row { grid-template-columns: 1fr; }
+    .name-grid { grid-template-columns: 1fr; }
     .hero-card h1 { font-size: 22px; }
     .student-name { font-size: 24px; }
     .incline-name { min-width: 90px; }
@@ -297,6 +295,16 @@
       <div class="sec-item"><div class="sec-emoji" style="background:#FAEEDA">📊</div><div class="sec-info"><div class="sec-info-name" style="color:#7A4A00">Organisation and Systems</div><div class="sec-info-sub">Records, numbers, planning and following processes</div></div><div class="sec-count">7 Qs</div></div>
       <div class="sec-item"><div class="sec-emoji" style="background:#E1F5EE">📚</div><div class="sec-info"><div class="sec-info-name" style="color:#085041">Subject Interests</div><div class="sec-info-sub">Which school subjects you genuinely enjoy or excel at</div></div><div class="sec-count">7 Qs</div></div>
     </div>
+
+    <div class="disclaimer-box">
+      <h4>Important — please read</h4>
+      <p>This page offers exploratory guidance only — not a formal psychometric report or a substitute for qualified counselling. Use your result as a conversation starter with people you trust. Pehchaan Careers is not liable for decisions based on this tool.</p>
+    </div>
+    <div class="brand-footer">
+      <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
+      <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
+      hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+    </div>
   </div>
 
   <!-- ===== NAME SCREEN ===== -->
@@ -310,25 +318,36 @@
       <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your identity. Your path.</div></div>
       </a>
     </div>
-    <div class="name-hero">
-      <div class="name-hero-emoji">👋</div>
-      <h2>Welcome! Let's find your <span>Pehchaan</span></h2>
-      <p>Your career profile will be created just for you — with your name on it. At the end of this test, you will receive a personalised report that shows exactly where your strengths lie and which paths are built for someone very special like you.</p>
-    </div>
-    <div class="name-card">
-      <p class="name-intro">Enter your name below so your results are personal to <strong>you</strong>. For example, if your name is <strong>Anant Tripathi</strong>, your profile will be addressed directly to Anant — making it yours and no one else's.</p>
-      <div class="form-row">
-        <div class="form-group">
-          <label>First Name</label>
-          <input type="text" id="input-firstname" placeholder="e.g. Anant" maxlength="40" autocomplete="off"/>
-        </div>
-        <div class="form-group">
-          <label>Last Name</label>
-          <input type="text" id="input-lastname" placeholder="e.g. Tripathi" maxlength="40" autocomplete="off"/>
+    <div class="hero-card">
+      <div class="hero-tag">Career Assessment</div>
+      <div class="name-welcome-emoji" aria-hidden="true">👋</div>
+      <h2 class="name-screen-title">Welcome! Let's find your <span>Pehchaan</span></h2>
+      <p class="name-screen-lead">Your career profile will be created just for you. At the end of this test you will get a personalised report — we use your first name in the tips (for example <strong>Anant</strong> from <strong>Anant Tripathi</strong>).</p>
+      <div class="name-card">
+        <span class="name-card-lead">What is your name? (So your assessment feels personal)</span>
+        <div class="name-grid">
+          <div class="name-field">
+            <span class="name-field-label">First Name</span>
+            <input type="text" class="name-input" id="input-firstname" placeholder="Anant" maxlength="40" autocomplete="given-name"/>
+          </div>
+          <div class="name-field">
+            <span class="name-field-label">Last Name <span class="name-optional">(optional)</span></span>
+            <input type="text" class="name-input" id="input-lastname" placeholder="Tripathi" maxlength="40" autocomplete="family-name"/>
+          </div>
         </div>
       </div>
-      <div class="name-error" id="name-error">Please enter both your first name and last name to continue.</div>
+      <div class="name-error" id="name-error">Add your first name — we use it to personalise your report.</div>
       <button class="btn-continue" id="btn-continue">Start My Assessment →</button>
+    </div>
+
+    <div class="disclaimer-box">
+      <h4>Important — please read</h4>
+      <p>This page offers exploratory guidance only — not a formal psychometric report or a substitute for qualified counselling. Use your result as a conversation starter with people you trust. Pehchaan Careers is not liable for decisions based on this tool.</p>
+    </div>
+    <div class="brand-footer">
+      <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
+      <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
+      hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
     </div>
   </div>
 
@@ -350,11 +369,21 @@
     </div>
     <div class="sec-curiosity" id="sec-curiosity"></div>
     <div class="q-list" id="q-list"></div>
-    <div class="warn-box" id="warn-box">Please answer all questions in this section before moving forward.</div>
+    <div class="warn-box" id="warn-box">Give each question an answer — then hit Next when this section feels complete.</div>
     <div class="nav-row">
       <button class="btn-back" id="btn-back">← Back</button>
       <span class="nav-mid" id="nav-mid"></span>
       <button class="btn-next" id="btn-next">Next →</button>
+    </div>
+
+    <div class="disclaimer-box">
+      <h4>Important — please read</h4>
+      <p>This page offers exploratory guidance only — not a formal psychometric report or a substitute for qualified counselling. Use your result as a conversation starter with people you trust. Pehchaan Careers is not liable for decisions based on this tool.</p>
+    </div>
+    <div class="brand-footer">
+      <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
+      <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
+      hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
     </div>
   </div>
 
@@ -450,7 +479,7 @@
     </div>
 
     <div class="disclaimer-box">
-      <h4>⚠️ Important — Please Read</h4>
+      <h4>Important — please read</h4>
       <p>This assessment is a <strong>starting point for self-discovery</strong> — not a definitive verdict on your future. It is based on your responses to 49 questions on a single day and reflects your current interests and tendencies. Career decisions are complex and personal, and they are best made after <strong>discussing your results with your parents, teachers, school counsellors and career professionals</strong> who know you well. Pehchaan Careers strongly recommends using this report as a conversation starter — not a final decision. Your path is yours to choose.</p>
     </div>
 
@@ -459,7 +488,7 @@
     </div>
     <div class="brand-footer">
       <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
-      <p>This assessment is brought to you by <strong>Pehchaan Careers</strong><br>
+      <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
       hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
     </div>
   </div>
@@ -722,11 +751,14 @@ document.getElementById('btn-begin').addEventListener('click', function(){ showS
 document.getElementById('btn-continue').addEventListener('click', function(){
   var fn = document.getElementById('input-firstname').value.trim();
   var ln = document.getElementById('input-lastname').value.trim();
-  if (!fn || !ln) { document.getElementById('name-error').style.display='block'; return; }
+  if (!fn) { document.getElementById('name-error').style.display='block'; return; }
   document.getElementById('name-error').style.display='none';
   studentFirstName = fn; studentLastName = ln;
   showScreen('screen-quiz');
   renderQuiz(0);
+});
+document.getElementById('input-firstname').addEventListener('keydown', function(e){
+  if (e.key==='Enter') document.getElementById('btn-continue').click();
 });
 document.getElementById('input-lastname').addEventListener('keydown', function(e){
   if (e.key==='Enter') document.getElementById('btn-continue').click();
@@ -847,7 +879,8 @@ function buildResults() {
 
   // Header
   document.getElementById('res-congrats').textContent = CONGRATS[topId];
-  document.getElementById('res-name').textContent = studentFirstName+' '+studentLastName+'!';
+  var displayFull = (studentFirstName + (studentLastName ? ' ' + studentLastName : '')).trim();
+  document.getElementById('res-name').textContent = displayFull + '!';
   document.getElementById('res-hero-sub').textContent = 'You are most naturally drawn to '+SECTIONS.find(function(s){return s.id===topId;}).name+', '+SECTIONS.find(function(s){return s.id===sorted[1].id;}).name+' and '+SECTIONS.find(function(s){return s.id===sorted[2].id;}).name+'. Here is what that means for your future.';
   document.getElementById('profile-code').textContent = 'Your Profile: '+top3.join(' – ');
 

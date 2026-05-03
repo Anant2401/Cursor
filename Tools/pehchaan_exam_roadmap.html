@@ -48,8 +48,14 @@
   .hero-stat .v{font-size:22px;font-weight:700;color:var(--amber);}
   .hero-stat .l{font-size:11px;opacity:.75;margin-top:2px;}
   .name-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:16px 18px;margin-top:16px;}
-  .name-card label{font-size:13px;font-weight:600;display:block;margin-bottom:10px;}
-  .name-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .name-card .name-card-lead{font-size:13px;font-weight:600;display:block;margin-bottom:12px;line-height:1.45;}
+  .name-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .name-field{display:flex;flex-direction:column;gap:6px;min-width:0;}
+  .name-field-label{font-size:11px;font-weight:600;opacity:.88;letter-spacing:.02em;}
+  .name-field-label .name-optional{font-weight:500;opacity:.72;}
+  .name-hint{font-size:12px;line-height:1.55;margin-top:12px;padding:10px 12px;border-radius:10px;font-weight:500;}
+  .name-hint.is-pending{background:rgba(239,159,39,.2);border:1px solid rgba(239,159,39,.5);color:rgba(255,255,255,.96);}
+  .name-hint.is-ok{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.9);}
   .name-input{width:100%;padding:11px 12px;border-radius:10px;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);color:var(--white);font-family:'Poppins',sans-serif;font-size:13px;outline:none;transition:border-color .2s;}
   .name-input:focus{border-color:var(--amber);}
   .name-input::placeholder{color:rgba(255,255,255,.5);}
@@ -374,11 +380,18 @@
       <div class="hero-stat"><div class="v" id="hero-stat-updated">—</div><div class="l">Data Refreshed</div></div>
     </div>
     <div class="name-card">
-      <label>What is your name? (So your roadmap feels personal)</label>
+      <span class="name-card-lead">What is your name? (So your roadmap feels personal)</span>
       <div class="name-grid">
-        <input class="name-input" id="first-name" type="text" placeholder="First Name" oninput="handleNameInput()">
-        <input class="name-input" id="last-name" type="text" placeholder="Last Name" oninput="handleNameInput()">
+        <div class="name-field">
+          <span class="name-field-label">First Name</span>
+          <input class="name-input" id="first-name" type="text" placeholder="Anant" autocomplete="given-name" oninput="handleNameInput()">
+        </div>
+        <div class="name-field">
+          <span class="name-field-label">Last Name <span class="name-optional">(optional)</span></span>
+          <input class="name-input" id="last-name" type="text" placeholder="Tripathi" autocomplete="family-name" oninput="handleNameInput()">
+        </div>
       </div>
+      <p class="name-hint is-pending" id="name-hint" role="status">Add your first name — we use it on your roadmap title and in the tips we write for you.</p>
     </div>
   </div>
 
@@ -435,6 +448,16 @@
     <div style="font-size:11px;color:var(--gray-text);margin-top:8px;" id="career-count-label">Select up to 3 careers</div>
     <button class="btn-build" id="btn-build" onclick="buildRoadmap()" disabled>Build My Roadmap →</button>
   </div>
+
+  <div class="disclaimer-box">
+    <h4>Important — please read</h4>
+    <p>This tool offers general planning guidance — not official exam advice. Always confirm dates and eligibility on government and exam websites. Pehchaan Careers is not liable for decisions based on this page.</p>
+  </div>
+  <div class="brand-footer">
+    <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
+    <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
+    hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+  </div>
 </div>
 
 <!-- SCREEN 2: RESULTS -->
@@ -486,7 +509,7 @@
   </div>
 
   <div class="disclaimer-box">
-    <h4>⚠️ Important — Please Read</h4>
+    <h4>Important — please read</h4>
     <p>Exam dates shown are based on official announcements and historical patterns as of May 2026. Dates for 2027 exams are <strong>expected/tentative</strong> based on past trends — always confirm on official exam websites before registering. Pehchaan Careers does not guarantee the accuracy of future exam schedules. This roadmap is a starting point for planning — not a substitute for official notifications from UPSC, NTA, IBPS, SSC, or other exam bodies.</p>
   </div>
 
@@ -516,7 +539,7 @@ var trendingFilterIds = [];
 var selStateFilter = 'all';
 
 // ─────────────────────────────────────────────
-// GLOBAL DATA (loaded from ../ExamDB/pehchaan_exam_data.json)
+// GLOBAL DATA (loaded from DB/pehchaan_exam_data.json — see getExamDataJsonCandidates)
 // ─────────────────────────────────────────────
 var PehchaanExamDB = {
   career_fit_summaries: {},
@@ -526,14 +549,25 @@ var PehchaanExamDB = {
   meta: {}
 };
 
-/** Resolved URL for the exam JSON (Tools/ → ../ExamDB/). */
-var EXAM_DATA_JSON_URL = (function () {
-  try {
-    return new URL('../ExamDB/pehchaan_exam_data.json', window.location.href).href;
-  } catch (e) {
-    return '../ExamDB/pehchaan_exam_data.json';
+/** Ordered list of JSON URLs to try (DB folder, then site-root /DB/). */
+function getExamDataJsonCandidates() {
+  var seen = {};
+  var out = [];
+  function add(u) {
+    if (!u || typeof u !== 'string') return;
+    if (seen[u]) return;
+    seen[u] = true;
+    out.push(u);
   }
-})();
+  try {
+    add(new URL('../DB/pehchaan_exam_data.json', window.location.href).href);
+  } catch (e0) {}
+  add('../DB/pehchaan_exam_data.json');
+  try {
+    add(new URL('/DB/pehchaan_exam_data.json', window.location.origin).href);
+  } catch (e2) {}
+  return out;
+}
 
 function findCareerById(id) {
   for (var i = 0; i < PehchaanExamDB.careers.length; i++) {
@@ -644,9 +678,30 @@ async function loadPehchaanExamData() {
   document.body.classList.add('app-not-ready');
   document.body.classList.remove('app-ready');
   try {
-    var res = await fetch(EXAM_DATA_JSON_URL, { cache: 'no-store' });
-    if (!res.ok) throw new Error('Could not load data (HTTP ' + res.status + ').');
-    var data = await res.json();
+    var candidates = getExamDataJsonCandidates();
+    var data = null;
+    var lastDetail = '';
+    for (var ci = 0; ci < candidates.length; ci++) {
+      try {
+        var res = await fetch(candidates[ci], { cache: 'no-store' });
+        if (!res.ok) {
+          lastDetail = candidates[ci] + ' → HTTP ' + res.status;
+          continue;
+        }
+        data = await res.json();
+        lastDetail = '';
+        break;
+      } catch (errOne) {
+        lastDetail = candidates[ci] + ': ' + ((errOne && errOne.message) ? errOne.message : String(errOne));
+      }
+    }
+    if (!data) {
+      throw new Error(
+        'Could not load pehchaan_exam_data.json from any known location.' +
+          (lastDetail ? ' Last attempt: ' + lastDetail : '') +
+          ' Open the tool at /Tools/pehchaan_exam_roadmap.html (capital T) and ensure DB/pehchaan_exam_data.json is deployed.'
+      );
+    }
     var err = validateExamPayload(data);
     if (err) throw new Error(err);
     assignParsedPayload(data);
@@ -814,17 +869,29 @@ function toggleCareer(btn) {
   updateBuildBtn();
 }
 
+function updateNameHint() {
+  var el = document.getElementById('name-hint');
+  if (!el) return;
+  if (firstName) {
+    el.className = 'name-hint is-ok';
+    el.textContent = 'Nice — we will personalise your roadmap with ' + firstName + '.';
+  } else {
+    el.className = 'name-hint is-pending';
+    el.textContent = 'Add your first name — we use it on your roadmap title and in the tips we write for you.';
+  }
+}
+
 function updateBuildBtn() {
   var btn = document.getElementById('btn-build');
   var lbl = document.getElementById('career-count-label');
   if (!btn || !lbl) return;
-  var hasFullName = firstName && lastName;
-  if (!hasFullName) {
+  var hasFirstName = !!firstName;
+  if (!hasFirstName) {
     btn.disabled = true;
-    lbl.textContent = 'Please enter your first and last name to continue';
+    lbl.textContent = 'Add your first name — we use it on your roadmap.';
   } else if (selCareers.length === 0) {
     btn.disabled = true;
-    lbl.textContent = 'Select at least 1 career to build your roadmap';
+    lbl.textContent = 'Pick at least one career to unlock Build My Roadmap';
   } else {
     btn.disabled = false;
     var names = selCareers.map(function(id) {
@@ -833,13 +900,14 @@ function updateBuildBtn() {
     }).join(', ');
     lbl.textContent = 'Selected: ' + names;
   }
+  updateNameHint();
 }
 
 // ─────────────────────────────────────────────
 // BUILD ROADMAP
 // ─────────────────────────────────────────────
 function buildRoadmap() {
-  if (selCareers.length === 0 || !firstName || !lastName) return;
+  if (selCareers.length === 0 || !firstName) return;
   var resTitle = document.getElementById('res-title');
   var resSub = document.getElementById('res-sub');
   var resInsight = document.getElementById('res-insight');
@@ -863,7 +931,7 @@ function buildRoadmap() {
     var c = findCareerById(id);
     return c ? c.label : id;
   });
-  var studentName = (firstName + ' ' + lastName).trim();
+  var studentName = (firstName + (lastName ? ' ' + lastName : '')).trim();
   var careerCelebration = getCareerCelebration(selCareers[0], firstName);
 
   // Header — class and stream on separate lines to avoid wrapping
@@ -949,7 +1017,7 @@ function getInsight(cls, careers, fname, examPool) {
 
   var examWarning = '';
   if (urgentExams.length > 0) {
-    examWarning = ' <strong>Important: ' + escapeHtml(urgentExams[0].name) + ' is happening soon — check registration status immediately.</strong>';
+    examWarning = ' <strong>Heads-up: ' + escapeHtml(urgentExams[0].name) + ' is coming up soon — confirm dates and registration on the official exam website when you can.</strong>';
   }
 
   return 'All the best, ' + escapeHtml(fname) + '! ' + timeMsg + examWarning + ' The roadmap below covers every exam you need, every deadline, and exactly when to start preparing.';

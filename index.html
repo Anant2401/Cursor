@@ -124,11 +124,13 @@
 
     <section id="reality" class="section alt">
       <div class="container">
-        <h2>The Career Reality Students Face</h2>
-        <p>
-          Many students work hard, but never receive clear guidance about what choices lead to what
-          jobs. Pehchaan exists to close that gap with practical, honest mentoring.
-        </p>
+        <div class="section-head">
+          <h2>The Career Reality Students Face</h2>
+          <p class="section-head-intro">
+            Many students work hard, but never receive clear guidance about what choices lead to what
+            jobs. Pehchaan exists to close that gap with practical, honest mentoring.
+          </p>
+        </div>
         <div class="cards cards-4">
           <article class="card reveal stat-card">
             <h3>35 Lakh</h3>
@@ -422,12 +424,13 @@
 
     <section id="tools" class="section">
       <div class="container">
-        <div class="tools-header">
+        <div class="section-head">
           <h2>Career Tools</h2>
-          <p class="tools-intro">
+          <p class="section-head-intro">
             Free practical tools to help you choose better: assess your fit, decide your stream, compare
-            salaries, plan exams, connect with mentors, and help parents get clear answers — before you
-            commit.
+            salaries, plan exams, model costs and payback, build a Plan B alongside competitive exams, map
+            skill gaps to your target role, connect with mentors, and help parents get clear answers — before
+            you commit.
           </p>
         </div>
         <div class="brochure-wrap reveal tools-wrap">
@@ -486,6 +489,39 @@
               data-tool-tab="roadmap"
             >
               Exam Roadmap
+            </button>
+            <button
+              class="tools-tab"
+              id="tools-tab-roi"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tools-panel-all"
+              data-tool-tab="roi"
+            >
+              ROI Bridge
+            </button>
+            <button
+              class="tools-tab"
+              id="tools-tab-planb"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tools-panel-all"
+              data-tool-tab="planb"
+            >
+              Plan B
+            </button>
+            <button
+              class="tools-tab"
+              id="tools-tab-skillgap"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="tools-panel-all"
+              data-tool-tab="skillgap"
+            >
+              Skill Gap
             </button>
             <button
               class="tools-tab"
@@ -553,6 +589,33 @@
                 </p>
                 <a href="Tools/pehchaan_exam_roadmap.html" class="btn-assessment-primary">Launch Tool →</a>
               </article>
+              <article class="tool-card" data-tool="roi">
+                <div class="tool-card-chip">For students and families planning money honestly</div>
+                <h3>Career ROI &amp; Reality Bridge</h3>
+                <p>
+                  Estimate total investment — coaching, college, living costs, and buffer — then see
+                  salary bands, break-even timing, and plain-language reality checks before you lock in a path.
+                </p>
+                <a href="Tools/pehchaan_career_roi_reality_bridge.html" class="btn-assessment-primary">Launch Tool →</a>
+              </article>
+              <article class="tool-card" data-tool="planb">
+                <div class="tool-card-chip">For serious exam aspirants who want income and skills too</div>
+                <h3>Plan B Strategy Builder</h3>
+                <p>
+                  Map your main exam (UPSC, SSC, NEET, JEE, and more) to skills you are already building, then
+                  explore parallel jobs, pay ranges, and a first step you can take this week.
+                </p>
+                <a href="Tools/pehchaan_plan_b_strategy_builder.html" class="btn-assessment-primary">Launch Tool →</a>
+              </article>
+              <article class="tool-card" data-tool="skillgap">
+                <div class="tool-card-chip">For learners targeting a specific role</div>
+                <h3>Skill Gap Analyser</h3>
+                <p>
+                  Pick a target job, mark what you already know, and get a gap heatmap with free learning
+                  resources, practice platforms, and a phased timeline toward job-ready skills.
+                </p>
+                <a href="Tools/pehchaan_skill_gap_analyser.html" class="btn-assessment-primary">Launch Tool →</a>
+              </article>
               <article class="tool-card" data-tool="mentor">
                 <div class="tool-card-chip">For students who need proof, not noise</div>
                 <h3>Mentor Connect</h3>
@@ -585,8 +648,8 @@
         <div class="contact-wrap reveal">
           <p class="small">Fill this form and we will connect with you soon.</p>
           <form class="contact-form" id="contact-form">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required />
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required placeholder="Anant Tripathi" autocomplete="name" />
 
             <label for="email">Email</label>
             <input id="email" name="email" type="email" required />

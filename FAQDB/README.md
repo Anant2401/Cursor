@@ -2,9 +2,9 @@
 
 ## Files
 
-- **`faq-core.json`** — Base entries `faq_001` … `faq_008` (edited here when you change the “core” parent worries).
-- **`gemini-code-*.json`** — Batches of additional FAQs (same schema as core).
-- **`faqs.json`** — **Generated.** Full merged list (`faq-core` + all `gemini-code-*`), sorted by id. Do not hand-edit for bulk updates; run the merge script instead.
+- **`faqs.json`** — **Shipped canonical** FAQ list for the static Parent’s Guide (`Tools/parents-guide/`). You may edit individual entries here for small fixes, or regenerate in bulk via the merge script when source shards exist.
+- **`faq-core.json`** (optional) — Base entries `faq_001` … `faq_008`; required only if you run `merge-faqs.mjs` to rebuild from shards.
+- **`gemini-code-*.json`** (optional) — Batches of additional FAQs for the same merge script.
 
 ## Merge into the web tool
 

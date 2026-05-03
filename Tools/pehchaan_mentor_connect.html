@@ -48,8 +48,11 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 .hero-stat .v{font-size:22px;font-weight:700;color:var(--amber);}
 .hero-stat .l{font-size:11px;opacity:.75;margin-top:2px;}
 .name-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:16px 18px;margin-top:16px;}
-.name-card label{font-size:13px;font-weight:600;display:block;margin-bottom:10px;}
-.name-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.name-card .name-card-lead{font-size:13px;font-weight:600;display:block;margin-bottom:12px;line-height:1.45;}
+.name-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.name-field{display:flex;flex-direction:column;gap:6px;min-width:0;}
+.name-field-label{font-size:11px;font-weight:600;opacity:.88;letter-spacing:.02em;}
+.name-field-label .name-optional{font-weight:500;opacity:.72;}
 .name-input{width:100%;padding:11px 12px;border-radius:10px;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);color:var(--white);font-family:'Poppins',sans-serif;font-size:13px;outline:none;transition:border-color .2s;}
 .name-input:focus{border-color:var(--amber);}
 .name-input::placeholder{color:rgba(255,255,255,.5);}
@@ -291,10 +294,16 @@ details.mentor-tech-details .mentor-tech-inner{padding:0 18px 18px;}
       <div class="hero-stat"><div class="v">100%</div><div class="l">Free for you</div></div>
     </div>
     <div class="name-card">
-      <label>Your first name (we weave it into draft messages so you sound like yourself, not a template)</label>
+      <span class="name-card-lead">What is your name? (We weave it into draft messages so you sound like yourself, not a template)</span>
       <div class="name-grid">
-        <input class="name-input" id="input-first-name" type="text" placeholder="First name" autocomplete="given-name">
-        <input class="name-input" id="input-last-name" type="text" placeholder="Last name (optional)" autocomplete="family-name">
+        <div class="name-field">
+          <span class="name-field-label">First Name</span>
+          <input class="name-input" id="input-first-name" type="text" placeholder="Anant" autocomplete="given-name">
+        </div>
+        <div class="name-field">
+          <span class="name-field-label">Last Name <span class="name-optional">(optional)</span></span>
+          <input class="name-input" id="input-last-name" type="text" placeholder="Tripathi" autocomplete="family-name">
+        </div>
       </div>
     </div>
   </div>
@@ -402,6 +411,16 @@ details.mentor-tech-details .mentor-tech-inner{padding:0 18px 18px;}
       </div>
     </div>
   </div>
+
+  <div class="disclaimer-box">
+    <h4>Important — please read</h4>
+    <p>This page offers exploratory guidance only — not recruitment, placement, or legal advice. Verify every profile and opportunity yourself. Pehchaan Careers is not liable for outreach or outcomes from using this tool.</p>
+  </div>
+  <div class="brand-footer">
+    <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
+    <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
+    hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+  </div>
 </div>
 
 <!-- SCREEN: MENTOR REGISTRATION -->
@@ -426,7 +445,7 @@ details.mentor-tech-details .mentor-tech-inner{padding:0 18px 18px;}
         <div class="form-row">
           <div class="form-group">
             <label>Full name *</label>
-            <input type="text" id="m-name" required maxlength="120" autocomplete="name" placeholder="Your full name">
+            <input type="text" id="m-name" required maxlength="120" autocomplete="name" placeholder="Anant Tripathi">
           </div>
           <div class="form-group">
             <label>Initials (optional)</label>
@@ -528,7 +547,7 @@ details.mentor-tech-details .mentor-tech-inner{padding:0 18px 18px;}
         <path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/>
       </svg>
     </div>
-    <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Gathering stories that might inspire you…</div></div>
+    <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your identity. Your path.</div></div>
     </a>
   </div>
   <div class="loading-box">
@@ -810,12 +829,12 @@ async function submitMentor(ev) {
   ev.preventDefault();
   var consent = document.getElementById('m-consent');
   if (!consent || !consent.checked) {
-    alert('Please tick the box to confirm you agree that your profile may be shown to students.');
+    alert('Almost there — tick the consent box so we know you are okay with students seeing your mentor profile.');
     return;
   }
   var url = getMentorWebAppUrl();
   if (!url) {
-    alert('The mentor form needs a Web App URL. Ask your site admin, or open “Technical — mentor Sheet URL” on the main page and paste the Apps Script /exec link (or set MENTOR_WEB_APP_URL in this file).');
+    alert('We need a Web App URL to save mentor profiles. If you are setting this up: ask your site admin, or open “Technical — mentor Sheet URL” on the main page and paste the Apps Script /exec link (or set MENTOR_WEB_APP_URL in this file).');
     return;
   }
   var errP = document.getElementById('mentor-submit-error');
@@ -1071,7 +1090,7 @@ function buildResults(curated, google, googleErr) {
   html += '</div>';
 
   if (mentorDbLoadFailed && curated.length === 0) {
-    html += '<div class="card"><p style="font-size:13px;color:var(--gray-text);line-height:1.65;">Our volunteer mentor list is <strong>updating right now</strong> — we could not reach the live database. Your LinkedIn searches and optional Google results below still work. Please try again in a little while if you specifically want to see Pehchaan-listed mentors.</p></div>';
+      html += '<div class="card"><p style="font-size:13px;color:var(--gray-text);line-height:1.65;">Our volunteer mentor list is <strong>updating right now</strong> — we could not reach the live database. Your LinkedIn searches and optional Google results below still work. If you were hoping for Pehchaan-listed mentors, try again in a little while — the rest of the tool is still here for you.</p></div>';
   }
 
   // ── LAYER 1: CURATED MENTORS ──
@@ -1086,7 +1105,7 @@ function buildResults(curated, google, googleErr) {
   var apiKey = localStorage.getItem('pehchaan_serper_key') || '';
   if (apiKey) {
     if (googleErr) {
-      html += '<div class="error-box"><p><strong>Google search error:</strong> ' + escHtml(googleErr) + ' Check your Serper API key in the setup section on the first screen.</p></div>';
+      html += '<div class="error-box"><p><strong>We could not finish the Google search:</strong> ' + escHtml(googleErr) + ' If you expected extra profiles here, double-check your Serper API key in the setup section on the first screen.</p></div>';
     } else if (google.length > 0) {
       html += '<div style="margin-bottom:6px;"><span class="layer-badge layer-google">🔍 From public search — always double-check on LinkedIn before you write</span></div>';
       google.forEach(function(r, idx) {

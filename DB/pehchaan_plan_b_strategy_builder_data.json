@@ -1,0 +1,320 @@
+{
+  "last_updated": "2026-05-03",
+  "version": "1.1",
+  "manifesto": "Your exam preparation is NOT wasted time. Every subject you have studied, every mock test you have given, every concept you have mastered — these are real, transferable, marketable professional skills. Plan B is not a consolation prize. It is a parallel career that runs alongside your main goal, pays you while you prepare, and becomes your safety net that is stronger than what most people call their main plan.",
+
+  "exam_skill_mappings": [
+    {
+      "id": "upsc_csds",
+      "exam_label": "UPSC / CGPSC / State PCS Aspirant",
+      "subjects_studied": ["Indian Polity & Governance", "History & Culture", "Geography", "Economy & Budget", "Environment & Ecology", "Current Affairs", "Essay Writing", "Ethics", "General Science", "International Relations"],
+      "hidden_skills": [
+        { "skill": "Research & Analysis", "how": "You have been analysing government policies, historical events, and international affairs. This is exactly what think-tanks, policy organisations, and content companies need." },
+        { "skill": "Strong English/Hindi Writing", "how": "UPSC Mains answer writing requires 150-250 word precise, structured answers. You can write better than 95% of working professionals." },
+        { "skill": "Current Affairs Expertise", "how": "You follow national and international news more deeply than any journalist trainee. This is directly marketable to news outlets, content companies, and research firms." },
+        { "skill": "Critical Thinking & Structured Arguments", "how": "Ethics paper trains you to analyse moral dilemmas. Legal, compliance, and policy roles need exactly this." },
+        { "skill": "Hindi-English Bilingual Communication", "how": "Extremely rare in corporate India. Especially valuable in media, government liaison, and Hindi content companies." },
+        { "skill": "Data Interpretation (CSAT)", "how": "Solving DI problems daily builds analytical thinking that finance, consulting, and research roles value." }
+      ],
+      "plan_b_jobs": [
+        {
+          "title": "Content Writer / Research Writer",
+          "qualification": "Any graduation + writing portfolio",
+          "how_skills_match": "Your UPSC current affairs reading + essay writing = professional content. You already write better than most entry-level content writers.",
+          "salary_range": "₹2-6 LPA starting. ₹8-15 LPA with 3 years experience.",
+          "time_to_first_job": "1-3 months with portfolio of 5 sample articles",
+          "where_to_find": ["LinkedIn Jobs", "Internshala", "Naukri.com — search 'Content Writer'", "Freelance: Fiverr, WorkIndia, PeoplePerHour", "Direct outreach to digital news portals (The Lallantop, The Wire, NewsLaundry)"],
+          "how_to_start": "Write 5 articles on topics you know deeply from UPSC prep. Publish them on Medium or LinkedIn. Share them. That is your portfolio.",
+          "plan_b_complements_main": "Content writing jobs are usually 9-5 or flexible hours. Many UPSC aspirants work as content writers and prepare simultaneously. The reading you do for UPSC becomes content research automatically.",
+          "average_ctc": 360000,
+          "remote_friendly": true
+        },
+        {
+          "title": "Policy Research Assistant / Analyst",
+          "qualification": "Graduation + GS background + analytical writing",
+          "how_skills_match": "Think-tanks, NGOs, government consultancies, and law firms all need people who understand policy, can research, and can write structured briefs. UPSC prep is better training than any MBA for this.",
+          "salary_range": "₹3-8 LPA at NGOs/think-tanks. ₹8-15 LPA at consulting firms.",
+          "time_to_first_job": "2-4 months",
+          "where_to_find": ["LinkedIn — search 'Policy Analyst', 'Research Associate', 'Development Sector'", "DevNetJobs.org for NGO roles", "Idealist.org", "Direct application to PRS Legislative Research, CSDS Delhi, CPR India"],
+          "how_to_start": "Use your UPSC optional subject notes to write a 2-3 page policy brief on one topic. That is your work sample.",
+          "plan_b_complements_main": "Policy research work deepens your UPSC knowledge. Many research assistants at Delhi think-tanks have cracked UPSC while working there.",
+          "average_ctc": 500000,
+          "remote_friendly": false
+        },
+        {
+          "title": "SSC/Banking Exam Tutor (Online/Offline)",
+          "qualification": "You — the UPSC aspirant — already know GS better than most SSC teachers",
+          "how_skills_match": "Your GS, Polity, History, Geography, and Current Affairs knowledge is exactly what SSC CGL, IBPS, and state PSC candidates need taught to them.",
+          "salary_range": "₹15,000-50,000/month freelance. ₹3-6 LPA at coaching centres.",
+          "time_to_first_job": "2-4 weeks — start with 2-3 students and word of mouth",
+          "where_to_find": ["Local WhatsApp groups in your city", "Unacademy Educator programme (earn from teaching online)", "UrbanPro.com — register as tutor", "Superprof.co.in", "Start a YouTube channel on one GS topic"],
+          "how_to_start": "Teach 2 free sessions in your mohalla/neighbourhood. Ask for ₹300/session after that. Within a month you will have 5-10 regular students.",
+          "plan_b_complements_main": "Teaching reinforces your own learning. Many UPSC toppers say they cracked UPSC the year they started teaching — because explaining concepts to others forces deeper understanding.",
+          "average_ctc": 360000,
+          "remote_friendly": true
+        },
+        {
+          "title": "Compliance / Legal Assistant at Company",
+          "qualification": "Graduation + Polity/Law background from UPSC",
+          "how_skills_match": "Companies need people who understand government regulations, compliance requirements, and policy changes. Your UPSC Polity and governance knowledge is directly applicable.",
+          "salary_range": "₹3-6 LPA starting. ₹8-15 LPA senior.",
+          "time_to_first_job": "2-4 months",
+          "where_to_find": ["Naukri.com — search 'Compliance Executive', 'Regulatory Affairs', 'Legal Assistant'", "LinkedIn — 'Corporate Affairs'", "SECL, NTPC, SAIL CG have large compliance departments"],
+          "how_to_start": "Get a basic certificate in Labour Law or GST from Coursera/NIIT (₹2,000-5,000). Add to resume. Apply to local companies.",
+          "plan_b_complements_main": "Compliance roles are often 9-6 with weekends free — allowing 3-4 hours of UPSC prep daily.",
+          "average_ctc": 450000,
+          "remote_friendly": false
+        }
+      ]
+    },
+
+    {
+      "id": "ssc_banking",
+      "exam_label": "SSC CGL / IBPS Banking Aspirant",
+      "subjects_studied": ["Quantitative Aptitude", "Reasoning Ability", "English Language", "General Knowledge", "Banking/Financial Awareness", "Computer Basics", "Data Interpretation"],
+      "hidden_skills": [
+        { "skill": "Speed Maths & Calculations", "how": "You solve 20 DI questions in 12 minutes. This is real-world financial data analysis speed." },
+        { "skill": "Logical Reasoning", "how": "Puzzle-solving and seating arrangement trains systematic thinking used in operations, supply chain, and project management." },
+        { "skill": "Data Interpretation", "how": "Reading graphs, tables, pie charts — this is the core skill of data analysts and financial analysts." },
+        { "skill": "Banking & Financial Awareness", "how": "You know RBI policies, monetary policy, economic schemes better than most MBA students." },
+        { "skill": "English Comprehension", "how": "Daily RC practice makes you a faster, better reader and writer than most office workers." }
+      ],
+      "plan_b_jobs": [
+        {
+          "title": "MIS Executive / Data Entry & Reporting",
+          "qualification": "Any graduation + Excel knowledge",
+          "how_skills_match": "Your QA and DI skills translate directly to Excel/data work. MIS (Management Information Systems) executives create dashboards and reports — exactly what DI practice prepares you for.",
+          "salary_range": "₹2-4 LPA starting. ₹5-8 LPA after 3 years.",
+          "time_to_first_job": "1-2 months after learning Excel basics",
+          "where_to_find": ["Naukri.com — search 'MIS Executive'", "LinkedIn Jobs", "Shine.com", "InternShala for entry-level"],
+          "how_to_start": "Learn Excel in 2 weeks free on YouTube (Leila Gharani channel). Get free Excel certification from Microsoft Learn. Apply immediately.",
+          "plan_b_complements_main": "MIS roles are often 9-6 with low cognitive load. You can prepare for banking exams in evenings. Many banking aspirants work as MIS executives simultaneously.",
+          "average_ctc": 300000,
+          "remote_friendly": true
+        },
+        {
+          "title": "Accounts Executive / Junior Accountant",
+          "qualification": "Commerce graduation or basic Tally knowledge",
+          "how_skills_match": "SSC/Banking QA preparation covers arithmetic and numbers intensively. Basic Tally learning (3 weeks free on YouTube) makes you hireable as accounts executive at any local business.",
+          "salary_range": "₹1.8–3.5 LPA starting (small towns). ₹3.5–6 LPA after 2–3 years.",
+          "salary_badge": "₹1.8–3.5 LPA",
+          "time_to_first_job": "3-4 weeks after Tally certification",
+          "where_to_find": ["WorkIndia app (very active for local accounts jobs)", "Naukri.com", "Local CA firms in Korba/Bilaspur", "Direct approach to local businesses"],
+          "how_to_start": "Download Tally Prime trial version (free) and watch 10 YouTube tutorials. Get Tally certificate from Tally Academy (₹3,000-5,000). Immediately hireable.",
+          "plan_b_complements_main": "Accounts work is generally 10-6 with predictable hours. Evenings free for exam prep.",
+          "average_ctc": 265000,
+          "remote_friendly": false
+        },
+        {
+          "title": "Customer Service / Relationship Executive (Banks/NBFCs)",
+          "qualification": "Any graduation + good English/Hindi communication",
+          "how_skills_match": "Banking awareness, basic financial product knowledge, and English comprehension you built for the exam — directly applicable to customer-facing bank and NBFC roles.",
+          "salary_range": "₹2.5-4 LPA + incentives. ₹4-7 LPA after 3 years.",
+          "time_to_first_job": "2-4 weeks",
+          "where_to_find": ["Direct walk-in at local bank branches (ask for relationship executive openings)", "Naukri.com — 'Bank Sales Executive', 'Relationship Manager Trainee'", "HDFC, ICICI, Axis Bank career pages", "NBFCs: Bajaj Finance, Mahindra Finance"],
+          "how_to_start": "Walk into 3 bank branches near you. Ask if they have openings for relationship executives or trainee associates. Many banks hire on the spot for this role.",
+          "plan_b_complements_main": "Working at a private bank teaches you how banking actually works — making your banking awareness answers in the exam far more accurate and real. The practical experience helps you in the IBPS interview.",
+          "average_ctc": 300000,
+          "remote_friendly": false
+        }
+      ]
+    },
+
+    {
+      "id": "neet_medical",
+      "exam_label": "NEET Aspirant / Medical Aspirant",
+      "subjects_studied": ["Biology (Zoology + Botany)", "Chemistry (Organic, Inorganic, Physical)", "Physics (Mechanics, Optics, Modern Physics)", "Human Physiology", "Genetics & Evolution", "Ecology & Environment"],
+      "hidden_skills": [
+        { "skill": "Human Biology & Health Literacy", "how": "Deep understanding of human body, diseases, nutrition, and medicine. Healthcare companies, diagnostics, pharma need this." },
+        { "skill": "Laboratory Techniques (conceptual)", "how": "Understanding of PCR, ELISA, Cell Culture from syllabus — valuable for biotech and pharma companies." },
+        { "skill": "Analytical Problem Solving", "how": "NEET Physics and Chemistry problem-solving is systematic analytical thinking." },
+        { "skill": "Environmental Awareness", "how": "Ecology chapter gives deep environmental science knowledge useful in environmental compliance, CSR, and NGO work." }
+      ],
+      "plan_b_jobs": [
+        {
+          "title": "Medical Representative (Pharma MR)",
+          "qualification": "Any science graduation (BSc, B.Pharm, or even NEET drop year students)",
+          "how_skills_match": "Your Biology and Chemistry knowledge from NEET is exactly what pharma companies train Medical Representatives on. You already know more than most MR trainees.",
+          "salary_range": "₹2-4 LPA starting + incentives. ₹5-10 LPA with performance.",
+          "time_to_first_job": "2-4 weeks — pharma companies hire aggressively",
+          "where_to_find": ["Naukri.com — search 'Medical Representative'", "Pharma company careers pages (Cipla, Sun Pharma, Dr Reddy's, Abbott India)", "Walk into local pharma distributor offices in Bilaspur/Raipur"],
+          "how_to_start": "Apply directly to 5 pharma company career pages. Most do walk-in interviews. No experience required for entry MR role.",
+          "plan_b_complements_main": "MR work builds your practical understanding of medicines and clinical practice. Many MRs have used this experience + NEET preparation to eventually crack NEET or get into pharmacy.",
+          "average_ctc": 300000,
+          "remote_friendly": false
+        },
+        {
+          "title": "Lab Technician / Diagnostic Assistant",
+          "qualification": "BSc Biology / Diploma in Medical Lab Technology (DMLT) — 1 year course",
+          "how_skills_match": "Your Biology knowledge + a 1-year DMLT diploma (₹20,000-40,000) makes you a certified lab technician. Government hospitals recruit lab technicians through CGVYAPAM.",
+          "salary_range": "₹1.5–3.5 LPA starting in private labs. Government hospital: ₹3–6 LPA with benefits.",
+          "salary_badge": "₹1.5–3.5 LPA",
+          "time_to_first_job": "12 months (DMLT course) + 1-2 months job search",
+          "where_to_find": ["CGVYAPAM notifications for Lab Technician posts", "Private diagnostic labs in your city (Lal PathLabs, SRL Diagnostics, Thyrocare franchises)", "Local hospitals and clinics direct approach"],
+          "how_to_start": "Enrol in DMLT from any recognised paramedical college in Raipur or Bilaspur. 1 year. ₹20,000-40,000. Government hospital stable job at the end.",
+          "plan_b_complements_main": "Working in a lab while preparing for NEET gives you direct clinical exposure that strengthens your Biology applications knowledge. NEET score + working lab experience = stronger medical college applicant.",
+          "average_ctc": 250000,
+          "remote_friendly": false
+        },
+        {
+          "title": "Health & Wellness Content Writer / YouTuber",
+          "qualification": "NEET preparation knowledge + writing/communication skill",
+          "how_skills_match": "Your detailed Biology and health knowledge is exactly what health content websites, YouTube channels, and wellness apps need. You can explain medical concepts clearly — most writers cannot.",
+          "salary_range": "₹1.5–4 LPA employed (junior health writer). Freelance or YouTube income varies widely with audience — treat as upside, not a guarantee.",
+          "salary_badge": "₹1.5–4 LPA",
+          "time_to_first_job": "1-3 months for employed role. YouTube takes 1-2 years to monetise.",
+          "where_to_find": ["Content roles: Naukri.com search 'Health Writer'", "HealthifyMe, 1mg, Practo content teams", "Start a YouTube channel on Biology — hugely underserved in Hindi"],
+          "how_to_start": "Write 5 explainer articles on diseases/body functions. Publish on LinkedIn. Share in relevant groups. Portfolio ready in 1 week.",
+          "plan_b_complements_main": "Teaching Biology on YouTube or writing health content deepens your own NEET preparation dramatically. Explanation forces mastery.",
+          "average_ctc": 280000,
+          "remote_friendly": true
+        }
+      ]
+    },
+
+    {
+      "id": "jee_engineering",
+      "exam_label": "JEE / Engineering Entrance Aspirant",
+      "subjects_studied": ["Advanced Mathematics (Calculus, Algebra, Trigonometry, Probability)", "Physics (Mechanics, Electrostatics, Optics, Modern Physics)", "Chemistry (Organic, Inorganic, Physical)"],
+      "hidden_skills": [
+        { "skill": "Advanced Mathematics", "how": "Calculus, algebra, probability — you are operating at a level above most working analysts." },
+        { "skill": "Analytical Problem Solving", "how": "JEE trains you to break complex problems into steps under time pressure — a skill management consulting firms pay ₹15-25 LPA for." },
+        { "skill": "Physics & Logic", "how": "Systems thinking from Physics — understanding cause-effect chains — is directly applicable to software debugging, data analysis, and engineering operations." }
+      ],
+      "plan_b_jobs": [
+        {
+          "title": "Coding / Programming (Self-Taught Developer)",
+          "qualification": "JEE Maths + 3-6 months self-taught Python/JavaScript",
+          "how_skills_match": "Your JEE-level Maths (especially algebra and logic) is the perfect foundation for programming. Most good coders started with strong Maths — which you have.",
+          "salary_range": "₹3.5-8 LPA starting. ₹12-25 LPA after 3 years. Remote work possible.",
+          "time_to_first_job": "6-12 months of self-learning + portfolio",
+          "where_to_find": ["LinkedIn Jobs — 'Junior Developer', 'Python Developer'", "Internshala (internships → jobs)", "HackerRank / LeetCode profiles to showcase skills", "Freelance: Fiverr, Upwork, Toptal"],
+          "how_to_start": "Start Python today on freeCodeCamp.org (completely free). Then do 50 LeetCode problems. Then build 2 projects. This sequence takes 4-6 months. You will be hireable.",
+          "plan_b_complements_main": "Learning to code while preparing for JEE actually helps JEE — programming trains logical thinking. And if you get into a state engineering college, you will already be ahead of classmates.",
+          "average_ctc": 550000,
+          "remote_friendly": true
+        },
+        {
+          "title": "Mathematics Tutor (Class 9-12)",
+          "qualification": "JEE preparation-level Maths knowledge — you are among the top 5% in India for Class 12 Maths",
+          "how_skills_match": "You can teach Class 9-12 Maths better than 90% of school teachers. This is immediately monetisable.",
+          "salary_range": "₹15,000-60,000/month depending on students and mode.",
+          "time_to_first_job": "1-2 weeks from today",
+          "where_to_find": ["UrbanPro.com", "Superprof.co.in", "Local school notice boards", "WhatsApp groups in your area", "Unacademy Educator programme (earn from teaching online)"],
+          "how_to_start": "Offer to teach 2 students for free for one week. Ask for honest feedback. Then charge ₹500-1,000/month per student. 10 students = ₹5,000-10,000/month passive income.",
+          "plan_b_complements_main": "Teaching Maths makes your own JEE Maths stronger. Every concept you explain to a student gets locked in your memory permanently.",
+          "average_ctc": 360000,
+          "remote_friendly": true
+        }
+      ]
+    },
+
+    {
+      "id": "low_marks_student",
+      "exam_label": "Student with Low Marks (Below 50% in 10th or 12th)",
+      "subjects_studied": ["Basic subjects studied in school"],
+      "manifesto_special": "Low marks do not define you. They define only one thing: which exam routes are currently available to you. There are genuine, respected, well-paying careers that require absolutely no competitive exam, no high marks, and no coaching fees. The students who succeed in these paths are not 'consolation cases' — they are people who found a route that matched their real strengths.",
+      "metro_corporate_paths": {
+        "section_title": "Metro corporate — entry roles (Bengaluru, Pune, Chennai, Delhi NCR)",
+        "metros_list": "Bengaluru, Pune, Chennai, and Delhi NCR (Gurugram, Noida, Faridabad, Ghaziabad) have large private employers — global capability centres, banks, NBFCs, e-commerce, and IT services — that regularly hire for operations and support. Marks in 10th/12th matter less than graduation status, communication in English/Hindi, basic computer skills, and reliability.",
+        "intro": "If you can relocate or already live in a major metro, many private companies hire graduates (and sometimes 12th pass) for opening-level back office, customer support, and admin work. Hiring is usually through online applications plus voice/written assessments — not board exam scores. Pay varies by shift, company, and contract (including third-party payroll); figures below are typical fresher bands seen in public job posts and are not offers from Pehchaan Careers.",
+        "roles": [
+          {
+            "title": "Customer support associate — voice or chat (BPO / GCC)",
+            "qualification": "12th pass to graduate; many captives prefer a graduate for career progression.",
+            "marks_note": "Most employers do not ask for high %; they test spoken English/Hindi, typing, and scenario handling in interview.",
+            "skills_required": ["Clear spoken English or Hindi", "Email and chat etiquette", "Patience with customers", "MS Excel basics for after-call notes", "Willingness for night or rotating shifts in some teams"],
+            "salary_metro_range": "Roughly ₹2.2–4.5 LPA fixed for many fresher voice/chat roles in 2024–26 hiring cycles, plus shift or transport allowance in some companies. Experienced agents can move toward ₹5–7 LPA in 2–3 years.",
+            "typical_work": "Inbound calls, email tickets, or web chat for banks, telecom, e-commerce, or tech clients. Targets are usually quality and schedule adherence, not sales (unless it is a sales blended profile — read the JD carefully).",
+            "where_to_apply": ["Indeed and Naukri — keywords: voice process fresher, chat support, customer care executive", "Company career pages: Genpact, Teleperformance, Concentrix, Wipro, Infosys BPM, TCS iON / TCS BPS (check current listings)", "LinkedIn Jobs filtered by Bengaluru / Pune / Chennai / NCR and entry level"],
+            "growth_tip": "After 12–18 months, internal moves to quality analyst, trainer, or back-office KYC roles are common if attendance and quality scores are strong."
+          },
+          {
+            "title": "Back-office / operations executive — data capture, KYC, loan processing support",
+            "qualification": "Graduate in any stream for many bank/NBFC vendor roles.",
+            "marks_note": "Employers focus on accuracy, speed, and document checking; basic graduation is the usual filter.",
+            "skills_required": ["Attention to detail", "Reading forms and IDs carefully", "MS Excel (sort, filter, basic formulas)", "Email writing in English", "Discretion with customer data"],
+            "salary_metro_range": "Often ₹2.5–5 LPA for fresher operations or KYC support roles on third-party rolls in metros; permanent bank payroll can be higher but is more competitive.",
+            "typical_work": "Verify documents, update loan or account applications, reconcile simple reports, coordinate between branches and central teams.",
+            "where_to_apply": ["Naukri — operations executive, loan processing associate, KYC analyst trainee", "Bank and NBFC vendor hiring (Quess, TeamLease, Randstad listings — always confirm employer name on offer letter)", "Walk-in drives announced on company LinkedIn pages for Bengaluru / Chennai operations hubs"],
+            "growth_tip": "Certifications in AML/KYC basics (short online courses) can help move from pure data entry to compliance support roles."
+          },
+          {
+            "title": "MIS / data-entry trainee — reports, catalogues, invoicing support",
+            "qualification": "Graduate preferred; some teams hire 12th pass with strong typing scores.",
+            "marks_note": "Typing test (30–40 WPM) and Excel test are common; board marks rarely decide shortlisting.",
+            "skills_required": ["Typing speed and accuracy", "MS Excel (tables, pivot basics)", "Simple charts in Excel or Google Sheets", "Organising files and folders", "Basic English to read instructions"],
+            "salary_metro_range": "Commonly ₹2–3.8 LPA for pure data-entry or catalogue roles; MIS trainee with Excel skills may reach ₹3–4.5 LPA.",
+            "typical_work": "Enter invoices, update SKU data, prepare daily Excel trackers for sales or logistics teams.",
+            "where_to_apply": ["Internshala — data entry, MIS trainee", "Amazon flex / seller support listings (check amazon.jobs India)", "Startup job boards on AngelList / Wellfound for operations interns", "Local staffing consultants in metro industrial belts"],
+            "growth_tip": "Learn pivot tables and one dashboard tool (Power BI intro on Microsoft Learn — free). That single upgrade often opens analyst trainee interviews."
+          },
+          {
+            "title": "Admin, reception, or front-desk coordinator — corporate offices",
+            "qualification": "Graduate with presentable communication; hospitality or BBA graduates also fit.",
+            "marks_note": "Employers look for punctuality, grooming, and MS Office; not high school percentages.",
+            "skills_required": ["Professional phone handling", "Visitor management and calendar blocking", "MS Word and Excel for registers and petty cash", "Coordination with housekeeping and security", "Basic English for email"],
+            "salary_metro_range": "Roughly ₹2.2–4.8 LPA for junior admin or front-desk roles in corporate parks across the four metro clusters; premium buildings may pay toward the upper end.",
+            "typical_work": "Manage front desk, schedule meeting rooms, support facility vendors, maintain stationery and attendance registers.",
+            "where_to_apply": ["Naukri — admin executive, front office executive", "Facility management companies (CBRE, JLL, Sodexo — India careers)", "Co-working space operators in Bengaluru and NCR", "Word of mouth through relatives working in IT parks"],
+            "growth_tip": "Short courses in office administration or ERP navigation (1–2 months) help move to executive assistant or facilities coordinator roles."
+          },
+          {
+            "title": "Inside sales / tele-caller — B2B lead generation (non-retail)",
+            "qualification": "Graduate; some teams take 12th pass with confident speaking.",
+            "marks_note": "What matters is willingness to call, handle rejection, and hit activity targets — not marks.",
+            "skills_required": ["Clear Hindi/English", "Reading a script without sounding robotic", "CRM tool basics (Zoho, Salesforce — often trained on the job)", "Discipline with call logs", "Basic numeracy for order sizes"],
+            "salary_metro_range": "Base often ₹2.4–4.2 LPA plus performance incentives; total monthly cash can be higher in good months but is not guaranteed.",
+            "typical_work": "Call SME owners or IT managers from lead lists, fix appointments for field sales, or renew software subscriptions.",
+            "where_to_apply": ["Naukri — inside sales executive, telecaller B2B", "SaaS startups in Bengaluru and Pune (check LinkedIn startup jobs)", "Insurance and edtech inside-sales teams in NCR"],
+            "growth_tip": "If you dislike cold calling, avoid this track; if you tolerate it, 1–2 years can lead to sales coordinator or key account coordinator roles with better base pay."
+          }
+        ]
+      },
+      "hidden_skills": [
+        { "skill": "Real-world Observation", "how": "Students who struggled academically often have strong practical intelligence and people skills that bookish students lack." },
+        { "skill": "Resilience", "how": "Managing the stress of academic difficulty and continuing anyway is a leadership quality." }
+      ],
+      "plan_b_jobs": [
+        {
+          "title": "ITI Trade (Electrician / Fitter / Machinist / Welder)",
+          "qualification": "Class 10 pass (any percentage) — no minimum marks for many govt ITIs",
+          "how_skills_match": "Class 10 is the only requirement. NTPC Korba, SECL, SAIL Bhilai hire ITI graduates as permanent employees with government-level benefits.",
+          "salary_range": "₹12,000-18,000/month apprenticeship. ₹30,000-55,000/month NTPC total compensation at 5 years.",
+          "time_to_first_job": "2 years ITI course → 1-year NTPC apprenticeship → permanent job",
+          "where_to_find": ["Government ITI Korba, Bilaspur, Champa (CGVYAPAM admission)", "NTPC Korba apprenticeship application (ntpccareers.net)", "SECL mines recruitment"],
+          "how_to_start": "Apply to Government ITI in your city through CGVYAPAM portal. Admission in July. Almost free fees.",
+          "plan_b_complements_main": "This IS the main plan for many CG students. ITI → NTPC/SECL is a complete, excellent career path. Not a backup — a first choice.",
+          "average_ctc": 480000,
+          "remote_friendly": false
+        },
+        {
+          "title": "Retail / E-commerce Operations (Amazon, Flipkart)",
+          "qualification": "Class 12 pass",
+          "how_skills_match": "E-commerce operations (warehouse, logistics, customer service) require reliability and physical coordination — not academic marks.",
+          "salary_range": "₹1.8–3.2 LPA starting for many warehouse / fulfilment associate roles. ₹3.5–5.5 LPA with team lead promotion in some hubs.",
+          "salary_badge": "₹1.8–3.2 LPA",
+          "time_to_first_job": "2-4 weeks",
+          "where_to_find": ["Amazon Jobs India (amazon.jobs)", "Flipkart Careers", "Local logistics companies in Raipur"],
+          "how_to_start": "Apply directly on Amazon Jobs or through staffing agencies.",
+          "plan_b_complements_main": "E-commerce operations experience + any online skill development (Excel, data entry) → path to better-paying back-office roles within 2-3 years.",
+          "average_ctc": 240000,
+          "remote_friendly": false
+        },
+        {
+          "title": "Diploma in Hotel Management / Culinary Arts",
+          "qualification": "Class 10 or 12 pass — no competitive exam",
+          "how_skills_match": "Hotel management and culinary arts diploma (1-2 years) from a government or private institute is the path to hospitality careers. No marks requirement.",
+          "salary_range": "₹1.8–3.5 LPA starting in India for many hotel trainees. International contracts vary widely by country and employer.",
+          "salary_badge": "₹1.8–3.5 LPA",
+          "time_to_first_job": "1-2 years diploma + 3-6 months job search",
+          "where_to_find": ["Government Food Craft Institutes (FCI) — very low fees", "State hotel management colleges via state entrance"],
+          "how_to_start": "Apply to IHM (Institute of Hotel Management) or local food craft institutes. Government IHMs are affordable and have excellent industry connections.",
+          "plan_b_complements_main": "Hospitality is one of the few careers where international opportunities genuinely open up without high academics — especially for motivated, hardworking individuals.",
+          "average_ctc": 240000,
+          "remote_friendly": false
+        }
+      ]
+    }
+  ]
+}

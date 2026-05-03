@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex" />
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <title>Redirecting…</title>
+  <script>
+  /* Chrome may cache an older stub; use absolute http(s) URL + meta refresh + replace. */
+  (function () {
+    var target;
+    if (location.protocol === 'file:') {
+      target = new URL('../pehchaan_exam_roadmap.html', location.href).href;
+    } else {
+      target =
+        location.origin +
+        '/Tools/pehchaan_exam_roadmap.html' +
+        location.search +
+        location.hash;
+    }
+    var esc = target.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+    document.write('<meta http-equiv="refresh" content="0;url=' + esc + '">');
+    function go() {
+      try {
+        (window.top || window).location.replace(target);
+      } catch (e1) {
+        try {
+          window.location.href = target;
+        } catch (e2) {}
+      }
+    }
+    go();
+    setTimeout(go, 80);
+    setTimeout(go, 400);
+  })();
+  </script>
+</head>
+<body style="margin:0;font-family:system-ui,sans-serif;padding:1rem;color:#333">
+  <p>
+    <a id="go" href="../pehchaan_exam_roadmap.html">Open Exam Roadmap</a>
+    — if nothing happens, click the link (or use
+    <code>http://127.0.0.1:8080/Tools/pehchaan_exam_roadmap.html</code>).
+  </p>
+  <script>
+    (function () {
+      var a = document.getElementById('go');
+      if (!a) return;
+      if (location.protocol !== 'file:') {
+        a.href =
+          location.origin +
+          '/Tools/pehchaan_exam_roadmap.html' +
+          location.search +
+          location.hash;
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career ROI & Reality Bridge – Pehchaan Careers</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%23085041'/><path d='M8 22 A12 12 0 0 1 32 22 Z' fill='%23EF9F27'/><path d='M6 36 L20 24 L34 36' stroke='%231D9E75' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#1D9E75;--teal-dark:#085041;--teal-light:#E1F5EE;
+  --amber:#EF9F27;--amber-light:#FAEEDA;
+  --navy:#1A1A2E;--white:#FFFFFF;--card-bg:#F8FAFC;
+  --gray:#64748B;--gray-text:#64748B;--red:#E24B4A;--red-light:#FCEBEB;
+  --blue:#378ADD;--blue-light:#E6F1FB;
+  --border:#D1E8DF;--text:#1A1A2E;
+  --radius:14px;--shadow:0 1px 4px rgba(8,80,65,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{overflow-x:hidden;max-width:100%;}
+body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at 8% -10%,rgba(127,119,221,.12),transparent 65%),radial-gradient(900px 420px at 92% 6%,rgba(55,138,221,.1),transparent 62%),linear-gradient(180deg,#eef8f4 0%,#e5f3ee 42%,#e8f5f0 100%);color:var(--text);min-height:100vh;font-size:14px;overflow-x:hidden;max-width:100%;}
+body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-35deg);font-size:52px;font-weight:800;color:rgba(8,80,65,.045);white-space:nowrap;pointer-events:none;z-index:0;letter-spacing:.08em;user-select:none;}
+.wrap{max-width:700px;margin:0 auto;padding:20px 16px 60px;position:relative;z-index:1;min-width:0;}
+.hidden{display:none!important;}
+
+/* TOPBAR — same pattern as Career Assessment */
+.topbar{display:flex;align-items:center;gap:12px;padding:14px 0 22px;min-width:0;max-width:100%;flex-wrap:nowrap;}
+.topbar-back{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:40px;height:40px;border-radius:12px;background:rgba(29,158,117,.12);color:var(--teal-dark);font-size:18px;font-weight:700;text-decoration:none;line-height:1;transition:background .15s;}
+.topbar-back:hover{background:rgba(29,158,117,.22);}
+.topbar-brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;flex:1;min-width:0;}
+.topbar-brand:hover .topbar-name{color:var(--teal);}
+.topbar-logo{width:40px;height:40px;background:var(--teal-dark);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.topbar-logo svg{width:24px;height:24px;}
+.topbar-name{font-size:15px;font-weight:700;color:var(--teal-dark);}
+.topbar-tag{font-size:11px;color:var(--gray-text);}
+
+/* HERO */
+.hero{background:var(--teal-dark);border-radius:22px;padding:34px 28px;color:#fff;margin-bottom:16px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-50px;right:-50px;width:180px;height:180px;background:rgba(255,255,255,.05);border-radius:50%;}
+.hero::after{content:'';position:absolute;bottom:-30px;right:30px;width:110px;height:110px;background:rgba(239,159,39,.12);border-radius:50%;}
+.hero-tag{display:inline-block;background:rgba(239,159,39,.2);border:1px solid rgba(239,159,39,.4);color:var(--amber);font-size:11px;font-weight:600;padding:4px 14px;border-radius:20px;margin-bottom:14px;}
+.hero h1{font-size:24px;font-weight:700;line-height:1.25;margin-bottom:8px;}
+.hero h1 span{color:var(--amber);}
+.hero p{font-size:13px;opacity:.85;line-height:1.7;margin-bottom:0;}
+.hero .roi-explainer{background:rgba(29,158,117,.25);border:1px solid rgba(29,158,117,.45);border-radius:12px;padding:14px 16px;margin-bottom:16px;font-size:12px;line-height:1.65;color:rgba(255,255,255,.95);}
+.hero .roi-explainer strong{color:var(--amber);font-weight:700;}
+.hero .roi-explainer ul{margin:8px 0 0 1rem;padding:0;}
+.hero .roi-explainer li{margin-bottom:4px;}
+.hero .name-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:16px 18px;margin-bottom:0;}
+.rh-teaser{font-size:13px;opacity:.92;line-height:1.55;margin-top:10px;padding-top:12px;border-top:1px solid rgba(255,255,255,.22);max-width:36em;}
+
+/* CARD */
+.card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:22px 20px;margin-bottom:14px;box-shadow:var(--shadow);}
+.card-title{font-size:11px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;}
+
+/* FORM ELEMENTS */
+.form-group{margin-bottom:14px;}
+.form-group label{display:block;font-size:12px;font-weight:600;color:var(--teal-dark);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em;}
+select,input[type=range]{width:100%;font-family:'Poppins',sans-serif;font-size:13px;}
+select{border:1.5px solid var(--border);border-radius:10px;padding:11px 14px;color:var(--text);background:#fff;outline:none;cursor:pointer;transition:border-color .2s;}
+select:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,158,117,.1);}
+input[type=range]{-webkit-appearance:none;height:6px;background:var(--teal-light);border-radius:3px;outline:none;cursor:pointer;}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:var(--teal-dark);cursor:pointer;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2);}
+.range-labels{display:flex;justify-content:space-between;font-size:11px;color:var(--gray);margin-top:4px;}
+.range-val{font-size:13px;font-weight:700;color:var(--teal-dark);margin-bottom:6px;}
+
+/* PATH CARDS */
+.path-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.path-btn{border:1.5px solid var(--border);background:#fff;border-radius:12px;padding:12px 14px;cursor:pointer;font-family:'Poppins',sans-serif;text-align:left;transition:all .15s;}
+.path-btn:hover{border-color:var(--teal);background:var(--teal-light);}
+.path-btn.active{border-color:var(--teal-dark);background:var(--teal-dark);color:#fff;}
+.path-btn.active .path-prob{color:var(--amber);}
+.path-label{font-size:12px;font-weight:600;display:block;margin-bottom:4px;}
+.path-prob{font-size:10px;color:var(--gray);}
+
+/* BTN */
+.btn-calc{width:100%;background:var(--amber);color:var(--teal-dark);border:none;border-radius:var(--radius);padding:15px;font-size:15px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;transition:transform .15s,box-shadow .15s;margin-top:4px;}
+.btn-calc:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(239,159,39,.4);}
+.btn-calc:disabled{opacity:.4;cursor:not-allowed;transform:none;}
+.btn-reset{width:100%;border:1.5px solid var(--teal);background:#fff;border-radius:var(--radius);padding:13px;font-size:13px;font-weight:700;cursor:pointer;color:var(--teal-dark);font-family:'Poppins',sans-serif;margin-top:8px;}
+
+/* RESULTS */
+.result-hero{background:var(--teal-dark);border-radius:22px;padding:28px 24px;color:#fff;margin-bottom:14px;position:relative;overflow:hidden;}
+.result-hero::before{content:'';position:absolute;top:-30px;right:-30px;width:140px;height:140px;background:rgba(239,159,39,.12);border-radius:50%;}
+.rh-label{font-size:12px;opacity:.7;margin-bottom:4px;}
+.rh-title{font-size:20px;font-weight:700;color:var(--amber);line-height:1.3;margin-bottom:6px;}
+.rh-sub{font-size:12px;opacity:.8;line-height:1.6;}
+
+/* COST BREAKDOWN */
+.cost-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--teal-light);}
+.cost-row:last-child{border-bottom:none;}
+.cost-label{font-size:13px;color:var(--text);}
+.cost-label small{display:block;font-size:11px;color:var(--gray);margin-top:1px;}
+.cost-amount{font-size:14px;font-weight:700;color:var(--teal-dark);}
+.cost-total-row{background:var(--teal-light);border-radius:10px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;margin-top:8px;}
+.cost-total-label{font-size:13px;font-weight:700;color:var(--teal-dark);}
+.cost-total-amount{font-size:20px;font-weight:800;color:var(--teal-dark);}
+
+/* TIMELINE CHART */
+.timeline-bar-wrap{margin-bottom:8px;}
+.tl-bar-label{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:3px;}
+.tl-bar-name{font-size:12px;font-weight:600;color:var(--text);}
+.tl-bar-val{font-size:12px;font-weight:700;color:var(--teal-dark);}
+.tl-track{background:var(--teal-light);border-radius:6px;height:18px;overflow:hidden;}
+.tl-fill{height:100%;border-radius:6px;background:var(--teal);transition:width .6s ease;}
+.tl-fill.amber{background:var(--amber);}
+.tl-fill.red{background:var(--red);}
+
+/* SALARY TABLE */
+.sal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px;}
+.sal-cell{background:var(--card-bg);border:1px solid var(--border);border-radius:10px;padding:10px;text-align:center;}
+.sal-year{font-size:10px;color:var(--gray);margin-bottom:4px;}
+.sal-low{font-size:11px;color:var(--gray);}
+.sal-mid{font-size:16px;font-weight:700;color:var(--teal-dark);}
+.sal-high{font-size:11px;color:var(--teal);}
+
+/* INSIGHT BOX */
+.insight{background:var(--amber-light);border:1.5px solid #F5C878;border-radius:14px;padding:16px;}
+.insight p{font-size:13px;color:#7A4A00;line-height:1.8;}
+.insight strong{color:#5A3200;}
+
+/* ROI METER */
+.roi-meter{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:14px;}
+.roi-title{font-size:12px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.07em;margin-bottom:12px;}
+.roi-track{background:#e8f5e9;border-radius:20px;height:24px;overflow:hidden;margin-bottom:8px;position:relative;}
+.roi-fill{height:100%;border-radius:20px;background:linear-gradient(90deg,var(--teal-dark),var(--teal));transition:width .8s ease;display:flex;align-items:center;justify-content:flex-end;padding-right:10px;}
+.roi-pct{font-size:11px;font-weight:700;color:#fff;}
+.roi-labels{display:flex;justify-content:space-between;font-size:10px;color:var(--gray);}
+
+/* DISCLAIMER */
+.disclaimer{background:#F8F7FF;border:1px solid #C4C0F5;border-radius:14px;padding:14px;margin-bottom:14px;}
+.disclaimer h4{font-size:11px;font-weight:700;color:#4B46A0;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;}
+.disclaimer p{font-size:11px;color:var(--gray-text);line-height:1.7;}
+
+.brand-footer{text-align:center;margin-top:28px;padding-top:20px;border-top:1px solid var(--teal-light);}
+.brand-tagline{font-size:13px;font-weight:600;color:var(--teal);margin-bottom:4px;}
+.brand-footer p{font-size:11px;color:var(--gray-text);line-height:1.8;}
+.brand-footer strong{color:var(--teal-dark);}
+
+.name-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:18px 20px;margin-bottom:18px;}
+.name-card .name-card-lead{font-size:13px;font-weight:600;display:block;margin-bottom:12px;line-height:1.45;}
+.name-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.name-field{display:flex;flex-direction:column;gap:6px;min-width:0;}
+.name-field-label{font-size:11px;font-weight:600;opacity:.88;letter-spacing:.02em;}
+.name-field-label .name-optional{font-weight:500;opacity:.72;}
+.name-input{width:100%;padding:13px 16px;border-radius:10px;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);color:#fff;font-family:'Poppins',sans-serif;font-size:14px;outline:none;transition:border-color .2s;}
+.name-input::placeholder{color:rgba(255,255,255,.45);}
+.name-input:focus{border-color:var(--amber);}
+.btn-begin{width:100%;background:var(--amber);color:var(--teal-dark);border:none;border-radius:var(--radius);padding:16px;font-size:15px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;transition:transform .15s,box-shadow .15s;letter-spacing:.01em;}
+.btn-begin:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(239,159,39,.4);}
+.btn-begin:active{transform:translateY(0);}
+.btn-print{width:100%;border:1.5px dashed var(--border);background:var(--card-bg);border-radius:var(--radius);padding:12px;font-size:13px;font-weight:600;cursor:pointer;color:var(--teal-dark);font-family:'Poppins',sans-serif;margin-bottom:10px;}
+.btn-print:hover{background:var(--teal-light);}
+@media print{.no-print,.topbar-back,.btn-print,.btn-reset,.btn-calc{display:none!important;}body::before{display:none!important;}.wrap{padding:0;}}
+@media(max-width:480px){
+  .path-grid{grid-template-columns:1fr;}
+  .sal-grid{grid-template-columns:1fr;}
+  .hero h1{font-size:20px;}
+  .name-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div id="screen-tool">
+  <div class="topbar no-print">
+    <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+    <a class="topbar-brand" href="../index.html">
+      <div class="topbar-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/>
+          <line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/>
+        </svg>
+      </div>
+      <div>
+        <div class="topbar-name">Pehchaan Careers</div>
+        <div class="topbar-tag">Your identity. Your path.</div>
+      </div>
+    </a>
+  </div>
+
+<div id="screen-calc">
+  <div class="hero">
+    <div class="hero-tag">Career ROI &amp; Reality Bridge</div>
+    <h1>How Much Will It <span>Actually Cost?</span><br>And When Will It Pay Back?</h1>
+    <p style="margin-bottom:14px;">Ballpark numbers you can take into family planning chats — always cross-check with your actual college fee sheet or a qualified CA when it matters.</p>
+    <div class="roi-explainer">
+      <strong>How this calculator works</strong>
+      <ul>
+        <li><strong>Step 1 (below):</strong> you pick one career track so we can load typical fees and timelines.</li>
+        <li>We add tuition, <strong>optional</strong> coaching, living-away costs (only where they apply), and a small buffer for surprises.</li>
+        <li>We compare that total to <strong>typical early-career salary bands</strong> — not a prediction of your exact offer.</li>
+        <li><strong>Break-even</strong> is a simple “how long to earn the money back” at mid starting pay — round numbers to guide conversation, not a guarantee.</li>
+      </ul>
+    </div>
+    <div class="name-card">
+      <span class="name-card-lead">Your name (so the result page feels personal)</span>
+      <div class="name-grid">
+        <div class="name-field">
+          <span class="name-field-label">First Name</span>
+          <input type="text" class="name-input" id="student-first-name" placeholder="Anant" maxlength="40" autocomplete="given-name">
+        </div>
+        <div class="name-field">
+          <span class="name-field-label">Last Name <span class="name-optional">(optional)</span></span>
+          <input type="text" class="name-input" id="student-last-name" placeholder="Tripathi" maxlength="40" autocomplete="family-name">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="card-step1">
+    <div class="card-title">Step 1 — Choose a Career Path</div>
+    <p style="font-size:12px;color:var(--gray);line-height:1.65;margin-bottom:12px;">Choose the path closest to your plan. After you pick one, the next steps open below.</p>
+    <div class="form-group" style="margin-bottom:0">
+      <select id="sel-career">
+        <option value="">Select a career path…</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="step-rest" class="hidden">
+
+  <div class="card hidden" id="card-path">
+    <div class="card-title">Step 2 — Choose Education Path</div>
+    <p style="font-size:12px;color:var(--gray);margin-bottom:12px;">Different college types mean very different total investments and outcomes. Pick the lane that honestly matches your situation — we will still cheer you on whichever you choose.</p>
+    <div class="path-grid" id="path-grid"></div>
+  </div>
+
+  <div class="card hidden" id="card-coaching">
+    <div class="card-title">Step 3 — Coaching / prep (optional)</div>
+    <p style="font-size:12px;color:var(--gray);margin-bottom:12px;">Skip this if you are not taking a paid coaching package. If you do, pick the style that is closest — online is usually the lowest total cost.</p>
+    <div id="coaching-options"></div>
+  </div>
+
+  <div class="card hidden" id="card-city">
+    <div class="card-title">Step 4 — Where will you live during college years?</div>
+    <p style="font-size:12px;color:var(--gray);margin-bottom:12px;"><strong>At home</strong> means no paid PG and no “living away” rent in the estimate. <strong>Tier 3 / Tier 2 / Metro</strong> mean you pay rent or PG while studying — we do not name specific cities here.</p>
+    <div class="form-group" style="margin-bottom:0">
+      <select id="sel-city">
+        <option value="">Select one…</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="card hidden" id="card-misc">
+    <div class="card-title">Step 5 — Miscellaneous & Buffer Adjustment</div>
+    <p style="font-size:12px;color:var(--gray);margin-bottom:12px;">Books, medical, travel, internet, phone, unexpected costs. Add a buffer — real costs always exceed estimates.</p>
+    <div class="form-group">
+      <div class="range-val" id="misc-val">15%</div>
+      <input type="range" id="misc-slider" min="10" max="40" value="15" step="5" oninput="updateMisc()">
+      <div class="range-labels"><span>10% minimal</span><span>25% realistic</span><span>40% safe buffer</span></div>
+    </div>
+    <div class="insight">
+      <p><strong>Why this matters:</strong> Small extras add up. A 15–25% buffer is a realistic safety band for books, travel, and surprises — not padding for luxury.</p>
+    </div>
+    <button class="btn-calc" id="btn-calc" onclick="calculate()" disabled>Calculate Complete ROI →</button>
+  </div>
+
+  </div><!-- #step-rest -->
+
+  <div class="brand-footer no-print">
+    <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
+    <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
+    hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+  </div>
+</div><!-- #screen-calc -->
+</div><!-- #screen-tool -->
+
+<!-- SCREEN 2: RESULTS -->
+<div id="screen-result" class="hidden">
+  <div class="topbar no-print">
+    <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+    <a class="topbar-brand" href="../index.html">
+      <div class="topbar-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/>
+          <line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/>
+        </svg>
+      </div>
+      <div>
+        <div class="topbar-name">Pehchaan Careers</div>
+        <div class="topbar-tag">Your identity. Your path.</div>
+      </div>
+    </a>
+  </div>
+  <button type="button" class="btn-print no-print" onclick="window.print()">Print or save as PDF →</button>
+
+  <div class="result-hero">
+    <div class="rh-label" id="rh-label">Your personalised career ROI analysis</div>
+    <div class="rh-title" id="res-title"></div>
+    <div class="rh-sub" id="res-sub"></div>
+    <div class="rh-teaser" id="rh-teaser" role="status"></div>
+  </div>
+
+  <!-- COST BREAKDOWN -->
+  <div class="card">
+    <div class="card-title">📋 Complete Cost Breakdown</div>
+    <div id="cost-breakdown"></div>
+  </div>
+
+  <!-- TOTAL INVESTMENT + TIMELINE -->
+  <div class="card">
+    <div class="card-title">⏱️ Investment Timeline — Year by Year</div>
+    <p style="font-size:12px;color:var(--gray);margin-bottom:14px;">From preparation start to first salary — how many years until money starts coming in, and how long until the investment pays back.</p>
+    <div id="timeline-bars"></div>
+  </div>
+
+  <!-- ROI METER -->
+  <div class="roi-meter">
+    <div class="roi-title">📈 5-Year Earnings vs Total Investment</div>
+    <div id="roi-content"></div>
+  </div>
+
+  <!-- SALARY PROGRESSION -->
+  <div class="card">
+    <div class="card-title">💰 Expected Salary Progression</div>
+    <p style="font-size:12px;color:var(--gray);margin-bottom:12px;">Realistic salary range at each stage. Low = struggling start. Mid = typical. High = excellent performance or top college.</p>
+    <div class="sal-grid" id="sal-grid"></div>
+    <div style="font-size:11px;color:var(--gray);margin-top:8px;" id="sal-note"></div>
+  </div>
+
+  <!-- HONEST REALITY -->
+  <div class="card" id="reality-card">
+    <div class="card-title">🔍 Honest Reality Check</div>
+    <div id="reality-content"></div>
+  </div>
+
+  <!-- CG CONTEXT -->
+  <div class="card" id="cg-card">
+    <div class="card-title">📍 Chhattisgarh-Specific Context</div>
+    <div id="cg-content"></div>
+  </div>
+
+  <div class="disclaimer">
+    <h4>Important — please read</h4>
+    <p>All costs and salaries are estimates based on 2026 data from Glassdoor India, AmbitionBox, official college fee structures, and government commission reports. Actual costs vary significantly by college, city, and individual circumstances. This tool is for planning and awareness — always verify costs directly with colleges and counsellors before making financial decisions.</p>
+  </div>
+
+  <button class="btn-reset" onclick="reset()">← Calculate for Another Career</button>
+
+  <div class="brand-footer">
+    <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
+    <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
+    hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+  </div>
+</div>
+
+</div><!-- /wrap -->
+
+<script>
+// ────────────────────────────────────────────
+// STATE
+// ────────────────────────────────────────────
+var DB = null;
+var selCareer = null, selPath = null, selCoaching = null, selCity = null;
+var miscPct = 15;
+var studentName = '';
+var NO_COACHING = {
+  label: 'No coaching package',
+  total_coaching_cost: 0,
+  living_months: 0,
+  living_per_month: 0,
+  note: 'Self-study / school support — we still use a small at-home prep living estimate where your track includes prep time.'
+};
+var CITY_ORDER = ['hometown', 'tier3_away', 'tier2', 'metro', 'tier2_coaching'];
+
+function getRoiDataUrl(){
+  try {
+    return new URL('../DB/pehchaan_career_roi_reality_bridge_data.json', window.location.href).href;
+  } catch (e) {
+    return '../DB/pehchaan_career_roi_reality_bridge_data.json';
+  }
+}
+
+// ────────────────────────────────────────────
+// LOAD JSON
+// ────────────────────────────────────────────
+fetch(getRoiDataUrl())
+  .then(function(r){ return r.json(); })
+  .then(function(d){
+    DB = d;
+    initCareers();
+    initCities();
+  })
+  .catch(function(){
+    var tool = document.getElementById('screen-tool');
+    if (tool) {
+      var err = document.createElement('p');
+      err.style.cssText = 'margin:12px 0;padding:14px;background:#FCEBEB;border-radius:12px;font-size:13px;color:#991B1B;line-height:1.6;';
+      err.textContent = 'Could not load career data. Ensure DB/pehchaan_career_roi_reality_bridge_data.json exists and open this site through a local server if needed (file:// often blocks fetch).';
+      tool.insertBefore(err, tool.firstChild);
+    }
+  });
+
+function initCareers(){
+  var sel = document.getElementById('sel-career');
+  DB.careers.forEach(function(c){
+    var opt = document.createElement('option');
+    opt.value = c.id;
+    opt.textContent = c.label + ' (' + c.category + ')';
+    sel.appendChild(opt);
+  });
+  sel.addEventListener('change', function(){ onCareerChange(this.value); });
+}
+
+function initCities(){
+  var sel = document.getElementById('sel-city');
+  CITY_ORDER.forEach(function(k){
+    if (!DB.city_costs[k]) return;
+    var opt = document.createElement('option');
+    opt.value = k;
+    opt.textContent = DB.city_costs[k].label;
+    sel.appendChild(opt);
+  });
+  sel.addEventListener('change', function(){ selCity = this.value; checkReady(); });
+}
+
+function onCareerChange(id){
+  selCareer = DB.careers.find(function(c){ return c.id === id; });
+  selPath = null; selCoaching = null; selCity = null;
+  document.getElementById('sel-city').value = '';
+  var stepRest = document.getElementById('step-rest');
+  if(!selCareer){
+    hideAll();
+    if (stepRest) stepRest.classList.add('hidden');
+    return;
+  }
+  renderPaths();
+  renderCoaching();
+  if (stepRest) stepRest.classList.remove('hidden');
+  document.getElementById('card-path').classList.remove('hidden');
+  document.getElementById('card-coaching').classList.remove('hidden');
+  document.getElementById('card-city').classList.remove('hidden');
+  document.getElementById('card-misc').classList.remove('hidden');
+  checkReady();
+}
+
+function renderPaths(){
+  var html = '';
+  selCareer.education_paths.forEach(function(p, i){
+    html += '<button class="path-btn" data-pid="' + p.id + '" onclick="selPathFn(this, \'' + p.id + '\')">';
+    html += '<span class="path-label">' + esc(p.label) + '</span>';
+    html += '<span class="path-prob">' + esc(p.probability) + '</span>';
+    html += '</button>';
+  });
+  document.getElementById('path-grid').innerHTML = html;
+}
+
+function selPathFn(btn, pid){
+  document.querySelectorAll('#path-grid .path-btn').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+  selPath = selCareer.education_paths.find(function(p){ return p.id === pid; });
+  checkReady();
+}
+
+function renderCoaching(){
+  var html = '';
+  html += '<label style="display:flex;gap:12px;align-items:flex-start;padding:12px;border:1.5px solid var(--border);border-radius:12px;cursor:pointer;margin-bottom:8px;background:var(--teal-light);border-color:var(--teal);" id="coachopt_skip">';
+  html += '<input type="radio" name="coaching" value="skip" style="margin-top:3px;accent-color:var(--teal-dark);cursor:pointer;" onchange="selCoachingSkip()">';
+  html += '<div><div style="font-size:13px;font-weight:600;color:var(--text);">No coaching package <span style="font-size:10px;font-weight:600;color:var(--gray);">(optional — ₹0)</span></div>';
+  html += '<div style="font-size:11px;color:var(--gray);margin-top:3px;">Skip if you are not paying for a structured coaching programme.</div></div></label>';
+  selCareer.coaching_options.forEach(function(c, i){
+    html += '<label style="display:flex;gap:12px;align-items:flex-start;padding:12px;border:1.5px solid var(--border);border-radius:12px;cursor:pointer;margin-bottom:8px;transition:border-color .15s;" id="coachopt_' + i + '">';
+    html += '<input type="radio" name="coaching" value="' + i + '" style="margin-top:3px;accent-color:var(--teal-dark);cursor:pointer;" onchange="selCoachingFn(' + i + ')">';
+    html += '<div><div style="font-size:13px;font-weight:600;color:var(--text);">' + esc(c.label) + '</div>';
+    html += '<div style="font-size:11px;color:var(--gray);margin-top:3px;">' + esc(c.note) + '</div>';
+    html += '<div style="font-size:13px;font-weight:700;color:var(--teal-dark);margin-top:4px;">Total coaching investment: ₹' + fmt(c.total_coaching_cost) + '</div>';
+    html += '</div></label>';
+  });
+  document.getElementById('coaching-options').innerHTML = html;
+  selCoachingSkip();
+}
+
+function selCoachingSkip(){
+  selCoaching = NO_COACHING;
+  document.querySelectorAll('#coaching-options label').forEach(function(l){
+    l.style.borderColor = 'var(--border)';
+    l.style.background = '#fff';
+  });
+  var lbl = document.getElementById('coachopt_skip');
+  if (lbl) {
+    lbl.style.borderColor = 'var(--teal-dark)';
+    lbl.style.background = 'var(--teal-light)';
+  }
+  var skip = document.querySelector('#coaching-options input[name="coaching"][value="skip"]');
+  if (skip) skip.checked = true;
+  document.querySelectorAll('#coaching-options input[name="coaching"]:not([value="skip"])').forEach(function(r){ r.checked = false; });
+  checkReady();
+}
+
+function selCoachingFn(idx){
+  var skipRadio = document.querySelector('#coaching-options input[name="coaching"][value="skip"]');
+  if (skipRadio) skipRadio.checked = false;
+  var sk = document.getElementById('coachopt_skip');
+  if (sk) {
+    sk.style.borderColor = 'var(--border)';
+    sk.style.background = '#fff';
+  }
+  selCoaching = selCareer.coaching_options[idx];
+  document.querySelectorAll('#coaching-options label').forEach(function(l){
+    l.style.borderColor = 'var(--border)';
+    l.style.background = '#fff';
+  });
+  var lbl = document.getElementById('coachopt_' + idx);
+  if (lbl) {
+    lbl.style.borderColor = 'var(--teal-dark)';
+    lbl.style.background = 'var(--teal-light)';
+  }
+  checkReady();
+}
+
+function updateMisc(){
+  miscPct = parseInt(document.getElementById('misc-slider').value);
+  document.getElementById('misc-val').textContent = miscPct + '%';
+}
+
+function checkReady(){
+  var ready = selCareer && selPath && selCity;
+  document.getElementById('btn-calc').disabled = !ready;
+}
+
+function hideAll(){
+  ['card-path','card-coaching','card-city','card-misc'].forEach(function(id){
+    document.getElementById(id).classList.add('hidden');
+  });
+  var stepRest = document.getElementById('step-rest');
+  if (stepRest) stepRest.classList.add('hidden');
+}
+
+// ────────────────────────────────────────────
+// CALCULATE
+// ────────────────────────────────────────────
+function calculate(){
+  if(!selCareer || !selPath || !selCity) return;
+
+  var fn = (document.getElementById('student-first-name').value || '').trim();
+  if (!fn) {
+    alert('Add your first name in the name box above Step 1 — we use it to personalise your result.');
+    document.getElementById('student-first-name').focus();
+    return;
+  }
+  var ln = (document.getElementById('student-last-name').value || '').trim();
+  studentName = ln ? fn + ' ' + ln : fn;
+
+  var c = selCareer;
+  var city = DB.city_costs[selCity];
+  var coach = selCoaching || NO_COACHING;
+  var studyYears = c.duration_years;
+  var prepYears = c.prep_duration_years;
+
+  var tuition = selPath.tuition_total;
+  var hostel = selPath.hostel_total;
+  var otherFees = selPath.other_fees_total;
+  var coaching = coach.total_coaching_cost;
+
+  var omitAway = city && city.omit_hostel_and_study_living;
+  var hostelStudy = omitAway ? 0 : hostel;
+  var livingMonths = studyYears * 12;
+  var livingCostStudy = omitAway ? 0 : city.total_monthly_mid * livingMonths;
+
+  var prepLiving = 0;
+  if (coach.living_months > 0) {
+    prepLiving = coach.living_per_month * coach.living_months;
+  } else {
+    prepLiving = 3000 * prepYears * 12;
+  }
+
+  var subtotal = tuition + hostelStudy + otherFees + coaching + livingCostStudy + prepLiving;
+  var miscAmount = Math.round(subtotal * miscPct / 100);
+  var total = subtotal + miscAmount;
+
+  var s = c.salary;
+  var yr1 = s.year_1_mid;
+  var yr3 = s.year_3_mid;
+  var yr5 = s.year_5_mid;
+
+  var fiveYrEarnings = yr1 + yr1 * 1.1 + yr3 + yr3 * 1.1 + yr5;
+  var roiPct = Math.min(Math.round((fiveYrEarnings / total) * 100), 500);
+  var breakEvenMonths = total / (yr1 / 12);
+
+  var firstName = (studentName || '').trim().split(/\s+/)[0] || '';
+  var rh = document.getElementById('rh-label');
+  if (rh) rh.textContent = firstName ? firstName + ', here is your personalised career ROI snapshot' : 'Your personalised career ROI snapshot';
+  document.getElementById('res-title').textContent = c.label;
+  var coachShort = coach.label.split('(')[0].trim();
+  document.getElementById('res-sub').textContent = selPath.label + ' · ' + city.label + ' · ' + coachShort;
+
+  var teaserEl = document.getElementById('rh-teaser');
+  if (teaserEl) {
+    var beYrs = breakEvenMonths / 12;
+    var teaser =
+      beYrs >= 1
+        ? 'At your mid starting salary, this total investment is roughly paid back in about ' +
+          (Math.round(beYrs * 10) / 10) +
+          ' years of full-time work (≈ ' +
+          Math.round(breakEvenMonths) +
+          ' months of that salary). Round numbers for planning — not a job offer.'
+        : 'At your mid starting salary, payback is roughly ' +
+          Math.round(breakEvenMonths) +
+          ' months of pay. Use this as a planning guide, not a promise.';
+    teaserEl.textContent = teaser;
+  }
+
+  var cbHtml = '';
+  var rows = [
+    { label: 'Tuition / Academic Fees', sub: selPath.note, amt: tuition }
+  ];
+  if (!omitAway) {
+    rows.push({
+      label: 'Hostel / Accommodation (study years)',
+      sub: studyYears + ' years (away-from-home estimate)',
+      amt: hostelStudy
+    });
+  }
+  rows.push({ label: 'Other College Fees (exams, materials, deposits)', sub: '', amt: otherFees });
+  rows.push({ label: 'Coaching / Preparation Fees', sub: coach.label, amt: coaching });
+  if (!omitAway) {
+    rows.push({
+      label: 'Living Costs During Study (' + studyYears + ' years)',
+      sub: '₹' + fmt(city.total_monthly_mid) + '/month × ' + livingMonths + ' months — ' + city.label,
+      amt: livingCostStudy
+    });
+  }
+  rows.push({ label: 'Living Costs During Prep (' + prepYears + ' years)', sub: coach.note, amt: prepLiving });
+  rows.push({
+    label: 'Miscellaneous & Buffer (' + miscPct + '%)',
+    sub: 'Books, travel, medical, internet, unexpected expenses',
+    amt: miscAmount
+  });
+  rows.forEach(function(r){
+    cbHtml += '<div class="cost-row"><div class="cost-label">' + esc(r.label);
+    if (r.sub) cbHtml += '<small>' + esc(r.sub) + '</small>';
+    cbHtml += '</div><div class="cost-amount">₹' + fmt(r.amt) + '</div></div>';
+  });
+  cbHtml += '<div class="cost-total-row"><div class="cost-total-label">TOTAL INVESTMENT</div><div class="cost-total-amount">₹' + fmt(total) + '</div></div>';
+  document.getElementById('cost-breakdown').innerHTML = cbHtml;
+
+  // Timeline bars
+  var maxBar = Math.max(total, fiveYrEarnings);
+  var tlHtml = '';
+  var tlData = [
+    { label: 'Preparation Phase', val: prepYears + ' year' + (prepYears !== 1 ? 's' : '') + ' (no income)', bars: false, note: true },
+    { label: 'Study Phase', val: studyYears + ' years (college)', bars: false, note: true },
+    { label: 'Total Investment Required', val: '₹' + fmt(total), bars: true, pct: total/maxBar*100, cls: 'red' },
+    { label: '5-Year Earnings (after first job)', val: '₹' + fmt(fiveYrEarnings), bars: true, pct: fiveYrEarnings/maxBar*100, cls: '' },
+    { label: 'Break-even Point', val: Math.round(breakEvenMonths) + ' months after first salary', bars: false, note: true }
+  ];
+  tlData.forEach(function(t){
+    tlHtml += '<div class="timeline-bar-wrap">';
+    tlHtml += '<div class="tl-bar-label"><span class="tl-bar-name">' + esc(t.label) + '</span><span class="tl-bar-val">' + esc(t.val) + '</span></div>';
+    if(t.bars){
+      tlHtml += '<div class="tl-track"><div class="tl-fill ' + (t.cls||'') + '" style="width:' + Math.min(t.pct,100) + '%"></div></div>';
+    }
+    tlHtml += '</div>';
+  });
+  document.getElementById('timeline-bars').innerHTML = tlHtml;
+
+  // ROI meter
+  var roiColor = roiPct >= 200 ? 'var(--teal-dark)' : roiPct >= 100 ? 'var(--amber)' : 'var(--red)';
+  var roiLabel = roiPct >= 300 ? 'Excellent ROI' : roiPct >= 200 ? 'Strong ROI' : roiPct >= 100 ? 'Positive ROI' : 'Long-term ROI';
+  var roiHtml = '<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;">';
+  roiHtml += '<span style="font-size:13px;color:var(--text);">5-year earnings vs total investment</span>';
+  roiHtml += '<span style="font-size:18px;font-weight:800;color:' + roiColor + ';">' + roiLabel + '</span>';
+  roiHtml += '</div>';
+  roiHtml += '<div class="roi-track"><div class="roi-fill" style="width:' + Math.min(roiPct/5,100) + '%;background:' + roiColor + ';"><span class="roi-pct">' + roiPct + '%</span></div></div>';
+  roiHtml += '<div class="roi-labels"><span>Investment = 0%</span><span>Break-even = 100%</span><span>2× return = 200%</span></div>';
+  roiHtml += '<div style="font-size:12px;color:var(--gray);margin-top:10px;line-height:1.7;">For every ₹100 invested, you earn back ₹' + Math.round(roiPct) + ' in the first 5 working years. This is a simplified estimate — actual returns grow significantly with experience and promotions.</div>';
+  document.getElementById('roi-content').innerHTML = roiHtml;
+
+  // Salary grid
+  var salHtml = '';
+  var salData = [
+    { year: 'Year 1', low: s.year_1_low, mid: s.year_1_mid, high: s.year_1_high },
+    { year: 'Year 3', low: s.year_3_low, mid: s.year_3_mid, high: s.year_3_high },
+    { year: 'Year 5', low: s.year_5_low, mid: s.year_5_mid, high: s.year_5_high }
+  ];
+  salData.forEach(function(sd){
+    salHtml += '<div class="sal-cell">';
+    salHtml += '<div class="sal-year">' + sd.year + '</div>';
+    salHtml += '<div class="sal-low">Low: ₹' + fmtL(sd.low) + '</div>';
+    salHtml += '<div class="sal-mid">₹' + fmtL(sd.mid) + '</div>';
+    salHtml += '<div class="sal-high">High: ₹' + fmtL(sd.high) + '</div>';
+    salHtml += '</div>';
+  });
+  document.getElementById('sal-grid').innerHTML = salHtml;
+  document.getElementById('sal-note').textContent = s.note;
+
+  // Reality check
+  document.getElementById('reality-content').innerHTML = '<div class="insight"><p>' + esc(c.honest_reality) + '</p></div><div style="margin-top:10px;font-size:12px;color:var(--gray);line-height:1.75;">Break-even note: ' + esc(c.break_even_note) + '</div>';
+
+  // CG context
+  document.getElementById('cg-content').innerHTML = '<div style="background:var(--teal-light);border-left:4px solid var(--teal);border-radius:0 10px 10px 0;padding:12px 14px;font-size:13px;color:var(--teal-dark);line-height:1.75;">' + esc(c.cg_context) + '</div>';
+
+  document.getElementById('screen-tool').classList.add('hidden');
+  document.getElementById('screen-result').classList.remove('hidden');
+  window.scrollTo(0,0);
+}
+
+function reset(){
+  selCareer=null; selPath=null; selCoaching=null; selCity=null;
+  studentName = '';
+  document.getElementById('student-first-name').value = '';
+  document.getElementById('student-last-name').value = '';
+  document.getElementById('sel-career').value='';
+  document.getElementById('sel-city').value='';
+  document.getElementById('misc-slider').value=15;
+  document.getElementById('misc-val').textContent='15%';
+  miscPct=15;
+  hideAll();
+  document.getElementById('btn-calc').disabled=true;
+  document.getElementById('screen-result').classList.add('hidden');
+  document.getElementById('screen-tool').classList.remove('hidden');
+  var teaser = document.getElementById('rh-teaser');
+  if (teaser) teaser.textContent = '';
+  window.scrollTo(0,0);
+}
+
+// ────────────────────────────────────────────
+// UTILS
+// ────────────────────────────────────────────
+function fmt(n){ return Math.round(n||0).toLocaleString('en-IN'); }
+function fmtL(n){
+  n = Math.round(n||0);
+  if(n>=10000000) return (n/10000000).toFixed(1)+' Cr';
+  if(n>=100000)   return (n/100000).toFixed(1)+' L';
+  if(n>=1000)     return (n/1000).toFixed(0)+' K';
+  return String(n);
+}
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+</script>
+</body>
+</html>

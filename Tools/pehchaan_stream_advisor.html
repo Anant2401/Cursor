@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Stream Advisor – Pehchaan Careers</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%23085041'/><circle cx='20' cy='22' r='8' fill='%23EF9F27'/><line x1='20' y1='8' x2='20' y2='4' stroke='%23EF9F27' stroke-width='2.2' stroke-linecap='round'/><line x1='30.5' y1='11.5' x2='33.5' y2='8.5' stroke='%23EF9F27' stroke-width='2.2' stroke-linecap='round'/><line x1='9.5' y1='11.5' x2='6.5' y2='8.5' stroke='%23EF9F27' stroke-width='2.2' stroke-linecap='round'/><path d='M8 34 L20 26 L32 34' stroke='%231D9E75' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%23085041'/><path d='M8 22 A12 12 0 0 1 32 22 Z' fill='%23EF9F27'/><path d='M6 36 L20 24 L34 36' stroke='%231D9E75' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -106,7 +106,11 @@
     background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
     border-radius: 14px; padding: 18px 20px; margin-bottom: 18px;
   }
-  .name-card label { font-size: 13px; font-weight: 600; display: block; margin-bottom: 10px; }
+  .name-card .name-card-lead { font-size: 13px; font-weight: 600; display: block; margin-bottom: 12px; line-height: 1.45; }
+  .name-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .name-field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .name-field-label { font-size: 11px; font-weight: 600; opacity: 0.88; letter-spacing: 0.02em; }
+  .name-field-label .name-optional { font-weight: 500; opacity: 0.72; }
   .name-input {
     width: 100%; padding: 13px 16px; border-radius: 10px;
     border: 1.5px solid rgba(255,255,255,.25); background: rgba(255,255,255,.12);
@@ -186,6 +190,9 @@
     color: var(--red); border-radius: 10px;
     padding: 10px 14px; font-size: 12px; margin-top: 12px; display: none;
   }
+  .disclaimer-box { background: #F8F7FF; border: 1px solid #C4C0F5; border-radius: 14px; padding: 16px 20px; margin-top: 16px; margin-bottom: 14px; }
+  .disclaimer-box h4 { font-size: 12px; font-weight: 700; color: #4B46A0; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; }
+  .disclaimer-box p { font-size: 12px; color: var(--gray-text); line-height: 1.75; margin: 0; }
   .nav-row { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; gap: 10px; }
   .btn-back {
     border: 1.5px solid var(--border); background: var(--white);
@@ -301,6 +308,7 @@
     .hero-card h1 { font-size: 22px; }
     .stream-row { grid-template-columns: 1fr; }
     .subj-grid { grid-template-columns: 1fr; }
+    .name-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -313,16 +321,7 @@
     <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
     <a class="topbar-brand" href="../index.html">
     <div class="topbar-logo">
-      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="22" r="8" fill="#EF9F27"/>
-        <line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
-        <line x1="30.5" y1="11.5" x2="33.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
-        <line x1="9.5" y1="11.5" x2="6.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
-        <line x1="34" y1="22" x2="38" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
-        <line x1="6" y1="22" x2="2" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/>
-        <path d="M8 34 L20 26 L32 34" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M4 34 L20 28 L36 34" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/>
-      </svg>
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
     </div>
     <div>
       <div class="topbar-name">Pehchaan Careers</div>
@@ -341,8 +340,17 @@
       <div class="hero-stat"><div class="v">~5</div><div class="l">Minutes</div></div>
     </div>
     <div class="name-card">
-      <label>What is your name? (So your result feels personal)</label>
-      <input type="text" class="name-input" id="student-name" placeholder="Type your first name here..." maxlength="40">
+      <span class="name-card-lead">What is your name? (So your result feels personal)</span>
+      <div class="name-grid">
+        <div class="name-field">
+          <span class="name-field-label">First Name</span>
+          <input type="text" class="name-input" id="student-first-name" placeholder="Anant" maxlength="40" autocomplete="given-name">
+        </div>
+        <div class="name-field">
+          <span class="name-field-label">Last Name <span class="name-optional">(optional)</span></span>
+          <input type="text" class="name-input" id="student-last-name" placeholder="Tripathi" maxlength="40" autocomplete="family-name">
+        </div>
+      </div>
     </div>
     <button class="btn-begin" id="btn-begin">Find My Stream →</button>
   </div>
@@ -372,6 +380,16 @@
     <h3>Important — before you start</h3>
     <p style="font-size:13px;color:var(--gray-text);line-height:1.8">There are no right or wrong answers. This is not a marks test. Answer based on what <strong style="color:var(--teal-dark)">you genuinely enjoy and find interesting</strong> — not what your parents want, not what your friends chose. The more honest you are, the more useful your result will be.</p>
   </div>
+
+  <div class="disclaimer-box">
+    <h4>Important — please read</h4>
+    <p>This page offers exploratory guidance only — not professional counselling or a formal psychometric report. Use your result as a conversation starter with people you trust. Pehchaan Careers is not liable for decisions based on this tool.</p>
+  </div>
+  <div class="brand-footer">
+    <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
+    <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
+    hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+  </div>
 </div>
 
 <!-- ==================== QUIZ ==================== -->
@@ -380,7 +398,7 @@
     <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
     <a class="topbar-brand" href="../index.html">
     <div class="topbar-logo">
-      <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="22" r="8" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="30.5" y1="11.5" x2="33.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="9.5" y1="11.5" x2="6.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="34" y1="22" x2="38" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="6" y1="22" x2="2" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M8 34 L20 26 L32 34" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 34 L20 28 L36 34" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/></svg>
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
     </div>
     <div>
       <div class="topbar-name">Pehchaan Careers</div>
@@ -396,12 +414,22 @@
 
   <div id="q-container"></div>
 
-  <div class="warn-box" id="warn-box">⚠ Please select an answer before continuing.</div>
+  <div class="warn-box" id="warn-box">Tap an option first — then hit Next when you are ready.</div>
 
   <div class="nav-row">
     <button class="btn-back" id="btn-back" style="visibility:hidden">← Back</button>
     <span class="nav-mid" id="nav-mid">Question 1 of 15</span>
     <button class="btn-next" id="btn-next">Next →</button>
+  </div>
+
+  <div class="disclaimer-box">
+    <h4>Important — please read</h4>
+    <p>This page offers exploratory guidance only — not professional counselling or a formal psychometric report. Use your result as a conversation starter with people you trust. Pehchaan Careers is not liable for decisions based on this tool.</p>
+  </div>
+  <div class="brand-footer">
+    <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
+    <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
+    hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
   </div>
 </div>
 
@@ -411,9 +439,9 @@
     <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
     <a class="topbar-brand" href="../index.html">
     <div class="topbar-logo">
-      <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="22" r="8" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="30.5" y1="11.5" x2="33.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="9.5" y1="11.5" x2="6.5" y2="8.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="34" y1="22" x2="38" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="6" y1="22" x2="2" y2="22" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M8 34 L20 26 L32 34" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 34 L20 28 L36 34" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/></svg>
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
     </div>
-    <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your stream result</div></div>
+    <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your identity. Your path.</div></div>
     </a>
   </div>
 
@@ -469,14 +497,14 @@
 
   <!-- DISCLAIMER -->
   <div class="card-section" style="border-color:#F5C878;background:var(--amber-light)">
-    <h3 style="color:#7A4A00">Important Disclaimer</h3>
+    <h3 style="color:#7A4A00">Important — please read</h3>
     <p style="font-size:12px;color:#5A3200;line-height:1.85">This Stream Advisor is a free self-reflection tool designed to help Class 10 students explore their interests and tendencies. It is <strong>not a psychometric test, not a professional career assessment, and not a substitute for qualified career counselling.</strong> Results are based on your self-reported answers and are intended as a starting point for conversation — not a final verdict. Stream selection is an important decision that should involve your parents, teachers, and ideally a qualified career counsellor who understands your full situation. Pehchaan Careers does not guarantee any specific outcome based on this result. All career and salary information provided is general and may vary based on individual effort, institutional quality, and market conditions.</p>
   </div>
 
   <div class="brand-footer">
     <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
     <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
-    hello.pehchaan@gmail.com &nbsp;·&nbsp; @pehchaancareers &nbsp;·&nbsp; pehchaancareers.in</p>
+    hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
   </div>
 </div>
 
@@ -774,8 +802,13 @@ function renderQuestion(idx) {
 }
 
 document.getElementById('btn-begin').addEventListener('click', function() {
-  studentName = (document.getElementById('student-name').value || '').trim();
-  if (!studentName) studentName = 'Friend';
+  var fn = (document.getElementById('student-first-name').value || '').trim();
+  var ln = (document.getElementById('student-last-name').value || '').trim();
+  if (!fn) {
+    alert('Add your first name — we use it so your stream result feels personal.');
+    return;
+  }
+  studentName = ln ? fn + ' ' + ln : fn;
   showScreen('screen-quiz');
   renderQuestion(0);
 });
@@ -807,7 +840,12 @@ document.getElementById('btn-next').addEventListener('click', function() {
 });
 
 document.getElementById('btn-restart').addEventListener('click', function() {
-  answers = {}; curQ = 0; showScreen('screen-cover');
+  answers = {}; curQ = 0; studentName = '';
+  var sf = document.getElementById('student-first-name');
+  var sl = document.getElementById('student-last-name');
+  if (sf) sf.value = '';
+  if (sl) sl.value = '';
+  showScreen('screen-cover');
 });
 
 /* ===== BUILD RESULTS ===== */
@@ -931,10 +969,14 @@ function setFallbackNarrative(name, topId) {
   document.getElementById('ai-content').innerHTML = '<p>' + msgs[topId] + '</p>';
 }
 
-/* Enter key on name field */
-document.getElementById('student-name').addEventListener('keydown', function(e) {
-  if (e.key === 'Enter') document.getElementById('btn-begin').click();
-});
+function wireNameEnter(id) {
+  var el = document.getElementById(id);
+  if (el) el.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') document.getElementById('btn-begin').click();
+  });
+}
+wireNameEnter('student-first-name');
+wireNameEnter('student-last-name');
 </script>
 </body>
 </html>

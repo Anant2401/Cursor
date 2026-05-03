@@ -74,6 +74,36 @@ function initToolsTabs() {
         "Gives structured next steps so you can start with clarity",
       ],
     },
+    roi: {
+      bestFor: "Families comparing career paths on total cost versus realistic earning power",
+      time: "8-12 minutes",
+      output: "Cost breakdown, payback framing, salary bands, and Chhattisgarh-specific context",
+      highlights: [
+        "Stacks tuition, coaching, hostel, living, prep years, and a configurable misc buffer in one view",
+        "Shows a simple 5-year earnings vs investment lens so conversations at home stay grounded, not emotional",
+        "Includes honest reality notes and a print / save-as-PDF option for sharing with parents or mentors",
+      ],
+    },
+    planb: {
+      bestFor: "Exam aspirants who want parallel income and identity while they prepare",
+      time: "6-9 minutes",
+      output: "Hidden transferable skills from your syllabus plus concrete Plan B roles and first steps",
+      highlights: [
+        "Turns subjects you already study into language employers understand — research, writing, analysis, discipline",
+        "Surfaces remote-friendly options and typical fresher pay bands so Plan B feels dignified, not like a backup",
+        "One-tap copy of your first-step checklist so you can paste it into Notes or a LinkedIn draft and start today",
+      ],
+    },
+    skillgap: {
+      bestFor: "Students targeting a software, data, or office role who learn better with a checklist than generic advice",
+      time: "8-12 minutes",
+      output: "Gap heatmap, prioritised learning resources, self-test platforms, and a phased weeks-to-months timeline",
+      highlights: [
+        "Tick skills you already have — with select-all / clear — so the gap list matches your real baseline",
+        "Each missing skill links to free or low-cost courses and a self-test idea so you can prove skill before interviews",
+        "Pulls in practice venues (coding judges, LinkedIn skill assessments) similar to what hiring teams actually check",
+      ],
+    },
     mentor: {
       bestFor:
         "Students who want proof, not hype, that someone from their place reached the goal they are chasing",

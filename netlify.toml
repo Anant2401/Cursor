@@ -6,3 +6,20 @@
   to = "https://pehchaan-api.onrender.com/api/:splat"
   status = 200
   force = true
+
+# Linux hosts are case-sensitive: fix lowercase links/bookmarks → canonical folders
+[[redirects]]
+  from = "/tools/*"
+  to = "/Tools/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/db/*"
+  to = "/DB/:splat"
+  status = 301
+
+# Extension-less / trailing-slash URL → canonical HTML (matches Python http.server folder index)
+[[redirects]]
+  from = "/Tools/pehchaan_exam_roadmap"
+  to = "/Tools/pehchaan_exam_roadmap.html"
+  status = 301
