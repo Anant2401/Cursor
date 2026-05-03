@@ -110,6 +110,15 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 .journey-step{font-size:11px;font-weight:600;color:var(--teal-dark);background:var(--teal-light);padding:3px 10px;border-radius:20px;}
 .journey-arrow{font-size:12px;color:var(--teal);}
 
+/* Volunteer mentor — LinkedIn helper */
+.mentor-li-block{background:var(--blue-light);border:1px solid rgba(55,138,221,.28);border-radius:12px;padding:14px 16px;margin-bottom:12px;}
+.mentor-li-block h4{font-size:11px;font-weight:700;color:#0C447C;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;}
+.mentor-li-steps{margin:0 0 12px;padding-left:20px;font-size:12px;color:var(--teal-dark);line-height:1.65;}
+.mentor-li-steps li{margin-bottom:6px;}
+.mentor-li-steps li:last-child{margin-bottom:0;}
+.btn-li.mentor-li-btn-wide{width:100%;justify-content:center;padding:12px 16px;font-size:13px;font-weight:700;}
+.mentor-li-missing{font-size:12px;color:var(--gray-text);margin:0;line-height:1.65;}
+
 /* ICEBREAKER */
 .icebreaker-box{background:var(--teal-dark);border-radius:12px;padding:16px;margin-bottom:12px;color:var(--white);}
 .icebreaker-label{font-size:10px;font-weight:700;color:var(--amber);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;}
@@ -1071,6 +1080,22 @@ function buildResults(curated, google, googleErr) {
 // ─────────────────────────────────────────────────────────────────
 // CARD BUILDERS
 // ─────────────────────────────────────────────────────────────────
+function normalizeMentorLinkedInUrl(raw) {
+  var s = String(raw || '').trim();
+  if (!s) return '';
+  if (/^https?:\/\//i.test(s)) return s;
+  if (/^\/\//.test(s)) return 'https:' + s;
+  s = s.replace(/^\/+/, '');
+  if (/^in\//i.test(s)) return 'https://www.linkedin.com/' + s;
+  if (/^www\.linkedin\.com/i.test(s)) return 'https://' + s;
+  if (/^linkedin\.com/i.test(s)) return 'https://www.' + s.replace(/^linkedin\.com/i, 'linkedin.com');
+  return s;
+}
+
+function mentorHasLinkedInUrl(urlNorm) {
+  return urlNorm && /linkedin\.com\//i.test(urlNorm);
+}
+
 function buildMentorCard(m, searchCity, searchCompany, cardIndex) {
   var idx = typeof cardIndex === 'number' ? cardIndex : 0;
   var sd = getStudentDisplayName(searchState.firstName, searchState.lastName);
@@ -1080,8 +1105,21 @@ function buildMentorCard(m, searchCity, searchCompany, cardIndex) {
     return '<span class="journey-step">' + escHtml(p) + '</span>' + (i < steps.length - 1 ? '<span class="journey-arrow">→</span>' : '');
   }).join('');
   var iceId = 'ice-mentor-' + idx;
-  var li = String(m.linkedin || '').trim();
-  var hasLi = li && li.indexOf('linkedin.com') >= 0;
+  var liNorm = normalizeMentorLinkedInUrl(m.linkedin);
+  var hasLi = mentorHasLinkedInUrl(liNorm);
+
+  var liStepsBlock = '<div class="mentor-li-block">'
+    + '<h4>How to connect on LinkedIn</h4>'
+    + '<ol class="mentor-li-steps">'
+    + '<li>Open their profile with the button below. Skim their <strong>headline</strong>, <strong>About</strong>, and recent posts so your note feels personal.</li>'
+    + '<li>Tap <strong>Connect</strong> with a short note, or <strong>Message</strong> / <strong>InMail</strong> if LinkedIn shows that option for you.</li>'
+    + '<li>Use the draft message in the next box — edit it in your own words and add one honest detail you noticed on their profile.</li>'
+    + '<li>Send once, wait kindly, and do not spam follow-ups. Respect their time the way you would want yours respected.</li>'
+    + '</ol>'
+    + (hasLi
+      ? '<a class="btn-li mentor-li-btn-wide" href="' + escHtml(liNorm) + '" target="_blank" rel="noopener noreferrer">🔗 Open LinkedIn profile</a>'
+      : '<p class="mentor-li-missing">No LinkedIn link was listed for this mentor yet. If you find their profile yourself, you can still use the draft message below.</p>')
+    + '</div>';
 
   return '<div class="mentor-card">'
     + '<div style="margin-bottom:8px"><span class="layer-badge layer-curated">⭐ Pehchaan Mentor</span></div>'
@@ -1097,6 +1135,7 @@ function buildMentorCard(m, searchCity, searchCompany, cardIndex) {
     + '<div class="journey-text">' + escHtml(m.journeyStory) + '</div>'
     + '<div class="journey-path" style="margin-top:10px;">' + pathHtml + '</div>'
     + '</div>'
+    + liStepsBlock
     + '<div class="icebreaker-box">'
     + '<div class="icebreaker-label">✉️ A draft in your voice — edit before you send</div>'
     + '<div class="icebreaker-text" id="' + iceId + '">' + escHtml(icebreaker) + '</div>'
@@ -1104,7 +1143,6 @@ function buildMentorCard(m, searchCity, searchCompany, cardIndex) {
     + '</div>'
     + '<div class="card-actions">'
     + '<button type="button" class="btn-copy" onclick="copyIcebreaker(' + idx + ', this)">📋 Copy Message</button>'
-    + (hasLi ? '<a class="btn-li" href="' + escHtml(li) + '" target="_blank" rel="noopener noreferrer">🔗 View on LinkedIn</a>' : '')
     + '</div>'
     + '</div>';
 }
