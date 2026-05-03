@@ -52,14 +52,16 @@ function sheetImportScore_(sh) {
   var lc = sh.getLastColumn();
   if (lr < 2 || lc < 1) return -1;
   var probeRows = Math.min(300, lr);
-  var vals = sh.getRange(1, 1, probeRows, lc).getValues();
+  var rng = sh.getRange(1, 1, probeRows, lc);
+  var vals = rng.getValues();
+  var fmls = rng.getFormulas();
   var headerRow = findHeaderRowIndex_(vals);
   var headers = vals[headerRow].map(function (h) {
     return String(h || '').trim();
   });
   var count = 0;
   for (var i = headerRow + 1; i < vals.length; i++) {
-    var m = rowToMentor_(headers, vals[i]);
+    var m = rowToMentor_(headers, vals[i], fmls[i] || []);
     if (m && m.name) count++;
   }
   return count * 100000 + lr;
@@ -97,7 +99,7 @@ function getCellByAliases_(headerMap, headers, row, aliases) {
 /** Known column titles (normalized) — used to find which row is the real header row. */
 var HEADER_HINTS_ = [
   'name', 'full name', 'timestamp', 'initials', 'title', 'company', 'city', 'hometown', 'state',
-  'college', 'journey story', 'journey path', 'linkedin', 'tags', 'email', 'phone'
+  'college', 'journey story', 'journey path', 'linkedin', 'linkedin profile', 'linkedin url', 'tags', 'email', 'phone'
 ];
 
 function headerRowScore_(row) {
@@ -105,6 +107,10 @@ function headerRowScore_(row) {
   for (var c = 0; c < row.length; c++) {
     var nk = normalizeHeaderKey_(row[c]);
     if (!nk) continue;
+    if (nk.indexOf('linkedin') >= 0 || nk.indexOf('linked in') >= 0 || nk.indexOf('lnkd') >= 0) {
+      score++;
+      continue;
+    }
     for (var h = 0; h < HEADER_HINTS_.length; h++) {
       if (nk === HEADER_HINTS_[h]) {
         score++;
@@ -141,11 +147,56 @@ function findHeaderRowIndex_(values) {
   return 0;
 }
 
+/** Pull a LinkedIn / lnkd.in URL from plain text or from =HYPERLINK("...", "...") */
+function extractLinkedInFromString_(s) {
+  if (!s) return '';
+  var str = String(s);
+  var m = str.match(/https?:\/\/(?:[\w.-]+\.)?linkedin\.com\/[^\s"'<>)]+/i);
+  if (m) return m[0].replace(/[,;.)]+$/, '');
+  m = str.match(/https?:\/\/lnkd\.in\/[^\s"'<>)]+/i);
+  if (m) return m[0].replace(/[,;.)]+$/, '');
+  m = str.match(/(?:https?:\/\/)?(?:www\.)?linkedin\.com\/[^\s"'<>]+/i);
+  if (m) {
+    var u = m[0].replace(/[,;.)]+$/, '');
+    if (!/^https?:\/\//i.test(u)) return 'https://' + u.replace(/^\/+/, '');
+    return u;
+  }
+  return '';
+}
+
+function extractLinkedInFromHyperlinkFormula_(f) {
+  if (!f || String(f).indexOf('HYPERLINK') < 0) return '';
+  var fm = String(f);
+  var m = fm.match(/HYPERLINK\s*\(\s*"([^"]+)"/i);
+  if (m && m[1] && /linkedin\.com|lnkd\.in/i.test(m[1])) return m[1];
+  m = fm.match(/HYPERLINK\s*\(\s*'([^']+)'/i);
+  if (m && m[1] && /linkedin\.com|lnkd\.in/i.test(m[1])) return m[1];
+  return '';
+}
+
+/** If the LinkedIn column is mis-labelled or uses HYPERLINK, scan the whole row. */
+function findLinkedInUrlInRow_(row, formulaRow) {
+  formulaRow = formulaRow || [];
+  for (var c = 0; c < row.length; c++) {
+    var cell = String(row[c] == null ? '' : row[c]).trim();
+    var fromCell = extractLinkedInFromString_(cell);
+    if (fromCell) return fromCell;
+    var frm = String(formulaRow[c] == null ? '' : formulaRow[c]).trim();
+    var fromF = extractLinkedInFromHyperlinkFormula_(frm);
+    if (fromF) return fromF;
+    fromF = extractLinkedInFromString_(frm);
+    if (fromF) return fromF;
+  }
+  return '';
+}
+
 /** doGet — return all mentor rows as JSON array (camelCase objects). */
 function doGet() {
   try {
     var sh = getMentorSheet_();
-    var values = sh.getDataRange().getValues();
+    var range = sh.getDataRange();
+    var values = range.getValues();
+    var formulas = range.getFormulas();
     if (!values || values.length < 2) return jsonOutput_([]);
     var headerRow = findHeaderRowIndex_(values);
     var headers = values[headerRow].map(function (h) {
@@ -163,7 +214,8 @@ function doGet() {
         }
       }
       if (empty) continue;
-      var m = rowToMentor_(headers, row);
+      var frow = formulas[i] || [];
+      var m = rowToMentor_(headers, row, frow);
       if (m && m.name) out.push(m);
     }
     return jsonOutput_(out);
@@ -172,7 +224,8 @@ function doGet() {
   }
 }
 
-function rowToMentor_(headers, row) {
+function rowToMentor_(headers, row, formulaRow) {
+  formulaRow = formulaRow || [];
   var hm = buildHeaderIndex_(headers);
   function get(aliases) {
     return getCellByAliases_(hm, headers, row, aliases);
@@ -191,7 +244,12 @@ function rowToMentor_(headers, row) {
   var jp = get(['Journey Path', 'Journey path', 'Path']);
   var tg = get(['Tags', 'Tag']);
   var story = get(['Journey Story', 'Journey story', 'Story', 'Bio', 'About']);
-  var li = get(['LinkedIn', 'Linkedin', 'LinkedIn URL', 'Linkedin url']);
+  var li = get([
+    'LinkedIn', 'Linkedin', 'LinkedIn URL', 'Linkedin url', 'LinkedIn profile', 'Linkedin profile',
+    'LinkedIn Profile', 'LinkedIn Profile URL', 'Linkedin Profile URL', 'Linkedin link', 'LinkedIn Link',
+    'Profile URL', 'Profile link', 'Social', 'Social link', 'Linked In', 'LI URL'
+  ]);
+  if (!li) li = findLinkedInUrlInRow_(row, formulaRow);
   return {
     name: name,
     initials: initials,

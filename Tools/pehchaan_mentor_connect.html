@@ -620,6 +620,43 @@ function normalizeMentorList(data) {
   return arr.map(normalizeMentorRow).filter(Boolean);
 }
 
+function extractLinkedInUrlFromString_(s) {
+  if (!s) return '';
+  var str = String(s);
+  var m = str.match(/https?:\/\/(?:[\w.-]+\.)?linkedin\.com\/[^\s"'<>]+/i);
+  if (m) return m[0].replace(/[,;.)]+$/, '');
+  m = str.match(/https?:\/\/lnkd\.in\/[^\s"'<>]+/i);
+  if (m) return m[0].replace(/[,;.)]+$/, '');
+  m = str.match(/(?:https?:\/\/)?(?:www\.)?linkedin\.com\/[^\s"'<>]+/i);
+  if (m) {
+    var u = m[0].replace(/[,;.)]+$/, '');
+    if (!/^https?:\/\//i.test(u)) return 'https://' + u.replace(/^\/+/, '');
+    return u;
+  }
+  return '';
+}
+
+function mentorPickLinkedIn_(m) {
+  var direct = extractLinkedInUrlFromString_(String(m.linkedin || m.LinkedIn || '').trim());
+  if (direct) return direct;
+  for (var k in m) {
+    if (!Object.prototype.hasOwnProperty.call(m, k)) continue;
+    var low = String(k).toLowerCase();
+    if (low.indexOf('linkedin') >= 0 || low.indexOf('lnkd') >= 0 || low === 'social' || low === 'profile url') {
+      var ex = extractLinkedInUrlFromString_(String(m[k] == null ? '' : m[k]));
+      if (ex) return ex;
+    }
+  }
+  for (var k2 in m) {
+    if (!Object.prototype.hasOwnProperty.call(m, k2)) continue;
+    var v = m[k2];
+    if (typeof v !== 'string') continue;
+    var ex2 = extractLinkedInUrlFromString_(v);
+    if (ex2) return ex2;
+  }
+  return '';
+}
+
 function mentorRowPickName_(m) {
   var direct = String(m.name || m.fullName || m['Full name'] || m['Full Name'] || '').trim();
   if (direct) return direct;
@@ -656,7 +693,7 @@ function normalizeMentorRow(m) {
     college: String(m.college || ''),
     journeyStory: String(m.journeyStory || m['Journey Story'] || ''),
     journeyPath: jp,
-    linkedin: String(m.linkedin || m.LinkedIn || '').trim(),
+    linkedin: mentorPickLinkedIn_(m),
     tags: tags
   };
 }
@@ -1083,9 +1120,12 @@ function buildResults(curated, google, googleErr) {
 function normalizeMentorLinkedInUrl(raw) {
   var s = String(raw || '').trim();
   if (!s) return '';
+  var extracted = extractLinkedInUrlFromString_(s);
+  if (extracted) return extracted;
   if (/^https?:\/\//i.test(s)) return s;
   if (/^\/\//.test(s)) return 'https:' + s;
   s = s.replace(/^\/+/, '');
+  if (/^lnkd\.in\//i.test(s)) return 'https://' + s;
   if (/^in\//i.test(s)) return 'https://www.linkedin.com/' + s;
   if (/^www\.linkedin\.com/i.test(s)) return 'https://' + s;
   if (/^linkedin\.com/i.test(s)) return 'https://www.' + s.replace(/^linkedin\.com/i, 'linkedin.com');
@@ -1093,7 +1133,7 @@ function normalizeMentorLinkedInUrl(raw) {
 }
 
 function mentorHasLinkedInUrl(urlNorm) {
-  return urlNorm && /linkedin\.com\//i.test(urlNorm);
+  return urlNorm && (/linkedin\.com\//i.test(urlNorm) || /lnkd\.in\//i.test(urlNorm));
 }
 
 function buildMentorCard(m, searchCity, searchCompany, cardIndex) {
