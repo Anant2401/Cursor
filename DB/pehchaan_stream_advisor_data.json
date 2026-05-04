@@ -1,0 +1,884 @@
+{
+  "meta": {
+    "last_updated": "2026-05-04",
+    "version": "1.0",
+    "questionCount": 15
+  },
+  "questions": [
+    {
+      "q": "When you study for exams, which type of chapter do you find yourself actually enjoying — not just tolerating?",
+      "ctx": "Think about subjects like Science, Maths, History, Economics, or English — which one made you think 'this is actually interesting'?",
+      "opts": [
+        {
+          "text": "Physics, Chemistry or Biology problems — I like figuring out how things work",
+          "scores": {
+            "S": 3,
+            "C": 0,
+            "A": 0
+          }
+        },
+        {
+          "text": "Maths and calculations — numbers and logic make sense to me",
+          "scores": {
+            "S": 2,
+            "C": 2,
+            "A": 0
+          }
+        },
+        {
+          "text": "Economics or Business Studies — how money and markets work interests me",
+          "scores": {
+            "S": 0,
+            "C": 3,
+            "A": 0
+          }
+        },
+        {
+          "text": "History, Geography or Civics — I like understanding society and the world",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "Hindi, English or Literature — I enjoy reading, writing and language",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        }
+      ]
+    },
+    {
+      "q": "You have 2 free hours on a Sunday afternoon. What are you most likely to do?",
+      "ctx": "Be honest — not what you think sounds impressive, but what you actually do.",
+      "opts": [
+        {
+          "text": "Watch something on YouTube about science, technology, space or how things are built",
+          "scores": {
+            "S": 3,
+            "C": 0,
+            "A": 0
+          }
+        },
+        {
+          "text": "Read news, watch business or stock market videos, or think about money and savings",
+          "scores": {
+            "S": 0,
+            "C": 3,
+            "A": 0
+          }
+        },
+        {
+          "text": "Draw, write, make music, read stories, or watch films and documentaries",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "Play games, scroll social media, or do a mix of everything",
+          "scores": {
+            "S": 1,
+            "C": 1,
+            "A": 1
+          }
+        },
+        {
+          "text": "Research colleges, careers or read about successful people",
+          "scores": {
+            "S": 1,
+            "C": 2,
+            "A": 1
+          }
+        }
+      ]
+    },
+    {
+      "q": "A friend comes to you with a problem. What do you naturally do?",
+      "ctx": "This tells us about how you think — are you a fixer, a planner, a speaker, or a listener?",
+      "opts": [
+        {
+          "text": "Try to analyse the situation logically and find the most practical solution",
+          "scores": {
+            "S": 3,
+            "C": 1,
+            "A": 0
+          }
+        },
+        {
+          "text": "Help them think through the financial or practical side — what will it cost, what is the risk?",
+          "scores": {
+            "S": 0,
+            "C": 3,
+            "A": 0
+          }
+        },
+        {
+          "text": "Listen carefully, empathise, and help them see different perspectives",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "Suggest who they should talk to or what resources exist that could help them",
+          "scores": {
+            "S": 1,
+            "C": 1,
+            "A": 2
+          }
+        },
+        {
+          "text": "Help them make a plan — steps, timeline, what to do first",
+          "scores": {
+            "S": 1,
+            "C": 2,
+            "A": 1
+          }
+        }
+      ]
+    },
+    {
+      "q": "Which of these future careers sounds most exciting to you — even if you are not sure how to get there?",
+      "ctx": "Do not think about difficulty or marks. Just which one makes you feel something.",
+      "opts": [
+        {
+          "text": "Engineer, Doctor, Scientist, Pilot, Data Analyst or Software Developer",
+          "scores": {
+            "S": 3,
+            "C": 0,
+            "A": 0
+          }
+        },
+        {
+          "text": "CA, Banker, Stock Market Analyst, Business Owner or Finance Manager",
+          "scores": {
+            "S": 0,
+            "C": 3,
+            "A": 0
+          }
+        },
+        {
+          "text": "Lawyer, IAS Officer, Journalist, Psychologist, Teacher or Social Worker",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "Designer, Writer, Filmmaker, Musician, Photographer or Architect",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "Marketing Manager, HR Professional, Event Manager or Digital Creator",
+          "scores": {
+            "S": 0,
+            "C": 1,
+            "A": 2
+          }
+        }
+      ]
+    },
+    {
+      "q": "How do you feel about Maths? Be completely honest.",
+      "ctx": "This matters because Science stream requires Maths, and Commerce can include or exclude it depending on your choice.",
+      "opts": [
+        {
+          "text": "I genuinely like Maths — it challenges me in a good way",
+          "scores": {
+            "S": 3,
+            "C": 1,
+            "A": 0
+          }
+        },
+        {
+          "text": "I manage Maths fine — it is not my favourite but I can handle it",
+          "scores": {
+            "S": 1,
+            "C": 2,
+            "A": 0
+          }
+        },
+        {
+          "text": "I find Maths very difficult and stressful",
+          "scores": {
+            "S": 0,
+            "C": 1,
+            "A": 2
+          }
+        },
+        {
+          "text": "I am okay with basic Maths (accounts, statistics) but not advanced Maths",
+          "scores": {
+            "S": 0,
+            "C": 3,
+            "A": 0
+          }
+        },
+        {
+          "text": "Maths is not for me at all — I prefer words, ideas and creativity",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        }
+      ]
+    },
+    {
+      "q": "When you read a newspaper or watch the news, what do you find yourself paying attention to?",
+      "ctx": "Your natural curiosity points toward your stream. What catches your eye first?",
+      "opts": [
+        {
+          "text": "Technology news — new inventions, space missions, scientific discoveries",
+          "scores": {
+            "S": 3,
+            "C": 0,
+            "A": 0
+          }
+        },
+        {
+          "text": "Business and economy — stock markets, company news, budget announcements",
+          "scores": {
+            "S": 0,
+            "C": 3,
+            "A": 0
+          }
+        },
+        {
+          "text": "Politics, government decisions, social issues, court cases",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "Sports, entertainment, films, social media trends",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 1
+          }
+        },
+        {
+          "text": "I do not follow news much — I find most of it boring",
+          "scores": {
+            "S": 1,
+            "C": 1,
+            "A": 1
+          }
+        }
+      ]
+    },
+    {
+      "q": "Imagine you are starting a small project with three classmates. What role do you naturally take?",
+      "ctx": "Groups always find a natural order. Which role feels most like you?",
+      "opts": [
+        {
+          "text": "The one who researches deeply, builds the technical part, or figures out how things actually work",
+          "scores": {
+            "S": 3,
+            "C": 0,
+            "A": 0
+          }
+        },
+        {
+          "text": "The one who manages the budget, plans resources, and keeps everyone organised",
+          "scores": {
+            "S": 0,
+            "C": 3,
+            "A": 0
+          }
+        },
+        {
+          "text": "The one who does the writing, presentations, design, or communication",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "The one who brings the team together, resolves conflicts, and keeps morale up",
+          "scores": {
+            "S": 0,
+            "C": 1,
+            "A": 2
+          }
+        },
+        {
+          "text": "The one who comes up with creative ideas and new approaches",
+          "scores": {
+            "S": 1,
+            "C": 0,
+            "A": 2
+          }
+        }
+      ]
+    },
+    {
+      "q": "Which of these activities would you be willing to do for 2 hours without getting bored?",
+      "ctx": "The things you can do for hours without checking your phone are usually the things you should build a career around.",
+      "opts": [
+        {
+          "text": "Running an experiment, solving a complex problem, or coding something",
+          "scores": {
+            "S": 3,
+            "C": 0,
+            "A": 0
+          }
+        },
+        {
+          "text": "Analysing financial data, calculating returns, or reading a business case study",
+          "scores": {
+            "S": 0,
+            "C": 3,
+            "A": 0
+          }
+        },
+        {
+          "text": "Writing an essay, reading a book, or discussing a social or political topic",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "Drawing, designing, making something creative, or editing a video",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "Researching career options, watching skill-building videos, planning your future",
+          "scores": {
+            "S": 1,
+            "C": 1,
+            "A": 1
+          }
+        }
+      ]
+    },
+    {
+      "q": "Your Class 10 marks are out. In which subject did you score the best AND feel the least stressed while studying it?",
+      "ctx": "Best marks under least stress = natural talent. This is important information.",
+      "opts": [
+        {
+          "text": "Science (Physics / Chemistry / Biology)",
+          "scores": {
+            "S": 3,
+            "C": 0,
+            "A": 0
+          }
+        },
+        {
+          "text": "Mathematics",
+          "scores": {
+            "S": 2,
+            "C": 2,
+            "A": 0
+          }
+        },
+        {
+          "text": "Social Science (History / Geography / Civics / Economics)",
+          "scores": {
+            "S": 0,
+            "C": 1,
+            "A": 3
+          }
+        },
+        {
+          "text": "Hindi or English (Language / Literature)",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "All subjects were about the same for me",
+          "scores": {
+            "S": 1,
+            "C": 1,
+            "A": 1
+          }
+        }
+      ]
+    },
+    {
+      "q": "Think about the adults in your life you genuinely admire — what kind of work do they do?",
+      "ctx": "We are shaped by the people we look up to. This question reveals hidden aspirations.",
+      "opts": [
+        {
+          "text": "Engineers, doctors, scientists, or people who build or fix physical things",
+          "scores": {
+            "S": 3,
+            "C": 0,
+            "A": 0
+          }
+        },
+        {
+          "text": "Business people, bank officers, CAs, or people who manage money and organisations",
+          "scores": {
+            "S": 0,
+            "C": 3,
+            "A": 0
+          }
+        },
+        {
+          "text": "Teachers, lawyers, journalists, government officers, or social workers",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "Artists, writers, filmmakers, or creative professionals",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "I admire people from all kinds of backgrounds — no specific type",
+          "scores": {
+            "S": 1,
+            "C": 1,
+            "A": 1
+          }
+        }
+      ]
+    },
+    {
+      "q": "Which of these challenges would you actually enjoy working on — even if it was hard?",
+      "ctx": "The right career is not the one with no difficulty — it is the one where the difficulty feels worth it.",
+      "opts": [
+        {
+          "text": "Building a device, writing a program, or proving a scientific theory",
+          "scores": {
+            "S": 3,
+            "C": 0,
+            "A": 0
+          }
+        },
+        {
+          "text": "Growing a business from nothing, managing finances, or passing competitive banking exams",
+          "scores": {
+            "S": 0,
+            "C": 3,
+            "A": 0
+          }
+        },
+        {
+          "text": "Arguing a legal case, writing a powerful article, or helping someone get justice",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "Creating something beautiful that many people connect with emotionally",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "Leading a team and making a visible difference in people's lives",
+          "scores": {
+            "S": 0,
+            "C": 1,
+            "A": 2
+          }
+        }
+      ]
+    },
+    {
+      "q": "How do you feel about the idea of studying for 3–5 years after Class 12 for a specific qualification?",
+      "ctx": "Different streams require very different commitments. Knowing this helps us give you an honest picture.",
+      "opts": [
+        {
+          "text": "I am willing to put in years of hard work if it leads to a stable, respected career",
+          "scores": {
+            "S": 2,
+            "C": 2,
+            "A": 1
+          }
+        },
+        {
+          "text": "I want a clear qualification and exam path — I like knowing exactly what I need to do",
+          "scores": {
+            "S": 1,
+            "C": 3,
+            "A": 1
+          }
+        },
+        {
+          "text": "I want flexibility — I do not want to be locked into one narrow career path",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "I want to start earning or gaining experience as early as possible",
+          "scores": {
+            "S": 0,
+            "C": 2,
+            "A": 1
+          }
+        },
+        {
+          "text": "I am willing to work for a longer time if the career is something I truly care about",
+          "scores": {
+            "S": 1,
+            "C": 0,
+            "A": 3
+          }
+        }
+      ]
+    },
+    {
+      "q": "Which government exam sounds most aligned with your interests — even if you have not fully decided yet?",
+      "ctx": "Government exams are a major career path in smaller cities. Your answer here is genuinely useful.",
+      "opts": [
+        {
+          "text": "GATE or ESE (Engineering), NDA (Defence), or JEE / NEET after 12th",
+          "scores": {
+            "S": 3,
+            "C": 0,
+            "A": 0
+          }
+        },
+        {
+          "text": "IBPS Bank PO / Clerk, SSC CGL, or CA Foundation",
+          "scores": {
+            "S": 0,
+            "C": 3,
+            "A": 0
+          }
+        },
+        {
+          "text": "UPSC Civil Services (IAS/IPS), State PSC, or CLAT (Law)",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "CTET / State TET (Teaching) or exams for Social Work or Journalism",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "I have not thought about this at all yet",
+          "scores": {
+            "S": 1,
+            "C": 1,
+            "A": 1
+          }
+        }
+      ]
+    },
+    {
+      "q": "Which statement sounds most like something YOU would say?",
+      "ctx": "Pick the one that feels most true, not the one that sounds most impressive.",
+      "opts": [
+        {
+          "text": "I want to understand how the world works at a deep level — science, technology, systems",
+          "scores": {
+            "S": 3,
+            "C": 0,
+            "A": 0
+          }
+        },
+        {
+          "text": "I want financial security and a stable career — I like planning ahead and managing resources",
+          "scores": {
+            "S": 0,
+            "C": 3,
+            "A": 0
+          }
+        },
+        {
+          "text": "I want to express myself, tell stories, and create things that matter to people",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "I want to understand people, society and power — and maybe change something for the better",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "I want to be in a leadership role someday — running something, managing people, making decisions",
+          "scores": {
+            "S": 1,
+            "C": 2,
+            "A": 1
+          }
+        }
+      ]
+    },
+    {
+      "q": "Last question — and the most important one. Which subject do you wish your school had MORE of?",
+      "ctx": "Not more marks — more time, more depth, more teaching. What subject do you feel you never had enough of?",
+      "opts": [
+        {
+          "text": "Science experiments, technology labs, or more advanced Maths",
+          "scores": {
+            "S": 3,
+            "C": 0,
+            "A": 0
+          }
+        },
+        {
+          "text": "Economics, business studies, or practical finance lessons",
+          "scores": {
+            "S": 0,
+            "C": 3,
+            "A": 0
+          }
+        },
+        {
+          "text": "History, political science, law, or social issues",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "Creative writing, art, music, drama, or media studies",
+          "scores": {
+            "S": 0,
+            "C": 0,
+            "A": 3
+          }
+        },
+        {
+          "text": "Life skills — career planning, communication, and practical knowledge",
+          "scores": {
+            "S": 1,
+            "C": 1,
+            "A": 1
+          }
+        }
+      ]
+    }
+  ],
+  "streamData": {
+    "S": {
+      "name": "Science",
+      "emoji": "🔬",
+      "color": "#085041",
+      "bg": "#E1F5EE",
+      "bar": "#1D9E75",
+      "heroBg": "linear-gradient(135deg, #085041 0%, #0d6b50 100%)",
+      "tagline": "The stream for people who want to understand and build the world",
+      "insight": "Your answers show a natural curiosity about how things work — systems, problems, experiments and logic. Science stream will feel like home for you. It keeps the most doors open: you can go into Engineering, Medicine, Defence, Data Science, Research, or even switch to Commerce or Civil Services later. The competitive exams are tough, but students who genuinely enjoy the subjects have a real advantage.",
+      "subjects": [
+        {
+          "name": "Physics",
+          "why": "Foundation for Engineering, Defence, Data Science",
+          "col": "#085041",
+          "bg": "#E1F5EE"
+        },
+        {
+          "name": "Chemistry",
+          "why": "Required for Medicine, Pharmacy, Material Science",
+          "col": "#085041",
+          "bg": "#E1F5EE"
+        },
+        {
+          "name": "Mathematics",
+          "why": "Essential for most high-salary careers in tech and finance",
+          "col": "#085041",
+          "bg": "#E1F5EE"
+        },
+        {
+          "name": "Biology (optional)",
+          "why": "Take this if Medicine, Nursing or BioTech interests you",
+          "col": "#085041",
+          "bg": "#E1F5EE"
+        }
+      ],
+      "careers": [
+        "Engineering (CSE/Mechanical/Civil)",
+        "MBBS / Medical",
+        "Data Science",
+        "Pilot (NDA/CPL)",
+        "Architecture",
+        "Defence Officer (NDA)",
+        "BCA / MCA",
+        "Research Scientist",
+        "Pharmacy",
+        "Biotechnology",
+        "Environmental Science",
+        "Marine Engineering"
+      ],
+      "steps": [
+        "If JEE is your goal — start now. One hour of Physics and Maths daily from Class 11 Day 1 is not optional.",
+        "If Medicine is your goal — NEET requires consistent Biology and Chemistry from Class 11. Start building your base immediately.",
+        "If you are unsure between Engineering and Medicine — take PCM + Biology (PCMB). Keep both doors open until Class 12.",
+        "Download the free NCERT books for Class 11 Science now and start reading Chapter 1 before classes begin. It will give you a head start that most students waste.",
+        "Find one Pehchaan session — let us map your exact path based on your Class 10 marks and your family's situation."
+      ]
+    },
+    "C": {
+      "name": "Commerce",
+      "emoji": "📊",
+      "color": "#7A4A00",
+      "bg": "#FAEEDA",
+      "bar": "#EF9F27",
+      "heroBg": "linear-gradient(135deg, #7A3D00 0%, #a85500 100%)",
+      "tagline": "The stream for people who want to understand money, business and organisations",
+      "insight": "Your pattern shows a practical, organised mind that is drawn to how money works, how businesses run, and how systems are managed. Commerce is one of India's most underrated streams — Chartered Accountancy, Banking, Finance, and Business Management are all high-earning, high-respect careers. Commerce also has the most accessible government exam paths: IBPS, SSC, and RBI exams are highly competitive but well-structured for students who plan well.",
+      "subjects": [
+        {
+          "name": "Accountancy",
+          "why": "Core skill for CA, Banking, Finance — master this first",
+          "col": "#7A4A00",
+          "bg": "#FAEEDA"
+        },
+        {
+          "name": "Business Studies",
+          "why": "Foundation for MBA, Marketing, Management careers",
+          "col": "#7A4A00",
+          "bg": "#FAEEDA"
+        },
+        {
+          "name": "Economics",
+          "why": "Required for UPSC, MBA, Banking — highly useful",
+          "col": "#7A4A00",
+          "bg": "#FAEEDA"
+        },
+        {
+          "name": "Maths or IP",
+          "why": "Take Maths if CA or Data Analytics interests you. IP is fine otherwise.",
+          "col": "#7A4A00",
+          "bg": "#FAEEDA"
+        }
+      ],
+      "careers": [
+        "Chartered Accountant (CA)",
+        "IBPS Bank PO / Clerk",
+        "SSC CGL",
+        "MBA / BBA",
+        "Stock Market Analyst",
+        "Business Owner",
+        "Tax Consultant",
+        "Financial Planner",
+        "Cost Accountant",
+        "RBI Grade B",
+        "Insurance Manager",
+        "Supply Chain Manager"
+      ],
+      "steps": [
+        "Start the CA Foundation course as soon as you complete Class 12 — or even register during Class 12. CA is a 4-5 year journey that many students delay unnecessarily.",
+        "Open a zero-balance savings account and start tracking your expenses. Every student in Commerce should understand basic personal finance before they study it in a textbook.",
+        "Subscribe to one good business newspaper (The Economic Times or Business Standard) and read just the headlines every morning. This habit alone sets you apart.",
+        "Look at IBPS PO syllabus now — start with Quantitative Aptitude and Reasoning basics. Students who start in Class 11 are far better prepared than those who start after Class 12.",
+        "Book one Pehchaan session to map your Commerce path — CA vs. Banking vs. MBA vs. Govt exams — based on your strengths and family situation."
+      ]
+    },
+    "A": {
+      "name": "Arts / Humanities",
+      "emoji": "🎨",
+      "color": "#3C3489",
+      "bg": "#EEEDFE",
+      "bar": "#7F77DD",
+      "heroBg": "linear-gradient(135deg, #26215C 0%, #3C3489 100%)",
+      "tagline": "The stream for people who want to understand people, society and expression",
+      "insight": "Your answers reveal a thoughtful, curious person who is drawn to language, ideas, people, and society. Arts and Humanities is deeply misunderstood in India — it is NOT the stream for students who 'could not get into Science.' It is the stream that produces IAS officers, lawyers, journalists, psychologists, writers, designers and diplomats. UPSC Civil Services — India's most prestigious exam — is primarily an Arts stream career path. Your stream choice is strong, and your future is wide open.",
+      "subjects": [
+        {
+          "name": "History / Political Science",
+          "why": "Essential for UPSC, Law, Journalism, Teaching",
+          "col": "#3C3489",
+          "bg": "#EEEDFE"
+        },
+        {
+          "name": "Geography / Economics",
+          "why": "Strong for UPSC, MBA, Urban Planning, Research",
+          "col": "#3C3489",
+          "bg": "#EEEDFE"
+        },
+        {
+          "name": "Hindi / English Literature",
+          "why": "Foundation for Writing, Journalism, Law, Communication",
+          "col": "#3C3489",
+          "bg": "#EEEDFE"
+        },
+        {
+          "name": "Psychology / Sociology",
+          "why": "For Counselling, Social Work, HR, Education paths",
+          "col": "#3C3489",
+          "bg": "#EEEDFE"
+        }
+      ],
+      "careers": [
+        "IAS / IPS (UPSC)",
+        "Lawyer (CLAT)",
+        "Journalist / Editor",
+        "Teacher / Professor",
+        "Psychologist / Counsellor",
+        "Social Worker (BSW)",
+        "Graphic Designer / UX Designer",
+        "Content Writer / Author",
+        "HR Manager",
+        "NGO / Development Work",
+        "Fashion Designer (NIFT)",
+        "Political Analyst"
+      ],
+      "steps": [
+        "Ignore anyone who says Arts has no future. UPSC Civil Services, India's most competitive exam, is primarily cleared by Arts and Humanities students. Your stream is strong.",
+        "If Law interests you — prepare for CLAT from Class 11. It is competitive but very achievable with consistent reading and practice.",
+        "Read one newspaper thoroughly every day. UPSC and most Arts-track careers require general knowledge that can only be built over time, not crammed before an exam.",
+        "Start writing regularly — a journal, a blog, anything. Writing is the single most transferable skill in an Arts career and it only develops through practice.",
+        "Book one Pehchaan session. Let us map the path that fits your family situation — government job vs. private sector vs. higher studies — so you can plan your Class 11 and 12 years with a clear goal."
+      ]
+    }
+  },
+  "ai": {
+    "apiUrl": "https://api.anthropic.com/v1/messages",
+    "model": "claude-sonnet-4-20250514",
+    "maxTokens": 200,
+    "useApi": false,
+    "promptTemplate": "You are Pehchaan Careers — an honest, warm elder-sibling career guide for students aged 15-17 in Tier 3 cities of Chhattisgarh, India (Korba, Bilaspur, Raigarh). Write a SHORT, warm, personal message (3-4 sentences, under 120 words) for {{name}} who just completed the Stream Advisor test. Their result: {{stream}} stream (Science {{sPct}}%, Commerce {{cPct}}%, Arts {{aPct}}%). Write directly to them using their name. Be encouraging but honest. Do not use flowery language. Sound like an elder sibling who genuinely cares. Write in simple English — clear sentences, no jargon. End with one encouraging sentence about their specific stream. Do not start with \"Hello\" or \"Hi\".",
+    "fallbackTemplates": {
+      "S": "{{name}}, you chose answers that show a mind that genuinely wants to understand how things work — not just memorise, but really understand. That is exactly the kind of thinking that drives good engineers, doctors and scientists. Science stream will feel challenging, but the right kind of challenging. Thousands of students from smaller cities have cracked JEE and NEET — hard work from day one makes all the difference.",
+      "C": "{{name}}, your answers show someone who thinks practically about resources, planning and outcomes. That is an incredibly valuable way of thinking — and it is exactly what Commerce stream is built for. The path from here to CA, Banking or Business is clear and structured. You are not choosing the easy stream — you are choosing the smart one for your strengths.",
+      "A": "{{name}}, the fact that you scored highest in Arts tells me you think deeply about people, society and ideas. That is not a weakness — it is a strength that most students in India have been told to ignore. The students who crack UPSC, become lawyers or build media careers are often exactly the kind of thinkers you describe yourself as being. Your stream is one of quiet power."
+    }
+  }
+}

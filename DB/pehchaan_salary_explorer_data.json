@@ -1,0 +1,2369 @@
+{
+  "meta": {
+    "last_updated": "2026-05-04",
+    "version": "2.0",
+    "dataYear": 2026,
+    "title": "Career & Salary Explorer",
+    "heroBlurb": "Browse careers with indicative India salary bands, which stream fits, which exams matter, how long entry takes, and an honest reality check. Every career includes a note for students from Chhattisgarh. Figures are ranges—not guarantees.",
+    "salaryDisclaimer": "Salary figures are approximate ranges based on public reports (AmbitionBox, Glassdoor, LinkedIn Salary) and India skills reports. Actual pay varies with college tier, city, company, and performance. Top bands reflect exceptional cases—use mid ranges for planning. Career decisions should involve your parents, teachers, and a qualified counsellor who knows your specific situation.",
+    "filterDefinitions": [
+      {
+        "id": "all",
+        "label": "All",
+        "emoji": ""
+      },
+      {
+        "id": "science",
+        "label": "Science",
+        "emoji": "🔬"
+      },
+      {
+        "id": "commerce",
+        "label": "Commerce",
+        "emoji": "📊"
+      },
+      {
+        "id": "arts",
+        "label": "Arts",
+        "emoji": "🎨"
+      },
+      {
+        "id": "govt",
+        "label": "Govt Job",
+        "emoji": "🏛️"
+      },
+      {
+        "id": "any",
+        "label": "Any Stream",
+        "emoji": "✅"
+      },
+      {
+        "id": "healthcare",
+        "label": "Healthcare",
+        "emoji": "🩺"
+      },
+      {
+        "id": "trades",
+        "label": "Trades & ITI",
+        "emoji": "🔧"
+      },
+      {
+        "id": "creative",
+        "label": "Creative & Media",
+        "emoji": "✨"
+      },
+      {
+        "id": "tech",
+        "label": "Tech & Digital",
+        "emoji": "💻"
+      }
+    ]
+  },
+  "careers": [
+    {
+      "id": 1,
+      "name": "Software Engineer / Developer",
+      "emoji": "💻",
+      "stream": [
+        "science",
+        "any"
+      ],
+      "tags": [
+        "Science",
+        "Tech",
+        "Private"
+      ],
+      "entryLPA": "3–8",
+      "midLPA": "10–22",
+      "seniorLPA": "25–60+",
+      "reality": 88,
+      "time": "4 years (BTech) + skills",
+      "exams": [
+        "JEE Main (for NIT/IIIT/IIT)",
+        "CUET / State CET (for private colleges)",
+        "No exam needed for self-taught path — portfolio matters"
+      ],
+      "paths": [
+        "BTech CSE / IT",
+        "BCA + MCA",
+        "BSc Computer Science",
+        "Self-taught + certifications (Coursera, freeCodeCamp)"
+      ],
+      "skills": [
+        "Python / Java / JavaScript",
+        "Data Structures and Algorithms (DSA)",
+        "Git / GitHub",
+        "System Design (for senior roles)"
+      ],
+      "honest": "<strong>Most honest fact:</strong> College rank matters much less than your coding portfolio. A student from a private college in Bilaspur who solves 200 LeetCode problems and has 3 real projects on GitHub gets better offers than a student from a decent college who only studied theory. Start building on GitHub from Class 11.",
+      "cg": "<strong>From Chhattisgarh:</strong> TCS, Infosys, Wipro and HCL hire in bulk from engineering colleges in Raipur and Bhilai. Getting into a good engineering college in CG (SSCET, CSIT, SSTC) followed by genuine skill-building is a completely realistic path to ₹5–8 LPA within a year of graduation. Remote work makes location irrelevant once you have 2–3 years of experience.",
+      "segments": [
+        "tech"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Chartered Accountant (CA)",
+      "emoji": "📒",
+      "stream": [
+        "commerce"
+      ],
+      "tags": [
+        "Commerce",
+        "Finance",
+        "High-Prestige"
+      ],
+      "entryLPA": "6–12",
+      "midLPA": "15–30",
+      "seniorLPA": "30–80+",
+      "reality": 72,
+      "time": "4.5–5 years after Class 12",
+      "exams": [
+        "CA Foundation (after Class 12)",
+        "CA Intermediate (2 groups)",
+        "CA Final (ICAI — India's toughest professional exam)"
+      ],
+      "paths": [
+        "BCom + CA (parallel — recommended)",
+        "BBA + CA",
+        "Start CA Foundation immediately after Class 12"
+      ],
+      "skills": [
+        "Accounting and Taxation",
+        "Audit skills and compliance",
+        "Tally / Excel / SAP",
+        "GST and Company Law"
+      ],
+      "honest": "<strong>Most honest fact:</strong> CA Final first-attempt pass rate is around 10–15% — one of India's hardest exams. But once you qualify, the salary jump is dramatic. Most students take 5–7 years total. During articleship (3 years of practical training) you earn a stipend of ₹2,000–15,000/month. The path is hard but completely structured.",
+      "cg": "<strong>From Chhattisgarh:</strong> CA is one of the most respected careers in Korba, Bilaspur and Raipur. NTPC, SECL, SAIL Bhilai, and every major CG company need CAs. You do not need to move to a metro city — many successful CAs in CG cities have built thriving practices locally, serving coal companies, government departments, and local businesses.",
+      "segments": []
+    },
+    {
+      "id": 3,
+      "name": "Doctor (MBBS / MD)",
+      "emoji": "🩺",
+      "stream": [
+        "science"
+      ],
+      "tags": [
+        "Science",
+        "Healthcare",
+        "High-Prestige"
+      ],
+      "entryLPA": "6–15",
+      "midLPA": "15–40",
+      "seniorLPA": "40–200+",
+      "reality": 58,
+      "time": "5.5 years MBBS + 3 years MD (specialist)",
+      "exams": [
+        "NEET UG (mandatory for MBBS and BDS)",
+        "NEET PG (for MD/MS specialisation)"
+      ],
+      "paths": [
+        "Class 12 PCB → NEET → MBBS → MD/MS → Specialist practice"
+      ],
+      "skills": [
+        "NEET preparation (Biology + Physics + Chemistry)",
+        "Clinical skills built during MBBS",
+        "Specialisation skills during MD/MS residency"
+      ],
+      "honest": "<strong>Most honest fact:</strong> NEET is extremely competitive — 2 million+ students appear for roughly 90,000 government MBBS seats. Private MBBS colleges charge ₹50 lakh–1.2 crore in fees. If your family cannot fund private MBBS and your NEET rank misses government colleges, the ROI needs very careful thought before taking large loans.",
+      "cg": "<strong>From Chhattisgarh:</strong> Government medical colleges in CG — RIMS Raipur, CIMS Bilaspur, MIMS Jagdalpur — offer seats to NEET qualifiers. Healthcare is severely underserved in CG. A doctor who returns to a Tier 3 city after MBBS has enormous impact, good income, and almost no competition compared to metro cities.",
+      "segments": [
+        "healthcare"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "IAS / IPS Officer (UPSC)",
+      "emoji": "🏛️",
+      "stream": [
+        "arts",
+        "any"
+      ],
+      "tags": [
+        "Arts",
+        "Govt Job",
+        "High-Prestige"
+      ],
+      "entryLPA": "8–12+",
+      "midLPA": "16–22+",
+      "seniorLPA": "20–30+",
+      "reality": 40,
+      "time": "3–7 years of serious preparation after graduation",
+      "exams": [
+        "UPSC Civil Services Exam — Prelims → Mains (9 papers) → Interview",
+        "Any graduation degree required (stream does not matter for eligibility)"
+      ],
+      "paths": [
+        "Any graduation + dedicated UPSC preparation (2–4 years)",
+        "BA / BCom / BSc — all eligible"
+      ],
+      "skills": [
+        "Current affairs (daily newspaper reading mandatory)",
+        "Essay and answer writing in Hindi or English",
+        "General Studies (4 GS papers covering wide range)",
+        "One optional subject mastery"
+      ],
+      "honest": "<strong>Most honest fact:</strong> UPSC selects approximately 1,000 candidates from 1 million applicants each year. The salary itself is moderate — the real value is the government-provided housing, car, staff, and extraordinary power to shape policy. Most successful candidates spend 2–4 years of focused preparation. Have a genuine backup plan.",
+      "cg": "<strong>From Chhattisgarh:</strong> CG has produced IAS officers from Korba, Bilaspur and Raigarh. CGPSC (State PSC) is a much more accessible alternative — similar prestige within the state, significantly lower competition. CGPSC selects 200–400 officers per year for CG only. This is the more realistic target for most CG students.",
+      "segments": [
+        "govt_job"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Data Scientist / Analyst",
+      "emoji": "📊",
+      "stream": [
+        "science",
+        "commerce"
+      ],
+      "tags": [
+        "Science",
+        "Commerce",
+        "Tech"
+      ],
+      "entryLPA": "4–9",
+      "midLPA": "12–25",
+      "seniorLPA": "25–55+",
+      "reality": 80,
+      "time": "4 years degree + 6–12 months skill-building",
+      "exams": [
+        "JEE / CUET (for college admission)",
+        "Google Data Analytics / IBM Data Science certifications (free on Coursera)"
+      ],
+      "paths": [
+        "BTech CSE / IT → Python + ML",
+        "BSc Statistics + Python + SQL",
+        "BCA + certifications",
+        "BCom + Excel + Power BI + SQL (Data Analyst path)"
+      ],
+      "skills": [
+        "Python or R programming",
+        "SQL for data querying",
+        "Machine Learning basics",
+        "Tableau or Power BI for visualisation",
+        "Excel (advanced)"
+      ],
+      "honest": "<strong>Most honest fact:</strong> 'Data Scientist' requires strong statistics + coding foundations. 'Data Analyst' is a more accessible entry with Excel, SQL and Power BI. Entry-level analyst roles at ₹4–6 LPA are realistic from a Tier 2/3 college with genuine skills. This is one of the fastest-growing roles in India right now.",
+      "cg": "<strong>From Chhattisgarh:</strong> Remote work has made location entirely irrelevant in this field. A student from Korba who learns Python and SQL seriously can get a remote job with a Bengaluru company without relocating. This is one of the most location-flexible careers available — the skills travel with you.",
+      "segments": [
+        "tech"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Lawyer / Advocate",
+      "emoji": "⚖️",
+      "stream": [
+        "arts",
+        "any"
+      ],
+      "tags": [
+        "Arts",
+        "Law",
+        "Govt & Private"
+      ],
+      "entryLPA": "2–6",
+      "midLPA": "8–25",
+      "seniorLPA": "30–200+",
+      "reality": 62,
+      "time": "5 years (BA LLB integrated) or 3 years LLB after graduation",
+      "exams": [
+        "CLAT (for National Law Universities — NLUs)",
+        "CUET / State Law Entrance for other colleges",
+        "Bar Council of India exam after degree (mandatory to practice)"
+      ],
+      "paths": [
+        "Class 12 → CLAT → BA LLB 5 years → Practice or corporate law",
+        "Any graduation → LLB 3 years → Litigation or corporate role"
+      ],
+      "skills": [
+        "Legal research and case analysis",
+        "Drafting contracts and petitions",
+        "Oral argument and courtroom procedure",
+        "Specialisation in corporate / criminal / family law"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Law income is extremely uneven. Top corporate lawyers at elite firms earn crores. A general advocate in a small city earns ₹15,000–40,000/month for the first 5 years. The real money is in corporate law at top firms, which requires NLU degrees or top LLB colleges. Local practice in small cities is viable but takes years to build.",
+      "cg": "<strong>From Chhattisgarh:</strong> HNLU (Hidayatullah National Law University) in Raipur is one of India's top NLUs — CG students have a home advantage. District courts in Bilaspur, Korba and Raigarh always need competent lawyers. Corporate litigation linked to mining, coal and PSU contracts in CG offers solid local income.",
+      "segments": []
+    },
+    {
+      "id": 7,
+      "name": "Teacher / Professor",
+      "emoji": "📖",
+      "stream": [
+        "arts",
+        "science",
+        "commerce",
+        "any"
+      ],
+      "tags": [
+        "Any Stream",
+        "Govt Job"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "5–12",
+      "seniorLPA": "10–20",
+      "reality": 85,
+      "time": "3–4 years degree + B.Ed 2 years + CTET or State TET",
+      "exams": [
+        "CTET (Central Teacher Eligibility Test)",
+        "CGTET / State TET (for state government schools)",
+        "UGC NET (for college and university lecturer post)"
+      ],
+      "paths": [
+        "Any BA/BSc/BCom → B.Ed → TET → Government school teaching",
+        "Graduation + UGC NET → College lecturer"
+      ],
+      "skills": [
+        "Subject mastery in chosen teaching subject",
+        "Classroom communication and management",
+        "Lesson planning",
+        "Patience and empathy with students"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Government school teaching (after CTET/State TET) is one of the most stable and respected careers in Tier 3 cities. Salary + DA in CG government schools reaches ₹40,000–60,000/month at mid-career. Private school teaching pays much less. Target government — not private — school jobs here.",
+      "cg": "<strong>From Chhattisgarh:</strong> CGVYAPAM recruits hundreds of government teachers regularly. This is one of the most reliable paths to a secure, respected life in Korba or Champa — especially for students from middle-class families who want to stay close to home and serve their community.",
+      "segments": [
+        "govt_job"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Bank PO / Clerk (IBPS / SBI)",
+      "emoji": "🏦",
+      "stream": [
+        "commerce",
+        "any"
+      ],
+      "tags": [
+        "Commerce",
+        "Govt Job",
+        "Any Stream"
+      ],
+      "entryLPA": "4–7",
+      "midLPA": "8–14",
+      "seniorLPA": "14–22",
+      "reality": 90,
+      "time": "1–2 years of preparation after graduation",
+      "exams": [
+        "IBPS PO (Probationary Officer)",
+        "IBPS Clerk",
+        "SBI PO / SBI Clerk (separate from IBPS)",
+        "RBI Grade B (advanced — higher salary)"
+      ],
+      "paths": [
+        "Any graduation → 8–12 months of structured IBPS preparation → Selection"
+      ],
+      "skills": [
+        "Quantitative Aptitude (number series, DI, arithmetic)",
+        "Reasoning Ability (puzzles, seating arrangement)",
+        "English Language",
+        "General and Financial Awareness",
+        "Computer Basics"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Banking is one of the most achievable government careers in India. IBPS PO and SBI PO are competitive (10,000+ vacancies per year nationally) but structured and transparent. Students who prepare consistently for 8–12 months clear them. The job offers excellent stability, pension, housing allowance and deep respect.",
+      "cg": "<strong>From Chhattisgarh:</strong> SBI, Bank of Baroda, Central Bank, and all major PSU banks have large offices in Bilaspur, Korba and Raipur. Getting a Bank PO job means you can stay in CG, build a comfortable life, and serve your community. This is one of the most popular and realistic career goals for students from Tier 3 CG cities.",
+      "segments": [
+        "govt_job"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "SSC CGL / CHSL (Government Job)",
+      "emoji": "🏅",
+      "stream": [
+        "any"
+      ],
+      "tags": [
+        "Govt Job",
+        "Any Stream"
+      ],
+      "entryLPA": "4–7",
+      "midLPA": "7–12",
+      "seniorLPA": "12–18",
+      "reality": 82,
+      "time": "1–2 years of preparation after graduation",
+      "exams": [
+        "SSC CGL (Combined Graduate Level) — for Grade B and C posts",
+        "SSC CHSL — for LDC / DEO posts",
+        "SSC MTS (Class 12 onwards — no graduation needed)"
+      ],
+      "paths": [
+        "Any graduation → SSC exam coaching and preparation → Central government post"
+      ],
+      "skills": [
+        "Quantitative Aptitude",
+        "Reasoning (verbal and non-verbal)",
+        "English language",
+        "General Knowledge and Current Affairs",
+        "Typing and computer proficiency"
+      ],
+      "honest": "<strong>Most honest fact:</strong> SSC CGL selects Income Tax Inspectors, Assistant Section Officers, Auditors and Statistical Investigators. These are central government posts with full job security, pension, housing allowance and excellent work-life balance. Competition is high but consistent preparation works — hundreds of students from smaller cities qualify every year.",
+      "cg": "<strong>From Chhattisgarh:</strong> Central government offices in Raipur, Bilaspur and Jagdalpur regularly absorb SSC CGL candidates. This career lets you live in CG in a pensioned, respected government position. Extremely popular and realistic goal for students from Korba, Champa and Raigarh.",
+      "segments": [
+        "govt_job"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Nursing (BSc / GNM)",
+      "emoji": "💉",
+      "stream": [
+        "science"
+      ],
+      "tags": [
+        "Science",
+        "Healthcare",
+        "Govt & Private"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "5–12",
+      "seniorLPA": "10–25",
+      "reality": 92,
+      "time": "3–4 years BSc Nursing or 3.5 years GNM Diploma",
+      "exams": [
+        "NEET (for BSc Nursing at government colleges)",
+        "State nursing entrance exams",
+        "No NEET required for many private nursing colleges"
+      ],
+      "paths": [
+        "Class 12 PCB → BSc Nursing → Government hospital / private hospital",
+        "Class 12 PCB → GNM Diploma → Registration → Practice"
+      ],
+      "skills": [
+        "Clinical nursing procedures",
+        "Patient communication and care",
+        "Medical equipment operation",
+        "ICU / OT specialisation (advanced level)"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Government hospital nurses earn ₹30,000–55,000/month at mid-level. Private hospital starting salaries are lower (₹12,000–20,000/month) but grow with experience and specialisation. International demand from Middle East, UK and Canada for qualified Indian nurses is very high — a real option for those who qualify and want to go abroad.",
+      "cg": "<strong>From Chhattisgarh:</strong> AIIMS Raipur, CIMS Bilaspur and government hospitals across CG constantly need qualified nurses. BSc Nursing from a government college in CG (very low fees) followed by a government hospital job is one of the most secure and respected paths for PCB students who want healthcare careers.",
+      "segments": [
+        "healthcare"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Civil / Mechanical Engineer",
+      "emoji": "🏗️",
+      "stream": [
+        "science"
+      ],
+      "tags": [
+        "Science",
+        "Engineering",
+        "Govt & Private"
+      ],
+      "entryLPA": "2–6",
+      "midLPA": "6–16",
+      "seniorLPA": "15–35",
+      "reality": 74,
+      "time": "4 years BTech + optional GATE for PSU",
+      "exams": [
+        "JEE Main / State CET (for BTech admission)",
+        "GATE (for PSU jobs and higher studies — very important in CG)"
+      ],
+      "paths": [
+        "BTech Civil / Mechanical → Private construction or manufacturing company",
+        "BTech → GATE exam → PSU (NTPC, BHEL, SAIL, SECL) → Government-level job"
+      ],
+      "skills": [
+        "AutoCAD / Revit / SolidWorks (CAD software)",
+        "Site management and supervision",
+        "Structural or mechanical design principles",
+        "GATE subject preparation (for PSU route)"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Private company starting salaries are low (₹2–4 LPA) but grow steadily. The real prize is cracking GATE — PSU companies like NTPC, BHEL, SAIL and SECL offer ₹8–12 LPA with full government benefits and pension. GATE rank below 1000 opens PSU doors. This is the path to aim for in CG.",
+      "cg": "<strong>From Chhattisgarh:</strong> NTPC Korba, SECL coal operations, SAIL Bhilai, and massive infrastructure projects in CG create exceptional local demand for Civil and Mechanical engineers who pass GATE. You do not need to leave CG for an excellent engineering career — this state has more engineering job opportunities per capita than most states.",
+      "segments": []
+    },
+    {
+      "id": 12,
+      "name": "Digital Marketing Professional",
+      "emoji": "📱",
+      "stream": [
+        "any"
+      ],
+      "tags": [
+        "Any Stream",
+        "Creative",
+        "Private"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "6–15",
+      "seniorLPA": "15–40+",
+      "reality": 87,
+      "time": "6 months skill-building + any degree or even no degree",
+      "exams": [
+        "Google Digital Marketing Certificate (free)",
+        "Meta Blueprint — Facebook and Instagram Ads (free)",
+        "HubSpot Content Marketing Certificate (free)"
+      ],
+      "paths": [
+        "Any degree + free Google/Meta certifications → Entry-level job",
+        "Start Instagram/YouTube to build real portfolio → Freelance from Day 1"
+      ],
+      "skills": [
+        "SEO (Search Engine Optimisation)",
+        "Google Ads and Meta Ads management",
+        "Content creation and strategy",
+        "Email marketing and analytics",
+        "Canva for creative assets"
+      ],
+      "honest": "<strong>Most honest fact:</strong> This is one of the most accessible career paths in India today. You can start learning free on Google Skillshop right now, build a portfolio on Instagram, and get a job within 6 months. The ceiling is also high — a skilled performance marketer at a startup earns ₹15–30 LPA. Completely stream-agnostic.",
+      "cg": "<strong>From Chhattisgarh:</strong> Businesses in Korba, Bilaspur and Raipur — shops, hospitals, schools, real estate firms — desperately need digital marketing help. A student who learns this skill can freelance locally, charge ₹5,000–25,000 per client per month, and build real income while still in college. No need to move to a metro.",
+      "segments": [
+        "creative"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Journalist / Content Writer",
+      "emoji": "✍️",
+      "stream": [
+        "arts",
+        "any"
+      ],
+      "tags": [
+        "Arts",
+        "Creative",
+        "Private"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "5–14",
+      "seniorLPA": "12–35+",
+      "reality": 68,
+      "time": "3 years BA Journalism / Mass Communication",
+      "exams": [
+        "IIMC entrance (for India's top journalism school in New Delhi)",
+        "State mass communication college entrances",
+        "No exam needed for freelance content writing"
+      ],
+      "paths": [
+        "BA Journalism / Mass Communication → Media organisation",
+        "BA English + strong writing portfolio + practice → Content role",
+        "Direct freelance writing — no degree required"
+      ],
+      "skills": [
+        "Writing that is clear, fast and accurate",
+        "Research and fact-checking",
+        "SEO writing for digital content roles",
+        "Video or audio editing for media organisations"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Traditional print journalism pays poorly (₹15,000–25,000/month at local newspapers). Digital content writing pays much better (₹3–8 LPA for a skilled writer with one year of experience). The real growth is in content strategy and branded content, not newspaper reporting. Start writing online today — Medium, LinkedIn, your own blog.",
+      "cg": "<strong>From Chhattisgarh:</strong> Local Hindi and English news channels, newspapers and digital portals are always hiring in Raipur and Bilaspur. Haribhoomi, Nai Dunia and ETV MP-CG recruit locally. For content writing, location is completely irrelevant — you can work remotely from Korba for companies in Mumbai or Bengaluru.",
+      "segments": [
+        "creative"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Graphic / UI-UX Designer",
+      "emoji": "🎨",
+      "stream": [
+        "any"
+      ],
+      "tags": [
+        "Any Stream",
+        "Creative",
+        "Private"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "6–18",
+      "seniorLPA": "18–45+",
+      "reality": 78,
+      "time": "6–12 months of dedicated learning + portfolio building",
+      "exams": [
+        "NIFT entrance exam (for formal fashion and design degree)",
+        "NID entrance (for product and communication design)",
+        "No exam required for self-taught designers — portfolio is everything"
+      ],
+      "paths": [
+        "NIFT or NID → Top design career",
+        "Any degree + Figma + Canva + Adobe → Freelance or agency",
+        "BFA Design from arts college"
+      ],
+      "skills": [
+        "Figma (industry-standard UI design tool)",
+        "Adobe Photoshop and Illustrator",
+        "User research and wireframing (for UX roles)",
+        "Portfolio on Behance"
+      ],
+      "honest": "<strong>Most honest fact:</strong> A self-taught designer with a strong Behance portfolio earns more than a design graduate with a weak portfolio. Employers look at your work — not your degree. Start practising Figma and Canva today. Build 5 real projects: redesign existing apps, create posters for local businesses, design a complete brand identity.",
+      "cg": "<strong>From Chhattisgarh:</strong> Freelance design is entirely location-independent. A designer in Raigarh working on Fiverr or with direct clients earns the same as one in Mumbai. Local demand exists too — schools, hospitals, businesses and political parties in CG constantly need design work. This career can start today, from anywhere.",
+      "segments": [
+        "creative"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Pharmacist",
+      "emoji": "💊",
+      "stream": [
+        "science"
+      ],
+      "tags": [
+        "Science",
+        "Healthcare",
+        "Govt & Private"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "5–10",
+      "seniorLPA": "10–20",
+      "reality": 83,
+      "time": "4 years B.Pharm or 2 years D.Pharm diploma",
+      "exams": [
+        "State Pharmacy Entrance (for B.Pharm government college)",
+        "GPAT (for M.Pharm and research)",
+        "Drug Inspector exam (for government regulatory role)"
+      ],
+      "paths": [
+        "Class 12 PCB or PCM → D.Pharm → Open own medical store / hospital",
+        "Class 12 → B.Pharm → Hospital pharmacy / pharma company / drug inspector"
+      ],
+      "skills": [
+        "Drug knowledge and safe dispensing",
+        "Patient counselling and medication advice",
+        "Quality control in pharma manufacturing",
+        "Pharmaceutical marketing (for industry roles)"
+      ],
+      "honest": "<strong>Most honest fact:</strong> D.Pharm (2 years, low fees at government pharmacy colleges) lets you open your own medical store — a very viable, stable, respected career in any town or city. Government drug inspector posts are competitive but highly rewarding. Pharma company medical rep roles offer ₹3–6 LPA to start.",
+      "cg": "<strong>From Chhattisgarh:</strong> Every town in CG needs pharmacists. Opening a medical store in Korba, Champa or Raigarh after D.Pharm is a completely realistic path to ₹35,000–80,000/month income within 3–5 years. Government pharmacy jobs at district hospitals are regularly advertised through CGVYAPAM — very accessible for PCB students.",
+      "segments": [
+        "healthcare"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Architect",
+      "emoji": "🏙️",
+      "stream": [
+        "science"
+      ],
+      "tags": [
+        "Science",
+        "Engineering",
+        "Creative"
+      ],
+      "entryLPA": "3–7",
+      "midLPA": "8–20",
+      "seniorLPA": "20–60+",
+      "reality": 65,
+      "time": "5 years B.Arch degree",
+      "exams": [
+        "NATA (National Aptitude Test in Architecture) — taken after Class 12",
+        "JEE Paper 2 (for NIT architecture programmes)"
+      ],
+      "paths": [
+        "Class 12 PCM → NATA score + Class 12 marks → B.Arch admission → Architecture firm or own practice"
+      ],
+      "skills": [
+        "AutoCAD / Revit / SketchUp (design software)",
+        "Design thinking and spatial reasoning",
+        "Site management and construction knowledge",
+        "3D visualisation and rendering"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Architecture is a 5-year degree with a slow salary start (₹15,000–25,000/month initially). Growth is good at 5–10 years — experienced architects earn well, especially in real estate and urban development. Requires genuine creative and technical passion to sustain through the long degree and early career.",
+      "cg": "<strong>From Chhattisgarh:</strong> CG is undergoing massive infrastructure development — smart city projects in Raipur, Naya Raipur township, industrial expansion in Korba and Bhilai. NMDC and the state government regularly commission design work. Architects with CG-specific market knowledge have strong local demand.",
+      "segments": [
+        "creative"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Psychologist / Counsellor",
+      "emoji": "🧠",
+      "stream": [
+        "arts",
+        "science"
+      ],
+      "tags": [
+        "Arts",
+        "Healthcare",
+        "Private"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "5–12",
+      "seniorLPA": "12–30+",
+      "reality": 70,
+      "time": "3 years BA Psychology + 2 years MA + RCI registration for clinical practice",
+      "exams": [
+        "CUET / BA Psychology entrance at university",
+        "RCI (Rehabilitation Council of India) registration mandatory for clinical psychologists"
+      ],
+      "paths": [
+        "BA Psychology → MA Clinical Psychology → Private practice or hospital",
+        "BA → MA → School counsellor / HR psychology role (no RCI needed)",
+        "BA → MA → PhD → Research or academia"
+      ],
+      "skills": [
+        "Listening and structured empathy",
+        "Psychological assessment techniques",
+        "Counselling methodologies (CBT, person-centred)",
+        "Case documentation and report writing"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Income in private psychology practice takes years to build. School counsellors earn ₹15,000–30,000/month. Clinical psychologists with established private practice earn ₹40,000–1,20,000/month after 5–10 years. HR psychology and corporate wellness roles pay ₹5–15 LPA — faster income growth than clinical practice.",
+      "cg": "<strong>From Chhattisgarh:</strong> Mental health services are severely underserved in CG. A qualified counsellor in Korba or Bilaspur has virtually no competition and enormous community need. Schools, coal company employees and families dealing with stress all need support. The societal impact here is extraordinary.",
+      "segments": [
+        "healthcare"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "BBA + MBA (Management)",
+      "emoji": "💼",
+      "stream": [
+        "commerce",
+        "any"
+      ],
+      "tags": [
+        "Commerce",
+        "Business",
+        "Private"
+      ],
+      "entryLPA": "3–7",
+      "midLPA": "8–20",
+      "seniorLPA": "20–80+",
+      "reality": 72,
+      "time": "3 years BBA + 2 years MBA = 5 years total",
+      "exams": [
+        "CAT (for IIMs — India's most competitive MBA entrance)",
+        "MAT / XAT / SNAP / CMAT (for other MBA colleges)",
+        "CUET (for BBA undergraduate entry)"
+      ],
+      "paths": [
+        "BBA → CAT preparation → IIM or top MBA → Corporate career",
+        "BCom / BA + 2 years work experience → CAT → MBA",
+        "BBA → Direct management trainee at company (no MBA needed)"
+      ],
+      "skills": [
+        "Communication and leadership under pressure",
+        "Financial analysis and modelling",
+        "Marketing and strategy fundamentals",
+        "Excel / PowerPoint / data interpretation",
+        "Networking and relationship building"
+      ],
+      "honest": "<strong>Most honest fact:</strong> MBA from IIM (₹20–30 LPA average placement) is a genuine life-changer. MBA from an unknown college charging ₹5–10 lakh in fees may not justify the investment. College matters enormously in MBA. A BBA + work experience + strong CAT score is the right sequence. Do not take large loans for unknown MBA colleges.",
+      "cg": "<strong>From Chhattisgarh:</strong> NIT Raipur Management, Symbiosis Raipur and KIIT offer decent BBA programmes. NTPC, SECL and large CG-based companies hire management trainees locally. The MBA-to-PSU path (joining a public sector company after MBA) is particularly strong in a resource-heavy state like CG.",
+      "segments": []
+    },
+    {
+      "id": 19,
+      "name": "Defence Officer (NDA / CDS)",
+      "emoji": "⚔️",
+      "stream": [
+        "science",
+        "any"
+      ],
+      "tags": [
+        "Govt Job",
+        "Any Stream"
+      ],
+      "entryLPA": "7–12+",
+      "midLPA": "12–18+",
+      "seniorLPA": "18–25+",
+      "reality": 55,
+      "time": "3–4 years NDA training after Class 12 or CDS after graduation",
+      "exams": [
+        "NDA exam — for Class 12 students aiming for Army, Navy or Air Force",
+        "CDS (Combined Defence Services) — after graduation for all three services",
+        "AFCAT — for Air Force commissioned officer after graduation"
+      ],
+      "paths": [
+        "Class 12 PCM → NDA exam → 3 years joint training → Commissioned Officer",
+        "Any graduation → CDS exam → IMA / OTA training → Commissioned Officer"
+      ],
+      "skills": [
+        "Physical fitness (mandatory and tested rigorously)",
+        "NDA/CDS written exam preparation (Maths + English + GK)",
+        "SSB Interview preparation (5-day psychological and physical selection)",
+        "Leadership under pressure"
+      ],
+      "honest": "<strong>Most honest fact:</strong> NDA selection is rigorous — written exam followed by SSB Interview (5-day psychological and physical evaluation). Only about 1 in 50 SSB aspirants is recommended. But those who join get a life of purpose, complete financial security, free housing and one of India's most respected careers. Pension after 20 years of service is for life.",
+      "cg": "<strong>From Chhattisgarh:</strong> CG has strong representation in the Army, particularly in infantry regiments. Physical fitness culture in smaller cities is a genuine advantage in NDA/CDS selection. NDA coaching is available in Raipur and Bilaspur. This is among the most respected careers in every Tier 3 city in CG.",
+      "segments": [
+        "govt_job"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "ITI / Polytechnic (Skilled Trades)",
+      "emoji": "🔧",
+      "stream": [
+        "any"
+      ],
+      "tags": [
+        "Any Stream",
+        "Govt & Private",
+        "Technical"
+      ],
+      "entryLPA": "1.5–4",
+      "midLPA": "4–9",
+      "seniorLPA": "8–18",
+      "reality": 95,
+      "time": "1–2 years ITI or 3 years Polytechnic Diploma after Class 10",
+      "exams": [
+        "State ITI entrance (merit-based in CG — Class 10 marks)",
+        "Polytechnic entrance (CGCET)",
+        "NTPC / BHEL / SECL apprenticeship selection (after ITI)"
+      ],
+      "paths": [
+        "Class 10 → ITI (Electrician / Fitter / Welder / Machinist) → NTPC / SECL / Private company",
+        "Class 10 or 12 → Polytechnic Diploma → Engineer designation with work experience"
+      ],
+      "skills": [
+        "Trade-specific technical skills (depends on chosen ITI trade)",
+        "Industrial safety protocols",
+        "Machine and equipment operation",
+        "Maintenance procedures"
+      ],
+      "honest": "<strong>Most honest fact:</strong> NTPC Korba, SECL, SAIL Bhilai and hundreds of factories in CG hire ITI-qualified workers as permanent employees with full government-level benefits, overtime and career advancement. An ITI Electrician at NTPC earns ₹35,000–55,000/month total compensation at mid-career. No education debt. No years of uncertainty. This path is deeply underrated.",
+      "cg": "<strong>From Chhattisgarh:</strong> This path was built for CG. NTPC Korba, BHEL Raipur, SECL mines and SAIL Bhilai hire hundreds of ITI-qualified technicians every year. Government ITI colleges in Korba and Bilaspur charge almost nothing in fees. This is genuinely one of the highest-ROI careers available to a student from any Tier 3 CG city.",
+      "segments": [
+        "trades",
+        "tech"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Social Worker / NGO Professional",
+      "emoji": "🤲",
+      "stream": [
+        "arts",
+        "any"
+      ],
+      "tags": [
+        "Arts",
+        "Any Stream",
+        "Social Impact"
+      ],
+      "entryLPA": "2–4",
+      "midLPA": "5–12",
+      "seniorLPA": "10–25",
+      "reality": 75,
+      "time": "3 years BSW or 2 years MSW after any graduation",
+      "exams": [
+        "CUET / State BSW entrance",
+        "TISS entrance (for MSW — highly competitive but very worth it)"
+      ],
+      "paths": [
+        "BSW → NGO / social enterprise / government social welfare department",
+        "Any graduation → MSW → UNICEF / UN agencies / corporate CSR roles"
+      ],
+      "skills": [
+        "Community development and mobilisation",
+        "Grant writing and project proposals",
+        "Research and impact documentation",
+        "Communication in local languages (Hindi, Chhattisgarhi)"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Social work salaries at small Indian NGOs start low (₹15,000–30,000/month). But TISS MSW graduates go to UN agencies, international NGOs and government positions earning ₹8–20 LPA. Corporate CSR roles at NTPC, SAIL and Tata pay ₹5–10 LPA and are excellent for CG-based social workers who understand the local context.",
+      "cg": "<strong>From Chhattisgarh:</strong> CG PSUs — NTPC, SECL, SAIL — spend hundreds of crores on CSR every year and actively hire social work professionals to implement programmes in CG communities. This is a genuinely high-impact career that lets you help your own community while earning a decent salary.",
+      "segments": []
+    },
+    {
+      "id": 22,
+      "name": "Commercial Pilot",
+      "emoji": "✈️",
+      "stream": [
+        "science"
+      ],
+      "tags": [
+        "Science",
+        "Private",
+        "High-Prestige"
+      ],
+      "entryLPA": "8–18",
+      "midLPA": "20–40",
+      "seniorLPA": "40–80+",
+      "reality": 42,
+      "time": "2–3 years CPL training after Class 12 PCM",
+      "exams": [
+        "Class 12 PCM mandatory (no exceptions)",
+        "DGCA India CPL examinations — 9 separate papers",
+        "200 flight hours mandatory before commercial licence"
+      ],
+      "paths": [
+        "Class 12 PCM → Flying school India or abroad → CPL licence → Airline cadet programme → First Officer"
+      ],
+      "skills": [
+        "PCM fundamentals (aviation physics is applied physics)",
+        "Radio communication and ATC procedures",
+        "Navigation, meteorology and flight planning",
+        "Multi-crew communication"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Flying school fees are ₹35–60 lakh in India and ₹45–80 lakh abroad. Airline hiring is deeply cyclical — IndiGo and Air India hire heavily during expansion and barely at all during downturns. If your family can genuinely afford CPL without large unsecured loans and you have strong PCM + absolute passion, the long-term career is excellent.",
+      "cg": "<strong>From Chhattisgarh:</strong> A flying training organisation operates in Raipur. NDA Air Force route is a fully funded alternative — the government pays for your training and you serve as a commissioned Air Force officer. For students from Korba or Bilaspur whose families cannot fund CPL privately, Air Force via NDA or AFCAT is the realistic path to flying.",
+      "segments": []
+    },
+    {
+      "id": 23,
+      "name": "Fashion Designer",
+      "emoji": "👗",
+      "stream": [
+        "any"
+      ],
+      "tags": [
+        "Any Stream",
+        "Creative",
+        "Private"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "5–15",
+      "seniorLPA": "15–60+",
+      "reality": 62,
+      "time": "4 years NIFT or 3 years private design college",
+      "exams": [
+        "NIFT entrance exam — design aptitude test + situation test (creative task)",
+        "NID entrance",
+        "PEARL / Symbiosis design college entrance"
+      ],
+      "paths": [
+        "NIFT → Top fashion brand or own label",
+        "Private design college → Small brand / boutique / export house",
+        "Any background → Short design course + portfolio → Local client work"
+      ],
+      "skills": [
+        "Sketching, pattern making and garment construction",
+        "Textile and fabric knowledge",
+        "Trend forecasting and mood boards",
+        "Portfolio development (essential for all roles)"
+      ],
+      "honest": "<strong>Most honest fact:</strong> NIFT Delhi graduates are placed at Zara, H&M, Myntra and leading Indian design houses. Private college graduates have a much harder path with lower starting salaries. The top of this career is very real — but requires either NIFT-level entry or genuine entrepreneurial drive to build your own brand.",
+      "cg": "<strong>From Chhattisgarh:</strong> CG has a rich textile tradition — Kosa silk, Chanderi weaves, tribal craft patterns. A fashion designer from CG who specialises in and modernises these traditional crafts has a genuine national and international niche. Government Ministry of Textiles programmes and export houses actively support this kind of work.",
+      "segments": [
+        "creative"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Event Manager",
+      "emoji": "🎪",
+      "stream": [
+        "any"
+      ],
+      "tags": [
+        "Any Stream",
+        "Creative",
+        "Private"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "5–12",
+      "seniorLPA": "12–35+",
+      "reality": 76,
+      "time": "3 years BBA Event Management or any degree + experience",
+      "exams": [
+        "Amity / Pearl event management entrance",
+        "No formal exam for most entry-level roles — internship and portfolio matter most"
+      ],
+      "paths": [
+        "BBA Event Management → Event company → Senior planner",
+        "Any graduation → Event company internship → Self-employment or own firm"
+      ],
+      "skills": [
+        "Vendor management and logistics coordination",
+        "Budget management and cost negotiation",
+        "Client communication and expectation management",
+        "Social media and event marketing"
+      ],
+      "honest": "<strong>Most honest fact:</strong> This career rewards hustle more than degrees. The most successful event managers built their reputation through actual events — weddings, corporate conferences, political rallies. Starting salary is low (₹12,000–20,000/month). Own business by age 28–30 is realistic for driven, organised individuals who love the energy.",
+      "cg": "<strong>From Chhattisgarh:</strong> Weddings, political events, corporate functions and cultural festivals in CG are a multi-crore industry. A skilled event manager based in Bilaspur or Raipur serving the entire state market has excellent income potential with very low competition compared to metro city markets. Start by assisting at local events immediately.",
+      "segments": [
+        "creative"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Biotechnology / Life Sciences",
+      "emoji": "🧬",
+      "stream": [
+        "science"
+      ],
+      "tags": [
+        "Science",
+        "Research",
+        "Private"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "6–14",
+      "seniorLPA": "14–30+",
+      "reality": 60,
+      "time": "4 years BTech or BSc Biotechnology",
+      "exams": [
+        "JEE / State CET (for BTech Biotech)",
+        "CUET (for BSc Biotechnology)",
+        "CSIR NET / GATE BT (for research career or PSU entry)"
+      ],
+      "paths": [
+        "BSc / BTech Biotech → MSc / MTech → Research lab or pharma company",
+        "BTech → GATE → PSU or PhD programme in India or abroad"
+      ],
+      "skills": [
+        "Lab techniques (PCR, cell culture, ELISA, gel electrophoresis)",
+        "Bioinformatics (for higher-salary data-biology hybrid roles)",
+        "Scientific writing and research methodology"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Biotechnology starting salaries at private companies are genuinely low (₹2–4 LPA). Real income growth comes with a Master's degree or PhD. The exception is bioinformatics — combining biology with Python and data science opens higher-salary data roles (₹6–15 LPA) much faster. If you love biology and also enjoy computers, this hybrid path is very underrated.",
+      "cg": "<strong>From Chhattisgarh:</strong> Agricultural biotechnology and herbal medicine research relevant to CG's forest and tribal heritage is a genuinely unexplored niche. AIIMS Raipur and NIT Raipur have active research programmes. For PCB students who want science careers without the NEET path, biotechnology is a strong alternative.",
+      "segments": []
+    },
+    {
+      "id": 26,
+      "name": "HR Manager / Human Resources",
+      "emoji": "👥",
+      "stream": [
+        "arts",
+        "commerce",
+        "any"
+      ],
+      "tags": [
+        "Commerce",
+        "Any Stream",
+        "Private"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "6–16",
+      "seniorLPA": "15–40+",
+      "reality": 78,
+      "time": "3 years BBA or BA + MBA HR or PGDM",
+      "exams": [
+        "CAT / MAT / XAT (for MBA with HR specialisation)",
+        "No specific entrance — degree + communication skills + internship experience matter"
+      ],
+      "paths": [
+        "BBA / BA → MBA HR → Corporate HR generalist → HRBP → HR Director",
+        "Any graduation → SHRM or NIPM certification → HR coordinator → HR manager"
+      ],
+      "skills": [
+        "Recruitment and talent acquisition",
+        "Payroll, compliance and labour laws",
+        "Communication, empathy and conflict resolution",
+        "Excel and HRMS software (SAP SuccessFactors, Workday)"
+      ],
+      "honest": "<strong>Most honest fact:</strong> HR is a deeply misunderstood career. Students think it is soft — Senior HR Directors at large companies earn ₹30–60 LPA. The path requires strong business understanding, not just people skills. Starting in recruitment at ₹2–4 LPA and systematically moving to HR business partnering is the standard progression.",
+      "cg": "<strong>From Chhattisgarh:</strong> NTPC, SECL, SAIL and ESSAR all have large HR departments in CG. MBA colleges in Raipur offer HR specialisation. This is a viable career path that does not require relocating to a metro — large industrial CG companies have genuine HR needs.",
+      "segments": []
+    },
+    {
+      "id": 27,
+      "name": "Animator / Game Designer",
+      "emoji": "🎮",
+      "stream": [
+        "any"
+      ],
+      "tags": [
+        "Any Stream",
+        "Creative",
+        "Private"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "6–15",
+      "seniorLPA": "15–40+",
+      "reality": 65,
+      "time": "2–3 years MAAC/Arena animation course or 3–4 years BSc/BDes Animation",
+      "exams": [
+        "NID / NIFT for design-adjacent programmes",
+        "No entrance for MAAC or Arena animation courses — portfolio and aptitude interview only"
+      ],
+      "paths": [
+        "Short MAAC / Arena course (2–3 years) → Freelance or animation studio",
+        "BSc / BDes Animation → OTT platform / gaming company / advertising agency"
+      ],
+      "skills": [
+        "Adobe After Effects and Premiere",
+        "Maya or Blender for 3D animation",
+        "Unity or Unreal Engine for game design",
+        "Concept art and storyboarding"
+      ],
+      "honest": "<strong>Most honest fact:</strong> India's gaming industry (₹30,000 crore, growing fast) genuinely needs animators and game designers. Quality of portfolio on ArtStation matters far more than degree. 2 years of consistent self-practice with YouTube tutorials + a strong portfolio equals real employment at ₹4–8 LPA.",
+      "cg": "<strong>From Chhattisgarh:</strong> Animation and game design is entirely remote — a game designer from Korba earning ₹8–15 LPA working remotely for a Bengaluru studio is completely realistic. The barrier is skills and portfolio quality, not geography. Start practising Blender or Figma today — both are free.",
+      "segments": [
+        "creative"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Actuarial Scientist",
+      "emoji": "📐",
+      "stream": [
+        "science",
+        "commerce"
+      ],
+      "tags": [
+        "Science",
+        "Commerce",
+        "Finance"
+      ],
+      "entryLPA": "5–10",
+      "midLPA": "15–35",
+      "seniorLPA": "40–100+",
+      "reality": 52,
+      "time": "5–10 years for full qualification (15 IAI exams over several years)",
+      "exams": [
+        "IAI (Institute of Actuaries of India) — 15 progressive papers",
+        "IFoA (UK Institute and Faculty of Actuaries) — internationally recognised"
+      ],
+      "paths": [
+        "BSc Maths / Statistics / BTech → IAI exam registration → Insurance or consulting company employment while studying"
+      ],
+      "skills": [
+        "Advanced Mathematics and Probability theory",
+        "Statistical modelling and risk analysis",
+        "Excel, R and Python",
+        "Financial product and insurance understanding"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Actuary is one of India's highest-paying but almost entirely unknown careers. A fully qualified Fellow of IAI earns ₹40–80 LPA average. But qualifying takes 7–10 years on average (15 progressively harder exams). If you love Maths deeply, are highly patient and systematic, and discover this career early, you have a significant head start over competitors.",
+      "cg": "<strong>From Chhattisgarh:</strong> Actuarial science eventually requires relocating to insurance or consulting hubs (Mumbai, Bengaluru, Delhi). But every exam can be prepared for from Bilaspur or Korba — all papers are online. Mathematically strong CG students who discover this path early have a genuine competitive advantage.",
+      "segments": []
+    },
+    {
+      "id": 29,
+      "name": "Supply Chain / Logistics Manager",
+      "emoji": "🚛",
+      "stream": [
+        "commerce",
+        "any"
+      ],
+      "tags": [
+        "Commerce",
+        "Any Stream",
+        "Private"
+      ],
+      "entryLPA": "3–6",
+      "midLPA": "8–18",
+      "seniorLPA": "18–45+",
+      "reality": 82,
+      "time": "3 years BBA / BTech + optional MBA Supply Chain",
+      "exams": [
+        "No specific entrance — degree + APICS CSCP or Six Sigma certification preferred",
+        "CAT / MAT (for MBA Supply Chain)"
+      ],
+      "paths": [
+        "BBA / BTech Industrial → Supply chain executive → Manager",
+        "BCom → Logistics company → Operations manager",
+        "BTech Mechanical → Manufacturing company operations"
+      ],
+      "skills": [
+        "Inventory management and demand forecasting",
+        "ERP systems (SAP, Oracle)",
+        "Vendor and supplier management",
+        "Data analysis and Excel-based reporting"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Supply chain is invisible to most students — but it is one of the highest-demand fields as India's manufacturing and e-commerce sectors grow. Amazon, Flipkart, Delhivery and every FMCG company urgently need supply chain professionals. Salary growth after 5 years is steep.",
+      "cg": "<strong>From Chhattisgarh:</strong> CG is a major logistics hub — coal, steel, and cement move through the state in enormous volumes. SECL, NTPC, SAIL and NMDC all have large supply chain operations based in CG. This is an excellent local career path for students with commerce or engineering backgrounds who want to stay in CG.",
+      "segments": []
+    },
+    {
+      "id": 30,
+      "name": "AYUSH Doctor (BAMS / BHMS)",
+      "emoji": "🌿",
+      "stream": [
+        "science"
+      ],
+      "tags": [
+        "Science",
+        "Healthcare",
+        "Govt Job"
+      ],
+      "entryLPA": "4–8",
+      "midLPA": "8–16",
+      "seniorLPA": "15–28",
+      "reality": 80,
+      "time": "5.5 years BAMS (Ayurveda) or 5.5 years BHMS (Homeopathy) after Class 12",
+      "exams": [
+        "NEET UG — mandatory for BAMS and BHMS (lower qualifying rank needed than MBBS)"
+      ],
+      "paths": [
+        "Class 12 PCB → NEET → BAMS (Ayurveda) → Government hospital appointment",
+        "Class 12 PCB → NEET → BHMS (Homeopathy) → Government or private practice"
+      ],
+      "skills": [
+        "Ayurvedic or Homeopathic clinical medicine",
+        "NEET preparation (PCB syllabus)",
+        "Government exam preparation for CGVYAPAM state health posts"
+      ],
+      "honest": "<strong>Most honest fact:</strong> BAMS requires NEET but needs a significantly lower rank than MBBS — making it genuinely accessible to sincere PCB students who narrowly miss MBBS government cutoffs. Government AYUSH doctors are recruited in CG through CGVYAPAM at respectable starting salaries with full government benefits.",
+      "cg": "<strong>From Chhattisgarh:</strong> CG government regularly recruits AYUSH doctors for primary health centres across the state — especially in tribal areas of Bastar and Sarguja where conventional doctors are scarce. A BAMS or BHMS doctor from CG who chooses government service has exceptional job security, deep community respect, and genuine impact.",
+      "segments": [
+        "healthcare",
+        "govt_job"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Content Creator / YouTuber",
+      "emoji": "🎥",
+      "stream": [
+        "any"
+      ],
+      "tags": [
+        "Any Stream",
+        "Creative",
+        "Self-employed"
+      ],
+      "entryLPA": "0–3",
+      "midLPA": "5–20",
+      "seniorLPA": "20–200+",
+      "reality": 46,
+      "time": "1–3 years to build a monetisable audience consistently",
+      "exams": [
+        "No exam — YouTube monetisation requires 1,000 subscribers + 4,000 watch hours",
+        "Instagram does not have a formal threshold — brand deals start much earlier"
+      ],
+      "paths": [
+        "Start a focused channel on a topic you know deeply → Build genuine audience → Monetise through ads + brand deals + paid courses or workshops"
+      ],
+      "skills": [
+        "Video shooting and editing (CapCut, DaVinci Resolve, Premiere — start with CapCut, it is free)",
+        "Scripting, storytelling and thumbnail design",
+        "Understanding YouTube and Instagram algorithm basics",
+        "Consistency over 2+ years — this is the hardest skill"
+      ],
+      "honest": "<strong>Most honest fact:</strong> 80% of creators earn under ₹10,000/month. The 20% who earn serious money treated it like a business — specific niche, consistent posting, community building, multiple income streams. Build this alongside a stable career or skill, not instead of one, until income is proven and growing.",
+      "cg": "<strong>From Chhattisgarh:</strong> CG Hindi-language content — education, local news, culture, career guidance — is genuinely underserved on YouTube and Instagram. A creator making honest career guidance content for CG students in their language can build an audience of lakhs with very low competition. This is a real gap in the market.",
+      "segments": [
+        "creative"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Electrician / Electrical Tech (ITI)",
+      "emoji": "⚡",
+      "stream": [
+        "any"
+      ],
+      "tags": [
+        "Any Stream",
+        "Govt & Private",
+        "Technical"
+      ],
+      "entryLPA": "1.5–3.5",
+      "midLPA": "4–8",
+      "seniorLPA": "8–18",
+      "reality": 96,
+      "time": "2 years ITI Electrician trade after Class 10",
+      "exams": [
+        "State ITI entrance (merit-based on Class 10 marks)",
+        "NTPC / BHEL / SECL apprenticeship selection after ITI graduation"
+      ],
+      "paths": [
+        "Class 10 → ITI Electrician (2 years) → NTPC or SECL apprenticeship → Permanent employee"
+      ],
+      "skills": [
+        "Electrical wiring, installation and testing",
+        "PLC and industrial automation basics",
+        "HV and LV switchgear maintenance",
+        "Industrial safety protocols (OSHA, NEBOSH basic)"
+      ],
+      "honest": "<strong>Most honest fact:</strong> An ITI Electrician employed at NTPC Korba earns ₹35,000–55,000/month total compensation (basic salary + DA + HRA + allowances) at mid-career. With a private contractor or own electrical business, income is even higher. This path has zero glamour and enormous stability — one of the most undervalued routes available.",
+      "cg": "<strong>From Chhattisgarh:</strong> NTPC Korba — one of India's largest power plants — regularly absorbs ITI Electricians as apprentices and then permanent employees. Government ITI Korba offers this 2-year course at almost no fees. This is the single most direct path from Korba → stable, well-paying, government-level career without education debt.",
+      "segments": [
+        "trades",
+        "tech"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Dietitian / Nutritionist",
+      "emoji": "🥗",
+      "stream": [
+        "science"
+      ],
+      "tags": [
+        "Science",
+        "Healthcare",
+        "Private"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "5–12",
+      "seniorLPA": "10–25",
+      "reality": 72,
+      "time": "3–4 years BSc Nutrition / Food Science / Home Science",
+      "exams": [
+        "State BSc Nutrition entrance",
+        "Indian Dietetic Association registration (after degree, for clinical practice)"
+      ],
+      "paths": [
+        "Class 12 PCB → BSc Nutrition / Dietetics → Hospital dietitian or clinical practice",
+        "BSc → MSc → Research / corporate wellness / sports nutrition consulting"
+      ],
+      "skills": [
+        "Clinical nutrition assessment and diet planning",
+        "Patient counselling and behaviour change",
+        "Food science and safety fundamentals",
+        "Building online practice (Instagram, Practo)"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Hospital dietitian starting salaries are low (₹15,000–25,000/month). The real income growth is in private practice — corporate wellness, sports nutrition, online consulting. An online nutrition practice via Instagram and Practo can generate ₹50,000–1,50,000/month within 5 years. Location-independent income is genuinely possible.",
+      "cg": "<strong>From Chhattisgarh:</strong> NTPC and SECL employee hospitals and canteens create institutional demand for dietitians in CG. Sports nutrition for the growing fitness culture in Bilaspur and Raipur is also emerging. Very few trained nutritionists practice in smaller CG cities — low competition, real need.",
+      "segments": [
+        "healthcare",
+        "trades"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Environmental Science / Green Energy",
+      "emoji": "🌱",
+      "stream": [
+        "science",
+        "any"
+      ],
+      "tags": [
+        "Science",
+        "Future-Ready",
+        "Govt & Private"
+      ],
+      "entryLPA": "3–6",
+      "midLPA": "7–16",
+      "seniorLPA": "15–35",
+      "reality": 73,
+      "time": "3–4 years BSc Environmental Science or BTech Renewable Energy",
+      "exams": [
+        "State or university entrance for BSc",
+        "GATE Environmental Engineering (for PSU jobs and higher studies)",
+        "PSU exams (NTPC, NHPC, SECI for solar/renewable energy roles)"
+      ],
+      "paths": [
+        "BSc Environmental Science → NGO / CG Pollution Control Board / EIA consulting firm",
+        "BTech Renewable Energy → Solar or wind energy company → PSU assignment"
+      ],
+      "skills": [
+        "Environmental impact assessment (EIA)",
+        "GIS and remote sensing software",
+        "Renewable energy systems design basics",
+        "Environmental law and policy knowledge"
+      ],
+      "honest": "<strong>Most honest fact:</strong> India's commitment to 500 GW renewable energy by 2030 means this field will grow enormously over the next decade. NTPC is building large solar parks nationally and in CG. State Pollution Control Boards hire continuously. Early entry in an emerging field gives you a real first-mover advantage.",
+      "cg": "<strong>From Chhattisgarh:</strong> CG has enormous renewable energy potential — solar, small hydro and biomass. NTPC is actively commissioning solar parks in CG. The State Pollution Control Board hires environmental scientists for coal mine and industrial compliance work. This career aligns perfectly with CG's industrial economy transitioning toward clean energy.",
+      "segments": []
+    },
+    {
+      "id": 35,
+      "name": "Statistician / Data Analyst (BSc)",
+      "emoji": "📈",
+      "stream": [
+        "science",
+        "commerce"
+      ],
+      "tags": [
+        "Science",
+        "Commerce",
+        "Finance"
+      ],
+      "entryLPA": "3–7",
+      "midLPA": "8–18",
+      "seniorLPA": "18–45",
+      "reality": 80,
+      "time": "3 years BSc Statistics + certifications or 2 years MSc",
+      "exams": [
+        "CUET / State BSc Statistics entrance",
+        "ISI Kolkata entrance (elite statistics institute — extremely competitive)",
+        "CMI Chennai entrance (for statistics + CS combined)"
+      ],
+      "paths": [
+        "BSc Statistics → Python + SQL + Power BI → Data Analyst role",
+        "BSc → ISI MStat → Government Statistical Service or research organisation"
+      ],
+      "skills": [
+        "Statistics and probability (strong foundation)",
+        "Python or R for statistical computing",
+        "SQL for database querying",
+        "Data visualisation (Power BI, Tableau)",
+        "Machine learning basics (adds significant value)"
+      ],
+      "honest": "<strong>Most honest fact:</strong> BSc Statistics is the most underrated path to a data career in India. It gives a stronger mathematical foundation than most BCA or even BTech CS graduates. Adding Python and SQL skills after BSc Statistics takes 3–4 months. The combination leads to Data Analyst roles at ₹4–8 LPA even from a Tier 3 college.",
+      "cg": "<strong>From Chhattisgarh:</strong> Government Statistical Service, NSSO and state data collection agencies hire statisticians for CG-level work. Private data roles are fully remote-friendly. An excellent path for mathematically strong students in CG who want tech-adjacent careers without the engineering entrance examination pressure.",
+      "segments": []
+    },
+    {
+      "id": 36,
+      "name": "CGPSC Officer (State Civil Services)",
+      "emoji": "🗳️",
+      "stream": [
+        "arts",
+        "any"
+      ],
+      "tags": [
+        "Arts",
+        "Govt Job",
+        "Any Stream"
+      ],
+      "entryLPA": "7–10+",
+      "midLPA": "14–20+",
+      "seniorLPA": "18–28+",
+      "reality": 68,
+      "time": "3 years graduation + 2–4 years CGPSC preparation",
+      "exams": [
+        "CGPSC (Chhattisgarh Public Service Commission) — Prelims + Mains + Interview",
+        "CGVYAPAM for lower-level government posts in CG"
+      ],
+      "paths": [
+        "BA Political Science / History / any subject → CGPSC preparation → Deputy Collector / DSP / Block Development Officer"
+      ],
+      "skills": [
+        "Current affairs — CG and national level (daily newspaper reading essential)",
+        "Essay and answer writing in Hindi or English",
+        "CGPSC syllabus — General Studies covering CG history, culture, economy, geography",
+        "Optional subject mastery (History, Geography, Public Administration most popular)"
+      ],
+      "honest": "<strong>Most honest fact:</strong> CGPSC is significantly more accessible than UPSC — selecting 200–400 officers annually for CG only. A Deputy Collector or DSP from CG earns a total compensation package (salary + housing + perks) worth ₹60,000–1,20,000/month equivalent value. Extremely prestigious and impactful career that keeps you in your home state.",
+      "cg": "<strong>From Chhattisgarh:</strong> CGPSC is specifically designed for CG students — the syllabus includes CG history, culture, tribal society, economy and geography. A student from Korba or Bilaspur who knows CG intimately has a natural advantage. CG Civil Services Institute in Raipur provides free and subsidised coaching for CGPSC aspirants.",
+      "segments": [
+        "govt_job"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Hotel Management / Hospitality",
+      "emoji": "🏨",
+      "stream": [
+        "any"
+      ],
+      "tags": [
+        "Any Stream",
+        "Private",
+        "Service"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "6–15",
+      "seniorLPA": "15–40",
+      "reality": 76,
+      "time": "3 years BHMCT degree or 1–2 years craft course",
+      "exams": [
+        "NCHM JEE (National Council Hotel Management entrance) — for IHM government institutes",
+        "State hotel management college entrance exams"
+      ],
+      "paths": [
+        "Class 12 → NCHM JEE → IHM (government hotel management institute — very affordable) → 5-star hotel career",
+        "Class 12 → State HM college → Hospitality operations"
+      ],
+      "skills": [
+        "Front office management and guest relations",
+        "Food and beverage service and management",
+        "Housekeeping operations",
+        "F&B cost control (for management track roles)"
+      ],
+      "honest": "<strong>Most honest fact:</strong> IHM graduates placed at Taj, Marriott and Hilton start at ₹18,000–25,000/month but rise quickly with international postings. Private hotel management college graduates start lower and grow more slowly. The international opportunity is genuinely transformative — Middle East and cruise line hospitality pays ₹2–8 lakh/month in-hand for experienced professionals.",
+      "cg": "<strong>From Chhattisgarh:</strong> CG tourism — Chitrakote Falls, Bastar tribal culture, Sirpur heritage — is being actively developed by the state government. New resorts, heritage hotels and eco-tourism properties are opening and need trained hospitality staff. This is a growing local opportunity that very few CG students are currently pursuing.",
+      "segments": []
+    },
+    {
+      "id": 38,
+      "name": "Fitness Trainer / Sports Coach",
+      "emoji": "🏋️",
+      "stream": [
+        "any"
+      ],
+      "tags": [
+        "Any Stream",
+        "Self-employed",
+        "Private"
+      ],
+      "entryLPA": "1.5–4",
+      "midLPA": "4–10",
+      "seniorLPA": "10–30+",
+      "reality": 78,
+      "time": "1–2 years fitness certification or 3 years BSc Physical Education",
+      "exams": [
+        "BSc Physical Education entrance (state sports universities)",
+        "ACE / ISSA / NASM certification (internationally recognised, taken online)",
+        "SGFI coaching certification (for school coaching roles)"
+      ],
+      "paths": [
+        "BSc Physical Education → School sports teacher / government PE teacher (CGVYAPAM)",
+        "Short NASM / ISSA certification → Gym trainer → Online coaching → Own studio"
+      ],
+      "skills": [
+        "Exercise science and anatomy fundamentals",
+        "Personalised programme design",
+        "Nutrition basics for sports performance",
+        "Online coaching tools and Instagram content for client acquisition"
+      ],
+      "honest": "<strong>Most honest fact:</strong> A gym trainer at a premium fitness centre earns ₹15,000–25,000/month. An online fitness coach with 5,000 engaged Instagram followers earns ₹60,000–2,00,000/month. The platform is the leverage. Students who combine genuine fitness knowledge with systematic online presence building are creating high-income careers in this space.",
+      "cg": "<strong>From Chhattisgarh:</strong> Fitness culture in Korba, Bilaspur and Raipur is growing rapidly. New gyms are opening every year. Government PE teacher recruitment happens through CGVYAPAM. Khelo India government sports programme creates coaching opportunities across CG districts for qualified coaches.",
+      "segments": []
+    },
+    {
+      "id": 39,
+      "name": "Public Health Professional",
+      "emoji": "🏥",
+      "stream": [
+        "science",
+        "arts"
+      ],
+      "tags": [
+        "Science",
+        "Arts",
+        "Healthcare"
+      ],
+      "entryLPA": "3–7",
+      "midLPA": "8–18",
+      "seniorLPA": "15–35",
+      "reality": 72,
+      "time": "3 years BSc + 2 years MPH or 2 years MBA Hospital Administration",
+      "exams": [
+        "AIIMS MPH entrance",
+        "TISS MPH entrance (competitive — one of India's best public health programmes)",
+        "State BSc Public Health entrance"
+      ],
+      "paths": [
+        "BSc Public Health / Community Health → State NHM / government health department / international NGO",
+        "MBBS or Nursing + MPH → Senior public health programme management roles"
+      ],
+      "skills": [
+        "Epidemiology and biostatistics basics",
+        "Health programme planning and monitoring",
+        "Research design and data analysis",
+        "Community communication in local languages"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Public health became one of India's most important careers after COVID-19. WHO, UNICEF, Gates Foundation India and state health departments all hire MPH graduates. Starting pay is moderate but international organisations pay ₹10–25 LPA at mid-level. TISS MPH is particularly respected nationally.",
+      "cg": "<strong>From Chhattisgarh:</strong> National Health Mission CG runs one of India's largest rural health programmes and regularly recruits public health professionals at district and state levels. Working in public health in CG means directly improving healthcare for millions in tribal and rural communities — with a genuine government salary and career progression.",
+      "segments": [
+        "healthcare"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Occupational Therapist",
+      "emoji": "🤸",
+      "stream": [
+        "science"
+      ],
+      "tags": [
+        "Science",
+        "Healthcare",
+        "Private"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "5–12",
+      "seniorLPA": "10–25",
+      "reality": 70,
+      "time": "4.5 years BOT (Bachelor of Occupational Therapy) degree",
+      "exams": [
+        "State health university entrance — some states use NEET score, others have separate OT entrance"
+      ],
+      "paths": [
+        "Class 12 PCB → BOT degree → Government hospital / private rehabilitation centre / special school"
+      ],
+      "skills": [
+        "Patient assessment and functional evaluation",
+        "Therapeutic activity design and planning",
+        "Assistive technology and device training",
+        "Documentation and clinical case management"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Occupational therapy helps patients with physical disabilities, children with autism and ADHD, and stroke survivors regain independence in daily life. Demand is growing significantly with increased awareness. Government hospitals, corporate hospitals and special schools all hire OTs. International opportunities — Canada and Australia — are genuinely strong for qualified Indian OTs.",
+      "cg": "<strong>From Chhattisgarh:</strong> Industrial accidents in coal mining, stroke rehabilitation and special education for tribal children create genuine local demand for OTs in CG. Very few trained occupational therapists practice in smaller CG cities — low competition, high community need, and real salary premium for the first qualified OT in a district.",
+      "segments": [
+        "healthcare"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Dentist (BDS / MDS)",
+      "emoji": "🦷",
+      "stream": [
+        "science"
+      ],
+      "segments": [
+        "healthcare"
+      ],
+      "tags": [
+        "Science",
+        "Healthcare",
+        "Govt & Private"
+      ],
+      "entryLPA": "4–10",
+      "midLPA": "10–25",
+      "seniorLPA": "25–80+",
+      "reality": 55,
+      "time": "5 years BDS + optional 3 years MDS",
+      "exams": [
+        "NEET UG (for BDS)",
+        "NEET MDS (for specialisation)",
+        "State dental council registration"
+      ],
+      "paths": [
+        "Class 12 PCB → NEET → BDS → Private practice or hospital",
+        "BDS → MDS (Orthodontics / Oral Surgery) → Specialist clinic"
+      ],
+      "skills": [
+        "Clinical dentistry and radiograph reading",
+        "Practice management and patient communication",
+        "Infection control protocols"
+      ],
+      "honest": "<strong>Most honest fact:</strong> BDS seat competition is lower than MBBS but capitation at private dental colleges can still be high. Income varies sharply: corporate chain associate dentists often start ₹25,000–45,000/month in Tier 2, while an established own-clinic dentist in a busy area can earn several lakhs monthly after 8–12 years of reputation building.",
+      "cg": "<strong>From Chhattisgarh:</strong> Dental OPD load is rising in Raipur and Bilaspur; government dental posts come through CGVYAPAM. A dentist willing to serve smaller towns often faces less competition than in saturated metro markets.",
+      "typicalEmployers": [
+        "Private dental chains",
+        "Multi-speciality hospitals",
+        "Own practice",
+        "CG state health posts"
+      ],
+      "workMode": "mixed",
+      "demandOutlook": "stable",
+      "salaryContext": "Starting packages often quoted “per month” in clinics; ₹4–10 LPA equivalent is typical for early associates outside top metros."
+    },
+    {
+      "id": 42,
+      "name": "Physiotherapist (BPT)",
+      "emoji": "🏃",
+      "stream": [
+        "science"
+      ],
+      "segments": [
+        "healthcare"
+      ],
+      "tags": [
+        "Science",
+        "Healthcare",
+        "Private"
+      ],
+      "entryLPA": "2.5–6",
+      "midLPA": "6–14",
+      "seniorLPA": "12–35",
+      "reality": 78,
+      "time": "4.5 years BPT + optional MPT",
+      "exams": [
+        "NEET at some state universities; others use merit / entrance",
+        "State health university BPT counselling"
+      ],
+      "paths": [
+        "Class 12 PCB → BPT → Sports clinic / hospital rehab",
+        "BPT → MPT → Specialised neuro or sports physiotherapy"
+      ],
+      "skills": [
+        "Manual therapy and exercise prescription",
+        "Gait and posture assessment",
+        "Documentation for insurance / medico-legal cases"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Hospital staff physiotherapist roles can start modestly; sports teams, ortho OPDs, and home-visit rehab in affluent pockets pay better. Building repeat clientele matters more than brand of college once you are licensed.",
+      "cg": "<strong>From Chhattisgarh:</strong> Mining and industrial ergonomics, post-stroke rehab demand, and Khelo India sports infrastructure create steady need; Tier 3 towns often have fewer qualified BPTs than patients.",
+      "typicalEmployers": [
+        "Corporate hospitals",
+        "Orthopaedic surgeons’ clinics",
+        "Sports academies",
+        "Home care agencies"
+      ],
+      "workMode": "onsite",
+      "demandOutlook": "strong",
+      "salaryContext": "Private clinic commission models can push effective income above fixed salary in busy practices."
+    },
+    {
+      "id": 43,
+      "name": "Company Secretary (CS)",
+      "emoji": "📋",
+      "stream": [
+        "commerce"
+      ],
+      "segments": [],
+      "tags": [
+        "Commerce",
+        "Law",
+        "Private"
+      ],
+      "entryLPA": "5–12",
+      "midLPA": "12–28",
+      "seniorLPA": "30–100+",
+      "reality": 58,
+      "time": "3 years after Class 12 (CS Executive, Professional, Final) + practical training",
+      "exams": [
+        "CSEET",
+        "CS Executive",
+        "CS Professional (ICSI)"
+      ],
+      "paths": [
+        "Class 12 → CSEET → CS modules + training → Listed company compliance roles",
+        "LLB + CS (strong combo for board work)"
+      ],
+      "skills": [
+        "Companies Act, SEBI LODR, corporate governance",
+        "Board meeting minutes and filings",
+        "Due diligence support"
+      ],
+      "honest": "<strong>Most honest fact:</strong> CS is narrower than CA in headcount but critical for every listed entity. Stipend during training is modest; post-membership, Mumbai / Bengaluru compliance teams pay a clear premium over very small towns.",
+      "cg": "<strong>From Chhattisgarh:</strong> PSUs, large private miners, and banks with CG offices need company secretarial support; some roles are hub-based, others hybrid with periodic travel.",
+      "typicalEmployers": [
+        "Listed companies",
+        "Big 4 / law firms (compliance desks)",
+        "Large NBFCs"
+      ],
+      "workMode": "hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Figures assume compliance roles; independent practice varies with client portfolio."
+    },
+    {
+      "id": 44,
+      "name": "Cost & Management Accountant (CMA India)",
+      "emoji": "💹",
+      "stream": [
+        "commerce"
+      ],
+      "segments": [],
+      "tags": [
+        "Commerce",
+        "Finance",
+        "Private"
+      ],
+      "entryLPA": "4–10",
+      "midLPA": "10–24",
+      "seniorLPA": "25–70+",
+      "reality": 60,
+      "time": "~3–4 years (foundation through final) + practical training",
+      "exams": [
+        "CMA Foundation / Intermediate / Final (ICMAI)"
+      ],
+      "paths": [
+        "BCom parallel with CMA (common)",
+        "Manufacturing plant cost control → FP&A roles"
+      ],
+      "skills": [
+        "Costing standards and variance analysis",
+        "Management reporting",
+        "Excel modelling",
+        "ERP cost modules"
+      ],
+      "honest": "<strong>Most honest fact:</strong> CMA shines in manufacturing, infra, and internal finance. It is less “household famous” than CA but can be faster for students who prefer management accounting over audit-heavy CA workloads.",
+      "cg": "<strong>From Chhattisgarh:</strong> Steel, cement, coal, and power companies around Bhilai and Korba employ cost accountants in plant finance teams.",
+      "typicalEmployers": [
+        "Manufacturing",
+        "EPC contractors",
+        "Large infra",
+        "Conglomerate corporate centres"
+      ],
+      "workMode": "onsite",
+      "demandOutlook": "stable",
+      "salaryContext": "Plant postings may include location allowances that improve in-hand cash."
+    },
+    {
+      "id": 45,
+      "name": "AI / ML Engineer",
+      "emoji": "🤖",
+      "stream": [
+        "science"
+      ],
+      "segments": [
+        "tech"
+      ],
+      "tags": [
+        "Science",
+        "Tech",
+        "Private"
+      ],
+      "entryLPA": "5–12",
+      "midLPA": "14–32",
+      "seniorLPA": "35–90+",
+      "reality": 62,
+      "time": "4 years BTech + projects; many roles expect MTech / strong Kaggle / papers",
+      "exams": [
+        "GATE CS / DA for MTech",
+        "Campus placements at tier-1/2 CS departments"
+      ],
+      "paths": [
+        "BTech CSE → ML electives + internships",
+        "BSc Stats + Python → M.Sc. Data Science"
+      ],
+      "skills": [
+        "Python (PyTorch / TensorFlow)",
+        "Linear algebra & probability",
+        "MLOps basics (Docker, CI for models)",
+        "Experiment tracking"
+      ],
+      "honest": "<strong>Most honest fact:</strong> “AI engineer” job titles are inflated; many openings are actually data engineering + light models. True research ML roles cluster at a few product firms and require exceptional math + portfolio.",
+      "cg": "<strong>From Chhattisgarh:</strong> Remote-first employers make this feasible from CG if latency and power backup are sorted; local internships are rarer—online open-source contributions matter.",
+      "typicalEmployers": [
+        "Product startups",
+        "IT services AI practices",
+        "Auto / health / fintech R&D"
+      ],
+      "workMode": "remote",
+      "demandOutlook": "strong",
+      "salaryContext": "Wide spread: mass recruiters with “AI” rebranding vs niche product teams differ by 2–3× at the same “years of experience”."
+    },
+    {
+      "id": 46,
+      "name": "Cybersecurity Analyst / SOC",
+      "emoji": "🔐",
+      "stream": [
+        "science",
+        "any"
+      ],
+      "segments": [
+        "tech"
+      ],
+      "tags": [
+        "Science",
+        "Tech",
+        "Private"
+      ],
+      "entryLPA": "3.5–9",
+      "midLPA": "9–22",
+      "seniorLPA": "22–55",
+      "reality": 70,
+      "time": "BTech / BCA + CEH / CompTIA Security+ / GIAC (employer-funded later)",
+      "exams": [
+        "Degree campus; certifications matter more than one “national” entrance"
+      ],
+      "paths": [
+        "Network admin → SOC Tier-1 analyst → Incident response",
+        "BTech IT + CTF competitions → Appsec"
+      ],
+      "skills": [
+        "SIEM (Splunk, QRadar basics)",
+        "TCP/IP and Windows/Linux hardening",
+        "Threat intelligence triage",
+        "Scripting for automation"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Night-shift SOC jobs are common early career; pay bumps come with cloud security (AWS/Azure certs) and incident response experience.",
+      "cg": "<strong>From Chhattisgarh:</strong> Banks and PSUs with large CG offices run security operations; many seats are vendor-managed from hubs but keep some local L1 roles.",
+      "typicalEmployers": [
+        "IT services SOC",
+        "Banks",
+        "Telecom",
+        "MSSP vendors"
+      ],
+      "workMode": "hybrid",
+      "demandOutlook": "strong",
+      "salaryContext": "Shift allowances can add 10–20% to CTC in 24×7 SOCs."
+    },
+    {
+      "id": 47,
+      "name": "Civil Judge (Judicial Services)",
+      "emoji": "⚖️",
+      "stream": [
+        "arts",
+        "any"
+      ],
+      "segments": [
+        "govt_job"
+      ],
+      "tags": [
+        "Arts",
+        "Govt Job",
+        "Law"
+      ],
+      "entryLPA": "8–14+",
+      "midLPA": "16–24+",
+      "seniorLPA": "22–40+",
+      "reality": 35,
+      "time": "LLB + 2–4 years focused judicial services prep",
+      "exams": [
+        "State Judicial Service Examination (state-specific cadre — verify current High Court / PSC notification)",
+        "Prelims → Mains → Viva"
+      ],
+      "paths": [
+        "BA LLB → Judicial services",
+        "LLB → Practice briefly → Judicial prep"
+      ],
+      "skills": [
+        "Bare Act mastery",
+        "Judgment writing",
+        "Procedural law speed",
+        "Local language court work"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Vacancies per year are small and preparation is as intense as top PSC exams; starting salary is respectable but the real draw is prestige and pensioned career.",
+      "cg": "<strong>From Chhattisgarh:</strong> Hindi and Chhattisgarhi courtroom comfort is a practical edge in lower judiciary postings in the state.",
+      "typicalEmployers": [
+        "State judiciary"
+      ],
+      "workMode": "onsite",
+      "demandOutlook": "stable",
+      "salaryContext": "Plus official residence / vehicle entitlements at senior cadres—compare total package, not basic alone."
+    },
+    {
+      "id": 48,
+      "name": "Scientist / Technical Officer (CSIR / Labs)",
+      "emoji": "🔬",
+      "stream": [
+        "science"
+      ],
+      "segments": [
+        "govt_job",
+        "tech"
+      ],
+      "tags": [
+        "Science",
+        "Govt Job",
+        "Research"
+      ],
+      "entryLPA": "6–12",
+      "midLPA": "12–22",
+      "seniorLPA": "20–40",
+      "reality": 45,
+      "time": "MSc / MTech + NET / GATE + recruitment exam",
+      "exams": [
+        "CSIR labs recruitment",
+        "ICMR / DRDO allied technical posts",
+        "GATE"
+      ],
+      "paths": [
+        "MSc Chemistry / Life Sciences → Project assistant → SRF → Scientist",
+        "MTech → lab technical officer"
+      ],
+      "skills": [
+        "Lab instrumentation",
+        "Grant writing",
+        "Publication record",
+        "Safety compliance"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Stability and pension track beat private R&D for risk-averse learners; cash salary may lag industry until senior grades.",
+      "cg": "<strong>From Chhattisgarh:</strong> Fewer lab HQs inside CG itself, but all-India postings with seniority-based transfers are common—plan mobility.",
+      "typicalEmployers": [
+        "CSIR",
+        "ICMR institutes",
+        "DRDO technical cadre",
+        "State forensic labs"
+      ],
+      "workMode": "onsite",
+      "demandOutlook": "stable",
+      "salaryContext": "Includes HRA by city class; scientists in Class X cities see higher components."
+    },
+    {
+      "id": 49,
+      "name": "Agricultural Officer / Extension (State Services)",
+      "emoji": "🌾",
+      "stream": [
+        "science",
+        "any"
+      ],
+      "segments": [
+        "govt_job"
+      ],
+      "tags": [
+        "Science",
+        "Govt Job",
+        "Any Stream"
+      ],
+      "entryLPA": "5–9",
+      "midLPA": "9–16",
+      "seniorLPA": "14–24",
+      "reality": 65,
+      "time": "BSc Agriculture / Horticulture + state PSC agriculture cadre",
+      "exams": [
+        "CGPSC / state agriculture service exams",
+        "IBPS AFO (for banking agriculture field officer track)"
+      ],
+      "paths": [
+        "BSc Ag → State agriculture officer",
+        "BSc Ag → MBA Agribusiness → private agri-input firms"
+      ],
+      "skills": [
+        "Crop science",
+        "Soil testing interpretation",
+        "Scheme implementation on ground",
+        "Farmer training"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Field postings are physically demanding but politically visible—good for impact-focused students.",
+      "cg": "<strong>From Chhattisgarh:</strong> Paddy, maize, millets, and forest produce value chains give local context questions an edge for CGPSC agri aspirants.",
+      "typicalEmployers": [
+        "State agriculture dept",
+        "NABARD allied projects",
+        "Agri-input companies"
+      ],
+      "workMode": "onsite",
+      "demandOutlook": "stable",
+      "salaryContext": "Government scales follow pay commission revisions; arrears can temporarily spike reported “annual” numbers in news."
+    },
+    {
+      "id": 50,
+      "name": "Medical Lab Technologist (BMLT / DMLT)",
+      "emoji": "🧪",
+      "stream": [
+        "science"
+      ],
+      "segments": [
+        "healthcare"
+      ],
+      "tags": [
+        "Science",
+        "Healthcare",
+        "Private"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "4–10",
+      "seniorLPA": "8–18",
+      "reality": 85,
+      "time": "3 years BMLT or 2 years DMLT",
+      "exams": [
+        "State paramedical entrances",
+        "Some institutes use NEET scores"
+      ],
+      "paths": [
+        "DMLT → Hospital lab technician",
+        "BMLT → QC in diagnostics chains"
+      ],
+      "skills": [
+        "Haematology / biochemistry analysers",
+        "Sample handling and QC logs",
+        "Biosafety"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Shift work in diagnostics is common; automation reduces headcount growth but raises skill bar for maintenance and QC roles.",
+      "cg": "<strong>From Chhattisgarh:</strong> District hospital labs and private chains expanding in Raipur corridor hire steadily.",
+      "typicalEmployers": [
+        "Diagnostic chains",
+        "Government hospital labs",
+        "Blood banks"
+      ],
+      "workMode": "onsite",
+      "demandOutlook": "stable",
+      "salaryContext": "Night differential in some corporate labs."
+    },
+    {
+      "id": 51,
+      "name": "Radiographer / Imaging Technologist",
+      "emoji": "🩻",
+      "stream": [
+        "science"
+      ],
+      "segments": [
+        "healthcare"
+      ],
+      "tags": [
+        "Science",
+        "Healthcare",
+        "Private"
+      ],
+      "entryLPA": "2.5–6",
+      "midLPA": "5–12",
+      "seniorLPA": "10–22",
+      "reality": 80,
+      "time": "3–4 years BSc Medical Radiology / Imaging Technology",
+      "exams": [
+        "University / state entrance; AIIMS institutes have separate paramedical counselling"
+      ],
+      "paths": [
+        "BSc MIT → CT/MRI suite technician",
+        "Super-speciality hospital imaging teams"
+      ],
+      "skills": [
+        "Radiation safety",
+        "Patient positioning",
+        "PACS workflow",
+        "Contrast protocol basics under radiologist orders"
+      ],
+      "honest": "<strong>Most honest fact:</strong> MRI/CT suite skills command premium over general X-ray-only roles; radiation safety certification is non-negotiable.",
+      "cg": "<strong>From Chhattisgarh:</strong> New tertiary hospitals increase demand faster than graduate supply in some years—check course recognition before enrolling.",
+      "typicalEmployers": [
+        "Multi-speciality hospitals",
+        "Diagnostic imaging centres"
+      ],
+      "workMode": "onsite",
+      "demandOutlook": "strong",
+      "salaryContext": "Metro corporate hospitals at higher end of ranges; Tier 3 at lower end."
+    },
+    {
+      "id": 52,
+      "name": "Veterinarian (BVSc)",
+      "emoji": "🐄",
+      "stream": [
+        "science"
+      ],
+      "segments": [
+        "healthcare"
+      ],
+      "tags": [
+        "Science",
+        "Healthcare",
+        "Govt & Private"
+      ],
+      "entryLPA": "4–9",
+      "midLPA": "8–18",
+      "seniorLPA": "15–40",
+      "reality": 58,
+      "time": "5.5 years BVSc & AH",
+      "exams": [
+        "NEET UG for veterinary seats (India)"
+      ],
+      "paths": [
+        "BVSc → Government veterinary officer",
+        "BVSc → Poultry / dairy industry",
+        "BVSc → Own practice"
+      ],
+      "skills": [
+        "Large and small animal medicine",
+        "Epidemics and vaccination drives",
+        "Animal husbandry schemes"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Government veterinary officer posts are stable but not as numerous as human healthcare roles; private poultry integration can pay well but has biosecurity stress.",
+      "cg": "<strong>From Chhattisgarh:</strong> Livestock economy in rural CG keeps field veterinary roles relevant; postings can be rural-heavy early career.",
+      "typicalEmployers": [
+        "State animal husbandry dept",
+        "Poultry integrators",
+        "Dairy cooperatives"
+      ],
+      "workMode": "mixed",
+      "demandOutlook": "stable",
+      "salaryContext": "Industry roles may include performance-linked bonuses during high production seasons."
+    },
+    {
+      "id": 53,
+      "name": "Interior Designer / Spatial Designer",
+      "emoji": "🛋️",
+      "stream": [
+        "any"
+      ],
+      "segments": [
+        "creative"
+      ],
+      "tags": [
+        "Any Stream",
+        "Creative",
+        "Private"
+      ],
+      "entryLPA": "2.5–6",
+      "midLPA": "6–16",
+      "seniorLPA": "15–45+",
+      "reality": 72,
+      "time": "3–4 years B.Des Interior / diploma + apprenticeship",
+      "exams": [
+        "NID / NIFT / CEED for design schools",
+        "Portfolio-based hiring dominates later"
+      ],
+      "paths": [
+        "Design school → Studio associate",
+        "Any degree + AutoCAD + site supervision → contractor-linked designer"
+      ],
+      "skills": [
+        "AutoCAD / SketchUp",
+        "Material costing",
+        "Lighting basics",
+        "Client change-request management"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Real estate cycles swing income; designers who can execute site coordination get paid more than pure concept-only roles.",
+      "cg": "<strong>From Chhattisgarh:</strong> Naya Raipur and smart-city linked residential boom created pockets of high-ticket residential projects.",
+      "typicalEmployers": [
+        "Architect firms",
+        "Retail rollout agencies",
+        "Independent studio"
+      ],
+      "workMode": "onsite",
+      "demandOutlook": "cyclical",
+      "salaryContext": "Commission on material passes through varies—clarify ethics and written contracts."
+    },
+    {
+      "id": 54,
+      "name": "Sales / Business Development (B2B)",
+      "emoji": "🤝",
+      "stream": [
+        "commerce",
+        "any"
+      ],
+      "segments": [],
+      "tags": [
+        "Commerce",
+        "Any Stream",
+        "Private"
+      ],
+      "entryLPA": "3–8",
+      "midLPA": "8–20",
+      "seniorLPA": "18–50+",
+      "reality": 82,
+      "time": "Any graduation + on-job training; MBA helps at account manager level",
+      "exams": [
+        "Campus placements; no single national exam"
+      ],
+      "paths": [
+        "BCom → FMCG sales trainee",
+        "BTech → Industrial B2B sales (components, machinery)"
+      ],
+      "skills": [
+        "Pipeline CRM discipline",
+        "Negotiation",
+        "Territory planning",
+        "Basic finance for pricing"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Variable pay (incentives) can double CTC in good years or vanish in bad quarters—ask recruiters for fixed vs variable split.",
+      "cg": "<strong>From Chhattisgarh:</strong> Industrial belts need components, consumables, and logistics services sold by field teams based in Raipur / Korba / Bhilai.",
+      "typicalEmployers": [
+        "FMCG",
+        "Cement / steel trading",
+        "IT services account mining"
+      ],
+      "workMode": "mixed",
+      "demandOutlook": "stable",
+      "salaryContext": "Entry “CTC” with high variable may list ₹7 LPA but fixed can be ₹4.5 LPA—read offer letters carefully."
+    },
+    {
+      "id": 55,
+      "name": "Welder / Fabricator (Advanced trades)",
+      "emoji": "🔥",
+      "stream": [
+        "any"
+      ],
+      "segments": [
+        "trades"
+      ],
+      "tags": [
+        "Any Stream",
+        "Technical",
+        "Private"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "5–12",
+      "seniorLPA": "10–22",
+      "reality": 88,
+      "time": "ITI Welder + apprenticeship / NSQF diplomas",
+      "exams": [
+        "ITI merit lists",
+        "Company apprenticeship boards"
+      ],
+      "paths": [
+        "ITI → Shipyard / heavy fabrication shop",
+        "Multi-skill (welding + fitting) for maintenance teams"
+      ],
+      "skills": [
+        "WPS / WQT documentation awareness",
+        "NDT coordination",
+        "Safety in confined spaces"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Certified welders for pressure vessels and stainless TIG can earn overseas-linked wages on project sites; unskilled imitation welding pays poorly and is unsafe.",
+      "cg": "<strong>From Chhattisgarh:</strong> Fabrication workshops serving mining and plant shutdowns value multi-trade technicians.",
+      "typicalEmployers": [
+        "EPC contractors",
+        "Steel fabrication yards",
+        "Plant maintenance contractors"
+      ],
+      "workMode": "onsite",
+      "demandOutlook": "stable",
+      "salaryContext": "Project sites may include per-diem; check PF/ESI compliance on contractor rolls."
+    },
+    {
+      "id": 56,
+      "name": "Chef / Culinary Professional",
+      "emoji": "👨‍🍳",
+      "stream": [
+        "any"
+      ],
+      "segments": [
+        "creative"
+      ],
+      "tags": [
+        "Any Stream",
+        "Private",
+        "Service"
+      ],
+      "entryLPA": "2–5",
+      "midLPA": "5–14",
+      "seniorLPA": "12–40+",
+      "reality": 75,
+      "time": "Diploma / degree from IHM or craft certificate + kitchen stages",
+      "exams": [
+        "NCHM JEE for IHM",
+        "Direct apprenticeship in hotel kitchens"
+      ],
+      "paths": [
+        "Commis → CDP → Sous Chef → Executive Chef",
+        "Cloud kitchen → own brand"
+      ],
+      "skills": [
+        "Mise en place speed",
+        "Costing per plate",
+        "Hygiene audits",
+        "Menu R&D"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Kitchen heat and long hours are real; cruise and Middle East postings can multiply savings if you tolerate contracts.",
+      "cg": "<strong>From Chhattisgarh:</strong> Resort and highway hospitality growth needs trained CDPs, not only interns.",
+      "typicalEmployers": [
+        "Hotels",
+        "QSR chains",
+        "Catering",
+        "Cruise lines"
+      ],
+      "workMode": "onsite",
+      "demandOutlook": "strong",
+      "salaryContext": "Tips and service charge policies differ by employer—ask HR explicitly."
+    },
+    {
+      "id": 57,
+      "name": "Electrical Engineer (Power Systems)",
+      "emoji": "⚙️",
+      "stream": [
+        "science"
+      ],
+      "segments": [
+        "tech"
+      ],
+      "tags": [
+        "Science",
+        "Engineering",
+        "Govt & Private"
+      ],
+      "entryLPA": "3.5–8",
+      "midLPA": "8–18",
+      "seniorLPA": "18–40",
+      "reality": 72,
+      "time": "4 years BTech Electrical + GATE for PSUs",
+      "exams": [
+        "GATE EE",
+        "State GENCO / TRANSCO recruitment"
+      ],
+      "paths": [
+        "BTech EE → OEM (switchgear, motors)",
+        "BTech EE → Power utility maintenance"
+      ],
+      "skills": [
+        "Load flow basics",
+        "Protection relays",
+        "SCADA exposure",
+        "Safety tagging (LOTO)"
+      ],
+      "honest": "<strong>Most honest fact:</strong> Utility and OEM roles differ: utilities emphasise shift operations and seniority; OEMs emphasise travel commissioning.",
+      "cg": "<strong>From Chhattisgarh:</strong> NTPC, CSPTCL, and large industries maintain strong electrical maintenance teams in Korba / Raipur corridors.",
+      "typicalEmployers": [
+        "Power utilities",
+        "NTPC",
+        "OEMs",
+        "EPC"
+      ],
+      "workMode": "onsite",
+      "demandOutlook": "stable",
+      "salaryContext": "PSU CTC includes allowances; compare with private on-call overtime norms."
+    },
+    {
+      "id": 58,
+      "name": "Clinical Research Associate (CRA)",
+      "emoji": "📝",
+      "stream": [
+        "science",
+        "any"
+      ],
+      "segments": [
+        "healthcare",
+        "tech"
+      ],
+      "tags": [
+        "Science",
+        "Healthcare",
+        "Private"
+      ],
+      "entryLPA": "3.5–7",
+      "midLPA": "8–16",
+      "seniorLPA": "16–30",
+      "reality": 68,
+      "time": "BPharm / BSc Life Sciences + certification (ICH-GCP) + monitoring exposure",
+      "exams": [
+        "Campus + walk-in; GCP training certificates"
+      ],
+      "paths": [
+        "CRC site coordinator → CRA",
+        "Clinical data associate → CRA"
+      ],
+      "skills": [
+        "ICH-GCP",
+        "Source data verification",
+        "Regulatory filing support",
+        "Travel stamina"
+      ],
+      "honest": "<strong>Most honest fact:</strong> CRA life is travel-heavy; pays better than bench roles for same base degree if you can handle airports weekly.",
+      "cg": "<strong>From Chhattisgarh:</strong> Few CRA hubs physically in CG; remote monitoring grew post-COVID—verify employer travel policy.",
+      "typicalEmployers": [
+        "CROs",
+        "Pharma R&D",
+        "Hospital trial units"
+      ],
+      "workMode": "hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Allowances for travel reimbursements can inflate “CTC” vs fixed."
+    }
+  ]
+}

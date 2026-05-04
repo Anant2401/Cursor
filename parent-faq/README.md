@@ -26,7 +26,12 @@ copy ..\FAQDB\faqs.json .\data\faqs.json
 
 ```bash
 npm run build
-npm run start
 ```
 
-Deploy as a standalone Next app (e.g. Vercel) or adapt `next.config` for static export if you need plain HTML on the same host as the Pehchaan static site.
+Output is written to **`out/`**. For the main Pehchaan static site, copy that folder into the repo’s **`../Tools/parents-guide/`** (overwrite) so URLs match `basePath: /Tools/parents-guide`. The homepage links to `Tools/parents-guide/index.html`.
+
+Google Translate is wired via **`TranslateBootstrap`** (loads **`/assets/pehchaan_translate.js`** from the site root — same host as the main site).
+
+## Repo-wide docs
+
+The repository root **`README.md`** describes all tools, `DB/` JSON, scripts, and local `serve` setup. **`../sitemap.xml`** lists the homepage, every tool URL (including Financing Reality), Parent’s Guide, and PDF brochures.

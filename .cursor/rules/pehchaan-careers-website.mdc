@@ -1,0 +1,19 @@
+---
+description: Pehchaan Careers — repo-wide brand, UI, QA, and file layout for the full static site + Next app + DB data
+alwaysApply: true
+---
+
+# Pehchaan Careers — full website context
+
+**Canonical spec (read for any non-trivial UI, copy, or tool change):** repo root `.cursorrules` — brand strings, colours, typography, tool chrome/footer, disclaimers, QA checklist, and implementation map.
+
+**Non‑negotiables in every change**
+
+- Brand string **Pehchaan Careers**; English tagline **`Your identity. Your path.`** in tool chrome second line; Hindi **`Aapki pehchaan, aapki raah.`** in footers as documented.
+- Tool **topbar** and **three-part footer** (motto, attribution, contact line) match reference tools / `parent-faq/components/PehchaanToolChrome.tsx`.
+- Use **design tokens** from `.cursorrules` §5 — no ad‑hoc hex drift.
+- Surface the **discussion / consultation** disclaimer meaning on tools as required in `.cursorrules` §10.
+- **`Tools/pehchaan_*.html`** + **`DB/*.json`** + **`assets/`** scripts: keep fetch paths, prefill, and journey links consistent when renaming or adding tools.
+- **`parent-faq/`** is the source of truth for Parent FAQ / export; **`Tools/parents-guide/`** is generated output when using that pipeline. Next.js specifics: **`parent-faq/AGENTS.md`**.
+
+For structured QA passes, follow `.cursorrules` §13 (deviation list, fixes, compliance flags).

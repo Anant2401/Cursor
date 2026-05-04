@@ -71,6 +71,11 @@ export default function PehchaanToolChrome({
         </a>
       </div>
 
+      <div className="translate-strip no-print mb-1 flex flex-wrap items-center justify-end gap-2.5 border-b border-[#D1E8DF] bg-[#f8fafc] px-3.5 py-2 text-[11px] text-[#64748B]">
+        <span>Translate this page</span>
+        <div id="google_translate_element" />
+      </div>
+
       {/* Hero — teal card like other tools */}
       <div className="relative mb-4 overflow-hidden rounded-[22px] bg-[#085041] px-7 pb-8 pt-8 text-white shadow-sm">
         <div className="pointer-events-none absolute -right-12 -top-12 h-[180px] w-[180px] rounded-full bg-white/[0.05]" />

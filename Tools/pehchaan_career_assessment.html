@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Career Interest Test – Pehchaan Careers</title>
+<title>Career Assessment – Pehchaan Careers</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -260,7 +260,8 @@
 </style>
 </head>
 <body>
-<div class="container">
+  <div class="translate-strip no-print" style="display:flex;justify-content:flex-end;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 14px;background:#f8fafc;border-bottom:1px solid var(--border);font-size:11px;color:var(--gray-text);"><span>Translate this page</span><div id="google_translate_element"></div></div>
+  <div class="container">
 
   <!-- ===== COVER ===== -->
   <div id="screen-cover">
@@ -353,9 +354,18 @@
 
   <!-- ===== QUIZ ===== -->
   <div id="screen-quiz" class="hidden">
+    <div class="topbar">
+      <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+      <a class="topbar-brand" href="../index.html">
+      <div class="topbar-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
+      </div>
+      <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your identity. Your path.</div></div>
+      </a>
+    </div>
     <div class="quiz-header">
       <div class="quiz-meta">
-        <span class="quiz-meta-left" id="quiz-label"></span>
+        <span class="quiz-meta-left" id="quiz-part-label"></span>
         <span class="quiz-meta-right" id="quiz-count"></span>
       </div>
       <div class="prog-track"><div class="prog-fill" id="prog-fill" style="width:0%"></div></div>
@@ -389,6 +399,15 @@
 
   <!-- ===== RESULTS ===== -->
   <div id="screen-results" class="hidden">
+    <div class="topbar">
+      <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+      <a class="topbar-brand" href="../index.html">
+      <div class="topbar-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
+      </div>
+      <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your identity. Your path.</div></div>
+      </a>
+    </div>
     <div class="res-hero">
       <div class="res-congrats-big">🎉</div>
       <div class="res-congrats" id="res-congrats"></div>
@@ -478,6 +497,8 @@
       <div id="steps-all"></div>
     </div>
 
+    <div id="assessment-journey-next" class="no-print"></div>
+
     <div class="disclaimer-box">
       <h4>Important — please read</h4>
       <p>This assessment is a <strong>starting point for self-discovery</strong> — not a definitive verdict on your future. It is based on your responses to 49 questions on a single day and reflects your current interests and tendencies. Career decisions are complex and personal, and they are best made after <strong>discussing your results with your parents, teachers, school counsellors and career professionals</strong> who know you well. Pehchaan Careers strongly recommends using this report as a conversation starter — not a final decision. Your path is yours to choose.</p>
@@ -495,6 +516,8 @@
 
 </div>
 
+<script src="../assets/pehchaan_journey.js"></script>
+<script src="../assets/pehchaan_tool_links.js"></script>
 <script>
 var studentFirstName = '';
 var studentLastName  = '';
@@ -768,7 +791,7 @@ function renderQuiz(idx) {
   var sec = SECTIONS[idx];
   var sc  = SECTION_COLORS[sec.id];
   var totalQ = TOTAL_SECTIONS * 7;
-  document.getElementById('quiz-label').textContent = 'Part '+(idx+1)+' of '+TOTAL_SECTIONS+' — '+sec.name;
+  document.getElementById('quiz-part-label').textContent = 'Part '+(idx+1)+' of '+TOTAL_SECTIONS+' — '+sec.name;
   document.getElementById('quiz-count').textContent = 'Q '+(idx*7+1)+'–'+(idx*7+7)+' of '+totalQ;
   document.getElementById('prog-fill').style.width = (idx/TOTAL_SECTIONS*100)+'%';
   document.getElementById('sec-icon').textContent = sec.emoji;
@@ -833,6 +856,8 @@ document.getElementById('btn-restart').addEventListener('click', function(){
   answers={}; curSec=0; studentFirstName=''; studentLastName='';
   document.getElementById('input-firstname').value='';
   document.getElementById('input-lastname').value='';
+  var aj = document.getElementById('assessment-journey-next');
+  if (aj) aj.innerHTML = '';
   showScreen('screen-cover');
 });
 
@@ -977,11 +1002,24 @@ function buildResults() {
 
   document.getElementById('steps-all').innerHTML=stepsHtml;
 
+  var profileCode = top3.join('-');
+  if (window.PehchaanJourney) {
+    window.PehchaanJourney.setJourney({ from: 'assessment', profile: profileCode });
+  }
+  var aj = document.getElementById('assessment-journey-next');
+  if (aj && window.PehchaanToolLinks) {
+    aj.innerHTML = PehchaanToolLinks.wrapNextCard(
+      'Continue exploring',
+      PehchaanToolLinks.buildAssessmentNextInner(profileCode)
+    );
+  }
+
   showScreen('screen-results');
   setTimeout(function(){
     document.querySelectorAll('.incline-fill').forEach(function(b){ b.style.width=b.getAttribute('data-pct')+'%'; });
   },150);
 }
 </script>
+<script src="../assets/pehchaan_translate.js"></script>
 </body>
 </html>

@@ -1,0 +1,211 @@
+# Pehchaan Careers — Brand, UI, and QA rules (repo-wide)
+
+When editing this repository (`index.html`, `styles.css`, `script.js`, `Tools/**/*.html`, `Tools/parents-guide/**`, `DB/*.json`, `parent-faq/**`, `assets/**`, `docs/**`, `Presentation/**`), act as a **Senior Full-Stack QA + brand steward**. Default requirement: **100% brand parity** across surfaces unless the user explicitly scopes an exception. **Data/tools pairing:** static tools under `Tools/pehchaan_*.html` that load JSON should keep paths aligned with sibling files in `DB/` (same base name where the repo uses that convention). **Shared client scripts** in `assets/` (`pehchaan_journey.js`, `pehchaan_tool_links.js`, `pehchaan_translate.js`, `pehchaan_career_registry_prefill.js`, etc.) must stay consistent with tool URLs and query/hash prefill behaviour when those tools change; see `docs/tool-integration.md` for the cross-tool map.
+
+**Extended reference (human-facing, not duplicated here in full):** `Pehchaan_Careers_Brand_Guide.md` — voice, audience, six paths, nine skills, stats, deck usage. Prefer aligning code and copy with both this file **and** the rules below.
+
+---
+
+## 1. Brand name and taglines (exact strings)
+
+### Written name
+- Always **Pehchaan Careers** (capital **P**, capital **C**). Never `pehchaan careers`, `PEHCHAAN`, or `Pehchaan careers` as the formal brand string.
+
+### Taglines by context
+| Context | Exact string | Notes |
+|--------|----------------|--------|
+| English (site + tools topbar) | `Your identity. Your path.` | Second line under **Pehchaan Careers** in tool chrome. **Do not** replace this line with a tool title or step label; put tool context in the hero chip, H1, or body. |
+| Hindi (footer motto, tools) | `Aapki pehchaan, aapki raah.` | Lowercase **a** after period in Hindi line as shown. |
+| Marketing site footer tagline | Same Hindi line in `.footer-tagline` | Keep in sync with tools. |
+
+Other taglines (Hindi alternates, manifesto lines) live in `Pehchaan_Careers_Brand_Guide.md` §2 — use only where that document or product explicitly allows (e.g. decks, social), not as random substitutes in headers/footers.
+
+---
+
+## 2. Logos, icons, favicons, and brand mark
+
+### Canonical asset files (repo root `assets/`)
+| File | Role |
+|------|------|
+| `assets/pehchaan_logo_light.svg` | **Marketing site** header + footer wordmark on dark footer / light contexts. |
+| `assets/pehchaan_logo_dark.svg` | Dark-background marketing / print-style placements. |
+| `assets/pehchaan_icon.svg` | **Site `<link rel="icon">`** on `index.html` (and preferred for any new static page that can use a path to `assets/`). |
+| `assets/pehchaan_logo_light.png`, `assets/pehchaan_logo_dark.png`, `assets/pehchaan_icon.png` | Raster fallbacks / social; prefer SVG on web. |
+
+### Logo usage rules
+- **No distortion:** preserve aspect ratio; do not squash the wordmark or icon.
+- **Contrast:** dark logo variants on light surfaces; light logo on dark nav/footer (`index.html` header uses dark gradient — use **light** logo there as today).
+- **Clear space:** treat ~1× the cap-height of “P” in **Pehchaan** as minimum breathing room where practical.
+- **Colours in the mark:** do not recolour the official logo files for “theme experiments.” Programme-approved tints (e.g. opacity overlays on hero decorations) are not the same as editing logo artwork.
+
+### Tool chrome: inline mark (40×40 “sun + paths”)
+Standalone HTML tools use a **rounded square** (`border-radius: 12px` at 40×40), **background `#085041`** (teal dark), containing the **inline SVG** that matches the brand mark (amber sun arc + rays, teal converging paths). **Gold reference:** `Tools/pehchaan_stream_advisor.html` (`.topbar-logo svg`) or `parent-faq/components/PehchaanToolChrome.tsx` (`LogoSvg`). When updating the mark, **update all copies in lockstep** (static tools + `PehchaanToolChrome`) or extract to one shared asset/CSS once the repo introduces a shared bundle.
+
+### Favicon policy
+- **`index.html`:** `assets/pehchaan_icon.svg` (type `image/svg+xml`).
+- **`Tools/pehchaan_*.html`:** Many use a **data-URI SVG** favicon echoing teal-dark + amber + paths — acceptable if colours **exactly** match tokens (`#085041`, `#EF9F27`, `#1D9E75`). Prefer **either** data-URI **or** `../assets/pehchaan_icon.svg` for consistency when touching `<head>`; avoid unrelated emoji or generic globe icons.
+- **Next/export apps:** set favicon to the same artwork/filename pattern as siblings.
+
+### Alt text
+- Logo images: `alt="Pehchaan Careers"` or `alt="Pehchaan Careers logo"` (descriptive, consistent).
+- Decorative icons (inline SVG beside nav): `aria-hidden="true"` when paired with visible text; **social** icons need `aria-label` / `title` as on the marketing footer.
+
+---
+
+## 3. Two shells: marketing site vs tool pages
+
+### A) Marketing homepage — `index.html` + `styles.css`
+- **Header:** `.site-header` — dark gradient bar, **light** logo in `.brand`, pill nav, **Poppins** from Google Fonts. **Do not** paste the tool **topbar** (back arrow + small square mark) here unless product requests a unified shell.
+- **Nav labels (current):** Home, Career Reality, Tools, Pathways, Contact Us — preserve casing and anchors (`#home`, `#reality`, etc.) when editing.
+- **Footer structure:** Three zones — **brand column** (logo link to `#home`, Hindi tagline, short about blurb), **link columns** (Navigate, Cities We Serve, Connect), **footer-bottom** copyright. **Connect block:** `buddy@pehchaancareers.in`, `hello.pehchaan@gmail.com`, `pehchaancareers.in`, Instagram `https://instagram.com/pehchaancareers`, YouTube `https://youtube.com/@PehchaanCareers`. Keep `rel="noreferrer"` on external links.
+- **Copyright line pattern:** `©` + year + `Pehchaan Careers.` + short honesty line — update year via existing script pattern in `script.js` / `#footer-year`, do not hardcode stale years in multiple places.
+
+### B) Standalone tools — `Tools/pehchaan_*.html` (and exam roadmap HTML)
+- **Topbar (required):** Back control **`←`** linking to **`../index.html`** (or correct relative home for nested tools), `aria-label` like “Back to Pehchaan Careers home”, **brand row** = 40×40 mark + **Pehchaan Careers** (`font-weight` 700, ~15px, colour **`#085041`**) + second line **`Your identity. Your path.`** (~11px, **`#64748B`**). Match spacing from **`Tools/pehchaan_plan_b_strategy_builder.html`** (consistent across steps).
+- **Back button:** ~40×40, rounded 12px, `background: rgba(29,158,117,.12)` (or `.14`), text **`#085041`**, hover state slightly stronger green tint — copy from reference tool.
+
+### C) `parent-faq` (Next.js) and `Tools/parents-guide` (export)
+- Reuse **`PehchaanToolChrome.tsx`** patterns for topbar/hero/footer strings and colours.
+- **`PEHCHAAN_HOME_RELATIVE`:** `/index.html` — do not change to a broken relative `../` from deployed paths without checking both dev and static export.
+
+---
+
+## 4. Tool footer (three-part, center-aligned)
+
+Every tool screen that uses the standard tool footer must include **all** of the following, **in order**, with the same **meaning** and **contact order** as reference tools:
+
+1. **Motto line:** `Aapki pehchaan, aapki raah.` — visually distinct (e.g. semibold, teal `#1D9E75` or class `.brand-tagline`).
+2. **Attribution line:** `This tool is brought to you by` + **`Pehchaan Careers`** wrapped in `<strong>` (strong colour **`#085041`**).
+3. **Contact line:** `hello.pehchaan@gmail.com · buddy@pehchaancareers.in · pehchaancareers.in` — use middle dots with normal spaces as in `Tools/pehchaan_stream_advisor.html` / `PehchaanToolChrome.tsx`.
+
+**Rules**
+- **Do not** omit line 3 on wizard/pivot steps.
+- **Do not** change email strings, domain, or separator style between tools.
+- Wrapper: top border `1px solid` teal-light `#E1F5EE`, centered text, muted grey `#64748B` at ~11px for lines 2–3 unless matching an existing class block exactly.
+
+When refactoring, **diff footers** across all modified HTML/TSX files before merge.
+
+---
+
+## 5. Colour system (tokens — no “close enough” hex drift)
+
+### Core CSS variables (source of truth: `:root` in `styles.css` and parallel `:root` in tools)
+Use **these** names and hex values for all new UI. **Reject** one-off hex that duplicates a token with ±1–2 RGB variance.
+
+| Token | Hex | Usage |
+|-------|-----|--------|
+| `--teal` | `#1D9E75` | Primary CTAs, links-on-light, positive emphasis |
+| `--teal-dark` | `#085041` | Hero cards (tool), headings on light, strong brand text |
+| `--teal-light` | `#E1F5EE` | Soft backgrounds, footer borders, panels |
+| `--amber` | `#EF9F27` | Accent highlights, stats, chips — **sparingly** |
+| `--amber-light` | `#FAEEDA` | Amber-tinted section backgrounds |
+| `--navy` / `--dark-text` | `#1A1A2E` | Body text, dark UI chrome |
+| `--white` | `#FFFFFF` | Surfaces on cards |
+| `--card-bg` | `#F8FAFC` | Neutral card fills |
+| `--gray-text` | `#64748B` | Secondary copy, captions, topbar tagline |
+| `--border` | `#D1E8DF` | Dividers, light borders |
+| `--red` / `--red-light` | `#E24B4A` / `#FCEBEB` | Warnings, negative deltas |
+| `--purple` | `#7F77DD` | Mindset / arts-adjacent accents (see brand guide nine skills) |
+| `--blue` | `#378ADD` | Government / info accents |
+| `--coral` | `#D85A30` | Arts & creativity path accent |
+| `--green` | `#639922` | Higher studies abroad accent |
+
+### Page background (tools + marketing body)
+- Default **multi-stop** feel: radial purple/blue tints at corners + **linear** mint gradient (~`#eef8f4` → `#e5f3ee` → `#e8f5f0`). New pages should **not** introduce unrelated full-bleed colours (e.g. pure grey `#f5f5f5` only) without migrating the whole set.
+
+### Stream advisor semantic colours (when applicable)
+- Science: teal; Commerce: amber; Arts: purple — use the same pairing as `pehchaan_stream_advisor.html` (`--science-col`, `--commerce-col`, `--arts-col` and matching `--*-bg`).
+
+---
+
+## 6. Typography
+
+- **Font family:** **Poppins** only for customer-facing UI (`https://fonts.googleapis.com/css2?family=Poppins:...`). Weights in use: **300–800** on marketing site; tools commonly **400–700**.
+- **Body:** comfortable `line-height` (~1.65–1.8 for long copy); **letter-spacing** subtle on uppercase chips (~0.03em) — match reference tools.
+- **Scale:** Avoid inventing new display sizes. Align to existing tiers: **marketing H1** (`clamp` hero), **section H2**, **tool hero H1** (~26px inside teal card), **card titles**, **11–13px** helper text in tools.
+- **Hindi + English pairs** in hero (where present): Hindi line bolder/larger, English tag smaller muted — see `.hero-tagline-hindi` / `.hero-tagline-eng` in `styles.css`.
+
+---
+
+## 7. Components: buttons, inputs, cards, shadows
+
+- **Buttons:** Use `.btn`, `.primary`, `.ghost`, tool-specific **assessment** buttons — match **padding**, **border-radius** (~10–14px family), **border**, **hover lift** (`translateY`) from `styles.css` or the tool you clone from.
+- **Form controls:** Inputs and `<select>` — same **border-radius**, **border colour**, **focus outline** / ring behaviour as an existing gold-standard tool. **Clone, don’t invent.**
+- **Cards:** Shared **radius** family: 14px (small), 22px (hero). **Shadows:** soft green-tinted or neutral — match `.hero-card` / `.tool-card` / name cards; no arbitrary heavy black shadows.
+- **Focus and a11y:** Preserve `aria-*` on tabs, tool navigation, and modals when editing.
+
+---
+
+## 8. Imagery, infographics, and illustration
+
+- **Stock / photos:** If adding images, prefer **authentic**, region-appropriate, non-stereotypical depictions of students and families; avoid watermarked or off-brand colour grades. When in doubt, use **brand-tinted** abstract shapes (teal/amber/navy) consistent with existing CSS gradients.
+- **Infographics / diagrams:** Use palette **§5**; label text in **Poppins**; for “path” diagrams, **converging lines + light** echo the logo story (journey), not unrelated metaphors.
+- **Charts:** Use `--teal`, `--amber`, `--purple`, `--blue`, `--coral`, `--green` for series — align with **six paths / nine skills** semantics from `Pehchaan_Careers_Brand_Guide.md` where applicable.
+- **Performance:** Prefer SVG for icons/diagrams; compress raster assets; **width/height** or aspect-ratio to avoid CLS.
+- **Legal:** Only use charts/stats with sources the brand guide or product has approved; cite lightly in UI if showing numbers.
+
+---
+
+## 9. Document titles and meta
+
+- **Pattern:** `[Page or Tool Name] | Pehchaan Careers` or `Tool Name – Pehchaan Careers` — **align** when touching titles; avoid silent SEO renames if the user cares about history.
+- **Description meta:** Student-first, honest, no guarantees — match tone in `index.html` existing description.
+
+---
+
+## 10. Content, legal, and safety
+
+### Decision / consultation clause (required)
+Surface this meaning in **clear, visible** copy (ideally **verbatim** on first meaningful screen and again near results):
+
+> **This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.**
+
+- Tool-specific disclaimers **add**; they **do not replace** this clause.
+- Avoid deterministic promises (“You will become…”). Prefer pathways **worth exploring with mentors**.
+
+### Educative value
+Preserve or add a short **how this works / why we show this** so students see **logic**, not only output.
+
+---
+
+## 11. Voice (seven pillars)
+
+Copy should feel: **Welcoming**, **Energetic**, **Enthusiastic**, **Inclusive**, **Value-giving**, **Motivational**, **Inspirational** — like a **supportive career buddy**, accurate and non-misleading. Full “never say” list: `Pehchaan_Careers_Brand_Guide.md` §5.
+
+---
+
+## 12. Feedback UX and technical hygiene
+
+- Prefer **inline** or **in-page** validation/errors matching tool patterns; **avoid** new `alert()` where a styled message exists.
+- **Links:** `mailto:` and `https://` for public emails and domain; **`rel="noreferrer"`** on external targets where the codebase already does.
+- **Paths:** Tools in `Tools/` use `../index.html` for home; nested `Tools/pehchaan_exam_roadmap/index.html` may differ — verify **relative** paths when moving files.
+
+---
+
+## 13. QA / brand deliverables (when the user asks for a pass)
+
+Return:
+1. **Deviation list:** Files missing header/footer constants, wrong colours/typography, broken assets, or wrong taglines.
+2. **Concrete fixes:** Exact CSS/HTML/TSX references.
+3. **Compliance flags:** Missing consultation/disclaimer clause or discussion-only wording.
+
+---
+
+## 14. Implementation map (where things live)
+
+| Area | Location |
+|------|----------|
+| Marketing layout + footer | `index.html`, `styles.css`, `script.js` |
+| Tool list + anchors | `index.html` `#tools` |
+| PDFs | `Presentation/pdf/` |
+| Static tool HTML | `Tools/pehchaan_*.html` (e.g. stream advisor, plan B, salary explorer, career assessment, ROI bridge, skill gap, mentor connect, exam roadmap page, **financing reality**) |
+| Exam roadmap | `Tools/pehchaan_exam_roadmap.html` and/or `Tools/pehchaan_exam_roadmap/index.html` — verify **relative** `../` paths to `index.html`, `assets/`, and `DB/` from each entry point |
+| Tool / product JSON data | `DB/*.json` — keep naming and fetch paths in tools in sync; treat as **content/config** (tone, disclaimers, labels) not bypass for brand rules |
+| Logos, icons, shared JS | `assets/` |
+| Internal QA / planning docs | `docs/` (do not ship as public pages unless product asks) |
+| Parent FAQ app (Next.js) | `parent-faq/` — follow `parent-faq/AGENTS.md` for Next.js version notes |
+| Exported parent guide (static) | `Tools/parents-guide/` — prefer editing **`parent-faq/`** then rebuilding/exporting so chrome and copy stay aligned |
+
+**Do not** treat `parent-faq/.next/` as source; it is build output. Prefer `.gitignore` for build artifacts in normal workflows.
+
+When in doubt, **open two surfaces side by side** (marketing header/footer vs tool topbar/footer; primary button; one input) and match them **before** shipping.

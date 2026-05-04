@@ -15,9 +15,15 @@
     rel="stylesheet"
   />
   <link rel="icon" type="image/svg+xml" href="assets/pehchaan_icon.svg" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="https://pehchaancareers.in/sitemap.xml" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="assets/pehchaan_journey.js"></script>
 </head>
 <body>
+  <div class="translate-strip no-print" aria-label="Page language">
+    <span class="translate-strip-label">Translate</span>
+    <div id="google_translate_element"></div>
+  </div>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#home">
@@ -64,7 +70,7 @@
             <div class="hero-trust-row">
               <div class="hero-trust-item">
                 <span class="trust-icon">✓</span>
-                <span>Free career assessment — no login needed</span>
+                <span>Freemium career assessment — no login needed</span>
               </div>
               <div class="hero-trust-item">
                 <span class="trust-icon">✓</span>
@@ -427,131 +433,62 @@
         <div class="section-head">
           <h2>Career Tools</h2>
           <p class="section-head-intro">
-            Free practical tools to help you choose better: assess your fit, decide your stream, compare
-            salaries, plan exams, model costs and payback, build a Plan B alongside competitive exams, map
-            skill gaps to your target role, connect with mentors, and help parents get clear answers — before
-            you commit.
+            Freemium tools (premium-style guidance at no charge) in a sensible order — from who you are to what exams and money mean — so you can plan
+            once and plan honestly. Start with the rail below, or jump straight to any tool.
           </p>
         </div>
         <div class="brochure-wrap reveal tools-wrap">
-          <div class="tools-tabs" role="tablist" aria-label="Career tools categories">
-            <button
-              class="tools-tab is-active"
-              id="tools-tab-all"
-              type="button"
-              role="tab"
-              aria-selected="true"
-              aria-controls="tools-panel-all"
-              data-tool-tab="all"
-            >
-              All
-            </button>
-            <button
-              class="tools-tab"
-              id="tools-tab-assessment"
-              type="button"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tools-panel-all"
-              data-tool-tab="assessment"
-            >
-              Assessment
-            </button>
-            <button
-              class="tools-tab"
-              id="tools-tab-stream"
-              type="button"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tools-panel-all"
-              data-tool-tab="stream"
-            >
-              Stream Advisor
-            </button>
-            <button
-              class="tools-tab"
-              id="tools-tab-salary"
-              type="button"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tools-panel-all"
-              data-tool-tab="salary"
-            >
-              Salary Explorer
-            </button>
-            <button
-              class="tools-tab"
-              id="tools-tab-roadmap"
-              type="button"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tools-panel-all"
-              data-tool-tab="roadmap"
-            >
-              Exam Roadmap
-            </button>
-            <button
-              class="tools-tab"
-              id="tools-tab-roi"
-              type="button"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tools-panel-all"
-              data-tool-tab="roi"
-            >
-              ROI Bridge
-            </button>
-            <button
-              class="tools-tab"
-              id="tools-tab-planb"
-              type="button"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tools-panel-all"
-              data-tool-tab="planb"
-            >
-              Plan B
-            </button>
-            <button
-              class="tools-tab"
-              id="tools-tab-skillgap"
-              type="button"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tools-panel-all"
-              data-tool-tab="skillgap"
-            >
-              Skill Gap
-            </button>
-            <button
-              class="tools-tab"
-              id="tools-tab-mentor"
-              type="button"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tools-panel-all"
-              data-tool-tab="mentor"
-            >
-              Mentor Connect
-            </button>
-            <button
-              class="tools-tab"
-              id="tools-tab-parents"
-              type="button"
-              role="tab"
-              aria-selected="false"
-              aria-controls="tools-panel-all"
-              data-tool-tab="parentguide"
-            >
-              Parent's Guide
-            </button>
+          <div class="tools-journey-rail" aria-hidden="false">
+            <div class="tools-journey-title">Your path through the tools</div>
+            <ol class="tools-journey-steps">
+              <li><span class="tj-n">1</span> Self-discovery</li>
+              <li><span class="tj-n">2</span> Stream / course fit</li>
+              <li><span class="tj-n">3</span> Money truth</li>
+              <li><span class="tj-n">4</span> Exam reality</li>
+              <li><span class="tj-n">5</span> Plan B income</li>
+              <li><span class="tj-n">6</span> Skills to get hired</li>
+              <li><span class="tj-n">7</span> Proof &amp; people</li>
+              <li><span class="tj-n">8</span> Family alignment</li>
+            </ol>
           </div>
-          <div
-            class="tools-panel is-active"
-            id="tools-panel-all"
-            role="tabpanel"
-            aria-labelledby="tools-tab-all"
-          >
+          <div class="start-here-card" id="start-here-card">
+            <div class="start-here-title">Start here (30 seconds)</div>
+            <p class="start-here-lead">Pick what matches you — we suggest where to go next.</p>
+            <div class="start-here-grid">
+              <label class="start-here-field">Where are you right now?
+                <select id="start-stage">
+                  <option value="">Select…</option>
+                  <option value="10">Class 10 / just finished 10th</option>
+                  <option value="12">Class 11–12 / just finished 12th</option>
+                  <option value="college">In college / graduate</option>
+                  <option value="parent">I am a parent browsing for my child</option>
+                </select>
+              </label>
+              <label class="start-here-field">What do you want clarity on first?
+                <select id="start-worry">
+                  <option value="">Select…</option>
+                  <option value="fit">What career fits me</option>
+                  <option value="money">Money, fees, ROI, loans</option>
+                  <option value="exam">Competitive exams &amp; timelines</option>
+                  <option value="job">Getting job-ready skills</option>
+                </select>
+              </label>
+            </div>
+            <div class="start-here-out" id="start-here-out" hidden>
+              <div class="start-here-result-top">
+                <div>
+                  <strong class="start-here-result-title">Your picks are highlighted below</strong>
+                  <p class="start-here-result-sub" id="start-here-sub"></p>
+                </div>
+                <button type="button" class="start-here-clear-btn" id="start-here-clear" hidden>
+                  Show all tools
+                </button>
+              </div>
+              <div class="start-here-pills" id="start-here-pills" aria-label="Suggested tools order"></div>
+              <p class="start-here-note">Each chip matches a card in the grid. Open <strong>View details</strong> on a card, or launch the tool when you are ready.</p>
+            </div>
+          </div>
+          <div class="tools-panel is-active" id="tools-panel-all" aria-label="All career tools">
             <div class="tools-grid" id="tools-grid">
               <article class="tool-card" data-tool="assessment">
                 <div class="tool-card-chip">For students exploring options</div>
@@ -580,15 +517,6 @@
                 </p>
                 <a href="Tools/pehchaan_salary_explorer.html" class="btn-assessment-primary">Launch Tool →</a>
               </article>
-              <article class="tool-card" data-tool="roadmap">
-                <div class="tool-card-chip">For students preparing exam strategies</div>
-                <h3>Exam Roadmap Builder</h3>
-                <p>
-                  Build a personalised exam calendar with key deadlines, preparation phases, and
-                  practical next steps based on your class, stream, and target career.
-                </p>
-                <a href="Tools/pehchaan_exam_roadmap.html" class="btn-assessment-primary">Launch Tool →</a>
-              </article>
               <article class="tool-card" data-tool="roi">
                 <div class="tool-card-chip">For students and families planning money honestly</div>
                 <h3>Career ROI &amp; Reality Bridge</h3>
@@ -598,12 +526,32 @@
                 </p>
                 <a href="Tools/pehchaan_career_roi_reality_bridge.html" class="btn-assessment-primary">Launch Tool →</a>
               </article>
+              <article class="tool-card" data-tool="financing">
+                <div class="tool-card-chip">For families discussing loans &amp; EMI honestly</div>
+                <h3>Financing &amp; EMI Reality</h3>
+                <p>
+                  Ballpark education-loan EMI vs a starting salary you type in — plus scholarship direction and
+                  bank-conversation pointers (not financial advice).
+                </p>
+                <a href="Tools/pehchaan_financing_reality.html" class="btn-assessment-primary">Launch Tool →</a>
+              </article>
+              <article class="tool-card" data-tool="roadmap">
+                <div class="tool-card-chip">For students preparing exam strategies</div>
+                <h3>Exam Roadmap Builder</h3>
+                <p>
+                  Build a personalised exam calendar with key deadlines, preparation phases, and
+                  practical next steps based on your class, stream, and target career.
+                </p>
+                <a href="Tools/pehchaan_exam_roadmap.html" class="btn-assessment-primary">Launch Tool →</a>
+              </article>
               <article class="tool-card" data-tool="planb">
-                <div class="tool-card-chip">For serious exam aspirants who want income and skills too</div>
+                <div class="tool-card-chip">For aspirants who want jobs, college backups, or course ladders—not guesswork</div>
                 <h3>Plan B Strategy Builder</h3>
                 <p>
-                  Map your main exam (UPSC, SSC, NEET, JEE, and more) to skills you are already building, then
-                  explore parallel jobs, pay ranges, and a first step you can take this week.
+                  <strong>Jobs &amp; income:</strong> pick your exam—prep as skills, parallel roles, typical pay, and a
+                  copyable first step. <strong>Colleges:</strong> stream-based national counselling-style ladders or
+                  state-comfort backups (domicile-aware). <strong>Courses:</strong> horizontal degree ladders toward a similar
+                  job family. Awareness only—verify on official portals.
                 </p>
                 <a href="Tools/pehchaan_plan_b_strategy_builder.html" class="btn-assessment-primary">Launch Tool →</a>
               </article>
@@ -611,7 +559,7 @@
                 <div class="tool-card-chip">For learners targeting a specific role</div>
                 <h3>Skill Gap Analyser</h3>
                 <p>
-                  Pick a target job, mark what you already know, and get a gap heatmap with free learning
+                  Pick a target job, mark what you already know, and get a gap heatmap with curated learning paths
                   resources, practice platforms, and a phased timeline toward job-ready skills.
                 </p>
                 <a href="Tools/pehchaan_skill_gap_analyser.html" class="btn-assessment-primary">Launch Tool →</a>
@@ -630,7 +578,7 @@
                 <div class="tool-card-chip">For parents &amp; families</div>
                 <h3>Parent's Guide (FAQ)</h3>
                 <p>
-                  170+ short answers in English or Hinglish — marks, sarkari vs private, local jobs,
+                  170 short answers in English or Hinglish — marks, sarkari vs private, local jobs,
                   money, low marks, and more. Fuzzy search understands how parents really ask; open in
                   one tap.
                 </p>
@@ -765,5 +713,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="assets/pehchaan_translate.js"></script>
 </body>
 </html>

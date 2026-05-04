@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import TranslateBootstrap from "@/components/TranslateBootstrap";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -21,7 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.variable} h-full antialiased`}>
-      <body className={`relative z-[1] min-h-full ${poppins.className}`}>{children}</body>
+      <body className={`relative z-[1] min-h-full ${poppins.className}`}>
+        <TranslateBootstrap />
+        {children}
+      </body>
     </html>
   );
 }

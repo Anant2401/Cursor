@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "last_updated": "2026-05-04",
+    "version": "1.0",
+    "title": "Financing & EMI reality",
+    "disclaimer": "Illustrative numbers only. Actual loan rates, tenure, and eligibility depend on the bank, co-applicant, collateral, and RBI policy. Verify with your bank and a qualified financial advisor before signing."
+  },
+  "intro": "Education loans and EMIs are where many families feel stuck. This page gives simple ballpark EMI math and honest pointers — then sends you to ROI and Salary Explorer for the full career picture.",
+  "scholarship_pointers": [
+    "National Scholarship Portal (NSP) — central and state schemes in one place; check income and category criteria every year.",
+    "College-specific merit / sports scholarships — read the institute's official admission brochure PDF, not WhatsApp forwards.",
+    "If you are preparing for competitive exams, some coaching institutes publish fee waivers for top diagnostic scores — verify on their official site only."
+  ],
+  "loan_notes": [
+    "Prefer education loans marketed for students (moratorium during study) over personal loans unless a CA has compared total cost.",
+    "A longer tenure lowers EMI but increases total interest — use the slider below to see the trade-off.",
+    "Co-applicant (parent) income and CIBIL score heavily affect approval in India — discuss early with your family."
+  ],
+  "default_rate_annual_pct": 10.5,
+  "default_tenure_years": 10
+}

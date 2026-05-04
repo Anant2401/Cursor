@@ -337,6 +337,7 @@
 </style>
 </head>
 <body class="app-not-ready">
+<div class="translate-strip no-print" style="display:flex;justify-content:flex-end;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 14px;background:#f8fafc;border-bottom:1px solid #D1E8DF;font-size:11px;color:#64748B;"><span>Translate this page</span><div id="google_translate_element"></div></div>
 <div id="app-bootstrap" class="app-bootstrap no-print" role="status" aria-live="polite" aria-busy="true">
   <div class="app-bootstrap-inner" id="app-bootstrap-inner">
     <div class="app-bootstrap-logo skel-pulse" aria-hidden="true"></div>
@@ -478,6 +479,7 @@
   </div>
 
   <div class="insight-box" id="res-insight"></div>
+  <div id="roadmap-journey-next" class="no-print" style="display:none"></div>
 
   <!-- TIMELINE -->
   <div class="card-section">
@@ -503,8 +505,8 @@
 
   <!-- FREE RESOURCES -->
   <div class="card-section">
-    <h3>Free Resources to Start Today</h3>
-    <div class="section-sub">Every resource listed here is free. No coaching fees needed to start.</div>
+    <h3>Starter resources (no paywall)</h3>
+    <div class="section-sub">Curated links to begin without a coaching fee — always verify dates on the official portal.</div>
     <div class="resource-grid" id="resources-grid"></div>
   </div>
 
@@ -527,6 +529,9 @@
 
 </div><!-- /container -->
 
+<script src="../assets/pehchaan_journey.js"></script>
+<script src="../assets/pehchaan_career_registry_prefill.js"></script>
+<script src="../assets/pehchaan_tool_links.js"></script>
 <script>
 // ─────────────────────────────────────────────
 // STATE
@@ -574,6 +579,63 @@ function findCareerById(id) {
     if (PehchaanExamDB.careers[i].id === id) return PehchaanExamDB.careers[i];
   }
   return null;
+}
+
+function tryExamRoadmapUrlPrefill() {
+  if (!window.PehchaanRegistryPrefill || !PehchaanExamDB.careers || !PehchaanExamDB.careers.length) return;
+  var p = PehchaanRegistryPrefill.mergeParams();
+  var cls = (p.class || '').trim();
+  var stream = (p.stream || '').trim().toLowerCase();
+  var st = (p.state || '').trim();
+  var rawTarget = ((p.career || '').trim() || (p.exam || '').trim());
+  if (cls) {
+    var bcl = document.querySelector('#class-grid .sel-btn[data-val="' + cls + '"]');
+    if (bcl) selectClass(bcl);
+  }
+  if (stream) {
+    var bst = document.querySelector('#stream-grid .sel-btn[data-val="' + stream + '"]');
+    if (bst) selectStream(bst);
+  }
+  if (st) {
+    var sf = document.getElementById('state-filter');
+    if (sf && sf.options && Array.prototype.some.call(sf.options, function(o) { return o.value === st; })) {
+      sf.value = st;
+      selStateFilter = st;
+    }
+  }
+  if (!rawTarget) return;
+  var tokens = rawTarget.split(',').map(function(s) { return s.trim(); }).filter(Boolean).slice(0, 3);
+  function resolveToken(t) {
+    if (findCareerById(t)) return Promise.resolve(t);
+    if (!window.PehchaanRegistryPrefill) return Promise.resolve('');
+    return PehchaanRegistryPrefill.load()
+      .then(function(reg) {
+        var row = PehchaanRegistryPrefill.resolveRow(t, reg);
+        return row && row.exam_roadmap_career_id ? row.exam_roadmap_career_id : '';
+      })
+      .catch(function() {
+        return '';
+      });
+  }
+  Promise.all(tokens.map(resolveToken)).then(function(resolved) {
+    var ids = [];
+    resolved.forEach(function(x) {
+      var id = String(x || '').trim();
+      if (id && findCareerById(id) && ids.indexOf(id) < 0) ids.push(id);
+    });
+    if (!ids.length) return;
+    if (!stream) {
+      var c0 = findCareerById(ids[0]);
+      if (c0 && c0.stream && c0.stream.length) {
+        var pick = c0.stream.filter(function(s) { return s !== 'any'; })[0] || c0.stream[0];
+        var bst2 = document.querySelector('#stream-grid .sel-btn[data-val="' + pick + '"]');
+        if (bst2) selectStream(bst2);
+      }
+    }
+    selCareers = ids.slice();
+    renderCareerButtons();
+    updateBuildBtn();
+  });
 }
 
 function validateExamPayload(data) {
@@ -707,6 +769,7 @@ async function loadPehchaanExamData() {
     assignParsedPayload(data);
     applyHeroStatsFromData();
     hideBootstrapOverlay();
+    tryExamRoadmapUrlPrefill();
   } catch (e) {
     var msg = (e && e.message) ? e.message : String(e);
     if (e && e.name === 'SyntaxError') msg = 'The JSON file could not be parsed. Check for invalid syntax.';
@@ -1000,6 +1063,26 @@ function buildRoadmap() {
   scrSel.classList.add('hidden');
   scrRes.classList.remove('hidden');
   window.scrollTo(0,0);
+
+  var stVal = selStateFilter === 'all' || selStateFilter === 'national_only' ? '' : selStateFilter;
+  var careerCsv = selCareers.join(',');
+  if (window.PehchaanJourney) {
+    window.PehchaanJourney.setJourney({
+      from: 'roadmap',
+      class: selClass || '',
+      stream: selStream || '',
+      state: stVal,
+      career: careerCsv
+    });
+  }
+  var jn = document.getElementById('roadmap-journey-next');
+  if (jn && window.PehchaanToolLinks) {
+    jn.style.display = 'block';
+    jn.innerHTML = PehchaanToolLinks.wrapNextCard(
+      'What to explore next',
+      PehchaanToolLinks.buildExamRoadmapResultInner(selClass, selStream, stVal, careerCsv)
+    );
+  }
 }
 
 function getInsight(cls, careers, fname, examPool) {
@@ -1426,6 +1509,11 @@ function restart() {
   var scrSel = document.getElementById('screen-selector');
   if (scrRes) scrRes.classList.add('hidden');
   if (scrSel) scrSel.classList.remove('hidden');
+  var rjn = document.getElementById('roadmap-journey-next');
+  if (rjn) {
+    rjn.style.display = 'none';
+    rjn.innerHTML = '';
+  }
   renderTrendingChips();
   updateBuildBtn();
   window.scrollTo(0,0);
@@ -1436,5 +1524,6 @@ function restart() {
   if (gc) gc.addEventListener('change', onGuidanceCheckboxChange);
 })();
 </script>
+<script src="../assets/pehchaan_translate.js"></script>
 </body>
 </html>

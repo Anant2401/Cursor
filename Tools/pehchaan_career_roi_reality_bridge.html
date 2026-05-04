@@ -95,6 +95,15 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;heigh
 .cost-total-row{background:var(--teal-light);border-radius:10px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;margin-top:8px;}
 .cost-total-label{font-size:13px;font-weight:700;color:var(--teal-dark);}
 .cost-total-amount{font-size:20px;font-weight:800;color:var(--teal-dark);}
+.cost-row{flex-wrap:wrap;gap:8px 0;}
+.cost-row .cost-amount-wrap{display:flex;align-items:center;gap:6px;flex-shrink:0;}
+.cost-amt-input{width:min(140px,42vw);padding:8px 10px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;font-weight:700;font-family:'Poppins',sans-serif;color:var(--teal-dark);text-align:right;}
+.cost-amt-input:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 2px rgba(29,158,117,.12);}
+.cost-edit-hint{font-size:10px;color:var(--gray);font-weight:500;margin-top:6px;line-height:1.4;}
+.scenario-block{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:14px;}
+.scenario-block .scenario-title{font-size:12px;font-weight:700;color:var(--teal-dark);margin-bottom:8px;}
+.scenario-readout{font-size:11px;color:var(--gray);line-height:1.55;margin-top:8px;}
+.scenario-readout strong{color:var(--text);}
 
 /* TIMELINE CHART */
 .timeline-bar-wrap{margin-bottom:8px;}
@@ -151,16 +160,23 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;heigh
 .btn-begin:active{transform:translateY(0);}
 .btn-print{width:100%;border:1.5px dashed var(--border);background:var(--card-bg);border-radius:var(--radius);padding:12px;font-size:13px;font-weight:600;cursor:pointer;color:var(--teal-dark);font-family:'Poppins',sans-serif;margin-bottom:10px;}
 .btn-print:hover{background:var(--teal-light);}
-@media print{.no-print,.topbar-back,.btn-print,.btn-reset,.btn-calc{display:none!important;}body::before{display:none!important;}.wrap{padding:0;}}
+@media print{.no-print,.topbar-back,.btn-print,.btn-reset,.btn-calc{display:none!important;}body::before{display:none!important;}.wrap{padding:0;}.cost-amt-input{border:none!important;padding:0!important;box-shadow:none!important;-moz-appearance:textfield;}.cost-amount-wrap span:first-child{display:none;}}
 @media(max-width:480px){
   .path-grid{grid-template-columns:1fr;}
   .sal-grid{grid-template-columns:1fr;}
   .hero h1{font-size:20px;}
   .name-grid{grid-template-columns:1fr;}
 }
+.journey-next-card a.journey-link{display:inline-block;padding:10px 14px;margin:4px 6px 0 0;border-radius:10px;background:var(--teal-dark);color:var(--amber);font-size:13px;font-weight:700;text-decoration:none;font-family:'Poppins',sans-serif;}
+.journey-next-card a.journey-link.secondary{background:#fff;color:var(--teal-dark);border:1.5px solid var(--teal);}
 </style>
+<script src="../assets/pehchaan_journey.js"></script>
 </head>
 <body>
+<div class="no-print" style="display:flex;justify-content:flex-end;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 14px;background:#f8fafc;border-bottom:1px solid var(--border);font-size:11px;color:var(--gray);">
+  <span>Translate this page</span>
+  <div id="google_translate_element"></div>
+</div>
 <div class="wrap">
 
 <div id="screen-tool">
@@ -321,13 +337,15 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;heigh
   <!-- ROI METER -->
   <div class="roi-meter">
     <div class="roi-title">📈 5-Year Earnings vs Total Investment</div>
+    <div id="salary-scenario-block"></div>
     <div id="roi-content"></div>
+    <div id="roi-journey-next" class="no-print"></div>
   </div>
 
   <!-- SALARY PROGRESSION -->
   <div class="card">
     <div class="card-title">💰 Expected Salary Progression</div>
-    <p style="font-size:12px;color:var(--gray);margin-bottom:12px;">Realistic salary range at each stage. Low = struggling start. Mid = typical. High = excellent performance or top college.</p>
+    <p style="font-size:12px;color:var(--gray);margin-bottom:12px;">Reference bands at each stage (not edited by the slider). Use the <strong>earnings scenario</strong> control above the ROI chart to shift low → average → high for payback and ROI.</p>
     <div class="sal-grid" id="sal-grid"></div>
     <div style="font-size:11px;color:var(--gray);margin-top:8px;" id="sal-note"></div>
   </div>
@@ -360,6 +378,8 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;heigh
 
 </div><!-- /wrap -->
 
+<script src="../assets/pehchaan_career_registry_prefill.js"></script>
+<script src="../assets/pehchaan_tool_links.js"></script>
 <script>
 // ────────────────────────────────────────────
 // STATE
@@ -368,6 +388,8 @@ var DB = null;
 var selCareer = null, selPath = null, selCoaching = null, selCity = null;
 var miscPct = 15;
 var studentName = '';
+/** After calculate(): rows, salary object, timeline meta — drives live edits + salary slider. */
+var resultCtx = null;
 var NO_COACHING = {
   label: 'No coaching package',
   total_coaching_cost: 0,
@@ -394,6 +416,7 @@ fetch(getRoiDataUrl())
     DB = d;
     initCareers();
     initCities();
+    tryRoiUrlPrefill();
   })
   .catch(function(){
     var tool = document.getElementById('screen-tool');
@@ -414,6 +437,28 @@ function initCareers(){
     sel.appendChild(opt);
   });
   sel.addEventListener('change', function(){ onCareerChange(this.value); });
+}
+
+function tryRoiUrlPrefill() {
+  if (!window.PehchaanRegistryPrefill || !DB || !DB.careers || !DB.careers.length) return;
+  var p = PehchaanRegistryPrefill.mergeParams();
+  var raw = (p.career || '').trim();
+  if (!raw) return;
+  function applyRoiId(rid) {
+    if (!rid || !DB.careers.some(function (c) { return c.id === rid; })) return false;
+    var sel = document.getElementById('sel-career');
+    if (!sel) return false;
+    sel.value = rid;
+    onCareerChange(rid);
+    return true;
+  }
+  if (applyRoiId(raw)) return;
+  PehchaanRegistryPrefill.load()
+    .then(function (reg) {
+      var row = PehchaanRegistryPrefill.resolveCareerTokenRow(reg, raw);
+      if (row && row.roi_career_id && applyRoiId(row.roi_career_id)) return;
+    })
+    .catch(function () {});
 }
 
 function initCities(){
@@ -532,6 +577,199 @@ function checkReady(){
   document.getElementById('btn-calc').disabled = !ready;
 }
 
+function blendSalaryYear(low, mid, high, t01){
+  low = Number(low);
+  mid = Number(mid);
+  high = Number(high);
+  if (!isFinite(low)) low = 0;
+  if (!isFinite(mid)) mid = 0;
+  if (!isFinite(high)) high = 0;
+  if (t01 <= 0.5) return low + (mid - low) * (t01 / 0.5);
+  return mid + (high - mid) * ((t01 - 0.5) / 0.5);
+}
+
+function interpSalaryBands(s, sliderPct){
+  var n = Number(sliderPct);
+  var pct = isFinite(n) ? Math.max(0, Math.min(100, n)) : 50;
+  var t = pct / 100;
+  return {
+    y1: blendSalaryYear(s.year_1_low, s.year_1_mid, s.year_1_high, t),
+    y3: blendSalaryYear(s.year_3_low, s.year_3_mid, s.year_3_high, t),
+    y5: blendSalaryYear(s.year_5_low, s.year_5_mid, s.year_5_high, t)
+  };
+}
+
+function fiveYrEarningsFromAnnuals(y1, y3, y5){
+  return y1 + y1 * 1.1 + y3 + y3 * 1.1 + y5;
+}
+
+function readCostRowAmounts(){
+  if (!resultCtx) return 0;
+  var inputs = document.querySelectorAll('#cost-breakdown .cost-amt-input');
+  var sum = 0;
+  inputs.forEach(function(inp, i){
+    var v = parseFloat(String(inp.value).replace(/,/g, ''));
+    if (!isFinite(v) || v < 0) v = 0;
+    v = Math.round(v);
+    inp.value = v;
+    if (resultCtx.rows[i]) resultCtx.rows[i].amt = v;
+    sum += v;
+  });
+  return sum;
+}
+
+function renderSalaryScenarioBlock(s){
+  var el = document.getElementById('salary-scenario-block');
+  if (!el) return;
+  el.innerHTML =
+    '<div class="scenario-block no-print">' +
+    '<div class="scenario-title">Earnings scenario (starting salary path)</div>' +
+    '<p style="font-size:11px;color:var(--gray);margin-bottom:10px;line-height:1.55;">Slide left for a weaker starting package (low band), right for a stronger one (high band). ROI and break-even update to match.</p>' +
+    '<div class="range-val" id="sal-scenario-label">Typical (mid-range)</div>' +
+    '<input type="range" id="salary-scenario-slider" min="0" max="100" value="50" step="1" aria-label="Salary scenario from low to high">' +
+    '<div class="range-labels"><span>Low (conservative)</span><span>Average</span><span>High (strong)</span></div>' +
+    '<div class="scenario-readout" id="sal-scenario-readout" aria-live="polite"></div>' +
+    '</div>';
+  var sl = document.getElementById('salary-scenario-slider');
+  if (sl) {
+    sl.addEventListener('input', function(){
+      recalcResultMetrics();
+    });
+  }
+}
+
+function salaryScenarioLabel(pct){
+  if (pct <= 15) return 'Conservative — low starting band';
+  if (pct <= 40) return 'Below average — closer to low';
+  if (pct <= 60) return 'Typical (mid-range)';
+  if (pct <= 85) return 'Above average — closer to high';
+  return 'Optimistic — high starting band';
+}
+
+function recalcResultMetrics(){
+  if (!resultCtx) return;
+  var total = readCostRowAmounts();
+  var totalEl = document.getElementById('cost-total-amount');
+  if (totalEl) totalEl.textContent = '₹' + fmt(total);
+
+  var sliderEl = document.getElementById('salary-scenario-slider');
+  var pct = sliderEl ? parseInt(sliderEl.value, 10) : 50;
+  if (!isFinite(pct)) pct = 50;
+  var lbl = document.getElementById('sal-scenario-label');
+  if (lbl) lbl.textContent = salaryScenarioLabel(pct);
+
+  var y = interpSalaryBands(resultCtx.s, pct);
+  var fiveYrEarnings = fiveYrEarningsFromAnnuals(y.y1, y.y3, y.y5);
+  var roiPct = total > 0 ? Math.min(Math.round((fiveYrEarnings / total) * 100), 500) : 0;
+  var breakEvenMonths = y.y1 > 0 ? total / (y.y1 / 12) : 0;
+
+  var readout = document.getElementById('sal-scenario-readout');
+  if (readout) {
+    readout.innerHTML =
+      'Using this scenario: Year 1 ≈ <strong>₹' +
+      fmtL(y.y1) +
+      '</strong>, Year 3 ≈ <strong>₹' +
+      fmtL(y.y3) +
+      '</strong>, Year 5 ≈ <strong>₹' +
+      fmtL(y.y5) +
+      '</strong> · 5-year total (simplified model) ≈ <strong>₹' +
+      fmt(fiveYrEarnings) +
+      '</strong>';
+  }
+
+  var teaserEl = document.getElementById('rh-teaser');
+  if (teaserEl) {
+    var beYrs = breakEvenMonths / 12;
+    var teaser =
+      y.y1 <= 0
+        ? 'Starting salary in this scenario is ₹0 — adjust costs or pick a higher salary scenario to see payback.'
+        : beYrs >= 1
+          ? 'At this scenario\'s starting salary, this total investment is roughly paid back in about ' +
+            (Math.round(beYrs * 10) / 10) +
+            ' years of full-time work (≈ ' +
+            Math.round(breakEvenMonths) +
+            ' months of that salary). Round numbers for planning — not a job offer.'
+          : 'At this scenario\'s starting salary, payback is roughly ' +
+            Math.round(breakEvenMonths) +
+            ' months of pay. Use this as a planning guide, not a promise.';
+    teaserEl.textContent = teaser;
+  }
+
+  var maxBar = Math.max(total, fiveYrEarnings, 1);
+  var tlHtml = '';
+  var prepYears = resultCtx.prepYears;
+  var studyYears = resultCtx.studyYears;
+  var tlData = [
+    { label: 'Preparation Phase', val: prepYears + ' year' + (prepYears !== 1 ? 's' : '') + ' (no income)', bars: false, note: true },
+    { label: 'Study Phase', val: studyYears + ' years (college)', bars: false, note: true },
+    { label: 'Total Investment Required', val: '₹' + fmt(total), bars: true, pct: total / maxBar * 100, cls: 'red' },
+    { label: '5-Year Earnings (after first job)', val: '₹' + fmt(fiveYrEarnings), bars: true, pct: fiveYrEarnings / maxBar * 100, cls: '' },
+    { label: 'Break-even Point', val: Math.round(breakEvenMonths) + ' months after first salary', bars: false, note: true }
+  ];
+  tlData.forEach(function(t){
+    tlHtml += '<div class="timeline-bar-wrap">';
+    tlHtml += '<div class="tl-bar-label"><span class="tl-bar-name">' + esc(t.label) + '</span><span class="tl-bar-val">' + esc(t.val) + '</span></div>';
+    if (t.bars) {
+      tlHtml += '<div class="tl-track"><div class="tl-fill ' + (t.cls || '') + '" style="width:' + Math.min(t.pct, 100) + '%"></div></div>';
+    }
+    tlHtml += '</div>';
+  });
+  document.getElementById('timeline-bars').innerHTML = tlHtml;
+
+  var roiColor = roiPct >= 200 ? 'var(--teal-dark)' : roiPct >= 100 ? 'var(--amber)' : 'var(--red)';
+  var roiLabel = roiPct >= 300 ? 'Excellent ROI' : roiPct >= 200 ? 'Strong ROI' : roiPct >= 100 ? 'Positive ROI' : 'Long-term ROI';
+  var roiHtml = '<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;">';
+  roiHtml += '<span style="font-size:13px;color:var(--text);">5-year earnings vs total investment</span>';
+  roiHtml += '<span style="font-size:18px;font-weight:800;color:' + roiColor + ';">' + roiLabel + '</span>';
+  roiHtml += '</div>';
+  roiHtml += '<div class="roi-track"><div class="roi-fill" style="width:' + Math.min(roiPct / 5, 100) + '%;background:' + roiColor + ';"><span class="roi-pct">' + roiPct + '%</span></div></div>';
+  roiHtml += '<div class="roi-labels"><span>Investment = 0%</span><span>Break-even = 100%</span><span>2× return = 200%</span></div>';
+  roiHtml +=
+    '<div style="font-size:12px;color:var(--gray);margin-top:10px;line-height:1.7;">For every ₹100 invested, you earn back ₹' +
+    Math.round(roiPct) +
+    ' in the first 5 working years at this salary scenario. Simplified estimate — actual returns vary with role and promotions.</div>';
+  document.getElementById('roi-content').innerHTML = roiHtml;
+
+  var jEl = document.getElementById('roi-journey-next');
+  if (jEl && window.PehchaanJourney && resultCtx && window.PehchaanToolLinks) {
+    var beYrs = y.y1 > 0 ? total / (y.y1 / 12) / 12 : 99;
+    var band = roiPct >= 200 ? 'high' : roiPct >= 100 ? 'mid' : 'low';
+    var cid = resultCtx.careerId || '';
+    var st0 = (resultCtx.streamTags && resultCtx.streamTags[0]) || '';
+    window.PehchaanJourney.setJourney({ from: 'roi', career: cid, roiBand: band, stream: st0 });
+    var linksInner = PehchaanToolLinks.buildRoiNextLinksHtml(esc, {
+      roiPct: roiPct,
+      breakEvenYears: beYrs,
+      careerId: cid,
+      streamTag: st0,
+      roiBand: band
+    });
+    jEl.innerHTML =
+      '<div class="card journey-next-card" style="margin-top:14px;padding:16px;background:var(--amber-light);border:1px solid rgba(239,159,39,.35);border-radius:14px;">' +
+      '<div style="font-size:11px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;">What to explore next</div>' +
+      '<p style="font-size:12px;color:var(--gray);margin-bottom:12px;line-height:1.65;">Continue planning with the tools below — use Translate in the bar at the top if you prefer another language.</p>' +
+      '<div style="display:flex;flex-wrap:wrap;gap:6px;align-items:center;">' +
+      linksInner +
+      '</div></div>';
+  } else if (jEl) {
+    jEl.innerHTML = '';
+  }
+}
+
+var costBreakdownDelegated = false;
+
+function bindCostBreakdownInputs(){
+  if (costBreakdownDelegated) return;
+  var wrap = document.getElementById('cost-breakdown');
+  if (!wrap) return;
+  costBreakdownDelegated = true;
+  wrap.addEventListener('input', function(e){
+    if (e.target && e.target.classList && e.target.classList.contains('cost-amt-input')) {
+      recalcResultMetrics();
+    }
+  });
+}
+
 function hideAll(){
   ['card-path','card-coaching','card-city','card-misc'].forEach(function(id){
     document.getElementById(id).classList.add('hidden');
@@ -583,13 +821,6 @@ function calculate(){
   var total = subtotal + miscAmount;
 
   var s = c.salary;
-  var yr1 = s.year_1_mid;
-  var yr3 = s.year_3_mid;
-  var yr5 = s.year_5_mid;
-
-  var fiveYrEarnings = yr1 + yr1 * 1.1 + yr3 + yr3 * 1.1 + yr5;
-  var roiPct = Math.min(Math.round((fiveYrEarnings / total) * 100), 500);
-  var breakEvenMonths = total / (yr1 / 12);
 
   var firstName = (studentName || '').trim().split(/\s+/)[0] || '';
   var rh = document.getElementById('rh-label');
@@ -598,23 +829,6 @@ function calculate(){
   var coachShort = coach.label.split('(')[0].trim();
   document.getElementById('res-sub').textContent = selPath.label + ' · ' + city.label + ' · ' + coachShort;
 
-  var teaserEl = document.getElementById('rh-teaser');
-  if (teaserEl) {
-    var beYrs = breakEvenMonths / 12;
-    var teaser =
-      beYrs >= 1
-        ? 'At your mid starting salary, this total investment is roughly paid back in about ' +
-          (Math.round(beYrs * 10) / 10) +
-          ' years of full-time work (≈ ' +
-          Math.round(breakEvenMonths) +
-          ' months of that salary). Round numbers for planning — not a job offer.'
-        : 'At your mid starting salary, payback is roughly ' +
-          Math.round(breakEvenMonths) +
-          ' months of pay. Use this as a planning guide, not a promise.';
-    teaserEl.textContent = teaser;
-  }
-
-  var cbHtml = '';
   var rows = [
     { label: 'Tuition / Academic Fees', sub: selPath.note, amt: tuition }
   ];
@@ -640,45 +854,40 @@ function calculate(){
     sub: 'Books, travel, medical, internet, unexpected expenses',
     amt: miscAmount
   });
+
+  resultCtx = {
+    rows: rows,
+    s: s,
+    prepYears: prepYears,
+    studyYears: studyYears,
+    firstName: firstName,
+    careerId: c.id,
+    streamTags: c.stream || []
+  };
+
+  var cbHtml = '';
   rows.forEach(function(r){
     cbHtml += '<div class="cost-row"><div class="cost-label">' + esc(r.label);
     if (r.sub) cbHtml += '<small>' + esc(r.sub) + '</small>';
-    cbHtml += '</div><div class="cost-amount">₹' + fmt(r.amt) + '</div></div>';
+    cbHtml += '</div><div class="cost-amount-wrap"><span style="font-size:12px;color:var(--gray);">₹</span>';
+    cbHtml +=
+      '<input type="number" class="cost-amt-input" min="0" step="1000" value="' +
+      Math.round(r.amt) +
+      '" inputmode="numeric" aria-label="' +
+      esc(r.label) +
+      ' amount in rupees"></div></div>';
   });
-  cbHtml += '<div class="cost-total-row"><div class="cost-total-label">TOTAL INVESTMENT</div><div class="cost-total-amount">₹' + fmt(total) + '</div></div>';
+  cbHtml += '<div class="cost-total-row"><div class="cost-total-label">TOTAL INVESTMENT</div><div class="cost-total-amount" id="cost-total-amount">₹' + fmt(total) + '</div></div>';
+  cbHtml +=
+    '<p class="cost-edit-hint no-print">Edit any amount above — total, timeline, payback text, and ROI below follow your numbers. Verify fee sheets before big decisions.</p>';
   document.getElementById('cost-breakdown').innerHTML = cbHtml;
 
-  // Timeline bars
-  var maxBar = Math.max(total, fiveYrEarnings);
-  var tlHtml = '';
-  var tlData = [
-    { label: 'Preparation Phase', val: prepYears + ' year' + (prepYears !== 1 ? 's' : '') + ' (no income)', bars: false, note: true },
-    { label: 'Study Phase', val: studyYears + ' years (college)', bars: false, note: true },
-    { label: 'Total Investment Required', val: '₹' + fmt(total), bars: true, pct: total/maxBar*100, cls: 'red' },
-    { label: '5-Year Earnings (after first job)', val: '₹' + fmt(fiveYrEarnings), bars: true, pct: fiveYrEarnings/maxBar*100, cls: '' },
-    { label: 'Break-even Point', val: Math.round(breakEvenMonths) + ' months after first salary', bars: false, note: true }
-  ];
-  tlData.forEach(function(t){
-    tlHtml += '<div class="timeline-bar-wrap">';
-    tlHtml += '<div class="tl-bar-label"><span class="tl-bar-name">' + esc(t.label) + '</span><span class="tl-bar-val">' + esc(t.val) + '</span></div>';
-    if(t.bars){
-      tlHtml += '<div class="tl-track"><div class="tl-fill ' + (t.cls||'') + '" style="width:' + Math.min(t.pct,100) + '%"></div></div>';
-    }
-    tlHtml += '</div>';
-  });
-  document.getElementById('timeline-bars').innerHTML = tlHtml;
+  renderSalaryScenarioBlock(s);
+  var salSl = document.getElementById('salary-scenario-slider');
+  if (salSl) salSl.value = 50;
 
-  // ROI meter
-  var roiColor = roiPct >= 200 ? 'var(--teal-dark)' : roiPct >= 100 ? 'var(--amber)' : 'var(--red)';
-  var roiLabel = roiPct >= 300 ? 'Excellent ROI' : roiPct >= 200 ? 'Strong ROI' : roiPct >= 100 ? 'Positive ROI' : 'Long-term ROI';
-  var roiHtml = '<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px;">';
-  roiHtml += '<span style="font-size:13px;color:var(--text);">5-year earnings vs total investment</span>';
-  roiHtml += '<span style="font-size:18px;font-weight:800;color:' + roiColor + ';">' + roiLabel + '</span>';
-  roiHtml += '</div>';
-  roiHtml += '<div class="roi-track"><div class="roi-fill" style="width:' + Math.min(roiPct/5,100) + '%;background:' + roiColor + ';"><span class="roi-pct">' + roiPct + '%</span></div></div>';
-  roiHtml += '<div class="roi-labels"><span>Investment = 0%</span><span>Break-even = 100%</span><span>2× return = 200%</span></div>';
-  roiHtml += '<div style="font-size:12px;color:var(--gray);margin-top:10px;line-height:1.7;">For every ₹100 invested, you earn back ₹' + Math.round(roiPct) + ' in the first 5 working years. This is a simplified estimate — actual returns grow significantly with experience and promotions.</div>';
-  document.getElementById('roi-content').innerHTML = roiHtml;
+  bindCostBreakdownInputs();
+  recalcResultMetrics();
 
   // Salary grid
   var salHtml = '';
@@ -710,6 +919,7 @@ function calculate(){
 }
 
 function reset(){
+  resultCtx = null;
   selCareer=null; selPath=null; selCoaching=null; selCity=null;
   studentName = '';
   document.getElementById('student-first-name').value = '';
@@ -725,6 +935,8 @@ function reset(){
   document.getElementById('screen-tool').classList.remove('hidden');
   var teaser = document.getElementById('rh-teaser');
   if (teaser) teaser.textContent = '';
+  var rjn = document.getElementById('roi-journey-next');
+  if (rjn) rjn.innerHTML = '';
   window.scrollTo(0,0);
 }
 
@@ -741,5 +953,6 @@ function fmtL(n){
 }
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 </script>
+<script src="../assets/pehchaan_translate.js"></script>
 </body>
 </html>

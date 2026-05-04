@@ -1,0 +1,8 @@
+{
+  "meta": {
+    "last_updated": "2026-05-04",
+    "description": "Optional site-wide defaults for Mentor Connect. Non-secret values only; Serper keys stay in the visitor's browser (localStorage)."
+  },
+  "mentorWebAppUrl": "https://script.google.com/macros/s/AKfycby42iMS0ii2BIrt3ZZO-i-EMJc8Y-HsmjlzuajHbx9grBOq7dXWMSw-dK-iDt1ijAsE/exec",
+  "serperSearchEndpoint": "https://google.serper.dev/search"
+}

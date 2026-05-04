@@ -28,10 +28,13 @@ function initToolsTabs() {
   const toolsSection = document.getElementById("tools");
   if (!toolsSection) return;
 
-  const toolTabs = toolsSection.querySelectorAll(".tools-tab");
   const allPanel = toolsSection.querySelector("#tools-panel-all");
   const toolCards = toolsSection.querySelectorAll("#tools-grid .tool-card[data-tool]");
-  if (!toolTabs.length || !allPanel || !toolCards.length) return;
+  const toolsWrap = toolsSection.querySelector(".tools-wrap");
+  if (!allPanel || !toolCards.length) return;
+
+  /** When set, grid shows only these `data-tool` cards. Cleared from Start here or "Show all tools". */
+  let startHereToolKeys = null;
 
   const toolInsights = {
     assessment: {
@@ -43,6 +46,11 @@ function initToolsTabs() {
         "Helps you shortlist paths before spending on courses",
         "Gives action-first guidance you can apply immediately",
       ],
+      pairsWith: [
+        { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
+        { label: "Exam Roadmap", href: "Tools/pehchaan_exam_roadmap.html" },
+        { label: "Skill Gap Analyser", href: "Tools/pehchaan_skill_gap_analyser.html" },
+      ],
     },
     stream: {
       bestFor: "Class 10 students choosing a stream",
@@ -52,6 +60,11 @@ function initToolsTabs() {
         "Compares Science, Commerce, and Arts on your preferences",
         "Explains what each stream can lead to in real jobs",
         "Reduces confusion from social pressure and mixed advice",
+      ],
+      pairsWith: [
+        { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
+        { label: "Exam Roadmap", href: "Tools/pehchaan_exam_roadmap.html" },
+        { label: "ROI Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
       ],
     },
     salary: {
@@ -63,6 +76,11 @@ function initToolsTabs() {
         "Lets you compare opportunities before you commit",
         "Supports realistic planning with role progression context",
       ],
+      pairsWith: [
+        { label: "ROI Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
+        { label: "Financing & EMI", href: "Tools/pehchaan_financing_reality.html" },
+        { label: "Plan B", href: "Tools/pehchaan_plan_b_strategy_builder.html" },
+      ],
     },
     roadmap: {
       bestFor: "Students planning exam timelines and preparation",
@@ -72,6 +90,11 @@ function initToolsTabs() {
         "Maps your class, stream, and career interests to relevant exams",
         "Surfaces registration windows, exam dates, and preparation stages",
         "Gives structured next steps so you can start with clarity",
+      ],
+      pairsWith: [
+        { label: "Plan B Strategy Builder", href: "Tools/pehchaan_plan_b_strategy_builder.html" },
+        { label: "ROI Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
+        { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
       ],
     },
     roi: {
@@ -83,15 +106,43 @@ function initToolsTabs() {
         "Shows a simple 5-year earnings vs investment lens so conversations at home stay grounded, not emotional",
         "Includes honest reality notes and a print / save-as-PDF option for sharing with parents or mentors",
       ],
+      pairsWith: [
+        { label: "Financing & EMI", href: "Tools/pehchaan_financing_reality.html" },
+        { label: "Plan B", href: "Tools/pehchaan_plan_b_strategy_builder.html" },
+        { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
+      ],
+    },
+    financing: {
+      bestFor: "Families discussing education loans, EMI stress, and scholarships",
+      time: "5-8 minutes",
+      output: "EMI ballpark vs starting salary you enter + pointers for bank and scholarship conversations",
+      highlights: [
+        "Adjust principal, rate, and tenure to match what the bank actually quoted",
+        "See EMI as a share of a simple monthly-income assumption — a conversation starter, not tax advice",
+        "Links straight into ROI and Salary Explorer so numbers stay tied to a real career lane",
+      ],
+      pairsWith: [
+        { label: "ROI Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
+        { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
+        { label: "Parent FAQ", href: "Tools/parents-guide/index.html" },
+      ],
     },
     planb: {
-      bestFor: "Exam aspirants who want parallel income and identity while they prepare",
-      time: "6-9 minutes",
-      output: "Hidden transferable skills from your syllabus plus concrete Plan B roles and first steps",
+      bestFor:
+        "Students preparing competitive exams who also want paid parallel work; anyone mapping national vs state college backups; and families comparing alternative degree routes to the same career direction",
+      time: "8–18 minutes (depends which path you explore)",
+      output:
+        "A chosen lens: job cards with skill translation, pay context, and links; or tiered college Plan B with stream + geography lens; or course alternatives with duration and fee perspective—plus reminders to verify on official portals",
       highlights: [
-        "Turns subjects you already study into language employers understand — research, writing, analysis, discipline",
-        "Surfaces remote-friendly options and typical fresher pay bands so Plan B feels dignified, not like a backup",
-        "One-tap copy of your first-step checklist so you can paste it into Notes or a LinkedIn draft and start today",
+        "Jobs & income — Pick your prep profile from a structured list: UPSC and state PCS, SSC and banking, NEET, JEE, low-marks-aware routes, CAT, CLAT, GATE (M.Tech/PSU), NDA/CDS, CUET-UG, CA Foundation, NID/NIFT, CSIR-NET/JRF. See which professional skills your syllabus already trains, explore parallel roles with timelines and typical pay bands, remote-friendly tags where relevant, metro-oriented paths where data supports them, and one-tap copy of a first-step checklist.",
+        "Colleges — Pick your prep stream, then either an all-India counselling-style ladder (IIT / NIT / IIIT / AIIMS-style paths you still confirm yearly) or a state-comfort lens with your state; results unpack tiers, cutoffs mindset, and NIRF-style research hooks—not admission promises.",
+        "Courses — Start from a situation anchor (e.g. dream B.Tech or MBBS uncertain) and review horizontal degree ladders that can still reach a similar job family, with plain-language duration and cost framing.",
+        "Personalised cover flow with your name, pivot screen to switch between Job / College / Course Plan B anytime, and clear legal framing: awareness and planning only—cross-check every claim before you pay or sign.",
+      ],
+      pairsWith: [
+        { label: "Exam Roadmap", href: "Tools/pehchaan_exam_roadmap.html" },
+        { label: "ROI Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
+        { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
       ],
     },
     skillgap: {
@@ -102,6 +153,11 @@ function initToolsTabs() {
         "Tick skills you already have — with select-all / clear — so the gap list matches your real baseline",
         "Each missing skill links to free or low-cost courses and a self-test idea so you can prove skill before interviews",
         "Pulls in practice venues (coding judges, LinkedIn skill assessments) similar to what hiring teams actually check",
+      ],
+      pairsWith: [
+        { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
+        { label: "Mentor Connect", href: "Tools/pehchaan_mentor_connect.html" },
+        { label: "ROI Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
       ],
     },
     mentor: {
@@ -115,17 +171,27 @@ function initToolsTabs() {
         "Three layers: mentors who chose to help students, public profiles to verify, and one-tap LinkedIn searches with filters ready",
         "Draft outreach uses your first name so your hello sounds human; you edit the rest before you send",
       ],
+      pairsWith: [
+        { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
+        { label: "Skill Gap Analyser", href: "Tools/pehchaan_skill_gap_analyser.html" },
+        { label: "Plan B", href: "Tools/pehchaan_plan_b_strategy_builder.html" },
+      ],
     },
     parentguide: {
       bestFor: "Parents in Tier 2/3 cities anxious about marks, sarkari vs private, arts, safety, and new careers",
       time: "2–5 minutes to browse; search is instant",
       output:
-        "170+ Q&As in English or Hinglish, many topics (CG jobs, money, health, low marks) — contact if you need more",
+        "170 Q&As in English or Hinglish (FAQDB) — marks, money, sarkari vs private, low marks, and more",
       highlights: [
         "Fuzzy search (Fuse.js) handles typos and Hinglish — e.g. “Sarkari” still finds government-job topics",
         "Tags are weighted in search so parent-style words match the right worry, not random keywords",
         "Browse all answers or filter by category — from Marks & Streams to new batches like low marks and local industries",
         "Switch English ↔ Hinglish anytime; expand one answer at a time without clutter",
+      ],
+      pairsWith: [
+        { label: "Financing & EMI", href: "Tools/pehchaan_financing_reality.html" },
+        { label: "ROI Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
+        { label: "Stream Advisor", href: "Tools/pehchaan_stream_advisor.html" },
       ],
     },
   };
@@ -165,6 +231,15 @@ function initToolsTabs() {
       const details = document.createElement("div");
       details.className = "tool-card-details";
       details.hidden = true;
+      const pairsHtml =
+        detailsConfig.pairsWith && detailsConfig.pairsWith.length
+          ? `<div class="tool-pairs-line"><strong>Pairs well with:</strong> ${detailsConfig.pairsWith
+              .map(
+                (p) =>
+                  `<a href="${p.href}">${p.label}</a>`
+              )
+              .join(" · ")}</div>`
+          : "";
       details.innerHTML = `
         <div class="tool-details-meta">
           <span><strong>Best for:</strong> ${detailsConfig.bestFor}</span>
@@ -174,6 +249,7 @@ function initToolsTabs() {
         <ul class="tool-details-list">
           ${detailsConfig.highlights.map((item) => `<li>${item}</li>`).join("")}
         </ul>
+        ${pairsHtml}
       `;
 
       toggle.addEventListener("click", () => {
@@ -201,64 +277,155 @@ function initToolsTabs() {
     });
   };
 
-  const applyActiveTab = (activeTab) => {
-    const selectedTool = activeTab.dataset.toolTab || "all";
+  const resetStartHereUiOnly = () => {
+    startHereToolKeys = null;
+    toolsWrap?.classList.remove("tools-wrap--start-picked");
+    toolCards.forEach((c) => c.classList.remove("tool-card--start-pick"));
+    const clearBtn = document.getElementById("start-here-clear");
+    if (clearBtn) clearBtn.hidden = true;
+    const pills = document.getElementById("start-here-pills");
+    const sub = document.getElementById("start-here-sub");
+    if (pills) pills.innerHTML = "";
+    if (sub) sub.textContent = "";
+  };
 
-    toolTabs.forEach((tab) => {
-      const isActive = tab === activeTab;
-      tab.classList.toggle("is-active", isActive);
-      tab.setAttribute("aria-selected", String(isActive));
-      tab.tabIndex = isActive ? 0 : -1;
-    });
-
+  const refreshToolsGrid = () => {
     let visibleCount = 0;
     toolCards.forEach((card) => {
-      const show = selectedTool === "all" || card.dataset.tool === selectedTool;
+      const key = card.dataset.tool;
+      const show = !startHereToolKeys?.length || startHereToolKeys.includes(key);
       card.hidden = !show;
+      card.classList.toggle("tool-card--start-pick", !!(startHereToolKeys?.length && show));
       if (!show) setCardExpanded(card, false);
       if (show) visibleCount += 1;
     });
 
-    if (selectedTool === "all") {
-      toolCards.forEach((card) => setCardExpanded(card, false));
+    toolCards.forEach((card) => setCardExpanded(card, false));
+    if (visibleCount === 1 && startHereToolKeys?.length) {
+      const visibleCard = Array.from(toolCards).find((card) => !card.hidden);
+      if (visibleCard) setCardExpanded(visibleCard, true);
     }
 
     allPanel.classList.add("is-active");
     allPanel.hidden = false;
     allPanel.classList.toggle("single-tool-view", visibleCount === 1);
-
-    if (selectedTool !== "all" && visibleCount === 1) {
-      const visibleCard = Array.from(toolCards).find((card) => !card.hidden);
-      if (visibleCard) setCardExpanded(visibleCard, true);
-    }
-
     refreshPanelExpansionState(allPanel);
   };
 
-  toolTabs.forEach((tab, index) => {
-    tab.addEventListener("click", () => applyActiveTab(tab));
-    tab.addEventListener("keydown", (event) => {
-      let nextIndex = index;
-      if (event.key === "ArrowRight") nextIndex = (index + 1) % toolTabs.length;
-      if (event.key === "ArrowLeft") nextIndex = (index - 1 + toolTabs.length) % toolTabs.length;
-      if (event.key === "Home") nextIndex = 0;
-      if (event.key === "End") nextIndex = toolTabs.length - 1;
+  /** @param {boolean} [resetBothDropdowns=true] If true, resets stage & worry selects and hides the Start here result block (used for "Show all tools" and empty stage). */
+  const clearStartHereGridFilter = (resetBothDropdowns = true) => {
+    resetStartHereUiOnly();
+    const outEl = document.getElementById("start-here-out");
+    if (resetBothDropdowns) {
+      const stage = document.getElementById("start-stage");
+      const worry = document.getElementById("start-worry");
+      if (stage) stage.value = "";
+      if (worry) worry.value = "";
+    }
+    if (outEl) outEl.hidden = true;
+    refreshToolsGrid();
+  };
 
-      if (nextIndex !== index) {
-        event.preventDefault();
-        const nextTab = toolTabs[nextIndex];
-        applyActiveTab(nextTab);
-        nextTab.focus();
-      }
-    });
-  });
+  const startHereClearBtn = document.getElementById("start-here-clear");
+  if (startHereClearBtn) {
+    startHereClearBtn.addEventListener("click", () => clearStartHereGridFilter(true));
+  }
 
-  const defaultTab = toolsSection.querySelector('.tools-tab[aria-selected="true"]') || toolTabs[0];
   enrichToolCards();
-  applyActiveTab(defaultTab);
+  refreshToolsGrid();
+
+  window.__pehchaanApplyStartHereTools = (keys) => {
+    if (!Array.isArray(keys) || !keys.length) return;
+    startHereToolKeys = keys;
+    toolsWrap?.classList.add("tools-wrap--start-picked");
+    refreshToolsGrid();
+    const clearBtn = document.getElementById("start-here-clear");
+    if (clearBtn) clearBtn.hidden = false;
+    requestAnimationFrame(() => {
+      toolsSection.querySelector("#tools-grid")?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+  };
+
+  window.__pehchaanClearStartHereGridFilter = clearStartHereGridFilter;
+  window.__pehchaanRefreshToolsGrid = refreshToolsGrid;
 }
 
 initToolsTabs();
+
+function initStartHere() {
+  const stageEl = document.getElementById("start-stage");
+  const worryEl = document.getElementById("start-worry");
+  const out = document.getElementById("start-here-out");
+  const pills = document.getElementById("start-here-pills");
+  const sub = document.getElementById("start-here-sub");
+  if (!stageEl || !worryEl || !out || !pills || !sub) return;
+
+  const LABEL = {
+    assessment: "Career Assessment",
+    stream: "Stream Advisor",
+    salary: "Salary Explorer",
+    roi: "ROI & Reality Bridge",
+    financing: "Financing & EMI",
+    roadmap: "Exam Roadmap",
+    planb: "Plan B",
+    skillgap: "Skill Gap",
+    mentor: "Mentor Connect",
+    parentguide: "Parent's Guide",
+  };
+
+  const pillHtml = (keys) =>
+    keys
+      .map(
+        (key, i) =>
+          `<span class="start-here-pill"><span class="start-here-pill-num" aria-hidden="true">${i + 1}</span>${LABEL[key] || key}</span>`
+      )
+      .join("");
+
+  const run = () => {
+    const st = stageEl.value;
+    const w = worryEl.value;
+    if (!st) {
+      out.hidden = true;
+      window.__pehchaanClearStartHereGridFilter?.(true);
+      return;
+    }
+    let keys = [];
+    let blurb = "";
+    if (st === "parent") {
+      keys = ["parentguide", "financing", "roi"];
+      blurb = "Family-first picks — parent Q&A, loans in plain language, then ROI numbers you can share at home.";
+    } else if (!w) {
+      out.hidden = true;
+      window.__pehchaanClearStartHereGridFilter?.(false);
+      return;
+    } else if (w === "fit") {
+      keys = ["assessment"];
+      if (st === "10") keys.push("stream");
+      keys.push("salary");
+      if (keys.length < 3) keys.push("roadmap");
+      blurb = "Discovery order: who you are → what you might earn → how exams line up.";
+    } else if (w === "money") {
+      keys = ["salary", "roi", "financing"];
+      blurb = "Same order many families use: bands first, full ROI story, then EMI stress-test.";
+    } else if (w === "exam") {
+      keys = ["roadmap", "planb", "salary"];
+      blurb = "Timelines and Plan B in one pass, with salary context so goals stay realistic.";
+    } else if (w === "job") {
+      keys = ["skillgap", "salary", "mentor"];
+      blurb = "Skills you lack → pay bands for the role → people who already walked that path.";
+    }
+    keys = keys.slice(0, 4);
+    sub.textContent = blurb;
+    pills.innerHTML = pillHtml(keys);
+    out.hidden = false;
+    window.__pehchaanApplyStartHereTools?.(keys);
+  };
+
+  stageEl.addEventListener("change", run);
+  worryEl.addEventListener("change", run);
+}
+
+initStartHere();
 
 const LOCAL_API_BASE = "http://localhost:8787/api";
 const PRODUCTION_API_BASE = "https://pehchaan-api.onrender.com/api";

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Plan B Strategy Builder – Pehchaan Careers</title>
+<title>Plan B Strategy Builder | Pehchaan Careers</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%23085041'/><path d='M8 22 A12 12 0 0 1 32 22 Z' fill='%23EF9F27'/><path d='M6 36 L20 24 L34 36' stroke='%231D9E75' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -24,8 +24,10 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 .hidden{display:none!important;}
 
 .topbar{display:flex;align-items:center;gap:12px;padding:14px 0 22px;min-width:0;max-width:100%;flex-wrap:nowrap;}
-.topbar-back{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:40px;height:40px;border-radius:12px;background:rgba(29,158,117,.12);color:var(--teal-dark);font-size:18px;font-weight:700;text-decoration:none;line-height:1;transition:background .15s;}
+.topbar-back{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:40px;height:40px;border-radius:12px;background:rgba(29,158,117,.12);color:var(--teal-dark);font-size:18px;font-weight:700;text-decoration:none;line-height:1;transition:background .15s;border:none;cursor:pointer;font-family:inherit;}
 .topbar-back:hover{background:rgba(29,158,117,.22);}
+.link-back-pivot{background:none;border:none;color:var(--teal);font-size:11px;font-weight:700;cursor:pointer;text-decoration:underline;padding:0;font-family:inherit;}
+.link-back-pivot:hover{color:var(--teal-dark);}
 .topbar-brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;flex:1;min-width:0;}
 .topbar-brand:hover .topbar-name{color:var(--teal);}
 .topbar-logo{width:40px;height:40px;background:var(--teal-dark);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
@@ -102,12 +104,13 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 .btn-show:disabled{opacity:.4;cursor:not-allowed;transform:none;}
 .btn-reset{width:100%;border:1.5px solid var(--teal);background:#fff;border-radius:var(--radius);padding:13px;font-size:13px;font-weight:700;cursor:pointer;color:var(--teal-dark);font-family:'Poppins',sans-serif;margin-bottom:14px;}
 
-.brand-footer{text-align:center;padding-top:20px;margin-top:8px;border-top:1px solid var(--teal-light);}
-.brand-tagline{font-size:13px;font-weight:600;color:var(--teal);margin-bottom:4px;}
+.brand-footer{text-align:center;margin-top:28px;padding-top:20px;border-top:1px solid var(--teal-light);}
+.brand-tagline{font-size:13px;font-weight:600;color:var(--teal);margin-top:4px;margin-bottom:4px;}
 .brand-footer p{font-size:11px;color:var(--gray-text);line-height:1.8;}
 .disclaimer{background:#F8F7FF;border:1px solid #C4C0F5;border-radius:14px;padding:14px 16px;margin-bottom:14px;margin-top:8px;}
 .disclaimer h4{font-size:11px;font-weight:700;color:#4B46A0;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;}
 .disclaimer p{font-size:11px;color:var(--gray-text);line-height:1.7;}
+.disclaimer .decision-clause{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(76,70,160,.28);font-weight:500;}
 .metro-grid{display:flex;flex-direction:column;gap:12px;}
 .metro-role{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:14px 16px;}
 .metro-role h4{font-size:14px;font-weight:700;color:var(--teal-dark);margin-bottom:6px;}
@@ -126,10 +129,33 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 .btn-begin:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(239,159,39,.4);}
 .btn-copy-step{width:100%;margin-top:10px;border:1.5px dashed var(--border);background:var(--card-bg);border-radius:10px;padding:10px 12px;font-size:12px;font-weight:600;cursor:pointer;color:var(--teal-dark);font-family:'Poppins',sans-serif;}
 .btn-copy-step:hover{background:var(--teal-light);}
+.student-note{font-size:12px;line-height:1.75;color:var(--teal-dark);background:linear-gradient(135deg,#e8faf3,#f0fdf8);border:1px solid rgba(29,158,117,.35);border-radius:12px;padding:12px 14px;margin-bottom:14px;font-weight:500;}
+.student-note::before{content:'✨ ';font-size:14px;}
+.job-detail-prose{font-size:12px;color:var(--text);line-height:1.75;background:var(--card-bg);border:1px solid var(--border);border-radius:10px;padding:12px 14px;}
+.job-steps-title{font-size:10px;font-weight:700;color:var(--teal);text-transform:uppercase;letter-spacing:.06em;margin:10px 0 6px;}
+.job-steps-ol{margin:0 0 0 1.15rem;padding:0;font-size:12px;color:var(--text);line-height:1.7;}
+.job-steps-ol li{margin-bottom:6px;}
+.job-link-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;}
+.job-link-list a{font-size:12px;font-weight:600;color:#0C447C;text-decoration:underline;text-underline-offset:3px;word-break:break-word;}
+.job-link-list a:hover{color:var(--teal);}
+.data-freshness{font-size:10px;color:var(--gray-text);line-height:1.65;margin-top:12px;padding-top:10px;border-top:1px dashed var(--border);}
+.form-select{width:100%;margin-top:6px;padding:12px 14px;border-radius:12px;border:1.5px solid var(--border);font-family:'Poppins',sans-serif;font-size:13px;color:var(--text);background:#fff;outline:none;cursor:pointer;}
+.form-select:focus{border-color:var(--teal);}
+.field-label-block{font-size:11px;font-weight:600;color:var(--teal-dark);margin-bottom:6px;display:block;}
+.college-neighbour-banner{background:linear-gradient(135deg,#FFF6E8,#FFEFD6);border:2px solid #E8A54A;border-radius:14px;padding:14px 16px;margin-bottom:14px;font-size:12px;line-height:1.65;color:#5A3200;box-shadow:0 2px 10px rgba(232,165,74,.18);}
+.college-neighbour-banner strong{color:#4A2F00;}
+.neighbour-college-card{border-color:#E8A54A!important;background:linear-gradient(180deg,#FFFCF7 0%,#FFF9F0 100%)!important;box-shadow:0 2px 10px rgba(232,165,74,.12)!important;}
+.neighbour-college-card .job-title{color:#6B3F00;}
+.planb-toast{position:fixed;bottom:max(16px,env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);max-width:min(94vw,400px);z-index:100;padding:12px 16px;border-radius:14px;background:var(--teal-dark);color:#fff;font-size:12px;line-height:1.55;text-align:center;box-shadow:0 10px 28px rgba(8,80,65,.38);border:1px solid rgba(255,255,255,.12);}
+.section-title-row{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;}
+.section-title-row .sti-ico{font-size:20px;line-height:1;flex-shrink:0;}
+.college-meta-line{font-size:11px;color:var(--gray-text);margin-top:4px;line-height:1.55;}
+.college-card .job-section-title{font-size:10px;}
 @media(max-width:480px){.hero h1{font-size:20px;}.job-top{flex-direction:column;}.name-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
+<div class="translate-strip no-print" style="display:flex;justify-content:flex-end;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 14px;background:#f8fafc;border-bottom:1px solid #D1E8DF;font-size:11px;color:#64748B;"><span>Translate this page</span><div id="google_translate_element"></div></div>
 <div class="wrap">
 
 <div id="screen-cover">
@@ -144,15 +170,15 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
   </div>
   <div class="hero">
     <div class="hero-tag">Plan B Strategy Builder</div>
-    <h1>Your Exam Prep Is a <span>Real Career Skill.</span></h1>
-    <p style="margin-bottom:0;">We match your main exam to real paid roles you can pursue in parallel — using skills you already practise while studying.</p>
+    <h1>Three honest paths. <span>One calm head.</span></h1>
+    <p style="margin-bottom:0;">Whether you are grinding for a national entrance, thinking about <strong>where else you could study</strong>, or wondering <strong>which degree still reaches your dream job family</strong> — this tool gives you structured Plan B options you can verify on official portals.</p>
     <div class="planb-how">
       <strong>How this tool works</strong>
       <ul>
-        <li>You tell us which exam you are preparing for (UPSC-style, banking/SSC, medical, engineering, or a low-marks-friendly path).</li>
-        <li>We translate your subjects into <strong>marketable skills</strong> employers actually hire for.</li>
-        <li>You get <strong>3–4 concrete job options</strong> with typical pay bands, where to apply, and a <strong>first step you can do this week</strong> — not vague advice.</li>
-        <li>Plan B is meant to run <strong>alongside</strong> your main goal: income and confidence while you keep preparing.</li>
+        <li><strong>Jobs &amp; income</strong> — Pick your exam. We translate your prep into <strong>marketable skills</strong> and show paid roles (timelines, cost perspective, links) you can pursue <strong>in parallel</strong> with studying.</li>
+        <li><strong>Colleges</strong> — Choose your stream and whether you want an <strong>all-India ladder</strong> (IIT / NIT / IIIT / AIIMS-style counselling paths) or <strong>state-comfort</strong> backups. You still confirm cutoffs, domicile, and fees every year.</li>
+        <li><strong>Courses</strong> — If Plan A (e.g. dream B.Tech / MBBS seat) is uncertain, see <strong>horizontal degree ladders</strong> that can still land you in a similar job family — with duration and fee perspective.</li>
+        <li>Everything here is for <strong>awareness and planning</strong>, not a promise of admission or a job. Cross-check every claim on official sites before you pay or sign.</li>
       </ul>
     </div>
     <div class="name-card">
@@ -174,6 +200,40 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
   <div class="disclaimer">
     <h4>Legal disclaimer</h4>
     <p>This page is for general career awareness and education only. It is not recruitment advice, a job placement service, or a guarantee of employment, interviews, or salary. Job titles and pay bands are illustrative and vary by employer, city, and year. Verify every opportunity and contract directly with the hiring organisation. Pehchaan Careers is not liable for decisions or outcomes based on this tool.</p>
+    <p class="decision-clause">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p>
+  </div>
+  <div class="brand-footer">
+    <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
+    <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
+    hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+  </div>
+</div>
+
+<!-- PIVOT: Job / College / Course -->
+<div id="screen-pivot" class="hidden">
+  <div class="topbar">
+    <button type="button" class="topbar-back" title="Back" aria-label="Back to name" onclick="backToCoverFromPivot()">←</button>
+    <a class="topbar-brand" href="../index.html">
+      <div class="topbar-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
+      </div>
+      <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your identity. Your path.</div></div>
+    </a>
+  </div>
+  <div class="hero">
+    <div class="hero-tag">Plan B Strategy Builder</div>
+    <h1 id="pivot-headline" style="font-size:20px;">Choose your Plan B lens</h1>
+    <p id="pivot-sub" style="font-size:13px;opacity:.9;line-height:1.7;margin-top:8px;"></p>
+  </div>
+  <div class="card">
+    <div class="card-title"><span class="sti-ico" aria-hidden="true">✨</span> Start here</div>
+    <p style="font-size:12px;color:var(--gray);margin-bottom:14px;">Pick one. You can come back and explore another path anytime.</p>
+    <div class="exam-grid" id="pivot-options-grid"></div>
+  </div>
+  <div class="disclaimer">
+    <h4>Legal disclaimer</h4>
+    <p>College and course sections are for general planning awareness only. Not admission advice. Cutoffs, fees, domicile rules, and bonds change every year — verify only on official counselling and institute websites.</p>
+    <p class="decision-clause">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p>
   </div>
   <div class="brand-footer">
     <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
@@ -185,7 +245,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 <!-- SCREEN 1: SELECTOR -->
 <div id="screen-select" class="hidden">
   <div class="topbar">
-    <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+    <button type="button" class="topbar-back" title="Back to Plan B start" aria-label="Back to choose Job, College, or Course" onclick="backToPivotFromJob()">←</button>
     <a class="topbar-brand" href="../index.html">
       <div class="topbar-logo">
         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
@@ -194,9 +254,9 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
     </a>
   </div>
   <div class="hero">
-    <div class="hero-tag">Plan B Strategy Builder</div>
-    <h1>Your Exam Prep Is a <span>Real Career Skill.</span><br>Here Is How to Use It.</h1>
-    <p>This is not a consolation plan. This is a parallel career strategy — something you build alongside your main exam goal, that pays you while you prepare, and is often more valuable than what most people call their main plan.</p>
+    <div class="hero-tag">Plan B — Jobs &amp; Income</div>
+    <h1>Turn your exam prep into <span>paid work skills.</span></h1>
+    <p>This path is for students who are <strong>actively preparing for a competitive exam</strong> and want a <strong>parallel income strategy</strong> — not a consolation prize, but real roles that use the reading, speed, and discipline you already practise.</p>
     <div class="hero-manifesto" id="manifesto-text"></div>
   </div>
 
@@ -207,7 +267,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 
   <div class="card">
     <div class="card-title">Which exam are you preparing for?</div>
-    <p style="font-size:12px;color:var(--gray);margin-bottom:14px;">Select your primary exam. We will show you exactly which professional skills you are already building — and 3-4 specific jobs you can access right now using those skills.</p>
+    <p style="font-size:12px;color:var(--gray);margin-bottom:14px;">Select your primary exam. We will show you which professional skills you are already building — and concrete jobs you can explore in parallel. Use <strong>←</strong> above to switch to colleges or courses.</p>
     <div class="exam-grid" id="exam-grid"></div>
     <div style="margin-top:14px;">
       <button class="btn-show" id="btn-show" onclick="showPlanB()" disabled>Show My Plan B Strategy →</button>
@@ -216,6 +276,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
   <div class="disclaimer">
     <h4>Legal disclaimer</h4>
     <p>This page is for general career awareness and education only. It is not recruitment advice, a job placement service, or a guarantee of employment, interviews, or salary. Job titles and pay bands are illustrative and vary by employer, city, and year. Verify every opportunity and contract directly with the hiring organisation. Pehchaan Careers is not liable for decisions or outcomes based on this tool.</p>
+    <p class="decision-clause">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p>
   </div>
   <div class="brand-footer">
     <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
@@ -224,10 +285,10 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
   </div>
 </div>
 
-<!-- SCREEN 2: RESULTS -->
-<div id="screen-results" class="hidden">
+<!-- COLLEGE PLAN B -->
+<div id="screen-college" class="hidden">
   <div class="topbar">
-    <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+    <button type="button" class="topbar-back" onclick="backToPivotOnly()" title="Back" aria-label="Back to Plan B lens">←</button>
     <a class="topbar-brand" href="../index.html">
       <div class="topbar-logo">
         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
@@ -236,7 +297,138 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
     </a>
   </div>
   <div class="hero">
-    <div class="hero-tag">Your Plan B Strategy</div>
+    <div class="hero-tag">Plan B — Colleges</div>
+    <h1 id="college-hero-h1" style="font-size:20px;">National institutes &amp; strong state backups</h1>
+    <p id="college-screen-intro" style="font-size:12px;opacity:.9;line-height:1.75;margin-top:8px;"></p>
+    <p style="font-size:11px;opacity:.85;margin-top:10px;"><a id="college-nirf-link" href="https://www.nirfindia.org/" target="_blank" rel="noopener noreferrer" style="color:var(--amber);font-weight:700;">Open NIRF official site →</a></p>
+  </div>
+  <div class="power-banner" id="college-picker-power">
+    <div class="pb-title" id="college-picker-power-title">Why Plan B Is Actually Plan A for Smart Students</div>
+    <p id="college-picker-power-body">If you are aiming for IIT, IIM, AIIMS, NLU, or other national peaks, a clear Plan B list does not weaken your resolve — it reduces panic. You study calmer when you know which strong national and state-level options you will verify if rank or score lands differently than you hoped.</p>
+  </div>
+  <div class="card">
+    <div class="card-title"><span class="sti-ico" aria-hidden="true">📚</span> 1. Stream (what you are preparing for)</div>
+    <p style="font-size:12px;color:var(--gray);margin-bottom:12px;">Pick the broad stream that matches your entrance prep. We then show national counselling-style ladders or state-comfort examples you can research.</p>
+    <div class="exam-grid" id="college-stream-grid"></div>
+  </div>
+  <div class="card hidden" id="college-lens-wrap">
+    <div class="card-title"><span class="sti-ico" aria-hidden="true">🧭</span> 2. Geography lens</div>
+    <p style="font-size:12px;color:var(--gray);margin-bottom:12px;">National = all-India counselling style paths (JoSAA / MCC / national portals — verify names each year). State-comfort = research anchors in one home state; <strong>domicile rules always apply</strong>.</p>
+    <div class="exam-grid" id="college-lens-grid"></div>
+  </div>
+  <div class="card hidden" id="college-state-card">
+    <div class="card-title"><span class="sti-ico" aria-hidden="true">📍</span> 3. State (state-comfort)</div>
+    <label class="field-label-block" for="college-state-select">Choose your state / UT</label>
+    <select id="college-state-select" class="form-select" aria-label="State for state-comfort college Plan B">
+      <option value="">Select state…</option>
+    </select>
+  </div>
+  <div class="card">
+    <button type="button" class="btn-show" id="btn-college-show" onclick="showCollegePlanB()" disabled>Show college Plan B →</button>
+  </div>
+  <div class="disclaimer"><h4>Legal disclaimer</h4><p>Not admission counselling. Verify cutoffs and fees on official portals.</p><p class="decision-clause">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p></div>
+  <div class="brand-footer"><div class="brand-tagline">Aapki pehchaan, aapki raah.</div><p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p></div>
+</div>
+
+<div id="screen-results-college" class="hidden">
+  <div class="topbar">
+    <button type="button" class="topbar-back" onclick="backToCollegePicker()" title="Back">←</button>
+    <a class="topbar-brand" href="../index.html">
+      <div class="topbar-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
+      </div>
+      <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your identity. Your path.</div></div>
+    </a>
+  </div>
+  <div class="hero">
+    <div class="hero-tag">Plan B — Colleges</div>
+    <h1 id="college-res-title" style="font-size:20px;"></h1>
+    <p id="college-res-summary" style="font-size:13px;opacity:.9;line-height:1.75;margin-top:8px;"></p>
+  </div>
+  <div id="college-res-insight" class="power-banner hidden">
+    <div class="pb-title" id="college-res-insight-title"></div>
+    <p id="college-res-insight-body" style="margin:0;"></p>
+  </div>
+  <div class="card" id="college-res-detail-card">
+    <div class="card-title">Your Plan B College Options — In Detail</div>
+    <p id="college-res-detail-body" style="font-size:12px;color:var(--gray);line-height:1.7;margin:0;"></p>
+  </div>
+  <div id="college-res-tiers"></div>
+  <button class="btn-reset" type="button" onclick="backToCollegePicker()">← Change stream / state</button>
+  <div class="disclaimer"><h4>Legal disclaimer</h4><p>Not admission counselling. Cutoffs, fees, domicile, and bonds change every year — verify only on official counselling and institute websites.</p><p class="decision-clause">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p></div>
+  <div class="brand-footer"><div class="brand-tagline">Aapki pehchaan, aapki raah.</div><p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p></div>
+</div>
+
+<!-- COURSE PLAN B -->
+<div id="screen-course" class="hidden">
+  <div class="topbar">
+    <button type="button" class="topbar-back" onclick="backToPivotOnly()" title="Back" aria-label="Back to Plan B lens">←</button>
+    <a class="topbar-brand" href="../index.html">
+      <div class="topbar-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
+      </div>
+      <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your identity. Your path.</div></div>
+    </a>
+  </div>
+  <div class="hero">
+    <div class="hero-tag">Plan B — Courses</div>
+    <h1 id="course-hero-h1" style="font-size:20px;">Different degree ladders — same career direction</h1>
+    <p id="course-screen-intro" style="font-size:12px;opacity:.9;line-height:1.75;margin-top:8px;"></p>
+  </div>
+  <div class="power-banner" id="course-picker-power">
+    <div class="pb-title" id="course-picker-power-title">Why Plan B Is Actually Plan A for Smart Students</div>
+    <p id="course-picker-power-body">Dream degrees are not the only route to a respected career. Students who map <strong>horizontal course ladders</strong> early often finish faster, spend smarter, and still reach similar job families — with less all-or-nothing stress.</p>
+  </div>
+  <div class="card">
+    <div class="card-title"><span class="sti-ico" aria-hidden="true">📋</span> Choose your situation</div>
+    <div class="exam-grid" id="course-anchor-grid"></div>
+  </div>
+  <div class="disclaimer"><h4>Legal disclaimer</h4><p>Course paths are for planning awareness only. Verify accreditation, fees, and outcomes on official university and regulator websites.</p><p class="decision-clause">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p></div>
+  <div class="brand-footer"><div class="brand-tagline">Aapki pehchaan, aapki raah.</div><p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p></div>
+</div>
+
+<div id="screen-results-course" class="hidden">
+  <div class="topbar">
+    <button type="button" class="topbar-back" onclick="backToCoursePicker()" title="Back">←</button>
+    <a class="topbar-brand" href="../index.html">
+      <div class="topbar-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
+      </div>
+      <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your identity. Your path.</div></div>
+    </a>
+  </div>
+  <div class="hero">
+    <div class="hero-tag">Plan B — Courses</div>
+    <h1 id="course-res-title" style="font-size:20px;"></h1>
+    <p id="course-res-context" style="font-size:13px;opacity:.9;line-height:1.75;margin-top:8px;"></p>
+  </div>
+  <div id="course-res-insight" class="power-banner hidden">
+    <div class="pb-title" id="course-res-insight-title"></div>
+    <p id="course-res-insight-body" style="margin:0;"></p>
+  </div>
+  <div class="card" id="course-res-detail-card">
+    <div class="card-title">Your Plan B Course Options — In Detail</div>
+    <p id="course-res-detail-body" style="font-size:12px;color:var(--gray);line-height:1.7;margin:0;"></p>
+  </div>
+  <div id="course-res-alternatives"></div>
+  <button class="btn-reset" type="button" onclick="backToCoursePicker()">← Choose another situation</button>
+  <div class="disclaimer"><h4>Legal disclaimer</h4><p>Course paths are for planning awareness only. Verify accreditation, fees, and outcomes on official university and regulator websites.</p><p class="decision-clause">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p></div>
+  <div class="brand-footer"><div class="brand-tagline">Aapki pehchaan, aapki raah.</div><p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p></div>
+</div>
+
+<!-- SCREEN 2: RESULTS -->
+<div id="screen-results" class="hidden">
+  <div class="topbar">
+    <button type="button" class="topbar-back" title="Back to exam list" aria-label="Back to exam list" onclick="backFromJobResultsToExam()">←</button>
+    <a class="topbar-brand" href="../index.html">
+      <div class="topbar-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
+      </div>
+      <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your identity. Your path.</div></div>
+    </a>
+  </div>
+  <div class="hero">
+    <div class="hero-tag">Plan B — Jobs &amp; Income</div>
     <h1 id="res-title" style="font-size:20px;"></h1>
     <p id="res-sub" style="font-size:13px;opacity:.85;line-height:1.7;margin-top:6px;"></p>
     <div class="hero-manifesto" id="res-manifesto-special" style="display:none;margin-top:12px;"></div>
@@ -244,7 +436,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 
   <!-- HIDDEN SKILLS -->
   <div class="skills-banner" id="skills-section">
-    <div class="sb-title">🧠 Skills You Are Already Building — That Industry Pays For</div>
+    <div class="sb-title"><span class="sti-ico" aria-hidden="true">🧠</span> Skills You Are Already Building — That Industry Pays For</div>
     <p style="font-size:12px;color:#7A4A00;line-height:1.7;margin-bottom:10px;">Every subject you study for your exam is a transferable professional skill. Here is the translation:</p>
     <div id="hidden-skills-content"></div>
     <div style="margin-top:12px;">
@@ -255,8 +447,8 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 
   <!-- JOBS -->
   <div class="card">
-    <div class="card-title">Your Plan B Career Options — In Detail</div>
-    <p style="font-size:12px;color:var(--gray);margin-bottom:14px;">Each option below is a real, paying career — not a stepping stone to something else, but a legitimate path that runs in parallel with your exam preparation.</p>
+    <div class="card-title"><span class="sti-ico" aria-hidden="true">💼</span> Your Plan B Career Options — In Detail</div>
+    <p style="font-size:12px;color:var(--gray);margin-bottom:14px;">Each card below is designed to help you decide wisely: typical <strong>time</strong>, <strong>money you may invest</strong> (certs, courses, travel), <strong>how it compares</strong> to heavy coaching spend, <strong>clickable links</strong> to job portals and official pages, and honest notes. Figures are indicative — always confirm fees and offers on official sites before you pay or sign.</p>
   </div>
   <div id="jobs-container"></div>
   <div id="metro-corporate-block"></div>
@@ -270,6 +462,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
   <div class="disclaimer">
     <h4>Legal disclaimer</h4>
     <p>This page is for general career awareness and education only. It is not recruitment advice, a job placement service, or a guarantee of employment, interviews, or salary. Job titles and pay bands are illustrative and vary by employer, city, and year. Verify every opportunity and contract directly with the hiring organisation. Pehchaan Careers is not liable for decisions or outcomes based on this tool.</p>
+    <p class="decision-clause">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p>
   </div>
 
   <div class="brand-footer">
@@ -279,13 +472,478 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
   </div>
 </div>
 
+<div id="planb-toast" class="planb-toast hidden" role="status" aria-live="polite" aria-atomic="true"></div>
+
 </div>
+<script src="../assets/pehchaan_journey.js"></script>
+<script src="../assets/pehchaan_career_registry_prefill.js"></script>
 <script>
 var DB = null;
 var selExam = null;
+var selPivot = 'job';
 var studentName = '';
 var lastPlanBJobs = [];
-var EXAM_EMOJIS = { upsc_csds:'🏛️', ssc_banking:'🏦', neet_medical:'🩺', jee_engineering:'🔬', low_marks_student:'🌱' };
+var collegePick = { stream_id: null, lens_id: null, state_id: null };
+var selCourseAnchor = null;
+var EXAM_EMOJIS = { upsc_csds:'🏛️', ssc_banking:'🏦', neet_medical:'🩺', jee_engineering:'🔬', low_marks_student:'🌱', cat_mba:'📊', clat_law:'⚖️', gate_pg:'🔧', nda_defence:'🎖️', cuet_ug:'📖', ca_foundation:'📒', nid_nift_design:'🎨', csir_net_sciences:'🧪' };
+var planbToastTimer = null;
+function showPlanBToast(message){
+  var el = document.getElementById('planb-toast');
+  if (!el) return;
+  el.textContent = message;
+  el.classList.remove('hidden');
+  if (planbToastTimer) clearTimeout(planbToastTimer);
+  planbToastTimer = setTimeout(function(){
+    el.classList.add('hidden');
+  }, 4800);
+}
+
+function backToCoverFromPivot(){
+  document.getElementById('screen-pivot').classList.add('hidden');
+  document.getElementById('screen-cover').classList.remove('hidden');
+  window.scrollTo(0, 0);
+}
+function backFromJobResultsToExam(){
+  document.getElementById('screen-results').classList.add('hidden');
+  document.getElementById('screen-select').classList.remove('hidden');
+  window.scrollTo(0, 0);
+}
+function backToPivotOnly(){
+  ['screen-select', 'screen-college', 'screen-course', 'screen-results-college', 'screen-results-course', 'screen-results'].forEach(function(id){
+    var el = document.getElementById(id);
+    if (el) el.classList.add('hidden');
+  });
+  document.getElementById('screen-pivot').classList.remove('hidden');
+  window.scrollTo(0, 0);
+}
+function backToPivotFromJob(){
+  selPivot = 'job';
+  selExam = null;
+  var btnShow = document.getElementById('btn-show');
+  if (btnShow) btnShow.disabled = true;
+  document.querySelectorAll('#exam-grid .exam-btn').forEach(function(b){ b.classList.remove('active'); });
+  document.getElementById('screen-select').classList.add('hidden');
+  document.getElementById('screen-pivot').classList.remove('hidden');
+  var man = document.getElementById('manifesto-text');
+  if (man && DB) man.textContent = DB.manifesto;
+  window.scrollTo(0, 0);
+}
+function goPivotPath(pid){
+  selPivot = pid;
+  document.getElementById('screen-pivot').classList.add('hidden');
+  if (pid === 'job') {
+    document.getElementById('screen-select').classList.remove('hidden');
+    window.scrollTo(0, 0);
+    return;
+  }
+  if (pid === 'college') {
+    document.getElementById('screen-college').classList.remove('hidden');
+    initCollegeScreen();
+    window.scrollTo(0, 0);
+    return;
+  }
+  if (pid === 'course') {
+    document.getElementById('screen-course').classList.remove('hidden');
+    initCourseScreen();
+    window.scrollTo(0, 0);
+  }
+}
+function buildPivotUi(){
+  var grid = document.getElementById('pivot-options-grid');
+  if (!DB || !DB.pivot_ui || !(DB.pivot_ui.options && DB.pivot_ui.options.length)) {
+    if (grid) {
+      grid.innerHTML = '<p style="font-size:13px;color:var(--gray);padding:12px;">Pivot data missing in JSON. You can still continue to <button type="button" class="link-back-pivot" onclick="goPivotPath(\'job\')">Job Plan B →</button></p>';
+    }
+    return;
+  }
+  var ph = document.getElementById('pivot-headline');
+  var ps = document.getElementById('pivot-sub');
+  if (ph) ph.textContent = DB.pivot_ui.headline || 'Choose your Plan B lens';
+  if (ps) ps.textContent = DB.pivot_ui.sub || '';
+  if (!grid) return;
+  var html = '';
+  (DB.pivot_ui.options || []).forEach(function(opt){
+    html += '<button type="button" class="exam-btn pivot-opt" data-pivot="' + esc(opt.id) + '">';
+    html += '<span class="exam-emoji">' + esc(opt.emoji || '→') + '</span><div><span class="exam-label">' + esc(opt.title) + '</span>';
+    html += '<span class="exam-desc">' + esc(opt.description) + '</span></div></button>';
+  });
+  grid.innerHTML = html;
+  grid.querySelectorAll('.pivot-opt').forEach(function(btn){
+    btn.addEventListener('click', function(){ goPivotPath(btn.getAttribute('data-pivot')); });
+  });
+}
+function collegeStreamLabel(streamId){
+  var cp = DB.college_plan_b;
+  var s = (cp && cp.streams || []).find(function(x){ return x.id === streamId; });
+  return s ? s.label : streamId;
+}
+function collegeStateLabel(stateId){
+  var cp = DB.college_plan_b;
+  var s = (cp && cp.states || []).find(function(x){ return x.id === stateId; });
+  return s ? s.label : stateId || '';
+}
+function buildCollegeStateSelect(){
+  var cp = DB.college_plan_b;
+  var sel = document.getElementById('college-state-select');
+  if (!sel || !cp) return;
+  var opts = '<option value="">Select state…</option>';
+  (cp.states || []).forEach(function(s){
+    if (s.only_for_lens === 'state_comfort') {
+      opts += '<option value="' + esc(s.id) + '">' + esc(s.label) + '</option>';
+    }
+  });
+  sel.innerHTML = opts;
+  sel.value = collegePick.state_id && collegePick.lens_id === 'state_comfort' ? collegePick.state_id : '';
+  sel.onchange = function(){
+    collegePick.state_id = this.value || null;
+    refreshCollegeGoBtn();
+  };
+}
+function bindCollegeStream(btn){
+  btn.addEventListener('click', function(){
+    var val = btn.getAttribute('data-val');
+    var par = document.getElementById('college-stream-grid');
+    par.querySelectorAll('.college-pick').forEach(function(s){ s.classList.remove('active'); });
+    btn.classList.add('active');
+    collegePick.stream_id = val;
+    collegePick.lens_id = null;
+    collegePick.state_id = null;
+    document.getElementById('college-lens-wrap').classList.remove('hidden');
+    document.getElementById('college-lens-grid').querySelectorAll('.college-pick').forEach(function(s){ s.classList.remove('active'); });
+    document.getElementById('college-state-card').classList.add('hidden');
+    var sel = document.getElementById('college-state-select');
+    if (sel) sel.value = '';
+    refreshCollegeGoBtn();
+  });
+}
+function bindCollegeLens(btn){
+  btn.addEventListener('click', function(){
+    var val = btn.getAttribute('data-val');
+    var par = document.getElementById('college-lens-grid');
+    par.querySelectorAll('.college-pick').forEach(function(s){ s.classList.remove('active'); });
+    btn.classList.add('active');
+    collegePick.lens_id = val;
+    if (val === 'national_level') {
+      collegePick.state_id = 'IN';
+      document.getElementById('college-state-card').classList.add('hidden');
+    } else {
+      collegePick.state_id = null;
+      buildCollegeStateSelect();
+      document.getElementById('college-state-card').classList.remove('hidden');
+    }
+    refreshCollegeGoBtn();
+  });
+}
+function initCollegeScreen(){
+  collegePick = { stream_id: null, lens_id: null, state_id: null };
+  var cp = DB.college_plan_b;
+  if (!cp) return;
+  var h1 = document.getElementById('college-hero-h1');
+  if (h1) h1.textContent = cp.hero_title || 'National institutes & strong state backups';
+  var intro = document.getElementById('college-screen-intro');
+  if (intro) intro.textContent = cp.hero_sub || cp.intro || '';
+  var ppt = document.getElementById('college-picker-power-title');
+  var ppb = document.getElementById('college-picker-power-body');
+  if (ppt && cp.picker_power_title) ppt.textContent = cp.picker_power_title;
+  if (ppb && cp.picker_power_body) ppb.textContent = cp.picker_power_body;
+  var nl = document.getElementById('college-nirf-link');
+  if (nl && cp.nirf_portal && cp.nirf_portal.url) {
+    nl.href = cp.nirf_portal.url;
+    nl.textContent = (cp.nirf_portal.label || 'NIRF') + ' →';
+  }
+  document.getElementById('college-lens-wrap').classList.add('hidden');
+  document.getElementById('college-state-card').classList.add('hidden');
+  var sg = document.getElementById('college-stream-grid');
+  var htmlS = '';
+  (cp.streams || []).forEach(function(s){
+    htmlS += '<button type="button" class="exam-btn college-pick" data-kind="stream" data-val="' + esc(s.id) + '"><span class="exam-emoji">📘</span><div><span class="exam-label">' + esc(s.label) + '</span><span class="exam-desc">' + esc(s.short || '') + '</span></div></button>';
+  });
+  sg.innerHTML = htmlS;
+  var lg = document.getElementById('college-lens-grid');
+  var htmlL = '';
+  (cp.lenses || []).forEach(function(L){
+    htmlL += '<button type="button" class="exam-btn college-pick" data-kind="lens" data-val="' + esc(L.id) + '"><span class="exam-emoji">🧭</span><div><span class="exam-label">' + esc(L.label) + '</span><span class="exam-desc">' + esc(L.hint || '') + '</span></div></button>';
+  });
+  lg.innerHTML = htmlL;
+  document.getElementById('btn-college-show').disabled = true;
+  sg.querySelectorAll('.college-pick').forEach(bindCollegeStream);
+  lg.querySelectorAll('.college-pick').forEach(bindCollegeLens);
+  buildCollegeStateSelect();
+}
+function refreshCollegeGoBtn(){
+  var ok = collegePick.stream_id && collegePick.lens_id && collegePick.state_id;
+  document.getElementById('btn-college-show').disabled = !ok;
+}
+function findCollegeBundle(){
+  var cp = DB.college_plan_b;
+  if (!cp || !cp.bundles) return null;
+  return cp.bundles.find(function(b){
+    return b.stream_id === collegePick.stream_id && b.lens_id === collegePick.lens_id && b.state_id === collegePick.state_id;
+  });
+}
+function getCollegeNeighbourStates(stateId){
+  var cp = DB.college_plan_b;
+  var map = cp && cp.state_neighbors;
+  if (!map || !stateId) return [];
+  var arr = map[stateId];
+  return Array.isArray(arr) ? arr.slice() : [];
+}
+function findStateComfortBundleForStream(streamId, stateId){
+  var cp = DB.college_plan_b;
+  if (!cp || !cp.bundles || !streamId || !stateId) return null;
+  return cp.bundles.find(function(b){
+    return b.stream_id === streamId && b.lens_id === 'state_comfort' && b.state_id === stateId;
+  }) || null;
+}
+function findCollegeBundleOrFallback(){
+  var found = findCollegeBundle();
+  if (found) return found;
+  var cp = DB.college_plan_b;
+  if (!cp || !collegePick.stream_id || !collegePick.lens_id || !collegePick.state_id) return null;
+  var streamId = collegePick.stream_id;
+  var reqState = collegePick.state_id;
+  if (collegePick.lens_id === 'state_comfort' && cp.bundles) {
+    var neighbours = getCollegeNeighbourStates(reqState);
+    for (var ni = 0; ni < neighbours.length; ni++) {
+      var nState = neighbours[ni];
+      if (!nState || nState === reqState) continue;
+      var nBundle = findStateComfortBundleForStream(streamId, nState);
+      if (nBundle) {
+        return Object.assign({}, nBundle, {
+          _neighbor_state_fallback: true,
+          _requested_state_id: reqState,
+          _source_state_id: nState
+        });
+      }
+    }
+    var tryStates = ['UP', 'MH'];
+    for (var ti = 0; ti < tryStates.length; ti++) {
+      var sid = tryStates[ti];
+      if (sid === reqState) continue;
+      var anchor = findStateComfortBundleForStream(streamId, sid);
+      if (anchor) {
+        return Object.assign({}, anchor, {
+          _state_anchor_fallback: true,
+          _requested_state_id: reqState,
+          _anchor_state_id: sid
+        });
+      }
+    }
+  }
+  var ft = cp.fallback_bundle_template || {};
+  var streamLabel = collegeStreamLabel(collegePick.stream_id);
+  var nirf = cp.nirf_portal || { label: 'NIRF India', url: 'https://www.nirfindia.org/' };
+  var links = [{ label: nirf.label || 'NIRF', url: nirf.url }];
+  if (collegePick.stream_id === 'engineering' || collegePick.stream_id === 'architecture' || collegePick.stream_id === 'design') {
+    links.push({ label: 'JoSAA (official)', url: 'https://josaa.nic.in/' });
+  }
+  if (collegePick.stream_id === 'medicine' || collegePick.stream_id === 'dentistry' || collegePick.stream_id === 'ayush' || collegePick.stream_id === 'pharmacy' || collegePick.stream_id === 'veterinary') {
+    links.push({ label: 'MCC (medical counselling)', url: 'https://mcc.nic.in/' });
+  }
+  if (collegePick.stream_id === 'law') {
+    links.push({ label: 'CLAT consortium (verify current year)', url: 'https://consortiumofnlus.ac.in/' });
+  }
+  if (collegePick.stream_id === 'commerce' || collegePick.stream_id === 'management' || collegePick.stream_id === 'humanities' || collegePick.stream_id === 'science_stats') {
+    links.push({ label: 'CUET-UG (NTA)', url: 'https://cuet.samarth.ac.in/' });
+  }
+  if (collegePick.stream_id === 'education') {
+    links.push({ label: 'NCTE', url: 'https://ncte.gov.in/' });
+  }
+  if (collegePick.stream_id === 'ayush') {
+    links.push({ label: 'AACCC (verify current year)', url: 'https://aaccc.gov.in/' });
+  }
+  if (collegePick.stream_id === 'fashion_media') {
+    links.push({ label: 'NIFT', url: 'https://www.nift.ac.in/' });
+  }
+  return {
+    title: streamLabel + ' — ' + (ft.title_suffix || 'Plan B checklist (verify on official portals)'),
+    summary: (ft.summary_prefix || 'We do not yet have a curated bundle for this exact combination. Use the checklist below and confirm every rule on your state CET / national counselling site.') + ' ' + (cp.intro || ''),
+    results_insight: ft.results_insight || cp.results_insight,
+    detail_section_intro: ft.detail_section_intro || cp.detail_section_intro,
+    tiers: [{
+      tier_title: ft.tier_title || 'What to do next',
+      colleges: [{
+        name: 'Official counselling + NIRF cross-check (all streams)',
+        founded: 'Not a single campus — use this card to anchor dates, portals, and PDFs you must read for your stream.',
+        notable_alumni: 'Not applicable as a generic card; for real colleges, verify alumni stories only from institute sources.',
+        best_for: 'Any student who needs a structured first pass before talking to parents, teachers, or a qualified career counsellor.',
+        specialization: 'All streams: build a verification table (fee, bond, domicile, rounds) before you emotionally shortlist.',
+        unique_point: 'This card appears when our JSON has no exact bundle for your state + stream — your selections are still valid for self-research.',
+        courses_offered: 'Follow the official counselling brochure for your entrance (JoSAA / MCC / CLAT / CUET / state CET) — programme names change with regulations.',
+        why_choose: 'Saves you from a dead end: you always get official links and a repeatable method, not a blank screen.',
+        notes: 'Build a shortlist from NIRF PDFs and the latest counselling business rules. For state-comfort, re-read domicile, fee, bond, and round-wise seat logic before locking choices.',
+        links: links
+      }]
+    }],
+    _is_fallback: true
+  };
+}
+function buildCollegeCardHtml(c, opts){
+  opts = opts || {};
+  var cardClass = (opts.neighbour ? 'job-card neighbour-college-card' : 'job-card') + ' college-card';
+  var html = '<div class="' + cardClass + '" style="margin-top:10px;"><div class="job-title">' + esc(c.name) + '</div>';
+  if (c.type) html += '<div class="college-meta-line"><strong>Type</strong> ' + esc(c.type) + '</div>';
+  if (c.location) html += '<div class="college-meta-line"><strong>Location</strong> ' + esc(c.location) + '</div>';
+  if (c.founded) html += '<div class="college-meta-line"><strong>Founded / history</strong> ' + esc(c.founded) + '</div>';
+  if (c.notable_alumni) html += '<div class="college-meta-line"><strong>Notable alumni / reputation</strong> ' + esc(c.notable_alumni) + '</div>';
+  var bestFor = c.best_for || '';
+  var spec = c.specialization || '';
+  if (bestFor || spec) {
+    html += '<div class="job-section" style="margin-top:10px;"><div class="job-section-title">Best for / specialization</div><div class="match-box">';
+    if (bestFor) html += esc(bestFor);
+    if (bestFor && spec && spec !== bestFor) html += '<br><br><span style="font-weight:700;color:var(--teal-dark);">Specialization angle:</span> ' + esc(spec);
+    else if (!bestFor && spec) html += esc(spec);
+    html += '</div></div>';
+  }
+  if (c.unique_point) html += '<div class="job-section" style="margin-top:8px;"><div class="job-section-title">Unique point</div><div class="complement-box">' + esc(c.unique_point) + '</div></div>';
+  if (c.courses_offered) html += '<div class="job-section" style="margin-top:8px;"><div class="job-section-title">Courses offered</div><div class="job-detail-prose">' + esc(c.courses_offered) + '</div></div>';
+  if (c.why_choose) html += '<div class="job-section" style="margin-top:8px;"><div class="job-section-title">Why choose this college</div><div class="job-detail-prose">' + esc(c.why_choose) + '</div></div>';
+  if (c.nirf_band) html += '<div class="avg-sal" style="margin-top:8px;">Ranking note: ' + esc(c.nirf_band) + '</div>';
+  if (c.notes) html += '<div class="job-detail-prose" style="margin-top:10px;">' + esc(c.notes) + '</div>';
+  if (c.links && c.links.length) {
+    html += '<ul class="job-link-list" style="margin-top:10px;">';
+    c.links.forEach(function(L){
+      var u = safeHttpUrl(L.url);
+      if (!u) return;
+      html += '<li><a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">' + esc(L.label) + '</a></li>';
+    });
+    html += '</ul>';
+  }
+  html += '</div>';
+  return html;
+}
+function showCollegePlanB(){
+  var b = findCollegeBundleOrFallback();
+  if (!b) {
+    showPlanBToast('Pick stream, geography lens, and state (if state-comfort) first.');
+    return;
+  }
+  document.getElementById('screen-college').classList.add('hidden');
+  document.getElementById('screen-results-college').classList.remove('hidden');
+  var first = (studentName || '').trim().split(/\s+/)[0];
+  var titleBase = (first ? first + ' — ' : '') + (b.title || 'College Plan B');
+  if (b._neighbor_state_fallback) {
+    titleBase += ' · Neighbour preview: ' + collegeStateLabel(b._source_state_id);
+  }
+  document.getElementById('college-res-title').textContent = titleBase;
+  document.getElementById('college-res-summary').textContent = b.summary || '';
+  var cp = DB.college_plan_b;
+  var insight = b.results_insight || (cp && cp.results_insight);
+  var insEl = document.getElementById('college-res-insight');
+  if (insight && typeof insight === 'object' && insight.title && insight.body) {
+    document.getElementById('college-res-insight-title').textContent = insight.title;
+    document.getElementById('college-res-insight-body').textContent = insight.body;
+    insEl.classList.remove('hidden');
+  } else if (insight && typeof insight === 'string') {
+    document.getElementById('college-res-insight-title').textContent = 'Before you scroll the list';
+    document.getElementById('college-res-insight-body').textContent = insight;
+    insEl.classList.remove('hidden');
+  } else {
+    insEl.classList.add('hidden');
+  }
+  var det = document.getElementById('college-res-detail-body');
+  if (det) det.textContent = b.detail_section_intro || (cp && cp.detail_section_intro) || 'Each block below is a planning tier — not a guarantee of seat. Use links to open official PDFs and portals, then build your own rank list.';
+  var host = document.getElementById('college-res-tiers');
+  var html = '';
+  if (b._is_fallback) {
+    html += '<div class="student-note" style="margin-bottom:12px;">This combination is not in our curated bundle list yet — showing a <strong>verification-first</strong> template. When we add your exact mix, this banner will disappear.</div>';
+  }
+  if (b._neighbor_state_fallback) {
+    html += '<div class="college-neighbour-banner" role="status"><strong>Neighbour-state preview</strong> — We do not have a curated Plan B list for <strong>' + esc(collegeStateLabel(b._requested_state_id)) + '</strong> yet. The amber cards below are real examples from <strong>' + esc(collegeStateLabel(b._source_state_id)) + '</strong> (a bordering / nearby state from our map). Counselling portals, domicile, and fees will differ for your home state — verify on your official state CET before acting.</div>';
+  }
+  if (b._state_anchor_fallback) {
+    html += '<div class="student-note" style="margin-bottom:12px;">No state-specific list for <strong>' + esc(collegeStateLabel(b._requested_state_id)) + '</strong> in our data yet — showing <strong>' + esc(collegeStateLabel(b._anchor_state_id)) + '</strong> examples as a planning template. Institutes and domicile rules differ by state; confirm everything on your official state counselling portal.</div>';
+  }
+  var neighbourCards = !!b._neighbor_state_fallback;
+  (b.tiers || []).forEach(function(t){
+    html += '<div class="card"><div class="card-title">' + esc(t.tier_title) + '</div>';
+    (t.colleges || []).forEach(function(c){ html += buildCollegeCardHtml(c, { neighbour: neighbourCards }); });
+    html += '</div>';
+  });
+  host.innerHTML = html;
+  window.scrollTo(0, 0);
+}
+function backToCollegePicker(){
+  document.getElementById('screen-results-college').classList.add('hidden');
+  document.getElementById('screen-college').classList.remove('hidden');
+  window.scrollTo(0, 0);
+}
+function initCourseScreen(){
+  selCourseAnchor = null;
+  var cp = DB.course_plan_b;
+  if (!cp) return;
+  var h1 = document.getElementById('course-hero-h1');
+  if (h1) h1.textContent = cp.hero_title || 'Different degree ladders — same career direction';
+  var intro = document.getElementById('course-screen-intro');
+  if (intro) intro.textContent = cp.hero_sub || cp.intro || '';
+  var cpt = document.getElementById('course-picker-power-title');
+  var cpb = document.getElementById('course-picker-power-body');
+  if (cpt && cp.picker_power_title) cpt.textContent = cp.picker_power_title;
+  if (cpb && cp.picker_power_body) cpb.textContent = cp.picker_power_body;
+  var grid = document.getElementById('course-anchor-grid');
+  var html = '';
+  (cp.anchors || []).forEach(function(a){
+    html += '<button type="button" class="exam-btn course-anchor-btn" data-anchor="' + esc(a.id) + '"><span class="exam-emoji">📋</span><div><span class="exam-label">' + esc(a.title) + '</span><span class="exam-desc">' + esc((a.context || '').slice(0, 120)) + (a.context && a.context.length > 120 ? '…' : '') + '</span></div></button>';
+  });
+  grid.innerHTML = html;
+  grid.querySelectorAll('.course-anchor-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){ showCoursePlanB(btn.getAttribute('data-anchor')); });
+  });
+}
+function showCoursePlanB(anchorId){
+  var cp = DB.course_plan_b;
+  if (!cp || !cp.anchors) return;
+  var a = cp.anchors.find(function(x){ return x.id === anchorId; });
+  if (!a) return;
+  selCourseAnchor = anchorId;
+  document.getElementById('screen-course').classList.add('hidden');
+  document.getElementById('screen-results-course').classList.remove('hidden');
+  var first = (studentName || '').trim().split(/\s+/)[0];
+  document.getElementById('course-res-title').textContent = (first ? first + ' — ' : '') + a.title;
+  document.getElementById('course-res-context').textContent = a.context || '';
+  var ri = a.results_insight || cp.results_insight;
+  var ins = document.getElementById('course-res-insight');
+  if (ri && ri.title && ri.body) {
+    document.getElementById('course-res-insight-title').textContent = ri.title;
+    document.getElementById('course-res-insight-body').textContent = ri.body;
+    ins.classList.remove('hidden');
+  } else {
+    ins.classList.add('hidden');
+  }
+  var db = document.getElementById('course-res-detail-body');
+  if (db) db.textContent = a.detail_section_intro || cp.detail_section_intro || 'Each card is one possible ladder — compare duration, fee bands, and how much self-driven portfolio work you will need.';
+  var host = document.getElementById('course-res-alternatives');
+  var html = '';
+  (a.alternatives || []).forEach(function(alt){
+    html += '<div class="job-card" style="margin-bottom:12px;"><div class="job-title">' + esc(alt.title) + '</div>';
+    if (alt.duration) html += '<div class="job-qual">Typical duration: ' + esc(alt.duration) + '</div>';
+    if (alt.outcome_note) html += '<div class="job-section" style="margin-top:10px;"><div class="job-section-title">Outcome snapshot</div><div class="job-detail-prose">' + esc(alt.outcome_note) + '</div></div>';
+    if (alt.cost_compare) html += '<div class="job-section" style="margin-top:10px;"><div class="job-section-title">Cost perspective</div><div class="job-detail-prose">' + esc(alt.cost_compare) + '</div></div>';
+    if (alt.job_family) html += '<div class="job-section"><div class="job-section-title">Job family you are aiming for</div><div class="match-box">' + esc(alt.job_family) + '</div></div>';
+    if (alt.how_to && alt.how_to.length) {
+      html += '<div class="job-section"><div class="job-section-title">How to pursue it</div><ol class="job-steps-ol">';
+      alt.how_to.forEach(function(step){ html += '<li>' + esc(step) + '</li>'; });
+      html += '</ol></div>';
+    }
+    if (alt.links && alt.links.length) {
+      html += '<ul class="job-link-list" style="margin-top:10px;">';
+      alt.links.forEach(function(L){
+        var u = safeHttpUrl(L.url);
+        if (!u) return;
+        html += '<li><a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">' + esc(L.label) + '</a></li>';
+      });
+      html += '</ul>';
+    }
+    html += '</div>';
+  });
+  host.innerHTML = html;
+  window.scrollTo(0, 0);
+}
+function backToCoursePicker(){
+  document.getElementById('screen-results-course').classList.add('hidden');
+  document.getElementById('screen-course').classList.remove('hidden');
+  window.scrollTo(0, 0);
+}
 
 function getPlanBDataUrl(){
   try {
@@ -306,7 +964,7 @@ document.getElementById('btn-begin-planb').addEventListener('click', function(){
   var ln = (document.getElementById('student-last-name').value || '').trim();
   studentName = ln ? fn + ' ' + ln : fn;
   document.getElementById('screen-cover').classList.add('hidden');
-  document.getElementById('screen-select').classList.remove('hidden');
+  document.getElementById('screen-pivot').classList.remove('hidden');
   window.scrollTo(0, 0);
 });
 
@@ -328,7 +986,32 @@ fetch(getPlanBDataUrl())
     if (grid) grid.innerHTML = '<p style="color:var(--gray);font-size:13px;text-align:center;padding:20px;">Could not load data. Ensure DB/pehchaan_plan_b_strategy_builder_data.json exists (use a local server if fetch is blocked).</p>';
   });
 
+function resolveExamSkillMappings(){
+  if (!DB) return;
+  if (DB.exam_skill_mappings && DB.exam_skill_mappings.length) return;
+  if (!DB.exams || !DB.job_templates) {
+    DB.exam_skill_mappings = [];
+    return;
+  }
+  var byId = {};
+  DB.job_templates.forEach(function (j) { byId[j.id] = j; });
+  DB.exam_skill_mappings = DB.exams.map(function (ex) {
+    var jobs = (ex.plan_b_job_template_ids || []).map(function (tid) {
+      var t = byId[tid];
+      return t ? JSON.parse(JSON.stringify(t)) : null;
+    }).filter(Boolean);
+    var row = {};
+    Object.keys(ex).forEach(function (k) {
+      if (k === 'plan_b_job_template_ids') return;
+      row[k] = ex[k];
+    });
+    row.plan_b_jobs = jobs;
+    return row;
+  });
+}
+
 function init(){
+  resolveExamSkillMappings();
   if (document.getElementById('manifesto-text')) document.getElementById('manifesto-text').textContent = DB.manifesto;
   var html = '';
   DB.exam_skill_mappings.forEach(function(m){
@@ -340,10 +1023,37 @@ function init(){
     html += '</button>';
   });
   document.getElementById('exam-grid').innerHTML = html;
+  buildPivotUi();
+  tryPlanBUrlPrefill();
+}
+
+function tryPlanBUrlPrefill() {
+  if (!window.PehchaanRegistryPrefill) return;
+  var p = PehchaanRegistryPrefill.mergeParams();
+  var examId = (p.exam || '').trim();
+  var careerKey = (p.career || '').trim();
+  function clickExam(id) {
+    if (!id) return;
+    var btn = document.querySelector('#exam-grid .exam-btn[data-id="' + id + '"]');
+    if (btn && typeof selExamFn === 'function') selExamFn(btn, id);
+  }
+  if (examId) {
+    clickExam(examId);
+    return;
+  }
+  if (!careerKey) return;
+  PehchaanRegistryPrefill.load()
+    .then(function (reg) {
+      var row =
+        PehchaanRegistryPrefill.resolveRow(careerKey, reg) ||
+        PehchaanRegistryPrefill.resolveCareerTokenRow(reg, careerKey);
+      if (row && row.plan_b_exam_id) clickExam(row.plan_b_exam_id);
+    })
+    .catch(function () {});
 }
 
 function selExamFn(btn, id){
-  document.querySelectorAll('.exam-btn').forEach(function(b){ b.classList.remove('active'); });
+  document.querySelectorAll('#exam-grid .exam-btn').forEach(function(b){ b.classList.remove('active'); });
   btn.classList.add('active');
   selExam = DB.exam_skill_mappings.find(function(m){ return m.id === id; });
   document.getElementById('btn-show').disabled = false;
@@ -361,6 +1071,126 @@ function salaryBadgeFromJob(job){
   return s.length > 52 ? s.slice(0, 49) + '…' : s;
 }
 
+function safeHttpUrl(u){
+  var s = String(u || '').trim().replace(/\s+/g, '');
+  if (/^https?:\/\//i.test(s)) return s;
+  return '';
+}
+
+function jobActionCopyText(job){
+  if (!job) return '';
+  if (String(job.copy_pack || '').trim()) return String(job.copy_pack).trim();
+  var parts = [];
+  if (job.how_to_start) parts.push(String(job.how_to_start));
+  if (job.detailed_steps && job.detailed_steps.length) {
+    parts.push('Step-by-step:\n' + job.detailed_steps.map(function(s, i){ return (i + 1) + '. ' + s; }).join('\n'));
+  }
+  if (job.resource_links && job.resource_links.length) {
+    parts.push('Useful links:\n' + job.resource_links.map(function(L){ return (L.label || 'Link') + ': ' + (L.url || ''); }).join('\n'));
+  }
+  return parts.join('\n\n');
+}
+
+/** Map a metro_corporate_paths.roles[] entry to the same shape as plan_b_jobs[] for shared card UI. */
+function metroRoleToJob(r){
+  var skills = (r.skills_required || []).join(' · ');
+  var matchParts = [];
+  if (r.marks_note) matchParts.push(r.marks_note);
+  if (skills) matchParts.push('Typical skills employers ask for: ' + skills + '.');
+  if (r.typical_work) matchParts.push(r.typical_work);
+  var howSkills = matchParts.join(' ');
+  var where = r.where_to_apply || [];
+  var howStart = 'This week: refresh a simple one-page résumé and send at least three applications for roles like this. ';
+  if (where.length) howStart += 'Start with: ' + where[0];
+  if (where.length > 1) howStart += ' You can also try: ' + where[1] + '.';
+  else if (where.length === 1) howStart += '.';
+  var base = {
+    title: r.title,
+    qualification: r.qualification || '',
+    salary_range: r.salary_metro_range || '',
+    salary_badge: '',
+    time_to_first_job: r.time_to_first_job || 'Often 2–8 weeks from offer to joining (varies by employer)',
+    remote_friendly: !!r.remote_friendly,
+    how_skills_match: howSkills,
+    where_to_find: where.slice(),
+    how_to_start: r.metro_how_to_start || howStart,
+    plan_b_complements_main: r.growth_tip || ''
+  };
+  ['student_note', 'cost_investment', 'timeline_detail', 'detailed_steps', 'resource_links', 'data_freshness_note', 'copy_pack'].forEach(function(k){
+    if (r[k] != null && r[k] !== '') base[k] = r[k];
+  });
+  return base;
+}
+
+function buildJobCardHtml(job, idx){
+  var jobsHtml = '';
+  jobsHtml += '<div class="job-card">';
+  jobsHtml += '<div class="job-top">';
+  jobsHtml += '<div><div class="job-title">' + esc(job.title) + '</div>';
+  jobsHtml += '<div class="job-qual">Qualification: ' + esc(job.qualification) + '</div></div>';
+  jobsHtml += '<span class="salary-badge">' + esc(salaryBadgeFromJob(job)) + '</span>';
+  jobsHtml += '</div>';
+  jobsHtml += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap;">';
+  jobsHtml += '<span class="time-badge">⏱ Time to first job / income: ' + esc(job.time_to_first_job) + '</span>';
+  if (job.remote_friendly) jobsHtml += '<span class="remote-badge">🌐 Remote friendly</span>';
+  jobsHtml += '</div>';
+  if (String(job.student_note || '').trim()) {
+    jobsHtml += '<div class="student-note">' + esc(job.student_note) + '</div>';
+  }
+  jobsHtml += '<div class="job-section"><div class="job-section-title">How your exam prep directly qualifies you</div>';
+  jobsHtml += '<div class="match-box">' + esc(job.how_skills_match) + '</div></div>';
+  if (String(job.cost_investment || '').trim()) {
+    jobsHtml += '<div class="job-section"><div class="job-section-title">Cost, investment & how it compares</div>';
+    jobsHtml += '<div class="job-detail-prose">' + esc(job.cost_investment) + '</div></div>';
+  }
+  if (String(job.timeline_detail || '').trim() || (job.detailed_steps && job.detailed_steps.length)) {
+    jobsHtml += '<div class="job-section"><div class="job-section-title">Typical timeline & milestones</div>';
+    if (String(job.timeline_detail || '').trim()) {
+      jobsHtml += '<div class="job-detail-prose" style="margin-bottom:8px;">' + esc(job.timeline_detail) + '</div>';
+    }
+    if (job.detailed_steps && job.detailed_steps.length) {
+      jobsHtml += '<div class="job-steps-title">Roadmap (what to do in order)</div><ol class="job-steps-ol">';
+      job.detailed_steps.forEach(function(st){ jobsHtml += '<li>' + esc(st) + '</li>'; });
+      jobsHtml += '</ol>';
+    }
+    jobsHtml += '</div>';
+  }
+  jobsHtml += '<div class="job-section"><div class="job-section-title">Salary</div>';
+  jobsHtml += '<div class="avg-sal">' + esc(job.salary_range) + '</div></div>';
+  jobsHtml += '<div class="job-section"><div class="job-section-title">Where and how to find this job</div>';
+  jobsHtml += '<ul class="where-list">';
+  (job.where_to_find || []).forEach(function(w){ jobsHtml += '<li>' + esc(w) + '</li>'; });
+  jobsHtml += '</ul></div>';
+  jobsHtml += '<div class="job-section"><div class="job-section-title">How to start TODAY — exact first step</div>';
+  jobsHtml += '<div class="start-box">' + esc(job.how_to_start) + '</div>';
+  jobsHtml += '<button type="button" class="btn-copy-step" onclick="copyFirstStep(' + idx + ')">Copy action plan (steps + links text) to clipboard</button></div>';
+  if (job.resource_links && job.resource_links.length) {
+    jobsHtml += buildResourceLinksHtml(job.resource_links);
+  }
+  var comp = String(job.plan_b_complements_main || '').trim();
+  if (comp) {
+    jobsHtml += '<div class="job-section"><div class="job-section-title">How Plan B makes your main exam prep stronger</div>';
+    jobsHtml += '<div class="complement-box">' + esc(job.plan_b_complements_main) + '</div></div>';
+  }
+  if (String(job.data_freshness_note || '').trim()) {
+    jobsHtml += '<div class="data-freshness">' + esc(job.data_freshness_note) + '</div>';
+  }
+  jobsHtml += '</div>';
+  return jobsHtml;
+}
+
+function buildResourceLinksHtml(links){
+  if (!links || !links.length) return '';
+  var h = '<div class="job-section"><div class="job-section-title">Official & search links (open, verify, then apply)</div><ul class="job-link-list">';
+  links.forEach(function(L){
+    var u = safeHttpUrl(L.url);
+    if (!u) return;
+    h += '<li><a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">' + esc(L.label || u) + '</a></li>';
+  });
+  h += '</ul></div>';
+  return h;
+}
+
 function renderMetroCorporate(m){
   var host = document.getElementById('metro-corporate-block');
   if (!host) return;
@@ -369,32 +1199,25 @@ function renderMetroCorporate(m){
     return;
   }
   var p = m.metro_corporate_paths;
-  var html = '<div class="card"><div class="card-title">' + esc(p.section_title || 'Metro private jobs (graduate-friendly)') + '</div>';
-  html += '<p style="font-size:12px;color:var(--gray);line-height:1.65;margin-bottom:14px;">' + esc(p.intro) + '</p>';
-  html += '<p style="font-size:11px;color:var(--gray-text);line-height:1.6;margin-bottom:12px;"><strong>Metros covered:</strong> ' + esc(p.metros_list || '') + '</p>';
-  html += '<div class="metro-grid">';
+  var intro = '<div class="card"><div class="card-title"><span class="sti-ico" aria-hidden="true">🏙️</span> ' + esc(p.section_title || 'Metro private jobs (graduate-friendly)') + '</div>';
+  intro += '<p style="font-size:12px;color:var(--gray);line-height:1.65;margin-bottom:14px;">' + esc(p.intro) + '</p>';
+  intro += '<p style="font-size:11px;color:var(--gray-text);line-height:1.6;margin-bottom:0;"><strong>Metros covered:</strong> ' + esc(p.metros_list || '') + '</p></div>';
+  var cards = '';
   (p.roles || []).forEach(function(r){
-    html += '<div class="metro-role"><h4>' + esc(r.title) + '</h4>';
-    html += '<div class="mr-meta">' + esc(r.qualification || '') + '</div>';
-    if (r.marks_note) html += '<div class="mr-meta">' + esc(r.marks_note) + '</div>';
-    html += '<div class="mr-skills"><strong>Typical skills asked:</strong> ' + esc((r.skills_required || []).join(' · ')) + '</div>';
-    html += '<div class="mr-skills"><strong>Metro pay band (indicative):</strong> ' + esc(r.salary_metro_range || '') + '</div>';
-    if (r.typical_work) html += '<div class="mr-meta">' + esc(r.typical_work) + '</div>';
-    html += '<div class="job-section-title" style="margin-top:10px;">Where to look</div><ul>';
-    (r.where_to_apply || []).forEach(function(w){ html += '<li>' + esc(w) + '</li>'; });
-    html += '</ul>';
-    if (r.growth_tip) html += '<div class="mr-meta" style="margin-top:8px;">' + esc(r.growth_tip) + '</div>';
-    html += '</div>';
+    var job = metroRoleToJob(r);
+    var idx = lastPlanBJobs.length;
+    lastPlanBJobs.push(job);
+    cards += buildJobCardHtml(job, idx);
   });
-  html += '</div></div>';
-  host.innerHTML = html;
+  host.innerHTML = intro + cards;
 }
 
 function copyFirstStep(jobIdx){
   var job = lastPlanBJobs[jobIdx];
-  if (!job || !job.how_to_start) return;
-  var t = String(job.how_to_start);
-  function done(){ alert('Copied! Paste into Notes, WhatsApp, or a LinkedIn draft — then tweak it so it sounds 100% like you.'); }
+  if (!job) return;
+  var t = jobActionCopyText(job);
+  if (!String(t || '').trim()) return;
+  function done(){ showPlanBToast('Copied your action plan. Paste into Notes or email — add your own dates and city. You are building a real path, not just hoping for one outcome.'); }
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(t).then(done).catch(function(){ fallbackCopyText(t); done(); });
   } else {
@@ -417,7 +1240,7 @@ function fallbackCopyText(t){
 function showPlanB(){
   if(!selExam) return;
   var m = selExam;
-  lastPlanBJobs = m.plan_b_jobs || [];
+  lastPlanBJobs = (m.plan_b_jobs || []).slice();
 
   var first = (studentName || '').trim().split(/\s+/)[0];
   document.getElementById('res-title').textContent = (first ? first + ', ' : '') + m.exam_label + ' — Your Plan B Map';
@@ -448,52 +1271,17 @@ function showPlanB(){
   }).join('');
   document.getElementById('subjects-grid').innerHTML = subHtml;
 
-  // Build job cards
   var jobsHtml = '';
-  m.plan_b_jobs.forEach(function(job, idx){
-    jobsHtml += '<div class="job-card">';
-
-    // Header
-    jobsHtml += '<div class="job-top">';
-    jobsHtml += '<div><div class="job-title">' + esc(job.title) + '</div>';
-    jobsHtml += '<div class="job-qual">Qualification: ' + esc(job.qualification) + '</div></div>';
-    jobsHtml += '<span class="salary-badge">' + esc(salaryBadgeFromJob(job)) + '</span>';
-    jobsHtml += '</div>';
-
-    // Time to first job
-    jobsHtml += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">';
-    jobsHtml += '<span class="time-badge">⏱ Time to first job: ' + esc(job.time_to_first_job) + '</span>';
-    if(job.remote_friendly) jobsHtml += '<span class="remote-badge">🌐 Remote friendly</span>';
-    jobsHtml += '</div>';
-
-    // How skills match
-    jobsHtml += '<div class="job-section"><div class="job-section-title">How your exam prep directly qualifies you</div>';
-    jobsHtml += '<div class="match-box">' + esc(job.how_skills_match) + '</div></div>';
-
-    // Salary
-    jobsHtml += '<div class="job-section"><div class="job-section-title">Salary</div>';
-    jobsHtml += '<div class="avg-sal">' + esc(job.salary_range) + '</div></div>';
-
-    // Where to find
-    jobsHtml += '<div class="job-section"><div class="job-section-title">Where and how to find this job</div>';
-    jobsHtml += '<ul class="where-list">';
-    job.where_to_find.forEach(function(w){ jobsHtml += '<li>' + esc(w) + '</li>'; });
-    jobsHtml += '</ul></div>';
-
-    // How to start
-    jobsHtml += '<div class="job-section"><div class="job-section-title">How to start TODAY — exact first step</div>';
-    jobsHtml += '<div class="start-box">' + esc(job.how_to_start) + '</div>';
-    jobsHtml += '<button type="button" class="btn-copy-step" onclick="copyFirstStep(' + idx + ')">Copy first step to clipboard</button></div>';
-
-    // Complements main plan
-    jobsHtml += '<div class="job-section"><div class="job-section-title">How Plan B makes your main exam prep stronger</div>';
-    jobsHtml += '<div class="complement-box">' + esc(job.plan_b_complements_main) + '</div></div>';
-
-    jobsHtml += '</div>';
+  lastPlanBJobs.forEach(function(job, idx){
+    jobsHtml += buildJobCardHtml(job, idx);
   });
   document.getElementById('jobs-container').innerHTML = jobsHtml;
   renderMetroCorporate(m);
 
+  ['screen-pivot', 'screen-college', 'screen-course', 'screen-results-college', 'screen-results-course'].forEach(function(sid){
+    var el = document.getElementById(sid);
+    if (el) el.classList.add('hidden');
+  });
   document.getElementById('screen-select').classList.add('hidden');
   document.getElementById('screen-results').classList.remove('hidden');
   window.scrollTo(0,0);
@@ -501,9 +1289,14 @@ function showPlanB(){
 
 function resetTool(){
   selExam = null;
-  document.querySelectorAll('.exam-btn').forEach(function(b){ b.classList.remove('active'); });
+  document.querySelectorAll('#exam-grid .exam-btn').forEach(function(b){ b.classList.remove('active'); });
   document.getElementById('btn-show').disabled = true;
   document.getElementById('screen-results').classList.add('hidden');
+  document.getElementById('screen-results-college').classList.add('hidden');
+  document.getElementById('screen-results-course').classList.add('hidden');
+  document.getElementById('screen-college').classList.add('hidden');
+  document.getElementById('screen-course').classList.add('hidden');
+  document.getElementById('screen-pivot').classList.add('hidden');
   document.getElementById('screen-select').classList.remove('hidden');
   var man = document.getElementById('manifesto-text');
   if (man && DB) man.textContent = DB.manifesto;
@@ -513,5 +1306,6 @@ function resetTool(){
 
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 </script>
+<script src="../assets/pehchaan_translate.js"></script>
 </body>
 </html>
