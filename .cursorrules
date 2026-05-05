@@ -4,6 +4,57 @@ When editing this repository (`index.html`, `styles.css`, `script.js`, `Tools/**
 
 **Extended reference (human-facing, not duplicated here in full):** `Pehchaan_Careers_Brand_Guide.md` — voice, audience, six paths, nine skills, stats, deck usage. Prefer aligning code and copy with both this file **and** the rules below.
 
+## Quick QA checklist (copy-paste for tool passes)
+
+Use this mini checklist for fast review notes before the detailed sections.
+
+- [ ] Topbar/logo/tagline/footer strings match Pehchaan standards.
+- [ ] Hero card includes full structure (`who for`, `you provide`, `you get`, time cue, CTA cue, safety cue).
+- [ ] Cards and form controls follow tokenized styles (font, radius, border, shadow, spacing rhythm).
+- [ ] Name capture uses clear first/last-name pattern where person details are needed.
+- [ ] Disclaimer and important notes are visible, boxed, non-deterministic, and not duplicated verbatim.
+- [ ] Related tools have normalized spacing scale (hero gap, card padding/gap, disclaimer spacing, footer separation).
+
+## Review output template (copy-paste)
+
+Use this template when reporting a tool QA/brand pass:
+
+`Scope:` [tool/page names reviewed]
+
+`Visual/Layout deviations`
+- [High/Med/Low] [Issue]
+- [High/Med/Low] [Issue]
+
+`Copy/Disclaimer deviations`
+- [High/Med/Low] [Issue]
+- [High/Med/Low] [Issue]
+
+`Priority fixes`
+- High: [must-fix before ship]
+- Medium: [should-fix]
+- Low: [polish]
+
+`Parity status`
+- [Tool/Page]: Pass / Needs fixes
+- [Tool/Page]: Pass / Needs fixes
+
+`Notes`
+- [Any explicit exception approved by user/product]
+
+## Repository quality gate (mandatory before sign-off)
+
+Use this gate for any substantial update, release prep, or QA pass. Treat failures as must-fix unless user explicitly defers.
+
+- **Project-wide review:** review touched and impacted areas end-to-end, not only the file directly edited.
+- **Dead/broken code:** ensure no broken logic paths, orphan handlers, stale variables, unused UI blocks, or unreachable code remains after changes.
+- **Unused/static clutter:** flag and clean files in project folders that are obsolete, duplicate, or no longer referenced in runtime flows.
+- **Tool functionality:** verify all tools load, render, and execute their primary flow correctly; buttons/CTAs must work as intended.
+- **Cross-tool linking:** verify required tool-to-tool links and journey handoffs are correct and not broken.
+- **Theme/brand parity:** verify colours, typography, logos, language, footers, important notes, and disclaimer patterns are up to date and consistent.
+- **DB linkage integrity:** ensure each tool points to the correct DB files, JSON schemas/indexes (where used), and that updates stay in sync.
+- **Mobile rendering:** verify complete website + tools on narrow/mobile layout for readability, spacing, and usable controls.
+- **Overall quality bar:** keep the codebase clean, fast, and production-quality (no obvious regressions, rough edges, or avoidable bloat).
+
 ---
 
 ## 1. Brand name and taglines (exact strings)
@@ -209,3 +260,103 @@ Return:
 **Do not** treat `parent-faq/.next/` as source; it is build output. Prefer `.gitignore` for build artifacts in normal workflows.
 
 When in doubt, **open two surfaces side by side** (marketing header/footer vs tool topbar/footer; primary button; one input) and match them **before** shipping.
+
+---
+
+## 15. Mandatory full-tool UI review protocol (detailed checklist)
+
+Use this section whenever a user asks to review, QA, polish, or align any `Tools/pehchaan_*.html` page (or equivalent Next/export tool surfaces). Do not run a partial visual pass unless explicitly scoped by the user.
+
+### Scope to review every time
+- Review **all tool pages**, not just the page currently edited.
+- Review each page in both **desktop and mobile-like narrow width**.
+- Review each major state where available: default, hover/focus, active/selected, disabled, validation error, and results/summary state.
+
+### A) Tool chrome, logo, and shell parity
+- Confirm the top logo area has the approved Pehchaan mark treatment (size, spacing, background, corner radius, and colours) with no distortion.
+- Confirm topbar text stack uses the exact brand/title/tagline structure and does not replace the tagline with ad-hoc text.
+- Confirm back/home behaviour and relative links are correct for page depth.
+- Confirm footer is present and complete in all steps/screens (including wizard sub-steps and result screens).
+- Confirm footer has the required three-part content and approved contact strings/order.
+
+### B) Typography and text hierarchy audit
+- Verify **Poppins** is consistently used across headings, body, labels, buttons, helper text, disclaimers, and footers.
+- Verify font weights follow hierarchy (hero/title > section heading > card title > body > helper/caption).
+- Verify line-height and readability for long card text and instruction blocks.
+- Verify no oversized or undersized text compared to sibling tools for the same component type.
+- Verify capitalization style and punctuation consistency (title case vs sentence case) across repeated UI patterns.
+
+### C) Hero card and all card-level content checks
+- Audit hero card visual structure: heading, support text, chips/badges, CTA, and spacing rhythm.
+- Audit each card type (info card, form card, result card, warning card, note card) for consistent radius, border, background, and shadow depth.
+- Verify text inside cards: heading clarity, concise body copy, no contradictory statements, and no deterministic career promises.
+- Verify card internal spacing: padding, spacing between title and text, spacing before/after actions, and consistent vertical rhythm between stacked cards.
+- Verify spacing between cards in a section and between sections is consistent and intentional.
+
+### C1) Hero card detailed content standard (mandatory)
+Each tool hero card should include a complete, structured content set. Do not ship hero cards that only contain a title.
+
+- **Tool identity line:** clear tool name aligned with the page title and top-level purpose.
+- **One-line promise:** what value the student/parent gets from this tool (guidance-oriented, not guarantee-oriented).
+- **Who this is for:** short audience qualifier (e.g., Class 10/12 learners, parents, stream switchers, plan-B seekers), if relevant.
+- **What you will provide:** 2-4 concise bullets/chips on user inputs needed (interests, marks, budget, location, time horizon, etc.).
+- **What you will get:** 2-4 concise bullets/chips on outputs (path options, next steps, skill plan, salary ranges, mentor prompts, etc.).
+- **Usage expectation:** quick duration/effort cue (for example: "takes ~3-5 minutes") where appropriate.
+- **Action cue:** one primary CTA label that is specific and consistent with flow (e.g., Start analysis, Build my plan, Compare options).
+- **Trust/safety cue:** short non-alarmist line that this is guidance for discussion and final decisions need consultation.
+- **Language quality:** positive, plain language; avoid jargon-heavy text; avoid deterministic or fear-based phrasing.
+- **Length control:** keep hero copy concise; avoid dense paragraphs. Prefer short lines, bullets, chips, and scannable structure.
+- **Consistency rule:** hero card message must match downstream section labels, form labels, and result terminology on the same page.
+- **No content duplication:** do not repeat the same sentence in hero subtitle, note box, and disclaimer; each line should add unique value.
+- **Recommended structure:** intro line + audience cue + `You provide` list + `You get` list + time/effort cue + CTA cue + guidance/safety cue.
+
+### D) Name card / personal detail fields
+- Where name inputs exist, ensure labels and placeholders clearly distinguish:
+  - First Name
+  - Last Name
+- Ensure required indicators and validation copy are consistent with the form system.
+- Ensure label size, helper text size, and input text size are legible and consistent with other form fields.
+- Ensure name cards have the same spacing and control alignment as the rest of the form layout.
+- Do not use a single ambiguous `Name` field when the flow expects person details; prefer separate first/last name inputs (optional or required per tool logic).
+- For static tool pages, use the **Career ROI name-card pattern** as baseline (`Tools/pehchaan_career_roi_reality_bridge.html`): `name-card` container + lead line + two-column `name-grid` with `First Name` and `Last Name (optional)`.
+- Name inputs should follow ROI-style semantics: first name plain label, last name with explicit optional marker, `autocomplete="given-name"` / `autocomplete="family-name"`, and placeholders that look like real names (not generic "Type here").
+- Placement rule: when a page has a hero card, keep the name-card **inside the hero card** (not in a later form card) to match Career ROI layout and maintain consistent first-impression structure across tools.
+
+### E) Form controls (dropdowns, text boxes, selectors, pills)
+- Dropdowns (`<select>`/custom): verify trigger height, padding, border radius, icon alignment, selected text colour, placeholder styling, and open-state affordance.
+- Text boxes (`<input>`, `<textarea>`): verify default/focus/error states, border colours, focus ring strength, placeholder contrast, and cursor/readability.
+- Selectors (radio/checkbox/toggle): verify hit area, checked state visibility, keyboard accessibility, and label alignment.
+- Pill buttons/chips: verify selected vs unselected states, hover/focus states, spacing between pills, wrapping behaviour, and colour contrast.
+- Verify all controls share consistent corner radius and spacing scale unless intentionally differentiated by component role.
+
+### F) Disclaimer and important note compliance
+- Confirm the mandatory discussion/consultation disclaimer meaning is present in clear language on the first meaningful screen and near results.
+- Confirm important disclaimers/notes are visually boxed where required (background, border, icon/emphasis treatment, and readable contrast).
+- Confirm disclaimer language is non-deterministic, guidance-oriented, and does not imply guaranteed outcomes.
+- Confirm disclaimer placement is prominent (not buried below fold behind optional content).
+- Confirm important note/disclaimer spacing separates it from surrounding cards so it reads as a distinct caution block.
+- Do **not** duplicate the same disclaimer/note block in the same context/section; keep one canonical block per context and reuse only when the meaning changes by step/state.
+- If multiple caution blocks exist on one page, each block must have a distinct purpose (for example, decision clause vs verification/legal note) and must not repeat the same sentence verbatim.
+
+### G) Spacing, layout rhythm, and alignment
+- Check section-level spacing consistency: top/bottom margins between hero, forms, cards, notes, and footer.
+- Check grid/flex alignment so card edges, form rows, and action groups align cleanly.
+- Check responsive wrapping does not cause cramped cards, orphan labels, or uneven padding.
+- Check button groups and control rows maintain consistent gaps across breakpoints.
+- Flag any one-off spacing value that breaks rhythm unless documented as intentional.
+- When two or more tools serve related journeys, normalize their spacing scale (hero-to-card gap, card padding, card-to-card gap, disclaimer spacing, footer separation) unless an intentional exception is documented.
+
+### H) Copy, microcopy, and semantic quality
+- Validate all user-facing text for clarity, encouragement, and accuracy with the Pehchaan voice pillars.
+- Verify microcopy for fields, helper text, and errors is specific and actionable.
+- Ensure hero-card and supporting-card text explains "what this tool does" and "how to use it" in plain language.
+- Ensure terms are consistent across tools (e.g., path/stream/career wording).
+
+### I) QA output requirement when asked for review
+When delivering a review pass, include:
+1. `Visual/Layout deviations` (fonts, cards, spacing, logo, footer, controls)
+2. `Copy/Disclaimer deviations` (language, placement, caution-box treatment)
+3. `Priority fixes` (high -> medium -> low)
+4. `Parity status` per touched tool page (pass / needs fixes)
+
+Treat this checklist as mandatory baseline unless the user explicitly narrows scope.

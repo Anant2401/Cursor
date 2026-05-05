@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Finder | Pehchaan Careers</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%23085041'/><path d='M8 22 A12 12 0 0 1 32 22 Z' fill='%23EF9F27'/><path d='M6 36 L20 24 L34 36' stroke='%231D9E75' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#1D9E75;--teal-dark:#085041;--teal-light:#E1F5EE;
+  --amber:#EF9F27;--amber-light:#FAEEDA;--text:#1A1A2E;--gray:#64748B;
+  --border:#D1E8DF;--white:#FFF;--card-bg:#F8FAFC;
+  --radius:14px;--shadow:0 1px 4px rgba(8,80,65,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at 8% -10%,rgba(127,119,221,.12),transparent 65%),radial-gradient(900px 420px at 92% 6%,rgba(55,138,221,.1),transparent 62%),linear-gradient(180deg,#eef8f4 0%,#e5f3ee 42%,#e8f5f0 100%);color:var(--text);font-size:14px}
+.wrap{max-width:700px;margin:0 auto;padding:20px 16px 56px}
+.topbar{display:flex;align-items:center;gap:12px;padding:14px 0 22px}
+.topbar-back{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;background:rgba(29,158,117,.12);color:var(--teal-dark);text-decoration:none;font-size:18px;font-weight:700}
+.topbar-back:hover{background:rgba(29,158,117,.22)}
+.topbar-brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit}
+.topbar-logo{width:40px;height:40px;background:var(--teal-dark);border-radius:12px;display:flex;align-items:center;justify-content:center}
+.topbar-logo svg{width:24px;height:24px}
+.topbar-name{font-size:15px;font-weight:700;color:var(--teal-dark)}
+.topbar-tag{font-size:11px;color:var(--gray)}
+.hero{background:var(--teal-dark);border-radius:22px;padding:34px 28px;color:#fff;margin-bottom:16px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50px;right:-50px;width:180px;height:180px;background:rgba(255,255,255,.05);border-radius:50%}
+.hero::after{content:'';position:absolute;bottom:-30px;right:30px;width:110px;height:110px;background:rgba(239,159,39,.12);border-radius:50%}
+.hero-tag{display:inline-block;background:rgba(239,159,39,.2);border:1px solid rgba(239,159,39,.35);color:var(--amber);font-size:11px;padding:4px 12px;border-radius:20px;margin-bottom:10px}
+.hero h1{font-size:24px;line-height:1.25;margin-bottom:8px;position:relative;z-index:1}
+.hero p{font-size:13px;line-height:1.7;opacity:.92}
+.hero-subhead{font-size:12px;line-height:1.6;opacity:.95;margin-top:10px;position:relative;z-index:1}
+.hero-grid{margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:8px;position:relative;z-index:1}
+.hero-box{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:9px 10px}
+.hero-box h3{font-size:11px;font-weight:700;color:var(--amber);margin-bottom:5px;text-transform:uppercase;letter-spacing:.04em}
+.hero-box ul{padding-left:16px}
+.hero-box li{font-size:11px;line-height:1.55;margin-bottom:2px}
+.hero-points{margin-top:10px;display:grid;gap:6px;position:relative;z-index:1}
+.hero-points div{font-size:12px;line-height:1.55;opacity:.96}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px;position:relative;z-index:1}
+.hero-stat{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:9px 8px;text-align:center}
+.hero-stat .v{font-size:18px;font-weight:700;color:var(--amber)}
+.hero-stat .l{font-size:10px;opacity:.82;margin-top:1px}
+.card{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:22px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
+.card-title{font-size:11px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.field-label{display:block;font-size:12px;font-weight:600;color:var(--teal-dark);margin-bottom:5px}
+.input,.select{width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:12px;font-family:inherit;font-size:13px;background:#fff}
+.input:focus,.select:focus{outline:none;border-color:var(--teal)}
+.name-card{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.20);border-radius:14px;padding:16px 18px;margin-top:14px}
+.name-card .name-card-lead{font-size:13px;font-weight:600;color:#fff;display:block;margin-bottom:12px;line-height:1.45}
+.name-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.name-field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.name-field-label{font-size:11px;font-weight:600;color:rgba(255,255,255,.88);letter-spacing:.02em}
+.name-field-label .name-optional{font-weight:500;opacity:.72}
+.name-input{width:100%;padding:13px 16px;border-radius:10px;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);color:#fff;font-family:'Poppins',sans-serif;font-size:14px;outline:none;transition:border-color .2s}
+.name-input::placeholder{color:rgba(255,255,255,.45)}
+.name-input:focus{border-color:var(--amber)}
+.btn{width:100%;padding:15px;border-radius:var(--radius);border:none;background:var(--amber);color:var(--teal-dark);font-weight:700;cursor:pointer;font-family:inherit;font-size:15px;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(239,159,39,.4)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.chip{display:inline-block;font-size:11px;font-weight:700;border-radius:999px;padding:4px 10px;margin-top:8px}
+.chip-exact{background:#E6F7F0;color:#0B6A4F}
+.chip-neighbour{background:#FFF2DE;color:#8A5000}
+.chip-national{background:#E8F1FB;color:#0E4C83}
+.result{background:#fff;border:1px solid var(--border);border-radius:18px;padding:18px;margin-top:10px;box-shadow:var(--shadow)}
+.meta{font-size:11px;color:var(--gray);margin-top:4px;line-height:1.6}
+.section{margin-top:10px}
+.section b{color:var(--teal-dark)}
+.links{margin-top:10px;padding-left:18px}
+.links a{color:#0E4C83}
+.disclaimer{background:#F8F7FF;border:1px solid #C4C0F5;border-radius:14px;padding:14px 16px;margin-top:12px}
+.disclaimer h4{font-size:11px;color:#4B46A0;text-transform:uppercase;margin-bottom:6px}
+.disclaimer p{font-size:11px;color:var(--gray);line-height:1.7}
+.decision-clause{margin-top:10px;padding-top:10px;border-top:1px dashed rgba(76,70,160,.28)}
+.brand-footer{text-align:center;margin-top:24px;padding-top:16px;border-top:1px solid var(--teal-light)}
+.brand-tagline{font-size:13px;font-weight:600;color:var(--teal);margin:2px 0 4px}
+.brand-footer p{font-size:11px;color:var(--gray);line-height:1.7;margin:2px 0}
+.brand-footer .brand-attr strong{color:var(--teal-dark)}
+@media(max-width:640px){.form-grid,.hero-grid,.name-grid{grid-template-columns:1fr}.hero h1{font-size:20px}}
+</style>
+</head>
+<body>
+<div class="translate-strip no-print" style="display:flex;justify-content:flex-end;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 14px;background:#f8fafc;border-bottom:1px solid #D1E8DF;font-size:11px;color:#64748B;"><span>Translate this page</span><div id="google_translate_element"></div></div>
+<div class="wrap">
+  <div class="topbar">
+    <a class="topbar-back" href="../index.html" aria-label="Back to Pehchaan Careers home">←</a>
+    <a class="topbar-brand" href="../index.html">
+      <div class="topbar-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
+      </div>
+      <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your identity. Your path.</div></div>
+    </a>
+  </div>
+
+  <div class="hero">
+    <div class="hero-tag">College Finder</div>
+    <h1>Find colleges by state, stream, and course.</h1>
+    <p>Pick your geography lens, stream, and exact course to build a calm shortlist. We first show exact state matches, then neighbour-state options if needed, and finally national fallback so you still have a practical next step to verify.</p>
+    <div class="hero-subhead">Built for students and families who want a shortlist-first approach before spending time on counselling and admission forms.</div>
+    <div class="hero-grid">
+      <div class="hero-box">
+        <h3>You provide</h3>
+        <ul>
+          <li>Geography lens and target state/UT</li>
+          <li>Stream and specific course</li>
+          <li>Optional student first/last name for clarity</li>
+        </ul>
+      </div>
+      <div class="hero-box">
+        <h3>You get</h3>
+        <ul>
+          <li>Exact, neighbour-state, or national matches</li>
+          <li>College cards with courses and exam cues</li>
+          <li>Official links to verify details</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hero-points">
+      <div>• Time needed: usually 3-5 minutes for one shortlist pass.</div>
+      <div>• Next step: click <strong>Show colleges</strong> after selecting all filters.</div>
+      <div>• Guidance cue: shortlist here, then verify cutoffs, domicile, fees, and counselling rules on official portals.</div>
+    </div>
+    <div class="name-card">
+      <span class="name-card-lead">Your name (so the result page feels personal)</span>
+      <div class="name-grid">
+        <div class="name-field">
+          <span class="name-field-label">First Name</span>
+          <input type="text" class="name-input" id="student-first-name" placeholder="Anant" maxlength="30" autocomplete="given-name">
+        </div>
+        <div class="name-field">
+          <span class="name-field-label">Last Name <span class="name-optional">(optional)</span></span>
+          <input type="text" class="name-input" id="student-last-name" placeholder="Tripathi" maxlength="30" autocomplete="family-name">
+        </div>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="v">3-step</div><div class="l">Match flow</div></div>
+      <div class="hero-stat"><div class="v">State+</div><div class="l">Neighbour backup</div></div>
+      <div class="hero-stat"><div class="v">100%</div><div class="l">Discussion-first</div></div>
+    </div>
+  </div>
+
+  <div class="disclaimer" style="margin-top:0;">
+    <h4>Decision reminder</h4>
+    <p class="decision-clause" style="margin-top:0;padding-top:0;border-top:none;">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Student details and filters</div>
+    <p class="meta" style="margin-top:0;margin-bottom:12px;">How this works: your filters are matched in this order — exact state, then neighbour states, then national fallback.</p>
+    <div class="form-grid">
+      <div>
+        <label class="field-label" for="lens-select">Geography lens</label>
+        <select class="select" id="lens-select"><option value="">Select geography lens</option></select>
+      </div>
+      <div>
+        <label class="field-label" for="state-select">State / UT</label>
+        <select class="select" id="state-select"><option value="">Select state / UT</option></select>
+      </div>
+      <div>
+        <label class="field-label" for="stream-select">Stream</label>
+        <select class="select" id="stream-select"><option value="">Select stream</option></select>
+      </div>
+      <div>
+        <label class="field-label" for="course-select">Course</label>
+        <select class="select" id="course-select"><option value="">Select course</option></select>
+      </div>
+    </div>
+    <div style="margin-top:12px;"><button class="btn" id="btn-find" disabled>Show colleges</button></div>
+  </div>
+
+  <div class="card" id="results-wrap" style="display:none;">
+    <div class="card-title">Results</div>
+    <p id="selection-line" class="meta"></p>
+    <span id="reason-chip" class="chip"></span>
+    <p class="meta" style="margin-top:8px;">Discussion-only results: verify cutoffs, domicile, and fee rules on official portals before acting.</p>
+    <div id="results-list"></div>
+  </div>
+
+  <div class="disclaimer">
+    <h4>Legal disclaimer</h4>
+    <p>This tool is for career awareness and planning discussions only. Cutoffs, seat matrix, domicile rules, fees, and admission policies can change every year.</p>
+    <p class="decision-clause">Important note: always verify the latest eligibility and admission details on official counselling portals before submitting applications.</p>
+  </div>
+  <div class="brand-footer">
+    <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
+    <p class="brand-attr">This tool is brought to you by <strong>Pehchaan Careers</strong></p>
+    <p>hello.pehchaan@gmail.com · buddy@pehchaancareers.in · pehchaancareers.in</p>
+  </div>
+</div>
+
+<script src="../assets/pehchaan_journey.js"></script>
+<script src="../assets/pehchaan_career_registry_prefill.js"></script>
+<script src="../assets/pehchaan_tool_links.js"></script>
+<script src="../assets/pehchaan_tool_recommendations.js"></script>
+<script>
+var REG = null;
+var IDX = null;
+var stateByCollegeId = {};
+var byProgramId = {};
+
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function byId(arr, id){ return (arr || []).find(function(x){ return x.id === id; }); }
+function safeHttp(url){ return /^https?:\/\//i.test(String(url||'')) ? String(url) : ''; }
+function dataUrl(rel){ try { return new URL(rel, window.location.href).href; } catch (e) { return rel; } }
+
+function initMaps(){
+  (REG.colleges || []).forEach(function(c){ stateByCollegeId[c.id] = c.state_id; });
+  (REG.college_programs || []).forEach(function(p){ byProgramId[p.id] = p; });
+}
+
+function fillSelect(el, rows, placeholder){
+  var html = '<option value="">' + esc(placeholder) + '</option>';
+  (rows || []).forEach(function(r){ html += '<option value="' + esc(r.id) + '">' + esc(r.label) + '</option>'; });
+  el.innerHTML = html;
+}
+
+function fillStateSelectByLens(){
+  var lens = document.getElementById('lens-select').value;
+  var stateSelect = document.getElementById('state-select');
+  var states = (REG.taxonomies.states || []).filter(function(s){
+    if (lens === 'national_level') return s.id === 'IN';
+    if (lens === 'state_comfort') return s.id !== 'IN';
+    return false;
+  });
+  fillSelect(stateSelect, states, 'Select state / UT');
+}
+
+function fillCourseByStream(){
+  var streamId = document.getElementById('stream-select').value;
+  var courseSelect = document.getElementById('course-select');
+  var courses = (REG.taxonomies.courses || []).filter(function(c){
+    return (c.stream_ids || []).indexOf(streamId) !== -1;
+  });
+  fillSelect(courseSelect, courses, 'Select course');
+}
+
+function refreshBtn(){
+  var ok = document.getElementById('lens-select').value &&
+    document.getElementById('state-select').value &&
+    document.getElementById('stream-select').value &&
+    document.getElementById('course-select').value;
+  document.getElementById('btn-find').disabled = !ok;
+}
+
+function collectProgramsFromIds(ids){
+  var rows = [];
+  (ids || []).forEach(function(id){ if (byProgramId[id]) rows.push(byProgramId[id]); });
+  return rows;
+}
+
+function matchExact(stateId, streamId, courseId){
+  var key = [stateId, streamId, courseId].join('|');
+  return collectProgramsFromIds((IDX.by_state_stream_course || {})[key]);
+}
+
+function matchNeighbours(stateId, streamId, courseId){
+  var key = [stateId, streamId, courseId].join('|');
+  var ids = (IDX.by_neighbor_state_stream_course || {})[key] || [];
+  return collectProgramsFromIds(ids);
+}
+
+function matchNational(streamId, courseId){
+  return (REG.college_programs || []).filter(function(p){
+    return p.stream_id === streamId &&
+      p.course_id === courseId &&
+      (p.geography_lens_ids || []).indexOf('national_level') !== -1;
+  });
+}
+
+function cardsFromPrograms(programs){
+  var collegeMap = {};
+  (programs || []).forEach(function(p){
+    if (!collegeMap[p.college_id]) collegeMap[p.college_id] = [];
+    collegeMap[p.college_id].push(p);
+  });
+  var courseMap = {};
+  (REG.taxonomies.courses || []).forEach(function(c){ courseMap[c.id] = c.label; });
+  var examMap = {};
+  (REG.taxonomies.admission_exams || []).forEach(function(e){ examMap[e.id] = e.label; });
+
+  var out = [];
+  Object.keys(collegeMap).forEach(function(collegeId){
+    var c = byId(REG.colleges, collegeId);
+    if (!c) return;
+    var rows = collegeMap[collegeId];
+    var courses = [];
+    var exams = [];
+    rows.forEach(function(r){
+      var cl = courseMap[r.course_id] || r.course_id;
+      if (courses.indexOf(cl) === -1) courses.push(cl);
+      (r.admission_exam_ids || []).forEach(function(ex){
+        var x = examMap[ex] || ex;
+        if (exams.indexOf(x) === -1) exams.push(x);
+      });
+    });
+    out.push({ college: c, courses: courses, exams: exams });
+  });
+  out.sort(function(a, b){
+    var aName = String((a.college && a.college.name) || '').toLowerCase();
+    var bName = String((b.college && b.college.name) || '').toLowerCase();
+    var aGeneric = aName.indexOf('other aicte-affiliated colleges') !== -1;
+    var bGeneric = bName.indexOf('other aicte-affiliated colleges') !== -1;
+    if (aGeneric !== bGeneric) return aGeneric ? 1 : -1;
+    return aName.localeCompare(bName);
+  });
+  return out;
+}
+
+function renderResults(reason, programs){
+  var list = document.getElementById('results-list');
+  var cards = cardsFromPrograms(programs);
+  if (!cards.length) {
+    list.innerHTML = '<div class="result"><div><strong>No exact records found yet for this combination.</strong></div><div class="meta">You are not stuck. Use NIRF and official counselling portals to continue your shortlist, then discuss with family and mentors.</div></div>';
+    return;
+  }
+  var html = '';
+  cards.forEach(function(row){
+    var c = row.college;
+    var state = byId(REG.taxonomies.states, c.state_id);
+    html += '<div class="result"><div><strong>' + esc(c.name) + '</strong></div>';
+    html += '<div class="meta">' + esc(c.city || '') + (state ? ', ' + esc(state.label) : '') + ' · ' + esc(c.type || '') + '</div>';
+    html += '<div class="section"><b>Courses offered:</b> ' + esc(row.courses.join(' • ')) + '</div>';
+    if (row.exams.length) html += '<div class="section"><b>Admission exams to verify:</b> ' + esc(row.exams.join(', ')) + '</div>';
+    if (c.highlights && c.highlights.unique_point) html += '<div class="section"><b>Unique point:</b> ' + esc(c.highlights.unique_point) + '</div>';
+    if (c.highlights && c.highlights.why_choose) html += '<div class="section"><b>Why choose this college:</b> ' + esc(c.highlights.why_choose) + '</div>';
+    if (c.contacts && c.contacts.website) html += '<ul class="links"><li><a href="' + esc(safeHttp(c.contacts.website)) + '" target="_blank" rel="noopener noreferrer">Official website</a></li></ul>';
+    html += '</div>';
+  });
+  list.innerHTML = html;
+}
+
+function runFinder(){
+  var lens = document.getElementById('lens-select').value;
+  var state = document.getElementById('state-select').value;
+  var stream = document.getElementById('stream-select').value;
+  var course = document.getElementById('course-select').value;
+  var firstName = (document.getElementById('student-first-name').value || '').trim();
+  var lastName = (document.getElementById('student-last-name').value || '').trim();
+  var name = (firstName + ' ' + lastName).trim();
+  var sLabel = (byId(REG.taxonomies.states, state) || {}).label || state;
+  var stLabel = (byId(REG.taxonomies.streams, stream) || {}).label || stream;
+  var cLabel = (byId(REG.taxonomies.courses, course) || {}).label || course;
+  var lLabel = (byId(REG.taxonomies.geography_lenses, lens) || {}).label || lens;
+
+  var reason = 'exact';
+  var rows = [];
+  if (lens === 'national_level') {
+    rows = matchNational(stream, course);
+    reason = 'national';
+  } else {
+    rows = matchExact(state, stream, course);
+    if (!rows.length) {
+      rows = matchNeighbours(state, stream, course);
+      reason = rows.length ? 'neighbour' : 'national';
+    }
+    if (!rows.length) rows = matchNational(stream, course);
+  }
+
+  document.getElementById('results-wrap').style.display = 'block';
+  document.getElementById('selection-line').textContent = (name ? (name + ' · ') : '') + stLabel + ' → ' + cLabel + ' → ' + lLabel + (lens === 'state_comfort' ? (' → ' + sLabel) : '');
+  var chip = document.getElementById('reason-chip');
+  if (reason === 'exact') { chip.className = 'chip chip-exact'; chip.textContent = 'Exact match'; }
+  else if (reason === 'neighbour') { chip.className = 'chip chip-neighbour'; chip.textContent = 'Neighbour-state preview'; }
+  else { chip.className = 'chip chip-national'; chip.textContent = 'National-level fallback'; }
+  renderResults(reason, rows);
+  var nextCtx = { from: 'college_finder', stream: stream, state: state, course: course };
+  if (window.PehchaanRegistryPrefill && typeof PehchaanRegistryPrefill.mergeParams === 'function') {
+    var p = PehchaanRegistryPrefill.mergeParams();
+    if (p.career) nextCtx.career = p.career;
+    if (p.private_role_id) nextCtx.private_role_id = p.private_role_id;
+    if (p.metro) nextCtx.metro = p.metro;
+    if (p.exam) nextCtx.exam = p.exam;
+    if (p.profile) nextCtx.profile = p.profile;
+  }
+  if (window.PehchaanJourney) {
+    PehchaanJourney.setJourney(nextCtx);
+  }
+  var wrap = document.getElementById('results-wrap');
+  if (window.PehchaanToolRecommendations) {
+    var rec = PehchaanToolRecommendations.buildNextToolRecommendations(
+      PehchaanToolRecommendations.TOOL.planB,
+      nextCtx,
+      { roleSelected: true, actionPlanStarted: true }
+    );
+    var html = PehchaanToolRecommendations.buildRecommendationsHtml(rec, esc);
+    if (window.PehchaanToolLinks && typeof PehchaanToolLinks.u === 'function') {
+      var examHref = PehchaanToolLinks.u('examRoadmap', nextCtx);
+      var roiHref = PehchaanToolLinks.u('roi', nextCtx);
+      var linksInner =
+        '<a style="display:inline-block;padding:10px 14px;margin:2px 4px 0 0;border-radius:10px;background:#085041;color:#EF9F27;font-size:12px;font-weight:700;text-decoration:none;" href="' + esc(examHref) + '">Exam Roadmap Builder →</a>' +
+        '<a style="display:inline-block;padding:9px 12px;margin:2px 4px 0 0;border-radius:10px;background:#fff;color:#085041;font-size:12px;font-weight:700;text-decoration:none;border:1.5px solid #085041;" href="' + esc(roiHref) + '">Career ROI Tool →</a>';
+      if (typeof PehchaanToolLinks.wrapNextCard === 'function') {
+        html += PehchaanToolLinks.wrapNextCard('Plan exams and ROI next', linksInner);
+      } else {
+        html += '<div style="margin-top:14px;">' + linksInner + '</div>';
+      }
+    }
+    var box = document.getElementById('college-finder-next');
+    if (!box) {
+      box = document.createElement('div');
+      box.id = 'college-finder-next';
+      wrap.appendChild(box);
+    }
+    box.innerHTML = html;
+  }
+  window.scrollTo(0, document.getElementById('results-wrap').offsetTop - 20);
+}
+
+function tryPrefillFromContext(){
+  var p = {};
+  if (window.PehchaanRegistryPrefill && typeof PehchaanRegistryPrefill.mergeParams === 'function') {
+    p = PehchaanRegistryPrefill.mergeParams();
+  } else if (window.PehchaanJourney && typeof PehchaanJourney.mergeJourney === 'function') {
+    p = PehchaanJourney.mergeJourney();
+  }
+  var lensEl = document.getElementById('lens-select');
+  var stateEl = document.getElementById('state-select');
+  var streamEl = document.getElementById('stream-select');
+  var courseEl = document.getElementById('course-select');
+  if (p.state === 'IN') {
+    lensEl.value = 'national_level';
+  } else if (p.state) {
+    lensEl.value = 'state_comfort';
+  }
+  if (lensEl.value) fillStateSelectByLens();
+  if (p.state) stateEl.value = p.state;
+  if (p.stream) {
+    streamEl.value = p.stream;
+    fillCourseByStream();
+  }
+  if (p.course) courseEl.value = p.course;
+}
+
+Promise.all([
+  fetch(dataUrl('../DB/pehchaan_college_registry.json')).then(function(r){ return r.json(); }),
+  fetch(dataUrl('../DB/pehchaan_college_registry_indexes.json')).then(function(r){ return r.json(); })
+]).then(function(all){
+  REG = all[0];
+  IDX = all[1];
+  initMaps();
+  fillSelect(document.getElementById('lens-select'), REG.taxonomies.geography_lenses || [], 'Select geography lens');
+  fillSelect(document.getElementById('stream-select'), REG.taxonomies.streams || [], 'Select stream');
+  document.getElementById('lens-select').addEventListener('change', function(){ fillStateSelectByLens(); refreshBtn(); });
+  document.getElementById('stream-select').addEventListener('change', function(){ fillCourseByStream(); refreshBtn(); });
+  document.getElementById('state-select').addEventListener('change', refreshBtn);
+  document.getElementById('course-select').addEventListener('change', refreshBtn);
+  document.getElementById('btn-find').addEventListener('click', runFinder);
+  tryPrefillFromContext();
+  refreshBtn();
+}).catch(function(){
+  var wrap = document.getElementById('results-wrap');
+  wrap.style.display = 'block';
+  wrap.innerHTML = '<div class="card-title">Results</div><div class="meta">Could not load college registry data. Please ensure DB/pehchaan_college_registry.json and DB/pehchaan_college_registry_indexes.json are available.</div>';
+});
+</script>
+<script src="../assets/pehchaan_translate.js"></script>
+</body>
+</html>

@@ -28,6 +28,8 @@ function main() {
   const exam = readJson("DB/pehchaan_exam_data.json");
   const planb = readJson("DB/pehchaan_plan_b_strategy_builder_data.json");
   const skill = readJson("DB/pehchaan_skill_gap_analyser_data.json");
+  const privateRoles = readJson("DB/pehchaan_private_sector_roles.json");
+  const collegeRegistry = readJson("DB/pehchaan_college_registry.json");
 
   const salaryIds = new Set((salary.careers || []).map((c) => c.id));
   const roiIds = new Set((roi.careers || []).map((c) => c.id));
@@ -35,6 +37,23 @@ function main() {
   const planbExams = planb.exams || planb.exam_skill_mappings || [];
   const planbExamIds = new Set(planbExams.map((e) => e.id).filter(Boolean));
   const skillJobIds = new Set((skill.job_categories || []).map((j) => j.id));
+  const canonicalIds = new Set((reg.careers || []).map((r) => r.canonical_id).filter(Boolean));
+  const privateRoleIds = new Set((privateRoles.roles || []).map((r) => r.private_role_id).filter(Boolean));
+  const metroIds = new Set((privateRoles.metros || []).map((m) => m.metro_id).filter(Boolean));
+  const collegeCourseIds = new Set((((collegeRegistry.taxonomies || {}).courses) || []).map((c) => c.id));
+  const toolHtmlPaths = [
+    "Tools/pehchaan_salary_explorer.html",
+    "Tools/pehchaan_exam_roadmap.html",
+    "Tools/pehchaan_career_roi_reality_bridge.html",
+    "Tools/pehchaan_financing_reality.html",
+    "Tools/pehchaan_plan_b_strategy_builder.html",
+    "Tools/pehchaan_skill_gap_analyser.html",
+    "Tools/pehchaan_stream_advisor.html",
+    "Tools/pehchaan_career_assessment.html",
+    "Tools/pehchaan_mentor_connect.html",
+    "Tools/pehchaan_college_finder.html",
+    "Tools/parents-guide/index.html"
+  ];
 
   for (const row of reg.careers || []) {
     const cid = row.canonical_id || "(missing canonical_id)";
@@ -53,6 +72,49 @@ function main() {
     if (row.skill_gap_job_id && !skillJobIds.has(row.skill_gap_job_id)) {
       errs.push(`${cid}: skill_gap_job_id "${row.skill_gap_job_id}" not in pehchaan_skill_gap_analyser_data.json job_categories`);
     }
+    if (Array.isArray(row.private_role_ids)) {
+      for (const rid of row.private_role_ids) {
+        if (!privateRoleIds.has(rid)) {
+          errs.push(`${cid}: private_role_id "${rid}" not in pehchaan_private_sector_roles.json roles`);
+        }
+      }
+    }
+  }
+
+  for (const role of privateRoles.roles || []) {
+    const rid = role.private_role_id || "(missing private_role_id)";
+    if (!role.private_role_id) errs.push(`private role missing private_role_id for title "${role.title || "unknown"}"`);
+    if (role.career_canonical_id && !canonicalIds.has(role.career_canonical_id)) {
+      errs.push(`${rid}: career_canonical_id "${role.career_canonical_id}" not in pehchaan_career_registry.json`);
+    }
+    if (role.skill_gap_job_id && !skillJobIds.has(role.skill_gap_job_id)) {
+      errs.push(`${rid}: skill_gap_job_id "${role.skill_gap_job_id}" not in pehchaan_skill_gap_analyser_data.json`);
+    }
+    for (const ex of role.plan_b_exam_links || []) {
+      if (!planbExamIds.has(ex)) {
+        errs.push(`${rid}: plan_b_exam_link "${ex}" not in pehchaan_plan_b_strategy_builder_data.json exams`);
+      }
+    }
+    if (!Array.isArray(role.metro_map) || !role.metro_map.length) {
+      errs.push(`${rid}: metro_map is missing or empty`);
+    } else {
+      for (const mm of role.metro_map) {
+        if (!metroIds.has(mm.metro_id)) errs.push(`${rid}: metro_map has unknown metro_id "${mm.metro_id}"`);
+      }
+    }
+  }
+
+  if (!reg.tool_integration) {
+    errs.push("career registry missing tool_integration block");
+  }
+  for (const m of metroIds) {
+    if (!["delhi_ncr", "chennai", "bengaluru", "hyderabad", "pune", "mumbai"].includes(m)) {
+      errs.push(`private-sector metros contains unsupported metro id "${m}"`);
+    }
+  }
+  if (!collegeCourseIds.size) errs.push("college registry has no taxonomy courses; College Finder linking cannot work");
+  for (const rel of toolHtmlPaths) {
+    if (!fs.existsSync(path.join(root, rel))) errs.push(`linked tool path missing on disk: ${rel}`);
   }
 
   if (errs.length) {

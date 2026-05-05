@@ -4,6 +4,22 @@
  */
 (function () {
   var STORAGE_KEY = "pehchaan_journey";
+  var ALLOWED_KEYS = {
+    from: true,
+    career: true,
+    private_role_id: true,
+    job: true,
+    exam: true,
+    stream: true,
+    class: true,
+    state: true,
+    roiBand: true,
+    metro: true,
+    role_family: true,
+    readiness_band: true,
+    profile: true,
+    ts: true
+  };
 
   function parseSearch(search) {
     var q = (search || "").replace(/^\?/, "");
@@ -32,20 +48,28 @@
     }
   }
 
-  function mergeJourney() {
-    var fromSession = getFromSession();
-    var fromUrl = getFromUrl();
-    var merged = Object.assign({}, fromSession, fromUrl);
-    Object.keys(merged).forEach(function (k) {
-      if (merged[k] === "" || merged[k] == null) delete merged[k];
+  function sanitizeParams(obj) {
+    var out = {};
+    Object.keys(obj || {}).forEach(function (k) {
+      if (!ALLOWED_KEYS[k]) return;
+      var v = obj[k];
+      if (v === "" || v == null) return;
+      out[k] = String(v).trim();
     });
-    return merged;
+    if (out.ts && !/^\d+$/.test(String(out.ts))) delete out.ts;
+    return out;
+  }
+
+  function mergeJourney() {
+    var fromSession = sanitizeParams(getFromSession());
+    var fromUrl = sanitizeParams(getFromUrl());
+    return Object.assign({}, fromSession, fromUrl);
   }
 
   function setJourney(partial) {
     try {
-      var cur = getFromSession();
-      var next = Object.assign({}, cur, partial || {});
+      var cur = sanitizeParams(getFromSession());
+      var next = Object.assign({}, cur, sanitizeParams(partial || {}));
       next.ts = Date.now();
       sessionStorage.setItem(STORAGE_KEY, JSON.stringify(next));
     } catch (e) {}
@@ -72,6 +96,8 @@
     getFromSession: getFromSession,
     mergeJourney: mergeJourney,
     setJourney: setJourney,
+    sanitizeParams: sanitizeParams,
     buildToolUrl: buildToolUrl,
+    ALLOWED_KEYS: ALLOWED_KEYS
   };
 })();

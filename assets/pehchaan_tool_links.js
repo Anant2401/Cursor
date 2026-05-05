@@ -14,6 +14,8 @@
     streamAdvisor: "pehchaan_stream_advisor.html",
     assessment: "pehchaan_career_assessment.html",
     mentor: "pehchaan_mentor_connect.html"
+    ,
+    collegeFinder: "pehchaan_college_finder.html"
   };
 
   function u(fileKey, params) {
@@ -31,6 +33,37 @@
       })
       .join("&");
     return q ? path + "?" + q : path;
+  }
+
+  function privateContextFrom(ctx) {
+    var c = ctx || {};
+    return {
+      from: c.from || "",
+      career: c.career || "",
+      private_role_id: c.private_role_id || "",
+      job: c.job || "",
+      exam: c.exam || "",
+      stream: c.stream || "",
+      class: c.class || "",
+      state: c.state || "",
+      roiBand: c.roiBand || "",
+      metro: c.metro || "",
+      role_family: c.role_family || "",
+      readiness_band: c.readiness_band || "",
+      profile: c.profile || ""
+      ,
+      course: c.course || ""
+    };
+  }
+
+  function mergePrivateContext(baseCtx, overrideCtx) {
+    var b = privateContextFrom(baseCtx);
+    var o = privateContextFrom(overrideCtx);
+    return Object.assign({}, b, o);
+  }
+
+  function buildToolUrlWithPrivateContext(fileKey, baseCtx, overrideCtx) {
+    return u(fileKey, mergePrivateContext(baseCtx, overrideCtx));
   }
 
   function inferStreamFromRegistryTags(row) {
@@ -132,6 +165,11 @@
         primary: false
       });
     }
+    parts.push({
+      href: u("collegeFinder", { from: "salary", career: canon, stream: st }),
+      label: "College Finder →",
+      primary: false
+    });
     if (regRow.skill_gap_job_id) {
       parts.push({
         href: u("skillGap", { from: "salary", career: canon, job: regRow.skill_gap_job_id }),
@@ -196,6 +234,11 @@
       '<a style="' +
       secS +
       '" href="' +
+      u("collegeFinder", { from: "roadmap", career: first, stream: st, state: stateVal || "" }) +
+      '">College Finder →</a>' +
+      '<a style="' +
+      secS +
+      '" href="' +
       u("skillGap", { from: "roadmap", career: first }) +
       '">Skill gap →</a>'
     );
@@ -223,6 +266,11 @@
       '" href="' +
       u("examRoadmap", { from: "assessment", profile: p }) +
       '">Exam roadmap →</a>'
+      + '<a style="' +
+      secS +
+      '" href="' +
+      u("collegeFinder", { from: "assessment", profile: p }) +
+      '">College Finder →</a>'
     );
   }
 
@@ -263,5 +311,9 @@
     buildExamRoadmapResultInner: buildExamRoadmapResultInner,
     buildAssessmentNextInner: buildAssessmentNextInner,
     buildMentorSearchResultInner: buildMentorSearchResultInner
+    ,
+    privateContextFrom: privateContextFrom,
+    mergePrivateContext: mergePrivateContext,
+    buildToolUrlWithPrivateContext: buildToolUrlWithPrivateContext
   };
 })();

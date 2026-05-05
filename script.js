@@ -4,9 +4,29 @@ const menuButton = document.getElementById("menu-btn");
 const nav = document.getElementById("main-nav");
 
 if (menuButton && nav) {
+  const closeMenu = () => {
+    nav.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
+  };
+
   menuButton.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("open");
     menuButton.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("click", (event) => {
+    const target = event.target;
+    if (!nav.classList.contains("open")) return;
+    if (menuButton.contains(target) || nav.contains(target)) return;
+    closeMenu();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeMenu();
   });
 }
 
@@ -75,7 +95,7 @@ function initCareerToolsSection() {
       ],
       pairsWith: [
         { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
-        { label: "Exam Roadmap", href: "Tools/pehchaan_exam_roadmap.html" },
+        { label: "Exam Roadmap Builder", href: "Tools/pehchaan_exam_roadmap.html" },
         { label: "Skill Gap Analyser", href: "Tools/pehchaan_skill_gap_analyser.html" },
       ],
     },
@@ -90,8 +110,8 @@ function initCareerToolsSection() {
       ],
       pairsWith: [
         { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
-        { label: "Exam Roadmap", href: "Tools/pehchaan_exam_roadmap.html" },
-        { label: "ROI Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
+        { label: "Exam Roadmap Builder", href: "Tools/pehchaan_exam_roadmap.html" },
+        { label: "Career ROI & Reality Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
       ],
     },
     salary: {
@@ -104,9 +124,24 @@ function initCareerToolsSection() {
         "Supports realistic planning with role progression context",
       ],
       pairsWith: [
-        { label: "ROI Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
+        { label: "Career ROI & Reality Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
         { label: "Financing & EMI", href: "Tools/pehchaan_financing_reality.html" },
-        { label: "Plan B", href: "Tools/pehchaan_plan_b_strategy_builder.html" },
+        { label: "Plan B Strategy Builder", href: "Tools/pehchaan_plan_b_strategy_builder.html" },
+      ],
+    },
+    privatejourney: {
+      bestFor: "Students who want one guided private-sector entry point instead of guessing tool order",
+      time: "4-7 minutes",
+      output: "Top private-role suggestions, metro-aware fit, and 30/60/90 next steps",
+      highlights: [
+        "Uses your stage, stream, metro choice, timeline, and role comfort area to suggest practical starting roles.",
+        "Provides a compact action plan before sending you to deeper execution tools.",
+        "Passes context directly into Salary, Skill Gap, Plan B, and Mentor tools for continuity.",
+      ],
+      pairsWith: [
+        { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
+        { label: "Skill Gap Analyser", href: "Tools/pehchaan_skill_gap_analyser.html" },
+        { label: "Mentor Connect", href: "Tools/pehchaan_mentor_connect.html" },
       ],
     },
     roadmap: {
@@ -120,7 +155,7 @@ function initCareerToolsSection() {
       ],
       pairsWith: [
         { label: "Plan B Strategy Builder", href: "Tools/pehchaan_plan_b_strategy_builder.html" },
-        { label: "ROI Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
+        { label: "Career ROI & Reality Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
         { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
       ],
     },
@@ -134,8 +169,8 @@ function initCareerToolsSection() {
         "Includes honest reality notes and a print / save-as-PDF option for sharing with parents or mentors",
       ],
       pairsWith: [
-        { label: "Financing & EMI", href: "Tools/pehchaan_financing_reality.html" },
-        { label: "Plan B", href: "Tools/pehchaan_plan_b_strategy_builder.html" },
+        { label: "Financing & EMI Reality", href: "Tools/pehchaan_financing_reality.html" },
+        { label: "Plan B Strategy Builder", href: "Tools/pehchaan_plan_b_strategy_builder.html" },
         { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
       ],
     },
@@ -149,7 +184,7 @@ function initCareerToolsSection() {
         "Links straight into ROI and Salary Explorer so numbers stay tied to a real career lane",
       ],
       pairsWith: [
-        { label: "ROI Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
+        { label: "Career ROI & Reality Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
         { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
         { label: "Parent FAQ", href: "Tools/parents-guide/index.html" },
       ],
@@ -157,18 +192,17 @@ function initCareerToolsSection() {
     planb: {
       bestFor:
         "Students preparing competitive exams who also want paid parallel work; anyone mapping national vs state college backups; and families comparing alternative degree routes to the same career direction",
-      time: "8–18 minutes (depends which path you explore)",
+      time: "8-15 minutes",
       output:
-        "A chosen lens: job cards with skill translation, pay context, and links; or tiered college Plan B with stream + geography lens; or course alternatives with duration and fee perspective—plus reminders to verify on official portals",
+        "Actionable backup plans across jobs, colleges, and courses with verification reminders",
       highlights: [
-        "Jobs & income — Pick your prep profile from a structured list: UPSC and state PCS, SSC and banking, NEET, JEE, low-marks-aware routes, CAT, CLAT, GATE (M.Tech/PSU), NDA/CDS, CUET-UG, CA Foundation, NID/NIFT, CSIR-NET/JRF. See which professional skills your syllabus already trains, explore parallel roles with timelines and typical pay bands, remote-friendly tags where relevant, metro-oriented paths where data supports them, and one-tap copy of a first-step checklist.",
-        "Colleges — Pick your prep stream, then either an all-India counselling-style ladder (IIT / NIT / IIIT / AIIMS-style paths you still confirm yearly) or a state-comfort lens with your state; results unpack tiers, cutoffs mindset, and NIRF-style research hooks—not admission promises.",
-        "Courses — Start from a situation anchor (e.g. dream B.Tech or MBBS uncertain) and review horizontal degree ladders that can still reach a similar job family, with plain-language duration and cost framing.",
-        "Personalised cover flow with your name, pivot screen to switch between Job / College / Course Plan B anytime, and clear legal framing: awareness and planning only—cross-check every claim before you pay or sign.",
+        "Jobs lens: connect your exam prep to transferable skills, parallel roles, and first-step checklists.",
+        "College lens: compare national ladder options and state-comfort backups without dead ends.",
+        "Course lens: review alternative degree routes that can still reach similar job families.",
       ],
       pairsWith: [
-        { label: "Exam Roadmap", href: "Tools/pehchaan_exam_roadmap.html" },
-        { label: "ROI Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
+        { label: "Exam Roadmap Builder", href: "Tools/pehchaan_exam_roadmap.html" },
+        { label: "Career ROI & Reality Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
         { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
       ],
     },
@@ -184,40 +218,53 @@ function initCareerToolsSection() {
       pairsWith: [
         { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
         { label: "Mentor Connect", href: "Tools/pehchaan_mentor_connect.html" },
-        { label: "ROI Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
+        { label: "Career ROI & Reality Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
+      ],
+    },
+    collegefinder: {
+      bestFor: "Students and families finalising college options for a chosen stream and course",
+      time: "5-9 minutes",
+      output: "Shortlist with exact-state matches first, then neighbour-state and national fallback options",
+      highlights: [
+        "Lets you filter by geography lens, state, stream, and exact course before comparing colleges",
+        "Avoids dead ends by suggesting neighbour-state and national options when in-state results are limited",
+        "Keeps planning practical with official-link context and verification reminders",
+      ],
+      pairsWith: [
+        { label: "Plan B Strategy Builder", href: "Tools/pehchaan_plan_b_strategy_builder.html" },
+        { label: "Exam Roadmap Builder", href: "Tools/pehchaan_exam_roadmap.html" },
+        { label: "Career ROI & Reality Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
       ],
     },
     mentor: {
       bestFor:
         "Students who want proof, not hype, that someone from their place reached the goal they are chasing",
-      time: "About 5–8 minutes",
-      output: "People to learn from, draft messages in your name, and LinkedIn paths to explore",
+      time: "5-8 minutes",
+      output: "Mentor leads, editable outreach drafts, and LinkedIn search paths",
       highlights: [
-        "Turn the silent question in your head into proof: real people, real journeys, and a first message you can send with dignity",
-        "Search from your hometown toward your dream company or role, so every result feels relevant, not random",
-        "Three layers: mentors who chose to help students, public profiles to verify, and one-tap LinkedIn searches with filters ready",
-        "Draft outreach uses your first name so your hello sounds human; you edit the rest before you send",
+        "Find relevant professionals by hometown, role target, and company context.",
+        "Use ready message drafts, then personalize before sending.",
+        "Validate profiles via direct links and guided LinkedIn searches.",
       ],
       pairsWith: [
         { label: "Salary Explorer", href: "Tools/pehchaan_salary_explorer.html" },
         { label: "Skill Gap Analyser", href: "Tools/pehchaan_skill_gap_analyser.html" },
-        { label: "Plan B", href: "Tools/pehchaan_plan_b_strategy_builder.html" },
+        { label: "Plan B Strategy Builder", href: "Tools/pehchaan_plan_b_strategy_builder.html" },
       ],
     },
     parentguide: {
       bestFor: "Parents in Tier 2/3 cities anxious about marks, sarkari vs private, arts, safety, and new careers",
-      time: "2–5 minutes to browse; search is instant",
+      time: "2-5 minutes",
       output:
-        "170 Q&As in English or Hinglish (FAQDB) — marks, money, sarkari vs private, low marks, and more",
+        "170 searchable Q&As in English or Hinglish across marks, money, and career worries",
       highlights: [
-        "Fuzzy search (Fuse.js) handles typos and Hinglish — e.g. “Sarkari” still finds government-job topics",
-        "Tags are weighted in search so parent-style words match the right worry, not random keywords",
-        "Browse all answers or filter by category — from Marks & Streams to new batches like low marks and local industries",
-        "Switch English ↔ Hinglish anytime; expand one answer at a time without clutter",
+        "Fuzzy search handles typos and Hinglish-style phrasing.",
+        "Category filters help parents jump to the exact worry quickly.",
+        "English and Hinglish modes are switchable anytime.",
       ],
       pairsWith: [
-        { label: "Financing & EMI", href: "Tools/pehchaan_financing_reality.html" },
-        { label: "ROI Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
+        { label: "Financing & EMI Reality", href: "Tools/pehchaan_financing_reality.html" },
+        { label: "Career ROI & Reality Bridge", href: "Tools/pehchaan_career_roi_reality_bridge.html" },
         { label: "Stream Advisor", href: "Tools/pehchaan_stream_advisor.html" },
       ],
     },
@@ -391,11 +438,13 @@ function initStartHere() {
     assessment: "Career Assessment",
     stream: "Stream Advisor",
     salary: "Salary Explorer",
+    privatejourney: "Private Sector Journey",
     roi: "ROI & Reality Bridge",
     financing: "Financing & EMI",
     roadmap: "Exam Roadmap",
     planb: "Plan B",
     skillgap: "Skill Gap",
+    collegefinder: "College Finder",
     mentor: "Mentor Connect",
     parentguide: "Parent's Guide",
   };
@@ -429,16 +478,17 @@ function initStartHere() {
       keys = ["assessment"];
       if (st === "10") keys.push("stream");
       keys.push("salary");
+      if (st !== "10") keys.push("collegefinder");
       if (keys.length < 3) keys.push("roadmap");
       blurb = "Discovery order: who you are → what you might earn → how exams line up.";
     } else if (w === "money") {
       keys = ["salary", "roi", "financing"];
       blurb = "Same order many families use: bands first, full ROI story, then EMI stress-test.";
     } else if (w === "exam") {
-      keys = ["roadmap", "planb", "salary"];
+      keys = ["roadmap", "planb", "collegefinder", "salary"];
       blurb = "Timelines and Plan B in one pass, with salary context so goals stay realistic.";
     } else if (w === "job") {
-      keys = ["skillgap", "salary", "mentor"];
+      keys = ["privatejourney", "skillgap", "salary", "mentor"];
       blurb = "Skills you lack → pay bands for the role → people who already walked that path.";
     }
     keys = keys.slice(0, 4);

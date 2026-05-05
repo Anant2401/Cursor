@@ -1,0 +1,2065 @@
+{
+  "meta": {
+    "version": "1.1.0",
+    "last_updated": "2026-05-05",
+    "generated_from": "DB/pehchaan_college_registry.json",
+    "notes": "Generated lookup indexes for fast client-side filtering."
+  },
+  "by_state": {
+    "IN": [
+      "older_iits_top_nits_trichy_surathkal_warangal_etc",
+      "top_iiits_hyderabad_bangalore_etc",
+      "other_nits_and_iiits_via_josaa",
+      "vacant_seats_after_josaa_rounds",
+      "aiims_jipmer_top_state_gmcs_via_aiq",
+      "esic_afmc_pool_other_central_schemes_when_listed",
+      "deemed_universities",
+      "iit_kharagpur_iit_roorkee_spa_delhi_examples_verify_current_intake",
+      "nits_and_state_universities_with_coa_approved_b_arch_verify_list_yearly",
+      "iit_bombay_iit_guwahati_iit_hyderabad_design_programmes_via_uceed_examples",
+      "national_institute_of_design_multiple_campuses_and_nift_campuses",
+      "maulana_azad_institute_of_dental_sciences_delhi_government_dental_colleges_via_a",
+      "state_government_dental_colleges_across_india_verify_seat_type",
+      "national_institute_of_ayurveda_jaipur_ilbs_example_health_science_adjacency_veri",
+      "government_ayurveda_homoeopathy_colleges_state_wise_lists",
+      "niper_campuses_mpharm_heavy_verify_ug_if_offered_bits_pilani_pharmacy_manipal_co",
+      "well_known_pci_approved_colleges_across_states",
+      "nlsiu_bangalore_nalsar_hyderabad_wbnujs_kolkata_examples",
+      "other_nlus_and_national_private_law_schools_verify_bar_council_approval",
+      "iim_indore_iim_rohtak_ipm_style_programmes_verify_current_list",
+      "established_private_universities_with_ugc_recognised_management_ug",
+      "shri_ram_college_of_commerce_srcc_hindu_college_lsr_examples_via_cuet",
+      "other_ugc_recognised_universities_with_strong_accounting_finance_ug",
+      "iiser_kolkata_pune_mohali_examples_via_iiser_aptitude_test",
+      "bhu_university_of_hyderabad_others_via_cuet_examples",
+      "nift_delhi_mumbai_bangalore_examples",
+      "established_private_communication_schools_verify_degree_and_campus",
+      "st_stephen_s_college_lady_shri_ram_college_for_women_examples_verify_cuet",
+      "jnu_bhu_university_of_hyderabad_examples",
+      "regional_institute_of_education_mysuru_bhopal_bhubaneswar_examples",
+      "state_universities_with_ncte_recognised_b_ed_verify_per_campus",
+      "indian_veterinary_research_institute_ivri_izatnagar_example",
+      "state_veterinary_colleges_across_india_verify_seat_type_and_bond"
+    ],
+    "CG": [
+      "nit_raipur",
+      "iiit_naya_raipur",
+      "iit_bhilai",
+      "bit_durg_ssipmt",
+      "government_engineering_college_raipur_example_state_college",
+      "shri_shankaracharya_technical_campus_sstc_bhilai",
+      "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify",
+      "other_aicte_affiliated_colleges_in_cg",
+      "dr_c_v_raman_university_bilaspur",
+      "aiims_raipur",
+      "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
+      "gmc_raipur_other_cg_gmcs_as_per_state_list",
+      "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
+      "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
+      "private_mbbs_colleges_in_cg_verify_mcc_state"
+    ],
+    "DL": [
+      "dtu_nsut_iiit_d_examples",
+      "nit_delhi",
+      "established_private_universities_in_ncr",
+      "aiims_new_delhi",
+      "maulana_azad_medical_college_mamc",
+      "university_college_of_medical_sciences_ucms",
+      "esic_medical_college_faridabad_example_ncr",
+      "private_medical_colleges_gurugram_noida_belt"
+    ],
+    "MH": [
+      "iit_bombay",
+      "ict_mumbai_institute_of_chemical_technology",
+      "vnit_nagpur",
+      "coep_technological_university_coep",
+      "vjti_mumbai",
+      "walchand_college_of_engineering_wce",
+      "sppu_affiliated_private_universities_in_pune_mumbai_corridor",
+      "seth_gs_medical_college_and_kem_hospital_kem",
+      "bj_government_medical_college_gmc_pune_cluster_verify_current_names",
+      "government_medical_colleges_across_divisions_marathwada_vidarbha_etc",
+      "deemed_universities_in_maharashtra_multiple",
+      "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel",
+      "nift_mumbai",
+      "nair_hospital_dental_college_mumbai_example",
+      "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list",
+      "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences",
+      "government_law_college_mumbai",
+      "nmims_mumbai_bba_related_ug_verify_test",
+      "narsee_monjee_college_of_commerce_and_economics_example",
+      "iiser_pune",
+      "university_of_mumbai_humanities_departments_affiliated_colleges_vary",
+      "tilak_college_of_education_other_mumbai_affiliated_ncte_colleges_examples_verify",
+      "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur"
+    ],
+    "KA": [
+      "iisc_bangalore_ug_programmes_where_applicable",
+      "nitk_surathkal",
+      "rv_college_of_engineering_rvce",
+      "pes_university_pesce_verify_campus",
+      "bms_college_of_engineering",
+      "vtu_affiliated_colleges_across_karnataka",
+      "bangalore_medical_college_and_research_institute_bmri_bmcri",
+      "kims_hubli_karnataka_institute_of_medical_sciences",
+      "gmcs_in_mysuru_mangaluru_belagavi_verify_seat_matrix",
+      "private_medical_colleges_bengaluru_tier_2_cities"
+    ],
+    "TN": [
+      "iit_madras",
+      "nit_tiruchirappalli",
+      "college_of_engineering_guindy_ceg_anna_university",
+      "psg_college_of_technology",
+      "ssn_college_of_engineering",
+      "affiliated_engineering_colleges_under_anna_university",
+      "madras_medical_college_mmc",
+      "stanley_medical_college",
+      "gmcs_in_madurai_coimbatore_tirunelveli_examples",
+      "private_medical_colleges_across_tn"
+    ],
+    "TS": [
+      "iit_hyderabad",
+      "iiit_hyderabad",
+      "bits_pilani_hyderabad_campus",
+      "jntuh_affiliated_top_autonomous_colleges_examples_in_hyderabad",
+      "private_engineering_colleges_across_telangana",
+      "osmania_medical_college",
+      "gandhi_medical_college",
+      "aiims_bibinagar_verify_intake_and_phases",
+      "kakatiya_medical_college_warangal_example",
+      "private_medical_colleges_in_hyderabad_belt"
+    ],
+    "UP": [
+      "iit_kanpur",
+      "iit_bhu_varanasi",
+      "mnnit_allahabad_prayagraj",
+      "hbtu_kanpur_harcourt_butler_technical_university",
+      "kiet_group_of_institutions_example_private",
+      "aktu_affiliated_colleges_ncr_lucknow_belt",
+      "king_george_medical_university_kgmu",
+      "institute_of_medical_sciences_bhu_varanasi",
+      "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening",
+      "regional_gmcs_prayagraj_meerut_kanpur_verify_list",
+      "private_mbbs_colleges_across_up",
+      "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow",
+      "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis",
+      "nift_kannauj",
+      "faculty_of_dental_sciences_kgmu_lucknow",
+      "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix",
+      "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples",
+      "dr_ram_manohar_lohiya_national_law_university_lucknow",
+      "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year",
+      "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure",
+      "banaras_hindu_university_faculty_of_commerce_verify_programme_codes",
+      "iit_kanpur_bs_programmes_verify_jee_channel",
+      "banaras_hindu_university_faculty_of_arts_social_sciences",
+      "university_of_lucknow_department_of_education_verify_intake",
+      "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "ivri_izatnagar_bareilly"
+    ],
+    "RJ": [
+      "iit_jodhpur",
+      "mnit_jaipur",
+      "bits_pilani_pilani_campus",
+      "rtu_rajasthan_technical_university_main_key_affiliated_colleges",
+      "aicte_approved_private_colleges_jaipur_udaipur_jodhpur",
+      "aiims_jodhpur",
+      "sms_medical_college_jaipur",
+      "sn_medical_college_jodhpur",
+      "private_medical_colleges_jaipur_udaipur_belt"
+    ],
+    "WB": [
+      "iit_kharagpur",
+      "jadavpur_university_faculty_of_engineering_and_technology",
+      "iiest_shibpur",
+      "heritage_institute_of_technology_example_kolkata_private",
+      "affiliated_engineering_colleges_across_districts",
+      "medical_college_and_hospital_kolkata",
+      "nil_ratan_sircar_medical_college_nrs",
+      "cnmc_bankura_burdwan_medical_college_examples_verify_list",
+      "private_medical_colleges_in_wb"
+    ],
+    "OD": [
+      "iit_bhubaneswar",
+      "nit_rourkela",
+      "outr_igit_government_colleges_under_bput_verify_active_names",
+      "kiit_university_example_large_private"
+    ],
+    "MP": [
+      "iit_indore",
+      "manit_bhopal",
+      "iiitdm_jabalpur",
+      "uit_rgpv_davv_clusters_verify_programmes",
+      "private_engineering_colleges_across_mp"
+    ]
+  },
+  "by_stream": {
+    "engineering": [
+      "older_iits_top_nits_trichy_surathkal_warangal_etc_engineering_engineering_generi",
+      "top_iiits_hyderabad_bangalore_etc_engineering_engineering_generic_national_level",
+      "other_nits_and_iiits_via_josaa_engineering_engineering_generic_national_level_in",
+      "vacant_seats_after_josaa_rounds_engineering_engineering_generic_national_level_i",
+      "nit_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iiit_naya_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iit_bhilai_engineering_engineering_generic_state_comfort_cg",
+      "bit_durg_ssipmt_engineering_engineering_generic_state_comfort_cg",
+      "government_engineering_college_raipur_example_state_college_engineering_engineer",
+      "shri_shankaracharya_technical_campus_sstc_bhilai_engineering_engineering_generic",
+      "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify_engineering_e",
+      "other_aicte_affiliated_colleges_in_cg_engineering_engineering_generic_state_comf",
+      "dr_c_v_raman_university_bilaspur_engineering_engineering_generic_state_comfort",
+      "dtu_nsut_iiit_d_examples_engineering_engineering_generic_state_comfort_dl",
+      "nit_delhi_engineering_engineering_generic_state_comfort_dl",
+      "established_private_universities_in_ncr_engineering_engineering_generic_state_co",
+      "iit_bombay_engineering_engineering_generic_state_comfort_mh",
+      "ict_mumbai_institute_of_chemical_technology_engineering_engineering_generic_stat",
+      "vnit_nagpur_engineering_engineering_generic_state_comfort_mh",
+      "coep_technological_university_coep_engineering_engineering_generic_state_comfort",
+      "vjti_mumbai_engineering_engineering_generic_state_comfort_mh",
+      "walchand_college_of_engineering_wce_engineering_engineering_generic_state_comfor",
+      "sppu_affiliated_private_universities_in_pune_mumbai_corridor_engineering_enginee",
+      "iisc_bangalore_ug_programmes_where_applicable_engineering_engineering_generic_st",
+      "nitk_surathkal_engineering_engineering_generic_state_comfort_ka",
+      "rv_college_of_engineering_rvce_engineering_engineering_generic_state_comfort_ka",
+      "pes_university_pesce_verify_campus_engineering_engineering_generic_state_comfort",
+      "bms_college_of_engineering_engineering_engineering_generic_state_comfort_ka",
+      "vtu_affiliated_colleges_across_karnataka_engineering_engineering_generic_state_c",
+      "iit_madras_engineering_engineering_generic_state_comfort_tn",
+      "nit_tiruchirappalli_engineering_engineering_generic_state_comfort_tn",
+      "college_of_engineering_guindy_ceg_anna_university_engineering_engineering_generi",
+      "psg_college_of_technology_engineering_engineering_generic_state_comfort_tn",
+      "ssn_college_of_engineering_engineering_engineering_generic_state_comfort_tn",
+      "affiliated_engineering_colleges_under_anna_university_engineering_engineering_ge",
+      "iit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "iiit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "bits_pilani_hyderabad_campus_engineering_engineering_generic_state_comfort_ts",
+      "jntuh_affiliated_top_autonomous_colleges_examples_in_hyderabad_engineering_engin",
+      "private_engineering_colleges_across_telangana_engineering_engineering_generic_st",
+      "iit_kanpur_engineering_engineering_generic_state_comfort_up",
+      "iit_bhu_varanasi_engineering_engineering_generic_state_comfort_up",
+      "mnnit_allahabad_prayagraj_engineering_engineering_generic_state_comfort_up",
+      "hbtu_kanpur_harcourt_butler_technical_university_engineering_engineering_generic",
+      "kiet_group_of_institutions_example_private_engineering_engineering_generic_state",
+      "aktu_affiliated_colleges_ncr_lucknow_belt_engineering_engineering_generic_state_",
+      "iit_jodhpur_engineering_engineering_generic_state_comfort_rj",
+      "mnit_jaipur_engineering_engineering_generic_state_comfort_rj",
+      "bits_pilani_pilani_campus_engineering_engineering_generic_state_comfort_rj",
+      "rtu_rajasthan_technical_university_main_key_affiliated_colleges_engineering_engi",
+      "aicte_approved_private_colleges_jaipur_udaipur_jodhpur_engineering_engineering_g",
+      "iit_kharagpur_engineering_engineering_generic_state_comfort_wb",
+      "jadavpur_university_faculty_of_engineering_and_technology_engineering_engineerin",
+      "iiest_shibpur_engineering_engineering_generic_state_comfort_wb",
+      "heritage_institute_of_technology_example_kolkata_private_engineering_engineering",
+      "affiliated_engineering_colleges_across_districts_engineering_engineering_generic",
+      "iit_bhubaneswar_engineering_engineering_generic_state_comfort_od",
+      "nit_rourkela_engineering_engineering_generic_state_comfort_od",
+      "outr_igit_government_colleges_under_bput_verify_active_names_engineering_enginee",
+      "kiit_university_example_large_private_engineering_engineering_generic_state_comf",
+      "iit_indore_engineering_engineering_generic_state_comfort_mp",
+      "manit_bhopal_engineering_engineering_generic_state_comfort_mp",
+      "iiitdm_jabalpur_engineering_engineering_generic_state_comfort_mp",
+      "uit_rgpv_davv_clusters_verify_programmes_engineering_engineering_generic_state_c",
+      "private_engineering_colleges_across_mp_engineering_engineering_generic_state_com"
+    ],
+    "medicine": [
+      "aiims_jipmer_top_state_gmcs_via_aiq_medicine_medicine_mbbs_national_level_in",
+      "esic_afmc_pool_other_central_schemes_when_listed_medicine_medicine_mbbs_national",
+      "deemed_universities_medicine_medicine_mbbs_national_level_in",
+      "aiims_raipur_medicine_medicine_mbbs_state_comfort_cg",
+      "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
+      "gmc_raipur_other_cg_gmcs_as_per_state_list_medicine_medicine_mbbs_state_comfort_",
+      "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
+      "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
+      "private_mbbs_colleges_in_cg_verify_mcc_state_medicine_medicine_mbbs_state_comfor",
+      "seth_gs_medical_college_and_kem_hospital_kem_medicine_medicine_mbbs_state_comfor",
+      "bj_government_medical_college_gmc_pune_cluster_verify_current_names_medicine_med",
+      "government_medical_colleges_across_divisions_marathwada_vidarbha_etc_medicine_me",
+      "deemed_universities_in_maharashtra_multiple_medicine_medicine_mbbs_state_comfort",
+      "bangalore_medical_college_and_research_institute_bmri_bmcri_medicine_medicine_mb",
+      "kims_hubli_karnataka_institute_of_medical_sciences_medicine_medicine_mbbs_state_",
+      "gmcs_in_mysuru_mangaluru_belagavi_verify_seat_matrix_medicine_medicine_mbbs_stat",
+      "private_medical_colleges_bengaluru_tier_2_cities_medicine_medicine_mbbs_state_co",
+      "madras_medical_college_mmc_medicine_medicine_mbbs_state_comfort_tn",
+      "stanley_medical_college_medicine_medicine_mbbs_state_comfort_tn",
+      "gmcs_in_madurai_coimbatore_tirunelveli_examples_medicine_medicine_mbbs_state_com",
+      "private_medical_colleges_across_tn_medicine_medicine_mbbs_state_comfort_tn",
+      "aiims_new_delhi_medicine_medicine_mbbs_state_comfort_dl",
+      "maulana_azad_medical_college_mamc_medicine_medicine_mbbs_state_comfort_dl",
+      "university_college_of_medical_sciences_ucms_medicine_medicine_mbbs_state_comfort",
+      "esic_medical_college_faridabad_example_ncr_medicine_medicine_mbbs_state_comfort_",
+      "private_medical_colleges_gurugram_noida_belt_medicine_medicine_mbbs_state_comfor",
+      "king_george_medical_university_kgmu_medicine_medicine_mbbs_state_comfort_up",
+      "institute_of_medical_sciences_bhu_varanasi_medicine_medicine_mbbs_state_comfort_",
+      "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening_medicine_medicine_m",
+      "regional_gmcs_prayagraj_meerut_kanpur_verify_list_medicine_medicine_mbbs_state_c",
+      "private_mbbs_colleges_across_up_medicine_medicine_mbbs_state_comfort_up",
+      "aiims_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "sms_medical_college_jaipur_medicine_medicine_mbbs_state_comfort_rj",
+      "sn_medical_college_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "private_medical_colleges_jaipur_udaipur_belt_medicine_medicine_mbbs_state_comfor",
+      "osmania_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "gandhi_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "aiims_bibinagar_verify_intake_and_phases_medicine_medicine_mbbs_state_comfort_ts",
+      "kakatiya_medical_college_warangal_example_medicine_medicine_mbbs_state_comfort_t",
+      "private_medical_colleges_in_hyderabad_belt_medicine_medicine_mbbs_state_comfort_",
+      "medical_college_and_hospital_kolkata_medicine_medicine_mbbs_state_comfort_wb",
+      "nil_ratan_sircar_medical_college_nrs_medicine_medicine_mbbs_state_comfort_wb",
+      "cnmc_bankura_burdwan_medical_college_examples_verify_list_medicine_medicine_mbbs",
+      "private_medical_colleges_in_wb_medicine_medicine_mbbs_state_comfort_wb"
+    ],
+    "architecture": [
+      "iit_kharagpur_iit_roorkee_spa_delhi_examples_verify_current_intake_architecture_",
+      "nits_and_state_universities_with_coa_approved_b_arch_verify_list_yearly_architec",
+      "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
+      "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis",
+      "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture"
+    ],
+    "design": [
+      "iit_bombay_iit_guwahati_iit_hyderabad_design_programmes_via_uceed_examples_desig",
+      "national_institute_of_design_multiple_campuses_and_nift_campuses_design_design_g",
+      "nift_kannauj_design_design_generic_state_comfort_up",
+      "nift_mumbai_design_design_generic_state_comfort_mh"
+    ],
+    "dentistry": [
+      "maulana_azad_institute_of_dental_sciences_delhi_government_dental_colleges_via_a",
+      "state_government_dental_colleges_across_india_verify_seat_type_dentistry_dentist",
+      "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor",
+      "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co"
+    ],
+    "ayush": [
+      "national_institute_of_ayurveda_jaipur_ilbs_example_health_science_adjacency_veri",
+      "government_ayurveda_homoeopathy_colleges_state_wise_lists_ayush_ayush_generic_na",
+      "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
+      "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus"
+    ],
+    "pharmacy": [
+      "niper_campuses_mpharm_heavy_verify_ug_if_offered_bits_pilani_pharmacy_manipal_co",
+      "well_known_pci_approved_colleges_across_states_pharmacy_pharmacy_generic_nationa",
+      "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma",
+      "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha"
+    ],
+    "law": [
+      "nlsiu_bangalore_nalsar_hyderabad_wbnujs_kolkata_examples_law_law_generic_nationa",
+      "other_nlus_and_national_private_law_schools_verify_bar_council_approval_law_law_",
+      "dr_ram_manohar_lohiya_national_law_university_lucknow_law_law_generic_state_comf",
+      "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year_law_law_generic_",
+      "government_law_college_mumbai_law_law_generic_state_comfort_mh"
+    ],
+    "management": [
+      "iim_indore_iim_rohtak_ipm_style_programmes_verify_current_list_management_manage",
+      "established_private_universities_with_ugc_recognised_management_ug_management_ma",
+      "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure_management_management_ge",
+      "nmims_mumbai_bba_related_ug_verify_test_management_management_generic_state_comf"
+    ],
+    "commerce": [
+      "shri_ram_college_of_commerce_srcc_hindu_college_lsr_examples_via_cuet_commerce_c",
+      "other_ugc_recognised_universities_with_strong_accounting_finance_ug_commerce_com",
+      "banaras_hindu_university_faculty_of_commerce_verify_programme_codes_commerce_com",
+      "narsee_monjee_college_of_commerce_and_economics_example_commerce_commerce_generi"
+    ],
+    "science_stats": [
+      "iiser_kolkata_pune_mohali_examples_via_iiser_aptitude_test_science_stats_science",
+      "bhu_university_of_hyderabad_others_via_cuet_examples_science_stats_science_stats",
+      "iit_kanpur_bs_programmes_verify_jee_channel_science_stats_science_stats_generic_",
+      "iiser_pune_science_stats_science_stats_generic_state_comfort_mh"
+    ],
+    "fashion_media": [
+      "nift_delhi_mumbai_bangalore_examples_fashion_media_fashion_media_generic_nationa",
+      "established_private_communication_schools_verify_degree_and_campus_fashion_media",
+      "nift_kannauj_fashion_media_fashion_media_generic_state_comfort_up",
+      "nift_mumbai_fashion_media_fashion_media_generic_state_comfort_mh"
+    ],
+    "humanities": [
+      "st_stephen_s_college_lady_shri_ram_college_for_women_examples_verify_cuet_humani",
+      "jnu_bhu_university_of_hyderabad_examples_humanities_humanities_generic_national_",
+      "banaras_hindu_university_faculty_of_arts_social_sciences_humanities_humanities_g",
+      "university_of_mumbai_humanities_departments_affiliated_colleges_vary_humanities_"
+    ],
+    "education": [
+      "regional_institute_of_education_mysuru_bhopal_bhubaneswar_examples_education_edu",
+      "state_universities_with_ncte_recognised_b_ed_verify_per_campus_education_educati",
+      "university_of_lucknow_department_of_education_verify_intake_education_education_",
+      "tilak_college_of_education_other_mumbai_affiliated_ncte_colleges_examples_verify"
+    ],
+    "veterinary": [
+      "indian_veterinary_research_institute_ivri_izatnagar_example_veterinary_veterinar",
+      "state_veterinary_colleges_across_india_verify_seat_type_and_bond_veterinary_vete",
+      "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up",
+      "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter"
+    ]
+  },
+  "by_course": {
+    "engineering_generic": [
+      "older_iits_top_nits_trichy_surathkal_warangal_etc_engineering_engineering_generi",
+      "top_iiits_hyderabad_bangalore_etc_engineering_engineering_generic_national_level",
+      "other_nits_and_iiits_via_josaa_engineering_engineering_generic_national_level_in",
+      "vacant_seats_after_josaa_rounds_engineering_engineering_generic_national_level_i",
+      "nit_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iiit_naya_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iit_bhilai_engineering_engineering_generic_state_comfort_cg",
+      "bit_durg_ssipmt_engineering_engineering_generic_state_comfort_cg",
+      "government_engineering_college_raipur_example_state_college_engineering_engineer",
+      "shri_shankaracharya_technical_campus_sstc_bhilai_engineering_engineering_generic",
+      "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify_engineering_e",
+      "other_aicte_affiliated_colleges_in_cg_engineering_engineering_generic_state_comf",
+      "dr_c_v_raman_university_bilaspur_engineering_engineering_generic_state_comfort",
+      "dtu_nsut_iiit_d_examples_engineering_engineering_generic_state_comfort_dl",
+      "nit_delhi_engineering_engineering_generic_state_comfort_dl",
+      "established_private_universities_in_ncr_engineering_engineering_generic_state_co",
+      "iit_bombay_engineering_engineering_generic_state_comfort_mh",
+      "ict_mumbai_institute_of_chemical_technology_engineering_engineering_generic_stat",
+      "vnit_nagpur_engineering_engineering_generic_state_comfort_mh",
+      "coep_technological_university_coep_engineering_engineering_generic_state_comfort",
+      "vjti_mumbai_engineering_engineering_generic_state_comfort_mh",
+      "walchand_college_of_engineering_wce_engineering_engineering_generic_state_comfor",
+      "sppu_affiliated_private_universities_in_pune_mumbai_corridor_engineering_enginee",
+      "iisc_bangalore_ug_programmes_where_applicable_engineering_engineering_generic_st",
+      "nitk_surathkal_engineering_engineering_generic_state_comfort_ka",
+      "rv_college_of_engineering_rvce_engineering_engineering_generic_state_comfort_ka",
+      "pes_university_pesce_verify_campus_engineering_engineering_generic_state_comfort",
+      "bms_college_of_engineering_engineering_engineering_generic_state_comfort_ka",
+      "vtu_affiliated_colleges_across_karnataka_engineering_engineering_generic_state_c",
+      "iit_madras_engineering_engineering_generic_state_comfort_tn",
+      "nit_tiruchirappalli_engineering_engineering_generic_state_comfort_tn",
+      "college_of_engineering_guindy_ceg_anna_university_engineering_engineering_generi",
+      "psg_college_of_technology_engineering_engineering_generic_state_comfort_tn",
+      "ssn_college_of_engineering_engineering_engineering_generic_state_comfort_tn",
+      "affiliated_engineering_colleges_under_anna_university_engineering_engineering_ge",
+      "iit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "iiit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "bits_pilani_hyderabad_campus_engineering_engineering_generic_state_comfort_ts",
+      "jntuh_affiliated_top_autonomous_colleges_examples_in_hyderabad_engineering_engin",
+      "private_engineering_colleges_across_telangana_engineering_engineering_generic_st",
+      "iit_kanpur_engineering_engineering_generic_state_comfort_up",
+      "iit_bhu_varanasi_engineering_engineering_generic_state_comfort_up",
+      "mnnit_allahabad_prayagraj_engineering_engineering_generic_state_comfort_up",
+      "hbtu_kanpur_harcourt_butler_technical_university_engineering_engineering_generic",
+      "kiet_group_of_institutions_example_private_engineering_engineering_generic_state",
+      "aktu_affiliated_colleges_ncr_lucknow_belt_engineering_engineering_generic_state_",
+      "iit_jodhpur_engineering_engineering_generic_state_comfort_rj",
+      "mnit_jaipur_engineering_engineering_generic_state_comfort_rj",
+      "bits_pilani_pilani_campus_engineering_engineering_generic_state_comfort_rj",
+      "rtu_rajasthan_technical_university_main_key_affiliated_colleges_engineering_engi",
+      "aicte_approved_private_colleges_jaipur_udaipur_jodhpur_engineering_engineering_g",
+      "iit_kharagpur_engineering_engineering_generic_state_comfort_wb",
+      "jadavpur_university_faculty_of_engineering_and_technology_engineering_engineerin",
+      "iiest_shibpur_engineering_engineering_generic_state_comfort_wb",
+      "heritage_institute_of_technology_example_kolkata_private_engineering_engineering",
+      "affiliated_engineering_colleges_across_districts_engineering_engineering_generic",
+      "iit_bhubaneswar_engineering_engineering_generic_state_comfort_od",
+      "nit_rourkela_engineering_engineering_generic_state_comfort_od",
+      "outr_igit_government_colleges_under_bput_verify_active_names_engineering_enginee",
+      "kiit_university_example_large_private_engineering_engineering_generic_state_comf",
+      "iit_indore_engineering_engineering_generic_state_comfort_mp",
+      "manit_bhopal_engineering_engineering_generic_state_comfort_mp",
+      "iiitdm_jabalpur_engineering_engineering_generic_state_comfort_mp",
+      "uit_rgpv_davv_clusters_verify_programmes_engineering_engineering_generic_state_c",
+      "private_engineering_colleges_across_mp_engineering_engineering_generic_state_com"
+    ],
+    "medicine_mbbs": [
+      "aiims_jipmer_top_state_gmcs_via_aiq_medicine_medicine_mbbs_national_level_in",
+      "esic_afmc_pool_other_central_schemes_when_listed_medicine_medicine_mbbs_national",
+      "deemed_universities_medicine_medicine_mbbs_national_level_in",
+      "aiims_raipur_medicine_medicine_mbbs_state_comfort_cg",
+      "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
+      "gmc_raipur_other_cg_gmcs_as_per_state_list_medicine_medicine_mbbs_state_comfort_",
+      "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
+      "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
+      "private_mbbs_colleges_in_cg_verify_mcc_state_medicine_medicine_mbbs_state_comfor",
+      "seth_gs_medical_college_and_kem_hospital_kem_medicine_medicine_mbbs_state_comfor",
+      "bj_government_medical_college_gmc_pune_cluster_verify_current_names_medicine_med",
+      "government_medical_colleges_across_divisions_marathwada_vidarbha_etc_medicine_me",
+      "deemed_universities_in_maharashtra_multiple_medicine_medicine_mbbs_state_comfort",
+      "bangalore_medical_college_and_research_institute_bmri_bmcri_medicine_medicine_mb",
+      "kims_hubli_karnataka_institute_of_medical_sciences_medicine_medicine_mbbs_state_",
+      "gmcs_in_mysuru_mangaluru_belagavi_verify_seat_matrix_medicine_medicine_mbbs_stat",
+      "private_medical_colleges_bengaluru_tier_2_cities_medicine_medicine_mbbs_state_co",
+      "madras_medical_college_mmc_medicine_medicine_mbbs_state_comfort_tn",
+      "stanley_medical_college_medicine_medicine_mbbs_state_comfort_tn",
+      "gmcs_in_madurai_coimbatore_tirunelveli_examples_medicine_medicine_mbbs_state_com",
+      "private_medical_colleges_across_tn_medicine_medicine_mbbs_state_comfort_tn",
+      "aiims_new_delhi_medicine_medicine_mbbs_state_comfort_dl",
+      "maulana_azad_medical_college_mamc_medicine_medicine_mbbs_state_comfort_dl",
+      "university_college_of_medical_sciences_ucms_medicine_medicine_mbbs_state_comfort",
+      "esic_medical_college_faridabad_example_ncr_medicine_medicine_mbbs_state_comfort_",
+      "private_medical_colleges_gurugram_noida_belt_medicine_medicine_mbbs_state_comfor",
+      "king_george_medical_university_kgmu_medicine_medicine_mbbs_state_comfort_up",
+      "institute_of_medical_sciences_bhu_varanasi_medicine_medicine_mbbs_state_comfort_",
+      "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening_medicine_medicine_m",
+      "regional_gmcs_prayagraj_meerut_kanpur_verify_list_medicine_medicine_mbbs_state_c",
+      "private_mbbs_colleges_across_up_medicine_medicine_mbbs_state_comfort_up",
+      "aiims_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "sms_medical_college_jaipur_medicine_medicine_mbbs_state_comfort_rj",
+      "sn_medical_college_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "private_medical_colleges_jaipur_udaipur_belt_medicine_medicine_mbbs_state_comfor",
+      "osmania_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "gandhi_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "aiims_bibinagar_verify_intake_and_phases_medicine_medicine_mbbs_state_comfort_ts",
+      "kakatiya_medical_college_warangal_example_medicine_medicine_mbbs_state_comfort_t",
+      "private_medical_colleges_in_hyderabad_belt_medicine_medicine_mbbs_state_comfort_",
+      "medical_college_and_hospital_kolkata_medicine_medicine_mbbs_state_comfort_wb",
+      "nil_ratan_sircar_medical_college_nrs_medicine_medicine_mbbs_state_comfort_wb",
+      "cnmc_bankura_burdwan_medical_college_examples_verify_list_medicine_medicine_mbbs",
+      "private_medical_colleges_in_wb_medicine_medicine_mbbs_state_comfort_wb"
+    ],
+    "architecture_generic": [
+      "iit_kharagpur_iit_roorkee_spa_delhi_examples_verify_current_intake_architecture_",
+      "nits_and_state_universities_with_coa_approved_b_arch_verify_list_yearly_architec",
+      "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
+      "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis",
+      "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture"
+    ],
+    "design_generic": [
+      "iit_bombay_iit_guwahati_iit_hyderabad_design_programmes_via_uceed_examples_desig",
+      "national_institute_of_design_multiple_campuses_and_nift_campuses_design_design_g",
+      "nift_kannauj_design_design_generic_state_comfort_up",
+      "nift_mumbai_design_design_generic_state_comfort_mh"
+    ],
+    "dentistry_generic": [
+      "maulana_azad_institute_of_dental_sciences_delhi_government_dental_colleges_via_a",
+      "state_government_dental_colleges_across_india_verify_seat_type_dentistry_dentist",
+      "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor",
+      "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co"
+    ],
+    "ayush_generic": [
+      "national_institute_of_ayurveda_jaipur_ilbs_example_health_science_adjacency_veri",
+      "government_ayurveda_homoeopathy_colleges_state_wise_lists_ayush_ayush_generic_na",
+      "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
+      "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus"
+    ],
+    "pharmacy_generic": [
+      "niper_campuses_mpharm_heavy_verify_ug_if_offered_bits_pilani_pharmacy_manipal_co",
+      "well_known_pci_approved_colleges_across_states_pharmacy_pharmacy_generic_nationa",
+      "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma",
+      "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha"
+    ],
+    "law_generic": [
+      "nlsiu_bangalore_nalsar_hyderabad_wbnujs_kolkata_examples_law_law_generic_nationa",
+      "other_nlus_and_national_private_law_schools_verify_bar_council_approval_law_law_",
+      "dr_ram_manohar_lohiya_national_law_university_lucknow_law_law_generic_state_comf",
+      "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year_law_law_generic_",
+      "government_law_college_mumbai_law_law_generic_state_comfort_mh"
+    ],
+    "management_generic": [
+      "iim_indore_iim_rohtak_ipm_style_programmes_verify_current_list_management_manage",
+      "established_private_universities_with_ugc_recognised_management_ug_management_ma",
+      "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure_management_management_ge",
+      "nmims_mumbai_bba_related_ug_verify_test_management_management_generic_state_comf"
+    ],
+    "commerce_generic": [
+      "shri_ram_college_of_commerce_srcc_hindu_college_lsr_examples_via_cuet_commerce_c",
+      "other_ugc_recognised_universities_with_strong_accounting_finance_ug_commerce_com",
+      "banaras_hindu_university_faculty_of_commerce_verify_programme_codes_commerce_com",
+      "narsee_monjee_college_of_commerce_and_economics_example_commerce_commerce_generi"
+    ],
+    "science_stats_generic": [
+      "iiser_kolkata_pune_mohali_examples_via_iiser_aptitude_test_science_stats_science",
+      "bhu_university_of_hyderabad_others_via_cuet_examples_science_stats_science_stats",
+      "iit_kanpur_bs_programmes_verify_jee_channel_science_stats_science_stats_generic_",
+      "iiser_pune_science_stats_science_stats_generic_state_comfort_mh"
+    ],
+    "fashion_media_generic": [
+      "nift_delhi_mumbai_bangalore_examples_fashion_media_fashion_media_generic_nationa",
+      "established_private_communication_schools_verify_degree_and_campus_fashion_media",
+      "nift_kannauj_fashion_media_fashion_media_generic_state_comfort_up",
+      "nift_mumbai_fashion_media_fashion_media_generic_state_comfort_mh"
+    ],
+    "humanities_generic": [
+      "st_stephen_s_college_lady_shri_ram_college_for_women_examples_verify_cuet_humani",
+      "jnu_bhu_university_of_hyderabad_examples_humanities_humanities_generic_national_",
+      "banaras_hindu_university_faculty_of_arts_social_sciences_humanities_humanities_g",
+      "university_of_mumbai_humanities_departments_affiliated_colleges_vary_humanities_"
+    ],
+    "education_generic": [
+      "regional_institute_of_education_mysuru_bhopal_bhubaneswar_examples_education_edu",
+      "state_universities_with_ncte_recognised_b_ed_verify_per_campus_education_educati",
+      "university_of_lucknow_department_of_education_verify_intake_education_education_",
+      "tilak_college_of_education_other_mumbai_affiliated_ncte_colleges_examples_verify"
+    ],
+    "veterinary_generic": [
+      "indian_veterinary_research_institute_ivri_izatnagar_example_veterinary_veterinar",
+      "state_veterinary_colleges_across_india_verify_seat_type_and_bond_veterinary_vete",
+      "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up",
+      "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter"
+    ]
+  },
+  "by_state_stream_course": {
+    "IN|engineering|engineering_generic": [
+      "older_iits_top_nits_trichy_surathkal_warangal_etc_engineering_engineering_generi",
+      "top_iiits_hyderabad_bangalore_etc_engineering_engineering_generic_national_level",
+      "other_nits_and_iiits_via_josaa_engineering_engineering_generic_national_level_in",
+      "vacant_seats_after_josaa_rounds_engineering_engineering_generic_national_level_i"
+    ],
+    "CG|engineering|engineering_generic": [
+      "nit_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iiit_naya_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iit_bhilai_engineering_engineering_generic_state_comfort_cg",
+      "bit_durg_ssipmt_engineering_engineering_generic_state_comfort_cg",
+      "government_engineering_college_raipur_example_state_college_engineering_engineer",
+      "shri_shankaracharya_technical_campus_sstc_bhilai_engineering_engineering_generic",
+      "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify_engineering_e",
+      "other_aicte_affiliated_colleges_in_cg_engineering_engineering_generic_state_comf",
+      "dr_c_v_raman_university_bilaspur_engineering_engineering_generic_state_comfort"
+    ],
+    "DL|engineering|engineering_generic": [
+      "dtu_nsut_iiit_d_examples_engineering_engineering_generic_state_comfort_dl",
+      "nit_delhi_engineering_engineering_generic_state_comfort_dl",
+      "established_private_universities_in_ncr_engineering_engineering_generic_state_co"
+    ],
+    "IN|medicine|medicine_mbbs": [
+      "aiims_jipmer_top_state_gmcs_via_aiq_medicine_medicine_mbbs_national_level_in",
+      "esic_afmc_pool_other_central_schemes_when_listed_medicine_medicine_mbbs_national",
+      "deemed_universities_medicine_medicine_mbbs_national_level_in"
+    ],
+    "CG|medicine|medicine_mbbs": [
+      "aiims_raipur_medicine_medicine_mbbs_state_comfort_cg",
+      "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
+      "gmc_raipur_other_cg_gmcs_as_per_state_list_medicine_medicine_mbbs_state_comfort_",
+      "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
+      "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
+      "private_mbbs_colleges_in_cg_verify_mcc_state_medicine_medicine_mbbs_state_comfor"
+    ],
+    "MH|engineering|engineering_generic": [
+      "iit_bombay_engineering_engineering_generic_state_comfort_mh",
+      "ict_mumbai_institute_of_chemical_technology_engineering_engineering_generic_stat",
+      "vnit_nagpur_engineering_engineering_generic_state_comfort_mh",
+      "coep_technological_university_coep_engineering_engineering_generic_state_comfort",
+      "vjti_mumbai_engineering_engineering_generic_state_comfort_mh",
+      "walchand_college_of_engineering_wce_engineering_engineering_generic_state_comfor",
+      "sppu_affiliated_private_universities_in_pune_mumbai_corridor_engineering_enginee"
+    ],
+    "KA|engineering|engineering_generic": [
+      "iisc_bangalore_ug_programmes_where_applicable_engineering_engineering_generic_st",
+      "nitk_surathkal_engineering_engineering_generic_state_comfort_ka",
+      "rv_college_of_engineering_rvce_engineering_engineering_generic_state_comfort_ka",
+      "pes_university_pesce_verify_campus_engineering_engineering_generic_state_comfort",
+      "bms_college_of_engineering_engineering_engineering_generic_state_comfort_ka",
+      "vtu_affiliated_colleges_across_karnataka_engineering_engineering_generic_state_c"
+    ],
+    "TN|engineering|engineering_generic": [
+      "iit_madras_engineering_engineering_generic_state_comfort_tn",
+      "nit_tiruchirappalli_engineering_engineering_generic_state_comfort_tn",
+      "college_of_engineering_guindy_ceg_anna_university_engineering_engineering_generi",
+      "psg_college_of_technology_engineering_engineering_generic_state_comfort_tn",
+      "ssn_college_of_engineering_engineering_engineering_generic_state_comfort_tn",
+      "affiliated_engineering_colleges_under_anna_university_engineering_engineering_ge"
+    ],
+    "TS|engineering|engineering_generic": [
+      "iit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "iiit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "bits_pilani_hyderabad_campus_engineering_engineering_generic_state_comfort_ts",
+      "jntuh_affiliated_top_autonomous_colleges_examples_in_hyderabad_engineering_engin",
+      "private_engineering_colleges_across_telangana_engineering_engineering_generic_st"
+    ],
+    "UP|engineering|engineering_generic": [
+      "iit_kanpur_engineering_engineering_generic_state_comfort_up",
+      "iit_bhu_varanasi_engineering_engineering_generic_state_comfort_up",
+      "mnnit_allahabad_prayagraj_engineering_engineering_generic_state_comfort_up",
+      "hbtu_kanpur_harcourt_butler_technical_university_engineering_engineering_generic",
+      "kiet_group_of_institutions_example_private_engineering_engineering_generic_state",
+      "aktu_affiliated_colleges_ncr_lucknow_belt_engineering_engineering_generic_state_"
+    ],
+    "RJ|engineering|engineering_generic": [
+      "iit_jodhpur_engineering_engineering_generic_state_comfort_rj",
+      "mnit_jaipur_engineering_engineering_generic_state_comfort_rj",
+      "bits_pilani_pilani_campus_engineering_engineering_generic_state_comfort_rj",
+      "rtu_rajasthan_technical_university_main_key_affiliated_colleges_engineering_engi",
+      "aicte_approved_private_colleges_jaipur_udaipur_jodhpur_engineering_engineering_g"
+    ],
+    "WB|engineering|engineering_generic": [
+      "iit_kharagpur_engineering_engineering_generic_state_comfort_wb",
+      "jadavpur_university_faculty_of_engineering_and_technology_engineering_engineerin",
+      "iiest_shibpur_engineering_engineering_generic_state_comfort_wb",
+      "heritage_institute_of_technology_example_kolkata_private_engineering_engineering",
+      "affiliated_engineering_colleges_across_districts_engineering_engineering_generic"
+    ],
+    "OD|engineering|engineering_generic": [
+      "iit_bhubaneswar_engineering_engineering_generic_state_comfort_od",
+      "nit_rourkela_engineering_engineering_generic_state_comfort_od",
+      "outr_igit_government_colleges_under_bput_verify_active_names_engineering_enginee",
+      "kiit_university_example_large_private_engineering_engineering_generic_state_comf"
+    ],
+    "MP|engineering|engineering_generic": [
+      "iit_indore_engineering_engineering_generic_state_comfort_mp",
+      "manit_bhopal_engineering_engineering_generic_state_comfort_mp",
+      "iiitdm_jabalpur_engineering_engineering_generic_state_comfort_mp",
+      "uit_rgpv_davv_clusters_verify_programmes_engineering_engineering_generic_state_c",
+      "private_engineering_colleges_across_mp_engineering_engineering_generic_state_com"
+    ],
+    "MH|medicine|medicine_mbbs": [
+      "seth_gs_medical_college_and_kem_hospital_kem_medicine_medicine_mbbs_state_comfor",
+      "bj_government_medical_college_gmc_pune_cluster_verify_current_names_medicine_med",
+      "government_medical_colleges_across_divisions_marathwada_vidarbha_etc_medicine_me",
+      "deemed_universities_in_maharashtra_multiple_medicine_medicine_mbbs_state_comfort"
+    ],
+    "KA|medicine|medicine_mbbs": [
+      "bangalore_medical_college_and_research_institute_bmri_bmcri_medicine_medicine_mb",
+      "kims_hubli_karnataka_institute_of_medical_sciences_medicine_medicine_mbbs_state_",
+      "gmcs_in_mysuru_mangaluru_belagavi_verify_seat_matrix_medicine_medicine_mbbs_stat",
+      "private_medical_colleges_bengaluru_tier_2_cities_medicine_medicine_mbbs_state_co"
+    ],
+    "TN|medicine|medicine_mbbs": [
+      "madras_medical_college_mmc_medicine_medicine_mbbs_state_comfort_tn",
+      "stanley_medical_college_medicine_medicine_mbbs_state_comfort_tn",
+      "gmcs_in_madurai_coimbatore_tirunelveli_examples_medicine_medicine_mbbs_state_com",
+      "private_medical_colleges_across_tn_medicine_medicine_mbbs_state_comfort_tn"
+    ],
+    "DL|medicine|medicine_mbbs": [
+      "aiims_new_delhi_medicine_medicine_mbbs_state_comfort_dl",
+      "maulana_azad_medical_college_mamc_medicine_medicine_mbbs_state_comfort_dl",
+      "university_college_of_medical_sciences_ucms_medicine_medicine_mbbs_state_comfort",
+      "esic_medical_college_faridabad_example_ncr_medicine_medicine_mbbs_state_comfort_",
+      "private_medical_colleges_gurugram_noida_belt_medicine_medicine_mbbs_state_comfor"
+    ],
+    "UP|medicine|medicine_mbbs": [
+      "king_george_medical_university_kgmu_medicine_medicine_mbbs_state_comfort_up",
+      "institute_of_medical_sciences_bhu_varanasi_medicine_medicine_mbbs_state_comfort_",
+      "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening_medicine_medicine_m",
+      "regional_gmcs_prayagraj_meerut_kanpur_verify_list_medicine_medicine_mbbs_state_c",
+      "private_mbbs_colleges_across_up_medicine_medicine_mbbs_state_comfort_up"
+    ],
+    "RJ|medicine|medicine_mbbs": [
+      "aiims_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "sms_medical_college_jaipur_medicine_medicine_mbbs_state_comfort_rj",
+      "sn_medical_college_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "private_medical_colleges_jaipur_udaipur_belt_medicine_medicine_mbbs_state_comfor"
+    ],
+    "TS|medicine|medicine_mbbs": [
+      "osmania_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "gandhi_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "aiims_bibinagar_verify_intake_and_phases_medicine_medicine_mbbs_state_comfort_ts",
+      "kakatiya_medical_college_warangal_example_medicine_medicine_mbbs_state_comfort_t",
+      "private_medical_colleges_in_hyderabad_belt_medicine_medicine_mbbs_state_comfort_"
+    ],
+    "WB|medicine|medicine_mbbs": [
+      "medical_college_and_hospital_kolkata_medicine_medicine_mbbs_state_comfort_wb",
+      "nil_ratan_sircar_medical_college_nrs_medicine_medicine_mbbs_state_comfort_wb",
+      "cnmc_bankura_burdwan_medical_college_examples_verify_list_medicine_medicine_mbbs",
+      "private_medical_colleges_in_wb_medicine_medicine_mbbs_state_comfort_wb"
+    ],
+    "IN|architecture|architecture_generic": [
+      "iit_kharagpur_iit_roorkee_spa_delhi_examples_verify_current_intake_architecture_",
+      "nits_and_state_universities_with_coa_approved_b_arch_verify_list_yearly_architec"
+    ],
+    "UP|architecture|architecture_generic": [
+      "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
+      "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis"
+    ],
+    "MH|architecture|architecture_generic": [
+      "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture"
+    ],
+    "IN|design|design_generic": [
+      "iit_bombay_iit_guwahati_iit_hyderabad_design_programmes_via_uceed_examples_desig",
+      "national_institute_of_design_multiple_campuses_and_nift_campuses_design_design_g"
+    ],
+    "UP|design|design_generic": [
+      "nift_kannauj_design_design_generic_state_comfort_up"
+    ],
+    "MH|design|design_generic": [
+      "nift_mumbai_design_design_generic_state_comfort_mh"
+    ],
+    "IN|dentistry|dentistry_generic": [
+      "maulana_azad_institute_of_dental_sciences_delhi_government_dental_colleges_via_a",
+      "state_government_dental_colleges_across_india_verify_seat_type_dentistry_dentist"
+    ],
+    "UP|dentistry|dentistry_generic": [
+      "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor"
+    ],
+    "MH|dentistry|dentistry_generic": [
+      "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co"
+    ],
+    "IN|ayush|ayush_generic": [
+      "national_institute_of_ayurveda_jaipur_ilbs_example_health_science_adjacency_veri",
+      "government_ayurveda_homoeopathy_colleges_state_wise_lists_ayush_ayush_generic_na"
+    ],
+    "UP|ayush|ayush_generic": [
+      "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay"
+    ],
+    "MH|ayush|ayush_generic": [
+      "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus"
+    ],
+    "IN|pharmacy|pharmacy_generic": [
+      "niper_campuses_mpharm_heavy_verify_ug_if_offered_bits_pilani_pharmacy_manipal_co",
+      "well_known_pci_approved_colleges_across_states_pharmacy_pharmacy_generic_nationa"
+    ],
+    "UP|pharmacy|pharmacy_generic": [
+      "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma"
+    ],
+    "MH|pharmacy|pharmacy_generic": [
+      "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha"
+    ],
+    "IN|law|law_generic": [
+      "nlsiu_bangalore_nalsar_hyderabad_wbnujs_kolkata_examples_law_law_generic_nationa",
+      "other_nlus_and_national_private_law_schools_verify_bar_council_approval_law_law_"
+    ],
+    "UP|law|law_generic": [
+      "dr_ram_manohar_lohiya_national_law_university_lucknow_law_law_generic_state_comf",
+      "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year_law_law_generic_"
+    ],
+    "MH|law|law_generic": [
+      "government_law_college_mumbai_law_law_generic_state_comfort_mh"
+    ],
+    "IN|management|management_generic": [
+      "iim_indore_iim_rohtak_ipm_style_programmes_verify_current_list_management_manage",
+      "established_private_universities_with_ugc_recognised_management_ug_management_ma"
+    ],
+    "UP|management|management_generic": [
+      "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure_management_management_ge"
+    ],
+    "MH|management|management_generic": [
+      "nmims_mumbai_bba_related_ug_verify_test_management_management_generic_state_comf"
+    ],
+    "IN|commerce|commerce_generic": [
+      "shri_ram_college_of_commerce_srcc_hindu_college_lsr_examples_via_cuet_commerce_c",
+      "other_ugc_recognised_universities_with_strong_accounting_finance_ug_commerce_com"
+    ],
+    "UP|commerce|commerce_generic": [
+      "banaras_hindu_university_faculty_of_commerce_verify_programme_codes_commerce_com"
+    ],
+    "MH|commerce|commerce_generic": [
+      "narsee_monjee_college_of_commerce_and_economics_example_commerce_commerce_generi"
+    ],
+    "IN|science_stats|science_stats_generic": [
+      "iiser_kolkata_pune_mohali_examples_via_iiser_aptitude_test_science_stats_science",
+      "bhu_university_of_hyderabad_others_via_cuet_examples_science_stats_science_stats"
+    ],
+    "UP|science_stats|science_stats_generic": [
+      "iit_kanpur_bs_programmes_verify_jee_channel_science_stats_science_stats_generic_"
+    ],
+    "MH|science_stats|science_stats_generic": [
+      "iiser_pune_science_stats_science_stats_generic_state_comfort_mh"
+    ],
+    "IN|fashion_media|fashion_media_generic": [
+      "nift_delhi_mumbai_bangalore_examples_fashion_media_fashion_media_generic_nationa",
+      "established_private_communication_schools_verify_degree_and_campus_fashion_media"
+    ],
+    "UP|fashion_media|fashion_media_generic": [
+      "nift_kannauj_fashion_media_fashion_media_generic_state_comfort_up"
+    ],
+    "MH|fashion_media|fashion_media_generic": [
+      "nift_mumbai_fashion_media_fashion_media_generic_state_comfort_mh"
+    ],
+    "IN|humanities|humanities_generic": [
+      "st_stephen_s_college_lady_shri_ram_college_for_women_examples_verify_cuet_humani",
+      "jnu_bhu_university_of_hyderabad_examples_humanities_humanities_generic_national_"
+    ],
+    "UP|humanities|humanities_generic": [
+      "banaras_hindu_university_faculty_of_arts_social_sciences_humanities_humanities_g"
+    ],
+    "MH|humanities|humanities_generic": [
+      "university_of_mumbai_humanities_departments_affiliated_colleges_vary_humanities_"
+    ],
+    "IN|education|education_generic": [
+      "regional_institute_of_education_mysuru_bhopal_bhubaneswar_examples_education_edu",
+      "state_universities_with_ncte_recognised_b_ed_verify_per_campus_education_educati"
+    ],
+    "UP|education|education_generic": [
+      "university_of_lucknow_department_of_education_verify_intake_education_education_"
+    ],
+    "MH|education|education_generic": [
+      "tilak_college_of_education_other_mumbai_affiliated_ncte_colleges_examples_verify"
+    ],
+    "IN|veterinary|veterinary_generic": [
+      "indian_veterinary_research_institute_ivri_izatnagar_example_veterinary_veterinar",
+      "state_veterinary_colleges_across_india_verify_seat_type_and_bond_veterinary_vete"
+    ],
+    "UP|veterinary|veterinary_generic": [
+      "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up"
+    ],
+    "MH|veterinary|veterinary_generic": [
+      "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter"
+    ]
+  },
+  "by_neighbor_state_stream_course": {
+    "AP|engineering|engineering_generic": [
+      "iit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "iiit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "bits_pilani_hyderabad_campus_engineering_engineering_generic_state_comfort_ts",
+      "jntuh_affiliated_top_autonomous_colleges_examples_in_hyderabad_engineering_engin",
+      "private_engineering_colleges_across_telangana_engineering_engineering_generic_st",
+      "iit_madras_engineering_engineering_generic_state_comfort_tn",
+      "nit_tiruchirappalli_engineering_engineering_generic_state_comfort_tn",
+      "college_of_engineering_guindy_ceg_anna_university_engineering_engineering_generi",
+      "psg_college_of_technology_engineering_engineering_generic_state_comfort_tn",
+      "ssn_college_of_engineering_engineering_engineering_generic_state_comfort_tn",
+      "affiliated_engineering_colleges_under_anna_university_engineering_engineering_ge",
+      "iisc_bangalore_ug_programmes_where_applicable_engineering_engineering_generic_st",
+      "nitk_surathkal_engineering_engineering_generic_state_comfort_ka",
+      "rv_college_of_engineering_rvce_engineering_engineering_generic_state_comfort_ka",
+      "pes_university_pesce_verify_campus_engineering_engineering_generic_state_comfort",
+      "bms_college_of_engineering_engineering_engineering_generic_state_comfort_ka",
+      "vtu_affiliated_colleges_across_karnataka_engineering_engineering_generic_state_c",
+      "iit_bhubaneswar_engineering_engineering_generic_state_comfort_od",
+      "nit_rourkela_engineering_engineering_generic_state_comfort_od",
+      "outr_igit_government_colleges_under_bput_verify_active_names_engineering_enginee",
+      "kiit_university_example_large_private_engineering_engineering_generic_state_comf"
+    ],
+    "AP|medicine|medicine_mbbs": [
+      "osmania_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "gandhi_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "aiims_bibinagar_verify_intake_and_phases_medicine_medicine_mbbs_state_comfort_ts",
+      "kakatiya_medical_college_warangal_example_medicine_medicine_mbbs_state_comfort_t",
+      "private_medical_colleges_in_hyderabad_belt_medicine_medicine_mbbs_state_comfort_",
+      "madras_medical_college_mmc_medicine_medicine_mbbs_state_comfort_tn",
+      "stanley_medical_college_medicine_medicine_mbbs_state_comfort_tn",
+      "gmcs_in_madurai_coimbatore_tirunelveli_examples_medicine_medicine_mbbs_state_com",
+      "private_medical_colleges_across_tn_medicine_medicine_mbbs_state_comfort_tn",
+      "bangalore_medical_college_and_research_institute_bmri_bmcri_medicine_medicine_mb",
+      "kims_hubli_karnataka_institute_of_medical_sciences_medicine_medicine_mbbs_state_",
+      "gmcs_in_mysuru_mangaluru_belagavi_verify_seat_matrix_medicine_medicine_mbbs_stat",
+      "private_medical_colleges_bengaluru_tier_2_cities_medicine_medicine_mbbs_state_co"
+    ],
+    "AS|engineering|engineering_generic": [
+      "iit_kharagpur_engineering_engineering_generic_state_comfort_wb",
+      "jadavpur_university_faculty_of_engineering_and_technology_engineering_engineerin",
+      "iiest_shibpur_engineering_engineering_generic_state_comfort_wb",
+      "heritage_institute_of_technology_example_kolkata_private_engineering_engineering",
+      "affiliated_engineering_colleges_across_districts_engineering_engineering_generic"
+    ],
+    "AS|medicine|medicine_mbbs": [
+      "medical_college_and_hospital_kolkata_medicine_medicine_mbbs_state_comfort_wb",
+      "nil_ratan_sircar_medical_college_nrs_medicine_medicine_mbbs_state_comfort_wb",
+      "cnmc_bankura_burdwan_medical_college_examples_verify_list_medicine_medicine_mbbs",
+      "private_medical_colleges_in_wb_medicine_medicine_mbbs_state_comfort_wb"
+    ],
+    "BR|engineering|engineering_generic": [
+      "iit_kanpur_engineering_engineering_generic_state_comfort_up",
+      "iit_bhu_varanasi_engineering_engineering_generic_state_comfort_up",
+      "mnnit_allahabad_prayagraj_engineering_engineering_generic_state_comfort_up",
+      "hbtu_kanpur_harcourt_butler_technical_university_engineering_engineering_generic",
+      "kiet_group_of_institutions_example_private_engineering_engineering_generic_state",
+      "aktu_affiliated_colleges_ncr_lucknow_belt_engineering_engineering_generic_state_",
+      "iit_kharagpur_engineering_engineering_generic_state_comfort_wb",
+      "jadavpur_university_faculty_of_engineering_and_technology_engineering_engineerin",
+      "iiest_shibpur_engineering_engineering_generic_state_comfort_wb",
+      "heritage_institute_of_technology_example_kolkata_private_engineering_engineering",
+      "affiliated_engineering_colleges_across_districts_engineering_engineering_generic"
+    ],
+    "BR|medicine|medicine_mbbs": [
+      "king_george_medical_university_kgmu_medicine_medicine_mbbs_state_comfort_up",
+      "institute_of_medical_sciences_bhu_varanasi_medicine_medicine_mbbs_state_comfort_",
+      "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening_medicine_medicine_m",
+      "regional_gmcs_prayagraj_meerut_kanpur_verify_list_medicine_medicine_mbbs_state_c",
+      "private_mbbs_colleges_across_up_medicine_medicine_mbbs_state_comfort_up",
+      "medical_college_and_hospital_kolkata_medicine_medicine_mbbs_state_comfort_wb",
+      "nil_ratan_sircar_medical_college_nrs_medicine_medicine_mbbs_state_comfort_wb",
+      "cnmc_bankura_burdwan_medical_college_examples_verify_list_medicine_medicine_mbbs",
+      "private_medical_colleges_in_wb_medicine_medicine_mbbs_state_comfort_wb"
+    ],
+    "BR|architecture|architecture_generic": [
+      "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
+      "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis"
+    ],
+    "BR|design|design_generic": [
+      "nift_kannauj_design_design_generic_state_comfort_up"
+    ],
+    "BR|dentistry|dentistry_generic": [
+      "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor"
+    ],
+    "BR|ayush|ayush_generic": [
+      "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay"
+    ],
+    "BR|pharmacy|pharmacy_generic": [
+      "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma"
+    ],
+    "BR|law|law_generic": [
+      "dr_ram_manohar_lohiya_national_law_university_lucknow_law_law_generic_state_comf",
+      "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year_law_law_generic_"
+    ],
+    "BR|management|management_generic": [
+      "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure_management_management_ge"
+    ],
+    "BR|commerce|commerce_generic": [
+      "banaras_hindu_university_faculty_of_commerce_verify_programme_codes_commerce_com"
+    ],
+    "BR|science_stats|science_stats_generic": [
+      "iit_kanpur_bs_programmes_verify_jee_channel_science_stats_science_stats_generic_"
+    ],
+    "BR|fashion_media|fashion_media_generic": [
+      "nift_kannauj_fashion_media_fashion_media_generic_state_comfort_up"
+    ],
+    "BR|humanities|humanities_generic": [
+      "banaras_hindu_university_faculty_of_arts_social_sciences_humanities_humanities_g"
+    ],
+    "BR|education|education_generic": [
+      "university_of_lucknow_department_of_education_verify_intake_education_education_"
+    ],
+    "BR|veterinary|veterinary_generic": [
+      "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up"
+    ],
+    "CG|engineering|engineering_generic": [
+      "iit_indore_engineering_engineering_generic_state_comfort_mp",
+      "manit_bhopal_engineering_engineering_generic_state_comfort_mp",
+      "iiitdm_jabalpur_engineering_engineering_generic_state_comfort_mp",
+      "uit_rgpv_davv_clusters_verify_programmes_engineering_engineering_generic_state_c",
+      "private_engineering_colleges_across_mp_engineering_engineering_generic_state_com",
+      "iit_bombay_engineering_engineering_generic_state_comfort_mh",
+      "ict_mumbai_institute_of_chemical_technology_engineering_engineering_generic_stat",
+      "vnit_nagpur_engineering_engineering_generic_state_comfort_mh",
+      "coep_technological_university_coep_engineering_engineering_generic_state_comfort",
+      "vjti_mumbai_engineering_engineering_generic_state_comfort_mh",
+      "walchand_college_of_engineering_wce_engineering_engineering_generic_state_comfor",
+      "sppu_affiliated_private_universities_in_pune_mumbai_corridor_engineering_enginee",
+      "iit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "iiit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "bits_pilani_hyderabad_campus_engineering_engineering_generic_state_comfort_ts",
+      "jntuh_affiliated_top_autonomous_colleges_examples_in_hyderabad_engineering_engin",
+      "private_engineering_colleges_across_telangana_engineering_engineering_generic_st",
+      "iit_kanpur_engineering_engineering_generic_state_comfort_up",
+      "iit_bhu_varanasi_engineering_engineering_generic_state_comfort_up",
+      "mnnit_allahabad_prayagraj_engineering_engineering_generic_state_comfort_up",
+      "hbtu_kanpur_harcourt_butler_technical_university_engineering_engineering_generic",
+      "kiet_group_of_institutions_example_private_engineering_engineering_generic_state",
+      "aktu_affiliated_colleges_ncr_lucknow_belt_engineering_engineering_generic_state_",
+      "iit_bhubaneswar_engineering_engineering_generic_state_comfort_od",
+      "nit_rourkela_engineering_engineering_generic_state_comfort_od",
+      "outr_igit_government_colleges_under_bput_verify_active_names_engineering_enginee",
+      "kiit_university_example_large_private_engineering_engineering_generic_state_comf"
+    ],
+    "CG|medicine|medicine_mbbs": [
+      "seth_gs_medical_college_and_kem_hospital_kem_medicine_medicine_mbbs_state_comfor",
+      "bj_government_medical_college_gmc_pune_cluster_verify_current_names_medicine_med",
+      "government_medical_colleges_across_divisions_marathwada_vidarbha_etc_medicine_me",
+      "deemed_universities_in_maharashtra_multiple_medicine_medicine_mbbs_state_comfort",
+      "osmania_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "gandhi_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "aiims_bibinagar_verify_intake_and_phases_medicine_medicine_mbbs_state_comfort_ts",
+      "kakatiya_medical_college_warangal_example_medicine_medicine_mbbs_state_comfort_t",
+      "private_medical_colleges_in_hyderabad_belt_medicine_medicine_mbbs_state_comfort_",
+      "king_george_medical_university_kgmu_medicine_medicine_mbbs_state_comfort_up",
+      "institute_of_medical_sciences_bhu_varanasi_medicine_medicine_mbbs_state_comfort_",
+      "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening_medicine_medicine_m",
+      "regional_gmcs_prayagraj_meerut_kanpur_verify_list_medicine_medicine_mbbs_state_c",
+      "private_mbbs_colleges_across_up_medicine_medicine_mbbs_state_comfort_up"
+    ],
+    "CG|architecture|architecture_generic": [
+      "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture",
+      "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
+      "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis"
+    ],
+    "CG|design|design_generic": [
+      "nift_mumbai_design_design_generic_state_comfort_mh",
+      "nift_kannauj_design_design_generic_state_comfort_up"
+    ],
+    "CG|dentistry|dentistry_generic": [
+      "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co",
+      "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor"
+    ],
+    "CG|ayush|ayush_generic": [
+      "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus",
+      "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay"
+    ],
+    "CG|pharmacy|pharmacy_generic": [
+      "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha",
+      "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma"
+    ],
+    "CG|law|law_generic": [
+      "government_law_college_mumbai_law_law_generic_state_comfort_mh",
+      "dr_ram_manohar_lohiya_national_law_university_lucknow_law_law_generic_state_comf",
+      "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year_law_law_generic_"
+    ],
+    "CG|management|management_generic": [
+      "nmims_mumbai_bba_related_ug_verify_test_management_management_generic_state_comf",
+      "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure_management_management_ge"
+    ],
+    "CG|commerce|commerce_generic": [
+      "narsee_monjee_college_of_commerce_and_economics_example_commerce_commerce_generi",
+      "banaras_hindu_university_faculty_of_commerce_verify_programme_codes_commerce_com"
+    ],
+    "CG|science_stats|science_stats_generic": [
+      "iiser_pune_science_stats_science_stats_generic_state_comfort_mh",
+      "iit_kanpur_bs_programmes_verify_jee_channel_science_stats_science_stats_generic_"
+    ],
+    "CG|fashion_media|fashion_media_generic": [
+      "nift_mumbai_fashion_media_fashion_media_generic_state_comfort_mh",
+      "nift_kannauj_fashion_media_fashion_media_generic_state_comfort_up"
+    ],
+    "CG|humanities|humanities_generic": [
+      "university_of_mumbai_humanities_departments_affiliated_colleges_vary_humanities_",
+      "banaras_hindu_university_faculty_of_arts_social_sciences_humanities_humanities_g"
+    ],
+    "CG|education|education_generic": [
+      "tilak_college_of_education_other_mumbai_affiliated_ncte_colleges_examples_verify",
+      "university_of_lucknow_department_of_education_verify_intake_education_education_"
+    ],
+    "CG|veterinary|veterinary_generic": [
+      "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter",
+      "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up"
+    ],
+    "GA|engineering|engineering_generic": [
+      "iit_bombay_engineering_engineering_generic_state_comfort_mh",
+      "ict_mumbai_institute_of_chemical_technology_engineering_engineering_generic_stat",
+      "vnit_nagpur_engineering_engineering_generic_state_comfort_mh",
+      "coep_technological_university_coep_engineering_engineering_generic_state_comfort",
+      "vjti_mumbai_engineering_engineering_generic_state_comfort_mh",
+      "walchand_college_of_engineering_wce_engineering_engineering_generic_state_comfor",
+      "sppu_affiliated_private_universities_in_pune_mumbai_corridor_engineering_enginee",
+      "iisc_bangalore_ug_programmes_where_applicable_engineering_engineering_generic_st",
+      "nitk_surathkal_engineering_engineering_generic_state_comfort_ka",
+      "rv_college_of_engineering_rvce_engineering_engineering_generic_state_comfort_ka",
+      "pes_university_pesce_verify_campus_engineering_engineering_generic_state_comfort",
+      "bms_college_of_engineering_engineering_engineering_generic_state_comfort_ka",
+      "vtu_affiliated_colleges_across_karnataka_engineering_engineering_generic_state_c"
+    ],
+    "GA|medicine|medicine_mbbs": [
+      "seth_gs_medical_college_and_kem_hospital_kem_medicine_medicine_mbbs_state_comfor",
+      "bj_government_medical_college_gmc_pune_cluster_verify_current_names_medicine_med",
+      "government_medical_colleges_across_divisions_marathwada_vidarbha_etc_medicine_me",
+      "deemed_universities_in_maharashtra_multiple_medicine_medicine_mbbs_state_comfort",
+      "bangalore_medical_college_and_research_institute_bmri_bmcri_medicine_medicine_mb",
+      "kims_hubli_karnataka_institute_of_medical_sciences_medicine_medicine_mbbs_state_",
+      "gmcs_in_mysuru_mangaluru_belagavi_verify_seat_matrix_medicine_medicine_mbbs_stat",
+      "private_medical_colleges_bengaluru_tier_2_cities_medicine_medicine_mbbs_state_co"
+    ],
+    "GA|architecture|architecture_generic": [
+      "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture"
+    ],
+    "GA|design|design_generic": [
+      "nift_mumbai_design_design_generic_state_comfort_mh"
+    ],
+    "GA|dentistry|dentistry_generic": [
+      "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co"
+    ],
+    "GA|ayush|ayush_generic": [
+      "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus"
+    ],
+    "GA|pharmacy|pharmacy_generic": [
+      "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha"
+    ],
+    "GA|law|law_generic": [
+      "government_law_college_mumbai_law_law_generic_state_comfort_mh"
+    ],
+    "GA|management|management_generic": [
+      "nmims_mumbai_bba_related_ug_verify_test_management_management_generic_state_comf"
+    ],
+    "GA|commerce|commerce_generic": [
+      "narsee_monjee_college_of_commerce_and_economics_example_commerce_commerce_generi"
+    ],
+    "GA|science_stats|science_stats_generic": [
+      "iiser_pune_science_stats_science_stats_generic_state_comfort_mh"
+    ],
+    "GA|fashion_media|fashion_media_generic": [
+      "nift_mumbai_fashion_media_fashion_media_generic_state_comfort_mh"
+    ],
+    "GA|humanities|humanities_generic": [
+      "university_of_mumbai_humanities_departments_affiliated_colleges_vary_humanities_"
+    ],
+    "GA|education|education_generic": [
+      "tilak_college_of_education_other_mumbai_affiliated_ncte_colleges_examples_verify"
+    ],
+    "GA|veterinary|veterinary_generic": [
+      "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter"
+    ],
+    "GJ|engineering|engineering_generic": [
+      "iit_bombay_engineering_engineering_generic_state_comfort_mh",
+      "ict_mumbai_institute_of_chemical_technology_engineering_engineering_generic_stat",
+      "vnit_nagpur_engineering_engineering_generic_state_comfort_mh",
+      "coep_technological_university_coep_engineering_engineering_generic_state_comfort",
+      "vjti_mumbai_engineering_engineering_generic_state_comfort_mh",
+      "walchand_college_of_engineering_wce_engineering_engineering_generic_state_comfor",
+      "sppu_affiliated_private_universities_in_pune_mumbai_corridor_engineering_enginee",
+      "iit_indore_engineering_engineering_generic_state_comfort_mp",
+      "manit_bhopal_engineering_engineering_generic_state_comfort_mp",
+      "iiitdm_jabalpur_engineering_engineering_generic_state_comfort_mp",
+      "uit_rgpv_davv_clusters_verify_programmes_engineering_engineering_generic_state_c",
+      "private_engineering_colleges_across_mp_engineering_engineering_generic_state_com",
+      "iit_jodhpur_engineering_engineering_generic_state_comfort_rj",
+      "mnit_jaipur_engineering_engineering_generic_state_comfort_rj",
+      "bits_pilani_pilani_campus_engineering_engineering_generic_state_comfort_rj",
+      "rtu_rajasthan_technical_university_main_key_affiliated_colleges_engineering_engi",
+      "aicte_approved_private_colleges_jaipur_udaipur_jodhpur_engineering_engineering_g"
+    ],
+    "GJ|medicine|medicine_mbbs": [
+      "seth_gs_medical_college_and_kem_hospital_kem_medicine_medicine_mbbs_state_comfor",
+      "bj_government_medical_college_gmc_pune_cluster_verify_current_names_medicine_med",
+      "government_medical_colleges_across_divisions_marathwada_vidarbha_etc_medicine_me",
+      "deemed_universities_in_maharashtra_multiple_medicine_medicine_mbbs_state_comfort",
+      "aiims_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "sms_medical_college_jaipur_medicine_medicine_mbbs_state_comfort_rj",
+      "sn_medical_college_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "private_medical_colleges_jaipur_udaipur_belt_medicine_medicine_mbbs_state_comfor"
+    ],
+    "GJ|architecture|architecture_generic": [
+      "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture"
+    ],
+    "GJ|design|design_generic": [
+      "nift_mumbai_design_design_generic_state_comfort_mh"
+    ],
+    "GJ|dentistry|dentistry_generic": [
+      "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co"
+    ],
+    "GJ|ayush|ayush_generic": [
+      "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus"
+    ],
+    "GJ|pharmacy|pharmacy_generic": [
+      "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha"
+    ],
+    "GJ|law|law_generic": [
+      "government_law_college_mumbai_law_law_generic_state_comfort_mh"
+    ],
+    "GJ|management|management_generic": [
+      "nmims_mumbai_bba_related_ug_verify_test_management_management_generic_state_comf"
+    ],
+    "GJ|commerce|commerce_generic": [
+      "narsee_monjee_college_of_commerce_and_economics_example_commerce_commerce_generi"
+    ],
+    "GJ|science_stats|science_stats_generic": [
+      "iiser_pune_science_stats_science_stats_generic_state_comfort_mh"
+    ],
+    "GJ|fashion_media|fashion_media_generic": [
+      "nift_mumbai_fashion_media_fashion_media_generic_state_comfort_mh"
+    ],
+    "GJ|humanities|humanities_generic": [
+      "university_of_mumbai_humanities_departments_affiliated_colleges_vary_humanities_"
+    ],
+    "GJ|education|education_generic": [
+      "tilak_college_of_education_other_mumbai_affiliated_ncte_colleges_examples_verify"
+    ],
+    "GJ|veterinary|veterinary_generic": [
+      "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter"
+    ],
+    "HR|engineering|engineering_generic": [
+      "iit_jodhpur_engineering_engineering_generic_state_comfort_rj",
+      "mnit_jaipur_engineering_engineering_generic_state_comfort_rj",
+      "bits_pilani_pilani_campus_engineering_engineering_generic_state_comfort_rj",
+      "rtu_rajasthan_technical_university_main_key_affiliated_colleges_engineering_engi",
+      "aicte_approved_private_colleges_jaipur_udaipur_jodhpur_engineering_engineering_g",
+      "iit_kanpur_engineering_engineering_generic_state_comfort_up",
+      "iit_bhu_varanasi_engineering_engineering_generic_state_comfort_up",
+      "mnnit_allahabad_prayagraj_engineering_engineering_generic_state_comfort_up",
+      "hbtu_kanpur_harcourt_butler_technical_university_engineering_engineering_generic",
+      "kiet_group_of_institutions_example_private_engineering_engineering_generic_state",
+      "aktu_affiliated_colleges_ncr_lucknow_belt_engineering_engineering_generic_state_",
+      "dtu_nsut_iiit_d_examples_engineering_engineering_generic_state_comfort_dl",
+      "nit_delhi_engineering_engineering_generic_state_comfort_dl",
+      "established_private_universities_in_ncr_engineering_engineering_generic_state_co"
+    ],
+    "HR|medicine|medicine_mbbs": [
+      "aiims_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "sms_medical_college_jaipur_medicine_medicine_mbbs_state_comfort_rj",
+      "sn_medical_college_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "private_medical_colleges_jaipur_udaipur_belt_medicine_medicine_mbbs_state_comfor",
+      "king_george_medical_university_kgmu_medicine_medicine_mbbs_state_comfort_up",
+      "institute_of_medical_sciences_bhu_varanasi_medicine_medicine_mbbs_state_comfort_",
+      "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening_medicine_medicine_m",
+      "regional_gmcs_prayagraj_meerut_kanpur_verify_list_medicine_medicine_mbbs_state_c",
+      "private_mbbs_colleges_across_up_medicine_medicine_mbbs_state_comfort_up",
+      "aiims_new_delhi_medicine_medicine_mbbs_state_comfort_dl",
+      "maulana_azad_medical_college_mamc_medicine_medicine_mbbs_state_comfort_dl",
+      "university_college_of_medical_sciences_ucms_medicine_medicine_mbbs_state_comfort",
+      "esic_medical_college_faridabad_example_ncr_medicine_medicine_mbbs_state_comfort_",
+      "private_medical_colleges_gurugram_noida_belt_medicine_medicine_mbbs_state_comfor"
+    ],
+    "HR|architecture|architecture_generic": [
+      "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
+      "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis"
+    ],
+    "HR|design|design_generic": [
+      "nift_kannauj_design_design_generic_state_comfort_up"
+    ],
+    "HR|dentistry|dentistry_generic": [
+      "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor"
+    ],
+    "HR|ayush|ayush_generic": [
+      "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay"
+    ],
+    "HR|pharmacy|pharmacy_generic": [
+      "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma"
+    ],
+    "HR|law|law_generic": [
+      "dr_ram_manohar_lohiya_national_law_university_lucknow_law_law_generic_state_comf",
+      "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year_law_law_generic_"
+    ],
+    "HR|management|management_generic": [
+      "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure_management_management_ge"
+    ],
+    "HR|commerce|commerce_generic": [
+      "banaras_hindu_university_faculty_of_commerce_verify_programme_codes_commerce_com"
+    ],
+    "HR|science_stats|science_stats_generic": [
+      "iit_kanpur_bs_programmes_verify_jee_channel_science_stats_science_stats_generic_"
+    ],
+    "HR|fashion_media|fashion_media_generic": [
+      "nift_kannauj_fashion_media_fashion_media_generic_state_comfort_up"
+    ],
+    "HR|humanities|humanities_generic": [
+      "banaras_hindu_university_faculty_of_arts_social_sciences_humanities_humanities_g"
+    ],
+    "HR|education|education_generic": [
+      "university_of_lucknow_department_of_education_verify_intake_education_education_"
+    ],
+    "HR|veterinary|veterinary_generic": [
+      "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up"
+    ],
+    "JH|engineering|engineering_generic": [
+      "nit_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iiit_naya_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iit_bhilai_engineering_engineering_generic_state_comfort_cg",
+      "bit_durg_ssipmt_engineering_engineering_generic_state_comfort_cg",
+      "government_engineering_college_raipur_example_state_college_engineering_engineer",
+      "shri_shankaracharya_technical_campus_sstc_bhilai_engineering_engineering_generic",
+      "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify_engineering_e",
+      "other_aicte_affiliated_colleges_in_cg_engineering_engineering_generic_state_comf",
+      "dr_c_v_raman_university_bilaspur_engineering_engineering_generic_state_comfort",
+      "iit_bhubaneswar_engineering_engineering_generic_state_comfort_od",
+      "nit_rourkela_engineering_engineering_generic_state_comfort_od",
+      "outr_igit_government_colleges_under_bput_verify_active_names_engineering_enginee",
+      "kiit_university_example_large_private_engineering_engineering_generic_state_comf",
+      "iit_kharagpur_engineering_engineering_generic_state_comfort_wb",
+      "jadavpur_university_faculty_of_engineering_and_technology_engineering_engineerin",
+      "iiest_shibpur_engineering_engineering_generic_state_comfort_wb",
+      "heritage_institute_of_technology_example_kolkata_private_engineering_engineering",
+      "affiliated_engineering_colleges_across_districts_engineering_engineering_generic",
+      "iit_kanpur_engineering_engineering_generic_state_comfort_up",
+      "iit_bhu_varanasi_engineering_engineering_generic_state_comfort_up",
+      "mnnit_allahabad_prayagraj_engineering_engineering_generic_state_comfort_up",
+      "hbtu_kanpur_harcourt_butler_technical_university_engineering_engineering_generic",
+      "kiet_group_of_institutions_example_private_engineering_engineering_generic_state",
+      "aktu_affiliated_colleges_ncr_lucknow_belt_engineering_engineering_generic_state_",
+      "iit_indore_engineering_engineering_generic_state_comfort_mp",
+      "manit_bhopal_engineering_engineering_generic_state_comfort_mp",
+      "iiitdm_jabalpur_engineering_engineering_generic_state_comfort_mp",
+      "uit_rgpv_davv_clusters_verify_programmes_engineering_engineering_generic_state_c",
+      "private_engineering_colleges_across_mp_engineering_engineering_generic_state_com"
+    ],
+    "JH|medicine|medicine_mbbs": [
+      "aiims_raipur_medicine_medicine_mbbs_state_comfort_cg",
+      "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
+      "gmc_raipur_other_cg_gmcs_as_per_state_list_medicine_medicine_mbbs_state_comfort_",
+      "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
+      "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
+      "private_mbbs_colleges_in_cg_verify_mcc_state_medicine_medicine_mbbs_state_comfor",
+      "medical_college_and_hospital_kolkata_medicine_medicine_mbbs_state_comfort_wb",
+      "nil_ratan_sircar_medical_college_nrs_medicine_medicine_mbbs_state_comfort_wb",
+      "cnmc_bankura_burdwan_medical_college_examples_verify_list_medicine_medicine_mbbs",
+      "private_medical_colleges_in_wb_medicine_medicine_mbbs_state_comfort_wb",
+      "king_george_medical_university_kgmu_medicine_medicine_mbbs_state_comfort_up",
+      "institute_of_medical_sciences_bhu_varanasi_medicine_medicine_mbbs_state_comfort_",
+      "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening_medicine_medicine_m",
+      "regional_gmcs_prayagraj_meerut_kanpur_verify_list_medicine_medicine_mbbs_state_c",
+      "private_mbbs_colleges_across_up_medicine_medicine_mbbs_state_comfort_up"
+    ],
+    "JH|architecture|architecture_generic": [
+      "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
+      "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis"
+    ],
+    "JH|design|design_generic": [
+      "nift_kannauj_design_design_generic_state_comfort_up"
+    ],
+    "JH|dentistry|dentistry_generic": [
+      "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor"
+    ],
+    "JH|ayush|ayush_generic": [
+      "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay"
+    ],
+    "JH|pharmacy|pharmacy_generic": [
+      "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma"
+    ],
+    "JH|law|law_generic": [
+      "dr_ram_manohar_lohiya_national_law_university_lucknow_law_law_generic_state_comf",
+      "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year_law_law_generic_"
+    ],
+    "JH|management|management_generic": [
+      "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure_management_management_ge"
+    ],
+    "JH|commerce|commerce_generic": [
+      "banaras_hindu_university_faculty_of_commerce_verify_programme_codes_commerce_com"
+    ],
+    "JH|science_stats|science_stats_generic": [
+      "iit_kanpur_bs_programmes_verify_jee_channel_science_stats_science_stats_generic_"
+    ],
+    "JH|fashion_media|fashion_media_generic": [
+      "nift_kannauj_fashion_media_fashion_media_generic_state_comfort_up"
+    ],
+    "JH|humanities|humanities_generic": [
+      "banaras_hindu_university_faculty_of_arts_social_sciences_humanities_humanities_g"
+    ],
+    "JH|education|education_generic": [
+      "university_of_lucknow_department_of_education_verify_intake_education_education_"
+    ],
+    "JH|veterinary|veterinary_generic": [
+      "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up"
+    ],
+    "KA|engineering|engineering_generic": [
+      "iit_madras_engineering_engineering_generic_state_comfort_tn",
+      "nit_tiruchirappalli_engineering_engineering_generic_state_comfort_tn",
+      "college_of_engineering_guindy_ceg_anna_university_engineering_engineering_generi",
+      "psg_college_of_technology_engineering_engineering_generic_state_comfort_tn",
+      "ssn_college_of_engineering_engineering_engineering_generic_state_comfort_tn",
+      "affiliated_engineering_colleges_under_anna_university_engineering_engineering_ge",
+      "iit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "iiit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "bits_pilani_hyderabad_campus_engineering_engineering_generic_state_comfort_ts",
+      "jntuh_affiliated_top_autonomous_colleges_examples_in_hyderabad_engineering_engin",
+      "private_engineering_colleges_across_telangana_engineering_engineering_generic_st",
+      "iit_bombay_engineering_engineering_generic_state_comfort_mh",
+      "ict_mumbai_institute_of_chemical_technology_engineering_engineering_generic_stat",
+      "vnit_nagpur_engineering_engineering_generic_state_comfort_mh",
+      "coep_technological_university_coep_engineering_engineering_generic_state_comfort",
+      "vjti_mumbai_engineering_engineering_generic_state_comfort_mh",
+      "walchand_college_of_engineering_wce_engineering_engineering_generic_state_comfor",
+      "sppu_affiliated_private_universities_in_pune_mumbai_corridor_engineering_enginee"
+    ],
+    "KA|medicine|medicine_mbbs": [
+      "madras_medical_college_mmc_medicine_medicine_mbbs_state_comfort_tn",
+      "stanley_medical_college_medicine_medicine_mbbs_state_comfort_tn",
+      "gmcs_in_madurai_coimbatore_tirunelveli_examples_medicine_medicine_mbbs_state_com",
+      "private_medical_colleges_across_tn_medicine_medicine_mbbs_state_comfort_tn",
+      "osmania_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "gandhi_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "aiims_bibinagar_verify_intake_and_phases_medicine_medicine_mbbs_state_comfort_ts",
+      "kakatiya_medical_college_warangal_example_medicine_medicine_mbbs_state_comfort_t",
+      "private_medical_colleges_in_hyderabad_belt_medicine_medicine_mbbs_state_comfort_",
+      "seth_gs_medical_college_and_kem_hospital_kem_medicine_medicine_mbbs_state_comfor",
+      "bj_government_medical_college_gmc_pune_cluster_verify_current_names_medicine_med",
+      "government_medical_colleges_across_divisions_marathwada_vidarbha_etc_medicine_me",
+      "deemed_universities_in_maharashtra_multiple_medicine_medicine_mbbs_state_comfort"
+    ],
+    "KA|architecture|architecture_generic": [
+      "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture"
+    ],
+    "KA|design|design_generic": [
+      "nift_mumbai_design_design_generic_state_comfort_mh"
+    ],
+    "KA|dentistry|dentistry_generic": [
+      "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co"
+    ],
+    "KA|ayush|ayush_generic": [
+      "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus"
+    ],
+    "KA|pharmacy|pharmacy_generic": [
+      "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha"
+    ],
+    "KA|law|law_generic": [
+      "government_law_college_mumbai_law_law_generic_state_comfort_mh"
+    ],
+    "KA|management|management_generic": [
+      "nmims_mumbai_bba_related_ug_verify_test_management_management_generic_state_comf"
+    ],
+    "KA|commerce|commerce_generic": [
+      "narsee_monjee_college_of_commerce_and_economics_example_commerce_commerce_generi"
+    ],
+    "KA|science_stats|science_stats_generic": [
+      "iiser_pune_science_stats_science_stats_generic_state_comfort_mh"
+    ],
+    "KA|fashion_media|fashion_media_generic": [
+      "nift_mumbai_fashion_media_fashion_media_generic_state_comfort_mh"
+    ],
+    "KA|humanities|humanities_generic": [
+      "university_of_mumbai_humanities_departments_affiliated_colleges_vary_humanities_"
+    ],
+    "KA|education|education_generic": [
+      "tilak_college_of_education_other_mumbai_affiliated_ncte_colleges_examples_verify"
+    ],
+    "KA|veterinary|veterinary_generic": [
+      "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter"
+    ],
+    "KL|engineering|engineering_generic": [
+      "iit_madras_engineering_engineering_generic_state_comfort_tn",
+      "nit_tiruchirappalli_engineering_engineering_generic_state_comfort_tn",
+      "college_of_engineering_guindy_ceg_anna_university_engineering_engineering_generi",
+      "psg_college_of_technology_engineering_engineering_generic_state_comfort_tn",
+      "ssn_college_of_engineering_engineering_engineering_generic_state_comfort_tn",
+      "affiliated_engineering_colleges_under_anna_university_engineering_engineering_ge",
+      "iisc_bangalore_ug_programmes_where_applicable_engineering_engineering_generic_st",
+      "nitk_surathkal_engineering_engineering_generic_state_comfort_ka",
+      "rv_college_of_engineering_rvce_engineering_engineering_generic_state_comfort_ka",
+      "pes_university_pesce_verify_campus_engineering_engineering_generic_state_comfort",
+      "bms_college_of_engineering_engineering_engineering_generic_state_comfort_ka",
+      "vtu_affiliated_colleges_across_karnataka_engineering_engineering_generic_state_c"
+    ],
+    "KL|medicine|medicine_mbbs": [
+      "madras_medical_college_mmc_medicine_medicine_mbbs_state_comfort_tn",
+      "stanley_medical_college_medicine_medicine_mbbs_state_comfort_tn",
+      "gmcs_in_madurai_coimbatore_tirunelveli_examples_medicine_medicine_mbbs_state_com",
+      "private_medical_colleges_across_tn_medicine_medicine_mbbs_state_comfort_tn",
+      "bangalore_medical_college_and_research_institute_bmri_bmcri_medicine_medicine_mb",
+      "kims_hubli_karnataka_institute_of_medical_sciences_medicine_medicine_mbbs_state_",
+      "gmcs_in_mysuru_mangaluru_belagavi_verify_seat_matrix_medicine_medicine_mbbs_stat",
+      "private_medical_colleges_bengaluru_tier_2_cities_medicine_medicine_mbbs_state_co"
+    ],
+    "MP|engineering|engineering_generic": [
+      "iit_jodhpur_engineering_engineering_generic_state_comfort_rj",
+      "mnit_jaipur_engineering_engineering_generic_state_comfort_rj",
+      "bits_pilani_pilani_campus_engineering_engineering_generic_state_comfort_rj",
+      "rtu_rajasthan_technical_university_main_key_affiliated_colleges_engineering_engi",
+      "aicte_approved_private_colleges_jaipur_udaipur_jodhpur_engineering_engineering_g",
+      "iit_bombay_engineering_engineering_generic_state_comfort_mh",
+      "ict_mumbai_institute_of_chemical_technology_engineering_engineering_generic_stat",
+      "vnit_nagpur_engineering_engineering_generic_state_comfort_mh",
+      "coep_technological_university_coep_engineering_engineering_generic_state_comfort",
+      "vjti_mumbai_engineering_engineering_generic_state_comfort_mh",
+      "walchand_college_of_engineering_wce_engineering_engineering_generic_state_comfor",
+      "sppu_affiliated_private_universities_in_pune_mumbai_corridor_engineering_enginee",
+      "nit_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iiit_naya_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iit_bhilai_engineering_engineering_generic_state_comfort_cg",
+      "bit_durg_ssipmt_engineering_engineering_generic_state_comfort_cg",
+      "government_engineering_college_raipur_example_state_college_engineering_engineer",
+      "shri_shankaracharya_technical_campus_sstc_bhilai_engineering_engineering_generic",
+      "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify_engineering_e",
+      "other_aicte_affiliated_colleges_in_cg_engineering_engineering_generic_state_comf",
+      "dr_c_v_raman_university_bilaspur_engineering_engineering_generic_state_comfort",
+      "iit_kanpur_engineering_engineering_generic_state_comfort_up",
+      "iit_bhu_varanasi_engineering_engineering_generic_state_comfort_up",
+      "mnnit_allahabad_prayagraj_engineering_engineering_generic_state_comfort_up",
+      "hbtu_kanpur_harcourt_butler_technical_university_engineering_engineering_generic",
+      "kiet_group_of_institutions_example_private_engineering_engineering_generic_state",
+      "aktu_affiliated_colleges_ncr_lucknow_belt_engineering_engineering_generic_state_"
+    ],
+    "MP|medicine|medicine_mbbs": [
+      "aiims_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "sms_medical_college_jaipur_medicine_medicine_mbbs_state_comfort_rj",
+      "sn_medical_college_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "private_medical_colleges_jaipur_udaipur_belt_medicine_medicine_mbbs_state_comfor",
+      "seth_gs_medical_college_and_kem_hospital_kem_medicine_medicine_mbbs_state_comfor",
+      "bj_government_medical_college_gmc_pune_cluster_verify_current_names_medicine_med",
+      "government_medical_colleges_across_divisions_marathwada_vidarbha_etc_medicine_me",
+      "deemed_universities_in_maharashtra_multiple_medicine_medicine_mbbs_state_comfort",
+      "aiims_raipur_medicine_medicine_mbbs_state_comfort_cg",
+      "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
+      "gmc_raipur_other_cg_gmcs_as_per_state_list_medicine_medicine_mbbs_state_comfort_",
+      "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
+      "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
+      "private_mbbs_colleges_in_cg_verify_mcc_state_medicine_medicine_mbbs_state_comfor",
+      "king_george_medical_university_kgmu_medicine_medicine_mbbs_state_comfort_up",
+      "institute_of_medical_sciences_bhu_varanasi_medicine_medicine_mbbs_state_comfort_",
+      "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening_medicine_medicine_m",
+      "regional_gmcs_prayagraj_meerut_kanpur_verify_list_medicine_medicine_mbbs_state_c",
+      "private_mbbs_colleges_across_up_medicine_medicine_mbbs_state_comfort_up"
+    ],
+    "MP|architecture|architecture_generic": [
+      "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture",
+      "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
+      "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis"
+    ],
+    "MP|design|design_generic": [
+      "nift_mumbai_design_design_generic_state_comfort_mh",
+      "nift_kannauj_design_design_generic_state_comfort_up"
+    ],
+    "MP|dentistry|dentistry_generic": [
+      "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co",
+      "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor"
+    ],
+    "MP|ayush|ayush_generic": [
+      "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus",
+      "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay"
+    ],
+    "MP|pharmacy|pharmacy_generic": [
+      "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha",
+      "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma"
+    ],
+    "MP|law|law_generic": [
+      "government_law_college_mumbai_law_law_generic_state_comfort_mh",
+      "dr_ram_manohar_lohiya_national_law_university_lucknow_law_law_generic_state_comf",
+      "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year_law_law_generic_"
+    ],
+    "MP|management|management_generic": [
+      "nmims_mumbai_bba_related_ug_verify_test_management_management_generic_state_comf",
+      "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure_management_management_ge"
+    ],
+    "MP|commerce|commerce_generic": [
+      "narsee_monjee_college_of_commerce_and_economics_example_commerce_commerce_generi",
+      "banaras_hindu_university_faculty_of_commerce_verify_programme_codes_commerce_com"
+    ],
+    "MP|science_stats|science_stats_generic": [
+      "iiser_pune_science_stats_science_stats_generic_state_comfort_mh",
+      "iit_kanpur_bs_programmes_verify_jee_channel_science_stats_science_stats_generic_"
+    ],
+    "MP|fashion_media|fashion_media_generic": [
+      "nift_mumbai_fashion_media_fashion_media_generic_state_comfort_mh",
+      "nift_kannauj_fashion_media_fashion_media_generic_state_comfort_up"
+    ],
+    "MP|humanities|humanities_generic": [
+      "university_of_mumbai_humanities_departments_affiliated_colleges_vary_humanities_",
+      "banaras_hindu_university_faculty_of_arts_social_sciences_humanities_humanities_g"
+    ],
+    "MP|education|education_generic": [
+      "tilak_college_of_education_other_mumbai_affiliated_ncte_colleges_examples_verify",
+      "university_of_lucknow_department_of_education_verify_intake_education_education_"
+    ],
+    "MP|veterinary|veterinary_generic": [
+      "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter",
+      "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up"
+    ],
+    "MH|engineering|engineering_generic": [
+      "iit_indore_engineering_engineering_generic_state_comfort_mp",
+      "manit_bhopal_engineering_engineering_generic_state_comfort_mp",
+      "iiitdm_jabalpur_engineering_engineering_generic_state_comfort_mp",
+      "uit_rgpv_davv_clusters_verify_programmes_engineering_engineering_generic_state_c",
+      "private_engineering_colleges_across_mp_engineering_engineering_generic_state_com",
+      "nit_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iiit_naya_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iit_bhilai_engineering_engineering_generic_state_comfort_cg",
+      "bit_durg_ssipmt_engineering_engineering_generic_state_comfort_cg",
+      "government_engineering_college_raipur_example_state_college_engineering_engineer",
+      "shri_shankaracharya_technical_campus_sstc_bhilai_engineering_engineering_generic",
+      "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify_engineering_e",
+      "other_aicte_affiliated_colleges_in_cg_engineering_engineering_generic_state_comf",
+      "dr_c_v_raman_university_bilaspur_engineering_engineering_generic_state_comfort",
+      "iit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "iiit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "bits_pilani_hyderabad_campus_engineering_engineering_generic_state_comfort_ts",
+      "jntuh_affiliated_top_autonomous_colleges_examples_in_hyderabad_engineering_engin",
+      "private_engineering_colleges_across_telangana_engineering_engineering_generic_st",
+      "iisc_bangalore_ug_programmes_where_applicable_engineering_engineering_generic_st",
+      "nitk_surathkal_engineering_engineering_generic_state_comfort_ka",
+      "rv_college_of_engineering_rvce_engineering_engineering_generic_state_comfort_ka",
+      "pes_university_pesce_verify_campus_engineering_engineering_generic_state_comfort",
+      "bms_college_of_engineering_engineering_engineering_generic_state_comfort_ka",
+      "vtu_affiliated_colleges_across_karnataka_engineering_engineering_generic_state_c"
+    ],
+    "MH|medicine|medicine_mbbs": [
+      "aiims_raipur_medicine_medicine_mbbs_state_comfort_cg",
+      "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
+      "gmc_raipur_other_cg_gmcs_as_per_state_list_medicine_medicine_mbbs_state_comfort_",
+      "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
+      "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
+      "private_mbbs_colleges_in_cg_verify_mcc_state_medicine_medicine_mbbs_state_comfor",
+      "osmania_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "gandhi_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "aiims_bibinagar_verify_intake_and_phases_medicine_medicine_mbbs_state_comfort_ts",
+      "kakatiya_medical_college_warangal_example_medicine_medicine_mbbs_state_comfort_t",
+      "private_medical_colleges_in_hyderabad_belt_medicine_medicine_mbbs_state_comfort_",
+      "bangalore_medical_college_and_research_institute_bmri_bmcri_medicine_medicine_mb",
+      "kims_hubli_karnataka_institute_of_medical_sciences_medicine_medicine_mbbs_state_",
+      "gmcs_in_mysuru_mangaluru_belagavi_verify_seat_matrix_medicine_medicine_mbbs_stat",
+      "private_medical_colleges_bengaluru_tier_2_cities_medicine_medicine_mbbs_state_co"
+    ],
+    "OD|engineering|engineering_generic": [
+      "nit_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iiit_naya_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iit_bhilai_engineering_engineering_generic_state_comfort_cg",
+      "bit_durg_ssipmt_engineering_engineering_generic_state_comfort_cg",
+      "government_engineering_college_raipur_example_state_college_engineering_engineer",
+      "shri_shankaracharya_technical_campus_sstc_bhilai_engineering_engineering_generic",
+      "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify_engineering_e",
+      "other_aicte_affiliated_colleges_in_cg_engineering_engineering_generic_state_comf",
+      "dr_c_v_raman_university_bilaspur_engineering_engineering_generic_state_comfort",
+      "iit_kharagpur_engineering_engineering_generic_state_comfort_wb",
+      "jadavpur_university_faculty_of_engineering_and_technology_engineering_engineerin",
+      "iiest_shibpur_engineering_engineering_generic_state_comfort_wb",
+      "heritage_institute_of_technology_example_kolkata_private_engineering_engineering",
+      "affiliated_engineering_colleges_across_districts_engineering_engineering_generic",
+      "iit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "iiit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "bits_pilani_hyderabad_campus_engineering_engineering_generic_state_comfort_ts",
+      "jntuh_affiliated_top_autonomous_colleges_examples_in_hyderabad_engineering_engin",
+      "private_engineering_colleges_across_telangana_engineering_engineering_generic_st",
+      "iit_indore_engineering_engineering_generic_state_comfort_mp",
+      "manit_bhopal_engineering_engineering_generic_state_comfort_mp",
+      "iiitdm_jabalpur_engineering_engineering_generic_state_comfort_mp",
+      "uit_rgpv_davv_clusters_verify_programmes_engineering_engineering_generic_state_c",
+      "private_engineering_colleges_across_mp_engineering_engineering_generic_state_com"
+    ],
+    "OD|medicine|medicine_mbbs": [
+      "aiims_raipur_medicine_medicine_mbbs_state_comfort_cg",
+      "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
+      "gmc_raipur_other_cg_gmcs_as_per_state_list_medicine_medicine_mbbs_state_comfort_",
+      "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
+      "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
+      "private_mbbs_colleges_in_cg_verify_mcc_state_medicine_medicine_mbbs_state_comfor",
+      "medical_college_and_hospital_kolkata_medicine_medicine_mbbs_state_comfort_wb",
+      "nil_ratan_sircar_medical_college_nrs_medicine_medicine_mbbs_state_comfort_wb",
+      "cnmc_bankura_burdwan_medical_college_examples_verify_list_medicine_medicine_mbbs",
+      "private_medical_colleges_in_wb_medicine_medicine_mbbs_state_comfort_wb",
+      "osmania_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "gandhi_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "aiims_bibinagar_verify_intake_and_phases_medicine_medicine_mbbs_state_comfort_ts",
+      "kakatiya_medical_college_warangal_example_medicine_medicine_mbbs_state_comfort_t",
+      "private_medical_colleges_in_hyderabad_belt_medicine_medicine_mbbs_state_comfort_"
+    ],
+    "PB|engineering|engineering_generic": [
+      "iit_jodhpur_engineering_engineering_generic_state_comfort_rj",
+      "mnit_jaipur_engineering_engineering_generic_state_comfort_rj",
+      "bits_pilani_pilani_campus_engineering_engineering_generic_state_comfort_rj",
+      "rtu_rajasthan_technical_university_main_key_affiliated_colleges_engineering_engi",
+      "aicte_approved_private_colleges_jaipur_udaipur_jodhpur_engineering_engineering_g"
+    ],
+    "PB|medicine|medicine_mbbs": [
+      "aiims_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "sms_medical_college_jaipur_medicine_medicine_mbbs_state_comfort_rj",
+      "sn_medical_college_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "private_medical_colleges_jaipur_udaipur_belt_medicine_medicine_mbbs_state_comfor"
+    ],
+    "RJ|engineering|engineering_generic": [
+      "iit_indore_engineering_engineering_generic_state_comfort_mp",
+      "manit_bhopal_engineering_engineering_generic_state_comfort_mp",
+      "iiitdm_jabalpur_engineering_engineering_generic_state_comfort_mp",
+      "uit_rgpv_davv_clusters_verify_programmes_engineering_engineering_generic_state_c",
+      "private_engineering_colleges_across_mp_engineering_engineering_generic_state_com",
+      "iit_kanpur_engineering_engineering_generic_state_comfort_up",
+      "iit_bhu_varanasi_engineering_engineering_generic_state_comfort_up",
+      "mnnit_allahabad_prayagraj_engineering_engineering_generic_state_comfort_up",
+      "hbtu_kanpur_harcourt_butler_technical_university_engineering_engineering_generic",
+      "kiet_group_of_institutions_example_private_engineering_engineering_generic_state",
+      "aktu_affiliated_colleges_ncr_lucknow_belt_engineering_engineering_generic_state_"
+    ],
+    "RJ|medicine|medicine_mbbs": [
+      "king_george_medical_university_kgmu_medicine_medicine_mbbs_state_comfort_up",
+      "institute_of_medical_sciences_bhu_varanasi_medicine_medicine_mbbs_state_comfort_",
+      "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening_medicine_medicine_m",
+      "regional_gmcs_prayagraj_meerut_kanpur_verify_list_medicine_medicine_mbbs_state_c",
+      "private_mbbs_colleges_across_up_medicine_medicine_mbbs_state_comfort_up"
+    ],
+    "RJ|architecture|architecture_generic": [
+      "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
+      "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis"
+    ],
+    "RJ|design|design_generic": [
+      "nift_kannauj_design_design_generic_state_comfort_up"
+    ],
+    "RJ|dentistry|dentistry_generic": [
+      "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor"
+    ],
+    "RJ|ayush|ayush_generic": [
+      "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay"
+    ],
+    "RJ|pharmacy|pharmacy_generic": [
+      "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma"
+    ],
+    "RJ|law|law_generic": [
+      "dr_ram_manohar_lohiya_national_law_university_lucknow_law_law_generic_state_comf",
+      "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year_law_law_generic_"
+    ],
+    "RJ|management|management_generic": [
+      "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure_management_management_ge"
+    ],
+    "RJ|commerce|commerce_generic": [
+      "banaras_hindu_university_faculty_of_commerce_verify_programme_codes_commerce_com"
+    ],
+    "RJ|science_stats|science_stats_generic": [
+      "iit_kanpur_bs_programmes_verify_jee_channel_science_stats_science_stats_generic_"
+    ],
+    "RJ|fashion_media|fashion_media_generic": [
+      "nift_kannauj_fashion_media_fashion_media_generic_state_comfort_up"
+    ],
+    "RJ|humanities|humanities_generic": [
+      "banaras_hindu_university_faculty_of_arts_social_sciences_humanities_humanities_g"
+    ],
+    "RJ|education|education_generic": [
+      "university_of_lucknow_department_of_education_verify_intake_education_education_"
+    ],
+    "RJ|veterinary|veterinary_generic": [
+      "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up"
+    ],
+    "SK|engineering|engineering_generic": [
+      "iit_kharagpur_engineering_engineering_generic_state_comfort_wb",
+      "jadavpur_university_faculty_of_engineering_and_technology_engineering_engineerin",
+      "iiest_shibpur_engineering_engineering_generic_state_comfort_wb",
+      "heritage_institute_of_technology_example_kolkata_private_engineering_engineering",
+      "affiliated_engineering_colleges_across_districts_engineering_engineering_generic"
+    ],
+    "SK|medicine|medicine_mbbs": [
+      "medical_college_and_hospital_kolkata_medicine_medicine_mbbs_state_comfort_wb",
+      "nil_ratan_sircar_medical_college_nrs_medicine_medicine_mbbs_state_comfort_wb",
+      "cnmc_bankura_burdwan_medical_college_examples_verify_list_medicine_medicine_mbbs",
+      "private_medical_colleges_in_wb_medicine_medicine_mbbs_state_comfort_wb"
+    ],
+    "TN|engineering|engineering_generic": [
+      "iisc_bangalore_ug_programmes_where_applicable_engineering_engineering_generic_st",
+      "nitk_surathkal_engineering_engineering_generic_state_comfort_ka",
+      "rv_college_of_engineering_rvce_engineering_engineering_generic_state_comfort_ka",
+      "pes_university_pesce_verify_campus_engineering_engineering_generic_state_comfort",
+      "bms_college_of_engineering_engineering_engineering_generic_state_comfort_ka",
+      "vtu_affiliated_colleges_across_karnataka_engineering_engineering_generic_state_c",
+      "iit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "iiit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+      "bits_pilani_hyderabad_campus_engineering_engineering_generic_state_comfort_ts",
+      "jntuh_affiliated_top_autonomous_colleges_examples_in_hyderabad_engineering_engin",
+      "private_engineering_colleges_across_telangana_engineering_engineering_generic_st"
+    ],
+    "TN|medicine|medicine_mbbs": [
+      "bangalore_medical_college_and_research_institute_bmri_bmcri_medicine_medicine_mb",
+      "kims_hubli_karnataka_institute_of_medical_sciences_medicine_medicine_mbbs_state_",
+      "gmcs_in_mysuru_mangaluru_belagavi_verify_seat_matrix_medicine_medicine_mbbs_stat",
+      "private_medical_colleges_bengaluru_tier_2_cities_medicine_medicine_mbbs_state_co",
+      "osmania_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "gandhi_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+      "aiims_bibinagar_verify_intake_and_phases_medicine_medicine_mbbs_state_comfort_ts",
+      "kakatiya_medical_college_warangal_example_medicine_medicine_mbbs_state_comfort_t",
+      "private_medical_colleges_in_hyderabad_belt_medicine_medicine_mbbs_state_comfort_"
+    ],
+    "TS|engineering|engineering_generic": [
+      "iit_bombay_engineering_engineering_generic_state_comfort_mh",
+      "ict_mumbai_institute_of_chemical_technology_engineering_engineering_generic_stat",
+      "vnit_nagpur_engineering_engineering_generic_state_comfort_mh",
+      "coep_technological_university_coep_engineering_engineering_generic_state_comfort",
+      "vjti_mumbai_engineering_engineering_generic_state_comfort_mh",
+      "walchand_college_of_engineering_wce_engineering_engineering_generic_state_comfor",
+      "sppu_affiliated_private_universities_in_pune_mumbai_corridor_engineering_enginee",
+      "nit_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iiit_naya_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iit_bhilai_engineering_engineering_generic_state_comfort_cg",
+      "bit_durg_ssipmt_engineering_engineering_generic_state_comfort_cg",
+      "government_engineering_college_raipur_example_state_college_engineering_engineer",
+      "shri_shankaracharya_technical_campus_sstc_bhilai_engineering_engineering_generic",
+      "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify_engineering_e",
+      "other_aicte_affiliated_colleges_in_cg_engineering_engineering_generic_state_comf",
+      "dr_c_v_raman_university_bilaspur_engineering_engineering_generic_state_comfort",
+      "iisc_bangalore_ug_programmes_where_applicable_engineering_engineering_generic_st",
+      "nitk_surathkal_engineering_engineering_generic_state_comfort_ka",
+      "rv_college_of_engineering_rvce_engineering_engineering_generic_state_comfort_ka",
+      "pes_university_pesce_verify_campus_engineering_engineering_generic_state_comfort",
+      "bms_college_of_engineering_engineering_engineering_generic_state_comfort_ka",
+      "vtu_affiliated_colleges_across_karnataka_engineering_engineering_generic_state_c",
+      "iit_bhubaneswar_engineering_engineering_generic_state_comfort_od",
+      "nit_rourkela_engineering_engineering_generic_state_comfort_od",
+      "outr_igit_government_colleges_under_bput_verify_active_names_engineering_enginee",
+      "kiit_university_example_large_private_engineering_engineering_generic_state_comf"
+    ],
+    "TS|medicine|medicine_mbbs": [
+      "seth_gs_medical_college_and_kem_hospital_kem_medicine_medicine_mbbs_state_comfor",
+      "bj_government_medical_college_gmc_pune_cluster_verify_current_names_medicine_med",
+      "government_medical_colleges_across_divisions_marathwada_vidarbha_etc_medicine_me",
+      "deemed_universities_in_maharashtra_multiple_medicine_medicine_mbbs_state_comfort",
+      "aiims_raipur_medicine_medicine_mbbs_state_comfort_cg",
+      "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
+      "gmc_raipur_other_cg_gmcs_as_per_state_list_medicine_medicine_mbbs_state_comfort_",
+      "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
+      "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
+      "private_mbbs_colleges_in_cg_verify_mcc_state_medicine_medicine_mbbs_state_comfor",
+      "bangalore_medical_college_and_research_institute_bmri_bmcri_medicine_medicine_mb",
+      "kims_hubli_karnataka_institute_of_medical_sciences_medicine_medicine_mbbs_state_",
+      "gmcs_in_mysuru_mangaluru_belagavi_verify_seat_matrix_medicine_medicine_mbbs_stat",
+      "private_medical_colleges_bengaluru_tier_2_cities_medicine_medicine_mbbs_state_co"
+    ],
+    "TS|architecture|architecture_generic": [
+      "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture"
+    ],
+    "TS|design|design_generic": [
+      "nift_mumbai_design_design_generic_state_comfort_mh"
+    ],
+    "TS|dentistry|dentistry_generic": [
+      "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co"
+    ],
+    "TS|ayush|ayush_generic": [
+      "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus"
+    ],
+    "TS|pharmacy|pharmacy_generic": [
+      "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha"
+    ],
+    "TS|law|law_generic": [
+      "government_law_college_mumbai_law_law_generic_state_comfort_mh"
+    ],
+    "TS|management|management_generic": [
+      "nmims_mumbai_bba_related_ug_verify_test_management_management_generic_state_comf"
+    ],
+    "TS|commerce|commerce_generic": [
+      "narsee_monjee_college_of_commerce_and_economics_example_commerce_commerce_generi"
+    ],
+    "TS|science_stats|science_stats_generic": [
+      "iiser_pune_science_stats_science_stats_generic_state_comfort_mh"
+    ],
+    "TS|fashion_media|fashion_media_generic": [
+      "nift_mumbai_fashion_media_fashion_media_generic_state_comfort_mh"
+    ],
+    "TS|humanities|humanities_generic": [
+      "university_of_mumbai_humanities_departments_affiliated_colleges_vary_humanities_"
+    ],
+    "TS|education|education_generic": [
+      "tilak_college_of_education_other_mumbai_affiliated_ncte_colleges_examples_verify"
+    ],
+    "TS|veterinary|veterinary_generic": [
+      "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter"
+    ],
+    "UP|engineering|engineering_generic": [
+      "iit_jodhpur_engineering_engineering_generic_state_comfort_rj",
+      "mnit_jaipur_engineering_engineering_generic_state_comfort_rj",
+      "bits_pilani_pilani_campus_engineering_engineering_generic_state_comfort_rj",
+      "rtu_rajasthan_technical_university_main_key_affiliated_colleges_engineering_engi",
+      "aicte_approved_private_colleges_jaipur_udaipur_jodhpur_engineering_engineering_g",
+      "iit_indore_engineering_engineering_generic_state_comfort_mp",
+      "manit_bhopal_engineering_engineering_generic_state_comfort_mp",
+      "iiitdm_jabalpur_engineering_engineering_generic_state_comfort_mp",
+      "uit_rgpv_davv_clusters_verify_programmes_engineering_engineering_generic_state_c",
+      "private_engineering_colleges_across_mp_engineering_engineering_generic_state_com",
+      "nit_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iiit_naya_raipur_engineering_engineering_generic_state_comfort_cg",
+      "iit_bhilai_engineering_engineering_generic_state_comfort_cg",
+      "bit_durg_ssipmt_engineering_engineering_generic_state_comfort_cg",
+      "government_engineering_college_raipur_example_state_college_engineering_engineer",
+      "shri_shankaracharya_technical_campus_sstc_bhilai_engineering_engineering_generic",
+      "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify_engineering_e",
+      "other_aicte_affiliated_colleges_in_cg_engineering_engineering_generic_state_comf",
+      "dr_c_v_raman_university_bilaspur_engineering_engineering_generic_state_comfort",
+      "dtu_nsut_iiit_d_examples_engineering_engineering_generic_state_comfort_dl",
+      "nit_delhi_engineering_engineering_generic_state_comfort_dl",
+      "established_private_universities_in_ncr_engineering_engineering_generic_state_co"
+    ],
+    "UP|medicine|medicine_mbbs": [
+      "aiims_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "sms_medical_college_jaipur_medicine_medicine_mbbs_state_comfort_rj",
+      "sn_medical_college_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "private_medical_colleges_jaipur_udaipur_belt_medicine_medicine_mbbs_state_comfor",
+      "aiims_raipur_medicine_medicine_mbbs_state_comfort_cg",
+      "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
+      "gmc_raipur_other_cg_gmcs_as_per_state_list_medicine_medicine_mbbs_state_comfort_",
+      "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
+      "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
+      "private_mbbs_colleges_in_cg_verify_mcc_state_medicine_medicine_mbbs_state_comfor",
+      "aiims_new_delhi_medicine_medicine_mbbs_state_comfort_dl",
+      "maulana_azad_medical_college_mamc_medicine_medicine_mbbs_state_comfort_dl",
+      "university_college_of_medical_sciences_ucms_medicine_medicine_mbbs_state_comfort",
+      "esic_medical_college_faridabad_example_ncr_medicine_medicine_mbbs_state_comfort_",
+      "private_medical_colleges_gurugram_noida_belt_medicine_medicine_mbbs_state_comfor"
+    ],
+    "UK|engineering|engineering_generic": [
+      "iit_kanpur_engineering_engineering_generic_state_comfort_up",
+      "iit_bhu_varanasi_engineering_engineering_generic_state_comfort_up",
+      "mnnit_allahabad_prayagraj_engineering_engineering_generic_state_comfort_up",
+      "hbtu_kanpur_harcourt_butler_technical_university_engineering_engineering_generic",
+      "kiet_group_of_institutions_example_private_engineering_engineering_generic_state",
+      "aktu_affiliated_colleges_ncr_lucknow_belt_engineering_engineering_generic_state_"
+    ],
+    "UK|medicine|medicine_mbbs": [
+      "king_george_medical_university_kgmu_medicine_medicine_mbbs_state_comfort_up",
+      "institute_of_medical_sciences_bhu_varanasi_medicine_medicine_mbbs_state_comfort_",
+      "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening_medicine_medicine_m",
+      "regional_gmcs_prayagraj_meerut_kanpur_verify_list_medicine_medicine_mbbs_state_c",
+      "private_mbbs_colleges_across_up_medicine_medicine_mbbs_state_comfort_up"
+    ],
+    "UK|architecture|architecture_generic": [
+      "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
+      "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis"
+    ],
+    "UK|design|design_generic": [
+      "nift_kannauj_design_design_generic_state_comfort_up"
+    ],
+    "UK|dentistry|dentistry_generic": [
+      "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor"
+    ],
+    "UK|ayush|ayush_generic": [
+      "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay"
+    ],
+    "UK|pharmacy|pharmacy_generic": [
+      "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma"
+    ],
+    "UK|law|law_generic": [
+      "dr_ram_manohar_lohiya_national_law_university_lucknow_law_law_generic_state_comf",
+      "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year_law_law_generic_"
+    ],
+    "UK|management|management_generic": [
+      "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure_management_management_ge"
+    ],
+    "UK|commerce|commerce_generic": [
+      "banaras_hindu_university_faculty_of_commerce_verify_programme_codes_commerce_com"
+    ],
+    "UK|science_stats|science_stats_generic": [
+      "iit_kanpur_bs_programmes_verify_jee_channel_science_stats_science_stats_generic_"
+    ],
+    "UK|fashion_media|fashion_media_generic": [
+      "nift_kannauj_fashion_media_fashion_media_generic_state_comfort_up"
+    ],
+    "UK|humanities|humanities_generic": [
+      "banaras_hindu_university_faculty_of_arts_social_sciences_humanities_humanities_g"
+    ],
+    "UK|education|education_generic": [
+      "university_of_lucknow_department_of_education_verify_intake_education_education_"
+    ],
+    "UK|veterinary|veterinary_generic": [
+      "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up"
+    ],
+    "WB|engineering|engineering_generic": [
+      "iit_bhubaneswar_engineering_engineering_generic_state_comfort_od",
+      "nit_rourkela_engineering_engineering_generic_state_comfort_od",
+      "outr_igit_government_colleges_under_bput_verify_active_names_engineering_enginee",
+      "kiit_university_example_large_private_engineering_engineering_generic_state_comf"
+    ],
+    "DL|engineering|engineering_generic": [
+      "iit_kanpur_engineering_engineering_generic_state_comfort_up",
+      "iit_bhu_varanasi_engineering_engineering_generic_state_comfort_up",
+      "mnnit_allahabad_prayagraj_engineering_engineering_generic_state_comfort_up",
+      "hbtu_kanpur_harcourt_butler_technical_university_engineering_engineering_generic",
+      "kiet_group_of_institutions_example_private_engineering_engineering_generic_state",
+      "aktu_affiliated_colleges_ncr_lucknow_belt_engineering_engineering_generic_state_"
+    ],
+    "DL|medicine|medicine_mbbs": [
+      "king_george_medical_university_kgmu_medicine_medicine_mbbs_state_comfort_up",
+      "institute_of_medical_sciences_bhu_varanasi_medicine_medicine_mbbs_state_comfort_",
+      "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening_medicine_medicine_m",
+      "regional_gmcs_prayagraj_meerut_kanpur_verify_list_medicine_medicine_mbbs_state_c",
+      "private_mbbs_colleges_across_up_medicine_medicine_mbbs_state_comfort_up"
+    ],
+    "DL|architecture|architecture_generic": [
+      "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
+      "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis"
+    ],
+    "DL|design|design_generic": [
+      "nift_kannauj_design_design_generic_state_comfort_up"
+    ],
+    "DL|dentistry|dentistry_generic": [
+      "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor"
+    ],
+    "DL|ayush|ayush_generic": [
+      "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay"
+    ],
+    "DL|pharmacy|pharmacy_generic": [
+      "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma"
+    ],
+    "DL|law|law_generic": [
+      "dr_ram_manohar_lohiya_national_law_university_lucknow_law_law_generic_state_comf",
+      "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year_law_law_generic_"
+    ],
+    "DL|management|management_generic": [
+      "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure_management_management_ge"
+    ],
+    "DL|commerce|commerce_generic": [
+      "banaras_hindu_university_faculty_of_commerce_verify_programme_codes_commerce_com"
+    ],
+    "DL|science_stats|science_stats_generic": [
+      "iit_kanpur_bs_programmes_verify_jee_channel_science_stats_science_stats_generic_"
+    ],
+    "DL|fashion_media|fashion_media_generic": [
+      "nift_kannauj_fashion_media_fashion_media_generic_state_comfort_up"
+    ],
+    "DL|humanities|humanities_generic": [
+      "banaras_hindu_university_faculty_of_arts_social_sciences_humanities_humanities_g"
+    ],
+    "DL|education|education_generic": [
+      "university_of_lucknow_department_of_education_verify_intake_education_education_"
+    ],
+    "DL|veterinary|veterinary_generic": [
+      "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up"
+    ],
+    "PY|engineering|engineering_generic": [
+      "iit_madras_engineering_engineering_generic_state_comfort_tn",
+      "nit_tiruchirappalli_engineering_engineering_generic_state_comfort_tn",
+      "college_of_engineering_guindy_ceg_anna_university_engineering_engineering_generi",
+      "psg_college_of_technology_engineering_engineering_generic_state_comfort_tn",
+      "ssn_college_of_engineering_engineering_engineering_generic_state_comfort_tn",
+      "affiliated_engineering_colleges_under_anna_university_engineering_engineering_ge"
+    ],
+    "PY|medicine|medicine_mbbs": [
+      "madras_medical_college_mmc_medicine_medicine_mbbs_state_comfort_tn",
+      "stanley_medical_college_medicine_medicine_mbbs_state_comfort_tn",
+      "gmcs_in_madurai_coimbatore_tirunelveli_examples_medicine_medicine_mbbs_state_com",
+      "private_medical_colleges_across_tn_medicine_medicine_mbbs_state_comfort_tn"
+    ],
+    "AN|engineering|engineering_generic": [
+      "iit_madras_engineering_engineering_generic_state_comfort_tn",
+      "nit_tiruchirappalli_engineering_engineering_generic_state_comfort_tn",
+      "college_of_engineering_guindy_ceg_anna_university_engineering_engineering_generi",
+      "psg_college_of_technology_engineering_engineering_generic_state_comfort_tn",
+      "ssn_college_of_engineering_engineering_engineering_generic_state_comfort_tn",
+      "affiliated_engineering_colleges_under_anna_university_engineering_engineering_ge"
+    ],
+    "AN|medicine|medicine_mbbs": [
+      "madras_medical_college_mmc_medicine_medicine_mbbs_state_comfort_tn",
+      "stanley_medical_college_medicine_medicine_mbbs_state_comfort_tn",
+      "gmcs_in_madurai_coimbatore_tirunelveli_examples_medicine_medicine_mbbs_state_com",
+      "private_medical_colleges_across_tn_medicine_medicine_mbbs_state_comfort_tn"
+    ]
+  }
+}

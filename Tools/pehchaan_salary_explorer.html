@@ -280,6 +280,18 @@
         <option value="ease-asc">Entry ease: very tough to very accessible</option>
       </select>
     </div>
+    <div class="sort-row">
+      <label class="sort-label" for="metro-select">Metro focus</label>
+      <select id="metro-select" class="sort-select" onchange="applyFilters()">
+        <option value="">All India (no metro filter)</option>
+        <option value="delhi_ncr">Delhi NCR</option>
+        <option value="chennai">Chennai</option>
+        <option value="bengaluru">Bengaluru</option>
+        <option value="hyderabad">Hyderabad</option>
+        <option value="pune">Pune</option>
+        <option value="mumbai">Mumbai</option>
+      </select>
+    </div>
     <div class="results-count" id="results-count">Loading…</div>
   </div>
 
@@ -300,10 +312,14 @@
 <script src="../assets/pehchaan_journey.js"></script>
 <script src="../assets/pehchaan_career_registry_prefill.js"></script>
 <script src="../assets/pehchaan_tool_links.js"></script>
+<script src="../assets/pehchaan_tool_recommendations.js"></script>
 <script>
 var CAREERS = [];
 var DATA_META = null;
 var currentFilter = 'all';
+var PRIVATE_ROLE_DB = null;
+var PRIVATE_ROLE_BY_ID = {};
+var SALARY_ID_TO_PRIVATE_ROLES = {};
 
 var OUTLOOK_LABEL = {
   strong: 'Strong hiring outlook',
@@ -329,6 +345,85 @@ function parseStartingSalary(entryLPA) {
   var nums = (entryLPA || '').match(/\d+(\.\d+)?/g);
   if (!nums || nums.length === 0) return 0;
   return parseFloat(nums[0]) || 0;
+}
+
+function getSelectedMetro() {
+  var sel = document.getElementById('metro-select');
+  return sel ? String(sel.value || '').trim() : '';
+}
+
+function getPrivateRoleMetaForSalaryId(salaryNumericId) {
+  return SALARY_ID_TO_PRIVATE_ROLES[String(salaryNumericId)] || [];
+}
+
+function hasMetroCoverageForCareer(career) {
+  var metro = getSelectedMetro();
+  if (!metro) return true;
+  var rows = getPrivateRoleMetaForSalaryId(career.id);
+  if (!rows.length) return true;
+  return rows.some(function (r) {
+    return (r.metro_map || []).some(function (m) { return m.metro_id === metro; });
+  });
+}
+
+function renderPrivateRoleMetroSection(career) {
+  var metro = getSelectedMetro();
+  if (!metro) return '';
+  var rows = getPrivateRoleMetaForSalaryId(career.id);
+  if (!rows.length) return '';
+  var cards = rows
+    .map(function (r) {
+      var mm = (r.metro_map || []).find(function (m) { return m.metro_id === metro; });
+      if (!mm) return '';
+      var must = (r.must_have_skills || []).slice(0, 3).join(' · ');
+      return '<div class="career-section"><h4>🏙 Private sector snapshot (' + escapeHtml(metro.replace('_', ' ')) + ')</h4>' +
+        '<p><strong>' + escapeHtml(r.title || '') + '</strong> · Demand: ' + escapeHtml(mm.demand_level || 'medium') + '</p>' +
+        '<p>Fresher: ' + escapeHtml(mm.salary_fresher || '—') + ' · ~3 years: ' + escapeHtml(mm.salary_3yr || '—') + '</p>' +
+        '<p>' + escapeHtml(mm.city_reality_note || '') + '</p>' +
+        (must ? '<p><strong>Must-have skills:</strong> ' + escapeHtml(must) + '</p>' : '') +
+      '</div>';
+    })
+    .filter(Boolean)
+    .join('');
+  return cards;
+}
+
+function loadPrivateRoleDb() {
+  return fetch('../DB/pehchaan_private_sector_roles.json')
+    .then(function (r) {
+      if (!r.ok) throw new Error('private roles HTTP ' + r.status);
+      return r.json();
+    })
+    .then(function (db) {
+      PRIVATE_ROLE_DB = db || null;
+      PRIVATE_ROLE_BY_ID = {};
+      (db && db.roles || []).forEach(function (role) {
+        if (role && role.private_role_id) PRIVATE_ROLE_BY_ID[role.private_role_id] = role;
+      });
+      return db;
+    })
+    .catch(function () {
+      PRIVATE_ROLE_DB = null;
+      PRIVATE_ROLE_BY_ID = {};
+      return null;
+    });
+}
+
+function hydrateSalaryToPrivateRoleMap() {
+  SALARY_ID_TO_PRIVATE_ROLES = {};
+  if (!window.PehchaanRegistryPrefill || !Object.keys(PRIVATE_ROLE_BY_ID).length) return Promise.resolve();
+  return PehchaanRegistryPrefill.load()
+    .then(function (reg) {
+      (reg.list || []).forEach(function (row) {
+        var sid = row && row.salary_explorer_id;
+        if (sid == null || !Array.isArray(row.private_role_ids)) return;
+        var roles = row.private_role_ids
+          .map(function (rid) { return PRIVATE_ROLE_BY_ID[rid]; })
+          .filter(Boolean);
+        if (roles.length) SALARY_ID_TO_PRIVATE_ROLES[String(sid)] = roles;
+      });
+    })
+    .catch(function () {});
 }
 
 function hasGovtJob(c) {
@@ -488,7 +583,7 @@ function renderCard(c) {
       return '<li>' + e + '</li>';
     })
     .join('');
-  var detailHTML = renderDetailSections(c);
+  var detailHTML = renderDetailSections(c) + renderPrivateRoleMetroSection(c);
 
   return (
     '<div class="career-card" id="card-' +
@@ -613,9 +708,29 @@ function syncSalaryJourneySlotForCard(salaryNumericId) {
       var row = PehchaanRegistryPrefill.findRowBySalaryExplorerId(reg, salaryNumericId);
       if (!row) return;
       var streamGuess = PehchaanToolLinks.inferStreamFromRegistryTags(row);
-      PehchaanJourney.setJourney({ from: 'salary', career: row.canonical_id, stream: streamGuess });
+      var p = PehchaanRegistryPrefill.mergeParams();
+      var roleId = Array.isArray(row.private_role_ids) && row.private_role_ids.length ? row.private_role_ids[0] : '';
+      var metro = getSelectedMetro() || p.metro || '';
+      var ctx = {
+        from: 'salary',
+        career: row.canonical_id,
+        stream: streamGuess,
+        private_role_id: roleId,
+        metro: metro,
+        role_family: p.role_family || ''
+      };
+      PehchaanJourney.setJourney(ctx);
       var inner = PehchaanToolLinks.buildSalaryCardNextLinks(row, streamGuess);
-      slot.innerHTML = PehchaanToolLinks.wrapNextCard('Continue exploring', inner);
+      var html = PehchaanToolLinks.wrapNextCard('Continue exploring', inner);
+      if (window.PehchaanToolRecommendations) {
+        var rec = PehchaanToolRecommendations.buildNextToolRecommendations(
+          PehchaanToolRecommendations.TOOL.salary,
+          ctx,
+          { roleSelected: true, skillResultDone: false }
+        );
+        html += PehchaanToolRecommendations.buildRecommendationsHtml(rec, escapeHtml);
+      }
+      slot.innerHTML = html;
     })
     .catch(function () {});
 }
@@ -639,6 +754,7 @@ function applyFilters() {
   var sortBy = (document.getElementById('sort-select') || {}).value || 'default';
   var filtered = CAREERS.filter(function(c) {
     if (!careerMatchesFilter(c, currentFilter)) return false;
+    if (!hasMetroCoverageForCareer(c)) return false;
     if (!search) return true;
     var tags = c.tags || [];
     var exams = c.exams || [];
@@ -689,6 +805,12 @@ function applySalaryUrlPrefill() {
   if (!window.PehchaanRegistryPrefill || !CAREERS.length) return;
   var p = PehchaanRegistryPrefill.mergeParams();
   var stream = (p.stream || '').toLowerCase();
+  var metro = (p.metro || '').toLowerCase();
+  var metroSel = document.getElementById('metro-select');
+  if (metroSel && metro) {
+    var opt = Array.prototype.slice.call(metroSel.options || []).some(function (o) { return o.value === metro; });
+    if (opt) metroSel.value = metro;
+  }
   if (stream && DATA_META && DATA_META.filterDefinitions) {
     var defs = DATA_META.filterDefinitions;
     var has = defs.some(function(d) { return d.id === stream; });
@@ -723,18 +845,23 @@ function applySalaryUrlPrefill() {
 }
 
 function loadCareerData() {
-  fetch('../DB/pehchaan_salary_explorer_data.json')
-    .then(function(r) {
+  Promise.all([
+    fetch('../DB/pehchaan_salary_explorer_data.json').then(function(r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
-    })
-    .then(function(data) {
+    }),
+    loadPrivateRoleDb()
+  ])
+    .then(function(res) {
+      var data = res[0];
       DATA_META = data.meta || null;
       CAREERS = data.careers || [];
-      updateHeroAndDisclaimer();
-      buildFilterButtons();
-      applyFilters();
-      applySalaryUrlPrefill();
+      return hydrateSalaryToPrivateRoleMap().then(function () {
+        updateHeroAndDisclaimer();
+        buildFilterButtons();
+        applyFilters();
+        applySalaryUrlPrefill();
+      });
     })
     .catch(function(err) {
       document.getElementById('career-grid').innerHTML =

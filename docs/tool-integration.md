@@ -35,6 +35,11 @@ This document is the **single source of truth** for how static tools hand off co
 | `state` | Exam roadmap | State code or filter value when not `all` / `national_only`. |
 | `exam` | Plan B | Plan B exam row id (e.g. `jee_engineering`). |
 | `job` | Skill gap | Skill gap `job_categories[].id`. |
+| `course` | College Finder / Plan B colleges | Course id from `DB/pehchaan_college_registry.json` `taxonomies.courses[].id`. |
+| `private_role_id` | Salary, Skill Gap, Plan B, Mentor, College Finder | Private-sector role id from `DB/pehchaan_private_sector_roles.json` `roles[].private_role_id`. |
+| `metro` | Salary, Skill Gap, Plan B, Mentor, College Finder | Metro focus id (`delhi_ncr`, `chennai`, `bengaluru`, `hyderabad`, `pune`, `mumbai`). |
+| `role_family` | Skill Gap, Plan B, Mentor | Broad role family (`sales_growth`, `analytics`, `operations`, etc.). |
+| `readiness_band` | Skill Gap -> downstream tools | Skill readiness bucket `low` \| `mid` \| `high`. |
 | `roiBand` | Plan B (optional) | `high` \| `mid` \| `low` — from ROI result. |
 | `profile` | Assessment → outbound links | Holland top-3 code string (e.g. `R-I-A`); targets may ignore until they add readers. |
 
@@ -59,7 +64,7 @@ This document is the **single source of truth** for how static tools hand off co
 ### Salary Explorer
 
 - **Inbound:** `stream` sets filter; `career` opens card (canonical, numeric id, or exam-roadmap id via `resolveCareerTokenRow`).
-- **Outbound:** When a card is expanded, `setJourney({ from: 'salary', career, stream })` and inline “Continue exploring” links (ROI, Exam roadmap, Plan B if mapped, Skill gap if mapped, Financing).
+- **Outbound:** When a card is expanded, `setJourney({ from: 'salary', career, stream, private_role_id, metro, role_family })` and inline “Continue exploring” links (ROI, Exam roadmap, Plan B if mapped, Skill gap if mapped, College Finder, Financing).
 
 ### Exam Roadmap Builder (after “Build my roadmap”)
 
@@ -69,10 +74,23 @@ This document is the **single source of truth** for how static tools hand off co
 ### Plan B Strategy Builder
 
 - **Inbound:** `exam` selects exam; else `career` resolved with `resolveRow` **or** `resolveCareerTokenRow`.
+- **College data source:** prefers `DB/pehchaan_college_registry.json` + `DB/pehchaan_college_registry_indexes.json`; falls back to embedded `college_plan_b` bundles.
+- **College query shape:** stream + geography lens + state + course (course mandatory when registry data is present).
+- **Private role data source:** `DB/pehchaan_private_sector_roles.json` for metro-aware role overlays by exam link.
+
+### College Finder
+
+- **Entry:** `Tools/pehchaan_college_finder.html`.
+- **Data:** `DB/pehchaan_college_registry.json` + `DB/pehchaan_college_registry_indexes.json`.
+- **Resolver order:** exact state match -> neighbour-state match -> national fallback.
+- **Inbound (optional):** `stream`, `state`, `course`, `career`, `private_role_id`, `metro` for prefill/context carry.
+- **Outbound:** `setJourney({ from: 'college_finder', stream, state, course, career?, private_role_id?, metro? })`.
+- **Fallback rule:** if no records found, show verification guidance card (never blank results).
 
 ### Skill Gap Analyser
 
-- **Inbound:** `job` or `career` (canonical / token via `resolveCareerTokenRow`).
+- **Inbound:** `job` or `career` (canonical / token via `resolveCareerTokenRow`), plus `private_role_id`, `metro`.
+- **Outbound:** on analyse, emits `readiness_band` and retains private context.
 
 ### Career Assessment (after results)
 
@@ -81,7 +99,7 @@ This document is the **single source of truth** for how static tools hand off co
 
 ### Mentor Connect (after student search results)
 
-- **Session:** `setJourney({ from: 'mentor' })`
+- **Session:** `setJourney({ from: 'mentor', private_role_id?, career?, metro?, role_family? })`
 - **Strip:** Salary, Plan B, Parent FAQ (generic entry; no career inferred).
 
 ## Registry (`DB/pehchaan_career_registry.json`)
@@ -93,6 +111,7 @@ Each row maps **`canonical_id`** to tool-specific ids:
 - `exam_roadmap_career_id` → `pehchaan_exam_data.json` `careers[].id`
 - `plan_b_exam_id` → `pehchaan_plan_b_strategy_builder_data.json` `exams[].id`
 - `skill_gap_job_id` → `pehchaan_skill_gap_analyser_data.json` `job_categories[].id` (nullable)
+- `private_role_ids[]` → `pehchaan_private_sector_roles.json` `roles[].private_role_id`
 
 The JSON root **`tool_integration`** block holds schema version and pointers to this doc (for humans and scripts).
 
@@ -101,10 +120,12 @@ The JSON root **`tool_integration`** block holds schema version and pointers to 
 From repo root:
 
 ```bash
+node scripts/monthly-json-update.cjs
 node scripts/validate-tool-integration.cjs
+node scripts/validate-college-registry.cjs
 ```
 
-Fails with a non-zero exit code if any registry pointer is missing in the target dataset.
+`monthly-json-update.cjs` now also performs a full parse validation pass for every `DB/*.json` file, so newly added DB JSON is included automatically in the monthly routine.
 
 ## Phase 5 — Backend (deferred)
 

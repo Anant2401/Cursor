@@ -341,12 +341,17 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
 </div>
 <script src="../assets/pehchaan_journey.js"></script>
 <script src="../assets/pehchaan_career_registry_prefill.js"></script>
+<script src="../assets/pehchaan_tool_links.js"></script>
+<script src="../assets/pehchaan_tool_recommendations.js"></script>
 <script>
 var DB = null;
 var selJob = null;
 var selQual = '';
 var checkedSkills = new Set();
 var studentName = '';
+var selPrivateRoleId = '';
+var selCareerCanonical = '';
+var selMetro = '';
 
 function getSkillGapDataUrl(){
   try {
@@ -417,6 +422,8 @@ function selectJobById(id) {
 function trySkillGapUrlPrefill() {
   if (!window.PehchaanRegistryPrefill || !DB) return;
   var p = PehchaanRegistryPrefill.mergeParams();
+  selMetro = (p.metro || '').trim();
+  selPrivateRoleId = (p.private_role_id || '').trim();
   var jobId = (p.job || '').trim();
   if (jobId) {
     selectJobById(jobId);
@@ -427,7 +434,20 @@ function trySkillGapUrlPrefill() {
   PehchaanRegistryPrefill.load()
     .then(function (reg) {
       var row = PehchaanRegistryPrefill.resolveRow(c, reg) || PehchaanRegistryPrefill.resolveCareerTokenRow(reg, c);
+      if (row) {
+        selCareerCanonical = row.canonical_id || '';
+        if (!selPrivateRoleId && Array.isArray(row.private_role_ids) && row.private_role_ids.length) {
+          selPrivateRoleId = row.private_role_ids[0];
+        }
+      }
       if (row && row.skill_gap_job_id) selectJobById(row.skill_gap_job_id);
+      if (!row && selPrivateRoleId) {
+        var fromRole = PehchaanRegistryPrefill.findRowByPrivateRoleId(reg, selPrivateRoleId);
+        if (fromRole) {
+          selCareerCanonical = fromRole.canonical_id || '';
+          if (fromRole.skill_gap_job_id) selectJobById(fromRole.skill_gap_job_id);
+        }
+      }
     })
     .catch(function () {});
 }
@@ -479,6 +499,15 @@ function selJobFn(btn, id){
   document.querySelectorAll('.job-btn').forEach(function(b){ b.classList.remove('active'); });
   btn.classList.add('active');
   selJob = DB.job_categories.find(function(j){ return j.id === id; });
+  if (window.PehchaanJourney && selJob) {
+    PehchaanJourney.setJourney({
+      from: 'skill_gap',
+      job: selJob.id,
+      private_role_id: selPrivateRoleId || '',
+      career: selCareerCanonical || '',
+      metro: selMetro || ''
+    });
+  }
   checkedSkills.clear();
   updateCoverContinueBtn();
   var bulk = document.getElementById('skill-bulk-row');
@@ -637,7 +666,34 @@ function analyse(){
   document.getElementById('test-platforms').innerHTML = tpHtml;
 
   // First job path
-  document.getElementById('first-job-content').innerHTML = '<div class="fj-label">How to get your first job in this field</div><div class="fj-text">' + esc(j.first_job_path) + '</div><div style="font-size:12px;color:var(--gray);margin-top:8px;"><strong>Realistic timeline:</strong> ' + esc(j.realistic_timeline) + '</div>';
+  var readinessBand = gaps.length <= 2 ? 'high' : (gaps.length <= 5 ? 'mid' : 'low');
+  if (window.PehchaanJourney) {
+    PehchaanJourney.setJourney({
+      from: 'skill_gap',
+      job: j.id,
+      private_role_id: selPrivateRoleId || '',
+      career: selCareerCanonical || '',
+      metro: selMetro || '',
+      readiness_band: readinessBand
+    });
+  }
+  var recHtml = '';
+  if (window.PehchaanToolRecommendations) {
+    var rec = PehchaanToolRecommendations.buildNextToolRecommendations(
+      PehchaanToolRecommendations.TOOL.skillGap,
+      {
+        from: 'skill_gap',
+        job: j.id,
+        private_role_id: selPrivateRoleId || '',
+        career: selCareerCanonical || '',
+        metro: selMetro || '',
+        readiness_band: readinessBand
+      },
+      { roleSelected: true, skillResultDone: true, actionPlanStarted: false }
+    );
+    recHtml = PehchaanToolRecommendations.buildRecommendationsHtml(rec, esc);
+  }
+  document.getElementById('first-job-content').innerHTML = '<div class="fj-label">How to get your first job in this field</div><div class="fj-text">' + esc(j.first_job_path) + '</div><div style="font-size:12px;color:var(--gray);margin-top:8px;"><strong>Realistic timeline:</strong> ' + esc(j.realistic_timeline) + '</div>' + recHtml;
   document.getElementById('interview-prep').innerHTML = '<div style="background:var(--blue-light);border-left:4px solid var(--blue);border-radius:0 10px 10px 0;padding:12px 14px;font-size:12px;color:#0C447C;line-height:1.75;"><strong>Interview preparation:</strong> ' + esc(j.interview_prep) + '</div>';
 
   document.getElementById('screen-input').classList.add('hidden');

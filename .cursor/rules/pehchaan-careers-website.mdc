@@ -13,6 +13,8 @@ alwaysApply: true
 - Tool **topbar** and **three-part footer** (motto, attribution, contact line) match reference tools / `parent-faq/components/PehchaanToolChrome.tsx`.
 - Use **design tokens** from `.cursorrules` §5 — no ad‑hoc hex drift.
 - Surface the **discussion / consultation** disclaimer meaning on tools as required in `.cursorrules` §10.
+- For tools that capture student names, follow the **Career ROI** name-card pattern and keep the name-card inside the **hero card** (not in later form cards), with first/last name structure and optional marker parity.
+- Apply a strict project quality gate: remove/flag dead code and obsolete files, verify all tools/buttons/flows, ensure theme-logo-language-note-disclaimer parity, confirm tool-to-tool links and DB linkages, and validate website + tools rendering in mobile mode.
 - **`Tools/pehchaan_*.html`** + **`DB/*.json`** + **`assets/`** scripts: keep fetch paths, prefill, and journey links consistent when renaming or adding tools.
 - **`parent-faq/`** is the source of truth for Parent FAQ / export; **`Tools/parents-guide/`** is generated output when using that pipeline. Next.js specifics: **`parent-faq/AGENTS.md`**.
 

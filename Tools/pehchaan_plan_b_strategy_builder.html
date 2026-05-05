@@ -316,8 +316,15 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
     <p style="font-size:12px;color:var(--gray);margin-bottom:12px;">National = all-India counselling style paths (JoSAA / MCC / national portals — verify names each year). State-comfort = research anchors in one home state; <strong>domicile rules always apply</strong>.</p>
     <div class="exam-grid" id="college-lens-grid"></div>
   </div>
+  <div class="card hidden" id="college-course-card">
+    <div class="card-title"><span class="sti-ico" aria-hidden="true">🎯</span> 3. Course (specific target)</div>
+    <label class="field-label-block" for="college-course-select">Choose your target course</label>
+    <select id="college-course-select" class="form-select" aria-label="Course for college Plan B">
+      <option value="">Select course…</option>
+    </select>
+  </div>
   <div class="card hidden" id="college-state-card">
-    <div class="card-title"><span class="sti-ico" aria-hidden="true">📍</span> 3. State (state-comfort)</div>
+    <div class="card-title"><span class="sti-ico" aria-hidden="true">📍</span> 4. State (state-comfort)</div>
     <label class="field-label-block" for="college-state-select">Choose your state / UT</label>
     <select id="college-state-select" class="form-select" aria-label="State for state-comfort college Plan B">
       <option value="">Select state…</option>
@@ -344,6 +351,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
     <div class="hero-tag">Plan B — Colleges</div>
     <h1 id="college-res-title" style="font-size:20px;"></h1>
     <p id="college-res-summary" style="font-size:13px;opacity:.9;line-height:1.75;margin-top:8px;"></p>
+    <p id="college-res-selection" style="font-size:11px;line-height:1.6;margin-top:10px;padding:8px 10px;border-radius:10px;background:rgba(239,159,39,.18);border:1px solid rgba(239,159,39,.45);color:#fff;"></p>
   </div>
   <div id="college-res-insight" class="power-banner hidden">
     <div class="pb-title" id="college-res-insight-title"></div>
@@ -452,6 +460,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
   </div>
   <div id="jobs-container"></div>
   <div id="metro-corporate-block"></div>
+  <div id="planb-next-tools"></div>
 
   <button class="btn-reset" onclick="resetTool()">← Back to Exam Selection</button>
 
@@ -477,16 +486,59 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 </div>
 <script src="../assets/pehchaan_journey.js"></script>
 <script src="../assets/pehchaan_career_registry_prefill.js"></script>
+<script src="../assets/pehchaan_tool_links.js"></script>
+<script src="../assets/pehchaan_tool_recommendations.js"></script>
 <script>
 var DB = null;
+var PRIVATE_ROLE_DB = null;
+var COLLEGE_REGISTRY = null;
+var COLLEGE_INDEXES = null;
 var selExam = null;
 var selPivot = 'job';
 var studentName = '';
 var lastPlanBJobs = [];
-var collegePick = { stream_id: null, lens_id: null, state_id: null };
+var collegePick = { stream_id: null, lens_id: null, course_id: null, state_id: null };
 var selCourseAnchor = null;
 var EXAM_EMOJIS = { upsc_csds:'🏛️', ssc_banking:'🏦', neet_medical:'🩺', jee_engineering:'🔬', low_marks_student:'🌱', cat_mba:'📊', clat_law:'⚖️', gate_pg:'🔧', nda_defence:'🎖️', cuet_ug:'📖', ca_foundation:'📒', nid_nift_design:'🎨', csir_net_sciences:'🧪' };
+var COLLEGE_STREAM_EMOJIS = {
+  engineering: '⚙️',
+  architecture: '🏗️',
+  design: '🧩',
+  medicine: '🩺',
+  dentistry: '🦷',
+  ayush: '🌿',
+  pharmacy: '💊',
+  law: '⚖️',
+  management: '📈',
+  commerce: '💼',
+  science_stats: '🧪',
+  fashion_media: '📰',
+  humanities: '📚',
+  education: '🧑‍🏫',
+  veterinary: '🐾'
+};
+var COURSE_ANCHOR_EMOJIS = {
+  jee_btech_miss: '⚙️',
+  neet_mbbs_miss: '🩺',
+  banking_ssc_path: '💼',
+  clat_law_miss: '⚖️',
+  ca_path_uncertain: '💼',
+  design_nift_miss: '🧩',
+  agri_icar_miss: '🌾',
+  commerce_bcom_mba: '💼',
+  upsc_parallel_credentials: '📚'
+};
 var planbToastTimer = null;
+function iconForCollegeStream(stream){
+  if (!stream || typeof stream !== 'object') return '📘';
+  if (stream.emoji) return stream.emoji;
+  return COLLEGE_STREAM_EMOJIS[stream.id] || '📘';
+}
+function iconForCourseAnchor(anchor){
+  if (!anchor || typeof anchor !== 'object') return '📋';
+  if (anchor.emoji) return anchor.emoji;
+  return COURSE_ANCHOR_EMOJIS[anchor.id] || '📋';
+}
 function showPlanBToast(message){
   var el = document.getElementById('planb-toast');
   if (!el) return;
@@ -572,22 +624,50 @@ function buildPivotUi(){
     btn.addEventListener('click', function(){ goPivotPath(btn.getAttribute('data-pivot')); });
   });
 }
+function hasCollegeRegistryData(){
+  return !!(COLLEGE_REGISTRY && COLLEGE_REGISTRY.taxonomies && COLLEGE_REGISTRY.colleges && COLLEGE_REGISTRY.college_programs);
+}
+function getCollegeTaxonomyRows(key){
+  if (hasCollegeRegistryData() && COLLEGE_REGISTRY.taxonomies && Array.isArray(COLLEGE_REGISTRY.taxonomies[key])) {
+    return COLLEGE_REGISTRY.taxonomies[key];
+  }
+  var cp = DB && DB.college_plan_b;
+  if (!cp) return [];
+  if (key === 'geography_lenses') return cp.lenses || [];
+  return cp[key] || [];
+}
+function collegeStateNameById(stateId){
+  var rows = getCollegeTaxonomyRows('states');
+  var hit = rows.find(function(x){ return x.id === stateId; });
+  return hit ? hit.label : (stateId || '');
+}
 function collegeStreamLabel(streamId){
-  var cp = DB.college_plan_b;
-  var s = (cp && cp.streams || []).find(function(x){ return x.id === streamId; });
+  var s = getCollegeTaxonomyRows('streams').find(function(x){ return x.id === streamId; });
   return s ? s.label : streamId;
 }
 function collegeStateLabel(stateId){
-  var cp = DB.college_plan_b;
-  var s = (cp && cp.states || []).find(function(x){ return x.id === stateId; });
+  var s = getCollegeTaxonomyRows('states').find(function(x){ return x.id === stateId; });
   return s ? s.label : stateId || '';
 }
+function collegeCourseLabel(courseId){
+  if (!courseId) return '';
+  if (hasCollegeRegistryData() && COLLEGE_REGISTRY.taxonomies && Array.isArray(COLLEGE_REGISTRY.taxonomies.courses)) {
+    var c = COLLEGE_REGISTRY.taxonomies.courses.find(function(x){ return x.id === courseId; });
+    return c ? c.label : courseId;
+  }
+  return courseId;
+}
+function collegeLensLabel(lensId){
+  var rows = getCollegeTaxonomyRows('geography_lenses');
+  var hit = rows.find(function(x){ return x.id === lensId; });
+  return hit ? hit.label : (lensId || '');
+}
 function buildCollegeStateSelect(){
-  var cp = DB.college_plan_b;
+  var states = getCollegeTaxonomyRows('states');
   var sel = document.getElementById('college-state-select');
-  if (!sel || !cp) return;
+  if (!sel) return;
   var opts = '<option value="">Select state…</option>';
-  (cp.states || []).forEach(function(s){
+  states.forEach(function(s){
     if (s.only_for_lens === 'state_comfort') {
       opts += '<option value="' + esc(s.id) + '">' + esc(s.label) + '</option>';
     }
@@ -599,6 +679,25 @@ function buildCollegeStateSelect(){
     refreshCollegeGoBtn();
   };
 }
+function buildCollegeCourseSelect(){
+  var sel = document.getElementById('college-course-select');
+  if (!sel) return;
+  var opts = '<option value="">Select course…</option>';
+  if (hasCollegeRegistryData() && collegePick.stream_id) {
+    (COLLEGE_REGISTRY.taxonomies.courses || []).forEach(function(c){
+      var streams = c.stream_ids || [];
+      if (streams.indexOf(collegePick.stream_id) !== -1) {
+        opts += '<option value="' + esc(c.id) + '">' + esc(c.label) + '</option>';
+      }
+    });
+  }
+  sel.innerHTML = opts;
+  sel.value = collegePick.course_id || '';
+  sel.onchange = function(){
+    collegePick.course_id = this.value || null;
+    refreshCollegeGoBtn();
+  };
+}
 function bindCollegeStream(btn){
   btn.addEventListener('click', function(){
     var val = btn.getAttribute('data-val');
@@ -607,12 +706,16 @@ function bindCollegeStream(btn){
     btn.classList.add('active');
     collegePick.stream_id = val;
     collegePick.lens_id = null;
+    collegePick.course_id = null;
     collegePick.state_id = null;
     document.getElementById('college-lens-wrap').classList.remove('hidden');
     document.getElementById('college-lens-grid').querySelectorAll('.college-pick').forEach(function(s){ s.classList.remove('active'); });
+    document.getElementById('college-course-card').classList.add('hidden');
     document.getElementById('college-state-card').classList.add('hidden');
     var sel = document.getElementById('college-state-select');
     if (sel) sel.value = '';
+    var selCourse = document.getElementById('college-course-select');
+    if (selCourse) selCourse.value = '';
     refreshCollegeGoBtn();
   });
 }
@@ -623,6 +726,12 @@ function bindCollegeLens(btn){
     par.querySelectorAll('.college-pick').forEach(function(s){ s.classList.remove('active'); });
     btn.classList.add('active');
     collegePick.lens_id = val;
+    if (hasCollegeRegistryData()) {
+      document.getElementById('college-course-card').classList.remove('hidden');
+      buildCollegeCourseSelect();
+    } else {
+      document.getElementById('college-course-card').classList.add('hidden');
+    }
     if (val === 'national_level') {
       collegePick.state_id = 'IN';
       document.getElementById('college-state-card').classList.add('hidden');
@@ -635,7 +744,7 @@ function bindCollegeLens(btn){
   });
 }
 function initCollegeScreen(){
-  collegePick = { stream_id: null, lens_id: null, state_id: null };
+  collegePick = { stream_id: null, lens_id: null, course_id: null, state_id: null };
   var cp = DB.college_plan_b;
   if (!cp) return;
   var h1 = document.getElementById('college-hero-h1');
@@ -652,16 +761,17 @@ function initCollegeScreen(){
     nl.textContent = (cp.nirf_portal.label || 'NIRF') + ' →';
   }
   document.getElementById('college-lens-wrap').classList.add('hidden');
+  document.getElementById('college-course-card').classList.add('hidden');
   document.getElementById('college-state-card').classList.add('hidden');
   var sg = document.getElementById('college-stream-grid');
   var htmlS = '';
-  (cp.streams || []).forEach(function(s){
-    htmlS += '<button type="button" class="exam-btn college-pick" data-kind="stream" data-val="' + esc(s.id) + '"><span class="exam-emoji">📘</span><div><span class="exam-label">' + esc(s.label) + '</span><span class="exam-desc">' + esc(s.short || '') + '</span></div></button>';
+  (getCollegeTaxonomyRows('streams') || []).forEach(function(s){
+    htmlS += '<button type="button" class="exam-btn college-pick" data-kind="stream" data-val="' + esc(s.id) + '"><span class="exam-emoji">' + esc(iconForCollegeStream(s)) + '</span><div><span class="exam-label">' + esc(s.label) + '</span><span class="exam-desc">' + esc(s.short || '') + '</span></div></button>';
   });
   sg.innerHTML = htmlS;
   var lg = document.getElementById('college-lens-grid');
   var htmlL = '';
-  (cp.lenses || []).forEach(function(L){
+  (getCollegeTaxonomyRows('geography_lenses') || []).forEach(function(L){
     htmlL += '<button type="button" class="exam-btn college-pick" data-kind="lens" data-val="' + esc(L.id) + '"><span class="exam-emoji">🧭</span><div><span class="exam-label">' + esc(L.label) + '</span><span class="exam-desc">' + esc(L.hint || '') + '</span></div></button>';
   });
   lg.innerHTML = htmlL;
@@ -669,12 +779,15 @@ function initCollegeScreen(){
   sg.querySelectorAll('.college-pick').forEach(bindCollegeStream);
   lg.querySelectorAll('.college-pick').forEach(bindCollegeLens);
   buildCollegeStateSelect();
+  buildCollegeCourseSelect();
 }
 function refreshCollegeGoBtn(){
-  var ok = collegePick.stream_id && collegePick.lens_id && collegePick.state_id;
+  var needCourse = hasCollegeRegistryData();
+  var ok = collegePick.stream_id && collegePick.lens_id && collegePick.state_id && (!needCourse || collegePick.course_id);
   document.getElementById('btn-college-show').disabled = !ok;
 }
 function findCollegeBundle(){
+  if (hasCollegeRegistryData()) return null;
   var cp = DB.college_plan_b;
   if (!cp || !cp.bundles) return null;
   return cp.bundles.find(function(b){
@@ -682,11 +795,150 @@ function findCollegeBundle(){
   });
 }
 function getCollegeNeighbourStates(stateId){
+  if (hasCollegeRegistryData()) {
+    var mapR = COLLEGE_REGISTRY && COLLEGE_REGISTRY.state_neighbors;
+    if (!mapR || !stateId) return [];
+    var arrR = mapR[stateId];
+    return Array.isArray(arrR) ? arrR.slice() : [];
+  }
   var cp = DB.college_plan_b;
   var map = cp && cp.state_neighbors;
   if (!map || !stateId) return [];
   var arr = map[stateId];
   return Array.isArray(arr) ? arr.slice() : [];
+}
+function buildRegistryCollegeCards(programs){
+  var byCollege = {};
+  programs.forEach(function(p){
+    if (!p || !p.college_id) return;
+    if (!byCollege[p.college_id]) byCollege[p.college_id] = [];
+    byCollege[p.college_id].push(p);
+  });
+  var collegeMap = {};
+  (COLLEGE_REGISTRY.colleges || []).forEach(function(c){ collegeMap[c.id] = c; });
+  var courseMap = {};
+  (COLLEGE_REGISTRY.taxonomies.courses || []).forEach(function(c){ courseMap[c.id] = c.label; });
+  var examMap = {};
+  (COLLEGE_REGISTRY.taxonomies.admission_exams || []).forEach(function(e){ examMap[e.id] = e.label; });
+  var out = [];
+  Object.keys(byCollege).forEach(function(collegeId){
+    var c = collegeMap[collegeId];
+    if (!c) return;
+    var rows = byCollege[collegeId];
+    var courseLabels = [];
+    var examLabels = [];
+    rows.forEach(function(r){
+      var cl = courseMap[r.course_id] || r.course_id;
+      if (cl && courseLabels.indexOf(cl) === -1) courseLabels.push(cl);
+      (r.admission_exam_ids || []).forEach(function(ex){
+        var exLabel = examMap[ex] || ex;
+        if (exLabel && examLabels.indexOf(exLabel) === -1) examLabels.push(exLabel);
+      });
+    });
+    var links = [];
+    if (c.contacts && c.contacts.website && /^https?:\/\//i.test(c.contacts.website)) {
+      links.push({ label: 'Official website', url: c.contacts.website });
+    }
+    ((c.verification && c.verification.source_urls) || []).forEach(function(u){
+      if (/^https?:\/\//i.test(u) && !links.find(function(x){ return x.url === u; })) {
+        links.push({ label: 'Source', url: u });
+      }
+    });
+    out.push({
+      name: c.name,
+      type: c.type || '',
+      location: (c.city ? c.city + ', ' : '') + collegeStateNameById(c.state_id),
+      founded: (c.highlights && c.highlights.founded) || '',
+      notable_alumni: ((c.highlights && c.highlights.notable_alumni) || []).join(', '),
+      best_for: (c.highlights && c.highlights.best_for) || '',
+      specialization: (c.highlights && c.highlights.specialization) || '',
+      unique_point: (c.highlights && c.highlights.unique_point) || '',
+      courses_offered: courseLabels.length ? courseLabels.join(' • ') : '',
+      why_choose: (c.highlights && c.highlights.why_choose) || '',
+      nirf_band: (c.verification && c.verification.nirf_band) || '',
+      notes: (c.highlights && c.highlights.notes) || (examLabels.length ? ('Typical exams: ' + examLabels.join(', ') + '.') : ''),
+      links: links
+    });
+  });
+  return out;
+}
+function findCollegeBundleFromRegistry(){
+  if (!hasCollegeRegistryData() || !collegePick.stream_id || !collegePick.lens_id || !collegePick.state_id || !collegePick.course_id) return null;
+  var programs = [];
+  var pAll = COLLEGE_REGISTRY.college_programs || [];
+  var key = '';
+  if (COLLEGE_INDEXES && COLLEGE_INDEXES.by_state_stream_course) {
+    key = [collegePick.state_id, collegePick.stream_id, collegePick.course_id].join('|');
+    var ids = COLLEGE_INDEXES.by_state_stream_course[key] || [];
+    if (ids.length) {
+      var idSet = {};
+      ids.forEach(function(id){ idSet[id] = true; });
+      programs = pAll.filter(function(p){
+        return !!idSet[p.id] && (p.geography_lens_ids || []).indexOf(collegePick.lens_id) !== -1;
+      });
+    }
+  }
+  if (!programs.length) {
+    programs = pAll.filter(function(p){
+      return p.stream_id === collegePick.stream_id &&
+        p.course_id === collegePick.course_id &&
+        (p.geography_lens_ids || []).indexOf(collegePick.lens_id) !== -1;
+    });
+  }
+  if (!programs.length) return null;
+  var collegesById = {};
+  (COLLEGE_REGISTRY.colleges || []).forEach(function(c){ collegesById[c.id] = c; });
+  function filterByState(stateId){
+    return programs.filter(function(p){
+      var c = collegesById[p.college_id];
+      return c && c.state_id === stateId;
+    });
+  }
+  var reqState = collegePick.state_id;
+  if (collegePick.lens_id === 'national_level') {
+    var nationalCards = buildRegistryCollegeCards(programs);
+    if (!nationalCards.length) return null;
+    return {
+      title: collegeStreamLabel(collegePick.stream_id) + ' — National-level options',
+      summary: 'Showing all-India options from the registry for your selected stream. Verify cutoffs and counselling updates on official portals.',
+      tiers: [{ tier_title: 'National-level matches', colleges: nationalCards.slice(0, 120) }]
+    };
+  }
+  var exact = filterByState(reqState);
+  if (exact.length) {
+    return {
+      title: collegeStreamLabel(collegePick.stream_id) + ' — ' + collegeStateLabel(reqState),
+      summary: 'Showing state-comfort options from your selected state.',
+      tiers: [{ tier_title: 'State matches', colleges: buildRegistryCollegeCards(exact).slice(0, 120) }]
+    };
+  }
+  var neighbours = getCollegeNeighbourStates(reqState);
+  for (var i = 0; i < neighbours.length; i++) {
+    var nState = neighbours[i];
+    if (!nState || nState === reqState) continue;
+    var neighbourRows = filterByState(nState);
+    if (neighbourRows.length) {
+      return {
+        title: collegeStreamLabel(collegePick.stream_id) + ' — Neighbour-state options',
+        summary: 'No exact in-state match for your current selection, so we are showing nearby state options as planning references.',
+        tiers: [{ tier_title: 'Neighbour-state matches', colleges: buildRegistryCollegeCards(neighbourRows).slice(0, 120) }],
+        _neighbor_state_fallback: true,
+        _requested_state_id: reqState,
+        _source_state_id: nState
+      };
+    }
+  }
+  if (programs.length) {
+    return {
+      title: collegeStreamLabel(collegePick.stream_id) + ' — National fallback',
+      summary: 'No match was found in your state or neighbour states, so we are showing national-level options for this stream.',
+      tiers: [{ tier_title: 'National fallback matches', colleges: buildRegistryCollegeCards(programs).slice(0, 120) }],
+      _state_anchor_fallback: true,
+      _requested_state_id: reqState,
+      _anchor_state_id: 'IN'
+    };
+  }
+  return null;
 }
 function findStateComfortBundleForStream(streamId, stateId){
   var cp = DB.college_plan_b;
@@ -696,6 +948,39 @@ function findStateComfortBundleForStream(streamId, stateId){
   }) || null;
 }
 function findCollegeBundleOrFallback(){
+  var regBundle = findCollegeBundleFromRegistry();
+  if (regBundle) return regBundle;
+  if (hasCollegeRegistryData() && collegePick.course_id) {
+    var cp2 = DB.college_plan_b;
+    var streamLabel2 = collegeStreamLabel(collegePick.stream_id);
+    var courseLabel = ((COLLEGE_REGISTRY.taxonomies.courses || []).find(function(c){ return c.id === collegePick.course_id; }) || {}).label || collegePick.course_id;
+    return {
+      title: streamLabel2 + ' — ' + courseLabel + ' checklist',
+      summary: 'No exact match was found for this course in your current state/lens selection. We are showing a verification-first guidance card.',
+      results_insight: cp2 && cp2.results_insight,
+      detail_section_intro: cp2 && cp2.detail_section_intro,
+      tiers: [{
+        tier_title: 'Course-specific verification steps',
+        colleges: [{
+          name: 'No exact in-state record yet for selected course',
+          founded: 'This is a guidance card generated when your exact stream + course + geography match is not available yet.',
+          notable_alumni: 'Not applicable for this placeholder card.',
+          best_for: 'Students who need to keep planning instead of stopping when data is incomplete.',
+          specialization: 'Open official portals and search for the selected course name across neighbouring states and national counselling PDFs.',
+          unique_point: 'You selected a specific course. This card keeps the workflow active while data expands.',
+          courses_offered: courseLabel,
+          why_choose: 'You still move forward with a clear checklist while registry coverage grows.',
+          notes: 'Check state counselling portals, NIRF subject tables, and official institute programme pages for this exact course.',
+          links: [
+            { label: 'NIRF India (official)', url: 'https://www.nirfindia.org/' },
+            { label: 'JoSAA (engineering route)', url: 'https://josaa.nic.in/' },
+            { label: 'MCC (medical route)', url: 'https://mcc.nic.in/' }
+          ]
+        }]
+      }],
+      _is_fallback: true
+    };
+  }
   var found = findCollegeBundle();
   if (found) return found;
   var cp = DB.college_plan_b;
@@ -827,6 +1112,19 @@ function showCollegePlanB(){
   }
   document.getElementById('college-res-title').textContent = titleBase;
   document.getElementById('college-res-summary').textContent = b.summary || '';
+  var selEl = document.getElementById('college-res-selection');
+  if (selEl) {
+    var parts = [
+      'Selected',
+      collegeStreamLabel(collegePick.stream_id),
+      collegeCourseLabel(collegePick.course_id),
+      collegeLensLabel(collegePick.lens_id)
+    ].filter(Boolean);
+    if (collegePick.lens_id === 'state_comfort' && collegePick.state_id) {
+      parts.push(collegeStateLabel(collegePick.state_id));
+    }
+    selEl.textContent = parts.join('  →  ');
+  }
   var cp = DB.college_plan_b;
   var insight = b.results_insight || (cp && cp.results_insight);
   var insEl = document.getElementById('college-res-insight');
@@ -849,7 +1147,7 @@ function showCollegePlanB(){
     html += '<div class="student-note" style="margin-bottom:12px;">This combination is not in our curated bundle list yet — showing a <strong>verification-first</strong> template. When we add your exact mix, this banner will disappear.</div>';
   }
   if (b._neighbor_state_fallback) {
-    html += '<div class="college-neighbour-banner" role="status"><strong>Neighbour-state preview</strong> — We do not have a curated Plan B list for <strong>' + esc(collegeStateLabel(b._requested_state_id)) + '</strong> yet. The amber cards below are real examples from <strong>' + esc(collegeStateLabel(b._source_state_id)) + '</strong> (a bordering / nearby state from our map). Counselling portals, domicile, and fees will differ for your home state — verify on your official state CET before acting.</div>';
+    html += '<div class="college-neighbour-banner" role="status"><strong>Neighbour-state preview</strong> — We could not find this exact stream + course combination in <strong>' + esc(collegeStateLabel(b._requested_state_id)) + '</strong>. Showing options from <strong>' + esc(collegeStateLabel(b._source_state_id)) + '</strong> to keep planning active. Counselling portals, domicile, and fees can differ by state — verify on official portals before acting.</div>';
   }
   if (b._state_anchor_fallback) {
     html += '<div class="student-note" style="margin-bottom:12px;">No state-specific list for <strong>' + esc(collegeStateLabel(b._requested_state_id)) + '</strong> in our data yet — showing <strong>' + esc(collegeStateLabel(b._anchor_state_id)) + '</strong> examples as a planning template. Institutes and domicile rules differ by state; confirm everything on your official state counselling portal.</div>';
@@ -883,7 +1181,7 @@ function initCourseScreen(){
   var grid = document.getElementById('course-anchor-grid');
   var html = '';
   (cp.anchors || []).forEach(function(a){
-    html += '<button type="button" class="exam-btn course-anchor-btn" data-anchor="' + esc(a.id) + '"><span class="exam-emoji">📋</span><div><span class="exam-label">' + esc(a.title) + '</span><span class="exam-desc">' + esc((a.context || '').slice(0, 120)) + (a.context && a.context.length > 120 ? '…' : '') + '</span></div></button>';
+    html += '<button type="button" class="exam-btn course-anchor-btn" data-anchor="' + esc(a.id) + '"><span class="exam-emoji">' + esc(iconForCourseAnchor(a)) + '</span><div><span class="exam-label">' + esc(a.title) + '</span><span class="exam-desc">' + esc((a.context || '').slice(0, 120)) + (a.context && a.context.length > 120 ? '…' : '') + '</span></div></button>';
   });
   grid.innerHTML = html;
   grid.querySelectorAll('.course-anchor-btn').forEach(function(btn){
@@ -952,6 +1250,27 @@ function getPlanBDataUrl(){
     return '../DB/pehchaan_plan_b_strategy_builder_data.json';
   }
 }
+function getPrivateRoleDataUrl(){
+  try {
+    return new URL('../DB/pehchaan_private_sector_roles.json', window.location.href).href;
+  } catch (e) {
+    return '../DB/pehchaan_private_sector_roles.json';
+  }
+}
+function getCollegeRegistryUrl(){
+  try {
+    return new URL('../DB/pehchaan_college_registry.json', window.location.href).href;
+  } catch (e) {
+    return '../DB/pehchaan_college_registry.json';
+  }
+}
+function getCollegeIndexesUrl(){
+  try {
+    return new URL('../DB/pehchaan_college_registry_indexes.json', window.location.href).href;
+  } catch (e) {
+    return '../DB/pehchaan_college_registry_indexes.json';
+  }
+}
 
 document.getElementById('btn-begin-planb').addEventListener('click', function(){
   var err = document.getElementById('name-error-planb');
@@ -978,9 +1297,19 @@ document.getElementById('btn-begin-planb').addEventListener('click', function(){
   });
 });
 
-fetch(getPlanBDataUrl())
-  .then(function(r){ return r.json(); })
-  .then(function(d){ DB = d; init(); })
+Promise.all([
+  fetch(getPlanBDataUrl()).then(function(r){ return r.json(); }),
+  fetch(getPrivateRoleDataUrl()).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; }),
+  fetch(getCollegeRegistryUrl()).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; }),
+  fetch(getCollegeIndexesUrl()).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; })
+])
+  .then(function(all){
+    DB = all[0];
+    PRIVATE_ROLE_DB = all[1];
+    COLLEGE_REGISTRY = all[2];
+    COLLEGE_INDEXES = all[3];
+    init();
+  })
   .catch(function(){
     var grid = document.getElementById('exam-grid');
     if (grid) grid.innerHTML = '<p style="color:var(--gray);font-size:13px;text-align:center;padding:20px;">Could not load data. Ensure DB/pehchaan_plan_b_strategy_builder_data.json exists (use a local server if fetch is blocked).</p>';
@@ -1120,6 +1449,66 @@ function metroRoleToJob(r){
     if (r[k] != null && r[k] !== '') base[k] = r[k];
   });
   return base;
+}
+
+function selectedMetroFromContext(){
+  var p = window.PehchaanRegistryPrefill ? PehchaanRegistryPrefill.mergeParams() : {};
+  return (p.metro || '').trim();
+}
+
+function metroLabelFromId(mid){
+  if (!PRIVATE_ROLE_DB || !Array.isArray(PRIVATE_ROLE_DB.metros)) return mid || 'selected metro';
+  var m = PRIVATE_ROLE_DB.metros.find(function(x){ return x.metro_id === mid; });
+  return m ? m.label : (mid || 'selected metro');
+}
+
+function privateRoleToJob(role, metroRow){
+  var must = (role.must_have_skills || []).slice(0, 4).join(' · ');
+  var growth = (role.growth_paths || []).slice(0, 3).join(' → ');
+  var steps = [];
+  if (role.plan_30_60_90 && role.plan_30_60_90.day_0_30) steps = steps.concat(role.plan_30_60_90.day_0_30.slice(0, 2));
+  if (role.plan_30_60_90 && role.plan_30_60_90.day_31_60) steps = steps.concat(role.plan_30_60_90.day_31_60.slice(0, 2));
+  if (role.plan_30_60_90 && role.plan_30_60_90.day_61_90) steps = steps.concat(role.plan_30_60_90.day_61_90.slice(0, 2));
+  return {
+    title: role.title || 'Private sector role',
+    qualification: role.eligibility_min || role.eligibility_preferred || 'Any graduate with role-relevant skills',
+    salary_range: (metroRow && metroRow.salary_fresher ? 'Fresher: ' + metroRow.salary_fresher : 'Fresher salary varies') + (metroRow && metroRow.salary_3yr ? ' · ~3 years: ' + metroRow.salary_3yr : ''),
+    time_to_first_job: 'Usually 4-12 weeks if you build role proof and apply consistently',
+    remote_friendly: false,
+    how_skills_match: role.summary || '',
+    where_to_find: (role.application_channels || []).slice(),
+    how_to_start: (steps[0] || 'Start with one role-aligned project this week.') + ' ' + (steps[1] || ''),
+    plan_b_complements_main: growth ? ('Growth path: ' + growth) : (role.data_freshness_note || ''),
+    student_note: metroRow && metroRow.city_reality_note ? metroRow.city_reality_note : '',
+    detailed_steps: steps,
+    cost_investment: role.salary_variance_factors && role.salary_variance_factors.length ? ('Salary variance drivers: ' + role.salary_variance_factors.join(' · ')) : '',
+    timeline_detail: role.proof_required && role.proof_required.length ? ('Proof recruiters expect: ' + role.proof_required.join(' · ')) : '',
+    data_freshness_note: role.data_freshness_note || ''
+  };
+}
+
+function renderSharedPrivateRoleCards(examId){
+  var host = document.getElementById('metro-corporate-block');
+  if (!host || !PRIVATE_ROLE_DB || !Array.isArray(PRIVATE_ROLE_DB.roles)) return;
+  var metroId = selectedMetroFromContext();
+  if (!metroId) return;
+  var roles = PRIVATE_ROLE_DB.roles.filter(function(r){
+    if (!r || r.status === 'deprecated') return false;
+    var ex = r.plan_b_exam_links || [];
+    return ex.indexOf(examId) >= 0;
+  });
+  if (!roles.length) return;
+  var html = '<div class="card"><div class="card-title"><span class="sti-ico" aria-hidden="true">🏢</span> Shared private-sector role map (' + esc(metroLabelFromId(metroId)) + ')</div>' +
+    '<p style="font-size:12px;color:var(--gray);line-height:1.65;margin-bottom:8px;">These roles come from the connected private-sector role dataset and are mapped to your exam path for realistic city-focused planning.</p></div>';
+  roles.forEach(function(role){
+    var mm = (role.metro_map || []).find(function(m){ return m.metro_id === metroId; });
+    if (!mm) return;
+    var job = privateRoleToJob(role, mm);
+    var idx = lastPlanBJobs.length;
+    lastPlanBJobs.push(job);
+    html += buildJobCardHtml(job, idx);
+  });
+  host.innerHTML += html;
 }
 
 function buildJobCardHtml(job, idx){
@@ -1277,6 +1666,32 @@ function showPlanB(){
   });
   document.getElementById('jobs-container').innerHTML = jobsHtml;
   renderMetroCorporate(m);
+  renderSharedPrivateRoleCards(m.id);
+  var p = window.PehchaanRegistryPrefill ? PehchaanRegistryPrefill.mergeParams() : {};
+  var ctx = {
+    from: 'plan_b',
+    exam: m.id || '',
+    career: (p.career || ''),
+    private_role_id: (p.private_role_id || ''),
+    metro: (p.metro || ''),
+    role_family: (p.role_family || '')
+  };
+  if (window.PehchaanJourney) {
+    PehchaanJourney.setJourney(ctx);
+  }
+  var nextHost = document.getElementById('planb-next-tools');
+  if (nextHost) {
+    var recHtml = '';
+    if (window.PehchaanToolRecommendations) {
+      var rec = PehchaanToolRecommendations.buildNextToolRecommendations(
+        PehchaanToolRecommendations.TOOL.planB,
+        ctx,
+        { roleSelected: true, skillResultDone: true, actionPlanStarted: true, outreachStarted: false, examDriven: true }
+      );
+      recHtml = PehchaanToolRecommendations.buildRecommendationsHtml(rec, esc);
+    }
+    nextHost.innerHTML = recHtml;
+  }
 
   ['screen-pivot', 'screen-college', 'screen-course', 'screen-results-college', 'screen-results-course'].forEach(function(sid){
     var el = document.getElementById(sid);
@@ -1301,6 +1716,8 @@ function resetTool(){
   var man = document.getElementById('manifesto-text');
   if (man && DB) man.textContent = DB.manifesto;
   renderMetroCorporate({});
+  var nextHost = document.getElementById('planb-next-tools');
+  if (nextHost) nextHost.innerHTML = '';
   window.scrollTo(0,0);
 }
 

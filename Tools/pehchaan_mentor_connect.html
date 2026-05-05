@@ -558,6 +558,8 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 
 <script src="../assets/pehchaan_journey.js"></script>
 <script src="../assets/pehchaan_tool_links.js"></script>
+<script src="../assets/pehchaan_career_registry_prefill.js"></script>
+<script src="../assets/pehchaan_tool_recommendations.js"></script>
 <script>
 // ─────────────────────────────────────────────────────────────────
 // MENTOR DATABASE (Google Sheets via Apps Script Web App)
@@ -578,6 +580,7 @@ var mentorDbLoadFailed = false;
 // STATE
 // ─────────────────────────────────────────────────────────────────
 var searchState = {};
+var mentorContextPrefill = {};
 
 function getMentorWebAppUrl() {
   if (MENTOR_CONNECT_CONFIG && MENTOR_CONNECT_CONFIG.mentorWebAppUrl && String(MENTOR_CONNECT_CONFIG.mentorWebAppUrl).trim()) {
@@ -901,11 +904,53 @@ function saveApiKey() {
 window.addEventListener('load', function () {
   var k = localStorage.getItem('pehchaan_serper_key');
   if (k) document.getElementById('api-key').value = k;
+  applyMentorContextPrefill();
   updateMentorDbBanner('loading');
   loadMentorConnectConfig().then(function () {
     return syncMentorDatabase();
   });
 });
+
+function roleFamilyToHint(roleFamily) {
+  var rf = String(roleFamily || '').toLowerCase();
+  if (rf.indexOf('sales') >= 0) return 'sales or business development';
+  if (rf.indexOf('analytics') >= 0) return 'analytics or MIS';
+  if (rf.indexOf('marketing') >= 0) return 'digital marketing';
+  if (rf.indexOf('operations') >= 0) return 'operations';
+  if (rf.indexOf('hr') >= 0) return 'HR and recruitment';
+  if (rf.indexOf('supply') >= 0) return 'logistics and supply chain';
+  if (rf.indexOf('quality') >= 0 || rf.indexOf('tech') >= 0) return 'software testing or quality roles';
+  return '';
+}
+
+function metroToCityHint(metro) {
+  var m = String(metro || '').toLowerCase();
+  if (m === 'delhi_ncr') return 'Delhi NCR';
+  if (m === 'chennai') return 'Chennai';
+  if (m === 'bengaluru') return 'Bengaluru';
+  if (m === 'hyderabad') return 'Hyderabad';
+  if (m === 'pune') return 'Pune';
+  if (m === 'mumbai') return 'Mumbai';
+  return '';
+}
+
+function applyMentorContextPrefill() {
+  var p = {};
+  if (window.PehchaanRegistryPrefill && typeof PehchaanRegistryPrefill.mergeParams === 'function') {
+    p = PehchaanRegistryPrefill.mergeParams();
+  } else if (window.PehchaanJourney && typeof PehchaanJourney.mergeJourney === 'function') {
+    p = PehchaanJourney.mergeJourney();
+  }
+  mentorContextPrefill = p || {};
+  var metroHint = metroToCityHint(p.metro);
+  var roleHint = roleFamilyToHint(p.role_family);
+  if (metroHint && !document.getElementById('input-target').value.trim()) {
+    document.getElementById('input-target').value = metroHint;
+  }
+  if (roleHint && !document.getElementById('input-company').value.trim()) {
+    document.getElementById('input-company').value = roleHint;
+  }
+}
 
 // ─────────────────────────────────────────────────────────────────
 // MAIN SEARCH
@@ -935,7 +980,16 @@ async function runSearch() {
     return;
   }
 
-  searchState = { city, state, company, target, college, firstName, lastName };
+  searchState = {
+    city: city,
+    state: state,
+    company: company,
+    target: target,
+    college: college,
+    firstName: firstName,
+    lastName: lastName,
+    roleFamily: mentorContextPrefill.role_family || ''
+  };
 
   showScreen('screen-loading');
   updateLoading('Connecting to mentor list…');
@@ -1109,11 +1163,38 @@ function buildResults(curated, google, googleErr) {
   // ── BE A MENTOR CTA ──
   html += buildMentorCTA(city, state, company);
 
+  var ctxParams = {};
+  if (window.PehchaanRegistryPrefill && typeof PehchaanRegistryPrefill.mergeParams === 'function') {
+    ctxParams = PehchaanRegistryPrefill.mergeParams();
+  } else if (window.PehchaanJourney && typeof PehchaanJourney.mergeJourney === 'function') {
+    ctxParams = PehchaanJourney.mergeJourney();
+  }
+  var roleFamilyGuess = String(target || '').toLowerCase().indexOf('sale') >= 0 ? 'sales_growth' : '';
   if (window.PehchaanJourney) {
-    window.PehchaanJourney.setJourney({ from: 'mentor' });
+    window.PehchaanJourney.setJourney({
+      from: 'mentor',
+      private_role_id: ctxParams.private_role_id || '',
+      career: ctxParams.career || '',
+      metro: ctxParams.metro || '',
+      role_family: ctxParams.role_family || roleFamilyGuess
+    });
   }
   if (window.PehchaanToolLinks) {
     html += PehchaanToolLinks.wrapNextCard('More Pehchaan tools', PehchaanToolLinks.buildMentorSearchResultInner());
+  }
+  if (window.PehchaanToolRecommendations) {
+    var rec = PehchaanToolRecommendations.buildNextToolRecommendations(
+      PehchaanToolRecommendations.TOOL.mentor,
+      {
+        from: 'mentor',
+        private_role_id: ctxParams.private_role_id || '',
+        career: ctxParams.career || '',
+        metro: ctxParams.metro || '',
+        role_family: ctxParams.role_family || roleFamilyGuess
+      },
+      { outreachStarted: true, actionPlanStarted: true }
+    );
+    html += PehchaanToolRecommendations.buildRecommendationsHtml(rec, escHtml);
   }
   document.getElementById('results-container').innerHTML = html;
   showScreen('screen-results');
@@ -1144,7 +1225,7 @@ function mentorHasLinkedInUrl(urlNorm) {
 function buildMentorCard(m, searchCity, searchCompany, cardIndex) {
   var idx = typeof cardIndex === 'number' ? cardIndex : 0;
   var sd = getStudentDisplayName(searchState.firstName, searchState.lastName);
-  var icebreaker = generateIcebreaker(m.name, m.hometown || searchCity, m.college || '', m.company, m.city || '', sd);
+  var icebreaker = generateIcebreaker(m.name, m.hometown || searchCity, m.college || '', m.company, m.city || '', sd, searchState.roleFamily || '');
   var steps = Array.isArray(m.journeyPath) ? m.journeyPath : [];
   var pathHtml = steps.map(function (p, i) {
     return '<span class="journey-step">' + escHtml(p) + '</span>' + (i < steps.length - 1 ? '<span class="journey-arrow">→</span>' : '');
@@ -1196,7 +1277,7 @@ function buildGoogleCard(r, searchCity, searchCompany, idx) {
   var initials = r.name.split(' ').slice(0, 2).map(function(w){ return w[0] || '?'; }).join('').toUpperCase();
   var cleanLink = r.link;
   var sd = getStudentDisplayName(searchState.firstName, searchState.lastName);
-  var icebreaker = generateIcebreaker(r.name, searchCity, '', searchCompany, '', sd);
+  var icebreaker = generateIcebreaker(r.name, searchCity, '', searchCompany, '', sd, searchState.roleFamily || '');
   var iceId = 'gice-' + String(idx);
 
   return '<div class="google-card">'
@@ -1254,7 +1335,7 @@ function buildLIQuery(parts) {
 
 function buildIcebreakerGenerator(city, college, company, target) {
   var sd = getStudentDisplayName(searchState.firstName, searchState.lastName);
-  var generic = generateIcebreaker('[Mentor Name]', city, college, company, target, sd);
+  var generic = generateIcebreaker('[Mentor Name]', city, college, company, target, sd, searchState.roleFamily || '');
   return '<div class="card">'
     + '<h3>✉️ A starter message for anyone you pick</h3>'
     + '<p style="font-size:12px;color:var(--gray-text);line-height:1.7;margin-bottom:14px;">When you find someone on LinkedIn who fits, start from here — then add one sentence only you could write (a detail from their profile, a shared town, a question you truly care about).</p>'
@@ -1286,15 +1367,24 @@ function studentIcebreakerIntro(city, college, studentDisplay) {
   return 'I am a student from ' + city + (college ? ', currently at ' + college : '');
 }
 
-function generateIcebreaker(name, city, college, company, targetCity, studentDisplay) {
+function generateIcebreaker(name, city, college, company, targetCity, studentDisplay, roleFamily) {
   var intro = studentIcebreakerIntro(city, college, studentDisplay);
   var introShort = studentDisplay
     ? ('I am ' + studentDisplay + ' from ' + city)
     : ('I am from ' + city);
+  var rf = String(roleFamily || '').toLowerCase();
+  var roleAsk = '';
+  if (rf.indexOf('sales') >= 0) roleAsk = 'especially how you built consistency in outreach and follow-up';
+  else if (rf.indexOf('analytics') >= 0) roleAsk = 'especially how you built project proof and interview readiness';
+  else if (rf.indexOf('marketing') >= 0) roleAsk = 'especially how you built campaign skills and portfolio examples';
+  else if (rf.indexOf('operations') >= 0) roleAsk = 'especially how you built process discipline and role readiness';
+  else if (rf.indexOf('hr') >= 0) roleAsk = 'especially how you learned sourcing and interview coordination in the beginning';
+  else if (rf.indexOf('supply') >= 0) roleAsk = 'especially how you built practical operations and coordination skills';
+  else if (rf.indexOf('quality') >= 0 || rf.indexOf('tech') >= 0) roleAsk = 'especially how you built projects and practical test skills';
   var variants = [
-    'Hello ' + name + ', ' + intro + '. I came across your profile on Pehchaan Careers and was genuinely inspired to see someone from my part of the country working at ' + company + (targetCity ? ' in ' + targetCity : '') + '. I have a few questions about how you navigated the journey from ' + city + ' to where you are now. Would you be open to a 5-minute chat — whenever it is convenient for you? Your story could make a real difference to someone starting out from the same place.',
-    'Hi ' + name + ', I found your profile through Pehchaan Careers — a career guidance platform for students from Tier 3 cities. ' + introShort + ' and I am working toward a career in ' + company + '. Seeing your journey gives me genuine hope that it is possible. Would you be willing to share some advice about how you made the transition? Even 10 minutes of your time would be incredibly valuable. Thank you for considering this.',
-    'Hello ' + name + '! ' + intro + ', and I discovered your profile on Pehchaan Careers. I am currently exploring a career path toward ' + company + ' and your journey is exactly the kind of proof I needed that someone from our background can get there. I would be deeply grateful for any guidance you could offer — even a brief message sharing what you wish someone had told you when you were starting out.'
+    'Hello ' + name + ', ' + intro + '. I came across your profile on Pehchaan Careers and was genuinely inspired to see someone from my part of the country working at ' + company + (targetCity ? ' in ' + targetCity : '') + '. I have a few questions about how you navigated the journey from ' + city + ' to where you are now' + (roleAsk ? ', ' + roleAsk : '') + '. Would you be open to a 5-minute chat — whenever it is convenient for you? Your story could make a real difference to someone starting out from the same place.',
+    'Hi ' + name + ', I found your profile through Pehchaan Careers — a career guidance platform for students from Tier 3 cities. ' + introShort + ' and I am working toward a career in ' + company + '. Seeing your journey gives me genuine hope that it is possible. Would you be willing to share some advice about how you made the transition' + (roleAsk ? ', ' + roleAsk : '') + '? Even 10 minutes of your time would be incredibly valuable. Thank you for considering this.',
+    'Hello ' + name + '! ' + intro + ', and I discovered your profile on Pehchaan Careers. I am currently exploring a career path toward ' + company + ' and your journey is exactly the kind of proof I needed that someone from our background can get there. I would be deeply grateful for any guidance you could offer' + (roleAsk ? ', especially ' + roleAsk : '') + ' — even a brief message sharing what you wish someone had told you when you were starting out.'
   ];
   return variants[Math.floor(Math.random() * variants.length)];
 }

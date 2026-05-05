@@ -24,7 +24,7 @@
       } catch (e2) {}
     }
     var out = Object.assign({}, j, u);
-    ["career", "stream", "class", "state", "exam", "job"].forEach(function (k) {
+    ["career", "stream", "class", "state", "exam", "job", "private_role_id", "metro", "role_family", "readiness_band", "from", "roiBand", "profile"].forEach(function (k) {
       if (out[k] == null || out[k] === "") delete out[k];
     });
     return out;
@@ -89,6 +89,17 @@
     return null;
   }
 
+  function findRowByPrivateRoleId(reg, privateRoleId) {
+    if (!reg || !reg.list || !privateRoleId) return null;
+    var target = String(privateRoleId).trim();
+    for (var i = 0; i < reg.list.length; i++) {
+      var row = reg.list[i] || {};
+      if (!Array.isArray(row.private_role_ids)) continue;
+      if (row.private_role_ids.indexOf(target) >= 0) return row;
+    }
+    return null;
+  }
+
   window.PehchaanRegistryPrefill = {
     load: load,
     mergeParams: mergeParams,
@@ -96,6 +107,7 @@
     findRowByExamRoadmapCareerId: findRowByExamRoadmapCareerId,
     findRowBySalaryExplorerId: findRowBySalaryExplorerId,
     resolveCareerTokenRow: resolveCareerTokenRow,
+    findRowByPrivateRoleId: findRowByPrivateRoleId,
     clearCache: function () {
       CACHE = null;
       CACHE_PROMISE = null;

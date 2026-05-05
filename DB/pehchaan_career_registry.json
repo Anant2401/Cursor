@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-05-04",
-    "version": "1.2",
-    "description": "Maps canonical career keys to tool-specific IDs for deep links and analytics. exam_roadmap_career_id matches DB/pehchaan_exam_data.json careers[].id; plan_b_exam_id matches DB/pehchaan_plan_b_strategy_builder_data.json exams[].id. roi_career_id is set only when a row exists in DB/pehchaan_career_roi_reality_bridge_data.json."
+    "last_updated": "2026-05-05",
+    "version": "1.3",
+    "description": "Maps canonical career keys to tool-specific IDs for deep links and analytics. exam_roadmap_career_id matches DB/pehchaan_exam_data.json careers[].id; plan_b_exam_id matches DB/pehchaan_plan_b_strategy_builder_data.json exams[].id. roi_career_id is set only when a row exists in DB/pehchaan_career_roi_reality_bridge_data.json. private_role_ids maps canonical careers to DB/pehchaan_private_sector_roles.json roles[].private_role_id."
   },
   "careers": [
     {
@@ -13,7 +13,8 @@
       "roi_career_id": "software_engineer",
       "skill_gap_job_id": "software_developer",
       "exam_roadmap_career_id": "jee",
-      "plan_b_exam_id": "jee_engineering"
+      "plan_b_exam_id": "jee_engineering",
+      "private_role_ids": ["qa_test_associate"]
     },
     {
       "canonical_id": "chartered_accountant",
@@ -53,7 +54,8 @@
       "roi_career_id": "data_analyst",
       "skill_gap_job_id": "data_analyst",
       "exam_roadmap_career_id": "gate",
-      "plan_b_exam_id": "gate_pg"
+      "plan_b_exam_id": "gate_pg",
+      "private_role_ids": ["junior_data_analyst", "mis_executive"]
     },
     {
       "canonical_id": "lawyer",
@@ -83,7 +85,8 @@
       "roi_career_id": "bank_po",
       "skill_gap_job_id": "bank_finance",
       "exam_roadmap_career_id": "ibps",
-      "plan_b_exam_id": "ssc_banking"
+      "plan_b_exam_id": "ssc_banking",
+      "private_role_ids": ["finance_operations_associate"]
     },
     {
       "canonical_id": "ssc_government",
@@ -113,7 +116,8 @@
       "roi_career_id": "digital_marketing",
       "skill_gap_job_id": "digital_marketer",
       "exam_roadmap_career_id": "content",
-      "plan_b_exam_id": null
+      "plan_b_exam_id": null,
+      "private_role_ids": ["digital_marketing_executive"]
     },
     {
       "canonical_id": "iti_electrician",
@@ -143,7 +147,8 @@
       "roi_career_id": null,
       "skill_gap_job_id": "content_writer",
       "exam_roadmap_career_id": "journal",
-      "plan_b_exam_id": "cuet_ug"
+      "plan_b_exam_id": "cuet_ug",
+      "private_role_ids": ["content_associate"]
     },
     {
       "canonical_id": "graphic_ui_designer",
@@ -193,7 +198,8 @@
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "cat",
-      "plan_b_exam_id": "cat_mba"
+      "plan_b_exam_id": "cat_mba",
+      "private_role_ids": ["operations_associate"]
     },
     {
       "canonical_id": "defence_officer",
@@ -263,7 +269,8 @@
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "cat",
-      "plan_b_exam_id": "cat_mba"
+      "plan_b_exam_id": "cat_mba",
+      "private_role_ids": ["hr_recruiter_entry"]
     },
     {
       "canonical_id": "animator_game_designer",
@@ -293,7 +300,8 @@
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "cat",
-      "plan_b_exam_id": "cat_mba"
+      "plan_b_exam_id": "cat_mba",
+      "private_role_ids": ["logistics_coordinator"]
     },
     {
       "canonical_id": "ayush_doctor",
@@ -543,7 +551,8 @@
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "cat",
-      "plan_b_exam_id": "cat_mba"
+      "plan_b_exam_id": "cat_mba",
+      "private_role_ids": ["sales_executive_b2b", "business_development_associate"]
     },
     {
       "canonical_id": "welder_fabricator",
@@ -596,6 +605,7 @@
       "skill_gap_job_id",
       "exam_roadmap_career_id",
       "plan_b_exam_id",
+        "private_role_ids",
       "tags"
     ],
     "client_modules": [
