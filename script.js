@@ -11,20 +11,47 @@ if (menuButton && nav) {
 }
 
 const reveals = document.querySelectorAll(".reveal");
+
+/** Any overlap with the viewport (used so tall blocks like #tools still reveal on narrow screens). */
+function revealOverlapsViewport(el) {
+  const r = el.getBoundingClientRect();
+  const vh = window.innerHeight || document.documentElement.clientHeight;
+  const vw = window.innerWidth || document.documentElement.clientWidth;
+  return r.bottom > 0 && r.top < vh && r.right > 0 && r.left < vw;
+}
+
+function markRevealVisible(el) {
+  el.classList.add("visible");
+}
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
+        markRevealVisible(entry.target);
       }
     });
   },
-  { threshold: 0.15 }
+  /* 0.15 required ~15% of very tall sections (e.g. Career Tools) to show — often never met on mobile. */
+  { threshold: 0, rootMargin: "0px 0px 12% 0px" }
 );
 
-reveals.forEach((item) => observer.observe(item));
+reveals.forEach((item) => {
+  observer.observe(item);
+  if (revealOverlapsViewport(item)) {
+    markRevealVisible(item);
+  }
+});
 
-function initToolsTabs() {
+requestAnimationFrame(() => {
+  reveals.forEach((item) => {
+    if (!item.classList.contains("visible") && revealOverlapsViewport(item)) {
+      markRevealVisible(item);
+    }
+  });
+});
+
+function initCareerToolsSection() {
   const toolsSection = document.getElementById("tools");
   if (!toolsSection) return;
 
@@ -350,7 +377,7 @@ function initToolsTabs() {
   window.__pehchaanRefreshToolsGrid = refreshToolsGrid;
 }
 
-initToolsTabs();
+initCareerToolsSection();
 
 function initStartHere() {
   const stageEl = document.getElementById("start-stage");
