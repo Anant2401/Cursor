@@ -455,158 +455,83 @@
             </ol>
           </div>
           <div class="start-here-card" id="start-here-card">
-            <div class="start-here-title">Start here (30 seconds)</div>
-            <p class="start-here-lead">Pick what matches you — we suggest where to go next.</p>
-            <div class="start-here-grid">
-              <label class="start-here-field">Where are you right now?
-                <select id="start-stage">
-                  <option value="">Select…</option>
-                  <option value="10">Class 10 / just finished 10th</option>
-                  <option value="12">Class 11–12 / just finished 12th</option>
-                  <option value="college">In college / graduate</option>
-                  <option value="parent">I am a parent browsing for my child</option>
-                </select>
-              </label>
-              <label class="start-here-field">What do you want clarity on first?
-                <select id="start-worry">
-                  <option value="">Select…</option>
-                  <option value="fit">What career fits me</option>
-                  <option value="money">Money, fees, ROI, loans</option>
-                  <option value="exam">Competitive exams &amp; timelines</option>
-                  <option value="job">Getting job-ready skills</option>
-                </select>
-              </label>
+            <div class="start-here-title">Not sure where to start? Take the 30-second pathfinder.</div>
+            <p class="start-here-lead">We will filter 1,000+ paths down to your best next step.</p>
+            <div class="pathfinder-progress" aria-hidden="true">
+              <div class="pathfinder-progress-fill" id="pathfinder-progress-fill"></div>
             </div>
-            <div class="start-here-out" id="start-here-out" hidden>
-              <div class="start-here-result-top">
-                <div>
-                  <strong class="start-here-result-title">Your picks are highlighted below</strong>
-                  <p class="start-here-result-sub" id="start-here-sub"></p>
-                </div>
-                <button type="button" class="start-here-clear-btn" id="start-here-clear" hidden>
-                  Show all tools
-                </button>
+            <div class="pathfinder-slides" id="pathfinder-slides">
+              <div class="pathfinder-slide is-active" id="path-slide-q1" data-step="1">
+                <label class="start-here-field">To give you the best roadmap, tell us who you are:
+                  <select id="path-q1">
+                    <option value="">Select…</option>
+                    <option value="school_9_10">Student in 9th or 10th Class</option>
+                    <option value="school_11_12">Student in 11th or 12th Class</option>
+                    <option value="college_grad">College Student or Recent Graduate</option>
+                    <option value="working_pro">Working Professional</option>
+                    <option value="parent">A Parent</option>
+                  </select>
+                </label>
+                <p class="pathfinder-why">This helps us filter 1,000+ paths down to your best 1.</p>
               </div>
-              <div class="start-here-pills" id="start-here-pills" aria-label="Suggested tools order"></div>
-              <p class="start-here-note">Each chip matches a card in the grid. Open <strong>View details</strong> on a card, or launch the tool when you are ready.</p>
+              <div class="pathfinder-slide" id="path-slide-q2" data-step="2">
+                <label class="start-here-field">What do you want help with first?
+                  <select id="path-q2">
+                    <option value="">Select…</option>
+                    <option value="clarity_career">I don’t know what career / role fits me.</option>
+                    <option value="clarity_path">I’m confused about path (stream/college/exam) options.</option>
+                    <option value="clarity_money">I’m worried about the cost and money side.</option>
+                    <option value="clarity_execution">I need help with exams / jobs / next steps.</option>
+                  </select>
+                </label>
+                <p class="pathfinder-why">This helps us filter 1,000+ paths down to your best 1.</p>
+              </div>
+              <div class="pathfinder-slide" id="path-slide-result" data-step="4">
+                <div class="pathfinder-result-card">
+                  <div class="pathfinder-result-chip">Suggested next tool</div>
+                  <h3 id="pathfinder-result-title"></h3>
+                  <p id="pathfinder-result-text"></p>
+                  <a id="pathfinder-result-link" class="btn-assessment-primary" href="#">Start Now →</a>
+                </div>
+                <div class="start-here-result-top">
+                  <p class="start-here-result-sub" id="start-here-sub"></p>
+                  <button type="button" class="start-here-clear-btn" id="start-here-clear">Restart quiz</button>
+                </div>
+                <div class="start-here-pills" id="start-here-pills" aria-label="Suggested tools order"></div>
+              </div>
+            </div>
+            <div class="pathfinder-audit">
+              <button type="button" class="start-here-clear-btn" id="pathfinder-audit-toggle">Audit mode</button>
+              <div id="pathfinder-audit-panel" hidden>
+                <p><strong>Persona:</strong> <span id="pathfinder-audit-persona">-</span></p>
+                <p><strong>Q2 Answer:</strong> <span id="pathfinder-audit-q2">-</span></p>
+                <p><strong>Primary Tool:</strong> <span id="pathfinder-audit-primary">-</span></p>
+                <p><strong>Tools Shown:</strong> <span id="pathfinder-audit-tools">-</span></p>
+              </div>
             </div>
           </div>
           <div class="tools-panel is-active" id="tools-panel-all" aria-label="All career tools">
             <div class="tools-grid" id="tools-grid">
-              <article class="tool-card" data-tool="assessment">
-                <div class="tool-card-chip">For students exploring options</div>
-                <h3>Career Assessment</h3>
-                <p>
-                  Identify your interests and strengths with a guided assessment, then discover
-                  career paths that align with your profile.
-                </p>
-                <a href="Tools/pehchaan_career_assessment.html" class="btn-assessment-primary">Launch Tool →</a>
-              </article>
-              <article class="tool-card" data-tool="stream">
-                <div class="tool-card-chip">For Class 10 students and parents</div>
-                <h3>Stream Advisor (10th Class)</h3>
-                <p>
-                  Compare Science, Commerce, and Arts using your goals and preferences so your stream
-                  decision is based on fit, not pressure.
-                </p>
-                <a href="Tools/pehchaan_stream_advisor.html" class="btn-assessment-primary">Launch Tool →</a>
-              </article>
-              <article class="tool-card" data-tool="salary">
-                <div class="tool-card-chip">For students comparing opportunities</div>
-                <h3>Salary Explorer</h3>
-                <p>
-                  Explore salary ranges across careers and growth stages to better evaluate long-term
-                  opportunities before choosing your next step.
-                </p>
-                <a href="Tools/pehchaan_salary_explorer.html" class="btn-assessment-primary">Launch Tool →</a>
-              </article>
-              <article class="tool-card" data-tool="privatejourney">
-                <div class="tool-card-chip">For students targeting private-sector jobs with clear next steps</div>
-                <h3>Private Sector Journey</h3>
-                <p>
-                  Choose your stage, metro, timeline, and comfort area to get top role suggestions, a simple 30/60/90
-                  plan, and direct links to Salary, Skill Gap, Plan B, and Mentor tools.
-                </p>
-                <a href="Tools/pehchaan_private_sector_journey.html" class="btn-assessment-primary">Launch Tool →</a>
-              </article>
-              <article class="tool-card" data-tool="roi">
-                <div class="tool-card-chip">For students and families planning money honestly</div>
-                <h3>Career ROI &amp; Reality Bridge</h3>
-                <p>
-                  Estimate total investment — coaching, college, living costs, and buffer — then see
-                  salary bands, break-even timing, and plain-language reality checks before you lock in a path.
-                </p>
-                <a href="Tools/pehchaan_career_roi_reality_bridge.html" class="btn-assessment-primary">Launch Tool →</a>
-              </article>
-              <article class="tool-card" data-tool="financing">
-                <div class="tool-card-chip">For families discussing loans &amp; EMI honestly</div>
-                <h3>Financing &amp; EMI Reality</h3>
-                <p>
-                  Ballpark education-loan EMI vs a starting salary you type in — plus scholarship direction and
-                  bank-conversation pointers (not financial advice).
-                </p>
-                <a href="Tools/pehchaan_financing_reality.html" class="btn-assessment-primary">Launch Tool →</a>
-              </article>
-              <article class="tool-card" data-tool="roadmap">
-                <div class="tool-card-chip">For students preparing exam strategies</div>
-                <h3>Exam Roadmap Builder</h3>
-                <p>
-                  Build a personalised exam calendar with key deadlines, preparation phases, and
-                  practical next steps based on your class, stream, and target career.
-                </p>
-                <a href="Tools/pehchaan_exam_roadmap.html" class="btn-assessment-primary">Launch Tool →</a>
-              </article>
-              <article class="tool-card" data-tool="planb">
-                <div class="tool-card-chip">For aspirants who want jobs, college backups, or course ladders—not guesswork</div>
-                <h3>Plan B Strategy Builder</h3>
-                <p>
-                  <strong>Jobs &amp; income:</strong> pick your exam—prep as skills, parallel roles, typical pay, and a
-                  copyable first step. <strong>Colleges:</strong> stream-based national counselling-style ladders or
-                  state-comfort backups (domicile-aware). <strong>Courses:</strong> horizontal degree ladders toward a similar
-                  job family. Awareness only—verify on official portals.
-                </p>
-                <a href="Tools/pehchaan_plan_b_strategy_builder.html" class="btn-assessment-primary">Launch Tool →</a>
-              </article>
-              <article class="tool-card" data-tool="collegefinder">
-                <div class="tool-card-chip">For students comparing specific colleges by stream and course</div>
-                <h3>College Finder</h3>
-                <p>
-                  Select geography lens, state, stream, and course to see exact college matches first. If your
-                  selected course is unavailable in-state, the tool suggests neighbour-state options before
-                  national fallback so planning never stops.
-                </p>
-                <a href="Tools/pehchaan_college_finder.html" class="btn-assessment-primary">Launch Tool →</a>
-              </article>
-              <article class="tool-card" data-tool="skillgap">
-                <div class="tool-card-chip">For learners targeting a specific role</div>
-                <h3>Skill Gap Analyser</h3>
-                <p>
-                  Pick a target job, mark what you already know, and get a gap heatmap with curated learning paths
-                  resources, practice platforms, and a phased timeline toward job-ready skills.
-                </p>
-                <a href="Tools/pehchaan_skill_gap_analyser.html" class="btn-assessment-primary">Launch Tool →</a>
-              </article>
-              <article class="tool-card" data-tool="mentor">
-                <div class="tool-card-chip">For students who need proof, not noise</div>
-                <h3>Mentor Connect</h3>
-                <p>
-                  Find professionals from your place who made it to the role or company you are aiming
-                  for — then open respectful draft messages in your name and take one real step on
-                  LinkedIn.
-                </p>
-                <a href="Tools/pehchaan_mentor_connect.html" class="btn-assessment-primary">Launch Tool →</a>
-              </article>
-              <article class="tool-card" data-tool="parentguide">
-                <div class="tool-card-chip">For parents &amp; families</div>
-                <h3>Parent's Guide (FAQ)</h3>
-                <p>
-                  170 short answers in English or Hinglish — marks, sarkari vs private, local jobs,
-                  money, low marks, and more. Fuzzy search understands how parents really ask; open in
-                  one tap.
-                </p>
-                <a href="Tools/parents-guide/index.html" class="btn-assessment-primary">Launch Tool →</a>
-              </article>
-            </div>
+  <div class="phase-divider phase-1">📍 Phase 1: Self-Discovery &amp; Direction</div>
+  <article class="tool-card" data-phase="1" data-tool="assessment"><div class="tool-card-chip">For students exploring options</div><h3>Career Assessment</h3><p>Discover your strengths and interests, then get practical career directions you can discuss with family and mentors confidently.</p><a href="Tools/pehchaan_career_assessment.html" class="btn-assessment-primary">Launch Tool →</a></article>
+  <article class="tool-card" data-phase="1" data-tool="stream"><div class="tool-card-chip">For Class 10 students and parents</div><h3>Stream Advisor (10th Class)</h3><p>Compare Science, Commerce, and Arts with clarity so your stream decision is based on fit, goals, and real outcomes.</p><a href="Tools/pehchaan_stream_advisor.html" class="btn-assessment-primary">Launch Tool →</a></article>
+  <article class="tool-card" data-phase="1" data-tool="salary"><div class="tool-card-chip">For students comparing opportunities</div><h3>Salary Explorer</h3><p>Compare entry and growth salary ranges across paths to set realistic expectations before choosing courses, exams, and job tracks.</p><a href="Tools/pehchaan_salary_explorer.html" class="btn-assessment-primary">Launch Tool →</a></article>
+
+  <div class="phase-divider phase-2">🗺️ Phase 2: Mapping the Path</div>
+  <article class="tool-card" data-phase="2" data-tool="roadmap"><div class="tool-card-chip">For students preparing exam strategies</div><h3>Exam Roadmap Builder</h3><p>Build a personalized exam timeline with key deadlines, prep windows, and next actions matched to your class and goal.</p><a href="Tools/pehchaan_exam_roadmap.html" class="btn-assessment-primary">Launch Tool →</a></article>
+  <article class="tool-card" data-phase="2" data-tool="collegefinder"><div class="tool-card-chip">For students comparing specific colleges</div><h3>College Finder</h3><p>Find colleges by state, stream, and course with exact matches first, then fallback options so your planning never stalls.</p><a href="Tools/pehchaan_college_finder.html" class="btn-assessment-primary">Launch Tool →</a></article>
+  <article class="tool-card" data-phase="2" data-tool="skillgap"><div class="tool-card-chip">For learners targeting a role</div><h3>Skill Gap Analyser</h3><p>Pick a role, mark current skills, and get a focused learning plan with resources and timelines to become interview-ready.</p><a href="Tools/pehchaan_skill_gap_analyser.html" class="btn-assessment-primary">Launch Tool →</a></article>
+
+  <div class="phase-divider phase-3">💰 Phase 3: The Reality Check</div>
+  <article class="tool-card" data-phase="3" data-tool="roi"><div class="tool-card-chip">For students and families planning money</div><h3>Career ROI &amp; Reality Bridge</h3><p>Estimate total education investment and compare it with salary outcomes so decisions stay honest, practical, and long-term.</p><a href="Tools/pehchaan_career_roi_reality_bridge.html" class="btn-assessment-primary">Launch Tool →</a></article>
+  <article class="tool-card" data-phase="3" data-tool="financing"><div class="tool-card-chip">For families discussing loans and EMI</div><h3>Financing &amp; EMI Reality</h3><p>Estimate education-loan EMI against expected starting pay and review key scholarship and bank-conversation points before committing.</p><a href="Tools/pehchaan_financing_reality.html" class="btn-assessment-primary">Launch Tool →</a></article>
+  <article class="tool-card" data-phase="3" data-tool="planb"><div class="tool-card-chip">For aspirants needing backup pathways</div><h3>Plan B Strategy Builder</h3><p>Create practical backup routes across jobs, colleges, and courses so one exam result never becomes a career dead end.</p><a href="Tools/pehchaan_plan_b_strategy_builder.html" class="btn-assessment-primary">Launch Tool →</a></article>
+
+  <div class="phase-divider phase-4">🚀 Phase 4: Beyond Education</div>
+  <article class="tool-card" data-phase="4" data-tool="privatejourney"><div class="tool-card-chip">For students targeting private-sector roles</div><h3>Private Sector Journey</h3><p>Get role suggestions, a 30/60/90 action plan, and direct links to the next tools needed for real job movement.</p><a href="Tools/pehchaan_private_sector_journey.html" class="btn-assessment-primary">Launch Tool →</a></article>
+  <article class="tool-card" data-phase="4" data-tool="mentor"><div class="tool-card-chip">For students who need proof and guidance</div><h3>Mentor Connect</h3><p>Find relevant mentors and send respectful outreach drafts so you can learn from professionals who already walked that path.</p><a href="Tools/pehchaan_mentor_connect.html" class="btn-assessment-primary">Launch Tool →</a></article>
+  <article class="tool-card" data-phase="4" data-tool="parentguide"><div class="tool-card-chip">For parents and families</div><h3>Parent's Guide (FAQ)</h3><p>Browse parent-focused answers on marks, costs, careers, and choices in simple language built for real family discussions.</p><a href="Tools/parents-guide/index.html" class="btn-assessment-primary">Launch Tool →</a></article>
+</div>
           </div>
         </div>
       </div>

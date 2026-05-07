@@ -1,0 +1,1069 @@
+{
+  "meta": {
+    "state_id": "MP",
+    "count": 20,
+    "generated_on": "2026-05-07"
+  },
+  "institutions": [
+    {
+      "institution_id": "iit_indore",
+      "name": "IIT Indore",
+      "state_id": "MP",
+      "city": "Indore",
+      "type": "IIT",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "iit_indore_engineering_engineering_generic_state_comfort_mp",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "manit_bhopal",
+      "name": "MANIT Bhopal",
+      "state_id": "MP",
+      "city": "Bhopal",
+      "type": "NIT",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "manit_bhopal_engineering_engineering_generic_state_comfort_mp",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "iiitdm_jabalpur",
+      "name": "IIITDM Jabalpur",
+      "state_id": "MP",
+      "city": "Jabalpur",
+      "type": "IIIT",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "iiitdm_jabalpur_engineering_engineering_generic_state_comfort_mp",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "uit_rgpv_davv_clusters_verify_programmes",
+      "name": "UIT RGPV / DAVV clusters (verify programmes)",
+      "state_id": "MP",
+      "city": "Bhopal / Indore",
+      "type": "State",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "uit_rgpv_davv_clusters_verify_programmes_engineering_engineering_generic_state_c",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "private_engineering_colleges_across_mp",
+      "name": "Private engineering colleges across MP",
+      "state_id": "MP",
+      "city": "Multiple cities",
+      "type": "Private",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "private_engineering_colleges_across_mp_engineering_engineering_generic_state_com",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "sgsits_indore",
+      "name": "Shri Govindram Seksaria Institute of Technology and Science (SGSITS), Indore",
+      "state_id": "MP",
+      "city": "Indore",
+      "type": "Autonomous engineering institute",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "sgsits_indore_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "abv_iiitm_gwalior",
+      "name": "Atal Bihari Vajpayee Indian Institute of Information Technology and Management (ABV-IIITM), Gwalior",
+      "state_id": "MP",
+      "city": "Gwalior",
+      "type": "Institute of national importance",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "abv_iiitm_gwalior_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "uec_ujjain",
+      "name": "Ujjain Engineering College (UEC), Ujjain",
+      "state_id": "MP",
+      "city": "Ujjain",
+      "type": "Government engineering college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "uec_ujjain_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "lnct_bhopal",
+      "name": "Lakshmi Narain College of Technology (LNCT), Bhopal",
+      "state_id": "MP",
+      "city": "Bhopal",
+      "type": "Private engineering college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "lnct_bhopal_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "sirt_bhopal",
+      "name": "Sagar Institute of Research and Technology (SIRT), Bhopal",
+      "state_id": "MP",
+      "city": "Bhopal",
+      "type": "Private engineering college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "sirt_bhopal_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "aiims_bhopal",
+      "name": "All India Institute of Medical Sciences (AIIMS), Bhopal",
+      "state_id": "MP",
+      "city": "Bhopal",
+      "type": "Institute of national importance",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "aiims_bhopal_medicine_medicine_mbbs_state_comfort",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "gandhi_medical_college_bhopal",
+      "name": "Gandhi Medical College, Bhopal",
+      "state_id": "MP",
+      "city": "Bhopal",
+      "type": "Government medical college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "gandhi_medical_college_bhopal_medicine_medicine_mbbs_state_comfort",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "nscb_medical_college_jabalpur",
+      "name": "Netaji Subhash Chandra Bose Medical College, Jabalpur",
+      "state_id": "MP",
+      "city": "Jabalpur",
+      "type": "Government medical college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "nscb_medical_college_jabalpur_medicine_medicine_mbbs_state_comfort",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "nliu_bhopal",
+      "name": "National Law Institute University (NLIU), Bhopal",
+      "state_id": "MP",
+      "city": "Bhopal",
+      "type": "National law university",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "nliu_bhopal_law_law_generic_state_comfort",
+          "stream_id": "law",
+          "course_id": "law_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "iet_davv_indore",
+      "name": "Institute of Engineering and Technology (IET DAVV), Indore",
+      "state_id": "MP",
+      "city": "Indore",
+      "type": "Government engineering institute",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "iet_davv_indore_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "mits_gwalior",
+      "name": "Madhav Institute of Technology and Science (MITS), Gwalior",
+      "state_id": "MP",
+      "city": "Gwalior",
+      "type": "Autonomous engineering institute",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "mits_gwalior_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "gajara_raja_medical_college_gwalior",
+      "name": "Gajra Raja Medical College, Gwalior",
+      "state_id": "MP",
+      "city": "Gwalior",
+      "type": "Government medical college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "gajara_raja_medical_college_gwalior_medicine_medicine_mbbs_state_comfo",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "index_medical_college_indore",
+      "name": "Index Medical College, Indore",
+      "state_id": "MP",
+      "city": "Indore",
+      "type": "Private medical college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "index_medical_college_indore_medicine_medicine_mbbs_state_comfort",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "atal_bihari_vajpayee_govt_arts_commerce_college_bhopal",
+      "name": "Atal Bihari Vajpayee Government Arts and Commerce College, Bhopal",
+      "state_id": "MP",
+      "city": "Bhopal",
+      "type": "Government commerce college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "atal_bihari_vajpayee_govt_arts_commerce_college_bhopal_commerce_commer",
+          "stream_id": "commerce",
+          "course_id": "commerce_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "ips_academy_indore",
+      "name": "IPS Academy Institute of Engineering and Science, Indore",
+      "state_id": "MP",
+      "city": "Indore",
+      "type": "Private engineering college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "ips_academy_indore_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    }
+  ]
+}

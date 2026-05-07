@@ -1,0 +1,407 @@
+{
+  "meta": {
+    "shard_type": "institutions",
+    "state_id": "DL",
+    "state_label": "Delhi (NCT)",
+    "count": 12,
+    "generated_on": "2026-05-07"
+  },
+  "institutions": [
+    {
+      "id": "dtu_nsut_iiit_d_examples",
+      "name": "DTU / NSUT / IIIT-D (examples)",
+      "state_id": "DL",
+      "city": "Delhi",
+      "type": "State / INI",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://jacdelhi.admissions.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating DTU / NSUT / IIIT-D (examples) for stream-aligned pathways in and around Delhi.",
+        "specialization": "DTU / NSUT / IIIT-D (examples) is positioned as a state / ini with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "DTU / NSUT / IIIT-D (examples) contributes a distinct local option in Delhi and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose DTU / NSUT / IIIT-D (examples) when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Admission via JAC Delhi / JEE — read current year Information Bulletin."
+      },
+      "verification": {
+        "nirf_band": "Typically strong bands — verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://jacdelhi.admissions.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "nit_delhi",
+      "name": "NIT Delhi",
+      "state_id": "DL",
+      "city": "Sonipat region",
+      "type": "NIT",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://nitdelhi.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating NIT Delhi for stream-aligned pathways in and around Sonipat region.",
+        "specialization": "NIT Delhi is positioned as a nit with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "NIT Delhi contributes a distinct local option in Sonipat region and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose NIT Delhi when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Campus location vs brand — visit if possible."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://nitdelhi.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "established_private_universities_in_ncr",
+      "name": "Established private universities in NCR",
+      "state_id": "DL",
+      "city": "NCR",
+      "type": "Private",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nirfindia.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating Established private universities in NCR for stream-aligned pathways in and around NCR.",
+        "specialization": "Established private universities in NCR is positioned as a private with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Established private universities in NCR contributes a distinct local option in NCR and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Established private universities in NCR when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Compare total 4-year cost incl. hostel; ask for audited placement PDF."
+      },
+      "verification": {
+        "nirf_band": "Varies widely",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nirfindia.org/"
+        ]
+      }
+    },
+    {
+      "id": "aiims_new_delhi",
+      "name": "AIIMS New Delhi",
+      "state_id": "DL",
+      "city": "New Delhi",
+      "type": "AIIMS",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.aiims.edu/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating AIIMS New Delhi for stream-aligned pathways in and around New Delhi.",
+        "specialization": "AIIMS New Delhi is positioned as a aiims with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "AIIMS New Delhi contributes a distinct local option in New Delhi and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose AIIMS New Delhi when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "NEET-UG AIQ; separate from state."
+      },
+      "verification": {
+        "nirf_band": "Top Medical band — verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.aiims.edu/"
+        ]
+      }
+    },
+    {
+      "id": "maulana_azad_medical_college_mamc",
+      "name": "Maulana Azad Medical College (MAMC)",
+      "state_id": "DL",
+      "city": "New Delhi",
+      "type": "State / DU",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mcc.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating Maulana Azad Medical College (MAMC) for stream-aligned pathways in and around New Delhi.",
+        "specialization": "Maulana Azad Medical College (MAMC) is positioned as a state / du with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Maulana Azad Medical College (MAMC) contributes a distinct local option in New Delhi and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Maulana Azad Medical College (MAMC) when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Read seat matrix carefully with DU rules."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "university_college_of_medical_sciences_ucms",
+      "name": "University College of Medical Sciences (UCMS)",
+      "state_id": "DL",
+      "city": "Delhi",
+      "type": "DU",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://ucms.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating University College of Medical Sciences (UCMS) for stream-aligned pathways in and around Delhi.",
+        "specialization": "University College of Medical Sciences (UCMS) is positioned as a du with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "University College of Medical Sciences (UCMS) contributes a distinct local option in Delhi and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose University College of Medical Sciences (UCMS) when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Attached GTB Hospital — verify internship structure."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://ucms.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "esic_medical_college_faridabad_example_ncr",
+      "name": "ESIC Medical College Faridabad (example NCR)",
+      "state_id": "DL",
+      "city": "Haryana (NCR)",
+      "type": "Central",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mcc.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating ESIC Medical College Faridabad (example NCR) for stream-aligned pathways in and around Haryana (NCR).",
+        "specialization": "ESIC Medical College Faridabad (example NCR) is positioned as a central with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "ESIC Medical College Faridabad (example NCR) contributes a distinct local option in Haryana (NCR) and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose ESIC Medical College Faridabad (example NCR) when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Watch MCC special rounds."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "private_medical_colleges_gurugram_noida_belt",
+      "name": "Private medical colleges Gurugram / Noida belt",
+      "state_id": "DL",
+      "city": "NCR",
+      "type": "Private",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nmc.org.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating Private medical colleges Gurugram / Noida belt for stream-aligned pathways in and around NCR.",
+        "specialization": "Private medical colleges Gurugram / Noida belt is positioned as a private with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Private medical colleges Gurugram / Noida belt contributes a distinct local option in NCR and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Private medical colleges Gurugram / Noida belt when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Compare total cost and clinical posting hospitals."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nmc.org.in/"
+        ]
+      }
+    },
+    {
+      "id": "university_of_delhi",
+      "name": "University of Delhi",
+      "state_id": "DL",
+      "city": "New Delhi",
+      "type": "Central university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.du.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students evaluating University of Delhi for stream-aligned pathways in and around New Delhi.",
+        "specialization": "University of Delhi is positioned as a central university with public context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "University of Delhi contributes a distinct local option in New Delhi and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose University of Delhi when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.du.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "jamia_millia_islamia",
+      "name": "Jamia Millia Islamia",
+      "state_id": "DL",
+      "city": "New Delhi",
+      "type": "Central university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.jmi.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students evaluating Jamia Millia Islamia for stream-aligned pathways in and around New Delhi.",
+        "specialization": "Jamia Millia Islamia is positioned as a central university with public context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Jamia Millia Islamia contributes a distinct local option in New Delhi and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Jamia Millia Islamia when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.jmi.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "jnu",
+      "name": "Jawaharlal Nehru University",
+      "state_id": "DL",
+      "city": "New Delhi",
+      "type": "Central university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.jnu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students evaluating Jawaharlal Nehru University for stream-aligned pathways in and around New Delhi.",
+        "specialization": "Jawaharlal Nehru University is positioned as a central university with public context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Jawaharlal Nehru University contributes a distinct local option in New Delhi and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Jawaharlal Nehru University when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.jnu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "nift_delhi",
+      "name": "National Institute of Fashion Technology Delhi",
+      "state_id": "DL",
+      "city": "New Delhi",
+      "type": "Institute of national importance",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nift.ac.in/delhi/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students evaluating National Institute of Fashion Technology Delhi for stream-aligned pathways in and around New Delhi.",
+        "specialization": "National Institute of Fashion Technology Delhi is positioned as a institute of national importance with public context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "National Institute of Fashion Technology Delhi contributes a distinct local option in New Delhi and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose National Institute of Fashion Technology Delhi when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nift.ac.in/delhi/"
+        ]
+      }
+    }
+  ]
+}

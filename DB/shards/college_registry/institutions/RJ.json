@@ -1,0 +1,407 @@
+{
+  "meta": {
+    "shard_type": "institutions",
+    "state_id": "RJ",
+    "state_label": "Rajasthan",
+    "count": 12,
+    "generated_on": "2026-05-07"
+  },
+  "institutions": [
+    {
+      "id": "iit_jodhpur",
+      "name": "IIT Jodhpur",
+      "state_id": "RJ",
+      "city": "Jodhpur",
+      "type": "IIT",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iitj.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating IIT Jodhpur for stream-aligned pathways in and around Jodhpur.",
+        "specialization": "IIT Jodhpur is positioned as a iit with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "IIT Jodhpur contributes a distinct local option in Jodhpur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose IIT Jodhpur when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "JEE Advanced."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iitj.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "mnit_jaipur",
+      "name": "MNIT Jaipur",
+      "state_id": "RJ",
+      "city": "Jaipur",
+      "type": "NIT",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mnit.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating MNIT Jaipur for stream-aligned pathways in and around Jaipur.",
+        "specialization": "MNIT Jaipur is positioned as a nit with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "MNIT Jaipur contributes a distinct local option in Jaipur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose MNIT Jaipur when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "JoSAA."
+      },
+      "verification": {
+        "nirf_band": "Strong NIT — verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mnit.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "bits_pilani_pilani_campus",
+      "name": "BITS Pilani (Pilani campus)",
+      "state_id": "RJ",
+      "city": "Pilani",
+      "type": "Private deemed",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.bits-pilani.ac.in/pilani",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating BITS Pilani (Pilani campus) for stream-aligned pathways in and around Pilani.",
+        "specialization": "BITS Pilani (Pilani campus) is positioned as a private deemed with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "BITS Pilani (Pilani campus) contributes a distinct local option in Pilani and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose BITS Pilani (Pilani campus) when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "BITSAT; compare fee with hostel."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.bits-pilani.ac.in/pilani"
+        ]
+      }
+    },
+    {
+      "id": "rtu_rajasthan_technical_university_main_key_affiliated_colleges",
+      "name": "RTU (Rajasthan Technical University) main + key affiliated colleges",
+      "state_id": "RJ",
+      "city": "Kota / Jaipur belt",
+      "type": "State",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.rtu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating RTU (Rajasthan Technical University) main + key affiliated colleges for stream-aligned pathways in and around Kota / Jaipur belt.",
+        "specialization": "RTU (Rajasthan Technical University) main + key affiliated colleges is positioned as a state with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "RTU (Rajasthan Technical University) main + key affiliated colleges contributes a distinct local option in Kota / Jaipur belt and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose RTU (Rajasthan Technical University) main + key affiliated colleges when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Coaching city ecosystem — stay disciplined about academics vs only exam prep culture."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.rtu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "aicte_approved_private_colleges_jaipur_udaipur_jodhpur",
+      "name": "AICTE-approved private colleges (Jaipur / Udaipur / Jodhpur)",
+      "state_id": "RJ",
+      "city": "Rajasthan",
+      "type": "Private",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nirfindia.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating AICTE-approved private colleges (Jaipur / Udaipur / Jodhpur) for stream-aligned pathways in and around Rajasthan.",
+        "specialization": "AICTE-approved private colleges (Jaipur / Udaipur / Jodhpur) is positioned as a private with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "AICTE-approved private colleges (Jaipur / Udaipur / Jodhpur) contributes a distinct local option in Rajasthan and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose AICTE-approved private colleges (Jaipur / Udaipur / Jodhpur) when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Visit campus; verify NBA; ask for alumni on LinkedIn by branch."
+      },
+      "verification": {
+        "nirf_band": "Wide",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nirfindia.org/"
+        ]
+      }
+    },
+    {
+      "id": "aiims_jodhpur",
+      "name": "AIIMS Jodhpur",
+      "state_id": "RJ",
+      "city": "Jodhpur",
+      "type": "AIIMS",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.aiimsjodhpur.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating AIIMS Jodhpur for stream-aligned pathways in and around Jodhpur.",
+        "specialization": "AIIMS Jodhpur is positioned as a aiims with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "AIIMS Jodhpur contributes a distinct local option in Jodhpur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose AIIMS Jodhpur when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "NEET AIQ; compare with older state GMCs for clinical volume trade-offs."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.aiimsjodhpur.edu.in/"
+        ]
+      }
+    },
+    {
+      "id": "sms_medical_college_jaipur",
+      "name": "SMS Medical College Jaipur",
+      "state_id": "RJ",
+      "city": "Jaipur",
+      "type": "State GMC",
+      "ownership": "",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.ruhsraj.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating SMS Medical College Jaipur for stream-aligned pathways in and around Jaipur.",
+        "specialization": "SMS Medical College Jaipur is positioned as a state gmc with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "SMS Medical College Jaipur contributes a distinct local option in Jaipur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose SMS Medical College Jaipur when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Capital city clinical exposure."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.ruhsraj.org/"
+        ]
+      }
+    },
+    {
+      "id": "sn_medical_college_jodhpur",
+      "name": "SN Medical College Jodhpur",
+      "state_id": "RJ",
+      "city": "Jodhpur",
+      "type": "State GMC",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.ruhsraj.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating SN Medical College Jodhpur for stream-aligned pathways in and around Jodhpur.",
+        "specialization": "SN Medical College Jodhpur is positioned as a state gmc with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "SN Medical College Jodhpur contributes a distinct local option in Jodhpur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose SN Medical College Jodhpur when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Historic brand; verify bond updates."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.ruhsraj.org/"
+        ]
+      }
+    },
+    {
+      "id": "private_medical_colleges_jaipur_udaipur_belt",
+      "name": "Private medical colleges (Jaipur / Udaipur belt)",
+      "state_id": "RJ",
+      "city": "Rajasthan",
+      "type": "Private",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mcc.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating Private medical colleges (Jaipur / Udaipur belt) for stream-aligned pathways in and around Rajasthan.",
+        "specialization": "Private medical colleges (Jaipur / Udaipur belt) is positioned as a private with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Private medical colleges (Jaipur / Udaipur belt) contributes a distinct local option in Rajasthan and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Private medical colleges (Jaipur / Udaipur belt) when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Compare fee with hostel + instruments."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "university_of_rajasthan",
+      "name": "University of Rajasthan",
+      "state_id": "RJ",
+      "city": "Jaipur",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.uniraj.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students evaluating University of Rajasthan for stream-aligned pathways in and around Jaipur.",
+        "specialization": "University of Rajasthan is positioned as a state university with public context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "University of Rajasthan contributes a distinct local option in Jaipur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose University of Rajasthan when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.uniraj.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "nlu_jodhpur",
+      "name": "National Law University Jodhpur",
+      "state_id": "RJ",
+      "city": "Jodhpur",
+      "type": "National law university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nlujodhpur.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students evaluating National Law University Jodhpur for stream-aligned pathways in and around Jodhpur.",
+        "specialization": "National Law University Jodhpur is positioned as a national law university with public context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "National Law University Jodhpur contributes a distinct local option in Jodhpur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose National Law University Jodhpur when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nlujodhpur.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "nift_jodhpur",
+      "name": "National Institute of Fashion Technology Jodhpur",
+      "state_id": "RJ",
+      "city": "Jodhpur",
+      "type": "Institute of national importance",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nift.ac.in/jodhpur/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students evaluating National Institute of Fashion Technology Jodhpur for stream-aligned pathways in and around Jodhpur.",
+        "specialization": "National Institute of Fashion Technology Jodhpur is positioned as a institute of national importance with public context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "National Institute of Fashion Technology Jodhpur contributes a distinct local option in Jodhpur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose National Institute of Fashion Technology Jodhpur when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nift.ac.in/jodhpur/"
+        ]
+      }
+    }
+  ]
+}

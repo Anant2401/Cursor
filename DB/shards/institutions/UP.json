@@ -1,0 +1,1396 @@
+{
+  "meta": {
+    "state_id": "UP",
+    "count": 26,
+    "generated_on": "2026-05-07"
+  },
+  "institutions": [
+    {
+      "institution_id": "iit_kanpur",
+      "name": "IIT Kanpur",
+      "state_id": "UP",
+      "city": "Kanpur",
+      "type": "IIT",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "iit_kanpur_engineering_engineering_generic_state_comfort_up",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "iit_bhu_varanasi",
+      "name": "IIT (BHU) Varanasi",
+      "state_id": "UP",
+      "city": "Varanasi",
+      "type": "IIT",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "iit_bhu_varanasi_engineering_engineering_generic_state_comfort_up",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "mnnit_allahabad_prayagraj",
+      "name": "MNNIT Allahabad (Prayagraj)",
+      "state_id": "UP",
+      "city": "Prayagraj",
+      "type": "NIT",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "mnnit_allahabad_prayagraj_engineering_engineering_generic_state_comfort_up",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "hbtu_kanpur_harcourt_butler_technical_university",
+      "name": "HBTU Kanpur (Harcourt Butler Technical University)",
+      "state_id": "UP",
+      "city": "Kanpur",
+      "type": "State university",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "hbtu_kanpur_harcourt_butler_technical_university_engineering_engineering_generic",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "kiet_group_of_institutions_example_private",
+      "name": "KIET Group of Institutions (example private)",
+      "state_id": "UP",
+      "city": "Ghaziabad region",
+      "type": "Private",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "kiet_group_of_institutions_example_private_engineering_engineering_generic_state",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "aktu_affiliated_colleges_ncr_lucknow_belt",
+      "name": "AKTU-affiliated colleges (NCR + Lucknow belt)",
+      "state_id": "UP",
+      "city": "Uttar Pradesh",
+      "type": "Affiliated",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "aktu_affiliated_colleges_ncr_lucknow_belt_engineering_engineering_generic_state_",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "king_george_medical_university_kgmu",
+      "name": "King George Medical University (KGMU)",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "State university",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "king_george_medical_university_kgmu_medicine_medicine_mbbs_state_comfort_up",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "institute_of_medical_sciences_bhu_varanasi",
+      "name": "Institute of Medical Sciences, BHU Varanasi",
+      "state_id": "UP",
+      "city": "Varanasi",
+      "type": "Central university institute",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "institute_of_medical_sciences_bhu_varanasi_medicine_medicine_mbbs_state_comfort_",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening",
+      "name": "AIIMS Gorakhpur / Raebareli / other UP AIIMS (verify seat opening)",
+      "state_id": "UP",
+      "city": "Uttar Pradesh",
+      "type": "AIIMS",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening_medicine_medicine_m",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "regional_gmcs_prayagraj_meerut_kanpur_verify_list",
+      "name": "Regional GMCs (Prayagraj, Meerut, Kanpur — verify list)",
+      "state_id": "UP",
+      "city": "Uttar Pradesh",
+      "type": "State GMC",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "regional_gmcs_prayagraj_meerut_kanpur_verify_list_medicine_medicine_mbbs_state_c",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "private_mbbs_colleges_across_up",
+      "name": "Private MBBS colleges across UP",
+      "state_id": "UP",
+      "city": "Uttar Pradesh",
+      "type": "Private",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "private_mbbs_colleges_across_up_medicine_medicine_mbbs_state_comfort_up",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow",
+      "name": "Faculty of Architecture, Dr A.P.J. Abdul Kalam Technical University (AKTU), Lucknow",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "State university faculty",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
+          "stream_id": "architecture",
+          "course_id": "architecture_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis",
+      "name": "Government / aided colleges under AKTU with CoA-approved B.Arch (verify current list)",
+      "state_id": "UP",
+      "city": "Multiple UP cities",
+      "type": "State-affiliated",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis",
+          "stream_id": "architecture",
+          "course_id": "architecture_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "nift_kannauj",
+      "name": "NIFT Kannauj",
+      "state_id": "UP",
+      "city": "Kannauj",
+      "type": "National institute",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "nift_kannauj_design_design_generic_state_comfort_up",
+          "stream_id": "design",
+          "course_id": "design_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        },
+        {
+          "program_id": "nift_kannauj_fashion_media_fashion_media_generic_state_comfort_up",
+          "stream_id": "fashion_media",
+          "course_id": "fashion_media_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "faculty_of_dental_sciences_kgmu_lucknow",
+      "name": "Faculty of Dental Sciences, KGMU, Lucknow",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "State / university dental institute",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor",
+          "stream_id": "dentistry",
+          "course_id": "dentistry_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix",
+      "name": "State government Ayurveda / Homoeopathy colleges in UP (verify seat matrix)",
+      "state_id": "UP",
+      "city": "Multiple cities",
+      "type": "Government",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
+          "stream_id": "ayush",
+          "course_id": "ayush_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples",
+      "name": "BBDNIIT School of Pharmacy / Integral University Pharmacy (examples)",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "Private / university",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma",
+          "stream_id": "pharmacy",
+          "course_id": "pharmacy_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "dr_ram_manohar_lohiya_national_law_university_lucknow",
+      "name": "Dr Ram Manohar Lohiya National Law University, Lucknow",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "NLU",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "dr_ram_manohar_lohiya_national_law_university_lucknow_law_law_generic_state_comf",
+          "stream_id": "law",
+          "course_id": "law_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year",
+      "name": "Faculty of Law, Banaras Hindu University (verify 5-year vs 3-year)",
+      "state_id": "UP",
+      "city": "Varanasi",
+      "type": "Central university",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year_law_law_generic_",
+          "stream_id": "law",
+          "course_id": "law_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure",
+      "name": "IIM Lucknow (IPM and related UG pathways — verify brochure)",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "IIM",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure_management_management_ge",
+          "stream_id": "management",
+          "course_id": "management_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "banaras_hindu_university_faculty_of_commerce_verify_programme_codes",
+      "name": "Banaras Hindu University — Faculty of Commerce (verify programme codes)",
+      "state_id": "UP",
+      "city": "Varanasi",
+      "type": "Central university",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "banaras_hindu_university_faculty_of_commerce_verify_programme_codes_commerce_com",
+          "stream_id": "commerce",
+          "course_id": "commerce_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "iit_kanpur_bs_programmes_verify_jee_channel",
+      "name": "IIT Kanpur (BS programmes — verify JEE channel)",
+      "state_id": "UP",
+      "city": "Kanpur",
+      "type": "IIT",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "iit_kanpur_bs_programmes_verify_jee_channel_science_stats_science_stats_generic_",
+          "stream_id": "science_stats",
+          "course_id": "science_stats_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "banaras_hindu_university_faculty_of_arts_social_sciences",
+      "name": "Banaras Hindu University — Faculty of Arts / Social Sciences",
+      "state_id": "UP",
+      "city": "Varanasi",
+      "type": "Central university",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "banaras_hindu_university_faculty_of_arts_social_sciences_humanities_humanities_g",
+          "stream_id": "humanities",
+          "course_id": "humanities_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "university_of_lucknow_department_of_education_verify_intake",
+      "name": "University of Lucknow — Department of Education (verify intake)",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "State university",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "university_of_lucknow_department_of_education_verify_intake_education_education_",
+          "stream_id": "education",
+          "course_id": "education_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "name": "Uttar Pradesh Pandit Deen Dayal Upadhyaya Pashu Chikitsa Vigyan Vishwavidyalaya Evam Go Anusandhan Sansthan (DUVASU), Mathura",
+      "state_id": "UP",
+      "city": "Mathura",
+      "type": "State veterinary university",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+          "stream_id": "veterinary",
+          "course_id": "veterinary_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "ivri_izatnagar_bareilly",
+      "name": "IVRI, Izatnagar (Bareilly)",
+      "state_id": "UP",
+      "city": "Bareilly",
+      "type": "ICAR-IVRI",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up",
+          "stream_id": "veterinary",
+          "course_id": "veterinary_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    }
+  ]
+}

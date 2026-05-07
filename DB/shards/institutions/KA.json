@@ -1,0 +1,1396 @@
+{
+  "meta": {
+    "state_id": "KA",
+    "count": 26,
+    "generated_on": "2026-05-07"
+  },
+  "institutions": [
+    {
+      "institution_id": "iisc_bangalore_ug_programmes_where_applicable",
+      "name": "IISc Bangalore (UG programmes where applicable)",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Deemed university / INI",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "iisc_bangalore_ug_programmes_where_applicable_engineering_engineering_generic_st",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "nitk_surathkal",
+      "name": "NITK Surathkal",
+      "state_id": "KA",
+      "city": "Mangaluru (coastal Karnataka)",
+      "type": "NIT",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "nitk_surathkal_engineering_engineering_generic_state_comfort_ka",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "rv_college_of_engineering_rvce",
+      "name": "RV College of Engineering (RVCE)",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private autonomous (affiliated)",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "rv_college_of_engineering_rvce_engineering_engineering_generic_state_comfort_ka",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "pes_university_pesce_verify_campus",
+      "name": "PES University / PESCE (verify campus)",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "pes_university_pesce_verify_campus_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "bms_college_of_engineering",
+      "name": "BMS College of Engineering",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private aided / autonomous",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "bms_college_of_engineering_engineering_engineering_generic_state_comfort_ka",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "vtu_affiliated_colleges_across_karnataka",
+      "name": "VTU-affiliated colleges across Karnataka",
+      "state_id": "KA",
+      "city": "Multiple cities",
+      "type": "Affiliated",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "vtu_affiliated_colleges_across_karnataka_engineering_engineering_generic_state_c",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "bangalore_medical_college_and_research_institute_bmri_bmcri",
+      "name": "Bangalore Medical College and Research Institute (BMRI / BMCRI)",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "State GMC",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "bangalore_medical_college_and_research_institute_bmri_bmcri_medicine_medicine_mb",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "kims_hubli_karnataka_institute_of_medical_sciences",
+      "name": "KIMS Hubli (Karnataka Institute of Medical Sciences)",
+      "state_id": "KA",
+      "city": "Hubballi",
+      "type": "State",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "kims_hubli_karnataka_institute_of_medical_sciences_medicine_medicine_mbbs_state_",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "gmcs_in_mysuru_mangaluru_belagavi_verify_seat_matrix",
+      "name": "GMCs in Mysuru, Mangaluru, Belagavi (verify seat matrix)",
+      "state_id": "KA",
+      "city": "Karnataka",
+      "type": "State GMC",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "gmcs_in_mysuru_mangaluru_belagavi_verify_seat_matrix_medicine_medicine_mbbs_stat",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "private_medical_colleges_bengaluru_tier_2_cities",
+      "name": "Private medical colleges (Bengaluru + Tier-2 cities)",
+      "state_id": "KA",
+      "city": "Karnataka",
+      "type": "Private",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "private_medical_colleges_bengaluru_tier_2_cities_medicine_medicine_mbbs_state_co",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "iiit_bangalore",
+      "name": "International Institute of Information Technology Bangalore (IIIT-B)",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Deemed university",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "iiit_bangalore_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "msrit_bangalore",
+      "name": "M.S. Ramaiah Institute of Technology (MSRIT)",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Autonomous engineering college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "msrit_bangalore_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "nie_mysuru",
+      "name": "The National Institute of Engineering (NIE), Mysuru",
+      "state_id": "KA",
+      "city": "Mysuru",
+      "type": "Autonomous engineering college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "nie_mysuru_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "uvce_bengaluru",
+      "name": "University Visvesvaraya College of Engineering (UVCE)",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Government engineering college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "uvce_bengaluru_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "kle_technological_university_hubballi",
+      "name": "KLE Technological University, Hubballi",
+      "state_id": "KA",
+      "city": "Hubballi",
+      "type": "Private university",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "kle_technological_university_hubballi_engineering_engineering_generic_",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "mit_manipal",
+      "name": "Manipal Institute of Technology (MIT), Manipal",
+      "state_id": "KA",
+      "city": "Manipal",
+      "type": "Private deemed university institute",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "mit_manipal_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "sjce_jssstu_mysuru",
+      "name": "JSS Science and Technology University (SJCE), Mysuru",
+      "state_id": "KA",
+      "city": "Mysuru",
+      "type": "Private university",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "sjce_jssstu_mysuru_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "st_johns_medical_college_bengaluru",
+      "name": "St. John's Medical College, Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private medical college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "st_johns_medical_college_bengaluru_medicine_medicine_mbbs_state_comfor",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "nlsiu_bengaluru",
+      "name": "National Law School of India University (NLSIU), Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "National law university",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "nlsiu_bengaluru_law_law_generic_state_comfort",
+          "stream_id": "law",
+          "course_id": "law_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "christ_university_bengaluru",
+      "name": "CHRIST (Deemed to be University), Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Deemed university",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "christ_university_bengaluru_management_management_generic_state_comfor",
+          "stream_id": "management",
+          "course_id": "management_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        },
+        {
+          "program_id": "christ_university_bengaluru_commerce_commerce_generic_state_comfort",
+          "stream_id": "commerce",
+          "course_id": "commerce_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "bmsit_bengaluru",
+      "name": "BMS Institute of Technology and Management, Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private engineering college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "bmsit_bengaluru_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "jain_university_bengaluru",
+      "name": "Jain (Deemed-to-be University), Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Deemed university",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "jain_university_bengaluru_management_management_generic_state_comfort",
+          "stream_id": "management",
+          "course_id": "management_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "ramaiah_medical_college_bengaluru",
+      "name": "Ramaiah Medical College, Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private medical college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "ramaiah_medical_college_bengaluru_medicine_medicine_mbbs_state_comfort",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "kasturba_medical_college_manipal",
+      "name": "Kasturba Medical College (KMC), Manipal",
+      "state_id": "KA",
+      "city": "Manipal",
+      "type": "Private medical college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "kasturba_medical_college_manipal_medicine_medicine_mbbs_state_comfort",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "sdm_college_dharwad",
+      "name": "SDM College of Engineering and Technology, Dharwad",
+      "state_id": "KA",
+      "city": "Dharwad",
+      "type": "Private engineering college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "sdm_college_dharwad_engineering_engineering_generic_state_comfort",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "mount_carmel_college_bengaluru",
+      "name": "Mount Carmel College (Autonomous), Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Autonomous arts and science college",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "mount_carmel_college_bengaluru_humanities_humanities_generic_state_com",
+          "stream_id": "humanities",
+          "course_id": "humanities_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    }
+  ]
+}

@@ -1,0 +1,461 @@
+{
+  "meta": {
+    "shard_type": "programs",
+    "state_id": "RJ",
+    "state_label": "Rajasthan",
+    "count": 25,
+    "generated_on": "2026-05-07"
+  },
+  "programs": [
+    {
+      "id": "iit_jodhpur_engineering_engineering_generic_state_comfort_rj",
+      "college_id": "iit_jodhpur",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / BITS"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "mnit_jaipur_engineering_engineering_generic_state_comfort_rj",
+      "college_id": "mnit_jaipur",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / BITS"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "bits_pilani_pilani_campus_engineering_engineering_generic_state_comfort_rj",
+      "college_id": "bits_pilani_pilani_campus",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / BITS"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "rtu_rajasthan_technical_university_main_key_affiliated_colleges_engineering_engi",
+      "college_id": "rtu_rajasthan_technical_university_main_key_affiliated_colleges",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — state universities & known private"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "aicte_approved_private_colleges_jaipur_udaipur_jodhpur_engineering_engineering_g",
+      "college_id": "aicte_approved_private_colleges_jaipur_udaipur_jodhpur",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier C — wide private network"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "aiims_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "college_id": "aiims_jodhpur",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — flagship"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "sms_medical_college_jaipur_medicine_medicine_mbbs_state_comfort_rj",
+      "college_id": "sms_medical_college_jaipur",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Imported from Plan B bundle tier: Tier A — flagship"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "sn_medical_college_jodhpur_medicine_medicine_mbbs_state_comfort_rj",
+      "college_id": "sn_medical_college_jodhpur",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — other GMCs"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "private_medical_colleges_jaipur_udaipur_belt_medicine_medicine_mbbs_state_comfor",
+      "college_id": "private_medical_colleges_jaipur_udaipur_belt",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier C — private colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "mnit_jaipur_engineering_engineering_generic_state_comfort",
+      "college_id": "mnit_jaipur",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "mnit_jaipur_architecture_architecture_generic_state_comfort",
+      "college_id": "mnit_jaipur",
+      "stream_id": "architecture",
+      "course_id": "architecture_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "mnit_jaipur_science_stats_science_stats_generic_state_comfort",
+      "college_id": "mnit_jaipur",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "sms_medical_college_jaipur_medicine_medicine_mbbs_state_comfort",
+      "college_id": "sms_medical_college_jaipur",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "sms_medical_college_jaipur_dentistry_dentistry_generic_state_comfort",
+      "college_id": "sms_medical_college_jaipur",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_rajasthan_commerce_commerce_generic_state_comfort",
+      "college_id": "university_of_rajasthan",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_rajasthan_science_stats_science_stats_generic_state_comfort",
+      "college_id": "university_of_rajasthan",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_rajasthan_humanities_humanities_generic_state_comfort",
+      "college_id": "university_of_rajasthan",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_rajasthan_education_education_generic_state_comfort",
+      "college_id": "university_of_rajasthan",
+      "stream_id": "education",
+      "course_id": "education_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_rajasthan_management_management_generic_state_comfort",
+      "college_id": "university_of_rajasthan",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_rajasthan_law_law_generic_state_comfort",
+      "college_id": "university_of_rajasthan",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nlu_jodhpur_law_law_generic_state_comfort",
+      "college_id": "nlu_jodhpur",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nlu_jodhpur_humanities_humanities_generic_state_comfort",
+      "college_id": "nlu_jodhpur",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_jodhpur_fashion_media_fashion_media_generic_state_comfort",
+      "college_id": "nift_jodhpur",
+      "stream_id": "fashion_media",
+      "course_id": "fashion_media_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_jodhpur_design_design_generic_state_comfort",
+      "college_id": "nift_jodhpur",
+      "stream_id": "design",
+      "course_id": "design_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_jodhpur_management_management_generic_state_comfort",
+      "college_id": "nift_jodhpur",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    }
+  ]
+}

@@ -1,0 +1,511 @@
+{
+  "meta": {
+    "shard_type": "institutions",
+    "state_id": "TN",
+    "state_label": "Tamil Nadu",
+    "count": 15,
+    "generated_on": "2026-05-07"
+  },
+  "institutions": [
+    {
+      "id": "iit_madras",
+      "name": "IIT Madras",
+      "state_id": "TN",
+      "city": "Chennai",
+      "type": "IIT",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iitm.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Top engineering and science aspirants aiming for research and innovation-led training.",
+        "specialization": "High-rigor engineering education with deep research and interdisciplinary opportunities.",
+        "unique_point": "Nationally leading technical institute with strong global research visibility.",
+        "why_choose": "Strong fit for students prioritizing research depth, academic challenge, and innovation ecosystem.",
+        "notes": "JEE Advanced; research + placement ecosystem."
+      },
+      "verification": {
+        "nirf_band": "Among top Engineering institutes — verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iitm.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "nit_tiruchirappalli",
+      "name": "NIT Tiruchirappalli",
+      "state_id": "TN",
+      "city": "Tiruchirappalli",
+      "type": "NIT",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nitt.edu/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Engineering aspirants looking for a consistent high-performing NIT pathway.",
+        "specialization": "Core and emerging engineering branches with strong campus technical culture.",
+        "unique_point": "High-demand NIT with established placement and academic reputation.",
+        "why_choose": "Useful for students balancing branch options, public-institution value, and outcomes.",
+        "notes": "JoSAA; strong peer group across branches."
+      },
+      "verification": {
+        "nirf_band": "Top NIT band — verify yearly",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nitt.edu/"
+        ]
+      }
+    },
+    {
+      "id": "college_of_engineering_guindy_ceg_anna_university",
+      "name": "College of Engineering, Guindy (CEG) — Anna University",
+      "state_id": "TN",
+      "city": "Chennai",
+      "type": "State",
+      "ownership": "",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.annauniv.edu/ceg/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students targeting legacy public engineering education in Chennai.",
+        "specialization": "Engineering pathways within Anna University framework and established campus ecosystem.",
+        "unique_point": "Historic engineering college with strong regional academic influence.",
+        "why_choose": "Valuable for students preferring legacy reputation and public-sector technical pathway.",
+        "notes": "Historic brand; check TNEA cutoffs and campus allotment."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF / state ranking",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.annauniv.edu/ceg/",
+          "https://www.annauniv.edu/"
+        ]
+      }
+    },
+    {
+      "id": "psg_college_of_technology",
+      "name": "PSG College of Technology",
+      "state_id": "TN",
+      "city": "Coimbatore",
+      "type": "Autonomous",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.psgtech.edu/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students seeking autonomous engineering education in Coimbatore.",
+        "specialization": "Engineering-focused curriculum with practical and industry-oriented learning culture.",
+        "unique_point": "Widely recognized private-autonomous engineering institution in Tamil Nadu.",
+        "why_choose": "Good choice for students prioritizing engineering depth outside Chennai metro.",
+        "notes": "Strong industry connect in Western TN belt."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.psgtech.edu/"
+        ]
+      }
+    },
+    {
+      "id": "ssn_college_of_engineering",
+      "name": "SSN College of Engineering",
+      "state_id": "TN",
+      "city": "Kalavakkam (near Chennai)",
+      "type": "Private",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.ssn.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Engineering aspirants preferring a private campus with strong academic structure.",
+        "specialization": "Engineering programmes with modern labs, project activity, and industry interface.",
+        "unique_point": "High-visibility private engineering institution near Chennai.",
+        "why_choose": "Suitable for students comparing private engineering ecosystems in Tamil Nadu.",
+        "notes": "Ask for median package by branch and internship mandate."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.ssn.edu.in/"
+        ]
+      }
+    },
+    {
+      "id": "affiliated_engineering_colleges_under_anna_university",
+      "name": "Affiliated engineering colleges under Anna University",
+      "state_id": "TN",
+      "city": "Tamil Nadu",
+      "type": "Affiliated",
+      "ownership": "",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.annauniv.edu/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students mapping district-wise engineering options under Anna University affiliation.",
+        "specialization": "Umbrella planning row for affiliated engineering-college discovery.",
+        "unique_point": "Useful statewide reference point for affiliation-based engineering planning.",
+        "why_choose": "Helps expand shortlist when campus preference and geography both matter.",
+        "notes": "Use NBA branch data + NIRF where listed; build GitHub + internships early."
+      },
+      "verification": {
+        "nirf_band": "Wide",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.annauniv.edu/"
+        ]
+      }
+    },
+    {
+      "id": "madras_medical_college_mmc",
+      "name": "Madras Medical College (MMC)",
+      "state_id": "TN",
+      "city": "Chennai",
+      "type": "State GMC",
+      "ownership": "",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mmc.tn.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students targeting legacy government medical pathways in Chennai.",
+        "specialization": "Public medical training with major urban hospital ecosystem exposure.",
+        "unique_point": "One of Tamil Nadu's most established government medical institutions.",
+        "why_choose": "Strong for candidates prioritizing government setting and high-volume clinical exposure.",
+        "notes": "Very competitive; huge clinical volume."
+      },
+      "verification": {
+        "nirf_band": "Verify Medical NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mmc.tn.gov.in/",
+          "https://tnmedicalselection.net/"
+        ]
+      }
+    },
+    {
+      "id": "stanley_medical_college",
+      "name": "Stanley Medical College",
+      "state_id": "TN",
+      "city": "Chennai",
+      "type": "State GMC",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://gsmc.tn.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students exploring government medical routes in Chennai.",
+        "specialization": "Public-sector MBBS training with established teaching-hospital integration.",
+        "unique_point": "Historic medical institution with long-running state healthcare linkage.",
+        "why_choose": "Useful for students comparing major Chennai government medical colleges.",
+        "notes": "Read bond and service clauses in offer letter."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://gsmc.tn.gov.in/",
+          "https://tnmedicalselection.net/"
+        ]
+      }
+    },
+    {
+      "id": "gmcs_in_madurai_coimbatore_tirunelveli_examples",
+      "name": "GMCs in Madurai, Coimbatore, Tirunelveli (examples)",
+      "state_id": "TN",
+      "city": "Tamil Nadu",
+      "type": "State GMC",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://tnmedicalselection.net/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comparing multiple TN government medical-college options by city.",
+        "specialization": "Counseling-driven planning reference across major non-Chennai medical centers.",
+        "unique_point": "Supports region-wise medical shortlist building across key TN cities.",
+        "why_choose": "Helpful when seat dynamics and city preference both influence decision-making.",
+        "notes": "Good training; verify hostel and stipend during internship year."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://tnmedicalselection.net/",
+          "https://mcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "private_medical_colleges_across_tn",
+      "name": "Private medical colleges across TN",
+      "state_id": "TN",
+      "city": "Tamil Nadu",
+      "type": "Private",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nmc.org.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating private MBBS options in Tamil Nadu through official sources.",
+        "specialization": "Private medical planning row focused on regulator and counseling verification.",
+        "unique_point": "Central comparison anchor for private medical options across the state.",
+        "why_choose": "Useful for families balancing private-seat access, location, and cost considerations.",
+        "notes": "Ask for patient load per bed; verify MCI/NMC listing."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nmc.org.in/",
+          "https://tnmedicalselection.net/"
+        ]
+      }
+    },
+    {
+      "id": "anna_university",
+      "name": "Anna University",
+      "state_id": "TN",
+      "city": "Chennai",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.annauniv.edu/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students seeking broad technical and allied pathways under a major state university.",
+        "specialization": "Engineering and technology ecosystem with central role in TN technical education.",
+        "unique_point": "State-level anchor institution for engineering planning and affiliation ecosystem.",
+        "why_choose": "Useful for students who want institutional depth plus statewide academic network visibility.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.annauniv.edu/"
+        ]
+      }
+    },
+    {
+      "id": "madras_medical_college",
+      "name": "Madras Medical College",
+      "state_id": "TN",
+      "city": "Chennai",
+      "type": "Government medical college",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mmc.tn.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students prioritizing legacy government medical education in Chennai.",
+        "specialization": "Public medical pathway with established teaching and clinical training environment.",
+        "unique_point": "Long-recognized government medical college with strong institutional legacy.",
+        "why_choose": "Strong option for students preferring public medical route in a metro healthcare ecosystem.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mmc.tn.gov.in/"
+        ]
+      }
+    },
+    {
+      "id": "university_of_madras",
+      "name": "University of Madras",
+      "state_id": "TN",
+      "city": "Chennai",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.unom.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students seeking humanities, science, commerce, and interdisciplinary pathways in Chennai.",
+        "specialization": "Large public-university ecosystem with broad academic disciplines.",
+        "unique_point": "Historic state university with wide departmental and affiliated-college span.",
+        "why_choose": "Useful for students needing broad programme choice in a public-university framework.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.unom.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "nlu_tiruchirappalli",
+      "name": "Tamil Nadu National Law University",
+      "state_id": "TN",
+      "city": "Tiruchirappalli",
+      "type": "National law university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.tnnlu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Law aspirants targeting national-law-university training in Tamil Nadu.",
+        "specialization": "Integrated law pathways with focus on legal reasoning and professional development.",
+        "unique_point": "State's NLU pathway for students seeking structured legal education model.",
+        "why_choose": "Good fit for students comparing NLU-aligned law routes by region.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.tnnlu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "nift_chennai",
+      "name": "National Institute of Fashion Technology Chennai",
+      "state_id": "TN",
+      "city": "Chennai",
+      "type": "Institute of national importance",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nift.ac.in/chennai/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students pursuing fashion, design, and communication-focused careers.",
+        "specialization": "Design and fashion pathways with studio, portfolio, and industry-exposure orientation.",
+        "unique_point": "NIFT campus advantage with specialized design ecosystem in Chennai.",
+        "why_choose": "Useful for students choosing focused design education with clear industry alignment.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nift.ac.in/chennai/"
+        ]
+      }
+    }
+  ]
+}

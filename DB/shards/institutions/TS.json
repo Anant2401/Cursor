@@ -1,0 +1,539 @@
+{
+  "meta": {
+    "state_id": "TS",
+    "count": 10,
+    "generated_on": "2026-05-07"
+  },
+  "institutions": [
+    {
+      "institution_id": "iit_hyderabad",
+      "name": "IIT Hyderabad",
+      "state_id": "TS",
+      "city": "Sangareddy (Hyderabad region)",
+      "type": "IIT",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "iit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "iiit_hyderabad",
+      "name": "IIIT Hyderabad",
+      "state_id": "TS",
+      "city": "Hyderabad",
+      "type": "IIIT",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "iiit_hyderabad_engineering_engineering_generic_state_comfort_ts",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "bits_pilani_hyderabad_campus",
+      "name": "BITS Pilani — Hyderabad campus",
+      "state_id": "TS",
+      "city": "Hyderabad",
+      "type": "Private deemed",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "bits_pilani_hyderabad_campus_engineering_engineering_generic_state_comfort_ts",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "jntuh_affiliated_top_autonomous_colleges_examples_in_hyderabad",
+      "name": "JNTUH-affiliated top autonomous colleges (examples in Hyderabad)",
+      "state_id": "TS",
+      "city": "Hyderabad",
+      "type": "State-affiliated",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "jntuh_affiliated_top_autonomous_colleges_examples_in_hyderabad_engineering_engin",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "private_engineering_colleges_across_telangana",
+      "name": "Private engineering colleges across Telangana",
+      "state_id": "TS",
+      "city": "Hyderabad + Tier-2 cities",
+      "type": "Private",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "private_engineering_colleges_across_telangana_engineering_engineering_generic_st",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "osmania_medical_college",
+      "name": "Osmania Medical College",
+      "state_id": "TS",
+      "city": "Hyderabad",
+      "type": "State GMC",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "osmania_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "gandhi_medical_college",
+      "name": "Gandhi Medical College",
+      "state_id": "TS",
+      "city": "Secunderabad / Hyderabad",
+      "type": "State GMC",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "gandhi_medical_college_medicine_medicine_mbbs_state_comfort_ts",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "aiims_bibinagar_verify_intake_and_phases",
+      "name": "AIIMS Bibinagar (verify intake and phases)",
+      "state_id": "TS",
+      "city": "Telangana",
+      "type": "AIIMS",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "aiims_bibinagar_verify_intake_and_phases_medicine_medicine_mbbs_state_comfort_ts",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "kakatiya_medical_college_warangal_example",
+      "name": "Kakatiya Medical College Warangal (example)",
+      "state_id": "TS",
+      "city": "Warangal",
+      "type": "State GMC",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "kakatiya_medical_college_warangal_example_medicine_medicine_mbbs_state_comfort_t",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "private_medical_colleges_in_hyderabad_belt",
+      "name": "Private medical colleges in Hyderabad belt",
+      "state_id": "TS",
+      "city": "Telangana",
+      "type": "Private",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "private_medical_colleges_in_hyderabad_belt_medicine_medicine_mbbs_state_comfort_",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    }
+  ]
+}

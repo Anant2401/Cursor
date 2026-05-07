@@ -1,0 +1,751 @@
+{
+  "meta": {
+    "state_id": "CG",
+    "count": 14,
+    "generated_on": "2026-05-07"
+  },
+  "institutions": [
+    {
+      "institution_id": "nit_raipur",
+      "name": "NIT Raipur",
+      "state_id": "CG",
+      "city": "Raipur",
+      "type": "Institute of National Importance",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "nit_raipur_engineering_engineering_generic_state_comfort_cg",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "iiit_naya_raipur",
+      "name": "IIIT Naya Raipur",
+      "state_id": "CG",
+      "city": "Naya Raipur",
+      "type": "IIIT (PPP)",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "iiit_naya_raipur_engineering_engineering_generic_state_comfort_cg",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "iit_bhilai",
+      "name": "IIT Bhilai",
+      "state_id": "CG",
+      "city": "Bhilai / GEC campus (verify current campus plan)",
+      "type": "IIT",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "iit_bhilai_engineering_engineering_generic_state_comfort_cg",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "bit_durg_ssipmt",
+      "name": "BIT Durg (SSIPMT)",
+      "state_id": "CG",
+      "city": "Durg",
+      "type": "Affiliated college cluster (verify university)",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "bit_durg_ssipmt_engineering_engineering_generic_state_comfort_cg",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "government_engineering_college_raipur_example_state_college",
+      "name": "Government Engineering College, Raipur (example state college)",
+      "state_id": "CG",
+      "city": "Raipur",
+      "type": "State",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "government_engineering_college_raipur_example_state_college_engineering_engineer",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "shri_shankaracharya_technical_campus_sstc_bhilai",
+      "name": "Shri Shankaracharya Technical Campus (SSTC) Bhilai",
+      "state_id": "CG",
+      "city": "Bhilai",
+      "type": "Private autonomous (CSVTU-affiliated legacy — verify)",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "shri_shankaracharya_technical_campus_sstc_bhilai_engineering_engineering_generic",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify",
+      "name": "Rungta College of Engineering & Technology (R1 / R2 campuses — verify)",
+      "state_id": "CG",
+      "city": "Bhilai",
+      "type": "Private",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify_engineering_e",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "other_aicte_affiliated_colleges_in_cg",
+      "name": "Other AICTE-affiliated colleges in CG",
+      "state_id": "CG",
+      "city": "Multiple cities",
+      "type": "Private / state",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "other_aicte_affiliated_colleges_in_cg_engineering_engineering_generic_state_comf",
+          "stream_id": "engineering",
+          "course_id": "engineering_generic",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "aiims_raipur",
+      "name": "AIIMS Raipur",
+      "state_id": "CG",
+      "city": "Raipur",
+      "type": "AIIMS",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "aiims_raipur_medicine_medicine_mbbs_state_comfort_cg",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
+      "name": "All India Institute of Medical Sciences (AIIMS) Kalyani / other new AIIMS (if seats listed for CG domicile in your year)",
+      "state_id": "CG",
+      "city": "Outside CG (national option)",
+      "type": "AIIMS",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "gmc_raipur_other_cg_gmcs_as_per_state_list",
+      "name": "GMC Raipur / other CG GMCs (as per state list)",
+      "state_id": "CG",
+      "city": "Chhattisgarh",
+      "type": "State GMC",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "gmc_raipur_other_cg_gmcs_as_per_state_list_medicine_medicine_mbbs_state_comfort_",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
+      "name": "Late Baliram Kashyap Memorial Government Medical College, Jagdalpur (example district GMC)",
+      "state_id": "CG",
+      "city": "Bastar / Jagdalpur",
+      "type": "State GMC",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
+      "name": "Chhattisgarh Institute of Medical Sciences (CIMS) Bilaspur — verify MBBS recognition status yearly",
+      "state_id": "CG",
+      "city": "Bilaspur",
+      "type": "Government / society (verify category)",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "institution_id": "private_mbbs_colleges_in_cg_verify_mcc_state",
+      "name": "Private MBBS colleges in CG (verify MCC + state)",
+      "state_id": "CG",
+      "city": "Chhattisgarh",
+      "type": "Private",
+      "nirf_rank": null,
+      "naac_rating": null,
+      "placement_reality": {
+        "median_salary_lpa": 4.5,
+        "placement_percentage": 65,
+        "top_recruiters_tier": "WITCH + regional employers"
+      },
+      "cutoff_history": {
+        "general": "Competitive and year-dependent",
+        "obc": "Category-wise variations apply",
+        "sc_st": "Category-wise and state-wise relaxations apply"
+      },
+      "infrastructure_score": {
+        "hostel_availability": "Variable by campus",
+        "female_safety_rating": 7,
+        "transport_connectivity": 7
+      },
+      "faculty_to_student_ratio": "1:22",
+      "programs": [
+        {
+          "program_id": "private_mbbs_colleges_in_cg_verify_mcc_state_medicine_medicine_mbbs_state_comfor",
+          "stream_id": "medicine",
+          "course_id": "medicine_mbbs",
+          "exam_ids": [],
+          "geography_lens_ids": [
+            "state_comfort"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_college_registry.json"
+        ],
+        "confidence": 0.79
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 180
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    }
+  ]
+}

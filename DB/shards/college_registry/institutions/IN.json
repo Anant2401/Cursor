@@ -1,0 +1,1114 @@
+{
+  "meta": {
+    "shard_type": "institutions",
+    "state_id": "IN",
+    "state_label": "All-India (national counselling)",
+    "count": 33,
+    "generated_on": "2026-05-07"
+  },
+  "institutions": [
+    {
+      "id": "older_iits_top_nits_trichy_surathkal_warangal_etc",
+      "name": "Older IITs + top NITs (Trichy, Surathkal, Warangal, etc.)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://josaa.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "IITs from 1950s onward; older NITs often pre-2000s renames of Regional Engineering Colleges — verify per campus.",
+        "notable_alumni": [
+          "Varies widely by campus — check institute Wikipedia and LinkedIn alumni pages only as a starting point, then verify claims."
+        ],
+        "best_for": "Students with strong JEE Advanced / Main ranks who want maximum peer depth in core engineering and research.",
+        "specialization": "Branch mix (CSE vs core), NBA status for the department, and verified placement / internship medians — read audited PDFs, not banners alone.",
+        "unique_point": "This band is where JoSAA closing ranks still reward very strong maths–physics depth: older IITs plus flagship NITs (many trace roots to 1960s RECs) anchor India’s core engineering hiring networks.",
+        "why_choose": "Choose it if you want maximum peer competition, deep core labs, and alumni density for research or top tech roles — but only after you match branch, fee, and city reality to your rank and mental health bandwidth.",
+        "notes": "Cutoffs move every year; branch matters as much as institute."
+      },
+      "verification": {
+        "nirf_band": "Typically top ~15–40 in Engineering (varies by year — verify)",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://josaa.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "top_iiits_hyderabad_bangalore_etc",
+      "name": "Top IIITs (Hyderabad, Bangalore, etc.)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://josaa.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who want strong core engineering peers, labs, and national visibility — outcomes still depend on your branch, projects, and internships.",
+        "specialization": "Branch mix (CSE vs core), NBA status for the department, and verified placement / internship medians — read audited PDFs, not banners alone.",
+        "unique_point": "Leading IIITs (notably Hyderabad and Bangalore) are known for research-heavy UG, tight CSE/ECE focus, and employer demand for students who ship projects and papers — not for ‘wide branch menus’ like giant IITs.",
+        "why_choose": "Pick a top IIIT if you are sure about computing/electronics, want intense coding culture, and accept premium fees or competitive seats — verify placement PDFs for median vs top outliers every year.",
+        "notes": "Very competitive CSE; read placement report footnotes (median vs mean)."
+      },
+      "verification": {
+        "nirf_band": "Often strong in Engineering NIRF — verify current PDF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://josaa.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "other_nits_and_iiits_via_josaa",
+      "name": "Other NITs & IIITs via JoSAA",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nirfindia.org/Rankings/2025/Ranking.html",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who want strong core engineering peers, labs, and national visibility — outcomes still depend on your branch, projects, and internships.",
+        "specialization": "Branch mix (CSE vs core), NBA status for the department, and verified placement / internship medians — read audited PDFs, not banners alone.",
+        "unique_point": "This wide middle band covers dozens of NITs/IIITs with very different campus ages, fee rules, and branch strengths — two institutes with similar NIRF bands can feel nothing alike on the ground.",
+        "why_choose": "Use it when your rank opens solid core-branch seats but not dream metros; compare hostel cost, branch freeze rules, and last-three-year placement medians branch-wise before you romanticise the acronym.",
+        "notes": "Good ROI for core branches with your own projects + internships."
+      },
+      "verification": {
+        "nirf_band": "Wide band — use NIRF + institute placement PDF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nirfindia.org/Rankings/2025/Ranking.html"
+        ]
+      }
+    },
+    {
+      "id": "vacant_seats_after_josaa_rounds",
+      "name": "Vacant seats after JoSAA rounds",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://csab.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who want strong core engineering peers, labs, and national visibility — outcomes still depend on your branch, projects, and internships.",
+        "specialization": "Branch mix (CSE vs core), NBA status for the department, and verified placement / internship medians — read audited PDFs, not banners alone.",
+        "unique_point": "CSAB and special rounds mop up vacant JoSAA seats — sometimes newer campuses, unusual branches, or unusual fee slabs — eligibility and fees change every season.",
+        "why_choose": "Worth a disciplined look if you missed earlier rounds: you may still land an INI seat, but read CSAB business rules, seat type, and ‘what campus actually runs this programme’ before you pay.",
+        "notes": "Read CSAB eligibility and fee carefully; some seats are at newer campuses."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://csab.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "aiims_jipmer_top_state_gmcs_via_aiq",
+      "name": "AIIMS / JIPMER / top state GMCs via AIQ",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mcc.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who understand long clinical years, night postings, and regulator-mandated competencies — not only ‘college brand’.",
+        "specialization": "Teaching hospital mapping, rural bond, stipend rules, and MCC vs state seat type — read the seat matrix line by line.",
+        "unique_point": "This tier is India’s tightest MBBS competition: AIIMS institutions, JIPMER Puducherry’s legacy pathway, and historic state GMCs through AIQ — bonds, stipends, and hospital exposure differ sharply.",
+        "why_choose": "Choose the fight here only if you can sustain six years of intense theory+clinical load, accept rural bonds where they exist, and will read MCC PDFs line-by-line for category, round, and fee changes.",
+        "notes": "Bonds, rural service, and fees differ massively — read offer letter."
+      },
+      "verification": {
+        "nirf_band": "Medical ranking band changes — verify NIRF Medical",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "esic_afmc_pool_other_central_schemes_when_listed",
+      "name": "ESIC, AFMC pool, other central schemes (when listed)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mcc.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who understand long clinical years, night postings, and regulator-mandated competencies — not only ‘college brand’.",
+        "specialization": "Teaching hospital mapping, rural bond, stipend rules, and MCC vs state seat type — read the seat matrix line by line.",
+        "unique_point": "MCC sometimes lists ESIC, AFMC-related, or other central pools with different service bonds and employer contexts than ‘plain’ state GMC seats — eligibility is narrower and changes by year.",
+        "why_choose": "Use these rows if you qualify and can accept structured service obligations in return for strong clinical load and regulated fee paths — never assume last year’s matrix equals this year’s.",
+        "notes": "Watch MCC PDFs for eligibility (domicile, PwD, category)."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "deemed_universities",
+      "name": "Deemed universities",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mcc.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who understand long clinical years, night postings, and regulator-mandated competencies — not only ‘college brand’.",
+        "specialization": "Teaching hospital mapping, rural bond, stipend rules, and MCC vs state seat type — read the seat matrix line by line.",
+        "unique_point": "Deemed MBBS seats often carry higher fee trajectories and variable clinical exposure — MCC still governs many, but each institute’s teaching-hospital mapping must be verified on the ground.",
+        "why_choose": "Consider only after modelling worst-case 5.5-year cost, checking NMC recognition, and calling the college to confirm affiliated hospital bed strength and senior resident support — not after brochure photos alone.",
+        "notes": "Total course cost can be high — model worst-case fees + hostel + exam fees."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "iit_kharagpur_iit_roorkee_spa_delhi_examples_verify_current_intake",
+      "name": "IIT Kharagpur / IIT Roorkee / SPA Delhi (examples — verify current intake)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://josaa.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who can handle studio-heavy workloads and want CoA-approved five-year B.Arch pathways with defendable portfolios.",
+        "specialization": "Studio culture, faculty-student ratio in design studios, and material / study-tour costs — confirm on the official brochure.",
+        "unique_point": "This cluster mixes IIT B.Arch pathways (JEE/CoA rules) with SPA Delhi’s national stature — admission channels and studio cultures differ sharply even inside ‘top tier’.",
+        "why_choose": "Pick direction after you decide if you want IIT’s engineering-adjacent culture vs SPA’s dedicated planning/design school identity — visit studios online, read student portfolios, and compare fee+hostel honestly.",
+        "notes": "Highly competitive; studio culture and peer depth matter as much as rank."
+      },
+      "verification": {
+        "nirf_band": "Architecture NIRF band shifts — verify PDF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://josaa.nic.in/",
+          "https://www.coa.gov.in/"
+        ]
+      }
+    },
+    {
+      "id": "nits_and_state_universities_with_coa_approved_b_arch_verify_list_yearly",
+      "name": "NITs and state universities with CoA-approved B.Arch (verify list yearly)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nirfindia.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who can handle studio-heavy workloads and want CoA-approved five-year B.Arch pathways with defendable portfolios.",
+        "specialization": "Studio culture, faculty-student ratio in design studios, and material / study-tour costs — confirm on the official brochure.",
+        "unique_point": "Dozens of NITs and state universities run CoA-approved five-year B.Arch programmes with different studio faculty depth — two NITs with similar ranks can feel nothing alike in design pedagogy.",
+        "why_choose": "Shortlist with NATA/JoSAA PDFs side-by-side: studio hours per week, material costs, and alumni placement into firms vs masters — never pick architecture on city glamour alone without portfolio reality.",
+        "notes": "Compare five-year total cost including material and study tours."
+      },
+      "verification": {
+        "nirf_band": "Use NIRF ‘Architecture’ table",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nirfindia.org/",
+          "https://nata.in/"
+        ]
+      }
+    },
+    {
+      "id": "iit_bombay_iit_guwahati_iit_hyderabad_design_programmes_via_uceed_examples",
+      "name": "IIT Bombay / IIT Guwahati / IIT Hyderabad design programmes via UCEED (examples)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.uceed.iitb.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comfortable with portfolio- and jury-driven evaluation, not only semester marks.",
+        "specialization": "Check UCEED / NID / NIFT seat type, campus, kit fees, and exchange rules — they differ sharply within the same brand.",
+        "unique_point": "IIT design schools admit tiny UCEED cohorts with heavy maths+aptitude filters — pedagogy blends HCI, interaction, and systems thinking differently on each campus.",
+        "why_choose": "Pick only if you want IIT degree scaffolding with design research intensity, can handle small-batch pressure, and will compare campus culture (isolation vs city) before you lock preferences.",
+        "notes": "Portfolio mindset starts in year one — read studio intensity and exchange rules."
+      },
+      "verification": {
+        "nirf_band": "Verify ‘Design’ or relevant NIRF category",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.uceed.iitb.ac.in/",
+          "https://www.nid.edu/admissions.html"
+        ]
+      }
+    },
+    {
+      "id": "national_institute_of_design_multiple_campuses_and_nift_campuses",
+      "name": "National Institute of Design (multiple campuses) and NIFT campuses",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nift.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comfortable with portfolio- and jury-driven evaluation, not only semester marks.",
+        "specialization": "Check UCEED / NID / NIFT seat type, campus, kit fees, and exchange rules — they differ sharply within the same brand.",
+        "unique_point": "NID runs deep industrial design pedagogy across campuses; NIFT splits fashion, communication, and accessory design tracks — jury culture and kit costs differ massively between them.",
+        "why_choose": "Decide product vs fashion soul first: NID rewards making culture, NIFT rewards garment and retail systems thinking — then compare campus fees, hostel, and alumni firm maps honestly.",
+        "notes": "Compare total cost including material kits and mandatory events."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nift.ac.in/",
+          "https://www.nirfindia.org/"
+        ]
+      }
+    },
+    {
+      "id": "maulana_azad_institute_of_dental_sciences_delhi_government_dental_colleges_via_a",
+      "name": "Maulana Azad Institute of Dental Sciences (Delhi) / Government Dental Colleges via AIQ (examples)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mcc.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who want clinical dentistry training with clear affiliated hospital chair access — ask for patient-load disclosures.",
+        "specialization": "BDS seat type (AIQ vs state), internship stipend, and NMC recognition for the campus you will actually attend.",
+        "unique_point": "Maulana Azad and top government dental colleges combine low fees with huge OPD chair counts — clinical years are physically exhausting but produce confident operators.",
+        "why_choose": "Pick this tier if you want affordable BDS with elite patient exposure, can handle Delhi’s cost if hostel is tight, and will read MCC bond and stipend rules for dental seats separately from MBBS matrices.",
+        "notes": "Read bond, internship stipend, and MCC round rules."
+      },
+      "verification": {
+        "nirf_band": "Verify Dental / Medical NIRF tables",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "state_government_dental_colleges_across_india_verify_seat_type",
+      "name": "State government dental colleges across India (verify seat type)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mcc.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who want clinical dentistry training with clear affiliated hospital chair access — ask for patient-load disclosures.",
+        "specialization": "BDS seat type (AIQ vs state), internship stipend, and NMC recognition for the campus you will actually attend.",
+        "unique_point": "State dental colleges differ in chair availability, MDS coaching culture, and bond — two GMC-attached dental colleges can diverge sharply on how many extractions you personally perform.",
+        "why_choose": "Shortlist with state PDFs: domicile, AIQ split, and hospital attachment — dentistry rewards students who count their own completed procedures, not brochure photos of buildings.",
+        "notes": "Domicile and AIQ split change yearly."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mcc.nic.in/",
+          "https://www.nmc.org.in/"
+        ]
+      }
+    },
+    {
+      "id": "national_institute_of_ayurveda_jaipur_ilbs_example_health_science_adjacency_veri",
+      "name": "National Institute of Ayurveda (Jaipur) / ILBS (example health-science adjacency) — verify programme",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://aaccc.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students exploring BAMS / BHMS / BUMS etc. who will read NCISM / NCH / state AYUSH bond rules separately from MBBS.",
+        "specialization": "AACCC vs state AYUSH matrix, internship hospital, and degree recognition for future practice paths you care about.",
+        "unique_point": "NIA Jaipur is a premier national Ayurveda institute; ILBS is hepatology-focused modern medicine — do not conflate degree titles; always read whether the entry is BAMS-classical vs allied health adjacent.",
+        "why_choose": "Pick NIA only if you genuinely want classical Ayurveda education with national visibility; if you meant modern hepatology careers, stop and re-read programme titles before you mis-invest six years.",
+        "notes": "Confirm exact degree (BAMS vs allied) on the institute PDF."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://aaccc.gov.in/",
+          "https://ayush.gov.in/"
+        ]
+      }
+    },
+    {
+      "id": "government_ayurveda_homoeopathy_colleges_state_wise_lists",
+      "name": "Government Ayurveda / Homoeopathy colleges (state-wise lists)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://ncismindia.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students exploring BAMS / BHMS / BUMS etc. who will read NCISM / NCH / state AYUSH bond rules separately from MBBS.",
+        "specialization": "AACCC vs state AYUSH matrix, internship hospital, and degree recognition for future practice paths you care about.",
+        "unique_point": "Government AYUSH colleges vary in hospital attach, Sanskrit depth, and bond — Karnataka BAMS clinical exposure differs from UP BAMS patient mix; homoeopathy colleges differ again.",
+        "why_choose": "Use state AYUSH PDFs to compare bond, hostel, and hospital mapping — AYUSH careers reward students who love the system’s philosophy, not those treating it as ‘easier NEET backup’ without curiosity.",
+        "notes": "Seat matrix and bond differ from MBBS — do not assume same cutoffs."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://ncismindia.org/"
+        ]
+      }
+    },
+    {
+      "id": "niper_campuses_mpharm_heavy_verify_ug_if_offered_bits_pilani_pharmacy_manipal_co",
+      "name": "NIPER campuses (MPharm-heavy — verify UG if offered) / BITS Pilani Pharmacy / Manipal College of Pharmaceutical Sciences (examples)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.pci.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who want PCI-regulated labs, industry exposure, and often GPAT-oriented next steps — verify PCI approval number.",
+        "specialization": "B.Pharm vs Pharm.D vs D.Pharm ladders; hospital tie-ups and audit placement footnotes matter more than brochure photos.",
+        "unique_point": "NIPERs are India’s apex pharmacy research institutes (mostly PG-heavy), while BITS and Manipal run respected UG pharma pipelines into industry R&D — programme level must match your goal.",
+        "why_choose": "Decide industry vs research first: NIPER for deep R&D, BITS/Manipal for broader UG pharma+mgmt flexibility — never assume ‘pharmacy’ is one career when regulatory, QC, and clinical roles diverge.",
+        "notes": "Separate UG vs PG pathways; read PCI approval for the campus you attend."
+      },
+      "verification": {
+        "nirf_band": "Pharmacy NIRF — verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.pci.nic.in/",
+          "https://www.nirfindia.org/"
+        ]
+      }
+    },
+    {
+      "id": "well_known_pci_approved_colleges_across_states",
+      "name": "Well-known PCI-approved colleges across states",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.pci.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who want PCI-regulated labs, industry exposure, and often GPAT-oriented next steps — verify PCI approval number.",
+        "specialization": "B.Pharm vs Pharm.D vs D.Pharm ladders; hospital tie-ups and audit placement footnotes matter more than brochure photos.",
+        "unique_point": "PCI-approved does not equal placement quality — two colleges with identical B.Pharm title can diverge on faculty PhDs, industry tie-ups, and hospital training contracts.",
+        "why_choose": "Audit PCI approval number, GPAT/NIPER history, and internship stipend letters — pharmacy rewards students who count lab hours and regulatory coursework, not brochure brand alone.",
+        "notes": "Ask for GPAT/NIR pass rates and hospital/industry tie-ups."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.pci.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "nlsiu_bangalore_nalsar_hyderabad_wbnujs_kolkata_examples",
+      "name": "NLSIU Bangalore / NALSAR Hyderabad / WBNUJS Kolkata (examples)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://consortiumofnlus.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students aiming for integrated five-year law with bar-council compliance and strong moot / internship culture.",
+        "specialization": "CLAT vs state CET vs university-specific tests; domicile and withdrawal rules differ — read consortium / state bulletins.",
+        "unique_point": "The ‘golden triangle’ NLUs pioneered India’s five-year law school culture with intense mooting, journals, and clerkship pipelines — each city’s legal market flavours internships differently.",
+        "why_choose": "Pick after you compare campus size, fee, city cost, and your appetite for competitive moot culture — CLAT rank is only the start; six years of reading stamina matters more than day-one bragging rights.",
+        "notes": "Read CLAT consortium seat matrix and withdrawal rules each year."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://consortiumofnlus.ac.in/",
+          "https://www.nirfindia.org/"
+        ]
+      }
+    },
+    {
+      "id": "other_nlus_and_national_private_law_schools_verify_bar_council_approval",
+      "name": "Other NLUs and national private law schools (verify bar council approval)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.barcouncilofindia.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students aiming for integrated five-year law with bar-council compliance and strong moot / internship culture.",
+        "specialization": "CLAT vs state CET vs university-specific tests; domicile and withdrawal rules differ — read consortium / state bulletins.",
+        "unique_point": "Beyond the top few NLUs, India’s law school landscape includes strong private campuses and younger NLUs with uneven placement cells — BCI approval is necessary but not sufficient.",
+        "why_choose": "Shortlist with median internship stipend, law firm OCI data, and alumni clerkship stories — law rewards students who publish and intern early, not those who only chase rank lists emotionally.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.barcouncilofindia.org/"
+        ]
+      }
+    },
+    {
+      "id": "iim_indore_iim_rohtak_ipm_style_programmes_verify_current_list",
+      "name": "IIM Indore / IIM Rohtak IPM-style programmes (verify current list)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iimidr.ac.in/academic-programmes/five-year-integrated-programme-in-management-ipm/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comparing IPM-style integrated paths vs three-year BBA + MBA later — model total years and exit flexibility.",
+        "specialization": "Maths depth, IPMAT vs NPAT vs CUET channels, and scholarship rules — verify on the host institute domain.",
+        "unique_point": "IIM IPM integrates foundation + management years early — students exit with IIM brand but must handle maths depth and social pressure from unusually young cohorts.",
+        "why_choose": "Choose only if you genuinely want management careers early, can handle being youngest in internships, and will read each IIM’s exit options and fee escalation clauses for the full decade-long journey.",
+        "notes": "Read maths depth and exit clauses before committing."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iimidr.ac.in/academic-programmes/five-year-integrated-programme-in-management-ipm/",
+          "https://cuet.samarth.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "established_private_universities_with_ugc_recognised_management_ug",
+      "name": "Established private universities with UGC-recognised management UG",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.ugc.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comparing IPM-style integrated paths vs three-year BBA + MBA later — model total years and exit flexibility.",
+        "specialization": "Maths depth, IPMAT vs NPAT vs CUET channels, and scholarship rules — verify on the host institute domain.",
+        "unique_point": "Private BBA/BMS landscape ranges from campuses with serious corporate projects to degree shops — same city can hide opposite cultures.",
+        "why_choose": "Audit median internship, not brochure packages; demand audited placement PDFs and talk to second-year students about hidden fees — management careers still reward proof, not logos alone.",
+        "notes": "Ask for audited placement PDFs and median internship stipend."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.ugc.gov.in/"
+        ]
+      }
+    },
+    {
+      "id": "shri_ram_college_of_commerce_srcc_hindu_college_lsr_examples_via_cuet",
+      "name": "Shri Ram College of Commerce (SRCC) / Hindu College / LSR (examples via CUET)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://cuet.samarth.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who want accounting, finance, or economics depth with verifiable campus outcomes — not only cut-off hype.",
+        "specialization": "Honours vs programme vs vocational labels under CUET / university rules — read CSAS / state bulletins for your year.",
+        "unique_point": "North Campus DU colleges combine absurdly low fees with India’s densest undergrad finance peer groups — societies, debates, and CA/CFA pipelines start in year one.",
+        "why_choose": "Fight here only if you love academic competition, can handle Delhi’s climate and safety planning, and will read CSAS rules each year — percentile cutoffs move brutally; backup psychology must be healthy.",
+        "notes": "Cutoffs are percentile-driven — read CSAS business rules."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://cuet.samarth.ac.in/",
+          "https://www.du.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "other_ugc_recognised_universities_with_strong_accounting_finance_ug",
+      "name": "Other UGC-recognised universities with strong accounting / finance UG",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nirfindia.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who want accounting, finance, or economics depth with verifiable campus outcomes — not only cut-off hype.",
+        "specialization": "Honours vs programme vs vocational labels under CUET / university rules — read CSAS / state bulletins for your year.",
+        "unique_point": "Beyond DU, many central and private universities run serious B.Com Honours with CFA/FRM culture — two universities with similar NIRF bands can have opposite placement cell effort.",
+        "why_choose": "Shortlist with median articleship salary, Big4 visit counts, and alumni LinkedIn — commerce rewards students who start internships and certifications early, not those who wait for ‘final year placement season’ fairy tales.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nirfindia.org/"
+        ]
+      }
+    },
+    {
+      "id": "iiser_kolkata_pune_mohali_examples_via_iiser_aptitude_test",
+      "name": "IISER Kolkata / Pune / Mohali (examples) via IISER aptitude test",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://iiseradmission.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who enjoy proofs, labs, or data-heavy UG and may continue to GATE / MSc / research ladders.",
+        "specialization": "IISER / NEST / CUET science tracks differ in exit options — read official programme structure for research vs taught paths.",
+        "unique_point": "IISERs admit tiny BS–MS cohorts focused on research rotations from early years — campus culture is closer to grad school than a typical mass UG university.",
+        "why_choose": "Pick only if you genuinely want PhD-bound science, love labs more than placement packages, and accept that starting salaries after BS–MS may lag corporate B.Tech unless you pivot thoughtfully.",
+        "notes": "BS-MS style programmes are intense — read exit and branch allocation rules."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://iiseradmission.in/",
+          "https://www.nestexam.in/"
+        ]
+      }
+    },
+    {
+      "id": "bhu_university_of_hyderabad_others_via_cuet_examples",
+      "name": "BHU / University of Hyderabad / others via CUET (examples)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://cuet.samarth.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who enjoy proofs, labs, or data-heavy UG and may continue to GATE / MSc / research ladders.",
+        "specialization": "IISER / NEST / CUET science tracks differ in exit options — read official programme structure for research vs taught paths.",
+        "unique_point": "Central universities via CUET offer serious B.Sc programmes with low fees — Hyderabad’s science schools carry research culture; BHU carries massive campus scale and exam intensity.",
+        "why_choose": "Choose after you compare city comfort, department faculty lists, and your appetite for competitive exams later — science UG here is a launchpad, not a automatic salary machine.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://cuet.samarth.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "nift_delhi_mumbai_bangalore_examples",
+      "name": "NIFT Delhi / Mumbai / Bangalore (examples)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nift.ac.in/admission",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who accept high kit / production costs and portfolio-driven grading in fashion, film, or communication UG.",
+        "specialization": "NIFT campus vs private mass-comm: compare total production spend, internship credits, and degree recognition on UGC/AICTE as applicable.",
+        "unique_point": "NIFT’s flagship metros run India’s toughest fashion, textile, and accessory design juries — Delhi’s policy exposure, Mumbai’s garment export offices, and Bengaluru’s retail-tech hybrids each flavour internships differently.",
+        "why_choose": "Pick city after you decide whether you want government/policy-adjacent design media (Delhi), export house density (Mumbai), or retail-tech crossover (Bengaluru) — then compare campus hostel rules and kit fees honestly, not only brand billboards.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nift.ac.in/admission"
+        ]
+      }
+    },
+    {
+      "id": "established_private_communication_schools_verify_degree_and_campus",
+      "name": "Established private communication schools (verify degree and campus)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.ugc.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who accept high kit / production costs and portfolio-driven grading in fashion, film, or communication UG.",
+        "specialization": "NIFT campus vs private mass-comm: compare total production spend, internship credits, and degree recognition on UGC/AICTE as applicable.",
+        "unique_point": "Private mass-comm and design-adjacent schools range from UGC-solid journalism departments to unserious diploma mills — same ‘media’ word hides opposite faculty benches.",
+        "why_choose": "Audit UGC/AICTE recognition, camera and edit lab inventory, and alumni newsroom placements — fashion/media careers reward portfolios and internships, not brochure photos with celebrities.",
+        "notes": "Ask for alumni portfolios and internship credit counts."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.ugc.gov.in/"
+        ]
+      }
+    },
+    {
+      "id": "st_stephen_s_college_lady_shri_ram_college_for_women_examples_verify_cuet",
+      "name": "St. Stephen’s College / Lady Shri Ram College for Women (examples — verify CUET)",
+      "state_id": "IN",
+      "city": "Delhi",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://cuet.samarth.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who want reading-heavy, discussion-driven BA programmes with clear postgraduate or civil-service adjacent plans.",
+        "specialization": "Department strength varies inside the same university — read faculty lists, seminar series, and optional research credits.",
+        "unique_point": "North Campus DU colleges combine tiny seminar sections with India’s loudest peer culture in economics, history, and politics — societies are serious career launchpads, not hobbies.",
+        "why_choose": "Fight here only if you love reading more than sleeping, can handle Delhi’s realities with a safety plan, and will read CSAS cutoffs each year without tying your entire self-worth to one percentile swing.",
+        "notes": "Some colleges have additional criteria — read prospectus."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://cuet.samarth.ac.in/",
+          "https://www.du.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "jnu_bhu_university_of_hyderabad_examples",
+      "name": "JNU / BHU / University of Hyderabad (examples)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nirfindia.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students who want reading-heavy, discussion-driven BA programmes with clear postgraduate or civil-service adjacent plans.",
+        "specialization": "Department strength varies inside the same university — read faculty lists, seminar series, and optional research credits.",
+        "unique_point": "JNU, BHU, and Hyderabad central universities anchor three different political–academic climates—JNU’s policy research density, BHU’s massive Sanskrit–social science crossovers, Hyderabad’s gender studies strength.",
+        "why_choose": "Pick campus after you test-fit ideology, language comfort, and hostel rules—not just ranking tables—because six years of humanities depth requires you to actually enjoy the city’s intellectual arguments.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nirfindia.org/"
+        ]
+      }
+    },
+    {
+      "id": "regional_institute_of_education_mysuru_bhopal_bhubaneswar_examples",
+      "name": "Regional Institute of Education, Mysuru / Bhopal / Bhubaneswar (examples)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://ncert.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students preparing for teaching careers who will verify NCTE recognition, internship school mapping, and TET eligibility paths.",
+        "specialization": "B.Ed vs integrated teacher education — duration and recognition rules differ by state; read NCTE notices.",
+        "unique_point": "NCERT’s RIEs run integrated teacher education with tight pedagogy labs and school-internship calendars—each campus differs in language context and local school partnerships.",
+        "why_choose": "Pick if you genuinely love teaching younger minds, can handle moderate cities, and will read NCERT’s current admission test pattern—RIEs are not a backup escape from ‘harder’ degrees; they are serious training institutes.",
+        "notes": "Admission tests and degree titles vary — read NCERT RIE bulletin."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://ncert.nic.in/",
+          "https://ncte.gov.in/"
+        ]
+      }
+    },
+    {
+      "id": "state_universities_with_ncte_recognised_b_ed_verify_per_campus",
+      "name": "State universities with NCTE-recognised B.Ed (verify per campus)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://ncte.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students preparing for teaching careers who will verify NCTE recognition, internship school mapping, and TET eligibility paths.",
+        "specialization": "B.Ed vs integrated teacher education — duration and recognition rules differ by state; read NCTE notices.",
+        "unique_point": "State B.Ed colleges range from disciplined practice-teaching campuses to crowded lecture-hall franchises—NCTE recognition number alone does not predict mentor quality.",
+        "why_choose": "Visit practicum schools, demand mentor names, and ask for last-years’ TET pass rates—teaching careers reward students who love classrooms, not those chasing ‘easy degree’ myths.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://ncte.gov.in/"
+        ]
+      }
+    },
+    {
+      "id": "indian_veterinary_research_institute_ivri_izatnagar_example",
+      "name": "Indian Veterinary Research Institute (IVRI), Izatnagar (example)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.ivri.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comfortable with animal handling, rural postings, and VCI minimum standards across long clinical years.",
+        "specialization": "BVSc & AH seat type, IVRI vs state veterinary university pathways, and bond on graduate practice if any — verify yearly.",
+        "unique_point": "IVRI is ICAR’s apex veterinary research institute near Bareilly—training leans research, animal disease control, and public policy interfaces more than a typical state BVSc campus.",
+        "why_choose": "Pick if you dream of epidemiology, animal health R&D, or ICAR scientist pathways, can handle rural Uttar Pradesh life, and will read whether your admission route is BVSc, MVSc bridge, or allied programme before you assume.",
+        "notes": "Confirm degree title and internship mapping on official PDF."
+      },
+      "verification": {
+        "nirf_band": "Verify Veterinary / Animal science NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.ivri.nic.in/",
+          "https://www.vci.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "state_veterinary_colleges_across_india_verify_seat_type_and_bond",
+      "name": "State veterinary colleges across India (verify seat type and bond)",
+      "state_id": "IN",
+      "city": "Unknown city",
+      "type": "Unknown type",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mcc.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comfortable with animal handling, rural postings, and VCI minimum standards across long clinical years.",
+        "specialization": "BVSc & AH seat type, IVRI vs state veterinary university pathways, and bond on graduate practice if any — verify yearly.",
+        "unique_point": "State veterinary colleges differ in livestock exposure—Punjab dairy belts differ from Kerala poultry circuits—bond and stipend rules also diverge wildly by state policy.",
+        "why_choose": "Use state counselling PDFs to compare rural service bond, night calving duties, and PG coaching access—veterinary medicine rewards students who genuinely love animals and mud, not Instagram aesthetics alone.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mcc.nic.in/"
+        ]
+      }
+    }
+  ]
+}

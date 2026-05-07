@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-05-04",
-    "version": "2.0",
+    "last_updated": "2026-05-07",
+    "version": "canonical-compat-1.0",
     "dataYear": 2026,
     "title": "Career & Salary Explorer",
     "heroBlurb": "Browse careers with indicative India salary bands, which stream fits, which exams matter, how long entry takes, and an honest reality check. Every career includes a note for students from Chhattisgarh. Figures are ranges—not guarantees.",
@@ -99,7 +99,16 @@
       "cg": "<strong>From Chhattisgarh:</strong> TCS, Infosys, Wipro and HCL hire in bulk from engineering colleges in Raipur and Bhilai. Getting into a good engineering college in CG (SSCET, CSIT, SSTC) followed by genuine skill-building is a completely realistic path to ₹5–8 LPA within a year of graduation. Remote work makes location irrelevant once you have 2–3 years of experience.",
       "segments": [
         "tech"
-      ]
+      ],
+      "typicalEmployers": [
+        "TCS",
+        "Infosys",
+        "Wipro",
+        "Product startups"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 2,
@@ -136,7 +145,15 @@
       ],
       "honest": "<strong>Most honest fact:</strong> CA Final first-attempt pass rate is around 10–15% — one of India's hardest exams. But once you qualify, the salary jump is dramatic. Most students take 5–7 years total. During articleship (3 years of practical training) you earn a stipend of ₹2,000–15,000/month. The path is hard but completely structured.",
       "cg": "<strong>From Chhattisgarh:</strong> CA is one of the most respected careers in Korba, Bilaspur and Raipur. NTPC, SECL, SAIL Bhilai, and every major CG company need CAs. You do not need to move to a metro city — many successful CAs in CG cities have built thriving practices locally, serving coal companies, government departments, and local businesses.",
-      "segments": []
+      "segments": [],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 3,
@@ -171,7 +188,16 @@
       "cg": "<strong>From Chhattisgarh:</strong> Government medical colleges in CG — RIMS Raipur, CIMS Bilaspur, MIMS Jagdalpur — offer seats to NEET qualifiers. Healthcare is severely underserved in CG. A doctor who returns to a Tier 3 city after MBBS has enormous impact, good income, and almost no competition compared to metro cities.",
       "segments": [
         "healthcare"
-      ]
+      ],
+      "typicalEmployers": [
+        "Apollo Hospitals",
+        "Fortis",
+        "AIIMS network",
+        "Regional healthcare providers"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 4,
@@ -209,7 +235,15 @@
       "cg": "<strong>From Chhattisgarh:</strong> CG has produced IAS officers from Korba, Bilaspur and Raigarh. CGPSC (State PSC) is a much more accessible alternative — similar prestige within the state, significantly lower competition. CGPSC selects 200–400 officers per year for CG only. This is the more realistic target for most CG students.",
       "segments": [
         "govt_job"
-      ]
+      ],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 5,
@@ -250,7 +284,16 @@
       "cg": "<strong>From Chhattisgarh:</strong> Remote work has made location entirely irrelevant in this field. A student from Korba who learns Python and SQL seriously can get a remote job with a Bengaluru company without relocating. This is one of the most location-flexible careers available — the skills travel with you.",
       "segments": [
         "tech"
-      ]
+      ],
+      "typicalEmployers": [
+        "TCS",
+        "Infosys",
+        "Wipro",
+        "Product startups"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 6,
@@ -287,7 +330,15 @@
       ],
       "honest": "<strong>Most honest fact:</strong> Law income is extremely uneven. Top corporate lawyers at elite firms earn crores. A general advocate in a small city earns ₹15,000–40,000/month for the first 5 years. The real money is in corporate law at top firms, which requires NLU degrees or top LLB colleges. Local practice in small cities is viable but takes years to build.",
       "cg": "<strong>From Chhattisgarh:</strong> HNLU (Hidayatullah National Law University) in Raipur is one of India's top NLUs — CG students have a home advantage. District courts in Bilaspur, Korba and Raigarh always need competent lawyers. Corporate litigation linked to mining, coal and PSU contracts in CG offers solid local income.",
-      "segments": []
+      "segments": [],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 7,
@@ -327,7 +378,15 @@
       "cg": "<strong>From Chhattisgarh:</strong> CGVYAPAM recruits hundreds of government teachers regularly. This is one of the most reliable paths to a secure, respected life in Korba or Champa — especially for students from middle-class families who want to stay close to home and serve their community.",
       "segments": [
         "govt_job"
-      ]
+      ],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 8,
@@ -367,7 +426,15 @@
       "cg": "<strong>From Chhattisgarh:</strong> SBI, Bank of Baroda, Central Bank, and all major PSU banks have large offices in Bilaspur, Korba and Raipur. Getting a Bank PO job means you can stay in CG, build a comfortable life, and serve your community. This is one of the most popular and realistic career goals for students from Tier 3 CG cities.",
       "segments": [
         "govt_job"
-      ]
+      ],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 9,
@@ -404,7 +471,15 @@
       "cg": "<strong>From Chhattisgarh:</strong> Central government offices in Raipur, Bilaspur and Jagdalpur regularly absorb SSC CGL candidates. This career lets you live in CG in a pensioned, respected government position. Extremely popular and realistic goal for students from Korba, Champa and Raigarh.",
       "segments": [
         "govt_job"
-      ]
+      ],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 10,
@@ -442,7 +517,16 @@
       "cg": "<strong>From Chhattisgarh:</strong> AIIMS Raipur, CIMS Bilaspur and government hospitals across CG constantly need qualified nurses. BSc Nursing from a government college in CG (very low fees) followed by a government hospital job is one of the most secure and respected paths for PCB students who want healthcare careers.",
       "segments": [
         "healthcare"
-      ]
+      ],
+      "typicalEmployers": [
+        "Apollo Hospitals",
+        "Fortis",
+        "AIIMS network",
+        "Regional healthcare providers"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 11,
@@ -477,7 +561,15 @@
       ],
       "honest": "<strong>Most honest fact:</strong> Private company starting salaries are low (₹2–4 LPA) but grow steadily. The real prize is cracking GATE — PSU companies like NTPC, BHEL, SAIL and SECL offer ₹8–12 LPA with full government benefits and pension. GATE rank below 1000 opens PSU doors. This is the path to aim for in CG.",
       "cg": "<strong>From Chhattisgarh:</strong> NTPC Korba, SECL coal operations, SAIL Bhilai, and massive infrastructure projects in CG create exceptional local demand for Civil and Mechanical engineers who pass GATE. You do not need to leave CG for an excellent engineering career — this state has more engineering job opportunities per capita than most states.",
-      "segments": []
+      "segments": [],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 12,
@@ -516,7 +608,15 @@
       "cg": "<strong>From Chhattisgarh:</strong> Businesses in Korba, Bilaspur and Raipur — shops, hospitals, schools, real estate firms — desperately need digital marketing help. A student who learns this skill can freelance locally, charge ₹5,000–25,000 per client per month, and build real income while still in college. No need to move to a metro.",
       "segments": [
         "creative"
-      ]
+      ],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 13,
@@ -556,7 +656,15 @@
       "cg": "<strong>From Chhattisgarh:</strong> Local Hindi and English news channels, newspapers and digital portals are always hiring in Raipur and Bilaspur. Haribhoomi, Nai Dunia and ETV MP-CG recruit locally. For content writing, location is completely irrelevant — you can work remotely from Korba for companies in Mumbai or Bengaluru.",
       "segments": [
         "creative"
-      ]
+      ],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 14,
@@ -595,7 +703,15 @@
       "cg": "<strong>From Chhattisgarh:</strong> Freelance design is entirely location-independent. A designer in Raigarh working on Fiverr or with direct clients earns the same as one in Mumbai. Local demand exists too — schools, hospitals, businesses and political parties in CG constantly need design work. This career can start today, from anywhere.",
       "segments": [
         "creative"
-      ]
+      ],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 15,
@@ -633,7 +749,16 @@
       "cg": "<strong>From Chhattisgarh:</strong> Every town in CG needs pharmacists. Opening a medical store in Korba, Champa or Raigarh after D.Pharm is a completely realistic path to ₹35,000–80,000/month income within 3–5 years. Government pharmacy jobs at district hospitals are regularly advertised through CGVYAPAM — very accessible for PCB students.",
       "segments": [
         "healthcare"
-      ]
+      ],
+      "typicalEmployers": [
+        "Apollo Hospitals",
+        "Fortis",
+        "AIIMS network",
+        "Regional healthcare providers"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 16,
@@ -669,7 +794,15 @@
       "cg": "<strong>From Chhattisgarh:</strong> CG is undergoing massive infrastructure development — smart city projects in Raipur, Naya Raipur township, industrial expansion in Korba and Bhilai. NMDC and the state government regularly commission design work. Architects with CG-specific market knowledge have strong local demand.",
       "segments": [
         "creative"
-      ]
+      ],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 17,
@@ -708,7 +841,16 @@
       "cg": "<strong>From Chhattisgarh:</strong> Mental health services are severely underserved in CG. A qualified counsellor in Korba or Bilaspur has virtually no competition and enormous community need. Schools, coal company employees and families dealing with stress all need support. The societal impact here is extraordinary.",
       "segments": [
         "healthcare"
-      ]
+      ],
+      "typicalEmployers": [
+        "Apollo Hospitals",
+        "Fortis",
+        "AIIMS network",
+        "Regional healthcare providers"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 18,
@@ -747,7 +889,15 @@
       ],
       "honest": "<strong>Most honest fact:</strong> MBA from IIM (₹20–30 LPA average placement) is a genuine life-changer. MBA from an unknown college charging ₹5–10 lakh in fees may not justify the investment. College matters enormously in MBA. A BBA + work experience + strong CAT score is the right sequence. Do not take large loans for unknown MBA colleges.",
       "cg": "<strong>From Chhattisgarh:</strong> NIT Raipur Management, Symbiosis Raipur and KIIT offer decent BBA programmes. NTPC, SECL and large CG-based companies hire management trainees locally. The MBA-to-PSU path (joining a public sector company after MBA) is particularly strong in a resource-heavy state like CG.",
-      "segments": []
+      "segments": [],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 19,
@@ -785,7 +935,15 @@
       "cg": "<strong>From Chhattisgarh:</strong> CG has strong representation in the Army, particularly in infantry regiments. Physical fitness culture in smaller cities is a genuine advantage in NDA/CDS selection. NDA coaching is available in Raipur and Bilaspur. This is among the most respected careers in every Tier 3 city in CG.",
       "segments": [
         "govt_job"
-      ]
+      ],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "On-site",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 20,
@@ -824,7 +982,16 @@
       "segments": [
         "trades",
         "tech"
-      ]
+      ],
+      "typicalEmployers": [
+        "TCS",
+        "Infosys",
+        "Wipro",
+        "Product startups"
+      ],
+      "workMode": "On-site",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 21,
@@ -860,7 +1027,15 @@
       ],
       "honest": "<strong>Most honest fact:</strong> Social work salaries at small Indian NGOs start low (₹15,000–30,000/month). But TISS MSW graduates go to UN agencies, international NGOs and government positions earning ₹8–20 LPA. Corporate CSR roles at NTPC, SAIL and Tata pay ₹5–10 LPA and are excellent for CG-based social workers who understand the local context.",
       "cg": "<strong>From Chhattisgarh:</strong> CG PSUs — NTPC, SECL, SAIL — spend hundreds of crores on CSR every year and actively hire social work professionals to implement programmes in CG communities. This is a genuinely high-impact career that lets you help your own community while earning a decent salary.",
-      "segments": []
+      "segments": [],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 22,
@@ -895,7 +1070,15 @@
       ],
       "honest": "<strong>Most honest fact:</strong> Flying school fees are ₹35–60 lakh in India and ₹45–80 lakh abroad. Airline hiring is deeply cyclical — IndiGo and Air India hire heavily during expansion and barely at all during downturns. If your family can genuinely afford CPL without large unsecured loans and you have strong PCM + absolute passion, the long-term career is excellent.",
       "cg": "<strong>From Chhattisgarh:</strong> A flying training organisation operates in Raipur. NDA Air Force route is a fully funded alternative — the government pays for your training and you serve as a commissioned Air Force officer. For students from Korba or Bilaspur whose families cannot fund CPL privately, Air Force via NDA or AFCAT is the realistic path to flying.",
-      "segments": []
+      "segments": [],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 23,
@@ -934,7 +1117,15 @@
       "cg": "<strong>From Chhattisgarh:</strong> CG has a rich textile tradition — Kosa silk, Chanderi weaves, tribal craft patterns. A fashion designer from CG who specialises in and modernises these traditional crafts has a genuine national and international niche. Government Ministry of Textiles programmes and export houses actively support this kind of work.",
       "segments": [
         "creative"
-      ]
+      ],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 24,
@@ -971,7 +1162,15 @@
       "cg": "<strong>From Chhattisgarh:</strong> Weddings, political events, corporate functions and cultural festivals in CG are a multi-crore industry. A skilled event manager based in Bilaspur or Raipur serving the entire state market has excellent income potential with very low competition compared to metro city markets. Start by assisting at local events immediately.",
       "segments": [
         "creative"
-      ]
+      ],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 25,
@@ -1006,7 +1205,15 @@
       ],
       "honest": "<strong>Most honest fact:</strong> Biotechnology starting salaries at private companies are genuinely low (₹2–4 LPA). Real income growth comes with a Master's degree or PhD. The exception is bioinformatics — combining biology with Python and data science opens higher-salary data roles (₹6–15 LPA) much faster. If you love biology and also enjoy computers, this hybrid path is very underrated.",
       "cg": "<strong>From Chhattisgarh:</strong> Agricultural biotechnology and herbal medicine research relevant to CG's forest and tribal heritage is a genuinely unexplored niche. AIIMS Raipur and NIT Raipur have active research programmes. For PCB students who want science careers without the NEET path, biotechnology is a strong alternative.",
-      "segments": []
+      "segments": [],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 26,
@@ -1043,7 +1250,15 @@
       ],
       "honest": "<strong>Most honest fact:</strong> HR is a deeply misunderstood career. Students think it is soft — Senior HR Directors at large companies earn ₹30–60 LPA. The path requires strong business understanding, not just people skills. Starting in recruitment at ₹2–4 LPA and systematically moving to HR business partnering is the standard progression.",
       "cg": "<strong>From Chhattisgarh:</strong> NTPC, SECL, SAIL and ESSAR all have large HR departments in CG. MBA colleges in Raipur offer HR specialisation. This is a viable career path that does not require relocating to a metro — large industrial CG companies have genuine HR needs.",
-      "segments": []
+      "segments": [],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 27,
@@ -1080,7 +1295,15 @@
       "cg": "<strong>From Chhattisgarh:</strong> Animation and game design is entirely remote — a game designer from Korba earning ₹8–15 LPA working remotely for a Bengaluru studio is completely realistic. The barrier is skills and portfolio quality, not geography. Start practising Blender or Figma today — both are free.",
       "segments": [
         "creative"
-      ]
+      ],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 28,
@@ -1115,7 +1338,15 @@
       ],
       "honest": "<strong>Most honest fact:</strong> Actuary is one of India's highest-paying but almost entirely unknown careers. A fully qualified Fellow of IAI earns ₹40–80 LPA average. But qualifying takes 7–10 years on average (15 progressively harder exams). If you love Maths deeply, are highly patient and systematic, and discover this career early, you have a significant head start over competitors.",
       "cg": "<strong>From Chhattisgarh:</strong> Actuarial science eventually requires relocating to insurance or consulting hubs (Mumbai, Bengaluru, Delhi). But every exam can be prepared for from Bilaspur or Korba — all papers are online. Mathematically strong CG students who discover this path early have a genuine competitive advantage.",
-      "segments": []
+      "segments": [],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 29,
@@ -1152,7 +1383,15 @@
       ],
       "honest": "<strong>Most honest fact:</strong> Supply chain is invisible to most students — but it is one of the highest-demand fields as India's manufacturing and e-commerce sectors grow. Amazon, Flipkart, Delhivery and every FMCG company urgently need supply chain professionals. Salary growth after 5 years is steep.",
       "cg": "<strong>From Chhattisgarh:</strong> CG is a major logistics hub — coal, steel, and cement move through the state in enormous volumes. SECL, NTPC, SAIL and NMDC all have large supply chain operations based in CG. This is an excellent local career path for students with commerce or engineering backgrounds who want to stay in CG.",
-      "segments": []
+      "segments": [],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 30,
@@ -1188,7 +1427,16 @@
       "segments": [
         "healthcare",
         "govt_job"
-      ]
+      ],
+      "typicalEmployers": [
+        "Apollo Hospitals",
+        "Fortis",
+        "AIIMS network",
+        "Regional healthcare providers"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 31,
@@ -1224,7 +1472,15 @@
       "cg": "<strong>From Chhattisgarh:</strong> CG Hindi-language content — education, local news, culture, career guidance — is genuinely underserved on YouTube and Instagram. A creator making honest career guidance content for CG students in their language can build an audience of lakhs with very low competition. This is a real gap in the market.",
       "segments": [
         "creative"
-      ]
+      ],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 32,
@@ -1261,7 +1517,16 @@
       "segments": [
         "trades",
         "tech"
-      ]
+      ],
+      "typicalEmployers": [
+        "TCS",
+        "Infosys",
+        "Wipro",
+        "Product startups"
+      ],
+      "workMode": "On-site",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 33,
@@ -1299,7 +1564,16 @@
       "segments": [
         "healthcare",
         "trades"
-      ]
+      ],
+      "typicalEmployers": [
+        "Apollo Hospitals",
+        "Fortis",
+        "AIIMS network",
+        "Regional healthcare providers"
+      ],
+      "workMode": "On-site",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 34,
@@ -1336,7 +1610,15 @@
       ],
       "honest": "<strong>Most honest fact:</strong> India's commitment to 500 GW renewable energy by 2030 means this field will grow enormously over the next decade. NTPC is building large solar parks nationally and in CG. State Pollution Control Boards hire continuously. Early entry in an emerging field gives you a real first-mover advantage.",
       "cg": "<strong>From Chhattisgarh:</strong> CG has enormous renewable energy potential — solar, small hydro and biomass. NTPC is actively commissioning solar parks in CG. The State Pollution Control Board hires environmental scientists for coal mine and industrial compliance work. This career aligns perfectly with CG's industrial economy transitioning toward clean energy.",
-      "segments": []
+      "segments": [],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 35,
@@ -1374,7 +1656,15 @@
       ],
       "honest": "<strong>Most honest fact:</strong> BSc Statistics is the most underrated path to a data career in India. It gives a stronger mathematical foundation than most BCA or even BTech CS graduates. Adding Python and SQL skills after BSc Statistics takes 3–4 months. The combination leads to Data Analyst roles at ₹4–8 LPA even from a Tier 3 college.",
       "cg": "<strong>From Chhattisgarh:</strong> Government Statistical Service, NSSO and state data collection agencies hire statisticians for CG-level work. Private data roles are fully remote-friendly. An excellent path for mathematically strong students in CG who want tech-adjacent careers without the engineering entrance examination pressure.",
-      "segments": []
+      "segments": [],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 36,
@@ -1411,7 +1701,15 @@
       "cg": "<strong>From Chhattisgarh:</strong> CGPSC is specifically designed for CG students — the syllabus includes CG history, culture, tribal society, economy and geography. A student from Korba or Bilaspur who knows CG intimately has a natural advantage. CG Civil Services Institute in Raipur provides free and subsidised coaching for CGPSC aspirants.",
       "segments": [
         "govt_job"
-      ]
+      ],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 37,
@@ -1446,7 +1744,15 @@
       ],
       "honest": "<strong>Most honest fact:</strong> IHM graduates placed at Taj, Marriott and Hilton start at ₹18,000–25,000/month but rise quickly with international postings. Private hotel management college graduates start lower and grow more slowly. The international opportunity is genuinely transformative — Middle East and cruise line hospitality pays ₹2–8 lakh/month in-hand for experienced professionals.",
       "cg": "<strong>From Chhattisgarh:</strong> CG tourism — Chitrakote Falls, Bastar tribal culture, Sirpur heritage — is being actively developed by the state government. New resorts, heritage hotels and eco-tourism properties are opening and need trained hospitality staff. This is a growing local opportunity that very few CG students are currently pursuing.",
-      "segments": []
+      "segments": [],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 38,
@@ -1482,7 +1788,15 @@
       ],
       "honest": "<strong>Most honest fact:</strong> A gym trainer at a premium fitness centre earns ₹15,000–25,000/month. An online fitness coach with 5,000 engaged Instagram followers earns ₹60,000–2,00,000/month. The platform is the leverage. Students who combine genuine fitness knowledge with systematic online presence building are creating high-income careers in this space.",
       "cg": "<strong>From Chhattisgarh:</strong> Fitness culture in Korba, Bilaspur and Raipur is growing rapidly. New gyms are opening every year. Government PE teacher recruitment happens through CGVYAPAM. Khelo India government sports programme creates coaching opportunities across CG districts for qualified coaches.",
-      "segments": []
+      "segments": [],
+      "typicalEmployers": [
+        "Public and private employers",
+        "MSMEs",
+        "Regional enterprises"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 39,
@@ -1521,7 +1835,16 @@
       "cg": "<strong>From Chhattisgarh:</strong> National Health Mission CG runs one of India's largest rural health programmes and regularly recruits public health professionals at district and state levels. Working in public health in CG means directly improving healthcare for millions in tribal and rural communities — with a genuine government salary and career progression.",
       "segments": [
         "healthcare"
-      ]
+      ],
+      "typicalEmployers": [
+        "Apollo Hospitals",
+        "Fortis",
+        "AIIMS network",
+        "Regional healthcare providers"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 40,
@@ -1556,7 +1879,16 @@
       "cg": "<strong>From Chhattisgarh:</strong> Industrial accidents in coal mining, stroke rehabilitation and special education for tribal children create genuine local demand for OTs in CG. Very few trained occupational therapists practice in smaller CG cities — low competition, high community need, and real salary premium for the first qualified OT in a district.",
       "segments": [
         "healthcare"
-      ]
+      ],
+      "typicalEmployers": [
+        "Apollo Hospitals",
+        "Fortis",
+        "AIIMS network",
+        "Regional healthcare providers"
+      ],
+      "workMode": "Hybrid",
+      "demandOutlook": "stable",
+      "salaryContext": "Compensation varies by city tier, specialization depth, and credential quality; internships and practical exposure improve first-offer outcomes."
     },
     {
       "id": 41,

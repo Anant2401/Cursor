@@ -1,0 +1,909 @@
+{
+  "meta": {
+    "shard_type": "institutions",
+    "state_id": "MH",
+    "state_label": "Maharashtra",
+    "count": 27,
+    "generated_on": "2026-05-07"
+  },
+  "institutions": [
+    {
+      "id": "iit_bombay",
+      "name": "IIT Bombay",
+      "state_id": "MH",
+      "city": "Mumbai",
+      "type": "IIT",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iitb.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students targeting top-tier engineering and science pathways with strong research depth.",
+        "specialization": "High-rigor engineering programmes, interdisciplinary research, and innovation-led ecosystem.",
+        "unique_point": "Global academic visibility with deep alumni and startup network.",
+        "why_choose": "Strong fit for students prioritizing research culture, peer quality, and long-term technical careers.",
+        "notes": "JEE Advanced; extremely competitive. Strong alumni network for internships."
+      },
+      "verification": {
+        "nirf_band": "Among top Engineering institutes in India — verify NIRF year",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iitb.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "ict_mumbai_institute_of_chemical_technology",
+      "name": "ICT Mumbai (Institute of Chemical Technology)",
+      "state_id": "MH",
+      "city": "Mumbai",
+      "type": "Deemed / statutory",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.ictmumbai.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students interested in chemical, pharmaceutical, and allied engineering domains.",
+        "specialization": "Chemistry-driven engineering and applied science programmes with industry relevance.",
+        "unique_point": "Legacy institute known for chemical and process-oriented higher education.",
+        "why_choose": "Useful for domain-focused students who want strong specialization over generic branch breadth.",
+        "notes": "Niche excellence; read branch-wise placements vs generic B.Tech."
+      },
+      "verification": {
+        "nirf_band": "Strong in Pharmacy/Chemical Eng — verify Engineering table",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.ictmumbai.edu.in/"
+        ]
+      }
+    },
+    {
+      "id": "vnit_nagpur",
+      "name": "VNIT Nagpur",
+      "state_id": "MH",
+      "city": "Nagpur",
+      "type": "NIT",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://vnit.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Engineering aspirants seeking a nationally recognized NIT option in central India.",
+        "specialization": "Core and emerging engineering branches with strong technical training culture.",
+        "unique_point": "Established NIT with balanced academics, campus opportunities, and recruiter familiarity.",
+        "why_choose": "Good for students comparing public engineering pathways with broad branch availability.",
+        "notes": "JoSAA; good core-branch ecosystem outside metros."
+      },
+      "verification": {
+        "nirf_band": "NIT — verify NIRF band yearly",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://vnit.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "coep_technological_university_coep",
+      "name": "COEP Technological University (COEP)",
+      "state_id": "MH",
+      "city": "Pune",
+      "type": "State university",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.coep.org.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students wanting a long-established engineering institution in Pune.",
+        "specialization": "Engineering-first academic model with strong campus technical ecosystem.",
+        "unique_point": "Historic engineering brand in Maharashtra with strong alumni legacy.",
+        "why_choose": "Suitable for students balancing city ecosystem, institution legacy, and branch preference.",
+        "notes": "Historic brand in Pune; check MHT-CET vs other quotas."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF Engineering rank yearly",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.coep.org.in/"
+        ]
+      }
+    },
+    {
+      "id": "vjti_mumbai",
+      "name": "VJTI Mumbai",
+      "state_id": "MH",
+      "city": "Mumbai",
+      "type": "State aided autonomous",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://vjti.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Engineering students aiming for a high-demand government-aided technical institute in Mumbai.",
+        "specialization": "Technical programmes with practical orientation and strong industry linkages.",
+        "unique_point": "Established engineering institution with high regional employer recognition.",
+        "why_choose": "Helpful for students preferring Mumbai ecosystem with strong technical pedigree.",
+        "notes": "Competitive cutoffs; strong recruiter footfall for core branches."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://vjti.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "walchand_college_of_engineering_wce",
+      "name": "Walchand College of Engineering (WCE)",
+      "state_id": "MH",
+      "city": "Sangli",
+      "type": "Autonomous (affiliated)",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.walchandsangli.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students exploring autonomous engineering options in western Maharashtra.",
+        "specialization": "Engineering curriculum with applied learning and campus technical culture.",
+        "unique_point": "Long-running autonomous engineering institution in Sangli region.",
+        "why_choose": "Useful for students who want credible engineering options beyond Mumbai-Pune cluster.",
+        "notes": "Good ROI story for many students — still verify placements by branch."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.walchandsangli.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "sppu_affiliated_private_universities_in_pune_mumbai_corridor",
+      "name": "SPPU-affiliated / private universities in Pune–Mumbai corridor",
+      "state_id": "MH",
+      "city": "Maharashtra",
+      "type": "Private / university",
+      "ownership": "",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.unipune.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comparing SPPU-linked and nearby private-university options.",
+        "specialization": "Multi-college planning reference for Pune-Mumbai academic corridor.",
+        "unique_point": "Acts as an umbrella discovery row around SPPU ecosystem planning.",
+        "why_choose": "Useful during shortlist expansion when comparing multiple affiliated pathways.",
+        "notes": "Ask for NBA branch accreditation, audited placement PDF, and fee refund rules."
+      },
+      "verification": {
+        "nirf_band": "Wide variance",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.unipune.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "seth_gs_medical_college_and_kem_hospital_kem",
+      "name": "Seth GS Medical College & KEM Hospital (KEM)",
+      "state_id": "MH",
+      "city": "Mumbai",
+      "type": "State GMC",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.kem.edu/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "NEET-qualified students preferring a major public teaching-hospital ecosystem in Mumbai.",
+        "specialization": "Government medical training with high-volume clinical exposure.",
+        "unique_point": "Strong public-hospital integration and long institutional legacy.",
+        "why_choose": "Suitable for students prioritizing public medical infrastructure and metropolitan clinical case mix.",
+        "notes": "Extremely competitive state quota; read bond for rural service if any."
+      },
+      "verification": {
+        "nirf_band": "Verify Medical NIRF / state lists",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.kem.edu/"
+        ]
+      }
+    },
+    {
+      "id": "bj_government_medical_college_gmc_pune_cluster_verify_current_names",
+      "name": "BJ Government Medical College / GMC Pune cluster (verify current names)",
+      "state_id": "MH",
+      "city": "Pune",
+      "type": "State GMC",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.bjmc.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating government medical options centered around Pune.",
+        "specialization": "Public medical-college comparison reference tied to counseling verification.",
+        "unique_point": "Serves as a practical shortlist anchor for government medical seats in the Pune region.",
+        "why_choose": "Helpful when counseling choices and seat movement are your primary decision driver.",
+        "notes": "Check domicile category definitions yearly."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.bjmc.edu.in/",
+          "https://mcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "government_medical_colleges_across_divisions_marathwada_vidarbha_etc",
+      "name": "Government medical colleges across divisions (Marathwada, Vidarbha, etc.)",
+      "state_id": "MH",
+      "city": "Maharashtra",
+      "type": "State",
+      "ownership": "",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://medicaldialogues.in/state-news/maharashtra/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comparing government MBBS options across Maharashtra divisions.",
+        "specialization": "State-level medical seat planning reference using official counseling channels.",
+        "unique_point": "Covers region-wise exploration beyond only Mumbai-Pune campuses.",
+        "why_choose": "Useful for students balancing location, public-seat access, and counseling dynamics.",
+        "notes": "Compare clinical load vs hostel distance."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mcc.nic.in/",
+          "https://cetcell.mahacet.org/"
+        ]
+      }
+    },
+    {
+      "id": "deemed_universities_in_maharashtra_multiple",
+      "name": "Deemed universities in Maharashtra (multiple)",
+      "state_id": "MH",
+      "city": "Mumbai / Pune / other",
+      "type": "Deemed / private",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mcc.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating deemed-university medical pathways under all-India counseling.",
+        "specialization": "Guidance row for deemed-university admissions through official counseling updates.",
+        "unique_point": "Centralized reference point for deemed options when building a broad medical shortlist.",
+        "why_choose": "Useful for families comparing deemed options with government and private alternatives.",
+        "notes": "Model 5-year total cost incl. hostel; read MCC fee structure PDF line by line."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel",
+      "name": "Sir J.J. College of Architecture / SPA Mumbai (verify admission channel)",
+      "state_id": "MH",
+      "city": "Mumbai",
+      "type": "SPA / state flagship",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.sirjjarchitecture.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Architecture aspirants evaluating legacy public architecture institutions in Mumbai.",
+        "specialization": "Architecture-focused pathways with design studio-led academic environment.",
+        "unique_point": "Represents high-visibility architecture options in Mumbai's established ecosystem.",
+        "why_choose": "Strong for students prioritizing architecture culture, city context, and studio exposure.",
+        "notes": "Mumbai living costs are high — model hostel + local travel."
+      },
+      "verification": {
+        "nirf_band": "Typically strong in Architecture NIRF — verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.sirjjarchitecture.org/",
+          "https://www.spamumbai.in/"
+        ]
+      }
+    },
+    {
+      "id": "nift_mumbai",
+      "name": "NIFT Mumbai",
+      "state_id": "MH",
+      "city": "Mumbai",
+      "type": "National institute",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nift.ac.in/mumbai",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students interested in fashion design, communication, and lifestyle business pathways.",
+        "specialization": "Fashion and design programmes with strong industry-facing curriculum orientation.",
+        "unique_point": "NIFT ecosystem advantage with direct fashion-industry relevance in Mumbai.",
+        "why_choose": "Useful for students targeting fashion/media careers with specialized training infrastructure.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nift.ac.in/mumbai"
+        ]
+      }
+    },
+    {
+      "id": "nair_hospital_dental_college_mumbai_example",
+      "name": "Nair Hospital Dental College, Mumbai (example)",
+      "state_id": "MH",
+      "city": "Mumbai",
+      "type": "Government",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nairhospitaldentalcollege.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students exploring BDS pathways in a public institutional setting in Mumbai.",
+        "specialization": "Dental education with hospital-linked clinical training exposure.",
+        "unique_point": "Established dental institution aligned with major Mumbai public-health ecosystem.",
+        "why_choose": "Good for students prioritizing public setup and city-based clinical learning.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nairhospitaldentalcollege.edu.in/",
+          "https://cetcell.mahacet.org/"
+        ]
+      }
+    },
+    {
+      "id": "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list",
+      "name": "Government Ayurveda / Homoeopathy colleges in Maharashtra (verify current list)",
+      "state_id": "MH",
+      "city": "Mumbai / Pune / other districts",
+      "type": "Government",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mahayush.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comparing government AYUSH pathways within Maharashtra.",
+        "specialization": "AYUSH-focused planning reference tied to official state-level information sources.",
+        "unique_point": "Useful umbrella reference for Ayurveda and Homeopathy route exploration.",
+        "why_choose": "Helps shortlist AYUSH options before institution-level verification.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mahayush.gov.in/",
+          "https://cetcell.mahacet.org/"
+        ]
+      }
+    },
+    {
+      "id": "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences",
+      "name": "Institute of Chemical Technology (ICT) Mumbai — Pharmaceutical Sciences",
+      "state_id": "MH",
+      "city": "Mumbai",
+      "type": "Deemed / state-funded (verify category)",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.ictmumbai.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students targeting pharmaceutical sciences and process-driven chemistry applications.",
+        "specialization": "Pharma and chemical sciences pathways within ICT's domain-focused ecosystem.",
+        "unique_point": "Strong subject specialization with legacy reputation in chemistry-linked fields.",
+        "why_choose": "Ideal for students who want discipline depth in pharmaceutical and chemical sciences.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.ictmumbai.edu.in/"
+        ]
+      }
+    },
+    {
+      "id": "government_law_college_mumbai",
+      "name": "Government Law College, Mumbai",
+      "state_id": "MH",
+      "city": "Mumbai",
+      "type": "Government",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://glcmumbai.com/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Law aspirants looking for a historic legal-education institution in Mumbai.",
+        "specialization": "Law programmes with longstanding academic and legal-ecosystem visibility.",
+        "unique_point": "One of the oldest legal institutions with strong professional network context.",
+        "why_choose": "Valuable for students prioritizing legal ecosystem exposure in Mumbai.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://glcmumbai.com/"
+        ]
+      }
+    },
+    {
+      "id": "nmims_mumbai_bba_related_ug_verify_test",
+      "name": "NMIMS Mumbai (BBA / related UG — verify test)",
+      "state_id": "MH",
+      "city": "Mumbai",
+      "type": "Deemed university",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nmims.edu/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students seeking private-university management and commerce pathways in Mumbai.",
+        "specialization": "Business-oriented UG pathways with structured admission and progression routes.",
+        "unique_point": "High visibility in private management education with multidisciplinary ecosystem.",
+        "why_choose": "Useful for students comparing premium private management-route options.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nmims.edu/"
+        ]
+      }
+    },
+    {
+      "id": "narsee_monjee_college_of_commerce_and_economics_example",
+      "name": "Narsee Monjee College of Commerce and Economics (example)",
+      "state_id": "MH",
+      "city": "Mumbai",
+      "type": "Affiliated college (verify university)",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://nmcollege.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students focused on commerce, accounting, and economics undergraduate pathways.",
+        "specialization": "Commerce-heavy academic track with established urban academic ecosystem.",
+        "unique_point": "Widely recognized Mumbai commerce college in a strong peer environment.",
+        "why_choose": "Good fit for commerce students prioritizing reputation, city access, and academic continuity.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://nmcollege.in/",
+          "https://mu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "iiser_pune",
+      "name": "IISER Pune",
+      "state_id": "MH",
+      "city": "Pune",
+      "type": "IISER",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iiserpune.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students pursuing foundational sciences with research-intensive training.",
+        "specialization": "Science programmes designed around long-term research and interdisciplinary exploration.",
+        "unique_point": "High research orientation with strong lab ecosystem from early stages.",
+        "why_choose": "Strong choice for students who prefer science depth over professional-course breadth.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iiserpune.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "university_of_mumbai_humanities_departments_affiliated_colleges_vary",
+      "name": "University of Mumbai — humanities departments (affiliated colleges vary)",
+      "state_id": "MH",
+      "city": "Mumbai",
+      "type": "State university",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students exploring humanities and social-science pathways in Mumbai university ecosystem.",
+        "specialization": "Humanities planning reference across university departments and affiliated colleges.",
+        "unique_point": "Umbrella entry for wide humanities options under a major public university network.",
+        "why_choose": "Helpful for broad humanities mapping before narrowing to specific affiliated colleges.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "tilak_college_of_education_other_mumbai_affiliated_ncte_colleges_examples_verify",
+      "name": "Tilak College of Education / other Mumbai-affiliated NCTE colleges (examples — verify)",
+      "state_id": "MH",
+      "city": "Mumbai",
+      "type": "Affiliated colleges",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://ncte.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comparing teacher-education pathways with regulatory verification in mind.",
+        "specialization": "Education-focused planning reference aligned with NCTE and university frameworks.",
+        "unique_point": "Useful compliance-first anchor for B.Ed and related education route checks.",
+        "why_choose": "Supports shortlist quality by keeping recognition and affiliation checks central.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://ncte.gov.in/",
+          "https://mu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur",
+      "name": "Maharashtra Animal and Fishery Sciences University (MAFSU), Nagpur",
+      "state_id": "MH",
+      "city": "Nagpur",
+      "type": "State agricultural/veterinary university",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.mafsu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students interested in veterinary, animal, and fishery sciences.",
+        "specialization": "Veterinary and allied life-science pathways through a dedicated state university.",
+        "unique_point": "State-focused specialization in veterinary and fisheries education.",
+        "why_choose": "Strong fit for students aiming for veterinary/agri-animal science career tracks.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.mafsu.in/"
+        ]
+      }
+    },
+    {
+      "id": "savitribai_phule_pune_university",
+      "name": "Savitribai Phule Pune University",
+      "state_id": "MH",
+      "city": "Pune",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.unipune.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students seeking broad commerce, science, humanities, and management pathways in Pune.",
+        "specialization": "Large public-university ecosystem with varied departments and affiliated institutions.",
+        "unique_point": "Major state university anchor for multiple streams and progression pathways.",
+        "why_choose": "Useful when you want broad option breadth within a recognized public university system.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.unipune.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "grant_medical_college_mumbai",
+      "name": "Grant Medical College",
+      "state_id": "MH",
+      "city": "Mumbai",
+      "type": "Government medical college",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.gmcjjh.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students aiming for established government medical education in Mumbai.",
+        "specialization": "Public medical training linked with legacy teaching-hospital ecosystem.",
+        "unique_point": "Historic government medical institution with long clinical training legacy.",
+        "why_choose": "Strong for students prioritizing public-institution medical pathways in a metro setting.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.gmcjjh.org/"
+        ]
+      }
+    },
+    {
+      "id": "nlu_mumbai",
+      "name": "Maharashtra National Law University Mumbai",
+      "state_id": "MH",
+      "city": "Mumbai",
+      "type": "National law university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mnlumumbai.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Law aspirants seeking a national-law-university environment in Mumbai.",
+        "specialization": "Integrated legal education with policy, business-law, and professional development exposure.",
+        "unique_point": "National law university pathway within Mumbai legal and corporate ecosystem.",
+        "why_choose": "Good fit for students targeting structured legal careers with city-based professional exposure.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mnlumumbai.edu.in/"
+        ]
+      }
+    },
+    {
+      "id": "mafsu_nagpur",
+      "name": "Maharashtra Animal and Fishery Sciences University",
+      "state_id": "MH",
+      "city": "Nagpur",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.mafsu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students pursuing veterinary and allied animal sciences in Maharashtra.",
+        "specialization": "State university specialization in veterinary and fisheries domains.",
+        "unique_point": "Focused academic identity for animal and fishery sciences.",
+        "why_choose": "Useful for students choosing domain-specific science pathways over broad generic options.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.mafsu.in/"
+        ]
+      }
+    }
+  ]
+}

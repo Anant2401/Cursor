@@ -1,0 +1,1043 @@
+{
+  "meta": {
+    "shard_type": "institutions",
+    "state_id": "UP",
+    "state_label": "Uttar Pradesh",
+    "count": 31,
+    "generated_on": "2026-05-07"
+  },
+  "institutions": [
+    {
+      "id": "iit_kanpur",
+      "name": "IIT Kanpur",
+      "state_id": "UP",
+      "city": "Kanpur",
+      "type": "IIT",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iitk.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students aiming for top-tier engineering and science pathways with deep research orientation.",
+        "specialization": "High-rigor engineering, mathematics, and sciences with strong innovation ecosystem.",
+        "unique_point": "Premier national institute with strong global academic reputation and research depth.",
+        "why_choose": "Strong fit for students prioritizing concept depth, advanced labs, and long-term technical careers.",
+        "notes": "JEE Advanced."
+      },
+      "verification": {
+        "nirf_band": "Top Engineering band — verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iitk.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "iit_bhu_varanasi",
+      "name": "IIT (BHU) Varanasi",
+      "state_id": "UP",
+      "city": "Varanasi",
+      "type": "IIT",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iitbhu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Engineering aspirants seeking IIT pathway within a historic academic ecosystem.",
+        "specialization": "Engineering-focused programmes with strong technical departments and alumni network.",
+        "unique_point": "IIT identity combined with BHU's long-standing academic heritage.",
+        "why_choose": "Useful for students balancing IIT quality with broad university-city ecosystem exposure.",
+        "notes": "JEE Advanced; unique campus culture — read branch-wise data."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iitbhu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "mnnit_allahabad_prayagraj",
+      "name": "MNNIT Allahabad (Prayagraj)",
+      "state_id": "UP",
+      "city": "Prayagraj",
+      "type": "NIT",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.mnnit.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students targeting nationally recognized NIT-level engineering education.",
+        "specialization": "Core and emerging engineering branches with strong technical training environment.",
+        "unique_point": "Established NIT with consistent placement and academic visibility.",
+        "why_choose": "Good option for students comparing public engineering routes with broad branch spread.",
+        "notes": "JoSAA."
+      },
+      "verification": {
+        "nirf_band": "Strong NIT — verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.mnnit.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "hbtu_kanpur_harcourt_butler_technical_university",
+      "name": "HBTU Kanpur (Harcourt Butler Technical University)",
+      "state_id": "UP",
+      "city": "Kanpur",
+      "type": "State university",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://hbtu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students looking for a legacy technical university in Uttar Pradesh.",
+        "specialization": "Engineering and applied technology pathways with strong historical identity.",
+        "unique_point": "Long-standing technical institution with strong state-level recognition.",
+        "why_choose": "Useful for students wanting a reputed technical campus in Kanpur region.",
+        "notes": "Good for core branches; track counselling PDFs."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://hbtu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "kiet_group_of_institutions_example_private",
+      "name": "KIET Group of Institutions (example private)",
+      "state_id": "UP",
+      "city": "Ghaziabad region",
+      "type": "Private",
+      "ownership": "",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.kiet.edu/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comparing private engineering options under AKTU ecosystem.",
+        "specialization": "Industry-oriented engineering pathways in NCR-adjacent location.",
+        "unique_point": "High-visibility private engineering option in the AKTU-linked ecosystem.",
+        "why_choose": "Helpful for students balancing private-campus environment and location access.",
+        "notes": "Large intake — ask for section-wise faculty and lab hours."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.kiet.edu/",
+          "https://aktu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "aktu_affiliated_colleges_ncr_lucknow_belt",
+      "name": "AKTU-affiliated colleges (NCR + Lucknow belt)",
+      "state_id": "UP",
+      "city": "Uttar Pradesh",
+      "type": "Affiliated",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://aktu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students building broad AKTU-based engineering and professional-course shortlist.",
+        "specialization": "Umbrella planning entry for affiliated institutions across major UP clusters.",
+        "unique_point": "Statewide affiliation-based discovery anchor for technical and professional pathways.",
+        "why_choose": "Useful when students need district/location flexibility in college planning.",
+        "notes": "Use NBA + NIRF where available; negotiate hostel contracts carefully."
+      },
+      "verification": {
+        "nirf_band": "Wide",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://aktu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "king_george_medical_university_kgmu",
+      "name": "King George Medical University (KGMU)",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "State university",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.kgmu.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "NEET-qualified students seeking a long-established government medical pathway in Lucknow.",
+        "specialization": "Public medical education with large teaching-hospital clinical ecosystem.",
+        "unique_point": "Legacy medical university with strong statewide and national applicant interest.",
+        "why_choose": "Strong for students prioritizing government-medical setup and metro clinical exposure.",
+        "notes": "High patient load; competitive domicile rules."
+      },
+      "verification": {
+        "nirf_band": "Verify Medical NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.kgmu.org/"
+        ]
+      }
+    },
+    {
+      "id": "institute_of_medical_sciences_bhu_varanasi",
+      "name": "Institute of Medical Sciences, BHU Varanasi",
+      "state_id": "UP",
+      "city": "Varanasi",
+      "type": "Central university institute",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.bhu.ac.in/Site/UnitHomeTemplate/1_32_58_Unit",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students interested in government-linked medical education in Varanasi.",
+        "specialization": "Medical training integrated with BHU academic ecosystem and teaching hospitals.",
+        "unique_point": "Combines BHU institutional depth with structured medical education pathways.",
+        "why_choose": "Useful for students wanting strong academic environment alongside medical track.",
+        "notes": "NEET + BHU channels can differ — read brochure."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.bhu.ac.in/",
+          "https://mcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening",
+      "name": "AIIMS Gorakhpur / Raebareli / other UP AIIMS (verify seat opening)",
+      "state_id": "UP",
+      "city": "Uttar Pradesh",
+      "type": "AIIMS",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mcc.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comparing UP AIIMS pathways through official counseling channels.",
+        "specialization": "Counseling-centric discovery row for AIIMS options in Uttar Pradesh.",
+        "unique_point": "Practical reference for seat-allotment stage in AIIMS preference planning.",
+        "why_choose": "Helps shortlist choices when counseling rounds and seat movement are key factors.",
+        "notes": "Younger AIIMS — compare hostel readiness vs established GMC."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mcc.nic.in/",
+          "https://www.aiimsgorakhpur.edu.in/"
+        ]
+      }
+    },
+    {
+      "id": "regional_gmcs_prayagraj_meerut_kanpur_verify_list",
+      "name": "Regional GMCs (Prayagraj, Meerut, Kanpur — verify list)",
+      "state_id": "UP",
+      "city": "Uttar Pradesh",
+      "type": "State GMC",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.updgme.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating state government medical colleges across UP regions.",
+        "specialization": "Region-wise GMC planning using UPDGME and counseling references.",
+        "unique_point": "Supports broad public-medical shortlist beyond only major metro names.",
+        "why_choose": "Useful for students balancing city preference with government-seat availability.",
+        "notes": "Read bond for rural posting if applicable."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.updgme.in/",
+          "https://mcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "private_mbbs_colleges_across_up",
+      "name": "Private MBBS colleges across UP",
+      "state_id": "UP",
+      "city": "Uttar Pradesh",
+      "type": "Private",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nmc.org.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students and families comparing private MBBS options across Uttar Pradesh.",
+        "specialization": "Private medical planning row anchored to regulator and counseling sources.",
+        "unique_point": "Centralized reference for private MBBS exploration in the state.",
+        "why_choose": "Useful when fee planning and location trade-offs are major decision factors.",
+        "notes": "Verify NMC recognition; ask for clinical bed:student ratio."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nmc.org.in/",
+          "https://www.updgme.in/"
+        ]
+      }
+    },
+    {
+      "id": "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow",
+      "name": "Faculty of Architecture, Dr A.P.J. Abdul Kalam Technical University (AKTU), Lucknow",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "State university faculty",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://aktu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students exploring architecture pathways under UP technical-university framework.",
+        "specialization": "Architecture-route planning with emphasis on affiliation and approval checks.",
+        "unique_point": "Acts as architecture planning anchor tied to AKTU ecosystem.",
+        "why_choose": "Useful for students verifying architecture route via approved institutional pathways.",
+        "notes": "Confirm campus, hostel, and studio hours on the official AKTU site."
+      },
+      "verification": {
+        "nirf_band": "Verify Architecture NIRF row",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://aktu.ac.in/",
+          "https://www.coa.gov.in/"
+        ]
+      }
+    },
+    {
+      "id": "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis",
+      "name": "Government / aided colleges under AKTU with CoA-approved B.Arch (verify current list)",
+      "state_id": "UP",
+      "city": "Multiple UP cities",
+      "type": "State-affiliated",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.coa.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Architecture aspirants verifying approved B.Arch options in UP.",
+        "specialization": "Approval-first planning row for government/aided architecture pathways.",
+        "unique_point": "Keeps recognition checks central before architecture shortlist decisions.",
+        "why_choose": "Helps reduce risk by focusing on recognized architecture options only.",
+        "notes": "Ask for NBA/CoA status for the specific programme, not only the college brand."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.coa.gov.in/",
+          "https://aktu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "nift_kannauj",
+      "name": "NIFT Kannauj",
+      "state_id": "UP",
+      "city": "Kannauj",
+      "type": "National institute",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nift.ac.in/kannauj",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students targeting design and fashion pathways in Uttar Pradesh.",
+        "specialization": "Design-focused learning with portfolio and industry orientation.",
+        "unique_point": "NIFT-system pathway available within UP geography.",
+        "why_choose": "Good for students wanting specialized fashion/design track without moving far.",
+        "notes": "Read NIFT prospectus for hostel and industry immersion."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nift.ac.in/kannauj"
+        ]
+      }
+    },
+    {
+      "id": "faculty_of_dental_sciences_kgmu_lucknow",
+      "name": "Faculty of Dental Sciences, KGMU, Lucknow",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "State / university dental institute",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.kgmu.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students pursuing BDS in a strong government-university ecosystem.",
+        "specialization": "Dental pathway linked with KGMU's wider clinical infrastructure.",
+        "unique_point": "Dental training benefits from KGMU's established medical ecosystem.",
+        "why_choose": "Useful for candidates prioritizing public setup and established clinical environment.",
+        "notes": "Cross-check fees, bond, and clinical posting mapping."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.kgmu.org/",
+          "https://www.updgme.in/"
+        ]
+      }
+    },
+    {
+      "id": "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix",
+      "name": "State government Ayurveda / Homoeopathy colleges in UP (verify seat matrix)",
+      "state_id": "UP",
+      "city": "Multiple cities",
+      "type": "Government",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.updgme.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating state AYUSH pathways in Uttar Pradesh.",
+        "specialization": "AYUSH planning reference centered on official state admission channels.",
+        "unique_point": "Umbrella discovery row for Ayurveda/Homeopathy route mapping.",
+        "why_choose": "Helpful for early AYUSH shortlist before institution-level deep verification.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.updgme.in/",
+          "https://www.ccimindia.org/"
+        ]
+      }
+    },
+    {
+      "id": "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples",
+      "name": "BBDNIIT School of Pharmacy / Integral University Pharmacy (examples)",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "Private / university",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.pci.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comparing pharmacy options with approval validation in mind.",
+        "specialization": "Pharmacy planning row with recognition-first approach.",
+        "unique_point": "Prompts regulatory verification before choosing specific pharmacy colleges.",
+        "why_choose": "Reduces shortlist risk by centering on approved pharmacy pathways.",
+        "notes": "Compare total fees and hospital training hours."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.pci.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "dr_ram_manohar_lohiya_national_law_university_lucknow",
+      "name": "Dr Ram Manohar Lohiya National Law University, Lucknow",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "NLU",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.rmlnlu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Law aspirants seeking a national-law-university style environment in UP.",
+        "specialization": "Integrated legal education with court, policy, and research orientation.",
+        "unique_point": "Recognized legal institution with focused law-school academic identity.",
+        "why_choose": "Strong fit for students prioritizing structured legal education and peer ecosystem.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.rmlnlu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year",
+      "name": "Faculty of Law, Banaras Hindu University (verify 5-year vs 3-year)",
+      "state_id": "UP",
+      "city": "Varanasi",
+      "type": "Central university",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.bhu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comparing BHU law pathways and programme formats.",
+        "specialization": "Law-planning reference within BHU's broader academic ecosystem.",
+        "unique_point": "Combines legal studies option with a major central university environment.",
+        "why_choose": "Useful for students who value university ecosystem alongside legal studies.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.bhu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure",
+      "name": "IIM Lucknow (IPM and related UG pathways — verify brochure)",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "IIM",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iiml.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Management aspirants exploring IIM-level pathways linked to Lucknow campus.",
+        "specialization": "Management-track planning reference around IIM ecosystem and programme updates.",
+        "unique_point": "Top management brand context for high-aspiration business pathways.",
+        "why_choose": "Useful when students prioritize management brand and long-term career mobility.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iiml.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "banaras_hindu_university_faculty_of_commerce_verify_programme_codes",
+      "name": "Banaras Hindu University — Faculty of Commerce (verify programme codes)",
+      "state_id": "UP",
+      "city": "Varanasi",
+      "type": "Central university",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.bhu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Commerce students exploring central-university pathways in Varanasi.",
+        "specialization": "Commerce and related planning reference in BHU ecosystem.",
+        "unique_point": "Commerce-track discovery within a high-visibility central university setting.",
+        "why_choose": "Good for students balancing reputation, programme breadth, and city preference.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.bhu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "iit_kanpur_bs_programmes_verify_jee_channel",
+      "name": "IIT Kanpur (BS programmes — verify JEE channel)",
+      "state_id": "UP",
+      "city": "Kanpur",
+      "type": "IIT",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iitk.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students exploring IIT Kanpur science-oriented pathways including BS tracks.",
+        "specialization": "Science and engineering planning reference anchored to IIT Kanpur admissions context.",
+        "unique_point": "Provides a focused IITK route view for science-statistics oriented candidates.",
+        "why_choose": "Useful for students comparing science-driven IIT tracks with engineering routes.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iitk.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "banaras_hindu_university_faculty_of_arts_social_sciences",
+      "name": "Banaras Hindu University — Faculty of Arts / Social Sciences",
+      "state_id": "UP",
+      "city": "Varanasi",
+      "type": "Central university",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.bhu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students pursuing humanities and social-science pathways in a central university.",
+        "specialization": "Humanities-route discovery across BHU departments and programme options.",
+        "unique_point": "Broad social sciences and humanities context within BHU ecosystem.",
+        "why_choose": "Useful for students seeking depth in arts/social-science pathways with strong academic environment.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.bhu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "university_of_lucknow_department_of_education_verify_intake",
+      "name": "University of Lucknow — Department of Education (verify intake)",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "State university",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.lkouniv.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students considering education pathways in a long-established public university.",
+        "specialization": "Education-focused planning reference within University of Lucknow structure.",
+        "unique_point": "Education route anchored to a recognized state-university environment.",
+        "why_choose": "Helpful for students targeting teacher-education route with public university preference.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.lkouniv.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "name": "Uttar Pradesh Pandit Deen Dayal Upadhyaya Pashu Chikitsa Vigyan Vishwavidyalaya Evam Go Anusandhan Sansthan (DUVASU), Mathura",
+      "state_id": "UP",
+      "city": "Mathura",
+      "type": "State veterinary university",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.duvasu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students aiming for veterinary and allied animal science pathways in UP.",
+        "specialization": "Veterinary-focused state university with domain-specific academic structure.",
+        "unique_point": "Specialized veterinary university identity within Uttar Pradesh.",
+        "why_choose": "Strong fit for students pursuing veterinary domain rather than generic science tracks.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.duvasu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "ivri_izatnagar_bareilly",
+      "name": "IVRI, Izatnagar (Bareilly)",
+      "state_id": "UP",
+      "city": "Bareilly",
+      "type": "ICAR-IVRI",
+      "ownership": "",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.ivri.res.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students interested in veterinary sciences and animal research orientation.",
+        "specialization": "Research-intensive veterinary ecosystem with national scientific relevance.",
+        "unique_point": "High research visibility in veterinary and animal science domain.",
+        "why_choose": "Useful for students targeting research-linked veterinary pathways.",
+        "notes": ""
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.ivri.res.in/"
+        ]
+      }
+    },
+    {
+      "id": "banaras_hindu_university",
+      "name": "Banaras Hindu University",
+      "state_id": "UP",
+      "city": "Varanasi",
+      "type": "Central university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.bhu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students exploring broad multi-stream pathways in a central university ecosystem.",
+        "specialization": "Wide academic portfolio across sciences, humanities, commerce, law, and medicine-linked units.",
+        "unique_point": "Large central-university ecosystem with strong academic legacy in Varanasi.",
+        "why_choose": "Suitable for students who prefer broad option depth under one institutional umbrella.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.bhu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "university_of_lucknow",
+      "name": "University of Lucknow",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.lkouniv.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students seeking multi-stream pathways in a long-established UP state university.",
+        "specialization": "Broad commerce, humanities, law, science, and education-oriented options.",
+        "unique_point": "Recognized public university with strong state-level academic presence.",
+        "why_choose": "Useful for students prioritizing public-university route in Lucknow region.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.lkouniv.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "kgmu_lucknow",
+      "name": "King George's Medical University",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "State medical university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.kgmu.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students targeting government medical pathways in Lucknow.",
+        "specialization": "Medical and allied health education through established university-hospital ecosystem.",
+        "unique_point": "Legacy medical institution with strong clinical infrastructure.",
+        "why_choose": "Strong choice for government-medical aspirants seeking a high-visibility institution.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.kgmu.org/"
+        ]
+      }
+    },
+    {
+      "id": "nift_rae_bareli",
+      "name": "National Institute of Fashion Technology Rae Bareli",
+      "state_id": "UP",
+      "city": "Rae Bareli",
+      "type": "Institute of national importance",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nift.ac.in/raebareli/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Design and fashion aspirants wanting a NIFT pathway in UP.",
+        "specialization": "Fashion-design focused academic path with portfolio and studio orientation.",
+        "unique_point": "NIFT-system opportunity accessible within Uttar Pradesh geography.",
+        "why_choose": "Useful for students prioritizing specialized design education closer to home region.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nift.ac.in/raebareli/"
+        ]
+      }
+    },
+    {
+      "id": "svpuat_merut",
+      "name": "Sardar Vallabhbhai Patel University of Agriculture and Technology",
+      "state_id": "UP",
+      "city": "Meerut",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.svpuat.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students interested in agriculture, allied sciences, and veterinary-linked ecosystems.",
+        "specialization": "State agricultural-university structure with applied rural and life-science orientation.",
+        "unique_point": "Domain-focused public university with strong agriculture-veterinary linkage context.",
+        "why_choose": "Good for students choosing agri-allied science track with applied field relevance.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.svpuat.edu.in/"
+        ]
+      }
+    }
+  ]
+}

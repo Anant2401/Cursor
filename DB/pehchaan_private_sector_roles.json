@@ -439,6 +439,105 @@
         "day_61_90": ["Apply to 40 BDA roles with role-targeted resume points.", "Use referral outreach to increase interview conversion."]
       },
       "data_freshness_note": "Incentive-heavy roles can alter total earnings materially. Confirm fixed vs variable split before joining."
+    },
+    {
+      "private_role_id": "customer_success_associate",
+      "status": "active",
+      "career_canonical_id": "sales_business_development",
+      "skill_gap_job_id": "hr_manager",
+      "plan_b_exam_links": ["cuet_ug", "cat_mba"],
+      "role_family": "customer_ops",
+      "title": "Customer Success Associate",
+      "summary": "Supports onboarding, adoption, retention, and issue-resolution workflows for new and existing customers.",
+      "eligibility_min": "Graduate with strong communication and problem-solving approach",
+      "eligibility_preferred": "Experience in support, operations, or account coordination",
+      "must_have_skills": ["Customer communication", "Issue diagnosis", "Ticketing and follow-up", "SLA awareness"],
+      "good_to_have_skills": ["CRM handling", "Excel reporting", "Escalation management"],
+      "salary_variance_factors": ["Product complexity", "Customer segment", "Shift model", "Retention ownership"],
+      "proof_required": ["Customer handling scenarios", "Resolution tracker sample", "Email communication quality"],
+      "selection_process": ["Communication screen", "Scenario or role-play", "Manager interview", "HR round"],
+      "application_channels": ["LinkedIn", "Company careers pages", "Naukri", "Referral asks"],
+      "growth_paths": ["Customer Success Executive", "Account Manager", "Customer Success Lead"],
+      "metro_map": [
+        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹3.0-5.2 LPA", "salary_3yr": "₹5.8-10.2 LPA", "city_reality_note": "Strong demand from SaaS, edtech, and service companies." },
+        { "metro_id": "chennai", "demand_level": "medium", "salary_fresher": "₹2.8-4.8 LPA", "salary_3yr": "₹5.2-9.0 LPA", "city_reality_note": "Steady openings in support and customer lifecycle teams." },
+        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹3.2-5.8 LPA", "salary_3yr": "₹6.2-11.2 LPA", "city_reality_note": "Customer-facing SaaS roles with faster progression." },
+        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹3.0-5.4 LPA", "salary_3yr": "₹5.8-10.5 LPA", "city_reality_note": "GCC and product ecosystem support consistent hiring." },
+        { "metro_id": "pune", "demand_level": "medium", "salary_fresher": "₹2.9-5.0 LPA", "salary_3yr": "₹5.5-9.6 LPA", "city_reality_note": "Growth teams in technology and services create demand." },
+        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹3.2-5.8 LPA", "salary_3yr": "₹6.0-10.8 LPA", "city_reality_note": "Strong hiring in BFSI and enterprise support environments." }
+      ],
+      "plan_30_60_90": {
+        "day_0_30": ["Learn product fundamentals and onboarding workflows.", "Create sample customer communication templates."],
+        "day_31_60": ["Practice ticket triage and escalation scenarios.", "Build one retention-risk tracker in spreadsheet/CRM."],
+        "day_61_90": ["Apply to 35 customer success and support roles.", "Use targeted referrals in customer operations teams."]
+      },
+      "data_freshness_note": "Compensation may include variable retention bonuses in some companies."
+    },
+    {
+      "private_role_id": "recruitment_coordinator",
+      "status": "active",
+      "career_canonical_id": "bba_mba_management",
+      "skill_gap_job_id": "hr_manager",
+      "plan_b_exam_links": ["cat_mba", "cuet_ug"],
+      "role_family": "hr",
+      "title": "Recruitment Coordinator",
+      "summary": "Coordinates hiring schedules, candidate communication, interview logistics, and recruiter workflows.",
+      "eligibility_min": "Graduate with communication and process discipline",
+      "eligibility_preferred": "Exposure to HR internships or campus placement cells",
+      "must_have_skills": ["Interview coordination", "Candidate communication", "Documentation accuracy", "Scheduling and follow-up"],
+      "good_to_have_skills": ["ATS basics", "Sourcing support", "Stakeholder management"],
+      "salary_variance_factors": ["Hiring volume", "Industry type", "Recruitment tool stack", "Campus vs lateral mix"],
+      "proof_required": ["Interview scheduling tracker", "Candidate communication samples", "Process checklist"],
+      "selection_process": ["Communication screening", "Coordination scenario round", "HR manager interview"],
+      "application_channels": ["LinkedIn", "Naukri", "Company HR pages", "Recruitment agency networks"],
+      "growth_paths": ["Talent Acquisition Associate", "Recruiter", "HR Operations Specialist"],
+      "metro_map": [
+        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹2.8-4.8 LPA", "salary_3yr": "₹5.2-9.0 LPA", "city_reality_note": "Large hiring ecosystems create steady coordination roles." },
+        { "metro_id": "chennai", "demand_level": "medium", "salary_fresher": "₹2.7-4.6 LPA", "salary_3yr": "₹5.0-8.5 LPA", "city_reality_note": "IT and shared-services hiring keeps regular demand." },
+        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹3.0-5.2 LPA", "salary_3yr": "₹5.8-9.8 LPA", "city_reality_note": "Tech ecosystem supports year-round recruitment activity." },
+        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹2.9-5.0 LPA", "salary_3yr": "₹5.5-9.4 LPA", "city_reality_note": "High-volume recruiter teams need strong coordination support." },
+        { "metro_id": "pune", "demand_level": "medium", "salary_fresher": "₹2.8-4.8 LPA", "salary_3yr": "₹5.2-8.8 LPA", "city_reality_note": "Service-sector and GCC hiring generate opportunities." },
+        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹3.0-5.4 LPA", "salary_3yr": "₹5.8-10.0 LPA", "city_reality_note": "Large corporate hiring creates wider role availability." }
+      ],
+      "plan_30_60_90": {
+        "day_0_30": ["Learn recruitment process flow and interview lifecycle.", "Build sample hiring-status dashboard in Excel."],
+        "day_31_60": ["Practice recruiter-candidate communication and scheduling SOPs.", "Study ATS terminology and hiring metrics basics."],
+        "day_61_90": ["Apply to 30 HR coordination and TA support roles.", "Ask for referrals from HR alumni and recruiters."]
+      },
+      "data_freshness_note": "Roles can be coordinator-heavy or sourcing-heavy; verify JD scope before joining."
+    },
+    {
+      "private_role_id": "inside_sales_executive",
+      "status": "active",
+      "career_canonical_id": "sales_business_development",
+      "skill_gap_job_id": "sales_business_development",
+      "plan_b_exam_links": ["cat_mba", "cuet_ug"],
+      "role_family": "sales",
+      "title": "Inside Sales Executive",
+      "summary": "Runs outreach, qualification, product demos, and conversion follow-ups for pipeline growth.",
+      "eligibility_min": "Graduate with communication confidence",
+      "eligibility_preferred": "Sales internship, telecalling, or business development exposure",
+      "must_have_skills": ["Cold outreach", "Discovery calls", "Objection handling", "CRM updates"],
+      "good_to_have_skills": ["Demo delivery", "Proposal writing", "Negotiation basics"],
+      "salary_variance_factors": ["Target ownership", "Incentive structure", "Domain and ticket size", "Conversion rates"],
+      "proof_required": ["Outreach call script", "Lead tracker sample", "Mock product pitch"],
+      "selection_process": ["Screening call", "Role-play round", "Hiring manager interview", "HR round"],
+      "application_channels": ["LinkedIn", "Startup job portals", "Naukri", "Company careers pages"],
+      "growth_paths": ["Senior Inside Sales Executive", "Account Executive", "Sales Manager"],
+      "metro_map": [
+        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹3.0-5.6 LPA", "salary_3yr": "₹6.0-11.2 LPA", "city_reality_note": "High-volume sales markets with faster role cycles." },
+        { "metro_id": "chennai", "demand_level": "medium", "salary_fresher": "₹2.8-5.0 LPA", "salary_3yr": "₹5.6-9.8 LPA", "city_reality_note": "B2B and service-led inside sales roles are stable." },
+        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹3.3-6.2 LPA", "salary_3yr": "₹6.8-12.8 LPA", "city_reality_note": "SaaS and tech sales teams drive strong hiring." },
+        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹3.0-5.8 LPA", "salary_3yr": "₹6.2-11.4 LPA", "city_reality_note": "Good opportunities in enterprise and edtech sales." },
+        { "metro_id": "pune", "demand_level": "medium", "salary_fresher": "₹2.9-5.2 LPA", "salary_3yr": "₹5.8-10.2 LPA", "city_reality_note": "Balanced pipeline roles across IT and services." },
+        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹3.2-6.0 LPA", "salary_3yr": "₹6.6-12.2 LPA", "city_reality_note": "Large market with high upside in performance-driven teams." }
+      ],
+      "plan_30_60_90": {
+        "day_0_30": ["Build outreach messaging and qualification framework.", "Practice a 3-minute product pitch and FAQ handling."],
+        "day_31_60": ["Run mock call simulations with objection handling.", "Build a lead-to-conversion dashboard sample."],
+        "day_61_90": ["Apply to 40 inside-sales roles and follow up weekly.", "Use referral outreach to improve interview hit rate."]
+      },
+      "data_freshness_note": "Always check fixed salary vs incentive share before accepting offers."
     }
   ]
 }

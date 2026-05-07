@@ -391,10 +391,14 @@ function initCareerToolsSection() {
     resetStartHereUiOnly();
     const outEl = document.getElementById("start-here-out");
     if (resetBothDropdowns) {
-      const stage = document.getElementById("start-stage");
-      const worry = document.getElementById("start-worry");
-      if (stage) stage.value = "";
-      if (worry) worry.value = "";
+      const q1 = document.getElementById("path-q1");
+      const q2 = document.getElementById("path-q2");
+      const q3 = document.getElementById("path-q3");
+      const q4 = document.getElementById("path-q4");
+      if (q1) q1.value = "";
+      if (q2) q2.value = "";
+      if (q3) q3.value = "";
+      if (q4) q4.value = "";
     }
     if (outEl) outEl.hidden = true;
     refreshToolsGrid();
@@ -427,12 +431,24 @@ function initCareerToolsSection() {
 initCareerToolsSection();
 
 function initStartHere() {
-  const stageEl = document.getElementById("start-stage");
-  const worryEl = document.getElementById("start-worry");
-  const out = document.getElementById("start-here-out");
+  const q1 = document.getElementById("path-q1");
+  const q2 = document.getElementById("path-q2");
+  const progressFill = document.getElementById("pathfinder-progress-fill");
+  const resultTitle = document.getElementById("pathfinder-result-title");
+  const resultText = document.getElementById("pathfinder-result-text");
+  const resultLink = document.getElementById("pathfinder-result-link");
+  const restartBtn = document.getElementById("start-here-clear");
   const pills = document.getElementById("start-here-pills");
   const sub = document.getElementById("start-here-sub");
-  if (!stageEl || !worryEl || !out || !pills || !sub) return;
+  const auditToggle = document.getElementById("pathfinder-audit-toggle");
+  const auditPanel = document.getElementById("pathfinder-audit-panel");
+  const auditPersona = document.getElementById("pathfinder-audit-persona");
+  const auditQ2 = document.getElementById("pathfinder-audit-q2");
+  const auditPrimary = document.getElementById("pathfinder-audit-primary");
+  const auditTools = document.getElementById("pathfinder-audit-tools");
+  if (!q1 || !q2 || !progressFill || !resultTitle || !resultText || !resultLink || !restartBtn || !pills || !sub) return;
+
+  let persona = "";
 
   const LABEL = {
     assessment: "Career Assessment",
@@ -448,6 +464,163 @@ function initStartHere() {
     mentor: "Mentor Connect",
     parentguide: "Parent's Guide",
   };
+  const PERSONA_LABEL = {
+    school_9_10: "Class 9–10 student",
+    school_11_12: "Class 11–12 student",
+    college_grad: "College student / recent graduate",
+    working_pro: "Working professional",
+    parent: "Parent / guardian",
+  };
+  const Q2_LABEL = {
+    clarity_career: "I don’t know what career / role fits me.",
+    clarity_path: "I’m confused about path (stream/college/exam) options.",
+    clarity_money: "I’m worried about the cost and money side.",
+    clarity_execution: "I need help with exams / jobs / next steps.",
+  };
+
+  const PATHFINDER_RESULT = {
+    stream: {
+      title: "Stream Advisor (10th Class)",
+      text: "Your first priority is picking the right subjects. Start with stream clarity, then move to deeper career planning.",
+      href: "Tools/pehchaan_stream_advisor.html",
+      summary: "Result A: Start with Stream Advisor.",
+      tools: ["stream", "assessment", "salary"],
+    },
+    parentguide: {
+      title: "Parent's Guide (FAQ)",
+      text: "We have a dedicated hub for parent concerns on marks, costs, choices, and practical next steps.",
+      href: "Tools/parents-guide/index.html",
+      summary: "Result E: Parent's Guide is your best starting point.",
+      tools: ["parentguide", "financing", "roi"],
+    },
+    collegefinder: {
+      title: "College Finder",
+      text: "Find colleges by rank and budget filters, then compare practical options before finalizing your preference list.",
+      href: "Tools/pehchaan_college_finder.html",
+      summary: "Best next step: College Finder.",
+      tools: ["collegefinder", "planb", "roi"],
+    },
+    roadmap: {
+      title: "Exam Roadmap Builder",
+      text: "Build a step-by-step exam plan with timelines, milestones, and action checkpoints for this preparation cycle.",
+      href: "Tools/pehchaan_exam_roadmap.html",
+      summary: "Best next step: Exam Roadmap Builder.",
+      tools: ["roadmap", "planb", "collegefinder"],
+    },
+    assessment: {
+      title: "Career Assessment",
+      text: "Use this to confirm fit before locking decisions on exams, colleges, and long-term course investments.",
+      href: "Tools/pehchaan_career_assessment.html",
+      summary: "Best next step: Career Assessment.",
+      tools: ["assessment", "salary", "collegefinder"],
+    },
+    financing: {
+      title: "Financing & EMI Reality",
+      text: "Stress-test funding choices using practical EMI and affordability context before committing to major education costs.",
+      href: "Tools/pehchaan_financing_reality.html",
+      summary: "Best next step: Financing & EMI Reality.",
+      tools: ["financing", "roi", "salary"],
+    },
+    privatejourney: {
+      title: "Private Sector Journey",
+      text: "Get a practical step-by-step path for corporate hiring, with focused actions that reduce guesswork.",
+      href: "Tools/pehchaan_private_sector_journey.html",
+      summary: "Best next step: Private Sector Journey.",
+      tools: ["privatejourney", "skillgap", "mentor"],
+    },
+    skillgap: {
+      title: "Skill Gap Analyser",
+      text: "Check whether your current skills align with target roles and get an action plan to close gaps quickly.",
+      href: "Tools/pehchaan_skill_gap_analyser.html",
+      summary: "Best next step: Skill Gap Analyser.",
+      tools: ["skillgap", "privatejourney", "mentor"],
+    },
+    roi: {
+      title: "Career ROI & Reality Bridge",
+      text: "Compare degree costs with realistic outcomes so you can evaluate whether a Master's investment makes sense.",
+      href: "Tools/pehchaan_career_roi_reality_bridge.html",
+      summary: "Best next step: Career ROI & Reality Bridge.",
+      tools: ["roi", "salary", "financing"],
+    },
+    salary: {
+      title: "Salary Explorer",
+      text: "Benchmark career compensation bands to check whether your current pay and growth track are competitive.",
+      href: "Tools/pehchaan_salary_explorer.html",
+      summary: "Best next step: Salary Explorer.",
+      tools: ["salary", "skillgap", "planb"],
+    },
+    planb: {
+      title: "Plan B Strategy Builder",
+      text: "Create backup pathways for role, course, and market uncertainty so career progress never stalls.",
+      href: "Tools/pehchaan_plan_b_strategy_builder.html",
+      summary: "Best next step: Plan B Strategy Builder.",
+      tools: ["planb", "roadmap", "collegefinder"],
+    },
+    mentor: {
+      title: "Mentor Connect",
+      text: "Connect with experienced professionals to get practical advice from people who have already done it.",
+      href: "Tools/pehchaan_mentor_connect.html",
+      summary: "Best next step: Mentor Connect.",
+      tools: ["mentor", "salary", "planb"],
+    },
+  };
+
+  const slideIds = ["path-slide-q1", "path-slide-q2", "path-slide-result"];
+  const stepPercent = { "path-slide-q1": 25, "path-slide-q2": 75, "path-slide-result": 100 };
+
+  const setActiveSlide = (slideId) => {
+    const current = document.querySelector(".pathfinder-slide.is-active");
+    if (current && current.id !== slideId) {
+      current.classList.remove("is-active");
+      current.classList.add("is-leaving");
+      window.setTimeout(() => current.classList.remove("is-leaving"), 320);
+    }
+    slideIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      if (id !== slideId) return;
+      el.classList.remove("is-leaving");
+      el.classList.add("is-active");
+    });
+    progressFill.style.width = `${stepPercent[slideId] || 25}%`;
+  };
+
+  const renderResult = (toolKey, toolOverride) => {
+    const result = PATHFINDER_RESULT[toolKey];
+    if (!result) return;
+    resultTitle.textContent = result.title;
+    resultText.textContent = result.text;
+    resultLink.href = result.href;
+    sub.textContent = result.summary;
+    const sourceTools = Array.isArray(toolOverride) && toolOverride.length
+      ? toolOverride
+      : (Array.isArray(result.tools) && result.tools.length ? result.tools : [toolKey]);
+    const toolKeys = sourceTools.slice(0, 4);
+    pills.innerHTML = pillHtml(toolKeys);
+    setActiveSlide("path-slide-result");
+    window.__pehchaanApplyStartHereTools?.(toolKeys);
+    if (auditPersona) auditPersona.textContent = PERSONA_LABEL[persona] || "-";
+    if (auditQ2) auditQ2.textContent = Q2_LABEL[q2.value] || (persona === "parent" ? "Skipped (instant parent result)" : "-");
+    if (auditPrimary) auditPrimary.textContent = LABEL[toolKey] || toolKey;
+    if (auditTools) auditTools.textContent = toolKeys.map((k) => LABEL[k] || k).join(" → ");
+  };
+
+  const restart = () => {
+    q1.value = "";
+    q2.value = "";
+    persona = "";
+    resultTitle.textContent = "";
+    resultText.textContent = "";
+    resultLink.href = "#";
+    sub.textContent = "";
+    pills.innerHTML = "";
+    if (auditPersona) auditPersona.textContent = "-";
+    if (auditQ2) auditQ2.textContent = "-";
+    if (auditPrimary) auditPrimary.textContent = "-";
+    if (auditTools) auditTools.textContent = "-";
+    setActiveSlide("path-slide-q1");
+    window.__pehchaanClearStartHereGridFilter?.(true);
+  };
 
   const pillHtml = (keys) =>
     keys
@@ -457,49 +630,65 @@ function initStartHere() {
       )
       .join("");
 
-  const run = () => {
-    const st = stageEl.value;
-    const w = worryEl.value;
-    if (!st) {
-      out.hidden = true;
-      window.__pehchaanClearStartHereGridFilter?.(true);
+  q1.addEventListener("change", () => {
+    const v = q1.value;
+    if (!v) {
+      restart();
       return;
     }
-    let keys = [];
-    let blurb = "";
-    if (st === "parent") {
-      keys = ["parentguide", "financing", "roi"];
-      blurb = "Family-first picks — parent Q&A, loans in plain language, then ROI numbers you can share at home.";
-    } else if (!w) {
-      out.hidden = true;
-      window.__pehchaanClearStartHereGridFilter?.(false);
+    persona = v;
+    if (v === "parent") {
+      renderResult("parentguide");
       return;
-    } else if (w === "fit") {
-      keys = ["assessment"];
-      if (st === "10") keys.push("stream");
-      keys.push("salary");
-      if (st !== "10") keys.push("collegefinder");
-      if (keys.length < 3) keys.push("roadmap");
-      blurb = "Discovery order: who you are → what you might earn → how exams line up.";
-    } else if (w === "money") {
-      keys = ["salary", "roi", "financing"];
-      blurb = "Same order many families use: bands first, full ROI story, then EMI stress-test.";
-    } else if (w === "exam") {
-      keys = ["roadmap", "planb", "collegefinder", "salary"];
-      blurb = "Timelines and Plan B in one pass, with salary context so goals stay realistic.";
-    } else if (w === "job") {
-      keys = ["privatejourney", "skillgap", "salary", "mentor"];
-      blurb = "Skills you lack → pay bands for the role → people who already walked that path.";
     }
-    keys = keys.slice(0, 4);
-    sub.textContent = blurb;
-    pills.innerHTML = pillHtml(keys);
-    out.hidden = false;
-    window.__pehchaanApplyStartHereTools?.(keys);
-  };
+    setActiveSlide("path-slide-q2");
+  });
 
-  stageEl.addEventListener("change", run);
-  worryEl.addEventListener("change", run);
+  q2.addEventListener("change", () => {
+    const choice = q2.value;
+    if (!choice) return;
+
+    // 9th–10th: broad exploration, but prioritised
+    if (persona === "school_9_10") {
+      if (choice === "clarity_career") return renderResult("assessment", ["assessment", "salary", "collegefinder"]);
+      if (choice === "clarity_path") return renderResult("stream", ["stream", "assessment", "salary", "roadmap"]);
+      if (choice === "clarity_money") return renderResult("salary", ["salary", "roi", "financing"]);
+      if (choice === "clarity_execution") return renderResult("roadmap", ["roadmap", "planb", "collegefinder"]);
+    }
+
+    // 11th–12th: exams, colleges, remaining doubt, or money
+    if (persona === "school_11_12") {
+      if (choice === "clarity_career") return renderResult("assessment", ["assessment", "salary", "collegefinder"]);
+      if (choice === "clarity_path") return renderResult("collegefinder", ["roadmap", "collegefinder", "planb", "roi"]);
+      if (choice === "clarity_money") return renderResult("financing", ["financing", "roi", "salary"]);
+      if (choice === "clarity_execution") return renderResult("roadmap", ["roadmap", "planb", "collegefinder"]);
+    }
+
+    // College / recent grads: job entry, skills, or ROI of Masters
+    if (persona === "college_grad") {
+      if (choice === "clarity_career") return renderResult("privatejourney", ["assessment", "privatejourney", "skillgap", "mentor"]);
+      if (choice === "clarity_path") return renderResult("skillgap", ["skillgap", "privatejourney", "mentor"]);
+      if (choice === "clarity_money") return renderResult("roi", ["roi", "salary", "financing", "mentor"]);
+      if (choice === "clarity_execution") return renderResult("salary", ["salary", "skillgap", "planb", "privatejourney"]);
+    }
+
+    // Working professionals: salary check, Plan B, or mentor
+    if (persona === "working_pro") {
+      if (choice === "clarity_career") return renderResult("salary", ["salary", "skillgap", "planb"]);
+      if (choice === "clarity_path") return renderResult("planb", ["planb", "roadmap", "collegefinder"]);
+      if (choice === "clarity_money") return renderResult("roi", ["roi", "salary", "financing"]);
+      if (choice === "clarity_execution") return renderResult("mentor", ["mentor", "salary", "planb", "privatejourney"]);
+    }
+  });
+
+  restartBtn.addEventListener("click", restart);
+  if (auditToggle && auditPanel) {
+    auditToggle.addEventListener("click", () => {
+      auditPanel.hidden = !auditPanel.hidden;
+      auditToggle.textContent = auditPanel.hidden ? "Audit mode" : "Hide audit";
+    });
+  }
+  restart();
 }
 
 initStartHere();

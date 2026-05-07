@@ -1,0 +1,539 @@
+{
+  "meta": {
+    "shard_type": "institutions",
+    "state_id": "CG",
+    "state_label": "Chhattisgarh",
+    "count": 16,
+    "generated_on": "2026-05-07"
+  },
+  "institutions": [
+    {
+      "id": "nit_raipur",
+      "name": "NIT Raipur",
+      "state_id": "CG",
+      "city": "Raipur",
+      "type": "Institute of National Importance",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nitrr.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating NIT Raipur for stream-aligned pathways in and around Raipur.",
+        "specialization": "NIT Raipur is positioned as a institute of national importance with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "NIT Raipur contributes a distinct local option in Raipur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose NIT Raipur when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Strong regional brand; check branch-wise cutoffs."
+      },
+      "verification": {
+        "nirf_band": "Engineering NIRF band typically ~30–50 (verify year)",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nitrr.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "iiit_naya_raipur",
+      "name": "IIIT Naya Raipur",
+      "state_id": "CG",
+      "city": "Naya Raipur",
+      "type": "IIIT (PPP)",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iiitnr.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating IIIT Naya Raipur for stream-aligned pathways in and around Naya Raipur.",
+        "specialization": "IIIT Naya Raipur is positioned as a iiit (ppp) with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "IIIT Naya Raipur contributes a distinct local option in Naya Raipur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose IIIT Naya Raipur when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Compare fees and curriculum vs NIT for your branch interest."
+      },
+      "verification": {
+        "nirf_band": "Growing IIIT — verify NIRF + placements",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iiitnr.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "iit_bhilai",
+      "name": "IIT Bhilai",
+      "state_id": "CG",
+      "city": "Bhilai / GEC campus (verify current campus plan)",
+      "type": "IIT",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iitbhilai.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating IIT Bhilai for stream-aligned pathways in and around Bhilai / GEC campus (verify current campus plan).",
+        "specialization": "IIT Bhilai is positioned as a iit with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "IIT Bhilai contributes a distinct local option in Bhilai / GEC campus (verify current campus plan) and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose IIT Bhilai when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "JEE Advanced; growing departments — read branch intake and hostel location carefully each year."
+      },
+      "verification": {
+        "nirf_band": "Younger IIT — verify NIRF year-on-year",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iitbhilai.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "government_engineering_college_raipur_example_state_college",
+      "name": "Government Engineering College, Raipur (example state college)",
+      "state_id": "CG",
+      "city": "Raipur",
+      "type": "State",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://csvtu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating Government Engineering College, Raipur (example state college) for stream-aligned pathways in and around Raipur.",
+        "specialization": "Government Engineering College, Raipur (example state college) is positioned as a state with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Government Engineering College, Raipur (example state college) contributes a distinct local option in Raipur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Government Engineering College, Raipur (example state college) when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Lower fee than many private colleges; you own outcomes via GATE/projects."
+      },
+      "verification": {
+        "nirf_band": "Varies — verify on NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://csvtu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "shri_shankaracharya_technical_campus_sstc_bhilai",
+      "name": "Shri Shankaracharya Technical Campus (SSTC) Bhilai",
+      "state_id": "CG",
+      "city": "Bhilai",
+      "type": "Private autonomous (CSVTU-affiliated legacy — verify)",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.sstc.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating Shri Shankaracharya Technical Campus (SSTC) Bhilai for stream-aligned pathways in and around Bhilai.",
+        "specialization": "Shri Shankaracharya Technical Campus (SSTC) Bhilai is positioned as a private autonomous (csvtu-affiliated legacy — verify) with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Shri Shankaracharya Technical Campus (SSTC) Bhilai contributes a distinct local option in Bhilai and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Shri Shankaracharya Technical Campus (SSTC) Bhilai when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Large peer group; ask for NBA branch status and campus placement cell data."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF Engineering",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.sstc.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify",
+      "name": "Rungta College of Engineering & Technology (R1 / R2 campuses — verify)",
+      "state_id": "CG",
+      "city": "Bhilai",
+      "type": "Private",
+      "ownership": "",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.rungta.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating Rungta College of Engineering & Technology (R1 / R2 campuses — verify) for stream-aligned pathways in and around Bhilai.",
+        "specialization": "Rungta College of Engineering & Technology (R1 / R2 campuses — verify) is positioned as a private with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Rungta College of Engineering & Technology (R1 / R2 campuses — verify) contributes a distinct local option in Bhilai and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Rungta College of Engineering & Technology (R1 / R2 campuses — verify) when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Multiple campuses — confirm which campus your seat maps to before fee payment."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.rungta.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "other_aicte_affiliated_colleges_in_cg",
+      "name": "Other AICTE-affiliated colleges in CG",
+      "state_id": "CG",
+      "city": "Multiple cities",
+      "type": "Private / state",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://facilities.aicte-india.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating Other AICTE-affiliated colleges in CG for stream-aligned pathways in and around Multiple cities.",
+        "specialization": "Other AICTE-affiliated colleges in CG is positioned as a private / state with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Other AICTE-affiliated colleges in CG contributes a distinct local option in Multiple cities and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Other AICTE-affiliated colleges in CG when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Verify NBA accreditation for branch; plan internships + coding portfolio early."
+      },
+      "verification": {
+        "nirf_band": "Wide",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://facilities.aicte-india.org/"
+        ]
+      }
+    },
+    {
+      "id": "aiims_raipur",
+      "name": "AIIMS Raipur",
+      "state_id": "CG",
+      "city": "Raipur",
+      "type": "AIIMS",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://aiimsraipur.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating AIIMS Raipur for stream-aligned pathways in and around Raipur.",
+        "specialization": "AIIMS Raipur is positioned as a aiims with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "AIIMS Raipur contributes a distinct local option in Raipur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose AIIMS Raipur when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Highly competitive; still a national draw — not only CG domicile."
+      },
+      "verification": {
+        "nirf_band": "Verify Medical NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://aiimsraipur.edu.in/"
+        ]
+      }
+    },
+    {
+      "id": "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
+      "name": "All India Institute of Medical Sciences (AIIMS) Kalyani / other new AIIMS (if seats listed for CG domicile in your year)",
+      "state_id": "CG",
+      "city": "Outside CG (national option)",
+      "type": "AIIMS",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mcc.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating All India Institute of Medical Sciences (AIIMS) Kalyani / other new AIIMS (if seats listed for CG domicile in your year) for stream-aligned pathways in and around Outside CG (national option).",
+        "specialization": "All India Institute of Medical Sciences (AIIMS) Kalyani / other new AIIMS (if seats listed for CG domicile in your year) is positioned as a aiims with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "All India Institute of Medical Sciences (AIIMS) Kalyani / other new AIIMS (if seats listed for CG domicile in your year) contributes a distinct local option in Outside CG (national option) and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose All India Institute of Medical Sciences (AIIMS) Kalyani / other new AIIMS (if seats listed for CG domicile in your year) when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Some students from CG take AIIMS outside state — track MCC seat matrix for your category."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "gmc_raipur_other_cg_gmcs_as_per_state_list",
+      "name": "GMC Raipur / other CG GMCs (as per state list)",
+      "state_id": "CG",
+      "city": "Chhattisgarh",
+      "type": "State GMC",
+      "ownership": "",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.cghealth.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating GMC Raipur / other CG GMCs (as per state list) for stream-aligned pathways in and around Chhattisgarh.",
+        "specialization": "GMC Raipur / other CG GMCs (as per state list) is positioned as a state gmc with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "GMC Raipur / other CG GMCs (as per state list) contributes a distinct local option in Chhattisgarh and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose GMC Raipur / other CG GMCs (as per state list) when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Read CGDME / Ayush dept counselling PDF for domicile."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.cghealth.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
+      "name": "Late Baliram Kashyap Memorial Government Medical College, Jagdalpur (example district GMC)",
+      "state_id": "CG",
+      "city": "Bastar / Jagdalpur",
+      "type": "State GMC",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.cghealth.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating Late Baliram Kashyap Memorial Government Medical College, Jagdalpur (example district GMC) for stream-aligned pathways in and around Bastar / Jagdalpur.",
+        "specialization": "Late Baliram Kashyap Memorial Government Medical College, Jagdalpur (example district GMC) is positioned as a state gmc with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Late Baliram Kashyap Memorial Government Medical College, Jagdalpur (example district GMC) contributes a distinct local option in Bastar / Jagdalpur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Late Baliram Kashyap Memorial Government Medical College, Jagdalpur (example district GMC) when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Good for students who want Bastar-region service; read bond and security advisories for internships."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.cghealth.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
+      "name": "Chhattisgarh Institute of Medical Sciences (CIMS) Bilaspur — verify MBBS recognition status yearly",
+      "state_id": "CG",
+      "city": "Bilaspur",
+      "type": "Government / society (verify category)",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nmc.org.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating Chhattisgarh Institute of Medical Sciences (CIMS) Bilaspur — verify MBBS recognition status yearly for stream-aligned pathways in and around Bilaspur.",
+        "specialization": "Chhattisgarh Institute of Medical Sciences (CIMS) Bilaspur — verify MBBS recognition status yearly is positioned as a government / society (verify category) with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Chhattisgarh Institute of Medical Sciences (CIMS) Bilaspur — verify MBBS recognition status yearly contributes a distinct local option in Bilaspur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Chhattisgarh Institute of Medical Sciences (CIMS) Bilaspur — verify MBBS recognition status yearly when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Cross-check NMC state recognition list and MCC seat type before choosing."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nmc.org.in/"
+        ]
+      }
+    },
+    {
+      "id": "private_mbbs_colleges_in_cg_verify_mcc_state",
+      "name": "Private MBBS colleges in CG (verify MCC + state)",
+      "state_id": "CG",
+      "city": "Chhattisgarh",
+      "type": "Private",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mcc.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating Private MBBS colleges in CG (verify MCC + state) for stream-aligned pathways in and around Chhattisgarh.",
+        "specialization": "Private MBBS colleges in CG (verify MCC + state) is positioned as a private with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Private MBBS colleges in CG (verify MCC + state) contributes a distinct local option in Chhattisgarh and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Private MBBS colleges in CG (verify MCC + state) when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Compare bond, fees, and clinical exposure."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "hidayatullah_national_law_university",
+      "name": "Hidayatullah National Law University",
+      "state_id": "CG",
+      "city": "Raipur",
+      "type": "National law university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://hnlu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students evaluating Hidayatullah National Law University for stream-aligned pathways in and around Raipur.",
+        "specialization": "Hidayatullah National Law University is positioned as a national law university with public context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Hidayatullah National Law University contributes a distinct local option in Raipur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Hidayatullah National Law University when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://hnlu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "pt_ravishankar_shukla_university",
+      "name": "Pt. Ravishankar Shukla University",
+      "state_id": "CG",
+      "city": "Raipur",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.prsu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students evaluating Pt. Ravishankar Shukla University for stream-aligned pathways in and around Raipur.",
+        "specialization": "Pt. Ravishankar Shukla University is positioned as a state university with public context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Pt. Ravishankar Shukla University contributes a distinct local option in Raipur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Pt. Ravishankar Shukla University when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.prsu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "indira_kala_sangeet_vishwavidyalaya",
+      "name": "Indira Kala Sangeet Vishwavidyalaya",
+      "state_id": "CG",
+      "city": "Khairagarh",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iksv.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students evaluating Indira Kala Sangeet Vishwavidyalaya for stream-aligned pathways in and around Khairagarh.",
+        "specialization": "Indira Kala Sangeet Vishwavidyalaya is positioned as a state university with public context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Indira Kala Sangeet Vishwavidyalaya contributes a distinct local option in Khairagarh and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Indira Kala Sangeet Vishwavidyalaya when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iksv.ac.in/"
+        ]
+      }
+    }
+  ]
+}

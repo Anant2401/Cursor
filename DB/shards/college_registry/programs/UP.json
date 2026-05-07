@@ -1,0 +1,875 @@
+{
+  "meta": {
+    "shard_type": "programs",
+    "state_id": "UP",
+    "state_label": "Uttar Pradesh",
+    "count": 48,
+    "generated_on": "2026-05-07"
+  },
+  "programs": [
+    {
+      "id": "iit_kanpur_engineering_engineering_generic_state_comfort_up",
+      "college_id": "iit_kanpur",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — IIT / NIT in UP"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "iit_bhu_varanasi_engineering_engineering_generic_state_comfort_up",
+      "college_id": "iit_bhu_varanasi",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — IIT / NIT in UP"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "mnnit_allahabad_prayagraj_engineering_engineering_generic_state_comfort_up",
+      "college_id": "mnnit_allahabad_prayagraj",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — IIT / NIT in UP"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "hbtu_kanpur_harcourt_butler_technical_university_engineering_engineering_generic",
+      "college_id": "hbtu_kanpur_harcourt_butler_technical_university",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — state technical universities"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "kiet_group_of_institutions_example_private_engineering_engineering_generic_state",
+      "college_id": "kiet_group_of_institutions_example_private",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Imported from Plan B bundle tier: Tier B — state technical universities"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "aktu_affiliated_colleges_ncr_lucknow_belt_engineering_engineering_generic_state_",
+      "college_id": "aktu_affiliated_colleges_ncr_lucknow_belt",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier C — AKTU-affiliated ecosystem"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "king_george_medical_university_kgmu_medicine_medicine_mbbs_state_comfort_up",
+      "college_id": "king_george_medical_university_kgmu",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — flagship"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "institute_of_medical_sciences_bhu_varanasi_medicine_medicine_mbbs_state_comfort_",
+      "college_id": "institute_of_medical_sciences_bhu_varanasi",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — flagship"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening_medicine_medicine_m",
+      "college_id": "aiims_gorakhpur_raebareli_other_up_aiims_verify_seat_opening",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — other GMCs / new AIIMS"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "regional_gmcs_prayagraj_meerut_kanpur_verify_list_medicine_medicine_mbbs_state_c",
+      "college_id": "regional_gmcs_prayagraj_meerut_kanpur_verify_list",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — other GMCs / new AIIMS"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "private_mbbs_colleges_across_up_medicine_medicine_mbbs_state_comfort_up",
+      "college_id": "private_mbbs_colleges_across_up",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier C — private medical colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
+      "college_id": "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow",
+      "stream_id": "architecture",
+      "course_id": "architecture_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Strong in-state / nearby public options (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis",
+      "college_id": "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis",
+      "stream_id": "architecture",
+      "course_id": "architecture_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Strong in-state / nearby public options (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_kannauj_design_design_generic_state_comfort_up",
+      "college_id": "nift_kannauj",
+      "stream_id": "design",
+      "course_id": "design_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: National campus in UP + strong private (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor",
+      "college_id": "faculty_of_dental_sciences_kgmu_lucknow",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Government dental colleges (examples — verify yearly)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
+      "college_id": "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix",
+      "stream_id": "ayush",
+      "course_id": "ayush_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Government AYUSH colleges (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma",
+      "college_id": "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples",
+      "stream_id": "pharmacy",
+      "course_id": "pharmacy_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Established PCI colleges (examples — verify)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "dr_ram_manohar_lohiya_national_law_university_lucknow_law_law_generic_state_comf",
+      "college_id": "dr_ram_manohar_lohiya_national_law_university_lucknow",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: NLU / state flagships (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year_law_law_generic_",
+      "college_id": "faculty_of_law_banaras_hindu_university_verify_5_year_vs_3_year",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: NLU / state flagships (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure_management_management_ge",
+      "college_id": "iim_lucknow_ipm_and_related_ug_pathways_verify_brochure",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: National + state private (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "banaras_hindu_university_faculty_of_commerce_verify_programme_codes_commerce_com",
+      "college_id": "banaras_hindu_university_faculty_of_commerce_verify_programme_codes",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Central / state flagships (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "iit_kanpur_bs_programmes_verify_jee_channel_science_stats_science_stats_generic_",
+      "college_id": "iit_kanpur_bs_programmes_verify_jee_channel",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Strong research-adjacent UG (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_kannauj_fashion_media_fashion_media_generic_state_comfort_up",
+      "college_id": "nift_kannauj",
+      "stream_id": "fashion_media",
+      "course_id": "fashion_media_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: National + NCR-linked (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "banaras_hindu_university_faculty_of_arts_social_sciences_humanities_humanities_g",
+      "college_id": "banaras_hindu_university_faculty_of_arts_social_sciences",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Central / state universities (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_lucknow_department_of_education_verify_intake_education_education_",
+      "college_id": "university_of_lucknow_department_of_education_verify_intake",
+      "stream_id": "education",
+      "course_id": "education_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: State universities (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "college_id": "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "stream_id": "veterinary",
+      "course_id": "veterinary_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: State / national veterinary (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up",
+      "college_id": "ivri_izatnagar_bareilly",
+      "stream_id": "veterinary",
+      "course_id": "veterinary_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: State / national veterinary (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "banaras_hindu_university_engineering_engineering_generic_state_comfort",
+      "college_id": "banaras_hindu_university",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "banaras_hindu_university_medicine_medicine_mbbs_state_comfort",
+      "college_id": "banaras_hindu_university",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "banaras_hindu_university_science_stats_science_stats_generic_state_comfort",
+      "college_id": "banaras_hindu_university",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "banaras_hindu_university_commerce_commerce_generic_state_comfort",
+      "college_id": "banaras_hindu_university",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "banaras_hindu_university_management_management_generic_state_comfort",
+      "college_id": "banaras_hindu_university",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "banaras_hindu_university_law_law_generic_state_comfort",
+      "college_id": "banaras_hindu_university",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "banaras_hindu_university_humanities_humanities_generic_state_comfort",
+      "college_id": "banaras_hindu_university",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "banaras_hindu_university_education_education_generic_state_comfort",
+      "college_id": "banaras_hindu_university",
+      "stream_id": "education",
+      "course_id": "education_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_lucknow_commerce_commerce_generic_state_comfort",
+      "college_id": "university_of_lucknow",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_lucknow_management_management_generic_state_comfort",
+      "college_id": "university_of_lucknow",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_lucknow_science_stats_science_stats_generic_state_comfort",
+      "college_id": "university_of_lucknow",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_lucknow_humanities_humanities_generic_state_comfort",
+      "college_id": "university_of_lucknow",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_lucknow_law_law_generic_state_comfort",
+      "college_id": "university_of_lucknow",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_lucknow_education_education_generic_state_comfort",
+      "college_id": "university_of_lucknow",
+      "stream_id": "education",
+      "course_id": "education_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "kgmu_lucknow_medicine_medicine_mbbs_state_comfort",
+      "college_id": "kgmu_lucknow",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "kgmu_lucknow_dentistry_dentistry_generic_state_comfort",
+      "college_id": "kgmu_lucknow",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_rae_bareli_fashion_media_fashion_media_generic_state_comfort",
+      "college_id": "nift_rae_bareli",
+      "stream_id": "fashion_media",
+      "course_id": "fashion_media_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_rae_bareli_design_design_generic_state_comfort",
+      "college_id": "nift_rae_bareli",
+      "stream_id": "design",
+      "course_id": "design_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_rae_bareli_management_management_generic_state_comfort",
+      "college_id": "nift_rae_bareli",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "svpuat_merut_veterinary_veterinary_generic_state_comfort",
+      "college_id": "svpuat_merut",
+      "stream_id": "veterinary",
+      "course_id": "veterinary_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "svpuat_merut_science_stats_science_stats_generic_state_comfort",
+      "college_id": "svpuat_merut",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    }
+  ]
+}

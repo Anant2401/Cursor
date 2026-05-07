@@ -1,6 +1,6 @@
 {
-  "last_updated_global": "2026-05-03",
-  "schema_version": "2.0",
+  "last_updated_global": "2026-05-07",
+  "schema_version": "canonical-compat-1.0",
   "notes": "V2.1 — Expanded to 13 states: CG, MH, DL, UP, KA (original) + MP, Odisha, Bihar, Jharkhand, AP, Telangana, Assam, NE states, WB, Rajasthan, Gujarat, Tamil Nadu, Kerala added. All exams have full metadata.",
   "career_fit_summaries": {
     "science": "Your analytical foundation is ideal for Engineering, Medicine, Data Science, or Research-heavy paths that reward logical thinking and deep subject mastery.",
@@ -177,7 +177,7 @@
     },
     {
       "id": "ibps",
-      "label": "Bank PO / Clerk (IBPS/SBI)",
+      "label": "IBPS PO / Clerk (Banking) - Legacy umbrella",
       "stream": [
         "commerce",
         "any"
@@ -221,7 +221,7 @@
     },
     {
       "id": "ssccom",
-      "label": "SSC CGL / CHSL",
+      "label": "SSC CGL / CHSL - Legacy alias",
       "stream": [
         "commerce",
         "any"
@@ -275,7 +275,7 @@
     },
     {
       "id": "upsc",
-      "label": "IAS / IPS (UPSC CSE)",
+      "label": "UPSC Civil Services (IAS/IPS) - Legacy umbrella",
       "stream": [
         "arts",
         "any"
@@ -399,7 +399,7 @@
     },
     {
       "id": "ssc",
-      "label": "SSC CGL / CHSL (Govt Job)",
+      "label": "SSC Central Recruitment (CGL/CHSL) - Legacy umbrella",
       "stream": [
         "any",
         "commerce",
@@ -561,6 +561,101 @@
       ],
       "group": "Finance & Business",
       "intensity_score": 5,
+      "trending": true
+    },
+    {
+      "id": "capf",
+      "label": "CAPF Assistant Commandant (Central Armed Police Forces)",
+      "stream": [
+        "any"
+      ],
+      "group": "Defence & Government",
+      "intensity_score": 8,
+      "trending": true
+    },
+    {
+      "id": "afcat",
+      "label": "Air Force Officer (AFCAT)",
+      "stream": [
+        "science",
+        "any"
+      ],
+      "group": "Defence & Government",
+      "intensity_score": 8,
+      "trending": true
+    },
+    {
+      "id": "agniveer",
+      "label": "Agniveer (Army/Navy/Air Force Entry)",
+      "stream": [
+        "science",
+        "commerce",
+        "arts",
+        "any"
+      ],
+      "group": "Defence & Government",
+      "intensity_score": 7,
+      "trending": true
+    },
+    {
+      "id": "ssc_cpo",
+      "label": "Sub-Inspector (SSC CPO - Delhi Police/CAPFs)",
+      "stream": [
+        "any"
+      ],
+      "group": "Defence & Government",
+      "intensity_score": 7,
+      "trending": true
+    },
+    {
+      "id": "ssc_gd",
+      "label": "Constable (SSC GD - CAPFs/Assam Rifles)",
+      "stream": [
+        "any"
+      ],
+      "group": "Defence & Government",
+      "intensity_score": 6,
+      "trending": true
+    },
+    {
+      "id": "epfo_officer",
+      "label": "EPFO Officer (EO/AO/APFC)",
+      "stream": [
+        "any"
+      ],
+      "group": "Defence & Government",
+      "intensity_score": 8,
+      "trending": true
+    },
+    {
+      "id": "central_secretariat",
+      "label": "Central Secretariat & Ministries (Assistant/Executive tracks)",
+      "stream": [
+        "any"
+      ],
+      "group": "Defence & Government",
+      "intensity_score": 7,
+      "trending": true
+    },
+    {
+      "id": "territorial_army",
+      "label": "Territorial Army Officer",
+      "stream": [
+        "any"
+      ],
+      "group": "Defence & Government",
+      "intensity_score": 7,
+      "trending": false
+    },
+    {
+      "id": "coast_guard_officer",
+      "label": "Coast Guard Assistant Commandant",
+      "stream": [
+        "science",
+        "any"
+      ],
+      "group": "Defence & Government",
+      "intensity_score": 8,
       "trending": true
     }
   ],
@@ -5283,6 +5378,1171 @@
       "scholarships": [],
       "official": "https://ktet.kerala.gov.in",
       "official_notification_link": "https://ktet.kerala.gov.in"
+    },
+    {
+      "id": "jee",
+      "name": "Engineering (JEE)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "neet",
+      "name": "Doctor (MBBS / NEET)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "neetbds",
+      "name": "Dentist (BDS / NEET)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "nursing",
+      "name": "Nursing (BSc / GNM)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "pharma",
+      "name": "Pharmacist (B.Pharm)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "ayush",
+      "name": "AYUSH Doctor (BAMS/BHMS)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "nda",
+      "name": "Defence Officer (NDA)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "gate",
+      "name": "PSU / GATE (Engineering)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "arch",
+      "name": "Architect (NATA)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "biotech",
+      "name": "Biotechnology / Research",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "bsc",
+      "name": "BSc Science / Research",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "nift",
+      "name": "Fashion Design (NIFT/NID)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "pilot",
+      "name": "Commercial Pilot (CPL)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "ds",
+      "name": "Data Science / Analytics",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "enviro",
+      "name": "Environmental Science",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "ca",
+      "name": "Chartered Accountant (CA)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "ibps",
+      "name": "IBPS PO / Clerk (Banking) - Legacy umbrella",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "rbi",
+      "name": "RBI Grade B (Banking)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "cat",
+      "name": "MBA / CAT (IIM)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "cds",
+      "name": "Defence Officer (CDS)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "ssccom",
+      "name": "SSC CGL / CHSL - Legacy alias",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "actuarial",
+      "name": "Actuarial Science",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "bba",
+      "name": "BBA / Management",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "insurance",
+      "name": "Insurance / Finance Career",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "cs",
+      "name": "Company Secretary (CS)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "upsc",
+      "name": "UPSC Civil Services (IAS/IPS) - Legacy umbrella",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "cgpsc",
+      "name": "CGPSC (CG Civil Services)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "clat",
+      "name": "Lawyer (CLAT / LLB)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "teaching",
+      "name": "Teacher / B.Ed / CTET",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "ugcnet",
+      "name": "Professor / UGC NET",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "psych",
+      "name": "Psychologist / Counsellor",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "journal",
+      "name": "Journalism / Mass Comm",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "social",
+      "name": "Social Work / NGO (TISS)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "mph",
+      "name": "Public Health (MPH)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "law",
+      "name": "Judicial Services",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "polsci",
+      "name": "Political Science Career",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "ssc",
+      "name": "SSC Central Recruitment (CGL/CHSL) - Legacy umbrella",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "rrb",
+      "name": "Railways (RRB NTPC / JE)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "cgvyapam",
+      "name": "CGVYAPAM / State Govt Jobs",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "hotel",
+      "name": "Hotel Management (NCHM)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "digimkt",
+      "name": "Digital Marketing",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "design",
+      "name": "Graphic / UI-UX Design",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "content",
+      "name": "Content Creator / Writer",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "iti",
+      "name": "ITI / Polytechnic Trades",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "sports",
+      "name": "Sports Coach / PE Teacher",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "cuet",
+      "name": "Central University (CUET)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "fitness",
+      "name": "Fitness / Nutrition Career",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "event",
+      "name": "Event Management",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "game",
+      "name": "Animation / Game Design",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "supchain",
+      "name": "Supply Chain / Logistics",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "agritech",
+      "name": "Agri-Tech & Farming",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "entrepreneur",
+      "name": "Entrepreneurship",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "jee_main",
+      "name": "JEE Main",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "neet_ug",
+      "name": "NEET UG",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "cuet_ug",
+      "name": "CUET UG",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "clat_ug",
+      "name": "CLAT UG",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "upsc_cse",
+      "name": "UPSC Civil Services Examination (CSE)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "ssc_cgl",
+      "name": "SSC CGL",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "ibps_po",
+      "name": "IBPS PO",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "upsc_capf_ac_2026",
+      "name": "UPSC CAPF (AC) 2026 (BSF/CRPF/CISF/ITBP/SSB)",
+      "emoji": "🛡️",
+      "careers": [
+        "capf",
+        "upsc",
+        "ssc_cpo"
+      ],
+      "stream": "any",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "Aug 2026",
+      "examDate": "Aug 2026",
+      "regDate": "Apr–May 2026",
+      "resultDate": "Oct–Nov 2026",
+      "intensity_score": 8,
+      "last_verified": "2026-05-07",
+      "desc": "UPSC CAPF Assistant Commandant exam for BSF, CRPF, CISF, ITBP and SSB officer-level entries.",
+      "guidance": "Treat this as UPSC-style GS + aptitude + physical standards pathway. Written qualification is only step one; PET/PST, medicals and interview decide final selection.",
+      "high_weightage_topics": [
+        {
+          "topic": "General Ability & Intelligence",
+          "weight": "45%"
+        },
+        {
+          "topic": "General Studies, Essay & Comprehension",
+          "weight": "40%"
+        },
+        {
+          "topic": "Current Affairs + Internal Security Awareness",
+          "weight": "15%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://upsc.gov.in",
+      "official_notification_link": "https://upsc.gov.in/pages/active-examinations"
+    },
+    {
+      "id": "ssc_cpo_2026",
+      "name": "SSC CPO 2026 (SI in Delhi Police & CAPFs)",
+      "emoji": "👮",
+      "careers": [
+        "ssc_cpo",
+        "capf",
+        "ssc"
+      ],
+      "stream": "any",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "Jul 2026",
+      "examDate": "Jul–Aug 2026",
+      "regDate": "May–Jun 2026",
+      "resultDate": "Sep–Oct 2026",
+      "intensity_score": 7,
+      "last_verified": "2026-05-07",
+      "desc": "Recruitment for Sub-Inspector posts in Delhi Police and Central Armed Police Forces via SSC CPO.",
+      "guidance": "Paper-I speed + accuracy is critical. Keep parallel prep for PET/PST standards and medical fitness to avoid post-written elimination.",
+      "high_weightage_topics": [
+        {
+          "topic": "General Intelligence & Reasoning",
+          "weight": "25%"
+        },
+        {
+          "topic": "General Knowledge & Current Affairs",
+          "weight": "25%"
+        },
+        {
+          "topic": "Quantitative Aptitude + English",
+          "weight": "50%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://ssc.gov.in",
+      "official_notification_link": "https://ssc.gov.in"
+    },
+    {
+      "id": "ssc_gd_2026",
+      "name": "SSC GD Constable 2026 (BSF/CISF/CRPF/ITBP/AR/SSF)",
+      "emoji": "🪖",
+      "careers": [
+        "ssc_gd",
+        "agniveer",
+        "capf",
+        "ssc"
+      ],
+      "stream": "any",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "Jan 2026 cycle",
+      "examDate": "Jan–Feb 2026",
+      "regDate": "Oct–Nov 2025",
+      "resultDate": "Mar–Apr 2026",
+      "intensity_score": 6,
+      "last_verified": "2026-05-07",
+      "desc": "Constable-level recruitment for BSF, CISF, CRPF, SSB, ITBP, Assam Rifles and SSF through SSC GD.",
+      "guidance": "Written score helps shortlisting, but PET/PST and document readiness are equally important for final joining chances.",
+      "high_weightage_topics": [
+        {
+          "topic": "General Intelligence & Reasoning",
+          "weight": "25%"
+        },
+        {
+          "topic": "General Knowledge & Current Affairs",
+          "weight": "25%"
+        },
+        {
+          "topic": "Elementary Maths + English/Hindi",
+          "weight": "50%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://ssc.gov.in",
+      "official_notification_link": "https://ssc.gov.in"
+    },
+    {
+      "id": "afcat_2_2026",
+      "name": "AFCAT 2 2026 (Indian Air Force Officer Entry)",
+      "emoji": "✈️",
+      "careers": [
+        "afcat",
+        "nda",
+        "cds",
+        "agniveer"
+      ],
+      "stream": "science",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "Aug 2026",
+      "examDate": "Aug 2026",
+      "regDate": "Jun 2026",
+      "resultDate": "Sep 2026",
+      "intensity_score": 8,
+      "last_verified": "2026-05-07",
+      "desc": "AFCAT entry for Flying and Ground Duty branches in the Indian Air Force (officer-level).",
+      "guidance": "Prepare for aptitude + reasoning + military awareness and keep AFSB interview readiness in parallel from day one.",
+      "high_weightage_topics": [
+        {
+          "topic": "Numerical Ability + Reasoning",
+          "weight": "40%"
+        },
+        {
+          "topic": "General Awareness (Defence focus)",
+          "weight": "25%"
+        },
+        {
+          "topic": "Verbal Ability in English",
+          "weight": "35%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://afcat.cdac.in",
+      "official_notification_link": "https://afcat.cdac.in"
+    },
+    {
+      "id": "army_agniveer_2026",
+      "name": "Indian Army Agniveer 2026 (CEE + Rally)",
+      "emoji": "⚔️",
+      "careers": [
+        "agniveer",
+        "nda",
+        "cds"
+      ],
+      "stream": "any",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "2026 (zone-wise)",
+      "examDate": "Zone-wise rally schedule",
+      "regDate": "As per Army recruitment cycle",
+      "resultDate": "Post PET/medical cycle",
+      "intensity_score": 7,
+      "last_verified": "2026-05-07",
+      "desc": "Agniveer entry route for General Duty/Technical/Clerk/Tradesman roles in Indian Army through CEE and zonal rally process.",
+      "guidance": "Physical standards and discipline readiness are mission-critical. Keep documents, domicile and category certificates updated before rally windows open.",
+      "high_weightage_topics": [
+        {
+          "topic": "General Knowledge + Current Affairs",
+          "weight": "35%"
+        },
+        {
+          "topic": "Maths & Logical Ability",
+          "weight": "35%"
+        },
+        {
+          "topic": "Physical Fitness/PET readiness",
+          "weight": "30%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://joinindianarmy.nic.in",
+      "official_notification_link": "https://joinindianarmy.nic.in"
+    },
+    {
+      "id": "navy_agniveer_ssr_mr_2026",
+      "name": "Indian Navy Agniveer SSR/MR 2026",
+      "emoji": "⚓",
+      "careers": [
+        "agniveer",
+        "nda",
+        "afcat"
+      ],
+      "stream": "science",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "2026 cycle",
+      "examDate": "As per Navy recruitment schedule",
+      "regDate": "2026 batches (official window based)",
+      "resultDate": "After written + PFT + medical",
+      "intensity_score": 7,
+      "last_verified": "2026-05-07",
+      "desc": "Indian Navy Agniveer SSR/MR entries through centralized notification cycles with written, physical and medical stages.",
+      "guidance": "Balance written prep with swimming/fitness and medical eligibility checks early to avoid last-stage rejection.",
+      "high_weightage_topics": [
+        {
+          "topic": "Science + Maths aptitude",
+          "weight": "40%"
+        },
+        {
+          "topic": "General Awareness",
+          "weight": "25%"
+        },
+        {
+          "topic": "English + Physical readiness",
+          "weight": "35%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://www.joinindiannavy.gov.in",
+      "official_notification_link": "https://www.joinindiannavy.gov.in"
+    },
+    {
+      "id": "airforce_agniveervayu_2026",
+      "name": "Indian Air Force Agniveervayu 2026 (Intake Cycle)",
+      "emoji": "🛫",
+      "careers": [
+        "agniveer",
+        "afcat",
+        "nda"
+      ],
+      "stream": "science",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "2026 intake",
+      "examDate": "As per phase-wise IAF testing schedule",
+      "regDate": "Batch-wise online registration window",
+      "resultDate": "After phase 1/2 + medical",
+      "intensity_score": 7,
+      "last_verified": "2026-05-07",
+      "desc": "Agniveervayu selection in Indian Air Force with multi-phase written, physical, adaptability, and medical filtering.",
+      "guidance": "Written score is only the first gate. Train for phase-2 fitness/adaptability tests and maintain strict medical standards.",
+      "high_weightage_topics": [
+        {
+          "topic": "Physics + Maths fundamentals",
+          "weight": "40%"
+        },
+        {
+          "topic": "English comprehension",
+          "weight": "30%"
+        },
+        {
+          "topic": "Reasoning + Adaptability readiness",
+          "weight": "30%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://agnipathvayu.cdac.in",
+      "official_notification_link": "https://agnipathvayu.cdac.in"
+    },
+    {
+      "id": "coast_guard_navik_2026",
+      "name": "Indian Coast Guard Navik/Yantrik 2026 (General Duty/Technical)",
+      "emoji": "🌊",
+      "careers": [
+        "agniveer",
+        "capf",
+        "nda"
+      ],
+      "stream": "science",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "2026 cycle",
+      "examDate": "Batch-wise as notified",
+      "regDate": "As per Coast Guard recruitment notification",
+      "resultDate": "After stage-wise merit",
+      "intensity_score": 7,
+      "last_verified": "2026-05-07",
+      "desc": "Recruitment for Navik (GD/DB) and Yantrik in Indian Coast Guard through stage-wise written + physical + medical process.",
+      "guidance": "Focus on technical basics + fitness benchmarks; marine roles require strong discipline and medical compliance.",
+      "high_weightage_topics": [
+        {
+          "topic": "Maths/Science (role dependent)",
+          "weight": "40%"
+        },
+        {
+          "topic": "Reasoning + General Awareness",
+          "weight": "35%"
+        },
+        {
+          "topic": "Physical and medical standards",
+          "weight": "25%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://joinindiancoastguard.cdac.in",
+      "official_notification_link": "https://joinindiancoastguard.cdac.in"
+    },
+    {
+      "id": "crpf_hcm_asi_2026",
+      "name": "CRPF HC Ministerial / ASI Steno 2026 (Central Police)",
+      "emoji": "🧾",
+      "careers": [
+        "capf",
+        "ssc_gd",
+        "ssc_cpo"
+      ],
+      "stream": "any",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "2026 (notification based)",
+      "examDate": "As notified by CRPF",
+      "regDate": "As notified by CRPF",
+      "resultDate": "Post skill/PST/PET verification",
+      "intensity_score": 6,
+      "last_verified": "2026-05-07",
+      "desc": "CRPF recruitment for Head Constable Ministerial and ASI Steno with written + skill + physical stages.",
+      "guidance": "Typing/steno skill standards are non-negotiable; start skill-practice early along with written prep.",
+      "high_weightage_topics": [
+        {
+          "topic": "General Intelligence + Aptitude",
+          "weight": "35%"
+        },
+        {
+          "topic": "Language + Administrative awareness",
+          "weight": "35%"
+        },
+        {
+          "topic": "Typing/Steno + PET readiness",
+          "weight": "30%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://recruitment.crpf.gov.in",
+      "official_notification_link": "https://recruitment.crpf.gov.in"
+    },
+    {
+      "id": "bsf_hc_ro_rm_2026",
+      "name": "BSF HC (RO/RM) 2026 (Technical CAPF Entry)",
+      "emoji": "📡",
+      "careers": [
+        "capf",
+        "ssc_gd"
+      ],
+      "stream": "science",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "2026 (notification based)",
+      "examDate": "As notified by BSF",
+      "regDate": "As notified by BSF",
+      "resultDate": "After stage-wise selection",
+      "intensity_score": 6,
+      "last_verified": "2026-05-07",
+      "desc": "BSF Head Constable (Radio Operator/Radio Mechanic) technical recruitment under CAPF ecosystem.",
+      "guidance": "Technical fundamentals + physical preparedness both matter. Keep electronics/radio basics strong for role fit.",
+      "high_weightage_topics": [
+        {
+          "topic": "Physics + basic electronics",
+          "weight": "40%"
+        },
+        {
+          "topic": "General aptitude + awareness",
+          "weight": "35%"
+        },
+        {
+          "topic": "Physical/medical standards",
+          "weight": "25%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://rectt.bsf.gov.in",
+      "official_notification_link": "https://rectt.bsf.gov.in"
+    },
+    {
+      "id": "assam_rifles_rally_2026",
+      "name": "Assam Rifles Technical/Tradesman Rally 2026 (CAPF-linked)",
+      "emoji": "🏕️",
+      "careers": [
+        "ssc_gd",
+        "agniveer",
+        "capf"
+      ],
+      "stream": "any",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "2026 rally cycle",
+      "examDate": "Rally-wise dates",
+      "regDate": "As per Assam Rifles notification",
+      "resultDate": "After written + PET/PST + medical",
+      "intensity_score": 6,
+      "last_verified": "2026-05-07",
+      "desc": "Assam Rifles recruitment for technical and tradesman roles via rally and stage-wise selection process.",
+      "guidance": "Document discipline, trade-specific readiness, and fitness standards are essential for final merit conversion.",
+      "high_weightage_topics": [
+        {
+          "topic": "Trade/technical knowledge",
+          "weight": "35%"
+        },
+        {
+          "topic": "General awareness + aptitude",
+          "weight": "35%"
+        },
+        {
+          "topic": "PET/PST and medical standards",
+          "weight": "30%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://www.assamrifles.gov.in",
+      "official_notification_link": "https://www.assamrifles.gov.in"
+    },
+    {
+      "id": "capf",
+      "name": "CAPF Assistant Commandant (Central Armed Police Forces)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "afcat",
+      "name": "Air Force Officer (AFCAT)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "agniveer",
+      "name": "Agniveer (Army/Navy/Air Force Entry)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "ssc_cpo",
+      "name": "Sub-Inspector (SSC CPO - Delhi Police/CAPFs)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "ssc_gd",
+      "name": "Constable (SSC GD - CAPFs/Assam Rifles)",
+      "careers": [],
+      "intensity_score": 6
+    },
+    {
+      "id": "upsc_epfo_eo_ao_2026",
+      "name": "UPSC EPFO EO/AO 2026 (Central Government)",
+      "emoji": "🏢",
+      "careers": [
+        "epfo_officer",
+        "upsc",
+        "central_secretariat"
+      ],
+      "stream": "any",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "2026 (as notified)",
+      "examDate": "As per UPSC schedule",
+      "regDate": "As per UPSC notification",
+      "resultDate": "Post written + interview cycle",
+      "intensity_score": 8,
+      "last_verified": "2026-05-07",
+      "desc": "UPSC-conducted recruitment for EPFO Enforcement Officer / Accounts Officer roles under Ministry of Labour framework.",
+      "guidance": "Blend polity, economy, labour laws and social security concepts. Interview stage matters heavily for final list.",
+      "high_weightage_topics": [
+        {
+          "topic": "Polity + Governance",
+          "weight": "30%"
+        },
+        {
+          "topic": "Economy + Labour laws",
+          "weight": "35%"
+        },
+        {
+          "topic": "Current affairs + Aptitude",
+          "weight": "35%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://upsc.gov.in",
+      "official_notification_link": "https://upsc.gov.in/pages/active-examinations"
+    },
+    {
+      "id": "upsc_epfo_apfc_2026",
+      "name": "UPSC EPFO APFC 2026 (Central Government)",
+      "emoji": "📑",
+      "careers": [
+        "epfo_officer",
+        "upsc",
+        "central_secretariat"
+      ],
+      "stream": "any",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "2026 (as notified)",
+      "examDate": "As per UPSC schedule",
+      "regDate": "As per UPSC notification",
+      "resultDate": "Post written + interview cycle",
+      "intensity_score": 8,
+      "last_verified": "2026-05-07",
+      "desc": "Assistant Provident Fund Commissioner recruitment through UPSC with strong governance, social security, and policy orientation.",
+      "guidance": "Prepare like a mini-CSE with focus on labour administration, accounting basics, and social-sector policy interpretation.",
+      "high_weightage_topics": [
+        {
+          "topic": "Indian Constitution + Administrative structure",
+          "weight": "30%"
+        },
+        {
+          "topic": "Labour/social security ecosystem",
+          "weight": "35%"
+        },
+        {
+          "topic": "Current affairs + quantitative aptitude",
+          "weight": "35%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://upsc.gov.in",
+      "official_notification_link": "https://upsc.gov.in/pages/active-examinations"
+    },
+    {
+      "id": "ssc_mts_havaldar_2026",
+      "name": "SSC MTS & Havaldar 2026 (Central Government)",
+      "emoji": "🗂️",
+      "careers": [
+        "central_secretariat",
+        "ssc",
+        "ssc_gd"
+      ],
+      "stream": "any",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "2026 cycle",
+      "examDate": "As per SSC calendar",
+      "regDate": "As per SSC calendar",
+      "resultDate": "Post CBT and PET/PST (for Havaldar)",
+      "intensity_score": 6,
+      "last_verified": "2026-05-07",
+      "desc": "Entry-level central government recruitment through SSC for Multi-Tasking Staff and Havaldar positions.",
+      "guidance": "Aim for high accuracy in CBT; Havaldar candidates must additionally clear PET/PST standards.",
+      "high_weightage_topics": [
+        {
+          "topic": "General Intelligence + Reasoning",
+          "weight": "25%"
+        },
+        {
+          "topic": "Numerical + Language basics",
+          "weight": "40%"
+        },
+        {
+          "topic": "General awareness",
+          "weight": "35%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://ssc.gov.in",
+      "official_notification_link": "https://ssc.gov.in"
+    },
+    {
+      "id": "ssc_selection_post_phase_14_2026",
+      "name": "SSC Selection Post Phase 14 (2026, Central Government)",
+      "emoji": "📌",
+      "careers": [
+        "central_secretariat",
+        "ssc"
+      ],
+      "stream": "any",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "2026 cycle",
+      "examDate": "As per SSC calendar",
+      "regDate": "As per SSC calendar",
+      "resultDate": "Post CBT and document verification",
+      "intensity_score": 6,
+      "last_verified": "2026-05-07",
+      "desc": "SSC Selection Post cycle for various central departments across matric/intermediate/graduation levels.",
+      "guidance": "Filter posts by qualification and region early; choose vacancy profiles strategically before applying.",
+      "high_weightage_topics": [
+        {
+          "topic": "General Intelligence",
+          "weight": "30%"
+        },
+        {
+          "topic": "General Awareness",
+          "weight": "30%"
+        },
+        {
+          "topic": "Quantitative + English",
+          "weight": "40%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://ssc.gov.in",
+      "official_notification_link": "https://ssc.gov.in"
+    },
+    {
+      "id": "cisf_hc_ministerial_2026",
+      "name": "CISF Head Constable (Ministerial) 2026",
+      "emoji": "🏛️",
+      "careers": [
+        "capf",
+        "ssc_gd",
+        "central_secretariat"
+      ],
+      "stream": "any",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "2026 (as notified)",
+      "examDate": "As per CISF recruitment notice",
+      "regDate": "As notified",
+      "resultDate": "After written + skill/PET + medical",
+      "intensity_score": 6,
+      "last_verified": "2026-05-07",
+      "desc": "CISF ministerial cadre recruitment with written test, skill component, and physical/medical standards.",
+      "guidance": "Do not ignore typing/skill standards; many candidates are filtered post-written stage due to skill and documentation gaps.",
+      "high_weightage_topics": [
+        {
+          "topic": "General intelligence + aptitude",
+          "weight": "35%"
+        },
+        {
+          "topic": "Language + office-aptitude skills",
+          "weight": "35%"
+        },
+        {
+          "topic": "PET/PST and medical",
+          "weight": "30%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://cisfrectt.cisf.gov.in",
+      "official_notification_link": "https://cisfrectt.cisf.gov.in"
+    },
+    {
+      "id": "itbp_si_telecom_2026",
+      "name": "ITBP SI (Telecom) 2026",
+      "emoji": "📶",
+      "careers": [
+        "capf",
+        "ssc_cpo",
+        "agniveer"
+      ],
+      "stream": "science",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "2026 (as notified)",
+      "examDate": "As per ITBP notice",
+      "regDate": "As per ITBP recruitment portal",
+      "resultDate": "Post written + PET/PST + trade/medical",
+      "intensity_score": 7,
+      "last_verified": "2026-05-07",
+      "desc": "Technical SI recruitment in ITBP telecom streams with engineering/science-oriented eligibility.",
+      "guidance": "Maintain technical revision alongside physical readiness. Technical eligibility and standards must match exact notification criteria.",
+      "high_weightage_topics": [
+        {
+          "topic": "Electronics/telecom basics",
+          "weight": "40%"
+        },
+        {
+          "topic": "General aptitude + reasoning",
+          "weight": "30%"
+        },
+        {
+          "topic": "PET/PST + medical fitness",
+          "weight": "30%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://recruitment.itbpolice.nic.in",
+      "official_notification_link": "https://recruitment.itbpolice.nic.in"
+    },
+    {
+      "id": "coast_guard_ac_2026",
+      "name": "Indian Coast Guard Assistant Commandant 2026 (Officer Entry)",
+      "emoji": "🧭",
+      "careers": [
+        "coast_guard_officer",
+        "capf",
+        "afcat"
+      ],
+      "stream": "science",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "2026 intake",
+      "examDate": "As per ICG AC cycle",
+      "regDate": "Batch-wise registration",
+      "resultDate": "After stage-I/II/III merit",
+      "intensity_score": 8,
+      "last_verified": "2026-05-07",
+      "desc": "Officer-level Coast Guard Assistant Commandant recruitment via stage-wise aptitude, GD/interview and medical process.",
+      "guidance": "Officer pathway needs strong communication + leadership profile in addition to written score and fitness.",
+      "high_weightage_topics": [
+        {
+          "topic": "Quantitative + reasoning aptitude",
+          "weight": "35%"
+        },
+        {
+          "topic": "General awareness + maritime/security context",
+          "weight": "35%"
+        },
+        {
+          "topic": "GD/interview + psychometric readiness",
+          "weight": "30%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://joinindiancoastguard.cdac.in",
+      "official_notification_link": "https://joinindiancoastguard.cdac.in"
+    },
+    {
+      "id": "ncc_special_entry_2026",
+      "name": "Indian Army NCC Special Entry 2026 (Officer Route)",
+      "emoji": "🎖️",
+      "careers": [
+        "territorial_army",
+        "agniveer",
+        "nda",
+        "cds"
+      ],
+      "stream": "any",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "2026 cycle",
+      "examDate": "No written exam (SSB route as notified)",
+      "regDate": "As per Join Indian Army portal",
+      "resultDate": "After SSB + medical merit process",
+      "intensity_score": 7,
+      "last_verified": "2026-05-07",
+      "desc": "NCC Special Entry for officer selection through SSB interview route without standard written exam pattern.",
+      "guidance": "Profile quality, NCC record, communication, and SSB performance are decisive. Build personality + interview readiness early.",
+      "high_weightage_topics": [
+        {
+          "topic": "SSB communication and psychology",
+          "weight": "45%"
+        },
+        {
+          "topic": "Leadership and situational judgement",
+          "weight": "30%"
+        },
+        {
+          "topic": "Physical and medical readiness",
+          "weight": "25%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://joinindianarmy.nic.in",
+      "official_notification_link": "https://joinindianarmy.nic.in"
+    },
+    {
+      "id": "territorial_army_officer_2026",
+      "name": "Territorial Army Officer Entry 2026 (Central Defence Auxiliary)",
+      "emoji": "🧑‍✈️",
+      "careers": [
+        "territorial_army",
+        "upsc",
+        "central_secretariat"
+      ],
+      "stream": "any",
+      "scope": "National",
+      "state_name": "None",
+      "status": "upcoming",
+      "month": "2026 cycle",
+      "examDate": "As per TA notification",
+      "regDate": "As notified",
+      "resultDate": "After written + PIB + SSB + medical",
+      "intensity_score": 7,
+      "last_verified": "2026-05-07",
+      "desc": "Territorial Army officer recruitment for gainfully employed citizens with stage-wise military aptitude screening.",
+      "guidance": "Understand eligibility constraints (employment status, age, docs) before prep. Written clearance must be backed by interview and service suitability.",
+      "high_weightage_topics": [
+        {
+          "topic": "Reasoning + elementary maths",
+          "weight": "40%"
+        },
+        {
+          "topic": "General knowledge + current affairs",
+          "weight": "35%"
+        },
+        {
+          "topic": "Interview + medical standards",
+          "weight": "25%"
+        }
+      ],
+      "scholarships": [],
+      "official": "https://www.jointerritorialarmy.gov.in",
+      "official_notification_link": "https://www.jointerritorialarmy.gov.in"
     }
   ],
   "career_guidance": {
@@ -5763,6 +7023,163 @@
         {
           "name": "Previous Year Papers",
           "desc": "Single best resource — always available free online"
+        }
+      ]
+    },
+    "capf": {
+      "now": "Start with UPSC CAPF syllabus and build a GS + fitness dual-plan from day one.",
+      "phases": [
+        {
+          "phase": "Foundation (Now → 3 months)",
+          "steps": [
+            "Cover Polity, Modern History, Geography basics and daily current affairs.",
+            "Start daily running + strength routine mapped to CAPF PET standards.",
+            "Practice objective GS tests 3 times a week."
+          ]
+        },
+        {
+          "phase": "Exam conversion (4–6 months)",
+          "steps": [
+            "Add descriptive writing practice for Paper-II.",
+            "Track internal security, border management, and CAPF role awareness.",
+            "Run full mocks with strict time-boxing and post-test analysis."
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "name": "UPSC CAPF Notification",
+          "desc": "Use official UPSC exam notice as source of truth."
+        },
+        {
+          "name": "PIB + PRS + The Hindu notes",
+          "desc": "Current affairs base for GS and descriptive answers."
+        }
+      ]
+    },
+    "afcat": {
+      "now": "Prepare for AFCAT aptitude while building AFSB interview readiness in parallel.",
+      "phases": [
+        {
+          "phase": "Written prep",
+          "steps": [
+            "Build speed in verbal, numerical and reasoning sections.",
+            "Revise military/current affairs weekly with concise notes.",
+            "Attempt full AFCAT mocks under exam conditions."
+          ]
+        },
+        {
+          "phase": "AFSB readiness",
+          "steps": [
+            "Practice communication, situational response and psychological test formats.",
+            "Maintain consistent physical fitness and medical discipline."
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "name": "AFCAT official portal",
+          "desc": "Use only official updates for schedule and eligibility."
+        }
+      ]
+    },
+    "agniveer": {
+      "now": "Choose Army/Navy/Air Force target and align written + physical preparation immediately.",
+      "phases": [
+        {
+          "phase": "Written + documents",
+          "steps": [
+            "Prepare core aptitude + GK + language basics as per force-specific pattern.",
+            "Keep certificates, domicile, and identity documents ready in advance."
+          ]
+        },
+        {
+          "phase": "Physical conversion",
+          "steps": [
+            "Train specifically for running, push-ups, and force-wise PET benchmarks.",
+            "Track medical disqualification risks early (vision, BMI, injury history)."
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "name": "Join Indian Army/Navy/IAF portals",
+          "desc": "Follow force-specific notifications and rally schedules."
+        }
+      ]
+    },
+    "epfo_officer": {
+      "now": "Begin with labour laws, social security basics, polity and economy integration.",
+      "phases": [
+        {
+          "phase": "Core syllabus build",
+          "steps": [
+            "Cover Constitution, governance, labour ecosystem, social security institutions.",
+            "Practice objective + descriptive answer writing in parallel."
+          ]
+        },
+        {
+          "phase": "Final conversion",
+          "steps": [
+            "Run full mocks and analyze weak areas weekly.",
+            "Prepare interview-ready notes on labour reforms and social welfare implementation."
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "name": "UPSC EPFO notices",
+          "desc": "Use official exam notice for latest syllabus and eligibility."
+        }
+      ]
+    },
+    "territorial_army": {
+      "now": "Verify eligibility first, then prepare written + interview tracks together.",
+      "phases": [
+        {
+          "phase": "Written foundation",
+          "steps": [
+            "Build reasoning, maths and GK basics with timed practice.",
+            "Track defense current affairs and national security developments."
+          ]
+        },
+        {
+          "phase": "Service suitability",
+          "steps": [
+            "Prepare for PIB/interview communication and documentation checks.",
+            "Keep physical and medical readiness consistent."
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "name": "Territorial Army official portal",
+          "desc": "Follow only official TA notifications for dates and criteria."
+        }
+      ]
+    },
+    "coast_guard_officer": {
+      "now": "Prepare for officer-stage aptitude and personality assessments together.",
+      "phases": [
+        {
+          "phase": "Aptitude stage",
+          "steps": [
+            "Strengthen quant, reasoning and current awareness.",
+            "Revise maritime and security context topics."
+          ]
+        },
+        {
+          "phase": "Officer selection stage",
+          "steps": [
+            "Practice GD/interview responses and leadership communication.",
+            "Maintain physical and medical discipline for final filtering."
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "name": "ICG official portal",
+          "desc": "Use official cycle notices and branch eligibility only."
         }
       ]
     }

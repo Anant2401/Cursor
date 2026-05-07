@@ -1,0 +1,335 @@
+{
+  "meta": {
+    "shard_type": "programs",
+    "state_id": "OD",
+    "state_label": "Odisha",
+    "count": 18,
+    "generated_on": "2026-05-07"
+  },
+  "programs": [
+    {
+      "id": "iit_bhubaneswar_engineering_engineering_generic_state_comfort_od",
+      "college_id": "iit_bhubaneswar",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — IIT / NIT"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nit_rourkela_engineering_engineering_generic_state_comfort_od",
+      "college_id": "nit_rourkela",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — IIT / NIT"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "outr_igit_government_colleges_under_bput_verify_active_names_engineering_enginee",
+      "college_id": "outr_igit_government_colleges_under_bput_verify_active_names",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — state institutes (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "kiit_university_example_large_private_engineering_engineering_generic_state_comf",
+      "college_id": "kiit_university_example_large_private",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier C — private colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "iit_bhubaneswar_engineering_engineering_generic_state_comfort",
+      "college_id": "iit_bhubaneswar",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "iit_bhubaneswar_science_stats_science_stats_generic_state_comfort",
+      "college_id": "iit_bhubaneswar",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "aiims_bhubaneswar_medicine_medicine_mbbs_state_comfort",
+      "college_id": "aiims_bhubaneswar",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "utkal_university_commerce_commerce_generic_state_comfort",
+      "college_id": "utkal_university",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "utkal_university_management_management_generic_state_comfort",
+      "college_id": "utkal_university",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "utkal_university_science_stats_science_stats_generic_state_comfort",
+      "college_id": "utkal_university",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "utkal_university_humanities_humanities_generic_state_comfort",
+      "college_id": "utkal_university",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "utkal_university_education_education_generic_state_comfort",
+      "college_id": "utkal_university",
+      "stream_id": "education",
+      "course_id": "education_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "utkal_university_law_law_generic_state_comfort",
+      "college_id": "utkal_university",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nlu_odisha_law_law_generic_state_comfort",
+      "college_id": "nlu_odisha",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nlu_odisha_humanities_humanities_generic_state_comfort",
+      "college_id": "nlu_odisha",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_bhubaneswar_fashion_media_fashion_media_generic_state_comfort",
+      "college_id": "nift_bhubaneswar",
+      "stream_id": "fashion_media",
+      "course_id": "fashion_media_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_bhubaneswar_design_design_generic_state_comfort",
+      "college_id": "nift_bhubaneswar",
+      "stream_id": "design",
+      "course_id": "design_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_bhubaneswar_management_management_generic_state_comfort",
+      "college_id": "nift_bhubaneswar",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    }
+  ]
+}

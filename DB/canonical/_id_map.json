@@ -1,0 +1,549 @@
+{
+  "meta": {
+    "generated_on": "2026-05-07"
+  },
+  "careers": [
+    {
+      "career_id": "software_engineer",
+      "salary_explorer_id": 1,
+      "roi_career_id": "software_engineer",
+      "exam_roadmap_career_id": "jee",
+      "plan_b_exam_id": "jee_engineering",
+      "skill_gap_job_id": "software_developer",
+      "private_role_ids": [
+        "qa_test_associate"
+      ]
+    },
+    {
+      "career_id": "chartered_accountant",
+      "salary_explorer_id": 2,
+      "roi_career_id": "ca",
+      "exam_roadmap_career_id": "ca",
+      "plan_b_exam_id": "ca_foundation",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "doctor_mbbs",
+      "salary_explorer_id": 3,
+      "roi_career_id": "mbbs_doctor",
+      "exam_roadmap_career_id": "neet",
+      "plan_b_exam_id": "neet_medical",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "ias_upsc",
+      "salary_explorer_id": 4,
+      "roi_career_id": "upsc_ias",
+      "exam_roadmap_career_id": "upsc",
+      "plan_b_exam_id": "upsc_csds",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "data_scientist",
+      "salary_explorer_id": 5,
+      "roi_career_id": "data_analyst",
+      "exam_roadmap_career_id": "gate",
+      "plan_b_exam_id": "gate_pg",
+      "skill_gap_job_id": "data_analyst",
+      "private_role_ids": [
+        "junior_data_analyst",
+        "mis_executive"
+      ]
+    },
+    {
+      "career_id": "lawyer",
+      "salary_explorer_id": 6,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "clat",
+      "plan_b_exam_id": "clat_law",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "teacher",
+      "salary_explorer_id": 7,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "teaching",
+      "plan_b_exam_id": "cuet_ug",
+      "skill_gap_job_id": "teacher_educator",
+      "private_role_ids": []
+    },
+    {
+      "career_id": "bank_po",
+      "salary_explorer_id": 8,
+      "roi_career_id": "bank_po",
+      "exam_roadmap_career_id": "ibps",
+      "plan_b_exam_id": "ssc_banking",
+      "skill_gap_job_id": "bank_finance",
+      "private_role_ids": [
+        "finance_operations_associate"
+      ]
+    },
+    {
+      "career_id": "ssc_government",
+      "salary_explorer_id": 9,
+      "roi_career_id": "ssc_cgl",
+      "exam_roadmap_career_id": "ssc",
+      "plan_b_exam_id": "ssc_banking",
+      "skill_gap_job_id": "govt_jobs_admin",
+      "private_role_ids": []
+    },
+    {
+      "career_id": "nursing",
+      "salary_explorer_id": 10,
+      "roi_career_id": "bsc_nursing",
+      "exam_roadmap_career_id": "nursing",
+      "plan_b_exam_id": "neet_medical",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "digital_marketing",
+      "salary_explorer_id": 12,
+      "roi_career_id": "digital_marketing",
+      "exam_roadmap_career_id": "content",
+      "plan_b_exam_id": null,
+      "skill_gap_job_id": "digital_marketer",
+      "private_role_ids": [
+        "digital_marketing_executive"
+      ]
+    },
+    {
+      "career_id": "iti_electrician",
+      "salary_explorer_id": 20,
+      "roi_career_id": "iti_electrician",
+      "exam_roadmap_career_id": "iti",
+      "plan_b_exam_id": null,
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "civil_mechanical_engineer",
+      "salary_explorer_id": 11,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "jee",
+      "plan_b_exam_id": "jee_engineering",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "journalist_content_writer",
+      "salary_explorer_id": 13,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "journal",
+      "plan_b_exam_id": "cuet_ug",
+      "skill_gap_job_id": "content_writer",
+      "private_role_ids": [
+        "content_associate"
+      ]
+    },
+    {
+      "career_id": "graphic_ui_designer",
+      "salary_explorer_id": 14,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "design",
+      "plan_b_exam_id": "nid_nift_design",
+      "skill_gap_job_id": "graphic_designer",
+      "private_role_ids": []
+    },
+    {
+      "career_id": "pharmacist",
+      "salary_explorer_id": 15,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "pharma",
+      "plan_b_exam_id": "neet_medical",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "architect",
+      "salary_explorer_id": 16,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "arch",
+      "plan_b_exam_id": "nid_nift_design",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "psychologist_counsellor",
+      "salary_explorer_id": 17,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "psych",
+      "plan_b_exam_id": "cuet_ug",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "bba_mba_management",
+      "salary_explorer_id": 18,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "cat",
+      "plan_b_exam_id": "cat_mba",
+      "skill_gap_job_id": null,
+      "private_role_ids": [
+        "operations_associate"
+      ]
+    },
+    {
+      "career_id": "defence_officer",
+      "salary_explorer_id": 19,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "nda",
+      "plan_b_exam_id": "nda_defence",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "social_worker_ngo",
+      "salary_explorer_id": 21,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "social",
+      "plan_b_exam_id": "cuet_ug",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "commercial_pilot",
+      "salary_explorer_id": 22,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "pilot",
+      "plan_b_exam_id": "nda_defence",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "fashion_designer",
+      "salary_explorer_id": 23,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "nift",
+      "plan_b_exam_id": "nid_nift_design",
+      "skill_gap_job_id": "graphic_designer",
+      "private_role_ids": []
+    },
+    {
+      "career_id": "event_manager",
+      "salary_explorer_id": 24,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "event",
+      "plan_b_exam_id": "cat_mba",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "biotechnology_life_sciences",
+      "salary_explorer_id": 25,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "biotech",
+      "plan_b_exam_id": "gate_pg",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "hr_manager",
+      "salary_explorer_id": 26,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "cat",
+      "plan_b_exam_id": "cat_mba",
+      "skill_gap_job_id": null,
+      "private_role_ids": [
+        "hr_recruiter_entry"
+      ]
+    },
+    {
+      "career_id": "animator_game_designer",
+      "salary_explorer_id": 27,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "design",
+      "plan_b_exam_id": "nid_nift_design",
+      "skill_gap_job_id": "graphic_designer",
+      "private_role_ids": []
+    },
+    {
+      "career_id": "actuarial_scientist",
+      "salary_explorer_id": 28,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "cat",
+      "plan_b_exam_id": "cat_mba",
+      "skill_gap_job_id": "data_analyst",
+      "private_role_ids": []
+    },
+    {
+      "career_id": "supply_chain_logistics",
+      "salary_explorer_id": 29,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "cat",
+      "plan_b_exam_id": "cat_mba",
+      "skill_gap_job_id": null,
+      "private_role_ids": [
+        "logistics_coordinator"
+      ]
+    },
+    {
+      "career_id": "ayush_doctor",
+      "salary_explorer_id": 30,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "ayush",
+      "plan_b_exam_id": "neet_medical",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "content_creator_youtuber",
+      "salary_explorer_id": 31,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "content",
+      "plan_b_exam_id": null,
+      "skill_gap_job_id": "content_writer",
+      "private_role_ids": []
+    },
+    {
+      "career_id": "electrician_electrical_tech",
+      "salary_explorer_id": 32,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "iti",
+      "plan_b_exam_id": null,
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "dietitian_nutritionist",
+      "salary_explorer_id": 33,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "mph",
+      "plan_b_exam_id": "neet_medical",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "environmental_green_energy",
+      "salary_explorer_id": 34,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "enviro",
+      "plan_b_exam_id": "gate_pg",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "statistician_data_analyst_bsc",
+      "salary_explorer_id": 35,
+      "roi_career_id": "data_analyst",
+      "exam_roadmap_career_id": "gate",
+      "plan_b_exam_id": "gate_pg",
+      "skill_gap_job_id": "data_analyst",
+      "private_role_ids": []
+    },
+    {
+      "career_id": "cgpsc_state_services",
+      "salary_explorer_id": 36,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "cgpsc",
+      "plan_b_exam_id": "upsc_csds",
+      "skill_gap_job_id": "govt_jobs_admin",
+      "private_role_ids": []
+    },
+    {
+      "career_id": "hotel_hospitality",
+      "salary_explorer_id": 37,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "hotel",
+      "plan_b_exam_id": "cat_mba",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "fitness_trainer_sports",
+      "salary_explorer_id": 38,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "fitness",
+      "plan_b_exam_id": "cuet_ug",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "public_health_professional",
+      "salary_explorer_id": 39,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "mph",
+      "plan_b_exam_id": "neet_medical",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "occupational_therapist",
+      "salary_explorer_id": 40,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "neet",
+      "plan_b_exam_id": "neet_medical",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "dentist_bds",
+      "salary_explorer_id": 41,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "neetbds",
+      "plan_b_exam_id": "neet_medical",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "physiotherapist_bpt",
+      "salary_explorer_id": 42,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "neet",
+      "plan_b_exam_id": "neet_medical",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "company_secretary",
+      "salary_explorer_id": 43,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "cs",
+      "plan_b_exam_id": "ca_foundation",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "cost_accountant_cma",
+      "salary_explorer_id": 44,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "ca",
+      "plan_b_exam_id": "ca_foundation",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "ai_ml_engineer",
+      "salary_explorer_id": 45,
+      "roi_career_id": "software_engineer",
+      "exam_roadmap_career_id": "jee",
+      "plan_b_exam_id": "jee_engineering",
+      "skill_gap_job_id": "software_developer",
+      "private_role_ids": []
+    },
+    {
+      "career_id": "cybersecurity_analyst",
+      "salary_explorer_id": 46,
+      "roi_career_id": "software_engineer",
+      "exam_roadmap_career_id": "gate",
+      "plan_b_exam_id": "gate_pg",
+      "skill_gap_job_id": "software_developer",
+      "private_role_ids": []
+    },
+    {
+      "career_id": "civil_judge_judicial",
+      "salary_explorer_id": 47,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "law",
+      "plan_b_exam_id": "clat_law",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "scientist_csir",
+      "salary_explorer_id": 48,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "gate",
+      "plan_b_exam_id": "csir_net_sciences",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "agricultural_officer",
+      "salary_explorer_id": 49,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "agritech",
+      "plan_b_exam_id": "upsc_csds",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "medical_lab_technologist",
+      "salary_explorer_id": 50,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "neet",
+      "plan_b_exam_id": "neet_medical",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "radiographer_imaging",
+      "salary_explorer_id": 51,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "neet",
+      "plan_b_exam_id": "neet_medical",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "veterinarian_bvsc",
+      "salary_explorer_id": 52,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "neet",
+      "plan_b_exam_id": "neet_medical",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "interior_designer",
+      "salary_explorer_id": 53,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "design",
+      "plan_b_exam_id": "nid_nift_design",
+      "skill_gap_job_id": "graphic_designer",
+      "private_role_ids": []
+    },
+    {
+      "career_id": "sales_business_development",
+      "salary_explorer_id": 54,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "cat",
+      "plan_b_exam_id": "cat_mba",
+      "skill_gap_job_id": null,
+      "private_role_ids": [
+        "sales_executive_b2b",
+        "business_development_associate"
+      ]
+    },
+    {
+      "career_id": "welder_fabricator",
+      "salary_explorer_id": 55,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "iti",
+      "plan_b_exam_id": null,
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "chef_culinary",
+      "salary_explorer_id": 56,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "hotel",
+      "plan_b_exam_id": "cat_mba",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "electrical_engineer_power",
+      "salary_explorer_id": 57,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "gate",
+      "plan_b_exam_id": "gate_pg",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    },
+    {
+      "career_id": "clinical_research_associate",
+      "salary_explorer_id": 58,
+      "roi_career_id": null,
+      "exam_roadmap_career_id": "pharma",
+      "plan_b_exam_id": "neet_medical",
+      "skill_gap_job_id": null,
+      "private_role_ids": []
+    }
+  ]
+}

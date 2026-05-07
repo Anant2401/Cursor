@@ -1,0 +1,605 @@
+{
+  "meta": {
+    "shard_type": "programs",
+    "state_id": "IN",
+    "state_label": "All-India (national counselling)",
+    "count": 33,
+    "generated_on": "2026-05-07"
+  },
+  "programs": [
+    {
+      "id": "older_iits_top_nits_trichy_surathkal_warangal_etc_engineering_engineering_generi",
+      "college_id": "older_iits_top_nits_trichy_surathkal_warangal_etc",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "high",
+        "notes": "Imported from Plan B bundle tier: Tier A — IITs / top NITs / top IIITs (illustrative band)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "top_iiits_hyderabad_bangalore_etc_engineering_engineering_generic_national_level",
+      "college_id": "top_iiits_hyderabad_bangalore_etc",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — IITs / top NITs / top IIITs (illustrative band)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "other_nits_and_iiits_via_josaa_engineering_engineering_generic_national_level_in",
+      "college_id": "other_nits_and_iiits_via_josaa",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — Other NITs / IIITs / solid GFTIs"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "vacant_seats_after_josaa_rounds_engineering_engineering_generic_national_level_i",
+      "college_id": "vacant_seats_after_josaa_rounds",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier C — CSAB / participating institutes"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "aiims_jipmer_top_state_gmcs_via_aiq_medicine_medicine_mbbs_national_level_in",
+      "college_id": "aiims_jipmer_top_state_gmcs_via_aiq",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — top government medical colleges (illustrative)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "esic_afmc_pool_other_central_schemes_when_listed_medicine_medicine_mbbs_national",
+      "college_id": "esic_afmc_pool_other_central_schemes_when_listed",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — other government / central institutions"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "deemed_universities_medicine_medicine_mbbs_national_level_in",
+      "college_id": "deemed_universities",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier C — deemed / private (cost-sensitive)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "iit_kharagpur_iit_roorkee_spa_delhi_examples_verify_current_intake_architecture_",
+      "college_id": "iit_kharagpur_iit_roorkee_spa_delhi_examples_verify_current_intake",
+      "stream_id": "architecture",
+      "course_id": "architecture_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "high",
+        "notes": "Imported from Plan B bundle tier: Tier A — IITs / SPAs / top NITs (illustrative)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nits_and_state_universities_with_coa_approved_b_arch_verify_list_yearly_architec",
+      "college_id": "nits_and_state_universities_with_coa_approved_b_arch_verify_list_yearly",
+      "stream_id": "architecture",
+      "course_id": "architecture_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — strong NITs / state flagships via national/state channels"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "iit_bombay_iit_guwahati_iit_hyderabad_design_programmes_via_uceed_examples_desig",
+      "college_id": "iit_bombay_iit_guwahati_iit_hyderabad_design_programmes_via_uceed_examples",
+      "stream_id": "design",
+      "course_id": "design_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — IIT B.Des / top NID (illustrative)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "national_institute_of_design_multiple_campuses_and_nift_campuses_design_design_g",
+      "college_id": "national_institute_of_design_multiple_campuses_and_nift_campuses",
+      "stream_id": "design",
+      "course_id": "design_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — other NIDs / NIFT campuses"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "maulana_azad_institute_of_dental_sciences_delhi_government_dental_colleges_via_a",
+      "college_id": "maulana_azad_institute_of_dental_sciences_delhi_government_dental_colleges_via_a",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — top government dental institutes (illustrative)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "state_government_dental_colleges_across_india_verify_seat_type_dentistry_dentist",
+      "college_id": "state_government_dental_colleges_across_india_verify_seat_type",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — other government / high-trust colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "national_institute_of_ayurveda_jaipur_ilbs_example_health_science_adjacency_veri",
+      "college_id": "national_institute_of_ayurveda_jaipur_ilbs_example_health_science_adjacency_veri",
+      "stream_id": "ayush",
+      "course_id": "ayush_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — national institutes / strong government colleges (illustrative)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "government_ayurveda_homoeopathy_colleges_state_wise_lists_ayush_ayush_generic_na",
+      "college_id": "government_ayurveda_homoeopathy_colleges_state_wise_lists",
+      "stream_id": "ayush",
+      "course_id": "ayush_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — state AYUSH colleges across India"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "niper_campuses_mpharm_heavy_verify_ug_if_offered_bits_pilani_pharmacy_manipal_co",
+      "college_id": "niper_campuses_mpharm_heavy_verify_ug_if_offered_bits_pilani_pharmacy_manipal_co",
+      "stream_id": "pharmacy",
+      "course_id": "pharmacy_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — NIPERs / top university pharmacy departments (illustrative)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "well_known_pci_approved_colleges_across_states_pharmacy_pharmacy_generic_nationa",
+      "college_id": "well_known_pci_approved_colleges_across_states",
+      "stream_id": "pharmacy",
+      "course_id": "pharmacy_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — strong private and state PCI-approved colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nlsiu_bangalore_nalsar_hyderabad_wbnujs_kolkata_examples_law_law_generic_nationa",
+      "college_id": "nlsiu_bangalore_nalsar_hyderabad_wbnujs_kolkata_examples",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — top NLUs (illustrative)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "other_nlus_and_national_private_law_schools_verify_bar_council_approval_law_law_",
+      "college_id": "other_nlus_and_national_private_law_schools_verify_bar_council_approval",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — other NLUs / strong national private"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "iim_indore_iim_rohtak_ipm_style_programmes_verify_current_list_management_manage",
+      "college_id": "iim_indore_iim_rohtak_ipm_style_programmes_verify_current_list",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — IIM IPM / top commerce-school BMS/BBA (illustrative)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "established_private_universities_with_ugc_recognised_management_ug_management_ma",
+      "college_id": "established_private_universities_with_ugc_recognised_management_ug",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — strong private BBA / BMS"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "shri_ram_college_of_commerce_srcc_hindu_college_lsr_examples_via_cuet_commerce_c",
+      "college_id": "shri_ram_college_of_commerce_srcc_hindu_college_lsr_examples_via_cuet",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — DU SRCC-class / other top central commerce (illustrative)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "other_ugc_recognised_universities_with_strong_accounting_finance_ug_commerce_com",
+      "college_id": "other_ugc_recognised_universities_with_strong_accounting_finance_ug",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — other strong central and private commerce UG"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "iiser_kolkata_pune_mohali_examples_via_iiser_aptitude_test_science_stats_science",
+      "college_id": "iiser_kolkata_pune_mohali_examples_via_iiser_aptitude_test",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — IISER / NISER / top central science UG (illustrative)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "bhu_university_of_hyderabad_others_via_cuet_examples_science_stats_science_stats",
+      "college_id": "bhu_university_of_hyderabad_others_via_cuet_examples",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — CUET science at strong central/state universities"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_delhi_mumbai_bangalore_examples_fashion_media_fashion_media_generic_nationa",
+      "college_id": "nift_delhi_mumbai_bangalore_examples",
+      "stream_id": "fashion_media",
+      "course_id": "fashion_media_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — NIFT / top film & communication schools (illustrative)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "established_private_communication_schools_verify_degree_and_campus_fashion_media",
+      "college_id": "established_private_communication_schools_verify_degree_and_campus",
+      "stream_id": "fashion_media",
+      "course_id": "fashion_media_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — strong private media schools"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "st_stephen_s_college_lady_shri_ram_college_for_women_examples_verify_cuet_humani",
+      "college_id": "st_stephen_s_college_lady_shri_ram_college_for_women_examples_verify_cuet",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — DU / JNU / Hyderabad / Ashoka-class targets (illustrative)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "jnu_bhu_university_of_hyderabad_examples_humanities_humanities_generic_national_",
+      "college_id": "jnu_bhu_university_of_hyderabad_examples",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — other central universities with strong social science departments"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "regional_institute_of_education_mysuru_bhopal_bhubaneswar_examples_education_edu",
+      "college_id": "regional_institute_of_education_mysuru_bhopal_bhubaneswar_examples",
+      "stream_id": "education",
+      "course_id": "education_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — RIE / top central education institutes (illustrative)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "state_universities_with_ncte_recognised_b_ed_verify_per_campus_education_educati",
+      "college_id": "state_universities_with_ncte_recognised_b_ed_verify_per_campus",
+      "stream_id": "education",
+      "course_id": "education_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — state universities with strong teacher-education departments"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "indian_veterinary_research_institute_ivri_izatnagar_example_veterinary_veterinar",
+      "college_id": "indian_veterinary_research_institute_ivri_izatnagar_example",
+      "stream_id": "veterinary",
+      "course_id": "veterinary_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — IVRI / state veterinary universities (illustrative)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "state_veterinary_colleges_across_india_verify_seat_type_and_bond_veterinary_vete",
+      "college_id": "state_veterinary_colleges_across_india_verify_seat_type_and_bond",
+      "stream_id": "veterinary",
+      "course_id": "veterinary_generic",
+      "geography_lens_ids": [
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": false,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — other government veterinary colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    }
+  ]
+}

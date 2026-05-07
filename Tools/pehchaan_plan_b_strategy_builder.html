@@ -48,12 +48,6 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 .hero .planb-how strong{color:var(--amber);font-weight:700;}
 .hero .planb-how ul{margin:8px 0 0 1rem;padding:0;}
 .hero .planb-how li{margin-bottom:5px;}
-.hero .name-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:16px 18px;margin-bottom:14px;box-shadow:none;}
-.hero .name-card .name-card-lead{font-size:13px;font-weight:600;display:block;margin-bottom:12px;line-height:1.45;}
-.hero .name-input{width:100%;padding:11px 12px;border-radius:10px;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);color:#fff;font-family:'Poppins',sans-serif;font-size:13px;outline:none;transition:border-color .2s;}
-.hero .name-input::placeholder{color:rgba(255,255,255,.5);}
-.hero .name-input:focus{border-color:var(--amber);}
-.name-error{font-size:12px;color:var(--red);background:rgba(252,235,235,.96);border:1px solid #F5A5A4;border-radius:8px;padding:8px 12px;margin-bottom:14px;display:none;}
 
 /* NOT A CONSOLATION BANNER */
 .power-banner{background:linear-gradient(135deg, #1a5c3f 0%, #085041 100%);border:2px solid var(--amber);border-radius:16px;padding:18px 20px;margin-bottom:14px;color:#fff;}
@@ -160,7 +154,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 
 <div id="screen-cover">
   <div class="topbar">
-    <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+    <a class="topbar-back" href="../index.html#tools" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
     <a class="topbar-brand" href="../index.html">
       <div class="topbar-logo">
         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
@@ -181,20 +175,6 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
         <li>Everything here is for <strong>awareness and planning</strong>, not a promise of admission or a job. Cross-check every claim on official sites before you pay or sign.</li>
       </ul>
     </div>
-    <div class="name-card">
-      <span class="name-card-lead">What is your name? (So your assessment feels personal)</span>
-      <div class="name-grid">
-        <div class="name-field">
-          <span class="name-field-label">First Name</span>
-          <input type="text" class="name-input" id="student-first-name" placeholder="Anant" maxlength="40" autocomplete="given-name">
-        </div>
-        <div class="name-field">
-          <span class="name-field-label">Last Name <span class="name-optional">(optional)</span></span>
-          <input type="text" class="name-input" id="student-last-name" placeholder="Tripathi" maxlength="40" autocomplete="family-name">
-        </div>
-      </div>
-    </div>
-    <div class="name-error" id="name-error-planb">Add your first name — we use it on your Plan B map.</div>
     <button type="button" class="btn-begin" id="btn-begin-planb">Continue →</button>
   </div>
   <div class="disclaimer">
@@ -485,6 +465,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 
 </div>
 <script src="../assets/pehchaan_journey.js"></script>
+<script src="../assets/db-adapters.js"></script>
 <script src="../assets/pehchaan_career_registry_prefill.js"></script>
 <script src="../assets/pehchaan_tool_links.js"></script>
 <script src="../assets/pehchaan_tool_recommendations.js"></script>
@@ -495,7 +476,6 @@ var COLLEGE_REGISTRY = null;
 var COLLEGE_INDEXES = null;
 var selExam = null;
 var selPivot = 'job';
-var studentName = '';
 var lastPlanBJobs = [];
 var collegePick = { stream_id: null, lens_id: null, course_id: null, state_id: null };
 var selCourseAnchor = null;
@@ -1105,8 +1085,7 @@ function showCollegePlanB(){
   }
   document.getElementById('screen-college').classList.add('hidden');
   document.getElementById('screen-results-college').classList.remove('hidden');
-  var first = (studentName || '').trim().split(/\s+/)[0];
-  var titleBase = (first ? first + ' — ' : '') + (b.title || 'College Plan B');
+  var titleBase = (b.title || 'College Plan B');
   if (b._neighbor_state_fallback) {
     titleBase += ' · Neighbour preview: ' + collegeStateLabel(b._source_state_id);
   }
@@ -1159,6 +1138,19 @@ function showCollegePlanB(){
     html += '</div>';
   });
   host.innerHTML = html;
+  if (window.PehchaanToolLinks) {
+    var ctx = {
+      from: 'plan_b',
+      stream: collegePick.stream_id || '',
+      state: collegePick.state_id || '',
+      course: collegePick.course_id || ''
+    };
+    var extra = '<div class="card"><div class="card-title">Continue with related tools</div>';
+    extra += '<a style="display:inline-block;padding:10px 14px;margin:2px 4px 0 0;border-radius:10px;background:#085041;color:#EF9F27;font-size:12px;font-weight:700;text-decoration:none;" href="' + esc(PehchaanToolLinks.u('collegeFinder', ctx)) + '">College Finder →</a>';
+    extra += '<a style="display:inline-block;padding:9px 12px;margin:2px 4px 0 0;border-radius:10px;background:#fff;color:#085041;font-size:12px;font-weight:700;text-decoration:none;border:1.5px solid #085041;" href="' + esc(PehchaanToolLinks.u('examRoadmap', ctx)) + '">Exam Roadmap →</a>';
+    extra += '</div>';
+    host.innerHTML += extra;
+  }
   window.scrollTo(0, 0);
 }
 function backToCollegePicker(){
@@ -1196,8 +1188,7 @@ function showCoursePlanB(anchorId){
   selCourseAnchor = anchorId;
   document.getElementById('screen-course').classList.add('hidden');
   document.getElementById('screen-results-course').classList.remove('hidden');
-  var first = (studentName || '').trim().split(/\s+/)[0];
-  document.getElementById('course-res-title').textContent = (first ? first + ' — ' : '') + a.title;
+  document.getElementById('course-res-title').textContent = a.title;
   document.getElementById('course-res-context').textContent = a.context || '';
   var ri = a.results_insight || cp.results_insight;
   var ins = document.getElementById('course-res-insight');
@@ -1235,6 +1226,16 @@ function showCoursePlanB(anchorId){
     html += '</div>';
   });
   host.innerHTML = html;
+  if (window.PehchaanToolLinks) {
+    var ctx = { from: 'plan_b' };
+    var extra = '<div class="card"><div class="card-title">Continue with related tools</div>';
+    extra += '<a style="display:inline-block;padding:10px 14px;margin:2px 4px 0 0;border-radius:10px;background:#085041;color:#EF9F27;font-size:12px;font-weight:700;text-decoration:none;" href="' + esc(PehchaanToolLinks.u('collegeFinder', ctx)) + '">College Finder →</a>';
+    extra += '<a style="display:inline-block;padding:9px 12px;margin:2px 4px 0 0;border-radius:10px;background:#fff;color:#085041;font-size:12px;font-weight:700;text-decoration:none;border:1.5px solid #085041;" href="' + esc(PehchaanToolLinks.u('roi', ctx)) + '">Career ROI Tool →</a>';
+    extra += '<a style="display:inline-block;padding:9px 12px;margin:2px 4px 0 0;border-radius:10px;background:#fff;color:#085041;font-size:12px;font-weight:700;text-decoration:none;border:1.5px solid #085041;" href="' + esc(PehchaanToolLinks.u('financing', ctx)) + '">Financial EMI Tool →</a>';
+    extra += '<a style="display:inline-block;padding:9px 12px;margin:2px 4px 0 0;border-radius:10px;background:#fff;color:#085041;font-size:12px;font-weight:700;text-decoration:none;border:1.5px solid #085041;" href="' + esc(PehchaanToolLinks.u('salary', ctx)) + '">Salary Explorer →</a>';
+    extra += '</div>';
+    host.innerHTML += extra;
+  }
   window.scrollTo(0, 0);
 }
 function backToCoursePicker(){
@@ -1243,65 +1244,41 @@ function backToCoursePicker(){
   window.scrollTo(0, 0);
 }
 
-function getPlanBDataUrl(){
+function toAbs(url){
   try {
-    return new URL('../DB/pehchaan_plan_b_strategy_builder_data.json', window.location.href).href;
+    return new URL(url, window.location.href).href;
   } catch (e) {
-    return '../DB/pehchaan_plan_b_strategy_builder_data.json';
+    return url;
   }
 }
-function getPrivateRoleDataUrl(){
-  try {
-    return new URL('../DB/pehchaan_private_sector_roles.json', window.location.href).href;
-  } catch (e) {
-    return '../DB/pehchaan_private_sector_roles.json';
+function loadJsonCandidates(candidates, optional){
+  var urls = (candidates || []).map(toAbs);
+  if (window.PehchaanDbAdapters && typeof PehchaanDbAdapters.loadFirstAvailable === 'function') {
+    return PehchaanDbAdapters.loadFirstAvailable(urls).catch(function(err){
+      if (optional) return null;
+      throw err;
+    });
   }
-}
-function getCollegeRegistryUrl(){
-  try {
-    return new URL('../DB/pehchaan_college_registry.json', window.location.href).href;
-  } catch (e) {
-    return '../DB/pehchaan_college_registry.json';
-  }
-}
-function getCollegeIndexesUrl(){
-  try {
-    return new URL('../DB/pehchaan_college_registry_indexes.json', window.location.href).href;
-  } catch (e) {
-    return '../DB/pehchaan_college_registry_indexes.json';
-  }
+  return fetch(urls[urls.length - 1]).then(function(r){
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  }).catch(function(err){
+    if (optional) return null;
+    throw err;
+  });
 }
 
 document.getElementById('btn-begin-planb').addEventListener('click', function(){
-  var err = document.getElementById('name-error-planb');
-  var fn = (document.getElementById('student-first-name').value || '').trim();
-  if (!fn) {
-    if (err) err.style.display = 'block';
-    return;
-  }
-  if (err) err.style.display = 'none';
-  var ln = (document.getElementById('student-last-name').value || '').trim();
-  studentName = ln ? fn + ' ' + ln : fn;
   document.getElementById('screen-cover').classList.add('hidden');
   document.getElementById('screen-pivot').classList.remove('hidden');
   window.scrollTo(0, 0);
 });
 
-['student-first-name','student-last-name'].forEach(function(id){
-  var el = document.getElementById(id);
-  if (!el) return;
-  el.addEventListener('keydown', function(e){ if (e.key === 'Enter') document.getElementById('btn-begin-planb').click(); });
-  el.addEventListener('input', function(){
-    var err = document.getElementById('name-error-planb');
-    if (err) err.style.display = 'none';
-  });
-});
-
 Promise.all([
-  fetch(getPlanBDataUrl()).then(function(r){ return r.json(); }),
-  fetch(getPrivateRoleDataUrl()).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; }),
-  fetch(getCollegeRegistryUrl()).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; }),
-  fetch(getCollegeIndexesUrl()).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; })
+  loadJsonCandidates(['../DB/canonical/pehchaan_plan_b_strategy_builder_data.json', '../DB/pehchaan_plan_b_strategy_builder_data.json'], false),
+  loadJsonCandidates(['../DB/canonical/pehchaan_private_sector_roles.json', '../DB/pehchaan_private_sector_roles.json'], true),
+  loadJsonCandidates(['../DB/canonical/pehchaan_college_registry.json', '../DB/pehchaan_college_registry.json'], true),
+  loadJsonCandidates(['../DB/canonical/pehchaan_college_registry_indexes.json', '../DB/pehchaan_college_registry_indexes.json'], true)
 ])
   .then(function(all){
     DB = all[0];
@@ -1329,6 +1306,67 @@ function resolveExamSkillMappings(){
       var t = byId[tid];
       return t ? JSON.parse(JSON.stringify(t)) : null;
     }).filter(Boolean);
+    // Keep at least 5 options by borrowing from private-role dataset when needed.
+    if (jobs.length < 5 && PRIVATE_ROLE_DB && Array.isArray(PRIVATE_ROLE_DB.roles)) {
+      var examKey = String(ex.id || '').trim();
+      var privateJobs = PRIVATE_ROLE_DB.roles
+        .filter(function (r) {
+          return r && r.status !== 'deprecated' && Array.isArray(r.plan_b_exam_links) && r.plan_b_exam_links.indexOf(examKey) >= 0;
+        })
+        .slice(0, 8)
+        .map(function (r) {
+          var m0 = (r.metro_map || [])[0] || {};
+          return {
+            id: 'private_' + (r.private_role_id || r.title || Math.random().toString(36).slice(2)),
+            title: r.title || 'Private sector role',
+            qualification: r.eligibility_min || r.eligibility_preferred || 'Any graduate with role-relevant skills',
+            salary_range: (m0.salary_fresher ? ('Fresher: ' + m0.salary_fresher) : 'Fresher salary varies') + (m0.salary_3yr ? (' · ~3 years: ' + m0.salary_3yr) : ''),
+            time_to_first_job: 'Usually 4-12 weeks with proof-based applications',
+            remote_friendly: false,
+            how_skills_match: r.summary || '',
+            where_to_find: (r.application_channels || []).slice(),
+            how_to_start: ((r.plan_30_60_90 && r.plan_30_60_90.day_0_30 && r.plan_30_60_90.day_0_30[0]) || 'Start with one role-aligned proof task this week.'),
+            plan_b_complements_main: (r.growth_paths && r.growth_paths.length) ? ('Growth path: ' + r.growth_paths.slice(0, 3).join(' → ')) : '',
+            student_note: m0.city_reality_note || '',
+            detailed_steps: []
+          };
+        });
+      privateJobs.forEach(function (pj) {
+        if (jobs.length >= 8) return;
+        if (!jobs.some(function (j) { return String(j.title || '').toLowerCase() === String(pj.title || '').toLowerCase(); })) {
+          jobs.push(pj);
+        }
+      });
+      // Final safety net: if exam-linked private roles are sparse, fill with
+      // other active private roles so every exam gets a practical shortlist.
+      if (jobs.length < 5) {
+        var globalTopUp = PRIVATE_ROLE_DB.roles
+          .filter(function (r) { return r && r.status !== 'deprecated'; })
+          .map(function (r) {
+            var m0 = (r.metro_map || [])[0] || {};
+            return {
+              id: 'private_global_' + (r.private_role_id || r.title || Math.random().toString(36).slice(2)),
+              title: r.title || 'Private sector role',
+              qualification: r.eligibility_min || r.eligibility_preferred || 'Any graduate with role-relevant skills',
+              salary_range: (m0.salary_fresher ? ('Fresher: ' + m0.salary_fresher) : 'Fresher salary varies') + (m0.salary_3yr ? (' · ~3 years: ' + m0.salary_3yr) : ''),
+              time_to_first_job: 'Usually 4-12 weeks with proof-based applications',
+              remote_friendly: false,
+              how_skills_match: r.summary || '',
+              where_to_find: (r.application_channels || []).slice(),
+              how_to_start: ((r.plan_30_60_90 && r.plan_30_60_90.day_0_30 && r.plan_30_60_90.day_0_30[0]) || 'Start with one role-aligned proof task this week.'),
+              plan_b_complements_main: (r.growth_paths && r.growth_paths.length) ? ('Growth path: ' + r.growth_paths.slice(0, 3).join(' → ')) : '',
+              student_note: m0.city_reality_note || '',
+              detailed_steps: []
+            };
+          });
+        globalTopUp.forEach(function (gj) {
+          if (jobs.length >= 5) return;
+          if (!jobs.some(function (j) { return String(j.title || '').toLowerCase() === String(gj.title || '').toLowerCase(); })) {
+            jobs.push(gj);
+          }
+        });
+      }
+    }
     var row = {};
     Object.keys(ex).forEach(function (k) {
       if (k === 'plan_b_job_template_ids') return;
@@ -1631,8 +1669,7 @@ function showPlanB(){
   var m = selExam;
   lastPlanBJobs = (m.plan_b_jobs || []).slice();
 
-  var first = (studentName || '').trim().split(/\s+/)[0];
-  document.getElementById('res-title').textContent = (first ? first + ', ' : '') + m.exam_label + ' — Your Plan B Map';
+  document.getElementById('res-title').textContent = m.exam_label + ' — Your Plan B Map';
   document.getElementById('res-sub').textContent = 'You are studying ' + m.subjects_studied.length + ' subjects. Each one is a marketable professional skill. Here is exactly how to use them.';
   var rsp = document.getElementById('res-manifesto-special');
   if (rsp) {
@@ -1690,7 +1727,13 @@ function showPlanB(){
       );
       recHtml = PehchaanToolRecommendations.buildRecommendationsHtml(rec, esc);
     }
-    nextHost.innerHTML = recHtml;
+    var explicit = '';
+    if (window.PehchaanToolLinks) {
+      explicit = '<div class="card"><div class="card-title">Continue with related tools</div>' +
+        '<a style="display:inline-block;padding:10px 14px;margin:2px 4px 0 0;border-radius:10px;background:#085041;color:#EF9F27;font-size:12px;font-weight:700;text-decoration:none;" href="' + esc(PehchaanToolLinks.u('skillGap', ctx)) + '">Skill Gap Analyser →</a>' +
+        '</div>';
+    }
+    nextHost.innerHTML = recHtml + explicit;
   }
 
   ['screen-pivot', 'screen-college', 'screen-course', 'screen-results-college', 'screen-results-course'].forEach(function(sid){

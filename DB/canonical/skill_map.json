@@ -1,0 +1,5531 @@
+{
+  "meta": {
+    "schema_version": "3.0.0",
+    "generated_on": "2026-05-07",
+    "source_files": [
+      "DB/pehchaan_skill_gap_analyser_data.json"
+    ],
+    "quality_policy": {
+      "confidence_scale": "0.0-1.0",
+      "default_review_cycle_days": 90,
+      "freshness_sla_days": 120,
+      "contradiction_rules": {
+        "auto_flag_threshold": 2,
+        "default_resolution_policy": "higher_confidence_wins",
+        "escalation_after_days": 14
+      }
+    }
+  },
+  "skill_map": [
+    {
+      "skill_id": "skillmap_software_engineer",
+      "career_id": "software_engineer",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "software_engineer__1",
+          "title": "freeCodeCamp",
+          "url": "https://www.freecodecamp.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "software_engineer__2",
+          "title": "roadmap.sh",
+          "url": "https://roadmap.sh/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "software_engineer__3",
+          "title": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "software_engineer__4",
+          "title": "GitHub Skills",
+          "url": "https://skills.github.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "software_engineer__5",
+          "title": "freeCodeCamp",
+          "url": "https://www.freecodecamp.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_chartered_accountant",
+      "career_id": "chartered_accountant",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "4-6 hours daily: 5-8 months from zero to first job.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "chartered_accountant__1",
+          "title": "ICAI Resources",
+          "url": "https://www.icai.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "chartered_accountant__2",
+          "title": "NSE Academy",
+          "url": "https://www.nseindia.com/learn",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "chartered_accountant__3",
+          "title": "Corporate Finance Institute",
+          "url": "https://corporatefinanceinstitute.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "chartered_accountant__4",
+          "title": "Tally Education",
+          "url": "https://tallyeducation.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "chartered_accountant__5",
+          "title": "ICAI Resources",
+          "url": "https://www.icai.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_doctor_mbbs",
+      "career_id": "doctor_mbbs",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "3-6 hours daily: 3-5 months to first job-ready with portfolio.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "doctor_mbbs__1",
+          "title": "NMC India",
+          "url": "https://www.nmc.org.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "doctor_mbbs__2",
+          "title": "WHO Learning",
+          "url": "https://openwho.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "doctor_mbbs__3",
+          "title": "Medscape",
+          "url": "https://www.medscape.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "doctor_mbbs__4",
+          "title": "BMJ Learning",
+          "url": "https://new-learning.bmj.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "doctor_mbbs__5",
+          "title": "NMC India",
+          "url": "https://www.nmc.org.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_ias_upsc",
+      "career_id": "ias_upsc",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "2-4 hours daily: 2-3 months of focused practice to first paid work.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "ias_upsc__1",
+          "title": "RBI Official",
+          "url": "https://www.rbi.org.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "ias_upsc__2",
+          "title": "IBPS Official",
+          "url": "https://www.ibps.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "ias_upsc__3",
+          "title": "SSC Official",
+          "url": "https://ssc.nic.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "ias_upsc__4",
+          "title": "Testbook Practice",
+          "url": "https://testbook.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "ias_upsc__5",
+          "title": "RBI Official",
+          "url": "https://www.rbi.org.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_data_scientist",
+      "career_id": "data_scientist",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "data_scientist__1",
+          "title": "Kaggle Learn",
+          "url": "https://www.kaggle.com/learn",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "data_scientist__2",
+          "title": "SQLBolt",
+          "url": "https://sqlbolt.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "data_scientist__3",
+          "title": "Microsoft Learn (Power BI)",
+          "url": "https://learn.microsoft.com/training/powerplatform/power-bi/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "data_scientist__4",
+          "title": "Google Data Analytics Resources",
+          "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "data_scientist__5",
+          "title": "Kaggle Learn",
+          "url": "https://www.kaggle.com/learn",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_lawyer",
+      "career_id": "lawyer",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "2-4 hours daily: 2-3 months to first interview-ready. Banking exam (IBPS) prep: 8-12 months additional for govt bank jobs.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "lawyer__1",
+          "title": "eCourts Services",
+          "url": "https://ecourts.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "lawyer__2",
+          "title": "SCC Online Blog",
+          "url": "https://www.scconline.com/blog/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "lawyer__3",
+          "title": "Bar and Bench",
+          "url": "https://www.barandbench.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "lawyer__4",
+          "title": "LiveLaw",
+          "url": "https://www.livelaw.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "lawyer__5",
+          "title": "eCourts Services",
+          "url": "https://ecourts.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_teacher",
+      "career_id": "teacher",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "teacher__1",
+          "title": "NCERT",
+          "url": "https://ncert.nic.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "teacher__2",
+          "title": "DIKSHA",
+          "url": "https://diksha.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "teacher__3",
+          "title": "CBSE Academic",
+          "url": "https://cbseacademic.nic.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "teacher__4",
+          "title": "Google for Education",
+          "url": "https://edu.google.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "teacher__5",
+          "title": "NCERT",
+          "url": "https://ncert.nic.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_bank_po",
+      "career_id": "bank_po",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "bank_po__1",
+          "title": "ICAI Resources",
+          "url": "https://www.icai.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "bank_po__2",
+          "title": "NSE Academy",
+          "url": "https://www.nseindia.com/learn",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "bank_po__3",
+          "title": "Corporate Finance Institute",
+          "url": "https://corporatefinanceinstitute.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "bank_po__4",
+          "title": "Tally Education",
+          "url": "https://tallyeducation.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "bank_po__5",
+          "title": "ICAI Resources",
+          "url": "https://www.icai.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_ssc_government",
+      "career_id": "ssc_government",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "ssc_government__1",
+          "title": "RBI Official",
+          "url": "https://www.rbi.org.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "ssc_government__2",
+          "title": "IBPS Official",
+          "url": "https://www.ibps.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "ssc_government__3",
+          "title": "SSC Official",
+          "url": "https://ssc.nic.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "ssc_government__4",
+          "title": "Testbook Practice",
+          "url": "https://testbook.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "ssc_government__5",
+          "title": "RBI Official",
+          "url": "https://www.rbi.org.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_nursing",
+      "career_id": "nursing",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "4-6 hours daily: 5-8 months from zero to first job.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "nursing__1",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "nursing__2",
+          "title": "Coursera Health Courses",
+          "url": "https://www.coursera.org/browse/health",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "nursing__3",
+          "title": "WHO Learning",
+          "url": "https://openwho.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "nursing__4",
+          "title": "CDC Training",
+          "url": "https://www.cdc.gov/training/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "nursing__5",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_digital_marketing",
+      "career_id": "digital_marketing",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "digital_marketing__1",
+          "title": "Google Skillshop",
+          "url": "https://skillshop.withgoogle.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "digital_marketing__2",
+          "title": "Meta Blueprint",
+          "url": "https://www.facebookblueprint.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "digital_marketing__3",
+          "title": "HubSpot Academy",
+          "url": "https://academy.hubspot.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "digital_marketing__4",
+          "title": "Semrush Academy",
+          "url": "https://www.semrush.com/academy/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "digital_marketing__5",
+          "title": "Google Skillshop",
+          "url": "https://skillshop.withgoogle.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_iti_electrician",
+      "career_id": "iti_electrician",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "2-4 hours daily: 2-3 months of focused practice to first paid work.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "iti_electrician__1",
+          "title": "Skill India",
+          "url": "https://www.skillindia.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "iti_electrician__2",
+          "title": "NSDC Courses",
+          "url": "https://nsdcindia.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "iti_electrician__3",
+          "title": "NPTEL",
+          "url": "https://nptel.ac.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "iti_electrician__4",
+          "title": "YouTube - NPTEL",
+          "url": "https://www.youtube.com/c/nptelhrd",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "iti_electrician__5",
+          "title": "Skill India",
+          "url": "https://www.skillindia.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_civil_mechanical_engineer",
+      "career_id": "civil_mechanical_engineer",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "3-5 hours daily: 4-6 months to first paid freelance work. 6-9 months to full-time entry job.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "civil_mechanical_engineer__1",
+          "title": "Skill India",
+          "url": "https://www.skillindia.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "civil_mechanical_engineer__2",
+          "title": "NSDC Courses",
+          "url": "https://nsdcindia.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "civil_mechanical_engineer__3",
+          "title": "NPTEL",
+          "url": "https://nptel.ac.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "civil_mechanical_engineer__4",
+          "title": "YouTube - NPTEL",
+          "url": "https://www.youtube.com/c/nptelhrd",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "civil_mechanical_engineer__5",
+          "title": "Skill India",
+          "url": "https://www.skillindia.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_journalist_content_writer",
+      "career_id": "journalist_content_writer",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "journalist_content_writer__1",
+          "title": "HubSpot Academy",
+          "url": "https://academy.hubspot.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "journalist_content_writer__2",
+          "title": "Ahrefs Academy",
+          "url": "https://ahrefs.com/academy",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "journalist_content_writer__3",
+          "title": "Google Trends",
+          "url": "https://trends.google.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "journalist_content_writer__4",
+          "title": "YouTube Creator Academy",
+          "url": "https://creatoracademy.youtube.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "journalist_content_writer__5",
+          "title": "HubSpot Academy",
+          "url": "https://academy.hubspot.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_graphic_ui_designer",
+      "career_id": "graphic_ui_designer",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "graphic_ui_designer__1",
+          "title": "Figma Learn",
+          "url": "https://help.figma.com/hc/en-us/articles/360040514593",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "graphic_ui_designer__2",
+          "title": "Canva Design School",
+          "url": "https://www.canva.com/designschool/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "graphic_ui_designer__3",
+          "title": "Adobe Learn",
+          "url": "https://helpx.adobe.com/creative-cloud/tutorials-explore.html",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "graphic_ui_designer__4",
+          "title": "Behance",
+          "url": "https://www.behance.net/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "graphic_ui_designer__5",
+          "title": "Figma Learn",
+          "url": "https://help.figma.com/hc/en-us/articles/360040514593",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_pharmacist",
+      "career_id": "pharmacist",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "With B.Ed (2 years) + CTET (8-12 months prep): total 3-4 years for government school. Private school: 1-2 months if you can teach well.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "pharmacist__1",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "pharmacist__2",
+          "title": "Coursera Health Courses",
+          "url": "https://www.coursera.org/browse/health",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "pharmacist__3",
+          "title": "WHO Learning",
+          "url": "https://openwho.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "pharmacist__4",
+          "title": "CDC Training",
+          "url": "https://www.cdc.gov/training/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "pharmacist__5",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_architect",
+      "career_id": "architect",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "With 4-6 hours daily: 6-12 months from zero to first job-ready.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "architect__1",
+          "title": "Figma Learn",
+          "url": "https://help.figma.com/hc/en-us/articles/360040514593",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "architect__2",
+          "title": "Canva Design School",
+          "url": "https://www.canva.com/designschool/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "architect__3",
+          "title": "Adobe Learn",
+          "url": "https://helpx.adobe.com/creative-cloud/tutorials-explore.html",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "architect__4",
+          "title": "Behance",
+          "url": "https://www.behance.net/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "architect__5",
+          "title": "Figma Learn",
+          "url": "https://help.figma.com/hc/en-us/articles/360040514593",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_psychologist_counsellor",
+      "career_id": "psychologist_counsellor",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "4-6 hours daily: 5-8 months from zero to first job.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "psychologist_counsellor__1",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "psychologist_counsellor__2",
+          "title": "Coursera Health Courses",
+          "url": "https://www.coursera.org/browse/health",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "psychologist_counsellor__3",
+          "title": "WHO Learning",
+          "url": "https://openwho.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "psychologist_counsellor__4",
+          "title": "CDC Training",
+          "url": "https://www.cdc.gov/training/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "psychologist_counsellor__5",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_bba_mba_management",
+      "career_id": "bba_mba_management",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "3-6 hours daily: 3-5 months to first job-ready with portfolio.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "bba_mba_management__1",
+          "title": "Harvard Business Review",
+          "url": "https://hbr.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "bba_mba_management__2",
+          "title": "Coursera Business Courses",
+          "url": "https://www.coursera.org/browse/business",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "bba_mba_management__3",
+          "title": "edX Management",
+          "url": "https://www.edx.org/learn/management",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "bba_mba_management__4",
+          "title": "LinkedIn Learning",
+          "url": "https://www.linkedin.com/learning/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "bba_mba_management__5",
+          "title": "Harvard Business Review",
+          "url": "https://hbr.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_defence_officer",
+      "career_id": "defence_officer",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "2-4 hours daily: 2-3 months of focused practice to first paid work.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "defence_officer__1",
+          "title": "DGCA India",
+          "url": "https://www.dgca.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "defence_officer__2",
+          "title": "SSB Crack",
+          "url": "https://www.ssbcrack.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "defence_officer__3",
+          "title": "Indian Air Force",
+          "url": "https://indianairforce.nic.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "defence_officer__4",
+          "title": "Aviation Exam",
+          "url": "https://www.aviationexam.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "defence_officer__5",
+          "title": "DGCA India",
+          "url": "https://www.dgca.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_social_worker_ngo",
+      "career_id": "social_worker_ngo",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "3-5 hours daily: 4-6 months to first paid freelance work. 6-9 months to full-time entry job.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "social_worker_ngo__1",
+          "title": "Harvard Business Review",
+          "url": "https://hbr.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "social_worker_ngo__2",
+          "title": "Coursera Business Courses",
+          "url": "https://www.coursera.org/browse/business",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "social_worker_ngo__3",
+          "title": "edX Management",
+          "url": "https://www.edx.org/learn/management",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "social_worker_ngo__4",
+          "title": "LinkedIn Learning",
+          "url": "https://www.linkedin.com/learning/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "social_worker_ngo__5",
+          "title": "Harvard Business Review",
+          "url": "https://hbr.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_commercial_pilot",
+      "career_id": "commercial_pilot",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "2-4 hours daily: 2-3 months to first interview-ready. Banking exam (IBPS) prep: 8-12 months additional for govt bank jobs.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "commercial_pilot__1",
+          "title": "DGCA India",
+          "url": "https://www.dgca.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "commercial_pilot__2",
+          "title": "SSB Crack",
+          "url": "https://www.ssbcrack.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "commercial_pilot__3",
+          "title": "Indian Air Force",
+          "url": "https://indianairforce.nic.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "commercial_pilot__4",
+          "title": "Aviation Exam",
+          "url": "https://www.aviationexam.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "commercial_pilot__5",
+          "title": "DGCA India",
+          "url": "https://www.dgca.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_fashion_designer",
+      "career_id": "fashion_designer",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "fashion_designer__1",
+          "title": "Figma Learn",
+          "url": "https://help.figma.com/hc/en-us/articles/360040514593",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "fashion_designer__2",
+          "title": "Canva Design School",
+          "url": "https://www.canva.com/designschool/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "fashion_designer__3",
+          "title": "Adobe Learn",
+          "url": "https://helpx.adobe.com/creative-cloud/tutorials-explore.html",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "fashion_designer__4",
+          "title": "Behance",
+          "url": "https://www.behance.net/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "fashion_designer__5",
+          "title": "Figma Learn",
+          "url": "https://help.figma.com/hc/en-us/articles/360040514593",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_event_manager",
+      "career_id": "event_manager",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "With B.Ed (2 years) + CTET (8-12 months prep): total 3-4 years for government school. Private school: 1-2 months if you can teach well.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "event_manager__1",
+          "title": "CIPS Resources",
+          "url": "https://www.cips.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "event_manager__2",
+          "title": "APICS / ASCM",
+          "url": "https://www.ascm.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "event_manager__3",
+          "title": "Oracle SCM Learning",
+          "url": "https://education.oracle.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "event_manager__4",
+          "title": "Coursera Operations Courses",
+          "url": "https://www.coursera.org/browse/business/operations",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "event_manager__5",
+          "title": "CIPS Resources",
+          "url": "https://www.cips.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_biotechnology_life_sciences",
+      "career_id": "biotechnology_life_sciences",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "With 4-6 hours daily: 6-12 months from zero to first job-ready.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "biotechnology_life_sciences__1",
+          "title": "NPTEL",
+          "url": "https://nptel.ac.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "biotechnology_life_sciences__2",
+          "title": "Khan Academy Science",
+          "url": "https://www.khanacademy.org/science",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "biotechnology_life_sciences__3",
+          "title": "Nature Careers",
+          "url": "https://www.nature.com/naturecareers",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "biotechnology_life_sciences__4",
+          "title": "ResearchGate",
+          "url": "https://www.researchgate.net/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "biotechnology_life_sciences__5",
+          "title": "NPTEL",
+          "url": "https://nptel.ac.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_hr_manager",
+      "career_id": "hr_manager",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "4-6 hours daily: 5-8 months from zero to first job.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "hr_manager__1",
+          "title": "SHRM Resources",
+          "url": "https://www.shrm.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "hr_manager__2",
+          "title": "Naukri Recruiter Resources",
+          "url": "https://recruit.naukri.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "hr_manager__3",
+          "title": "LinkedIn Talent Solutions",
+          "url": "https://business.linkedin.com/talent-solutions",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "hr_manager__4",
+          "title": "Great Learning HR Courses",
+          "url": "https://www.mygreatlearning.com/hr-courses",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "hr_manager__5",
+          "title": "SHRM Resources",
+          "url": "https://www.shrm.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_animator_game_designer",
+      "career_id": "animator_game_designer",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "animator_game_designer__1",
+          "title": "Figma Learn",
+          "url": "https://help.figma.com/hc/en-us/articles/360040514593",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "animator_game_designer__2",
+          "title": "Canva Design School",
+          "url": "https://www.canva.com/designschool/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "animator_game_designer__3",
+          "title": "Adobe Learn",
+          "url": "https://helpx.adobe.com/creative-cloud/tutorials-explore.html",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "animator_game_designer__4",
+          "title": "Behance",
+          "url": "https://www.behance.net/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "animator_game_designer__5",
+          "title": "Figma Learn",
+          "url": "https://help.figma.com/hc/en-us/articles/360040514593",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_actuarial_scientist",
+      "career_id": "actuarial_scientist",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "actuarial_scientist__1",
+          "title": "Kaggle Learn",
+          "url": "https://www.kaggle.com/learn",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "actuarial_scientist__2",
+          "title": "SQLBolt",
+          "url": "https://sqlbolt.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "actuarial_scientist__3",
+          "title": "Microsoft Learn (Power BI)",
+          "url": "https://learn.microsoft.com/training/powerplatform/power-bi/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "actuarial_scientist__4",
+          "title": "Google Data Analytics Resources",
+          "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "actuarial_scientist__5",
+          "title": "Kaggle Learn",
+          "url": "https://www.kaggle.com/learn",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_supply_chain_logistics",
+      "career_id": "supply_chain_logistics",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "3-5 hours daily: 4-6 months to first paid freelance work. 6-9 months to full-time entry job.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "supply_chain_logistics__1",
+          "title": "CIPS Resources",
+          "url": "https://www.cips.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "supply_chain_logistics__2",
+          "title": "APICS / ASCM",
+          "url": "https://www.ascm.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "supply_chain_logistics__3",
+          "title": "Oracle SCM Learning",
+          "url": "https://education.oracle.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "supply_chain_logistics__4",
+          "title": "Coursera Operations Courses",
+          "url": "https://www.coursera.org/browse/business/operations",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "supply_chain_logistics__5",
+          "title": "CIPS Resources",
+          "url": "https://www.cips.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_ayush_doctor",
+      "career_id": "ayush_doctor",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "2-4 hours daily: 2-3 months to first interview-ready. Banking exam (IBPS) prep: 8-12 months additional for govt bank jobs.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "ayush_doctor__1",
+          "title": "NMC India",
+          "url": "https://www.nmc.org.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "ayush_doctor__2",
+          "title": "WHO Learning",
+          "url": "https://openwho.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "ayush_doctor__3",
+          "title": "Medscape",
+          "url": "https://www.medscape.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "ayush_doctor__4",
+          "title": "BMJ Learning",
+          "url": "https://new-learning.bmj.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "ayush_doctor__5",
+          "title": "NMC India",
+          "url": "https://www.nmc.org.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_content_creator_youtuber",
+      "career_id": "content_creator_youtuber",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "content_creator_youtuber__1",
+          "title": "HubSpot Academy",
+          "url": "https://academy.hubspot.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "content_creator_youtuber__2",
+          "title": "Ahrefs Academy",
+          "url": "https://ahrefs.com/academy",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "content_creator_youtuber__3",
+          "title": "Google Trends",
+          "url": "https://trends.google.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "content_creator_youtuber__4",
+          "title": "YouTube Creator Academy",
+          "url": "https://creatoracademy.youtube.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "content_creator_youtuber__5",
+          "title": "HubSpot Academy",
+          "url": "https://academy.hubspot.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_electrician_electrical_tech",
+      "career_id": "electrician_electrical_tech",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "With B.Ed (2 years) + CTET (8-12 months prep): total 3-4 years for government school. Private school: 1-2 months if you can teach well.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "electrician_electrical_tech__1",
+          "title": "Skill India",
+          "url": "https://www.skillindia.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "electrician_electrical_tech__2",
+          "title": "NSDC Courses",
+          "url": "https://nsdcindia.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "electrician_electrical_tech__3",
+          "title": "NPTEL",
+          "url": "https://nptel.ac.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "electrician_electrical_tech__4",
+          "title": "YouTube - NPTEL",
+          "url": "https://www.youtube.com/c/nptelhrd",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "electrician_electrical_tech__5",
+          "title": "Skill India",
+          "url": "https://www.skillindia.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_dietitian_nutritionist",
+      "career_id": "dietitian_nutritionist",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "With 4-6 hours daily: 6-12 months from zero to first job-ready.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "dietitian_nutritionist__1",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "dietitian_nutritionist__2",
+          "title": "Coursera Health Courses",
+          "url": "https://www.coursera.org/browse/health",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "dietitian_nutritionist__3",
+          "title": "WHO Learning",
+          "url": "https://openwho.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "dietitian_nutritionist__4",
+          "title": "CDC Training",
+          "url": "https://www.cdc.gov/training/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "dietitian_nutritionist__5",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_environmental_green_energy",
+      "career_id": "environmental_green_energy",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "4-6 hours daily: 5-8 months from zero to first job.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "environmental_green_energy__1",
+          "title": "NPTEL",
+          "url": "https://nptel.ac.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "environmental_green_energy__2",
+          "title": "Khan Academy Science",
+          "url": "https://www.khanacademy.org/science",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "environmental_green_energy__3",
+          "title": "Nature Careers",
+          "url": "https://www.nature.com/naturecareers",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "environmental_green_energy__4",
+          "title": "ResearchGate",
+          "url": "https://www.researchgate.net/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "environmental_green_energy__5",
+          "title": "NPTEL",
+          "url": "https://nptel.ac.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_statistician_data_analyst_bsc",
+      "career_id": "statistician_data_analyst_bsc",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "statistician_data_analyst_bsc__1",
+          "title": "Kaggle Learn",
+          "url": "https://www.kaggle.com/learn",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "statistician_data_analyst_bsc__2",
+          "title": "SQLBolt",
+          "url": "https://sqlbolt.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "statistician_data_analyst_bsc__3",
+          "title": "Microsoft Learn (Power BI)",
+          "url": "https://learn.microsoft.com/training/powerplatform/power-bi/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "statistician_data_analyst_bsc__4",
+          "title": "Google Data Analytics Resources",
+          "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "statistician_data_analyst_bsc__5",
+          "title": "Kaggle Learn",
+          "url": "https://www.kaggle.com/learn",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_cgpsc_state_services",
+      "career_id": "cgpsc_state_services",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "cgpsc_state_services__1",
+          "title": "RBI Official",
+          "url": "https://www.rbi.org.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "cgpsc_state_services__2",
+          "title": "IBPS Official",
+          "url": "https://www.ibps.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "cgpsc_state_services__3",
+          "title": "SSC Official",
+          "url": "https://ssc.nic.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "cgpsc_state_services__4",
+          "title": "Testbook Practice",
+          "url": "https://testbook.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "cgpsc_state_services__5",
+          "title": "RBI Official",
+          "url": "https://www.rbi.org.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_hotel_hospitality",
+      "career_id": "hotel_hospitality",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "3-5 hours daily: 4-6 months to first paid freelance work. 6-9 months to full-time entry job.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "hotel_hospitality__1",
+          "title": "AHLEI",
+          "url": "https://www.ahlei.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "hotel_hospitality__2",
+          "title": "Skill India",
+          "url": "https://www.skillindia.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "hotel_hospitality__3",
+          "title": "Coursera Hospitality",
+          "url": "https://www.coursera.org/browse/business/hospitality",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "hotel_hospitality__4",
+          "title": "NCS India",
+          "url": "https://www.ncs.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "hotel_hospitality__5",
+          "title": "AHLEI",
+          "url": "https://www.ahlei.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_fitness_trainer_sports",
+      "career_id": "fitness_trainer_sports",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "2-4 hours daily: 2-3 months to first interview-ready. Banking exam (IBPS) prep: 8-12 months additional for govt bank jobs.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "fitness_trainer_sports__1",
+          "title": "Harvard Business Review",
+          "url": "https://hbr.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "fitness_trainer_sports__2",
+          "title": "Coursera Business Courses",
+          "url": "https://www.coursera.org/browse/business",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "fitness_trainer_sports__3",
+          "title": "edX Management",
+          "url": "https://www.edx.org/learn/management",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "fitness_trainer_sports__4",
+          "title": "LinkedIn Learning",
+          "url": "https://www.linkedin.com/learning/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "fitness_trainer_sports__5",
+          "title": "Harvard Business Review",
+          "url": "https://hbr.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_public_health_professional",
+      "career_id": "public_health_professional",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "4-6 hours daily: 8-12 months of consistent preparation for SSC CGL. CGVYAPAM state exams: 6-8 months.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "public_health_professional__1",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "public_health_professional__2",
+          "title": "Coursera Health Courses",
+          "url": "https://www.coursera.org/browse/health",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "public_health_professional__3",
+          "title": "WHO Learning",
+          "url": "https://openwho.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "public_health_professional__4",
+          "title": "CDC Training",
+          "url": "https://www.cdc.gov/training/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "public_health_professional__5",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_occupational_therapist",
+      "career_id": "occupational_therapist",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "With B.Ed (2 years) + CTET (8-12 months prep): total 3-4 years for government school. Private school: 1-2 months if you can teach well.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "occupational_therapist__1",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "occupational_therapist__2",
+          "title": "Coursera Health Courses",
+          "url": "https://www.coursera.org/browse/health",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "occupational_therapist__3",
+          "title": "WHO Learning",
+          "url": "https://openwho.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "occupational_therapist__4",
+          "title": "CDC Training",
+          "url": "https://www.cdc.gov/training/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "occupational_therapist__5",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_dentist_bds",
+      "career_id": "dentist_bds",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "With 4-6 hours daily: 6-12 months from zero to first job-ready.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "dentist_bds__1",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "dentist_bds__2",
+          "title": "Coursera Health Courses",
+          "url": "https://www.coursera.org/browse/health",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "dentist_bds__3",
+          "title": "WHO Learning",
+          "url": "https://openwho.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "dentist_bds__4",
+          "title": "CDC Training",
+          "url": "https://www.cdc.gov/training/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "dentist_bds__5",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_physiotherapist_bpt",
+      "career_id": "physiotherapist_bpt",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "4-6 hours daily: 5-8 months from zero to first job.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "physiotherapist_bpt__1",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "physiotherapist_bpt__2",
+          "title": "Coursera Health Courses",
+          "url": "https://www.coursera.org/browse/health",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "physiotherapist_bpt__3",
+          "title": "WHO Learning",
+          "url": "https://openwho.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "physiotherapist_bpt__4",
+          "title": "CDC Training",
+          "url": "https://www.cdc.gov/training/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "physiotherapist_bpt__5",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_company_secretary",
+      "career_id": "company_secretary",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "3-6 hours daily: 3-5 months to first job-ready with portfolio.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "company_secretary__1",
+          "title": "ICAI Resources",
+          "url": "https://www.icai.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "company_secretary__2",
+          "title": "NSE Academy",
+          "url": "https://www.nseindia.com/learn",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "company_secretary__3",
+          "title": "Corporate Finance Institute",
+          "url": "https://corporatefinanceinstitute.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "company_secretary__4",
+          "title": "Tally Education",
+          "url": "https://tallyeducation.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "company_secretary__5",
+          "title": "ICAI Resources",
+          "url": "https://www.icai.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_cost_accountant_cma",
+      "career_id": "cost_accountant_cma",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "2-4 hours daily: 2-3 months of focused practice to first paid work.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "cost_accountant_cma__1",
+          "title": "ICAI Resources",
+          "url": "https://www.icai.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "cost_accountant_cma__2",
+          "title": "NSE Academy",
+          "url": "https://www.nseindia.com/learn",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "cost_accountant_cma__3",
+          "title": "Corporate Finance Institute",
+          "url": "https://corporatefinanceinstitute.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "cost_accountant_cma__4",
+          "title": "Tally Education",
+          "url": "https://tallyeducation.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "cost_accountant_cma__5",
+          "title": "ICAI Resources",
+          "url": "https://www.icai.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_ai_ml_engineer",
+      "career_id": "ai_ml_engineer",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "ai_ml_engineer__1",
+          "title": "freeCodeCamp",
+          "url": "https://www.freecodecamp.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "ai_ml_engineer__2",
+          "title": "roadmap.sh",
+          "url": "https://roadmap.sh/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "ai_ml_engineer__3",
+          "title": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "ai_ml_engineer__4",
+          "title": "GitHub Skills",
+          "url": "https://skills.github.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "ai_ml_engineer__5",
+          "title": "freeCodeCamp",
+          "url": "https://www.freecodecamp.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_cybersecurity_analyst",
+      "career_id": "cybersecurity_analyst",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "cybersecurity_analyst__1",
+          "title": "freeCodeCamp",
+          "url": "https://www.freecodecamp.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "cybersecurity_analyst__2",
+          "title": "roadmap.sh",
+          "url": "https://roadmap.sh/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "cybersecurity_analyst__3",
+          "title": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "cybersecurity_analyst__4",
+          "title": "GitHub Skills",
+          "url": "https://skills.github.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "cybersecurity_analyst__5",
+          "title": "freeCodeCamp",
+          "url": "https://www.freecodecamp.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_civil_judge_judicial",
+      "career_id": "civil_judge_judicial",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "4-6 hours daily: 8-12 months of consistent preparation for SSC CGL. CGVYAPAM state exams: 6-8 months.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "civil_judge_judicial__1",
+          "title": "eCourts Services",
+          "url": "https://ecourts.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "civil_judge_judicial__2",
+          "title": "SCC Online Blog",
+          "url": "https://www.scconline.com/blog/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "civil_judge_judicial__3",
+          "title": "Bar and Bench",
+          "url": "https://www.barandbench.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "civil_judge_judicial__4",
+          "title": "LiveLaw",
+          "url": "https://www.livelaw.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "civil_judge_judicial__5",
+          "title": "eCourts Services",
+          "url": "https://ecourts.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_scientist_csir",
+      "career_id": "scientist_csir",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "With B.Ed (2 years) + CTET (8-12 months prep): total 3-4 years for government school. Private school: 1-2 months if you can teach well.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "scientist_csir__1",
+          "title": "NPTEL",
+          "url": "https://nptel.ac.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "scientist_csir__2",
+          "title": "Khan Academy Science",
+          "url": "https://www.khanacademy.org/science",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "scientist_csir__3",
+          "title": "Nature Careers",
+          "url": "https://www.nature.com/naturecareers",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "scientist_csir__4",
+          "title": "ResearchGate",
+          "url": "https://www.researchgate.net/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "scientist_csir__5",
+          "title": "NPTEL",
+          "url": "https://nptel.ac.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_agricultural_officer",
+      "career_id": "agricultural_officer",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "With 4-6 hours daily: 6-12 months from zero to first job-ready.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "agricultural_officer__1",
+          "title": "NPTEL",
+          "url": "https://nptel.ac.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "agricultural_officer__2",
+          "title": "Khan Academy Science",
+          "url": "https://www.khanacademy.org/science",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "agricultural_officer__3",
+          "title": "Nature Careers",
+          "url": "https://www.nature.com/naturecareers",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "agricultural_officer__4",
+          "title": "ResearchGate",
+          "url": "https://www.researchgate.net/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "agricultural_officer__5",
+          "title": "NPTEL",
+          "url": "https://nptel.ac.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_medical_lab_technologist",
+      "career_id": "medical_lab_technologist",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "4-6 hours daily: 5-8 months from zero to first job.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "medical_lab_technologist__1",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "medical_lab_technologist__2",
+          "title": "Coursera Health Courses",
+          "url": "https://www.coursera.org/browse/health",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "medical_lab_technologist__3",
+          "title": "WHO Learning",
+          "url": "https://openwho.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "medical_lab_technologist__4",
+          "title": "CDC Training",
+          "url": "https://www.cdc.gov/training/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "medical_lab_technologist__5",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_radiographer_imaging",
+      "career_id": "radiographer_imaging",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "3-6 hours daily: 3-5 months to first job-ready with portfolio.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "radiographer_imaging__1",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "radiographer_imaging__2",
+          "title": "Coursera Health Courses",
+          "url": "https://www.coursera.org/browse/health",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "radiographer_imaging__3",
+          "title": "WHO Learning",
+          "url": "https://openwho.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "radiographer_imaging__4",
+          "title": "CDC Training",
+          "url": "https://www.cdc.gov/training/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "radiographer_imaging__5",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_veterinarian_bvsc",
+      "career_id": "veterinarian_bvsc",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "2-4 hours daily: 2-3 months of focused practice to first paid work.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "veterinarian_bvsc__1",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "veterinarian_bvsc__2",
+          "title": "Coursera Health Courses",
+          "url": "https://www.coursera.org/browse/health",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "veterinarian_bvsc__3",
+          "title": "WHO Learning",
+          "url": "https://openwho.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "veterinarian_bvsc__4",
+          "title": "CDC Training",
+          "url": "https://www.cdc.gov/training/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "veterinarian_bvsc__5",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_interior_designer",
+      "career_id": "interior_designer",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "6 months",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "interior_designer__1",
+          "title": "Figma Learn",
+          "url": "https://help.figma.com/hc/en-us/articles/360040514593",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "interior_designer__2",
+          "title": "Canva Design School",
+          "url": "https://www.canva.com/designschool/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "interior_designer__3",
+          "title": "Adobe Learn",
+          "url": "https://helpx.adobe.com/creative-cloud/tutorials-explore.html",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "interior_designer__4",
+          "title": "Behance",
+          "url": "https://www.behance.net/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "interior_designer__5",
+          "title": "Figma Learn",
+          "url": "https://help.figma.com/hc/en-us/articles/360040514593",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_sales_business_development",
+      "career_id": "sales_business_development",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "2-4 hours daily: 2-3 months to first interview-ready. Banking exam (IBPS) prep: 8-12 months additional for govt bank jobs.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "sales_business_development__1",
+          "title": "HubSpot Sales Training",
+          "url": "https://academy.hubspot.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "sales_business_development__2",
+          "title": "LinkedIn Learning (Sales)",
+          "url": "https://www.linkedin.com/learning/topics/sales",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "sales_business_development__3",
+          "title": "Gong Labs",
+          "url": "https://www.gong.io/resources/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "sales_business_development__4",
+          "title": "Salesforce Trailhead",
+          "url": "https://trailhead.salesforce.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "sales_business_development__5",
+          "title": "HubSpot Sales Training",
+          "url": "https://academy.hubspot.com/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_welder_fabricator",
+      "career_id": "welder_fabricator",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "4-6 hours daily: 8-12 months of consistent preparation for SSC CGL. CGVYAPAM state exams: 6-8 months.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "welder_fabricator__1",
+          "title": "Skill India",
+          "url": "https://www.skillindia.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "welder_fabricator__2",
+          "title": "NSDC Courses",
+          "url": "https://nsdcindia.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "welder_fabricator__3",
+          "title": "NPTEL",
+          "url": "https://nptel.ac.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "welder_fabricator__4",
+          "title": "YouTube - NPTEL",
+          "url": "https://www.youtube.com/c/nptelhrd",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "welder_fabricator__5",
+          "title": "Skill India",
+          "url": "https://www.skillindia.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_chef_culinary",
+      "career_id": "chef_culinary",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "With B.Ed (2 years) + CTET (8-12 months prep): total 3-4 years for government school. Private school: 1-2 months if you can teach well.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "chef_culinary__1",
+          "title": "AHLEI",
+          "url": "https://www.ahlei.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "chef_culinary__2",
+          "title": "Skill India",
+          "url": "https://www.skillindia.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "chef_culinary__3",
+          "title": "Coursera Hospitality",
+          "url": "https://www.coursera.org/browse/business/hospitality",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "chef_culinary__4",
+          "title": "NCS India",
+          "url": "https://www.ncs.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "chef_culinary__5",
+          "title": "AHLEI",
+          "url": "https://www.ahlei.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_electrical_engineer_power",
+      "career_id": "electrical_engineer_power",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "With 4-6 hours daily: 6-12 months from zero to first job-ready.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "electrical_engineer_power__1",
+          "title": "Skill India",
+          "url": "https://www.skillindia.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "electrical_engineer_power__2",
+          "title": "NSDC Courses",
+          "url": "https://nsdcindia.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "electrical_engineer_power__3",
+          "title": "NPTEL",
+          "url": "https://nptel.ac.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "electrical_engineer_power__4",
+          "title": "YouTube - NPTEL",
+          "url": "https://www.youtube.com/c/nptelhrd",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "electrical_engineer_power__5",
+          "title": "Skill India",
+          "url": "https://www.skillindia.gov.in/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "skill_id": "skillmap_clinical_research_associate",
+      "career_id": "clinical_research_associate",
+      "language_availability": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "time_to_mastery": "4-6 hours daily: 5-8 months from zero to first job.",
+      "prerequisite_skills": [
+        "Basic communication",
+        "Digital literacy"
+      ],
+      "industry_recognition": "Moderate (project portfolio dependent)",
+      "time_commitment": 240,
+      "learning_sequence": [
+        {
+          "step_number": 1,
+          "resource_id": "clinical_research_associate__1",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 2,
+          "resource_id": "clinical_research_associate__2",
+          "title": "Coursera Health Courses",
+          "url": "https://www.coursera.org/browse/health",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 3,
+          "resource_id": "clinical_research_associate__3",
+          "title": "WHO Learning",
+          "url": "https://openwho.org/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 4,
+          "resource_id": "clinical_research_associate__4",
+          "title": "CDC Training",
+          "url": "https://www.cdc.gov/training/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        },
+        {
+          "step_number": 5,
+          "resource_id": "clinical_research_associate__5",
+          "title": "NHS Learning Hub (Reference)",
+          "url": "https://www.e-lfh.org.uk/",
+          "cost_type": "Free",
+          "language_tags": [
+            "English",
+            "Hindi",
+            "Hinglish"
+          ]
+        }
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_skill_gap_analyser_data.json"
+        ],
+        "confidence": 0.82
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    }
+  ]
+}

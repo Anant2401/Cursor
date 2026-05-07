@@ -849,7 +849,22 @@ section[id] {
   gap: 1rem;
   align-items: stretch;
 }
-
+.phase-divider {
+  grid-column: 1 / -1;
+  border-radius: 12px;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 1px solid var(--border);
+}
+.phase-1 { background: #E8F1FB; color: #0E4C83; }
+.phase-2 { background: #E1F5EE; color: #085041; }
+.phase-3 { background: #FAEEDA; color: #8A5000; }
+.phase-4 { background: #EEF2FF; color: #1A1A2E; }
+.tool-card[data-phase="1"] .tool-card-chip { background: #E8F1FB; border-color: #BFD4F2; color: #0E4C83; }
+.tool-card[data-phase="2"] .tool-card-chip { background: #E1F5EE; border-color: #BEE7D9; color: #085041; }
+.tool-card[data-phase="3"] .tool-card-chip { background: #FAEEDA; border-color: #F4D39E; color: #8A5000; }
+.tool-card[data-phase="4"] .tool-card-chip { background: #EEF2FF; border-color: #D7DEF9; color: #243B63; }
 .tools-panel.has-expanded .tools-grid {
   align-items: start;
 }
@@ -1539,6 +1554,7 @@ footer {
   border-radius: 14px;
   border: 1px dashed rgba(8, 80, 65, 0.28);
   background: rgba(248, 250, 252, 0.9);
+  overflow: hidden;
 }
 
 .start-here-title {
@@ -1553,6 +1569,155 @@ footer {
   color: var(--gray-text);
   margin: 0 0 0.75rem;
   line-height: 1.5;
+}
+
+.pathfinder-progress {
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: #d7eee4;
+  margin: 0.25rem 0 0.8rem;
+  overflow: hidden;
+}
+
+.pathfinder-progress-fill {
+  width: 25%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--teal), var(--amber));
+  transition: width 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.pathfinder-slides {
+  position: relative;
+  min-height: 180px;
+}
+
+.pathfinder-slide {
+  display: none;
+  opacity: 0;
+  transform: translateX(18px);
+  will-change: opacity, transform;
+}
+
+.pathfinder-slide.is-leaving {
+  display: block;
+  opacity: 0;
+  transform: translateX(-18px);
+  transition:
+    opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pathfinder-slide.is-active {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+  transition:
+    opacity 0.34s cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 0.34s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.pathfinder-why {
+  margin: 0.65rem 0 0;
+  font-size: 0.74rem;
+  color: var(--gray-text);
+}
+
+/* Premium feel: tiny stagger on dropdown + why line */
+.pathfinder-slide.is-active .start-here-field select {
+  animation: pfIn 0.36s cubic-bezier(0.2, 0.8, 0.2, 1) 1;
+}
+
+.pathfinder-slide.is-active .pathfinder-why {
+  animation: pfIn 0.36s cubic-bezier(0.2, 0.8, 0.2, 1) 1;
+  animation-delay: 0.06s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes pfIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pathfinder-result-card {
+  border: 1px solid rgba(29, 158, 117, 0.24);
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0.9rem;
+  margin-bottom: 0.7rem;
+}
+
+.pathfinder-result-chip {
+  display: inline-flex;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  background: #e1f5ee;
+  color: var(--teal-dark);
+  border: 1px solid rgba(29, 158, 117, 0.26);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.pathfinder-result-card h3 {
+  margin: 0.45rem 0 0.35rem;
+  color: var(--teal-dark);
+  font-size: 1.05rem;
+}
+
+.pathfinder-result-card p {
+  margin: 0 0 0.65rem;
+  font-size: 0.82rem;
+  color: #3d5a53;
+  line-height: 1.55;
+}
+
+.pathfinder-audit {
+  margin-top: 0.75rem;
+  border-top: 1px dashed rgba(8, 80, 65, 0.2);
+  padding-top: 0.7rem;
+}
+
+#pathfinder-audit-toggle {
+  padding: 0.32rem 0.62rem;
+  font-size: 0.72rem;
+}
+
+#pathfinder-audit-panel {
+  margin-top: 0.55rem;
+  border: 1px solid rgba(8, 80, 65, 0.16);
+  border-radius: 10px;
+  background: #fff;
+  padding: 0.55rem 0.7rem;
+}
+
+#pathfinder-audit-panel p {
+  margin: 0.25rem 0;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: #3d5a53;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pathfinder-progress-fill {
+    transition: none;
+  }
+  .pathfinder-slide,
+  .pathfinder-slide.is-active,
+  .pathfinder-slide.is-leaving {
+    transition: none;
+    transform: none;
+  }
+  .pathfinder-slide.is-active .start-here-field select,
+  .pathfinder-slide.is-active .pathfinder-why {
+    animation: none;
+  }
 }
 
 .start-here-grid {

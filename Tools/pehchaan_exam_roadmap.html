@@ -47,18 +47,6 @@
   .hero-stat{background:rgba(255,255,255,.1);border-radius:12px;padding:14px 8px;text-align:center;border:1px solid rgba(255,255,255,.12);}
   .hero-stat .v{font-size:22px;font-weight:700;color:var(--amber);}
   .hero-stat .l{font-size:11px;opacity:.75;margin-top:2px;}
-  .name-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:16px 18px;margin-top:16px;}
-  .name-card .name-card-lead{font-size:13px;font-weight:600;display:block;margin-bottom:12px;line-height:1.45;}
-  .name-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-  .name-field{display:flex;flex-direction:column;gap:6px;min-width:0;}
-  .name-field-label{font-size:11px;font-weight:600;opacity:.88;letter-spacing:.02em;}
-  .name-field-label .name-optional{font-weight:500;opacity:.72;}
-  .name-hint{font-size:12px;line-height:1.55;margin-top:12px;padding:10px 12px;border-radius:10px;font-weight:500;}
-  .name-hint.is-pending{background:rgba(239,159,39,.2);border:1px solid rgba(239,159,39,.5);color:rgba(255,255,255,.96);}
-  .name-hint.is-ok{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.9);}
-  .name-input{width:100%;padding:11px 12px;border-radius:10px;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);color:var(--white);font-family:'Poppins',sans-serif;font-size:13px;outline:none;transition:border-color .2s;}
-  .name-input:focus{border-color:var(--amber);}
-  .name-input::placeholder{color:rgba(255,255,255,.5);}
 
   /* SELECTOR CARD */
   .sel-card{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:22px 20px;margin-bottom:14px;box-shadow:var(--shadow);}
@@ -351,7 +339,7 @@
 
 <!-- TOPBAR -->
 <div class="topbar no-print">
-  <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+  <a class="topbar-back" href="../index.html#tools" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
   <a class="topbar-brand" href="../index.html">
   <div class="topbar-logo">
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -379,20 +367,6 @@
       <div class="hero-stat"><div class="v" id="hero-stat-exams">—</div><div class="l">Exams in Database</div></div>
       <div class="hero-stat"><div class="v" id="hero-stat-careers">—</div><div class="l">Career Paths</div></div>
       <div class="hero-stat"><div class="v" id="hero-stat-updated">—</div><div class="l">Data Refreshed</div></div>
-    </div>
-    <div class="name-card">
-      <span class="name-card-lead">What is your name? (So your roadmap feels personal)</span>
-      <div class="name-grid">
-        <div class="name-field">
-          <span class="name-field-label">First Name</span>
-          <input class="name-input" id="first-name" type="text" placeholder="Anant" autocomplete="given-name" oninput="handleNameInput()">
-        </div>
-        <div class="name-field">
-          <span class="name-field-label">Last Name <span class="name-optional">(optional)</span></span>
-          <input class="name-input" id="last-name" type="text" placeholder="Tripathi" autocomplete="family-name" oninput="handleNameInput()">
-        </div>
-      </div>
-      <p class="name-hint is-pending" id="name-hint" role="status">Add your first name — we use it on your roadmap title and in the tips we write for you.</p>
     </div>
   </div>
 
@@ -458,6 +432,7 @@
     <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
     <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
     hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+    <p>This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p>
   </div>
 </div>
 
@@ -479,7 +454,6 @@
   </div>
 
   <div class="insight-box" id="res-insight"></div>
-  <div id="roadmap-journey-next" class="no-print" style="display:none"></div>
 
   <!-- TIMELINE -->
   <div class="card-section">
@@ -510,6 +484,8 @@
     <div class="resource-grid" id="resources-grid"></div>
   </div>
 
+  <div id="roadmap-journey-next" class="no-print" style="display:none"></div>
+
   <div class="disclaimer-box">
     <h4>Important — please read</h4>
     <p>Exam dates shown are based on official announcements and historical patterns as of May 2026. Dates for 2027 exams are <strong>expected/tentative</strong> based on past trends — always confirm on official exam websites before registering. Pehchaan Careers does not guarantee the accuracy of future exam schedules. This roadmap is a starting point for planning — not a substitute for official notifications from UPSC, NTA, IBPS, SSC, or other exam bodies.</p>
@@ -530,14 +506,15 @@
 </div><!-- /container -->
 
 <script src="../assets/pehchaan_journey.js"></script>
+<script src="../assets/db-adapters.js"></script>
 <script src="../assets/pehchaan_career_registry_prefill.js"></script>
 <script src="../assets/pehchaan_tool_links.js"></script>
+<script src="../assets/pehchaan_tool_recommendations.js"></script>
 <script>
 // ─────────────────────────────────────────────
 // STATE
 // ─────────────────────────────────────────────
 var selClass = null, selStream = null, selCareers = [];
-var firstName = '', lastName = '';
 /** When non-empty, career grid shows only these trending career ids (multi-select). */
 var trendingFilterIds = [];
 /** Timeline state filter: all | national_only | exact state_name from exam data. */
@@ -554,7 +531,52 @@ var PehchaanExamDB = {
   meta: {}
 };
 
-/** Ordered list of JSON URLs to try (DB folder, then site-root /DB/). */
+var EXAM_ALIAS_MAP = {
+  jee_main: 'jee',
+  neet_ug: 'neet',
+  clat_ug: 'clat',
+  upsc_cse: 'upsc',
+  ssc_cgl: 'ssc',
+  ibps_po: 'ibps'
+};
+function normalizeExamRecord(rawExam) {
+  var e = rawExam || {};
+  var rid = String(e.id || e.exam_id || '').trim();
+  var key = EXAM_ALIAS_MAP[rid] || rid;
+  var careers = Array.isArray(e.careers) ? e.careers.filter(Boolean) : [];
+  if (!careers.length && Array.isArray(e.related_career_ids)) careers = e.related_career_ids.filter(Boolean);
+  if (!careers.length && key) careers = [key];
+  return Object.assign({}, e, {
+    id: rid || key,
+    exam_id: rid || key,
+    careers: careers,
+    examDate: e.examDate || e.exam_date || e.expected_exam_window || '',
+    regDate: e.regDate || e.registration_window || '',
+    resultDate: e.resultDate || e.result_window || '',
+    desc: e.desc || e.description || '',
+    official_notification_link: e.official_notification_link || e.official || e.official_url || '',
+    official: e.official || e.official_notification_link || e.official_url || ''
+  });
+}
+
+function normalizeExamPayload(data) {
+  var copy = data || {};
+  var rawExams = Array.isArray(copy.exams) ? copy.exams : [];
+  copy.exams = rawExams.map(normalizeExamRecord);
+  return copy;
+}
+function dedupeExams(exams) {
+  var map = {};
+  (exams || []).forEach(function (e) {
+    if (!e) return;
+    var key = String(e.id || e.exam_id || e.name || '').toLowerCase().trim();
+    if (!key) return;
+    if (!map[key]) map[key] = e;
+  });
+  return Object.keys(map).map(function (k) { return map[k]; });
+}
+
+/** Ordered list of JSON URLs to try (canonical first, then legacy locations). */
 function getExamDataJsonCandidates() {
   var seen = {};
   var out = [];
@@ -565,11 +587,24 @@ function getExamDataJsonCandidates() {
     out.push(u);
   }
   try {
-    add(new URL('../DB/pehchaan_exam_data.json', window.location.href).href);
+    add(new URL('../DB/canonical/pehchaan_exam_data.json', window.location.href).href);
+    add(new URL('../DB/canonical/exams.json', window.location.href).href);
   } catch (e0) {}
+  try {
+    add(new URL('../DB/pehchaan_exam_data.json', window.location.href).href);
+    add(new URL('../DB/exams.json', window.location.href).href);
+  } catch (e0) {}
+  add('../DB/canonical/pehchaan_exam_data.json');
+  add('../DB/canonical/exams.json');
   add('../DB/pehchaan_exam_data.json');
+  add('../DB/exams.json');
+  try {
+    add(new URL('/DB/canonical/pehchaan_exam_data.json', window.location.origin).href);
+    add(new URL('/DB/canonical/exams.json', window.location.origin).href);
+  } catch (e1) {}
   try {
     add(new URL('/DB/pehchaan_exam_data.json', window.location.origin).href);
+    add(new URL('/DB/exams.json', window.location.origin).href);
   } catch (e2) {}
   return out;
 }
@@ -579,6 +614,26 @@ function findCareerById(id) {
     if (PehchaanExamDB.careers[i].id === id) return PehchaanExamDB.careers[i];
   }
   return null;
+}
+
+function inferCareersForExam(exam) {
+  var listed = Array.isArray(exam && exam.careers) ? exam.careers.filter(Boolean) : [];
+  if (listed.length) return listed;
+  var out = [];
+  var eid = String((exam && (exam.id || exam.exam_id)) || '').trim().toLowerCase();
+  if (eid && findCareerById(eid)) out.push(eid);
+  var en = String((exam && exam.name) || '').toLowerCase();
+  (PehchaanExamDB.careers || []).forEach(function (c) {
+    if (!c || !c.id) return;
+    if (eid && c.id.toLowerCase() === eid) {
+      if (out.indexOf(c.id) < 0) out.push(c.id);
+      return;
+    }
+    if (en && (en.indexOf(String(c.id).toLowerCase()) >= 0 || en.indexOf(String(c.label || '').toLowerCase()) >= 0)) {
+      if (out.indexOf(c.id) < 0) out.push(c.id);
+    }
+  });
+  return out;
 }
 
 function tryExamRoadmapUrlPrefill() {
@@ -719,6 +774,7 @@ function hideBootstrapOverlay() {
 }
 
 function assignParsedPayload(data) {
+  data = normalizeExamPayload(data);
   PehchaanExamDB.career_fit_summaries = data.career_fit_summaries || {};
   PehchaanExamDB.careers = data.careers;
   PehchaanExamDB.exams = data.exams;
@@ -750,7 +806,13 @@ async function loadPehchaanExamData() {
           lastDetail = candidates[ci] + ' → HTTP ' + res.status;
           continue;
         }
-        data = await res.json();
+        var parsed = await res.json();
+        var payloadErr = validateExamPayload(parsed);
+        if (payloadErr) {
+          lastDetail = candidates[ci] + ' → ' + payloadErr;
+          continue;
+        }
+        data = parsed;
         lastDetail = '';
         break;
       } catch (errOne) {
@@ -764,8 +826,6 @@ async function loadPehchaanExamData() {
           ' Open the tool at /Tools/pehchaan_exam_roadmap.html (capital T) and ensure DB/pehchaan_exam_data.json is deployed.'
       );
     }
-    var err = validateExamPayload(data);
-    if (err) throw new Error(err);
     assignParsedPayload(data);
     applyHeroStatsFromData();
     hideBootstrapOverlay();
@@ -908,11 +968,6 @@ function onStateFilterChange() {
   selStateFilter = sel && sel.value ? sel.value : 'all';
 }
 
-function handleNameInput() {
-  firstName = (document.getElementById('first-name').value || '').trim();
-  lastName = (document.getElementById('last-name').value || '').trim();
-  updateBuildBtn();
-}
 
 function toggleCareer(btn) {
   var id = btn.getAttribute('data-id');
@@ -932,27 +987,11 @@ function toggleCareer(btn) {
   updateBuildBtn();
 }
 
-function updateNameHint() {
-  var el = document.getElementById('name-hint');
-  if (!el) return;
-  if (firstName) {
-    el.className = 'name-hint is-ok';
-    el.textContent = 'Nice — we will personalise your roadmap with ' + firstName + '.';
-  } else {
-    el.className = 'name-hint is-pending';
-    el.textContent = 'Add your first name — we use it on your roadmap title and in the tips we write for you.';
-  }
-}
-
 function updateBuildBtn() {
   var btn = document.getElementById('btn-build');
   var lbl = document.getElementById('career-count-label');
   if (!btn || !lbl) return;
-  var hasFirstName = !!firstName;
-  if (!hasFirstName) {
-    btn.disabled = true;
-    lbl.textContent = 'Add your first name — we use it on your roadmap.';
-  } else if (selCareers.length === 0) {
+  if (selCareers.length === 0) {
     btn.disabled = true;
     lbl.textContent = 'Pick at least one career to unlock Build My Roadmap';
   } else {
@@ -963,14 +1002,13 @@ function updateBuildBtn() {
     }).join(', ');
     lbl.textContent = 'Selected: ' + names;
   }
-  updateNameHint();
 }
 
 // ─────────────────────────────────────────────
 // BUILD ROADMAP
 // ─────────────────────────────────────────────
 function buildRoadmap() {
-  if (selCareers.length === 0 || !firstName) return;
+  if (selCareers.length === 0) return;
   var resTitle = document.getElementById('res-title');
   var resSub = document.getElementById('res-sub');
   var resInsight = document.getElementById('res-insight');
@@ -994,12 +1032,11 @@ function buildRoadmap() {
     var c = findCareerById(id);
     return c ? c.label : id;
   });
-  var studentName = (firstName + (lastName ? ' ' + lastName : '')).trim();
-  var careerCelebration = getCareerCelebration(selCareers[0], firstName);
+  var careerCelebration = getCareerCelebration(selCareers[0], '');
 
   // Header — class and stream on separate lines to avoid wrapping
   resTitle.innerHTML =
-    'Great choice, ' + escapeHtml(studentName) + '! ' +
+    'Great choice! ' +
     '<span style="display:block;font-size:16px;font-weight:600;color:var(--white);opacity:.95;margin-top:3px;">' + escapeHtml(careerCelebration) + '</span>' +
     '<span style="display:block;font-size:15px;font-weight:600;opacity:.9;margin-top:8px;">' + escapeHtml(classLabels[selClass] || '') + '</span>' +
     '<span style="display:block;font-size:14px;font-weight:500;opacity:.8;margin-top:2px;">' +
@@ -1008,7 +1045,7 @@ function buildRoadmap() {
   var printSub = document.getElementById('print-subline');
   if (printSub) {
     var stateNote = selStateFilter === 'all' ? 'All states + national' : selStateFilter === 'national_only' ? 'National only' : selStateFilter + ' + national';
-    printSub.textContent = studentName + ' — ' + careerNames.join(', ') + ' — Region: ' + stateNote + ' — Printed ' +
+    printSub.textContent = careerNames.join(', ') + ' — Region: ' + stateNote + ' — Printed ' +
       new Date().toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
   }
   var fitEl = document.getElementById('res-fit-summary');
@@ -1043,10 +1080,12 @@ function buildRoadmap() {
 
   // Filter relevant exams (careers + optional state / scope)
   var relevantExams = PehchaanExamDB.exams.filter(function(e) {
-    return e.careers.some(function(c){ return selCareers.indexOf(c) >= 0; }) && examMatchesStateFilter(e, selStateFilter);
+    var careers = inferCareersForExam(e);
+    return careers.some(function(c){ return selCareers.indexOf(c) >= 0; }) && examMatchesStateFilter(e, selStateFilter);
   });
+  relevantExams = dedupeExams(relevantExams);
 
-  var insightText = getInsight(selClass, selCareers, firstName, relevantExams);
+  var insightText = getInsight(selClass, selCareers, '', relevantExams);
   resInsight.innerHTML = '<p>' + insightText + '</p>';
 
   // Build timeline
@@ -1076,19 +1115,28 @@ function buildRoadmap() {
     });
   }
   var jn = document.getElementById('roadmap-journey-next');
-  if (jn && window.PehchaanToolLinks) {
+  if (jn && window.PehchaanToolRecommendations) {
     jn.style.display = 'block';
-    jn.innerHTML = PehchaanToolLinks.wrapNextCard(
-      'What to explore next',
-      PehchaanToolLinks.buildExamRoadmapResultInner(selClass, selStream, stVal, careerCsv)
+    var rec = PehchaanToolRecommendations.buildNextToolRecommendations(
+      PehchaanToolRecommendations.TOOL.examRoadmap,
+      {
+        from: 'roadmap',
+        class: selClass || '',
+        stream: selStream || '',
+        state: stVal,
+        career: careerCsv
+      },
+      { examDriven: true, roleSelected: true, actionPlanStarted: true }
     );
+    jn.innerHTML = PehchaanToolRecommendations.buildRecommendationsHtml(rec, escapeHtml);
   }
 }
 
 function getInsight(cls, careers, fname, examPool) {
   var pool = Array.isArray(examPool) ? examPool : PehchaanExamDB.exams;
   var urgentExams = pool.filter(function(e){
-    return e.status === 'soon' && careers.some(function(c){ return e.careers.indexOf(c) >= 0; });
+    var exCareers = Array.isArray(e.careers) ? e.careers : inferCareersForExam(e);
+    return (e.status === 'soon' || e.status === 'urgent') && careers.some(function(c){ return exCareers.indexOf(c) >= 0; });
   });
 
   var timeMsg = '';
@@ -1103,7 +1151,7 @@ function getInsight(cls, careers, fname, examPool) {
     examWarning = ' <strong>Heads-up: ' + escapeHtml(urgentExams[0].name) + ' is coming up soon — confirm dates and registration on the official exam website when you can.</strong>';
   }
 
-  return 'All the best, ' + escapeHtml(fname) + '! ' + timeMsg + examWarning + ' The roadmap below covers every exam you need, every deadline, and exactly when to start preparing.';
+  return 'All the best! ' + timeMsg + examWarning + ' The roadmap below covers every exam you need, every deadline, and exactly when to start preparing.';
 }
 
 function escapeHtml(str) {
@@ -1339,7 +1387,10 @@ function getCareerCelebration(careerId, fname) {
     game: 'Exciting direction - your imagination can become a profession.',
     default: 'Great choice - your journey is unique and you are fully capable of achieving it.'
   };
-  return (cheers[careerId] || cheers.default) + ' All the best, ' + escapeHtml(fname) + '!';
+  var safeName = String(fname || '').trim();
+  return safeName
+    ? (cheers[careerId] || cheers.default) + ' All the best, ' + escapeHtml(safeName) + '!'
+    : (cheers[careerId] || cheers.default);
 }
 
 function dotClass(status) {
@@ -1364,6 +1415,7 @@ function buildTimeline(exams) {
   var checkSvg = '<svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 6l3 3 5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
   list.forEach(function(e) {
+    if (!e || (!e.month && !e.examDate && !e.regDate)) return;
     var verifiedLabel = formatLastVerifiedBadge(e.last_verified);
     var notifyUrl = (e.official_notification_link || e.official || '').trim();
     var topics = Array.isArray(e.high_weightage_topics) ? e.high_weightage_topics : [];
@@ -1415,7 +1467,16 @@ function buildTimeline(exams) {
   });
 
   if (html === '') {
-    html = '<div style="text-align:center;padding:32px 0;color:var(--gray-text);font-size:13px;">No specific exams found for this combination. Scroll down for general career guidance.</div>';
+    var namesOnly = list.map(function (x) { return x && x.name ? x.name : ''; }).filter(Boolean).slice(0, 10);
+    if (namesOnly.length) {
+      html = '<div class="exam-block" style="margin-bottom:0;"><div class="exam-name" style="margin-bottom:8px;">Exam options for your selected path</div>' +
+        '<div class="exam-desc">Detailed timeline dates are being refreshed. You can still use this shortlist and verify exact notifications on official portals.</div>' +
+        '<ul style="margin-top:10px;padding-left:18px;color:var(--text);font-size:12px;line-height:1.7;">' +
+        namesOnly.map(function (n) { return '<li>' + escapeHtml(n) + '</li>'; }).join('') +
+        '</ul></div>';
+    } else {
+      html = '<div style="text-align:center;padding:32px 0;color:var(--gray-text);font-size:13px;">No specific exams found for this combination. Scroll down for general career guidance.</div>';
+    }
   }
 
   var tl = document.getElementById('exam-timeline');
@@ -1486,7 +1547,6 @@ function buildResources(careers) {
 
 function restart() {
   selClass = null; selStream = null; selCareers = [];
-  firstName = ''; lastName = '';
   trendingFilterIds = [];
   selStateFilter = 'all';
   var sf = document.getElementById('state-filter');
@@ -1499,11 +1559,7 @@ function restart() {
   var s3c = document.getElementById('step3-card');
   if (s2c) s2c.style.display = 'none';
   if (s3c) s3c.style.display = 'none';
-  var fn = document.getElementById('first-name');
-  var ln = document.getElementById('last-name');
   var cs = document.getElementById('career-search');
-  if (fn) fn.value = '';
-  if (ln) ln.value = '';
   if (cs) cs.value = '';
   var scrRes = document.getElementById('screen-results');
   var scrSel = document.getElementById('screen-selector');

@@ -1,617 +1,677 @@
 {
   "meta": {
-    "last_updated": "2026-05-05",
-    "version": "1.3",
-    "description": "Maps canonical career keys to tool-specific IDs for deep links and analytics. exam_roadmap_career_id matches DB/pehchaan_exam_data.json careers[].id; plan_b_exam_id matches DB/pehchaan_plan_b_strategy_builder_data.json exams[].id. roi_career_id is set only when a row exists in DB/pehchaan_career_roi_reality_bridge_data.json. private_role_ids maps canonical careers to DB/pehchaan_private_sector_roles.json roles[].private_role_id."
+    "last_updated": "2026-05-07",
+    "version": "canonical-compat-1.0",
+    "description": "Generated from DB/canonical/careers.json legacy_refs"
   },
   "careers": [
     {
       "canonical_id": "software_engineer",
       "label": "Software Engineer / Developer",
-      "tags": ["tech"],
+      "tags": [],
       "salary_explorer_id": 1,
       "roi_career_id": "software_engineer",
       "skill_gap_job_id": "software_developer",
       "exam_roadmap_career_id": "jee",
       "plan_b_exam_id": "jee_engineering",
-      "private_role_ids": ["qa_test_associate"]
+      "private_role_ids": [
+        "qa_test_associate"
+      ]
     },
     {
       "canonical_id": "chartered_accountant",
       "label": "Chartered Accountant (CA)",
-      "tags": ["commerce"],
+      "tags": [],
       "salary_explorer_id": 2,
       "roi_career_id": "ca",
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "ca",
-      "plan_b_exam_id": "ca_foundation"
+      "plan_b_exam_id": "ca_foundation",
+      "private_role_ids": []
     },
     {
       "canonical_id": "doctor_mbbs",
       "label": "Doctor (MBBS / MD)",
-      "tags": ["healthcare", "science"],
+      "tags": [],
       "salary_explorer_id": 3,
       "roi_career_id": "mbbs_doctor",
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "neet",
-      "plan_b_exam_id": "neet_medical"
+      "plan_b_exam_id": "neet_medical",
+      "private_role_ids": []
     },
     {
       "canonical_id": "ias_upsc",
       "label": "IAS / IPS Officer (UPSC)",
-      "tags": ["govt", "arts"],
+      "tags": [],
       "salary_explorer_id": 4,
       "roi_career_id": "upsc_ias",
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "upsc",
-      "plan_b_exam_id": "upsc_csds"
+      "plan_b_exam_id": "upsc_csds",
+      "private_role_ids": []
     },
     {
       "canonical_id": "data_scientist",
       "label": "Data Scientist / Analyst",
-      "tags": ["tech"],
+      "tags": [],
       "salary_explorer_id": 5,
       "roi_career_id": "data_analyst",
       "skill_gap_job_id": "data_analyst",
       "exam_roadmap_career_id": "gate",
       "plan_b_exam_id": "gate_pg",
-      "private_role_ids": ["junior_data_analyst", "mis_executive"]
+      "private_role_ids": [
+        "junior_data_analyst",
+        "mis_executive"
+      ]
     },
     {
       "canonical_id": "lawyer",
       "label": "Lawyer / Advocate",
-      "tags": ["arts"],
+      "tags": [],
       "salary_explorer_id": 6,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "clat",
-      "plan_b_exam_id": "clat_law"
+      "plan_b_exam_id": "clat_law",
+      "private_role_ids": []
     },
     {
       "canonical_id": "teacher",
       "label": "Teacher / Professor",
-      "tags": ["arts"],
+      "tags": [],
       "salary_explorer_id": 7,
       "roi_career_id": null,
       "skill_gap_job_id": "teacher_educator",
       "exam_roadmap_career_id": "teaching",
-      "plan_b_exam_id": "cuet_ug"
+      "plan_b_exam_id": "cuet_ug",
+      "private_role_ids": []
     },
     {
       "canonical_id": "bank_po",
       "label": "Bank PO / Clerk (IBPS / SBI)",
-      "tags": ["govt", "commerce"],
+      "tags": [],
       "salary_explorer_id": 8,
       "roi_career_id": "bank_po",
       "skill_gap_job_id": "bank_finance",
       "exam_roadmap_career_id": "ibps",
       "plan_b_exam_id": "ssc_banking",
-      "private_role_ids": ["finance_operations_associate"]
+      "private_role_ids": [
+        "finance_operations_associate"
+      ]
     },
     {
       "canonical_id": "ssc_government",
       "label": "SSC CGL / CHSL (Government Job)",
-      "tags": ["govt"],
+      "tags": [],
       "salary_explorer_id": 9,
       "roi_career_id": "ssc_cgl",
       "skill_gap_job_id": "govt_jobs_admin",
       "exam_roadmap_career_id": "ssc",
-      "plan_b_exam_id": "ssc_banking"
+      "plan_b_exam_id": "ssc_banking",
+      "private_role_ids": []
     },
     {
       "canonical_id": "nursing",
       "label": "Nursing (BSc / GNM)",
-      "tags": ["healthcare"],
+      "tags": [],
       "salary_explorer_id": 10,
       "roi_career_id": "bsc_nursing",
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "nursing",
-      "plan_b_exam_id": "neet_medical"
+      "plan_b_exam_id": "neet_medical",
+      "private_role_ids": []
     },
     {
       "canonical_id": "digital_marketing",
-      "label": "Digital Marketing Specialist",
-      "tags": ["tech", "creative"],
+      "label": "Digital Marketing Professional",
+      "tags": [],
       "salary_explorer_id": 12,
       "roi_career_id": "digital_marketing",
       "skill_gap_job_id": "digital_marketer",
       "exam_roadmap_career_id": "content",
       "plan_b_exam_id": null,
-      "private_role_ids": ["digital_marketing_executive"]
+      "private_role_ids": [
+        "digital_marketing_executive"
+      ]
     },
     {
       "canonical_id": "iti_electrician",
       "label": "ITI / Polytechnic (Skilled Trades)",
-      "tags": ["trades"],
+      "tags": [],
       "salary_explorer_id": 20,
       "roi_career_id": "iti_electrician",
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "iti",
-      "plan_b_exam_id": null
+      "plan_b_exam_id": null,
+      "private_role_ids": []
     },
     {
       "canonical_id": "civil_mechanical_engineer",
       "label": "Civil / Mechanical Engineer",
-      "tags": ["science", "engineering"],
+      "tags": [],
       "salary_explorer_id": 11,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "jee",
-      "plan_b_exam_id": "jee_engineering"
+      "plan_b_exam_id": "jee_engineering",
+      "private_role_ids": []
     },
     {
       "canonical_id": "journalist_content_writer",
       "label": "Journalist / Content Writer",
-      "tags": ["arts", "creative"],
+      "tags": [],
       "salary_explorer_id": 13,
       "roi_career_id": null,
       "skill_gap_job_id": "content_writer",
       "exam_roadmap_career_id": "journal",
       "plan_b_exam_id": "cuet_ug",
-      "private_role_ids": ["content_associate"]
+      "private_role_ids": [
+        "content_associate"
+      ]
     },
     {
       "canonical_id": "graphic_ui_designer",
       "label": "Graphic / UI-UX Designer",
-      "tags": ["creative"],
+      "tags": [],
       "salary_explorer_id": 14,
       "roi_career_id": null,
       "skill_gap_job_id": "graphic_designer",
       "exam_roadmap_career_id": "design",
-      "plan_b_exam_id": "nid_nift_design"
+      "plan_b_exam_id": "nid_nift_design",
+      "private_role_ids": []
     },
     {
       "canonical_id": "pharmacist",
       "label": "Pharmacist",
-      "tags": ["healthcare", "science"],
+      "tags": [],
       "salary_explorer_id": 15,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "pharma",
-      "plan_b_exam_id": "neet_medical"
+      "plan_b_exam_id": "neet_medical",
+      "private_role_ids": []
     },
     {
       "canonical_id": "architect",
       "label": "Architect",
-      "tags": ["science", "creative"],
+      "tags": [],
       "salary_explorer_id": 16,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "arch",
-      "plan_b_exam_id": "nid_nift_design"
+      "plan_b_exam_id": "nid_nift_design",
+      "private_role_ids": []
     },
     {
       "canonical_id": "psychologist_counsellor",
       "label": "Psychologist / Counsellor",
-      "tags": ["arts", "science"],
+      "tags": [],
       "salary_explorer_id": 17,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "psych",
-      "plan_b_exam_id": "cuet_ug"
+      "plan_b_exam_id": "cuet_ug",
+      "private_role_ids": []
     },
     {
       "canonical_id": "bba_mba_management",
       "label": "BBA + MBA (Management)",
-      "tags": ["commerce"],
+      "tags": [],
       "salary_explorer_id": 18,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "cat",
       "plan_b_exam_id": "cat_mba",
-      "private_role_ids": ["operations_associate"]
+      "private_role_ids": [
+        "operations_associate"
+      ]
     },
     {
       "canonical_id": "defence_officer",
       "label": "Defence Officer (NDA / CDS)",
-      "tags": ["govt", "science"],
+      "tags": [],
       "salary_explorer_id": 19,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "nda",
-      "plan_b_exam_id": "nda_defence"
+      "plan_b_exam_id": "nda_defence",
+      "private_role_ids": []
     },
     {
       "canonical_id": "social_worker_ngo",
       "label": "Social Worker / NGO Professional",
-      "tags": ["arts"],
+      "tags": [],
       "salary_explorer_id": 21,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "social",
-      "plan_b_exam_id": "cuet_ug"
+      "plan_b_exam_id": "cuet_ug",
+      "private_role_ids": []
     },
     {
       "canonical_id": "commercial_pilot",
       "label": "Commercial Pilot",
-      "tags": ["science"],
+      "tags": [],
       "salary_explorer_id": 22,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "pilot",
-      "plan_b_exam_id": "nda_defence"
+      "plan_b_exam_id": "nda_defence",
+      "private_role_ids": []
     },
     {
       "canonical_id": "fashion_designer",
       "label": "Fashion Designer",
-      "tags": ["creative"],
+      "tags": [],
       "salary_explorer_id": 23,
       "roi_career_id": null,
       "skill_gap_job_id": "graphic_designer",
       "exam_roadmap_career_id": "nift",
-      "plan_b_exam_id": "nid_nift_design"
+      "plan_b_exam_id": "nid_nift_design",
+      "private_role_ids": []
     },
     {
       "canonical_id": "event_manager",
       "label": "Event Manager",
-      "tags": ["creative", "commerce"],
+      "tags": [],
       "salary_explorer_id": 24,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "event",
-      "plan_b_exam_id": "cat_mba"
+      "plan_b_exam_id": "cat_mba",
+      "private_role_ids": []
     },
     {
       "canonical_id": "biotechnology_life_sciences",
       "label": "Biotechnology / Life Sciences",
-      "tags": ["science"],
+      "tags": [],
       "salary_explorer_id": 25,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "biotech",
-      "plan_b_exam_id": "gate_pg"
+      "plan_b_exam_id": "gate_pg",
+      "private_role_ids": []
     },
     {
       "canonical_id": "hr_manager",
       "label": "HR Manager / Human Resources",
-      "tags": ["commerce", "any"],
+      "tags": [],
       "salary_explorer_id": 26,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "cat",
       "plan_b_exam_id": "cat_mba",
-      "private_role_ids": ["hr_recruiter_entry"]
+      "private_role_ids": [
+        "hr_recruiter_entry"
+      ]
     },
     {
       "canonical_id": "animator_game_designer",
       "label": "Animator / Game Designer",
-      "tags": ["creative"],
+      "tags": [],
       "salary_explorer_id": 27,
       "roi_career_id": null,
       "skill_gap_job_id": "graphic_designer",
       "exam_roadmap_career_id": "design",
-      "plan_b_exam_id": "nid_nift_design"
+      "plan_b_exam_id": "nid_nift_design",
+      "private_role_ids": []
     },
     {
       "canonical_id": "actuarial_scientist",
       "label": "Actuarial Scientist",
-      "tags": ["commerce", "science"],
+      "tags": [],
       "salary_explorer_id": 28,
       "roi_career_id": null,
       "skill_gap_job_id": "data_analyst",
       "exam_roadmap_career_id": "cat",
-      "plan_b_exam_id": "cat_mba"
+      "plan_b_exam_id": "cat_mba",
+      "private_role_ids": []
     },
     {
       "canonical_id": "supply_chain_logistics",
       "label": "Supply Chain / Logistics Manager",
-      "tags": ["commerce"],
+      "tags": [],
       "salary_explorer_id": 29,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "cat",
       "plan_b_exam_id": "cat_mba",
-      "private_role_ids": ["logistics_coordinator"]
+      "private_role_ids": [
+        "logistics_coordinator"
+      ]
     },
     {
       "canonical_id": "ayush_doctor",
       "label": "AYUSH Doctor (BAMS / BHMS)",
-      "tags": ["healthcare", "science"],
+      "tags": [],
       "salary_explorer_id": 30,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "ayush",
-      "plan_b_exam_id": "neet_medical"
+      "plan_b_exam_id": "neet_medical",
+      "private_role_ids": []
     },
     {
       "canonical_id": "content_creator_youtuber",
       "label": "Content Creator / YouTuber",
-      "tags": ["creative"],
+      "tags": [],
       "salary_explorer_id": 31,
       "roi_career_id": null,
       "skill_gap_job_id": "content_writer",
       "exam_roadmap_career_id": "content",
-      "plan_b_exam_id": null
+      "plan_b_exam_id": null,
+      "private_role_ids": []
     },
     {
       "canonical_id": "electrician_electrical_tech",
       "label": "Electrician / Electrical Tech (ITI)",
-      "tags": ["trades"],
+      "tags": [],
       "salary_explorer_id": 32,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "iti",
-      "plan_b_exam_id": null
+      "plan_b_exam_id": null,
+      "private_role_ids": []
     },
     {
       "canonical_id": "dietitian_nutritionist",
       "label": "Dietitian / Nutritionist",
-      "tags": ["healthcare", "science"],
+      "tags": [],
       "salary_explorer_id": 33,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "mph",
-      "plan_b_exam_id": "neet_medical"
+      "plan_b_exam_id": "neet_medical",
+      "private_role_ids": []
     },
     {
       "canonical_id": "environmental_green_energy",
       "label": "Environmental Science / Green Energy",
-      "tags": ["science"],
+      "tags": [],
       "salary_explorer_id": 34,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "enviro",
-      "plan_b_exam_id": "gate_pg"
+      "plan_b_exam_id": "gate_pg",
+      "private_role_ids": []
     },
     {
       "canonical_id": "statistician_data_analyst_bsc",
       "label": "Statistician / Data Analyst (BSc)",
-      "tags": ["science"],
+      "tags": [],
       "salary_explorer_id": 35,
       "roi_career_id": "data_analyst",
       "skill_gap_job_id": "data_analyst",
       "exam_roadmap_career_id": "gate",
-      "plan_b_exam_id": "gate_pg"
+      "plan_b_exam_id": "gate_pg",
+      "private_role_ids": []
     },
     {
       "canonical_id": "cgpsc_state_services",
       "label": "CGPSC Officer (State Civil Services)",
-      "tags": ["govt", "arts"],
+      "tags": [],
       "salary_explorer_id": 36,
       "roi_career_id": null,
       "skill_gap_job_id": "govt_jobs_admin",
       "exam_roadmap_career_id": "cgpsc",
-      "plan_b_exam_id": "upsc_csds"
+      "plan_b_exam_id": "upsc_csds",
+      "private_role_ids": []
     },
     {
       "canonical_id": "hotel_hospitality",
       "label": "Hotel Management / Hospitality",
-      "tags": ["commerce", "any"],
+      "tags": [],
       "salary_explorer_id": 37,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "hotel",
-      "plan_b_exam_id": "cat_mba"
+      "plan_b_exam_id": "cat_mba",
+      "private_role_ids": []
     },
     {
       "canonical_id": "fitness_trainer_sports",
       "label": "Fitness Trainer / Sports Coach",
-      "tags": ["any"],
+      "tags": [],
       "salary_explorer_id": 38,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "fitness",
-      "plan_b_exam_id": "cuet_ug"
+      "plan_b_exam_id": "cuet_ug",
+      "private_role_ids": []
     },
     {
       "canonical_id": "public_health_professional",
       "label": "Public Health Professional",
-      "tags": ["healthcare", "science"],
+      "tags": [],
       "salary_explorer_id": 39,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "mph",
-      "plan_b_exam_id": "neet_medical"
+      "plan_b_exam_id": "neet_medical",
+      "private_role_ids": []
     },
     {
       "canonical_id": "occupational_therapist",
       "label": "Occupational Therapist",
-      "tags": ["healthcare", "science"],
+      "tags": [],
       "salary_explorer_id": 40,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "neet",
-      "plan_b_exam_id": "neet_medical"
+      "plan_b_exam_id": "neet_medical",
+      "private_role_ids": []
     },
     {
       "canonical_id": "dentist_bds",
       "label": "Dentist (BDS / MDS)",
-      "tags": ["healthcare", "science"],
+      "tags": [],
       "salary_explorer_id": 41,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "neetbds",
-      "plan_b_exam_id": "neet_medical"
+      "plan_b_exam_id": "neet_medical",
+      "private_role_ids": []
     },
     {
       "canonical_id": "physiotherapist_bpt",
       "label": "Physiotherapist (BPT)",
-      "tags": ["healthcare", "science"],
+      "tags": [],
       "salary_explorer_id": 42,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "neet",
-      "plan_b_exam_id": "neet_medical"
+      "plan_b_exam_id": "neet_medical",
+      "private_role_ids": []
     },
     {
       "canonical_id": "company_secretary",
       "label": "Company Secretary (CS)",
-      "tags": ["commerce"],
+      "tags": [],
       "salary_explorer_id": 43,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "cs",
-      "plan_b_exam_id": "ca_foundation"
+      "plan_b_exam_id": "ca_foundation",
+      "private_role_ids": []
     },
     {
       "canonical_id": "cost_accountant_cma",
       "label": "Cost & Management Accountant (CMA India)",
-      "tags": ["commerce"],
+      "tags": [],
       "salary_explorer_id": 44,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "ca",
-      "plan_b_exam_id": "ca_foundation"
+      "plan_b_exam_id": "ca_foundation",
+      "private_role_ids": []
     },
     {
       "canonical_id": "ai_ml_engineer",
       "label": "AI / ML Engineer",
-      "tags": ["tech", "science"],
+      "tags": [],
       "salary_explorer_id": 45,
       "roi_career_id": "software_engineer",
       "skill_gap_job_id": "software_developer",
       "exam_roadmap_career_id": "jee",
-      "plan_b_exam_id": "jee_engineering"
+      "plan_b_exam_id": "jee_engineering",
+      "private_role_ids": []
     },
     {
       "canonical_id": "cybersecurity_analyst",
       "label": "Cybersecurity Analyst / SOC",
-      "tags": ["tech"],
+      "tags": [],
       "salary_explorer_id": 46,
       "roi_career_id": "software_engineer",
       "skill_gap_job_id": "software_developer",
       "exam_roadmap_career_id": "gate",
-      "plan_b_exam_id": "gate_pg"
+      "plan_b_exam_id": "gate_pg",
+      "private_role_ids": []
     },
     {
       "canonical_id": "civil_judge_judicial",
       "label": "Civil Judge (Judicial Services)",
-      "tags": ["govt", "arts"],
+      "tags": [],
       "salary_explorer_id": 47,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "law",
-      "plan_b_exam_id": "clat_law"
+      "plan_b_exam_id": "clat_law",
+      "private_role_ids": []
     },
     {
       "canonical_id": "scientist_csir",
       "label": "Scientist / Technical Officer (CSIR / Labs)",
-      "tags": ["science", "govt"],
+      "tags": [],
       "salary_explorer_id": 48,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "gate",
-      "plan_b_exam_id": "csir_net_sciences"
+      "plan_b_exam_id": "csir_net_sciences",
+      "private_role_ids": []
     },
     {
       "canonical_id": "agricultural_officer",
       "label": "Agricultural Officer / Extension (State Services)",
-      "tags": ["science", "govt"],
+      "tags": [],
       "salary_explorer_id": 49,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "agritech",
-      "plan_b_exam_id": "upsc_csds"
+      "plan_b_exam_id": "upsc_csds",
+      "private_role_ids": []
     },
     {
       "canonical_id": "medical_lab_technologist",
       "label": "Medical Lab Technologist (BMLT / DMLT)",
-      "tags": ["healthcare", "science"],
+      "tags": [],
       "salary_explorer_id": 50,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "neet",
-      "plan_b_exam_id": "neet_medical"
+      "plan_b_exam_id": "neet_medical",
+      "private_role_ids": []
     },
     {
       "canonical_id": "radiographer_imaging",
       "label": "Radiographer / Imaging Technologist",
-      "tags": ["healthcare", "science"],
+      "tags": [],
       "salary_explorer_id": 51,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "neet",
-      "plan_b_exam_id": "neet_medical"
+      "plan_b_exam_id": "neet_medical",
+      "private_role_ids": []
     },
     {
       "canonical_id": "veterinarian_bvsc",
       "label": "Veterinarian (BVSc)",
-      "tags": ["healthcare", "science"],
+      "tags": [],
       "salary_explorer_id": 52,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "neet",
-      "plan_b_exam_id": "neet_medical"
+      "plan_b_exam_id": "neet_medical",
+      "private_role_ids": []
     },
     {
       "canonical_id": "interior_designer",
       "label": "Interior Designer / Spatial Designer",
-      "tags": ["creative"],
+      "tags": [],
       "salary_explorer_id": 53,
       "roi_career_id": null,
       "skill_gap_job_id": "graphic_designer",
       "exam_roadmap_career_id": "design",
-      "plan_b_exam_id": "nid_nift_design"
+      "plan_b_exam_id": "nid_nift_design",
+      "private_role_ids": []
     },
     {
       "canonical_id": "sales_business_development",
       "label": "Sales / Business Development (B2B)",
-      "tags": ["commerce", "any"],
+      "tags": [],
       "salary_explorer_id": 54,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "cat",
       "plan_b_exam_id": "cat_mba",
-      "private_role_ids": ["sales_executive_b2b", "business_development_associate"]
+      "private_role_ids": [
+        "sales_executive_b2b",
+        "business_development_associate"
+      ]
     },
     {
       "canonical_id": "welder_fabricator",
       "label": "Welder / Fabricator (Advanced trades)",
-      "tags": ["trades"],
+      "tags": [],
       "salary_explorer_id": 55,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "iti",
-      "plan_b_exam_id": null
+      "plan_b_exam_id": null,
+      "private_role_ids": []
     },
     {
       "canonical_id": "chef_culinary",
       "label": "Chef / Culinary Professional",
-      "tags": ["any"],
+      "tags": [],
       "salary_explorer_id": 56,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "hotel",
-      "plan_b_exam_id": "cat_mba"
+      "plan_b_exam_id": "cat_mba",
+      "private_role_ids": []
     },
     {
       "canonical_id": "electrical_engineer_power",
       "label": "Electrical Engineer (Power Systems)",
-      "tags": ["science", "engineering"],
+      "tags": [],
       "salary_explorer_id": 57,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "gate",
-      "plan_b_exam_id": "gate_pg"
+      "plan_b_exam_id": "gate_pg",
+      "private_role_ids": []
     },
     {
       "canonical_id": "clinical_research_associate",
       "label": "Clinical Research Associate (CRA)",
-      "tags": ["healthcare", "science"],
+      "tags": [],
       "salary_explorer_id": 58,
       "roi_career_id": null,
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "pharma",
-      "plan_b_exam_id": "neet_medical"
+      "plan_b_exam_id": "neet_medical",
+      "private_role_ids": []
     }
   ],
   "tool_integration": {
-    "schema_version": 1,
-    "documentation": "docs/tool-integration.md",
-    "registry_row_fields": [
-      "canonical_id",
-      "salary_explorer_id",
-      "roi_career_id",
-      "skill_gap_job_id",
-      "exam_roadmap_career_id",
-      "plan_b_exam_id",
-        "private_role_ids",
-      "tags"
-    ],
-    "client_modules": [
-      "assets/pehchaan_journey.js",
-      "assets/pehchaan_career_registry_prefill.js",
-      "assets/pehchaan_tool_links.js"
+    "paths": [
+      "Tools/pehchaan_salary_explorer.html",
+      "Tools/pehchaan_exam_roadmap.html",
+      "Tools/pehchaan_career_roi_reality_bridge.html",
+      "Tools/pehchaan_plan_b_strategy_builder.html",
+      "Tools/pehchaan_skill_gap_analyser.html",
+      "Tools/pehchaan_college_finder.html"
     ]
   }
 }

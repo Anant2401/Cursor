@@ -1,0 +1,353 @@
+{
+  "meta": {
+    "shard_type": "programs",
+    "state_id": "MP",
+    "state_label": "Madhya Pradesh",
+    "count": 19,
+    "generated_on": "2026-05-07"
+  },
+  "programs": [
+    {
+      "id": "iit_indore_engineering_engineering_generic_state_comfort_mp",
+      "college_id": "iit_indore",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — IIT / NIT"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "manit_bhopal_engineering_engineering_generic_state_comfort_mp",
+      "college_id": "manit_bhopal",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — IIT / NIT"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "iiitdm_jabalpur_engineering_engineering_generic_state_comfort_mp",
+      "college_id": "iiitdm_jabalpur",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — IIITDM Jabalpur & state universities"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "uit_rgpv_davv_clusters_verify_programmes_engineering_engineering_generic_state_c",
+      "college_id": "uit_rgpv_davv_clusters_verify_programmes",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — IIITDM Jabalpur & state universities"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "private_engineering_colleges_across_mp_engineering_engineering_generic_state_com",
+      "college_id": "private_engineering_colleges_across_mp",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier C — RGPV-affiliated private colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "manit_bhopal_engineering_engineering_generic_state_comfort",
+      "college_id": "manit_bhopal",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "manit_bhopal_architecture_architecture_generic_state_comfort",
+      "college_id": "manit_bhopal",
+      "stream_id": "architecture",
+      "course_id": "architecture_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "aiims_bhopal_medicine_medicine_mbbs_state_comfort",
+      "college_id": "aiims_bhopal",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "devi_ahilya_vishwavidyalaya_commerce_commerce_generic_state_comfort",
+      "college_id": "devi_ahilya_vishwavidyalaya",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "devi_ahilya_vishwavidyalaya_management_management_generic_state_comfort",
+      "college_id": "devi_ahilya_vishwavidyalaya",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "devi_ahilya_vishwavidyalaya_science_stats_science_stats_generic_state_comfort",
+      "college_id": "devi_ahilya_vishwavidyalaya",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "devi_ahilya_vishwavidyalaya_humanities_humanities_generic_state_comfort",
+      "college_id": "devi_ahilya_vishwavidyalaya",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "devi_ahilya_vishwavidyalaya_education_education_generic_state_comfort",
+      "college_id": "devi_ahilya_vishwavidyalaya",
+      "stream_id": "education",
+      "course_id": "education_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "devi_ahilya_vishwavidyalaya_pharmacy_pharmacy_generic_state_comfort",
+      "college_id": "devi_ahilya_vishwavidyalaya",
+      "stream_id": "pharmacy",
+      "course_id": "pharmacy_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "devi_ahilya_vishwavidyalaya_law_law_generic_state_comfort",
+      "college_id": "devi_ahilya_vishwavidyalaya",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nliu_bhopal_law_law_generic_state_comfort",
+      "college_id": "nliu_bhopal",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nliu_bhopal_humanities_humanities_generic_state_comfort",
+      "college_id": "nliu_bhopal",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nanaji_deshmukh_veterinary_university_jabalpur_veterinary_veterinary_generic_sta",
+      "college_id": "nanaji_deshmukh_veterinary_university_jabalpur",
+      "stream_id": "veterinary",
+      "course_id": "veterinary_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nanaji_deshmukh_veterinary_university_jabalpur_science_stats_science_stats_gener",
+      "college_id": "nanaji_deshmukh_veterinary_university_jabalpur",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    }
+  ]
+}

@@ -6,8 +6,11 @@
   var CACHE = null;
   var CACHE_PROMISE = null;
 
-  function registryUrl() {
-    return "../DB/pehchaan_career_registry.json";
+  function registryUrls() {
+    return [
+      "../DB/canonical/_id_map.json",
+      "../DB/pehchaan_career_registry.json"
+    ];
   }
 
   function mergeParams() {
@@ -24,7 +27,7 @@
       } catch (e2) {}
     }
     var out = Object.assign({}, j, u);
-    ["career", "stream", "class", "state", "exam", "job", "private_role_id", "metro", "role_family", "readiness_band", "from", "roiBand", "profile"].forEach(function (k) {
+    ["career", "stream", "class", "state", "exam", "job", "private_role_id", "metro", "role_family", "readiness_band", "course", "from", "roiBand", "profile"].forEach(function (k) {
       if (out[k] == null || out[k] === "") delete out[k];
     });
     return out;
@@ -33,17 +36,22 @@
   function load() {
     if (CACHE) return Promise.resolve(CACHE);
     if (CACHE_PROMISE) return CACHE_PROMISE;
-    CACHE_PROMISE = fetch(registryUrl(), { cache: "no-store" })
-      .then(function (r) {
-        if (!r.ok) throw new Error("registry HTTP " + r.status);
-        return r.json();
-      })
+    var loader = window.PehchaanDbAdapters && typeof PehchaanDbAdapters.loadFirstAvailable === "function"
+      ? PehchaanDbAdapters.loadFirstAvailable(registryUrls())
+      : fetch(registryUrls()[1], { cache: "no-store" }).then(function (r) {
+          if (!r.ok) throw new Error("registry HTTP " + r.status);
+          return r.json();
+        });
+    CACHE_PROMISE = loader
       .then(function (data) {
+        var rows = Array.isArray(data && data.careers) ? data.careers : [];
         var byCanon = {};
-        (data.careers || []).forEach(function (row) {
+        rows.forEach(function (row) {
+          if (row && row.career_id && !row.canonical_id) row.canonical_id = row.career_id;
+          if (row && row.canonical_id && !row.career_id) row.career_id = row.canonical_id;
           if (row && row.canonical_id) byCanon[row.canonical_id] = row;
         });
-        CACHE = { raw: data, byCanonical: byCanon, list: data.careers || [] };
+        CACHE = { raw: data, byCanonical: byCanon, list: rows };
         return CACHE;
       })
       .catch(function (err) {

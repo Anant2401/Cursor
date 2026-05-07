@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "schema_version": "1.0.0",
+    "generated_on": "2026-05-07"
+  },
+  "states": [
+    {
+      "state_id": "IN",
+      "file": "DB/shards/institutions/IN.json",
+      "count": 33
+    },
+    {
+      "state_id": "CG",
+      "file": "DB/shards/institutions/CG.json",
+      "count": 14
+    },
+    {
+      "state_id": "DL",
+      "file": "DB/shards/institutions/DL.json",
+      "count": 8
+    },
+    {
+      "state_id": "MH",
+      "file": "DB/shards/institutions/MH.json",
+      "count": 40
+    },
+    {
+      "state_id": "KA",
+      "file": "DB/shards/institutions/KA.json",
+      "count": 26
+    },
+    {
+      "state_id": "TN",
+      "file": "DB/shards/institutions/TN.json",
+      "count": 10
+    },
+    {
+      "state_id": "TS",
+      "file": "DB/shards/institutions/TS.json",
+      "count": 10
+    },
+    {
+      "state_id": "UP",
+      "file": "DB/shards/institutions/UP.json",
+      "count": 26
+    },
+    {
+      "state_id": "RJ",
+      "file": "DB/shards/institutions/RJ.json",
+      "count": 9
+    },
+    {
+      "state_id": "WB",
+      "file": "DB/shards/institutions/WB.json",
+      "count": 9
+    },
+    {
+      "state_id": "OD",
+      "file": "DB/shards/institutions/OD.json",
+      "count": 4
+    },
+    {
+      "state_id": "MP",
+      "file": "DB/shards/institutions/MP.json",
+      "count": 20
+    }
+  ]
+}

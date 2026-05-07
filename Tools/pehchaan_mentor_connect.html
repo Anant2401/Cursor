@@ -47,15 +47,6 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 .hero-stat{background:rgba(255,255,255,.1);border-radius:12px;padding:14px 8px;text-align:center;border:1px solid rgba(255,255,255,.12);}
 .hero-stat .v{font-size:22px;font-weight:700;color:var(--amber);}
 .hero-stat .l{font-size:11px;opacity:.75;margin-top:2px;}
-.name-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:16px 18px;margin-top:16px;}
-.name-card .name-card-lead{font-size:13px;font-weight:600;display:block;margin-bottom:12px;line-height:1.45;}
-.name-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-.name-field{display:flex;flex-direction:column;gap:6px;min-width:0;}
-.name-field-label{font-size:11px;font-weight:600;opacity:.88;letter-spacing:.02em;}
-.name-field-label .name-optional{font-weight:500;opacity:.72;}
-.name-input{width:100%;padding:11px 12px;border-radius:10px;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);color:var(--white);font-family:'Poppins',sans-serif;font-size:13px;outline:none;transition:border-color .2s;}
-.name-input:focus{border-color:var(--amber);}
-.name-input::placeholder{color:rgba(255,255,255,.5);}
 
 /* CARD */
 .card{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:22px 20px;margin-bottom:14px;box-shadow:var(--shadow);}
@@ -258,7 +249,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 
 <!-- TOPBAR -->
 <div class="topbar">
-  <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+  <a class="topbar-back" href="../index.html#tools" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
   <a class="topbar-brand" href="../index.html">
   <div class="topbar-logo">
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -287,19 +278,6 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
       <div class="hero-stat"><div class="v">🤝</div><div class="l">Real connection</div></div>
       <div class="hero-stat"><div class="v">3</div><div class="l">Ways to search</div></div>
       <div class="hero-stat"><div class="v">100%</div><div class="l">Freemium</div></div>
-    </div>
-    <div class="name-card">
-      <span class="name-card-lead">What is your name? (We weave it into draft messages so you sound like yourself, not a template)</span>
-      <div class="name-grid">
-        <div class="name-field">
-          <span class="name-field-label">First Name</span>
-          <input class="name-input" id="input-first-name" type="text" placeholder="Anant" autocomplete="given-name">
-        </div>
-        <div class="name-field">
-          <span class="name-field-label">Last Name <span class="name-optional">(optional)</span></span>
-          <input class="name-input" id="input-last-name" type="text" placeholder="Tripathi" autocomplete="family-name">
-        </div>
-      </div>
     </div>
   </div>
 
@@ -400,6 +378,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
     <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
     <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
     hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+    <p>This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p>
   </div>
 </div>
 
@@ -513,7 +492,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 <!-- SCREEN 2: LOADING -->
 <div id="screen-loading" class="hidden">
   <div class="topbar">
-    <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+    <a class="topbar-back" href="../index.html#tools" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
     <a class="topbar-brand" href="../index.html">
     <div class="topbar-logo">
       <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -551,6 +530,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
     <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
     <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
     hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+    <p>This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p>
   </div>
 </div>
 
@@ -955,26 +935,13 @@ function applyMentorContextPrefill() {
 // ─────────────────────────────────────────────────────────────────
 // MAIN SEARCH
 // ─────────────────────────────────────────────────────────────────
-function getStudentDisplayName(first, last) {
-  var f = String(first || '').trim();
-  var l = String(last || '').trim();
-  if (!f) return '';
-  return l ? f + ' ' + l : f;
-}
-
 async function runSearch() {
-  var firstName = document.getElementById('input-first-name').value.trim();
-  var lastName  = document.getElementById('input-last-name').value.trim();
   var city      = document.getElementById('input-city').value.trim();
   var state     = document.getElementById('input-state').value;
   var company   = document.getElementById('input-company').value.trim();
   var target    = document.getElementById('input-target').value.trim();
   var college   = document.getElementById('input-college').value.trim();
 
-  if (!firstName) {
-    alert('Add your first name — we use it in your draft messages so you show up as a real student, not spam.');
-    return;
-  }
   if (!city || !company) {
     alert('Tell us your hometown and the company or role you are aiming for. That is how we find people whose path might match yours.');
     return;
@@ -986,8 +953,6 @@ async function runSearch() {
     company: company,
     target: target,
     college: college,
-    firstName: firstName,
-    lastName: lastName,
     roleFamily: mentorContextPrefill.role_family || ''
   };
 
@@ -1095,16 +1060,13 @@ function buildResults(curated, google, googleErr) {
   var company = searchState.company;
   var target  = searchState.target;
   var college = searchState.college;
-  var studentDisplay = getStudentDisplayName(searchState.firstName, searchState.lastName);
 
   var html = '';
 
   // ── SUMMARY HEADER (matches Exam Roadmap res-hero; student-first tone) ──
   html += '<div class="res-hero">';
   html += '<div class="res-hero-label">Mentor Connect — your space</div>';
-  if (studentDisplay) {
-    html += '<div class="res-hero-name">Hi, ' + escHtml(studentDisplay) + '</div>';
-  }
+  html += '<div class="res-hero-name">Your mentor search results</div>';
   html += '<div class="res-hero-sub">From ' + escHtml(city) + ' · dreaming toward ' + escHtml(company) + '</div>';
   if (target) {
     html += '<div class="res-hero-target">Focus area: ' + escHtml(target) + '</div>';
@@ -1179,9 +1141,6 @@ function buildResults(curated, google, googleErr) {
       role_family: ctxParams.role_family || roleFamilyGuess
     });
   }
-  if (window.PehchaanToolLinks) {
-    html += PehchaanToolLinks.wrapNextCard('More Pehchaan tools', PehchaanToolLinks.buildMentorSearchResultInner());
-  }
   if (window.PehchaanToolRecommendations) {
     var rec = PehchaanToolRecommendations.buildNextToolRecommendations(
       PehchaanToolRecommendations.TOOL.mentor,
@@ -1224,7 +1183,7 @@ function mentorHasLinkedInUrl(urlNorm) {
 
 function buildMentorCard(m, searchCity, searchCompany, cardIndex) {
   var idx = typeof cardIndex === 'number' ? cardIndex : 0;
-  var sd = getStudentDisplayName(searchState.firstName, searchState.lastName);
+  var sd = '';
   var icebreaker = generateIcebreaker(m.name, m.hometown || searchCity, m.college || '', m.company, m.city || '', sd, searchState.roleFamily || '');
   var steps = Array.isArray(m.journeyPath) ? m.journeyPath : [];
   var pathHtml = steps.map(function (p, i) {
@@ -1276,7 +1235,7 @@ function buildMentorCard(m, searchCity, searchCompany, cardIndex) {
 function buildGoogleCard(r, searchCity, searchCompany, idx) {
   var initials = r.name.split(' ').slice(0, 2).map(function(w){ return w[0] || '?'; }).join('').toUpperCase();
   var cleanLink = r.link;
-  var sd = getStudentDisplayName(searchState.firstName, searchState.lastName);
+  var sd = '';
   var icebreaker = generateIcebreaker(r.name, searchCity, '', searchCompany, '', sd, searchState.roleFamily || '');
   var iceId = 'gice-' + String(idx);
 
@@ -1334,7 +1293,7 @@ function buildLIQuery(parts) {
 }
 
 function buildIcebreakerGenerator(city, college, company, target) {
-  var sd = getStudentDisplayName(searchState.firstName, searchState.lastName);
+  var sd = '';
   var generic = generateIcebreaker('[Mentor Name]', city, college, company, target, sd, searchState.roleFamily || '');
   return '<div class="card">'
     + '<h3>✉️ A starter message for anyone you pick</h3>'

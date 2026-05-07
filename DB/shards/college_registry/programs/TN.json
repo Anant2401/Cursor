@@ -1,0 +1,443 @@
+{
+  "meta": {
+    "shard_type": "programs",
+    "state_id": "TN",
+    "state_label": "Tamil Nadu",
+    "count": 24,
+    "generated_on": "2026-05-07"
+  },
+  "programs": [
+    {
+      "id": "iit_madras_engineering_engineering_generic_state_comfort_tn",
+      "college_id": "iit_madras",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — IIT / top national in TN"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nit_tiruchirappalli_engineering_engineering_generic_state_comfort_tn",
+      "college_id": "nit_tiruchirappalli",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — IIT / top national in TN"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "college_of_engineering_guindy_ceg_anna_university_engineering_engineering_generi",
+      "college_id": "college_of_engineering_guindy_ceg_anna_university",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Imported from Plan B bundle tier: Tier B — Anna University & autonomous colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "psg_college_of_technology_engineering_engineering_generic_state_comfort_tn",
+      "college_id": "psg_college_of_technology",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — Anna University & autonomous colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "ssn_college_of_engineering_engineering_engineering_generic_state_comfort_tn",
+      "college_id": "ssn_college_of_engineering",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — Anna University & autonomous colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "affiliated_engineering_colleges_under_anna_university_engineering_engineering_ge",
+      "college_id": "affiliated_engineering_colleges_under_anna_university",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Imported from Plan B bundle tier: Tier C — wide affiliated network"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "madras_medical_college_mmc_medicine_medicine_mbbs_state_comfort_tn",
+      "college_id": "madras_medical_college_mmc",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Imported from Plan B bundle tier: Tier A — Chennai flagship GMCs"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "stanley_medical_college_medicine_medicine_mbbs_state_comfort_tn",
+      "college_id": "stanley_medical_college",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — Chennai flagship GMCs"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "gmcs_in_madurai_coimbatore_tirunelveli_examples_medicine_medicine_mbbs_state_com",
+      "college_id": "gmcs_in_madurai_coimbatore_tirunelveli_examples",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — regional GMCs"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "private_medical_colleges_across_tn_medicine_medicine_mbbs_state_comfort_tn",
+      "college_id": "private_medical_colleges_across_tn",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier C — private & deemed"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "anna_university_engineering_engineering_generic_state_comfort",
+      "college_id": "anna_university",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "anna_university_architecture_architecture_generic_state_comfort",
+      "college_id": "anna_university",
+      "stream_id": "architecture",
+      "course_id": "architecture_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "anna_university_management_management_generic_state_comfort",
+      "college_id": "anna_university",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "madras_medical_college_medicine_medicine_mbbs_state_comfort",
+      "college_id": "madras_medical_college",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_madras_commerce_commerce_generic_state_comfort",
+      "college_id": "university_of_madras",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_madras_science_stats_science_stats_generic_state_comfort",
+      "college_id": "university_of_madras",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_madras_humanities_humanities_generic_state_comfort",
+      "college_id": "university_of_madras",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_madras_education_education_generic_state_comfort",
+      "college_id": "university_of_madras",
+      "stream_id": "education",
+      "course_id": "education_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_madras_management_management_generic_state_comfort",
+      "college_id": "university_of_madras",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nlu_tiruchirappalli_law_law_generic_state_comfort",
+      "college_id": "nlu_tiruchirappalli",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nlu_tiruchirappalli_humanities_humanities_generic_state_comfort",
+      "college_id": "nlu_tiruchirappalli",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_chennai_fashion_media_fashion_media_generic_state_comfort",
+      "college_id": "nift_chennai",
+      "stream_id": "fashion_media",
+      "course_id": "fashion_media_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_chennai_design_design_generic_state_comfort",
+      "college_id": "nift_chennai",
+      "stream_id": "design",
+      "course_id": "design_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_chennai_management_management_generic_state_comfort",
+      "college_id": "nift_chennai",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    }
+  ]
+}

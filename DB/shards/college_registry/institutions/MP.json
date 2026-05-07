@@ -1,0 +1,308 @@
+{
+  "meta": {
+    "shard_type": "institutions",
+    "state_id": "MP",
+    "state_label": "Madhya Pradesh",
+    "count": 9,
+    "generated_on": "2026-05-07"
+  },
+  "institutions": [
+    {
+      "id": "iit_indore",
+      "name": "IIT Indore",
+      "state_id": "MP",
+      "city": "Indore",
+      "type": "IIT",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iiti.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating IIT Indore for stream-aligned pathways in and around Indore.",
+        "specialization": "IIT Indore is positioned as a iit with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "IIT Indore contributes a distinct local option in Indore and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose IIT Indore when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "JEE Advanced."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iiti.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "manit_bhopal",
+      "name": "MANIT Bhopal",
+      "state_id": "MP",
+      "city": "Bhopal",
+      "type": "NIT",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.manit.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating MANIT Bhopal for stream-aligned pathways in and around Bhopal.",
+        "specialization": "MANIT Bhopal is positioned as a nit with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "MANIT Bhopal contributes a distinct local option in Bhopal and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose MANIT Bhopal when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "JoSAA."
+      },
+      "verification": {
+        "nirf_band": "Strong NIT — verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.manit.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "iiitdm_jabalpur",
+      "name": "IIITDM Jabalpur",
+      "state_id": "MP",
+      "city": "Jabalpur",
+      "type": "IIIT",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iiitdmj.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating IIITDM Jabalpur for stream-aligned pathways in and around Jabalpur.",
+        "specialization": "IIITDM Jabalpur is positioned as a iiit with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "IIITDM Jabalpur contributes a distinct local option in Jabalpur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose IIITDM Jabalpur when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Design/manufacturing tilt — read curriculum fit."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iiitdmj.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "uit_rgpv_davv_clusters_verify_programmes",
+      "name": "UIT RGPV / DAVV clusters (verify programmes)",
+      "state_id": "MP",
+      "city": "Bhopal / Indore",
+      "type": "State",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.rgpv.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating UIT RGPV / DAVV clusters (verify programmes) for stream-aligned pathways in and around Bhopal / Indore.",
+        "specialization": "UIT RGPV / DAVV clusters (verify programmes) is positioned as a state with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "UIT RGPV / DAVV clusters (verify programmes) contributes a distinct local option in Bhopal / Indore and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose UIT RGPV / DAVV clusters (verify programmes) when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Lower fee; you must own skill-building via clubs and internships."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.rgpv.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "private_engineering_colleges_across_mp",
+      "name": "Private engineering colleges across MP",
+      "state_id": "MP",
+      "city": "Multiple cities",
+      "type": "Private",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.aicte-india.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students evaluating Private engineering colleges across MP for stream-aligned pathways in and around Multiple cities.",
+        "specialization": "Private engineering colleges across MP is positioned as a private with  context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Private engineering colleges across MP contributes a distinct local option in Multiple cities and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Private engineering colleges across MP when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Verify NBA; avoid colleges with frequent exam postponement patterns (ask seniors)."
+      },
+      "verification": {
+        "nirf_band": "Wide",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.aicte-india.org/"
+        ]
+      }
+    },
+    {
+      "id": "aiims_bhopal",
+      "name": "All India Institute of Medical Sciences Bhopal",
+      "state_id": "MP",
+      "city": "Bhopal",
+      "type": "Institute of national importance",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.aiimsbhopal.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students evaluating All India Institute of Medical Sciences Bhopal for stream-aligned pathways in and around Bhopal.",
+        "specialization": "All India Institute of Medical Sciences Bhopal is positioned as a institute of national importance with public context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "All India Institute of Medical Sciences Bhopal contributes a distinct local option in Bhopal and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose All India Institute of Medical Sciences Bhopal when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.aiimsbhopal.edu.in/"
+        ]
+      }
+    },
+    {
+      "id": "devi_ahilya_vishwavidyalaya",
+      "name": "Devi Ahilya Vishwavidyalaya",
+      "state_id": "MP",
+      "city": "Indore",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.dauniv.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students evaluating Devi Ahilya Vishwavidyalaya for stream-aligned pathways in and around Indore.",
+        "specialization": "Devi Ahilya Vishwavidyalaya is positioned as a state university with public context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Devi Ahilya Vishwavidyalaya contributes a distinct local option in Indore and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Devi Ahilya Vishwavidyalaya when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.dauniv.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "nliu_bhopal",
+      "name": "National Law Institute University",
+      "state_id": "MP",
+      "city": "Bhopal",
+      "type": "National law university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://nliu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students evaluating National Law Institute University for stream-aligned pathways in and around Bhopal.",
+        "specialization": "National Law Institute University is positioned as a national law university with public context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "National Law Institute University contributes a distinct local option in Bhopal and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose National Law Institute University when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://nliu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "nanaji_deshmukh_veterinary_university_jabalpur",
+      "name": "Nanaji Deshmukh Veterinary Science University",
+      "state_id": "MP",
+      "city": "Jabalpur",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.ndvsu.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students evaluating Nanaji Deshmukh Veterinary Science University for stream-aligned pathways in and around Jabalpur.",
+        "specialization": "Nanaji Deshmukh Veterinary Science University is positioned as a state university with public context; verify department-level offerings and current intake on official pages.",
+        "unique_point": "Nanaji Deshmukh Veterinary Science University contributes a distinct local option in Jabalpur and is useful for shortlist comparison by institution type and ecosystem fit.",
+        "why_choose": "Choose Nanaji Deshmukh Veterinary Science University when your priority is matching stream preference with location, institution profile, and verified admission information.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.ndvsu.org/"
+        ]
+      }
+    }
+  ]
+}

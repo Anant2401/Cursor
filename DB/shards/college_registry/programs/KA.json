@@ -1,0 +1,407 @@
+{
+  "meta": {
+    "shard_type": "programs",
+    "state_id": "KA",
+    "state_label": "Karnataka",
+    "count": 22,
+    "generated_on": "2026-05-07"
+  },
+  "programs": [
+    {
+      "id": "iisc_bangalore_ug_programmes_where_applicable_engineering_engineering_generic_st",
+      "college_id": "iisc_bangalore_ug_programmes_where_applicable",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nitk_surathkal_engineering_engineering_generic_state_comfort_ka",
+      "college_id": "nitk_surathkal",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "rv_college_of_engineering_rvce_engineering_engineering_generic_state_comfort_ka",
+      "college_id": "rv_college_of_engineering_rvce",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "pes_university_pesce_verify_campus_engineering_engineering_generic_state_comfort",
+      "college_id": "pes_university_pesce_verify_campus",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "bms_college_of_engineering_engineering_engineering_generic_state_comfort_ka",
+      "college_id": "bms_college_of_engineering",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "vtu_affiliated_colleges_across_karnataka_engineering_engineering_generic_state_c",
+      "college_id": "vtu_affiliated_colleges_across_karnataka",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier C — accredited options + your portfolio"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "bangalore_medical_college_and_research_institute_bmri_bmcri_medicine_medicine_mb",
+      "college_id": "bangalore_medical_college_and_research_institute_bmri_bmcri",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — flagship institutes"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "kims_hubli_karnataka_institute_of_medical_sciences_medicine_medicine_mbbs_state_",
+      "college_id": "kims_hubli_karnataka_institute_of_medical_sciences",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — flagship institutes"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "gmcs_in_mysuru_mangaluru_belagavi_verify_seat_matrix_medicine_medicine_mbbs_stat",
+      "college_id": "gmcs_in_mysuru_mangaluru_belagavi_verify_seat_matrix",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — other government medical colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "private_medical_colleges_bengaluru_tier_2_cities_medicine_medicine_mbbs_state_co",
+      "college_id": "private_medical_colleges_bengaluru_tier_2_cities",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier C — private medical colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "iim_bangalore_management_management_generic_state_comfort",
+      "college_id": "iim_bangalore",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "christ_university_bengaluru_management_management_generic_state_comfor",
+      "college_id": "christ_university_bengaluru",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "jain_university_bengaluru_management_management_generic_state_comfort",
+      "college_id": "jain_university_bengaluru",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "alliance_university_bengaluru_management_management_generic_state_comf",
+      "college_id": "alliance_university_bengaluru",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "st_josephs_university_bengaluru_management_management_generic_state_co",
+      "college_id": "st_josephs_university_bengaluru",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "mount_carmel_college_bengaluru_management_management_generic_state_com",
+      "college_id": "mount_carmel_college_bengaluru",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "presidency_university_bengaluru_management_management_generic_state_co",
+      "college_id": "presidency_university_bengaluru",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "reva_university_bengaluru_management_management_generic_state_comfort",
+      "college_id": "reva_university_bengaluru",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "acharya_institute_bengaluru_management_management_generic_state_comfor",
+      "college_id": "acharya_institute_bengaluru",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "pes_university_bengaluru_management_management_management_generic_stat",
+      "college_id": "pes_university_bengaluru_management",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "ramaiah_institute_of_management_bengaluru_management_management_generi",
+      "college_id": "ramaiah_institute_of_management_bengaluru",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "sdm_institute_for_management_development_mysuru_management_management_",
+      "college_id": "sdm_institute_for_management_development_mysuru",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
+      },
+      "last_verified_on": "2026-05-07"
+    }
+  ]
+}

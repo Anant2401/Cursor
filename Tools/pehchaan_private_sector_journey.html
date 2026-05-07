@@ -104,6 +104,15 @@
     .role-item { border: 1px solid var(--border); border-radius: 14px; padding: 12px; background: #fcfefd; }
     .role-item h3 { font-size: 14px; color: var(--teal-dark); margin-bottom: 4px; }
     .meta { font-size: 12px; color: var(--gray-text); line-height: 1.65; }
+    .role-chip-row { display:flex; flex-wrap:wrap; gap:6px; margin:6px 0 8px; }
+    .role-chip { font-size:10px; font-weight:700; border-radius:999px; padding:3px 8px; border:1px solid transparent; }
+    .chip-demand { background:#E1F5EE; border-color:#1D9E75; color:#085041; }
+    .chip-pay { background:#FAEEDA; border-color:#EF9F27; color:#7A4A00; }
+    .chip-proof { background:#E6F1FB; border-color:#378ADD; color:#0C447C; }
+    .fit-bars { display:grid; grid-template-columns:repeat(4,1fr); gap:6px; margin-top:8px; }
+    .fit-bar { background:#F8FAFC; border:1px solid var(--border); border-radius:8px; padding:6px; text-align:center; }
+    .fit-bar .k { font-size:9px; color:var(--gray-text); text-transform:uppercase; letter-spacing:.04em; }
+    .fit-bar .v { font-size:12px; font-weight:700; color:var(--teal-dark); }
     .plan-list { margin-top: 8px; padding-left: 18px; }
     .plan-list li { font-size: 12px; line-height: 1.6; margin-bottom: 2px; }
 
@@ -126,7 +135,7 @@
   <div class="translate-strip no-print" style="display:flex;justify-content:flex-end;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 14px;background:#f8fafc;border-bottom:1px solid #D1E8DF;font-size:11px;color:#64748B;"><span>Translate this page</span><div id="google_translate_element"></div></div>
   <div class="container">
     <div class="topbar">
-      <a class="topbar-back" href="../index.html" aria-label="Back to Pehchaan Careers home">←</a>
+      <a class="topbar-back" href="../index.html#tools" aria-label="Back to Pehchaan Careers home">←</a>
       <div class="topbar-logo" aria-hidden="true">
         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/>
@@ -148,13 +157,13 @@
     <section class="hero">
       <div class="chip">Private Sector Journey</div>
       <h1>One clear plan for <span>private sector jobs</span></h1>
-      <p>Choose your current stage, target city, timeline, and role comfort. We suggest practical starter roles, an action plan, and direct next tools for execution.</p>
+      <p>Choose your stream, target city, timeline, and role comfort. We suggest practical starter roles, an action plan, and direct next tools for execution.</p>
       <div class="hero-subhead">Built for Class 11-12 learners, college students, graduates, and restart journeys who want a practical job path without random guessing.</div>
       <div class="hero-grid">
         <div class="hero-box">
           <h3>You provide</h3>
           <ul>
-            <li>Current stage and stream background</li>
+            <li>Stream background and comfort area</li>
             <li>Preferred metro and time horizon</li>
             <li>Priority and role comfort area</li>
           </ul>
@@ -183,14 +192,13 @@
     <section class="card">
       <h2>Step 1 - Your profile</h2>
       <div class="grid two">
-        <div><label for="stage">Current stage</label><select id="stage"><option value="12">Class 11-12 / 12th pass</option><option value="college">In college</option><option value="graduate">Graduate</option><option value="drop">Drop year / re-starting</option></select></div>
         <div><label for="stream">Stream or background</label><select id="stream"><option value="science">Science</option><option value="commerce">Commerce</option><option value="arts">Arts</option><option value="any">Any / mixed</option></select></div>
         <div><label for="metro">Preferred metro</label><select id="metro"><option value="bengaluru">Bengaluru</option><option value="hyderabad">Hyderabad</option><option value="delhi_ncr">Delhi NCR</option><option value="pune">Pune</option><option value="chennai">Chennai</option><option value="mumbai">Mumbai</option></select></div>
         <div><label for="months">Time you can give now</label><select id="months"><option value="0_2">0-2 months</option><option value="3_6">3-6 months</option><option value="6_plus">6+ months</option></select></div>
+        <div><label for="goal">Priority</label><select id="goal"><option value="income">Fast income</option><option value="stable">Stable job</option><option value="growth">Higher growth</option><option value="parallel">Work + exam prep</option></select></div>
       </div>
       <div class="grid two" style="margin-top:10px">
-        <div><label for="goal">Priority</label><select id="goal"><option value="income">Fast income</option><option value="stable">Stable job</option><option value="growth">Higher growth</option><option value="parallel">Work + exam prep</option></select></div>
-        <div><label for="family">Role comfort area</label><select id="family"><option value="operations">Operations</option><option value="sales_growth">Sales and growth</option><option value="analytics">Analytics</option><option value="customer_ops">Customer operations</option><option value="marketing">Marketing</option><option value="finance_ops">Finance operations</option><option value="tech_quality">Tech quality</option><option value="content">Content</option></select></div>
+        <div><label for="family">Role comfort area</label><select id="family"><option value="operations">Operations</option><option value="sales_combo">Sales & Business Development</option><option value="analytics">Analytics & Data</option><option value="customer_ops">Customer Operations</option><option value="marketing">Marketing</option><option value="finance_ops">Finance Operations</option><option value="tech_quality">Tech Quality / Testing</option><option value="content">Content</option><option value="hr">HR / Recruiting</option><option value="supply_chain">Supply Chain & Logistics</option></select></div>
       </div>
       <div class="btn-row">
         <button class="btn primary" id="buildBtn" type="button">Build my private-sector plan</button>
@@ -205,7 +213,7 @@
       <div class="notice" id="consultNote">
         <strong>Important:</strong> This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.
       </div>
-      <div class="btn-row" id="nextLinks" style="margin-top:10px"></div>
+      <div id="nextLinks" style="margin-top:10px;width:100%"></div>
     </section>
 
     <div class="brand-footer">
@@ -216,6 +224,7 @@
 
   <script src="../assets/pehchaan_journey.js"></script>
   <script src="../assets/pehchaan_tool_links.js"></script>
+  <script src="../assets/pehchaan_tool_recommendations.js"></script>
   <script>
     (function () {
       var DB = null;
@@ -231,28 +240,85 @@
       function familyLabel(id) {
         var map = {
           operations: "Operations",
-          sales_growth: "Sales and growth",
-          analytics: "Analytics",
+          sales_combo: "Sales & Business Development",
+          analytics: "Analytics & Data",
           customer_ops: "Customer operations",
           marketing: "Marketing",
           finance_ops: "Finance operations",
           tech_quality: "Tech quality",
-          content: "Content"
+          content: "Content",
+          hr: "HR / Recruiting",
+          supply_chain: "Supply Chain & Logistics"
         };
         return map[id] || id;
       }
       function companyExamplesByFamily(id) {
         var map = {
-          operations: ["Amazon", "Flipkart", "Cognizant", "Accenture"],
-          sales_growth: ["BYJU'S", "Vedantu", "HCLSoftware", "Zoho"],
-          analytics: ["Deloitte", "KPMG", "Mu Sigma", "Fractal"],
-          customer_ops: ["Concentrix", "Teleperformance", "Sutherland", "Foundever"],
-          marketing: ["Nykaa", "Myntra", "Meesho", "upGrad"],
-          finance_ops: ["JPMorgan Chase", "ICICI Bank", "HSBC", "Genpact"],
-          tech_quality: ["TCS", "Infosys", "Wipro", "Capgemini"],
-          content: ["Pepper Content", "Schbang", "Pocket FM", "Times Internet"]
+          operations: ["IT services operations teams", "Shared service centers", "Enterprise support teams"],
+          sales_growth: ["SaaS inside-sales teams", "Edtech sales teams", "D2C growth teams"],
+          sales: ["SaaS inside-sales teams", "B2B business development teams", "Channel sales teams"],
+          analytics: ["Consulting analytics teams", "Product analytics teams", "BI teams in enterprises"],
+          analytics_ops: ["Reporting and MIS teams", "Operations analytics teams", "Risk analytics support teams"],
+          customer_ops: ["Customer support BPO teams", "Customer success teams", "Escalation desks"],
+          marketing: ["Performance marketing teams", "Marketplace growth teams", "Brand and media teams"],
+          finance_ops: ["Banking operations", "Accounts payable/receivable teams", "Finance shared services"],
+          tech_quality: ["QA/testing teams", "Application support teams", "Release/UAT teams"],
+          content: ["Digital content teams", "Instructional content teams", "Editorial operations"],
+          hr: ["Talent acquisition teams", "HR shared services", "Recruitment operations"],
+          supply_chain: ["Warehouse and logistics teams", "Procurement support teams", "Last-mile operations"]
         };
         return map[id] || ["LinkedIn Jobs", "Naukri", "Company career portals"];
+      }
+
+      function enrichRolePool(json) {
+        var familyTemplates = {
+          operations: ["Process Associate", "Back Office Executive", "Operations Coordinator", "Service Delivery Associate", "MIS Operations Executive", "Process Excellence Trainee"],
+          analytics: ["Junior Data Analyst", "Reporting Analyst", "MIS Executive", "Business Analyst Trainee", "Data Operations Associate", "Insights Analyst (Entry)"],
+          sales_combo: ["Inside Sales Executive", "Sales Development Representative", "Business Development Executive", "Channel Sales Coordinator", "Presales Associate", "Client Acquisition Executive"],
+          customer_ops: ["Customer Support Executive", "Customer Success Associate", "Customer Care Associate", "Escalation Desk Executive", "Client Support Specialist", "Relationship Support Executive"],
+          marketing: ["Digital Marketing Executive", "Social Media Associate", "Performance Marketing Trainee", "SEO Analyst", "Content Marketing Associate", "Growth Marketing Executive"],
+          finance_ops: ["Finance Operations Associate", "Accounts Receivable Executive", "Accounts Payable Executive", "Reconciliation Analyst", "Payroll Operations Associate", "Finance Process Executive"],
+          tech_quality: ["QA / Test Associate", "Manual Tester", "Application Support Analyst", "Technical Support Engineer", "UAT Coordinator", "Automation Trainee"],
+          content: ["Content Associate", "Content Writer", "Editorial Assistant", "Instructional Content Executive", "Research Content Analyst", "Copywriting Associate"],
+          hr: ["Recruitment Coordinator", "Talent Acquisition Associate", "HR Operations Executive", "HR Shared Services Associate", "Sourcing Specialist", "Onboarding Coordinator"],
+          supply_chain: ["Logistics Coordinator", "Supply Chain Associate", "Procurement Support Executive", "Warehouse Operations Executive", "Dispatch Planning Associate", "Inventory Control Executive"]
+        };
+        var familyToDb = { sales_combo: ["sales", "sales_growth"], analytics: ["analytics", "analytics_ops"] };
+        var all = (json.roles || []).slice();
+        var metroFallback = [
+          { metro_id: "bengaluru", demand_level: "high", salary_fresher: "₹3.0-5.4 LPA", salary_3yr: "₹5.8-10.2 LPA", city_reality_note: "Hiring varies by company and role scope." },
+          { metro_id: "hyderabad", demand_level: "high", salary_fresher: "₹2.9-5.2 LPA", salary_3yr: "₹5.6-9.8 LPA", city_reality_note: "Roles available across services and product firms." },
+          { metro_id: "delhi_ncr", demand_level: "high", salary_fresher: "₹3.0-5.4 LPA", salary_3yr: "₹5.8-10.5 LPA", city_reality_note: "Large hiring volume with competition." },
+          { metro_id: "pune", demand_level: "medium", salary_fresher: "₹2.8-5.0 LPA", salary_3yr: "₹5.2-9.4 LPA", city_reality_note: "Strong demand in shared services and IT operations." },
+          { metro_id: "chennai", demand_level: "medium", salary_fresher: "₹2.8-4.9 LPA", salary_3yr: "₹5.1-9.1 LPA", city_reality_note: "Stable openings in enterprise functions." },
+          { metro_id: "mumbai", demand_level: "high", salary_fresher: "₹3.1-5.8 LPA", salary_3yr: "₹6.0-11.0 LPA", city_reality_note: "Higher opportunity, higher competition." }
+        ];
+        Object.keys(familyTemplates).forEach(function (familyKey) {
+          var dbFamilies = familyToDb[familyKey] || [familyKey];
+          var present = all.filter(function (r) { return dbFamilies.indexOf(r.role_family) >= 0; });
+          var need = Math.max(0, 6 - present.length);
+          if (!need) return;
+          var sample = present[0] || all.find(function (r) { return r && r.role_family; }) || {};
+          familyTemplates[familyKey].slice(0, need).forEach(function (title, idx) {
+            all.push({
+              private_role_id: "auto_" + familyKey + "_" + (idx + 1),
+              status: "active",
+              role_family: dbFamilies[0],
+              title: title,
+              summary: "Entry-level private sector role aligned to your selected comfort area with practical growth path.",
+              must_have_skills: (sample.must_have_skills || ["Communication", "Role basics", "Execution discipline"]).slice(0, 5),
+              application_channels: (sample.application_channels || ["LinkedIn", "Naukri", "Company careers pages", "Referrals"]).slice(0, 4),
+              growth_paths: (sample.growth_paths || ["Senior role", "Team lead", "Specialist track"]).slice(0, 3),
+              metro_map: (sample.metro_map && sample.metro_map.length ? sample.metro_map : metroFallback),
+              plan_30_60_90: sample.plan_30_60_90 || {
+                day_0_30: ["Build role fundamentals and one proof task."],
+                day_31_60: ["Prepare targeted resume and practice interviews."],
+                day_61_90: ["Apply consistently and track conversion weekly."]
+              }
+            });
+          });
+        });
+        json.roles = all;
       }
 
       function bootstrap() {
@@ -260,6 +326,7 @@
           .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
           .then(function (json) {
             DB = json;
+            enrichRolePool(DB);
             byFamily = {};
             (json.roles || []).forEach(function (r) {
               var k = r.role_family || "other";
@@ -272,59 +339,154 @@
           });
       }
 
-      function rankRoles(family, goal, metro) {
-        var base = (byFamily[family] || []).slice();
+      function familyPoolForSelection(family) {
+        var map = {
+          sales_combo: ["sales", "sales_growth"],
+          analytics: ["analytics", "analytics_ops"],
+          operations: ["operations"],
+          customer_ops: ["customer_ops"],
+          marketing: ["marketing"],
+          finance_ops: ["finance_ops"],
+          tech_quality: ["tech_quality"],
+          content: ["content"],
+          hr: ["hr"],
+          supply_chain: ["supply_chain"]
+        };
+        return map[family] || [family];
+      }
+
+      function timelinePhasesByMonths(plan, months) {
+        var d0 = (plan.day_0_30 || []).slice(0, 2);
+        var d1 = (plan.day_31_60 || []).slice(0, 2);
+        var d2 = (plan.day_61_90 || []).slice(0, 2);
+        if (months === "0_2") {
+          return [
+            { label: "0-30 days", points: d0.length ? d0 : ["Build role basics and one proof task."] },
+            { label: "31-60 days", points: d1.length ? d1 : ["Start applications and mock interviews."] }
+          ];
+        }
+        if (months === "3_6") {
+          return [
+            { label: "0-30 days", points: d0.length ? d0 : ["Build role basics and one proof task."] },
+            { label: "31-60 days", points: d1.length ? d1 : ["Add second proof task and referrals."] },
+            { label: "61-90 days", points: d2.length ? d2 : ["Apply consistently and track conversion."] }
+          ];
+        }
+        return [
+          { label: "0-30 days", points: d0.length ? d0 : ["Build role basics and one proof task."] },
+          { label: "31-60 days", points: d1.length ? d1 : ["Add second proof task and referrals."] },
+          { label: "61-90 days", points: d2.length ? d2 : ["Apply consistently and track conversion."] },
+          { label: "91-180 days", points: ["Move to advanced tools for this role family.", "Target interviews weekly and iterate portfolio based on feedback."] }
+        ];
+      }
+
+      function rankRoles(family, goal, metro, stream) {
+        var base = [];
+        familyPoolForSelection(family).forEach(function (f) {
+          base = base.concat((byFamily[f] || []));
+        });
+        base = base.filter(function (r, idx) { return base.indexOf(r) === idx; });
+        var relatedFamilies = {
+          operations: ["customer_ops", "finance_ops", "supply_chain", "analytics_ops"],
+          sales_combo: ["sales", "sales_growth", "marketing", "customer_ops"],
+          analytics: ["analytics_ops", "tech_quality", "operations"],
+          customer_ops: ["operations", "sales_growth", "marketing"],
+          marketing: ["sales_growth", "content", "analytics"],
+          finance_ops: ["operations", "analytics_ops", "customer_ops"],
+          tech_quality: ["analytics", "analytics_ops", "operations"],
+          content: ["marketing", "customer_ops", "sales_growth"]
+        };
+        if (base.length < 5 && DB && Array.isArray(DB.roles)) {
+          var rel = relatedFamilies[family] || [];
+          rel.forEach(function (rf) {
+            if (base.length >= 8) return;
+            (byFamily[rf] || []).forEach(function (r) {
+              if (base.length >= 8) return;
+              if (base.indexOf(r) < 0) base.push(r);
+            });
+          });
+        }
         if (!base.length) {
           base = (DB && DB.roles || []).slice();
+        }
+        if (base.length < 5 && DB && Array.isArray(DB.roles)) {
+          var extras = DB.roles.filter(function (r) { return base.indexOf(r) < 0; });
+          base = base.concat(extras);
         }
         return base
           .map(function (r) {
             var mm = (r.metro_map || []).find(function (m) { return m.metro_id === metro; }) || null;
-            var score = 50;
+            var score = 45;
+            var scoreBreakdown = { demand: 0, stream: 0, goal: 0, readiness: 0 };
             if (mm && mm.demand_level === "high") score += 20;
-            if (goal === "income" && mm && /\d+\.\d-\d+\.\d/.test(String(mm.salary_fresher || ""))) score += 8;
-            if (goal === "growth" && mm && /\d+\.\d-\d+\.\d/.test(String(mm.salary_3yr || ""))) score += 10;
-            if (goal === "stable" && mm && mm.demand_level !== "volatile") score += 6;
-            return { role: r, metroMap: mm, score: score };
+            if (mm && mm.demand_level === "high") scoreBreakdown.demand += 20;
+            else if (mm && mm.demand_level === "medium") { score += 10; scoreBreakdown.demand += 10; }
+            if (goal === "income" && mm && /\d+\.\d-\d+\.\d/.test(String(mm.salary_fresher || ""))) score += 10;
+            if (goal === "income" && mm && /\d+\.\d-\d+\.\d/.test(String(mm.salary_fresher || ""))) scoreBreakdown.goal += 10;
+            if (goal === "growth" && mm && /\d+\.\d-\d+\.\d/.test(String(mm.salary_3yr || ""))) score += 12;
+            if (goal === "growth" && mm && /\d+\.\d-\d+\.\d/.test(String(mm.salary_3yr || ""))) scoreBreakdown.goal += 12;
+            if (goal === "stable" && mm && mm.demand_level !== "volatile") { score += 6; scoreBreakdown.goal += 6; }
+            if (goal === "parallel" && /operations|customer_ops|content|tech_quality/.test(String(r.role_family || ""))) score += 6;
+            if (goal === "parallel" && /operations|customer_ops|content|tech_quality/.test(String(r.role_family || ""))) scoreBreakdown.readiness += 6;
+            if (stream === "science" && /tech_quality|analytics|analytics_ops/.test(String(r.role_family || ""))) { score += 7; scoreBreakdown.stream += 7; }
+            if (stream === "commerce" && /finance_ops|sales|sales_growth|operations/.test(String(r.role_family || ""))) { score += 7; scoreBreakdown.stream += 7; }
+            if (stream === "arts" && /content|customer_ops|marketing|hr/.test(String(r.role_family || ""))) { score += 7; scoreBreakdown.stream += 7; }
+            if ((r.must_have_skills || []).length >= 4) { score += 5; scoreBreakdown.readiness += 5; }
+            return { role: r, metroMap: mm, score: score, scoreBreakdown: scoreBreakdown };
           })
           .sort(function (a, b) { return b.score - a.score; })
-          .slice(0, 3);
+          .slice(0, 8);
       }
 
       function renderPlan() {
         if (!DB) return;
-        var stage = document.getElementById("stage").value;
         var stream = document.getElementById("stream").value;
         var metro = document.getElementById("metro").value;
         var months = document.getElementById("months").value;
         var goal = document.getElementById("goal").value;
         var family = document.getElementById("family").value;
 
-        var ranked = rankRoles(family, goal, metro);
+        var ranked = rankRoles(family, goal, metro, stream);
         var out = document.getElementById("outputCard");
         var list = document.getElementById("roleList");
         var meta = document.getElementById("resultMeta");
         var links = document.getElementById("nextLinks");
 
-        meta.textContent = "Stage: " + stage + " · Stream: " + stream + " · Metro: " + metroLabel(metro) + " · Focus: " + familyLabel(family);
+        meta.textContent = "Stream: " + stream + " · Metro: " + metroLabel(metro) + " · Focus: " + familyLabel(family) + " · Time window: " + (months === "0_2" ? "0-2 months" : months === "3_6" ? "3-6 months" : "6+ months");
         list.innerHTML = ranked.map(function (x, idx) {
           var r = x.role;
           var mm = x.metroMap;
           var plan = r.plan_30_60_90 || {};
-          var p0 = (plan.day_0_30 || []).slice(0, 1);
-          var p1 = (plan.day_31_60 || []).slice(0, 1);
-          var p2 = (plan.day_61_90 || []).slice(0, 1);
+          var phases = timelinePhasesByMonths(plan, months);
           var companies = companyExamplesByFamily(r.role_family || family);
+          var mustSkills = (r.must_have_skills || []).slice(0, 5).join(" · ");
+          var growthPath = (r.growth_paths || []).slice(0, 3).join(" → ");
+          var appChannels = (r.application_channels || []).slice(0, 4).join(", ");
+          var isTemplate = String(r.private_role_id || "").indexOf("auto_") === 0;
+          var roleIcon = /analytics|data/.test(r.role_family || "") ? "📊" : /sales|marketing/.test(r.role_family || "") ? "🚀" : /finance/.test(r.role_family || "") ? "💼" : /tech/.test(r.role_family || "") ? "🧪" : /hr/.test(r.role_family || "") ? "🧭" : "🛠️";
           return '<article class="role-item">' +
-            '<h3>' + (idx + 1) + ". " + esc(r.title) + " (fit score: " + x.score + ")</h3>" +
+            '<h3>' + roleIcon + ' ' + (idx + 1) + ". " + esc(r.title) + " (fit score: " + x.score + ")</h3>" +
+            '<div class="role-chip-row">' +
+            '<span class="role-chip chip-demand">Demand: ' + esc(mm && mm.demand_level || "medium") + '</span>' +
+            '<span class="role-chip chip-pay">Fresher: ' + esc(mm && mm.salary_fresher || "Check openings") + '</span>' +
+            '<span class="role-chip chip-proof">Proof-first hiring</span>' +
+            (isTemplate ? '<span class="role-chip" style="background:#FFF2DE;border-color:#EF9F27;color:#8A5000;border:1px solid #EF9F27;">Template role (verify live openings)</span>' : '') +
+            '</div>' +
             '<div class="meta">Fresher in ' + esc(metroLabel(metro)) + ": " + esc(mm && mm.salary_fresher || "Check current openings") + " · ~3 years: " + esc(mm && mm.salary_3yr || "Varies by company") + "</div>" +
-            '<div class="meta" style="margin-top:4px">' + esc(r.summary || "") + "</div>" +
-            '<div class="meta" style="margin-top:4px"><strong>Examples of companies hiring for similar roles:</strong> ' + esc(companies.join(", ")) + "</div>" +
-            '<ul class="plan-list">' +
-              '<li><strong>0-30 days:</strong> ' + esc(p0[0] || "Build fundamentals for this role.") + '</li>' +
-              '<li><strong>31-60 days:</strong> ' + esc(p1[0] || "Add one proof project and interview practice.") + '</li>' +
-              '<li><strong>61-90 days:</strong> ' + esc(p2[0] || "Apply consistently and ask for referrals.") + '</li>' +
-            "</ul>" +
+            '<div class="meta" style="margin-top:6px"><strong>Role summary:</strong> ' + esc(r.summary || "") + "</div>" +
+            '<div class="fit-bars">' +
+            '<div class="fit-bar"><div class="k">Demand fit</div><div class="v">+' + (x.scoreBreakdown.demand || 0) + '</div></div>' +
+            '<div class="fit-bar"><div class="k">Stream fit</div><div class="v">+' + (x.scoreBreakdown.stream || 0) + '</div></div>' +
+            '<div class="fit-bar"><div class="k">Goal fit</div><div class="v">+' + (x.scoreBreakdown.goal || 0) + '</div></div>' +
+            '<div class="fit-bar"><div class="k">Readiness</div><div class="v">+' + (x.scoreBreakdown.readiness || 0) + '</div></div>' +
+            '</div>' +
+            (mustSkills ? '<div class="meta" style="margin-top:4px"><strong>Must-have skills:</strong> ' + esc(mustSkills) + "</div>" : "") +
+            (appChannels ? '<div class="meta" style="margin-top:4px"><strong>Where to apply:</strong> ' + esc(appChannels) + "</div>" : "") +
+            '<div class="meta" style="margin-top:4px"><strong>Company examples:</strong> ' + esc(companies.join(", ")) + "</div>" +
+            (growthPath ? '<div class="meta" style="margin-top:4px"><strong>Growth path:</strong> ' + esc(growthPath) + "</div>" : "") +
+            '<ul class="plan-list">' + phases.map(function (ph) {
+              return '<li><strong>' + esc(ph.label) + ':</strong> ' + esc((ph.points || []).join(' | ')) + '</li>';
+            }).join('') + "</ul>" +
           "</article>";
         }).join("");
 
@@ -339,30 +501,35 @@
         if (window.PehchaanJourney) {
           PehchaanJourney.setJourney(ctx);
         }
-        var salaryLink = window.PehchaanToolLinks ? PehchaanToolLinks.u("salary", ctx) : "pehchaan_salary_explorer.html";
-        var skillLink = window.PehchaanToolLinks ? PehchaanToolLinks.u("skillGap", ctx) : "pehchaan_skill_gap_analyser.html";
-        var planbLink = window.PehchaanToolLinks ? PehchaanToolLinks.u("planB", ctx) : "pehchaan_plan_b_strategy_builder.html";
-        var mentorLink = window.PehchaanToolLinks ? PehchaanToolLinks.u("mentor", ctx) : "pehchaan_mentor_connect.html";
-        links.innerHTML =
-          '<a class="btn primary" href="' + esc(salaryLink) + '">Open Salary Explorer</a>' +
-          '<a class="btn ghost" href="' + esc(skillLink) + '">Open Skill Gap Analyser</a>' +
-          '<a class="btn ghost" href="' + esc(planbLink) + '">Open Plan B Strategy Builder</a>' +
-          '<a class="btn ghost" href="' + esc(mentorLink) + '">Open Mentor Connect</a>';
-
-        if (months === "0_2") {
-          document.getElementById("consultNote").innerHTML = "<strong>Important:</strong> With 0-2 months, start with quick-entry roles and proof-based applications. This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.";
-        } else if (months === "6_plus") {
-          document.getElementById("consultNote").innerHTML = "<strong>Important:</strong> With 6+ months, prioritize stronger-skill roles with better 3-year growth. This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.";
+        if (window.PehchaanToolRecommendations) {
+          var rec = PehchaanToolRecommendations.buildNextToolRecommendations(
+            PehchaanToolRecommendations.TOOL.privateSectorJourney,
+            ctx,
+            { roleSelected: true, actionPlanStarted: true }
+          );
+          links.innerHTML = PehchaanToolRecommendations.buildRecommendationsHtml(rec, esc);
         } else {
-          document.getElementById("consultNote").innerHTML = "<strong>Important:</strong> This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.";
+          var salaryLink = window.PehchaanToolLinks ? PehchaanToolLinks.u("salary", ctx) : "pehchaan_salary_explorer.html";
+          var skillLink = window.PehchaanToolLinks ? PehchaanToolLinks.u("skillGap", ctx) : "pehchaan_skill_gap_analyser.html";
+          var planbLink = window.PehchaanToolLinks ? PehchaanToolLinks.u("planB", ctx) : "pehchaan_plan_b_strategy_builder.html";
+          var mentorLink = window.PehchaanToolLinks ? PehchaanToolLinks.u("mentor", ctx) : "pehchaan_mentor_connect.html";
+          links.innerHTML =
+            '<a class="btn primary" href="' + esc(salaryLink) + '">Open Salary Explorer</a>' +
+            '<a class="btn ghost" href="' + esc(skillLink) + '">Open Skill Gap Analyser</a>' +
+            '<a class="btn ghost" href="' + esc(planbLink) + '">Open Plan B Strategy Builder</a>' +
+            '<a class="btn ghost" href="' + esc(mentorLink) + '">Open Mentor Connect</a>';
         }
+
+        if (months === "0_2") document.getElementById("consultNote").innerHTML = "<strong>Important:</strong> This plan is intentionally 60-day focused (0-30 and 31-60) for quick entry. This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.";
+        else if (months === "3_6") document.getElementById("consultNote").innerHTML = "<strong>Important:</strong> This plan uses 90-day milestones and is suitable for a 3-6 month transition cycle. This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.";
+        else document.getElementById("consultNote").innerHTML = "<strong>Important:</strong> This plan includes a 6+ month extension phase (91-180 days) for deeper role readiness. This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.";
 
         out.hidden = false;
         out.scrollIntoView({ behavior: "smooth", block: "nearest" });
       }
 
       function resetForm() {
-        ["stage", "stream", "metro", "months", "goal", "family"].forEach(function (id) {
+        ["stream", "metro", "months", "goal", "family"].forEach(function (id) {
           var el = document.getElementById(id);
           if (el) el.selectedIndex = 0;
         });

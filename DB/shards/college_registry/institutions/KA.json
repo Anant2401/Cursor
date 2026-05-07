@@ -1,0 +1,742 @@
+{
+  "meta": {
+    "shard_type": "institutions",
+    "state_id": "KA",
+    "state_label": "Karnataka",
+    "count": 22,
+    "generated_on": "2026-05-07"
+  },
+  "institutions": [
+    {
+      "id": "iisc_bangalore_ug_programmes_where_applicable",
+      "name": "IISc Bangalore (UG programmes where applicable)",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Deemed university / INI",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iisc.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students targeting research-intensive science and engineering pathways with strong academic rigor.",
+        "specialization": "Interdisciplinary science and engineering ecosystem with selective UG routes; verify current department-level options.",
+        "unique_point": "Institute of Eminence with a research-first campus culture and deep lab exposure.",
+        "why_choose": "Strong fit for students who prefer concept-heavy preparation, faculty-led projects, and long-term research careers.",
+        "notes": "Not a generic B.Tech factory — read programme brochures carefully."
+      },
+      "verification": {
+        "nirf_band": "Top research institute — verify UG entry routes yearly",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iisc.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "nitk_surathkal",
+      "name": "NITK Surathkal",
+      "state_id": "KA",
+      "city": "Mangaluru (coastal Karnataka)",
+      "type": "NIT",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nitk.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Engineering aspirants seeking a nationally recognized NIT with broad branch options.",
+        "specialization": "Core and emerging engineering programmes with JoSAA-linked admissions and active technical clubs.",
+        "unique_point": "Established NIT campus with strong alumni network and consistent national visibility.",
+        "why_choose": "Useful for students balancing branch preference, public-institution value, and industry placement outcomes.",
+        "notes": "JoSAA; coastal campus — check branch vs location preferences."
+      },
+      "verification": {
+        "nirf_band": "Strong NIT — verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nitk.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "rv_college_of_engineering_rvce",
+      "name": "RV College of Engineering (RVCE)",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private autonomous (affiliated)",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.rvce.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students looking for high-demand engineering programmes in Bengaluru's tech ecosystem.",
+        "specialization": "Industry-aligned engineering offerings with active internship and innovation opportunities.",
+        "unique_point": "Long-established private engineering institution with strong recruiter familiarity in Karnataka.",
+        "why_choose": "A practical choice for students prioritizing Bengaluru location, peer ecosystem, and placement-focused exposure.",
+        "notes": "High demand; compare 4-year total cost vs NIT out-of-state."
+      },
+      "verification": {
+        "nirf_band": "Often cited in NIRF — verify year",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.rvce.edu.in/"
+        ]
+      }
+    },
+    {
+      "id": "pes_university_pesce_verify_campus",
+      "name": "PES University / PESCE (verify campus)",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private",
+      "ownership": "",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.pes.edu/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students preferring outcome-oriented engineering and technology programmes in Bengaluru.",
+        "specialization": "Computing-heavy and interdisciplinary technical pathways; verify campus-wise programme availability.",
+        "unique_point": "Strong emphasis on project execution and employability-oriented academic delivery.",
+        "why_choose": "Good fit for students who want a structured private-university engineering pathway in Karnataka.",
+        "notes": "Multiple campuses — confirm which campus your seat maps to."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.pes.edu/",
+          "https://www.pes.edu/admissions"
+        ]
+      }
+    },
+    {
+      "id": "bms_college_of_engineering",
+      "name": "BMS College of Engineering",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private aided / autonomous",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://bmsce.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Engineering aspirants seeking an established autonomous college in Bengaluru.",
+        "specialization": "Multiple engineering branches with campus-driven technical activities and student societies.",
+        "unique_point": "Historic engineering institution with wide branch portfolio and strong regional brand recall.",
+        "why_choose": "Valuable for students comparing established Bengaluru engineering colleges with autonomous governance.",
+        "notes": "Check COMEDK vs KCET fee differences."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://bmsce.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "vtu_affiliated_colleges_across_karnataka",
+      "name": "VTU-affiliated colleges across Karnataka",
+      "state_id": "KA",
+      "city": "Multiple cities",
+      "type": "Affiliated",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://vtu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students exploring VTU-affiliated engineering options across Karnataka districts.",
+        "specialization": "University-affiliated engineering pathways where curriculum frameworks are VTU-linked.",
+        "unique_point": "Acts as a state-level umbrella reference point for affiliated engineering institutions.",
+        "why_choose": "Helpful for building a district-wise shortlist when you want options beyond Bengaluru.",
+        "notes": "VTU reforms change often — verify grading, MOOCs, and internship support."
+      },
+      "verification": {
+        "nirf_band": "Wide",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://vtu.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "bangalore_medical_college_and_research_institute_bmri_bmcri",
+      "name": "Bangalore Medical College and Research Institute (BMRI / BMCRI)",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "State GMC",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://bmcri.karnataka.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "NEET-qualified students seeking a long-standing government medical college in Bengaluru.",
+        "specialization": "Public-sector medical training with associated teaching-hospital exposure.",
+        "unique_point": "One of Karnataka's legacy government medical institutions with high applicant demand.",
+        "why_choose": "Strong option for students prioritizing government-college environment and major-city clinical exposure.",
+        "notes": "High clinical volume; check bond updates."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://bmcri.karnataka.gov.in/",
+          "https://kea.kar.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "kims_hubli_karnataka_institute_of_medical_sciences",
+      "name": "KIMS Hubli (Karnataka Institute of Medical Sciences)",
+      "state_id": "KA",
+      "city": "Hubballi",
+      "type": "State",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://kimshubballi.karnataka.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students pursuing government medical education in North Karnataka.",
+        "specialization": "MBBS-focused public medical training with regional healthcare ecosystem exposure.",
+        "unique_point": "Key government medical institution serving the Hubballi-Dharwad region.",
+        "why_choose": "Useful for candidates who prefer a government-medical pathway outside Bengaluru.",
+        "notes": "Good clinical exposure in North Karnataka hub."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://kimshubballi.karnataka.gov.in/",
+          "https://kea.kar.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "gmcs_in_mysuru_mangaluru_belagavi_verify_seat_matrix",
+      "name": "GMCs in Mysuru, Mangaluru, Belagavi (verify seat matrix)",
+      "state_id": "KA",
+      "city": "Karnataka",
+      "type": "State GMC",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://kea.kar.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comparing multiple Karnataka government medical-college options via counseling data.",
+        "specialization": "Seat-matrix oriented planning for state government medical institutions.",
+        "unique_point": "Consolidated reference row to support counseling-stage comparison across major cities.",
+        "why_choose": "Practical during counseling when seat movement and category-wise allotment matter most.",
+        "notes": "Read KEA category document slowly — mistakes are costly."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://kea.kar.nic.in/",
+          "https://cetonline.karnataka.gov.in/kea/"
+        ]
+      }
+    },
+    {
+      "id": "private_medical_colleges_bengaluru_tier_2_cities",
+      "name": "Private medical colleges (Bengaluru + Tier-2 cities)",
+      "state_id": "KA",
+      "city": "Karnataka",
+      "type": "Private",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nmc.org.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students exploring private medical-college options in Karnataka through verified regulator and counseling sources.",
+        "specialization": "Private medical-seat exploration with emphasis on official recognition and counseling processes.",
+        "unique_point": "Provides a comparison anchor for private MBBS pathways across Bengaluru and tier-2 cities.",
+        "why_choose": "Useful for families evaluating fee exposure and location trade-offs in private medical options.",
+        "notes": "Compare NMC recognition status and hospital tie-ups."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nmc.org.in/",
+          "https://kea.kar.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "iim_bangalore",
+      "name": "Indian Institute of Management Bangalore (IIM Bangalore)",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Institute of national importance",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iimb.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Management aspirants seeking a top-tier institute with strong analytics, leadership, and policy exposure.",
+        "specialization": "Management programmes with research-backed pedagogy and global industry interface.",
+        "unique_point": "Nationally recognized management institute with deep recruiter and alumni network.",
+        "why_choose": "High-fit option for students prioritizing brand strength, academic depth, and career mobility.",
+        "notes": "Always verify current admission pathway, fees, and campus-specific programme list."
+      },
+      "verification": {
+        "nirf_band": "Verify latest management band/ranking where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iimb.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "christ_university_bengaluru",
+      "name": "CHRIST (Deemed to be University), Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Deemed university",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://christuniversity.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students targeting structured BBA and commerce-management undergraduate tracks.",
+        "specialization": "Management-oriented UG programmes with activity-based campus ecosystem.",
+        "unique_point": "Well-known private university with broad programme breadth in Bengaluru.",
+        "why_choose": "Strong for students seeking consistent academic process and city-linked internship exposure.",
+        "notes": "Always verify current admission pathway, fees, and campus-specific programme list."
+      },
+      "verification": {
+        "nirf_band": "Verify latest management band/ranking where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://christuniversity.in/"
+        ]
+      }
+    },
+    {
+      "id": "jain_university_bengaluru",
+      "name": "Jain (Deemed-to-be University), Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Deemed university",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.jainuniversity.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students exploring business, entrepreneurship, and applied management studies.",
+        "specialization": "BBA and allied management pathways with practical skill-building orientation.",
+        "unique_point": "Multi-school private university known for management-focused student pathways.",
+        "why_choose": "Good for students who want flexibility in management specializations and Bengaluru access.",
+        "notes": "Always verify current admission pathway, fees, and campus-specific programme list."
+      },
+      "verification": {
+        "nirf_band": "Verify latest management band/ranking where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.jainuniversity.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "alliance_university_bengaluru",
+      "name": "Alliance University, Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private university",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.alliance.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Management and business students seeking private-university progression from UG to PG.",
+        "specialization": "Business-school-led management programmes with industry interface components.",
+        "unique_point": "Dedicated management visibility within a private university structure.",
+        "why_choose": "Useful when comparing private management campuses by ecosystem and academic style.",
+        "notes": "Always verify current admission pathway, fees, and campus-specific programme list."
+      },
+      "verification": {
+        "nirf_band": "Verify latest management band/ranking where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.alliance.edu.in/"
+        ]
+      }
+    },
+    {
+      "id": "st_josephs_university_bengaluru",
+      "name": "St Joseph's University, Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private university",
+      "ownership": "Private aided",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.sju.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students interested in commerce-management pathways with urban campus exposure.",
+        "specialization": "Liberal and applied undergraduate pathways including management-related tracks.",
+        "unique_point": "Legacy academic brand in Bengaluru with a broad student ecosystem.",
+        "why_choose": "Suitable for students wanting balanced academics, city exposure, and interdisciplinary learning.",
+        "notes": "Always verify current admission pathway, fees, and campus-specific programme list."
+      },
+      "verification": {
+        "nirf_band": "Verify latest management band/ranking where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.sju.edu.in/"
+        ]
+      }
+    },
+    {
+      "id": "mount_carmel_college_bengaluru",
+      "name": "Mount Carmel College (Autonomous), Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Autonomous college",
+      "ownership": "Private aided",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://mccblr.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students seeking commerce-management pathways in a reputed autonomous college setting.",
+        "specialization": "Undergraduate programmes with applied orientation and strong campus-driven activities.",
+        "unique_point": "Established Bengaluru autonomous institution with strong student-community ecosystem.",
+        "why_choose": "A practical option for students prioritizing structured UG environment and city opportunities.",
+        "notes": "Always verify current admission pathway, fees, and campus-specific programme list."
+      },
+      "verification": {
+        "nirf_band": "Verify latest management band/ranking where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://mccblr.edu.in/"
+        ]
+      }
+    },
+    {
+      "id": "presidency_university_bengaluru",
+      "name": "Presidency University, Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private university",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://presidencyuniversity.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students looking for private-university management pathways with industry-focused curriculum.",
+        "specialization": "Management and interdisciplinary offerings with employability-oriented training.",
+        "unique_point": "Private university model with multiple schools and integrated progression options.",
+        "why_choose": "Useful for candidates comparing private university ecosystems in Bengaluru.",
+        "notes": "Always verify current admission pathway, fees, and campus-specific programme list."
+      },
+      "verification": {
+        "nirf_band": "Verify latest management band/ranking where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://presidencyuniversity.in/"
+        ]
+      }
+    },
+    {
+      "id": "reva_university_bengaluru",
+      "name": "REVA University, Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private university",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.reva.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students exploring management pathways with technology-business crossover exposure.",
+        "specialization": "Management-oriented programmes within a multidisciplinary private university framework.",
+        "unique_point": "Integrated campus ecosystem supporting interdisciplinary progression.",
+        "why_choose": "Suitable when students want business pathways plus wider cross-domain elective exposure.",
+        "notes": "Always verify current admission pathway, fees, and campus-specific programme list."
+      },
+      "verification": {
+        "nirf_band": "Verify latest management band/ranking where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.reva.edu.in/"
+        ]
+      }
+    },
+    {
+      "id": "acharya_institute_bengaluru",
+      "name": "Acharya Institute of Graduate Studies / Acharya Institutes, Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private autonomous group",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.acharya.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students comparing management and applied undergraduate options in Bengaluru.",
+        "specialization": "Broad programme mix with management pathways under a private institutional group.",
+        "unique_point": "Multi-institution setup offering varied discipline combinations in one ecosystem.",
+        "why_choose": "Useful for students needing broad programme choice under a single city-based umbrella.",
+        "notes": "Always verify current admission pathway, fees, and campus-specific programme list."
+      },
+      "verification": {
+        "nirf_band": "Verify latest management band/ranking where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.acharya.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "pes_university_bengaluru_management",
+      "name": "PES University (Management Programmes), Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private university",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.pes.edu/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students aiming for management pathways within a technology-forward university ecosystem.",
+        "specialization": "Management programmes with emphasis on analytical and practical business orientation.",
+        "unique_point": "Benefits from PES ecosystem's technology and industry exposure.",
+        "why_choose": "Strong option for students preferring management studies in a modern private-university environment.",
+        "notes": "Always verify current admission pathway, fees, and campus-specific programme list."
+      },
+      "verification": {
+        "nirf_band": "Verify latest management band/ranking where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.pes.edu/"
+        ]
+      }
+    },
+    {
+      "id": "ramaiah_institute_of_management_bengaluru",
+      "name": "Ramaiah Institute of Management, Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private management institute",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.rim.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Management aspirants seeking a focused business-school setting in Bengaluru.",
+        "specialization": "Management-centric curriculum with emphasis on professional readiness.",
+        "unique_point": "Standalone management focus under a known education-group ecosystem.",
+        "why_choose": "Useful for students prioritizing business-school intensity over broad university sprawl.",
+        "notes": "Always verify current admission pathway, fees, and campus-specific programme list."
+      },
+      "verification": {
+        "nirf_band": "Verify latest management band/ranking where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.rim.edu.in/"
+        ]
+      }
+    },
+    {
+      "id": "sdm_institute_for_management_development_mysuru",
+      "name": "SDM Institute for Management Development (SDMIMD), Mysuru",
+      "state_id": "KA",
+      "city": "Mysuru",
+      "type": "Private management institute",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.sdmimd.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students wanting management education in Mysuru with national-level orientation.",
+        "specialization": "Management development programmes with case-based and practice-led learning.",
+        "unique_point": "Known management institute in Mysuru with focused business education identity.",
+        "why_choose": "Good fit for candidates preferring a management-first campus outside Bengaluru.",
+        "notes": "Always verify current admission pathway, fees, and campus-specific programme list."
+      },
+      "verification": {
+        "nirf_band": "Verify latest management band/ranking where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.sdmimd.ac.in/"
+        ]
+      }
+    }
+  ]
+}

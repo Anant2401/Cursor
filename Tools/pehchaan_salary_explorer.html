@@ -185,6 +185,10 @@
   .career-section { margin-bottom: 14px; }
   .career-section h4 { font-size: 11px; font-weight: 700; color: var(--teal-dark); text-transform: uppercase; letter-spacing: .07em; margin-bottom: 8px; }
   .career-section p { font-size: 12px; color: var(--gray-text); line-height: 1.75; }
+  .insight-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px; }
+  .insight-cell { background:var(--card-bg); border:1px solid var(--border); border-radius:10px; padding:9px 10px; }
+  .insight-k { font-size:10px; color:var(--gray-text); font-weight:700; text-transform:uppercase; letter-spacing:.05em; margin-bottom:2px; }
+  .insight-v { font-size:12px; color:var(--teal-dark); font-weight:600; line-height:1.45; }
   .career-section ul { list-style: none; display: flex; flex-direction: column; gap: 5px; }
   .career-section ul li { font-size: 12px; color: var(--text); line-height: 1.6; padding-left: 16px; position: relative; }
   .career-section ul li::before { content: '→'; position: absolute; left: 0; color: var(--teal); font-size: 11px; top: 1px; }
@@ -232,7 +236,7 @@
 <div class="container">
 
   <div class="topbar">
-    <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+    <a class="topbar-back" href="../index.html#tools" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
     <a class="topbar-brand" href="../index.html">
     <div class="topbar-logo">
       <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -306,6 +310,7 @@
     <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
     <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
     hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+    <p>This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p>
   </div>
 
 </div>
@@ -313,6 +318,7 @@
 <script src="../assets/pehchaan_career_registry_prefill.js"></script>
 <script src="../assets/pehchaan_tool_links.js"></script>
 <script src="../assets/pehchaan_tool_recommendations.js"></script>
+<script src="../assets/db-adapters.js"></script>
 <script>
 var CAREERS = [];
 var DATA_META = null;
@@ -517,9 +523,34 @@ function tagClass(t) {
   if (['Creative', 'Self-employed', 'Social Impact'].includes(t)) return 'ctag ctag-creative';
   return 'ctag ctag-type';
 }
+function deriveCareerIcon(c) {
+  var n = String((c && c.name) || '').toLowerCase();
+  var seg = ((c && c.segments) || []).join(' ').toLowerCase();
+  if (/doctor|nurs|medical|health/.test(n + ' ' + seg)) return '🩺';
+  if (/engineer|developer|software|data|ai|cyber/.test(n + ' ' + seg)) return '💻';
+  if (/finance|account|bank|audit|ca|tax/.test(n + ' ' + seg)) return '💼';
+  if (/design|writer|content|artist|media/.test(n + ' ' + seg)) return '🎨';
+  if (/teacher|educat|professor/.test(n + ' ' + seg)) return '📚';
+  if (/law|judge|legal|advocate/.test(n + ' ' + seg)) return '⚖️';
+  if (/gov|civil|defence|army|police/.test(n + ' ' + seg)) return '🏛️';
+  if (/sales|marketing|business/.test(n + ' ' + seg)) return '📈';
+  return '🎯';
+}
 
 function renderDetailSections(c) {
   var parts = [];
+  var mode = normalizeWorkMode(c.workMode);
+  var outlook = c.demandOutlook && OUTLOOK_LABEL[c.demandOutlook] ? OUTLOOK_LABEL[c.demandOutlook] : '';
+  if (mode || outlook || c.salaryContext) {
+    parts.push(
+      '<div class="career-section"><h4>&#128202; At-a-glance</h4>' +
+      '<div class="insight-grid">' +
+      '<div class="insight-cell"><div class="insight-k">Work pattern</div><div class="insight-v">' + escapeHtml(WORKMODE_LABEL[mode] || 'Varies by employer and seniority') + '</div></div>' +
+      '<div class="insight-cell"><div class="insight-k">Hiring outlook</div><div class="insight-v">' + escapeHtml(outlook || 'Stable hiring') + '</div></div>' +
+      '<div class="insight-cell" style="grid-column:1/-1"><div class="insight-k">Salary context</div><div class="insight-v">' + escapeHtml(c.salaryContext || 'Salary varies by city tier, employer type, and practical proof of skills.') + '</div></div>' +
+      '</div></div>'
+    );
+  }
   if (c.typicalEmployers && c.typicalEmployers.length) {
     parts.push(
       '<div class="career-section"><h4>&#127970; Typical employers</h4><ul>' +
@@ -531,10 +562,10 @@ function renderDetailSections(c) {
         '</ul></div>'
     );
   }
-  if (c.workMode && WORKMODE_LABEL[c.workMode]) {
+  if (mode && WORKMODE_LABEL[mode]) {
     parts.push(
       '<div class="career-section"><h4>&#128205; Work pattern</h4><p>' +
-        escapeHtml(WORKMODE_LABEL[c.workMode]) +
+        escapeHtml(WORKMODE_LABEL[mode]) +
         '</p></div>'
     );
   }
@@ -553,6 +584,13 @@ function renderDetailSections(c) {
     );
   }
   return parts.join('');
+}
+function normalizeWorkMode(raw) {
+  var v = String(raw || '').toLowerCase().trim();
+  if (v === 'on-site' || v === 'onsite') return 'onsite';
+  if (v === 'hybrid') return 'hybrid';
+  if (v === 'remote') return 'remote';
+  return 'mixed';
 }
 
 function renderCard(c) {
@@ -584,6 +622,7 @@ function renderCard(c) {
     })
     .join('');
   var detailHTML = renderDetailSections(c) + renderPrivateRoleMetroSection(c);
+  var displayIcon = c.emoji && String(c.emoji).trim() && String(c.emoji) !== '🎯' ? c.emoji : deriveCareerIcon(c);
 
   return (
     '<div class="career-card" id="card-' +
@@ -595,7 +634,7 @@ function renderCard(c) {
     '<div class="career-emoji" style="background:' +
     streamBg(stream) +
     '">' +
-    c.emoji +
+    displayIcon +
     '</div>' +
     '<div class="career-head-info">' +
     '<div class="career-name">' +
@@ -720,8 +759,7 @@ function syncSalaryJourneySlotForCard(salaryNumericId) {
         role_family: p.role_family || ''
       };
       PehchaanJourney.setJourney(ctx);
-      var inner = PehchaanToolLinks.buildSalaryCardNextLinks(row, streamGuess);
-      var html = PehchaanToolLinks.wrapNextCard('Continue exploring', inner);
+      var html = '';
       if (window.PehchaanToolRecommendations) {
         var rec = PehchaanToolRecommendations.buildNextToolRecommendations(
           PehchaanToolRecommendations.TOOL.salary,
@@ -845,16 +883,33 @@ function applySalaryUrlPrefill() {
 }
 
 function loadCareerData() {
-  Promise.all([
-    fetch('../DB/pehchaan_salary_explorer_data.json').then(function(r) {
+  // Prefer the curated legacy salary explorer payload first because it
+  // contains UI-rich fields (icons, filters, copy) that canonical-only
+  // transforms may not preserve 1:1.
+  var salaryLoader = fetch('../DB/pehchaan_salary_explorer_data.json', { cache: 'no-store' })
+    .then(function(r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
-    }),
+    })
+    .catch(function() {
+      if (window.PehchaanDbAdapters && typeof window.PehchaanDbAdapters.loadCanonicalOrLegacy === 'function') {
+        return window.PehchaanDbAdapters.loadCanonicalOrLegacy(
+          '../DB/canonical/careers.json',
+          '../DB/pehchaan_salary_explorer_data.json',
+          window.PehchaanDbAdapters.adaptSalaryFromCanonical
+        );
+      }
+      throw new Error('Could not load salary explorer data');
+    });
+  Promise.all([
+    salaryLoader,
     loadPrivateRoleDb()
   ])
     .then(function(res) {
       var data = res[0];
       DATA_META = data.meta || null;
+      DATA_META = DATA_META || {};
+      if (!DATA_META.source) DATA_META.source = 'legacy_or_adapter';
       CAREERS = data.careers || [];
       return hydrateSalaryToPrivateRoleMap().then(function () {
         updateHeroAndDisclaimer();

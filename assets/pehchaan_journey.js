@@ -17,6 +17,7 @@
     metro: true,
     role_family: true,
     readiness_band: true,
+    course: true,
     profile: true,
     ts: true
   };
@@ -69,7 +70,12 @@
   function setJourney(partial) {
     try {
       var cur = sanitizeParams(getFromSession());
-      var next = Object.assign({}, cur, sanitizeParams(partial || {}));
+      var raw = partial || {};
+      Object.keys(raw).forEach(function (k) {
+        if (!ALLOWED_KEYS[k]) return;
+        if (raw[k] === "" || raw[k] == null) delete cur[k];
+      });
+      var next = Object.assign({}, cur, sanitizeParams(raw));
       next.ts = Date.now();
       sessionStorage.setItem(STORAGE_KEY, JSON.stringify(next));
     } catch (e) {}

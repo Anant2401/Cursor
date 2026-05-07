@@ -1,0 +1,479 @@
+{
+  "meta": {
+    "shard_type": "institutions",
+    "state_id": "WB",
+    "state_label": "West Bengal",
+    "count": 14,
+    "generated_on": "2026-05-07"
+  },
+  "institutions": [
+    {
+      "id": "iit_kharagpur",
+      "name": "IIT Kharagpur",
+      "state_id": "WB",
+      "city": "Kharagpur",
+      "type": "IIT",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iitkgp.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students targeting premier engineering and interdisciplinary technical education.",
+        "specialization": "Large IIT ecosystem with engineering depth, research labs, and innovation culture.",
+        "unique_point": "Oldest IIT with expansive campus and diverse academic breadth.",
+        "why_choose": "Strong for students seeking top-tier technical training with broad specialization options.",
+        "notes": "JEE Advanced; large campus + deep alumni."
+      },
+      "verification": {
+        "nirf_band": "Top Engineering band — verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iitkgp.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "jadavpur_university_faculty_of_engineering_and_technology",
+      "name": "Jadavpur University — Faculty of Engineering & Technology",
+      "state_id": "WB",
+      "city": "Kolkata",
+      "type": "State",
+      "ownership": "",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://jadavpuruniversity.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students seeking high-quality public engineering education in Kolkata.",
+        "specialization": "Engineering pathways with strong academic rigor and long public-institution legacy.",
+        "unique_point": "Widely respected state-university engineering ecosystem with strong value proposition.",
+        "why_choose": "Useful for students prioritizing quality public technical education and city location.",
+        "notes": "Very competitive WBJEE; strong value for money."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://jadavpuruniversity.in/"
+        ]
+      }
+    },
+    {
+      "id": "iiest_shibpur",
+      "name": "IIEST Shibpur",
+      "state_id": "WB",
+      "city": "Howrah",
+      "type": "INI",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iiests.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students aiming for an institute of national importance in engineering.",
+        "specialization": "Engineering and science tracks with national-institute research orientation.",
+        "unique_point": "Historic engineering institution elevated to institute of national importance status.",
+        "why_choose": "Good fit for students comparing IIT/NIT-adjacent quality public technical routes.",
+        "notes": "JoSAA; historic brand."
+      },
+      "verification": {
+        "nirf_band": "Verify NIRF",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.iiests.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "heritage_institute_of_technology_example_kolkata_private",
+      "name": "Heritage Institute of Technology (example Kolkata private)",
+      "state_id": "WB",
+      "city": "Kolkata",
+      "type": "Private",
+      "ownership": "",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.heritageit.edu/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comparing private engineering options in Kolkata ecosystem.",
+        "specialization": "Industry-oriented engineering education in private institutional setup.",
+        "unique_point": "Recognized private engineering option in Kolkata's technical education landscape.",
+        "why_choose": "Useful for students balancing private campus environment and metro location.",
+        "notes": "Ask for median package and internship geography."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.heritageit.edu/",
+          "https://makautwb.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "affiliated_engineering_colleges_across_districts",
+      "name": "Affiliated engineering colleges across districts",
+      "state_id": "WB",
+      "city": "West Bengal",
+      "type": "Affiliated",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://makautwb.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students mapping district-wise engineering options under state-affiliation frameworks.",
+        "specialization": "Umbrella planning row for affiliated engineering college discovery in West Bengal.",
+        "unique_point": "State-level affiliation anchor to expand shortlist beyond Kolkata core.",
+        "why_choose": "Useful when geography flexibility and broad option mapping are both needed.",
+        "notes": "Use NBA + faculty FTE data; plan GATE early if targeting PSUs."
+      },
+      "verification": {
+        "nirf_band": "Wide",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://makautwb.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "medical_college_and_hospital_kolkata",
+      "name": "Medical College & Hospital, Kolkata",
+      "state_id": "WB",
+      "city": "Kolkata",
+      "type": "State GMC",
+      "ownership": "",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.medicalcollegekolkata.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students targeting government MBBS pathways in Kolkata.",
+        "specialization": "Public medical training with major city hospital ecosystem exposure.",
+        "unique_point": "Historic government medical institution with long clinical legacy.",
+        "why_choose": "Strong for students prioritizing government medical route in a metro context.",
+        "notes": "Very high clinical load; competitive."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.medicalcollegekolkata.in/",
+          "https://wbmcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "nil_ratan_sircar_medical_college_nrs",
+      "name": "Nil Ratan Sircar Medical College (NRS)",
+      "state_id": "WB",
+      "city": "Kolkata",
+      "type": "State GMC",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://nrsmc.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students exploring government medical options in Kolkata.",
+        "specialization": "Public medical pathway with substantial clinical case exposure.",
+        "unique_point": "Established government medical institution in Kolkata healthcare ecosystem.",
+        "why_choose": "Useful for students comparing major Kolkata government medical choices.",
+        "notes": "Read bond updates carefully."
+      },
+      "verification": {
+        "nirf_band": "Verify",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://nrsmc.edu.in/",
+          "https://wbmcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "cnmc_bankura_burdwan_medical_college_examples_verify_list",
+      "name": "CNMC Bankura / Burdwan Medical College (examples — verify list)",
+      "state_id": "WB",
+      "city": "West Bengal",
+      "type": "State GMC",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://wbmcc.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students comparing multiple regional government medical options in West Bengal.",
+        "specialization": "Counseling-centric row for state government medical college comparison.",
+        "unique_point": "Supports region-wise medical shortlist planning beyond Kolkata.",
+        "why_choose": "Helpful when seat allotment trends and geography both affect preference order.",
+        "notes": "Good training; check hostel and stipend."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://wbmcc.nic.in/",
+          "https://mcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "private_medical_colleges_in_wb",
+      "name": "Private medical colleges in WB",
+      "state_id": "WB",
+      "city": "West Bengal",
+      "type": "Private",
+      "ownership": "",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nmc.org.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Confirm founding milestones on the institute’s official ‘About’ or gazette — do not rely on third-party wiki dates alone.",
+        "notable_alumni": [
+          "Treat alumni lists as directional only; verify on official institute pages or convocation records — avoid unverifiable viral posts."
+        ],
+        "best_for": "Students and families evaluating private medical seats in West Bengal.",
+        "specialization": "Private MBBS planning with regulator and counseling verification references.",
+        "unique_point": "Central reference row for private-medical exploration in the state.",
+        "why_choose": "Useful when comparing private options on fees, location, and seat access.",
+        "notes": "Verify NMC; compare clinical years hospital mapping."
+      },
+      "verification": {
+        "nirf_band": "Varies",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nmc.org.in/",
+          "https://wbmcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "jadavpur_university",
+      "name": "Jadavpur University",
+      "state_id": "WB",
+      "city": "Kolkata",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://jadavpuruniversity.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students pursuing engineering, sciences, and humanities in a strong public ecosystem.",
+        "specialization": "Multi-stream public university pathway with strong academic reputation.",
+        "unique_point": "High-value state university with broad academic depth and strong alumni base.",
+        "why_choose": "Good for students who prefer public-university quality with diverse stream options.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://jadavpuruniversity.in/"
+        ]
+      }
+    },
+    {
+      "id": "university_of_calcutta",
+      "name": "University of Calcutta",
+      "state_id": "WB",
+      "city": "Kolkata",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.caluniv.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students seeking broad commerce, science, law, and humanities pathways in Kolkata.",
+        "specialization": "Large public-university ecosystem with historic academic legacy.",
+        "unique_point": "One of India's oldest universities with wide departmental and affiliated-college network.",
+        "why_choose": "Useful for students wanting broad option depth in a recognized public setting.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.caluniv.ac.in/"
+        ]
+      }
+    },
+    {
+      "id": "wbnujs_kolkata",
+      "name": "The West Bengal National University of Juridical Sciences",
+      "state_id": "WB",
+      "city": "Kolkata",
+      "type": "National law university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nujs.edu/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Law aspirants targeting a leading national-law-university environment.",
+        "specialization": "Integrated legal education with strong policy, litigation, and corporate-law orientation.",
+        "unique_point": "Top legal-education brand with strong professional trajectory outcomes.",
+        "why_choose": "Strong fit for students prioritizing NLU-style legal pathway in eastern India.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nujs.edu/"
+        ]
+      }
+    },
+    {
+      "id": "rgkar_medical_college",
+      "name": "R.G. Kar Medical College and Hospital",
+      "state_id": "WB",
+      "city": "Kolkata",
+      "type": "Government medical college",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://rgkarmch.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students exploring established government medical options in Kolkata.",
+        "specialization": "Public medical pathway with major clinical training environment.",
+        "unique_point": "Recognized Kolkata government medical institution with longstanding public-health role.",
+        "why_choose": "Useful for candidates comparing urban government-medical training ecosystems.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://rgkarmch.org/",
+          "https://wbmcc.nic.in/"
+        ]
+      }
+    },
+    {
+      "id": "nift_kolkata",
+      "name": "National Institute of Fashion Technology Kolkata",
+      "state_id": "WB",
+      "city": "Kolkata",
+      "type": "Institute of national importance",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nift.ac.in/kolkata/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "Students pursuing fashion, design, and communication pathways in eastern region.",
+        "specialization": "Design-focused learning with portfolio, studio, and industry-interface orientation.",
+        "unique_point": "NIFT-system specialized design pathway in Kolkata.",
+        "why_choose": "Good for students targeting focused design careers with strong institutional identity.",
+        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+      },
+      "verification": {
+        "nirf_band": "Verify latest rank/band where applicable.",
+        "last_verified_on": "2026-05-07",
+        "source_urls": [
+          "https://www.nift.ac.in/kolkata/"
+        ]
+      }
+    }
+  ]
+}

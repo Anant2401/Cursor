@@ -1,0 +1,479 @@
+{
+  "meta": {
+    "shard_type": "programs",
+    "state_id": "CG",
+    "state_label": "Chhattisgarh",
+    "count": 26,
+    "generated_on": "2026-05-07"
+  },
+  "programs": [
+    {
+      "id": "nit_raipur_engineering_engineering_generic_state_comfort_cg",
+      "college_id": "nit_raipur",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: National in-state (INI / central in CG)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "iiit_naya_raipur_engineering_engineering_generic_state_comfort_cg",
+      "college_id": "iiit_naya_raipur",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: National in-state (INI / central in CG)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "iit_bhilai_engineering_engineering_generic_state_comfort_cg",
+      "college_id": "iit_bhilai",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: National in-state (INI / central in CG)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "government_engineering_college_raipur_example_state_college_engineering_engineer",
+      "college_id": "government_engineering_college_raipur_example_state_college",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Good — respected state & private universities"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "shri_shankaracharya_technical_campus_sstc_bhilai_engineering_engineering_generic",
+      "college_id": "shri_shankaracharya_technical_campus_sstc_bhilai",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Good — respected state & private universities"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify_engineering_e",
+      "college_id": "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Imported from Plan B bundle tier: Good — respected state & private universities"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "other_aicte_affiliated_colleges_in_cg_engineering_engineering_generic_state_comf",
+      "college_id": "other_aicte_affiliated_colleges_in_cg",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Average — accredited options to combine with skills"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "aiims_raipur_medicine_medicine_mbbs_state_comfort_cg",
+      "college_id": "aiims_raipur",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: INI / flagship in state"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
+      "college_id": "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: INI / flagship in state"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "gmc_raipur_other_cg_gmcs_as_per_state_list_medicine_medicine_mbbs_state_comfort_",
+      "college_id": "gmc_raipur_other_cg_gmcs_as_per_state_list",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Imported from Plan B bundle tier: Government medical colleges (state quota)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
+      "college_id": "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Government medical colleges (state quota)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
+      "college_id": "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Government medical colleges (state quota)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "private_mbbs_colleges_in_cg_verify_mcc_state_medicine_medicine_mbbs_state_comfor",
+      "college_id": "private_mbbs_colleges_in_cg_verify_mcc_state",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Private medical colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "iit_bhilai_engineering_engineering_generic_state_comfort",
+      "college_id": "iit_bhilai",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "iit_bhilai_science_stats_science_stats_generic_state_comfort",
+      "college_id": "iit_bhilai",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "aiims_raipur_medicine_medicine_mbbs_state_comfort",
+      "college_id": "aiims_raipur",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "hidayatullah_national_law_university_law_law_generic_state_comfort",
+      "college_id": "hidayatullah_national_law_university",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "hidayatullah_national_law_university_humanities_humanities_generic_state_comfort",
+      "college_id": "hidayatullah_national_law_university",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "pt_ravishankar_shukla_university_commerce_commerce_generic_state_comfort",
+      "college_id": "pt_ravishankar_shukla_university",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "pt_ravishankar_shukla_university_science_stats_science_stats_generic_state_comfo",
+      "college_id": "pt_ravishankar_shukla_university",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "pt_ravishankar_shukla_university_humanities_humanities_generic_state_comfort",
+      "college_id": "pt_ravishankar_shukla_university",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "pt_ravishankar_shukla_university_education_education_generic_state_comfort",
+      "college_id": "pt_ravishankar_shukla_university",
+      "stream_id": "education",
+      "course_id": "education_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "pt_ravishankar_shukla_university_management_management_generic_state_comfort",
+      "college_id": "pt_ravishankar_shukla_university",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "indira_kala_sangeet_vishwavidyalaya_fashion_media_fashion_media_generic_state_co",
+      "college_id": "indira_kala_sangeet_vishwavidyalaya",
+      "stream_id": "fashion_media",
+      "course_id": "fashion_media_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "indira_kala_sangeet_vishwavidyalaya_design_design_generic_state_comfort",
+      "college_id": "indira_kala_sangeet_vishwavidyalaya",
+      "stream_id": "design",
+      "course_id": "design_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "indira_kala_sangeet_vishwavidyalaya_humanities_humanities_generic_state_comfort",
+      "college_id": "indira_kala_sangeet_vishwavidyalaya",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    }
+  ]
+}

@@ -1,0 +1,1090 @@
+{
+  "meta": {
+    "schema_version": "1.0.0",
+    "generated_on": "2026-05-07",
+    "generated_from": "DB/pehchaan_college_registry.json",
+    "notes": "State-sharded institution and program datasets for lazy browser loading."
+  },
+  "taxonomies": {
+    "streams": [
+      {
+        "id": "engineering",
+        "label": "Engineering (B.Tech / B.E.)"
+      },
+      {
+        "id": "architecture",
+        "label": "Architecture (B.Arch)"
+      },
+      {
+        "id": "design",
+        "label": "Design (B.Des / UID)"
+      },
+      {
+        "id": "medicine",
+        "label": "Medicine (MBBS)"
+      },
+      {
+        "id": "dentistry",
+        "label": "Dental (BDS)"
+      },
+      {
+        "id": "ayush",
+        "label": "AYUSH (BAMS / BHMS / BUMS etc.)"
+      },
+      {
+        "id": "pharmacy",
+        "label": "Pharmacy (B.Pharm)"
+      },
+      {
+        "id": "law",
+        "label": "Law (BA LLB / BBA LLB)"
+      },
+      {
+        "id": "management",
+        "label": "Management (BBA / IPM / MBA prep)"
+      },
+      {
+        "id": "commerce",
+        "label": "Commerce & finance (B.Com / BBA)"
+      },
+      {
+        "id": "science_stats",
+        "label": "Sciences & Statistics (B.Sc / BS)"
+      },
+      {
+        "id": "fashion_media",
+        "label": "Fashion, media & communication"
+      },
+      {
+        "id": "humanities",
+        "label": "Humanities & social sciences"
+      },
+      {
+        "id": "education",
+        "label": "Education (B.Ed / integrated)"
+      },
+      {
+        "id": "veterinary",
+        "label": "Veterinary (BVSc)"
+      }
+    ],
+    "courses": [
+      {
+        "id": "engineering_generic",
+        "label": "ENGINEERING GENERIC",
+        "stream_ids": [
+          "engineering"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "medicine_mbbs",
+        "label": "MEDICINE MBBS",
+        "stream_ids": [
+          "medicine"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "architecture_generic",
+        "label": "ARCHITECTURE GENERIC",
+        "stream_ids": [
+          "architecture"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "design_generic",
+        "label": "DESIGN GENERIC",
+        "stream_ids": [
+          "design"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "dentistry_generic",
+        "label": "DENTISTRY GENERIC",
+        "stream_ids": [
+          "dentistry"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "ayush_generic",
+        "label": "AYUSH GENERIC",
+        "stream_ids": [
+          "ayush"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "pharmacy_generic",
+        "label": "PHARMACY GENERIC",
+        "stream_ids": [
+          "pharmacy"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "law_generic",
+        "label": "LAW GENERIC",
+        "stream_ids": [
+          "law"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "management_generic",
+        "label": "MANAGEMENT GENERIC",
+        "stream_ids": [
+          "management"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "commerce_generic",
+        "label": "COMMERCE GENERIC",
+        "stream_ids": [
+          "commerce"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "science_stats_generic",
+        "label": "SCIENCE STATS GENERIC",
+        "stream_ids": [
+          "science_stats"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "fashion_media_generic",
+        "label": "FASHION MEDIA GENERIC",
+        "stream_ids": [
+          "fashion_media"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "humanities_generic",
+        "label": "HUMANITIES GENERIC",
+        "stream_ids": [
+          "humanities"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "education_generic",
+        "label": "EDUCATION GENERIC",
+        "stream_ids": [
+          "education"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "veterinary_generic",
+        "label": "VETERINARY GENERIC",
+        "stream_ids": [
+          "veterinary"
+        ],
+        "aliases": []
+      }
+    ],
+    "states": [
+      {
+        "id": "IN",
+        "label": "All-India (national counselling)",
+        "only_for_lens": "national_level"
+      },
+      {
+        "id": "AP",
+        "label": "Andhra Pradesh",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "AR",
+        "label": "Arunachal Pradesh",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "AS",
+        "label": "Assam",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "BR",
+        "label": "Bihar",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "CG",
+        "label": "Chhattisgarh",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "GA",
+        "label": "Goa",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "GJ",
+        "label": "Gujarat",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "HR",
+        "label": "Haryana",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "HP",
+        "label": "Himachal Pradesh",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "JH",
+        "label": "Jharkhand",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "KA",
+        "label": "Karnataka",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "KL",
+        "label": "Kerala",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "MP",
+        "label": "Madhya Pradesh",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "MH",
+        "label": "Maharashtra",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "MN",
+        "label": "Manipur",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "ML",
+        "label": "Meghalaya",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "MZ",
+        "label": "Mizoram",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "NL",
+        "label": "Nagaland",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "OD",
+        "label": "Odisha",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "PB",
+        "label": "Punjab",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "RJ",
+        "label": "Rajasthan",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "SK",
+        "label": "Sikkim",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "TN",
+        "label": "Tamil Nadu",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "TS",
+        "label": "Telangana",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "TR",
+        "label": "Tripura",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "UP",
+        "label": "Uttar Pradesh",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "UK",
+        "label": "Uttarakhand",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "WB",
+        "label": "West Bengal",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "DL",
+        "label": "Delhi (NCT)",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "JK",
+        "label": "Jammu & Kashmir",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "LA",
+        "label": "Ladakh",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "PY",
+        "label": "Puducherry",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "CH",
+        "label": "Chandigarh",
+        "only_for_lens": "state_comfort"
+      },
+      {
+        "id": "AN",
+        "label": "Andaman & Nicobar Islands",
+        "only_for_lens": "state_comfort"
+      }
+    ],
+    "geography_lenses": [
+      {
+        "id": "national_level",
+        "label": "National-level ladder",
+        "hint": "JoSAA / CSAB, MCC — all-India competition"
+      },
+      {
+        "id": "state_comfort",
+        "label": "State-comfort",
+        "hint": "Strong options closer to home — always check domicile"
+      }
+    ],
+    "admission_exams": []
+  },
+  "state_neighbors": {
+    "AP": [
+      "TS",
+      "TN",
+      "KA",
+      "OD",
+      "KL"
+    ],
+    "AR": [
+      "AS",
+      "NL"
+    ],
+    "AS": [
+      "AR",
+      "NL",
+      "ML",
+      "MZ",
+      "TR",
+      "WB",
+      "BR"
+    ],
+    "BR": [
+      "UP",
+      "JH",
+      "WB",
+      "AS"
+    ],
+    "CG": [
+      "MP",
+      "MH",
+      "TS",
+      "JH",
+      "UP",
+      "OD"
+    ],
+    "GA": [
+      "MH",
+      "KA"
+    ],
+    "GJ": [
+      "MH",
+      "MP",
+      "RJ"
+    ],
+    "HR": [
+      "RJ",
+      "UP",
+      "PB",
+      "HP",
+      "DL",
+      "UK"
+    ],
+    "HP": [
+      "UK",
+      "HR",
+      "PB",
+      "JK",
+      "LA"
+    ],
+    "JH": [
+      "BR",
+      "CG",
+      "OD",
+      "WB",
+      "UP",
+      "MP"
+    ],
+    "KA": [
+      "KL",
+      "TN",
+      "TS",
+      "AP",
+      "MH",
+      "GA"
+    ],
+    "KL": [
+      "TN",
+      "KA",
+      "PY"
+    ],
+    "MP": [
+      "RJ",
+      "MH",
+      "CG",
+      "UP",
+      "GJ"
+    ],
+    "MH": [
+      "GA",
+      "GJ",
+      "MP",
+      "CG",
+      "TS",
+      "KA"
+    ],
+    "MN": [
+      "MZ",
+      "NL",
+      "AS",
+      "ML"
+    ],
+    "ML": [
+      "AS",
+      "MZ",
+      "TR",
+      "MN"
+    ],
+    "MZ": [
+      "MN",
+      "TR",
+      "AS",
+      "NL",
+      "ML"
+    ],
+    "NL": [
+      "AR",
+      "AS",
+      "MZ",
+      "MN"
+    ],
+    "OD": [
+      "CG",
+      "JH",
+      "WB",
+      "AP",
+      "TS",
+      "MP"
+    ],
+    "PB": [
+      "HR",
+      "HP",
+      "JK",
+      "RJ",
+      "CH"
+    ],
+    "RJ": [
+      "GJ",
+      "MP",
+      "UP",
+      "PB",
+      "HR"
+    ],
+    "SK": [
+      "WB"
+    ],
+    "TN": [
+      "KL",
+      "KA",
+      "AP",
+      "TS",
+      "PY"
+    ],
+    "TS": [
+      "MH",
+      "CG",
+      "AP",
+      "KA",
+      "OD"
+    ],
+    "TR": [
+      "AS",
+      "MZ",
+      "ML"
+    ],
+    "UP": [
+      "UK",
+      "HR",
+      "RJ",
+      "MP",
+      "CG",
+      "BR",
+      "JH",
+      "DL"
+    ],
+    "UK": [
+      "UP",
+      "HP",
+      "HR"
+    ],
+    "WB": [
+      "BR",
+      "JH",
+      "OD",
+      "AS",
+      "SK"
+    ],
+    "DL": [
+      "HR",
+      "UP"
+    ],
+    "JK": [
+      "HP",
+      "PB",
+      "LA"
+    ],
+    "LA": [
+      "JK",
+      "HP"
+    ],
+    "PY": [
+      "TN",
+      "KL"
+    ],
+    "CH": [
+      "PB",
+      "HR"
+    ],
+    "AN": [
+      "TN",
+      "KL"
+    ]
+  },
+  "state_shards": [
+    {
+      "state_id": "AN",
+      "state_label": "Andaman & Nicobar Islands",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/AN.json",
+      "programs_file": "DB/shards/college_registry/programs/AN.json"
+    },
+    {
+      "state_id": "AP",
+      "state_label": "Andhra Pradesh",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/AP.json",
+      "programs_file": "DB/shards/college_registry/programs/AP.json"
+    },
+    {
+      "state_id": "AR",
+      "state_label": "Arunachal Pradesh",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/AR.json",
+      "programs_file": "DB/shards/college_registry/programs/AR.json"
+    },
+    {
+      "state_id": "AS",
+      "state_label": "Assam",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/AS.json",
+      "programs_file": "DB/shards/college_registry/programs/AS.json"
+    },
+    {
+      "state_id": "BR",
+      "state_label": "Bihar",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/BR.json",
+      "programs_file": "DB/shards/college_registry/programs/BR.json"
+    },
+    {
+      "state_id": "CG",
+      "state_label": "Chhattisgarh",
+      "institutions_count": 16,
+      "programs_count": 26,
+      "institutions_file": "DB/shards/college_registry/institutions/CG.json",
+      "programs_file": "DB/shards/college_registry/programs/CG.json"
+    },
+    {
+      "state_id": "CH",
+      "state_label": "Chandigarh",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/CH.json",
+      "programs_file": "DB/shards/college_registry/programs/CH.json"
+    },
+    {
+      "state_id": "DL",
+      "state_label": "Delhi (NCT)",
+      "institutions_count": 12,
+      "programs_count": 29,
+      "institutions_file": "DB/shards/college_registry/institutions/DL.json",
+      "programs_file": "DB/shards/college_registry/programs/DL.json"
+    },
+    {
+      "state_id": "GA",
+      "state_label": "Goa",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/GA.json",
+      "programs_file": "DB/shards/college_registry/programs/GA.json"
+    },
+    {
+      "state_id": "GJ",
+      "state_label": "Gujarat",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/GJ.json",
+      "programs_file": "DB/shards/college_registry/programs/GJ.json"
+    },
+    {
+      "state_id": "HP",
+      "state_label": "Himachal Pradesh",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/HP.json",
+      "programs_file": "DB/shards/college_registry/programs/HP.json"
+    },
+    {
+      "state_id": "HR",
+      "state_label": "Haryana",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/HR.json",
+      "programs_file": "DB/shards/college_registry/programs/HR.json"
+    },
+    {
+      "state_id": "IN",
+      "state_label": "All-India (national counselling)",
+      "institutions_count": 33,
+      "programs_count": 33,
+      "institutions_file": "DB/shards/college_registry/institutions/IN.json",
+      "programs_file": "DB/shards/college_registry/programs/IN.json"
+    },
+    {
+      "state_id": "JH",
+      "state_label": "Jharkhand",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/JH.json",
+      "programs_file": "DB/shards/college_registry/programs/JH.json"
+    },
+    {
+      "state_id": "JK",
+      "state_label": "Jammu & Kashmir",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/JK.json",
+      "programs_file": "DB/shards/college_registry/programs/JK.json"
+    },
+    {
+      "state_id": "KA",
+      "state_label": "Karnataka",
+      "institutions_count": 22,
+      "programs_count": 22,
+      "institutions_file": "DB/shards/college_registry/institutions/KA.json",
+      "programs_file": "DB/shards/college_registry/programs/KA.json"
+    },
+    {
+      "state_id": "KL",
+      "state_label": "Kerala",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/KL.json",
+      "programs_file": "DB/shards/college_registry/programs/KL.json"
+    },
+    {
+      "state_id": "LA",
+      "state_label": "Ladakh",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/LA.json",
+      "programs_file": "DB/shards/college_registry/programs/LA.json"
+    },
+    {
+      "state_id": "MH",
+      "state_label": "Maharashtra",
+      "institutions_count": 27,
+      "programs_count": 38,
+      "institutions_file": "DB/shards/college_registry/institutions/MH.json",
+      "programs_file": "DB/shards/college_registry/programs/MH.json"
+    },
+    {
+      "state_id": "ML",
+      "state_label": "Meghalaya",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/ML.json",
+      "programs_file": "DB/shards/college_registry/programs/ML.json"
+    },
+    {
+      "state_id": "MN",
+      "state_label": "Manipur",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/MN.json",
+      "programs_file": "DB/shards/college_registry/programs/MN.json"
+    },
+    {
+      "state_id": "MP",
+      "state_label": "Madhya Pradesh",
+      "institutions_count": 9,
+      "programs_count": 19,
+      "institutions_file": "DB/shards/college_registry/institutions/MP.json",
+      "programs_file": "DB/shards/college_registry/programs/MP.json"
+    },
+    {
+      "state_id": "MZ",
+      "state_label": "Mizoram",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/MZ.json",
+      "programs_file": "DB/shards/college_registry/programs/MZ.json"
+    },
+    {
+      "state_id": "NL",
+      "state_label": "Nagaland",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/NL.json",
+      "programs_file": "DB/shards/college_registry/programs/NL.json"
+    },
+    {
+      "state_id": "OD",
+      "state_label": "Odisha",
+      "institutions_count": 8,
+      "programs_count": 18,
+      "institutions_file": "DB/shards/college_registry/institutions/OD.json",
+      "programs_file": "DB/shards/college_registry/programs/OD.json"
+    },
+    {
+      "state_id": "PB",
+      "state_label": "Punjab",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/PB.json",
+      "programs_file": "DB/shards/college_registry/programs/PB.json"
+    },
+    {
+      "state_id": "PY",
+      "state_label": "Puducherry",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/PY.json",
+      "programs_file": "DB/shards/college_registry/programs/PY.json"
+    },
+    {
+      "state_id": "RJ",
+      "state_label": "Rajasthan",
+      "institutions_count": 12,
+      "programs_count": 25,
+      "institutions_file": "DB/shards/college_registry/institutions/RJ.json",
+      "programs_file": "DB/shards/college_registry/programs/RJ.json"
+    },
+    {
+      "state_id": "SK",
+      "state_label": "Sikkim",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/SK.json",
+      "programs_file": "DB/shards/college_registry/programs/SK.json"
+    },
+    {
+      "state_id": "TN",
+      "state_label": "Tamil Nadu",
+      "institutions_count": 15,
+      "programs_count": 24,
+      "institutions_file": "DB/shards/college_registry/institutions/TN.json",
+      "programs_file": "DB/shards/college_registry/programs/TN.json"
+    },
+    {
+      "state_id": "TR",
+      "state_label": "Tripura",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/TR.json",
+      "programs_file": "DB/shards/college_registry/programs/TR.json"
+    },
+    {
+      "state_id": "TS",
+      "state_label": "Telangana",
+      "institutions_count": 14,
+      "programs_count": 26,
+      "institutions_file": "DB/shards/college_registry/institutions/TS.json",
+      "programs_file": "DB/shards/college_registry/programs/TS.json"
+    },
+    {
+      "state_id": "UK",
+      "state_label": "Uttarakhand",
+      "institutions_count": 0,
+      "programs_count": 0,
+      "institutions_file": "DB/shards/college_registry/institutions/UK.json",
+      "programs_file": "DB/shards/college_registry/programs/UK.json"
+    },
+    {
+      "state_id": "UP",
+      "state_label": "Uttar Pradesh",
+      "institutions_count": 31,
+      "programs_count": 48,
+      "institutions_file": "DB/shards/college_registry/institutions/UP.json",
+      "programs_file": "DB/shards/college_registry/programs/UP.json"
+    },
+    {
+      "state_id": "WB",
+      "state_label": "West Bengal",
+      "institutions_count": 14,
+      "programs_count": 24,
+      "institutions_file": "DB/shards/college_registry/institutions/WB.json",
+      "programs_file": "DB/shards/college_registry/programs/WB.json"
+    }
+  ],
+  "state_shard_map": {
+    "AN": {
+      "institutions_file": "DB/shards/college_registry/institutions/AN.json",
+      "programs_file": "DB/shards/college_registry/programs/AN.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "AP": {
+      "institutions_file": "DB/shards/college_registry/institutions/AP.json",
+      "programs_file": "DB/shards/college_registry/programs/AP.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "AR": {
+      "institutions_file": "DB/shards/college_registry/institutions/AR.json",
+      "programs_file": "DB/shards/college_registry/programs/AR.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "AS": {
+      "institutions_file": "DB/shards/college_registry/institutions/AS.json",
+      "programs_file": "DB/shards/college_registry/programs/AS.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "BR": {
+      "institutions_file": "DB/shards/college_registry/institutions/BR.json",
+      "programs_file": "DB/shards/college_registry/programs/BR.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "CG": {
+      "institutions_file": "DB/shards/college_registry/institutions/CG.json",
+      "programs_file": "DB/shards/college_registry/programs/CG.json",
+      "institutions_count": 16,
+      "programs_count": 26
+    },
+    "CH": {
+      "institutions_file": "DB/shards/college_registry/institutions/CH.json",
+      "programs_file": "DB/shards/college_registry/programs/CH.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "DL": {
+      "institutions_file": "DB/shards/college_registry/institutions/DL.json",
+      "programs_file": "DB/shards/college_registry/programs/DL.json",
+      "institutions_count": 12,
+      "programs_count": 29
+    },
+    "GA": {
+      "institutions_file": "DB/shards/college_registry/institutions/GA.json",
+      "programs_file": "DB/shards/college_registry/programs/GA.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "GJ": {
+      "institutions_file": "DB/shards/college_registry/institutions/GJ.json",
+      "programs_file": "DB/shards/college_registry/programs/GJ.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "HP": {
+      "institutions_file": "DB/shards/college_registry/institutions/HP.json",
+      "programs_file": "DB/shards/college_registry/programs/HP.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "HR": {
+      "institutions_file": "DB/shards/college_registry/institutions/HR.json",
+      "programs_file": "DB/shards/college_registry/programs/HR.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "IN": {
+      "institutions_file": "DB/shards/college_registry/institutions/IN.json",
+      "programs_file": "DB/shards/college_registry/programs/IN.json",
+      "institutions_count": 33,
+      "programs_count": 33
+    },
+    "JH": {
+      "institutions_file": "DB/shards/college_registry/institutions/JH.json",
+      "programs_file": "DB/shards/college_registry/programs/JH.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "JK": {
+      "institutions_file": "DB/shards/college_registry/institutions/JK.json",
+      "programs_file": "DB/shards/college_registry/programs/JK.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "KA": {
+      "institutions_file": "DB/shards/college_registry/institutions/KA.json",
+      "programs_file": "DB/shards/college_registry/programs/KA.json",
+      "institutions_count": 22,
+      "programs_count": 22
+    },
+    "KL": {
+      "institutions_file": "DB/shards/college_registry/institutions/KL.json",
+      "programs_file": "DB/shards/college_registry/programs/KL.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "LA": {
+      "institutions_file": "DB/shards/college_registry/institutions/LA.json",
+      "programs_file": "DB/shards/college_registry/programs/LA.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "MH": {
+      "institutions_file": "DB/shards/college_registry/institutions/MH.json",
+      "programs_file": "DB/shards/college_registry/programs/MH.json",
+      "institutions_count": 27,
+      "programs_count": 38
+    },
+    "ML": {
+      "institutions_file": "DB/shards/college_registry/institutions/ML.json",
+      "programs_file": "DB/shards/college_registry/programs/ML.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "MN": {
+      "institutions_file": "DB/shards/college_registry/institutions/MN.json",
+      "programs_file": "DB/shards/college_registry/programs/MN.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "MP": {
+      "institutions_file": "DB/shards/college_registry/institutions/MP.json",
+      "programs_file": "DB/shards/college_registry/programs/MP.json",
+      "institutions_count": 9,
+      "programs_count": 19
+    },
+    "MZ": {
+      "institutions_file": "DB/shards/college_registry/institutions/MZ.json",
+      "programs_file": "DB/shards/college_registry/programs/MZ.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "NL": {
+      "institutions_file": "DB/shards/college_registry/institutions/NL.json",
+      "programs_file": "DB/shards/college_registry/programs/NL.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "OD": {
+      "institutions_file": "DB/shards/college_registry/institutions/OD.json",
+      "programs_file": "DB/shards/college_registry/programs/OD.json",
+      "institutions_count": 8,
+      "programs_count": 18
+    },
+    "PB": {
+      "institutions_file": "DB/shards/college_registry/institutions/PB.json",
+      "programs_file": "DB/shards/college_registry/programs/PB.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "PY": {
+      "institutions_file": "DB/shards/college_registry/institutions/PY.json",
+      "programs_file": "DB/shards/college_registry/programs/PY.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "RJ": {
+      "institutions_file": "DB/shards/college_registry/institutions/RJ.json",
+      "programs_file": "DB/shards/college_registry/programs/RJ.json",
+      "institutions_count": 12,
+      "programs_count": 25
+    },
+    "SK": {
+      "institutions_file": "DB/shards/college_registry/institutions/SK.json",
+      "programs_file": "DB/shards/college_registry/programs/SK.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "TN": {
+      "institutions_file": "DB/shards/college_registry/institutions/TN.json",
+      "programs_file": "DB/shards/college_registry/programs/TN.json",
+      "institutions_count": 15,
+      "programs_count": 24
+    },
+    "TR": {
+      "institutions_file": "DB/shards/college_registry/institutions/TR.json",
+      "programs_file": "DB/shards/college_registry/programs/TR.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "TS": {
+      "institutions_file": "DB/shards/college_registry/institutions/TS.json",
+      "programs_file": "DB/shards/college_registry/programs/TS.json",
+      "institutions_count": 14,
+      "programs_count": 26
+    },
+    "UK": {
+      "institutions_file": "DB/shards/college_registry/institutions/UK.json",
+      "programs_file": "DB/shards/college_registry/programs/UK.json",
+      "institutions_count": 0,
+      "programs_count": 0
+    },
+    "UP": {
+      "institutions_file": "DB/shards/college_registry/institutions/UP.json",
+      "programs_file": "DB/shards/college_registry/programs/UP.json",
+      "institutions_count": 31,
+      "programs_count": 48
+    },
+    "WB": {
+      "institutions_file": "DB/shards/college_registry/institutions/WB.json",
+      "programs_file": "DB/shards/college_registry/programs/WB.json",
+      "institutions_count": 14,
+      "programs_count": 24
+    }
+  }
+}

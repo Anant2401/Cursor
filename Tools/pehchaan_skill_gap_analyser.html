@@ -45,12 +45,6 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 .hero .skill-gap-how strong{color:var(--amber);font-weight:700;}
 .hero .skill-gap-how ul{margin:8px 0 0 1rem;padding:0;}
 .hero .skill-gap-how li{margin-bottom:5px;}
-.hero .name-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:16px 18px;margin-bottom:14px;box-shadow:none;}
-.hero .name-card .name-card-lead{font-size:13px;font-weight:600;display:block;margin-bottom:12px;line-height:1.45;}
-.hero .name-input{width:100%;padding:11px 12px;border-radius:10px;border:1.5px solid rgba(255,255,255,.25);background:rgba(255,255,255,.12);color:#fff;font-family:'Poppins',sans-serif;font-size:13px;outline:none;transition:border-color .2s;}
-.hero .name-input::placeholder{color:rgba(255,255,255,.5);}
-.hero .name-input:focus{border-color:var(--amber);}
-.name-error{font-size:12px;color:var(--red);background:rgba(252,235,235,.96);border:1px solid #F5A5A4;border-radius:8px;padding:8px 12px;margin-bottom:14px;display:none;}
 
 .card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:22px 20px;margin-bottom:14px;box-shadow:var(--shadow);}
 .card-title{font-size:11px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;}
@@ -160,6 +154,10 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
 .skill-bulk-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px;}
 .btn-skill-bulk{border:1.5px solid var(--border);background:#fff;border-radius:10px;padding:8px 14px;font-size:12px;font-weight:600;cursor:pointer;color:var(--teal-dark);font-family:'Poppins',sans-serif;}
 .btn-skill-bulk:hover{background:var(--teal-light);border-color:var(--teal);}
+.category-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;}
+.category-chip{border:1.5px solid var(--border);background:#fff;border-radius:999px;padding:8px 12px;font-size:12px;font-weight:700;color:var(--teal-dark);cursor:pointer;font-family:'Poppins',sans-serif;}
+.category-chip:hover{background:var(--teal-light);border-color:var(--teal);}
+.category-chip.active{background:var(--teal-dark);border-color:var(--teal-dark);color:var(--amber);}
 
 @media(max-width:480px){.job-grid{grid-template-columns:1fr;}.profile-grid{grid-template-columns:1fr;}.summary-row{grid-template-columns:1fr 1fr;}.name-grid{grid-template-columns:1fr;}}
 </style>
@@ -170,7 +168,7 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
 
 <div id="screen-cover">
   <div class="topbar">
-    <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+    <a class="topbar-back" href="../index.html#tools" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
     <a class="topbar-brand" href="../index.html">
       <div class="topbar-logo">
         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
@@ -191,38 +189,33 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
         <li>You get a <strong>phased study plan</strong>, self-test ideas, and interview-prep pointers for that role.</li>
       </ul>
     </div>
-    <div class="name-card">
-      <span class="name-card-lead">What is your name? (So your assessment feels personal)</span>
-      <div class="name-grid">
-        <div class="name-field">
-          <span class="name-field-label">First Name</span>
-          <input type="text" class="name-input" id="student-first-name" placeholder="Anant" maxlength="40" autocomplete="given-name">
-        </div>
-        <div class="name-field">
-          <span class="name-field-label">Last Name <span class="name-optional">(optional)</span></span>
-          <input type="text" class="name-input" id="student-last-name" placeholder="Tripathi" maxlength="40" autocomplete="family-name">
-        </div>
-      </div>
-    </div>
-    <div class="name-error" id="name-error-skill">Add your first name — we use it on your skills snapshot.</div>
   </div>
   <div class="card" id="card-step1-cover">
     <div class="card-title">Step 1 — What job are you targeting?</div>
     <p style="font-size:12px;color:var(--gray);margin-bottom:14px;">Pick the role closest to your goal. You can change it later from the results screen.</p>
-    <div class="job-grid" id="job-grid"></div>
+    <div class="form-group">
+      <label>Career category</label>
+      <div class="category-chips" id="job-category-chips"></div>
+    </div>
+    <div class="form-group">
+      <label for="job-role-select">Target role</label>
+      <select id="job-role-select"></select>
+    </div>
+    <div style="margin-top:10px;font-size:11px;color:var(--gray);" id="job-role-meta"></div>
   </div>
   <button type="button" class="btn-begin" id="btn-begin-skill" disabled>Continue to Step 2 →</button>
   <div class="brand-footer">
     <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
     <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
     hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+    <p>This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p>
   </div>
 </div>
 
 <!-- SCREEN 2: PROFILE (Step 2 only) -->
 <div id="screen-input" class="hidden">
   <div class="topbar">
-    <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+    <a class="topbar-back" href="../index.html#tools" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
     <a class="topbar-brand" href="../index.html">
       <div class="topbar-logo">
         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
@@ -267,13 +260,14 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
     <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
     <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
     hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+    <p>This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p>
   </div>
 </div>
 
 <!-- SCREEN 2: RESULTS -->
 <div id="screen-results" class="hidden">
   <div class="topbar">
-    <a class="topbar-back" href="../index.html" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
+    <a class="topbar-back" href="../index.html#tools" title="Back to home" aria-label="Back to Pehchaan Careers home">←</a>
     <a class="topbar-brand" href="../index.html">
       <div class="topbar-logo">
         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 22 A12 12 0 0 1 32 22 Z" fill="#EF9F27"/><line x1="20" y1="8" x2="20" y2="4" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="27.5" y1="10" x2="30" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="12.5" y1="10" x2="10" y2="6.5" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="32.5" y1="17" x2="36.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><line x1="7.5" y1="17" x2="3.5" y2="15" stroke="#EF9F27" stroke-width="2.2" stroke-linecap="round"/><path d="M6 36 L20 24 L34 36" stroke="#1D9E75" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 36 L20 26 L38 36" stroke="#1D9E75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg>
@@ -335,52 +329,219 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
     <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
     <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
     hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+    <p>This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p>
   </div>
 </div>
 
 </div>
 <script src="../assets/pehchaan_journey.js"></script>
+<script src="../assets/db-adapters.js"></script>
 <script src="../assets/pehchaan_career_registry_prefill.js"></script>
 <script src="../assets/pehchaan_tool_links.js"></script>
 <script src="../assets/pehchaan_tool_recommendations.js"></script>
 <script>
 var DB = null;
+var SALARY_DB = null;
+var CAREER_REGISTRY = null;
 var selJob = null;
 var selQual = '';
 var checkedSkills = new Set();
-var studentName = '';
 var selPrivateRoleId = '';
 var selCareerCanonical = '';
 var selMetro = '';
+var selectedCategory = '';
+var ROLE_SKILLS_FROM_SALARY = {};
+var CATEGORY_ICONS = { management: '📊', science: '🔬', hospitality: '🤝', government: '🏛️', others: '🧭' };
+var JOB_CATEGORIES = {
+  management: 'Management & Business',
+  science: 'Science & Technology',
+  hospitality: 'Hospitality & Service',
+  government: 'Government & Public',
+  others: 'Other Careers'
+};
 
-function getSkillGapDataUrl(){
-  try {
-    return new URL('../DB/pehchaan_skill_gap_analyser_data.json', window.location.href).href;
-  } catch (e) {
-    return '../DB/pehchaan_skill_gap_analyser_data.json';
+var CLEAN_ROLE_OVERRIDES = {
+  software_engineer: {
+    label: 'Software Developer / Programmer',
+    demand: 'Very High',
+    avg_salary_fresher: '₹4–10 LPA'
+  },
+  electrical_engineer_power: {
+    label: 'Electrical Engineer (Power Systems)',
+    demand: 'High',
+    avg_salary_fresher: '₹3.2–8 LPA'
+  },
+  electrician_electrical_tech: {
+    label: 'Electrician / Electrical Technician',
+    demand: 'High',
+    avg_salary_fresher: '₹2.2–5 LPA'
+  },
+  iti_electrician: {
+    label: 'ITI Electrician',
+    demand: 'High',
+    avg_salary_fresher: '₹2–4.8 LPA'
   }
+};
+var GENERIC_SKILLS_BY_CATEGORY = {
+  management: [
+    { skill: 'Communication & Business Writing', is_foundation: true },
+    { skill: 'Excel & Reporting Basics', is_foundation: true },
+    { skill: 'Stakeholder Coordination', is_foundation: false },
+    { skill: 'Problem Solving & Prioritization', is_foundation: false },
+    { skill: 'Interview-ready Project / Case', is_foundation: false }
+  ],
+  science: [
+    { skill: 'Core Domain Fundamentals', is_foundation: true },
+    { skill: 'Logical Problem Solving', is_foundation: true },
+    { skill: 'Tools Used in the Role', is_foundation: false },
+    { skill: 'Portfolio / Practical Assignments', is_foundation: false },
+    { skill: 'Interview Practice', is_foundation: false }
+  ],
+  hospitality: [
+    { skill: 'Customer Handling & Empathy', is_foundation: true },
+    { skill: 'Clear Verbal & Written Communication', is_foundation: true },
+    { skill: 'Process Discipline (SLA / Quality)', is_foundation: false },
+    { skill: 'Basic CRM / Ticketing Tools', is_foundation: false },
+    { skill: 'Role-play Interview Readiness', is_foundation: false }
+  ],
+  government: [
+    { skill: 'General Aptitude & Reasoning', is_foundation: true },
+    { skill: 'Current Affairs Habit', is_foundation: true },
+    { skill: 'Timed Practice Discipline', is_foundation: false },
+    { skill: 'Writing / Communication Clarity', is_foundation: false },
+    { skill: 'Mock Tests & Revision Plan', is_foundation: false }
+  ],
+  others: [
+    { skill: 'Communication & Learning Agility', is_foundation: true },
+    { skill: 'Digital Productivity Basics', is_foundation: true },
+    { skill: 'Role-specific Tools', is_foundation: false },
+    { skill: 'Portfolio / Work Samples', is_foundation: false },
+    { skill: 'Interview Preparation', is_foundation: false }
+  ]
+};
+
+function getSkillGapDataCandidates(){
+  var list = ['../DB/pehchaan_skill_gap_analyser_data.json', '../DB/canonical/skill_map.json'];
+  return list.map(function (u) {
+    try {
+      return new URL(u, window.location.href).href;
+    } catch (e) {
+      return u;
+    }
+  });
 }
 
 function updateCoverContinueBtn(){
-  var fn = (document.getElementById('student-first-name').value || '').trim();
   var btn = document.getElementById('btn-begin-skill');
-  if (btn) btn.disabled = !(fn && selJob);
+  if (btn) btn.disabled = !selJob;
+}
+
+function titleCaseFromId(raw) {
+  var s = String(raw || '').replace(/_/g, ' ').trim();
+  if (!s) return 'Role';
+  return s.replace(/\b\w/g, function (m) { return m.toUpperCase(); });
+}
+
+function properCaseText(raw) {
+  var s = String(raw || '').replace(/[_-]+/g, ' ').trim();
+  if (!s) return '';
+  var preserve = { IT: true, UI: true, UX: true, HR: true, SQL: true, API: true, QA: true, ETAP: true, MIS: true };
+  return s.split(/\s+/).map(function (w) {
+    var up = w.toUpperCase();
+    if (preserve[up]) return up;
+    if (/^[0-9]+$/.test(w)) return w;
+    return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
+  }).join(' ');
+}
+
+function roleCategory(job) {
+  var cat = String(job.category || '').toLowerCase();
+  var text = (String(job.label || '') + ' ' + String(job.description || '') + ' ' + String(job.id || '')).toLowerCase();
+  if (cat.indexOf('management') >= 0 || /manager|business|finance|hr|account/.test(text)) return 'management';
+  if (cat.indexOf('science') >= 0 || /software|developer|data|engineer|tech|analyst/.test(text)) return 'science';
+  if (cat.indexOf('hospitality') >= 0 || /hospitality|hotel|support|service|operations/.test(text)) return 'hospitality';
+  if (cat.indexOf('government') >= 0 || /government|public|civil/.test(text)) return 'government';
+  return 'others';
+}
+
+function buildRoleSkillsFromSalary() {
+  ROLE_SKILLS_FROM_SALARY = {};
+  if (!SALARY_DB || !Array.isArray(SALARY_DB.careers) || !CAREER_REGISTRY || !Array.isArray(CAREER_REGISTRY.careers)) return;
+  var salaryById = {};
+  SALARY_DB.careers.forEach(function (c) { salaryById[String(c.id)] = c; });
+  CAREER_REGISTRY.careers.forEach(function (row) {
+    if (!row || !row.skill_gap_job_id || row.salary_explorer_id == null) return;
+    var sc = salaryById[String(row.salary_explorer_id)];
+    if (!sc || !Array.isArray(sc.skills) || !sc.skills.length) return;
+    ROLE_SKILLS_FROM_SALARY[row.skill_gap_job_id] = sc.skills.map(function (name, idx) {
+      return {
+        skill: String(name || '').trim(),
+        level_required: idx < 2 ? 'Foundation' : 'Intermediate',
+        priority: idx + 1,
+        is_foundation: idx < 2,
+        time_to_learn_weeks: idx < 2 ? 4 : 5,
+        how_to_learn: [],
+        self_test: '',
+        paid_option: ''
+      };
+    }).filter(function (x) { return x.skill; });
+  });
+}
+
+function normalizedJob(job) {
+  var j = JSON.parse(JSON.stringify(job || {}));
+  var override = CLEAN_ROLE_OVERRIDES[j.id] || null;
+  j.categoryKey = roleCategory(j);
+  j.label = properCaseText((override && override.label) || (j.label && j.label !== j.id ? j.label : titleCaseFromId(j.id)));
+  j.demand = (override && override.demand) || (j.demand || 'High');
+  j.avg_salary_fresher = (override && override.avg_salary_fresher) || (j.avg_salary_fresher || 'See Salary Explorer');
+  var replacementSkills = null;
+  var sanitizeSkillName = function (raw) {
+    var t = String(raw || '').trim();
+    if (!t) return '';
+    t = t.replace(/\s*\((free|official)\s+tutorials?\)\s*/ig, ' ').trim();
+    if (/youtube|\.com|tutorial|course|sheet|academy|kaggle|exceljet|sqlzoo|freecodecamp|odin project|udemy|coursera/i.test(t)) return '';
+    return t;
+  };
+  if (!replacementSkills) {
+    j.skills = (Array.isArray(j.skills) ? j.skills : []).map(function (s, idx) {
+      var cleaned = sanitizeSkillName((s && s.skill) || '');
+      if (!cleaned) return null;
+      return {
+        skill: cleaned,
+        level_required: (s && s.level_required) || (idx < 2 ? 'Foundation' : 'Intermediate'),
+        priority: (s && s.priority) || (idx + 1),
+        is_foundation: !!(s && s.is_foundation) || idx < 2,
+        time_to_learn_weeks: (s && s.time_to_learn_weeks) || (idx < 2 ? 4 : 5),
+        how_to_learn: Array.isArray(s && s.how_to_learn) ? s.how_to_learn : [],
+        self_test: (s && s.self_test) || '',
+        paid_option: (s && s.paid_option) || ''
+      };
+    }).filter(Boolean);
+    var badSkillPayload = !j.skills.length;
+    if (badSkillPayload) replacementSkills = GENERIC_SKILLS_BY_CATEGORY[j.categoryKey] || GENERIC_SKILLS_BY_CATEGORY.others;
+  }
+  if (replacementSkills) {
+    j.skills = replacementSkills.map(function (s, i) {
+      return {
+        skill: s.skill,
+        level_required: s.level_required || 'Foundation',
+        priority: s.priority || (i + 1),
+        is_foundation: !!s.is_foundation,
+        time_to_learn_weeks: s.time_to_learn_weeks || 4,
+        how_to_learn: Array.isArray(s.how_to_learn) ? s.how_to_learn : [],
+        self_test: s.self_test || '',
+        paid_option: s.paid_option || ''
+      };
+    });
+  }
+  return j;
 }
 
 document.getElementById('btn-begin-skill').addEventListener('click', function(){
-  var err = document.getElementById('name-error-skill');
-  var fn = (document.getElementById('student-first-name').value || '').trim();
-  if (!fn) {
-    if (err) { err.textContent = 'Add your first name — we use it on your skills snapshot.'; err.style.display = 'block'; }
-    return;
-  }
   if (!selJob) {
-    if (err) { err.textContent = 'Pick a target job in Step 1 first — then we can map your skills.'; err.style.display = 'block'; }
     return;
   }
-  if (err) err.style.display = 'none';
-  var ln = (document.getElementById('student-last-name').value || '').trim();
-  studentName = ln ? fn + ' ' + ln : fn;
   document.getElementById('screen-cover').classList.add('hidden');
   document.getElementById('screen-input').classList.remove('hidden');
   document.getElementById('card-profile').classList.remove('hidden');
@@ -390,23 +551,22 @@ document.getElementById('btn-begin-skill').addEventListener('click', function(){
   window.scrollTo(0, 0);
 });
 
-['student-first-name','student-last-name'].forEach(function(id){
-  var el = document.getElementById(id);
-  if (!el) return;
-  el.addEventListener('keydown', function(e){ if (e.key === 'Enter') document.getElementById('btn-begin-skill').click(); });
-  el.addEventListener('input', function(){
-    var err = document.getElementById('name-error-skill');
-    if (err) { err.style.display = 'none'; err.textContent = 'Add your first name — we use it on your skills snapshot.'; }
-    updateCoverContinueBtn();
-  });
-});
-
-fetch(getSkillGapDataUrl())
-  .then(function(r){ return r.json(); })
-  .then(function(d){ DB = d; initJobs(); })
+Promise.all([
+  (window.PehchaanDbAdapters && typeof PehchaanDbAdapters.loadFirstAvailable === 'function')
+    ? PehchaanDbAdapters.loadFirstAvailable(getSkillGapDataCandidates())
+    : fetch(getSkillGapDataCandidates()[1]).then(function(r){ return r.json(); }),
+  fetch('../DB/pehchaan_salary_explorer_data.json', { cache: 'no-store' }).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; }),
+  fetch('../DB/pehchaan_career_registry.json', { cache: 'no-store' }).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; })
+])
+  .then(function(payloads){
+    DB = payloads[0];
+    SALARY_DB = payloads[1];
+    CAREER_REGISTRY = payloads[2];
+    initJobs();
+  })
   .catch(function(){
-    var grid = document.getElementById('job-grid');
-    if (grid) grid.innerHTML = '<p style="color:var(--gray);font-size:13px;text-align:center;padding:20px;">Could not load data. Ensure DB/pehchaan_skill_gap_analyser_data.json exists (use a local server if fetch is blocked).</p>';
+    var meta = document.getElementById('job-role-meta');
+    if (meta) meta.innerHTML = '<span style="color:var(--gray);font-size:13px;">Could not load data. Ensure DB/pehchaan_skill_gap_analyser_data.json exists (use a local server if fetch is blocked).</span>';
   });
 
 function escAttr(s){
@@ -415,8 +575,19 @@ function escAttr(s){
 
 function selectJobById(id) {
   if (!id) return;
-  var btn = document.querySelector('#job-grid .job-btn[data-id="' + id + '"]');
-  if (btn && typeof selJobFn === 'function') selJobFn(btn, id);
+  var job = DB && DB.job_categories ? DB.job_categories.find(function (j) { return j.id === id; }) : null;
+  if (job && job.categoryKey) {
+    var chips = document.getElementById('job-category-chips');
+    if (chips) {
+      var btn = chips.querySelector('.category-chip[data-cat="' + job.categoryKey + '"]');
+      if (btn) btn.click();
+    }
+  }
+  var roleSelect = document.getElementById('job-role-select');
+  if (roleSelect) {
+    roleSelect.value = id;
+    roleSelect.dispatchEvent(new Event('change'));
+  }
 }
 
 function trySkillGapUrlPrefill() {
@@ -453,14 +624,68 @@ function trySkillGapUrlPrefill() {
 }
 
 function initJobs(){
-  var html = '';
-  DB.job_categories.forEach(function(j){
-    html += '<button class="job-btn" data-id="' + j.id + '" onclick="selJobFn(this,\'' + j.id + '\')">';
-    html += '<span class="jb-label">' + esc(j.label) + '</span>';
-    html += '<span class="jb-meta">' + esc(j.avg_salary_fresher) + ' · Demand: ' + esc(j.demand) + '</span>';
-    html += '</button>';
-  });
-  document.getElementById('job-grid').innerHTML = html;
+  buildRoleSkillsFromSalary();
+  DB.job_categories = (DB.job_categories || []).map(normalizedJob);
+  if (SALARY_DB && Array.isArray(SALARY_DB.careers)) {
+    var salaryNames = {};
+    SALARY_DB.careers.forEach(function (c) {
+      var raw = String(c.name || '').toLowerCase();
+      var key = raw.replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+      if (key) salaryNames[key] = c.name;
+    });
+    DB.job_categories.forEach(function (j) {
+      var idKey = String(j.id || '').toLowerCase();
+      if (salaryNames[idKey]) j.label = salaryNames[idKey];
+    });
+  }
+  var chips = document.getElementById('job-category-chips');
+  var roleSel = document.getElementById('job-role-select');
+  function renderRoleOptions() {
+    var roles = DB.job_categories.filter(function (j) { return !selectedCategory || j.categoryKey === selectedCategory; });
+    roleSel.innerHTML = '<option value="">Select target role...</option>' + roles.map(function (j) {
+      return '<option value="' + escAttr(j.id) + '">' + esc(properCaseText(j.label)) + '</option>';
+    }).join('');
+    roleSel.value = '';
+    selJob = null;
+    document.getElementById('job-role-meta').textContent = '';
+    updateCoverContinueBtn();
+  }
+  if (chips) {
+    chips.innerHTML = Object.keys(JOB_CATEGORIES).map(function (k) {
+      return '<button type="button" class="category-chip" data-cat="' + k + '">' + (CATEGORY_ICONS[k] || '•') + ' ' + JOB_CATEGORIES[k] + '</button>';
+    }).join('');
+    chips.querySelectorAll('.category-chip').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        selectedCategory = btn.getAttribute('data-cat') || '';
+        chips.querySelectorAll('.category-chip').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        renderRoleOptions();
+      });
+    });
+    var first = chips.querySelector('.category-chip');
+    if (first) first.click();
+  }
+  if (roleSel) {
+    roleSel.addEventListener('change', function(){
+      var id = this.value;
+      selJob = DB.job_categories.find(function (j) { return j.id === id; }) || null;
+      var meta = document.getElementById('job-role-meta');
+      if (meta && selJob) meta.textContent = selJob.avg_salary_fresher + ' · Demand: ' + selJob.demand;
+      if (meta && !selJob) meta.textContent = '';
+      if (window.PehchaanJourney && selJob) {
+        PehchaanJourney.setJourney({
+          from: 'skill_gap',
+          job: selJob.id,
+          private_role_id: selPrivateRoleId || '',
+          career: selCareerCanonical || '',
+          metro: selMetro || ''
+        });
+      }
+      updateCoverContinueBtn();
+    });
+  }
+
+  if (!selectedCategory) renderRoleOptions();
 
   updateCoverContinueBtn();
 
@@ -495,27 +720,6 @@ function initJobs(){
   trySkillGapUrlPrefill();
 }
 
-function selJobFn(btn, id){
-  document.querySelectorAll('.job-btn').forEach(function(b){ b.classList.remove('active'); });
-  btn.classList.add('active');
-  selJob = DB.job_categories.find(function(j){ return j.id === id; });
-  if (window.PehchaanJourney && selJob) {
-    PehchaanJourney.setJourney({
-      from: 'skill_gap',
-      job: selJob.id,
-      private_role_id: selPrivateRoleId || '',
-      career: selCareerCanonical || '',
-      metro: selMetro || ''
-    });
-  }
-  checkedSkills.clear();
-  updateCoverContinueBtn();
-  var bulk = document.getElementById('skill-bulk-row');
-  if (bulk) bulk.hidden = true;
-  var stepBtn = document.getElementById('btn-begin-skill');
-  if (stepBtn) stepBtn.scrollIntoView({behavior:'smooth',block:'nearest'});
-}
-
 function renderExistingSkillsCheckboxes(){
   if(!selJob) return;
   var html = '';
@@ -523,7 +727,7 @@ function renderExistingSkillsCheckboxes(){
     var checked = checkedSkills.has(s.skill);
     html += '<label style="display:flex;align-items:center;gap:6px;background:#fff;border:1.5px solid var(--border);border-radius:8px;padding:7px 12px;cursor:pointer;font-size:12px;color:var(--text);transition:border-color .15s;">';
     html += '<input type="checkbox" name="skill_check" data-skill="' + escAttr(s.skill) + '" ' + (checked ? 'checked' : '') + ' style="accent-color:var(--teal-dark);cursor:pointer;">';
-    html += esc(s.skill);
+    html += esc(String(s.skill || '').replace(/_/g, ' '));
     if(s.is_foundation) html += ' <span style="font-size:9px;background:var(--amber-light);color:#7A4A00;padding:1px 6px;border-radius:10px;font-weight:700;">Foundation</span>';
     html += '</label>';
   });
@@ -547,8 +751,7 @@ function analyse(){
   var foundationGaps = gaps.filter(function(s){ return s.is_foundation; });
 
   document.getElementById('res-job-title').textContent = j.label;
-  var first = (studentName || '').trim().split(/\s+/)[0];
-  var lead = first ? first + ', you have ' : 'You have ';
+  var lead = 'You have ';
   document.getElementById('res-summary').textContent = lead + have.length + ' of ' + j.skills.length + ' required skills already in your corner. ' + gaps.length + ' skills to level up next.';
 
   // Summary stats
@@ -561,7 +764,7 @@ function analyse(){
   // Heatmap — show have skills first (green), then gaps (red by priority)
   var heatHtml = '';
   var allSkills = have.map(function(s){ return {s:s, hasIt:true}; }).concat(gaps.map(function(s){ return {s:s, hasIt:false}; }));
-  allSkills.sort(function(a,b){ if(a.hasIt !== b.hasIt) return a.hasIt ? 1 : -1; return (a.s.priority||9) - (b.s.priority||9); });
+  allSkills.sort(function(a,b){ if(a.hasIt !== b.hasIt) return a.hasIt ? -1 : 1; return (a.s.priority||9) - (b.s.priority||9); });
 
   allSkills.forEach(function(item){
     var s = item.s;
@@ -575,7 +778,7 @@ function analyse(){
     heatHtml += '</div>';
     if(!hasIt){
       var pClass = s.priority === 1 ? 'p1' : s.priority === 2 ? 'p2' : 'p3';
-      var pLabel = s.priority === 1 ? 'Priority 1' : s.priority === 2 ? 'Priority 2' : 'Priority 3';
+      var pLabel = 'Priority ' + String(s.priority || 3);
       heatHtml += '<span class="priority-badge ' + pClass + '">' + pLabel + (s.is_foundation ? ' · Foundation' : '') + '</span>';
     }
     heatHtml += '</div>';
@@ -650,7 +853,7 @@ function analyse(){
   // Self-test platforms
   var tpHtml = '';
   var relevantPlatforms = [];
-  if(['software_developer','data_analyst'].includes(j.id)){
+  if(['software_developer','software_engineer','data_analyst','data_scientist'].includes(j.id)){
     relevantPlatforms = DB.self_test_platforms.coding.concat(DB.self_test_platforms.general.slice(0,2));
   } else {
     relevantPlatforms = DB.self_test_platforms.general;
@@ -693,8 +896,11 @@ function analyse(){
     );
     recHtml = PehchaanToolRecommendations.buildRecommendationsHtml(rec, esc);
   }
-  document.getElementById('first-job-content').innerHTML = '<div class="fj-label">How to get your first job in this field</div><div class="fj-text">' + esc(j.first_job_path) + '</div><div style="font-size:12px;color:var(--gray);margin-top:8px;"><strong>Realistic timeline:</strong> ' + esc(j.realistic_timeline) + '</div>' + recHtml;
-  document.getElementById('interview-prep').innerHTML = '<div style="background:var(--blue-light);border-left:4px solid var(--blue);border-radius:0 10px 10px 0;padding:12px 14px;font-size:12px;color:#0C447C;line-height:1.75;"><strong>Interview preparation:</strong> ' + esc(j.interview_prep) + '</div>';
+  var firstPath = j.first_job_path || 'Build 2-3 practical projects, complete role-specific mock tasks, and apply weekly through verified portals.';
+  var timelineText = j.realistic_timeline || 'Usually 2-6 months depending on current skill base and consistency.';
+  var interviewText = j.interview_prep || 'Practice role-specific mock interviews, revise your project stories, and keep examples ready for behavioral and technical rounds.';
+  document.getElementById('first-job-content').innerHTML = '<div class="fj-label">How to get your first job in this field</div><div class="fj-text">' + esc(firstPath) + '</div><div style="font-size:12px;color:var(--gray);margin-top:8px;"><strong>Realistic timeline:</strong> ' + esc(timelineText) + '</div>' + recHtml;
+  document.getElementById('interview-prep').innerHTML = '<div style="background:var(--blue-light);border-left:4px solid var(--blue);border-radius:0 10px 10px 0;padding:12px 14px;font-size:12px;color:#0C447C;line-height:1.75;"><strong>Interview preparation:</strong> ' + esc(interviewText) + '</div>';
 
   document.getElementById('screen-input').classList.add('hidden');
   document.getElementById('screen-results').classList.remove('hidden');

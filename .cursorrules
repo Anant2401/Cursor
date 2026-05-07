@@ -14,6 +14,7 @@ Use this mini checklist for fast review notes before the detailed sections.
 - [ ] Name capture uses clear first/last-name pattern where person details are needed.
 - [ ] Disclaimer and important notes are visible, boxed, non-deterministic, and not duplicated verbatim.
 - [ ] Related tools have normalized spacing scale (hero gap, card padding/gap, disclaimer spacing, footer separation).
+- [ ] Result-page next-tool blocks follow the two-panel standard: **Continue Exploring** (context links) + **What to do next** (primary/secondary with rationale).
 
 ## Review output template (copy-paste)
 
@@ -328,6 +329,19 @@ Each tool hero card should include a complete, structured content set. Do not sh
 - Selectors (radio/checkbox/toggle): verify hit area, checked state visibility, keyboard accessibility, and label alignment.
 - Pill buttons/chips: verify selected vs unselected states, hover/focus states, spacing between pills, wrapping behaviour, and colour contrast.
 - Verify all controls share consistent corner radius and spacing scale unless intentionally differentiated by component role.
+- Ensure all user-visible selectable text (dropdown options, button labels, chip labels, and tab labels) uses proper-case presentation and avoids raw snake_case / kebab-case tokens.
+
+### E1) Result-page next tools block standard (mandatory)
+- For tool result screens that show onward navigation, use the standardized grouped format:
+  1. **Continue Exploring** panel: context-carrying links/chips to related tools.
+  2. **What to do next** panel: one primary recommendation and one secondary recommendation, each with short rationale.
+- Placement rule (required): on result pages, render this next-tools block near the bottom of the result flow, specifically **just before** the `Important — please read` disclaimer card (not near the top hero/summary).
+- Preserve contextual helper copy explaining that links pass context but users can still edit on the next page.
+- Keep button styling parity with current shared renderer (`assets/pehchaan_tool_recommendations.js`) and avoid one-off ad-hoc card/button variants in individual tools.
+- If a tool adds explicit extra links, place them within this grouped structure (not as isolated ungrouped link rows).
+- **No self-link rule (required):** the recommendation block must never show the current tool as a suggested link/button (in either **Continue Exploring** or **What to do next**). Always filter out same-tool links before rendering.
+- Fit rule (required): linked-tools wrapper and both panels must render as full-width block cards of the parent result area (`display:block; width:100%; box-sizing:border-box;`) and must not shrink to content width inside flex rows.
+- Layout guard: when host containers use flex (`.btn-row` or equivalent), linked-tools blocks must force full-row behavior (`flex:1 1 100%; min-width:100%`) so card edges align with sibling result cards.
 
 ### F) Disclaimer and important note compliance
 - Confirm the mandatory discussion/consultation disclaimer meaning is present in clear language on the first meaningful screen and near results.

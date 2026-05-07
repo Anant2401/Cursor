@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "schema_version": "3.0.0",
+    "generated_on": "2026-05-07",
+    "source_files": [
+      "DB/pehchaan_financing_reality_data.json"
+    ],
+    "quality_metadata": {
+      "confidence_scale": "0.0-1.0",
+      "freshness_sla_days": 120
+    },
+    "language_coverage": {
+      "supported_languages": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ]
+    },
+    "funding_friction_dimensions": [
+      "document_burden",
+      "timeline_uncertainty",
+      "disbursement_risk",
+      "hidden_eligibility_risk"
+    ],
+    "quality_policy": {
+      "confidence_scale": "0.0-1.0",
+      "default_review_cycle_days": 120,
+      "freshness_sla_days": 150,
+      "contradiction_rules": {
+        "auto_flag_threshold": 2,
+        "default_resolution_policy": "higher_confidence_wins",
+        "escalation_after_days": 14
+      }
+    }
+  },
+  "financial_aid": [
+    {
+      "aid_id": "nsp_central_state",
+      "name": "National Scholarship Portal (Central and State Schemes)",
+      "provider": "Government of India and State Governments",
+      "disbursement_reliability": "Often Delayed",
+      "hidden_eligibility": [
+        "Income ceiling strict checks",
+        "Category and domicile verification",
+        "Attendance and progression conditions"
+      ],
+      "application_complexity": 3,
+      "linked_career_ids": [
+        "software_engineer",
+        "chartered_accountant",
+        "doctor_mbbs",
+        "ias_upsc",
+        "data_scientist",
+        "lawyer",
+        "teacher",
+        "bank_po",
+        "ssc_government",
+        "nursing",
+        "digital_marketing",
+        "iti_electrician",
+        "civil_mechanical_engineer",
+        "journalist_content_writer",
+        "graphic_ui_designer",
+        "pharmacist",
+        "architect",
+        "psychologist_counsellor",
+        "bba_mba_management",
+        "defence_officer",
+        "social_worker_ngo",
+        "commercial_pilot",
+        "fashion_designer",
+        "event_manager",
+        "biotechnology_life_sciences",
+        "hr_manager",
+        "animator_game_designer",
+        "actuarial_scientist",
+        "supply_chain_logistics",
+        "ayush_doctor",
+        "content_creator_youtuber",
+        "electrician_electrical_tech",
+        "dietitian_nutritionist",
+        "environmental_green_energy",
+        "statistician_data_analyst_bsc",
+        "cgpsc_state_services",
+        "hotel_hospitality",
+        "fitness_trainer_sports",
+        "public_health_professional",
+        "occupational_therapist",
+        "dentist_bds",
+        "physiotherapist_bpt",
+        "company_secretary",
+        "cost_accountant_cma",
+        "ai_ml_engineer",
+        "cybersecurity_analyst",
+        "civil_judge_judicial",
+        "scientist_csir",
+        "agricultural_officer",
+        "medical_lab_technologist",
+        "radiographer_imaging",
+        "veterinarian_bvsc",
+        "interior_designer",
+        "sales_business_development",
+        "welder_fabricator",
+        "chef_culinary",
+        "electrical_engineer_power",
+        "clinical_research_associate"
+      ],
+      "linked_exam_ids": [
+        "jee",
+        "neet",
+        "neetbds",
+        "nursing",
+        "pharma",
+        "ayush",
+        "nda",
+        "gate",
+        "arch",
+        "biotech",
+        "bsc",
+        "nift"
+      ],
+      "notes": [
+        "National Scholarship Portal (NSP) — central and state schemes in one place; check income and category criteria every year.",
+        "College-specific merit / sports scholarships — read the institute's official admission brochure PDF, not WhatsApp forwards.",
+        "If you are preparing for competitive exams, some coaching institutes publish fee waivers for top diagnostic scores — verify on their official site only.",
+        "National Scholarship Portal (Central and State Schemes)",
+        "Education Loan Programs (Public Sector Banks)"
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_financing_reality_data.json"
+        ],
+        "confidence": 0.73
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 120
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "aid_id": "education_loan_public_banks",
+      "name": "Education Loan Programs (Public Sector Banks)",
+      "provider": "Public and private banks in India",
+      "disbursement_reliability": "Consistent",
+      "hidden_eligibility": [
+        "Co-applicant CIBIL dependency",
+        "Course and institution eligibility",
+        "Collateral for higher loan slabs"
+      ],
+      "application_complexity": 4,
+      "linked_career_ids": [
+        "software_engineer",
+        "chartered_accountant",
+        "doctor_mbbs",
+        "ias_upsc",
+        "data_scientist",
+        "lawyer",
+        "teacher",
+        "bank_po",
+        "ssc_government",
+        "nursing",
+        "digital_marketing",
+        "iti_electrician",
+        "civil_mechanical_engineer",
+        "journalist_content_writer",
+        "graphic_ui_designer",
+        "pharmacist",
+        "architect",
+        "psychologist_counsellor",
+        "bba_mba_management",
+        "defence_officer",
+        "social_worker_ngo",
+        "commercial_pilot",
+        "fashion_designer",
+        "event_manager",
+        "biotechnology_life_sciences",
+        "hr_manager",
+        "animator_game_designer",
+        "actuarial_scientist",
+        "supply_chain_logistics",
+        "ayush_doctor",
+        "content_creator_youtuber",
+        "electrician_electrical_tech",
+        "dietitian_nutritionist",
+        "environmental_green_energy",
+        "statistician_data_analyst_bsc",
+        "cgpsc_state_services",
+        "hotel_hospitality",
+        "fitness_trainer_sports",
+        "public_health_professional",
+        "occupational_therapist",
+        "dentist_bds",
+        "physiotherapist_bpt",
+        "company_secretary",
+        "cost_accountant_cma",
+        "ai_ml_engineer",
+        "cybersecurity_analyst",
+        "civil_judge_judicial",
+        "scientist_csir",
+        "agricultural_officer",
+        "medical_lab_technologist",
+        "radiographer_imaging",
+        "veterinarian_bvsc",
+        "interior_designer",
+        "sales_business_development",
+        "welder_fabricator",
+        "chef_culinary",
+        "electrical_engineer_power",
+        "clinical_research_associate"
+      ],
+      "linked_exam_ids": [],
+      "notes": [
+        "Prefer education loans marketed for students (moratorium during study) over personal loans unless a CA has compared total cost.",
+        "A longer tenure lowers EMI but increases total interest — use the slider below to see the trade-off.",
+        "Co-applicant (parent) income and CIBIL score heavily affect approval in India — discuss early with your family.",
+        "Aid profile: National Scholarship Portal (Central and State Schemes) (Often Delayed)",
+        "Aid profile: Education Loan Programs (Public Sector Banks) (Consistent)"
+      ],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_financing_reality_data.json"
+        ],
+        "confidence": 0.78
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 120
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    }
+  ]
+}

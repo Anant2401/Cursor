@@ -1,0 +1,695 @@
+{
+  "meta": {
+    "shard_type": "programs",
+    "state_id": "MH",
+    "state_label": "Maharashtra",
+    "count": 38,
+    "generated_on": "2026-05-07"
+  },
+  "programs": [
+    {
+      "id": "iit_bombay_engineering_engineering_generic_state_comfort_mh",
+      "college_id": "iit_bombay",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — flagship & INI in / near Maharashtra"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "ict_mumbai_institute_of_chemical_technology_engineering_engineering_generic_stat",
+      "college_id": "ict_mumbai_institute_of_chemical_technology",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — flagship & INI in / near Maharashtra"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "vnit_nagpur_engineering_engineering_generic_state_comfort_mh",
+      "college_id": "vnit_nagpur",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — flagship & INI in / near Maharashtra"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "coep_technological_university_coep_engineering_engineering_generic_state_comfort",
+      "college_id": "coep_technological_university_coep",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — strong state & autonomous colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "vjti_mumbai_engineering_engineering_generic_state_comfort_mh",
+      "college_id": "vjti_mumbai",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — strong state & autonomous colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "walchand_college_of_engineering_wce_engineering_engineering_generic_state_comfor",
+      "college_id": "walchand_college_of_engineering_wce",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier B — strong state & autonomous colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "sppu_affiliated_private_universities_in_pune_mumbai_corridor_engineering_enginee",
+      "college_id": "sppu_affiliated_private_universities_in_pune_mumbai_corridor",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Imported from Plan B bundle tier: Tier C — solid private & university-affiliated (do diligence)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "seth_gs_medical_college_and_kem_hospital_kem_medicine_medicine_mbbs_state_comfor",
+      "college_id": "seth_gs_medical_college_and_kem_hospital_kem",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — flagship GMCs (illustrative names)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "bj_government_medical_college_gmc_pune_cluster_verify_current_names_medicine_med",
+      "college_id": "bj_government_medical_college_gmc_pune_cluster_verify_current_names",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier A — flagship GMCs (illustrative names)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "government_medical_colleges_across_divisions_marathwada_vidarbha_etc_medicine_me",
+      "college_id": "government_medical_colleges_across_divisions_marathwada_vidarbha_etc",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Imported from Plan B bundle tier: Tier B — other government / municipal colleges"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "deemed_universities_in_maharashtra_multiple_medicine_medicine_mbbs_state_comfort",
+      "college_id": "deemed_universities_in_maharashtra_multiple",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Tier C — deemed & private (cost + bond diligence)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture",
+      "college_id": "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel",
+      "stream_id": "architecture",
+      "course_id": "architecture_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Flagship public / SPA (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_mumbai_design_design_generic_state_comfort_mh",
+      "college_id": "nift_mumbai",
+      "stream_id": "design",
+      "course_id": "design_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: National + established private (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co",
+      "college_id": "nair_hospital_dental_college_mumbai_example",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Established government dental (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus",
+      "college_id": "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list",
+      "stream_id": "ayush",
+      "course_id": "ayush_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Government AYUSH (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha",
+      "college_id": "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences",
+      "stream_id": "pharmacy",
+      "course_id": "pharmacy_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Strong legacy colleges (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "government_law_college_mumbai_law_law_generic_state_comfort_mh",
+      "college_id": "government_law_college_mumbai",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Established law colleges (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nmims_mumbai_bba_related_ug_verify_test_management_management_generic_state_comf",
+      "college_id": "nmims_mumbai_bba_related_ug_verify_test",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Established schools (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "narsee_monjee_college_of_commerce_and_economics_example_commerce_commerce_generi",
+      "college_id": "narsee_monjee_college_of_commerce_and_economics_example",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Established colleges (examples)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "iiser_pune_science_stats_science_stats_generic_state_comfort_mh",
+      "college_id": "iiser_pune",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: National institute in MH (example)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_mumbai_fashion_media_fashion_media_generic_state_comfort_mh",
+      "college_id": "nift_mumbai",
+      "stream_id": "fashion_media",
+      "course_id": "fashion_media_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Flagship (example)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "university_of_mumbai_humanities_departments_affiliated_colleges_vary_humanities_",
+      "college_id": "university_of_mumbai_humanities_departments_affiliated_colleges_vary",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Established universities (example)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "tilak_college_of_education_other_mumbai_affiliated_ncte_colleges_examples_verify",
+      "college_id": "tilak_college_of_education_other_mumbai_affiliated_ncte_colleges_examples_verify",
+      "stream_id": "education",
+      "course_id": "education_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Established teacher-education (example)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter",
+      "college_id": "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur",
+      "stream_id": "veterinary",
+      "course_id": "veterinary_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: State veterinary university (example)"
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "savitribai_phule_pune_university_commerce_commerce_generic_state_comfort",
+      "college_id": "savitribai_phule_pune_university",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "savitribai_phule_pune_university_science_stats_science_stats_generic_state_comfo",
+      "college_id": "savitribai_phule_pune_university",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "savitribai_phule_pune_university_humanities_humanities_generic_state_comfort",
+      "college_id": "savitribai_phule_pune_university",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "savitribai_phule_pune_university_management_management_generic_state_comfort",
+      "college_id": "savitribai_phule_pune_university",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "savitribai_phule_pune_university_education_education_generic_state_comfort",
+      "college_id": "savitribai_phule_pune_university",
+      "stream_id": "education",
+      "course_id": "education_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "savitribai_phule_pune_university_law_law_generic_state_comfort",
+      "college_id": "savitribai_phule_pune_university",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "grant_medical_college_mumbai_medicine_medicine_mbbs_state_comfort",
+      "college_id": "grant_medical_college_mumbai",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nlu_mumbai_law_law_generic_state_comfort",
+      "college_id": "nlu_mumbai",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nlu_mumbai_humanities_humanities_generic_state_comfort",
+      "college_id": "nlu_mumbai",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_mumbai_fashion_media_fashion_media_generic_state_comfort",
+      "college_id": "nift_mumbai",
+      "stream_id": "fashion_media",
+      "course_id": "fashion_media_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_mumbai_design_design_generic_state_comfort",
+      "college_id": "nift_mumbai",
+      "stream_id": "design",
+      "course_id": "design_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "nift_mumbai_management_management_generic_state_comfort",
+      "college_id": "nift_mumbai",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "mafsu_nagpur_veterinary_veterinary_generic_state_comfort",
+      "college_id": "mafsu_nagpur",
+      "stream_id": "veterinary",
+      "course_id": "veterinary_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    },
+    {
+      "id": "mafsu_nagpur_science_stats_science_stats_generic_state_comfort",
+      "college_id": "mafsu_nagpur",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+      },
+      "last_verified_on": "2026-05-07"
+    }
+  ]
+}

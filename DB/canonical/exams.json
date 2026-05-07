@@ -1,0 +1,2432 @@
+{
+  "meta": {
+    "schema_version": "3.0.0",
+    "generated_on": "2026-05-07",
+    "source_files": [
+      "DB/pehchaan_exam_data.json"
+    ],
+    "quality_policy": {
+      "confidence_scale": "0.0-1.0",
+      "default_review_cycle_days": 60,
+      "freshness_sla_days": 90,
+      "contradiction_rules": {
+        "auto_flag_threshold": 2,
+        "default_resolution_policy": "higher_confidence_wins",
+        "escalation_after_days": 14
+      }
+    }
+  },
+  "exams": [
+    {
+      "exam_id": "jee",
+      "name": "Engineering (JEE)",
+      "streams": [
+        "science"
+      ],
+      "group": "Engineering & Tech",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "neet",
+      "name": "Doctor (MBBS / NEET)",
+      "streams": [
+        "science"
+      ],
+      "group": "Medicine & Health",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "neetbds",
+      "name": "Dentist (BDS / NEET)",
+      "streams": [
+        "science"
+      ],
+      "group": "Medicine & Health",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "nursing",
+      "name": "Nursing (BSc / GNM)",
+      "streams": [
+        "science"
+      ],
+      "group": "Medicine & Health",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "pharma",
+      "name": "Pharmacist (B.Pharm)",
+      "streams": [
+        "science"
+      ],
+      "group": "Medicine & Health",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "ayush",
+      "name": "AYUSH Doctor (BAMS/BHMS)",
+      "streams": [
+        "science"
+      ],
+      "group": "Medicine & Health",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "nda",
+      "name": "Defence Officer (NDA)",
+      "streams": [
+        "science",
+        "any"
+      ],
+      "group": "Defence & Government",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "gate",
+      "name": "PSU / GATE (Engineering)",
+      "streams": [
+        "science"
+      ],
+      "group": "Engineering & Tech",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "arch",
+      "name": "Architect (NATA)",
+      "streams": [
+        "science"
+      ],
+      "group": "Engineering & Tech",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "biotech",
+      "name": "Biotechnology / Research",
+      "streams": [
+        "science"
+      ],
+      "group": "Engineering & Tech",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "bsc",
+      "name": "BSc Science / Research",
+      "streams": [
+        "science"
+      ],
+      "group": "Engineering & Tech",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "nift",
+      "name": "Fashion Design (NIFT/NID)",
+      "streams": [
+        "science",
+        "arts",
+        "any"
+      ],
+      "group": "Design & Creative",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "pilot",
+      "name": "Commercial Pilot (CPL)",
+      "streams": [
+        "science"
+      ],
+      "group": "Defence & Government",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "ds",
+      "name": "Data Science / Analytics",
+      "streams": [
+        "science",
+        "commerce"
+      ],
+      "group": "Engineering & Tech",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "enviro",
+      "name": "Environmental Science",
+      "streams": [
+        "science",
+        "any"
+      ],
+      "group": "Engineering & Tech",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "ca",
+      "name": "Chartered Accountant (CA)",
+      "streams": [
+        "commerce"
+      ],
+      "group": "Finance & Business",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "ibps",
+      "name": "Bank PO / Clerk (IBPS/SBI)",
+      "streams": [
+        "commerce",
+        "any"
+      ],
+      "group": "Banking & Finance",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "rbi",
+      "name": "RBI Grade B (Banking)",
+      "streams": [
+        "commerce",
+        "any"
+      ],
+      "group": "Banking & Finance",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "cat",
+      "name": "MBA / CAT (IIM)",
+      "streams": [
+        "commerce",
+        "any"
+      ],
+      "group": "Finance & Business",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "cds",
+      "name": "Defence Officer (CDS)",
+      "streams": [
+        "commerce",
+        "any"
+      ],
+      "group": "Defence & Government",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "ssccom",
+      "name": "SSC CGL / CHSL",
+      "streams": [
+        "commerce",
+        "any"
+      ],
+      "group": "Government Jobs",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "actuarial",
+      "name": "Actuarial Science",
+      "streams": [
+        "commerce",
+        "science"
+      ],
+      "group": "Finance & Business",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "bba",
+      "name": "BBA / Management",
+      "streams": [
+        "commerce",
+        "any"
+      ],
+      "group": "Finance & Business",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "insurance",
+      "name": "Insurance / Finance Career",
+      "streams": [
+        "commerce",
+        "any"
+      ],
+      "group": "Finance & Business",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "cs",
+      "name": "Company Secretary (CS)",
+      "streams": [
+        "commerce"
+      ],
+      "group": "Finance & Business",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "upsc",
+      "name": "IAS / IPS (UPSC CSE)",
+      "streams": [
+        "arts",
+        "any"
+      ],
+      "group": "Defence & Government",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "cgpsc",
+      "name": "CGPSC (CG Civil Services)",
+      "streams": [
+        "arts",
+        "any"
+      ],
+      "group": "Defence & Government",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "clat",
+      "name": "Lawyer (CLAT / LLB)",
+      "streams": [
+        "arts",
+        "any"
+      ],
+      "group": "Law & Justice",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "teaching",
+      "name": "Teacher / B.Ed / CTET",
+      "streams": [
+        "arts",
+        "science",
+        "commerce",
+        "any"
+      ],
+      "group": "Education",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "ugcnet",
+      "name": "Professor / UGC NET",
+      "streams": [
+        "arts",
+        "science",
+        "commerce",
+        "any"
+      ],
+      "group": "Education",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "psych",
+      "name": "Psychologist / Counsellor",
+      "streams": [
+        "arts",
+        "science"
+      ],
+      "group": "Education",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "journal",
+      "name": "Journalism / Mass Comm",
+      "streams": [
+        "arts",
+        "any"
+      ],
+      "group": "Design & Creative",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "social",
+      "name": "Social Work / NGO (TISS)",
+      "streams": [
+        "arts",
+        "any"
+      ],
+      "group": "Education",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "mph",
+      "name": "Public Health (MPH)",
+      "streams": [
+        "arts",
+        "science"
+      ],
+      "group": "Medicine & Health",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "law",
+      "name": "Judicial Services",
+      "streams": [
+        "arts",
+        "any"
+      ],
+      "group": "Law & Justice",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "polsci",
+      "name": "Political Science Career",
+      "streams": [
+        "arts"
+      ],
+      "group": "Defence & Government",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "ssc",
+      "name": "SSC CGL / CHSL (Govt Job)",
+      "streams": [
+        "any",
+        "commerce",
+        "arts",
+        "science"
+      ],
+      "group": "Government Jobs",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "rrb",
+      "name": "Railways (RRB NTPC / JE)",
+      "streams": [
+        "any"
+      ],
+      "group": "Government Jobs",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "cgvyapam",
+      "name": "CGVYAPAM / State Govt Jobs",
+      "streams": [
+        "any"
+      ],
+      "group": "Government Jobs",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "hotel",
+      "name": "Hotel Management (NCHM)",
+      "streams": [
+        "any"
+      ],
+      "group": "Hospitality",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "digimkt",
+      "name": "Digital Marketing",
+      "streams": [
+        "any"
+      ],
+      "group": "Design & Creative",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "design",
+      "name": "Graphic / UI-UX Design",
+      "streams": [
+        "any"
+      ],
+      "group": "Design & Creative",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "content",
+      "name": "Content Creator / Writer",
+      "streams": [
+        "any"
+      ],
+      "group": "Design & Creative",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "iti",
+      "name": "ITI / Polytechnic Trades",
+      "streams": [
+        "any"
+      ],
+      "group": "Vocational & Technical",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "sports",
+      "name": "Sports Coach / PE Teacher",
+      "streams": [
+        "any"
+      ],
+      "group": "Education",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "cuet",
+      "name": "Central University (CUET)",
+      "streams": [
+        "any"
+      ],
+      "group": "Engineering & Tech",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "fitness",
+      "name": "Fitness / Nutrition Career",
+      "streams": [
+        "science",
+        "any"
+      ],
+      "group": "Medicine & Health",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "event",
+      "name": "Event Management",
+      "streams": [
+        "any"
+      ],
+      "group": "Hospitality",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "game",
+      "name": "Animation / Game Design",
+      "streams": [
+        "any"
+      ],
+      "group": "Design & Creative",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "supchain",
+      "name": "Supply Chain / Logistics",
+      "streams": [
+        "commerce",
+        "any"
+      ],
+      "group": "Finance & Business",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "agritech",
+      "name": "Agri-Tech & Farming",
+      "streams": [
+        "science",
+        "any"
+      ],
+      "group": "Vocational & Technical",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "entrepreneur",
+      "name": "Entrepreneurship",
+      "streams": [
+        "any"
+      ],
+      "group": "Finance & Business",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "capf",
+      "name": "CAPF Assistant Commandant (Central Armed Police Forces)",
+      "streams": [
+        "any"
+      ],
+      "group": "Defence & Government",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "afcat",
+      "name": "Air Force Officer (AFCAT)",
+      "streams": [
+        "science",
+        "any"
+      ],
+      "group": "Defence & Government",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "agniveer",
+      "name": "Agniveer (Army/Navy/Air Force Entry)",
+      "streams": [
+        "science",
+        "commerce",
+        "arts",
+        "any"
+      ],
+      "group": "Defence & Government",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "ssc_cpo",
+      "name": "Sub-Inspector (SSC CPO - Delhi Police/CAPFs)",
+      "streams": [
+        "any"
+      ],
+      "group": "Defence & Government",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "ssc_gd",
+      "name": "Constable (SSC GD - CAPFs/Assam Rifles)",
+      "streams": [
+        "any"
+      ],
+      "group": "Defence & Government",
+      "competition_ratio": "1:40",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Related degree route",
+        "Alternative entrance exams"
+      ],
+      "failure_pivot": [
+        "Alternative entrance exams",
+        "Skill-first pathway"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "DB/pehchaan_exam_data.json"
+        ],
+        "confidence": 0.86
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "jee_main",
+      "name": "JEE Main",
+      "streams": [
+        "any"
+      ],
+      "group": "National Competitive Exams",
+      "competition_ratio": "1:45",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "State CET",
+        "CUET",
+        "Diploma Lateral Entry"
+      ],
+      "failure_pivot": [
+        "State CET",
+        "CUET",
+        "Diploma Lateral Entry"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "National exam trend synthesis 2026"
+        ],
+        "confidence": 0.75
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "neet_ug",
+      "name": "NEET UG",
+      "streams": [
+        "any"
+      ],
+      "group": "National Competitive Exams",
+      "competition_ratio": "1:24",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Mandatory",
+      "backup_options": [
+        "BSc Nursing",
+        "BPharma",
+        "BSc Agriculture"
+      ],
+      "failure_pivot": [
+        "BSc Nursing",
+        "BPharma",
+        "BSc Agriculture"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "National exam trend synthesis 2026"
+        ],
+        "confidence": 0.75
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "cuet_ug",
+      "name": "CUET UG",
+      "streams": [
+        "any"
+      ],
+      "group": "National Competitive Exams",
+      "competition_ratio": "1:12",
+      "number_of_attempts": 3,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "State university admissions",
+        "Skill diplomas"
+      ],
+      "failure_pivot": [
+        "State university admissions",
+        "Skill diplomas"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "National exam trend synthesis 2026"
+        ],
+        "confidence": 0.75
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "clat_ug",
+      "name": "CLAT UG",
+      "streams": [
+        "any"
+      ],
+      "group": "National Competitive Exams",
+      "competition_ratio": "1:20",
+      "number_of_attempts": 2,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "BA LLB state colleges",
+        "CUET law"
+      ],
+      "failure_pivot": [
+        "BA LLB state colleges",
+        "CUET law"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "National exam trend synthesis 2026"
+        ],
+        "confidence": 0.75
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "upsc_cse",
+      "name": "UPSC CSE",
+      "streams": [
+        "any"
+      ],
+      "group": "National Competitive Exams",
+      "competition_ratio": "1:900",
+      "number_of_attempts": 6,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "State PSC",
+        "SSC CGL",
+        "Policy fellowships"
+      ],
+      "failure_pivot": [
+        "State PSC",
+        "SSC CGL",
+        "Policy fellowships"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "National exam trend synthesis 2026"
+        ],
+        "confidence": 0.75
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "ssc_cgl",
+      "name": "SSC CGL",
+      "streams": [
+        "any"
+      ],
+      "group": "National Competitive Exams",
+      "competition_ratio": "1:120",
+      "number_of_attempts": 8,
+      "coaching_dependency": "Self-Study Possible",
+      "backup_options": [
+        "Banking exams",
+        "State service exams"
+      ],
+      "failure_pivot": [
+        "Banking exams",
+        "State service exams"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "National exam trend synthesis 2026"
+        ],
+        "confidence": 0.75
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    },
+    {
+      "exam_id": "ibps_po",
+      "name": "IBPS PO",
+      "streams": [
+        "any"
+      ],
+      "group": "National Competitive Exams",
+      "competition_ratio": "1:65",
+      "number_of_attempts": 6,
+      "coaching_dependency": "Recommended",
+      "backup_options": [
+        "SBI Clerk",
+        "Insurance exams"
+      ],
+      "failure_pivot": [
+        "SBI Clerk",
+        "Insurance exams"
+      ],
+      "related_career_ids": [],
+      "provenance": {
+        "sources": [
+          "National exam trend synthesis 2026"
+        ],
+        "confidence": 0.75
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-07",
+        "review_cycle_days": 60
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-07"
+      }
+    }
+  ]
+}
