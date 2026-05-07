@@ -440,12 +440,6 @@ function initStartHere() {
   const restartBtn = document.getElementById("start-here-clear");
   const pills = document.getElementById("start-here-pills");
   const sub = document.getElementById("start-here-sub");
-  const auditToggle = document.getElementById("pathfinder-audit-toggle");
-  const auditPanel = document.getElementById("pathfinder-audit-panel");
-  const auditPersona = document.getElementById("pathfinder-audit-persona");
-  const auditQ2 = document.getElementById("pathfinder-audit-q2");
-  const auditPrimary = document.getElementById("pathfinder-audit-primary");
-  const auditTools = document.getElementById("pathfinder-audit-tools");
   if (!q1 || !q2 || !progressFill || !resultTitle || !resultText || !resultLink || !restartBtn || !pills || !sub) return;
 
   let persona = "";
@@ -463,19 +457,6 @@ function initStartHere() {
     collegefinder: "College Finder",
     mentor: "Mentor Connect",
     parentguide: "Parent's Guide",
-  };
-  const PERSONA_LABEL = {
-    school_9_10: "Class 9–10 student",
-    school_11_12: "Class 11–12 student",
-    college_grad: "College student / recent graduate",
-    working_pro: "Working professional",
-    parent: "Parent / guardian",
-  };
-  const Q2_LABEL = {
-    clarity_career: "I don’t know what career / role fits me.",
-    clarity_path: "I’m confused about path (stream/college/exam) options.",
-    clarity_money: "I’m worried about the cost and money side.",
-    clarity_execution: "I need help with exams / jobs / next steps.",
   };
 
   const PATHFINDER_RESULT = {
@@ -599,10 +580,6 @@ function initStartHere() {
     pills.innerHTML = pillHtml(toolKeys);
     setActiveSlide("path-slide-result");
     window.__pehchaanApplyStartHereTools?.(toolKeys);
-    if (auditPersona) auditPersona.textContent = PERSONA_LABEL[persona] || "-";
-    if (auditQ2) auditQ2.textContent = Q2_LABEL[q2.value] || (persona === "parent" ? "Skipped (instant parent result)" : "-");
-    if (auditPrimary) auditPrimary.textContent = LABEL[toolKey] || toolKey;
-    if (auditTools) auditTools.textContent = toolKeys.map((k) => LABEL[k] || k).join(" → ");
   };
 
   const restart = () => {
@@ -614,10 +591,6 @@ function initStartHere() {
     resultLink.href = "#";
     sub.textContent = "";
     pills.innerHTML = "";
-    if (auditPersona) auditPersona.textContent = "-";
-    if (auditQ2) auditQ2.textContent = "-";
-    if (auditPrimary) auditPrimary.textContent = "-";
-    if (auditTools) auditTools.textContent = "-";
     setActiveSlide("path-slide-q1");
     window.__pehchaanClearStartHereGridFilter?.(true);
   };
@@ -682,12 +655,6 @@ function initStartHere() {
   });
 
   restartBtn.addEventListener("click", restart);
-  if (auditToggle && auditPanel) {
-    auditToggle.addEventListener("click", () => {
-      auditPanel.hidden = !auditPanel.hidden;
-      auditToggle.textContent = auditPanel.hidden ? "Audit mode" : "Hide audit";
-    });
-  }
   restart();
 }
 
