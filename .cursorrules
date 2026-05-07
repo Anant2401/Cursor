@@ -336,6 +336,7 @@ Each tool hero card should include a complete, structured content set. Do not sh
   1. **Continue Exploring** panel: context-carrying links/chips to related tools.
   2. **What to do next** panel: one primary recommendation and one secondary recommendation, each with short rationale.
 - Placement rule (required): on result pages, render this next-tools block near the bottom of the result flow, specifically **just before** the `Important — please read` disclaimer card (not near the top hero/summary).
+- Placement rule (required): if adding a support CTA for unresolved queries, place a dedicated contact block **directly above the disclaimer** with helper text like `Did not find what you were looking for?` and a primary button `Still have questions? Reach out to us` linking to Home Contact Us (`../index.html#contact`).
 - Preserve contextual helper copy explaining that links pass context but users can still edit on the next page.
 - Keep button styling parity with current shared renderer (`assets/pehchaan_tool_recommendations.js`) and avoid one-off ad-hoc card/button variants in individual tools.
 - If a tool adds explicit extra links, place them within this grouped structure (not as isolated ungrouped link rows).
