@@ -74,10 +74,10 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
 .disclaimer h4{font-size:11px;color:#4B46A0;text-transform:uppercase;margin-bottom:6px}
 .disclaimer p{font-size:11px;color:var(--gray);line-height:1.7}
 .decision-clause{margin-top:10px;padding-top:10px;border-top:1px dashed rgba(76,70,160,.28)}
+.contact-help-card{display:none}
 .brand-footer{text-align:center;margin-top:24px;padding-top:16px;border-top:1px solid var(--teal-light)}
 .brand-tagline{font-size:13px;font-weight:600;color:var(--teal);margin:2px 0 4px}
 .brand-footer p{font-size:11px;color:var(--gray);line-height:1.7;margin:2px 0}
-.brand-footer .brand-attr strong{color:var(--teal-dark)}
 @media(max-width:640px){.form-grid,.hero-grid{grid-template-columns:1fr}.hero h1{font-size:20px}}
 </style>
 </head>
@@ -166,21 +166,22 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
     <div id="results-list"></div>
   </div>
 
-  <div class="card">
+  <div class="card contact-help-card" id="contact-help-card">
     <div class="card-title">Still have questions?</div>
     <p class="meta" style="margin-top:8px;">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p>
     <a class="btn" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;margin-top:10px;">Still have questions? Reach out to us</a>
   </div>
 
   <div class="disclaimer">
-    <h4>Legal disclaimer</h4>
+    <h4>Important — please read</h4>
     <p>This tool is for career awareness and planning discussions only. Cutoffs, seat matrix, domicile rules, fees, and admission policies can change every year.</p>
-    <p class="decision-clause">Important note: always verify the latest eligibility and admission details on official counselling portals before submitting applications.</p>
+    <p class="decision-clause">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p>
+    <p>Always verify the latest eligibility and admission details on official counselling portals before submitting applications.</p>
   </div>
   <div class="brand-footer">
     <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
-    <p class="brand-attr">This tool is brought to you by <strong>Pehchaan Careers</strong></p>
-    <p>hello.pehchaan@gmail.com · buddy@pehchaancareers.in · pehchaancareers.in</p>
+    <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+    <p class="brand-consultation" style="font-size:11px;color:#64748B;line-height:1.75;margin-top:12px;max-width:42rem;margin-left:auto;margin-right:auto;">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p>
   </div>
 </div>
 
@@ -485,9 +486,11 @@ function runFinder(){
       }
       box.innerHTML = html;
     }
+    document.getElementById('contact-help-card').style.display = 'block';
     window.scrollTo(0, document.getElementById('results-wrap').offsetTop - 20);
   }).catch(function(){
     document.getElementById('results-wrap').style.display = 'block';
+    document.getElementById('contact-help-card').style.display = 'block';
     document.getElementById('selection-line').textContent = 'Could not load all data shards for this query.';
     document.getElementById('results-list').innerHTML = '<div class="result"><div><strong>Data load issue while preparing results.</strong></div><div class="meta">Please retry once. If this continues, use the national lens and verify from official websites.</div></div>';
   });

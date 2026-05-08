@@ -120,6 +120,7 @@
       margin-top: 12px; background: #F8F7FF; border: 1px solid #C4C0F5; border-radius: 14px; padding: 12px 14px;
       font-size: 12px; color: var(--gray-text); line-height: 1.7;
     }
+    .contact-help-card { display: none; }
 
     .brand-footer {
       text-align: center; margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--teal-light);
@@ -216,7 +217,7 @@
       <div id="nextLinks" style="margin-top:10px;width:100%"></div>
     </section>
 
-    <section class="card">
+    <section class="card contact-help-card" id="contact-help-card">
       <h2>Still have questions?</h2>
       <p class="helper">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p>
       <a href="../index.html#contact" style="display:inline-block;margin-top:8px;padding:10px 14px;border-radius:10px;background:var(--amber);color:var(--teal-dark);font-size:13px;font-weight:700;text-decoration:none;">Still have questions? Reach out to us</a>
@@ -224,7 +225,8 @@
 
     <div class="brand-footer">
       <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
-      <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>hello.pehchaan@gmail.com · buddy@pehchaancareers.in · pehchaancareers.in</p>
+      <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
+      <p class="brand-consultation" style="font-size:11px;color:#64748B;line-height:1.75;margin-top:12px;max-width:42rem;margin-left:auto;margin-right:auto;">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p>
     </div>
   </div>
 
@@ -530,6 +532,7 @@
         else if (months === "3_6") document.getElementById("consultNote").innerHTML = "<strong>Important:</strong> This plan uses 90-day milestones and is suitable for a 3-6 month transition cycle. This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.";
         else document.getElementById("consultNote").innerHTML = "<strong>Important:</strong> This plan includes a 6+ month extension phase (91-180 days) for deeper role readiness. This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.";
 
+        document.getElementById("contact-help-card").style.display = "block";
         out.hidden = false;
         out.scrollIntoView({ behavior: "smooth", block: "nearest" });
       }
@@ -540,6 +543,7 @@
           if (el) el.selectedIndex = 0;
         });
         document.getElementById("outputCard").hidden = true;
+        document.getElementById("contact-help-card").style.display = "none";
       }
 
       document.getElementById("buildBtn").addEventListener("click", renderPlan);

@@ -10,7 +10,7 @@ alwaysApply: true
 **Non‑negotiables in every change**
 
 - Brand string **Pehchaan Careers**; English tagline **`Your identity. Your path.`** in tool chrome second line; Hindi **`Aapki pehchaan, aapki raah.`** in footers as documented.
-- Tool **topbar** and **three-part footer** (motto, attribution, contact line) match reference tools / `parent-faq/components/PehchaanToolChrome.tsx`.
+- Tool **topbar** and **four-part footer** (motto, attribution, contact line, consultation cue in the footer) match reference tools / `parent-faq/components/PehchaanToolChrome.tsx`.
 - Use **design tokens** from `.cursorrules` §5 — no ad‑hoc hex drift.
 - Surface the **discussion / consultation** disclaimer meaning on tools as required in `.cursorrules` §10.
 - On result screens, place unresolved-query contact CTA blocks (e.g., `Still have questions? Reach out to us`) immediately **above** disclaimer cards, linking to Home Contact Us (`../index.html#contact`) per `.cursorrules`.

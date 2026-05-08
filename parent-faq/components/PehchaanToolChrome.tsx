@@ -102,13 +102,17 @@ export default function PehchaanToolChrome({
 
       {children}
 
-      {/* Brand footer — matches HTML tools */}
+      {/* Brand footer — matches HTML tools (motto, attribution, contacts, consultation cue) */}
       <div className="mt-14 border-t border-[#E1F5EE] pt-5 text-center">
         <div className="text-[13px] font-semibold text-[#1D9E75]">Aapki pehchaan, aapki raah.</div>
         <p className="mt-2 text-[11px] leading-relaxed text-[#64748B]">
           This tool is brought to you by <strong className="font-bold text-[#085041]">Pehchaan Careers</strong>
           <br />
           hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in
+        </p>
+        <p className="mx-auto mt-3 max-w-xl text-[11px] leading-relaxed text-[#64748B]">
+          This information is for discussion purposes only. Final decisions must be taken independently after consulting
+          parents, guardians, teachers, and professional career counselors.
         </p>
       </div>
     </div>

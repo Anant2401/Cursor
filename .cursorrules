@@ -122,18 +122,20 @@ Standalone HTML tools use a **rounded square** (`border-radius: 12px` at 40×40)
 
 ---
 
-## 4. Tool footer (three-part, center-aligned)
+## 4. Tool footer (four-part, center-aligned)
 
 Every tool screen that uses the standard tool footer must include **all** of the following, **in order**, with the same **meaning** and **contact order** as reference tools:
 
 1. **Motto line:** `Aapki pehchaan, aapki raah.` — visually distinct (e.g. semibold, teal `#1D9E75` or class `.brand-tagline`).
 2. **Attribution line:** `This tool is brought to you by` + **`Pehchaan Careers`** wrapped in `<strong>` (strong colour **`#085041`**).
 3. **Contact line:** `hello.pehchaan@gmail.com · buddy@pehchaancareers.in · pehchaancareers.in` — use middle dots with normal spaces as in `Tools/pehchaan_stream_advisor.html` / `PehchaanToolChrome.tsx`.
+4. **Discussion / consultation cue (verbatim):** `This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.` — same paragraph as the mandatory clause in §10; place it inside the footer block (class `brand-consultation` or equivalent styling) so the footer carries the full “who we are + how to reach us + decision safety” bundle in one place. Tool-specific disclaimers above the footer **add** context; they do not replace this line in the footer.
 
 **Rules**
 - **Do not** omit line 3 on wizard/pivot steps.
+- **Do not** omit line 4 in the footer on any screen that shows the standard tool footer (including exported `Tools/parents-guide/`).
 - **Do not** change email strings, domain, or separator style between tools.
-- Wrapper: top border `1px solid` teal-light `#E1F5EE`, centered text, muted grey `#64748B` at ~11px for lines 2–3 unless matching an existing class block exactly.
+- Wrapper: top border `1px solid` teal-light `#E1F5EE`, centered text, muted grey `#64748B` at ~11px for lines 2–4 unless matching an existing class block exactly.
 
 When refactoring, **diff footers** across all modified HTML/TSX files before merge.
 
