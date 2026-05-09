@@ -20,6 +20,8 @@
   --amber:#EF9F27;--amber-light:#FAEEDA;--text:#1A1A2E;--gray:#64748B;
   --border:#D1E8DF;--white:#FFF;--card-bg:#F8FAFC;
   --radius:14px;--shadow:0 1px 4px rgba(8,80,65,.10);
+  --shadow-lg:0 10px 36px rgba(8,80,65,.1),0 2px 12px rgba(8,80,65,.06);
+  --shadow-filter:0 8px 28px rgba(8,80,65,.08),0 2px 8px rgba(8,80,65,.04);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at 8% -10%,rgba(127,119,221,.12),transparent 65%),radial-gradient(900px 420px at 92% 6%,rgba(55,138,221,.1),transparent 62%),linear-gradient(180deg,#eef8f4 0%,#e5f3ee 42%,#e8f5f0 100%);color:var(--text);font-size:14px}
@@ -52,11 +54,29 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
 .hero-stat .l{font-size:10px;opacity:.82;margin-top:1px}
 .card{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:22px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
 .card-title{font-size:11px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.field-label{display:block;font-size:12px;font-weight:600;color:var(--teal-dark);margin-bottom:5px}
-.input,.select{width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:12px;font-family:inherit;font-size:13px;background:#fff}
-.input:focus,.select:focus{outline:none;border-color:var(--teal)}
-.btn{width:100%;padding:15px;border-radius:var(--radius);border:none;background:var(--amber);color:var(--teal-dark);font-weight:700;cursor:pointer;font-family:inherit;font-size:15px;transition:transform .15s,box-shadow .15s}
+.filter-card{position:relative;border:none;box-shadow:var(--shadow-filter);border-radius:22px;padding:0 0 22px;overflow:hidden}
+.filter-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--teal) 0%,var(--amber) 100%);z-index:1}
+.filter-card-inner{padding:20px 22px 0}
+@media(max-width:640px){.filter-card-inner{padding:18px 16px 0}}
+.filter-card-eyebrow{font-size:10px;font-weight:700;color:var(--teal);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.filter-card-title{font-size:15px;font-weight:700;color:var(--teal-dark);letter-spacing:0;text-transform:none;line-height:1.35;margin-bottom:8px}
+.filter-steps{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:0}
+.filter-steps li{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--gray);background:var(--card-bg);border:1px solid var(--border);border-radius:999px;padding:6px 12px 6px 7px}
+.filter-steps li b{width:22px;height:22px;border-radius:50%;background:var(--teal-light);color:var(--teal-dark);font-weight:700;font-size:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.filter-flow-note{font-size:12px;color:var(--gray);line-height:1.65;margin-bottom:18px;padding:12px 14px;background:linear-gradient(165deg,#FAFDFC,#F4FBF8);border:1px dashed #B9E5D4;border-radius:14px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px;align-items:start}
+.form-grid-filter{margin-bottom:6px}
+.field-span-full{grid-column:1/-1}
+.field-group{display:flex;flex-direction:column;gap:7px;min-width:0}
+.field-label{display:flex;align-items:flex-start;gap:8px;font-size:12px;font-weight:600;color:var(--teal-dark);margin:0;line-height:1.35}
+.field-icon{width:18px;height:18px;margin-top:1px;flex-shrink:0;color:var(--teal);opacity:.92}
+.field-hint{font-size:11px;color:var(--gray);line-height:1.45;margin-top:2px;padding-left:26px}
+.input,.select{width:100%;padding:13px 14px;border:1.5px solid var(--border);border-radius:14px;font-family:inherit;font-size:13px;background:#fff;box-shadow:0 1px 2px rgba(8,80,65,.04);transition:border-color .15s,box-shadow .15s}
+.select:hover{border-color:#B5D9CC}
+.input:focus,.select:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,158,117,.15)}
+.filter-actions{padding:0 22px 22px}
+@media(max-width:640px){.filter-actions{padding:0 16px 18px}}
+.btn{width:100%;padding:15px 18px;border-radius:16px;border:none;background:linear-gradient(180deg,#F0B04A 0%,var(--amber) 100%);color:var(--teal-dark);font-weight:700;cursor:pointer;font-family:inherit;font-size:15px;transition:transform .15s,box-shadow .15s;box-shadow:0 4px 14px rgba(239,159,39,.35)}
 .btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(239,159,39,.4)}
 .btn:disabled{opacity:.45;cursor:not-allowed}
 .chip{display:inline-block;font-size:11px;font-weight:700;border-radius:999px;padding:4px 10px;margin-top:8px}
@@ -64,6 +84,15 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
 .chip-neighbour{background:#FFF2DE;color:#8A5000}
 .chip-national{background:#E8F1FB;color:#0E4C83}
 .result{background:#fff;border:1px solid var(--border);border-radius:18px;padding:18px;margin-top:10px;box-shadow:var(--shadow)}
+.result.college-card{border:none;border-radius:22px;padding:0;margin-top:14px;overflow:hidden;box-shadow:var(--shadow-lg)}
+.college-card-accent{height:5px;background:linear-gradient(90deg,var(--teal-dark) 0%,var(--teal) 48%,var(--amber) 100%)}
+.college-card-inner{padding:18px 18px 16px}
+.college-card-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:12px}
+.college-name-block{flex:1;min-width:min(100%,220px)}
+.college-name{font-size:17px;font-weight:700;color:var(--teal-dark);line-height:1.3;margin:0 0 6px}
+.college-meta-line{font-size:12px;color:var(--gray);display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;line-height:1.5}
+.college-meta-dot{color:#CBD5E1;font-weight:700}
+.college-pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 .result-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
 .result-title{font-size:15px;line-height:1.35;color:var(--teal-dark)}
 .result-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
@@ -71,10 +100,30 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
 .pill-city{background:#EEF9F5;color:#0B6A4F;border-color:#CDEADE}
 .pill-type{background:#FFF4E5;color:#8A5000;border-color:#F6D9AD}
 .pill-own{background:#EDF3FB;color:#0E4C83;border-color:#CFE0F4}
-.section-card{margin-top:10px;padding:10px 12px;border:1px dashed #CFE5DC;border-radius:12px;background:#FAFDFC}
-.section-title{font-size:11px;font-weight:700;color:var(--teal-dark);margin-bottom:4px;text-transform:uppercase;letter-spacing:.03em}
-.course-list{margin:0;padding-left:18px}
-.course-list li{font-size:12px;line-height:1.6;color:var(--text);margin:2px 0}
+.pill-curate{background:#E6F7F0;color:#0B6A4F;border-color:#BFE8D8}
+.pill-data{background:#FFF7ED;color:#9A3412;border-color:#FDBA74}
+.college-stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:4px;margin-bottom:14px}
+.stat-tile{background:linear-gradient(165deg,#FAFDFC 0%,#F8FAFC 100%);border:1px solid var(--border);border-radius:14px;padding:11px 12px;min-height:64px;display:flex;flex-direction:column;justify-content:center}
+.stat-tile-k{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--teal-dark);opacity:.88;margin-bottom:5px}
+.stat-tile-v{font-size:12px;font-weight:600;color:var(--text);line-height:1.45}
+.section-card{margin-top:0;padding:14px 14px 12px;border:1px solid #D1E8DF;border-radius:16px;background:linear-gradient(180deg,#fff 0%,#FAFDFC 100%);box-shadow:0 1px 3px rgba(8,80,65,.05)}
+.section-card+.section-card{margin-top:12px}
+.section-head{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.section-head-icon{width:28px;height:28px;border-radius:10px;background:var(--teal-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--teal-dark);font-size:14px;font-weight:800;line-height:0}
+.section-title{font-size:11px;font-weight:700;color:var(--teal-dark);margin:0;text-transform:uppercase;letter-spacing:.03em}
+.course-chip-wrap{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px}
+.course-chip-wrap--scroll{max-height:176px;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px;scrollbar-width:thin}
+.section-head-icon svg{display:block}
+.field-icon svg{width:100%;height:100%;display:block}
+.course-chip{display:inline-flex;align-items:center;font-size:11px;font-weight:600;color:var(--teal-dark);background:var(--teal-light);border:1px solid #A8DCC8;padding:6px 11px;border-radius:999px;line-height:1.35;max-width:100%}
+.course-list{margin:8px 0 0;padding-left:18px}
+.course-list li{font-size:12px;line-height:1.6;color:var(--text);margin:4px 0}
+.course-list-footnote{margin-top:12px !important;padding-top:10px;border-top:1px dashed var(--border)}
+.cta-website{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:14px;padding:13px 18px;border-radius:14px;background:var(--teal-dark);color:#fff !important;text-decoration:none;font-weight:700;font-size:13px;box-sizing:border-box;transition:transform .15s,box-shadow .15s;border:1px solid rgba(0,0,0,.06)}
+.cta-website:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(8,80,65,.28)}
+.cta-website svg{width:16px;height:16px;flex-shrink:0;opacity:.95}
+.detail-grid{margin-top:12px}
+.detail-card{border-radius:14px;padding:12px 14px;border:1px solid #D1E8DF;background:#fff;box-shadow:0 1px 2px rgba(8,80,65,.04)}
 .meta{font-size:11px;color:var(--gray);margin-top:4px;line-height:1.6}
 .section{margin-top:10px}
 .section b{color:var(--teal-dark)}
@@ -107,14 +156,18 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
 .brand-footer p{font-size:11px;color:var(--gray);line-height:1.7;margin:2px 0}
 @media(max-width:640px){
   .form-grid,.hero-grid,.detail-grid,.results-filters,.trust-legend-grid{grid-template-columns:1fr}
+  .college-stat-grid{grid-template-columns:1fr}
   .hero h1{font-size:20px}
   .card{padding:18px 14px}
   .result{padding:14px}
+  .college-card-inner{padding:15px 14px 14px}
+  .college-name{font-size:16px}
   .result-title{font-size:14px}
   .course-list{padding-left:16px}
   .course-list li{font-size:11px;line-height:1.55}
   .meta,.detail-card p,.section-card{font-size:11px}
   .filter-select,.filter-btn{font-size:12px}
+  .course-chip{font-size:10px;padding:5px 9px}
 }
 </style>
 </head>
@@ -166,24 +219,46 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-title">Student details and filters</div>
-    <p class="meta" style="margin-top:0;margin-bottom:12px;">How this works: your filters are matched in this order — exact state, then neighbour states, then national fallback.</p>
-    <div class="form-grid">
-      <div>
-        <label class="field-label" for="lens-select">Geography lens</label>
-        <select class="select" id="lens-select"><option value="">Select geography lens</option></select>
-      </div>
-      <div>
-        <label class="field-label" for="state-select">State / UT</label>
-        <select class="select" id="state-select"><option value="">Select state / UT</option></select>
-      </div>
-      <div>
-        <label class="field-label" for="stream-select">Stream</label>
-        <select class="select" id="stream-select"><option value="">Select stream</option></select>
+  <div class="card filter-card">
+    <div class="filter-card-inner">
+      <div class="filter-card-eyebrow">College Finder</div>
+      <h2 class="filter-card-title">Build your shortlist</h2>
+      <ol class="filter-steps" aria-label="Filter steps">
+        <li><b>1</b><span>Pick how you want to search</span></li>
+        <li><b>2</b><span>Choose state or all-India view</span></li>
+        <li><b>3</b><span>Select stream, then run search</span></li>
+      </ol>
+      <p class="filter-flow-note">Matches run in order: <strong>exact state</strong>, then <strong>neighbour states</strong> if needed, then <strong>national fallback</strong> so you always get a practical next step.</p>
+      <div class="form-grid form-grid-filter">
+        <div class="field-group">
+          <label class="field-label" for="lens-select">
+            <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+            <span>Geography lens</span>
+          </label>
+          <select class="select" id="lens-select"><option value="">Select geography lens</option></select>
+          <p class="field-hint">National vs state-comfort changes which colleges appear first.</p>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="state-select">
+            <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.5 7-10a7 7 0 1 0-14 0c0 5.5 7 10 7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+            <span>State / UT</span>
+          </label>
+          <select class="select" id="state-select"><option value="">Select state / UT</option></select>
+          <p class="field-hint">All-India appears when your lens is national-level.</p>
+        </div>
+        <div class="field-group field-span-full">
+          <label class="field-label" for="stream-select">
+            <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 6l-6 4 6 4 6-4-6-4z"/><path d="M6 14l6 4 6-4M6 10l6 4 6-4"/></svg>
+            <span>Stream</span>
+          </label>
+          <select class="select" id="stream-select"><option value="">Select stream</option></select>
+          <p class="field-hint">Courses and branches are shown inside each college card for this stream.</p>
+        </div>
       </div>
     </div>
-    <div style="margin-top:12px;"><button class="btn" id="btn-find" disabled>Show colleges</button></div>
+    <div class="filter-actions">
+      <button type="button" class="btn" id="btn-find" disabled>Show colleges</button>
+    </div>
   </div>
 
   <div class="card" id="results-wrap" style="display:none;">
@@ -495,6 +570,10 @@ function renderResults(reason, programs){
     list.innerHTML = '<div class="result"><div><strong>No colleges match the current filter combination.</strong></div><div class="meta">Try clearing one filter, switch geography lens, or use official counselling portals to widen your shortlist.</div></div>';
     return;
   }
+  var streamSummary = (byId(getTaxonomyRows('streams'), CURRENT_STREAM_SELECTED) || {}).label || CURRENT_STREAM_SELECTED || '';
+  var svgCourses = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>';
+  var svgExam = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>';
+  var svgHighlight = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7L12 17.8 5.7 21l2.3-7-6-4.6h7.6L12 2z"/></svg>';
   var html = '';
   function titleCaseId(v){
     return String(v || '').replace(/[_-]+/g, ' ').replace(/\b\w/g, function(ch){ return ch.toUpperCase(); });
@@ -595,27 +674,58 @@ function renderResults(reason, programs){
   cards.forEach(function(row){
     var c = row.college;
     var state = byId(getTaxonomyRows('states'), c.state_id);
-    html += '<div class="result">';
-    html += '<div class="result-head"><div><div class="result-title"><strong>' + esc(c.name) + '</strong></div><div class="meta">' + esc(c.city || '') + (state ? ', ' + esc(state.label) : '') + '</div></div></div>';
-    html += '<div class="result-tags">';
-    if (c.city) html += '<span class="pill pill-city">' + esc(c.city) + '</span>';
+    var locPlain = (c.city || '—') + (state ? ' · ' + state.label : '');
+    var cityStateHtml = '<span>' + esc(c.city || '—') + '</span>';
+    if (state) cityStateHtml += '<span class="college-meta-dot" aria-hidden="true"> · </span><span>' + esc(state.label) + '</span>';
+    var livingV = (c.cost_band && c.cost_band.living_city_band) ? (titleCaseId(c.cost_band.living_city_band) + ' band') : '—';
+    var snapV = row.snapshotDate ? esc(row.snapshotDate) : '—';
+    var nirf = (c.verification && c.verification.nirf_band) ? String(c.verification.nirf_band).trim() : '';
+    var chipWrapClass = 'course-chip-wrap' + ((row.courses || []).length > 12 ? ' course-chip-wrap--scroll' : '');
+    var courseChips = (row.courses || []).map(function(courseLabel){
+      return '<span class="course-chip" role="listitem">' + esc(courseLabel) + '</span>';
+    }).join('');
+    html += '<article class="result college-card" role="article">';
+    html += '<div class="college-card-accent" aria-hidden="true"></div><div class="college-card-inner">';
+    html += '<div class="college-card-head">';
+    html += '<div class="college-name-block"><h3 class="college-name">' + esc(c.name) + '</h3>';
+    html += '<div class="college-meta-line">' + cityStateHtml;
+    if (streamSummary) html += '<span class="college-meta-dot" aria-hidden="true"> · </span><span class="college-stream-tag">' + esc(streamSummary) + '</span>';
+    html += '</div>';
+    html += '<div class="college-pill-row">';
     if (c.type) html += '<span class="pill pill-type">' + esc(c.type) + '</span>';
     if (c.ownership) html += '<span class="pill pill-own">' + esc(c.ownership) + '</span>';
-    if (c.programs_verified) html += '<span class="pill pill-type" style="border-color:#BFE8D8;background:#E6F7F0;color:#0B6A4F;">Curated programmes</span>';
+    if (c.programs_verified) html += '<span class="pill pill-curate">Curated programmes</span>';
+    html += '</div></div>';
+    html += '<span class="pill pill-data">' + esc(titleCaseId(c.confidence_level || 'medium')) + ' data confidence</span>';
     html += '</div>';
-    var coursesHtml = '<ul class="course-list">' + row.courses.map(function(courseLabel){
-      return '<li>' + esc(courseLabel) + '</li>';
-    }).join('') + '</ul>';
-    html += '<div class="section-card"><div class="section-title">Courses offered</div>' + coursesHtml +
-      '<p class="meta course-list-footnote">' + esc(
-        (c.programs_verified)
-          ? 'These programme names are from curator-reviewed overrides. Cutoffs, intake, and offerings still change every year — confirm on the official admissions page.'
-          : 'Branches may include catalogue-style suggestions for this stream. For colleges marked curated, heuristic rows are hidden — confirm every programme on the institute admissions page.'
-      ) + '</p></div>';
-    if (row.exams.length) html += '<div class="section-card"><div class="section-title">Admission exams to verify</div>' + esc(row.exams.join(', ')) + '</div>';
-    if (row.snapshotDate) html += '<div class="meta">Data snapshot: ' + esc(row.snapshotDate) + ' (verify latest brochure/admissions page for current intake).</div>';
-    if (c.highlights && c.highlights.unique_point) html += '<div class="section-card"><div class="section-title">Unique point</div>' + esc(c.highlights.unique_point) + '</div>';
-    if (c.highlights && c.highlights.why_choose) html += '<div class="section-card"><div class="section-title">Why choose this college</div>' + esc(c.highlights.why_choose) + '</div>';
+
+    html += '<div class="college-stat-grid">';
+    html += '<div class="stat-tile"><div class="stat-tile-k">Location</div><div class="stat-tile-v">' + esc(locPlain) + '</div></div>';
+    html += '<div class="stat-tile"><div class="stat-tile-k">Dataset snapshot</div><div class="stat-tile-v">' + snapV + '</div></div>';
+    html += '<div class="stat-tile"><div class="stat-tile-k">Living cost cue</div><div class="stat-tile-v">' + esc(livingV) + '</div></div>';
+    html += '</div>';
+    if (nirf) html += '<p class="meta" style="margin:-4px 0 12px;">NIRF context (if listed): <strong>' + esc(nirf) + '</strong> — use only as orientation; verify current cycle on official sources.</p>';
+
+    html += '<div class="section-card"><div class="section-head"><span class="section-head-icon" aria-hidden="true">' + svgCourses + '</span><div class="section-title">Courses offered</div></div>';
+    html += '<div class="' + chipWrapClass + '" role="list">' + courseChips + '</div>';
+    html += '<p class="meta course-list-footnote">' + esc(
+      (c.programs_verified)
+        ? 'These programme names are from curator-reviewed overrides. Cutoffs, intake, and offerings still change every year — confirm on the official admissions page.'
+        : 'Branches may include catalogue-style suggestions for this stream. For colleges marked curated, heuristic rows are hidden — confirm every programme on the institute admissions page.'
+    ) + '</p></div>';
+
+    if (row.exams.length) {
+      html += '<div class="section-card"><div class="section-head"><span class="section-head-icon" aria-hidden="true">' + svgExam + '</span><div class="section-title">Exams to verify</div></div>';
+      html += '<p style="margin:0;font-size:12px;color:var(--gray);line-height:1.65">' + esc(row.exams.join(' · ')) + '</p></div>';
+    }
+
+    if ((c.highlights && c.highlights.unique_point) || (c.highlights && c.highlights.why_choose)) {
+      html += '<div class="section-card"><div class="section-head"><span class="section-head-icon" aria-hidden="true">' + svgHighlight + '</span><div class="section-title">Why this college</div></div>';
+      if (c.highlights && c.highlights.unique_point) html += '<p style="margin:0 0 8px;font-size:12px;color:var(--text);line-height:1.65"><strong>Unique angle:</strong> ' + esc(c.highlights.unique_point) + '</p>';
+      if (c.highlights && c.highlights.why_choose) html += '<p style="margin:0;font-size:12px;color:var(--gray);line-height:1.65"><strong>Fit signal:</strong> ' + esc(c.highlights.why_choose) + '</p>';
+      html += '</div>';
+    }
+
     var hasAdmissionDetail = !!(row.admissionRoutePrimary || (row.admissionRouteExams || []).length || row.admissionRouteVerificationUrl);
     var hasCostDetail = !!(c.cost_band && c.cost_band.living_city_band);
     var hasRecognitionDetail = !!(c.recognition && (c.recognition.university_status || (c.recognition.regulators_required || []).length));
@@ -633,9 +743,9 @@ function renderResults(reason, programs){
       html += '<p><strong>Living band:</strong> ' + esc(titleCaseId(c.cost_band.living_city_band)) + '</p>';
       if (c.cost_band.hostel_context) html += '<p><strong>Hostel context:</strong> ' + esc(titleCaseId(c.cost_band.hostel_context)) + '</p>';
       if (typeof c.cost_band.monthly_budget_min === 'number' && typeof c.cost_band.monthly_budget_max === 'number') {
-        html += '<p><strong>Estimated monthly living:</strong> ₹' + esc(String(c.cost_band.monthly_budget_min)) + ' - ₹' + esc(String(c.cost_band.monthly_budget_max)) + '</p>';
+        html += '<p><strong>Estimated monthly living:</strong> ₹' + esc(String(c.cost_band.monthly_budget_min)) + ' – ₹' + esc(String(c.cost_band.monthly_budget_max)) + '</p>';
       }
-      html += '<p>Estimated from city and institution type. Verify on official hostel/college pages.</p></div>';
+      html += '<p>Estimated from city and institution type. Verify on official hostel or college pages.</p></div>';
     }
     if (hasRecognitionDetail) {
       var displayRegulators = requiredRegulatorsForRow(row);
@@ -650,13 +760,17 @@ function renderResults(reason, programs){
         });
         html += '<p>' + verifyLinks.join(' · ') + '</p>';
       } else {
-        html += '<p>Verification required on official regulator/institute pages.</p>';
+        html += '<p>Verification required on official regulator or institute pages.</p>';
       }
       html += '</div>';
     }
     if (hasAdmissionDetail || hasCostDetail || hasRecognitionDetail) html += '</div>';
-    if (c.contacts && c.contacts.website) html += '<ul class="links"><li><a href="' + esc(safeHttp(c.contacts.website)) + '" target="_blank" rel="noopener noreferrer">Official website</a></li></ul>';
-    html += '</div>';
+
+    if (c.contacts && c.contacts.website) {
+      html += '<a class="cta-website" href="' + esc(safeHttp(c.contacts.website)) + '" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Open official website</a>';
+    }
+
+    html += '</div></article>';
   });
   list.innerHTML = html;
 }
