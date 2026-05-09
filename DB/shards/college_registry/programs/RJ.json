@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "RJ",
     "state_label": "Rajasthan",
-    "count": 29,
+    "count": 30,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -891,6 +891,37 @@
         ],
         "verification_url": "https://www.snmcjodhpur.org/",
         "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "manipal_jaipur_engineering_engineering_generic_state_comfort_intake",
+      "college_id": "manipal_jaipur",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Engineering and allied pathway details should be confirmed from latest admission handbook."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://jaipur.manipal.edu/",
+        "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
       }

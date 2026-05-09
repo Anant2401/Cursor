@@ -653,8 +653,8 @@
     {
       "state_id": "DL",
       "state_label": "Delhi (NCT)",
-      "institutions_count": 16,
-      "programs_count": 34,
+      "institutions_count": 17,
+      "programs_count": 35,
       "institutions_file": "DB/shards/college_registry/institutions/DL.json",
       "programs_file": "DB/shards/college_registry/programs/DL.json"
     },
@@ -669,8 +669,8 @@
     {
       "state_id": "GJ",
       "state_label": "Gujarat",
-      "institutions_count": 6,
-      "programs_count": 6,
+      "institutions_count": 7,
+      "programs_count": 7,
       "institutions_file": "DB/shards/college_registry/institutions/GJ.json",
       "programs_file": "DB/shards/college_registry/programs/GJ.json"
     },
@@ -741,8 +741,8 @@
     {
       "state_id": "MH",
       "state_label": "Maharashtra",
-      "institutions_count": 34,
-      "programs_count": 45,
+      "institutions_count": 36,
+      "programs_count": 47,
       "institutions_file": "DB/shards/college_registry/institutions/MH.json",
       "programs_file": "DB/shards/college_registry/programs/MH.json"
     },
@@ -789,16 +789,16 @@
     {
       "state_id": "OD",
       "state_label": "Odisha",
-      "institutions_count": 10,
-      "programs_count": 20,
+      "institutions_count": 11,
+      "programs_count": 21,
       "institutions_file": "DB/shards/college_registry/institutions/OD.json",
       "programs_file": "DB/shards/college_registry/programs/OD.json"
     },
     {
       "state_id": "PB",
       "state_label": "Punjab",
-      "institutions_count": 3,
-      "programs_count": 3,
+      "institutions_count": 4,
+      "programs_count": 4,
       "institutions_file": "DB/shards/college_registry/institutions/PB.json",
       "programs_file": "DB/shards/college_registry/programs/PB.json"
     },
@@ -813,8 +813,8 @@
     {
       "state_id": "RJ",
       "state_label": "Rajasthan",
-      "institutions_count": 14,
-      "programs_count": 29,
+      "institutions_count": 15,
+      "programs_count": 30,
       "institutions_file": "DB/shards/college_registry/institutions/RJ.json",
       "programs_file": "DB/shards/college_registry/programs/RJ.json"
     },
@@ -845,8 +845,8 @@
     {
       "state_id": "TS",
       "state_label": "Telangana",
-      "institutions_count": 16,
-      "programs_count": 28,
+      "institutions_count": 17,
+      "programs_count": 29,
       "institutions_file": "DB/shards/college_registry/institutions/TS.json",
       "programs_file": "DB/shards/college_registry/programs/TS.json"
     },
@@ -861,16 +861,16 @@
     {
       "state_id": "UP",
       "state_label": "Uttar Pradesh",
-      "institutions_count": 41,
-      "programs_count": 58,
+      "institutions_count": 42,
+      "programs_count": 59,
       "institutions_file": "DB/shards/college_registry/institutions/UP.json",
       "programs_file": "DB/shards/college_registry/programs/UP.json"
     },
     {
       "state_id": "WB",
       "state_label": "West Bengal",
-      "institutions_count": 18,
-      "programs_count": 28,
+      "institutions_count": 19,
+      "programs_count": 29,
       "institutions_file": "DB/shards/college_registry/institutions/WB.json",
       "programs_file": "DB/shards/college_registry/programs/WB.json"
     }
@@ -921,8 +921,8 @@
     "DL": {
       "institutions_file": "DB/shards/college_registry/institutions/DL.json",
       "programs_file": "DB/shards/college_registry/programs/DL.json",
-      "institutions_count": 16,
-      "programs_count": 34
+      "institutions_count": 17,
+      "programs_count": 35
     },
     "GA": {
       "institutions_file": "DB/shards/college_registry/institutions/GA.json",
@@ -933,8 +933,8 @@
     "GJ": {
       "institutions_file": "DB/shards/college_registry/institutions/GJ.json",
       "programs_file": "DB/shards/college_registry/programs/GJ.json",
-      "institutions_count": 6,
-      "programs_count": 6
+      "institutions_count": 7,
+      "programs_count": 7
     },
     "HP": {
       "institutions_file": "DB/shards/college_registry/institutions/HP.json",
@@ -987,8 +987,8 @@
     "MH": {
       "institutions_file": "DB/shards/college_registry/institutions/MH.json",
       "programs_file": "DB/shards/college_registry/programs/MH.json",
-      "institutions_count": 34,
-      "programs_count": 45
+      "institutions_count": 36,
+      "programs_count": 47
     },
     "ML": {
       "institutions_file": "DB/shards/college_registry/institutions/ML.json",
@@ -1023,14 +1023,14 @@
     "OD": {
       "institutions_file": "DB/shards/college_registry/institutions/OD.json",
       "programs_file": "DB/shards/college_registry/programs/OD.json",
-      "institutions_count": 10,
-      "programs_count": 20
+      "institutions_count": 11,
+      "programs_count": 21
     },
     "PB": {
       "institutions_file": "DB/shards/college_registry/institutions/PB.json",
       "programs_file": "DB/shards/college_registry/programs/PB.json",
-      "institutions_count": 3,
-      "programs_count": 3
+      "institutions_count": 4,
+      "programs_count": 4
     },
     "PY": {
       "institutions_file": "DB/shards/college_registry/institutions/PY.json",
@@ -1041,8 +1041,8 @@
     "RJ": {
       "institutions_file": "DB/shards/college_registry/institutions/RJ.json",
       "programs_file": "DB/shards/college_registry/programs/RJ.json",
-      "institutions_count": 14,
-      "programs_count": 29
+      "institutions_count": 15,
+      "programs_count": 30
     },
     "SK": {
       "institutions_file": "DB/shards/college_registry/institutions/SK.json",
@@ -1065,8 +1065,8 @@
     "TS": {
       "institutions_file": "DB/shards/college_registry/institutions/TS.json",
       "programs_file": "DB/shards/college_registry/programs/TS.json",
-      "institutions_count": 16,
-      "programs_count": 28
+      "institutions_count": 17,
+      "programs_count": 29
     },
     "UK": {
       "institutions_file": "DB/shards/college_registry/institutions/UK.json",
@@ -1077,14 +1077,14 @@
     "UP": {
       "institutions_file": "DB/shards/college_registry/institutions/UP.json",
       "programs_file": "DB/shards/college_registry/programs/UP.json",
-      "institutions_count": 41,
-      "programs_count": 58
+      "institutions_count": 42,
+      "programs_count": 59
     },
     "WB": {
       "institutions_file": "DB/shards/college_registry/institutions/WB.json",
       "programs_file": "DB/shards/college_registry/programs/WB.json",
-      "institutions_count": 18,
-      "programs_count": 28
+      "institutions_count": 19,
+      "programs_count": 29
     }
   }
 }

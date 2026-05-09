@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "PB",
     "state_label": "Punjab",
-    "count": 3,
+    "count": 4,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -90,6 +90,35 @@
           "institute_portal"
         ],
         "verification_url": "https://www.gndu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "cupb_bathinda_humanities_humanities_generic_state_comfort_intake",
+      "college_id": "cupb_bathinda",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Central university admission criteria should be validated against the current prospectus."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://cup.edu.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

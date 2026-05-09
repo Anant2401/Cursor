@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "WB",
     "state_label": "West Bengal",
-    "count": 28,
+    "count": 29,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -853,6 +853,35 @@
           "state_cet"
         ],
         "verification_url": "https://www.iihm.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "presidency_university_kolkata_science_stats_science_stats_generic_state_comfort_",
+      "college_id": "presidency_university_kolkata",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "State university science admissions should be verified from current official bulletin."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.presiuniv.ac.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

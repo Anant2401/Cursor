@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "MH",
     "state_label": "Maharashtra",
-    "count": 45,
+    "count": 47,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -1367,6 +1367,63 @@
         ],
         "verification_url": "https://afmc.nic.in/",
         "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "iiit_nagpur_engineering_engineering_generic_national_level_state_comfort_intake",
+      "college_id": "iiit_nagpur",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "IIIT admission route follows national counselling; verify latest JoSAA and CSAB updates."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://iiitn.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "muhs_nashik_education_education_generic_state_comfort_intake",
+      "college_id": "muhs_nashik",
+      "stream_id": "education",
+      "course_id": "education_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Health sciences and education-linked pathways should be verified from latest university notice."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.muhs.ac.in/",
+        "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
       }

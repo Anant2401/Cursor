@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "UP",
     "state_label": "Uttar Pradesh",
-    "count": 58,
+    "count": 59,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -1755,6 +1755,38 @@
         ],
         "verification_url": "https://www.bujhansi.ac.in/",
         "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "dr_ram_manoher_lohia_institute_lucknow_medicine_medicine_mbbs_state_comfort_inta",
+      "college_id": "dr_ram_manoher_lohia_institute_lucknow",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Medical counselling seat matrix should be verified each cycle for quota split."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.drrmlims.ac.in/",
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
       }

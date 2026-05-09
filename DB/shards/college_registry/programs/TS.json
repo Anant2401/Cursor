@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "TS",
     "state_label": "Telangana",
-    "count": 28,
+    "count": 29,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -856,6 +856,34 @@
         "exam_ids": [],
         "pathways": [],
         "verification_url": "https://niperhyd.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "nalsar_hyderabad_law_law_generic_national_level_state_comfort_intake",
+      "college_id": "nalsar_hyderabad",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Law counselling route and reservation rules should be verified from consortium updates."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://www.nalsar.ac.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

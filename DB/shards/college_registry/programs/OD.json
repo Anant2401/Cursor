@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "OD",
     "state_label": "Odisha",
-    "count": 20,
+    "count": 21,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -608,6 +608,35 @@
           "state_cet"
         ],
         "verification_url": "https://ximb.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "bjb_college_bhubaneswar_commerce_commerce_generic_state_comfort_intake",
+      "college_id": "bjb_college_bhubaneswar",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Autonomous college intake and reservation policy should be validated from current notice."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://bjbcollege.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
