@@ -123,15 +123,15 @@
     },
     {
       "id": "bits_pilani_pilani_campus",
-      "name": "BITS Pilani (Pilani campus)",
+      "name": "BITS Pilani Pilani Campus",
       "state_id": "RJ",
       "city": "Pilani",
-      "type": "Private deemed",
-      "ownership": "",
-      "confidence_level": "medium",
+      "type": "Deemed university",
+      "ownership": "Private",
+      "confidence_level": "high",
       "contact_missing_reason": "",
       "contacts": {
-        "website": "https://www.bits-pilani.ac.in/pilani",
+        "website": "https://www.bits-pilani.ac.in/pilani/",
         "email": "",
         "phone": ""
       },
@@ -144,13 +144,15 @@
         "specialization": "BITS Pilani (Pilani campus) is positioned as a private deemed with  context; verify department-level offerings and current intake on official pages.",
         "unique_point": "BITS Pilani (Pilani campus) contributes a distinct local option in Pilani and is useful for shortlist comparison by institution type and ecosystem fit.",
         "why_choose": "Choose BITS Pilani (Pilani campus) when your priority is matching stream preference with location, institution profile, and verified admission information.",
-        "notes": "BITSAT; compare fee with hostel."
+        "notes": "Institute-level admission test and counselling details should be verified each cycle."
       },
       "verification": {
         "nirf_band": "Verify NIRF",
-        "last_verified_on": "2026-05-07",
+        "last_verified_on": "2026-05-09",
         "source_urls": [
-          "https://www.bits-pilani.ac.in/pilani"
+          "https://www.bits-pilani.ac.in/pilani",
+          "https://www.bits-pilani.ac.in/pilani/",
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -170,7 +172,9 @@
         ],
         "regulators_verified": [],
         "verification_urls": [
-          "https://www.bits-pilani.ac.in/pilani"
+          "https://www.bits-pilani.ac.in/pilani",
+          "https://www.bits-pilani.ac.in/pilani/",
+          "https://www.ugc.gov.in/"
         ],
         "confidence": "medium",
         "last_updated": "2026-05-09",

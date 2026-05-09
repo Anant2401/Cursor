@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "OD",
     "state_label": "Odisha",
-    "count": 19,
+    "count": 20,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -579,6 +579,35 @@
         "exam_ids": [],
         "pathways": [],
         "verification_url": "https://kiit.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "ximb_bhubaneswar_management_management_generic_state_comfort_intake",
+      "college_id": "ximb_bhubaneswar",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Management admissions accept multiple exams; verify latest accepted scores and cutoffs."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://ximb.edu.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

@@ -10,8 +10,8 @@
       "https://mcc.nic.in/"
     ],
     "pipeline_stats": {
-      "total_colleges": 250,
-      "total_programs": 371,
+      "total_colleges": 259,
+      "total_programs": 381,
       "stale_record_count": 0,
       "last_pipeline_run": "2026-05-09"
     }
@@ -3697,15 +3697,15 @@
     },
     {
       "id": "bits_pilani_pilani_campus",
-      "name": "BITS Pilani (Pilani campus)",
+      "name": "BITS Pilani Pilani Campus",
       "state_id": "RJ",
       "city": "Pilani",
-      "type": "Private deemed",
-      "ownership": "",
-      "confidence_level": "medium",
+      "type": "Deemed university",
+      "ownership": "Private",
+      "confidence_level": "high",
       "contact_missing_reason": "",
       "contacts": {
-        "website": "https://www.bits-pilani.ac.in/pilani",
+        "website": "https://www.bits-pilani.ac.in/pilani/",
         "email": "",
         "phone": ""
       },
@@ -3718,13 +3718,15 @@
         "specialization": "BITS Pilani (Pilani campus) is positioned as a private deemed with  context; verify department-level offerings and current intake on official pages.",
         "unique_point": "BITS Pilani (Pilani campus) contributes a distinct local option in Pilani and is useful for shortlist comparison by institution type and ecosystem fit.",
         "why_choose": "Choose BITS Pilani (Pilani campus) when your priority is matching stream preference with location, institution profile, and verified admission information.",
-        "notes": "BITSAT; compare fee with hostel."
+        "notes": "Institute-level admission test and counselling details should be verified each cycle."
       },
       "verification": {
         "nirf_band": "Verify NIRF",
-        "last_verified_on": "2026-05-07",
+        "last_verified_on": "2026-05-09",
         "source_urls": [
-          "https://www.bits-pilani.ac.in/pilani"
+          "https://www.bits-pilani.ac.in/pilani",
+          "https://www.bits-pilani.ac.in/pilani/",
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -3744,7 +3746,9 @@
         ],
         "regulators_verified": [],
         "verification_urls": [
-          "https://www.bits-pilani.ac.in/pilani"
+          "https://www.bits-pilani.ac.in/pilani",
+          "https://www.bits-pilani.ac.in/pilani/",
+          "https://www.ugc.gov.in/"
         ],
         "confidence": "medium",
         "last_updated": "2026-05-09",
@@ -14275,8 +14279,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.amrita.edu/campus/coimbatore/",
-          "https://www.ugc.gov.in/",
-          "https://www.amrita.edu/campus/coimbatore/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -14334,8 +14337,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://dpu.edu.in/",
-          "https://www.ugc.gov.in/",
-          "https://dpu.edu.in/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -14393,8 +14395,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://paruluniversity.ac.in/",
-          "https://www.ugc.gov.in/",
-          "https://paruluniversity.ac.in/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -14452,8 +14453,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://nirmauni.ac.in/",
-          "https://www.ugc.gov.in/",
-          "https://nirmauni.ac.in/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -14511,8 +14511,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://pec.ac.in/",
-          "https://josaa.nic.in/",
-          "https://pec.ac.in/"
+          "https://josaa.nic.in/"
         ]
       },
       "cost_band": {
@@ -14570,8 +14569,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://gmch.gov.in/",
-          "https://mcc.nic.in/",
-          "https://gmch.gov.in/"
+          "https://mcc.nic.in/"
         ]
       },
       "cost_band": {
@@ -14629,8 +14627,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.jmi.ac.in/",
-          "https://www.ugc.gov.in/",
-          "https://www.jmi.ac.in/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -14688,8 +14685,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.srmist.edu.in/",
-          "https://www.ugc.gov.in/",
-          "https://www.srmist.edu.in/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -14747,8 +14743,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.rgipt.ac.in/",
-          "https://www.education.gov.in/",
-          "https://www.rgipt.ac.in/"
+          "https://www.education.gov.in/"
         ]
       },
       "cost_band": {
@@ -14806,8 +14801,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.tezpuruniversity.ac.in/",
-          "https://www.ugc.gov.in/",
-          "https://www.tezpuruniversity.ac.in/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -14831,6 +14825,537 @@
           "https://www.ugc.gov.in/"
         ],
         "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "iit_mandi",
+      "name": "Indian Institute of Technology Mandi",
+      "state_id": "HP",
+      "city": "Mandi",
+      "type": "Institute of National Importance",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iitmandi.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "IIT admissions route is all-India counselling; verify latest JoSAA guidance."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.iitmandi.ac.in/",
+          "https://josaa.nic.in/",
+          "https://www.iitmandi.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.iitmandi.ac.in/",
+          "https://josaa.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "nlud_delhi",
+      "name": "National Law University Delhi",
+      "state_id": "DL",
+      "city": "New Delhi",
+      "type": "Law university",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://nludelhi.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Law admission criteria and test pattern can change; verify latest NLU Delhi notification."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://nludelhi.ac.in/",
+          "https://www.abcindia.org/",
+          "https://nludelhi.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "BCI"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://nludelhi.ac.in/",
+          "https://www.abcindia.org/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "ximb_bhubaneswar",
+      "name": "Xavier Institute of Management Bhubaneswar",
+      "state_id": "OD",
+      "city": "Bhubaneswar",
+      "type": "Private business school",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://ximb.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Management admissions accept multiple exams; verify latest accepted scores and cutoffs."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://ximb.edu.in/",
+          "https://www.ugc.gov.in/",
+          "https://ximb.edu.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://ximb.edu.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "amu_aligarh",
+      "name": "Aligarh Muslim University Aligarh",
+      "state_id": "UP",
+      "city": "Aligarh",
+      "type": "Central university",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.amu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Central university routes and reservation policies should be verified from current prospectus."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.amu.ac.in/",
+          "https://www.ugc.gov.in/",
+          "https://www.amu.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.amu.ac.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "nit_durgapur",
+      "name": "National Institute of Technology Durgapur",
+      "state_id": "WB",
+      "city": "Durgapur",
+      "type": "Institute of National Importance",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://nitdgp.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "NIT route is counselling based; verify JoSAA and CSAB schedule for the intake year."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://nitdgp.ac.in/",
+          "https://josaa.nic.in/",
+          "https://nitdgp.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://nitdgp.ac.in/",
+          "https://josaa.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "sjcc_bengaluru",
+      "name": "St Josephs College of Commerce Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Autonomous college",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://sjcc.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Commerce intake and merit criteria should be verified from latest college admissions page."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://sjcc.edu.in/",
+          "https://www.ugc.gov.in/",
+          "https://sjcc.edu.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "limited",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "autonomous",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://sjcc.edu.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "gauhati_medical_college",
+      "name": "Gauhati Medical College and Hospital Guwahati",
+      "state_id": "AS",
+      "city": "Guwahati",
+      "type": "Government medical college",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://gmchassam.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "State and all-India counselling split should be verified for current NEET cycle."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://gmchassam.gov.in/",
+          "https://mcc.nic.in/",
+          "https://gmchassam.gov.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://gmchassam.gov.in/",
+          "https://mcc.nic.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "kalasalingam_srivilliputhur",
+      "name": "Kalasalingam Academy of Research and Education Srivilliputhur",
+      "state_id": "TN",
+      "city": "Srivilliputhur",
+      "type": "Deemed university",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.kalasalingam.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Design and engineering-adjacent pathways should be verified from official admission handbook."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.kalasalingam.ac.in/",
+          "https://www.ugc.gov.in/",
+          "https://www.kalasalingam.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "deemed",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.kalasalingam.ac.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "pantnagar_university",
+      "name": "G B Pant University of Agriculture and Technology Pantnagar",
+      "state_id": "UK",
+      "city": "Pantnagar",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.gbpuat.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Science and agriculture-linked admission routes should be verified against latest state counselling notice."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.gbpuat.ac.in/",
+          "https://www.ugc.gov.in/",
+          "https://www.gbpuat.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "state_act",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.gbpuat.ac.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
@@ -26101,6 +26626,297 @@
           "institute_portal"
         ],
         "verification_url": "https://www.tezpuruniversity.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "iit_mandi_engineering_engineering_generic_national_level_state_comfort_intake",
+      "college_id": "iit_mandi",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "IIT admissions route is all-India counselling; verify latest JoSAA guidance."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://www.iitmandi.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "nlud_delhi_law_law_generic_national_level_state_comfort_intake",
+      "college_id": "nlud_delhi",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Law admission criteria and test pattern can change; verify latest NLU Delhi notification."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://nludelhi.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "bits_pilani_pilani_campus_engineering_engineering_generic_national_level_state_c",
+      "college_id": "bits_pilani_pilani_campus",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Institute-level admission test and counselling details should be verified each cycle."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://www.bits-pilani.ac.in/pilani",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "ximb_bhubaneswar_management_management_generic_state_comfort_intake",
+      "college_id": "ximb_bhubaneswar",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Management admissions accept multiple exams; verify latest accepted scores and cutoffs."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://ximb.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "amu_aligarh_humanities_humanities_generic_state_comfort_intake",
+      "college_id": "amu_aligarh",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Central university routes and reservation policies should be verified from current prospectus."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.amu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "nit_durgapur_engineering_engineering_generic_national_level_state_comfort_intake",
+      "college_id": "nit_durgapur",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "NIT route is counselling based; verify JoSAA and CSAB schedule for the intake year."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://nitdgp.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "sjcc_bengaluru_commerce_commerce_generic_state_comfort_intake",
+      "college_id": "sjcc_bengaluru",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Commerce intake and merit criteria should be verified from latest college admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://sjcc.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "gauhati_medical_college_medicine_medicine_mbbs_state_comfort_intake",
+      "college_id": "gauhati_medical_college",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "State and all-India counselling split should be verified for current NEET cycle."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://gmchassam.gov.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "kalasalingam_srivilliputhur_design_design_generic_state_comfort_intake",
+      "college_id": "kalasalingam_srivilliputhur",
+      "stream_id": "design",
+      "course_id": "design_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Design and engineering-adjacent pathways should be verified from official admission handbook."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "nift"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.kalasalingam.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "pantnagar_university_science_stats_science_stats_generic_state_comfort_intake",
+      "college_id": "pantnagar_university",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Science and agriculture-linked admission routes should be verified against latest state counselling notice."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.gbpuat.ac.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
