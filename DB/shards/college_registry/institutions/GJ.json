@@ -3,7 +3,7 @@
     "shard_type": "institutions",
     "state_id": "GJ",
     "state_label": "Gujarat",
-    "count": 4,
+    "count": 6,
     "generated_on": "2026-05-09"
   },
   "institutions": [
@@ -211,8 +211,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.svnit.ac.in/",
-          "https://josaa.nic.in/",
-          "https://www.svnit.ac.in/"
+          "https://josaa.nic.in/"
         ]
       },
       "cost_band": {
@@ -234,6 +233,124 @@
         "verification_urls": [
           "https://www.svnit.ac.in/",
           "https://josaa.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "parul_university_vadodara",
+      "name": "Parul University Vadodara",
+      "state_id": "GJ",
+      "city": "Vadodara",
+      "type": "Private university",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://paruluniversity.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Pharmacy approvals and intake routes should be verified from current official notices."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://paruluniversity.ac.in/",
+          "https://www.ugc.gov.in/",
+          "https://paruluniversity.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "PCI"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://paruluniversity.ac.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "nirma_university_ahmedabad",
+      "name": "Nirma University Ahmedabad",
+      "state_id": "GJ",
+      "city": "Ahmedabad",
+      "type": "Private university",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://nirmauni.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Law admission processes may vary by program; verify latest admission guidelines."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://nirmauni.ac.in/",
+          "https://www.ugc.gov.in/",
+          "https://nirmauni.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "BCI"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://nirmauni.ac.in/",
+          "https://www.ugc.gov.in/"
         ],
         "confidence": "low",
         "last_updated": "2026-05-09",

@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "MH",
     "state_label": "Maharashtra",
-    "count": 41,
+    "count": 42,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -1243,6 +1243,38 @@
         ],
         "verification_url": "https://xaviers.edu/",
         "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "dypatil_pune_medicine_medicine_mbbs_state_comfort_intake",
+      "college_id": "dypatil_pune",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Medical admissions are counselling-linked; verify latest NEET-UG seat matrix."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://dpu.edu.in/",
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
       }
