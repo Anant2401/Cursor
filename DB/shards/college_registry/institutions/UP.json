@@ -1210,7 +1210,7 @@
       "city": "Kanpur",
       "type": "IIT",
       "ownership": "",
-      "confidence_level": "low",
+      "confidence_level": "medium",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.iitk.ac.in/",
@@ -1226,7 +1226,7 @@
         "specialization": "Science and engineering planning reference anchored to IIT Kanpur admissions context.",
         "unique_point": "Provides a focused IITK route view for science-statistics oriented candidates.",
         "why_choose": "Useful for students comparing science-driven IIT tracks with engineering routes.",
-        "notes": ""
+        "notes": "Quality-gated pass 2: baseline sources reviewed; keep official portal verification before final decision."
       },
       "verification": {
         "nirf_band": "",
@@ -1266,7 +1266,7 @@
       "city": "Varanasi",
       "type": "Central university",
       "ownership": "",
-      "confidence_level": "low",
+      "confidence_level": "medium",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.bhu.ac.in/",
@@ -1282,7 +1282,7 @@
         "specialization": "Humanities-route discovery across BHU departments and programme options.",
         "unique_point": "Broad social sciences and humanities context within BHU ecosystem.",
         "why_choose": "Useful for students seeking depth in arts/social-science pathways with strong academic environment.",
-        "notes": ""
+        "notes": "Quality-gated pass 2: baseline sources reviewed; keep official portal verification before final decision."
       },
       "verification": {
         "nirf_band": "",
@@ -1378,7 +1378,7 @@
       "city": "Mathura",
       "type": "State veterinary university",
       "ownership": "",
-      "confidence_level": "low",
+      "confidence_level": "medium",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.duvasu.ac.in/",
@@ -1394,7 +1394,7 @@
         "specialization": "Veterinary-focused state university with domain-specific academic structure.",
         "unique_point": "Specialized veterinary university identity within Uttar Pradesh.",
         "why_choose": "Strong fit for students pursuing veterinary domain rather than generic science tracks.",
-        "notes": ""
+        "notes": "Quality-gated pass 2: baseline sources reviewed; keep official portal verification before final decision."
       },
       "verification": {
         "nirf_band": "",
@@ -1434,7 +1434,7 @@
       "city": "Bareilly",
       "type": "ICAR-IVRI",
       "ownership": "",
-      "confidence_level": "low",
+      "confidence_level": "medium",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.ivri.res.in/",
@@ -1450,7 +1450,7 @@
         "specialization": "Research-intensive veterinary ecosystem with national scientific relevance.",
         "unique_point": "High research visibility in veterinary and animal science domain.",
         "why_choose": "Useful for students targeting research-linked veterinary pathways.",
-        "notes": ""
+        "notes": "Quality-gated pass 2: baseline sources reviewed; keep official portal verification before final decision."
       },
       "verification": {
         "nirf_band": "",
@@ -2473,7 +2473,7 @@
       "city": "Prayagraj",
       "type": "Government AYUSH college",
       "ownership": "Public",
-      "confidence_level": "low",
+      "confidence_level": "medium",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.upayushsociety.com/",
@@ -2489,7 +2489,7 @@
         "specialization": "",
         "unique_point": "",
         "why_choose": "",
-        "notes": "Program-level details should be manually verified from UP AYUSH and regulator sources."
+        "notes": "Program-level details should be manually verified from UP AYUSH and regulator sources. Quality-gated pass 2: baseline sources reviewed; keep official portal verification before final decision."
       },
       "verification": {
         "nirf_band": "",
@@ -2532,7 +2532,7 @@
       "city": "Prayagraj",
       "type": "Private AYUSH college",
       "ownership": "Private",
-      "confidence_level": "low",
+      "confidence_level": "medium",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.aacprayagraj.in/",
@@ -2548,7 +2548,7 @@
         "specialization": "",
         "unique_point": "",
         "why_choose": "",
-        "notes": "Program-level data should be manually verified from official sources before relying."
+        "notes": "Program-level data should be manually verified from official sources before relying. Quality-gated pass 2: baseline sources reviewed; keep official portal verification before final decision."
       },
       "verification": {
         "nirf_band": "",
