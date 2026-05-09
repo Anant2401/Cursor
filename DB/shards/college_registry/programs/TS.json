@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "TS",
     "state_label": "Telangana",
-    "count": 26,
+    "count": 28,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -799,6 +799,63 @@
           "institute_portal"
         ],
         "verification_url": "https://pvnrtvu.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "aurobindo_pharma_hyderabad_pharmacy_pharmacy_generic_state_comfort_intake",
+      "college_id": "aurobindo_pharma_hyderabad",
+      "stream_id": "pharmacy",
+      "course_id": "pharmacy_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Program-level eligibility and approval status should be manually verified before relying on this record."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.aurobindo.com/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "niper_hyderabad_pharmacy_pharmacy_generic_national_level_state_comfort_intake",
+      "college_id": "niper_hyderabad",
+      "stream_id": "pharmacy",
+      "course_id": "pharmacy_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "National pharmacy admissions should be validated from current institute and regulator notifications."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://niperhyd.ac.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

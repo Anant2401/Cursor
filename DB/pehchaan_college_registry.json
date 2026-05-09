@@ -10,8 +10,8 @@
       "https://mcc.nic.in/"
     ],
     "pipeline_stats": {
-      "total_colleges": 267,
-      "total_programs": 391,
+      "total_colleges": 277,
+      "total_programs": 401,
       "stale_record_count": 0,
       "last_pipeline_run": "2026-05-09"
     }
@@ -15385,8 +15385,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.iiita.ac.in/",
-          "https://josaa.nic.in/",
-          "https://www.iiita.ac.in/"
+          "https://josaa.nic.in/"
         ]
       },
       "cost_band": {
@@ -15444,8 +15443,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.nmims.edu/",
-          "https://www.ugc.gov.in/",
-          "https://www.nmims.edu/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -15503,8 +15501,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://jadavpuruniversity.in/",
-          "https://www.ugc.gov.in/",
-          "https://jadavpuruniversity.in/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -15562,8 +15559,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.gmc.goa.gov.in/",
-          "https://mcc.nic.in/",
-          "https://www.gmc.goa.gov.in/"
+          "https://mcc.nic.in/"
         ]
       },
       "cost_band": {
@@ -15621,8 +15617,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://mitwpu.edu.in/",
-          "https://www.ugc.gov.in/",
-          "https://mitwpu.edu.in/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -15680,8 +15675,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.kau.in/",
-          "https://www.ugc.gov.in/",
-          "https://www.kau.in/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -15739,8 +15733,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://cottonuniversity.ac.in/",
-          "https://www.ugc.gov.in/",
-          "https://cottonuniversity.ac.in/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -15798,8 +15791,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.iiitdm.ac.in/",
-          "https://josaa.nic.in/",
-          "https://www.iiitdm.ac.in/"
+          "https://josaa.nic.in/"
         ]
       },
       "cost_band": {
@@ -15821,6 +15813,596 @@
         "verification_urls": [
           "https://www.iiitdm.ac.in/",
           "https://josaa.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "nit_hamirpur",
+      "name": "National Institute of Technology Hamirpur",
+      "state_id": "HP",
+      "city": "Hamirpur",
+      "type": "Institute of National Importance",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://nith.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "NIT admissions route is counselling based; verify current JoSAA and CSAB timelines."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://nith.ac.in/",
+          "https://josaa.nic.in/",
+          "https://nith.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://nith.ac.in/",
+          "https://josaa.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "rmlims_lucknow",
+      "name": "Dr Ram Manohar Lohia Institute of Medical Sciences Lucknow",
+      "state_id": "UP",
+      "city": "Lucknow",
+      "type": "Government medical college",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.drrmlims.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Medical seat allocation split should be verified from state and all-India counselling notices."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.drrmlims.ac.in/",
+          "https://mcc.nic.in/",
+          "https://www.drrmlims.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "limited",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.drrmlims.ac.in/",
+          "https://mcc.nic.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "ashoka_university_sonepat",
+      "name": "Ashoka University Sonipat",
+      "state_id": "HR",
+      "city": "Sonipat",
+      "type": "Private university",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.ashoka.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Liberal arts admissions often include holistic evaluation; verify current criteria and timelines."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.ashoka.edu.in/",
+          "https://www.ugc.gov.in/",
+          "https://www.ashoka.edu.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.ashoka.edu.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "amrita_kochi",
+      "name": "Amrita School of Medicine Kochi",
+      "state_id": "KL",
+      "city": "Kochi",
+      "type": "Private medical college",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.amrita.edu/school/medicine/kochi/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Medical admission route should be verified each cycle for quota split and counselling process."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.amrita.edu/school/medicine/kochi/",
+          "https://mcc.nic.in/",
+          "https://www.amrita.edu/school/medicine/kochi/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "limited",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.amrita.edu/school/medicine/kochi/",
+          "https://mcc.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "aurobindo_pharma_hyderabad",
+      "name": "Aurobindo Pharma Foundation Hyderabad",
+      "state_id": "TS",
+      "city": "Hyderabad",
+      "type": "Private institute",
+      "ownership": "Private",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.aurobindo.com/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Program-level eligibility and approval status should be manually verified before relying on this record."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.aurobindo.com/",
+          "https://www.pci.nic.in/",
+          "https://www.aurobindo.com/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "limited",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "PCI"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.aurobindo.com/",
+          "https://www.pci.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "central_university_kashmir",
+      "name": "Central University of Kashmir",
+      "state_id": "JK",
+      "city": "Ganderbal",
+      "type": "Central university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.cukashmir.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Education pathways and reservation policies should be verified from latest university prospectus."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.cukashmir.ac.in/",
+          "https://www.ugc.gov.in/",
+          "https://www.cukashmir.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "NCTE"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.cukashmir.ac.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "gndu_amritsar",
+      "name": "Guru Nanak Dev University Amritsar",
+      "state_id": "PB",
+      "city": "Amritsar",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.gndu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "State university commerce admissions should be verified for updated merit and entrance criteria."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.gndu.ac.in/",
+          "https://www.ugc.gov.in/",
+          "https://www.gndu.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "state_act",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.gndu.ac.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "mcg_jodhpur",
+      "name": "Dr SN Medical College Jodhpur",
+      "state_id": "RJ",
+      "city": "Jodhpur",
+      "type": "Government medical college",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.snmcjodhpur.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Counselling path and domicile reservation split should be verified for current NEET cycle."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.snmcjodhpur.org/",
+          "https://mcc.nic.in/",
+          "https://www.snmcjodhpur.org/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.snmcjodhpur.org/",
+          "https://mcc.nic.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "iihm_kolkata",
+      "name": "International Institute of Hotel Management Kolkata",
+      "state_id": "WB",
+      "city": "Kolkata",
+      "type": "Private institute",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iihm.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Hospitality and media-adjacent pathways should be validated against latest institute admission guide."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.iihm.ac.in/",
+          "https://www.ugc.gov.in/",
+          "https://www.iihm.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "limited",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.iihm.ac.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "niper_hyderabad",
+      "name": "National Institute of Pharmaceutical Education and Research Hyderabad",
+      "state_id": "TS",
+      "city": "Hyderabad",
+      "type": "Institute of National Importance",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://niperhyd.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "National pharmacy admissions should be validated from current institute and regulator notifications."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://niperhyd.ac.in/",
+          "https://www.pci.nic.in/",
+          "https://niperhyd.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "PCI"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://niperhyd.ac.in/",
+          "https://www.pci.nic.in/"
         ],
         "confidence": "low",
         "last_updated": "2026-05-09",
@@ -27678,6 +28260,305 @@
         "exam_ids": [],
         "pathways": [],
         "verification_url": "https://www.iiitdm.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "nit_hamirpur_engineering_engineering_generic_national_level_state_comfort_intake",
+      "college_id": "nit_hamirpur",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "NIT admissions route is counselling based; verify current JoSAA and CSAB timelines."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://nith.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "rmlims_lucknow_medicine_medicine_mbbs_state_comfort_intake",
+      "college_id": "rmlims_lucknow",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Medical seat allocation split should be verified from state and all-India counselling notices."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.drrmlims.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "ashoka_university_sonepat_humanities_humanities_generic_state_comfort_intake",
+      "college_id": "ashoka_university_sonepat",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Liberal arts admissions often include holistic evaluation; verify current criteria and timelines."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.ashoka.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "amrita_kochi_medicine_medicine_mbbs_state_comfort_intake",
+      "college_id": "amrita_kochi",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Medical admission route should be verified each cycle for quota split and counselling process."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.amrita.edu/school/medicine/kochi/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "aurobindo_pharma_hyderabad_pharmacy_pharmacy_generic_state_comfort_intake",
+      "college_id": "aurobindo_pharma_hyderabad",
+      "stream_id": "pharmacy",
+      "course_id": "pharmacy_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Program-level eligibility and approval status should be manually verified before relying on this record."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.aurobindo.com/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "central_university_kashmir_education_education_generic_state_comfort_intake",
+      "college_id": "central_university_kashmir",
+      "stream_id": "education",
+      "course_id": "education_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Education pathways and reservation policies should be verified from latest university prospectus."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.cukashmir.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "gndu_amritsar_commerce_commerce_generic_state_comfort_intake",
+      "college_id": "gndu_amritsar",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "State university commerce admissions should be verified for updated merit and entrance criteria."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.gndu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "mcg_jodhpur_medicine_medicine_mbbs_state_comfort_intake",
+      "college_id": "mcg_jodhpur",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Counselling path and domicile reservation split should be verified for current NEET cycle."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.snmcjodhpur.org/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "iihm_kolkata_fashion_media_fashion_media_generic_state_comfort_intake",
+      "college_id": "iihm_kolkata",
+      "stream_id": "fashion_media",
+      "course_id": "fashion_media_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Hospitality and media-adjacent pathways should be validated against latest institute admission guide."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "nift"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iihm.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "niper_hyderabad_pharmacy_pharmacy_generic_national_level_state_comfort_intake",
+      "college_id": "niper_hyderabad",
+      "stream_id": "pharmacy",
+      "course_id": "pharmacy_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "National pharmacy admissions should be validated from current institute and regulator notifications."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://niperhyd.ac.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

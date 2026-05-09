@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "RJ",
     "state_label": "Rajasthan",
-    "count": 28,
+    "count": 29,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -859,6 +859,38 @@
         "pathways": [],
         "verification_url": "https://www.nlujodhpur.ac.in/",
         "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "mcg_jodhpur_medicine_medicine_mbbs_state_comfort_intake",
+      "college_id": "mcg_jodhpur",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Counselling path and domicile reservation split should be verified for current NEET cycle."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.snmcjodhpur.org/",
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
       }

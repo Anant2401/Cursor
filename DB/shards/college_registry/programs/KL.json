@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "KL",
     "state_label": "Kerala",
-    "count": 1,
+    "count": 2,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -32,6 +32,38 @@
         ],
         "verification_url": "https://www.kau.in/",
         "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "amrita_kochi_medicine_medicine_mbbs_state_comfort_intake",
+      "college_id": "amrita_kochi",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Medical admission route should be verified each cycle for quota split and counselling process."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.amrita.edu/school/medicine/kochi/",
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
       }

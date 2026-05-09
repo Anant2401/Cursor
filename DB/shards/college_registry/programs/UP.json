@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "UP",
     "state_label": "Uttar Pradesh",
-    "count": 55,
+    "count": 56,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -1665,6 +1665,38 @@
         "pathways": [],
         "verification_url": "https://www.iiita.ac.in/",
         "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "rmlims_lucknow_medicine_medicine_mbbs_state_comfort_intake",
+      "college_id": "rmlims_lucknow",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Medical seat allocation split should be verified from state and all-India counselling notices."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.drrmlims.ac.in/",
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
       }

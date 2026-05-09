@@ -3,7 +3,7 @@
     "shard_type": "institutions",
     "state_id": "RJ",
     "state_label": "Rajasthan",
-    "count": 13,
+    "count": 14,
     "generated_on": "2026-05-09"
   },
   "institutions": [
@@ -743,6 +743,65 @@
         "verification_urls": [
           "https://www.banasthali.org/",
           "https://www.ugc.gov.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "mcg_jodhpur",
+      "name": "Dr SN Medical College Jodhpur",
+      "state_id": "RJ",
+      "city": "Jodhpur",
+      "type": "Government medical college",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.snmcjodhpur.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Counselling path and domicile reservation split should be verified for current NEET cycle."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.snmcjodhpur.org/",
+          "https://mcc.nic.in/",
+          "https://www.snmcjodhpur.org/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.snmcjodhpur.org/",
+          "https://mcc.nic.in/"
         ],
         "confidence": "medium",
         "last_updated": "2026-05-09",

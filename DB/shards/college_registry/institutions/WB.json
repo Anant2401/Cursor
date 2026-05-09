@@ -3,7 +3,7 @@
     "shard_type": "institutions",
     "state_id": "WB",
     "state_label": "West Bengal",
-    "count": 17,
+    "count": 18,
     "generated_on": "2026-05-09"
   },
   "institutions": [
@@ -953,8 +953,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://jadavpuruniversity.in/",
-          "https://www.ugc.gov.in/",
-          "https://jadavpuruniversity.in/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -978,6 +977,65 @@
           "https://www.ugc.gov.in/"
         ],
         "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "iihm_kolkata",
+      "name": "International Institute of Hotel Management Kolkata",
+      "state_id": "WB",
+      "city": "Kolkata",
+      "type": "Private institute",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iihm.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Hospitality and media-adjacent pathways should be validated against latest institute admission guide."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.iihm.ac.in/",
+          "https://www.ugc.gov.in/",
+          "https://www.iihm.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "limited",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.iihm.ac.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
