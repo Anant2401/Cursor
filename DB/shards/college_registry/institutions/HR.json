@@ -3,7 +3,7 @@
     "shard_type": "institutions",
     "state_id": "HR",
     "state_label": "Haryana",
-    "count": 1,
+    "count": 2,
     "generated_on": "2026-05-09"
   },
   "institutions": [
@@ -37,8 +37,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.ashoka.edu.in/",
-          "https://www.ugc.gov.in/",
-          "https://www.ashoka.edu.in/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -59,6 +58,65 @@
         "regulators_verified": [],
         "verification_urls": [
           "https://www.ashoka.edu.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "sgt_university_gurugram",
+      "name": "SGT University Gurugram",
+      "state_id": "HR",
+      "city": "Gurugram",
+      "type": "Private university",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://sgtuniversity.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Dental admissions and DCI-linked approvals should be verified from current official notices."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://sgtuniversity.ac.in/",
+          "https://www.ugc.gov.in/",
+          "https://sgtuniversity.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "DCI_or_equivalent"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://sgtuniversity.ac.in/",
           "https://www.ugc.gov.in/"
         ],
         "confidence": "low",

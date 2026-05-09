@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "MP",
     "state_label": "Madhya Pradesh",
-    "count": 19,
+    "count": 20,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -579,6 +579,35 @@
           "institute_portal"
         ],
         "verification_url": "https://www.ndvsu.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "davv_indore_commerce_commerce_generic_state_comfort_intake",
+      "college_id": "davv_indore",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Commerce admissions and merit criteria should be verified from latest university notice."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.dauniv.ac.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
