@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "MH",
     "state_label": "Maharashtra",
-    "count": 38,
+    "count": 39,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -1155,6 +1155,39 @@
         ],
         "verification_url": "https://www.mafsu.in/",
         "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "example_iit_bombay_engineering_engineering_generic_national_level_state_comfort_",
+      "college_id": "example_iit_bombay",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Replace with actual row; keep IDs lowercase snake_case."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.iitb.ac.in/",
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
       }

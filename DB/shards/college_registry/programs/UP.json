@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "UP",
     "state_label": "Uttar Pradesh",
-    "count": 48,
+    "count": 49,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -1461,6 +1461,35 @@
           "institute_portal"
         ],
         "verification_url": "https://www.svpuat.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "example_bhu_varanasi_commerce_commerce_generic_state_comfort_intake",
+      "college_id": "example_bhu_varanasi",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Add one row per stream-course mapping needed."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.bhu.ac.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
