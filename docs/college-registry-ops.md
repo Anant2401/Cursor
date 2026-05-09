@@ -7,6 +7,8 @@ This runbook defines ownership and release checks for:
 - `scripts/migrate-planb-college-registry.cjs`
 - `scripts/build-college-indexes.cjs`
 - `scripts/validate-college-registry.cjs`
+- `scripts/validate-college-urls.cjs`
+- `scripts/generate-college-data-health.cjs`
 
 ## Ownership model
 
@@ -28,6 +30,8 @@ Run from repo root:
 node scripts/migrate-planb-college-registry.cjs
 node scripts/build-college-indexes.cjs
 node scripts/validate-college-registry.cjs
+node scripts/validate-college-urls.cjs
+node scripts/generate-college-data-health.cjs
 ```
 
 Required checks before merge:
@@ -40,6 +44,10 @@ Required checks before merge:
    - 5 states
    - 3 streams
    - 10 colleges minimum
+6. `docs/college-finder-data-health-report.md` shows confidence baseline:
+   - low-confidence colleges <= 5
+   - low-confidence programs <= 5
+7. `docs/college-finder-low-confidence-review.csv` has owners/notes for pending fixes.
 
 ## Admission-season hot refresh (recommended weekly)
 
@@ -63,3 +71,14 @@ If data validation fails near release:
 1. Do not publish broken JSON.
 2. Keep prior known-good registry/index files.
 3. Ship only script fixes; rerun pipeline in next release window.
+
+## Publish gate (College Finder)
+
+Before large release:
+
+1. Run:
+   - `node scripts/validate-college-registry.cjs`
+   - `node scripts/validate-college-urls.cjs`
+   - `node scripts/validate-tool-integration.cjs`
+2. Confirm `docs/college-finder-data-health-report.md` is regenerated in the same change set.
+3. Verify `Tools/pehchaan_college_finder.html` mobile card layout and filter interactions manually.

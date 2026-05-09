@@ -243,6 +243,12 @@ if (scriptExists(path.join("scripts", "validate-college-registry.cjs"))) {
   console.warn("Skip: scripts/validate-college-registry.cjs not found");
 }
 
+if (scriptExists(path.join("scripts", "validate-college-urls.cjs"))) {
+  ok = runStep("College URL quality checks", [path.join("scripts", "validate-college-urls.cjs")]) && ok;
+} else {
+  console.warn("Skip: scripts/validate-college-urls.cjs not found");
+}
+
 if (scriptExists(path.join("scripts", "validate-tool-integration.cjs"))) {
   ok = runStep("Cross-tool integration checks", [path.join("scripts", "validate-tool-integration.cjs")]) && ok;
 } else {

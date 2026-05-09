@@ -1721,13 +1721,21 @@ function showPlanB(){
   renderMetroCorporate(m);
   renderSharedPrivateRoleCards(m.id);
   var p = window.PehchaanRegistryPrefill ? PehchaanRegistryPrefill.mergeParams() : {};
+  var routePrimary = (p.admission_route_primary || '');
+  var routeExams = (p.admission_exam_ids || '');
+  var costBand = (p.cost_living_band || '');
+  var recognitionStatus = (p.recognition_status || '');
   var ctx = {
     from: 'plan_b',
     exam: m.id || '',
     career: (p.career || ''),
     private_role_id: (p.private_role_id || ''),
     metro: (p.metro || ''),
-    role_family: (p.role_family || '')
+    role_family: (p.role_family || ''),
+    admission_route_primary: routePrimary,
+    admission_exam_ids: routeExams,
+    cost_living_band: costBand,
+    recognition_status: recognitionStatus
   };
   if (window.PehchaanJourney) {
     PehchaanJourney.setJourney(ctx);
@@ -1749,7 +1757,17 @@ function showPlanB(){
         '<a style="display:inline-block;padding:10px 14px;margin:2px 4px 0 0;border-radius:10px;background:#085041;color:#EF9F27;font-size:12px;font-weight:700;text-decoration:none;" href="' + esc(PehchaanToolLinks.u('skillGap', ctx)) + '">Skill Gap Analyser →</a>' +
         '</div>';
     }
-    nextHost.innerHTML = recHtml + explicit;
+    var carried = '';
+    if (routePrimary || routeExams || costBand || recognitionStatus) {
+      carried = '<div class="card"><div class="card-title">College context carried forward</div>' +
+        '<p style="font-size:12px;color:var(--gray);line-height:1.65;margin-bottom:8px;">Your recent College Finder context is attached so recommendations stay consistent across tools.</p><ul style="margin:0;padding-left:18px;font-size:12px;color:var(--gray);line-height:1.7;">';
+      if (routePrimary) carried += '<li><strong>Admission route:</strong> ' + esc(routePrimary.replace(/_/g, ' ')) + '</li>';
+      if (routeExams) carried += '<li><strong>Exam hints:</strong> ' + esc(routeExams) + '</li>';
+      if (costBand) carried += '<li><strong>Cost band:</strong> ' + esc(costBand) + '</li>';
+      if (recognitionStatus) carried += '<li><strong>Recognition status:</strong> ' + esc(recognitionStatus.replace(/_/g, ' ')) + '</li>';
+      carried += '</ul></div>';
+    }
+    nextHost.innerHTML = carried + recHtml + explicit;
   }
 
   ['screen-pivot', 'screen-college', 'screen-course', 'screen-results-college', 'screen-results-course'].forEach(function(sid){
