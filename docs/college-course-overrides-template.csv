@@ -1,0 +1,5 @@
+state_id,college_id,course_id,program_name,geography_lens_ids,clear_catalogue_expansions,set_programs_verified,availability_confidence,notes
+# Paste data rows below. clear_catalogue_expansions=yes removes heuristic exp_* rows for that college before upsert.
+# set_programs_verified=yes hides remaining catalogue expansions on the College Finder card for that college.
+# Example (uncomment after removing # to run):
+# DL,aiims_new_delhi,medicine_mbbs,,state_comfort|national_level,yes,yes,high,Curated MBBS listing from brochure

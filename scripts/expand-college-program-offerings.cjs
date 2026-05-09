@@ -174,6 +174,7 @@ function main() {
       newProg.availability = newProg.availability || {};
       newProg.availability.is_active = true;
       newProg.availability.confidence_level = "low";
+      newProg.availability.catalogue_expansion = true;
       const baseNotes = template.availability && template.availability.notes ? String(template.availability.notes) : "";
       newProg.availability.notes =
         ([baseNotes, EXPAND_NOTE_APPEND].filter(Boolean).join(" ")).trim();

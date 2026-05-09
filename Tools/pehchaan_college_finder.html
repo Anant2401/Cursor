@@ -276,8 +276,10 @@ function initMaps(){
 function cacheInstitutionsAndPrograms(institutions, programs){
   (institutions || []).forEach(function(c){
     if (!c || !c.id) return;
-    collegesById[c.id] = c;
-    stateByCollegeId[c.id] = c.state_id;
+    /* Merge shard over baseline so JSON registry fields like programs_verified are not dropped. */
+    var prev = collegesById[c.id] || {};
+    collegesById[c.id] = Object.assign({}, c, prev);
+    stateByCollegeId[c.id] = collegesById[c.id].state_id;
   });
   (programs || []).forEach(function(p){
     if (!p || !p.id) return;
@@ -360,6 +362,11 @@ function matchNationalByStream(streamId){
   });
 }
 
+function isCatalogueExpansionProgram(p){
+  if (p && p.availability && p.availability.catalogue_expansion === true) return true;
+  return /^exp_/i.test(String(p && p.id) || '');
+}
+
 function cardsFromPrograms(programs){
   var collegeMap = {};
   (programs || []).forEach(function(p){
@@ -382,6 +389,9 @@ function cardsFromPrograms(programs){
     var allProgramsSameStream = (REG.college_programs || []).filter(function(p){
       return p && p.college_id === collegeId && (!CURRENT_STREAM_SELECTED || p.stream_id === CURRENT_STREAM_SELECTED);
     });
+    if ((c.programs_verified)) {
+      allProgramsSameStream = allProgramsSameStream.filter(function(p){ return !isCatalogueExpansionProgram(p); });
+    }
     if (allProgramsSameStream.length) rows = allProgramsSameStream;
     var courses = [];
     var mappedPathways = [];
@@ -423,7 +433,11 @@ function cardsFromPrograms(programs){
     if (!courses.length && mappedPathways.length) {
       courses = mappedPathways.slice(0, 8);
     }
-    if (!courses.length) courses.push('Programme list not available in this snapshot');
+    if (!courses.length && (c.programs_verified)) {
+      courses.push('Curated programme list not yet uploaded for this college — use the official website link below.');
+    } else if (!courses.length) {
+      courses.push('Programme list not available in this snapshot');
+    }
     if (!snapshotDate && c.verification && c.verification.last_verified_on) snapshotDate = c.verification.last_verified_on;
     if (!snapshotDate && REG && REG.meta && REG.meta.last_updated) snapshotDate = REG.meta.last_updated;
     var routeKeys = Object.keys(routeMap).sort(function(a, b){ return routeMap[b] - routeMap[a]; });
@@ -587,12 +601,17 @@ function renderResults(reason, programs){
     if (c.city) html += '<span class="pill pill-city">' + esc(c.city) + '</span>';
     if (c.type) html += '<span class="pill pill-type">' + esc(c.type) + '</span>';
     if (c.ownership) html += '<span class="pill pill-own">' + esc(c.ownership) + '</span>';
+    if (c.programs_verified) html += '<span class="pill pill-type" style="border-color:#BFE8D8;background:#E6F7F0;color:#0B6A4F;">Curated programmes</span>';
     html += '</div>';
     var coursesHtml = '<ul class="course-list">' + row.courses.map(function(courseLabel){
       return '<li>' + esc(courseLabel) + '</li>';
     }).join('') + '</ul>';
     html += '<div class="section-card"><div class="section-title">Courses offered</div>' + coursesHtml +
-      '<p class="meta course-list-footnote">Branches shown are from our expanded catalogue for this stream — always confirm the latest list on the institute admissions page.</p></div>';
+      '<p class="meta course-list-footnote">' + esc(
+        (c.programs_verified)
+          ? 'These programme names are from curator-reviewed overrides. Cutoffs, intake, and offerings still change every year — confirm on the official admissions page.'
+          : 'Branches may include catalogue-style suggestions for this stream. For colleges marked curated, heuristic rows are hidden — confirm every programme on the institute admissions page.'
+      ) + '</p></div>';
     if (row.exams.length) html += '<div class="section-card"><div class="section-title">Admission exams to verify</div>' + esc(row.exams.join(', ')) + '</div>';
     if (row.snapshotDate) html += '<div class="meta">Data snapshot: ' + esc(row.snapshotDate) + ' (verify latest brochure/admissions page for current intake).</div>';
     if (c.highlights && c.highlights.unique_point) html += '<div class="section-card"><div class="section-title">Unique point</div>' + esc(c.highlights.unique_point) + '</div>';

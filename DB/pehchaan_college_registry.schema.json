@@ -211,6 +211,10 @@
           "ownership": {
             "type": "string"
           },
+          "programs_verified": {
+            "type": "boolean",
+            "description": "When true, College Finder hides catalogue-heuristic programme rows for this college."
+          },
           "confidence_level": {
             "type": "string",
             "enum": [
@@ -479,6 +483,10 @@
               },
               "notes": {
                 "type": "string"
+              },
+              "catalogue_expansion": {
+                "type": "boolean",
+                "description": "True when this row is catalogue-style enrichment, not curator-verified against a brochure."
               }
             }
           },
