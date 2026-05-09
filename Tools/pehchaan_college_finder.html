@@ -88,6 +88,11 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
 .filter-select{width:100%;padding:9px 10px;border:1.5px solid var(--border);border-radius:10px;font-family:inherit;font-size:12px;background:#fff;color:var(--text)}
 .filter-btn{padding:9px 12px;border-radius:10px;border:1.5px solid var(--teal-dark);background:#fff;color:var(--teal-dark);font-weight:700;font-size:12px;cursor:pointer}
 .filter-btn:hover{background:#EEF9F5}
+.trust-legend{margin-top:10px;border:1px solid #D7E8F7;background:#F4F9FF;border-radius:12px;padding:10px 12px}
+.trust-legend-title{font-size:11px;font-weight:700;color:#0E4C83;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+.trust-legend-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 10px}
+.trust-legend-item{font-size:11px;color:var(--gray);line-height:1.6}
+.trust-legend-item strong{color:var(--teal-dark)}
 .links{margin-top:10px;padding-left:18px}
 .links a{color:#0E4C83}
 .disclaimer{background:#F8F7FF;border:1px solid #C4C0F5;border-radius:14px;padding:14px 16px;margin-top:12px}
@@ -98,7 +103,15 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
 .brand-footer{text-align:center;margin-top:24px;padding-top:16px;border-top:1px solid var(--teal-light)}
 .brand-tagline{font-size:13px;font-weight:600;color:var(--teal);margin:2px 0 4px}
 .brand-footer p{font-size:11px;color:var(--gray);line-height:1.7;margin:2px 0}
-@media(max-width:640px){.form-grid,.hero-grid,.detail-grid,.results-filters{grid-template-columns:1fr}.hero h1{font-size:20px}}
+@media(max-width:640px){
+  .form-grid,.hero-grid,.detail-grid,.results-filters,.trust-legend-grid{grid-template-columns:1fr}
+  .hero h1{font-size:20px}
+  .card{padding:18px 14px}
+  .result{padding:14px}
+  .result-title{font-size:14px}
+  .meta,.detail-card p,.section-card{font-size:11px}
+  .filter-select,.filter-btn{font-size:12px}
+}
 </style>
 </head>
 <body>
@@ -178,6 +191,15 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
     <p id="selection-line" class="meta"></p>
     <span id="reason-chip" class="chip"></span>
     <p class="meta" style="margin-top:8px;">Discussion-only results: verify cutoffs, domicile, and fee rules on official portals before acting.</p>
+    <div class="trust-legend">
+      <div class="trust-legend-title">Data freshness and confidence</div>
+      <div class="trust-legend-grid">
+        <div class="trust-legend-item"><strong>High confidence:</strong> linked to clear official/regulator references and recent verification context.</div>
+        <div class="trust-legend-item"><strong>Medium confidence:</strong> likely accurate from reliable context; still verify latest notices before decisions.</div>
+        <div class="trust-legend-item"><strong>Snapshot date:</strong> shown per card to indicate when this row was last verified in our dataset.</div>
+        <div class="trust-legend-item"><strong>Rule:</strong> treat this shortlist as guidance, not final admission advice.</div>
+      </div>
+    </div>
     <div class="results-filters" id="results-filters">
       <select id="filter-route" class="filter-select">
         <option value="">All routes</option>
