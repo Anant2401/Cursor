@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "MH",
     "state_label": "Maharashtra",
-    "count": 40,
+    "count": 41,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -1213,6 +1213,35 @@
           "institute_portal"
         ],
         "verification_url": "https://www.tiss.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "st_xaviers_college_mumbai_commerce_commerce_generic_state_comfort_intake",
+      "college_id": "st_xaviers_college_mumbai",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Commerce admissions and seat allocations should be verified from latest college notice."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://xaviers.edu/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

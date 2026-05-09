@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "UP",
     "state_label": "Uttar Pradesh",
-    "count": 51,
+    "count": 52,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -1547,6 +1547,37 @@
           "state_cet"
         ],
         "verification_url": "https://www.ivri.nic.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "jss_academy_noida_engineering_engineering_generic_state_comfort_intake",
+      "college_id": "jss_academy_noida",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "State counselling alignment should be verified against current AKTU updates."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://jssaten.ac.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

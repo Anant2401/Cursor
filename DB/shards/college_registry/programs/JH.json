@@ -3,8 +3,38 @@
     "shard_type": "programs",
     "state_id": "JH",
     "state_label": "Jharkhand",
-    "count": 0,
+    "count": 1,
     "generated_on": "2026-05-09"
   },
-  "programs": []
+  "programs": [
+    {
+      "id": "bit_mesra_ranchi_science_stats_science_stats_generic_state_comfort_intake",
+      "college_id": "bit_mesra_ranchi",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Science programs and route mapping should be verified for latest intake year."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.bitmesra.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    }
+  ]
 }

@@ -3,8 +3,68 @@
     "shard_type": "institutions",
     "state_id": "JH",
     "state_label": "Jharkhand",
-    "count": 0,
+    "count": 1,
     "generated_on": "2026-05-09"
   },
-  "institutions": []
+  "institutions": [
+    {
+      "id": "bit_mesra_ranchi",
+      "name": "Birla Institute of Technology Mesra Ranchi",
+      "state_id": "JH",
+      "city": "Ranchi",
+      "type": "Deemed university",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.bitmesra.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Science programs and route mapping should be verified for latest intake year."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.bitmesra.ac.in/",
+          "https://www.ugc.gov.in/",
+          "https://www.bitmesra.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "deemed",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.bitmesra.ac.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    }
+  ]
 }

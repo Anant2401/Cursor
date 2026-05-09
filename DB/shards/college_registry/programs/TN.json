@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "TN",
     "state_label": "Tamil Nadu",
-    "count": 27,
+    "count": 28,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -827,6 +827,35 @@
         "exam_ids": [],
         "pathways": [],
         "verification_url": "https://www.nitt.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "tanuvas_chennai_veterinary_veterinary_generic_state_comfort_intake",
+      "college_id": "tanuvas_chennai",
+      "stream_id": "veterinary",
+      "course_id": "veterinary_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Veterinary seat matrix and counselling route should be verified from state notifications."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.tanuvas.ac.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
