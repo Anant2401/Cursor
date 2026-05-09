@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "KA",
     "state_label": "Karnataka",
-    "count": 26,
+    "count": 27,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -778,6 +778,35 @@
           "state_cet"
         ],
         "verification_url": "https://sjcc.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "jain_university_bengaluru_commerce_commerce_generic_state_comfort_intake",
+      "college_id": "jain_university_bengaluru",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Commerce admissions route may include merit and test components; verify latest criteria."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.jainuniversity.ac.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

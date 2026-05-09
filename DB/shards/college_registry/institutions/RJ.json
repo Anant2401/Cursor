@@ -581,9 +581,9 @@
       "name": "National Law University Jodhpur",
       "state_id": "RJ",
       "city": "Jodhpur",
-      "type": "National law university",
+      "type": "Law university",
       "ownership": "Public",
-      "confidence_level": "medium",
+      "confidence_level": "high",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.nlujodhpur.ac.in/",
@@ -599,13 +599,14 @@
         "specialization": "National Law University Jodhpur is positioned as a national law university with public context; verify department-level offerings and current intake on official pages.",
         "unique_point": "National Law University Jodhpur contributes a distinct local option in Jodhpur and is useful for shortlist comparison by institution type and ecosystem fit.",
         "why_choose": "Choose National Law University Jodhpur when your priority is matching stream preference with location, institution profile, and verified admission information.",
-        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+        "notes": "Law admission criteria may change by cycle; verify current consortium counselling bulletin."
       },
       "verification": {
         "nirf_band": "Verify latest rank/band where applicable.",
-        "last_verified_on": "2026-05-07",
+        "last_verified_on": "2026-05-09",
         "source_urls": [
-          "https://www.nlujodhpur.ac.in/"
+          "https://www.nlujodhpur.ac.in/",
+          "https://consortiumofnlus.ac.in/"
         ]
       },
       "cost_band": {
@@ -626,7 +627,8 @@
         ],
         "regulators_verified": [],
         "verification_urls": [
-          "https://www.nlujodhpur.ac.in/"
+          "https://www.nlujodhpur.ac.in/",
+          "https://consortiumofnlus.ac.in/"
         ],
         "confidence": "low",
         "last_updated": "2026-05-09",

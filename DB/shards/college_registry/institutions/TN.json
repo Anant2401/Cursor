@@ -3,7 +3,7 @@
     "shard_type": "institutions",
     "state_id": "TN",
     "state_label": "Tamil Nadu",
-    "count": 21,
+    "count": 22,
     "generated_on": "2026-05-09"
   },
   "institutions": [
@@ -1184,8 +1184,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.kalasalingam.ac.in/",
-          "https://www.ugc.gov.in/",
-          "https://www.kalasalingam.ac.in/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -1209,6 +1208,65 @@
           "https://www.ugc.gov.in/"
         ],
         "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "iiitdm_kancheepuram",
+      "name": "IIITDM Kancheepuram",
+      "state_id": "TN",
+      "city": "Chennai",
+      "type": "Institute of National Importance",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iiitdm.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Admission pathway follows national counselling; verify current JoSAA schedule."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.iiitdm.ac.in/",
+          "https://josaa.nic.in/",
+          "https://www.iiitdm.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.iiitdm.ac.in/",
+          "https://josaa.nic.in/"
+        ],
+        "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }

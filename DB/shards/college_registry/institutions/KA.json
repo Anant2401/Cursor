@@ -691,7 +691,7 @@
     },
     {
       "id": "jain_university_bengaluru",
-      "name": "Jain (Deemed-to-be University), Bengaluru",
+      "name": "JAIN Deemed to be University Bengaluru",
       "state_id": "KA",
       "city": "Bengaluru",
       "type": "Deemed university",
@@ -712,13 +712,14 @@
         "specialization": "BBA and allied management pathways with practical skill-building orientation.",
         "unique_point": "Multi-school private university known for management-focused student pathways.",
         "why_choose": "Good for students who want flexibility in management specializations and Bengaluru access.",
-        "notes": "Always verify current admission pathway, fees, and campus-specific programme list."
+        "notes": "Commerce admissions route may include merit and test components; verify latest criteria."
       },
       "verification": {
         "nirf_band": "Verify latest management band/ranking where applicable.",
-        "last_verified_on": "2026-05-07",
+        "last_verified_on": "2026-05-09",
         "source_urls": [
-          "https://www.jainuniversity.ac.in/"
+          "https://www.jainuniversity.ac.in/",
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -738,7 +739,8 @@
         ],
         "regulators_verified": [],
         "verification_urls": [
-          "https://www.jainuniversity.ac.in/"
+          "https://www.jainuniversity.ac.in/",
+          "https://www.ugc.gov.in/"
         ],
         "confidence": "medium",
         "last_updated": "2026-05-09",
@@ -1453,8 +1455,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://sjcc.edu.in/",
-          "https://www.ugc.gov.in/",
-          "https://sjcc.edu.in/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {

@@ -3,8 +3,41 @@
     "shard_type": "programs",
     "state_id": "GA",
     "state_label": "Goa",
-    "count": 0,
+    "count": 1,
     "generated_on": "2026-05-09"
   },
-  "programs": []
+  "programs": [
+    {
+      "id": "goa_medical_college_panaji_medicine_medicine_mbbs_state_comfort_intake",
+      "college_id": "goa_medical_college_panaji",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Medical admission split between state and all-India counselling should be verified."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.gmc.goa.gov.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    }
+  ]
 }

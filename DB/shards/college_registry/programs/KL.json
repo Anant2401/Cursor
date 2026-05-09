@@ -3,8 +3,38 @@
     "shard_type": "programs",
     "state_id": "KL",
     "state_label": "Kerala",
-    "count": 0,
+    "count": 1,
     "generated_on": "2026-05-09"
   },
-  "programs": []
+  "programs": [
+    {
+      "id": "kerala_agricultural_university_thrissur_science_stats_science_stats_generic_stat",
+      "college_id": "kerala_agricultural_university_thrissur",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Agriculture and science admission routes should be verified from state counselling updates."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.kau.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    }
+  ]
 }

@@ -4,16 +4,16 @@ Generated on: 2026-05-09
 
 ## Coverage Summary
 
-- Colleges: **259**
-- Programs: **381**
+- Colleges: **267**
+- Programs: **391**
 
-- Admission route primary populated: **381/381** (100.0%)
-- Admission route exam IDs populated: **209/381** (54.9%)
-- Admission route = verify fallback: **16/381** (4.2%)
+- Admission route primary populated: **391/391** (100.0%)
+- Admission route exam IDs populated: **212/391** (54.2%)
+- Admission route = verify fallback: **19/391** (4.9%)
 
-- Cost band populated: **259/259** (100.0%)
-- Recognition university status populated: **259/259** (100.0%)
-- Recognition regulators_required populated: **259/259** (100.0%)
+- Cost band populated: **267/267** (100.0%)
+- Recognition university status populated: **267/267** (100.0%)
+- Recognition regulators_required populated: **267/267** (100.0%)
 
 ## Notes
 
