@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "UK",
     "state_label": "Uttarakhand",
-    "count": 3,
+    "count": 4,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -89,6 +89,35 @@
           "institute_portal"
         ],
         "verification_url": "https://www.doonuniversity.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "gbpuat_pantnagar_vet_veterinary_veterinary_generic_state_comfort_intake",
+      "college_id": "gbpuat_pantnagar_vet",
+      "stream_id": "veterinary",
+      "course_id": "veterinary_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Veterinary seat matrix and counselling route should be validated from state and ICAR notices."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.gbpuat.ac.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

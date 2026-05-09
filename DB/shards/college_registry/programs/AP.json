@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "AP",
     "state_label": "Andhra Pradesh",
-    "count": 2,
+    "count": 3,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -62,6 +62,39 @@
           "state_cet"
         ],
         "verification_url": "https://www.apollocollegeofpharmacy.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "spa_vijayawada_architecture_architecture_generic_national_level_state_comfort_in",
+      "college_id": "spa_vijayawada",
+      "stream_id": "architecture",
+      "course_id": "architecture_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Architecture route may include national admission channels; verify current entrance requirements."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "arch"
+        ],
+        "pathways": [
+          "state_cet",
+          "institute_portal"
+        ],
+        "verification_url": "https://spav.ac.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
