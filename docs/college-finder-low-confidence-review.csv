@@ -1,15 +1,1 @@
 kind,college_id,college_name,state_id,stream_id,course_id,confidence,website,source_url
-college,msu_baroda,"Maharaja Sayajirao University of Baroda",GJ,,,low,https://msubaroda.ac.in/,https://msubaroda.ac.in/
-college,aurobindo_pharma_hyderabad,"Aurobindo Pharma Foundation Hyderabad",TS,,,low,https://www.aurobindo.com/,https://www.aurobindo.com/
-college,government_unani_medical_college_bengaluru,"Government Unani Medical College Bengaluru",KA,,,low,https://www.karnataka.gov.in/,https://www.karnataka.gov.in/
-college,state_unani_medical_college_prayagraj,"State Unani Medical College Prayagraj",UP,,,low,https://www.upayushsociety.com/,https://www.upayushsociety.com/
-college,bhagwan_buddha_homeopathic_college_bengaluru,"Bhagwan Buddha Homeopathic Medical College Bengaluru",KA,,,low,https://bbhmc.org/,https://bbhmc.org/
-college,allahabad_ayurvedic_college_prayagraj,"Allahabad Ayurvedic College Prayagraj",UP,,,low,https://www.aacprayagraj.in/,https://www.aacprayagraj.in/
-college,shri_bm_patil_ayurveda_vijayapura,"Shri BM Patil Medical College Ayurveda Vijayapura",KA,,,low,https://www.bldedu.ac.in/,https://www.bldedu.ac.in/
-program,msu_baroda,"Maharaja Sayajirao University of Baroda",GJ,ayush,ayush_generic,low,https://msubaroda.ac.in/,https://msubaroda.ac.in/
-program,aurobindo_pharma_hyderabad,"Aurobindo Pharma Foundation Hyderabad",TS,pharmacy,pharmacy_generic,low,https://www.aurobindo.com/,https://www.aurobindo.com/
-program,government_unani_medical_college_bengaluru,"Government Unani Medical College Bengaluru",KA,ayush,ayush_generic,low,https://www.karnataka.gov.in/,https://www.karnataka.gov.in/
-program,state_unani_medical_college_prayagraj,"State Unani Medical College Prayagraj",UP,ayush,ayush_generic,low,https://www.upayushsociety.com/,https://www.upayushsociety.com/
-program,bhagwan_buddha_homeopathic_college_bengaluru,"Bhagwan Buddha Homeopathic Medical College Bengaluru",KA,ayush,ayush_generic,low,https://bbhmc.org/,https://bbhmc.org/
-program,allahabad_ayurvedic_college_prayagraj,"Allahabad Ayurvedic College Prayagraj",UP,ayush,ayush_generic,low,https://www.aacprayagraj.in/,https://www.aacprayagraj.in/
-program,shri_bm_patil_ayurveda_vijayapura,"Shri BM Patil Medical College Ayurveda Vijayapura",KA,ayush,ayush_generic,low,https://www.bldedu.ac.in/,https://www.bldedu.ac.in/

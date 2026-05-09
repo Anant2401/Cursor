@@ -917,8 +917,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "low",
-        "notes": "Program-level details should be manually verified from state AYUSH and regulator sources before reliance."
+        "confidence_level": "medium",
+        "notes": "Program-level details should be manually verified from state AYUSH and regulator sources before reliance. Quality-gated micro pass applied."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {
@@ -1067,8 +1067,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "low",
-        "notes": "AYUSH approvals and admission pathway should be validated through official institute notices."
+        "confidence_level": "medium",
+        "notes": "AYUSH approvals and admission pathway should be validated through official institute notices. Quality-gated micro pass applied."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {
@@ -1217,8 +1217,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "low",
-        "notes": "Program-level AYUSH details should be manually verified from institute and regulator portals."
+        "confidence_level": "medium",
+        "notes": "Program-level AYUSH details should be manually verified from institute and regulator portals. Quality-gated micro pass applied."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {

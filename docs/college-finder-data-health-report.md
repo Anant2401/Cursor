@@ -1,6 +1,6 @@
 # College Finder Data Health Report
 
-Generated on: 2026-05-09T10:09:07.453Z
+Generated on: 2026-05-09T10:10:29.852Z
 
 ## Coverage
 - Total colleges: 355
@@ -8,8 +8,8 @@ Generated on: 2026-05-09T10:09:07.453Z
 - States covered: 26
 
 ## Confidence
-- Low-confidence colleges: 7
-- Low-confidence programs: 7
+- Low-confidence colleges: 0
+- Low-confidence programs: 0
 
 ## Focus stream coverage
 - ayush: 25 (5.22%)

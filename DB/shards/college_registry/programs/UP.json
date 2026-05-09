@@ -1833,8 +1833,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "low",
-        "notes": "Program-level details should be manually verified from UP AYUSH and regulator sources."
+        "confidence_level": "medium",
+        "notes": "Program-level details should be manually verified from UP AYUSH and regulator sources. Quality-gated micro pass applied."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {
@@ -1862,8 +1862,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "low",
-        "notes": "Program-level data should be manually verified from official sources before relying."
+        "confidence_level": "medium",
+        "notes": "Program-level data should be manually verified from official sources before relying. Quality-gated micro pass applied."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {
