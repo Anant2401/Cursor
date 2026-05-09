@@ -3,7 +3,7 @@
     "shard_type": "institutions",
     "state_id": "MH",
     "state_label": "Maharashtra",
-    "count": 39,
+    "count": 40,
     "generated_on": "2026-05-09"
   },
   "institutions": [
@@ -2146,8 +2146,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.sirjjarchitecture.org/",
-          "https://www.coa.gov.in/",
-          "https://www.sirjjarchitecture.org/"
+          "https://www.coa.gov.in/"
         ]
       },
       "cost_band": {
@@ -2205,8 +2204,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://mafsu.in/bvc/",
-          "https://icar.org.in/",
-          "https://mafsu.in/bvc/"
+          "https://icar.org.in/"
         ]
       },
       "cost_band": {
@@ -2230,6 +2228,65 @@
           "https://icar.org.in/"
         ],
         "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "government_ayurvedic_college_nagpur",
+      "name": "Government Ayurvedic College Nagpur",
+      "state_id": "MH",
+      "city": "Nagpur",
+      "type": "Government AYUSH college",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://gacnagpur.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "AYUSH intake and approval status should be verified from state and regulator updates."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://gacnagpur.org/",
+          "https://ncismindia.org/",
+          "https://gacnagpur.org/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "limited",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "NCISM_or_NCH"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://gacnagpur.org/",
+          "https://ncismindia.org/"
+        ],
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }

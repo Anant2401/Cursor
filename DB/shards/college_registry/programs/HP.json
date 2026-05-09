@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "HP",
     "state_label": "Himachal Pradesh",
-    "count": 2,
+    "count": 3,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -58,6 +58,35 @@
         "exam_ids": [],
         "pathways": [],
         "verification_url": "https://nith.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "rajiv_gandhi_ayurveda_college_paprola_ayush_ayush_generic_state_comfort_intake",
+      "college_id": "rajiv_gandhi_ayurveda_college_paprola",
+      "stream_id": "ayush",
+      "course_id": "ayush_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "AYUSH pathway and seat categories should be validated from current state notifications."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://rgpgayurvediccollege.org/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

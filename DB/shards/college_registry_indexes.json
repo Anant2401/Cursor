@@ -239,10 +239,13 @@
     ],
     "UP|ayush|ayush_generic": [
       "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
-      "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake"
+      "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
+      "state_unani_medical_college_prayagraj_ayush_ayush_generic_state_comfort_intake",
+      "allahabad_ayurvedic_college_prayagraj_ayush_ayush_generic_state_comfort_intake"
     ],
     "MH|ayush|ayush_generic": [
-      "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus"
+      "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus",
+      "government_ayurvedic_college_nagpur_ayush_ayush_generic_state_comfort_intake"
     ],
     "IN|pharmacy|pharmacy_generic": [
       "niper_campuses_mpharm_heavy_verify_ug_if_offered_bits_pilani_pharmacy_manipal_co",
@@ -804,7 +807,9 @@
     "KA|ayush|ayush_generic": [
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
       "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
-      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake",
+      "bhagwan_buddha_homeopathic_college_bengaluru_ayush_ayush_generic_state_comfort_i",
+      "jss_ayurveda_college_mysuru_ayush_ayush_generic_state_comfort_intake"
     ],
     "HR|veterinary|veterinary_generic": [
       "college_veterinary_science_hisar_veterinary_veterinary_generic_state_comfort_int"
@@ -842,6 +847,21 @@
     ],
     "KA|veterinary|veterinary_generic": [
       "veterinary_college_bidar_veterinary_veterinary_generic_state_comfort_intake"
+    ],
+    "WB|ayush|ayush_generic": [
+      "national_institute_homeopathy_kolkata_ayush_ayush_generic_national_level_state_c"
+    ],
+    "TN|ayush|ayush_generic": [
+      "government_sidha_medical_college_chennai_ayush_ayush_generic_state_comfort_intak"
+    ],
+    "BR|ayush|ayush_generic": [
+      "government_ayurvedic_college_patna_ayush_ayush_generic_state_comfort_intake"
+    ],
+    "HP|ayush|ayush_generic": [
+      "rajiv_gandhi_ayurveda_college_paprola_ayush_ayush_generic_state_comfort_intake"
+    ],
+    "KL|ayush|ayush_generic": [
+      "government_homeopathic_medical_college_calicut_ayush_ayush_generic_state_comfort"
     ]
   },
   "by_neighbor_state_stream_course": {
@@ -996,9 +1016,13 @@
       "kvg_dental_college_sullia_dentistry_dentistry_generic_state_comfort_intake"
     ],
     "AP|ayush|ayush_generic": [
+      "government_sidha_medical_college_chennai_ayush_ayush_generic_state_comfort_intak",
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
       "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
-      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake",
+      "bhagwan_buddha_homeopathic_college_bengaluru_ayush_ayush_generic_state_comfort_i",
+      "jss_ayurveda_college_mysuru_ayush_ayush_generic_state_comfort_intake",
+      "government_homeopathic_medical_college_calicut_ayush_ayush_generic_state_comfort"
     ],
     "AR|education|education_generic": [
       "tezpur_university_assam_education_education_generic_state_comfort_intake"
@@ -1070,6 +1094,10 @@
     "AS|design|design_generic": [
       "nift_kolkata_design_design_generic_state_comfort"
     ],
+    "AS|ayush|ayush_generic": [
+      "national_institute_homeopathy_kolkata_ayush_ayush_generic_national_level_state_c",
+      "government_ayurvedic_college_patna_ayush_ayush_generic_state_comfort_intake"
+    ],
     "BR|engineering|engineering_generic": [
       "iit_kanpur_engineering_engineering_generic_state_comfort_up",
       "iit_bhu_varanasi_engineering_engineering_generic_state_comfort_up",
@@ -1124,6 +1152,9 @@
     "BR|ayush|ayush_generic": [
       "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
       "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
+      "state_unani_medical_college_prayagraj_ayush_ayush_generic_state_comfort_intake",
+      "allahabad_ayurvedic_college_prayagraj_ayush_ayush_generic_state_comfort_intake",
+      "national_institute_homeopathy_kolkata_ayush_ayush_generic_national_level_state_c",
       "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake"
     ],
     "BR|pharmacy|pharmacy_generic": [
@@ -1399,8 +1430,11 @@
     ],
     "CG|ayush|ayush_generic": [
       "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus",
+      "government_ayurvedic_college_nagpur_ayush_ayush_generic_state_comfort_intake",
       "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
-      "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake"
+      "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
+      "state_unani_medical_college_prayagraj_ayush_ayush_generic_state_comfort_intake",
+      "allahabad_ayurvedic_college_prayagraj_ayush_ayush_generic_state_comfort_intake"
     ],
     "CG|fashion_media|fashion_media_generic": [
       "nift_mumbai_fashion_media_fashion_media_generic_state_comfort_mh",
@@ -1459,9 +1493,12 @@
     ],
     "GA|ayush|ayush_generic": [
       "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus",
+      "government_ayurvedic_college_nagpur_ayush_ayush_generic_state_comfort_intake",
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
       "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
-      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake",
+      "bhagwan_buddha_homeopathic_college_bengaluru_ayush_ayush_generic_state_comfort_i",
+      "jss_ayurveda_college_mysuru_ayush_ayush_generic_state_comfort_intake"
     ],
     "GA|pharmacy|pharmacy_generic": [
       "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha"
@@ -1584,6 +1621,7 @@
     ],
     "GJ|ayush|ayush_generic": [
       "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus",
+      "government_ayurvedic_college_nagpur_ayush_ayush_generic_state_comfort_intake",
       "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake"
     ],
     "GJ|pharmacy|pharmacy_generic": [
@@ -1815,6 +1853,9 @@
       "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake",
       "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
       "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
+      "state_unani_medical_college_prayagraj_ayush_ayush_generic_state_comfort_intake",
+      "allahabad_ayurvedic_college_prayagraj_ayush_ayush_generic_state_comfort_intake",
+      "rajiv_gandhi_ayurveda_college_paprola_ayush_ayush_generic_state_comfort_intake",
       "all_india_institute_ayurveda_delhi_ayush_ayush_generic_national_level_state_comf"
     ],
     "HR|veterinary|veterinary_generic": [
@@ -1900,6 +1941,14 @@
       "uit_rgpv_davv_clusters_verify_programmes_engineering_engineering_generic_state_c",
       "private_engineering_colleges_across_mp_engineering_engineering_generic_state_com",
       "manit_bhopal_engineering_engineering_generic_state_comfort"
+    ],
+    "JH|ayush|ayush_generic": [
+      "government_ayurvedic_college_patna_ayush_ayush_generic_state_comfort_intake",
+      "national_institute_homeopathy_kolkata_ayush_ayush_generic_national_level_state_c",
+      "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
+      "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
+      "state_unani_medical_college_prayagraj_ayush_ayush_generic_state_comfort_intake",
+      "allahabad_ayurvedic_college_prayagraj_ayush_ayush_generic_state_comfort_intake"
     ],
     "JH|medicine|medicine_mbbs": [
       "aiims_raipur_medicine_medicine_mbbs_state_comfort_cg",
@@ -2034,10 +2083,6 @@
       "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor",
       "kgmu_lucknow_dentistry_dentistry_generic_state_comfort"
     ],
-    "JH|ayush|ayush_generic": [
-      "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
-      "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake"
-    ],
     "JH|pharmacy|pharmacy_generic": [
       "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma",
       "amity_university_noida_pharmacy_pharmacy_generic_state_comfort_intake",
@@ -2090,6 +2135,12 @@
       "spa_vijayawada_architecture_architecture_generic_national_level_state_comfort_in",
       "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture",
       "sir_jj_college_architecture_mumbai_architecture_architecture_generic_state_comfo"
+    ],
+    "KA|ayush|ayush_generic": [
+      "government_homeopathic_medical_college_calicut_ayush_ayush_generic_state_comfort",
+      "government_sidha_medical_college_chennai_ayush_ayush_generic_state_comfort_intak",
+      "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus",
+      "government_ayurvedic_college_nagpur_ayush_ayush_generic_state_comfort_intake"
     ],
     "KA|engineering|engineering_generic": [
       "iit_madras_engineering_engineering_generic_state_comfort_tn",
@@ -2200,9 +2251,6 @@
       "apollo_college_pharmacy_anantapur_pharmacy_pharmacy_generic_state_comfort_intake",
       "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha"
     ],
-    "KA|ayush|ayush_generic": [
-      "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus"
-    ],
     "KL|engineering|engineering_generic": [
       "iit_madras_engineering_engineering_generic_state_comfort_tn",
       "nit_tiruchirappalli_engineering_engineering_generic_state_comfort_tn",
@@ -2297,9 +2345,12 @@
       "kvg_dental_college_sullia_dentistry_dentistry_generic_state_comfort_intake"
     ],
     "KL|ayush|ayush_generic": [
+      "government_sidha_medical_college_chennai_ayush_ayush_generic_state_comfort_intak",
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
       "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
-      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake",
+      "bhagwan_buddha_homeopathic_college_bengaluru_ayush_ayush_generic_state_comfort_i",
+      "jss_ayurveda_college_mysuru_ayush_ayush_generic_state_comfort_intake"
     ],
     "MP|engineering|engineering_generic": [
       "iit_jodhpur_engineering_engineering_generic_state_comfort_rj",
@@ -2488,8 +2539,11 @@
     "MP|ayush|ayush_generic": [
       "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake",
       "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus",
+      "government_ayurvedic_college_nagpur_ayush_ayush_generic_state_comfort_intake",
       "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
       "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
+      "state_unani_medical_college_prayagraj_ayush_ayush_generic_state_comfort_intake",
+      "allahabad_ayurvedic_college_prayagraj_ayush_ayush_generic_state_comfort_intake",
       "msu_baroda_ayush_ayush_generic_state_comfort_intake"
     ],
     "MP|veterinary|veterinary_generic": [
@@ -2560,7 +2614,9 @@
       "msu_baroda_ayush_ayush_generic_state_comfort_intake",
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
       "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
-      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake",
+      "bhagwan_buddha_homeopathic_college_bengaluru_ayush_ayush_generic_state_comfort_i",
+      "jss_ayurveda_college_mysuru_ayush_ayush_generic_state_comfort_intake"
     ],
     "MH|engineering|engineering_generic": [
       "svnit_surat_engineering_engineering_generic_national_level_state_comfort_intake",
@@ -2853,6 +2909,9 @@
       "nift_kolkata_design_design_generic_state_comfort",
       "iit_hyderabad_design_design_generic_state_comfort"
     ],
+    "OD|ayush|ayush_generic": [
+      "national_institute_homeopathy_kolkata_ayush_ayush_generic_national_level_state_c"
+    ],
     "OD|pharmacy|pharmacy_generic": [
       "apollo_college_pharmacy_anantapur_pharmacy_pharmacy_generic_state_comfort_intake",
       "osmania_university_pharmacy_pharmacy_generic_state_comfort",
@@ -2897,6 +2956,10 @@
       "manipal_jaipur_engineering_engineering_generic_state_comfort_intake",
       "pec_chandigarh_engineering_engineering_generic_national_level_state_comfort_inta"
     ],
+    "PB|ayush|ayush_generic": [
+      "rajiv_gandhi_ayurveda_college_paprola_ayush_ayush_generic_state_comfort_intake",
+      "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake"
+    ],
     "PB|education|education_generic": [
       "central_university_kashmir_education_education_generic_state_comfort_intake",
       "university_of_rajasthan_education_education_generic_state_comfort",
@@ -2936,9 +2999,6 @@
     "PB|design|design_generic": [
       "nift_jodhpur_design_design_generic_state_comfort"
     ],
-    "PB|ayush|ayush_generic": [
-      "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake"
-    ],
     "RJ|architecture|architecture_generic": [
       "cept_university_ahmedabad_architecture_architecture_generic_national_level_state",
       "cept_faculty_architecture_ahmedabad_architecture_architecture_generic_state_comf",
@@ -2958,7 +3018,9 @@
     "RJ|ayush|ayush_generic": [
       "msu_baroda_ayush_ayush_generic_state_comfort_intake",
       "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
-      "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake"
+      "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
+      "state_unani_medical_college_prayagraj_ayush_ayush_generic_state_comfort_intake",
+      "allahabad_ayurvedic_college_prayagraj_ayush_ayush_generic_state_comfort_intake"
     ],
     "RJ|engineering|engineering_generic": [
       "svnit_surat_engineering_engineering_generic_national_level_state_comfort_intake",
@@ -3114,6 +3176,9 @@
     "SK|design|design_generic": [
       "nift_kolkata_design_design_generic_state_comfort"
     ],
+    "SK|ayush|ayush_generic": [
+      "national_institute_homeopathy_kolkata_ayush_ayush_generic_national_level_state_c"
+    ],
     "TN|science_stats|science_stats_generic": [
       "kerala_agricultural_university_thrissur_science_stats_science_stats_generic_stat",
       "cusat_kochi_science_stats_science_stats_generic_state_comfort_intake",
@@ -3140,6 +3205,14 @@
       "manipal_college_of_architecture_manipal_architecture_architecture_generic_state_",
       "rv_college_architecture_bengaluru_architecture_architecture_generic_state_comfor",
       "spa_vijayawada_architecture_architecture_generic_national_level_state_comfort_in"
+    ],
+    "TN|ayush|ayush_generic": [
+      "government_homeopathic_medical_college_calicut_ayush_ayush_generic_state_comfort",
+      "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
+      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake",
+      "bhagwan_buddha_homeopathic_college_bengaluru_ayush_ayush_generic_state_comfort_i",
+      "jss_ayurveda_college_mysuru_ayush_ayush_generic_state_comfort_intake"
     ],
     "TN|engineering|engineering_generic": [
       "iisc_bangalore_ug_programmes_where_applicable_engineering_engineering_generic_st",
@@ -3187,11 +3260,6 @@
       "sjcc_bengaluru_commerce_commerce_generic_state_comfort_intake",
       "jain_university_bengaluru_commerce_commerce_generic_state_comfort_intake",
       "osmania_university_commerce_commerce_generic_state_comfort"
-    ],
-    "TN|ayush|ayush_generic": [
-      "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
-      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
-      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
     ],
     "TN|veterinary|veterinary_generic": [
       "veterinary_college_bidar_veterinary_veterinary_generic_state_comfort_intake",
@@ -3288,9 +3356,12 @@
     ],
     "TS|ayush|ayush_generic": [
       "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus",
+      "government_ayurvedic_college_nagpur_ayush_ayush_generic_state_comfort_intake",
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
       "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
-      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake",
+      "bhagwan_buddha_homeopathic_college_bengaluru_ayush_ayush_generic_state_comfort_i",
+      "jss_ayurveda_college_mysuru_ayush_ayush_generic_state_comfort_intake"
     ],
     "TS|pharmacy|pharmacy_generic": [
       "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha",
@@ -3554,6 +3625,7 @@
     ],
     "UP|ayush|ayush_generic": [
       "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake",
+      "government_ayurvedic_college_patna_ayush_ayush_generic_state_comfort_intake",
       "all_india_institute_ayurveda_delhi_ayush_ayush_generic_national_level_state_comf"
     ],
     "UP|pharmacy|pharmacy_generic": [
@@ -3599,7 +3671,10 @@
     ],
     "UK|ayush|ayush_generic": [
       "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
-      "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake"
+      "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
+      "state_unani_medical_college_prayagraj_ayush_ayush_generic_state_comfort_intake",
+      "allahabad_ayurvedic_college_prayagraj_ayush_ayush_generic_state_comfort_intake",
+      "rajiv_gandhi_ayurveda_college_paprola_ayush_ayush_generic_state_comfort_intake"
     ],
     "UK|pharmacy|pharmacy_generic": [
       "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma",
@@ -3665,6 +3740,10 @@
       "kiit_university_example_large_private_engineering_engineering_generic_state_comf",
       "iit_bhubaneswar_engineering_engineering_generic_state_comfort"
     ],
+    "WB|ayush|ayush_generic": [
+      "government_ayurvedic_college_patna_ayush_ayush_generic_state_comfort_intake",
+      "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake"
+    ],
     "WB|science_stats|science_stats_generic": [
       "bit_mesra_ranchi_science_stats_science_stats_generic_state_comfort_intake",
       "iit_bhubaneswar_science_stats_science_stats_generic_state_comfort",
@@ -3705,9 +3784,6 @@
     "WB|design|design_generic": [
       "nift_bhubaneswar_design_design_generic_state_comfort",
       "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
-    ],
-    "WB|ayush|ayush_generic": [
-      "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake"
     ],
     "DL|humanities|humanities_generic": [
       "ashoka_university_sonepat_humanities_humanities_generic_state_comfort_intake",
@@ -3760,7 +3836,9 @@
     ],
     "DL|ayush|ayush_generic": [
       "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
-      "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake"
+      "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
+      "state_unani_medical_college_prayagraj_ayush_ayush_generic_state_comfort_intake",
+      "allahabad_ayurvedic_college_prayagraj_ayush_ayush_generic_state_comfort_intake"
     ],
     "DL|pharmacy|pharmacy_generic": [
       "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma",
@@ -3807,6 +3885,9 @@
       "nit_hamirpur_engineering_engineering_generic_national_level_state_comfort_intake",
       "lpu_phagwara_engineering_engineering_generic_state_comfort_intake"
     ],
+    "JK|ayush|ayush_generic": [
+      "rajiv_gandhi_ayurveda_college_paprola_ayush_ayush_generic_state_comfort_intake"
+    ],
     "JK|pharmacy|pharmacy_generic": [
       "niper_mohali_pharmacy_pharmacy_generic_national_level_state_comfort_intake"
     ],
@@ -3823,6 +3904,9 @@
       "iit_jammu_engineering_engineering_generic_national_level_state_comfort_intake",
       "iit_mandi_engineering_engineering_generic_national_level_state_comfort_intake",
       "nit_hamirpur_engineering_engineering_generic_national_level_state_comfort_intake"
+    ],
+    "LA|ayush|ayush_generic": [
+      "rajiv_gandhi_ayurveda_college_paprola_ayush_ayush_generic_state_comfort_intake"
     ],
     "PY|engineering|engineering_generic": [
       "iit_madras_engineering_engineering_generic_state_comfort_tn",
@@ -3888,6 +3972,10 @@
     ],
     "PY|dentistry|dentistry_generic": [
       "ragas_dental_college_chennai_dentistry_dentistry_generic_state_comfort_intake"
+    ],
+    "PY|ayush|ayush_generic": [
+      "government_sidha_medical_college_chennai_ayush_ayush_generic_state_comfort_intak",
+      "government_homeopathic_medical_college_calicut_ayush_ayush_generic_state_comfort"
     ],
     "CH|engineering|engineering_generic": [
       "lpu_phagwara_engineering_engineering_generic_state_comfort_intake"
@@ -3972,6 +4060,10 @@
     ],
     "AN|dentistry|dentistry_generic": [
       "ragas_dental_college_chennai_dentistry_dentistry_generic_state_comfort_intake"
+    ],
+    "AN|ayush|ayush_generic": [
+      "government_sidha_medical_college_chennai_ayush_ayush_generic_state_comfort_intak",
+      "government_homeopathic_medical_college_calicut_ayush_ayush_generic_state_comfort"
     ]
   },
   "by_stream_course": {
@@ -4210,7 +4302,17 @@
       "all_india_institute_ayurveda_delhi_ayush_ayush_generic_national_level_state_comf",
       "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake",
       "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake",
-      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake",
+      "national_institute_homeopathy_kolkata_ayush_ayush_generic_national_level_state_c",
+      "government_ayurvedic_college_nagpur_ayush_ayush_generic_state_comfort_intake",
+      "government_sidha_medical_college_chennai_ayush_ayush_generic_state_comfort_intak",
+      "state_unani_medical_college_prayagraj_ayush_ayush_generic_state_comfort_intake",
+      "bhagwan_buddha_homeopathic_college_bengaluru_ayush_ayush_generic_state_comfort_i",
+      "government_ayurvedic_college_patna_ayush_ayush_generic_state_comfort_intake",
+      "rajiv_gandhi_ayurveda_college_paprola_ayush_ayush_generic_state_comfort_intake",
+      "government_homeopathic_medical_college_calicut_ayush_ayush_generic_state_comfort",
+      "jss_ayurveda_college_mysuru_ayush_ayush_generic_state_comfort_intake",
+      "allahabad_ayurvedic_college_prayagraj_ayush_ayush_generic_state_comfort_intake"
     ],
     "pharmacy|pharmacy_generic": [
       "niper_campuses_mpharm_heavy_verify_ug_if_offered_bits_pilani_pharmacy_manipal_co",
@@ -4552,7 +4654,12 @@
       "KA",
       "DL",
       "RJ",
-      "AS"
+      "AS",
+      "WB",
+      "TN",
+      "BR",
+      "HP",
+      "KL"
     ],
     "pharmacy|pharmacy_generic": [
       "IN",
@@ -5145,6 +5252,16 @@
     "college_veterinary_science_tirupati_veterinary_veterinary_generic_state_comfort_": "AP",
     "bombay_veterinary_college_mumbai_veterinary_veterinary_generic_state_comfort_int": "MH",
     "veterinary_college_bidar_veterinary_veterinary_generic_state_comfort_intake": "KA",
-    "rajasthan_university_veterinary_bikaner_veterinary_veterinary_generic_state_comf": "RJ"
+    "rajasthan_university_veterinary_bikaner_veterinary_veterinary_generic_state_comf": "RJ",
+    "national_institute_homeopathy_kolkata_ayush_ayush_generic_national_level_state_c": "WB",
+    "government_ayurvedic_college_nagpur_ayush_ayush_generic_state_comfort_intake": "MH",
+    "government_sidha_medical_college_chennai_ayush_ayush_generic_state_comfort_intak": "TN",
+    "state_unani_medical_college_prayagraj_ayush_ayush_generic_state_comfort_intake": "UP",
+    "bhagwan_buddha_homeopathic_college_bengaluru_ayush_ayush_generic_state_comfort_i": "KA",
+    "government_ayurvedic_college_patna_ayush_ayush_generic_state_comfort_intake": "BR",
+    "rajiv_gandhi_ayurveda_college_paprola_ayush_ayush_generic_state_comfort_intake": "HP",
+    "government_homeopathic_medical_college_calicut_ayush_ayush_generic_state_comfort": "KL",
+    "jss_ayurveda_college_mysuru_ayush_ayush_generic_state_comfort_intake": "KA",
+    "allahabad_ayurvedic_college_prayagraj_ayush_ayush_generic_state_comfort_intake": "UP"
   }
 }

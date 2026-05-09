@@ -3,7 +3,7 @@
     "shard_type": "institutions",
     "state_id": "UP",
     "state_label": "Uttar Pradesh",
-    "count": 43,
+    "count": 45,
     "generated_on": "2026-05-09"
   },
   "institutions": [
@@ -2459,6 +2459,124 @@
         "regulators_verified": [],
         "verification_urls": [
           "https://www.bhu.ac.in/",
+          "https://ncismindia.org/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "state_unani_medical_college_prayagraj",
+      "name": "State Unani Medical College Prayagraj",
+      "state_id": "UP",
+      "city": "Prayagraj",
+      "type": "Government AYUSH college",
+      "ownership": "Public",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.upayushsociety.com/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Program-level details should be manually verified from UP AYUSH and regulator sources."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.upayushsociety.com/",
+          "https://ncismindia.org/",
+          "https://www.upayushsociety.com/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "NCISM_or_NCH"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.upayushsociety.com/",
+          "https://ncismindia.org/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "allahabad_ayurvedic_college_prayagraj",
+      "name": "Allahabad Ayurvedic College Prayagraj",
+      "state_id": "UP",
+      "city": "Prayagraj",
+      "type": "Private AYUSH college",
+      "ownership": "Private",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.aacprayagraj.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Program-level data should be manually verified from official sources before relying."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.aacprayagraj.in/",
+          "https://ncismindia.org/",
+          "https://www.aacprayagraj.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "NCISM_or_NCH"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.aacprayagraj.in/",
           "https://ncismindia.org/"
         ],
         "confidence": "low",
