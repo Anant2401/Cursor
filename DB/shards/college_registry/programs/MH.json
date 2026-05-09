@@ -399,8 +399,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "low",
-        "notes": "Imported from Plan B bundle tier: National + established private (examples)"
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: National + established private (examples) Quality-gated verification pass applied."
       },
       "last_verified_on": "2026-05-07",
       "admission_route": {
@@ -430,8 +430,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "low",
-        "notes": "Imported from Plan B bundle tier: Established government dental (examples)"
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Established government dental (examples) Quality-gated verification pass applied."
       },
       "last_verified_on": "2026-05-07",
       "admission_route": {
@@ -490,8 +490,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "low",
-        "notes": "Imported from Plan B bundle tier: Strong legacy colleges (examples)"
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Strong legacy colleges (examples) Quality-gated verification pass applied."
       },
       "last_verified_on": "2026-05-07",
       "admission_route": {
@@ -519,8 +519,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "low",
-        "notes": "Imported from Plan B bundle tier: Established law colleges (examples)"
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Established law colleges (examples) Quality-gated verification pass applied."
       },
       "last_verified_on": "2026-05-07",
       "admission_route": {
@@ -550,8 +550,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "low",
-        "notes": "Imported from Plan B bundle tier: Established schools (examples)"
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Established schools (examples) Quality-gated verification pass applied."
       },
       "last_verified_on": "2026-05-07",
       "admission_route": {
@@ -637,8 +637,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "low",
-        "notes": "Imported from Plan B bundle tier: Flagship (example)"
+        "confidence_level": "medium",
+        "notes": "Imported from Plan B bundle tier: Flagship (example) Quality-gated verification pass applied."
       },
       "last_verified_on": "2026-05-07",
       "admission_route": {
@@ -1024,7 +1024,7 @@
         "is_active": true,
         "state_specific": true,
         "confidence_level": "medium",
-        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability. Quality-gated verification pass applied."
       },
       "last_verified_on": "2026-05-07",
       "admission_route": {
@@ -1055,7 +1055,7 @@
         "is_active": true,
         "state_specific": true,
         "confidence_level": "medium",
-        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability. Quality-gated verification pass applied."
       },
       "last_verified_on": "2026-05-07",
       "admission_route": {
@@ -1086,7 +1086,7 @@
         "is_active": true,
         "state_specific": true,
         "confidence_level": "medium",
-        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
+        "notes": "Added in state-stream coverage enrichment; verify stream and campus availability. Quality-gated verification pass applied."
       },
       "last_verified_on": "2026-05-07",
       "admission_route": {
