@@ -3,7 +3,7 @@
     "shard_type": "institutions",
     "state_id": "RJ",
     "state_label": "Rajasthan",
-    "count": 16,
+    "count": 18,
     "generated_on": "2026-05-09"
   },
   "institutions": [
@@ -895,8 +895,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://nia.nic.in/",
-          "https://ncismindia.org/",
-          "https://nia.nic.in/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -918,6 +917,124 @@
         "verification_urls": [
           "https://nia.nic.in/",
           "https://ncismindia.org/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "college_veterinary_science_bikaner",
+      "name": "College of Veterinary and Animal Science Bikaner",
+      "state_id": "RJ",
+      "city": "Bikaner",
+      "type": "State veterinary college",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.rajuvas.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Veterinary admissions should be validated from RAJUVAS and ICAR counselling updates."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.rajuvas.org/",
+          "https://icar.org.in/",
+          "https://www.rajuvas.org/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.rajuvas.org/",
+          "https://icar.org.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "rajasthan_university_veterinary_bikaner",
+      "name": "Rajasthan University of Veterinary and Animal Sciences Bikaner",
+      "state_id": "RJ",
+      "city": "Bikaner",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.rajuvas.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "University-level veterinary pathways should be verified from latest state and ICAR notifications."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.rajuvas.org/",
+          "https://icar.org.in/",
+          "https://www.rajuvas.org/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "state_act",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.rajuvas.org/",
+          "https://icar.org.in/"
         ],
         "confidence": "medium",
         "last_updated": "2026-05-09",

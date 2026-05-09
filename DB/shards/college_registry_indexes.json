@@ -205,7 +205,8 @@
       "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis"
     ],
     "MH|architecture|architecture_generic": [
-      "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture"
+      "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture",
+      "sir_jj_college_architecture_mumbai_architecture_architecture_generic_state_comfo"
     ],
     "IN|design|design_generic": [
       "iit_bombay_iit_guwahati_iit_hyderabad_design_programmes_via_uceed_examples_desig",
@@ -373,7 +374,8 @@
     ],
     "MH|veterinary|veterinary_generic": [
       "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter",
-      "mafsu_nagpur_veterinary_veterinary_generic_state_comfort"
+      "mafsu_nagpur_veterinary_veterinary_generic_state_comfort",
+      "bombay_veterinary_college_mumbai_veterinary_veterinary_generic_state_comfort_int"
     ],
     "KA|management|management_generic": [
       "iim_bangalore_management_management_generic_state_comfort",
@@ -448,7 +450,8 @@
       "jamia_millia_islamia_education_education_generic_state_comfort"
     ],
     "DL|architecture|architecture_generic": [
-      "jamia_millia_islamia_architecture_architecture_generic_state_comfort"
+      "jamia_millia_islamia_architecture_architecture_generic_state_comfort",
+      "spa_delhi_architecture_architecture_generic_national_level_state_comfort_intake"
     ],
     "DL|design|design_generic": [
       "jamia_millia_islamia_design_design_generic_state_comfort",
@@ -666,7 +669,8 @@
       "iisc_bengaluru_science_stats_science_stats_generic_national_level_state_comfort_"
     ],
     "GJ|architecture|architecture_generic": [
-      "cept_university_ahmedabad_architecture_architecture_generic_national_level_state"
+      "cept_university_ahmedabad_architecture_architecture_generic_national_level_state",
+      "cept_faculty_architecture_ahmedabad_architecture_architecture_generic_state_comf"
     ],
     "KA|law|law_generic": [
       "nlsiu_bengaluru_law_law_generic_national_level_state_comfort_intake"
@@ -791,7 +795,8 @@
       "jamia_hamdard_new_delhi_pharmacy_pharmacy_generic_state_comfort_intake"
     ],
     "KA|architecture|architecture_generic": [
-      "manipal_college_of_architecture_manipal_architecture_architecture_generic_state_"
+      "manipal_college_of_architecture_manipal_architecture_architecture_generic_state_",
+      "rv_college_architecture_bengaluru_architecture_architecture_generic_state_comfor"
     ],
     "UK|veterinary|veterinary_generic": [
       "gbpuat_pantnagar_vet_veterinary_veterinary_generic_state_comfort_intake"
@@ -824,6 +829,19 @@
     ],
     "AS|ayush|ayush_generic": [
       "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake"
+    ],
+    "KL|architecture|architecture_generic": [
+      "nit_calicut_architecture_architecture_architecture_generic_national_level_state_"
+    ],
+    "RJ|veterinary|veterinary_generic": [
+      "college_veterinary_science_bikaner_veterinary_veterinary_generic_state_comfort_i",
+      "rajasthan_university_veterinary_bikaner_veterinary_veterinary_generic_state_comf"
+    ],
+    "AP|veterinary|veterinary_generic": [
+      "college_veterinary_science_tirupati_veterinary_veterinary_generic_state_comfort_"
+    ],
+    "KA|veterinary|veterinary_generic": [
+      "veterinary_college_bidar_veterinary_veterinary_generic_state_comfort_intake"
     ]
   },
   "by_neighbor_state_stream_course": {
@@ -958,11 +976,14 @@
     "AP|veterinary|veterinary_generic": [
       "pvnrtvu_hyderabad_veterinary_veterinary_generic_state_comfort",
       "tanuvas_chennai_veterinary_veterinary_generic_state_comfort_intake",
-      "madras_veterinary_college_chennai_veterinary_veterinary_generic_state_comfort_in"
+      "madras_veterinary_college_chennai_veterinary_veterinary_generic_state_comfort_in",
+      "veterinary_college_bidar_veterinary_veterinary_generic_state_comfort_intake"
     ],
     "AP|architecture|architecture_generic": [
       "anna_university_architecture_architecture_generic_state_comfort",
-      "manipal_college_of_architecture_manipal_architecture_architecture_generic_state_"
+      "manipal_college_of_architecture_manipal_architecture_architecture_generic_state_",
+      "rv_college_architecture_bengaluru_architecture_architecture_generic_state_comfor",
+      "nit_calicut_architecture_architecture_architecture_generic_national_level_state_"
     ],
     "AP|fashion_media|fashion_media_generic": [
       "nift_chennai_fashion_media_fashion_media_generic_state_comfort",
@@ -1216,6 +1237,7 @@
     "CG|architecture|architecture_generic": [
       "manit_bhopal_architecture_architecture_generic_state_comfort",
       "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture",
+      "sir_jj_college_architecture_mumbai_architecture_architecture_generic_state_comfo",
       "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
       "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis"
     ],
@@ -1353,6 +1375,7 @@
       "nanaji_deshmukh_veterinary_university_jabalpur_veterinary_veterinary_generic_sta",
       "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter",
       "mafsu_nagpur_veterinary_veterinary_generic_state_comfort",
+      "bombay_veterinary_college_mumbai_veterinary_veterinary_generic_state_comfort_int",
       "pvnrtvu_hyderabad_veterinary_veterinary_generic_state_comfort",
       "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
       "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up",
@@ -1418,7 +1441,9 @@
     ],
     "GA|architecture|architecture_generic": [
       "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture",
-      "manipal_college_of_architecture_manipal_architecture_architecture_generic_state_"
+      "sir_jj_college_architecture_mumbai_architecture_architecture_generic_state_comfo",
+      "manipal_college_of_architecture_manipal_architecture_architecture_generic_state_",
+      "rv_college_architecture_bengaluru_architecture_architecture_generic_state_comfor"
     ],
     "GA|design|design_generic": [
       "nift_mumbai_design_design_generic_state_comfort_mh",
@@ -1496,7 +1521,9 @@
     ],
     "GA|veterinary|veterinary_generic": [
       "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter",
-      "mafsu_nagpur_veterinary_veterinary_generic_state_comfort"
+      "mafsu_nagpur_veterinary_veterinary_generic_state_comfort",
+      "bombay_veterinary_college_mumbai_veterinary_veterinary_generic_state_comfort_int",
+      "veterinary_college_bidar_veterinary_veterinary_generic_state_comfort_intake"
     ],
     "GJ|engineering|engineering_generic": [
       "iit_bombay_engineering_engineering_generic_state_comfort_mh",
@@ -1540,6 +1567,7 @@
     ],
     "GJ|architecture|architecture_generic": [
       "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture",
+      "sir_jj_college_architecture_mumbai_architecture_architecture_generic_state_comfo",
       "manit_bhopal_architecture_architecture_generic_state_comfort",
       "mnit_jaipur_architecture_architecture_generic_state_comfort"
     ],
@@ -1625,7 +1653,10 @@
     "GJ|veterinary|veterinary_generic": [
       "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter",
       "mafsu_nagpur_veterinary_veterinary_generic_state_comfort",
-      "nanaji_deshmukh_veterinary_university_jabalpur_veterinary_veterinary_generic_sta"
+      "bombay_veterinary_college_mumbai_veterinary_veterinary_generic_state_comfort_int",
+      "nanaji_deshmukh_veterinary_university_jabalpur_veterinary_veterinary_generic_sta",
+      "college_veterinary_science_bikaner_veterinary_veterinary_generic_state_comfort_i",
+      "rajasthan_university_veterinary_bikaner_veterinary_veterinary_generic_state_comf"
     ],
     "HR|engineering|engineering_generic": [
       "iit_jodhpur_engineering_engineering_generic_state_comfort_rj",
@@ -1684,7 +1715,8 @@
       "mnit_jaipur_architecture_architecture_generic_state_comfort",
       "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
       "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis",
-      "jamia_millia_islamia_architecture_architecture_generic_state_comfort"
+      "jamia_millia_islamia_architecture_architecture_generic_state_comfort",
+      "spa_delhi_architecture_architecture_generic_national_level_state_comfort_intake"
     ],
     "HR|science_stats|science_stats_generic": [
       "mnit_jaipur_science_stats_science_stats_generic_state_comfort",
@@ -1785,18 +1817,20 @@
       "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
       "all_india_institute_ayurveda_delhi_ayush_ayush_generic_national_level_state_comf"
     ],
-    "HR|pharmacy|pharmacy_generic": [
-      "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma",
-      "amity_university_noida_pharmacy_pharmacy_generic_state_comfort_intake",
-      "niper_mohali_pharmacy_pharmacy_generic_national_level_state_comfort_intake",
-      "jamia_hamdard_new_delhi_pharmacy_pharmacy_generic_state_comfort_intake"
-    ],
     "HR|veterinary|veterinary_generic": [
+      "college_veterinary_science_bikaner_veterinary_veterinary_generic_state_comfort_i",
+      "rajasthan_university_veterinary_bikaner_veterinary_veterinary_generic_state_comf",
       "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
       "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up",
       "svpuat_merut_veterinary_veterinary_generic_state_comfort",
       "ivri_bareilly_veterinary_veterinary_generic_state_comfort_intake",
       "gbpuat_pantnagar_vet_veterinary_veterinary_generic_state_comfort_intake"
+    ],
+    "HR|pharmacy|pharmacy_generic": [
+      "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma",
+      "amity_university_noida_pharmacy_pharmacy_generic_state_comfort_intake",
+      "niper_mohali_pharmacy_pharmacy_generic_national_level_state_comfort_intake",
+      "jamia_hamdard_new_delhi_pharmacy_pharmacy_generic_state_comfort_intake"
     ],
     "HP|science_stats|science_stats_generic": [
       "forest_research_institute_dehradun_science_stats_science_stats_generic_state_com",
@@ -2050,6 +2084,13 @@
       "afmc_pune_medicine_medicine_mbbs_state_comfort_intake",
       "goa_medical_college_panaji_medicine_medicine_mbbs_state_comfort_intake"
     ],
+    "KA|architecture|architecture_generic": [
+      "nit_calicut_architecture_architecture_architecture_generic_national_level_state_",
+      "anna_university_architecture_architecture_generic_state_comfort",
+      "spa_vijayawada_architecture_architecture_generic_national_level_state_comfort_in",
+      "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture",
+      "sir_jj_college_architecture_mumbai_architecture_architecture_generic_state_comfo"
+    ],
     "KA|engineering|engineering_generic": [
       "iit_madras_engineering_engineering_generic_state_comfort_tn",
       "nit_tiruchirappalli_engineering_engineering_generic_state_comfort_tn",
@@ -2077,11 +2118,6 @@
       "walchand_college_of_engineering_wce_engineering_engineering_generic_state_comfor",
       "sppu_affiliated_private_universities_in_pune_mumbai_corridor_engineering_enginee",
       "iiit_nagpur_engineering_engineering_generic_national_level_state_comfort_intake"
-    ],
-    "KA|architecture|architecture_generic": [
-      "anna_university_architecture_architecture_generic_state_comfort",
-      "spa_vijayawada_architecture_architecture_generic_national_level_state_comfort_in",
-      "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture"
     ],
     "KA|management|management_generic": [
       "anna_university_management_management_generic_state_comfort",
@@ -2147,8 +2183,10 @@
       "tanuvas_chennai_veterinary_veterinary_generic_state_comfort_intake",
       "madras_veterinary_college_chennai_veterinary_veterinary_generic_state_comfort_in",
       "pvnrtvu_hyderabad_veterinary_veterinary_generic_state_comfort",
+      "college_veterinary_science_tirupati_veterinary_veterinary_generic_state_comfort_",
       "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter",
-      "mafsu_nagpur_veterinary_veterinary_generic_state_comfort"
+      "mafsu_nagpur_veterinary_veterinary_generic_state_comfort",
+      "bombay_veterinary_college_mumbai_veterinary_veterinary_generic_state_comfort_int"
     ],
     "KA|dentistry|dentistry_generic": [
       "ragas_dental_college_chennai_dentistry_dentistry_generic_state_comfort_intake",
@@ -2198,7 +2236,8 @@
     ],
     "KL|architecture|architecture_generic": [
       "anna_university_architecture_architecture_generic_state_comfort",
-      "manipal_college_of_architecture_manipal_architecture_architecture_generic_state_"
+      "manipal_college_of_architecture_manipal_architecture_architecture_generic_state_",
+      "rv_college_architecture_bengaluru_architecture_architecture_generic_state_comfor"
     ],
     "KL|management|management_generic": [
       "anna_university_management_management_generic_state_comfort",
@@ -2248,7 +2287,8 @@
     ],
     "KL|veterinary|veterinary_generic": [
       "tanuvas_chennai_veterinary_veterinary_generic_state_comfort_intake",
-      "madras_veterinary_college_chennai_veterinary_veterinary_generic_state_comfort_in"
+      "madras_veterinary_college_chennai_veterinary_veterinary_generic_state_comfort_in",
+      "veterinary_college_bidar_veterinary_veterinary_generic_state_comfort_intake"
     ],
     "KL|dentistry|dentistry_generic": [
       "ragas_dental_college_chennai_dentistry_dentistry_generic_state_comfort_intake",
@@ -2331,9 +2371,11 @@
     "MP|architecture|architecture_generic": [
       "mnit_jaipur_architecture_architecture_generic_state_comfort",
       "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture",
+      "sir_jj_college_architecture_mumbai_architecture_architecture_generic_state_comfo",
       "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
       "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis",
-      "cept_university_ahmedabad_architecture_architecture_generic_national_level_state"
+      "cept_university_ahmedabad_architecture_architecture_generic_national_level_state",
+      "cept_faculty_architecture_ahmedabad_architecture_architecture_generic_state_comf"
     ],
     "MP|science_stats|science_stats_generic": [
       "mnit_jaipur_science_stats_science_stats_generic_state_comfort",
@@ -2450,19 +2492,22 @@
       "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
       "msu_baroda_ayush_ayush_generic_state_comfort_intake"
     ],
+    "MP|veterinary|veterinary_generic": [
+      "college_veterinary_science_bikaner_veterinary_veterinary_generic_state_comfort_i",
+      "rajasthan_university_veterinary_bikaner_veterinary_veterinary_generic_state_comf",
+      "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter",
+      "mafsu_nagpur_veterinary_veterinary_generic_state_comfort",
+      "bombay_veterinary_college_mumbai_veterinary_veterinary_generic_state_comfort_int",
+      "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
+      "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up",
+      "svpuat_merut_veterinary_veterinary_generic_state_comfort",
+      "ivri_bareilly_veterinary_veterinary_generic_state_comfort_intake"
+    ],
     "MP|pharmacy|pharmacy_generic": [
       "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha",
       "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma",
       "amity_university_noida_pharmacy_pharmacy_generic_state_comfort_intake",
       "parul_university_vadodara_pharmacy_pharmacy_generic_state_comfort_intake"
-    ],
-    "MP|veterinary|veterinary_generic": [
-      "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter",
-      "mafsu_nagpur_veterinary_veterinary_generic_state_comfort",
-      "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
-      "ivri_izatnagar_bareilly_veterinary_veterinary_generic_state_comfort_up",
-      "svpuat_merut_veterinary_veterinary_generic_state_comfort",
-      "ivri_bareilly_veterinary_veterinary_generic_state_comfort_intake"
     ],
     "MH|medicine|medicine_mbbs": [
       "goa_medical_college_panaji_medicine_medicine_mbbs_state_comfort_intake",
@@ -2487,8 +2532,10 @@
     ],
     "MH|architecture|architecture_generic": [
       "cept_university_ahmedabad_architecture_architecture_generic_national_level_state",
+      "cept_faculty_architecture_ahmedabad_architecture_architecture_generic_state_comf",
       "manit_bhopal_architecture_architecture_generic_state_comfort",
-      "manipal_college_of_architecture_manipal_architecture_architecture_generic_state_"
+      "manipal_college_of_architecture_manipal_architecture_architecture_generic_state_",
+      "rv_college_architecture_bengaluru_architecture_architecture_generic_state_comfor"
     ],
     "MH|management|management_generic": [
       "iim_ahmedabad_management_management_generic_national_level_state_comfort_intake",
@@ -2606,7 +2653,8 @@
     ],
     "MH|veterinary|veterinary_generic": [
       "nanaji_deshmukh_veterinary_university_jabalpur_veterinary_veterinary_generic_sta",
-      "pvnrtvu_hyderabad_veterinary_veterinary_generic_state_comfort"
+      "pvnrtvu_hyderabad_veterinary_veterinary_generic_state_comfort",
+      "veterinary_college_bidar_veterinary_veterinary_generic_state_comfort_intake"
     ],
     "MH|fashion_media|fashion_media_generic": [
       "indira_kala_sangeet_vishwavidyalaya_fashion_media_fashion_media_generic_state_co"
@@ -2817,6 +2865,7 @@
       "manit_bhopal_architecture_architecture_generic_state_comfort"
     ],
     "OD|veterinary|veterinary_generic": [
+      "college_veterinary_science_tirupati_veterinary_veterinary_generic_state_comfort_",
       "pvnrtvu_hyderabad_veterinary_veterinary_generic_state_comfort",
       "nanaji_deshmukh_veterinary_university_jabalpur_veterinary_veterinary_generic_sta"
     ],
@@ -2830,7 +2879,9 @@
       "sms_medical_college_jaipur_dentistry_dentistry_generic_state_comfort"
     ],
     "PB|veterinary|veterinary_generic": [
-      "college_veterinary_science_hisar_veterinary_veterinary_generic_state_comfort_int"
+      "college_veterinary_science_hisar_veterinary_veterinary_generic_state_comfort_int",
+      "college_veterinary_science_bikaner_veterinary_veterinary_generic_state_comfort_i",
+      "rajasthan_university_veterinary_bikaner_veterinary_veterinary_generic_state_comf"
     ],
     "PB|engineering|engineering_generic": [
       "iit_mandi_engineering_engineering_generic_national_level_state_comfort_intake",
@@ -2890,6 +2941,7 @@
     ],
     "RJ|architecture|architecture_generic": [
       "cept_university_ahmedabad_architecture_architecture_generic_national_level_state",
+      "cept_faculty_architecture_ahmedabad_architecture_architecture_generic_state_comf",
       "manit_bhopal_architecture_architecture_generic_state_comfort",
       "faculty_of_architecture_dr_a_p_j_abdul_kalam_technical_university_aktu_lucknow_a",
       "government_aided_colleges_under_aktu_with_coa_approved_b_arch_verify_current_lis"
@@ -3083,6 +3135,12 @@
       "private_medical_colleges_in_hyderabad_belt_medicine_medicine_mbbs_state_comfort_",
       "gandhi_medical_college_hyderabad_medicine_medicine_mbbs_state_comfort"
     ],
+    "TN|architecture|architecture_generic": [
+      "nit_calicut_architecture_architecture_architecture_generic_national_level_state_",
+      "manipal_college_of_architecture_manipal_architecture_architecture_generic_state_",
+      "rv_college_architecture_bengaluru_architecture_architecture_generic_state_comfor",
+      "spa_vijayawada_architecture_architecture_generic_national_level_state_comfort_in"
+    ],
     "TN|engineering|engineering_generic": [
       "iisc_bangalore_ug_programmes_where_applicable_engineering_engineering_generic_st",
       "nitk_surathkal_engineering_engineering_generic_state_comfort_ka",
@@ -3130,14 +3188,15 @@
       "jain_university_bengaluru_commerce_commerce_generic_state_comfort_intake",
       "osmania_university_commerce_commerce_generic_state_comfort"
     ],
-    "TN|architecture|architecture_generic": [
-      "manipal_college_of_architecture_manipal_architecture_architecture_generic_state_",
-      "spa_vijayawada_architecture_architecture_generic_national_level_state_comfort_in"
-    ],
     "TN|ayush|ayush_generic": [
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
       "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
       "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
+    ],
+    "TN|veterinary|veterinary_generic": [
+      "veterinary_college_bidar_veterinary_veterinary_generic_state_comfort_intake",
+      "college_veterinary_science_tirupati_veterinary_veterinary_generic_state_comfort_",
+      "pvnrtvu_hyderabad_veterinary_veterinary_generic_state_comfort"
     ],
     "TN|pharmacy|pharmacy_generic": [
       "apollo_college_pharmacy_anantapur_pharmacy_pharmacy_generic_state_comfort_intake",
@@ -3154,9 +3213,6 @@
     ],
     "TN|education|education_generic": [
       "osmania_university_education_education_generic_state_comfort"
-    ],
-    "TN|veterinary|veterinary_generic": [
-      "pvnrtvu_hyderabad_veterinary_veterinary_generic_state_comfort"
     ],
     "TS|engineering|engineering_generic": [
       "iit_bombay_engineering_engineering_generic_state_comfort_mh",
@@ -3211,8 +3267,10 @@
     ],
     "TS|architecture|architecture_generic": [
       "sir_j_j_college_of_architecture_spa_mumbai_verify_admission_channel_architecture",
+      "sir_jj_college_architecture_mumbai_architecture_architecture_generic_state_comfo",
       "spa_vijayawada_architecture_architecture_generic_national_level_state_comfort_in",
-      "manipal_college_of_architecture_manipal_architecture_architecture_generic_state_"
+      "manipal_college_of_architecture_manipal_architecture_architecture_generic_state_",
+      "rv_college_architecture_bengaluru_architecture_architecture_generic_state_comfor"
     ],
     "TS|design|design_generic": [
       "nift_mumbai_design_design_generic_state_comfort_mh",
@@ -3318,7 +3376,10 @@
     ],
     "TS|veterinary|veterinary_generic": [
       "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter",
-      "mafsu_nagpur_veterinary_veterinary_generic_state_comfort"
+      "mafsu_nagpur_veterinary_veterinary_generic_state_comfort",
+      "bombay_veterinary_college_mumbai_veterinary_veterinary_generic_state_comfort_int",
+      "college_veterinary_science_tirupati_veterinary_veterinary_generic_state_comfort_",
+      "veterinary_college_bidar_veterinary_veterinary_generic_state_comfort_intake"
     ],
     "TR|education|education_generic": [
       "tezpur_university_assam_education_education_generic_state_comfort_intake"
@@ -3371,6 +3432,8 @@
     "UP|veterinary|veterinary_generic": [
       "gbpuat_pantnagar_vet_veterinary_veterinary_generic_state_comfort_intake",
       "college_veterinary_science_hisar_veterinary_veterinary_generic_state_comfort_int",
+      "college_veterinary_science_bikaner_veterinary_veterinary_generic_state_comfort_i",
+      "rajasthan_university_veterinary_bikaner_veterinary_veterinary_generic_state_comf",
       "nanaji_deshmukh_veterinary_university_jabalpur_veterinary_veterinary_generic_sta"
     ],
     "UP|dentistry|dentistry_generic": [
@@ -3438,7 +3501,8 @@
     "UP|architecture|architecture_generic": [
       "mnit_jaipur_architecture_architecture_generic_state_comfort",
       "manit_bhopal_architecture_architecture_generic_state_comfort",
-      "jamia_millia_islamia_architecture_architecture_generic_state_comfort"
+      "jamia_millia_islamia_architecture_architecture_generic_state_comfort",
+      "spa_delhi_architecture_architecture_generic_national_level_state_comfort_intake"
     ],
     "UP|commerce|commerce_generic": [
       "university_of_rajasthan_commerce_commerce_generic_state_comfort",
@@ -3783,7 +3847,8 @@
       "amrita_kochi_medicine_medicine_mbbs_state_comfort_intake"
     ],
     "PY|architecture|architecture_generic": [
-      "anna_university_architecture_architecture_generic_state_comfort"
+      "anna_university_architecture_architecture_generic_state_comfort",
+      "nit_calicut_architecture_architecture_architecture_generic_national_level_state_"
     ],
     "PY|management|management_generic": [
       "anna_university_management_management_generic_state_comfort",
@@ -3866,7 +3931,8 @@
       "amrita_kochi_medicine_medicine_mbbs_state_comfort_intake"
     ],
     "AN|architecture|architecture_generic": [
-      "anna_university_architecture_architecture_generic_state_comfort"
+      "anna_university_architecture_architecture_generic_state_comfort",
+      "nit_calicut_architecture_architecture_architecture_generic_national_level_state_"
     ],
     "AN|management|management_generic": [
       "anna_university_management_management_generic_state_comfort",
@@ -4087,7 +4153,12 @@
       "anna_university_architecture_architecture_generic_state_comfort",
       "cept_university_ahmedabad_architecture_architecture_generic_national_level_state",
       "manipal_college_of_architecture_manipal_architecture_architecture_generic_state_",
-      "spa_vijayawada_architecture_architecture_generic_national_level_state_comfort_in"
+      "spa_vijayawada_architecture_architecture_generic_national_level_state_comfort_in",
+      "sir_jj_college_architecture_mumbai_architecture_architecture_generic_state_comfo",
+      "rv_college_architecture_bengaluru_architecture_architecture_generic_state_comfor",
+      "spa_delhi_architecture_architecture_generic_national_level_state_comfort_intake",
+      "cept_faculty_architecture_ahmedabad_architecture_architecture_generic_state_comf",
+      "nit_calicut_architecture_architecture_architecture_generic_national_level_state_"
     ],
     "design|design_generic": [
       "iit_bombay_iit_guwahati_iit_hyderabad_design_programmes_via_uceed_examples_desig",
@@ -4386,7 +4457,12 @@
       "tanuvas_chennai_veterinary_veterinary_generic_state_comfort_intake",
       "gbpuat_pantnagar_vet_veterinary_veterinary_generic_state_comfort_intake",
       "college_veterinary_science_hisar_veterinary_veterinary_generic_state_comfort_int",
-      "madras_veterinary_college_chennai_veterinary_veterinary_generic_state_comfort_in"
+      "madras_veterinary_college_chennai_veterinary_veterinary_generic_state_comfort_in",
+      "college_veterinary_science_bikaner_veterinary_veterinary_generic_state_comfort_i",
+      "college_veterinary_science_tirupati_veterinary_veterinary_generic_state_comfort_",
+      "bombay_veterinary_college_mumbai_veterinary_veterinary_generic_state_comfort_int",
+      "veterinary_college_bidar_veterinary_veterinary_generic_state_comfort_intake",
+      "rajasthan_university_veterinary_bikaner_veterinary_veterinary_generic_state_comf"
     ]
   },
   "by_stream_course_states": {
@@ -4440,7 +4516,8 @@
       "TN",
       "GJ",
       "KA",
-      "AP"
+      "AP",
+      "KL"
     ],
     "design|design_generic": [
       "IN",
@@ -4603,7 +4680,10 @@
       "TS",
       "TN",
       "UK",
-      "HR"
+      "HR",
+      "RJ",
+      "AP",
+      "KA"
     ]
   },
   "program_state_by_id": {
@@ -5055,6 +5135,16 @@
     "all_india_institute_ayurveda_delhi_ayush_ayush_generic_national_level_state_comf": "DL",
     "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake": "RJ",
     "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake": "AS",
-    "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake": "KA"
+    "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake": "KA",
+    "sir_jj_college_architecture_mumbai_architecture_architecture_generic_state_comfo": "MH",
+    "rv_college_architecture_bengaluru_architecture_architecture_generic_state_comfor": "KA",
+    "spa_delhi_architecture_architecture_generic_national_level_state_comfort_intake": "DL",
+    "cept_faculty_architecture_ahmedabad_architecture_architecture_generic_state_comf": "GJ",
+    "nit_calicut_architecture_architecture_architecture_generic_national_level_state_": "KL",
+    "college_veterinary_science_bikaner_veterinary_veterinary_generic_state_comfort_i": "RJ",
+    "college_veterinary_science_tirupati_veterinary_veterinary_generic_state_comfort_": "AP",
+    "bombay_veterinary_college_mumbai_veterinary_veterinary_generic_state_comfort_int": "MH",
+    "veterinary_college_bidar_veterinary_veterinary_generic_state_comfort_intake": "KA",
+    "rajasthan_university_veterinary_bikaner_veterinary_veterinary_generic_state_comf": "RJ"
   }
 }

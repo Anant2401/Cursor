@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "KA",
     "state_label": "Karnataka",
-    "count": 33,
+    "count": 35,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -988,6 +988,67 @@
           "state_cet"
         ],
         "verification_url": "https://www.fmhomoeopathy.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "rv_college_architecture_bengaluru_architecture_architecture_generic_state_comfor",
+      "college_id": "rv_college_architecture_bengaluru",
+      "stream_id": "architecture",
+      "course_id": "architecture_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Architecture seat matrix and counselling route should be verified from state and institute updates."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "arch"
+        ],
+        "pathways": [
+          "state_cet",
+          "institute_portal"
+        ],
+        "verification_url": "https://rvca.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "veterinary_college_bidar_veterinary_veterinary_generic_state_comfort_intake",
+      "college_id": "veterinary_college_bidar",
+      "stream_id": "veterinary",
+      "course_id": "veterinary_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Veterinary admissions and regulator alignment should be verified from state university sources."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.kvafsu.edu.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

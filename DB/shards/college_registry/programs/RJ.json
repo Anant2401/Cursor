@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "RJ",
     "state_label": "Rajasthan",
-    "count": 31,
+    "count": 33,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -950,6 +950,64 @@
           "state_cet"
         ],
         "verification_url": "https://nia.nic.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "college_veterinary_science_bikaner_veterinary_veterinary_generic_state_comfort_i",
+      "college_id": "college_veterinary_science_bikaner",
+      "stream_id": "veterinary",
+      "course_id": "veterinary_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Veterinary admissions should be validated from RAJUVAS and ICAR counselling updates."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.rajuvas.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "rajasthan_university_veterinary_bikaner_veterinary_veterinary_generic_state_comf",
+      "college_id": "rajasthan_university_veterinary_bikaner",
+      "stream_id": "veterinary",
+      "course_id": "veterinary_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "University-level veterinary pathways should be verified from latest state and ICAR notifications."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.rajuvas.org/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

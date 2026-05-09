@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "KL",
     "state_label": "Kerala",
-    "count": 3,
+    "count": 4,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -92,6 +92,39 @@
           "institute_portal"
         ],
         "verification_url": "https://cusat.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "nit_calicut_architecture_architecture_architecture_generic_national_level_state_",
+      "college_id": "nit_calicut_architecture",
+      "stream_id": "architecture",
+      "course_id": "architecture_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Architecture and planning route should be validated from NIT and counselling notifications."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "arch"
+        ],
+        "pathways": [
+          "state_cet",
+          "institute_portal"
+        ],
+        "verification_url": "https://nitc.ac.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
