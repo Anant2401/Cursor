@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "BR",
     "state_label": "Bihar",
-    "count": 1,
+    "count": 2,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -30,6 +30,37 @@
         "exam_ids": [],
         "pathways": [],
         "verification_url": "https://www.nitp.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "muzaffarpur_institute_technology_engineering_engineering_generic_state_comfort_i",
+      "college_id": "muzaffarpur_institute_technology",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "State counselling route and seat matrix should be validated from current state notices."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.mitmuzaffarpur.org/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

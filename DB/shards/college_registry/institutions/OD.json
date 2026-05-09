@@ -3,7 +3,7 @@
     "shard_type": "institutions",
     "state_id": "OD",
     "state_label": "Odisha",
-    "count": 11,
+    "count": 12,
     "generated_on": "2026-05-09"
   },
   "institutions": [
@@ -605,8 +605,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://bjbcollege.in/",
-          "https://www.ugc.gov.in/",
-          "https://bjbcollege.in/"
+          "https://www.ugc.gov.in/"
         ]
       },
       "cost_band": {
@@ -630,6 +629,65 @@
           "https://www.ugc.gov.in/"
         ],
         "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "vssut_burla",
+      "name": "Veer Surendra Sai University of Technology Burla",
+      "state_id": "OD",
+      "city": "Burla",
+      "type": "State university",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.vssut.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Science and technology intake channels should be validated from latest state admission notifications."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.vssut.ac.in/",
+          "https://www.ugc.gov.in/",
+          "https://www.vssut.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "state_act",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.vssut.ac.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }

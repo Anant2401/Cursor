@@ -76,7 +76,10 @@
       "lady_irwin_college_delhi",
       "jmi_new_delhi",
       "nlud_delhi",
-      "vmmc_safdarjung_delhi"
+      "vmmc_safdarjung_delhi",
+      "fms_delhi",
+      "lady_hardinge_medical_college_delhi",
+      "jamia_hamdard_new_delhi"
     ],
     "MH": [
       "iit_bombay",
@@ -166,7 +169,8 @@
       "amrita_coimbatore",
       "srm_university_kattankulathur",
       "kalasalingam_srivilliputhur",
-      "iiitdm_kancheepuram"
+      "iiitdm_kancheepuram",
+      "anna_university_chennai"
     ],
     "TS": [
       "iit_hyderabad",
@@ -280,7 +284,8 @@
       "nift_bhubaneswar",
       "kiit_bhubaneswar",
       "ximb_bhubaneswar",
-      "bjb_college_bhubaneswar"
+      "bjb_college_bhubaneswar",
+      "vssut_burla"
     ],
     "MP": [
       "iit_indore",
@@ -314,11 +319,13 @@
       "apollo_college_pharmacy_anantapur"
     ],
     "JH": [
-      "bit_mesra_ranchi"
+      "bit_mesra_ranchi",
+      "iiit_ranchi"
     ],
     "UK": [
       "forest_research_institute_dehradun",
-      "pantnagar_university"
+      "pantnagar_university",
+      "doon_university_dehradun"
     ],
     "CH": [
       "pec_chandigarh",
@@ -328,7 +335,8 @@
       "tezpur_university_assam",
       "gauhati_medical_college",
       "cotton_university_guwahati",
-      "nlu_assam_guwahati"
+      "nlu_assam_guwahati",
+      "nid_assam_jorhat"
     ],
     "HP": [
       "iit_mandi",
@@ -351,7 +359,11 @@
       "iit_jammu"
     ],
     "BR": [
-      "nit_patna"
+      "nit_patna",
+      "muzaffarpur_institute_technology"
+    ],
+    "TR": [
+      "nlu_tripura_agartala"
     ]
   },
   "by_stream": {
@@ -445,7 +457,10 @@
       "nit_patna_engineering_engineering_generic_national_level_state_comfort_intake",
       "iit_jammu_engineering_engineering_generic_national_level_state_comfort_intake",
       "iiit_nagpur_engineering_engineering_generic_national_level_state_comfort_intake",
-      "manipal_jaipur_engineering_engineering_generic_state_comfort_intake"
+      "manipal_jaipur_engineering_engineering_generic_state_comfort_intake",
+      "iiit_ranchi_engineering_engineering_generic_national_level_state_comfort_intake",
+      "muzaffarpur_institute_technology_engineering_engineering_generic_state_comfort_i",
+      "anna_university_chennai_engineering_engineering_generic_state_comfort_intake"
     ],
     "medicine": [
       "aiims_jipmer_top_state_gmcs_via_aiq_medicine_medicine_mbbs_national_level_in",
@@ -515,7 +530,8 @@
       "mcg_jodhpur_medicine_medicine_mbbs_state_comfort_intake",
       "afmc_pune_medicine_medicine_mbbs_state_comfort_intake",
       "dr_ram_manoher_lohia_institute_lucknow_medicine_medicine_mbbs_state_comfort_inta",
-      "vmmc_safdarjung_delhi_medicine_medicine_mbbs_national_level_state_comfort_intake"
+      "vmmc_safdarjung_delhi_medicine_medicine_mbbs_national_level_state_comfort_intake",
+      "lady_hardinge_medical_college_delhi_medicine_medicine_mbbs_national_level_state_"
     ],
     "architecture": [
       "iit_kharagpur_iit_roorkee_spa_delhi_examples_verify_current_intake_architecture_",
@@ -548,7 +564,8 @@
       "srm_university_kattankulathur_design_design_generic_state_comfort_intake",
       "kalasalingam_srivilliputhur_design_design_generic_state_comfort_intake",
       "mit_wpu_pune_design_design_generic_state_comfort_intake",
-      "nift_gandhinagar_design_design_generic_national_level_state_comfort_intake"
+      "nift_gandhinagar_design_design_generic_national_level_state_comfort_intake",
+      "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
     ],
     "dentistry": [
       "maulana_azad_institute_of_dental_sciences_delhi_government_dental_colleges_via_a",
@@ -579,7 +596,8 @@
       "parul_university_vadodara_pharmacy_pharmacy_generic_state_comfort_intake",
       "aurobindo_pharma_hyderabad_pharmacy_pharmacy_generic_state_comfort_intake",
       "niper_hyderabad_pharmacy_pharmacy_generic_national_level_state_comfort_intake",
-      "apollo_college_pharmacy_anantapur_pharmacy_pharmacy_generic_state_comfort_intake"
+      "apollo_college_pharmacy_anantapur_pharmacy_pharmacy_generic_state_comfort_intake",
+      "jamia_hamdard_new_delhi_pharmacy_pharmacy_generic_state_comfort_intake"
     ],
     "law": [
       "nlsiu_bangalore_nalsar_hyderabad_wbnujs_kolkata_examples_law_law_generic_nationa",
@@ -611,7 +629,8 @@
       "nlud_delhi_law_law_generic_national_level_state_comfort_intake",
       "nlu_jodhpur_law_law_generic_national_level_state_comfort_intake",
       "nlu_assam_guwahati_law_law_generic_national_level_state_comfort_intake",
-      "nalsar_hyderabad_law_law_generic_national_level_state_comfort_intake"
+      "nalsar_hyderabad_law_law_generic_national_level_state_comfort_intake",
+      "nlu_tripura_agartala_law_law_generic_national_level_state_comfort_intake"
     ],
     "management": [
       "iim_indore_iim_rohtak_ipm_style_programmes_verify_current_list_management_manage",
@@ -654,7 +673,8 @@
       "iim_ahmedabad_management_management_generic_national_level_state_comfort_intake",
       "ximb_bhubaneswar_management_management_generic_state_comfort_intake",
       "nmims_mumbai_management_management_generic_state_comfort_intake",
-      "imt_ghaziabad_management_management_generic_state_comfort_intake"
+      "imt_ghaziabad_management_management_generic_state_comfort_intake",
+      "fms_delhi_management_management_generic_state_comfort_intake"
     ],
     "commerce": [
       "shri_ram_college_of_commerce_srcc_hindu_college_lsr_examples_via_cuet_commerce_c",
@@ -716,7 +736,8 @@
       "pantnagar_university_science_stats_science_stats_generic_state_comfort_intake",
       "kerala_agricultural_university_thrissur_science_stats_science_stats_generic_stat",
       "cusat_kochi_science_stats_science_stats_generic_state_comfort_intake",
-      "presidency_university_kolkata_science_stats_science_stats_generic_state_comfort_"
+      "presidency_university_kolkata_science_stats_science_stats_generic_state_comfort_",
+      "vssut_burla_science_stats_science_stats_generic_state_comfort_intake"
     ],
     "fashion_media": [
       "nift_delhi_mumbai_bangalore_examples_fashion_media_fashion_media_generic_nationa",
@@ -768,7 +789,8 @@
       "amu_aligarh_humanities_humanities_generic_state_comfort_intake",
       "cotton_university_guwahati_humanities_humanities_generic_state_comfort_intake",
       "ashoka_university_sonepat_humanities_humanities_generic_state_comfort_intake",
-      "cupb_bathinda_humanities_humanities_generic_state_comfort_intake"
+      "cupb_bathinda_humanities_humanities_generic_state_comfort_intake",
+      "doon_university_dehradun_humanities_humanities_generic_state_comfort_intake"
     ],
     "education": [
       "regional_institute_of_education_mysuru_bhopal_bhubaneswar_examples_education_edu",
@@ -898,7 +920,10 @@
       "nit_patna_engineering_engineering_generic_national_level_state_comfort_intake",
       "iit_jammu_engineering_engineering_generic_national_level_state_comfort_intake",
       "iiit_nagpur_engineering_engineering_generic_national_level_state_comfort_intake",
-      "manipal_jaipur_engineering_engineering_generic_state_comfort_intake"
+      "manipal_jaipur_engineering_engineering_generic_state_comfort_intake",
+      "iiit_ranchi_engineering_engineering_generic_national_level_state_comfort_intake",
+      "muzaffarpur_institute_technology_engineering_engineering_generic_state_comfort_i",
+      "anna_university_chennai_engineering_engineering_generic_state_comfort_intake"
     ],
     "medicine_mbbs": [
       "aiims_jipmer_top_state_gmcs_via_aiq_medicine_medicine_mbbs_national_level_in",
@@ -968,7 +993,8 @@
       "mcg_jodhpur_medicine_medicine_mbbs_state_comfort_intake",
       "afmc_pune_medicine_medicine_mbbs_state_comfort_intake",
       "dr_ram_manoher_lohia_institute_lucknow_medicine_medicine_mbbs_state_comfort_inta",
-      "vmmc_safdarjung_delhi_medicine_medicine_mbbs_national_level_state_comfort_intake"
+      "vmmc_safdarjung_delhi_medicine_medicine_mbbs_national_level_state_comfort_intake",
+      "lady_hardinge_medical_college_delhi_medicine_medicine_mbbs_national_level_state_"
     ],
     "architecture_generic": [
       "iit_kharagpur_iit_roorkee_spa_delhi_examples_verify_current_intake_architecture_",
@@ -1001,7 +1027,8 @@
       "srm_university_kattankulathur_design_design_generic_state_comfort_intake",
       "kalasalingam_srivilliputhur_design_design_generic_state_comfort_intake",
       "mit_wpu_pune_design_design_generic_state_comfort_intake",
-      "nift_gandhinagar_design_design_generic_national_level_state_comfort_intake"
+      "nift_gandhinagar_design_design_generic_national_level_state_comfort_intake",
+      "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
     ],
     "dentistry_generic": [
       "maulana_azad_institute_of_dental_sciences_delhi_government_dental_colleges_via_a",
@@ -1032,7 +1059,8 @@
       "parul_university_vadodara_pharmacy_pharmacy_generic_state_comfort_intake",
       "aurobindo_pharma_hyderabad_pharmacy_pharmacy_generic_state_comfort_intake",
       "niper_hyderabad_pharmacy_pharmacy_generic_national_level_state_comfort_intake",
-      "apollo_college_pharmacy_anantapur_pharmacy_pharmacy_generic_state_comfort_intake"
+      "apollo_college_pharmacy_anantapur_pharmacy_pharmacy_generic_state_comfort_intake",
+      "jamia_hamdard_new_delhi_pharmacy_pharmacy_generic_state_comfort_intake"
     ],
     "law_generic": [
       "nlsiu_bangalore_nalsar_hyderabad_wbnujs_kolkata_examples_law_law_generic_nationa",
@@ -1064,7 +1092,8 @@
       "nlud_delhi_law_law_generic_national_level_state_comfort_intake",
       "nlu_jodhpur_law_law_generic_national_level_state_comfort_intake",
       "nlu_assam_guwahati_law_law_generic_national_level_state_comfort_intake",
-      "nalsar_hyderabad_law_law_generic_national_level_state_comfort_intake"
+      "nalsar_hyderabad_law_law_generic_national_level_state_comfort_intake",
+      "nlu_tripura_agartala_law_law_generic_national_level_state_comfort_intake"
     ],
     "management_generic": [
       "iim_indore_iim_rohtak_ipm_style_programmes_verify_current_list_management_manage",
@@ -1107,7 +1136,8 @@
       "iim_ahmedabad_management_management_generic_national_level_state_comfort_intake",
       "ximb_bhubaneswar_management_management_generic_state_comfort_intake",
       "nmims_mumbai_management_management_generic_state_comfort_intake",
-      "imt_ghaziabad_management_management_generic_state_comfort_intake"
+      "imt_ghaziabad_management_management_generic_state_comfort_intake",
+      "fms_delhi_management_management_generic_state_comfort_intake"
     ],
     "commerce_generic": [
       "shri_ram_college_of_commerce_srcc_hindu_college_lsr_examples_via_cuet_commerce_c",
@@ -1169,7 +1199,8 @@
       "pantnagar_university_science_stats_science_stats_generic_state_comfort_intake",
       "kerala_agricultural_university_thrissur_science_stats_science_stats_generic_stat",
       "cusat_kochi_science_stats_science_stats_generic_state_comfort_intake",
-      "presidency_university_kolkata_science_stats_science_stats_generic_state_comfort_"
+      "presidency_university_kolkata_science_stats_science_stats_generic_state_comfort_",
+      "vssut_burla_science_stats_science_stats_generic_state_comfort_intake"
     ],
     "fashion_media_generic": [
       "nift_delhi_mumbai_bangalore_examples_fashion_media_fashion_media_generic_nationa",
@@ -1221,7 +1252,8 @@
       "amu_aligarh_humanities_humanities_generic_state_comfort_intake",
       "cotton_university_guwahati_humanities_humanities_generic_state_comfort_intake",
       "ashoka_university_sonepat_humanities_humanities_generic_state_comfort_intake",
-      "cupb_bathinda_humanities_humanities_generic_state_comfort_intake"
+      "cupb_bathinda_humanities_humanities_generic_state_comfort_intake",
+      "doon_university_dehradun_humanities_humanities_generic_state_comfort_intake"
     ],
     "education_generic": [
       "regional_institute_of_education_mysuru_bhopal_bhubaneswar_examples_education_edu",
@@ -1325,7 +1357,8 @@
       "anna_university_engineering_engineering_generic_state_comfort",
       "nit_trichy_engineering_engineering_generic_national_level_state_comfort_intake",
       "amrita_coimbatore_engineering_engineering_generic_national_level_state_comfort_i",
-      "iiitdm_kancheepuram_engineering_engineering_generic_national_level_state_comfort"
+      "iiitdm_kancheepuram_engineering_engineering_generic_national_level_state_comfort",
+      "anna_university_chennai_engineering_engineering_generic_state_comfort_intake"
     ],
     "TS|engineering|engineering_generic": [
       "iit_hyderabad_engineering_engineering_generic_state_comfort_ts",
@@ -1413,7 +1446,8 @@
       "aiims_new_delhi_medicine_medicine_mbbs_state_comfort",
       "aiims_new_delhi_medicine_medicine_mbbs_national_level_state_comfort_intake",
       "maulana_azad_medical_college_delhi_medicine_medicine_mbbs_national_level_state_c",
-      "vmmc_safdarjung_delhi_medicine_medicine_mbbs_national_level_state_comfort_intake"
+      "vmmc_safdarjung_delhi_medicine_medicine_mbbs_national_level_state_comfort_intake",
+      "lady_hardinge_medical_college_delhi_medicine_medicine_mbbs_national_level_state_"
     ],
     "UP|medicine|medicine_mbbs": [
       "king_george_medical_university_kgmu_medicine_medicine_mbbs_state_comfort_up",
@@ -1686,7 +1720,8 @@
     "DL|management|management_generic": [
       "university_of_delhi_management_management_generic_state_comfort",
       "jamia_millia_islamia_management_management_generic_state_comfort",
-      "nift_delhi_management_management_generic_state_comfort"
+      "nift_delhi_management_management_generic_state_comfort",
+      "fms_delhi_management_management_generic_state_comfort_intake"
     ],
     "DL|law|law_generic": [
       "university_of_delhi_law_law_generic_state_comfort",
@@ -1743,7 +1778,8 @@
     ],
     "OD|science_stats|science_stats_generic": [
       "iit_bhubaneswar_science_stats_science_stats_generic_state_comfort",
-      "utkal_university_science_stats_science_stats_generic_state_comfort"
+      "utkal_university_science_stats_science_stats_generic_state_comfort",
+      "vssut_burla_science_stats_science_stats_generic_state_comfort_intake"
     ],
     "OD|medicine|medicine_mbbs": [
       "aiims_bhubaneswar_medicine_medicine_mbbs_state_comfort"
@@ -2000,7 +2036,8 @@
       "gndu_amritsar_commerce_commerce_generic_state_comfort_intake"
     ],
     "BR|engineering|engineering_generic": [
-      "nit_patna_engineering_engineering_generic_national_level_state_comfort_intake"
+      "nit_patna_engineering_engineering_generic_national_level_state_comfort_intake",
+      "muzaffarpur_institute_technology_engineering_engineering_generic_state_comfort_i"
     ],
     "JK|engineering|engineering_generic": [
       "iit_jammu_engineering_engineering_generic_national_level_state_comfort_intake"
@@ -2019,6 +2056,21 @@
     ],
     "PB|humanities|humanities_generic": [
       "cupb_bathinda_humanities_humanities_generic_state_comfort_intake"
+    ],
+    "JH|engineering|engineering_generic": [
+      "iiit_ranchi_engineering_engineering_generic_national_level_state_comfort_intake"
+    ],
+    "TR|law|law_generic": [
+      "nlu_tripura_agartala_law_law_generic_national_level_state_comfort_intake"
+    ],
+    "AS|design|design_generic": [
+      "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
+    ],
+    "UK|humanities|humanities_generic": [
+      "doon_university_dehradun_humanities_humanities_generic_state_comfort_intake"
+    ],
+    "DL|pharmacy|pharmacy_generic": [
+      "jamia_hamdard_new_delhi_pharmacy_pharmacy_generic_state_comfort_intake"
     ]
   },
   "by_neighbor_state_stream_course": {
@@ -2039,6 +2091,7 @@
       "nit_trichy_engineering_engineering_generic_national_level_state_comfort_intake",
       "amrita_coimbatore_engineering_engineering_generic_national_level_state_comfort_i",
       "iiitdm_kancheepuram_engineering_engineering_generic_national_level_state_comfort",
+      "anna_university_chennai_engineering_engineering_generic_state_comfort_intake",
       "iisc_bangalore_ug_programmes_where_applicable_engineering_engineering_generic_st",
       "nitk_surathkal_engineering_engineering_generic_state_comfort_ka",
       "rv_college_of_engineering_rvce_engineering_engineering_generic_state_comfort_ka",
@@ -2079,6 +2132,7 @@
       "iisc_bengaluru_science_stats_science_stats_generic_national_level_state_comfort_",
       "iit_bhubaneswar_science_stats_science_stats_generic_state_comfort",
       "utkal_university_science_stats_science_stats_generic_state_comfort",
+      "vssut_burla_science_stats_science_stats_generic_state_comfort_intake",
       "kerala_agricultural_university_thrissur_science_stats_science_stats_generic_stat",
       "cusat_kochi_science_stats_science_stats_generic_state_comfort_intake"
     ],
@@ -2174,6 +2228,14 @@
     "AR|law|law_generic": [
       "nlu_assam_guwahati_law_law_generic_national_level_state_comfort_intake"
     ],
+    "AR|design|design_generic": [
+      "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
+    ],
+    "AS|law|law_generic": [
+      "nlu_tripura_agartala_law_law_generic_national_level_state_comfort_intake",
+      "university_of_calcutta_law_law_generic_state_comfort",
+      "wbnujs_kolkata_law_law_generic_state_comfort"
+    ],
     "AS|engineering|engineering_generic": [
       "iit_kharagpur_engineering_engineering_generic_state_comfort_wb",
       "jadavpur_university_faculty_of_engineering_and_technology_engineering_engineerin",
@@ -2183,7 +2245,8 @@
       "jadavpur_university_engineering_engineering_generic_state_comfort",
       "nit_durgapur_engineering_engineering_generic_national_level_state_comfort_intake",
       "jadavpur_university_kolkata_engineering_engineering_generic_state_comfort_intake",
-      "nit_patna_engineering_engineering_generic_national_level_state_comfort_intake"
+      "nit_patna_engineering_engineering_generic_national_level_state_comfort_intake",
+      "muzaffarpur_institute_technology_engineering_engineering_generic_state_comfort_i"
     ],
     "AS|medicine|medicine_mbbs": [
       "medical_college_and_hospital_kolkata_medicine_medicine_mbbs_state_comfort_wb",
@@ -2210,10 +2273,6 @@
       "university_of_calcutta_management_management_generic_state_comfort",
       "nift_kolkata_management_management_generic_state_comfort"
     ],
-    "AS|law|law_generic": [
-      "university_of_calcutta_law_law_generic_state_comfort",
-      "wbnujs_kolkata_law_law_generic_state_comfort"
-    ],
     "AS|education|education_generic": [
       "university_of_calcutta_education_education_generic_state_comfort"
     ],
@@ -2234,6 +2293,7 @@
       "banaras_hindu_university_engineering_engineering_generic_state_comfort",
       "jss_academy_noida_engineering_engineering_generic_state_comfort_intake",
       "iiit_allahabad_engineering_engineering_generic_national_level_state_comfort_inta",
+      "iiit_ranchi_engineering_engineering_generic_national_level_state_comfort_intake",
       "iit_kharagpur_engineering_engineering_generic_state_comfort_wb",
       "jadavpur_university_faculty_of_engineering_and_technology_engineering_engineerin",
       "iiest_shibpur_engineering_engineering_generic_state_comfort_wb",
@@ -2267,7 +2327,8 @@
     "BR|design|design_generic": [
       "nift_kannauj_design_design_generic_state_comfort_up",
       "nift_rae_bareli_design_design_generic_state_comfort",
-      "nift_kolkata_design_design_generic_state_comfort"
+      "nift_kolkata_design_design_generic_state_comfort",
+      "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
     ],
     "BR|dentistry|dentistry_generic": [
       "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor",
@@ -2368,6 +2429,7 @@
       "jntuh_affiliated_top_autonomous_colleges_examples_in_hyderabad_engineering_engin",
       "private_engineering_colleges_across_telangana_engineering_engineering_generic_st",
       "iit_hyderabad_engineering_engineering_generic_state_comfort",
+      "iiit_ranchi_engineering_engineering_generic_national_level_state_comfort_intake",
       "iit_kanpur_engineering_engineering_generic_state_comfort_up",
       "iit_bhu_varanasi_engineering_engineering_generic_state_comfort_up",
       "mnnit_allahabad_prayagraj_engineering_engineering_generic_state_comfort_up",
@@ -2462,7 +2524,8 @@
       "svpuat_merut_science_stats_science_stats_generic_state_comfort",
       "rgipt_amethi_science_stats_science_stats_generic_state_comfort_intake",
       "iit_bhubaneswar_science_stats_science_stats_generic_state_comfort",
-      "utkal_university_science_stats_science_stats_generic_state_comfort"
+      "utkal_university_science_stats_science_stats_generic_state_comfort",
+      "vssut_burla_science_stats_science_stats_generic_state_comfort_intake"
     ],
     "CG|humanities|humanities_generic": [
       "devi_ahilya_vishwavidyalaya_humanities_humanities_generic_state_comfort",
@@ -2835,7 +2898,8 @@
       "aiims_new_delhi_medicine_medicine_mbbs_state_comfort",
       "aiims_new_delhi_medicine_medicine_mbbs_national_level_state_comfort_intake",
       "maulana_azad_medical_college_delhi_medicine_medicine_mbbs_national_level_state_c",
-      "vmmc_safdarjung_delhi_medicine_medicine_mbbs_national_level_state_comfort_intake"
+      "vmmc_safdarjung_delhi_medicine_medicine_mbbs_national_level_state_comfort_intake",
+      "lady_hardinge_medical_college_delhi_medicine_medicine_mbbs_national_level_state_"
     ],
     "HR|architecture|architecture_generic": [
       "mnit_jaipur_architecture_architecture_generic_state_comfort",
@@ -2883,7 +2947,8 @@
       "university_of_delhi_humanities_humanities_generic_state_comfort",
       "jamia_millia_islamia_humanities_humanities_generic_state_comfort",
       "jnu_humanities_humanities_generic_state_comfort",
-      "jmi_new_delhi_humanities_humanities_generic_state_comfort_intake"
+      "jmi_new_delhi_humanities_humanities_generic_state_comfort_intake",
+      "doon_university_dehradun_humanities_humanities_generic_state_comfort_intake"
     ],
     "HR|education|education_generic": [
       "university_of_rajasthan_education_education_generic_state_comfort",
@@ -2905,7 +2970,8 @@
       "imt_ghaziabad_management_management_generic_state_comfort_intake",
       "university_of_delhi_management_management_generic_state_comfort",
       "jamia_millia_islamia_management_management_generic_state_comfort",
-      "nift_delhi_management_management_generic_state_comfort"
+      "nift_delhi_management_management_generic_state_comfort",
+      "fms_delhi_management_management_generic_state_comfort_intake"
     ],
     "HR|law|law_generic": [
       "university_of_rajasthan_law_law_generic_state_comfort",
@@ -2939,7 +3005,8 @@
     "HR|pharmacy|pharmacy_generic": [
       "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma",
       "amity_university_noida_pharmacy_pharmacy_generic_state_comfort_intake",
-      "niper_mohali_pharmacy_pharmacy_generic_national_level_state_comfort_intake"
+      "niper_mohali_pharmacy_pharmacy_generic_national_level_state_comfort_intake",
+      "jamia_hamdard_new_delhi_pharmacy_pharmacy_generic_state_comfort_intake"
     ],
     "HR|veterinary|veterinary_generic": [
       "uttar_pradesh_pandit_deen_dayal_upadhyaya_pashu_chikitsa_vigyan_vishwavidyalaya_",
@@ -2952,6 +3019,7 @@
       "pantnagar_university_science_stats_science_stats_generic_state_comfort_intake"
     ],
     "HP|humanities|humanities_generic": [
+      "doon_university_dehradun_humanities_humanities_generic_state_comfort_intake",
       "ashoka_university_sonepat_humanities_humanities_generic_state_comfort_intake",
       "cupb_bathinda_humanities_humanities_generic_state_comfort_intake"
     ],
@@ -2973,6 +3041,7 @@
     ],
     "JH|engineering|engineering_generic": [
       "nit_patna_engineering_engineering_generic_national_level_state_comfort_intake",
+      "muzaffarpur_institute_technology_engineering_engineering_generic_state_comfort_i",
       "nit_raipur_engineering_engineering_generic_state_comfort_cg",
       "iiit_naya_raipur_engineering_engineering_generic_state_comfort_cg",
       "iit_bhilai_engineering_engineering_generic_state_comfort_cg",
@@ -3040,6 +3109,7 @@
       "pt_ravishankar_shukla_university_science_stats_science_stats_generic_state_comfo",
       "iit_bhubaneswar_science_stats_science_stats_generic_state_comfort",
       "utkal_university_science_stats_science_stats_generic_state_comfort",
+      "vssut_burla_science_stats_science_stats_generic_state_comfort_intake",
       "jadavpur_university_science_stats_science_stats_generic_state_comfort",
       "university_of_calcutta_science_stats_science_stats_generic_state_comfort",
       "presidency_university_kolkata_science_stats_science_stats_generic_state_comfort_",
@@ -3202,6 +3272,7 @@
       "nit_trichy_engineering_engineering_generic_national_level_state_comfort_intake",
       "amrita_coimbatore_engineering_engineering_generic_national_level_state_comfort_i",
       "iiitdm_kancheepuram_engineering_engineering_generic_national_level_state_comfort",
+      "anna_university_chennai_engineering_engineering_generic_state_comfort_intake",
       "iit_hyderabad_engineering_engineering_generic_state_comfort_ts",
       "iiit_hyderabad_engineering_engineering_generic_state_comfort_ts",
       "bits_pilani_hyderabad_campus_engineering_engineering_generic_state_comfort_ts",
@@ -3312,6 +3383,7 @@
       "nit_trichy_engineering_engineering_generic_national_level_state_comfort_intake",
       "amrita_coimbatore_engineering_engineering_generic_national_level_state_comfort_i",
       "iiitdm_kancheepuram_engineering_engineering_generic_national_level_state_comfort",
+      "anna_university_chennai_engineering_engineering_generic_state_comfort_intake",
       "iisc_bangalore_ug_programmes_where_applicable_engineering_engineering_generic_st",
       "nitk_surathkal_engineering_engineering_generic_state_comfort_ka",
       "rv_college_of_engineering_rvce_engineering_engineering_generic_state_comfort_ka",
@@ -3737,6 +3809,9 @@
     "MN|law|law_generic": [
       "nlu_assam_guwahati_law_law_generic_national_level_state_comfort_intake"
     ],
+    "MN|design|design_generic": [
+      "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
+    ],
     "ML|education|education_generic": [
       "tezpur_university_assam_education_education_generic_state_comfort_intake"
     ],
@@ -3747,6 +3822,14 @@
       "cotton_university_guwahati_humanities_humanities_generic_state_comfort_intake"
     ],
     "ML|law|law_generic": [
+      "nlu_assam_guwahati_law_law_generic_national_level_state_comfort_intake",
+      "nlu_tripura_agartala_law_law_generic_national_level_state_comfort_intake"
+    ],
+    "ML|design|design_generic": [
+      "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
+    ],
+    "MZ|law|law_generic": [
+      "nlu_tripura_agartala_law_law_generic_national_level_state_comfort_intake",
       "nlu_assam_guwahati_law_law_generic_national_level_state_comfort_intake"
     ],
     "MZ|education|education_generic": [
@@ -3758,8 +3841,8 @@
     "MZ|humanities|humanities_generic": [
       "cotton_university_guwahati_humanities_humanities_generic_state_comfort_intake"
     ],
-    "MZ|law|law_generic": [
-      "nlu_assam_guwahati_law_law_generic_national_level_state_comfort_intake"
+    "MZ|design|design_generic": [
+      "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
     ],
     "NL|education|education_generic": [
       "tezpur_university_assam_education_education_generic_state_comfort_intake"
@@ -3773,6 +3856,9 @@
     "NL|law|law_generic": [
       "nlu_assam_guwahati_law_law_generic_national_level_state_comfort_intake"
     ],
+    "NL|design|design_generic": [
+      "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
+    ],
     "OD|engineering|engineering_generic": [
       "nit_raipur_engineering_engineering_generic_state_comfort_cg",
       "iiit_naya_raipur_engineering_engineering_generic_state_comfort_cg",
@@ -3782,6 +3868,7 @@
       "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify_engineering_e",
       "other_aicte_affiliated_colleges_in_cg_engineering_engineering_generic_state_comf",
       "iit_bhilai_engineering_engineering_generic_state_comfort",
+      "iiit_ranchi_engineering_engineering_generic_national_level_state_comfort_intake",
       "iit_kharagpur_engineering_engineering_generic_state_comfort_wb",
       "jadavpur_university_faculty_of_engineering_and_technology_engineering_engineerin",
       "iiest_shibpur_engineering_engineering_generic_state_comfort_wb",
@@ -4347,7 +4434,8 @@
       "pt_ravishankar_shukla_university_science_stats_science_stats_generic_state_comfo",
       "iisc_bengaluru_science_stats_science_stats_generic_national_level_state_comfort_",
       "iit_bhubaneswar_science_stats_science_stats_generic_state_comfort",
-      "utkal_university_science_stats_science_stats_generic_state_comfort"
+      "utkal_university_science_stats_science_stats_generic_state_comfort",
+      "vssut_burla_science_stats_science_stats_generic_state_comfort_intake"
     ],
     "TS|fashion_media|fashion_media_generic": [
       "nift_mumbai_fashion_media_fashion_media_generic_state_comfort_mh",
@@ -4389,6 +4477,9 @@
     "TR|law|law_generic": [
       "nlu_assam_guwahati_law_law_generic_national_level_state_comfort_intake"
     ],
+    "TR|design|design_generic": [
+      "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
+    ],
     "UP|science_stats|science_stats_generic": [
       "forest_research_institute_dehradun_science_stats_science_stats_generic_state_com",
       "pantnagar_university_science_stats_science_stats_generic_state_comfort_intake",
@@ -4405,6 +4496,7 @@
       "lady_irwin_college_delhi_science_stats_science_stats_generic_state_comfort_intak"
     ],
     "UP|humanities|humanities_generic": [
+      "doon_university_dehradun_humanities_humanities_generic_state_comfort_intake",
       "ashoka_university_sonepat_humanities_humanities_generic_state_comfort_intake",
       "university_of_rajasthan_humanities_humanities_generic_state_comfort",
       "nlu_jodhpur_humanities_humanities_generic_state_comfort",
@@ -4446,6 +4538,8 @@
       "other_aicte_affiliated_colleges_in_cg_engineering_engineering_generic_state_comf",
       "iit_bhilai_engineering_engineering_generic_state_comfort",
       "nit_patna_engineering_engineering_generic_national_level_state_comfort_intake",
+      "muzaffarpur_institute_technology_engineering_engineering_generic_state_comfort_i",
+      "iiit_ranchi_engineering_engineering_generic_national_level_state_comfort_intake",
       "dtu_nsut_iiit_d_examples_engineering_engineering_generic_state_comfort_dl",
       "nit_delhi_engineering_engineering_generic_state_comfort_dl",
       "established_private_universities_in_ncr_engineering_engineering_generic_state_co",
@@ -4474,7 +4568,8 @@
       "aiims_new_delhi_medicine_medicine_mbbs_state_comfort",
       "aiims_new_delhi_medicine_medicine_mbbs_national_level_state_comfort_intake",
       "maulana_azad_medical_college_delhi_medicine_medicine_mbbs_national_level_state_c",
-      "vmmc_safdarjung_delhi_medicine_medicine_mbbs_national_level_state_comfort_intake"
+      "vmmc_safdarjung_delhi_medicine_medicine_mbbs_national_level_state_comfort_intake",
+      "lady_hardinge_medical_college_delhi_medicine_medicine_mbbs_national_level_state_"
     ],
     "UP|architecture|architecture_generic": [
       "mnit_jaipur_architecture_architecture_generic_state_comfort",
@@ -4504,7 +4599,8 @@
       "pt_ravishankar_shukla_university_management_management_generic_state_comfort",
       "university_of_delhi_management_management_generic_state_comfort",
       "jamia_millia_islamia_management_management_generic_state_comfort",
-      "nift_delhi_management_management_generic_state_comfort"
+      "nift_delhi_management_management_generic_state_comfort",
+      "fms_delhi_management_management_generic_state_comfort_intake"
     ],
     "UP|law|law_generic": [
       "university_of_rajasthan_law_law_generic_state_comfort",
@@ -4529,7 +4625,8 @@
       "nift_delhi_design_design_generic_state_comfort"
     ],
     "UP|pharmacy|pharmacy_generic": [
-      "devi_ahilya_vishwavidyalaya_pharmacy_pharmacy_generic_state_comfort"
+      "devi_ahilya_vishwavidyalaya_pharmacy_pharmacy_generic_state_comfort",
+      "jamia_hamdard_new_delhi_pharmacy_pharmacy_generic_state_comfort_intake"
     ],
     "UP|veterinary|veterinary_generic": [
       "nanaji_deshmukh_veterinary_university_jabalpur_veterinary_veterinary_generic_sta"
@@ -4629,6 +4726,8 @@
     ],
     "WB|engineering|engineering_generic": [
       "nit_patna_engineering_engineering_generic_national_level_state_comfort_intake",
+      "muzaffarpur_institute_technology_engineering_engineering_generic_state_comfort_i",
+      "iiit_ranchi_engineering_engineering_generic_national_level_state_comfort_intake",
       "iit_bhubaneswar_engineering_engineering_generic_state_comfort_od",
       "nit_rourkela_engineering_engineering_generic_state_comfort_od",
       "outr_igit_government_colleges_under_bput_verify_active_names_engineering_enginee",
@@ -4638,7 +4737,8 @@
     "WB|science_stats|science_stats_generic": [
       "bit_mesra_ranchi_science_stats_science_stats_generic_state_comfort_intake",
       "iit_bhubaneswar_science_stats_science_stats_generic_state_comfort",
-      "utkal_university_science_stats_science_stats_generic_state_comfort"
+      "utkal_university_science_stats_science_stats_generic_state_comfort",
+      "vssut_burla_science_stats_science_stats_generic_state_comfort_intake"
     ],
     "WB|medicine|medicine_mbbs": [
       "aiims_bhubaneswar_medicine_medicine_mbbs_state_comfort",
@@ -4672,7 +4772,8 @@
       "nift_bhubaneswar_fashion_media_fashion_media_generic_state_comfort"
     ],
     "WB|design|design_generic": [
-      "nift_bhubaneswar_design_design_generic_state_comfort"
+      "nift_bhubaneswar_design_design_generic_state_comfort",
+      "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
     ],
     "DL|humanities|humanities_generic": [
       "ashoka_university_sonepat_humanities_humanities_generic_state_comfort_intake",
@@ -4797,7 +4898,8 @@
       "anna_university_engineering_engineering_generic_state_comfort",
       "nit_trichy_engineering_engineering_generic_national_level_state_comfort_intake",
       "amrita_coimbatore_engineering_engineering_generic_national_level_state_comfort_i",
-      "iiitdm_kancheepuram_engineering_engineering_generic_national_level_state_comfort"
+      "iiitdm_kancheepuram_engineering_engineering_generic_national_level_state_comfort",
+      "anna_university_chennai_engineering_engineering_generic_state_comfort_intake"
     ],
     "PY|medicine|medicine_mbbs": [
       "madras_medical_college_mmc_medicine_medicine_mbbs_state_comfort_tn",
@@ -4872,7 +4974,8 @@
       "anna_university_engineering_engineering_generic_state_comfort",
       "nit_trichy_engineering_engineering_generic_national_level_state_comfort_intake",
       "amrita_coimbatore_engineering_engineering_generic_national_level_state_comfort_i",
-      "iiitdm_kancheepuram_engineering_engineering_generic_national_level_state_comfort"
+      "iiitdm_kancheepuram_engineering_engineering_generic_national_level_state_comfort",
+      "anna_university_chennai_engineering_engineering_generic_state_comfort_intake"
     ],
     "AN|medicine|medicine_mbbs": [
       "madras_medical_college_mmc_medicine_medicine_mbbs_state_comfort_tn",
@@ -5013,7 +5116,10 @@
       "nit_patna_engineering_engineering_generic_national_level_state_comfort_intake",
       "iit_jammu_engineering_engineering_generic_national_level_state_comfort_intake",
       "iiit_nagpur_engineering_engineering_generic_national_level_state_comfort_intake",
-      "manipal_jaipur_engineering_engineering_generic_state_comfort_intake"
+      "manipal_jaipur_engineering_engineering_generic_state_comfort_intake",
+      "iiit_ranchi_engineering_engineering_generic_national_level_state_comfort_intake",
+      "muzaffarpur_institute_technology_engineering_engineering_generic_state_comfort_i",
+      "anna_university_chennai_engineering_engineering_generic_state_comfort_intake"
     ],
     "medicine|medicine_mbbs": [
       "aiims_jipmer_top_state_gmcs_via_aiq_medicine_medicine_mbbs_national_level_in",
@@ -5083,7 +5189,8 @@
       "mcg_jodhpur_medicine_medicine_mbbs_state_comfort_intake",
       "afmc_pune_medicine_medicine_mbbs_state_comfort_intake",
       "dr_ram_manoher_lohia_institute_lucknow_medicine_medicine_mbbs_state_comfort_inta",
-      "vmmc_safdarjung_delhi_medicine_medicine_mbbs_national_level_state_comfort_intake"
+      "vmmc_safdarjung_delhi_medicine_medicine_mbbs_national_level_state_comfort_intake",
+      "lady_hardinge_medical_college_delhi_medicine_medicine_mbbs_national_level_state_"
     ],
     "architecture|architecture_generic": [
       "iit_kharagpur_iit_roorkee_spa_delhi_examples_verify_current_intake_architecture_",
@@ -5116,7 +5223,8 @@
       "srm_university_kattankulathur_design_design_generic_state_comfort_intake",
       "kalasalingam_srivilliputhur_design_design_generic_state_comfort_intake",
       "mit_wpu_pune_design_design_generic_state_comfort_intake",
-      "nift_gandhinagar_design_design_generic_national_level_state_comfort_intake"
+      "nift_gandhinagar_design_design_generic_national_level_state_comfort_intake",
+      "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
     ],
     "dentistry|dentistry_generic": [
       "maulana_azad_institute_of_dental_sciences_delhi_government_dental_colleges_via_a",
@@ -5147,7 +5255,8 @@
       "parul_university_vadodara_pharmacy_pharmacy_generic_state_comfort_intake",
       "aurobindo_pharma_hyderabad_pharmacy_pharmacy_generic_state_comfort_intake",
       "niper_hyderabad_pharmacy_pharmacy_generic_national_level_state_comfort_intake",
-      "apollo_college_pharmacy_anantapur_pharmacy_pharmacy_generic_state_comfort_intake"
+      "apollo_college_pharmacy_anantapur_pharmacy_pharmacy_generic_state_comfort_intake",
+      "jamia_hamdard_new_delhi_pharmacy_pharmacy_generic_state_comfort_intake"
     ],
     "law|law_generic": [
       "nlsiu_bangalore_nalsar_hyderabad_wbnujs_kolkata_examples_law_law_generic_nationa",
@@ -5179,7 +5288,8 @@
       "nlud_delhi_law_law_generic_national_level_state_comfort_intake",
       "nlu_jodhpur_law_law_generic_national_level_state_comfort_intake",
       "nlu_assam_guwahati_law_law_generic_national_level_state_comfort_intake",
-      "nalsar_hyderabad_law_law_generic_national_level_state_comfort_intake"
+      "nalsar_hyderabad_law_law_generic_national_level_state_comfort_intake",
+      "nlu_tripura_agartala_law_law_generic_national_level_state_comfort_intake"
     ],
     "management|management_generic": [
       "iim_indore_iim_rohtak_ipm_style_programmes_verify_current_list_management_manage",
@@ -5222,7 +5332,8 @@
       "iim_ahmedabad_management_management_generic_national_level_state_comfort_intake",
       "ximb_bhubaneswar_management_management_generic_state_comfort_intake",
       "nmims_mumbai_management_management_generic_state_comfort_intake",
-      "imt_ghaziabad_management_management_generic_state_comfort_intake"
+      "imt_ghaziabad_management_management_generic_state_comfort_intake",
+      "fms_delhi_management_management_generic_state_comfort_intake"
     ],
     "commerce|commerce_generic": [
       "shri_ram_college_of_commerce_srcc_hindu_college_lsr_examples_via_cuet_commerce_c",
@@ -5284,7 +5395,8 @@
       "pantnagar_university_science_stats_science_stats_generic_state_comfort_intake",
       "kerala_agricultural_university_thrissur_science_stats_science_stats_generic_stat",
       "cusat_kochi_science_stats_science_stats_generic_state_comfort_intake",
-      "presidency_university_kolkata_science_stats_science_stats_generic_state_comfort_"
+      "presidency_university_kolkata_science_stats_science_stats_generic_state_comfort_",
+      "vssut_burla_science_stats_science_stats_generic_state_comfort_intake"
     ],
     "fashion_media|fashion_media_generic": [
       "nift_delhi_mumbai_bangalore_examples_fashion_media_fashion_media_generic_nationa",
@@ -5336,7 +5448,8 @@
       "amu_aligarh_humanities_humanities_generic_state_comfort_intake",
       "cotton_university_guwahati_humanities_humanities_generic_state_comfort_intake",
       "ashoka_university_sonepat_humanities_humanities_generic_state_comfort_intake",
-      "cupb_bathinda_humanities_humanities_generic_state_comfort_intake"
+      "cupb_bathinda_humanities_humanities_generic_state_comfort_intake",
+      "doon_university_dehradun_humanities_humanities_generic_state_comfort_intake"
     ],
     "education|education_generic": [
       "regional_institute_of_education_mysuru_bhopal_bhubaneswar_examples_education_edu",
@@ -5395,7 +5508,8 @@
       "CH",
       "HP",
       "BR",
-      "JK"
+      "JK",
+      "JH"
     ],
     "medicine|medicine_mbbs": [
       "IN",
@@ -5436,7 +5550,8 @@
       "TN",
       "TS",
       "WB",
-      "GJ"
+      "GJ",
+      "AS"
     ],
     "dentistry|dentistry_generic": [
       "IN",
@@ -5460,7 +5575,8 @@
       "TS",
       "PB",
       "GJ",
-      "AP"
+      "AP",
+      "DL"
     ],
     "law|law_generic": [
       "IN",
@@ -5476,7 +5592,8 @@
       "WB",
       "KA",
       "GJ",
-      "AS"
+      "AS",
+      "TR"
     ],
     "management|management_generic": [
       "IN",
@@ -5550,7 +5667,8 @@
       "WB",
       "AS",
       "HR",
-      "PB"
+      "PB",
+      "UK"
     ],
     "education|education_generic": [
       "IN",
@@ -5997,6 +6115,16 @@
     "nift_gandhinagar_design_design_generic_national_level_state_comfort_intake": "GJ",
     "muhs_nashik_education_education_generic_state_comfort_intake": "MH",
     "cupb_bathinda_humanities_humanities_generic_state_comfort_intake": "PB",
-    "nalsar_hyderabad_law_law_generic_national_level_state_comfort_intake": "TS"
+    "nalsar_hyderabad_law_law_generic_national_level_state_comfort_intake": "TS",
+    "iiit_ranchi_engineering_engineering_generic_national_level_state_comfort_intake": "JH",
+    "fms_delhi_management_management_generic_state_comfort_intake": "DL",
+    "muzaffarpur_institute_technology_engineering_engineering_generic_state_comfort_i": "BR",
+    "nlu_tripura_agartala_law_law_generic_national_level_state_comfort_intake": "TR",
+    "lady_hardinge_medical_college_delhi_medicine_medicine_mbbs_national_level_state_": "DL",
+    "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake": "AS",
+    "anna_university_chennai_engineering_engineering_generic_state_comfort_intake": "TN",
+    "doon_university_dehradun_humanities_humanities_generic_state_comfort_intake": "UK",
+    "jamia_hamdard_new_delhi_pharmacy_pharmacy_generic_state_comfort_intake": "DL",
+    "vssut_burla_science_stats_science_stats_generic_state_comfort_intake": "OD"
   }
 }

@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "DL",
     "state_label": "Delhi (NCT)",
-    "count": 35,
+    "count": 38,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -1069,6 +1069,97 @@
         ],
         "verification_url": "https://vmmc-sjh.mohfw.gov.in/",
         "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "fms_delhi_management_management_generic_state_comfort_intake",
+      "college_id": "fms_delhi",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Management pathways and accepted scores should be verified from latest official bulletin."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.fms.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "lady_hardinge_medical_college_delhi_medicine_medicine_mbbs_national_level_state_",
+      "college_id": "lady_hardinge_medical_college_delhi",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Medical counselling and quota split should be verified each cycle through official notices."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://lhmc-hosp.gov.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "jamia_hamdard_new_delhi_pharmacy_pharmacy_generic_state_comfort_intake",
+      "college_id": "jamia_hamdard_new_delhi",
+      "stream_id": "pharmacy",
+      "course_id": "pharmacy_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Pharmacy admission pathways and approval status should be verified from current official notices."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://jamiahamdard.edu/",
+        "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
       }

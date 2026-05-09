@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "JH",
     "state_label": "Jharkhand",
-    "count": 1,
+    "count": 2,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -31,6 +31,34 @@
           "institute_portal"
         ],
         "verification_url": "https://www.bitmesra.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "iiit_ranchi_engineering_engineering_generic_national_level_state_comfort_intake",
+      "college_id": "iiit_ranchi",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "IIIT admissions are counselling based; verify current JoSAA and CSAB schedule."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://iiitranchi.ac.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

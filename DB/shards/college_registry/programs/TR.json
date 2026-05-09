@@ -3,8 +3,37 @@
     "shard_type": "programs",
     "state_id": "TR",
     "state_label": "Tripura",
-    "count": 0,
+    "count": 1,
     "generated_on": "2026-05-09"
   },
-  "programs": []
+  "programs": [
+    {
+      "id": "nlu_tripura_agartala_law_law_generic_national_level_state_comfort_intake",
+      "college_id": "nlu_tripura_agartala",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Law admission pathway should be validated from current consortium and university notices."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://nlutripura.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    }
+  ]
 }

@@ -3,7 +3,7 @@
     "shard_type": "institutions",
     "state_id": "DL",
     "state_label": "Delhi (NCT)",
-    "count": 17,
+    "count": 20,
     "generated_on": "2026-05-09"
   },
   "institutions": [
@@ -949,8 +949,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://vmmc-sjh.mohfw.gov.in/",
-          "https://mcc.nic.in/",
-          "https://vmmc-sjh.mohfw.gov.in/"
+          "https://mcc.nic.in/"
         ]
       },
       "cost_band": {
@@ -972,6 +971,183 @@
         "verification_urls": [
           "https://vmmc-sjh.mohfw.gov.in/",
           "https://mcc.nic.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "fms_delhi",
+      "name": "Faculty of Management Studies Delhi",
+      "state_id": "DL",
+      "city": "New Delhi",
+      "type": "Public business school",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.fms.edu/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Management pathways and accepted scores should be verified from latest official bulletin."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.fms.edu/",
+          "https://www.ugc.gov.in/",
+          "https://www.fms.edu/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.fms.edu/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "lady_hardinge_medical_college_delhi",
+      "name": "Lady Hardinge Medical College New Delhi",
+      "state_id": "DL",
+      "city": "New Delhi",
+      "type": "Government medical college",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://lhmc-hosp.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Medical counselling and quota split should be verified each cycle through official notices."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://lhmc-hosp.gov.in/",
+          "https://mcc.nic.in/",
+          "https://lhmc-hosp.gov.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "limited",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://lhmc-hosp.gov.in/",
+          "https://mcc.nic.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "jamia_hamdard_new_delhi",
+      "name": "Jamia Hamdard New Delhi",
+      "state_id": "DL",
+      "city": "New Delhi",
+      "type": "Deemed university",
+      "ownership": "Private",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://jamiahamdard.edu/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Pharmacy admission pathways and approval status should be verified from current official notices."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://jamiahamdard.edu/",
+          "https://www.pci.nic.in/",
+          "https://jamiahamdard.edu/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "deemed",
+        "regulators_required": [
+          "PCI"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://jamiahamdard.edu/",
+          "https://www.pci.nic.in/"
         ],
         "confidence": "medium",
         "last_updated": "2026-05-09",

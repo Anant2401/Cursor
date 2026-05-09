@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "TN",
     "state_label": "Tamil Nadu",
-    "count": 32,
+    "count": 33,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -974,6 +974,37 @@
         "exam_ids": [],
         "pathways": [],
         "verification_url": "https://www.iiitdm.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "anna_university_chennai_engineering_engineering_generic_state_comfort_intake",
+      "college_id": "anna_university_chennai",
+      "stream_id": "engineering",
+      "course_id": "engineering_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "State counselling and affiliated-college route should be verified from current TN admission notifications."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.annauniv.edu/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

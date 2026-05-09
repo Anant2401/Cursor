@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "UK",
     "state_label": "Uttarakhand",
-    "count": 2,
+    "count": 3,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -60,6 +60,35 @@
           "institute_portal"
         ],
         "verification_url": "https://www.gbpuat.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "doon_university_dehradun_humanities_humanities_generic_state_comfort_intake",
+      "college_id": "doon_university_dehradun",
+      "stream_id": "humanities",
+      "course_id": "humanities_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Humanities and interdisciplinary admission criteria should be validated from latest prospectus."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.doonuniversity.ac.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
