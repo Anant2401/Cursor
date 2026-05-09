@@ -55,20 +55,9 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 .hero .skill-gap-how ul{margin:8px 0 0 1rem;padding:0;}
 .hero .skill-gap-how li{margin-bottom:5px;}
 
-.card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:22px 20px;margin-bottom:14px;box-shadow:var(--shadow);}
 .card-title{font-size:11px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;}
 
-/* JOB CATEGORY GRID */
-.job-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
-.job-btn{border:1.5px solid var(--border);background:#fff;border-radius:12px;padding:12px 14px;cursor:pointer;font-family:'Poppins',sans-serif;text-align:left;transition:all .15s;}
-.job-btn:hover{border-color:var(--teal);background:var(--teal-light);}
-.job-btn.active{border-color:var(--teal-dark);background:var(--teal-dark);color:#fff;}
-.job-btn.active .jb-meta{color:rgba(255,255,255,.7);}
-.jb-label{font-size:13px;font-weight:600;display:block;margin-bottom:4px;}
-.jb-meta{font-size:10px;color:var(--gray);display:block;}
-
 /* PROFILE INPUTS */
-.profile-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 .form-group{display:flex;flex-direction:column;gap:5px;}
 .form-group label{font-size:11px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.05em;}
 select,input[type=text]{width:100%;border:1.5px solid var(--border);border-radius:10px;padding:11px 13px;font-size:13px;font-family:'Poppins',sans-serif;color:var(--text);background:#fff;outline:none;transition:border-color .2s;}
@@ -136,9 +125,7 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
 .tl-text{font-size:12px;opacity:.9;line-height:1.6;}
 
 /* BTN */
-.btn-analyse{width:100%;background:var(--amber);color:var(--teal-dark);border:none;border-radius:var(--radius);padding:15px;font-size:15px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;transition:transform .15s,box-shadow .15s;margin-top:4px;}
-.btn-analyse:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(239,159,39,.4);}
-.btn-analyse:disabled{opacity:.4;cursor:not-allowed;transform:none;}
+.btn-analyse.btn-pe-primary{margin-top:14px;}
 .btn-reset{width:100%;border:1.5px solid var(--teal);background:#fff;border-radius:var(--radius);padding:13px;font-size:13px;font-weight:700;cursor:pointer;color:var(--teal-dark);font-family:'Poppins',sans-serif;margin-bottom:14px;}
 
 .first-job-card{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:16px;}
@@ -153,9 +140,7 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
 .brand-tagline{font-size:13px;font-weight:600;color:var(--teal);margin-bottom:4px;}
 .brand-footer p{font-size:11px;color:var(--gray-text);line-height:1.8;}
 .brand-footer strong{color:var(--teal-dark);}
-.btn-begin{width:100%;background:var(--amber);color:var(--teal-dark);border:none;border-radius:var(--radius);padding:16px;font-size:15px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;transition:transform .15s,box-shadow .15s;}
-.btn-begin:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(239,159,39,.4);}
-.btn-begin:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none;}
+.btn-begin.btn-pe-primary{width:100%;margin-top:14px;}
 .name-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 .name-field{display:flex;flex-direction:column;gap:6px;min-width:0;}
 .name-field-label{font-size:11px;font-weight:600;opacity:.88;letter-spacing:.02em;}
@@ -168,7 +153,7 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
 .category-chip:hover{background:var(--teal-light);border-color:var(--teal);}
 .category-chip.active{background:var(--teal-dark);border-color:var(--teal-dark);color:var(--amber);}
 
-@media(max-width:480px){.job-grid{grid-template-columns:1fr;}.profile-grid{grid-template-columns:1fr;}.summary-row{grid-template-columns:1fr 1fr;}.name-grid{grid-template-columns:1fr;}}
+@media(max-width:480px){.summary-row{grid-template-columns:1fr 1fr;}.name-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body class="pc-tool-ui">
@@ -199,20 +184,29 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
       </ul>
     </div>
   </div>
-  <div class="card" id="card-step1-cover">
-    <div class="card-title">Step 1 — What job are you targeting?</div>
-    <p style="font-size:12px;color:var(--gray);margin-bottom:14px;">Pick the role closest to your goal. You can change it later from the results screen.</p>
-    <div class="form-group">
-      <label>Career category</label>
-      <div class="category-chips" id="job-category-chips"></div>
+  <section class="card filter-card" id="card-step1-cover">
+    <div class="filter-card-inner">
+      <div class="filter-card-eyebrow">Skill Gap Analyser</div>
+      <h2 class="filter-card-title">Step 1 · What job are you targeting?</h2>
+      <p class="filter-flow-note" style="margin-bottom:14px;">Pick the role closest to your goal. You can change it later from the results screen.</p>
+      <div class="field-group" style="margin-bottom:12px;">
+        <span class="field-label" style="margin-bottom:8px;">
+          <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/></svg>
+          <span>Career category</span>
+        </span>
+        <div class="category-chips" id="job-category-chips"></div>
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="job-role-select">
+          <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>Target role</span>
+        </label>
+        <select class="select" id="job-role-select"></select>
+        <p class="field-hint" id="job-role-meta" style="margin-top:6px;min-height:1.2em;"></p>
+      </div>
     </div>
-    <div class="form-group">
-      <label for="job-role-select">Target role</label>
-      <select id="job-role-select"></select>
-    </div>
-    <div style="margin-top:10px;font-size:11px;color:var(--gray);" id="job-role-meta"></div>
-  </div>
-  <button type="button" class="btn-begin" id="btn-begin-skill" disabled>Continue to Step 2 →</button>
+  </section>
+  <button type="button" class="btn-begin btn-pe-primary" id="btn-begin-skill" disabled>Continue to Step 2 →</button>
   <div class="brand-footer">
     <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
     <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
@@ -238,13 +232,17 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
     <p>Tell us your highest qualification and which skills you already have. We will compare that list to your chosen role and show every gap with learning links.</p>
   </div>
 
-  <div class="card hidden" id="card-profile">
-    <div class="card-title">Step 2 — Qualification & skills you already have</div>
-    <p style="font-size:12px;color:var(--gray);margin-bottom:14px;">Be honest — it helps us show the most useful next steps for you. No one else sees this.</p>
-    <div class="profile-grid">
-      <div class="form-group" style="grid-column:1/-1;">
-        <label>Highest Qualification</label>
-        <select id="sel-qual">
+  <section class="card filter-card hidden" id="card-profile">
+    <div class="filter-card-inner">
+      <div class="filter-card-eyebrow">Skill Gap Analyser</div>
+      <h2 class="filter-card-title">Step 2 · Qualification &amp; skills you already have</h2>
+      <p class="filter-flow-note" style="margin-bottom:14px;">Be honest — it helps us show the most useful next steps for you. No one else sees this.</p>
+      <div class="field-group">
+        <label class="field-label" for="sel-qual">
+          <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          <span>Highest qualification</span>
+        </label>
+        <select class="select" id="sel-qual">
           <option value="">Select...</option>
           <option value="class10">Class 10 pass</option>
           <option value="class12">Class 12 pass</option>
@@ -253,18 +251,25 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
           <option value="grad_complete">Graduation complete</option>
           <option value="pg">Post-graduation</option>
         </select>
+        <p class="field-hint">We use this only to prioritize realistic gaps for your stage.</p>
+      </div>
+      <div class="field-group" style="margin-top:14px;">
+        <span class="field-label" style="margin-bottom:8px;">
+          <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 6l-6 4 6 4 6-4-6-4z"/><path d="M6 14l6 4 6-4"/></svg>
+          <span>Skills you already have</span>
+        </span>
+        <p class="field-hint" style="padding-left:0;margin-bottom:8px;">Tick all that apply from the list for this role.</p>
+        <div class="skill-bulk-row" id="skill-bulk-row" hidden>
+          <button type="button" class="btn-skill-bulk" id="btn-skills-all">Select all listed</button>
+          <button type="button" class="btn-skill-bulk" id="btn-skills-none">Clear all</button>
+        </div>
+        <div id="existing-skills-grid" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:4px;"></div>
       </div>
     </div>
-    <div class="form-group" style="margin-top:12px;">
-      <label>Skills You Already Have (tick all that apply)</label>
+    <div class="filter-actions">
+      <button class="btn-analyse btn-pe-primary" id="btn-analyse" onclick="analyse()" disabled>Analyse My Skill Gap →</button>
     </div>
-    <div class="skill-bulk-row" id="skill-bulk-row" hidden>
-      <button type="button" class="btn-skill-bulk" id="btn-skills-all">Select all listed</button>
-      <button type="button" class="btn-skill-bulk" id="btn-skills-none">Clear all</button>
-    </div>
-    <div id="existing-skills-grid" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;"></div>
-    <button class="btn-analyse" id="btn-analyse" onclick="analyse()" disabled>Analyse My Skill Gap →</button>
-  </div>
+  </section>
   <div class="brand-footer">
     <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
     <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
@@ -284,11 +289,14 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
       <div><div class="topbar-name">Pehchaan Careers</div><div class="topbar-tag">Your identity. Your path.</div></div>
     </a>
   </div>
-  <div style="background:var(--teal-dark);border-radius:22px;padding:24px;margin-bottom:14px;color:#fff;position:relative;overflow:hidden;">
-    <div style="position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:rgba(239,159,39,.1);border-radius:50%;"></div>
-    <div style="font-size:12px;opacity:.7;margin-bottom:4px;">Your skills snapshot</div>
-    <div style="font-size:20px;font-weight:700;color:var(--amber);margin-bottom:4px;" id="res-job-title"></div>
-    <div style="font-size:12px;opacity:.85;" id="res-summary"></div>
+  <div class="tool-result-card" style="margin-bottom:14px;color:#fff;">
+    <div class="tool-result-accent" aria-hidden="true"></div>
+    <div style="background:var(--teal-dark);padding:22px 20px 24px;border-radius:0 0 20px 20px;position:relative;overflow:hidden;">
+      <div style="position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:rgba(239,159,39,.1);border-radius:50%;pointer-events:none;"></div>
+      <div style="font-size:12px;opacity:.7;margin-bottom:4px;position:relative;">Your skills snapshot</div>
+      <div class="tool-result-title" style="font-size:20px;color:var(--amber);margin-bottom:6px;position:relative;" id="res-job-title"></div>
+      <div class="tool-meta-line" style="font-size:12px;opacity:.9;color:rgba(255,255,255,.92);" id="res-summary"></div>
+    </div>
   </div>
 
   <!-- SUMMARY STATS -->
@@ -329,10 +337,10 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
 
   <button class="btn-reset" onclick="resetTool()">← Analyse a Different Job</button>
 
-  <div class="card">
+  <div class="card pc-card-plain">
     <div class="card-title">Still have questions?</div>
     <p style="font-size:12px;color:var(--gray-text);line-height:1.75;margin-bottom:12px;">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p>
-    <a class="btn-reset" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;margin-bottom:0;">Still have questions? Reach out to us</a>
+    <a class="btn-pe-primary" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;margin-bottom:0;">Still have questions? Reach out to us</a>
   </div>
 
   <div class="disclaimer-box">
@@ -924,7 +932,7 @@ function analyse(){
 
 function resetTool(){
   selJob = null; selQual = ''; checkedSkills.clear();
-  document.querySelectorAll('.job-btn').forEach(function(b){ b.classList.remove('active'); });
+  document.querySelectorAll('.category-chip').forEach(function(b){ b.classList.remove('active'); });
   document.getElementById('sel-qual').value = '';
   document.getElementById('card-profile').classList.add('hidden');
   document.getElementById('skill-bulk-row').hidden = true;

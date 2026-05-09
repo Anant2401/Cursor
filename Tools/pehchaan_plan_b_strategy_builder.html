@@ -102,9 +102,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 .avg-sal{font-size:13px;font-weight:700;color:var(--teal-dark);margin-top:6px;}
 .remote-badge{display:inline-flex;align-items:center;gap:4px;background:#E8F5E9;color:#2E7D32;font-size:10px;font-weight:700;padding:2px 9px;border-radius:20px;margin-left:6px;}
 
-.btn-show{width:100%;background:var(--amber);color:var(--teal-dark);border:none;border-radius:var(--radius);padding:15px;font-size:15px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;transition:transform .15s,box-shadow .15s;}
-.btn-show:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(239,159,39,.4);}
-.btn-show:disabled{opacity:.4;cursor:not-allowed;transform:none;}
+.btn-show.btn-pe-primary{width:100%;}
 .btn-reset{width:100%;border:1.5px solid var(--teal);background:#fff;border-radius:var(--radius);padding:13px;font-size:13px;font-weight:700;cursor:pointer;color:var(--teal-dark);font-family:'Poppins',sans-serif;margin-bottom:14px;}
 
 .brand-footer{text-align:center;margin-top:28px;padding-top:20px;border-top:1px solid var(--teal-light);}
@@ -128,8 +126,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 .name-field{display:flex;flex-direction:column;gap:6px;min-width:0;}
 .name-field-label{font-size:11px;font-weight:600;opacity:.88;letter-spacing:.02em;}
 .name-field-label .name-optional{font-weight:500;opacity:.72;}
-.btn-begin{width:100%;background:var(--amber);color:var(--teal-dark);border:none;border-radius:var(--radius);padding:16px;font-size:15px;font-weight:700;cursor:pointer;font-family:'Poppins',sans-serif;transition:transform .15s,box-shadow .15s;}
-.btn-begin:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(239,159,39,.4);}
+#btn-begin-planb.btn-pe-primary{width:100%;margin-top:8px;}
 .btn-copy-step{width:100%;margin-top:10px;border:1.5px dashed var(--border);background:var(--card-bg);border-radius:10px;padding:10px 12px;font-size:12px;font-weight:600;cursor:pointer;color:var(--teal-dark);font-family:'Poppins',sans-serif;}
 .btn-copy-step:hover{background:var(--teal-light);}
 .student-note{font-size:12px;line-height:1.75;color:var(--teal-dark);background:linear-gradient(135deg,#e8faf3,#f0fdf8);border:1px solid rgba(29,158,117,.35);border-radius:12px;padding:12px 14px;margin-bottom:14px;font-weight:500;}
@@ -184,7 +181,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
         <li>Everything here is for <strong>awareness and planning</strong>, not a promise of admission or a job. Cross-check every claim on official sites before you pay or sign.</li>
       </ul>
     </div>
-    <button type="button" class="btn-begin" id="btn-begin-planb">Continue →</button>
+    <button type="button" class="btn-begin btn-pe-primary" id="btn-begin-planb">Continue →</button>
   </div>
   <div class="disclaimer">
     <h4>Important — please read</h4>
@@ -214,11 +211,14 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
     <h1 id="pivot-headline" style="font-size:20px;">Choose your Plan B lens</h1>
     <p id="pivot-sub" style="font-size:13px;opacity:.9;line-height:1.7;margin-top:8px;"></p>
   </div>
-  <div class="card">
-    <div class="card-title"><span class="sti-ico" aria-hidden="true">✨</span> Start here</div>
-    <p style="font-size:12px;color:var(--gray);margin-bottom:14px;">Pick one. You can come back and explore another path anytime.</p>
-    <div class="exam-grid" id="pivot-options-grid"></div>
-  </div>
+  <section class="card filter-card">
+    <div class="filter-card-inner">
+      <div class="filter-card-eyebrow">Plan B Strategy Builder</div>
+      <h2 class="filter-card-title"><span class="sti-ico" aria-hidden="true">✨</span> Start here</h2>
+      <p class="filter-flow-note" style="margin-bottom:14px;">Pick one lens. You can come back and explore another path anytime.</p>
+      <div class="exam-grid" id="pivot-options-grid"></div>
+    </div>
+  </section>
   <div class="disclaimer">
     <h4>Important — please read</h4>
     <p>College and course sections are for general planning awareness only. Not admission advice. Cutoffs, fees, domicile rules, and bonds change every year — verify only on official counselling and institute websites.</p>
@@ -254,14 +254,17 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
     <p>In Tier 2 and Tier 3 cities, many students spend years preparing while earning little on the side. The ones who also pick up paid skills along the way often channel the same reading, discipline, and practice into work the market pays for — not because they are “smarter,” but because they noticed those habits have real value. This tool walks you through how to do the same.</p>
   </div>
 
-  <div class="card">
-    <div class="card-title">Which exam are you preparing for?</div>
-    <p style="font-size:12px;color:var(--gray);margin-bottom:14px;">Select your primary exam. We will show you which professional skills you are already building — and concrete jobs you can explore in parallel. Use <strong>←</strong> above to switch to colleges or courses.</p>
-    <div class="exam-grid" id="exam-grid"></div>
-    <div style="margin-top:14px;">
-      <button class="btn-show" id="btn-show" onclick="showPlanB()" disabled>Show My Plan B Strategy →</button>
+  <section class="card filter-card">
+    <div class="filter-card-inner">
+      <div class="filter-card-eyebrow">Plan B — Jobs &amp; income</div>
+      <h2 class="filter-card-title">Which exam are you preparing for?</h2>
+      <p class="filter-flow-note" style="margin-bottom:14px;">Select your primary exam. We map prep habits to paid-parallel skills. Use <strong>←</strong> above to switch to colleges or courses.</p>
+      <div class="exam-grid" id="exam-grid"></div>
     </div>
-  </div>
+    <div class="filter-actions">
+      <button class="btn-show btn-pe-primary" id="btn-show" onclick="showPlanB()" disabled>Show My Plan B Strategy →</button>
+    </div>
+  </section>
   <div class="disclaimer">
     <h4>Important — please read</h4>
     <p>This page is for general career awareness and education only. It is not recruitment advice, a job placement service, or a guarantee of employment, interviews, or salary. Job titles and pay bands are illustrative and vary by employer, city, and year. Verify every opportunity and contract directly with the hiring organisation. Pehchaan Careers is not liable for decisions or outcomes based on this tool.</p>
@@ -295,33 +298,57 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
     <div class="pb-title" id="college-picker-power-title">Why Plan B Is Actually Plan A for Smart Students</div>
     <p id="college-picker-power-body">If you are aiming for IIT, IIM, AIIMS, NLU, or other national peaks, a clear Plan B list does not weaken your resolve — it reduces panic. You study calmer when you know which strong national and state-level options you will verify if rank or score lands differently than you hoped.</p>
   </div>
-  <div class="card">
-    <div class="card-title"><span class="sti-ico" aria-hidden="true">📚</span> 1. Stream (what you are preparing for)</div>
-    <p style="font-size:12px;color:var(--gray);margin-bottom:12px;">Pick the broad stream that matches your entrance prep. We then show national counselling-style ladders or state-comfort examples you can research.</p>
-    <div class="exam-grid" id="college-stream-grid"></div>
-  </div>
-  <div class="card hidden" id="college-lens-wrap">
-    <div class="card-title"><span class="sti-ico" aria-hidden="true">🧭</span> 2. Geography lens</div>
-    <p style="font-size:12px;color:var(--gray);margin-bottom:12px;">National = all-India counselling style paths (JoSAA / MCC / national portals — verify names each year). State-comfort = research anchors in one home state; <strong>domicile rules always apply</strong>.</p>
-    <div class="exam-grid" id="college-lens-grid"></div>
-  </div>
-  <div class="card hidden" id="college-course-card">
-    <div class="card-title"><span class="sti-ico" aria-hidden="true">🎯</span> 3. Course (specific target)</div>
-    <label class="field-label-block" for="college-course-select">Choose your target course</label>
-    <select id="college-course-select" class="form-select" aria-label="Course for college Plan B">
-      <option value="">Select course…</option>
-    </select>
-  </div>
-  <div class="card hidden" id="college-state-card">
-    <div class="card-title"><span class="sti-ico" aria-hidden="true">📍</span> 4. State (state-comfort)</div>
-    <label class="field-label-block" for="college-state-select">Choose your state / UT</label>
-    <select id="college-state-select" class="form-select" aria-label="State for state-comfort college Plan B">
-      <option value="">Select state…</option>
-    </select>
-  </div>
-  <div class="card">
-    <button type="button" class="btn-show" id="btn-college-show" onclick="showCollegePlanB()" disabled>Show college Plan B →</button>
-  </div>
+  <section class="card filter-card">
+    <div class="filter-card-inner">
+      <div class="filter-card-eyebrow">Plan B — Colleges</div>
+      <h2 class="filter-card-title"><span class="sti-ico" aria-hidden="true">📚</span> 1. Stream</h2>
+      <p class="filter-flow-note" style="margin-bottom:12px;">Pick the broad stream that matches your entrance prep. We then show national counselling-style ladders or state-comfort examples to research.</p>
+      <div class="exam-grid" id="college-stream-grid"></div>
+    </div>
+  </section>
+  <section class="card filter-card hidden" id="college-lens-wrap">
+    <div class="filter-card-inner">
+      <div class="filter-card-eyebrow">Plan B — Colleges</div>
+      <h2 class="filter-card-title"><span class="sti-ico" aria-hidden="true">🧭</span> 2. Geography lens</h2>
+      <p class="filter-flow-note" style="margin-bottom:12px;">National = all-India counselling-style paths (verify portals each year). State-comfort = home-state anchors — <strong>domicile rules always apply</strong>.</p>
+      <div class="exam-grid" id="college-lens-grid"></div>
+    </div>
+  </section>
+  <section class="card filter-card hidden" id="college-course-card">
+    <div class="filter-card-inner">
+      <div class="filter-card-eyebrow">Plan B — Colleges</div>
+      <h2 class="filter-card-title"><span class="sti-ico" aria-hidden="true">🎯</span> 3. Course</h2>
+      <div class="field-group">
+        <label class="field-label" for="college-course-select">
+          <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          <span>Target course</span>
+        </label>
+        <select id="college-course-select" class="select form-select" aria-label="Course for college Plan B">
+          <option value="">Select course…</option>
+        </select>
+      </div>
+    </div>
+  </section>
+  <section class="card filter-card hidden" id="college-state-card">
+    <div class="filter-card-inner">
+      <div class="filter-card-eyebrow">Plan B — Colleges</div>
+      <h2 class="filter-card-title"><span class="sti-ico" aria-hidden="true">📍</span> 4. State / UT</h2>
+      <div class="field-group">
+        <label class="field-label" for="college-state-select">
+          <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.5 7-10a7 7 0 1 0-14 0c0 5.5 7 10 7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+          <span>State or UT</span>
+        </label>
+        <select id="college-state-select" class="select form-select" aria-label="State for state-comfort college Plan B">
+          <option value="">Select state…</option>
+        </select>
+      </div>
+    </div>
+  </section>
+  <section class="card filter-card">
+    <div class="filter-actions" style="padding-top:22px;">
+      <button type="button" class="btn-show btn-pe-primary" id="btn-college-show" onclick="showCollegePlanB()" disabled>Show college Plan B →</button>
+    </div>
+  </section>
   <div class="disclaimer"><h4>Important — please read</h4><p>Not admission counselling. Verify cutoffs and fees on official portals.</p></div>
   <div class="brand-footer"><div class="brand-tagline">Aapki pehchaan, aapki raah.</div><p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
     <p class="brand-consultation" style="font-size:11px;color:#64748B;line-height:1.75;margin-top:12px;max-width:42rem;margin-left:auto;margin-right:auto;">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p></div>
@@ -353,7 +380,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
   </div>
   <div id="college-res-tiers"></div>
   <button class="btn-reset" type="button" onclick="backToCollegePicker()">← Change stream / state</button>
-  <div class="card"><p style="font-size:12px;color:var(--gray);line-height:1.75;margin-bottom:10px;">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p><a class="btn-reset" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;">Still have questions? Reach out to us</a></div>
+  <div class="card pc-card-plain"><p style="font-size:12px;color:var(--gray);line-height:1.75;margin-bottom:10px;">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p><a class="btn-pe-primary" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;">Still have questions? Reach out to us</a></div>
   <div class="disclaimer"><h4>Important — please read</h4><p>Not admission counselling. Cutoffs, fees, domicile, and bonds change every year — verify only on official counselling and institute websites.</p></div>
   <div class="brand-footer"><div class="brand-tagline">Aapki pehchaan, aapki raah.</div><p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
     <p class="brand-consultation" style="font-size:11px;color:#64748B;line-height:1.75;margin-top:12px;max-width:42rem;margin-left:auto;margin-right:auto;">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p></div>
@@ -379,10 +406,14 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
     <div class="pb-title" id="course-picker-power-title">Why Plan B Is Actually Plan A for Smart Students</div>
     <p id="course-picker-power-body">Dream degrees are not the only route to a respected career. Students who map <strong>horizontal course ladders</strong> early often finish faster, spend smarter, and still reach similar job families — with less all-or-nothing stress.</p>
   </div>
-  <div class="card">
-    <div class="card-title"><span class="sti-ico" aria-hidden="true">📋</span> Choose your situation</div>
-    <div class="exam-grid" id="course-anchor-grid"></div>
-  </div>
+  <section class="card filter-card">
+    <div class="filter-card-inner">
+      <div class="filter-card-eyebrow">Plan B — Courses</div>
+      <h2 class="filter-card-title"><span class="sti-ico" aria-hidden="true">📋</span> Choose your situation</h2>
+      <p class="filter-flow-note" style="margin-bottom:12px;">Pick the ladder that closest matches where you stand today.</p>
+      <div class="exam-grid" id="course-anchor-grid"></div>
+    </div>
+  </section>
   <div class="disclaimer"><h4>Important — please read</h4><p>Course paths are for planning awareness only. Verify accreditation, fees, and outcomes on official university and regulator websites.</p></div>
   <div class="brand-footer"><div class="brand-tagline">Aapki pehchaan, aapki raah.</div><p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
     <p class="brand-consultation" style="font-size:11px;color:#64748B;line-height:1.75;margin-top:12px;max-width:42rem;margin-left:auto;margin-right:auto;">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p></div>
@@ -413,7 +444,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
   </div>
   <div id="course-res-alternatives"></div>
   <button class="btn-reset" type="button" onclick="backToCoursePicker()">← Choose another situation</button>
-  <div class="card"><p style="font-size:12px;color:var(--gray);line-height:1.75;margin-bottom:10px;">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p><a class="btn-reset" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;">Still have questions? Reach out to us</a></div>
+  <div class="card pc-card-plain"><p style="font-size:12px;color:var(--gray);line-height:1.75;margin-bottom:10px;">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p><a class="btn-pe-primary" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;">Still have questions? Reach out to us</a></div>
   <div class="disclaimer"><h4>Important — please read</h4><p>Course paths are for planning awareness only. Verify accreditation, fees, and outcomes on official university and regulator websites.</p></div>
   <div class="brand-footer"><div class="brand-tagline">Aapki pehchaan, aapki raah.</div><p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
     <p class="brand-consultation" style="font-size:11px;color:#64748B;line-height:1.75;margin-top:12px;max-width:42rem;margin-left:auto;margin-right:auto;">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p></div>
@@ -463,7 +494,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
     <p style="font-size:13px;color:var(--teal-dark);line-height:1.8;font-weight:500;">Remember: The goal is not to replace your exam dream with Plan B. The goal is to make sure that while you are working toward your dream, you are also building income, skills, and a professional identity that makes you stronger — not just a better exam taker, but a more complete human being ready for any outcome.</p>
   </div>
 
-  <div class="card"><div class="card-title"><span class="sti-ico" aria-hidden="true">📩</span> Still have questions?</div><p style="font-size:12px;color:var(--gray);line-height:1.75;margin-bottom:10px;">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p><a class="btn-reset" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;">Still have questions? Reach out to us</a></div>
+  <div class="card pc-card-plain"><div class="card-title"><span class="sti-ico" aria-hidden="true">📩</span> Still have questions?</div><p style="font-size:12px;color:var(--gray);line-height:1.75;margin-bottom:10px;">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p><a class="btn-pe-primary" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;">Still have questions? Reach out to us</a></div>
 
   <div class="disclaimer">
     <h4>Important — please read</h4>

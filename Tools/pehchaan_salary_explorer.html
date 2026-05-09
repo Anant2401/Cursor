@@ -94,10 +94,8 @@
   .hero-stat .v { font-size: 24px; font-weight: 700; color: var(--amber); }
   .hero-stat .l { font-size: 11px; opacity: .75; margin-top: 2px; }
 
-  .filter-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; padding: 18px 20px; margin-bottom: 16px; box-shadow: var(--shadow); min-width: 0; max-width: 100%; }
-  .filter-card h3 { font-size: 11px; font-weight: 700; color: var(--teal-dark); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px; }
-  .search-wrap { position: relative; margin-bottom: 14px; }
-  .search-input { width: 100%; padding: 12px 16px 12px 42px; border: 1.5px solid var(--border); border-radius: 12px; font-family: 'Poppins', sans-serif; font-size: 13px; color: var(--text); outline: none; transition: border-color .2s, box-shadow .2s; background: var(--card-bg); }
+  .card.filter-card .search-wrap { position: relative; margin-bottom: 6px; }
+  .search-input { width: 100%; padding: 12px 16px 12px 42px; border: 1.5px solid var(--border); border-radius: 14px; font-family: 'Poppins', sans-serif; font-size: 13px; color: var(--text); outline: none; transition: border-color .2s, box-shadow .2s; background: #fff; box-shadow: 0 1px 2px rgba(8,80,65,.04); }
   .search-input:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(29,158,117,.12); background: var(--white); }
   .search-input::placeholder { color: #b0c4bb; }
   .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: 16px; pointer-events: none; }
@@ -105,42 +103,12 @@
   .filter-btn { border: 1.5px solid var(--border); background: var(--white); border-radius: 20px; padding: 7px 14px; font-size: 12px; font-weight: 600; color: var(--gray-text); cursor: pointer; font-family: 'Poppins', sans-serif; transition: all .15s; white-space: nowrap; }
   .filter-btn:hover { border-color: var(--teal); color: var(--teal-dark); background: var(--teal-light); }
   .filter-btn.active { background: var(--teal-dark); color: var(--amber); border-color: var(--teal-dark); }
-  /* Stack label + select on narrow screens — native <select> has a large min-content width */
-  .sort-row {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
-    margin-top: 12px;
-    width: 100%;
-    min-width: 0;
-  }
-  .sort-label { font-size: 11px; font-weight: 700; color: var(--teal-dark); text-transform: uppercase; letter-spacing: .06em; flex-shrink: 0; }
   .sort-select {
     width: 100%;
     max-width: 100%;
     min-width: 0;
-    border: 1.5px solid var(--border);
-    border-radius: 11px;
-    padding: 9px 12px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    color: var(--text);
-    background: var(--card-bg);
-    outline: none;
   }
-  .sort-select:focus { border-color: var(--teal); box-shadow: 0 0 0 3px rgba(29,158,117,.12); background: var(--white); }
   @media (min-width: 481px) {
-    .sort-row {
-      flex-direction: row;
-      align-items: center;
-      gap: 10px;
-    }
-    .sort-select {
-      flex: 1 1 0;
-      width: auto;
-      min-width: 0;
-    }
     .career-head {
       align-items: center;
       flex-wrap: nowrap;
@@ -157,9 +125,23 @@
 
   .career-grid { display: flex; flex-direction: column; gap: 12px; }
 
-  .career-card { background: var(--white); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; cursor: pointer; transition: border-color .2s, box-shadow .2s; box-shadow: var(--shadow); }
-  .career-card:hover { border-color: var(--teal); box-shadow: 0 4px 12px rgba(8,80,65,0.12); }
-  .career-card.open { border-color: var(--teal); }
+  .career-card {
+    background: var(--white);
+    border: none;
+    border-radius: 22px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow .2s;
+    box-shadow: var(--shadow-lg, 0 10px 36px rgba(8,80,65,.1), 0 2px 12px rgba(8,80,65,.06));
+  }
+  .career-card::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: linear-gradient(90deg, var(--teal-dark) 0%, var(--teal) 48%, var(--amber) 100%);
+  }
+  .career-card:hover { box-shadow: 0 12px 36px rgba(8,80,65,.14), 0 4px 14px rgba(8,80,65,.08); }
+  .career-card.open { box-shadow: 0 0 0 2px var(--teal), 0 12px 28px rgba(8,80,65,.12); }
 
   .career-head { display: flex; align-items: flex-start; gap: 14px; padding: 18px 20px 10px; min-width: 0; flex-wrap: wrap; }
   .career-emoji { font-size: 24px; width: 48px; height: 48px; border-radius: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -228,7 +210,6 @@
 
   @media (max-width: 480px) {
     .hero-card h1 { font-size: 22px; }
-    .filter-card { padding: 16px 14px; }
     .salary-grid { grid-template-columns: repeat(3,1fr); }
     .sal-box .sal-amt { font-size: 13px; }
     .filter-btn { padding: 6px 10px; font-size: 11px; }
@@ -274,47 +255,73 @@
     </div>
   </div>
 
-  <div class="filter-card">
-    <h3>Search and filter</h3>
-    <div class="search-wrap">
-      <span class="search-icon">🔍</span>
-      <input type="text" class="search-input" id="search-input" placeholder="Search any career — e.g. Doctor, CA, Engineer..." oninput="applyFilters()">
+  <section class="card filter-card" aria-label="Search and filter careers">
+    <div class="filter-card-inner">
+      <div class="filter-card-eyebrow">Career &amp; Salary Explorer</div>
+      <h2 class="filter-card-title">Search and filter</h2>
+      <p class="filter-flow-note" style="margin-bottom:14px;">Type a role, pick a category chip, then sort or narrow by metro. Bands are indicative — always verify with employers and market data.</p>
+      <div class="field-group">
+        <label class="field-label" for="search-input">
+          <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <span>Search careers</span>
+        </label>
+        <div class="search-wrap">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input type="text" class="search-input" id="search-input" placeholder="e.g. Doctor, CA, Engineer…" oninput="applyFilters()" autocomplete="off">
+        </div>
+        <p class="field-hint">Matches title and tags in the database.</p>
+      </div>
+      <div class="field-group field-span-full" style="margin-top:4px;">
+        <span class="field-label" style="margin-bottom:8px;">
+          <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h16"/></svg>
+          <span>Category</span>
+        </span>
+        <div class="filter-row" id="filter-buttons">
+          <span style="font-size:12px;color:var(--gray-text);padding:6px 0;display:block;width:100%;">Loading categories…</span>
+        </div>
+      </div>
+      <div class="form-grid-filter" style="margin-top:10px;margin-bottom:0;">
+        <div class="field-group">
+          <label class="field-label" for="sort-select">
+            <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M8 12h8M10 18h4"/></svg>
+            <span>Sort by</span>
+          </label>
+          <select id="sort-select" class="select sort-select" onchange="applyFilters()">
+            <option value="default">Default order</option>
+            <option value="salary-asc">Starting salary: low to high</option>
+            <option value="salary-desc">Starting salary: high to low</option>
+            <option value="ease-desc">Entry ease: very accessible to very tough</option>
+            <option value="ease-asc">Entry ease: very tough to very accessible</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label class="field-label" for="metro-select">
+            <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.5 7-10a7 7 0 1 0-14 0c0 5.5 7 10 7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+            <span>Metro focus</span>
+          </label>
+          <select id="metro-select" class="select sort-select" onchange="applyFilters()">
+            <option value="">All India (no metro filter)</option>
+            <option value="delhi_ncr">Delhi NCR</option>
+            <option value="chennai">Chennai</option>
+            <option value="bengaluru">Bengaluru</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="pune">Pune</option>
+            <option value="mumbai">Mumbai</option>
+          </select>
+          <p class="field-hint">Optional — adjusts illustrative bands where metro data exists.</p>
+        </div>
+      </div>
+      <div class="results-count" id="results-count" style="margin-top:14px;">Loading…</div>
     </div>
-    <div class="filter-row" id="filter-buttons">
-      <span style="font-size:12px;color:var(--gray-text);padding:6px 0;display:block;width:100%;">Loading categories…</span>
-    </div>
-    <div class="sort-row">
-      <label class="sort-label" for="sort-select">Sort by</label>
-      <select id="sort-select" class="sort-select" onchange="applyFilters()">
-        <option value="default">Default order</option>
-        <option value="salary-asc">Starting salary: low to high</option>
-        <option value="salary-desc">Starting salary: high to low</option>
-        <option value="ease-desc">Entry ease: very accessible to very tough</option>
-        <option value="ease-asc">Entry ease: very tough to very accessible</option>
-      </select>
-    </div>
-    <div class="sort-row">
-      <label class="sort-label" for="metro-select">Metro focus</label>
-      <select id="metro-select" class="sort-select" onchange="applyFilters()">
-        <option value="">All India (no metro filter)</option>
-        <option value="delhi_ncr">Delhi NCR</option>
-        <option value="chennai">Chennai</option>
-        <option value="bengaluru">Bengaluru</option>
-        <option value="hyderabad">Hyderabad</option>
-        <option value="pune">Pune</option>
-        <option value="mumbai">Mumbai</option>
-      </select>
-    </div>
-    <div class="results-count" id="results-count">Loading…</div>
-  </div>
+  </section>
 
   <div class="career-grid" id="career-grid"><div class="no-results"><p>Loading career database…</p></div></div>
 
-  <div class="filter-card" style="margin-top:14px;">
-    <h3>Still have questions?</h3>
+  <section class="card pc-card-plain" style="margin-top:14px;">
+    <div class="card-title">Still have questions?</div>
     <p style="font-size:12px;color:var(--gray-text);line-height:1.75;margin-bottom:10px;">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p>
-    <a href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;background:var(--amber);color:var(--teal-dark);border-radius:12px;padding:12px 14px;font-size:13px;font-weight:700;">Still have questions? Reach out to us</a>
-  </div>
+    <a class="btn-pe-primary" href="../index.html#contact" style="margin-top:4px;">Still have questions? Reach out to us</a>
+  </section>
 
   <div class="disclaimer-box">
     <h4>Important — please read</h4>
