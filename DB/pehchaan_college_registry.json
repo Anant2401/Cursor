@@ -10,8 +10,8 @@
       "https://mcc.nic.in/"
     ],
     "pipeline_stats": {
-      "total_colleges": 317,
-      "total_programs": 441,
+      "total_colleges": 325,
+      "total_programs": 449,
       "stale_record_count": 0,
       "last_pipeline_run": "2026-05-09"
     }
@@ -7288,12 +7288,12 @@
     },
     {
       "id": "faculty_of_dental_sciences_kgmu_lucknow",
-      "name": "Faculty of Dental Sciences, KGMU, Lucknow",
+      "name": "Faculty of Dental Sciences KGMU Lucknow",
       "state_id": "UP",
       "city": "Lucknow",
-      "type": "State / university dental institute",
-      "ownership": "",
-      "confidence_level": "medium",
+      "type": "Government dental college",
+      "ownership": "Public",
+      "confidence_level": "high",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.kgmu.org/",
@@ -7309,19 +7309,20 @@
         "specialization": "Dental pathway linked with KGMU's wider clinical infrastructure.",
         "unique_point": "Dental training benefits from KGMU's established medical ecosystem.",
         "why_choose": "Useful for candidates prioritizing public setup and established clinical environment.",
-        "notes": "Cross-check fees, bond, and clinical posting mapping."
+        "notes": "Dental counselling pathway should be validated from current state and all-India notices."
       },
       "verification": {
         "nirf_band": "",
-        "last_verified_on": "2026-05-07",
+        "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.kgmu.org/",
-          "https://www.updgme.in/"
+          "https://www.updgme.in/",
+          "https://dciindia.gov.in/"
         ]
       },
       "cost_band": {
         "living_city_band": "medium",
-        "hostel_context": "mixed",
+        "hostel_context": "limited",
         "monthly_budget_min": 15000,
         "monthly_budget_max": 25000,
         "method": "heuristic",
@@ -7337,9 +7338,10 @@
         "regulators_verified": [],
         "verification_urls": [
           "https://www.kgmu.org/",
-          "https://www.updgme.in/"
+          "https://www.updgme.in/",
+          "https://dciindia.gov.in/"
         ],
-        "confidence": "low",
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
@@ -18169,8 +18171,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.bapujidental.edu/",
-          "https://dciindia.gov.in/",
-          "https://www.bapujidental.edu/"
+          "https://dciindia.gov.in/"
         ]
       },
       "cost_band": {
@@ -18228,8 +18229,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://manipal.edu/msap.html",
-          "https://www.coa.gov.in/",
-          "https://manipal.edu/msap.html"
+          "https://www.coa.gov.in/"
         ]
       },
       "cost_band": {
@@ -18287,8 +18287,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.gbpuat.ac.in/",
-          "https://icar.org.in/",
-          "https://www.gbpuat.ac.in/"
+          "https://icar.org.in/"
         ]
       },
       "cost_band": {
@@ -18323,7 +18322,7 @@
       "city": "Varanasi",
       "type": "Central university faculty",
       "ownership": "Public",
-      "confidence_level": "medium",
+      "confidence_level": "high",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.bhu.ac.in/",
@@ -18339,15 +18338,14 @@
         "specialization": "",
         "unique_point": "",
         "why_choose": "",
-        "notes": "AYUSH intake pathway should be verified against NCISM and university counselling notices."
+        "notes": "AYUSH programs should be verified through university bulletins and NCISM updates."
       },
       "verification": {
         "nirf_band": "",
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.bhu.ac.in/",
-          "https://ncismindia.org/",
-          "https://www.bhu.ac.in/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -18405,8 +18403,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://sdmayurvedacollegeudupi.in/",
-          "https://ncismindia.org/",
-          "https://sdmayurvedacollegeudupi.in/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -18464,8 +18461,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.luvas.edu.in/",
-          "https://icar.org.in/",
-          "https://www.luvas.edu.in/"
+          "https://icar.org.in/"
         ]
       },
       "cost_band": {
@@ -18523,8 +18519,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://spav.ac.in/",
-          "https://www.coa.gov.in/",
-          "https://spav.ac.in/"
+          "https://www.coa.gov.in/"
         ]
       },
       "cost_band": {
@@ -18582,8 +18577,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://maids.ac.in/",
-          "https://dciindia.gov.in/",
-          "https://maids.ac.in/"
+          "https://dciindia.gov.in/"
         ]
       },
       "cost_band": {
@@ -18641,8 +18635,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://tanuvas.ac.in/mvc.php",
-          "https://icar.org.in/",
-          "https://tanuvas.ac.in/mvc.php"
+          "https://icar.org.in/"
         ]
       },
       "cost_band": {
@@ -18700,8 +18693,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.karnataka.gov.in/",
-          "https://ncismindia.org/",
-          "https://www.karnataka.gov.in/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -18725,6 +18717,478 @@
           "https://ncismindia.org/"
         ],
         "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "bvp_dental_college_pune",
+      "name": "Bharati Vidyapeeth Dental College and Hospital Pune",
+      "state_id": "MH",
+      "city": "Pune",
+      "type": "Private dental college",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://dchpune.bharatividyapeeth.edu/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Dental admission route and regulator recognition should be validated from latest official notices."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://dchpune.bharatividyapeeth.edu/",
+          "https://dciindia.gov.in/",
+          "https://dchpune.bharatividyapeeth.edu/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "limited",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "DCI_or_equivalent"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://dchpune.bharatividyapeeth.edu/",
+          "https://dciindia.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "kvg_dental_college_sullia",
+      "name": "KVG Dental College and Hospital Sullia",
+      "state_id": "KA",
+      "city": "Sullia",
+      "type": "Private dental college",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.kvgdentalcollege.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "State counselling and DCI-linked program approvals should be verified each cycle."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.kvgdentalcollege.org/",
+          "https://dciindia.gov.in/",
+          "https://www.kvgdentalcollege.org/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "DCI_or_equivalent"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.kvgdentalcollege.org/",
+          "https://dciindia.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "ragas_dental_college_chennai",
+      "name": "Ragas Dental College and Hospital Chennai",
+      "state_id": "TN",
+      "city": "Chennai",
+      "type": "Private dental college",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.ragasdentalcollege.com/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Dental seat matrix and admission route should be verified against latest notifications."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.ragasdentalcollege.com/",
+          "https://dciindia.gov.in/",
+          "https://www.ragasdentalcollege.com/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "limited",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "DCI_or_equivalent"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.ragasdentalcollege.com/",
+          "https://dciindia.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "government_dental_college_jamnagar",
+      "name": "Government Dental College and Hospital Jamnagar",
+      "state_id": "GJ",
+      "city": "Jamnagar",
+      "type": "Government dental college",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.gdcjamnagar.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Dental intake should be validated through current state counselling and regulator data."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.gdcjamnagar.org/",
+          "https://dciindia.gov.in/",
+          "https://www.gdcjamnagar.org/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "DCI_or_equivalent"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.gdcjamnagar.org/",
+          "https://dciindia.gov.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "all_india_institute_ayurveda_delhi",
+      "name": "All India Institute of Ayurveda New Delhi",
+      "state_id": "DL",
+      "city": "New Delhi",
+      "type": "Institute of National Importance",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://aiia.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "AYUSH national institute admissions and regulator status should be verified from official bulletins."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://aiia.gov.in/",
+          "https://ncismindia.org/",
+          "https://aiia.gov.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "NCISM_or_NCH"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://aiia.gov.in/",
+          "https://ncismindia.org/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "national_institute_ayurveda_jaipur",
+      "name": "National Institute of Ayurveda Jaipur",
+      "state_id": "RJ",
+      "city": "Jaipur",
+      "type": "Deemed university",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://nia.nic.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "AYUSH counselling route and eligibility should be validated against current institute and regulator notices."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://nia.nic.in/",
+          "https://ncismindia.org/",
+          "https://nia.nic.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "deemed",
+        "regulators_required": [
+          "NCISM_or_NCH"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://nia.nic.in/",
+          "https://ncismindia.org/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "government_ayurvedic_college_guwahati",
+      "name": "Government Ayurvedic College Guwahati",
+      "state_id": "AS",
+      "city": "Guwahati",
+      "type": "Government AYUSH college",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.gacassam.com/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "AYUSH approval and counselling details should be validated through state and regulator notices."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.gacassam.com/",
+          "https://ncismindia.org/",
+          "https://www.gacassam.com/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "NCISM_or_NCH"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.gacassam.com/",
+          "https://ncismindia.org/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "fr_muller_homeopathic_mangaluru",
+      "name": "Father Muller Homeopathic Medical College Mangaluru",
+      "state_id": "KA",
+      "city": "Mangaluru",
+      "type": "Private AYUSH college",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.fmhomoeopathy.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "AYUSH course approvals and admission pathway should be verified from official institute and regulator pages."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.fmhomoeopathy.org/",
+          "https://ncismindia.org/",
+          "https://www.fmhomoeopathy.org/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "NCISM_or_NCH"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.fmhomoeopathy.org/",
+          "https://ncismindia.org/"
+        ],
+        "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
@@ -22472,10 +22936,10 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "medium",
-        "notes": "Imported from Plan B bundle tier: Government dental colleges (examples — verify yearly)"
+        "confidence_level": "high",
+        "notes": "Dental counselling pathway should be validated from current state and all-India notices."
       },
-      "last_verified_on": "2026-05-07",
+      "last_verified_on": "2026-05-09",
       "admission_route": {
         "primary": "state_counselling",
         "exam_ids": [
@@ -31872,8 +32336,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "medium",
-        "notes": "AYUSH intake pathway should be verified against NCISM and university counselling notices."
+        "confidence_level": "high",
+        "notes": "AYUSH programs should be verified through university bulletins and NCISM updates."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {
@@ -32060,6 +32524,245 @@
           "state_cet"
         ],
         "verification_url": "https://www.karnataka.gov.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "bvp_dental_college_pune_dentistry_dentistry_generic_state_comfort_intake",
+      "college_id": "bvp_dental_college_pune",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Dental admission route and regulator recognition should be validated from latest official notices."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "neetbds"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://dchpune.bharatividyapeeth.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "kvg_dental_college_sullia_dentistry_dentistry_generic_state_comfort_intake",
+      "college_id": "kvg_dental_college_sullia",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "State counselling and DCI-linked program approvals should be verified each cycle."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "neetbds"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.kvgdentalcollege.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "ragas_dental_college_chennai_dentistry_dentistry_generic_state_comfort_intake",
+      "college_id": "ragas_dental_college_chennai",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Dental seat matrix and admission route should be verified against latest notifications."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "neetbds"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.ragasdentalcollege.com/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "government_dental_college_jamnagar_dentistry_dentistry_generic_state_comfort_int",
+      "college_id": "government_dental_college_jamnagar",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Dental intake should be validated through current state counselling and regulator data."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "neetbds"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.gdcjamnagar.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "all_india_institute_ayurveda_delhi_ayush_ayush_generic_national_level_state_comf",
+      "college_id": "all_india_institute_ayurveda_delhi",
+      "stream_id": "ayush",
+      "course_id": "ayush_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "AYUSH national institute admissions and regulator status should be verified from official bulletins."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://aiia.gov.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake",
+      "college_id": "national_institute_ayurveda_jaipur",
+      "stream_id": "ayush",
+      "course_id": "ayush_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "AYUSH counselling route and eligibility should be validated against current institute and regulator notices."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://nia.nic.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake",
+      "college_id": "government_ayurvedic_college_guwahati",
+      "stream_id": "ayush",
+      "course_id": "ayush_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "AYUSH approval and counselling details should be validated through state and regulator notices."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.gacassam.com/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake",
+      "college_id": "fr_muller_homeopathic_mangaluru",
+      "stream_id": "ayush",
+      "course_id": "ayush_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "AYUSH course approvals and admission pathway should be verified from official institute and regulator pages."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.fmhomoeopathy.org/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

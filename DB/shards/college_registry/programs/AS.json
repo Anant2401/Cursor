@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "AS",
     "state_label": "Assam",
-    "count": 5,
+    "count": 6,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -148,6 +148,35 @@
         "exam_ids": [],
         "pathways": [],
         "verification_url": "https://www.nidj.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake",
+      "college_id": "government_ayurvedic_college_guwahati",
+      "stream_id": "ayush",
+      "course_id": "ayush_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "AYUSH approval and counselling details should be validated through state and regulator notices."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.gacassam.com/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

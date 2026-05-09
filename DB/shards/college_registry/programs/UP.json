@@ -464,10 +464,10 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "medium",
-        "notes": "Imported from Plan B bundle tier: Government dental colleges (examples — verify yearly)"
+        "confidence_level": "high",
+        "notes": "Dental counselling pathway should be validated from current state and all-India notices."
       },
-      "last_verified_on": "2026-05-07",
+      "last_verified_on": "2026-05-09",
       "admission_route": {
         "primary": "state_counselling",
         "exam_ids": [
@@ -1804,8 +1804,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "medium",
-        "notes": "AYUSH intake pathway should be verified against NCISM and university counselling notices."
+        "confidence_level": "high",
+        "notes": "AYUSH programs should be verified through university bulletins and NCISM updates."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {

@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "GJ",
     "state_label": "Gujarat",
-    "count": 7,
+    "count": 8,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -208,6 +208,37 @@
         "exam_ids": [],
         "pathways": [],
         "verification_url": "https://www.nift.ac.in/gandhinagar/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "government_dental_college_jamnagar_dentistry_dentistry_generic_state_comfort_int",
+      "college_id": "government_dental_college_jamnagar",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Dental intake should be validated through current state counselling and regulator data."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "neetbds"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.gdcjamnagar.org/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

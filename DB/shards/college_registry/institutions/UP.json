@@ -807,12 +807,12 @@
     },
     {
       "id": "faculty_of_dental_sciences_kgmu_lucknow",
-      "name": "Faculty of Dental Sciences, KGMU, Lucknow",
+      "name": "Faculty of Dental Sciences KGMU Lucknow",
       "state_id": "UP",
       "city": "Lucknow",
-      "type": "State / university dental institute",
-      "ownership": "",
-      "confidence_level": "medium",
+      "type": "Government dental college",
+      "ownership": "Public",
+      "confidence_level": "high",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.kgmu.org/",
@@ -828,19 +828,20 @@
         "specialization": "Dental pathway linked with KGMU's wider clinical infrastructure.",
         "unique_point": "Dental training benefits from KGMU's established medical ecosystem.",
         "why_choose": "Useful for candidates prioritizing public setup and established clinical environment.",
-        "notes": "Cross-check fees, bond, and clinical posting mapping."
+        "notes": "Dental counselling pathway should be validated from current state and all-India notices."
       },
       "verification": {
         "nirf_band": "",
-        "last_verified_on": "2026-05-07",
+        "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.kgmu.org/",
-          "https://www.updgme.in/"
+          "https://www.updgme.in/",
+          "https://dciindia.gov.in/"
         ]
       },
       "cost_band": {
         "living_city_band": "medium",
-        "hostel_context": "mixed",
+        "hostel_context": "limited",
         "monthly_budget_min": 15000,
         "monthly_budget_max": 25000,
         "method": "heuristic",
@@ -856,9 +857,10 @@
         "regulators_verified": [],
         "verification_urls": [
           "https://www.kgmu.org/",
-          "https://www.updgme.in/"
+          "https://www.updgme.in/",
+          "https://dciindia.gov.in/"
         ],
-        "confidence": "low",
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
@@ -2413,7 +2415,7 @@
       "city": "Varanasi",
       "type": "Central university faculty",
       "ownership": "Public",
-      "confidence_level": "medium",
+      "confidence_level": "high",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.bhu.ac.in/",
@@ -2429,15 +2431,14 @@
         "specialization": "",
         "unique_point": "",
         "why_choose": "",
-        "notes": "AYUSH intake pathway should be verified against NCISM and university counselling notices."
+        "notes": "AYUSH programs should be verified through university bulletins and NCISM updates."
       },
       "verification": {
         "nirf_band": "",
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.bhu.ac.in/",
-          "https://ncismindia.org/",
-          "https://www.bhu.ac.in/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {

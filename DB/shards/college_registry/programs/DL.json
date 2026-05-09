@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "DL",
     "state_label": "Delhi (NCT)",
-    "count": 39,
+    "count": 40,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -1187,6 +1187,34 @@
         "exam_ids": [],
         "pathways": [],
         "verification_url": "https://maids.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "all_india_institute_ayurveda_delhi_ayush_ayush_generic_national_level_state_comf",
+      "college_id": "all_india_institute_ayurveda_delhi",
+      "stream_id": "ayush",
+      "course_id": "ayush_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "AYUSH national institute admissions and regulator status should be verified from official bulletins."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://aiia.gov.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

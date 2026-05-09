@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "KA",
     "state_label": "Karnataka",
-    "count": 31,
+    "count": 33,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -928,6 +928,66 @@
           "state_cet"
         ],
         "verification_url": "https://www.karnataka.gov.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "kvg_dental_college_sullia_dentistry_dentistry_generic_state_comfort_intake",
+      "college_id": "kvg_dental_college_sullia",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "State counselling and DCI-linked program approvals should be verified each cycle."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "neetbds"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.kvgdentalcollege.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake",
+      "college_id": "fr_muller_homeopathic_mangaluru",
+      "stream_id": "ayush",
+      "course_id": "ayush_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "AYUSH course approvals and admission pathway should be verified from official institute and regulator pages."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.fmhomoeopathy.org/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

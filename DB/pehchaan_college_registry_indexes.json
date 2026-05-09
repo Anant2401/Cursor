@@ -80,7 +80,8 @@
       "fms_delhi",
       "lady_hardinge_medical_college_delhi",
       "jamia_hamdard_new_delhi",
-      "maulana_azad_institute_dental_sciences_delhi"
+      "maulana_azad_institute_dental_sciences_delhi",
+      "all_india_institute_ayurveda_delhi"
     ],
     "MH": [
       "iit_bombay",
@@ -118,7 +119,8 @@
       "mit_wpu_pune",
       "afmc_pune",
       "iiit_nagpur",
-      "muhs_nashik"
+      "muhs_nashik",
+      "bvp_dental_college_pune"
     ],
     "KA": [
       "iisc_bangalore_ug_programmes_where_applicable",
@@ -150,7 +152,9 @@
       "bapuji_dental_college_davangere",
       "manipal_college_of_architecture_manipal",
       "sdm_college_ayurveda_udupi",
-      "government_unani_medical_college_bengaluru"
+      "government_unani_medical_college_bengaluru",
+      "kvg_dental_college_sullia",
+      "fr_muller_homeopathic_mangaluru"
     ],
     "TN": [
       "iit_madras",
@@ -176,7 +180,8 @@
       "kalasalingam_srivilliputhur",
       "iiitdm_kancheepuram",
       "anna_university_chennai",
-      "madras_veterinary_college_chennai"
+      "madras_veterinary_college_chennai",
+      "ragas_dental_college_chennai"
     ],
     "TS": [
       "iit_hyderabad",
@@ -257,7 +262,8 @@
       "nift_jodhpur",
       "banasthali_vidyapith_tonk",
       "mcg_jodhpur",
-      "manipal_jaipur"
+      "manipal_jaipur",
+      "national_institute_ayurveda_jaipur"
     ],
     "WB": [
       "iit_kharagpur",
@@ -313,7 +319,8 @@
       "svnit_surat",
       "parul_university_vadodara",
       "nirma_university_ahmedabad",
-      "nift_gandhinagar"
+      "nift_gandhinagar",
+      "government_dental_college_jamnagar"
     ],
     "PB": [
       "lpu_phagwara",
@@ -345,7 +352,8 @@
       "gauhati_medical_college",
       "cotton_university_guwahati",
       "nlu_assam_guwahati",
-      "nid_assam_jorhat"
+      "nid_assam_jorhat",
+      "government_ayurvedic_college_guwahati"
     ],
     "HP": [
       "iit_mandi",
@@ -589,7 +597,11 @@
       "manipal_college_of_dental_sciences_manipal_dentistry_dentistry_generic_national_",
       "sgt_university_gurugram_dentistry_dentistry_generic_state_comfort_intake",
       "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake",
-      "maulana_azad_institute_dental_sciences_delhi_dentistry_dentistry_generic_nationa"
+      "maulana_azad_institute_dental_sciences_delhi_dentistry_dentistry_generic_nationa",
+      "bvp_dental_college_pune_dentistry_dentistry_generic_state_comfort_intake",
+      "kvg_dental_college_sullia_dentistry_dentistry_generic_state_comfort_intake",
+      "ragas_dental_college_chennai_dentistry_dentistry_generic_state_comfort_intake",
+      "government_dental_college_jamnagar_dentistry_dentistry_generic_state_comfort_int"
     ],
     "ayush": [
       "national_institute_of_ayurveda_jaipur_ilbs_example_health_science_adjacency_veri",
@@ -599,7 +611,11 @@
       "msu_baroda_ayush_ayush_generic_state_comfort_intake",
       "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
-      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int"
+      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
+      "all_india_institute_ayurveda_delhi_ayush_ayush_generic_national_level_state_comf",
+      "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake",
+      "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake",
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
     ],
     "pharmacy": [
       "niper_campuses_mpharm_heavy_verify_ug_if_offered_bits_pilani_pharmacy_manipal_co",
@@ -1062,7 +1078,11 @@
       "manipal_college_of_dental_sciences_manipal_dentistry_dentistry_generic_national_",
       "sgt_university_gurugram_dentistry_dentistry_generic_state_comfort_intake",
       "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake",
-      "maulana_azad_institute_dental_sciences_delhi_dentistry_dentistry_generic_nationa"
+      "maulana_azad_institute_dental_sciences_delhi_dentistry_dentistry_generic_nationa",
+      "bvp_dental_college_pune_dentistry_dentistry_generic_state_comfort_intake",
+      "kvg_dental_college_sullia_dentistry_dentistry_generic_state_comfort_intake",
+      "ragas_dental_college_chennai_dentistry_dentistry_generic_state_comfort_intake",
+      "government_dental_college_jamnagar_dentistry_dentistry_generic_state_comfort_int"
     ],
     "ayush_generic": [
       "national_institute_of_ayurveda_jaipur_ilbs_example_health_science_adjacency_veri",
@@ -1072,7 +1092,11 @@
       "msu_baroda_ayush_ayush_generic_state_comfort_intake",
       "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
-      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int"
+      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
+      "all_india_institute_ayurveda_delhi_ayush_ayush_generic_national_level_state_comf",
+      "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake",
+      "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake",
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
     ],
     "pharmacy_generic": [
       "niper_campuses_mpharm_heavy_verify_ug_if_offered_bits_pilani_pharmacy_manipal_co",
@@ -1546,7 +1570,8 @@
       "kgmu_lucknow_dentistry_dentistry_generic_state_comfort"
     ],
     "MH|dentistry|dentistry_generic": [
-      "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co"
+      "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co",
+      "bvp_dental_college_pune_dentistry_dentistry_generic_state_comfort_intake"
     ],
     "IN|ayush|ayush_generic": [
       "national_institute_of_ayurveda_jaipur_ilbs_example_health_science_adjacency_veri",
@@ -1995,7 +2020,8 @@
     ],
     "KA|dentistry|dentistry_generic": [
       "manipal_college_of_dental_sciences_manipal_dentistry_dentistry_generic_national_",
-      "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake"
+      "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake",
+      "kvg_dental_college_sullia_dentistry_dentistry_generic_state_comfort_intake"
     ],
     "GJ|ayush|ayush_generic": [
       "msu_baroda_ayush_ayush_generic_state_comfort_intake"
@@ -2113,7 +2139,8 @@
     ],
     "KA|ayush|ayush_generic": [
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
-      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int"
+      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
     ],
     "HR|veterinary|veterinary_generic": [
       "college_veterinary_science_hisar_veterinary_veterinary_generic_state_comfort_int"
@@ -2123,6 +2150,21 @@
     ],
     "DL|dentistry|dentistry_generic": [
       "maulana_azad_institute_dental_sciences_delhi_dentistry_dentistry_generic_nationa"
+    ],
+    "TN|dentistry|dentistry_generic": [
+      "ragas_dental_college_chennai_dentistry_dentistry_generic_state_comfort_intake"
+    ],
+    "GJ|dentistry|dentistry_generic": [
+      "government_dental_college_jamnagar_dentistry_dentistry_generic_state_comfort_int"
+    ],
+    "DL|ayush|ayush_generic": [
+      "all_india_institute_ayurveda_delhi_ayush_ayush_generic_national_level_state_comf"
+    ],
+    "RJ|ayush|ayush_generic": [
+      "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake"
+    ],
+    "AS|ayush|ayush_generic": [
+      "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake"
     ]
   },
   "by_neighbor_state_stream_course": {
@@ -2268,12 +2310,15 @@
       "nift_bhubaneswar_fashion_media_fashion_media_generic_state_comfort"
     ],
     "AP|dentistry|dentistry_generic": [
+      "ragas_dental_college_chennai_dentistry_dentistry_generic_state_comfort_intake",
       "manipal_college_of_dental_sciences_manipal_dentistry_dentistry_generic_national_",
-      "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake"
+      "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake",
+      "kvg_dental_college_sullia_dentistry_dentistry_generic_state_comfort_intake"
     ],
     "AP|ayush|ayush_generic": [
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
-      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int"
+      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
     ],
     "AR|education|education_generic": [
       "tezpur_university_assam_education_education_generic_state_comfort_intake"
@@ -2289,6 +2334,9 @@
     ],
     "AR|design|design_generic": [
       "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
+    ],
+    "AR|ayush|ayush_generic": [
+      "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake"
     ],
     "AS|law|law_generic": [
       "nlu_tripura_agartala_law_law_generic_national_level_state_comfort_intake",
@@ -2395,7 +2443,8 @@
     ],
     "BR|ayush|ayush_generic": [
       "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
-      "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake"
+      "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
+      "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake"
     ],
     "BR|pharmacy|pharmacy_generic": [
       "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma",
@@ -2662,6 +2711,7 @@
     ],
     "CG|dentistry|dentistry_generic": [
       "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co",
+      "bvp_dental_college_pune_dentistry_dentistry_generic_state_comfort_intake",
       "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor",
       "kgmu_lucknow_dentistry_dentistry_generic_state_comfort"
     ],
@@ -2718,13 +2768,16 @@
     ],
     "GA|dentistry|dentistry_generic": [
       "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co",
+      "bvp_dental_college_pune_dentistry_dentistry_generic_state_comfort_intake",
       "manipal_college_of_dental_sciences_manipal_dentistry_dentistry_generic_national_",
-      "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake"
+      "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake",
+      "kvg_dental_college_sullia_dentistry_dentistry_generic_state_comfort_intake"
     ],
     "GA|ayush|ayush_generic": [
       "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus",
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
-      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int"
+      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
     ],
     "GA|pharmacy|pharmacy_generic": [
       "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha"
@@ -2839,10 +2892,12 @@
     ],
     "GJ|dentistry|dentistry_generic": [
       "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co",
+      "bvp_dental_college_pune_dentistry_dentistry_generic_state_comfort_intake",
       "sms_medical_college_jaipur_dentistry_dentistry_generic_state_comfort"
     ],
     "GJ|ayush|ayush_generic": [
-      "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus"
+      "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus",
+      "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake"
     ],
     "GJ|pharmacy|pharmacy_generic": [
       "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha",
@@ -3066,8 +3121,10 @@
       "nift_delhi_design_design_generic_state_comfort"
     ],
     "HR|ayush|ayush_generic": [
+      "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake",
       "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
-      "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake"
+      "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
+      "all_india_institute_ayurveda_delhi_ayush_ayush_generic_national_level_state_comf"
     ],
     "HR|pharmacy|pharmacy_generic": [
       "bbdniit_school_of_pharmacy_integral_university_pharmacy_examples_pharmacy_pharma",
@@ -3434,15 +3491,17 @@
       "maharashtra_animal_and_fishery_sciences_university_mafsu_nagpur_veterinary_veter",
       "mafsu_nagpur_veterinary_veterinary_generic_state_comfort"
     ],
+    "KA|dentistry|dentistry_generic": [
+      "ragas_dental_college_chennai_dentistry_dentistry_generic_state_comfort_intake",
+      "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co",
+      "bvp_dental_college_pune_dentistry_dentistry_generic_state_comfort_intake"
+    ],
     "KA|pharmacy|pharmacy_generic": [
       "osmania_university_pharmacy_pharmacy_generic_state_comfort",
       "aurobindo_pharma_hyderabad_pharmacy_pharmacy_generic_state_comfort_intake",
       "niper_hyderabad_pharmacy_pharmacy_generic_national_level_state_comfort_intake",
       "apollo_college_pharmacy_anantapur_pharmacy_pharmacy_generic_state_comfort_intake",
       "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha"
-    ],
-    "KA|dentistry|dentistry_generic": [
-      "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co"
     ],
     "KA|ayush|ayush_generic": [
       "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus"
@@ -3533,12 +3592,15 @@
       "madras_veterinary_college_chennai_veterinary_veterinary_generic_state_comfort_in"
     ],
     "KL|dentistry|dentistry_generic": [
+      "ragas_dental_college_chennai_dentistry_dentistry_generic_state_comfort_intake",
       "manipal_college_of_dental_sciences_manipal_dentistry_dentistry_generic_national_",
-      "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake"
+      "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake",
+      "kvg_dental_college_sullia_dentistry_dentistry_generic_state_comfort_intake"
     ],
     "KL|ayush|ayush_generic": [
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
-      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int"
+      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
     ],
     "MP|engineering|engineering_generic": [
       "iit_jodhpur_engineering_engineering_generic_state_comfort_rj",
@@ -3631,8 +3693,10 @@
     "MP|dentistry|dentistry_generic": [
       "sms_medical_college_jaipur_dentistry_dentistry_generic_state_comfort",
       "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co",
+      "bvp_dental_college_pune_dentistry_dentistry_generic_state_comfort_intake",
       "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor",
-      "kgmu_lucknow_dentistry_dentistry_generic_state_comfort"
+      "kgmu_lucknow_dentistry_dentistry_generic_state_comfort",
+      "government_dental_college_jamnagar_dentistry_dentistry_generic_state_comfort_int"
     ],
     "MP|commerce|commerce_generic": [
       "university_of_rajasthan_commerce_commerce_generic_state_comfort",
@@ -3721,6 +3785,7 @@
       "nift_gandhinagar_design_design_generic_national_level_state_comfort_intake"
     ],
     "MP|ayush|ayush_generic": [
+      "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake",
       "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus",
       "state_government_ayurveda_homoeopathy_colleges_in_up_verify_seat_matrix_ayush_ay",
       "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
@@ -3788,7 +3853,8 @@
     "MH|ayush|ayush_generic": [
       "msu_baroda_ayush_ayush_generic_state_comfort_intake",
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
-      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int"
+      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
     ],
     "MH|engineering|engineering_generic": [
       "svnit_surat_engineering_engineering_generic_national_level_state_comfort_intake",
@@ -3841,6 +3907,12 @@
       "indira_kala_sangeet_vishwavidyalaya_design_design_generic_state_comfort",
       "iit_hyderabad_design_design_generic_state_comfort"
     ],
+    "MH|dentistry|dentistry_generic": [
+      "government_dental_college_jamnagar_dentistry_dentistry_generic_state_comfort_int",
+      "manipal_college_of_dental_sciences_manipal_dentistry_dentistry_generic_national_",
+      "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake",
+      "kvg_dental_college_sullia_dentistry_dentistry_generic_state_comfort_intake"
+    ],
     "MH|commerce|commerce_generic": [
       "devi_ahilya_vishwavidyalaya_commerce_commerce_generic_state_comfort",
       "davv_indore_commerce_commerce_generic_state_comfort_intake",
@@ -3880,10 +3952,6 @@
     "MH|fashion_media|fashion_media_generic": [
       "indira_kala_sangeet_vishwavidyalaya_fashion_media_fashion_media_generic_state_co"
     ],
-    "MH|dentistry|dentistry_generic": [
-      "manipal_college_of_dental_sciences_manipal_dentistry_dentistry_generic_national_",
-      "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake"
-    ],
     "MN|education|education_generic": [
       "tezpur_university_assam_education_education_generic_state_comfort_intake"
     ],
@@ -3898,6 +3966,9 @@
     ],
     "MN|design|design_generic": [
       "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
+    ],
+    "MN|ayush|ayush_generic": [
+      "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake"
     ],
     "ML|education|education_generic": [
       "tezpur_university_assam_education_education_generic_state_comfort_intake"
@@ -3915,6 +3986,9 @@
     "ML|design|design_generic": [
       "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
     ],
+    "ML|ayush|ayush_generic": [
+      "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake"
+    ],
     "MZ|law|law_generic": [
       "nlu_tripura_agartala_law_law_generic_national_level_state_comfort_intake",
       "nlu_assam_guwahati_law_law_generic_national_level_state_comfort_intake"
@@ -3931,6 +4005,9 @@
     "MZ|design|design_generic": [
       "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
     ],
+    "MZ|ayush|ayush_generic": [
+      "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake"
+    ],
     "NL|education|education_generic": [
       "tezpur_university_assam_education_education_generic_state_comfort_intake"
     ],
@@ -3945,6 +4022,9 @@
     ],
     "NL|design|design_generic": [
       "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
+    ],
+    "NL|ayush|ayush_generic": [
+      "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake"
     ],
     "OD|engineering|engineering_generic": [
       "nit_raipur_engineering_engineering_generic_state_comfort_cg",
@@ -4146,6 +4226,9 @@
     "PB|design|design_generic": [
       "nift_jodhpur_design_design_generic_state_comfort"
     ],
+    "PB|ayush|ayush_generic": [
+      "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake"
+    ],
     "RJ|architecture|architecture_generic": [
       "cept_university_ahmedabad_architecture_architecture_generic_national_level_state",
       "manit_bhopal_architecture_architecture_generic_state_comfort",
@@ -4206,6 +4289,12 @@
       "nift_kannauj_design_design_generic_state_comfort_up",
       "nift_rae_bareli_design_design_generic_state_comfort"
     ],
+    "RJ|dentistry|dentistry_generic": [
+      "government_dental_college_jamnagar_dentistry_dentistry_generic_state_comfort_int",
+      "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor",
+      "kgmu_lucknow_dentistry_dentistry_generic_state_comfort",
+      "sgt_university_gurugram_dentistry_dentistry_generic_state_comfort_intake"
+    ],
     "RJ|medicine|medicine_mbbs": [
       "aiims_bhopal_medicine_medicine_mbbs_state_comfort",
       "king_george_medical_university_kgmu_medicine_medicine_mbbs_state_comfort_up",
@@ -4259,11 +4348,6 @@
       "svpuat_merut_veterinary_veterinary_generic_state_comfort",
       "ivri_bareilly_veterinary_veterinary_generic_state_comfort_intake",
       "college_veterinary_science_hisar_veterinary_veterinary_generic_state_comfort_int"
-    ],
-    "RJ|dentistry|dentistry_generic": [
-      "faculty_of_dental_sciences_kgmu_lucknow_dentistry_dentistry_generic_state_comfor",
-      "kgmu_lucknow_dentistry_dentistry_generic_state_comfort",
-      "sgt_university_gurugram_dentistry_dentistry_generic_state_comfort_intake"
     ],
     "RJ|fashion_media|fashion_media_generic": [
       "nift_kannauj_fashion_media_fashion_media_generic_state_comfort_up",
@@ -4379,7 +4463,8 @@
     ],
     "TN|dentistry|dentistry_generic": [
       "manipal_college_of_dental_sciences_manipal_dentistry_dentistry_generic_national_",
-      "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake"
+      "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake",
+      "kvg_dental_college_sullia_dentistry_dentistry_generic_state_comfort_intake"
     ],
     "TN|commerce|commerce_generic": [
       "sjcc_bengaluru_commerce_commerce_generic_state_comfort_intake",
@@ -4392,7 +4477,8 @@
     ],
     "TN|ayush|ayush_generic": [
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
-      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int"
+      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
     ],
     "TN|pharmacy|pharmacy_generic": [
       "apollo_college_pharmacy_anantapur_pharmacy_pharmacy_generic_state_comfort_intake",
@@ -4478,13 +4564,16 @@
     ],
     "TS|dentistry|dentistry_generic": [
       "nair_hospital_dental_college_mumbai_example_dentistry_dentistry_generic_state_co",
+      "bvp_dental_college_pune_dentistry_dentistry_generic_state_comfort_intake",
       "manipal_college_of_dental_sciences_manipal_dentistry_dentistry_generic_national_",
-      "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake"
+      "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake",
+      "kvg_dental_college_sullia_dentistry_dentistry_generic_state_comfort_intake"
     ],
     "TS|ayush|ayush_generic": [
       "government_ayurveda_homoeopathy_colleges_in_maharashtra_verify_current_list_ayus",
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
-      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int"
+      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
     ],
     "TS|pharmacy|pharmacy_generic": [
       "institute_of_chemical_technology_ict_mumbai_pharmaceutical_sciences_pharmacy_pha",
@@ -4586,6 +4675,9 @@
     ],
     "TR|design|design_generic": [
       "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
+    ],
+    "TR|ayush|ayush_generic": [
+      "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake"
     ],
     "UP|science_stats|science_stats_generic": [
       "forest_research_institute_dehradun_science_stats_science_stats_generic_state_com",
@@ -4737,6 +4829,10 @@
       "jamia_millia_islamia_design_design_generic_state_comfort",
       "nift_delhi_design_design_generic_state_comfort"
     ],
+    "UP|ayush|ayush_generic": [
+      "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake",
+      "all_india_institute_ayurveda_delhi_ayush_ayush_generic_national_level_state_comf"
+    ],
     "UP|pharmacy|pharmacy_generic": [
       "devi_ahilya_vishwavidyalaya_pharmacy_pharmacy_generic_state_comfort",
       "jamia_hamdard_new_delhi_pharmacy_pharmacy_generic_state_comfort_intake"
@@ -4886,6 +4982,9 @@
     "WB|design|design_generic": [
       "nift_bhubaneswar_design_design_generic_state_comfort",
       "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake"
+    ],
+    "WB|ayush|ayush_generic": [
+      "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake"
     ],
     "DL|humanities|humanities_generic": [
       "ashoka_university_sonepat_humanities_humanities_generic_state_comfort_intake",
@@ -5063,6 +5162,9 @@
       "tanuvas_chennai_veterinary_veterinary_generic_state_comfort_intake",
       "madras_veterinary_college_chennai_veterinary_veterinary_generic_state_comfort_in"
     ],
+    "PY|dentistry|dentistry_generic": [
+      "ragas_dental_college_chennai_dentistry_dentistry_generic_state_comfort_intake"
+    ],
     "CH|engineering|engineering_generic": [
       "lpu_phagwara_engineering_engineering_generic_state_comfort_intake"
     ],
@@ -5142,6 +5244,9 @@
     "AN|veterinary|veterinary_generic": [
       "tanuvas_chennai_veterinary_veterinary_generic_state_comfort_intake",
       "madras_veterinary_college_chennai_veterinary_veterinary_generic_state_comfort_in"
+    ],
+    "AN|dentistry|dentistry_generic": [
+      "ragas_dental_college_chennai_dentistry_dentistry_generic_state_comfort_intake"
     ]
   },
   "by_stream_course": {
@@ -5357,7 +5462,11 @@
       "manipal_college_of_dental_sciences_manipal_dentistry_dentistry_generic_national_",
       "sgt_university_gurugram_dentistry_dentistry_generic_state_comfort_intake",
       "bapuji_dental_college_davangere_dentistry_dentistry_generic_state_comfort_intake",
-      "maulana_azad_institute_dental_sciences_delhi_dentistry_dentistry_generic_nationa"
+      "maulana_azad_institute_dental_sciences_delhi_dentistry_dentistry_generic_nationa",
+      "bvp_dental_college_pune_dentistry_dentistry_generic_state_comfort_intake",
+      "kvg_dental_college_sullia_dentistry_dentistry_generic_state_comfort_intake",
+      "ragas_dental_college_chennai_dentistry_dentistry_generic_state_comfort_intake",
+      "government_dental_college_jamnagar_dentistry_dentistry_generic_state_comfort_int"
     ],
     "ayush|ayush_generic": [
       "national_institute_of_ayurveda_jaipur_ilbs_example_health_science_adjacency_veri",
@@ -5367,7 +5476,11 @@
       "msu_baroda_ayush_ayush_generic_state_comfort_intake",
       "banaras_hindu_university_ayush_ayush_ayush_generic_state_comfort_intake",
       "sdm_college_ayurveda_udupi_ayush_ayush_generic_state_comfort_intake",
-      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int"
+      "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int",
+      "all_india_institute_ayurveda_delhi_ayush_ayush_generic_national_level_state_comf",
+      "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake",
+      "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake",
+      "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake"
     ],
     "pharmacy|pharmacy_generic": [
       "niper_campuses_mpharm_heavy_verify_ug_if_offered_bits_pilani_pharmacy_manipal_co",
@@ -5691,14 +5804,19 @@
       "RJ",
       "KA",
       "HR",
-      "DL"
+      "DL",
+      "TN",
+      "GJ"
     ],
     "ayush|ayush_generic": [
       "IN",
       "UP",
       "MH",
       "GJ",
-      "KA"
+      "KA",
+      "DL",
+      "RJ",
+      "AS"
     ],
     "pharmacy|pharmacy_generic": [
       "IN",
@@ -6270,6 +6388,14 @@
     "spa_vijayawada_architecture_architecture_generic_national_level_state_comfort_in": "AP",
     "maulana_azad_institute_dental_sciences_delhi_dentistry_dentistry_generic_nationa": "DL",
     "madras_veterinary_college_chennai_veterinary_veterinary_generic_state_comfort_in": "TN",
-    "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int": "KA"
+    "government_unani_medical_college_bengaluru_ayush_ayush_generic_state_comfort_int": "KA",
+    "bvp_dental_college_pune_dentistry_dentistry_generic_state_comfort_intake": "MH",
+    "kvg_dental_college_sullia_dentistry_dentistry_generic_state_comfort_intake": "KA",
+    "ragas_dental_college_chennai_dentistry_dentistry_generic_state_comfort_intake": "TN",
+    "government_dental_college_jamnagar_dentistry_dentistry_generic_state_comfort_int": "GJ",
+    "all_india_institute_ayurveda_delhi_ayush_ayush_generic_national_level_state_comf": "DL",
+    "national_institute_ayurveda_jaipur_ayush_ayush_generic_state_comfort_intake": "RJ",
+    "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake": "AS",
+    "fr_muller_homeopathic_mangaluru_ayush_ayush_generic_state_comfort_intake": "KA"
   }
 }

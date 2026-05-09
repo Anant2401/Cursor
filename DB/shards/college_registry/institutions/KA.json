@@ -3,7 +3,7 @@
     "shard_type": "institutions",
     "state_id": "KA",
     "state_label": "Karnataka",
-    "count": 30,
+    "count": 32,
     "generated_on": "2026-05-09"
   },
   "institutions": [
@@ -1513,8 +1513,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.bapujidental.edu/",
-          "https://dciindia.gov.in/",
-          "https://www.bapujidental.edu/"
+          "https://dciindia.gov.in/"
         ]
       },
       "cost_band": {
@@ -1572,8 +1571,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://manipal.edu/msap.html",
-          "https://www.coa.gov.in/",
-          "https://manipal.edu/msap.html"
+          "https://www.coa.gov.in/"
         ]
       },
       "cost_band": {
@@ -1631,8 +1629,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://sdmayurvedacollegeudupi.in/",
-          "https://ncismindia.org/",
-          "https://sdmayurvedacollegeudupi.in/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -1690,8 +1687,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.karnataka.gov.in/",
-          "https://ncismindia.org/",
-          "https://www.karnataka.gov.in/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -1715,6 +1711,124 @@
           "https://ncismindia.org/"
         ],
         "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "kvg_dental_college_sullia",
+      "name": "KVG Dental College and Hospital Sullia",
+      "state_id": "KA",
+      "city": "Sullia",
+      "type": "Private dental college",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.kvgdentalcollege.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "State counselling and DCI-linked program approvals should be verified each cycle."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.kvgdentalcollege.org/",
+          "https://dciindia.gov.in/",
+          "https://www.kvgdentalcollege.org/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "DCI_or_equivalent"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.kvgdentalcollege.org/",
+          "https://dciindia.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "fr_muller_homeopathic_mangaluru",
+      "name": "Father Muller Homeopathic Medical College Mangaluru",
+      "state_id": "KA",
+      "city": "Mangaluru",
+      "type": "Private AYUSH college",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.fmhomoeopathy.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "AYUSH course approvals and admission pathway should be verified from official institute and regulator pages."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.fmhomoeopathy.org/",
+          "https://ncismindia.org/",
+          "https://www.fmhomoeopathy.org/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "NCISM_or_NCH"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.fmhomoeopathy.org/",
+          "https://ncismindia.org/"
+        ],
+        "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }

@@ -3,7 +3,7 @@
     "shard_type": "institutions",
     "state_id": "TN",
     "state_label": "Tamil Nadu",
-    "count": 24,
+    "count": 25,
     "generated_on": "2026-05-09"
   },
   "institutions": [
@@ -1358,8 +1358,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://tanuvas.ac.in/mvc.php",
-          "https://icar.org.in/",
-          "https://tanuvas.ac.in/mvc.php"
+          "https://icar.org.in/"
         ]
       },
       "cost_band": {
@@ -1381,6 +1380,65 @@
         "verification_urls": [
           "https://tanuvas.ac.in/mvc.php",
           "https://icar.org.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "ragas_dental_college_chennai",
+      "name": "Ragas Dental College and Hospital Chennai",
+      "state_id": "TN",
+      "city": "Chennai",
+      "type": "Private dental college",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.ragasdentalcollege.com/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Dental seat matrix and admission route should be verified against latest notifications."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.ragasdentalcollege.com/",
+          "https://dciindia.gov.in/",
+          "https://www.ragasdentalcollege.com/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "limited",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "DCI_or_equivalent"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.ragasdentalcollege.com/",
+          "https://dciindia.gov.in/"
         ],
         "confidence": "low",
         "last_updated": "2026-05-09",
