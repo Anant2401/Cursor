@@ -11,7 +11,7 @@
       "id": "bit_mesra_ranchi_science_stats_science_stats_generic_state_comfort_intake",
       "college_id": "bit_mesra_ranchi",
       "stream_id": "science_stats",
-      "course_id": "science_stats_generic",
+      "course_id": "science_stats_bsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -34,13 +34,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Sc"
     },
     {
       "id": "iiit_ranchi_engineering_engineering_generic_national_level_state_comfort_intake",
       "college_id": "iiit_ranchi",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort",
         "national_level"
@@ -62,7 +63,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     }
   ]
 }

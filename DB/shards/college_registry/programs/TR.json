@@ -11,7 +11,7 @@
       "id": "nlu_tripura_agartala_law_law_generic_national_level_state_comfort_intake",
       "college_id": "nlu_tripura_agartala",
       "stream_id": "law",
-      "course_id": "law_generic",
+      "course_id": "law_ba_llb",
       "geography_lens_ids": [
         "state_comfort",
         "national_level"
@@ -33,7 +33,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA LLB"
     }
   ]
 }

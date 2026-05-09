@@ -11,7 +11,7 @@
       "id": "iit_hyderabad_engineering_engineering_generic_state_comfort_ts",
       "college_id": "iit_hyderabad",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -37,13 +37,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "iiit_hyderabad_engineering_engineering_generic_state_comfort_ts",
       "college_id": "iiit_hyderabad",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -69,13 +70,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "bits_pilani_hyderabad_campus_engineering_engineering_generic_state_comfort_ts",
       "college_id": "bits_pilani_hyderabad_campus",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -100,13 +102,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "jntuh_affiliated_top_autonomous_colleges_examples_in_hyderabad_engineering_engin",
       "college_id": "jntuh_affiliated_top_autonomous_colleges_examples_in_hyderabad",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -131,13 +134,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "private_engineering_colleges_across_telangana_engineering_engineering_generic_st",
       "college_id": "private_engineering_colleges_across_telangana",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -162,7 +166,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "osmania_medical_college_medicine_medicine_mbbs_state_comfort_ts",
@@ -194,7 +199,8 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "gandhi_medical_college_medicine_medicine_mbbs_state_comfort_ts",
@@ -226,7 +232,8 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "aiims_bibinagar_verify_intake_and_phases_medicine_medicine_mbbs_state_comfort_ts",
@@ -258,7 +265,8 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "kakatiya_medical_college_warangal_example_medicine_medicine_mbbs_state_comfort_t",
@@ -290,7 +298,8 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "private_medical_colleges_in_hyderabad_belt_medicine_medicine_mbbs_state_comfort_",
@@ -322,13 +331,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "iit_hyderabad_engineering_engineering_generic_state_comfort",
       "college_id": "iit_hyderabad",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -354,13 +364,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "iit_hyderabad_science_stats_science_stats_generic_state_comfort",
       "college_id": "iit_hyderabad",
       "stream_id": "science_stats",
-      "course_id": "science_stats_generic",
+      "course_id": "science_stats_bsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -386,13 +397,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Sc"
     },
     {
       "id": "iit_hyderabad_design_design_generic_state_comfort",
       "college_id": "iit_hyderabad",
       "stream_id": "design",
-      "course_id": "design_generic",
+      "course_id": "design_bdes",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -418,13 +430,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Des Design"
     },
     {
       "id": "osmania_university_commerce_commerce_generic_state_comfort",
       "college_id": "osmania_university",
       "stream_id": "commerce",
-      "course_id": "commerce_generic",
+      "course_id": "commerce_bcom",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -447,13 +460,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Com"
     },
     {
       "id": "osmania_university_science_stats_science_stats_generic_state_comfort",
       "college_id": "osmania_university",
       "stream_id": "science_stats",
-      "course_id": "science_stats_generic",
+      "course_id": "science_stats_bsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -476,13 +490,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Sc"
     },
     {
       "id": "osmania_university_humanities_humanities_generic_state_comfort",
       "college_id": "osmania_university",
       "stream_id": "humanities",
-      "course_id": "humanities_generic",
+      "course_id": "humanities_ba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -505,13 +520,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA"
     },
     {
       "id": "osmania_university_education_education_generic_state_comfort",
       "college_id": "osmania_university",
       "stream_id": "education",
-      "course_id": "education_generic",
+      "course_id": "education_bed",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -534,13 +550,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Ed"
     },
     {
       "id": "osmania_university_management_management_generic_state_comfort",
       "college_id": "osmania_university",
       "stream_id": "management",
-      "course_id": "management_generic",
+      "course_id": "management_bba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -563,13 +580,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BBA"
     },
     {
       "id": "osmania_university_law_law_generic_state_comfort",
       "college_id": "osmania_university",
       "stream_id": "law",
-      "course_id": "law_generic",
+      "course_id": "law_ba_llb",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -594,13 +612,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA LLB"
     },
     {
       "id": "osmania_university_pharmacy_pharmacy_generic_state_comfort",
       "college_id": "osmania_university",
       "stream_id": "pharmacy",
-      "course_id": "pharmacy_generic",
+      "course_id": "pharmacy_bpharm",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -623,13 +642,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Pharm"
     },
     {
       "id": "nalsar_university_of_law_law_law_generic_state_comfort",
       "college_id": "nalsar_university_of_law",
       "stream_id": "law",
-      "course_id": "law_generic",
+      "course_id": "law_ba_llb",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -654,13 +674,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA LLB"
     },
     {
       "id": "nalsar_university_of_law_humanities_humanities_generic_state_comfort",
       "college_id": "nalsar_university_of_law",
       "stream_id": "humanities",
-      "course_id": "humanities_generic",
+      "course_id": "humanities_ba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -683,13 +704,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA"
     },
     {
       "id": "nalsar_university_of_law_management_management_generic_state_comfort",
       "college_id": "nalsar_university_of_law",
       "stream_id": "management",
-      "course_id": "management_generic",
+      "course_id": "management_bba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -712,7 +734,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BBA"
     },
     {
       "id": "gandhi_medical_college_hyderabad_medicine_medicine_mbbs_state_comfort",
@@ -744,13 +767,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "pvnrtvu_hyderabad_veterinary_veterinary_generic_state_comfort",
       "college_id": "pvnrtvu_hyderabad",
       "stream_id": "veterinary",
-      "course_id": "veterinary_generic",
+      "course_id": "veterinary_bvsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -773,13 +797,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BVSc and AH"
     },
     {
       "id": "pvnrtvu_hyderabad_science_stats_science_stats_generic_state_comfort",
       "college_id": "pvnrtvu_hyderabad",
       "stream_id": "science_stats",
-      "course_id": "science_stats_generic",
+      "course_id": "science_stats_bsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -802,13 +827,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Sc"
     },
     {
       "id": "aurobindo_pharma_hyderabad_pharmacy_pharmacy_generic_state_comfort_intake",
       "college_id": "aurobindo_pharma_hyderabad",
       "stream_id": "pharmacy",
-      "course_id": "pharmacy_generic",
+      "course_id": "pharmacy_bpharm",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -831,13 +857,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Pharm"
     },
     {
       "id": "niper_hyderabad_pharmacy_pharmacy_generic_national_level_state_comfort_intake",
       "college_id": "niper_hyderabad",
       "stream_id": "pharmacy",
-      "course_id": "pharmacy_generic",
+      "course_id": "pharmacy_bpharm",
       "geography_lens_ids": [
         "state_comfort",
         "national_level"
@@ -859,13 +886,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Pharm"
     },
     {
       "id": "nalsar_hyderabad_law_law_generic_national_level_state_comfort_intake",
       "college_id": "nalsar_hyderabad",
       "stream_id": "law",
-      "course_id": "law_generic",
+      "course_id": "law_ba_llb",
       "geography_lens_ids": [
         "state_comfort",
         "national_level"
@@ -887,7 +915,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA LLB"
     }
   ]
 }

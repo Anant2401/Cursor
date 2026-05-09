@@ -11,7 +11,7 @@
       "id": "iit_bhubaneswar_engineering_engineering_generic_state_comfort_od",
       "college_id": "iit_bhubaneswar",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -37,13 +37,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "nit_rourkela_engineering_engineering_generic_state_comfort_od",
       "college_id": "nit_rourkela",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -69,13 +70,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "outr_igit_government_colleges_under_bput_verify_active_names_engineering_enginee",
       "college_id": "outr_igit_government_colleges_under_bput_verify_active_names",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -100,13 +102,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "kiit_university_example_large_private_engineering_engineering_generic_state_comf",
       "college_id": "kiit_university_example_large_private",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -131,13 +134,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "iit_bhubaneswar_engineering_engineering_generic_state_comfort",
       "college_id": "iit_bhubaneswar",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -163,13 +167,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "iit_bhubaneswar_science_stats_science_stats_generic_state_comfort",
       "college_id": "iit_bhubaneswar",
       "stream_id": "science_stats",
-      "course_id": "science_stats_generic",
+      "course_id": "science_stats_bsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -195,7 +200,8 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Sc"
     },
     {
       "id": "aiims_bhubaneswar_medicine_medicine_mbbs_state_comfort",
@@ -227,13 +233,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "utkal_university_commerce_commerce_generic_state_comfort",
       "college_id": "utkal_university",
       "stream_id": "commerce",
-      "course_id": "commerce_generic",
+      "course_id": "commerce_bcom",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -256,13 +263,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Com"
     },
     {
       "id": "utkal_university_management_management_generic_state_comfort",
       "college_id": "utkal_university",
       "stream_id": "management",
-      "course_id": "management_generic",
+      "course_id": "management_bba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -285,13 +293,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BBA"
     },
     {
       "id": "utkal_university_science_stats_science_stats_generic_state_comfort",
       "college_id": "utkal_university",
       "stream_id": "science_stats",
-      "course_id": "science_stats_generic",
+      "course_id": "science_stats_bsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -314,13 +323,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Sc"
     },
     {
       "id": "utkal_university_humanities_humanities_generic_state_comfort",
       "college_id": "utkal_university",
       "stream_id": "humanities",
-      "course_id": "humanities_generic",
+      "course_id": "humanities_ba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -343,13 +353,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA"
     },
     {
       "id": "utkal_university_education_education_generic_state_comfort",
       "college_id": "utkal_university",
       "stream_id": "education",
-      "course_id": "education_generic",
+      "course_id": "education_bed",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -372,13 +383,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Ed"
     },
     {
       "id": "utkal_university_law_law_generic_state_comfort",
       "college_id": "utkal_university",
       "stream_id": "law",
-      "course_id": "law_generic",
+      "course_id": "law_ba_llb",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -403,13 +415,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA LLB"
     },
     {
       "id": "nlu_odisha_law_law_generic_state_comfort",
       "college_id": "nlu_odisha",
       "stream_id": "law",
-      "course_id": "law_generic",
+      "course_id": "law_ba_llb",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -434,13 +447,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA LLB"
     },
     {
       "id": "nlu_odisha_humanities_humanities_generic_state_comfort",
       "college_id": "nlu_odisha",
       "stream_id": "humanities",
-      "course_id": "humanities_generic",
+      "course_id": "humanities_ba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -463,13 +477,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA"
     },
     {
       "id": "nift_bhubaneswar_fashion_media_fashion_media_generic_state_comfort",
       "college_id": "nift_bhubaneswar",
       "stream_id": "fashion_media",
-      "course_id": "fashion_media_generic",
+      "course_id": "fashion_media_bjmc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -494,13 +509,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BJMC"
     },
     {
       "id": "nift_bhubaneswar_design_design_generic_state_comfort",
       "college_id": "nift_bhubaneswar",
       "stream_id": "design",
-      "course_id": "design_generic",
+      "course_id": "design_bdes",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -525,13 +541,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Des Design"
     },
     {
       "id": "nift_bhubaneswar_management_management_generic_state_comfort",
       "college_id": "nift_bhubaneswar",
       "stream_id": "management",
-      "course_id": "management_generic",
+      "course_id": "management_bba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -554,13 +571,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BBA"
     },
     {
       "id": "kiit_bhubaneswar_law_law_generic_national_level_state_comfort_intake",
       "college_id": "kiit_bhubaneswar",
       "stream_id": "law",
-      "course_id": "law_generic",
+      "course_id": "law_ba_llb",
       "geography_lens_ids": [
         "state_comfort",
         "national_level"
@@ -582,13 +600,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA LLB"
     },
     {
       "id": "ximb_bhubaneswar_management_management_generic_state_comfort_intake",
       "college_id": "ximb_bhubaneswar",
       "stream_id": "management",
-      "course_id": "management_generic",
+      "course_id": "management_bba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -611,13 +630,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BBA"
     },
     {
       "id": "bjb_college_bhubaneswar_commerce_commerce_generic_state_comfort_intake",
       "college_id": "bjb_college_bhubaneswar",
       "stream_id": "commerce",
-      "course_id": "commerce_generic",
+      "course_id": "commerce_bcom",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -640,13 +660,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Com"
     },
     {
       "id": "vssut_burla_science_stats_science_stats_generic_state_comfort_intake",
       "college_id": "vssut_burla",
       "stream_id": "science_stats",
-      "course_id": "science_stats_generic",
+      "course_id": "science_stats_bsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -669,7 +690,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Sc"
     }
   ]
 }

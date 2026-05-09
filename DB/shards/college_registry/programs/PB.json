@@ -11,7 +11,7 @@
       "id": "lpu_phagwara_engineering_engineering_generic_state_comfort_intake",
       "college_id": "lpu_phagwara",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -36,13 +36,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "niper_mohali_pharmacy_pharmacy_generic_national_level_state_comfort_intake",
       "college_id": "niper_mohali",
       "stream_id": "pharmacy",
-      "course_id": "pharmacy_generic",
+      "course_id": "pharmacy_bpharm",
       "geography_lens_ids": [
         "state_comfort",
         "national_level"
@@ -64,13 +65,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Pharm"
     },
     {
       "id": "gndu_amritsar_commerce_commerce_generic_state_comfort_intake",
       "college_id": "gndu_amritsar",
       "stream_id": "commerce",
-      "course_id": "commerce_generic",
+      "course_id": "commerce_bcom",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -93,13 +95,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Com"
     },
     {
       "id": "cupb_bathinda_humanities_humanities_generic_state_comfort_intake",
       "college_id": "cupb_bathinda",
       "stream_id": "humanities",
-      "course_id": "humanities_generic",
+      "course_id": "humanities_ba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -122,7 +125,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA"
     }
   ]
 }

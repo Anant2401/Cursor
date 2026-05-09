@@ -11,7 +11,7 @@
       "id": "gitam_visakhapatnam_engineering_engineering_generic_state_comfort_intake",
       "college_id": "gitam_visakhapatnam",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -36,13 +36,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "apollo_college_pharmacy_anantapur_pharmacy_pharmacy_generic_state_comfort_intake",
       "college_id": "apollo_college_pharmacy_anantapur",
       "stream_id": "pharmacy",
-      "course_id": "pharmacy_generic",
+      "course_id": "pharmacy_bpharm",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -65,13 +66,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Pharm"
     },
     {
       "id": "spa_vijayawada_architecture_architecture_generic_national_level_state_comfort_in",
       "college_id": "spa_vijayawada",
       "stream_id": "architecture",
-      "course_id": "architecture_generic",
+      "course_id": "architecture_barch",
       "geography_lens_ids": [
         "state_comfort",
         "national_level"
@@ -98,13 +100,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Arch Architecture"
     },
     {
       "id": "college_veterinary_science_tirupati_veterinary_veterinary_generic_state_comfort_",
       "college_id": "college_veterinary_science_tirupati",
       "stream_id": "veterinary",
-      "course_id": "veterinary_generic",
+      "course_id": "veterinary_bvsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -127,7 +130,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BVSc and AH"
     }
   ]
 }

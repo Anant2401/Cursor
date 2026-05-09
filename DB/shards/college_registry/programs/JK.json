@@ -11,7 +11,7 @@
       "id": "central_university_kashmir_education_education_generic_state_comfort_intake",
       "college_id": "central_university_kashmir",
       "stream_id": "education",
-      "course_id": "education_generic",
+      "course_id": "education_bed",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -34,13 +34,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Ed"
     },
     {
       "id": "iit_jammu_engineering_engineering_generic_national_level_state_comfort_intake",
       "college_id": "iit_jammu",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort",
         "national_level"
@@ -62,7 +63,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     }
   ]
 }

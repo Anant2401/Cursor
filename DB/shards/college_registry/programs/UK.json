@@ -11,7 +11,7 @@
       "id": "forest_research_institute_dehradun_science_stats_science_stats_generic_state_com",
       "college_id": "forest_research_institute_dehradun",
       "stream_id": "science_stats",
-      "course_id": "science_stats_generic",
+      "course_id": "science_stats_bsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -34,13 +34,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Sc"
     },
     {
       "id": "pantnagar_university_science_stats_science_stats_generic_state_comfort_intake",
       "college_id": "pantnagar_university",
       "stream_id": "science_stats",
-      "course_id": "science_stats_generic",
+      "course_id": "science_stats_bsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -63,13 +64,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Sc"
     },
     {
       "id": "doon_university_dehradun_humanities_humanities_generic_state_comfort_intake",
       "college_id": "doon_university_dehradun",
       "stream_id": "humanities",
-      "course_id": "humanities_generic",
+      "course_id": "humanities_ba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -92,13 +94,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA"
     },
     {
       "id": "gbpuat_pantnagar_vet_veterinary_veterinary_generic_state_comfort_intake",
       "college_id": "gbpuat_pantnagar_vet",
       "stream_id": "veterinary",
-      "course_id": "veterinary_generic",
+      "course_id": "veterinary_bvsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -121,7 +124,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BVSc and AH"
     }
   ]
 }

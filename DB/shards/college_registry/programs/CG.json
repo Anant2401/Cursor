@@ -11,7 +11,7 @@
       "id": "nit_raipur_engineering_engineering_generic_state_comfort_cg",
       "college_id": "nit_raipur",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -36,13 +36,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "iiit_naya_raipur_engineering_engineering_generic_state_comfort_cg",
       "college_id": "iiit_naya_raipur",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -68,13 +69,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "iit_bhilai_engineering_engineering_generic_state_comfort_cg",
       "college_id": "iit_bhilai",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -100,13 +102,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "government_engineering_college_raipur_example_state_college_engineering_engineer",
       "college_id": "government_engineering_college_raipur_example_state_college",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -131,13 +134,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "shri_shankaracharya_technical_campus_sstc_bhilai_engineering_engineering_generic",
       "college_id": "shri_shankaracharya_technical_campus_sstc_bhilai",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -162,13 +166,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify_engineering_e",
       "college_id": "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -193,13 +198,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "other_aicte_affiliated_colleges_in_cg_engineering_engineering_generic_state_comf",
       "college_id": "other_aicte_affiliated_colleges_in_cg",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -224,7 +230,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "aiims_raipur_medicine_medicine_mbbs_state_comfort_cg",
@@ -256,7 +263,8 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
@@ -288,7 +296,8 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "gmc_raipur_other_cg_gmcs_as_per_state_list_medicine_medicine_mbbs_state_comfort_",
@@ -320,7 +329,8 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
@@ -352,7 +362,8 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
@@ -384,7 +395,8 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "private_mbbs_colleges_in_cg_verify_mcc_state_medicine_medicine_mbbs_state_comfor",
@@ -416,13 +428,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "iit_bhilai_engineering_engineering_generic_state_comfort",
       "college_id": "iit_bhilai",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -448,13 +461,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "iit_bhilai_science_stats_science_stats_generic_state_comfort",
       "college_id": "iit_bhilai",
       "stream_id": "science_stats",
-      "course_id": "science_stats_generic",
+      "course_id": "science_stats_bsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -480,7 +494,8 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Sc"
     },
     {
       "id": "aiims_raipur_medicine_medicine_mbbs_state_comfort",
@@ -512,13 +527,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "hidayatullah_national_law_university_law_law_generic_state_comfort",
       "college_id": "hidayatullah_national_law_university",
       "stream_id": "law",
-      "course_id": "law_generic",
+      "course_id": "law_ba_llb",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -543,13 +559,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA LLB"
     },
     {
       "id": "hidayatullah_national_law_university_humanities_humanities_generic_state_comfort",
       "college_id": "hidayatullah_national_law_university",
       "stream_id": "humanities",
-      "course_id": "humanities_generic",
+      "course_id": "humanities_ba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -572,13 +589,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA"
     },
     {
       "id": "pt_ravishankar_shukla_university_commerce_commerce_generic_state_comfort",
       "college_id": "pt_ravishankar_shukla_university",
       "stream_id": "commerce",
-      "course_id": "commerce_generic",
+      "course_id": "commerce_bcom",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -601,13 +619,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Com"
     },
     {
       "id": "pt_ravishankar_shukla_university_science_stats_science_stats_generic_state_comfo",
       "college_id": "pt_ravishankar_shukla_university",
       "stream_id": "science_stats",
-      "course_id": "science_stats_generic",
+      "course_id": "science_stats_bsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -630,13 +649,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Sc"
     },
     {
       "id": "pt_ravishankar_shukla_university_humanities_humanities_generic_state_comfort",
       "college_id": "pt_ravishankar_shukla_university",
       "stream_id": "humanities",
-      "course_id": "humanities_generic",
+      "course_id": "humanities_ba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -659,13 +679,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA"
     },
     {
       "id": "pt_ravishankar_shukla_university_education_education_generic_state_comfort",
       "college_id": "pt_ravishankar_shukla_university",
       "stream_id": "education",
-      "course_id": "education_generic",
+      "course_id": "education_bed",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -688,13 +709,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Ed"
     },
     {
       "id": "pt_ravishankar_shukla_university_management_management_generic_state_comfort",
       "college_id": "pt_ravishankar_shukla_university",
       "stream_id": "management",
-      "course_id": "management_generic",
+      "course_id": "management_bba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -717,13 +739,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BBA"
     },
     {
       "id": "indira_kala_sangeet_vishwavidyalaya_fashion_media_fashion_media_generic_state_co",
       "college_id": "indira_kala_sangeet_vishwavidyalaya",
       "stream_id": "fashion_media",
-      "course_id": "fashion_media_generic",
+      "course_id": "fashion_media_bjmc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -748,13 +771,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BJMC"
     },
     {
       "id": "indira_kala_sangeet_vishwavidyalaya_design_design_generic_state_comfort",
       "college_id": "indira_kala_sangeet_vishwavidyalaya",
       "stream_id": "design",
-      "course_id": "design_generic",
+      "course_id": "design_bdes",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -779,13 +803,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Des Design"
     },
     {
       "id": "indira_kala_sangeet_vishwavidyalaya_humanities_humanities_generic_state_comfort",
       "college_id": "indira_kala_sangeet_vishwavidyalaya",
       "stream_id": "humanities",
-      "course_id": "humanities_generic",
+      "course_id": "humanities_ba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -808,7 +833,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA"
     }
   ]
 }

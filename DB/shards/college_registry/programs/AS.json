@@ -11,7 +11,7 @@
       "id": "tezpur_university_assam_education_education_generic_state_comfort_intake",
       "college_id": "tezpur_university_assam",
       "stream_id": "education",
-      "course_id": "education_generic",
+      "course_id": "education_bed",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -34,7 +34,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Ed"
     },
     {
       "id": "gauhati_medical_college_medicine_medicine_mbbs_state_comfort_intake",
@@ -66,13 +67,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "cotton_university_guwahati_humanities_humanities_generic_state_comfort_intake",
       "college_id": "cotton_university_guwahati",
       "stream_id": "humanities",
-      "course_id": "humanities_generic",
+      "course_id": "humanities_ba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -95,13 +97,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA"
     },
     {
       "id": "nlu_assam_guwahati_law_law_generic_national_level_state_comfort_intake",
       "college_id": "nlu_assam_guwahati",
       "stream_id": "law",
-      "course_id": "law_generic",
+      "course_id": "law_ba_llb",
       "geography_lens_ids": [
         "state_comfort",
         "national_level"
@@ -123,13 +126,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA LLB"
     },
     {
       "id": "nid_assam_jorhat_design_design_generic_national_level_state_comfort_intake",
       "college_id": "nid_assam_jorhat",
       "stream_id": "design",
-      "course_id": "design_generic",
+      "course_id": "design_bdes",
       "geography_lens_ids": [
         "state_comfort",
         "national_level"
@@ -151,13 +155,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Des Design"
     },
     {
       "id": "government_ayurvedic_college_guwahati_ayush_ayush_generic_state_comfort_intake",
       "college_id": "government_ayurvedic_college_guwahati",
       "stream_id": "ayush",
-      "course_id": "ayush_generic",
+      "course_id": "ayush_bams",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -180,13 +185,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BAMS"
     },
     {
       "id": "college_of_veterinary_science_khanapara_veterinary_veterinary_generic_state_comf",
       "college_id": "college_of_veterinary_science_khanapara",
       "stream_id": "veterinary",
-      "course_id": "veterinary_generic",
+      "course_id": "veterinary_bvsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -209,7 +215,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BVSc and AH"
     }
   ]
 }

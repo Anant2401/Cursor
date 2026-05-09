@@ -11,7 +11,7 @@
       "id": "iit_madras_engineering_engineering_generic_state_comfort_tn",
       "college_id": "iit_madras",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -37,13 +37,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "nit_tiruchirappalli_engineering_engineering_generic_state_comfort_tn",
       "college_id": "nit_tiruchirappalli",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -69,13 +70,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "college_of_engineering_guindy_ceg_anna_university_engineering_engineering_generi",
       "college_id": "college_of_engineering_guindy_ceg_anna_university",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -100,13 +102,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "psg_college_of_technology_engineering_engineering_generic_state_comfort_tn",
       "college_id": "psg_college_of_technology",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -131,13 +134,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "ssn_college_of_engineering_engineering_engineering_generic_state_comfort_tn",
       "college_id": "ssn_college_of_engineering",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -162,13 +166,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "affiliated_engineering_colleges_under_anna_university_engineering_engineering_ge",
       "college_id": "affiliated_engineering_colleges_under_anna_university",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -193,7 +198,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "madras_medical_college_mmc_medicine_medicine_mbbs_state_comfort_tn",
@@ -225,7 +231,8 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "stanley_medical_college_medicine_medicine_mbbs_state_comfort_tn",
@@ -257,7 +264,8 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "gmcs_in_madurai_coimbatore_tirunelveli_examples_medicine_medicine_mbbs_state_com",
@@ -289,7 +297,8 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "private_medical_colleges_across_tn_medicine_medicine_mbbs_state_comfort_tn",
@@ -321,13 +330,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "anna_university_engineering_engineering_generic_state_comfort",
       "college_id": "anna_university",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -352,13 +362,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "anna_university_architecture_architecture_generic_state_comfort",
       "college_id": "anna_university",
       "stream_id": "architecture",
-      "course_id": "architecture_generic",
+      "course_id": "architecture_barch",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -384,13 +395,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Arch Architecture"
     },
     {
       "id": "anna_university_management_management_generic_state_comfort",
       "college_id": "anna_university",
       "stream_id": "management",
-      "course_id": "management_generic",
+      "course_id": "management_bba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -413,7 +425,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BBA"
     },
     {
       "id": "madras_medical_college_medicine_medicine_mbbs_state_comfort",
@@ -445,13 +458,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "university_of_madras_commerce_commerce_generic_state_comfort",
       "college_id": "university_of_madras",
       "stream_id": "commerce",
-      "course_id": "commerce_generic",
+      "course_id": "commerce_bcom",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -474,13 +488,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Com"
     },
     {
       "id": "university_of_madras_science_stats_science_stats_generic_state_comfort",
       "college_id": "university_of_madras",
       "stream_id": "science_stats",
-      "course_id": "science_stats_generic",
+      "course_id": "science_stats_bsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -503,13 +518,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Sc"
     },
     {
       "id": "university_of_madras_humanities_humanities_generic_state_comfort",
       "college_id": "university_of_madras",
       "stream_id": "humanities",
-      "course_id": "humanities_generic",
+      "course_id": "humanities_ba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -532,13 +548,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA"
     },
     {
       "id": "university_of_madras_education_education_generic_state_comfort",
       "college_id": "university_of_madras",
       "stream_id": "education",
-      "course_id": "education_generic",
+      "course_id": "education_bed",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -561,13 +578,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Ed"
     },
     {
       "id": "university_of_madras_management_management_generic_state_comfort",
       "college_id": "university_of_madras",
       "stream_id": "management",
-      "course_id": "management_generic",
+      "course_id": "management_bba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -590,13 +608,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BBA"
     },
     {
       "id": "nlu_tiruchirappalli_law_law_generic_state_comfort",
       "college_id": "nlu_tiruchirappalli",
       "stream_id": "law",
-      "course_id": "law_generic",
+      "course_id": "law_ba_llb",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -621,13 +640,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA LLB"
     },
     {
       "id": "nlu_tiruchirappalli_humanities_humanities_generic_state_comfort",
       "college_id": "nlu_tiruchirappalli",
       "stream_id": "humanities",
-      "course_id": "humanities_generic",
+      "course_id": "humanities_ba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -650,13 +670,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA"
     },
     {
       "id": "nift_chennai_fashion_media_fashion_media_generic_state_comfort",
       "college_id": "nift_chennai",
       "stream_id": "fashion_media",
-      "course_id": "fashion_media_generic",
+      "course_id": "fashion_media_bjmc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -681,13 +702,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BJMC"
     },
     {
       "id": "nift_chennai_design_design_generic_state_comfort",
       "college_id": "nift_chennai",
       "stream_id": "design",
-      "course_id": "design_generic",
+      "course_id": "design_bdes",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -712,13 +734,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Des Design"
     },
     {
       "id": "nift_chennai_management_management_generic_state_comfort",
       "college_id": "nift_chennai",
       "stream_id": "management",
-      "course_id": "management_generic",
+      "course_id": "management_bba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -741,7 +764,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BBA"
     },
     {
       "id": "example_aiims_madurai_medicine_medicine_mbbs_national_level_state_comfort_intake",
@@ -774,13 +798,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "nift_chennai_design_design_generic_national_level_state_comfort_intake",
       "college_id": "nift_chennai",
       "stream_id": "design",
-      "course_id": "design_generic",
+      "course_id": "design_bdes",
       "geography_lens_ids": [
         "state_comfort",
         "national_level"
@@ -802,13 +827,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Des Design"
     },
     {
       "id": "nit_trichy_engineering_engineering_generic_national_level_state_comfort_intake",
       "college_id": "nit_trichy",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort",
         "national_level"
@@ -830,13 +856,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "tanuvas_chennai_veterinary_veterinary_generic_state_comfort_intake",
       "college_id": "tanuvas_chennai",
       "stream_id": "veterinary",
-      "course_id": "veterinary_generic",
+      "course_id": "veterinary_bvsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -859,13 +886,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BVSc and AH"
     },
     {
       "id": "amrita_coimbatore_engineering_engineering_generic_national_level_state_comfort_i",
       "college_id": "amrita_coimbatore",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort",
         "national_level"
@@ -887,13 +915,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "srm_university_kattankulathur_design_design_generic_state_comfort_intake",
       "college_id": "srm_university_kattankulathur",
       "stream_id": "design",
-      "course_id": "design_generic",
+      "course_id": "design_bdes",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -918,13 +947,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Des Design"
     },
     {
       "id": "kalasalingam_srivilliputhur_design_design_generic_state_comfort_intake",
       "college_id": "kalasalingam_srivilliputhur",
       "stream_id": "design",
-      "course_id": "design_generic",
+      "course_id": "design_bdes",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -949,13 +979,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Des Design"
     },
     {
       "id": "iiitdm_kancheepuram_engineering_engineering_generic_national_level_state_comfort",
       "college_id": "iiitdm_kancheepuram",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort",
         "national_level"
@@ -977,13 +1008,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "anna_university_chennai_engineering_engineering_generic_state_comfort_intake",
       "college_id": "anna_university_chennai",
       "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "course_id": "engineering_btech_it",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -1008,13 +1040,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Tech Information Technology"
     },
     {
       "id": "madras_veterinary_college_chennai_veterinary_veterinary_generic_state_comfort_in",
       "college_id": "madras_veterinary_college_chennai",
       "stream_id": "veterinary",
-      "course_id": "veterinary_generic",
+      "course_id": "veterinary_bvsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -1037,13 +1070,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BVSc and AH"
     },
     {
       "id": "ragas_dental_college_chennai_dentistry_dentistry_generic_state_comfort_intake",
       "college_id": "ragas_dental_college_chennai",
       "stream_id": "dentistry",
-      "course_id": "dentistry_generic",
+      "course_id": "dentistry_bds",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -1068,13 +1102,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BDS"
     },
     {
       "id": "government_sidha_medical_college_chennai_ayush_ayush_generic_state_comfort_intak",
       "college_id": "government_sidha_medical_college_chennai",
       "stream_id": "ayush",
-      "course_id": "ayush_generic",
+      "course_id": "ayush_bams",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -1097,7 +1132,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BAMS"
     }
   ]
 }

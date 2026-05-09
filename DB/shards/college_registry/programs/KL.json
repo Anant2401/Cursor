@@ -11,7 +11,7 @@
       "id": "kerala_agricultural_university_thrissur_science_stats_science_stats_generic_stat",
       "college_id": "kerala_agricultural_university_thrissur",
       "stream_id": "science_stats",
-      "course_id": "science_stats_generic",
+      "course_id": "science_stats_bsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -34,7 +34,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Sc"
     },
     {
       "id": "amrita_kochi_medicine_medicine_mbbs_state_comfort_intake",
@@ -66,13 +67,14 @@
         "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "MBBS"
     },
     {
       "id": "cusat_kochi_science_stats_science_stats_generic_state_comfort_intake",
       "college_id": "cusat_kochi",
       "stream_id": "science_stats",
-      "course_id": "science_stats_generic",
+      "course_id": "science_stats_bsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -95,13 +97,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Sc"
     },
     {
       "id": "nit_calicut_architecture_architecture_architecture_generic_national_level_state_",
       "college_id": "nit_calicut_architecture",
       "stream_id": "architecture",
-      "course_id": "architecture_generic",
+      "course_id": "architecture_barch",
       "geography_lens_ids": [
         "state_comfort",
         "national_level"
@@ -128,13 +131,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "B.Arch Architecture"
     },
     {
       "id": "government_homeopathic_medical_college_calicut_ayush_ayush_generic_state_comfort",
       "college_id": "government_homeopathic_medical_college_calicut",
       "stream_id": "ayush",
-      "course_id": "ayush_generic",
+      "course_id": "ayush_bams",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -157,13 +161,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BAMS"
     },
     {
       "id": "government_ayurveda_college_thiruvananthapuram_ayush_ayush_generic_state_comfort",
       "college_id": "government_ayurveda_college_thiruvananthapuram",
       "stream_id": "ayush",
-      "course_id": "ayush_generic",
+      "course_id": "ayush_bams",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -186,7 +191,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BAMS"
     }
   ]
 }

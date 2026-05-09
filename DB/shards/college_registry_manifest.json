@@ -70,42 +70,10 @@
     ],
     "courses": [
       {
-        "id": "engineering_generic",
-        "label": "ENGINEERING GENERIC",
-        "stream_ids": [
-          "engineering"
-        ],
-        "aliases": []
-      },
-      {
-        "id": "medicine_mbbs",
-        "label": "MEDICINE MBBS",
-        "stream_ids": [
-          "medicine"
-        ],
-        "aliases": []
-      },
-      {
         "id": "architecture_generic",
         "label": "ARCHITECTURE GENERIC",
         "stream_ids": [
           "architecture"
-        ],
-        "aliases": []
-      },
-      {
-        "id": "design_generic",
-        "label": "DESIGN GENERIC",
-        "stream_ids": [
-          "design"
-        ],
-        "aliases": []
-      },
-      {
-        "id": "dentistry_generic",
-        "label": "DENTISTRY GENERIC",
-        "stream_ids": [
-          "dentistry"
         ],
         "aliases": []
       },
@@ -118,28 +86,324 @@
         "aliases": []
       },
       {
-        "id": "pharmacy_generic",
-        "label": "PHARMACY GENERIC",
+        "id": "architecture_barch",
+        "label": "B.Arch Architecture",
+        "stream_ids": [
+          "architecture"
+        ],
+        "aliases": [
+          "b.arch",
+          "architecture"
+        ]
+      },
+      {
+        "id": "commerce_bcom",
+        "label": "B.Com",
+        "stream_ids": [
+          "commerce"
+        ],
+        "aliases": [
+          "b.com",
+          "bcom"
+        ]
+      },
+      {
+        "id": "commerce_bcom_hons",
+        "label": "B.Com (Hons)",
+        "stream_ids": [
+          "commerce"
+        ],
+        "aliases": [
+          "b.com hons",
+          "bcom hons"
+        ]
+      },
+      {
+        "id": "design_communication",
+        "label": "B.Des Communication Design",
+        "stream_ids": [
+          "design"
+        ],
+        "aliases": [
+          "communication design"
+        ]
+      },
+      {
+        "id": "design_bdes",
+        "label": "B.Des Design",
+        "stream_ids": [
+          "design"
+        ],
+        "aliases": [
+          "b.des",
+          "design"
+        ]
+      },
+      {
+        "id": "design_fashion",
+        "label": "B.Des Fashion Design",
+        "stream_ids": [
+          "design"
+        ],
+        "aliases": [
+          "fashion"
+        ]
+      },
+      {
+        "id": "education_bed",
+        "label": "B.Ed",
+        "stream_ids": [
+          "education"
+        ],
+        "aliases": [
+          "b.ed",
+          "bed"
+        ]
+      },
+      {
+        "id": "pharmacy_bpharm",
+        "label": "B.Pharm",
         "stream_ids": [
           "pharmacy"
         ],
-        "aliases": []
+        "aliases": [
+          "b.pharm",
+          "bpharm"
+        ]
       },
       {
-        "id": "law_generic",
-        "label": "LAW GENERIC",
+        "id": "science_stats_bsc",
+        "label": "B.Sc",
+        "stream_ids": [
+          "science_stats"
+        ],
+        "aliases": [
+          "b.sc",
+          "bsc"
+        ]
+      },
+      {
+        "id": "engineering_btech_ai_ds",
+        "label": "B.Tech AI and Data Science",
+        "stream_ids": [
+          "engineering"
+        ],
+        "aliases": [
+          "ai",
+          "data science"
+        ]
+      },
+      {
+        "id": "engineering_btech_civil",
+        "label": "B.Tech Civil Engineering",
+        "stream_ids": [
+          "engineering"
+        ],
+        "aliases": [
+          "civil"
+        ]
+      },
+      {
+        "id": "engineering_btech_cse",
+        "label": "B.Tech Computer Science and Engineering",
+        "stream_ids": [
+          "engineering"
+        ],
+        "aliases": [
+          "cse",
+          "computer science"
+        ]
+      },
+      {
+        "id": "engineering_btech_electrical",
+        "label": "B.Tech Electrical Engineering",
+        "stream_ids": [
+          "engineering"
+        ],
+        "aliases": [
+          "electrical",
+          "eee"
+        ]
+      },
+      {
+        "id": "engineering_btech_ece",
+        "label": "B.Tech Electronics and Communication Engineering",
+        "stream_ids": [
+          "engineering"
+        ],
+        "aliases": [
+          "ece",
+          "electronics"
+        ]
+      },
+      {
+        "id": "engineering_btech_it",
+        "label": "B.Tech Information Technology",
+        "stream_ids": [
+          "engineering"
+        ],
+        "aliases": [
+          "it",
+          "information technology"
+        ]
+      },
+      {
+        "id": "engineering_btech_mechanical",
+        "label": "B.Tech Mechanical Engineering",
+        "stream_ids": [
+          "engineering"
+        ],
+        "aliases": [
+          "mechanical"
+        ]
+      },
+      {
+        "id": "humanities_ba",
+        "label": "BA",
+        "stream_ids": [
+          "humanities"
+        ],
+        "aliases": [
+          "ba"
+        ]
+      },
+      {
+        "id": "humanities_ba_hons",
+        "label": "BA (Hons)",
+        "stream_ids": [
+          "humanities"
+        ],
+        "aliases": [
+          "ba hons"
+        ]
+      },
+      {
+        "id": "law_ba_llb",
+        "label": "BA LLB",
         "stream_ids": [
           "law"
         ],
-        "aliases": []
+        "aliases": [
+          "ba llb"
+        ]
       },
       {
-        "id": "management_generic",
-        "label": "MANAGEMENT GENERIC",
+        "id": "ayush_bams",
+        "label": "BAMS",
+        "stream_ids": [
+          "ayush"
+        ],
+        "aliases": [
+          "bams",
+          "ayurveda"
+        ]
+      },
+      {
+        "id": "management_bba",
+        "label": "BBA",
         "stream_ids": [
           "management"
         ],
-        "aliases": []
+        "aliases": [
+          "bba"
+        ]
+      },
+      {
+        "id": "law_bba_llb",
+        "label": "BBA LLB",
+        "stream_ids": [
+          "law"
+        ],
+        "aliases": [
+          "bba llb"
+        ]
+      },
+      {
+        "id": "dentistry_bds",
+        "label": "BDS",
+        "stream_ids": [
+          "dentistry"
+        ],
+        "aliases": [
+          "bds",
+          "dental"
+        ]
+      },
+      {
+        "id": "ayush_bhms",
+        "label": "BHMS",
+        "stream_ids": [
+          "ayush"
+        ],
+        "aliases": [
+          "bhms",
+          "homeopathy"
+        ]
+      },
+      {
+        "id": "fashion_media_bjmc",
+        "label": "BJMC",
+        "stream_ids": [
+          "fashion_media"
+        ],
+        "aliases": [
+          "bjmc",
+          "journalism"
+        ]
+      },
+      {
+        "id": "fashion_media_bmm",
+        "label": "BMM / Mass Media",
+        "stream_ids": [
+          "fashion_media"
+        ],
+        "aliases": [
+          "bmm",
+          "mass media"
+        ]
+      },
+      {
+        "id": "ayush_bnys",
+        "label": "BNYS",
+        "stream_ids": [
+          "ayush"
+        ],
+        "aliases": [
+          "bnys",
+          "naturopathy"
+        ]
+      },
+      {
+        "id": "science_stats_bs",
+        "label": "BS",
+        "stream_ids": [
+          "science_stats"
+        ],
+        "aliases": [
+          "bs"
+        ]
+      },
+      {
+        "id": "ayush_bums",
+        "label": "BUMS",
+        "stream_ids": [
+          "ayush"
+        ],
+        "aliases": [
+          "bums",
+          "unani"
+        ]
+      },
+      {
+        "id": "veterinary_bvsc",
+        "label": "BVSc and AH",
+        "stream_ids": [
+          "veterinary"
+        ],
+        "aliases": [
+          "bvsc",
+          "veterinary"
+        ]
       },
       {
         "id": "commerce_generic",
@@ -150,10 +414,34 @@
         "aliases": []
       },
       {
-        "id": "science_stats_generic",
-        "label": "SCIENCE STATS GENERIC",
+        "id": "dentistry_generic",
+        "label": "DENTISTRY GENERIC",
         "stream_ids": [
-          "science_stats"
+          "dentistry"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "design_generic",
+        "label": "DESIGN GENERIC",
+        "stream_ids": [
+          "design"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "education_generic",
+        "label": "EDUCATION GENERIC",
+        "stream_ids": [
+          "education"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "engineering_generic",
+        "label": "ENGINEERING GENERIC",
+        "stream_ids": [
+          "engineering"
         ],
         "aliases": []
       },
@@ -174,10 +462,97 @@
         "aliases": []
       },
       {
-        "id": "education_generic",
-        "label": "EDUCATION GENERIC",
+        "id": "education_integrated_bed",
+        "label": "Integrated B.Ed",
         "stream_ids": [
           "education"
+        ],
+        "aliases": [
+          "integrated bed",
+          "ba bed",
+          "bsc bed"
+        ]
+      },
+      {
+        "id": "science_stats_integrated_msc",
+        "label": "Integrated M.Sc",
+        "stream_ids": [
+          "science_stats"
+        ],
+        "aliases": [
+          "integrated msc"
+        ]
+      },
+      {
+        "id": "management_ipm",
+        "label": "IPM",
+        "stream_ids": [
+          "management"
+        ],
+        "aliases": [
+          "ipm"
+        ]
+      },
+      {
+        "id": "law_generic",
+        "label": "LAW GENERIC",
+        "stream_ids": [
+          "law"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "law_llb",
+        "label": "LLB",
+        "stream_ids": [
+          "law"
+        ],
+        "aliases": [
+          "llb"
+        ]
+      },
+      {
+        "id": "management_generic",
+        "label": "MANAGEMENT GENERIC",
+        "stream_ids": [
+          "management"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "medicine_mbbs",
+        "label": "MBBS",
+        "stream_ids": [
+          "medicine"
+        ],
+        "aliases": [
+          "mbbs"
+        ]
+      },
+      {
+        "id": "pharmacy_pharmd",
+        "label": "Pharm.D",
+        "stream_ids": [
+          "pharmacy"
+        ],
+        "aliases": [
+          "pharm.d",
+          "pharmd"
+        ]
+      },
+      {
+        "id": "pharmacy_generic",
+        "label": "PHARMACY GENERIC",
+        "stream_ids": [
+          "pharmacy"
+        ],
+        "aliases": []
+      },
+      {
+        "id": "science_stats_generic",
+        "label": "SCIENCE STATS GENERIC",
+        "stream_ids": [
+          "science_stats"
         ],
         "aliases": []
       },

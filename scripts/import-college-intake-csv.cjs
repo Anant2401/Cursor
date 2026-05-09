@@ -135,6 +135,7 @@ function main() {
 
   const today = new Date().toISOString().slice(0, 10);
   const errors = [];
+  const warns = [];
   let addedColleges = 0;
   let updatedColleges = 0;
   let addedPrograms = 0;
@@ -156,6 +157,7 @@ function main() {
     const sourceSecondary = row.source_url_secondary || "";
     const streamId = row.stream_id;
     const courseId = row.course_id;
+    const programName = String(row.program_name || "").trim();
     const lenses = parseLens(row.geography_lens_ids);
     const confidence = row.confidence_level || "medium";
     const notes = row.notes || "";
@@ -173,6 +175,9 @@ function main() {
       assertOrCollect(lensIds.has(l), `Row ${rowNo}: invalid lens "${l}"`, errors);
     });
     assertOrCollect(["high", "medium", "low"].includes(confidence), `Row ${rowNo}: invalid confidence_level "${confidence}"`, errors);
+    if (/_generic$/i.test(String(courseId || ""))) {
+      warns.push(`Row ${rowNo}: generic course_id "${courseId}" used. Prefer a specific canonical course_id.`);
+    }
 
     if (errors.length) return;
 
@@ -238,6 +243,7 @@ function main() {
         college_id: collegeId,
         stream_id: streamId,
         course_id: courseId,
+        program_name: programName || "",
         geography_lens_ids: lenses,
         admission_exam_ids: [],
         admission_routes: [],
@@ -254,6 +260,7 @@ function main() {
       addedPrograms += 1;
     } else {
       program.geography_lens_ids = Array.from(new Set([...(program.geography_lens_ids || []), ...lenses]));
+      if (programName) program.program_name = programName;
       program.availability = program.availability || {};
       program.availability.is_active = true;
       program.availability.state_specific = program.geography_lens_ids.includes("state_comfort");
@@ -289,6 +296,10 @@ function main() {
   console.log(" - Updated colleges:", updatedColleges);
   console.log(" - Added programs:", addedPrograms);
   console.log(" - Updated programs:", updatedPrograms);
+  if (warns.length) {
+    console.warn(" - Warnings:", warns.length);
+    warns.forEach((w) => console.warn("   *", w));
+  }
   if (!dryRun) {
     console.log(" - Registry:", path.relative(ROOT, REGISTRY_PATH));
   } else {

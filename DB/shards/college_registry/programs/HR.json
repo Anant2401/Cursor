@@ -11,7 +11,7 @@
       "id": "ashoka_university_sonepat_humanities_humanities_generic_state_comfort_intake",
       "college_id": "ashoka_university_sonepat",
       "stream_id": "humanities",
-      "course_id": "humanities_generic",
+      "course_id": "humanities_ba",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -34,13 +34,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BA"
     },
     {
       "id": "sgt_university_gurugram_dentistry_dentistry_generic_state_comfort_intake",
       "college_id": "sgt_university_gurugram",
       "stream_id": "dentistry",
-      "course_id": "dentistry_generic",
+      "course_id": "dentistry_bds",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -65,13 +66,14 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BDS"
     },
     {
       "id": "college_veterinary_science_hisar_veterinary_veterinary_generic_state_comfort_int",
       "college_id": "college_veterinary_science_hisar",
       "stream_id": "veterinary",
-      "course_id": "veterinary_generic",
+      "course_id": "veterinary_bvsc",
       "geography_lens_ids": [
         "state_comfort"
       ],
@@ -94,7 +96,8 @@
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
+      },
+      "program_name": "BVSc and AH"
     }
   ]
 }

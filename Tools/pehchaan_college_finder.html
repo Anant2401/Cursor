@@ -334,10 +334,40 @@ function fillStateSelectByLens(){
 
 function fillCourseByStream(){
   var streamId = document.getElementById('stream-select').value;
+  var stateId = document.getElementById('state-select').value;
   var courseSelect = document.getElementById('course-select');
   var courses = getTaxonomyRows('courses').filter(function(c){
     return (c.stream_ids || []).indexOf(streamId) !== -1;
   });
+  var courseMetaById = {};
+  courses.forEach(function(c){
+    courseMetaById[c.id] = c;
+  });
+  var availableCourseIds = {};
+  (REG.college_programs || []).forEach(function(p){
+    if (!p || p.stream_id !== streamId || !courseMetaById[p.course_id]) return;
+    if (!stateId || stateId === 'IN') {
+      availableCourseIds[p.course_id] = true;
+      return;
+    }
+    var pState = stateByCollegeId[p.college_id];
+    if (pState === stateId) availableCourseIds[p.course_id] = true;
+  });
+  var available = courses.filter(function(c){ return availableCourseIds[c.id]; });
+  if (available.length) courses = available;
+  var hasSpecific = courses.some(function(c){
+    var label = String(c.label || '');
+    var id = String(c.id || '');
+    return !GENERIC_COURSE_PATTERNS.some(function(rx){ return rx.test(label) || rx.test(id); });
+  });
+  if (hasSpecific) {
+    courses = courses.filter(function(c){
+      var label = String(c.label || '');
+      var id = String(c.id || '');
+      return !GENERIC_COURSE_PATTERNS.some(function(rx){ return rx.test(label) || rx.test(id); });
+    });
+  }
+  courses.sort(function(a, b){ return String(a.label || a.id || '').localeCompare(String(b.label || b.id || '')); });
   fillSelect(courseSelect, courses, 'Select course');
 }
 
@@ -418,7 +448,7 @@ function cardsFromPrograms(programs){
     rows.forEach(function(r){
       if (r.stream_id) matchedStreamIds[r.stream_id] = true;
       if (r.course_id) matchedCourseIds[r.course_id] = true;
-      var cl = courseMap[r.course_id] || r.course_id;
+      var cl = String(r.program_name || '').trim() || (courseMap[r.course_id] || r.course_id);
       var isGeneric = GENERIC_COURSE_PATTERNS.some(function(rx){ return rx.test(String(cl || '').trim()); });
       if (!snapshotDate && r.last_verified_on) snapshotDate = r.last_verified_on;
       if (r.admission_route && r.admission_route.primary) {
@@ -825,9 +855,9 @@ Promise.all([
   fillSelect(document.getElementById('stream-select'), getTaxonomyRows('streams'), 'Select stream');
   var ss = document.getElementById('stream-select');
   if (ss && !ss.value) ss.value = '';
-  document.getElementById('lens-select').addEventListener('change', function(){ fillStateSelectByLens(); refreshBtn(); });
+  document.getElementById('lens-select').addEventListener('change', function(){ fillStateSelectByLens(); fillCourseByStream(); refreshBtn(); });
   document.getElementById('stream-select').addEventListener('change', function(){ fillCourseByStream(); refreshBtn(); });
-  document.getElementById('state-select').addEventListener('change', refreshBtn);
+  document.getElementById('state-select').addEventListener('change', function(){ fillCourseByStream(); refreshBtn(); });
   document.getElementById('course-select').addEventListener('change', refreshBtn);
   document.getElementById('btn-find').addEventListener('click', runFinder);
   bindResultFilters();

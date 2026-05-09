@@ -65,6 +65,12 @@ function main() {
     if (!["high", "medium", "low"].includes(p.availability && p.availability.confidence_level)) {
       errs.push("Program " + p.id + " missing availability.confidence_level");
     }
+    if (/_generic$/i.test(String(p.course_id || ""))) {
+      warns.push("Program " + p.id + " uses generic course_id: " + p.course_id);
+    }
+    if (!String(p.program_name || "").trim() && !/_generic$/i.test(String(p.course_id || ""))) {
+      warns.push("Program " + p.id + " missing program_name for specific course_id: " + p.course_id);
+    }
     collegesWithPrograms.add(p.college_id);
   });
 
