@@ -3,7 +3,7 @@
     "shard_type": "institutions",
     "state_id": "GJ",
     "state_label": "Gujarat",
-    "count": 9,
+    "count": 10,
     "generated_on": "2026-05-09"
   },
   "institutions": [
@@ -130,7 +130,7 @@
       "city": "Vadodara",
       "type": "State university",
       "ownership": "Public",
-      "confidence_level": "medium",
+      "confidence_level": "low",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://msubaroda.ac.in/",
@@ -146,7 +146,7 @@
         "specialization": "",
         "unique_point": "",
         "why_choose": "",
-        "notes": "Use as provisional AYUSH mapping pending program-level confirmation in official bulletin. Quality-gated pass 2: baseline sources reviewed; keep official portal verification before final decision."
+        "notes": "Use as provisional AYUSH mapping pending program-level confirmation in official bulletin."
       },
       "verification": {
         "nirf_band": "",
@@ -525,6 +525,65 @@
           "https://www.coa.gov.in/"
         ],
         "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "government_dental_college_ahmedabad",
+      "name": "Government Dental College and Hospital Ahmedabad",
+      "state_id": "GJ",
+      "city": "Ahmedabad",
+      "type": "Government dental college",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.gdchahmedabad.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Dental seat allocation and recognition should be verified from Gujarat counselling and DCI updates."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.gdchahmedabad.edu.in/",
+          "https://dciindia.gov.in/",
+          "https://www.gdchahmedabad.edu.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "limited",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "DCI_or_equivalent"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.gdchahmedabad.edu.in/",
+          "https://dciindia.gov.in/"
+        ],
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }

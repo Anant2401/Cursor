@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "UP",
     "state_label": "Uttar Pradesh",
-    "count": 62,
+    "count": 63,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -1833,8 +1833,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "medium",
-        "notes": "Program-level details should be manually verified from UP AYUSH and regulator sources. Quality-gated pass 2 applied."
+        "confidence_level": "low",
+        "notes": "Program-level details should be manually verified from UP AYUSH and regulator sources."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {
@@ -1862,8 +1862,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "medium",
-        "notes": "Program-level data should be manually verified from official sources before relying. Quality-gated pass 2 applied."
+        "confidence_level": "low",
+        "notes": "Program-level data should be manually verified from official sources before relying."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {
@@ -1873,6 +1873,37 @@
           "state_cet"
         ],
         "verification_url": "https://www.aacprayagraj.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "rama_dental_college_kanpur_dentistry_dentistry_generic_state_comfort_intake",
+      "college_id": "rama_dental_college_kanpur",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Dental approvals and seat intake should be verified each cycle from regulator and college portals."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "neetbds"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.ramadentalcollege.com/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

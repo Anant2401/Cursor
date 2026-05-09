@@ -3,7 +3,7 @@
     "shard_type": "institutions",
     "state_id": "KA",
     "state_label": "Karnataka",
-    "count": 36,
+    "count": 40,
     "generated_on": "2026-05-09"
   },
   "institutions": [
@@ -1664,7 +1664,7 @@
       "city": "Bengaluru",
       "type": "Government AYUSH college",
       "ownership": "Public",
-      "confidence_level": "medium",
+      "confidence_level": "low",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.karnataka.gov.in/",
@@ -1680,7 +1680,7 @@
         "specialization": "",
         "unique_point": "",
         "why_choose": "",
-        "notes": "Program-level details should be manually verified from state AYUSH and regulator sources before reliance. Quality-gated pass 2: baseline sources reviewed; keep official portal verification before final decision."
+        "notes": "Program-level details should be manually verified from state AYUSH and regulator sources before reliance."
       },
       "verification": {
         "nirf_band": "",
@@ -1954,7 +1954,7 @@
       "city": "Bengaluru",
       "type": "Private AYUSH college",
       "ownership": "Private",
-      "confidence_level": "medium",
+      "confidence_level": "low",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://bbhmc.org/",
@@ -1970,15 +1970,14 @@
         "specialization": "",
         "unique_point": "",
         "why_choose": "",
-        "notes": "AYUSH approvals and admission pathway should be validated through official institute notices. Quality-gated pass 2: baseline sources reviewed; keep official portal verification before final decision."
+        "notes": "AYUSH approvals and admission pathway should be validated through official institute notices."
       },
       "verification": {
         "nirf_band": "",
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://bbhmc.org/",
-          "https://ncismindia.org/",
-          "https://bbhmc.org/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -2036,8 +2035,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://jssayurvedacollege.org/",
-          "https://ncismindia.org/",
-          "https://jssayurvedacollege.org/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -2058,6 +2056,242 @@
         "regulators_verified": [],
         "verification_urls": [
           "https://jssayurvedacollege.org/",
+          "https://ncismindia.org/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "government_dental_college_bangalore",
+      "name": "Government Dental College and Research Institute Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Government dental college",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://gdcrib.karnataka.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Dental counselling and DCI recognition should be validated from current official bulletins."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://gdcrib.karnataka.gov.in/",
+          "https://dciindia.gov.in/",
+          "https://gdcrib.karnataka.gov.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "limited",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "DCI_or_equivalent"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://gdcrib.karnataka.gov.in/",
+          "https://dciindia.gov.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "dayananda_sagar_architecture_bengaluru",
+      "name": "Dayananda Sagar College of Architecture Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private architecture college",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://dscak.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Architecture intake and eligibility criteria should be verified against latest counselling and NATA updates."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://dscak.edu.in/",
+          "https://www.coa.gov.in/",
+          "https://dscak.edu.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "limited",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "COA"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://dscak.edu.in/",
+          "https://www.coa.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "veterinary_college_hassan",
+      "name": "Veterinary College Hassan",
+      "state_id": "KA",
+      "city": "Hassan",
+      "type": "State veterinary college",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.kvafsu.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Veterinary counselling and category-wise seats should be validated through state university notifications."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.kvafsu.edu.in/",
+          "https://icar.org.in/",
+          "https://www.kvafsu.edu.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.kvafsu.edu.in/",
+          "https://icar.org.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "shri_bm_patil_ayurveda_vijayapura",
+      "name": "Shri BM Patil Medical College Ayurveda Vijayapura",
+      "state_id": "KA",
+      "city": "Vijayapura",
+      "type": "Private AYUSH college",
+      "ownership": "Private",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.bldedu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Program-level AYUSH details should be manually verified from institute and regulator portals."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.bldedu.ac.in/",
+          "https://ncismindia.org/",
+          "https://www.bldedu.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "NCISM_or_NCH"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.bldedu.ac.in/",
           "https://ncismindia.org/"
         ],
         "confidence": "low",

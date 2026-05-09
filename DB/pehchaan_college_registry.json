@@ -10,8 +10,8 @@
       "https://mcc.nic.in/"
     ],
     "pipeline_stats": {
-      "total_colleges": 345,
-      "total_programs": 469,
+      "total_colleges": 355,
+      "total_programs": 479,
       "stale_record_count": 0,
       "last_pipeline_run": "2026-05-09"
     }
@@ -13624,7 +13624,7 @@
       "city": "Vadodara",
       "type": "State university",
       "ownership": "Public",
-      "confidence_level": "medium",
+      "confidence_level": "low",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://msubaroda.ac.in/",
@@ -13640,7 +13640,7 @@
         "specialization": "",
         "unique_point": "",
         "why_choose": "",
-        "notes": "Use as provisional AYUSH mapping pending program-level confirmation in official bulletin. Quality-gated pass 2: baseline sources reviewed; keep official portal verification before final decision."
+        "notes": "Use as provisional AYUSH mapping pending program-level confirmation in official bulletin."
       },
       "verification": {
         "nirf_band": "",
@@ -16060,7 +16060,7 @@
       "city": "Hyderabad",
       "type": "Private institute",
       "ownership": "Private",
-      "confidence_level": "medium",
+      "confidence_level": "low",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.aurobindo.com/",
@@ -16076,7 +16076,7 @@
         "specialization": "",
         "unique_point": "",
         "why_choose": "",
-        "notes": "Program-level eligibility and approval status should be manually verified before relying on this record. Quality-gated pass 2: baseline sources reviewed; keep official portal verification before final decision."
+        "notes": "Program-level eligibility and approval status should be manually verified before relying on this record."
       },
       "verification": {
         "nirf_band": "",
@@ -18670,7 +18670,7 @@
       "city": "Bengaluru",
       "type": "Government AYUSH college",
       "ownership": "Public",
-      "confidence_level": "medium",
+      "confidence_level": "low",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.karnataka.gov.in/",
@@ -18686,7 +18686,7 @@
         "specialization": "",
         "unique_point": "",
         "why_choose": "",
-        "notes": "Program-level details should be manually verified from state AYUSH and regulator sources before reliance. Quality-gated pass 2: baseline sources reviewed; keep official portal verification before final decision."
+        "notes": "Program-level details should be manually verified from state AYUSH and regulator sources before reliance."
       },
       "verification": {
         "nirf_band": "",
@@ -19795,8 +19795,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://nih.nic.in/",
-          "https://ncismindia.org/",
-          "https://nih.nic.in/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -19854,8 +19853,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://gacnagpur.org/",
-          "https://ncismindia.org/",
-          "https://gacnagpur.org/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -19913,8 +19911,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://tnhealth.tn.gov.in/",
-          "https://ncismindia.org/",
-          "https://tnhealth.tn.gov.in/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -19949,7 +19946,7 @@
       "city": "Prayagraj",
       "type": "Government AYUSH college",
       "ownership": "Public",
-      "confidence_level": "medium",
+      "confidence_level": "low",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.upayushsociety.com/",
@@ -19965,15 +19962,14 @@
         "specialization": "",
         "unique_point": "",
         "why_choose": "",
-        "notes": "Program-level details should be manually verified from UP AYUSH and regulator sources. Quality-gated pass 2: baseline sources reviewed; keep official portal verification before final decision."
+        "notes": "Program-level details should be manually verified from UP AYUSH and regulator sources."
       },
       "verification": {
         "nirf_band": "",
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.upayushsociety.com/",
-          "https://ncismindia.org/",
-          "https://www.upayushsociety.com/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -20008,7 +20004,7 @@
       "city": "Bengaluru",
       "type": "Private AYUSH college",
       "ownership": "Private",
-      "confidence_level": "medium",
+      "confidence_level": "low",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://bbhmc.org/",
@@ -20024,15 +20020,14 @@
         "specialization": "",
         "unique_point": "",
         "why_choose": "",
-        "notes": "AYUSH approvals and admission pathway should be validated through official institute notices. Quality-gated pass 2: baseline sources reviewed; keep official portal verification before final decision."
+        "notes": "AYUSH approvals and admission pathway should be validated through official institute notices."
       },
       "verification": {
         "nirf_band": "",
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://bbhmc.org/",
-          "https://ncismindia.org/",
-          "https://bbhmc.org/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -20090,8 +20085,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://state.bihar.gov.in/health/",
-          "https://ncismindia.org/",
-          "https://state.bihar.gov.in/health/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -20149,8 +20143,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://rgpgayurvediccollege.org/",
-          "https://ncismindia.org/",
-          "https://rgpgayurvediccollege.org/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -20208,8 +20201,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://dme.kerala.gov.in/",
-          "https://ncismindia.org/",
-          "https://dme.kerala.gov.in/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -20267,8 +20259,7 @@
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://jssayurvedacollege.org/",
-          "https://ncismindia.org/",
-          "https://jssayurvedacollege.org/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -20303,7 +20294,7 @@
       "city": "Prayagraj",
       "type": "Private AYUSH college",
       "ownership": "Private",
-      "confidence_level": "medium",
+      "confidence_level": "low",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.aacprayagraj.in/",
@@ -20319,15 +20310,14 @@
         "specialization": "",
         "unique_point": "",
         "why_choose": "",
-        "notes": "Program-level data should be manually verified from official sources before relying. Quality-gated pass 2: baseline sources reviewed; keep official portal verification before final decision."
+        "notes": "Program-level data should be manually verified from official sources before relying."
       },
       "verification": {
         "nirf_band": "",
         "last_verified_on": "2026-05-09",
         "source_urls": [
           "https://www.aacprayagraj.in/",
-          "https://ncismindia.org/",
-          "https://www.aacprayagraj.in/"
+          "https://ncismindia.org/"
         ]
       },
       "cost_band": {
@@ -20351,6 +20341,596 @@
           "https://ncismindia.org/"
         ],
         "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "government_ayurvedic_college_bhopal",
+      "name": "Government Ayurvedic College Bhopal",
+      "state_id": "MP",
+      "city": "Bhopal",
+      "type": "Government AYUSH college",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.ayush.mp.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "AYUSH seat matrix and regulator approval should be verified from MP state counselling notices."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.ayush.mp.gov.in/",
+          "https://ncismindia.org/",
+          "https://www.ayush.mp.gov.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "limited",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "NCISM_or_NCH"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.ayush.mp.gov.in/",
+          "https://ncismindia.org/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "government_dental_college_bangalore",
+      "name": "Government Dental College and Research Institute Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Government dental college",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://gdcrib.karnataka.gov.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Dental counselling and DCI recognition should be validated from current official bulletins."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://gdcrib.karnataka.gov.in/",
+          "https://dciindia.gov.in/",
+          "https://gdcrib.karnataka.gov.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "limited",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "DCI_or_equivalent"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://gdcrib.karnataka.gov.in/",
+          "https://dciindia.gov.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "school_of_planning_and_architecture_bhopal",
+      "name": "School of Planning and Architecture Bhopal",
+      "state_id": "MP",
+      "city": "Bhopal",
+      "type": "Institute of National Importance",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://spabhopal.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Architecture route may use national-level admission channels; verify current entrance criteria."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://spabhopal.ac.in/",
+          "https://www.coa.gov.in/",
+          "https://spabhopal.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "COA"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://spabhopal.ac.in/",
+          "https://www.coa.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "college_of_veterinary_science_khanapara",
+      "name": "College of Veterinary Science Khanapara",
+      "state_id": "AS",
+      "city": "Guwahati",
+      "type": "State veterinary college",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.vetbifg.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Veterinary admission pathway should be confirmed from state notices and ICAR-linked updates."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.vetbifg.ac.in/",
+          "https://icar.org.in/",
+          "https://www.vetbifg.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.vetbifg.ac.in/",
+          "https://icar.org.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "rama_dental_college_kanpur",
+      "name": "Rama Dental College Kanpur",
+      "state_id": "UP",
+      "city": "Kanpur",
+      "type": "Private dental college",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.ramadentalcollege.com/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Dental approvals and seat intake should be verified each cycle from regulator and college portals."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.ramadentalcollege.com/",
+          "https://dciindia.gov.in/",
+          "https://www.ramadentalcollege.com/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "limited",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "DCI_or_equivalent"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.ramadentalcollege.com/",
+          "https://dciindia.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "government_ayurveda_college_thiruvananthapuram",
+      "name": "Government Ayurveda College Thiruvananthapuram",
+      "state_id": "KL",
+      "city": "Thiruvananthapuram",
+      "type": "Government AYUSH college",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.gactvm.org/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "AYUSH admissions and recognition status should be validated from Kerala and NCISM notices."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.gactvm.org/",
+          "https://ncismindia.org/",
+          "https://www.gactvm.org/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "limited",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "NCISM_or_NCH"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.gactvm.org/",
+          "https://ncismindia.org/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "dayananda_sagar_architecture_bengaluru",
+      "name": "Dayananda Sagar College of Architecture Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Private architecture college",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://dscak.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Architecture intake and eligibility criteria should be verified against latest counselling and NATA updates."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://dscak.edu.in/",
+          "https://www.coa.gov.in/",
+          "https://dscak.edu.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "limited",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "COA"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://dscak.edu.in/",
+          "https://www.coa.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "veterinary_college_hassan",
+      "name": "Veterinary College Hassan",
+      "state_id": "KA",
+      "city": "Hassan",
+      "type": "State veterinary college",
+      "ownership": "Public",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.kvafsu.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Veterinary counselling and category-wise seats should be validated through state university notifications."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.kvafsu.edu.in/",
+          "https://icar.org.in/",
+          "https://www.kvafsu.edu.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.kvafsu.edu.in/",
+          "https://icar.org.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "shri_bm_patil_ayurveda_vijayapura",
+      "name": "Shri BM Patil Medical College Ayurveda Vijayapura",
+      "state_id": "KA",
+      "city": "Vijayapura",
+      "type": "Private AYUSH college",
+      "ownership": "Private",
+      "confidence_level": "low",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.bldedu.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Program-level AYUSH details should be manually verified from institute and regulator portals."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.bldedu.ac.in/",
+          "https://ncismindia.org/",
+          "https://www.bldedu.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "NCISM_or_NCH"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.bldedu.ac.in/",
+          "https://ncismindia.org/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "government_dental_college_ahmedabad",
+      "name": "Government Dental College and Hospital Ahmedabad",
+      "state_id": "GJ",
+      "city": "Ahmedabad",
+      "type": "Government dental college",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.gdchahmedabad.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Dental seat allocation and recognition should be verified from Gujarat counselling and DCI updates."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.gdchahmedabad.edu.in/",
+          "https://dciindia.gov.in/",
+          "https://www.gdchahmedabad.edu.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "limited",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "DCI_or_equivalent"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.gdchahmedabad.edu.in/",
+          "https://dciindia.gov.in/"
+        ],
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
@@ -31020,8 +31600,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "medium",
-        "notes": "Use as provisional AYUSH mapping pending program-level confirmation in official bulletin. Quality-gated pass 2 applied."
+        "confidence_level": "low",
+        "notes": "Use as provisional AYUSH mapping pending program-level confirmation in official bulletin."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {
@@ -32345,8 +32925,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "medium",
-        "notes": "Program-level eligibility and approval status should be manually verified before relying on this record. Quality-gated pass 2 applied."
+        "confidence_level": "low",
+        "notes": "Program-level eligibility and approval status should be manually verified before relying on this record."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {
@@ -33675,8 +34255,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "medium",
-        "notes": "Program-level details should be manually verified from state AYUSH and regulator sources before reliance. Quality-gated pass 2 applied."
+        "confidence_level": "low",
+        "notes": "Program-level details should be manually verified from state AYUSH and regulator sources before reliance."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {
@@ -34336,8 +34916,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "medium",
-        "notes": "Program-level details should be manually verified from UP AYUSH and regulator sources. Quality-gated pass 2 applied."
+        "confidence_level": "low",
+        "notes": "Program-level details should be manually verified from UP AYUSH and regulator sources."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {
@@ -34365,8 +34945,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "medium",
-        "notes": "AYUSH approvals and admission pathway should be validated through official institute notices. Quality-gated pass 2 applied."
+        "confidence_level": "low",
+        "notes": "AYUSH approvals and admission pathway should be validated through official institute notices."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {
@@ -34510,8 +35090,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "medium",
-        "notes": "Program-level data should be manually verified from official sources before relying. Quality-gated pass 2 applied."
+        "confidence_level": "low",
+        "notes": "Program-level data should be manually verified from official sources before relying."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {
@@ -34521,6 +35101,309 @@
           "state_cet"
         ],
         "verification_url": "https://www.aacprayagraj.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "government_ayurvedic_college_bhopal_ayush_ayush_generic_state_comfort_intake",
+      "college_id": "government_ayurvedic_college_bhopal",
+      "stream_id": "ayush",
+      "course_id": "ayush_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "AYUSH seat matrix and regulator approval should be verified from MP state counselling notices."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.ayush.mp.gov.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "government_dental_college_bangalore_dentistry_dentistry_generic_state_comfort_in",
+      "college_id": "government_dental_college_bangalore",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Dental counselling and DCI recognition should be validated from current official bulletins."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "neetbds"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://gdcrib.karnataka.gov.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "school_of_planning_and_architecture_bhopal_architecture_architecture_generic_nat",
+      "college_id": "school_of_planning_and_architecture_bhopal",
+      "stream_id": "architecture",
+      "course_id": "architecture_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Architecture route may use national-level admission channels; verify current entrance criteria."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "arch"
+        ],
+        "pathways": [
+          "state_cet",
+          "institute_portal"
+        ],
+        "verification_url": "https://spabhopal.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "college_of_veterinary_science_khanapara_veterinary_veterinary_generic_state_comf",
+      "college_id": "college_of_veterinary_science_khanapara",
+      "stream_id": "veterinary",
+      "course_id": "veterinary_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Veterinary admission pathway should be confirmed from state notices and ICAR-linked updates."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.vetbifg.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "rama_dental_college_kanpur_dentistry_dentistry_generic_state_comfort_intake",
+      "college_id": "rama_dental_college_kanpur",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Dental approvals and seat intake should be verified each cycle from regulator and college portals."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "neetbds"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.ramadentalcollege.com/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "government_ayurveda_college_thiruvananthapuram_ayush_ayush_generic_state_comfort",
+      "college_id": "government_ayurveda_college_thiruvananthapuram",
+      "stream_id": "ayush",
+      "course_id": "ayush_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "AYUSH admissions and recognition status should be validated from Kerala and NCISM notices."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.gactvm.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "dayananda_sagar_architecture_bengaluru_architecture_architecture_generic_state_c",
+      "college_id": "dayananda_sagar_architecture_bengaluru",
+      "stream_id": "architecture",
+      "course_id": "architecture_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Architecture intake and eligibility criteria should be verified against latest counselling and NATA updates."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "arch"
+        ],
+        "pathways": [
+          "state_cet",
+          "institute_portal"
+        ],
+        "verification_url": "https://dscak.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "veterinary_college_hassan_veterinary_veterinary_generic_state_comfort_intake",
+      "college_id": "veterinary_college_hassan",
+      "stream_id": "veterinary",
+      "course_id": "veterinary_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Veterinary counselling and category-wise seats should be validated through state university notifications."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.kvafsu.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "shri_bm_patil_ayurveda_vijayapura_ayush_ayush_generic_state_comfort_intake",
+      "college_id": "shri_bm_patil_ayurveda_vijayapura",
+      "stream_id": "ayush",
+      "course_id": "ayush_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Program-level AYUSH details should be manually verified from institute and regulator portals."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.bldedu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "government_dental_college_ahmedabad_dentistry_dentistry_generic_state_comfort_in",
+      "college_id": "government_dental_college_ahmedabad",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Dental seat allocation and recognition should be verified from Gujarat counselling and DCI updates."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "neetbds"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.gdchahmedabad.edu.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

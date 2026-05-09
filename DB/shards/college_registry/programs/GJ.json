@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "GJ",
     "state_label": "Gujarat",
-    "count": 9,
+    "count": 10,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -81,8 +81,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "medium",
-        "notes": "Use as provisional AYUSH mapping pending program-level confirmation in official bulletin. Quality-gated pass 2 applied."
+        "confidence_level": "low",
+        "notes": "Use as provisional AYUSH mapping pending program-level confirmation in official bulletin."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {
@@ -271,6 +271,37 @@
           "institute_portal"
         ],
         "verification_url": "https://cept.ac.in/faculty-of-architecture",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "government_dental_college_ahmedabad_dentistry_dentistry_generic_state_comfort_in",
+      "college_id": "government_dental_college_ahmedabad",
+      "stream_id": "dentistry",
+      "course_id": "dentistry_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Dental seat allocation and recognition should be verified from Gujarat counselling and DCI updates."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "neetbds"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.gdchahmedabad.edu.in/",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."

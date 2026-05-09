@@ -817,8 +817,8 @@
       "availability": {
         "is_active": true,
         "state_specific": true,
-        "confidence_level": "medium",
-        "notes": "Program-level eligibility and approval status should be manually verified before relying on this record. Quality-gated pass 2 applied."
+        "confidence_level": "low",
+        "notes": "Program-level eligibility and approval status should be manually verified before relying on this record."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {
