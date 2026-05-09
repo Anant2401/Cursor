@@ -4,7 +4,7 @@
     "state_id": "MP",
     "state_label": "Madhya Pradesh",
     "count": 19,
-    "generated_on": "2026-05-07"
+    "generated_on": "2026-05-09"
   },
   "programs": [
     {
@@ -23,7 +23,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — IIT / NIT"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.iiti.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "manit_bhopal_engineering_engineering_generic_state_comfort_mp",
@@ -41,7 +55,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — IIT / NIT"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.manit.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "iiitdm_jabalpur_engineering_engineering_generic_state_comfort_mp",
@@ -59,7 +87,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — IIITDM Jabalpur & state universities"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.iiitdmj.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "uit_rgpv_davv_clusters_verify_programmes_engineering_engineering_generic_state_c",
@@ -77,7 +119,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — IIITDM Jabalpur & state universities"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.rgpv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "private_engineering_colleges_across_mp_engineering_engineering_generic_state_com",
@@ -95,7 +150,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier C — RGPV-affiliated private colleges"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.aicte-india.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "manit_bhopal_engineering_engineering_generic_state_comfort",
@@ -113,7 +181,21 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.manit.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "manit_bhopal_architecture_architecture_generic_state_comfort",
@@ -131,7 +213,21 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.manit.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "aiims_bhopal_medicine_medicine_mbbs_state_comfort",
@@ -149,7 +245,21 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.aiimsbhopal.edu.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "devi_ahilya_vishwavidyalaya_commerce_commerce_generic_state_comfort",
@@ -167,7 +277,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.dauniv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "devi_ahilya_vishwavidyalaya_management_management_generic_state_comfort",
@@ -185,7 +306,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.dauniv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "devi_ahilya_vishwavidyalaya_science_stats_science_stats_generic_state_comfort",
@@ -203,7 +335,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.dauniv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "devi_ahilya_vishwavidyalaya_humanities_humanities_generic_state_comfort",
@@ -221,7 +364,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.dauniv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "devi_ahilya_vishwavidyalaya_education_education_generic_state_comfort",
@@ -239,7 +393,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.dauniv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "devi_ahilya_vishwavidyalaya_pharmacy_pharmacy_generic_state_comfort",
@@ -257,7 +422,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.dauniv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "devi_ahilya_vishwavidyalaya_law_law_generic_state_comfort",
@@ -275,7 +451,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "clat"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.dauniv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nliu_bhopal_law_law_generic_state_comfort",
@@ -293,7 +482,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "clat"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://nliu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nliu_bhopal_humanities_humanities_generic_state_comfort",
@@ -311,7 +513,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://nliu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nanaji_deshmukh_veterinary_university_jabalpur_veterinary_veterinary_generic_sta",
@@ -329,7 +542,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.ndvsu.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nanaji_deshmukh_veterinary_university_jabalpur_science_stats_science_stats_gener",
@@ -347,7 +571,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.ndvsu.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     }
   ]
 }

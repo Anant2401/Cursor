@@ -4,7 +4,7 @@
     "state_id": "IN",
     "state_label": "All-India (national counselling)",
     "count": 33,
-    "generated_on": "2026-05-07"
+    "generated_on": "2026-05-09"
   },
   "programs": [
     {
@@ -23,7 +23,20 @@
         "confidence_level": "high",
         "notes": "Imported from Plan B bundle tier: Tier A — IITs / top NITs / top IIITs (illustrative band)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://josaa.nic.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "top_iiits_hyderabad_bangalore_etc_engineering_engineering_generic_national_level",
@@ -41,7 +54,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — IITs / top NITs / top IIITs (illustrative band)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://josaa.nic.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "other_nits_and_iiits_via_josaa_engineering_engineering_generic_national_level_in",
@@ -59,7 +85,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — Other NITs / IIITs / solid GFTIs"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://www.nirfindia.org/Rankings/2025/Ranking.html",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "vacant_seats_after_josaa_rounds_engineering_engineering_generic_national_level_i",
@@ -77,7 +116,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier C — CSAB / participating institutes"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://csab.nic.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "aiims_jipmer_top_state_gmcs_via_aiq_medicine_medicine_mbbs_national_level_in",
@@ -95,7 +147,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — top government medical colleges (illustrative)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://mcc.nic.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "esic_afmc_pool_other_central_schemes_when_listed_medicine_medicine_mbbs_national",
@@ -113,7 +179,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — other government / central institutions"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://mcc.nic.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "deemed_universities_medicine_medicine_mbbs_national_level_in",
@@ -131,7 +211,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier C — deemed / private (cost-sensitive)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://mcc.nic.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "iit_kharagpur_iit_roorkee_spa_delhi_examples_verify_current_intake_architecture_",
@@ -149,7 +243,21 @@
         "confidence_level": "high",
         "notes": "Imported from Plan B bundle tier: Tier A — IITs / SPAs / top NITs (illustrative)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "arch"
+        ],
+        "pathways": [
+          "state_cet",
+          "institute_portal"
+        ],
+        "verification_url": "https://josaa.nic.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nits_and_state_universities_with_coa_approved_b_arch_verify_list_yearly_architec",
@@ -167,7 +275,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — strong NITs / state flagships via national/state channels"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "arch"
+        ],
+        "pathways": [
+          "state_cet",
+          "institute_portal"
+        ],
+        "verification_url": "https://www.nirfindia.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "iit_bombay_iit_guwahati_iit_hyderabad_design_programmes_via_uceed_examples_desig",
@@ -185,7 +307,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — IIT B.Des / top NID (illustrative)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "nift"
+        ],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://www.uceed.iitb.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "national_institute_of_design_multiple_campuses_and_nift_campuses_design_design_g",
@@ -203,7 +338,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — other NIDs / NIFT campuses"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "nift"
+        ],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://www.nift.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "maulana_azad_institute_of_dental_sciences_delhi_government_dental_colleges_via_a",
@@ -221,7 +369,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — top government dental institutes (illustrative)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "neetbds"
+        ],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://mcc.nic.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "state_government_dental_colleges_across_india_verify_seat_type_dentistry_dentist",
@@ -239,7 +400,20 @@
         "confidence_level": "low",
         "notes": "Imported from Plan B bundle tier: Tier B — other government / high-trust colleges"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "neetbds"
+        ],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://mcc.nic.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "national_institute_of_ayurveda_jaipur_ilbs_example_health_science_adjacency_veri",
@@ -257,7 +431,18 @@
         "confidence_level": "low",
         "notes": "Imported from Plan B bundle tier: Tier A — national institutes / strong government colleges (illustrative)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://aaccc.gov.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "government_ayurveda_homoeopathy_colleges_state_wise_lists_ayush_ayush_generic_na",
@@ -275,7 +460,18 @@
         "confidence_level": "low",
         "notes": "Imported from Plan B bundle tier: Tier B — state AYUSH colleges across India"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://ncismindia.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "niper_campuses_mpharm_heavy_verify_ug_if_offered_bits_pilani_pharmacy_manipal_co",
@@ -293,7 +489,18 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — NIPERs / top university pharmacy departments (illustrative)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://www.pci.nic.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "well_known_pci_approved_colleges_across_states_pharmacy_pharmacy_generic_nationa",
@@ -311,7 +518,18 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — strong private and state PCI-approved colleges"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://www.pci.nic.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nlsiu_bangalore_nalsar_hyderabad_wbnujs_kolkata_examples_law_law_generic_nationa",
@@ -329,7 +547,20 @@
         "confidence_level": "low",
         "notes": "Imported from Plan B bundle tier: Tier A — top NLUs (illustrative)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "clat"
+        ],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://consortiumofnlus.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "other_nlus_and_national_private_law_schools_verify_bar_council_approval_law_law_",
@@ -347,7 +578,20 @@
         "confidence_level": "low",
         "notes": "Imported from Plan B bundle tier: Tier B — other NLUs / strong national private"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "clat"
+        ],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://www.barcouncilofindia.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "iim_indore_iim_rohtak_ipm_style_programmes_verify_current_list_management_manage",
@@ -365,7 +609,18 @@
         "confidence_level": "low",
         "notes": "Imported from Plan B bundle tier: Tier A — IIM IPM / top commerce-school BMS/BBA (illustrative)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://www.iimidr.ac.in/academic-programmes/five-year-integrated-programme-in-management-ipm/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "established_private_universities_with_ugc_recognised_management_ug_management_ma",
@@ -383,7 +638,18 @@
         "confidence_level": "low",
         "notes": "Imported from Plan B bundle tier: Tier B — strong private BBA / BMS"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://www.ugc.gov.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "shri_ram_college_of_commerce_srcc_hindu_college_lsr_examples_via_cuet_commerce_c",
@@ -401,7 +667,18 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — DU SRCC-class / other top central commerce (illustrative)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://cuet.samarth.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "other_ugc_recognised_universities_with_strong_accounting_finance_ug_commerce_com",
@@ -419,7 +696,18 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — other strong central and private commerce UG"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://www.nirfindia.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "iiser_kolkata_pune_mohali_examples_via_iiser_aptitude_test_science_stats_science",
@@ -437,7 +725,18 @@
         "confidence_level": "low",
         "notes": "Imported from Plan B bundle tier: Tier A — IISER / NISER / top central science UG (illustrative)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://iiseradmission.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "bhu_university_of_hyderabad_others_via_cuet_examples_science_stats_science_stats",
@@ -455,7 +754,18 @@
         "confidence_level": "low",
         "notes": "Imported from Plan B bundle tier: Tier B — CUET science at strong central/state universities"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://cuet.samarth.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nift_delhi_mumbai_bangalore_examples_fashion_media_fashion_media_generic_nationa",
@@ -473,7 +783,20 @@
         "confidence_level": "low",
         "notes": "Imported from Plan B bundle tier: Tier A — NIFT / top film & communication schools (illustrative)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "nift"
+        ],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://www.nift.ac.in/admission",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "established_private_communication_schools_verify_degree_and_campus_fashion_media",
@@ -491,7 +814,20 @@
         "confidence_level": "low",
         "notes": "Imported from Plan B bundle tier: Tier B — strong private media schools"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "nift"
+        ],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://www.ugc.gov.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "st_stephen_s_college_lady_shri_ram_college_for_women_examples_verify_cuet_humani",
@@ -509,7 +845,18 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — DU / JNU / Hyderabad / Ashoka-class targets (illustrative)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://cuet.samarth.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "jnu_bhu_university_of_hyderabad_examples_humanities_humanities_generic_national_",
@@ -527,7 +874,18 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — other central universities with strong social science departments"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://www.nirfindia.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "regional_institute_of_education_mysuru_bhopal_bhubaneswar_examples_education_edu",
@@ -545,7 +903,18 @@
         "confidence_level": "low",
         "notes": "Imported from Plan B bundle tier: Tier A — RIE / top central education institutes (illustrative)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://ncert.nic.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "state_universities_with_ncte_recognised_b_ed_verify_per_campus_education_educati",
@@ -563,7 +932,18 @@
         "confidence_level": "low",
         "notes": "Imported from Plan B bundle tier: Tier B — state universities with strong teacher-education departments"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://ncte.gov.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "indian_veterinary_research_institute_ivri_izatnagar_example_veterinary_veterinar",
@@ -581,7 +961,18 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — IVRI / state veterinary universities (illustrative)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://www.ivri.nic.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "state_veterinary_colleges_across_india_verify_seat_type_and_bond_veterinary_vete",
@@ -599,7 +990,18 @@
         "confidence_level": "low",
         "notes": "Imported from Plan B bundle tier: Tier B — other government veterinary colleges"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "all_india_portal"
+        ],
+        "verification_url": "https://mcc.nic.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     }
   ]
 }

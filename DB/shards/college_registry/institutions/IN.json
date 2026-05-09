@@ -4,7 +4,7 @@
     "state_id": "IN",
     "state_label": "All-India (national counselling)",
     "count": 33,
-    "generated_on": "2026-05-07"
+    "generated_on": "2026-05-09"
   },
   "institutions": [
     {
@@ -38,6 +38,29 @@
         "source_urls": [
           "https://josaa.nic.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://josaa.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -71,6 +94,29 @@
         "source_urls": [
           "https://josaa.nic.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://josaa.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -104,6 +150,29 @@
         "source_urls": [
           "https://www.nirfindia.org/Rankings/2025/Ranking.html"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.nirfindia.org/Rankings/2025/Ranking.html"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -137,6 +206,29 @@
         "source_urls": [
           "https://csab.nic.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://csab.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -170,6 +262,29 @@
         "source_urls": [
           "https://mcc.nic.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://mcc.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -203,6 +318,29 @@
         "source_urls": [
           "https://mcc.nic.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://mcc.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -236,6 +374,29 @@
         "source_urls": [
           "https://mcc.nic.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://mcc.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -270,6 +431,30 @@
           "https://josaa.nic.in/",
           "https://www.coa.gov.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "COA"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://josaa.nic.in/",
+          "https://www.coa.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -304,6 +489,30 @@
           "https://www.nirfindia.org/",
           "https://nata.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "COA"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.nirfindia.org/",
+          "https://nata.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -338,6 +547,30 @@
           "https://www.uceed.iitb.ac.in/",
           "https://www.nid.edu/admissions.html"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.uceed.iitb.ac.in/",
+          "https://www.nid.edu/admissions.html"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -372,6 +605,30 @@
           "https://www.nift.ac.in/",
           "https://www.nirfindia.org/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.nift.ac.in/",
+          "https://www.nirfindia.org/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -405,6 +662,29 @@
         "source_urls": [
           "https://mcc.nic.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "DCI_or_equivalent"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://mcc.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -439,6 +719,30 @@
           "https://mcc.nic.in/",
           "https://www.nmc.org.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "DCI_or_equivalent"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://mcc.nic.in/",
+          "https://www.nmc.org.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -473,6 +777,30 @@
           "https://aaccc.gov.in/",
           "https://ayush.gov.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "NCISM_or_NCH"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://aaccc.gov.in/",
+          "https://ayush.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -506,6 +834,29 @@
         "source_urls": [
           "https://ncismindia.org/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "NCISM_or_NCH"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://ncismindia.org/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -540,6 +891,30 @@
           "https://www.pci.nic.in/",
           "https://www.nirfindia.org/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "PCI"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.pci.nic.in/",
+          "https://www.nirfindia.org/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -573,6 +948,29 @@
         "source_urls": [
           "https://www.pci.nic.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "PCI"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.pci.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -607,6 +1005,30 @@
           "https://consortiumofnlus.ac.in/",
           "https://www.nirfindia.org/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "BCI"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://consortiumofnlus.ac.in/",
+          "https://www.nirfindia.org/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -640,6 +1062,29 @@
         "source_urls": [
           "https://www.barcouncilofindia.org/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "BCI"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.barcouncilofindia.org/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -674,6 +1119,30 @@
           "https://www.iimidr.ac.in/academic-programmes/five-year-integrated-programme-in-management-ipm/",
           "https://cuet.samarth.ac.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.iimidr.ac.in/academic-programmes/five-year-integrated-programme-in-management-ipm/",
+          "https://cuet.samarth.ac.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -707,6 +1176,29 @@
         "source_urls": [
           "https://www.ugc.gov.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -741,6 +1233,30 @@
           "https://cuet.samarth.ac.in/",
           "https://www.du.ac.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://cuet.samarth.ac.in/",
+          "https://www.du.ac.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -774,6 +1290,29 @@
         "source_urls": [
           "https://www.nirfindia.org/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.nirfindia.org/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -808,6 +1347,30 @@
           "https://iiseradmission.in/",
           "https://www.nestexam.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://iiseradmission.in/",
+          "https://www.nestexam.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -841,6 +1404,29 @@
         "source_urls": [
           "https://cuet.samarth.ac.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://cuet.samarth.ac.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -874,6 +1460,29 @@
         "source_urls": [
           "https://www.nift.ac.in/admission"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.nift.ac.in/admission"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -907,6 +1516,29 @@
         "source_urls": [
           "https://www.ugc.gov.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -941,6 +1573,30 @@
           "https://cuet.samarth.ac.in/",
           "https://www.du.ac.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://cuet.samarth.ac.in/",
+          "https://www.du.ac.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -974,6 +1630,29 @@
         "source_urls": [
           "https://www.nirfindia.org/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.nirfindia.org/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -1008,6 +1687,30 @@
           "https://ncert.nic.in/",
           "https://ncte.gov.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "NCTE"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://ncert.nic.in/",
+          "https://ncte.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -1041,6 +1744,29 @@
         "source_urls": [
           "https://ncte.gov.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "NCTE"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://ncte.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -1075,6 +1801,30 @@
           "https://www.ivri.nic.in/",
           "https://www.vci.nic.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.ivri.nic.in/",
+          "https://www.vci.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -1108,6 +1858,29 @@
         "source_urls": [
           "https://mcc.nic.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://mcc.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     }
   ]

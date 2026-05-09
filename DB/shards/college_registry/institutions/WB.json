@@ -4,7 +4,7 @@
     "state_id": "WB",
     "state_label": "West Bengal",
     "count": 14,
-    "generated_on": "2026-05-07"
+    "generated_on": "2026-05-09"
   },
   "institutions": [
     {
@@ -38,6 +38,29 @@
         "source_urls": [
           "https://www.iitkgp.ac.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "likely",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.iitkgp.ac.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -71,6 +94,29 @@
         "source_urls": [
           "https://jadavpuruniversity.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://jadavpuruniversity.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -104,6 +150,29 @@
         "source_urls": [
           "https://www.iiests.ac.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.iiests.ac.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -138,6 +207,30 @@
           "https://www.heritageit.edu/",
           "https://makautwb.ac.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "limited",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.heritageit.edu/",
+          "https://makautwb.ac.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -171,6 +264,29 @@
         "source_urls": [
           "https://makautwb.ac.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://makautwb.ac.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -205,6 +321,30 @@
           "https://www.medicalcollegekolkata.in/",
           "https://wbmcc.nic.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.medicalcollegekolkata.in/",
+          "https://wbmcc.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -239,6 +379,30 @@
           "https://nrsmc.edu.in/",
           "https://wbmcc.nic.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://nrsmc.edu.in/",
+          "https://wbmcc.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -273,6 +437,30 @@
           "https://wbmcc.nic.in/",
           "https://mcc.nic.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://wbmcc.nic.in/",
+          "https://mcc.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -307,6 +495,30 @@
           "https://www.nmc.org.in/",
           "https://wbmcc.nic.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.nmc.org.in/",
+          "https://wbmcc.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -340,6 +552,30 @@
         "source_urls": [
           "https://jadavpuruniversity.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "state_act",
+        "regulators_required": [
+          "UGC_or_AICTE_context",
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://jadavpuruniversity.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -373,6 +609,31 @@
         "source_urls": [
           "https://www.caluniv.ac.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "state_act",
+        "regulators_required": [
+          "UGC_or_state_university_context",
+          "BCI",
+          "NCTE"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.caluniv.ac.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -406,6 +667,30 @@
         "source_urls": [
           "https://www.nujs.edu/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "BCI",
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.nujs.edu/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -440,6 +725,30 @@
           "https://rgkarmch.org/",
           "https://wbmcc.nic.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "limited",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://rgkarmch.org/",
+          "https://wbmcc.nic.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -473,6 +782,29 @@
         "source_urls": [
           "https://www.nift.ac.in/kolkata/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.nift.ac.in/kolkata/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     }
   ]

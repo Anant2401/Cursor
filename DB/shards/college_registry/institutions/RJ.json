@@ -4,7 +4,7 @@
     "state_id": "RJ",
     "state_label": "Rajasthan",
     "count": 12,
-    "generated_on": "2026-05-07"
+    "generated_on": "2026-05-09"
   },
   "institutions": [
     {
@@ -38,6 +38,29 @@
         "source_urls": [
           "https://www.iitj.ac.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "likely",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.iitj.ac.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -71,6 +94,31 @@
         "source_urls": [
           "https://mnit.ac.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "likely",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "UGC_or_AICTE_context",
+          "COA",
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://mnit.ac.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -104,6 +152,29 @@
         "source_urls": [
           "https://www.bits-pilani.ac.in/pilani"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "deemed",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.bits-pilani.ac.in/pilani"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -137,6 +208,29 @@
         "source_urls": [
           "https://www.rtu.ac.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.rtu.ac.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -170,6 +264,29 @@
         "source_urls": [
           "https://www.nirfindia.org/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "UGC_or_AICTE_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.nirfindia.org/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -203,6 +320,29 @@
         "source_urls": [
           "https://www.aiimsjodhpur.edu.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.aiimsjodhpur.edu.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -236,6 +376,30 @@
         "source_urls": [
           "https://www.ruhsraj.org/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "NMC",
+          "DCI_or_equivalent"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.ruhsraj.org/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -269,6 +433,29 @@
         "source_urls": [
           "https://www.ruhsraj.org/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.ruhsraj.org/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -302,6 +489,29 @@
         "source_urls": [
           "https://mcc.nic.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "limited",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "NMC"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://mcc.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -335,6 +545,31 @@
         "source_urls": [
           "https://www.uniraj.ac.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "state_act",
+        "regulators_required": [
+          "UGC_or_state_university_context",
+          "NCTE",
+          "BCI"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.uniraj.ac.in/"
+        ],
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -368,6 +603,30 @@
         "source_urls": [
           "https://www.nlujodhpur.ac.in/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "BCI",
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.nlujodhpur.ac.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     },
     {
@@ -401,6 +660,29 @@
         "source_urls": [
           "https://www.nift.ac.in/jodhpur/"
         ]
+      },
+      "cost_band": {
+        "living_city_band": "low",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 8000,
+        "monthly_budget_max": 15000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.nift.ac.in/jodhpur/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
     }
   ]

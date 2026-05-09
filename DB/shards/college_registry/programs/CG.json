@@ -4,7 +4,7 @@
     "state_id": "CG",
     "state_label": "Chhattisgarh",
     "count": 26,
-    "generated_on": "2026-05-07"
+    "generated_on": "2026-05-09"
   },
   "programs": [
     {
@@ -23,7 +23,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: National in-state (INI / central in CG)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.nitrr.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "iiit_naya_raipur_engineering_engineering_generic_state_comfort_cg",
@@ -41,7 +54,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: National in-state (INI / central in CG)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.iiitnr.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "iit_bhilai_engineering_engineering_generic_state_comfort_cg",
@@ -59,7 +86,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: National in-state (INI / central in CG)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.iitbhilai.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "government_engineering_college_raipur_example_state_college_engineering_engineer",
@@ -77,7 +118,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Good — respected state & private universities"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://csvtu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "shri_shankaracharya_technical_campus_sstc_bhilai_engineering_engineering_generic",
@@ -95,7 +149,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Good — respected state & private universities"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.sstc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "rungta_college_of_engineering_and_technology_r1_r2_campuses_verify_engineering_e",
@@ -113,7 +180,20 @@
         "confidence_level": "high",
         "notes": "Imported from Plan B bundle tier: Good — respected state & private universities"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.rungta.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "other_aicte_affiliated_colleges_in_cg_engineering_engineering_generic_state_comf",
@@ -131,7 +211,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Average — accredited options to combine with skills"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://facilities.aicte-india.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "aiims_raipur_medicine_medicine_mbbs_state_comfort_cg",
@@ -149,7 +242,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: INI / flagship in state"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://aiimsraipur.edu.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "all_india_institute_of_medical_sciences_aiims_kalyani_other_new_aiims_if_seats_l",
@@ -167,7 +274,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: INI / flagship in state"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://mcc.nic.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "gmc_raipur_other_cg_gmcs_as_per_state_list_medicine_medicine_mbbs_state_comfort_",
@@ -185,7 +306,21 @@
         "confidence_level": "high",
         "notes": "Imported from Plan B bundle tier: Government medical colleges (state quota)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.cghealth.nic.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "late_baliram_kashyap_memorial_government_medical_college_jagdalpur_example_distr",
@@ -203,7 +338,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Government medical colleges (state quota)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.cghealth.nic.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "chhattisgarh_institute_of_medical_sciences_cims_bilaspur_verify_mbbs_recognition",
@@ -221,7 +370,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Government medical colleges (state quota)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.nmc.org.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "private_mbbs_colleges_in_cg_verify_mcc_state_medicine_medicine_mbbs_state_comfor",
@@ -239,7 +402,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Private medical colleges"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://mcc.nic.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "iit_bhilai_engineering_engineering_generic_state_comfort",
@@ -257,7 +434,21 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.iitbhilai.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "iit_bhilai_science_stats_science_stats_generic_state_comfort",
@@ -275,7 +466,21 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.iitbhilai.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "aiims_raipur_medicine_medicine_mbbs_state_comfort",
@@ -293,7 +498,21 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://aiimsraipur.edu.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "hidayatullah_national_law_university_law_law_generic_state_comfort",
@@ -311,7 +530,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "clat"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://hnlu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "hidayatullah_national_law_university_humanities_humanities_generic_state_comfort",
@@ -329,7 +561,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://hnlu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "pt_ravishankar_shukla_university_commerce_commerce_generic_state_comfort",
@@ -347,7 +590,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.prsu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "pt_ravishankar_shukla_university_science_stats_science_stats_generic_state_comfo",
@@ -365,7 +619,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.prsu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "pt_ravishankar_shukla_university_humanities_humanities_generic_state_comfort",
@@ -383,7 +648,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.prsu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "pt_ravishankar_shukla_university_education_education_generic_state_comfort",
@@ -401,7 +677,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.prsu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "pt_ravishankar_shukla_university_management_management_generic_state_comfort",
@@ -419,7 +706,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.prsu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "indira_kala_sangeet_vishwavidyalaya_fashion_media_fashion_media_generic_state_co",
@@ -437,7 +735,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "nift"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iksv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "indira_kala_sangeet_vishwavidyalaya_design_design_generic_state_comfort",
@@ -455,7 +766,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "nift"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iksv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "indira_kala_sangeet_vishwavidyalaya_humanities_humanities_generic_state_comfort",
@@ -473,7 +797,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.iksv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     }
   ]
 }

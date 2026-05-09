@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema_version": "1.0.0",
-    "generated_on": "2026-05-07",
+    "generated_on": "2026-05-09",
     "generated_from": "DB/pehchaan_college_registry.json",
     "notes": "Indexes paired with state shards for fast filter-first access."
   },

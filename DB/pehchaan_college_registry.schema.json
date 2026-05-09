@@ -294,6 +294,111 @@
                 }
               }
             }
+          },
+          "cost_band": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "living_city_band": {
+                "type": "string",
+                "enum": [
+                  "low",
+                  "medium",
+                  "high",
+                  "unknown"
+                ]
+              },
+              "hostel_context": {
+                "type": "string",
+                "enum": [
+                  "likely",
+                  "mixed",
+                  "limited",
+                  "unknown"
+                ]
+              },
+              "monthly_budget_min": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "monthly_budget_max": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "method": {
+                "type": "string",
+                "enum": [
+                  "heuristic",
+                  "manual"
+                ]
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "last_updated": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          },
+          "recognition": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "university_status": {
+                "type": "string",
+                "enum": [
+                  "ugc",
+                  "state_act",
+                  "deemed",
+                  "autonomous",
+                  "private_university",
+                  "unknown"
+                ]
+              },
+              "regulators_required": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "regulators_verified": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "verification_urls": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^https?://"
+                }
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "last_updated": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
           }
         }
       }
@@ -376,6 +481,53 @@
           "last_verified_on": {
             "type": "string",
             "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "admission_route": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "primary": {
+                "type": "string",
+                "enum": [
+                  "state_counselling",
+                  "all_india_counselling",
+                  "institute_level",
+                  "mixed",
+                  "verify"
+                ]
+              },
+              "exam_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "pathways": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "verification_url": {
+                "type": "string",
+                "pattern": "^https?://"
+              },
+              "confidence": {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              "last_updated": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
           }
         }
       }

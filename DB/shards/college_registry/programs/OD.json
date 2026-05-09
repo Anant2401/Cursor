@@ -4,7 +4,7 @@
     "state_id": "OD",
     "state_label": "Odisha",
     "count": 18,
-    "generated_on": "2026-05-07"
+    "generated_on": "2026-05-09"
   },
   "programs": [
     {
@@ -23,7 +23,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — IIT / NIT"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.iitbbs.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nit_rourkela_engineering_engineering_generic_state_comfort_od",
@@ -41,7 +55,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — IIT / NIT"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://nitrkl.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "outr_igit_government_colleges_under_bput_verify_active_names_engineering_enginee",
@@ -59,7 +87,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — state institutes (examples)"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://bput.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "kiit_university_example_large_private_engineering_engineering_generic_state_comf",
@@ -77,7 +118,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier C — private colleges"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://kiit.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "iit_bhubaneswar_engineering_engineering_generic_state_comfort",
@@ -95,7 +149,21 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.iitbbs.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "iit_bhubaneswar_science_stats_science_stats_generic_state_comfort",
@@ -113,7 +181,21 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.iitbbs.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "aiims_bhubaneswar_medicine_medicine_mbbs_state_comfort",
@@ -131,7 +213,21 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://aiimsbhubaneswar.nic.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "utkal_university_commerce_commerce_generic_state_comfort",
@@ -149,7 +245,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://utkaluniversity.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "utkal_university_management_management_generic_state_comfort",
@@ -167,7 +274,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://utkaluniversity.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "utkal_university_science_stats_science_stats_generic_state_comfort",
@@ -185,7 +303,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://utkaluniversity.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "utkal_university_humanities_humanities_generic_state_comfort",
@@ -203,7 +332,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://utkaluniversity.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "utkal_university_education_education_generic_state_comfort",
@@ -221,7 +361,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://utkaluniversity.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "utkal_university_law_law_generic_state_comfort",
@@ -239,7 +390,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "clat"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://utkaluniversity.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nlu_odisha_law_law_generic_state_comfort",
@@ -257,7 +421,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "clat"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://nlou.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nlu_odisha_humanities_humanities_generic_state_comfort",
@@ -275,7 +452,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://nlou.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nift_bhubaneswar_fashion_media_fashion_media_generic_state_comfort",
@@ -293,7 +481,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "nift"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.nift.ac.in/bhubaneswar/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nift_bhubaneswar_design_design_generic_state_comfort",
@@ -311,7 +512,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "nift"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.nift.ac.in/bhubaneswar/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nift_bhubaneswar_management_management_generic_state_comfort",
@@ -329,7 +543,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.nift.ac.in/bhubaneswar/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     }
   ]
 }

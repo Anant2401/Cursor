@@ -4,7 +4,7 @@
     "state_id": "TN",
     "state_label": "Tamil Nadu",
     "count": 24,
-    "generated_on": "2026-05-07"
+    "generated_on": "2026-05-09"
   },
   "programs": [
     {
@@ -23,7 +23,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — IIT / top national in TN"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.iitm.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nit_tiruchirappalli_engineering_engineering_generic_state_comfort_tn",
@@ -41,7 +55,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — IIT / top national in TN"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.nitt.edu/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "college_of_engineering_guindy_ceg_anna_university_engineering_engineering_generi",
@@ -59,7 +87,20 @@
         "confidence_level": "high",
         "notes": "Imported from Plan B bundle tier: Tier B — Anna University & autonomous colleges"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.annauniv.edu/ceg/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "psg_college_of_technology_engineering_engineering_generic_state_comfort_tn",
@@ -77,7 +118,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — Anna University & autonomous colleges"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.psgtech.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "ssn_college_of_engineering_engineering_engineering_generic_state_comfort_tn",
@@ -95,7 +149,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — Anna University & autonomous colleges"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.ssn.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "affiliated_engineering_colleges_under_anna_university_engineering_engineering_ge",
@@ -113,7 +180,20 @@
         "confidence_level": "high",
         "notes": "Imported from Plan B bundle tier: Tier C — wide affiliated network"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.annauniv.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "madras_medical_college_mmc_medicine_medicine_mbbs_state_comfort_tn",
@@ -131,7 +211,21 @@
         "confidence_level": "high",
         "notes": "Imported from Plan B bundle tier: Tier A — Chennai flagship GMCs"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://mmc.tn.gov.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "stanley_medical_college_medicine_medicine_mbbs_state_comfort_tn",
@@ -149,7 +243,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — Chennai flagship GMCs"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://gsmc.tn.gov.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "gmcs_in_madurai_coimbatore_tirunelveli_examples_medicine_medicine_mbbs_state_com",
@@ -167,7 +275,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — regional GMCs"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://tnmedicalselection.net/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "private_medical_colleges_across_tn_medicine_medicine_mbbs_state_comfort_tn",
@@ -185,7 +307,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier C — private & deemed"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.nmc.org.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "anna_university_engineering_engineering_generic_state_comfort",
@@ -203,7 +339,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.annauniv.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "anna_university_architecture_architecture_generic_state_comfort",
@@ -221,7 +370,21 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "arch"
+        ],
+        "pathways": [
+          "state_cet",
+          "institute_portal"
+        ],
+        "verification_url": "https://www.annauniv.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "anna_university_management_management_generic_state_comfort",
@@ -239,7 +402,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.annauniv.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "madras_medical_college_medicine_medicine_mbbs_state_comfort",
@@ -257,7 +431,21 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://mmc.tn.gov.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "university_of_madras_commerce_commerce_generic_state_comfort",
@@ -275,7 +463,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.unom.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "university_of_madras_science_stats_science_stats_generic_state_comfort",
@@ -293,7 +492,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.unom.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "university_of_madras_humanities_humanities_generic_state_comfort",
@@ -311,7 +521,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.unom.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "university_of_madras_education_education_generic_state_comfort",
@@ -329,7 +550,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.unom.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "university_of_madras_management_management_generic_state_comfort",
@@ -347,7 +579,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.unom.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nlu_tiruchirappalli_law_law_generic_state_comfort",
@@ -365,7 +608,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "clat"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.tnnlu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nlu_tiruchirappalli_humanities_humanities_generic_state_comfort",
@@ -383,7 +639,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.tnnlu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nift_chennai_fashion_media_fashion_media_generic_state_comfort",
@@ -401,7 +668,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "nift"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.nift.ac.in/chennai/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nift_chennai_design_design_generic_state_comfort",
@@ -419,7 +699,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "nift"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.nift.ac.in/chennai/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nift_chennai_management_management_generic_state_comfort",
@@ -437,7 +730,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.nift.ac.in/chennai/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     }
   ]
 }

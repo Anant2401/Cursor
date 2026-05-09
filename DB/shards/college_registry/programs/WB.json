@@ -4,7 +4,7 @@
     "state_id": "WB",
     "state_label": "West Bengal",
     "count": 24,
-    "generated_on": "2026-05-07"
+    "generated_on": "2026-05-09"
   },
   "programs": [
     {
@@ -23,7 +23,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — IIT / Jadavpur / IIEST"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.iitkgp.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "jadavpur_university_faculty_of_engineering_and_technology_engineering_engineerin",
@@ -41,7 +55,20 @@
         "confidence_level": "high",
         "notes": "Imported from Plan B bundle tier: Tier A — IIT / Jadavpur / IIEST"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://jadavpuruniversity.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "iiest_shibpur_engineering_engineering_generic_state_comfort_wb",
@@ -59,7 +86,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — IIT / Jadavpur / IIEST"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iiests.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "heritage_institute_of_technology_example_kolkata_private_engineering_engineering",
@@ -77,7 +117,20 @@
         "confidence_level": "high",
         "notes": "Imported from Plan B bundle tier: Tier B — strong private & university institutes"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.heritageit.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "affiliated_engineering_colleges_across_districts_engineering_engineering_generic",
@@ -95,7 +148,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier C — MAKAUT-affiliated colleges"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://makautwb.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "medical_college_and_hospital_kolkata_medicine_medicine_mbbs_state_comfort_wb",
@@ -113,7 +179,21 @@
         "confidence_level": "high",
         "notes": "Imported from Plan B bundle tier: Tier A — Kolkata flagship GMCs"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.medicalcollegekolkata.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nil_ratan_sircar_medical_college_nrs_medicine_medicine_mbbs_state_comfort_wb",
@@ -131,7 +211,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — Kolkata flagship GMCs"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://nrsmc.edu.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "cnmc_bankura_burdwan_medical_college_examples_verify_list_medicine_medicine_mbbs",
@@ -149,7 +243,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — regional GMCs"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://wbmcc.nic.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "private_medical_colleges_in_wb_medicine_medicine_mbbs_state_comfort_wb",
@@ -167,7 +275,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier C — private colleges"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.nmc.org.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "jadavpur_university_engineering_engineering_generic_state_comfort",
@@ -185,7 +307,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://jadavpuruniversity.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "jadavpur_university_science_stats_science_stats_generic_state_comfort",
@@ -203,7 +338,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://jadavpuruniversity.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "jadavpur_university_humanities_humanities_generic_state_comfort",
@@ -221,7 +367,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://jadavpuruniversity.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "university_of_calcutta_commerce_commerce_generic_state_comfort",
@@ -239,7 +396,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.caluniv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "university_of_calcutta_science_stats_science_stats_generic_state_comfort",
@@ -257,7 +425,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.caluniv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "university_of_calcutta_humanities_humanities_generic_state_comfort",
@@ -275,7 +454,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.caluniv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "university_of_calcutta_management_management_generic_state_comfort",
@@ -293,7 +483,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.caluniv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "university_of_calcutta_law_law_generic_state_comfort",
@@ -311,7 +512,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "clat"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.caluniv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "university_of_calcutta_education_education_generic_state_comfort",
@@ -329,7 +543,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.caluniv.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "wbnujs_kolkata_law_law_generic_state_comfort",
@@ -347,7 +572,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "clat"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.nujs.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "wbnujs_kolkata_humanities_humanities_generic_state_comfort",
@@ -365,7 +603,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.nujs.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "rgkar_medical_college_medicine_medicine_mbbs_state_comfort",
@@ -383,7 +632,21 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://rgkarmch.org/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nift_kolkata_fashion_media_fashion_media_generic_state_comfort",
@@ -401,7 +664,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "nift"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.nift.ac.in/kolkata/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nift_kolkata_design_design_generic_state_comfort",
@@ -419,7 +695,20 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "nift"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.nift.ac.in/kolkata/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nift_kolkata_management_management_generic_state_comfort",
@@ -437,7 +726,18 @@
         "confidence_level": "medium",
         "notes": "Added in state-stream coverage enrichment; verify stream and campus availability."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.nift.ac.in/kolkata/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     }
   ]
 }

@@ -4,7 +4,7 @@
     "state_id": "KA",
     "state_label": "Karnataka",
     "count": 22,
-    "generated_on": "2026-05-07"
+    "generated_on": "2026-05-09"
   },
   "programs": [
     {
@@ -23,7 +23,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iisc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "nitk_surathkal_engineering_engineering_generic_state_comfort_ka",
@@ -41,7 +54,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.nitk.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "rv_college_of_engineering_rvce_engineering_engineering_generic_state_comfort_ka",
@@ -59,7 +86,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.rvce.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "pes_university_pesce_verify_campus_engineering_engineering_generic_state_comfort",
@@ -77,7 +117,20 @@
         "confidence_level": "high",
         "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.pes.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "bms_college_of_engineering_engineering_engineering_generic_state_comfort_ka",
@@ -95,7 +148,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://bmsce.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "vtu_affiliated_colleges_across_karnataka_engineering_engineering_generic_state_c",
@@ -113,7 +179,20 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier C — accredited options + your portfolio"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://vtu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "bangalore_medical_college_and_research_institute_bmri_bmcri_medicine_medicine_mb",
@@ -131,7 +210,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — flagship institutes"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://bmcri.karnataka.gov.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "kims_hubli_karnataka_institute_of_medical_sciences_medicine_medicine_mbbs_state_",
@@ -149,7 +242,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier A — flagship institutes"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://kimshubballi.karnataka.gov.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "gmcs_in_mysuru_mangaluru_belagavi_verify_seat_matrix_medicine_medicine_mbbs_stat",
@@ -167,7 +274,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier B — other government medical colleges"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://kea.kar.nic.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "private_medical_colleges_bengaluru_tier_2_cities_medicine_medicine_mbbs_state_co",
@@ -185,7 +306,21 @@
         "confidence_level": "medium",
         "notes": "Imported from Plan B bundle tier: Tier C — private medical colleges"
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.nmc.org.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "iim_bangalore_management_management_generic_state_comfort",
@@ -203,7 +338,18 @@
         "confidence_level": "medium",
         "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iimb.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "christ_university_bengaluru_management_management_generic_state_comfor",
@@ -221,7 +367,18 @@
         "confidence_level": "medium",
         "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://christuniversity.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "jain_university_bengaluru_management_management_generic_state_comfort",
@@ -239,7 +396,18 @@
         "confidence_level": "medium",
         "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.jainuniversity.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "alliance_university_bengaluru_management_management_generic_state_comf",
@@ -257,7 +425,18 @@
         "confidence_level": "medium",
         "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.alliance.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "st_josephs_university_bengaluru_management_management_generic_state_co",
@@ -275,7 +454,18 @@
         "confidence_level": "medium",
         "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.sju.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "mount_carmel_college_bengaluru_management_management_generic_state_com",
@@ -293,7 +483,18 @@
         "confidence_level": "medium",
         "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://mccblr.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "presidency_university_bengaluru_management_management_generic_state_co",
@@ -311,7 +512,18 @@
         "confidence_level": "medium",
         "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://presidencyuniversity.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "reva_university_bengaluru_management_management_generic_state_comfort",
@@ -329,7 +541,18 @@
         "confidence_level": "medium",
         "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.reva.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "acharya_institute_bengaluru_management_management_generic_state_comfor",
@@ -347,7 +570,18 @@
         "confidence_level": "medium",
         "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.acharya.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "pes_university_bengaluru_management_management_management_generic_stat",
@@ -365,7 +599,18 @@
         "confidence_level": "medium",
         "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.pes.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "ramaiah_institute_of_management_bengaluru_management_management_generi",
@@ -383,7 +628,18 @@
         "confidence_level": "medium",
         "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.rim.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     },
     {
       "id": "sdm_institute_for_management_development_mysuru_management_management_",
@@ -401,7 +657,18 @@
         "confidence_level": "medium",
         "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder."
       },
-      "last_verified_on": "2026-05-07"
+      "last_verified_on": "2026-05-07",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.sdmimd.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
     }
   ]
 }

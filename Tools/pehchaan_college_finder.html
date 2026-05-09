@@ -76,6 +76,18 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
 .meta{font-size:11px;color:var(--gray);margin-top:4px;line-height:1.6}
 .section{margin-top:10px}
 .section b{color:var(--teal-dark)}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.detail-card{border:1px solid #D1E8DF;border-radius:12px;background:#F8FAFC;padding:10px}
+.detail-card h5{font-size:10px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+.detail-card p{font-size:11px;color:var(--gray);line-height:1.6;margin:0 0 4px}
+.confidence-badge{display:inline-flex;align-items:center;padding:2px 8px;border-radius:999px;font-size:10px;font-weight:700;border:1px solid transparent;margin-left:6px}
+.confidence-high{background:#E6F7F0;color:#0B6A4F;border-color:#BFE8D8}
+.confidence-medium{background:#FFF4E5;color:#8A5000;border-color:#F6D9AD}
+.confidence-low{background:#FCEBEB;color:#8B2D2D;border-color:#F4C6C6}
+.results-filters{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:8px;margin-top:10px}
+.filter-select{width:100%;padding:9px 10px;border:1.5px solid var(--border);border-radius:10px;font-family:inherit;font-size:12px;background:#fff;color:var(--text)}
+.filter-btn{padding:9px 12px;border-radius:10px;border:1.5px solid var(--teal-dark);background:#fff;color:var(--teal-dark);font-weight:700;font-size:12px;cursor:pointer}
+.filter-btn:hover{background:#EEF9F5}
 .links{margin-top:10px;padding-left:18px}
 .links a{color:#0E4C83}
 .disclaimer{background:#F8F7FF;border:1px solid #C4C0F5;border-radius:14px;padding:14px 16px;margin-top:12px}
@@ -86,7 +98,7 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
 .brand-footer{text-align:center;margin-top:24px;padding-top:16px;border-top:1px solid var(--teal-light)}
 .brand-tagline{font-size:13px;font-weight:600;color:var(--teal);margin:2px 0 4px}
 .brand-footer p{font-size:11px;color:var(--gray);line-height:1.7;margin:2px 0}
-@media(max-width:640px){.form-grid,.hero-grid{grid-template-columns:1fr}.hero h1{font-size:20px}}
+@media(max-width:640px){.form-grid,.hero-grid,.detail-grid,.results-filters{grid-template-columns:1fr}.hero h1{font-size:20px}}
 </style>
 </head>
 <body>
@@ -137,11 +149,6 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
     </div>
   </div>
 
-  <div class="disclaimer" style="margin-top:0;">
-    <h4>Decision reminder</h4>
-    <p class="decision-clause" style="margin-top:0;padding-top:0;border-top:none;">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p>
-  </div>
-
   <div class="card">
     <div class="card-title">Student details and filters</div>
     <p class="meta" style="margin-top:0;margin-bottom:12px;">How this works: your filters are matched in this order — exact state, then neighbour states, then national fallback.</p>
@@ -171,6 +178,28 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
     <p id="selection-line" class="meta"></p>
     <span id="reason-chip" class="chip"></span>
     <p class="meta" style="margin-top:8px;">Discussion-only results: verify cutoffs, domicile, and fee rules on official portals before acting.</p>
+    <div class="results-filters" id="results-filters">
+      <select id="filter-route" class="filter-select">
+        <option value="">All routes</option>
+        <option value="all_india_counselling">All-India counselling</option>
+        <option value="state_counselling">State counselling</option>
+        <option value="institute_level">Institute-level process</option>
+        <option value="mixed">Mixed route</option>
+        <option value="verify">Verify first</option>
+      </select>
+      <select id="filter-cost" class="filter-select">
+        <option value="">All cost bands</option>
+        <option value="low">Low living band</option>
+        <option value="medium">Medium living band</option>
+        <option value="high">High living band</option>
+      </select>
+      <select id="filter-recognition" class="filter-select">
+        <option value="">All recognition status</option>
+        <option value="known">Known university status</option>
+        <option value="unknown">Status to verify</option>
+      </select>
+      <button type="button" id="btn-clear-filters" class="filter-btn">Clear</button>
+    </div>
     <div id="results-list"></div>
   </div>
 
@@ -208,6 +237,8 @@ var collegesById = {};
 var loadedShardStates = {};
 var CURRENT_STREAM_SELECTED = '';
 var GENERIC_COURSE_PATTERNS = [/^course$/i, /^generic/i, /^general/i, /^other/i, /_generic$/i, /\bgeneric\b/i];
+var LAST_RENDER_REASON = '';
+var LAST_RENDER_PROGRAMS = [];
 
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function byId(arr, id){ return (arr || []).find(function(x){ return x.id === id; }); }
@@ -355,10 +386,27 @@ function cardsFromPrograms(programs){
     var mappedPathways = [];
     var exams = [];
     var snapshotDate = '';
+    var routeMap = {};
+    var routeExamIds = {};
+    var routePaths = {};
+    var routeConfidence = {};
+    var routeVerificationUrl = '';
+    var matchedStreamIds = {};
+    var matchedCourseIds = {};
     rows.forEach(function(r){
+      if (r.stream_id) matchedStreamIds[r.stream_id] = true;
+      if (r.course_id) matchedCourseIds[r.course_id] = true;
       var cl = courseMap[r.course_id] || r.course_id;
       var isGeneric = GENERIC_COURSE_PATTERNS.some(function(rx){ return rx.test(String(cl || '').trim()); });
       if (!snapshotDate && r.last_verified_on) snapshotDate = r.last_verified_on;
+      if (r.admission_route && r.admission_route.primary) {
+        var rp = String(r.admission_route.primary);
+        routeMap[rp] = (routeMap[rp] || 0) + 1;
+        (r.admission_route.exam_ids || []).forEach(function(eid){ routeExamIds[eid] = true; });
+        (r.admission_route.pathways || []).forEach(function(pathway){ routePaths[pathway] = true; });
+        if (!routeVerificationUrl && r.admission_route.verification_url) routeVerificationUrl = r.admission_route.verification_url;
+        if (r.admission_route.confidence && !routeConfidence[r.admission_route.confidence]) routeConfidence[r.admission_route.confidence] = true;
+      }
       if (!isGeneric && courses.indexOf(cl) === -1) courses.push(cl);
       if (isGeneric) {
         var sl = streamMap[r.stream_id] || r.stream_id || 'Mapped stream';
@@ -377,7 +425,20 @@ function cardsFromPrograms(programs){
     if (!courses.length) courses.push('Programme list not available in this snapshot');
     if (!snapshotDate && c.verification && c.verification.last_verified_on) snapshotDate = c.verification.last_verified_on;
     if (!snapshotDate && REG && REG.meta && REG.meta.last_updated) snapshotDate = REG.meta.last_updated;
-    out.push({ college: c, courses: courses.slice(0, 12), exams: exams, snapshotDate: snapshotDate });
+    var routeKeys = Object.keys(routeMap).sort(function(a, b){ return routeMap[b] - routeMap[a]; });
+    out.push({
+      college: c,
+      courses: courses.slice(0, 12),
+      exams: exams,
+      snapshotDate: snapshotDate,
+      admissionRoutePrimary: routeKeys[0] || '',
+      admissionRouteExams: Object.keys(routeExamIds),
+      admissionRoutePathways: Object.keys(routePaths),
+      admissionRouteVerificationUrl: routeVerificationUrl,
+      admissionRouteConfidence: Object.keys(routeConfidence)[0] || 'low',
+      matchedStreamIds: Object.keys(matchedStreamIds),
+      matchedCourseIds: Object.keys(matchedCourseIds)
+    });
   });
   out.sort(function(a, b){
     var aName = String((a.college && a.college.name) || '').toLowerCase();
@@ -392,12 +453,130 @@ function cardsFromPrograms(programs){
 
 function renderResults(reason, programs){
   var list = document.getElementById('results-list');
-  var cards = cardsFromPrograms(programs);
+  LAST_RENDER_REASON = reason || '';
+  LAST_RENDER_PROGRAMS = (programs || []).slice();
+  var cards = cardsFromPrograms(LAST_RENDER_PROGRAMS);
+  var routeFilter = (document.getElementById('filter-route') || {}).value || '';
+  var costFilter = (document.getElementById('filter-cost') || {}).value || '';
+  var recognitionFilter = (document.getElementById('filter-recognition') || {}).value || '';
+  if (routeFilter) {
+    cards = cards.filter(function(row){ return String(row.admissionRoutePrimary || '') === routeFilter; });
+  }
+  if (costFilter) {
+    cards = cards.filter(function(row){
+      var cb = (row.college && row.college.cost_band && row.college.cost_band.living_city_band) || '';
+      return String(cb) === costFilter;
+    });
+  }
+  if (recognitionFilter) {
+    cards = cards.filter(function(row){
+      var status = (row.college && row.college.recognition && row.college.recognition.university_status) || 'unknown';
+      if (recognitionFilter === 'known') return status && status !== 'unknown';
+      if (recognitionFilter === 'unknown') return !status || status === 'unknown';
+      return true;
+    });
+  }
   if (!cards.length) {
-    list.innerHTML = '<div class="result"><div><strong>No exact records found yet for this combination.</strong></div><div class="meta">You are not stuck. Use NIRF and official counselling portals to continue your shortlist, then discuss with family and mentors.</div></div>';
+    list.innerHTML = '<div class="result"><div><strong>No colleges match the current filter combination.</strong></div><div class="meta">Try clearing one filter, switch geography lens, or use official counselling portals to widen your shortlist.</div></div>';
     return;
   }
   var html = '';
+  function titleCaseId(v){
+    return String(v || '').replace(/[_-]+/g, ' ').replace(/\b\w/g, function(ch){ return ch.toUpperCase(); });
+  }
+  function examLabel(v){
+    var id = String(v || '').toLowerCase();
+    var map = {
+      jee: 'JEE',
+      jee_main: 'JEE Main',
+      jeeadv26: 'JEE Advanced',
+      neet: 'NEET',
+      neet_ug: 'NEET UG',
+      neet26: 'NEET UG',
+      clat: 'CLAT',
+      clat_ug: 'CLAT UG',
+      clat26: 'CLAT UG',
+      cuet_ug: 'CUET UG',
+      nift: 'NIFT',
+      arch: 'NATA / Architecture entrance'
+    };
+    return map[id] || titleCaseId(v);
+  }
+  function pathwayLabel(v){
+    var id = String(v || '').toLowerCase();
+    var map = {
+      jossa: 'JoSAA process',
+      csab: 'CSAB rounds',
+      mcc: 'MCC counselling',
+      state_cet: 'State entrance/counselling',
+      institute_portal: 'Institute admission portal',
+      all_india_portal: 'All-India counselling portal',
+      consortium_law: 'Law admissions consortium'
+    };
+    return map[id] || titleCaseId(v);
+  }
+  function routeLabel(v){
+    if (v === 'state_counselling') return 'State counselling';
+    if (v === 'all_india_counselling') return 'All-India counselling';
+    if (v === 'institute_level') return 'Institute-level process';
+    if (v === 'mixed') return 'Mixed route';
+    return 'Verify with official sources';
+  }
+  function universityStatusLabel(v){
+    var id = String(v || '').toLowerCase();
+    var map = {
+      ugc: 'UGC context',
+      state_act: 'State Act university',
+      deemed: 'Deemed university',
+      autonomous: 'Autonomous institution',
+      private_university: 'Private university',
+      unknown: 'Status to verify'
+    };
+    return map[id] || titleCaseId(v);
+  }
+  function regulatorLabel(v){
+    var id = String(v || '');
+    var map = {
+      UGC_or_AICTE_context: 'UGC / AICTE context',
+      UGC_or_state_university_context: 'UGC / state university context',
+      DCI_or_equivalent: 'Dental regulator (DCI/equivalent)',
+      NCISM_or_NCH: 'AYUSH regulator (NCISM/NCH)'
+    };
+    return map[id] || id;
+  }
+  function requiredRegulatorsForRow(row){
+    var out = {};
+    var streamIds = row.matchedStreamIds || [];
+    var courseIds = row.matchedCourseIds || [];
+    function add(v){ if (v) out[v] = true; }
+    streamIds.forEach(function(s){
+      if (s === 'medicine') add('NMC');
+      else if (s === 'dentistry') add('DCI_or_equivalent');
+      else if (s === 'ayush') add('NCISM_or_NCH');
+      else if (s === 'pharmacy') add('PCI');
+      else if (s === 'law') add('BCI');
+      else if (s === 'education') add('NCTE');
+      else if (s === 'architecture') add('COA');
+      else if (s === 'engineering') add('UGC_or_AICTE_context');
+      else add('UGC_or_state_university_context');
+    });
+    courseIds.forEach(function(c){
+      if (c === 'medicine_mbbs') add('NMC');
+      else if (c === 'dentistry_generic') add('DCI_or_equivalent');
+      else if (c === 'ayush_generic') add('NCISM_or_NCH');
+      else if (c === 'pharmacy_generic') add('PCI');
+      else if (c === 'law_generic') add('BCI');
+      else if (c === 'education_generic') add('NCTE');
+      else if (c === 'architecture_generic') add('COA');
+      else if (c === 'engineering_generic') add('UGC_or_AICTE_context');
+    });
+    return Object.keys(out);
+  }
+  function confidenceBadge(v){
+    var c = String(v || 'low').toLowerCase();
+    var cls = c === 'high' ? 'confidence-high' : (c === 'medium' ? 'confidence-medium' : 'confidence-low');
+    return '<span class="confidence-badge ' + cls + '">' + esc(titleCaseId(c)) + ' confidence</span>';
+  }
   cards.forEach(function(row){
     var c = row.college;
     var state = byId(getTaxonomyRows('states'), c.state_id);
@@ -413,10 +592,65 @@ function renderResults(reason, programs){
     if (row.snapshotDate) html += '<div class="meta">Data snapshot: ' + esc(row.snapshotDate) + ' (verify latest brochure/admissions page for current intake).</div>';
     if (c.highlights && c.highlights.unique_point) html += '<div class="section-card"><div class="section-title">Unique point</div>' + esc(c.highlights.unique_point) + '</div>';
     if (c.highlights && c.highlights.why_choose) html += '<div class="section-card"><div class="section-title">Why choose this college</div>' + esc(c.highlights.why_choose) + '</div>';
+    var hasAdmissionDetail = !!(row.admissionRoutePrimary || (row.admissionRouteExams || []).length || row.admissionRouteVerificationUrl);
+    var hasCostDetail = !!(c.cost_band && c.cost_band.living_city_band);
+    var hasRecognitionDetail = !!(c.recognition && (c.recognition.university_status || (c.recognition.regulators_required || []).length));
+    if (hasAdmissionDetail || hasCostDetail || hasRecognitionDetail) html += '<div class="detail-grid">';
+    if (hasAdmissionDetail) {
+      html += '<div class="detail-card"><h5>Admission route clarity' + confidenceBadge(row.admissionRouteConfidence) + '</h5>';
+      if (row.admissionRoutePrimary) html += '<p><strong>Likely route:</strong> ' + esc(routeLabel(row.admissionRoutePrimary)) + '</p>';
+      if ((row.admissionRouteExams || []).length) html += '<p><strong>Likely exam(s):</strong> ' + esc(row.admissionRouteExams.map(examLabel).join(', ')) + '</p>';
+      if ((row.admissionRoutePathways || []).length) html += '<p><strong>Pathway hint:</strong> ' + esc(row.admissionRoutePathways.map(pathwayLabel).join(', ')) + '</p>';
+      if (row.admissionRouteVerificationUrl) html += '<p><a href="' + esc(safeHttp(row.admissionRouteVerificationUrl)) + '" target="_blank" rel="noopener noreferrer">Verify admission route</a></p>';
+      html += '</div>';
+    }
+    if (hasCostDetail) {
+      html += '<div class="detail-card"><h5>Cost reality band' + confidenceBadge(c.cost_band.confidence || 'low') + '</h5>';
+      html += '<p><strong>Living band:</strong> ' + esc(titleCaseId(c.cost_band.living_city_band)) + '</p>';
+      if (c.cost_band.hostel_context) html += '<p><strong>Hostel context:</strong> ' + esc(titleCaseId(c.cost_band.hostel_context)) + '</p>';
+      if (typeof c.cost_band.monthly_budget_min === 'number' && typeof c.cost_band.monthly_budget_max === 'number') {
+        html += '<p><strong>Estimated monthly living:</strong> ₹' + esc(String(c.cost_band.monthly_budget_min)) + ' - ₹' + esc(String(c.cost_band.monthly_budget_max)) + '</p>';
+      }
+      html += '<p>Estimated from city and institution type. Verify on official hostel/college pages.</p></div>';
+    }
+    if (hasRecognitionDetail) {
+      var displayRegulators = requiredRegulatorsForRow(row);
+      if (!displayRegulators.length) displayRegulators = (c.recognition.regulators_required || []);
+      html += '<div class="detail-card"><h5>Recognition check' + confidenceBadge(c.recognition.confidence || 'low') + '</h5>';
+      if (c.recognition.university_status) html += '<p><strong>University status:</strong> ' + esc(universityStatusLabel(c.recognition.university_status)) + '</p>';
+      if (displayRegulators.length) html += '<p><strong>Required regulator(s):</strong> ' + esc(displayRegulators.map(regulatorLabel).join(', ')) + '</p>';
+      if ((c.recognition.regulators_verified || []).length) html += '<p><strong>Verified regulator(s):</strong> ' + esc(c.recognition.regulators_verified.map(regulatorLabel).join(', ')) + '</p>';
+      if ((c.recognition.verification_urls || []).length) {
+        var verifyLinks = c.recognition.verification_urls.slice(0, 2).map(function(u, idx){
+          return '<a href="' + esc(safeHttp(u)) + '" target="_blank" rel="noopener noreferrer">Recognition source ' + (idx + 1) + '</a>';
+        });
+        html += '<p>' + verifyLinks.join(' · ') + '</p>';
+      } else {
+        html += '<p>Verification required on official regulator/institute pages.</p>';
+      }
+      html += '</div>';
+    }
+    if (hasAdmissionDetail || hasCostDetail || hasRecognitionDetail) html += '</div>';
     if (c.contacts && c.contacts.website) html += '<ul class="links"><li><a href="' + esc(safeHttp(c.contacts.website)) + '" target="_blank" rel="noopener noreferrer">Official website</a></li></ul>';
     html += '</div>';
   });
   list.innerHTML = html;
+}
+
+function bindResultFilters(){
+  var routeSel = document.getElementById('filter-route');
+  var costSel = document.getElementById('filter-cost');
+  var recSel = document.getElementById('filter-recognition');
+  var clearBtn = document.getElementById('btn-clear-filters');
+  if (routeSel) routeSel.addEventListener('change', function(){ renderResults(LAST_RENDER_REASON, LAST_RENDER_PROGRAMS); });
+  if (costSel) costSel.addEventListener('change', function(){ renderResults(LAST_RENDER_REASON, LAST_RENDER_PROGRAMS); });
+  if (recSel) recSel.addEventListener('change', function(){ renderResults(LAST_RENDER_REASON, LAST_RENDER_PROGRAMS); });
+  if (clearBtn) clearBtn.addEventListener('click', function(){
+    if (routeSel) routeSel.value = '';
+    if (costSel) costSel.value = '';
+    if (recSel) recSel.value = '';
+    renderResults(LAST_RENDER_REASON, LAST_RENDER_PROGRAMS);
+  });
 }
 
 function runFinder(){
@@ -466,6 +700,17 @@ function runFinder(){
     else { chip.className = 'chip chip-national'; chip.textContent = 'National-level fallback'; }
     renderResults(reason, rows);
     var nextCtx = { from: 'college_finder', stream: stream, state: state, course: course };
+    var topCard = cardsFromPrograms(rows)[0] || null;
+    if (topCard) {
+      if (topCard.admissionRoutePrimary) nextCtx.admission_route_primary = topCard.admissionRoutePrimary;
+      if ((topCard.admissionRouteExams || []).length) nextCtx.admission_exam_ids = topCard.admissionRouteExams.join(',');
+      if (topCard.college && topCard.college.cost_band && topCard.college.cost_band.living_city_band) {
+        nextCtx.cost_living_band = topCard.college.cost_band.living_city_band;
+      }
+      if (topCard.college && topCard.college.recognition && topCard.college.recognition.university_status) {
+        nextCtx.recognition_status = topCard.college.recognition.university_status;
+      }
+    }
     if (window.PehchaanRegistryPrefill && typeof PehchaanRegistryPrefill.mergeParams === 'function') {
       var p = PehchaanRegistryPrefill.mergeParams();
       if (p.career) nextCtx.career = p.career;
@@ -563,6 +808,7 @@ Promise.all([
   document.getElementById('state-select').addEventListener('change', refreshBtn);
   document.getElementById('course-select').addEventListener('change', refreshBtn);
   document.getElementById('btn-find').addEventListener('click', runFinder);
+  bindResultFilters();
   tryPrefillFromContext();
   refreshBtn();
 }).catch(function(){
