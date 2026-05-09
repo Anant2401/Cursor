@@ -188,6 +188,16 @@ Use **these** names and hex values for all new UI. **Reject** one-off hex that d
 - **Cards:** Shared **radius** family: 14px (small), 22px (hero). **Shadows:** soft green-tinted or neutral — match `.hero-card` / `.tool-card` / name cards; no arbitrary heavy black shadows.
 - **Focus and a11y:** Preserve `aria-*` on tabs, tool navigation, and modals when editing.
 
+### Tool filter + result shells (College Finder parity)
+
+- **Canonical stylesheet:** Link `assets/pehchaan_tool_ui.css` in `Tools/pehchaan_*.html` immediately after Google Fonts (`<link rel="stylesheet" href="../assets/pehchaan_tool_ui.css">`).
+- **Body opt-in:** Add class **`pc-tool-ui`** on `<body>` for static tools so shared surfaces apply consistently. Omit only if deliberately experimenting and you will regress parity.
+- **What the shared CSS provides**
+  - **Filter / selector panels:** Classes `.filter-card`, `.filter-card-inner`, `.filter-card-eyebrow`, `.filter-card-title`, `.filter-steps`, `.filter-flow-note`, `.form-grid-filter`, `.field-group`, `.field-label`, `.field-icon` (SVG), `.field-hint`, `.filter-actions`, primary CTA `.btn-pe-primary`. Use **icon + label + hint + full-width selects** when a tool behaves like College Finder filters.
+  - **Surfaced results:** Classes `.tool-result-card`, `.tool-result-accent` (thick teal→amber bar), `.tool-result-inner`, `.tool-result-head`, `.tool-result-title`, `.tool-meta-line`, `.tool-pill-row`, `.pc-stat-grid` / `.stat-tile`; alias classes `.college-*` remain for College Finder. Prefer a **compact meta line with dot separators** (`·` or `.college-meta-dot` / `.meta-line-dot`) for geography, counselling route, stream, snapshot dates, etc.
+  - With **`body.pc-tool-ui`**, ordinary **`.card`**, **`.sel-card`** (exam roadmap selectors), **`.info-card`** (stream advisor cover), and **`.card-section`** (exam roadmap / stream advisor results) pick up the **gradient top stripe** + shared shadow automatically. **Excluded:** `.filter-card` (it already has its own top bar — do not double-wrap). Escape hatch: **`pc-card-plain`** on `.card` to skip the stripe when a surface must stay minimal.
+- **When adding new tool steps or JS-built cards:** Either reuse **`class="card"`** (with `body.pc-tool-ui`) for parity, or intentionally use **`filter-card`** / **`tool-result-card`** for richer layouts. Prefer **reuse over one-off shadows or border radii.**
+
 ---
 
 ## 8. Imagery, infographics, and illustration

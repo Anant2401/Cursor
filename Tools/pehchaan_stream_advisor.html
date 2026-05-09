@@ -14,6 +14,7 @@
 <title>Stream Advisor – Pehchaan Careers</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect width='40' height='40' rx='10' fill='%23085041'/><path d='M8 22 A12 12 0 0 1 32 22 Z' fill='%23EF9F27'/><path d='M6 36 L20 24 L34 36' stroke='%231D9E75' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/pehchaan_tool_ui.css">
 <style>
   :root {
     --teal:        #1D9E75;
@@ -110,21 +111,9 @@
   .hero-stat .l { font-size: 11px; opacity: .75; margin-top: 2px; }
 
 
-  .btn-begin {
-    width: 100%; background: var(--amber); color: var(--teal-dark);
-    border: none; border-radius: var(--radius); padding: 16px;
-    font-size: 15px; font-weight: 700; cursor: pointer;
-    font-family: 'Poppins', sans-serif; transition: transform .15s, box-shadow .15s;
-    letter-spacing: .01em;
-  }
-  .btn-begin:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(239,159,39,.4); }
-  .btn-begin:active { transform: translateY(0); }
-
-  /* INFO CARDS */
+  /* INFO CARDS — accent shell via pc-tool-ui + pehchaan_tool_ui.css */
   .info-card {
-    background: var(--white); border: 1px solid var(--border);
-    border-radius: 20px; padding: 20px; margin-bottom: 16px;
-    box-shadow: var(--shadow);
+    padding: 20px; margin-bottom: 16px;
   }
   .info-card h3 {
     font-size: 11px; font-weight: 700; color: var(--teal-dark);
@@ -224,9 +213,7 @@
 
   /* SCORES */
   .card-section {
-    background: var(--white); border: 1px solid var(--border);
-    border-radius: 20px; padding: 20px; margin-bottom: 14px;
-    box-shadow: var(--shadow);
+    padding: 20px; margin-bottom: 14px;
   }
   .card-section h3 {
     font-size: 12px; font-weight: 700; color: var(--teal-dark);
@@ -308,7 +295,7 @@
 <script src="../assets/pehchaan_tool_links.js"></script>
 <script src="../assets/pehchaan_tool_recommendations.js"></script>
 </head>
-<body>
+<body class="pc-tool-ui">
 <div class="translate-strip no-print"><span>Translate this page</span><div id="google_translate_element"></div></div>
 <div class="container">
 
@@ -336,7 +323,7 @@
       <div class="hero-stat"><div class="v">3</div><div class="l">Streams</div></div>
       <div class="hero-stat"><div class="v">~5</div><div class="l">Minutes</div></div>
     </div>
-    <button class="btn-begin" id="btn-begin">Find My Stream →</button>
+    <button class="btn-begin btn-pe-primary" id="btn-begin">Find My Stream →</button>
   </div>
 
   <div class="info-card">
