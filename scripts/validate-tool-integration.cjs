@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * Validates DB/pehchaan_career_registry.json cross-references against tool JSON files.
+ * Validates DB/pehchaan_career_registry.json cross-references against tool JSON files,
+ * and that sitemap.xml lists exactly the same Tool URLs as toolHtmlPaths (canonical tools).
  * Run from repo root: node scripts/validate-tool-integration.cjs
  */
 const fs = require("fs");
@@ -51,6 +52,7 @@ function main() {
     "Tools/pehchaan_stream_advisor.html",
     "Tools/pehchaan_career_assessment.html",
     "Tools/pehchaan_mentor_connect.html",
+    "Tools/pehchaan_private_sector_journey.html",
     "Tools/pehchaan_college_finder.html",
     "Tools/parents-guide/index.html"
   ];
@@ -115,6 +117,29 @@ function main() {
   if (!collegeCourseIds.size) errs.push("college registry has no taxonomy courses; College Finder linking cannot work");
   for (const rel of toolHtmlPaths) {
     if (!fs.existsSync(path.join(root, rel))) errs.push(`linked tool path missing on disk: ${rel}`);
+  }
+
+  const siteOrigin = "https://pehchaancareers.in";
+  const allowedToolLocs = new Set(toolHtmlPaths.map((rel) => `${siteOrigin}/${rel}`));
+  let sitemapXml;
+  try {
+    sitemapXml = fs.readFileSync(path.join(root, "sitemap.xml"), "utf8");
+  } catch (e) {
+    errs.push("cannot read sitemap.xml: " + e.message);
+  }
+  if (sitemapXml) {
+    const locs = [...sitemapXml.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/gi)].map(function (m) {
+      return m[1].trim();
+    });
+    for (const rel of toolHtmlPaths) {
+      const want = `${siteOrigin}/${rel}`;
+      if (!locs.includes(want)) errs.push(`sitemap.xml missing <loc> for ${rel}`);
+    }
+    for (const loc of locs) {
+      if (!loc.startsWith(siteOrigin + "/Tools/")) continue;
+      if (!allowedToolLocs.has(loc))
+        errs.push(`sitemap.xml lists unexpected Tools URL (sync with scripts or remove): ${loc}`);
+    }
   }
 
   if (errs.length) {
