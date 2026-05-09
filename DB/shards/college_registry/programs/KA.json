@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "KA",
     "state_label": "Karnataka",
-    "count": 41,
+    "count": 113,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -1273,6 +1273,2268 @@
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
       },
       "program_name": "BAMS"
+    },
+    {
+      "id": "exp_6f5db4d4c60c7b8f",
+      "college_id": "iisc_bangalore_ug_programmes_where_applicable",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_cse",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iisc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Computer Science and Engineering"
+    },
+    {
+      "id": "exp_ffef969d167d54f1",
+      "college_id": "iisc_bangalore_ug_programmes_where_applicable",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_ece",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iisc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Electronics and Communication Engineering"
+    },
+    {
+      "id": "exp_164959310eb5173d",
+      "college_id": "iisc_bangalore_ug_programmes_where_applicable",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_mechanical",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iisc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Mechanical Engineering"
+    },
+    {
+      "id": "exp_8529a0a4599507ed",
+      "college_id": "iisc_bangalore_ug_programmes_where_applicable",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_civil",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iisc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Civil Engineering"
+    },
+    {
+      "id": "exp_23dcebdf8ca3c454",
+      "college_id": "iisc_bangalore_ug_programmes_where_applicable",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_electrical",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iisc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Electrical Engineering"
+    },
+    {
+      "id": "exp_3d4cf2a4cea27555",
+      "college_id": "iisc_bangalore_ug_programmes_where_applicable",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_ai_ds",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iisc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech AI and Data Science"
+    },
+    {
+      "id": "exp_e52a7bfb8ffab293",
+      "college_id": "iisc_bangalore_ug_programmes_where_applicable",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_chemical",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iisc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Chemical Engineering"
+    },
+    {
+      "id": "exp_723f2ddc5dad839e",
+      "college_id": "iisc_bangalore_ug_programmes_where_applicable",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_biotechnology",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iisc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Biotechnology"
+    },
+    {
+      "id": "exp_c0fe8a44a6b9e8d8",
+      "college_id": "iisc_bangalore_ug_programmes_where_applicable",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_aerospace",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iisc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Aerospace Engineering"
+    },
+    {
+      "id": "exp_0edb497db9020d7f",
+      "college_id": "iisc_bangalore_ug_programmes_where_applicable",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_metallurgy",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iisc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Metallurgical and Materials Engineering"
+    },
+    {
+      "id": "exp_07a65c09c6823e49",
+      "college_id": "iisc_bangalore_ug_programmes_where_applicable",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_mining",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iisc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Mining Engineering"
+    },
+    {
+      "id": "exp_23fe4e6cf06b1991",
+      "college_id": "iisc_bangalore_ug_programmes_where_applicable",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_instrumentation",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iisc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Instrumentation and Control Engineering"
+    },
+    {
+      "id": "exp_846555af46c71407",
+      "college_id": "nitk_surathkal",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_cse",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.nitk.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Computer Science and Engineering"
+    },
+    {
+      "id": "exp_a1be32231bb2473f",
+      "college_id": "nitk_surathkal",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_ece",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.nitk.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Electronics and Communication Engineering"
+    },
+    {
+      "id": "exp_a23c2c3bd3c90177",
+      "college_id": "nitk_surathkal",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_mechanical",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.nitk.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Mechanical Engineering"
+    },
+    {
+      "id": "exp_92f4082946dc737e",
+      "college_id": "nitk_surathkal",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_civil",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.nitk.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Civil Engineering"
+    },
+    {
+      "id": "exp_e1319f62c1690d12",
+      "college_id": "nitk_surathkal",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_electrical",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.nitk.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Electrical Engineering"
+    },
+    {
+      "id": "exp_6d841e21ffc2342b",
+      "college_id": "nitk_surathkal",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_ai_ds",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.nitk.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech AI and Data Science"
+    },
+    {
+      "id": "exp_09f8bf9464fa4cab",
+      "college_id": "nitk_surathkal",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_chemical",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.nitk.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Chemical Engineering"
+    },
+    {
+      "id": "exp_1eb13502cdbe2735",
+      "college_id": "nitk_surathkal",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_biotechnology",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.nitk.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Biotechnology"
+    },
+    {
+      "id": "exp_a2ee1bce259e6106",
+      "college_id": "nitk_surathkal",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_aerospace",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.nitk.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Aerospace Engineering"
+    },
+    {
+      "id": "exp_3f812a13bf7fe538",
+      "college_id": "nitk_surathkal",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_metallurgy",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.nitk.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Metallurgical and Materials Engineering"
+    },
+    {
+      "id": "exp_509a65db7bb84dc3",
+      "college_id": "nitk_surathkal",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_mining",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.nitk.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Mining Engineering"
+    },
+    {
+      "id": "exp_b4540975975e17f6",
+      "college_id": "nitk_surathkal",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_instrumentation",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier A — INI / top national draw in state Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "all_india_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "jossa",
+          "csab"
+        ],
+        "verification_url": "https://www.nitk.ac.in/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Instrumentation and Control Engineering"
+    },
+    {
+      "id": "exp_2358a62f81b592c6",
+      "college_id": "rv_college_of_engineering_rvce",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_cse",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.rvce.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Computer Science and Engineering"
+    },
+    {
+      "id": "exp_f3ab44b0bda27dfb",
+      "college_id": "rv_college_of_engineering_rvce",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_ece",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.rvce.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Electronics and Communication Engineering"
+    },
+    {
+      "id": "exp_129b63a1986b3aea",
+      "college_id": "rv_college_of_engineering_rvce",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_mechanical",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.rvce.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Mechanical Engineering"
+    },
+    {
+      "id": "exp_cbfd17875f622436",
+      "college_id": "rv_college_of_engineering_rvce",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_civil",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.rvce.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Civil Engineering"
+    },
+    {
+      "id": "exp_ce26966ae93c368b",
+      "college_id": "rv_college_of_engineering_rvce",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_electrical",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.rvce.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Electrical Engineering"
+    },
+    {
+      "id": "exp_de6e02ad8d34d4f1",
+      "college_id": "rv_college_of_engineering_rvce",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_ai_ds",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.rvce.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech AI and Data Science"
+    },
+    {
+      "id": "exp_c641508bad2fa670",
+      "college_id": "pes_university_pesce_verify_campus",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_cse",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.pes.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Computer Science and Engineering"
+    },
+    {
+      "id": "exp_0becf6cdb966532a",
+      "college_id": "pes_university_pesce_verify_campus",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_ece",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.pes.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Electronics and Communication Engineering"
+    },
+    {
+      "id": "exp_6897f036ce5ccc28",
+      "college_id": "pes_university_pesce_verify_campus",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_mechanical",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.pes.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Mechanical Engineering"
+    },
+    {
+      "id": "exp_64469410d5f227d9",
+      "college_id": "pes_university_pesce_verify_campus",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_civil",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.pes.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Civil Engineering"
+    },
+    {
+      "id": "exp_89962f9130616da3",
+      "college_id": "pes_university_pesce_verify_campus",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_electrical",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.pes.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Electrical Engineering"
+    },
+    {
+      "id": "exp_46b0e3ae5b8ac021",
+      "college_id": "pes_university_pesce_verify_campus",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_ai_ds",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.pes.edu/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech AI and Data Science"
+    },
+    {
+      "id": "exp_c86548bfba8ace9b",
+      "college_id": "bms_college_of_engineering",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_cse",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://bmsce.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Computer Science and Engineering"
+    },
+    {
+      "id": "exp_69bf7cf10a0b559c",
+      "college_id": "bms_college_of_engineering",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_ece",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://bmsce.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Electronics and Communication Engineering"
+    },
+    {
+      "id": "exp_9c50926b40b758c2",
+      "college_id": "bms_college_of_engineering",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_mechanical",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://bmsce.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Mechanical Engineering"
+    },
+    {
+      "id": "exp_d298ec44fc279805",
+      "college_id": "bms_college_of_engineering",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_civil",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://bmsce.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Civil Engineering"
+    },
+    {
+      "id": "exp_83ad4403bdad0e67",
+      "college_id": "bms_college_of_engineering",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_electrical",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://bmsce.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Electrical Engineering"
+    },
+    {
+      "id": "exp_a0f1a0b6aee8b495",
+      "college_id": "bms_college_of_engineering",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_ai_ds",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier B — well-known Bengaluru & state colleges Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://bmsce.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech AI and Data Science"
+    },
+    {
+      "id": "exp_f5b4baa11dd4998e",
+      "college_id": "vtu_affiliated_colleges_across_karnataka",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_cse",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier C — accredited options + your portfolio Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://vtu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Computer Science and Engineering"
+    },
+    {
+      "id": "exp_b578793c3f6f92e4",
+      "college_id": "vtu_affiliated_colleges_across_karnataka",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_ece",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier C — accredited options + your portfolio Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://vtu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Electronics and Communication Engineering"
+    },
+    {
+      "id": "exp_6868fb94d60c12be",
+      "college_id": "vtu_affiliated_colleges_across_karnataka",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_mechanical",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier C — accredited options + your portfolio Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://vtu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Mechanical Engineering"
+    },
+    {
+      "id": "exp_af3dcb4b2010fb7a",
+      "college_id": "vtu_affiliated_colleges_across_karnataka",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_electrical",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier C — accredited options + your portfolio Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://vtu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Electrical Engineering"
+    },
+    {
+      "id": "exp_7b9816db10166249",
+      "college_id": "vtu_affiliated_colleges_across_karnataka",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_civil",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Imported from Plan B bundle tier: Tier C — accredited options + your portfolio Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://vtu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Civil Engineering"
+    },
+    {
+      "id": "exp_fe76b82f174617b1",
+      "college_id": "iim_bangalore",
+      "stream_id": "management",
+      "course_id": "management_ipm",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Added in Karnataka management expansion; mapped to management_generic for College Finder. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.iimb.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "IPM"
+    },
+    {
+      "id": "exp_7133044d11340f7f",
+      "college_id": "iisc_bengaluru",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_bs",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "National research institute; verify latest UG admissions policy each cycle. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://iisc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BS"
+    },
+    {
+      "id": "exp_50b2866eb3725a20",
+      "college_id": "iisc_bengaluru",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_integrated_msc",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "National research institute; verify latest UG admissions policy each cycle. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://iisc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "Integrated M.Sc"
+    },
+    {
+      "id": "exp_274f902a682b3707",
+      "college_id": "nlsiu_bengaluru",
+      "stream_id": "law",
+      "course_id": "law_bba_llb",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "National law admissions pathway; verify current counselling and domicile policies. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://www.nls.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BBA LLB"
+    },
+    {
+      "id": "exp_86b0af1485f99af0",
+      "college_id": "nlsiu_bengaluru",
+      "stream_id": "law",
+      "course_id": "law_llb",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "National law admissions pathway; verify current counselling and domicile policies. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://www.nls.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "LLB"
+    },
+    {
+      "id": "exp_64a57ee828607102",
+      "college_id": "sjcc_bengaluru",
+      "stream_id": "commerce",
+      "course_id": "commerce_bcom_hons",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Commerce intake and merit criteria should be verified from latest college admissions page. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://sjcc.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Com (Hons)"
+    },
+    {
+      "id": "exp_00f12acbd9376778",
+      "college_id": "jain_university_bengaluru",
+      "stream_id": "commerce",
+      "course_id": "commerce_bcom_hons",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Commerce admissions route may include merit and test components; verify latest criteria. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.jainuniversity.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Com (Hons)"
+    },
+    {
+      "id": "exp_ddf22c1d69c5236d",
+      "college_id": "sdm_college_ayurveda_udupi",
+      "stream_id": "ayush",
+      "course_id": "ayush_bhms",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "AYUSH approvals and counselling rules should be verified from regulator and state bulletins. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://sdmayurvedacollegeudupi.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BHMS"
+    },
+    {
+      "id": "exp_1db5f2ce662c632a",
+      "college_id": "sdm_college_ayurveda_udupi",
+      "stream_id": "ayush",
+      "course_id": "ayush_bums",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "AYUSH approvals and counselling rules should be verified from regulator and state bulletins. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://sdmayurvedacollegeudupi.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BUMS"
+    },
+    {
+      "id": "exp_88e6dcf5ee8d6afd",
+      "college_id": "sdm_college_ayurveda_udupi",
+      "stream_id": "ayush",
+      "course_id": "ayush_bnys",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "AYUSH approvals and counselling rules should be verified from regulator and state bulletins. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://sdmayurvedacollegeudupi.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BNYS"
+    },
+    {
+      "id": "exp_629a2ec4071891ba",
+      "college_id": "government_unani_medical_college_bengaluru",
+      "stream_id": "ayush",
+      "course_id": "ayush_bams",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Program-level details should be manually verified from state AYUSH and regulator sources before reliance. Quality-gated micro pass applied. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.karnataka.gov.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BAMS"
+    },
+    {
+      "id": "exp_20244846c27e97e5",
+      "college_id": "government_unani_medical_college_bengaluru",
+      "stream_id": "ayush",
+      "course_id": "ayush_bhms",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Program-level details should be manually verified from state AYUSH and regulator sources before reliance. Quality-gated micro pass applied. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.karnataka.gov.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BHMS"
+    },
+    {
+      "id": "exp_19ffab0003622269",
+      "college_id": "government_unani_medical_college_bengaluru",
+      "stream_id": "ayush",
+      "course_id": "ayush_bnys",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Program-level details should be manually verified from state AYUSH and regulator sources before reliance. Quality-gated micro pass applied. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.karnataka.gov.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BNYS"
+    },
+    {
+      "id": "exp_f0ede30f75e56489",
+      "college_id": "fr_muller_homeopathic_mangaluru",
+      "stream_id": "ayush",
+      "course_id": "ayush_bhms",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "AYUSH course approvals and admission pathway should be verified from official institute and regulator pages. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.fmhomoeopathy.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BHMS"
+    },
+    {
+      "id": "exp_004d40098067a95c",
+      "college_id": "fr_muller_homeopathic_mangaluru",
+      "stream_id": "ayush",
+      "course_id": "ayush_bums",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "AYUSH course approvals and admission pathway should be verified from official institute and regulator pages. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.fmhomoeopathy.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BUMS"
+    },
+    {
+      "id": "exp_8ad1ed0ee8650c23",
+      "college_id": "fr_muller_homeopathic_mangaluru",
+      "stream_id": "ayush",
+      "course_id": "ayush_bnys",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "AYUSH course approvals and admission pathway should be verified from official institute and regulator pages. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.fmhomoeopathy.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BNYS"
+    },
+    {
+      "id": "exp_3cbfeedc62b3e2a2",
+      "college_id": "bhagwan_buddha_homeopathic_college_bengaluru",
+      "stream_id": "ayush",
+      "course_id": "ayush_bhms",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "AYUSH approvals and admission pathway should be validated through official institute notices. Quality-gated micro pass applied. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://bbhmc.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BHMS"
+    },
+    {
+      "id": "exp_216f90a71574b10b",
+      "college_id": "bhagwan_buddha_homeopathic_college_bengaluru",
+      "stream_id": "ayush",
+      "course_id": "ayush_bums",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "AYUSH approvals and admission pathway should be validated through official institute notices. Quality-gated micro pass applied. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://bbhmc.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BUMS"
+    },
+    {
+      "id": "exp_ee3d28b4653dffea",
+      "college_id": "bhagwan_buddha_homeopathic_college_bengaluru",
+      "stream_id": "ayush",
+      "course_id": "ayush_bnys",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "AYUSH approvals and admission pathway should be validated through official institute notices. Quality-gated micro pass applied. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://bbhmc.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BNYS"
+    },
+    {
+      "id": "exp_2d13b38eab93e660",
+      "college_id": "jss_ayurveda_college_mysuru",
+      "stream_id": "ayush",
+      "course_id": "ayush_bhms",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "AYUSH approvals and intake process should be verified from institute and regulator notices. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://jssayurvedacollege.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BHMS"
+    },
+    {
+      "id": "exp_0c32e2ed989a51fd",
+      "college_id": "jss_ayurveda_college_mysuru",
+      "stream_id": "ayush",
+      "course_id": "ayush_bums",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "AYUSH approvals and intake process should be verified from institute and regulator notices. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://jssayurvedacollege.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BUMS"
+    },
+    {
+      "id": "exp_5e7e6cb4c0e6b3f2",
+      "college_id": "jss_ayurveda_college_mysuru",
+      "stream_id": "ayush",
+      "course_id": "ayush_bnys",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "AYUSH approvals and intake process should be verified from institute and regulator notices. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://jssayurvedacollege.org/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BNYS"
+    },
+    {
+      "id": "exp_d09ce864aa5ecf8c",
+      "college_id": "shri_bm_patil_ayurveda_vijayapura",
+      "stream_id": "ayush",
+      "course_id": "ayush_bhms",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Program-level AYUSH details should be manually verified from institute and regulator portals. Quality-gated micro pass applied. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.bldedu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BHMS"
+    },
+    {
+      "id": "exp_0a78975e99573168",
+      "college_id": "shri_bm_patil_ayurveda_vijayapura",
+      "stream_id": "ayush",
+      "course_id": "ayush_bums",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Program-level AYUSH details should be manually verified from institute and regulator portals. Quality-gated micro pass applied. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.bldedu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BUMS"
+    },
+    {
+      "id": "exp_d2fb2ef5d40401de",
+      "college_id": "shri_bm_patil_ayurveda_vijayapura",
+      "stream_id": "ayush",
+      "course_id": "ayush_bnys",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Program-level AYUSH details should be manually verified from institute and regulator portals. Quality-gated micro pass applied. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.bldedu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BNYS"
     }
   ]
 }

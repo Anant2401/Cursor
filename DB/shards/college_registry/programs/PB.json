@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "PB",
     "state_label": "Punjab",
-    "count": 4,
+    "count": 13,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -127,6 +127,287 @@
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
       },
       "program_name": "BA"
+    },
+    {
+      "id": "exp_48997ff9002099a3",
+      "college_id": "lpu_phagwara",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_cse",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Private engineering admissions include institute-level pathways; verify scholarship and counselling details. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.lpu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Computer Science and Engineering"
+    },
+    {
+      "id": "exp_3f585823dc17d577",
+      "college_id": "lpu_phagwara",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_ece",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Private engineering admissions include institute-level pathways; verify scholarship and counselling details. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.lpu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Electronics and Communication Engineering"
+    },
+    {
+      "id": "exp_d8c3adfd669222a4",
+      "college_id": "lpu_phagwara",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_mechanical",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Private engineering admissions include institute-level pathways; verify scholarship and counselling details. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.lpu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Mechanical Engineering"
+    },
+    {
+      "id": "exp_531f075fe45eded0",
+      "college_id": "lpu_phagwara",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_civil",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Private engineering admissions include institute-level pathways; verify scholarship and counselling details. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.lpu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Civil Engineering"
+    },
+    {
+      "id": "exp_4b32abb2c2f9caff",
+      "college_id": "lpu_phagwara",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_electrical",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Private engineering admissions include institute-level pathways; verify scholarship and counselling details. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.lpu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech Electrical Engineering"
+    },
+    {
+      "id": "exp_a202fbf8f785911d",
+      "college_id": "lpu_phagwara",
+      "stream_id": "engineering",
+      "course_id": "engineering_btech_ai_ds",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Private engineering admissions include institute-level pathways; verify scholarship and counselling details. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [
+          "jee"
+        ],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.lpu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Tech AI and Data Science"
+    },
+    {
+      "id": "exp_efdcb0a2f8bbed09",
+      "college_id": "niper_mohali",
+      "stream_id": "pharmacy",
+      "course_id": "pharmacy_pharmd",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Pharmacy and allied admissions follow national process; verify current notification. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://www.niper.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "Pharm.D"
+    },
+    {
+      "id": "exp_c701291d15e5397d",
+      "college_id": "gndu_amritsar",
+      "stream_id": "commerce",
+      "course_id": "commerce_bcom_hons",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "State university commerce admissions should be verified for updated merit and entrance criteria. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.gndu.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "B.Com (Hons)"
+    },
+    {
+      "id": "exp_3f7e22a1c4b10935",
+      "college_id": "cupb_bathinda",
+      "stream_id": "humanities",
+      "course_id": "humanities_ba_hons",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Central university admission criteria should be validated against the current prospectus. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://cup.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BA (Hons)"
     }
   ]
 }

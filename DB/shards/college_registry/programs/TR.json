@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "TR",
     "state_label": "Tripura",
-    "count": 1,
+    "count": 3,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -35,6 +35,64 @@
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
       },
       "program_name": "BA LLB"
+    },
+    {
+      "id": "exp_a6c2eba324e8a3b6",
+      "college_id": "nlu_tripura_agartala",
+      "stream_id": "law",
+      "course_id": "law_bba_llb",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Law admission pathway should be validated from current consortium and university notices. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://nlutripura.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BBA LLB"
+    },
+    {
+      "id": "exp_dc107c9afddfb585",
+      "college_id": "nlu_tripura_agartala",
+      "stream_id": "law",
+      "course_id": "law_llb",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Law admission pathway should be validated from current consortium and university notices. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://nlutripura.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "LLB"
     }
   ]
 }

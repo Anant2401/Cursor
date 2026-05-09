@@ -3,7 +3,7 @@
     "shard_type": "programs",
     "state_id": "HR",
     "state_label": "Haryana",
-    "count": 3,
+    "count": 4,
     "generated_on": "2026-05-09"
   },
   "programs": [
@@ -98,6 +98,36 @@
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
       },
       "program_name": "BVSc and AH"
+    },
+    {
+      "id": "exp_9ffaea1e41582ab7",
+      "college_id": "ashoka_university_sonepat",
+      "stream_id": "humanities",
+      "course_id": "humanities_ba_hons",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "low",
+        "notes": "Liberal arts admissions often include holistic evaluation; verify current criteria and timelines. Representative catalogue label for this stream — verify current branches on the institute admissions page."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.ashoka.edu.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      },
+      "program_name": "BA (Hons)"
     }
   ]
 }

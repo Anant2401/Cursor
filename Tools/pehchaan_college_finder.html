@@ -73,6 +73,8 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
 .pill-own{background:#EDF3FB;color:#0E4C83;border-color:#CFE0F4}
 .section-card{margin-top:10px;padding:10px 12px;border:1px dashed #CFE5DC;border-radius:12px;background:#FAFDFC}
 .section-title{font-size:11px;font-weight:700;color:var(--teal-dark);margin-bottom:4px;text-transform:uppercase;letter-spacing:.03em}
+.course-list{margin:0;padding-left:18px}
+.course-list li{font-size:12px;line-height:1.6;color:var(--text);margin:2px 0}
 .meta{font-size:11px;color:var(--gray);margin-top:4px;line-height:1.6}
 .section{margin-top:10px}
 .section b{color:var(--teal-dark)}
@@ -109,6 +111,8 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
   .card{padding:18px 14px}
   .result{padding:14px}
   .result-title{font-size:14px}
+  .course-list{padding-left:16px}
+  .course-list li{font-size:11px;line-height:1.55}
   .meta,.detail-card p,.section-card{font-size:11px}
   .filter-select,.filter-btn{font-size:12px}
 }
@@ -129,16 +133,16 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
 
   <div class="hero">
     <div class="hero-tag">College Finder</div>
-    <h1>Find colleges by state, stream, and course.</h1>
-    <p>Pick your geography lens, stream, and exact course to build a calm shortlist. We first show exact state matches, then neighbour-state options if needed, and finally national fallback so you still have a practical next step to verify.</p>
+    <h1>Find colleges by state and stream.</h1>
+    <p>Pick your geography lens and stream to build a calm shortlist. We first show exact state matches, then neighbour-state options if needed, and finally national fallback so you still have a practical next step to verify.</p>
     <div class="hero-subhead">Built for students and families who want a shortlist-first approach before spending time on counselling and admission forms.</div>
     <div class="hero-grid">
       <div class="hero-box">
         <h3>You provide</h3>
         <ul>
           <li>Geography lens and target state/UT</li>
-          <li>Stream and specific course</li>
-          <li>Your geography, stream, and course filters</li>
+          <li>Stream selection</li>
+          <li>Your geography and stream filters</li>
         </ul>
       </div>
       <div class="hero-box">
@@ -177,10 +181,6 @@ body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 520px at
       <div>
         <label class="field-label" for="stream-select">Stream</label>
         <select class="select" id="stream-select"><option value="">Select stream</option></select>
-      </div>
-      <div>
-        <label class="field-label" for="course-select">Course</label>
-        <select class="select" id="course-select"><option value="">Select course</option></select>
       </div>
     </div>
     <div style="margin-top:12px;"><button class="btn" id="btn-find" disabled>Show colleges</button></div>
@@ -332,83 +332,31 @@ function fillStateSelectByLens(){
   fillSelect(stateSelect, states, 'Select state / UT');
 }
 
-function fillCourseByStream(){
-  var streamId = document.getElementById('stream-select').value;
-  var stateId = document.getElementById('state-select').value;
-  var courseSelect = document.getElementById('course-select');
-  var courses = getTaxonomyRows('courses').filter(function(c){
-    return (c.stream_ids || []).indexOf(streamId) !== -1;
-  });
-  var courseMetaById = {};
-  courses.forEach(function(c){
-    courseMetaById[c.id] = c;
-  });
-  var availableCourseIds = {};
-  (REG.college_programs || []).forEach(function(p){
-    if (!p || p.stream_id !== streamId || !courseMetaById[p.course_id]) return;
-    if (!stateId || stateId === 'IN') {
-      availableCourseIds[p.course_id] = true;
-      return;
-    }
-    var pState = stateByCollegeId[p.college_id];
-    if (pState === stateId) availableCourseIds[p.course_id] = true;
-  });
-  var available = courses.filter(function(c){ return availableCourseIds[c.id]; });
-  if (available.length) courses = available;
-  var hasSpecific = courses.some(function(c){
-    var label = String(c.label || '');
-    var id = String(c.id || '');
-    return !GENERIC_COURSE_PATTERNS.some(function(rx){ return rx.test(label) || rx.test(id); });
-  });
-  if (hasSpecific) {
-    courses = courses.filter(function(c){
-      var label = String(c.label || '');
-      var id = String(c.id || '');
-      return !GENERIC_COURSE_PATTERNS.some(function(rx){ return rx.test(label) || rx.test(id); });
-    });
-  }
-  courses.sort(function(a, b){ return String(a.label || a.id || '').localeCompare(String(b.label || b.id || '')); });
-  fillSelect(courseSelect, courses, 'Select course');
-}
-
 function refreshBtn(){
   var ok = document.getElementById('lens-select').value &&
     document.getElementById('state-select').value &&
-    document.getElementById('stream-select').value &&
-    document.getElementById('course-select').value;
+    document.getElementById('stream-select').value;
   document.getElementById('btn-find').disabled = !ok;
 }
 
-function collectProgramsFromIds(ids){
-  var rows = [];
-  (ids || []).forEach(function(id){ if (byProgramId[id]) rows.push(byProgramId[id]); });
-  return rows;
-}
-
-function matchExact(stateId, streamId, courseId){
-  var key = [stateId, streamId, courseId].join('|');
-  var source = (SHARD_INDEXES && SHARD_INDEXES.by_state_stream_course) || (IDX && IDX.by_state_stream_course) || {};
-  return collectProgramsFromIds(source[key]);
-}
-
-function matchNeighbours(stateId, streamId, courseId){
-  var key = [stateId, streamId, courseId].join('|');
-  var source = (SHARD_INDEXES && SHARD_INDEXES.by_neighbor_state_stream_course) || (IDX && IDX.by_neighbor_state_stream_course) || {};
-  var ids = source[key] || [];
-  return collectProgramsFromIds(ids);
-}
-
-function matchNational(streamId, courseId){
-  if (SHARD_INDEXES && SHARD_INDEXES.by_stream_course) {
-    var key = [streamId, courseId].join('|');
-    return collectProgramsFromIds(SHARD_INDEXES.by_stream_course[key] || []).filter(function(p){
-      return (p.geography_lens_ids || []).indexOf('national_level') !== -1;
-    });
-  }
+function matchExactByStream(stateId, streamId){
   return (REG.college_programs || []).filter(function(p){
-    return p.stream_id === streamId &&
-      p.course_id === courseId &&
-      (p.geography_lens_ids || []).indexOf('national_level') !== -1;
+    return p.stream_id === streamId && stateByCollegeId[p.college_id] === stateId;
+  });
+}
+
+function matchNeighboursByStream(stateId, streamId){
+  var neighbours = (((SHARD_MANIFEST || {}).state_neighbors || {})[stateId]) || (((REG || {}).state_neighbors || {})[stateId]) || [];
+  var allowed = {};
+  neighbours.forEach(function(s){ allowed[s] = true; });
+  return (REG.college_programs || []).filter(function(p){
+    return p.stream_id === streamId && allowed[stateByCollegeId[p.college_id]];
+  });
+}
+
+function matchNationalByStream(streamId){
+  return (REG.college_programs || []).filter(function(p){
+    return p.stream_id === streamId && (p.geography_lens_ids || []).indexOf('national_level') !== -1;
   });
 }
 
@@ -430,8 +378,9 @@ function cardsFromPrograms(programs){
     var c = collegesById[collegeId] || byId(REG && REG.colleges, collegeId);
     if (!c) return;
     var rows = collegeMap[collegeId];
-    var allProgramsSameStream = Object.keys(byProgramId).map(function(k){ return byProgramId[k]; }).filter(function(p){
-      return p && p.college_id === collegeId && (!CURRENT_STREAM_SELECTED || p.stream_id === CURRENT_STREAM_SELECTED) && rows.some(function(m){ return m.course_id === p.course_id; });
+    /* Show every programme row we have for this college in the selected stream (not only courses that matched search). */
+    var allProgramsSameStream = (REG.college_programs || []).filter(function(p){
+      return p && p.college_id === collegeId && (!CURRENT_STREAM_SELECTED || p.stream_id === CURRENT_STREAM_SELECTED);
     });
     if (allProgramsSameStream.length) rows = allProgramsSameStream;
     var courses = [];
@@ -480,7 +429,7 @@ function cardsFromPrograms(programs){
     var routeKeys = Object.keys(routeMap).sort(function(a, b){ return routeMap[b] - routeMap[a]; });
     out.push({
       college: c,
-      courses: courses.slice(0, 12),
+      courses: courses.slice(0, 28),
       exams: exams,
       snapshotDate: snapshotDate,
       admissionRoutePrimary: routeKeys[0] || '',
@@ -639,7 +588,11 @@ function renderResults(reason, programs){
     if (c.type) html += '<span class="pill pill-type">' + esc(c.type) + '</span>';
     if (c.ownership) html += '<span class="pill pill-own">' + esc(c.ownership) + '</span>';
     html += '</div>';
-    html += '<div class="section-card"><div class="section-title">Courses offered</div>' + esc(row.courses.join(' • ')) + '</div>';
+    var coursesHtml = '<ul class="course-list">' + row.courses.map(function(courseLabel){
+      return '<li>' + esc(courseLabel) + '</li>';
+    }).join('') + '</ul>';
+    html += '<div class="section-card"><div class="section-title">Courses offered</div>' + coursesHtml +
+      '<p class="meta course-list-footnote">Branches shown are from our expanded catalogue for this stream — always confirm the latest list on the institute admissions page.</p></div>';
     if (row.exams.length) html += '<div class="section-card"><div class="section-title">Admission exams to verify</div>' + esc(row.exams.join(', ')) + '</div>';
     if (row.snapshotDate) html += '<div class="meta">Data snapshot: ' + esc(row.snapshotDate) + ' (verify latest brochure/admissions page for current intake).</div>';
     if (c.highlights && c.highlights.unique_point) html += '<div class="section-card"><div class="section-title">Unique point</div>' + esc(c.highlights.unique_point) + '</div>';
@@ -710,48 +663,41 @@ function runFinder(){
   var state = document.getElementById('state-select').value;
   var stream = document.getElementById('stream-select').value;
   CURRENT_STREAM_SELECTED = stream;
-  var course = document.getElementById('course-select').value;
   var sLabel = (byId(getTaxonomyRows('states'), state) || {}).label || state;
   var stLabel = (byId(getTaxonomyRows('streams'), stream) || {}).label || stream;
-  var cLabel = (byId(getTaxonomyRows('courses'), course) || {}).label || course;
   var lLabel = (byId(getTaxonomyRows('geography_lenses'), lens) || {}).label || lens;
 
   var reason = 'exact';
   var rows = [];
   var load = Promise.resolve();
   if (SHARD_INDEXES && lens === 'state_comfort') {
-    var neighborIds = (SHARD_INDEXES.by_neighbor_state_stream_course || {})[[state, stream, course].join('|')] || [];
-    var states = [state];
-    neighborIds.forEach(function(pid){
-      var sid = (SHARD_INDEXES.program_state_by_id || {})[pid];
-      if (sid) states.push(sid);
-    });
+    var states = [state].concat((((SHARD_MANIFEST || {}).state_neighbors || {})[state]) || []);
     load = ensureStatesLoaded(states);
   } else if (SHARD_INDEXES && lens === 'national_level') {
-    load = ensureStatesLoaded((SHARD_INDEXES.by_stream_course_states || {})[[stream, course].join('|')] || ['IN']);
+    load = ensureStatesLoaded(['IN']);
   }
 
   load.then(function(){
     if (lens === 'national_level') {
-      rows = matchNational(stream, course);
+      rows = matchNationalByStream(stream);
       reason = 'national';
     } else {
-      rows = matchExact(state, stream, course);
+      rows = matchExactByStream(state, stream);
       if (!rows.length) {
-        rows = matchNeighbours(state, stream, course);
+        rows = matchNeighboursByStream(state, stream);
         reason = rows.length ? 'neighbour' : 'national';
       }
-      if (!rows.length) rows = matchNational(stream, course);
+      if (!rows.length) rows = matchNationalByStream(stream);
     }
 
     document.getElementById('results-wrap').style.display = 'block';
-    document.getElementById('selection-line').textContent = stLabel + ' → ' + cLabel + ' → ' + lLabel + (lens === 'state_comfort' ? (' → ' + sLabel) : '');
+    document.getElementById('selection-line').textContent = stLabel + ' → ' + lLabel + (lens === 'state_comfort' ? (' → ' + sLabel) : '');
     var chip = document.getElementById('reason-chip');
     if (reason === 'exact') { chip.className = 'chip chip-exact'; chip.textContent = 'Exact match'; }
     else if (reason === 'neighbour') { chip.className = 'chip chip-neighbour'; chip.textContent = 'Neighbour-state preview'; }
     else { chip.className = 'chip chip-national'; chip.textContent = 'National-level fallback'; }
     renderResults(reason, rows);
-    var nextCtx = { from: 'college_finder', stream: stream, state: state, course: course };
+    var nextCtx = { from: 'college_finder', stream: stream, state: state };
     var topCard = cardsFromPrograms(rows)[0] || null;
     if (topCard) {
       if (topCard.admissionRoutePrimary) nextCtx.admission_route_primary = topCard.admissionRoutePrimary;
@@ -810,7 +756,6 @@ function tryPrefillFromContext(){
   var lensEl = document.getElementById('lens-select');
   var stateEl = document.getElementById('state-select');
   var streamEl = document.getElementById('stream-select');
-  var courseEl = document.getElementById('course-select');
   if (p.state === 'IN') {
     lensEl.value = 'national_level';
   } else if (p.state) {
@@ -821,11 +766,8 @@ function tryPrefillFromContext(){
   if (p.stream) {
     streamEl.value = p.stream;
     if (!streamEl.value) streamEl.value = '';
-    fillCourseByStream();
   }
-  if (p.course) courseEl.value = p.course;
   if (!streamEl.value) streamEl.value = '';
-  if (!courseEl.value) courseEl.value = '';
 }
 
 function loadJsonCandidates(candidates) {
@@ -855,10 +797,9 @@ Promise.all([
   fillSelect(document.getElementById('stream-select'), getTaxonomyRows('streams'), 'Select stream');
   var ss = document.getElementById('stream-select');
   if (ss && !ss.value) ss.value = '';
-  document.getElementById('lens-select').addEventListener('change', function(){ fillStateSelectByLens(); fillCourseByStream(); refreshBtn(); });
-  document.getElementById('stream-select').addEventListener('change', function(){ fillCourseByStream(); refreshBtn(); });
-  document.getElementById('state-select').addEventListener('change', function(){ fillCourseByStream(); refreshBtn(); });
-  document.getElementById('course-select').addEventListener('change', refreshBtn);
+  document.getElementById('lens-select').addEventListener('change', function(){ fillStateSelectByLens(); refreshBtn(); });
+  document.getElementById('stream-select').addEventListener('change', refreshBtn);
+  document.getElementById('state-select').addEventListener('change', refreshBtn);
   document.getElementById('btn-find').addEventListener('click', runFinder);
   bindResultFilters();
   tryPrefillFromContext();
