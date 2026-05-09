@@ -1601,7 +1601,7 @@
         "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
       },
       "recognition": {
-        "university_status": "unknown",
+        "university_status": "ugc",
         "regulators_required": [
           "NMC"
         ],
@@ -1609,7 +1609,7 @@
         "verification_urls": [
           "https://aiimsraipur.edu.in/"
         ],
-        "confidence": "low",
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
@@ -1657,7 +1657,7 @@
         "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
       },
       "recognition": {
-        "university_status": "unknown",
+        "university_status": "ugc",
         "regulators_required": [
           "NMC"
         ],
@@ -1665,7 +1665,7 @@
         "verification_urls": [
           "https://mcc.nic.in/"
         ],
-        "confidence": "low",
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
@@ -5787,7 +5787,7 @@
         "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
       },
       "recognition": {
-        "university_status": "unknown",
+        "university_status": "ugc",
         "regulators_required": [
           "NMC"
         ],
@@ -5796,7 +5796,7 @@
           "https://mcc.nic.in/",
           "https://www.aiimsgorakhpur.edu.in/"
         ],
-        "confidence": "low",
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
@@ -5960,7 +5960,7 @@
         "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
       },
       "recognition": {
-        "university_status": "unknown",
+        "university_status": "ugc",
         "regulators_required": [
           "NMC"
         ],
@@ -5968,7 +5968,7 @@
         "verification_urls": [
           "https://www.aiimsjodhpur.edu.in/"
         ],
-        "confidence": "low",
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
@@ -6297,7 +6297,7 @@
         "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
       },
       "recognition": {
-        "university_status": "unknown",
+        "university_status": "ugc",
         "regulators_required": [
           "NMC"
         ],
@@ -6305,7 +6305,7 @@
         "verification_urls": [
           "https://aiimsbibinagar.edu.in/"
         ],
-        "confidence": "low",
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
@@ -8299,7 +8299,7 @@
         "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
       },
       "recognition": {
-        "university_status": "unknown",
+        "university_status": "ugc",
         "regulators_required": [
           "UGC_or_state_university_context"
         ],
@@ -8307,7 +8307,7 @@
         "verification_urls": [
           "https://www.iiml.ac.in/"
         ],
-        "confidence": "low",
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
@@ -12733,7 +12733,7 @@
         "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
       },
       "recognition": {
-        "university_status": "unknown",
+        "university_status": "ugc",
         "regulators_required": [
           "NMC"
         ],
@@ -12742,7 +12742,7 @@
           "https://aiimsmadurai.edu.in/",
           "https://mcc.nic.in/"
         ],
-        "confidence": "low",
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }

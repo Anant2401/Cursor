@@ -145,7 +145,7 @@ function inferUniversityStatus(type) {
   if (t.includes("state university")) return { value: "state_act", confidence: "medium" };
   if (t.includes("autonomous")) return { value: "autonomous", confidence: "low" };
   if (t.includes("private")) return { value: "private_university", confidence: "low" };
-  if (/(iit|nit|iiit|iiser|nlu|government)/.test(t)) return { value: "ugc", confidence: "medium" };
+  if (/(iit|nit|iiit|iiser|nlu|iim|aiims|aims|government)/.test(t)) return { value: "ugc", confidence: "medium" };
   if (t.includes("university")) return { value: "ugc", confidence: "low" };
   return { value: "unknown", confidence: "low" };
 }
