@@ -3,7 +3,7 @@
     "shard_type": "institutions",
     "state_id": "KA",
     "state_label": "Karnataka",
-    "count": 22,
+    "count": 24,
     "generated_on": "2026-05-09"
   },
   "institutions": [
@@ -1243,6 +1243,124 @@
         "regulators_verified": [],
         "verification_urls": [
           "https://www.sdmimd.ac.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "iisc_bengaluru",
+      "name": "Indian Institute of Science Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Institute of Eminence",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://iisc.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "National research institute; verify latest UG admissions policy each cycle."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://iisc.ac.in/",
+          "https://www.ugc.gov.in/",
+          "https://iisc.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://iisc.ac.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "nlsiu_bengaluru",
+      "name": "National Law School of India University Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Law university",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nls.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "National law admissions pathway; verify current counselling and domicile policies."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.nls.ac.in/",
+          "https://consortiumofnlus.ac.in/",
+          "https://www.nls.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "BCI"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.nls.ac.in/",
+          "https://consortiumofnlus.ac.in/"
         ],
         "confidence": "low",
         "last_updated": "2026-05-09",

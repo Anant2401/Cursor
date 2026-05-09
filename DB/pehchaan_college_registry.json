@@ -10,8 +10,8 @@
       "https://mcc.nic.in/"
     ],
     "pipeline_stats": {
-      "total_colleges": 216,
-      "total_programs": 335,
+      "total_colleges": 220,
+      "total_programs": 341,
       "stale_record_count": 0,
       "last_pipeline_run": "2026-05-09"
     }
@@ -5348,9 +5348,9 @@
       "name": "AIIMS New Delhi",
       "state_id": "DL",
       "city": "New Delhi",
-      "type": "AIIMS",
-      "ownership": "",
-      "confidence_level": "medium",
+      "type": "Institute of National Importance",
+      "ownership": "Public",
+      "confidence_level": "high",
       "contact_missing_reason": "",
       "contacts": {
         "website": "https://www.aiims.edu/",
@@ -5366,13 +5366,14 @@
         "specialization": "AIIMS New Delhi is positioned as a aiims with  context; verify department-level offerings and current intake on official pages.",
         "unique_point": "AIIMS New Delhi contributes a distinct local option in New Delhi and is useful for shortlist comparison by institution type and ecosystem fit.",
         "why_choose": "Choose AIIMS New Delhi when your priority is matching stream preference with location, institution profile, and verified admission information.",
-        "notes": "NEET-UG AIQ; separate from state."
+        "notes": "MBBS route is NEET-UG via counselling; confirm current round schedule."
       },
       "verification": {
         "nirf_band": "Top Medical band — verify",
-        "last_verified_on": "2026-05-07",
+        "last_verified_on": "2026-05-09",
         "source_urls": [
-          "https://www.aiims.edu/"
+          "https://www.aiims.edu/",
+          "https://mcc.nic.in/"
         ]
       },
       "cost_band": {
@@ -5392,7 +5393,8 @@
         ],
         "regulators_verified": [],
         "verification_urls": [
-          "https://www.aiims.edu/"
+          "https://www.aiims.edu/",
+          "https://mcc.nic.in/"
         ],
         "confidence": "low",
         "last_updated": "2026-05-09",
@@ -11593,7 +11595,7 @@
       "name": "National Institute of Fashion Technology Chennai",
       "state_id": "TN",
       "city": "Chennai",
-      "type": "Institute of national importance",
+      "type": "Autonomous institute",
       "ownership": "Public",
       "confidence_level": "medium",
       "contact_missing_reason": "",
@@ -11611,18 +11613,19 @@
         "specialization": "Design and fashion pathways with studio, portfolio, and industry-exposure orientation.",
         "unique_point": "NIFT campus advantage with specialized design ecosystem in Chennai.",
         "why_choose": "Useful for students choosing focused design education with clear industry alignment.",
-        "notes": "Treat as guidance-level; verify latest admissions and stream offerings before decision."
+        "notes": "Design admissions route can vary by program; verify NIFT admission bulletin."
       },
       "verification": {
         "nirf_band": "Verify latest rank/band where applicable.",
-        "last_verified_on": "2026-05-07",
+        "last_verified_on": "2026-05-09",
         "source_urls": [
-          "https://www.nift.ac.in/chennai/"
+          "https://www.nift.ac.in/chennai/",
+          "https://nift.ac.in/admission"
         ]
       },
       "cost_band": {
         "living_city_band": "high",
-        "hostel_context": "unknown",
+        "hostel_context": "limited",
         "monthly_budget_min": 25000,
         "monthly_budget_max": 45000,
         "method": "heuristic",
@@ -11631,13 +11634,14 @@
         "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
       },
       "recognition": {
-        "university_status": "unknown",
+        "university_status": "autonomous",
         "regulators_required": [
           "UGC_or_state_university_context"
         ],
         "regulators_verified": [],
         "verification_urls": [
-          "https://www.nift.ac.in/chennai/"
+          "https://www.nift.ac.in/chennai/",
+          "https://nift.ac.in/admission"
         ],
         "confidence": "low",
         "last_updated": "2026-05-09",
@@ -12675,124 +12679,6 @@
       }
     },
     {
-      "id": "example_iit_bombay",
-      "name": "IIT Bombay",
-      "state_id": "MH",
-      "city": "Mumbai",
-      "type": "IIT",
-      "ownership": "Public",
-      "confidence_level": "medium",
-      "contact_missing_reason": "",
-      "contacts": {
-        "website": "https://www.iitb.ac.in/",
-        "email": "",
-        "phone": ""
-      },
-      "highlights": {
-        "founded": "Verify on official website",
-        "notable_alumni": [
-          "Verify notable alumni from official and trusted public sources."
-        ],
-        "best_for": "",
-        "specialization": "",
-        "unique_point": "",
-        "why_choose": "",
-        "notes": "Replace with actual row; keep IDs lowercase snake_case."
-      },
-      "verification": {
-        "nirf_band": "",
-        "last_verified_on": "2026-05-09",
-        "source_urls": [
-          "https://www.iitb.ac.in/",
-          "https://josaa.nic.in/",
-          "https://www.iitb.ac.in/"
-        ]
-      },
-      "cost_band": {
-        "living_city_band": "high",
-        "hostel_context": "likely",
-        "monthly_budget_min": 25000,
-        "monthly_budget_max": 45000,
-        "method": "heuristic",
-        "confidence": "medium",
-        "last_updated": "2026-05-09",
-        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
-      },
-      "recognition": {
-        "university_status": "ugc",
-        "regulators_required": [
-          "UGC_or_AICTE_context"
-        ],
-        "regulators_verified": [],
-        "verification_urls": [
-          "https://www.iitb.ac.in/",
-          "https://josaa.nic.in/"
-        ],
-        "confidence": "medium",
-        "last_updated": "2026-05-09",
-        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
-      }
-    },
-    {
-      "id": "example_bhu_varanasi",
-      "name": "Banaras Hindu University",
-      "state_id": "UP",
-      "city": "Varanasi",
-      "type": "State university",
-      "ownership": "Public",
-      "confidence_level": "medium",
-      "contact_missing_reason": "",
-      "contacts": {
-        "website": "https://www.bhu.ac.in/",
-        "email": "",
-        "phone": ""
-      },
-      "highlights": {
-        "founded": "Verify on official website",
-        "notable_alumni": [
-          "Verify notable alumni from official and trusted public sources."
-        ],
-        "best_for": "",
-        "specialization": "",
-        "unique_point": "",
-        "why_choose": "",
-        "notes": "Add one row per stream-course mapping needed."
-      },
-      "verification": {
-        "nirf_band": "",
-        "last_verified_on": "2026-05-09",
-        "source_urls": [
-          "https://www.bhu.ac.in/",
-          "https://www.ugc.gov.in/",
-          "https://www.bhu.ac.in/"
-        ]
-      },
-      "cost_band": {
-        "living_city_band": "low",
-        "hostel_context": "mixed",
-        "monthly_budget_min": 8000,
-        "monthly_budget_max": 15000,
-        "method": "heuristic",
-        "confidence": "low",
-        "last_updated": "2026-05-09",
-        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
-      },
-      "recognition": {
-        "university_status": "state_act",
-        "regulators_required": [
-          "UGC_or_state_university_context"
-        ],
-        "regulators_verified": [],
-        "verification_urls": [
-          "https://www.bhu.ac.in/",
-          "https://www.ugc.gov.in/"
-        ],
-        "confidence": "medium",
-        "last_updated": "2026-05-09",
-        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
-      }
-    },
-    {
       "id": "example_aiims_madurai",
       "name": "AIIMS Madurai",
       "state_id": "TN",
@@ -12847,6 +12733,360 @@
           "https://mcc.nic.in/"
         ],
         "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "iisc_bengaluru",
+      "name": "Indian Institute of Science Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Institute of Eminence",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://iisc.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "National research institute; verify latest UG admissions policy each cycle."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://iisc.ac.in/",
+          "https://www.ugc.gov.in/",
+          "https://iisc.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://iisc.ac.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "cept_university_ahmedabad",
+      "name": "CEPT University Ahmedabad",
+      "state_id": "GJ",
+      "city": "Ahmedabad",
+      "type": "Private university",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://cept.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Architecture-focused intake; verify current entrance and counselling route."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://cept.ac.in/",
+          "https://www.coa.gov.in/",
+          "https://cept.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "COA"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://cept.ac.in/",
+          "https://www.coa.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "nlsiu_bengaluru",
+      "name": "National Law School of India University Bengaluru",
+      "state_id": "KA",
+      "city": "Bengaluru",
+      "type": "Law university",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.nls.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "National law admissions pathway; verify current counselling and domicile policies."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.nls.ac.in/",
+          "https://consortiumofnlus.ac.in/",
+          "https://www.nls.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "ugc",
+        "regulators_required": [
+          "BCI"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.nls.ac.in/",
+          "https://consortiumofnlus.ac.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "iim_ahmedabad",
+      "name": "Indian Institute of Management Ahmedabad",
+      "state_id": "GJ",
+      "city": "Ahmedabad",
+      "type": "Institute of National Importance",
+      "ownership": "Public",
+      "confidence_level": "high",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.iima.ac.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Management entry pathways vary by program and degree level; verify latest criteria."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.iima.ac.in/",
+          "https://www.ugc.gov.in/",
+          "https://www.iima.ac.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "unknown",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "unknown",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.iima.ac.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "amity_university_noida",
+      "name": "Amity University Noida",
+      "state_id": "UP",
+      "city": "Noida",
+      "type": "Private university",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.amity.edu/noida/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Pharmacy approvals and seat matrix should be verified from official notices."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.amity.edu/noida/",
+          "https://www.pci.nic.in/",
+          "https://www.amity.edu/noida/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "medium",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "private_university",
+        "regulators_required": [
+          "PCI"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.amity.edu/noida/",
+          "https://www.pci.nic.in/"
+        ],
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
+      }
+    },
+    {
+      "id": "symbiosis_pune",
+      "name": "Symbiosis International Pune",
+      "state_id": "MH",
+      "city": "Pune",
+      "type": "Deemed university",
+      "ownership": "Private",
+      "confidence_level": "medium",
+      "contact_missing_reason": "",
+      "contacts": {
+        "website": "https://www.siu.edu.in/",
+        "email": "",
+        "phone": ""
+      },
+      "highlights": {
+        "founded": "Verify on official website",
+        "notable_alumni": [
+          "Verify notable alumni from official and trusted public sources."
+        ],
+        "best_for": "",
+        "specialization": "",
+        "unique_point": "",
+        "why_choose": "",
+        "notes": "Use as private university commerce benchmark; verify program-level accreditation."
+      },
+      "verification": {
+        "nirf_band": "",
+        "last_verified_on": "2026-05-09",
+        "source_urls": [
+          "https://www.siu.edu.in/",
+          "https://www.ugc.gov.in/",
+          "https://www.siu.edu.in/"
+        ]
+      },
+      "cost_band": {
+        "living_city_band": "high",
+        "hostel_context": "mixed",
+        "monthly_budget_min": 25000,
+        "monthly_budget_max": 45000,
+        "method": "heuristic",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
+      },
+      "recognition": {
+        "university_status": "deemed",
+        "regulators_required": [
+          "UGC_or_state_university_context"
+        ],
+        "regulators_verified": [],
+        "verification_urls": [
+          "https://www.siu.edu.in/",
+          "https://www.ugc.gov.in/"
+        ],
+        "confidence": "medium",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
@@ -22970,68 +23210,6 @@
       }
     },
     {
-      "id": "example_iit_bombay_engineering_engineering_generic_national_level_state_comfort_",
-      "college_id": "example_iit_bombay",
-      "stream_id": "engineering",
-      "course_id": "engineering_generic",
-      "geography_lens_ids": [
-        "state_comfort",
-        "national_level"
-      ],
-      "admission_exam_ids": [],
-      "admission_routes": [],
-      "availability": {
-        "is_active": true,
-        "state_specific": true,
-        "confidence_level": "medium",
-        "notes": "Replace with actual row; keep IDs lowercase snake_case."
-      },
-      "last_verified_on": "2026-05-09",
-      "admission_route": {
-        "primary": "all_india_counselling",
-        "exam_ids": [
-          "jee"
-        ],
-        "pathways": [
-          "jossa",
-          "csab"
-        ],
-        "verification_url": "https://www.iitb.ac.in/",
-        "confidence": "medium",
-        "last_updated": "2026-05-09",
-        "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
-    },
-    {
-      "id": "example_bhu_varanasi_commerce_commerce_generic_state_comfort_intake",
-      "college_id": "example_bhu_varanasi",
-      "stream_id": "commerce",
-      "course_id": "commerce_generic",
-      "geography_lens_ids": [
-        "state_comfort"
-      ],
-      "admission_exam_ids": [],
-      "admission_routes": [],
-      "availability": {
-        "is_active": true,
-        "state_specific": true,
-        "confidence_level": "medium",
-        "notes": "Add one row per stream-course mapping needed."
-      },
-      "last_verified_on": "2026-05-09",
-      "admission_route": {
-        "primary": "institute_level",
-        "exam_ids": [],
-        "pathways": [
-          "institute_portal"
-        ],
-        "verification_url": "https://www.bhu.ac.in/",
-        "confidence": "low",
-        "last_updated": "2026-05-09",
-        "notes": "Rule-based backfill; verify on official counselling/institute portals."
-      }
-    },
-    {
       "id": "example_aiims_madurai_medicine_medicine_mbbs_national_level_state_comfort_intake",
       "college_id": "example_aiims_madurai",
       "stream_id": "medicine",
@@ -23060,6 +23238,242 @@
         ],
         "verification_url": "https://aiimsmadurai.edu.in/",
         "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "iisc_bengaluru_science_stats_science_stats_generic_national_level_state_comfort_",
+      "college_id": "iisc_bengaluru",
+      "stream_id": "science_stats",
+      "course_id": "science_stats_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "National research institute; verify latest UG admissions policy each cycle."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://iisc.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "cept_university_ahmedabad_architecture_architecture_generic_national_level_state",
+      "college_id": "cept_university_ahmedabad",
+      "stream_id": "architecture",
+      "course_id": "architecture_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Architecture-focused intake; verify current entrance and counselling route."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "arch"
+        ],
+        "pathways": [
+          "state_cet",
+          "institute_portal"
+        ],
+        "verification_url": "https://cept.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "aiims_new_delhi_medicine_medicine_mbbs_national_level_state_comfort_intake",
+      "college_id": "aiims_new_delhi",
+      "stream_id": "medicine",
+      "course_id": "medicine_mbbs",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "MBBS route is NEET-UG via counselling; confirm current round schedule."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "mixed",
+        "exam_ids": [
+          "neet"
+        ],
+        "pathways": [
+          "mcc",
+          "state_counselling"
+        ],
+        "verification_url": "https://www.aiims.edu/",
+        "confidence": "medium",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "nlsiu_bengaluru_law_law_generic_national_level_state_comfort_intake",
+      "college_id": "nlsiu_bengaluru",
+      "stream_id": "law",
+      "course_id": "law_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "National law admissions pathway; verify current counselling and domicile policies."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://www.nls.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "iim_ahmedabad_management_management_generic_national_level_state_comfort_intake",
+      "college_id": "iim_ahmedabad",
+      "stream_id": "management",
+      "course_id": "management_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "high",
+        "notes": "Management entry pathways vary by program and degree level; verify latest criteria."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://www.iima.ac.in/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "amity_university_noida_pharmacy_pharmacy_generic_state_comfort_intake",
+      "college_id": "amity_university_noida",
+      "stream_id": "pharmacy",
+      "course_id": "pharmacy_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Pharmacy approvals and seat matrix should be verified from official notices."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "state_counselling",
+        "exam_ids": [],
+        "pathways": [
+          "state_cet"
+        ],
+        "verification_url": "https://www.amity.edu/noida/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "nift_chennai_design_design_generic_national_level_state_comfort_intake",
+      "college_id": "nift_chennai",
+      "stream_id": "design",
+      "course_id": "design_generic",
+      "geography_lens_ids": [
+        "state_comfort",
+        "national_level"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Design admissions route can vary by program; verify NIFT admission bulletin."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "verify",
+        "exam_ids": [],
+        "pathways": [],
+        "verification_url": "https://www.nift.ac.in/chennai/",
+        "confidence": "low",
+        "last_updated": "2026-05-09",
+        "notes": "Rule-based backfill; verify on official counselling/institute portals."
+      }
+    },
+    {
+      "id": "symbiosis_pune_commerce_commerce_generic_state_comfort_intake",
+      "college_id": "symbiosis_pune",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
+      "geography_lens_ids": [
+        "state_comfort"
+      ],
+      "admission_exam_ids": [],
+      "admission_routes": [],
+      "availability": {
+        "is_active": true,
+        "state_specific": true,
+        "confidence_level": "medium",
+        "notes": "Use as private university commerce benchmark; verify program-level accreditation."
+      },
+      "last_verified_on": "2026-05-09",
+      "admission_route": {
+        "primary": "institute_level",
+        "exam_ids": [],
+        "pathways": [
+          "institute_portal"
+        ],
+        "verification_url": "https://www.siu.edu.in/",
+        "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
       }

@@ -1537,16 +1537,16 @@
       }
     },
     {
-      "id": "example_iit_bombay",
-      "name": "IIT Bombay",
+      "id": "symbiosis_pune",
+      "name": "Symbiosis International Pune",
       "state_id": "MH",
-      "city": "Mumbai",
-      "type": "IIT",
-      "ownership": "Public",
+      "city": "Pune",
+      "type": "Deemed university",
+      "ownership": "Private",
       "confidence_level": "medium",
       "contact_missing_reason": "",
       "contacts": {
-        "website": "https://www.iitb.ac.in/",
+        "website": "https://www.siu.edu.in/",
         "email": "",
         "phone": ""
       },
@@ -1559,36 +1559,36 @@
         "specialization": "",
         "unique_point": "",
         "why_choose": "",
-        "notes": "Replace with actual row; keep IDs lowercase snake_case."
+        "notes": "Use as private university commerce benchmark; verify program-level accreditation."
       },
       "verification": {
         "nirf_band": "",
         "last_verified_on": "2026-05-09",
         "source_urls": [
-          "https://www.iitb.ac.in/",
-          "https://josaa.nic.in/",
-          "https://www.iitb.ac.in/"
+          "https://www.siu.edu.in/",
+          "https://www.ugc.gov.in/",
+          "https://www.siu.edu.in/"
         ]
       },
       "cost_band": {
         "living_city_band": "high",
-        "hostel_context": "likely",
+        "hostel_context": "mixed",
         "monthly_budget_min": 25000,
         "monthly_budget_max": 45000,
         "method": "heuristic",
-        "confidence": "medium",
+        "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
       },
       "recognition": {
-        "university_status": "ugc",
+        "university_status": "deemed",
         "regulators_required": [
-          "UGC_or_AICTE_context"
+          "UGC_or_state_university_context"
         ],
         "regulators_verified": [],
         "verification_urls": [
-          "https://www.iitb.ac.in/",
-          "https://josaa.nic.in/"
+          "https://www.siu.edu.in/",
+          "https://www.ugc.gov.in/"
         ],
         "confidence": "medium",
         "last_updated": "2026-05-09",

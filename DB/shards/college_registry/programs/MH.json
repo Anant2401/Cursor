@@ -1160,13 +1160,12 @@
       }
     },
     {
-      "id": "example_iit_bombay_engineering_engineering_generic_national_level_state_comfort_",
-      "college_id": "example_iit_bombay",
-      "stream_id": "engineering",
-      "course_id": "engineering_generic",
+      "id": "symbiosis_pune_commerce_commerce_generic_state_comfort_intake",
+      "college_id": "symbiosis_pune",
+      "stream_id": "commerce",
+      "course_id": "commerce_generic",
       "geography_lens_ids": [
-        "state_comfort",
-        "national_level"
+        "state_comfort"
       ],
       "admission_exam_ids": [],
       "admission_routes": [],
@@ -1174,20 +1173,17 @@
         "is_active": true,
         "state_specific": true,
         "confidence_level": "medium",
-        "notes": "Replace with actual row; keep IDs lowercase snake_case."
+        "notes": "Use as private university commerce benchmark; verify program-level accreditation."
       },
       "last_verified_on": "2026-05-09",
       "admission_route": {
-        "primary": "all_india_counselling",
-        "exam_ids": [
-          "jee"
-        ],
+        "primary": "institute_level",
+        "exam_ids": [],
         "pathways": [
-          "jossa",
-          "csab"
+          "institute_portal"
         ],
-        "verification_url": "https://www.iitb.ac.in/",
-        "confidence": "medium",
+        "verification_url": "https://www.siu.edu.in/",
+        "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Rule-based backfill; verify on official counselling/institute portals."
       }

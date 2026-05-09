@@ -1769,16 +1769,16 @@
       }
     },
     {
-      "id": "example_bhu_varanasi",
-      "name": "Banaras Hindu University",
+      "id": "amity_university_noida",
+      "name": "Amity University Noida",
       "state_id": "UP",
-      "city": "Varanasi",
-      "type": "State university",
-      "ownership": "Public",
+      "city": "Noida",
+      "type": "Private university",
+      "ownership": "Private",
       "confidence_level": "medium",
       "contact_missing_reason": "",
       "contacts": {
-        "website": "https://www.bhu.ac.in/",
+        "website": "https://www.amity.edu/noida/",
         "email": "",
         "phone": ""
       },
@@ -1791,38 +1791,38 @@
         "specialization": "",
         "unique_point": "",
         "why_choose": "",
-        "notes": "Add one row per stream-course mapping needed."
+        "notes": "Pharmacy approvals and seat matrix should be verified from official notices."
       },
       "verification": {
         "nirf_band": "",
         "last_verified_on": "2026-05-09",
         "source_urls": [
-          "https://www.bhu.ac.in/",
-          "https://www.ugc.gov.in/",
-          "https://www.bhu.ac.in/"
+          "https://www.amity.edu/noida/",
+          "https://www.pci.nic.in/",
+          "https://www.amity.edu/noida/"
         ]
       },
       "cost_band": {
-        "living_city_band": "low",
+        "living_city_band": "medium",
         "hostel_context": "mixed",
-        "monthly_budget_min": 8000,
-        "monthly_budget_max": 15000,
+        "monthly_budget_min": 15000,
+        "monthly_budget_max": 25000,
         "method": "heuristic",
         "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Estimated from city band and institution type; verify with official hostel/fee pages."
       },
       "recognition": {
-        "university_status": "state_act",
+        "university_status": "private_university",
         "regulators_required": [
-          "UGC_or_state_university_context"
+          "PCI"
         ],
         "regulators_verified": [],
         "verification_urls": [
-          "https://www.bhu.ac.in/",
-          "https://www.ugc.gov.in/"
+          "https://www.amity.edu/noida/",
+          "https://www.pci.nic.in/"
         ],
-        "confidence": "medium",
+        "confidence": "low",
         "last_updated": "2026-05-09",
         "notes": "Required regulators inferred by stream/course; verification pending official regulator checks."
       }
