@@ -777,6 +777,15 @@ var NEXT_STEPS_GRAD = {
   C:["If you are pursuing CA or CS, stay consistent with your exam schedule — these qualifications reward those who do not stop and keep moving through the stages.","During your degree, get hands-on with Tally, advanced Excel, GST software and any industry-specific tools relevant to your path.","Consider internships with CA firms, banks, NBFCs or government finance departments — these placements are often a direct route to your first job.","Stay updated on changes in tax law, GST, company law and financial regulations — those who know the current rules are far more valuable than those who only know the theory."]
 };
 
+function escapeHtml(str) {
+  if (str == null) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
 var answers = {};
 var curSec = 0;
 var TOTAL_SECTIONS = SECTIONS.length;
@@ -837,7 +846,7 @@ function renderQuiz(idx) {
     html+='<div class="scale-lbl-row"><span>1 — Does not sound like me at all</span><span>5 — Yes, very much like me</span></div>';
     html+='<div class="btn-row" data-key="'+key+'">';
     for (var v=1;v<=5;v++) {
-      html+='<button class="opt'+(saved===v?' sel':'')+'" data-key="'+key+'" data-val="'+v+'">'+v+'</button>';
+      html+='<button type="button" class="opt notranslate'+(saved===v?' sel':'')+'" translate="no" data-key="'+key+'" data-val="'+v+'">'+v+'</button>';
     }
     html+='</div></div>';
   }
@@ -846,12 +855,14 @@ function renderQuiz(idx) {
 }
 
 document.getElementById('q-list').addEventListener('click', function(e){
-  var t=e.target;
-  if (!t.classList.contains('opt')) return;
-  var key=t.getAttribute('data-key');
-  var val=parseInt(t.getAttribute('data-val'));
+  var raw = e.target;
+  var t = raw && raw.closest ? raw.closest('.opt') : null;
+  if (!t) return;
+  var key = t.getAttribute('data-key');
+  var val = parseInt(t.getAttribute('data-val'), 10);
+  if (!key || val !== val) return;
   answers[key]=val;
-  var row=document.querySelector('.btn-row[data-key="'+key+'"]');
+  var row = t.closest ? t.closest('.btn-row') : null;
   if (row) { var btns=row.querySelectorAll('.opt'); for (var i=0;i<btns.length;i++) btns[i].classList.remove('sel'); }
   t.classList.add('sel');
   var card=document.getElementById('qcard-'+key);

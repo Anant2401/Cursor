@@ -1,0 +1,10 @@
+{
+  "name": "e2e-career-assessment",
+  "private": true,
+  "scripts": {
+    "test:mobile": "node mobile-assessment.cjs"
+  },
+  "dependencies": {
+    "playwright": "1.49.1"
+  }
+}
