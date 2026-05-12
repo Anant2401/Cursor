@@ -19,12 +19,14 @@ if (menuButton && nav) {
   });
 
   nav.querySelectorAll("a").forEach((link) => {
+    if (link.id === "nav-tools-trigger") return;
     link.addEventListener("click", closeMenu);
   });
 
   if (navTools && navToolsTrigger) {
     navToolsTrigger.addEventListener("click", (event) => {
       event.preventDefault();
+      event.stopPropagation();
       const isOpen = navTools.classList.toggle("open");
       navToolsTrigger.setAttribute("aria-expanded", String(isOpen));
     });
