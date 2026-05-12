@@ -44,11 +44,28 @@
         Menu
       </button>
       <nav id="main-nav" class="main-nav">
-        <a href="#home">Home</a>
-        <a href="#reality">Career Reality</a>
-        <a href="#tools">Tools</a>
-        <a href="#pathways">Pathways</a>
-        <a href="#contact">Contact Us</a>
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#reality">Career Reality</a>
+        <div class="nav-tools" id="nav-tools">
+          <a class="nav-link nav-tools-trigger" href="#tools" id="nav-tools-trigger" aria-haspopup="true" aria-expanded="false">
+            Tools
+            <span class="nav-tools-caret" aria-hidden="true">▾</span>
+          </a>
+          <div class="nav-tools-menu" id="nav-tools-menu" role="menu" aria-label="Featured tools">
+            <a href="Tools/pehchaan_career_assessment.html" role="menuitem">Career Assessment</a>
+            <a href="Tools/pehchaan_stream_advisor.html" role="menuitem">Stream Advisor</a>
+            <a href="Tools/pehchaan_career_roi_reality_bridge.html" role="menuitem">Career ROI &amp; Reality Bridge</a>
+            <a href="Tools/pehchaan_plan_b_strategy_builder.html" role="menuitem">Plan B Strategy Builder</a>
+            <a href="Tools/parents-guide/index.html" role="menuitem">Parent's Guide</a>
+            <a href="#tools" role="menuitem">All tools</a>
+          </div>
+        </div>
+        <a class="nav-link" href="#pathways">Pathways</a>
+        <a class="nav-link" href="#contact">Contact Us</a>
+        <div class="mobile-nav-quick">
+          <a href="#tools" class="mobile-nav-quick-primary">Explore tools</a>
+          <a href="#contact" class="mobile-nav-quick-secondary">Book a session</a>
+        </div>
       </nav>
     </div>
   </header>
@@ -99,7 +116,7 @@
             <div class="hero-support-label">Who we support</div>
 
             <div class="hero-card-item">
-              <div class="hc-number">01</div>
+              <div class="hc-icon" aria-hidden="true">🏫</div>
               <div class="hc-content">
                 <div class="hc-title">After Class 10</div>
                 <div class="hc-desc">Stream choice, roadmap clarity, and what each option actually leads to.</div>
@@ -107,7 +124,7 @@
             </div>
 
             <div class="hero-card-item">
-              <div class="hc-number">02</div>
+              <div class="hc-icon" aria-hidden="true">📚</div>
               <div class="hc-content">
                 <div class="hc-title">After Class 12</div>
                 <div class="hc-desc">Right courses, right colleges, and which career genuinely fits you.</div>
@@ -115,7 +132,7 @@
             </div>
 
             <div class="hero-card-item">
-              <div class="hc-number">03</div>
+              <div class="hc-icon" aria-hidden="true">🎯</div>
               <div class="hc-content">
                 <div class="hc-title">College and Beyond</div>
                 <div class="hc-desc">Skills, direction, first job strategy, and long-term growth planning.</div>
@@ -131,21 +148,30 @@
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container">
-        <p style="font-size:15px;color:#64748B;text-align:center;max-width:600px;margin:0 auto;line-height:1.8;">
-          Pehchaan Careers is a career guidance platform built specifically for students in Korba, Bilaspur, Raigarh and Champa — cities where honest, practical guidance has always been hard to find.
+    <section id="about" class="section section-editorial">
+      <div class="container editorial-stack">
+        <p class="editorial-lead">
+          Pehchaan Careers is built for students in Korba, Bilaspur, Raigarh and Champa — Tier 2 and Tier 3 cities where metro-style counselling rarely reaches.
         </p>
+        <details class="local-guidance-details reveal">
+          <summary class="local-guidance-summary">
+            Why local guidance matters here
+          </summary>
+          <div class="local-guidance-body">
+            <p>
+              Families often hear generic advice — “take Science,” “prepare for government exams,” “move to a big city” — without anyone mapping what that means for fees, exams, or first jobs. Pehchaan speaks to that gap: honest trade-offs, clear next steps, and tools you can use from home before you commit lakhs to a course.
+            </p>
+          </div>
+        </details>
       </div>
     </section>
 
     <section id="reality" class="section alt">
       <div class="container">
         <div class="section-head">
-          <h2>The Career Reality Students Face</h2>
+          <h2>See the competition — then plan wider</h2>
           <p class="section-head-intro">
-            Many students work hard, but never receive clear guidance about what choices lead to what
-            jobs. Pehchaan exists to close that gap with practical, honest mentoring.
+            SSC CGL 2024 drew about 35 lakh applicants for thousands of seats — one snapshot of how thin any single exam lane can be. Use the stats below to stress-test “only this exam” plans, then build skills and paths that hold even when one result slips.
           </p>
         </div>
         <div class="cards cards-4">
@@ -187,11 +213,9 @@
     <section id="skills" class="section">
       <div class="container">
         <div class="skills-header">
-          <h2>12 Skills the Market Actually Wants</h2>
+          <h2>Build these 12 skills — starting free</h2>
           <p class="skills-intro">
-            These are the skills that actually get you hired — not marks, not degree name. Every
-            employer, in every field, looks for these. The good news: every single one of them can be
-            learned, practised and built — starting today.
+            Employers hire for communication, reliability, and digital judgement — not degree names alone. Every skill below can be learned from YouTube, Swayam, and daily practice; Pehchaan tools show where to start for your path.
           </p>
         </div>
 
@@ -314,7 +338,12 @@
 
     <section id="services" class="section alt">
       <div class="container">
-        <h2>How We Support You</h2>
+        <div class="section-head section-head--compact">
+          <h2>Counselling, skills, and clarity — together</h2>
+          <p class="section-head-intro">
+            One-to-one conversations plus structured exercises so stream choice, course spend, and job moves stay aligned — for students and parents at the same table.
+          </p>
+        </div>
         <div class="cards">
           <article class="card reveal">
             <h3>Career Counselling</h3>
@@ -332,9 +361,14 @@
       </div>
     </section>
 
-    <section id="journey" class="section">
+    <section id="journey" class="section section-split-band">
       <div class="container">
-        <h2>Support at Every Step</h2>
+        <div class="section-head section-head--compact">
+          <h2>From Class 10 to first job — same mentor thread</h2>
+          <p class="section-head-intro">
+            Stream confusion at 15, exam pressure at 17, loan conversations at 19 — different ages, same need: someone who connects the dots instead of resetting every year.
+          </p>
+        </div>
         <div class="timeline">
           <article class="timeline-item reveal"><h3>Class 10</h3><p>Stream choice guidance with clarity on future opportunities.</p></article>
           <article class="timeline-item reveal"><h3>11th and 12th</h3><p>Study strategy, confidence building, and practical planning.</p></article>
@@ -347,7 +381,12 @@
 
     <section id="pathways" class="section alt">
       <div class="container">
-        <h2>Career Pathways We Guide</h2>
+        <div class="section-head section-head--compact">
+          <h2>Corporate, creative, government, abroad — compare honestly</h2>
+          <p class="section-head-intro">
+            Pehchaan is not a placement agency — we help you shortlist paths that fit marks, money, and temperament, including routes beyond “only private job” or “only UPSC.”
+          </p>
+        </div>
         <div class="cards cards-3x2">
           <article class="card reveal"><h3>Corporate Careers</h3><p>MNC, startup, BPO, operations, analytics, HR, and finance tracks.</p></article>
           <article class="card reveal"><h3>Arts and Creativity</h3><p>Design, music, film, and content as real long-term careers.</p></article>
@@ -361,12 +400,16 @@
 
     <section id="brochure" class="section">
       <div class="container">
-        <h2>Download About Us PDF</h2>
+        <div class="section-head section-head--compact">
+          <h2>Download the About Us PDF (English or Hindi)</h2>
+          <p class="section-head-intro">
+            Share mission, approach, and session formats with family or school — same story offline as on this site.
+          </p>
+        </div>
         <div class="brochure-wrap reveal">
           <div>
           <p>
-            Get complete details about Pehchaan Careers, our mission, and how we support students.
-            You can download the brochure in English or Hindi.
+            Full detail on Pehchaan Careers — mission, how we work with students and parents, and what to expect from conversations.
           </p>
           </div>
           <div class="download-row">
@@ -442,10 +485,9 @@
     <section id="tools" class="section">
       <div class="container">
         <div class="section-head">
-          <h2>Career Tools</h2>
+          <h2>Plan once — assessment, colleges, money, Plan B</h2>
           <p class="section-head-intro">
-            Freemium tools (premium-style guidance at no charge) in a sensible order — from who you are to what exams and money mean — so you can plan
-            once and plan honestly. Start with the rail below, or jump straight to any tool.
+            Freemium tools in a sensible order: who you are, which stream or college fits, what salary and EMI really mean, then exams and backup paths. Use the pathfinder if you are unsure where to begin, or open any tool directly below.
           </p>
         </div>
         <div class="brochure-wrap reveal tools-wrap">
@@ -536,9 +578,143 @@
       </div>
     </section>
 
+    <section id="student-voices" class="section student-voices-section alt" aria-labelledby="student-voices-heading">
+      <div class="container">
+        <div class="section-head student-voices-intro">
+          <h2 id="student-voices-heading">What students say</h2>
+          <p class="section-head-intro">
+            Feedback from students who used Pehchaan — clarity on forks like CS vs finance, honest field comparisons, and guidance in one place.
+          </p>
+        </div>
+
+        <div
+          class="voices-carousel"
+          role="region"
+          aria-roledescription="carousel"
+          aria-labelledby="student-voices-heading"
+        >
+          <div class="voices-carousel-toolbar">
+            <button
+              type="button"
+              class="voices-nav-btn voices-prev"
+              id="voices-prev"
+              aria-controls="voices-track"
+              aria-label="Previous testimonial"
+            >
+              <span aria-hidden="true">←</span>
+            </button>
+            <div class="voices-viewport card voices-viewport--carousel" id="voices-viewport" tabindex="0">
+              <ul id="voices-track" class="voices-track">
+                <li class="voices-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 1 of 5">
+                  <figure class="voice-card">
+                    <div class="voice-person">
+                      <div class="voice-avatar voice-avatar--1" aria-hidden="true">S</div>
+                      <div class="voice-meta">
+                        <span class="voice-label">Student</span>
+                        <span class="voice-sublabel">Career tools</span>
+                      </div>
+                    </div>
+                    <blockquote class="voice-quote">
+                      <p>
+                        I found the questions interesting — and genuinely informative.
+                      </p>
+                    </blockquote>
+                  </figure>
+                </li>
+                <li class="voices-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 2 of 5">
+                  <figure class="voice-card">
+                    <div class="voice-person">
+                      <div class="voice-avatar voice-avatar--2" aria-hidden="true">R</div>
+                      <div class="voice-meta">
+                        <span class="voice-label">Student</span>
+                        <span class="voice-sublabel">Class 12 · path choice</span>
+                      </div>
+                    </div>
+                    <blockquote class="voice-quote">
+                      <p>
+                        It really helped — I was confused whether to prepare for CS or go into banking and finance. Now I have a clearer idea.
+                      </p>
+                    </blockquote>
+                  </figure>
+                </li>
+                <li class="voices-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 3 of 5">
+                  <figure class="voice-card">
+                    <div class="voice-person">
+                      <div class="voice-avatar voice-avatar--3" aria-hidden="true">P</div>
+                      <div class="voice-meta">
+                        <span class="voice-label">Student</span>
+                        <span class="voice-sublabel">One-place guidance</span>
+                      </div>
+                    </div>
+                    <blockquote class="voice-quote">
+                      <p>
+                        All the information was in one link — it prevented a lot of mess and back-and-forth.
+                      </p>
+                    </blockquote>
+                  </figure>
+                </li>
+                <li class="voices-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 4 of 5">
+                  <figure class="voice-card">
+                    <div class="voice-person">
+                      <div class="voice-avatar voice-avatar--4" aria-hidden="true">A</div>
+                      <div class="voice-meta">
+                        <span class="voice-label">Student</span>
+                        <span class="voice-sublabel">Exploring options</span>
+                      </div>
+                    </div>
+                    <blockquote class="voice-quote">
+                      <p>
+                        This website is really helpful and informative.
+                      </p>
+                    </blockquote>
+                  </figure>
+                </li>
+                <li class="voices-slide" role="group" aria-roledescription="slide" aria-label="Testimonial 5 of 5">
+                  <figure class="voice-card">
+                    <div class="voice-person">
+                      <div class="voice-avatar voice-avatar--5" aria-hidden="true">N</div>
+                      <div class="voice-meta">
+                        <span class="voice-label">Student</span>
+                        <span class="voice-sublabel">Fields &amp; skills focus</span>
+                      </div>
+                    </div>
+                    <blockquote class="voice-quote">
+                      <p>
+                        This website is really good — it describes different fields and what areas we should work on.
+                      </p>
+                    </blockquote>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+            <button
+              type="button"
+              class="voices-nav-btn voices-next"
+              id="voices-next"
+              aria-controls="voices-track"
+              aria-label="Next testimonial"
+            >
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+          <div class="voices-footer-row">
+            <p class="voices-hint" id="voices-status" aria-live="polite">
+              <!-- filled by script -->
+            </p>
+            <div class="voices-dots" id="voices-dots" role="group" aria-label="Choose testimonial"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="section">
       <div class="container">
-        <h2>Reach Out To Us</h2>
+        <div class="section-head section-head--compact">
+          <h2>Book a conversation or ask a question</h2>
+          <p class="section-head-intro">
+            Leave your city and qualification — we reply with next steps. No obligation; clarity first.
+          </p>
+        </div>
         <div class="contact-wrap reveal">
           <p class="small">Fill this form and we will connect with you soon.</p>
           <form class="contact-form" id="contact-form">
@@ -603,6 +779,7 @@
           <a href="#reality">Career Reality</a>
           <a href="#tools">Tools</a>
           <a href="#pathways">Pathways</a>
+          <a href="#student-voices">Student voices</a>
           <a href="#story">Our Story</a>
           <a href="#brochure">Download PDF</a>
           <a href="#contact">Contact Us</a>

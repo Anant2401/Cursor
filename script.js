@@ -2,11 +2,15 @@ document.getElementById("footer-year").textContent = new Date().getFullYear();
 
 const menuButton = document.getElementById("menu-btn");
 const nav = document.getElementById("main-nav");
+const navTools = document.getElementById("nav-tools");
+const navToolsTrigger = document.getElementById("nav-tools-trigger");
 
 if (menuButton && nav) {
   const closeMenu = () => {
     nav.classList.remove("open");
     menuButton.setAttribute("aria-expanded", "false");
+    navTools?.classList.remove("open");
+    navToolsTrigger?.setAttribute("aria-expanded", "false");
   };
 
   menuButton.addEventListener("click", () => {
@@ -18,11 +22,28 @@ if (menuButton && nav) {
     link.addEventListener("click", closeMenu);
   });
 
+  if (navTools && navToolsTrigger) {
+    navToolsTrigger.addEventListener("click", (event) => {
+      event.preventDefault();
+      const isOpen = navTools.classList.toggle("open");
+      navToolsTrigger.setAttribute("aria-expanded", String(isOpen));
+    });
+  }
+
   document.addEventListener("click", (event) => {
     const target = event.target;
-    if (!nav.classList.contains("open")) return;
-    if (menuButton.contains(target) || nav.contains(target)) return;
-    closeMenu();
+    const isOutsideNav = !menuButton.contains(target) && !nav.contains(target);
+    if (isOutsideNav) {
+      closeMenu();
+      return;
+    }
+    if (navTools?.classList.contains("open") && target instanceof Element) {
+      const insideTools = navTools.contains(target);
+      if (!insideTools) {
+        navTools.classList.remove("open");
+        navToolsTrigger?.setAttribute("aria-expanded", "false");
+      }
+    }
   });
 
   document.addEventListener("keydown", (event) => {
@@ -695,6 +716,116 @@ async function apiPost(path, payload, fallbackMessage) {
     throw new Error(readableError(error, fallbackMessage));
   }
 }
+
+function initStudentVoicesCarousel() {
+  const track = document.getElementById("voices-track");
+  const prev = document.getElementById("voices-prev");
+  const next = document.getElementById("voices-next");
+  const dotsContainer = document.getElementById("voices-dots");
+  const status = document.getElementById("voices-status");
+  const viewport = document.getElementById("voices-viewport");
+  if (!track || !prev || !next || !dotsContainer) return;
+
+  const slides = track.querySelectorAll(".voices-slide");
+  const total = slides.length;
+  if (total === 0) return;
+
+  let index = 0;
+
+  function renderDots() {
+    dotsContainer.innerHTML = "";
+    for (let i = 0; i < total; i += 1) {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "voices-dot";
+      btn.setAttribute("aria-label", `Show testimonial ${i + 1} of ${total}`);
+      btn.setAttribute("aria-current", i === index ? "true" : "false");
+      btn.addEventListener("click", () => {
+        index = i;
+        update();
+      });
+      dotsContainer.appendChild(btn);
+    }
+  }
+
+  function update() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+    const dotBtns = dotsContainer.querySelectorAll("button");
+    dotBtns.forEach((btn, i) => {
+      const on = i === index;
+      btn.classList.toggle("is-active", on);
+      btn.setAttribute("aria-current", on ? "true" : "false");
+    });
+    if (status) status.textContent = `Testimonial ${index + 1} of ${total}`;
+  }
+
+  function go(delta) {
+    index = (index + delta + total) % total;
+    update();
+  }
+
+  prev.addEventListener("click", () => go(-1));
+  next.addEventListener("click", () => go(1));
+
+  if (viewport) {
+    viewport.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        go(-1);
+      }
+      if (e.key === "ArrowRight") {
+        e.preventDefault();
+        go(1);
+      }
+    });
+  }
+
+  renderDots();
+  update();
+}
+
+function initNavScrollSpy() {
+  const nav = document.getElementById("main-nav");
+  if (!nav) return;
+  const links = [...nav.querySelectorAll('a.nav-link[href^="#"]')];
+  if (links.length === 0) return;
+
+  const sections = links
+    .map((a) => {
+      const id = a.getAttribute("href")?.slice(1);
+      return id ? document.getElementById(id) : null;
+    })
+    .filter(Boolean);
+
+  if (sections.length === 0) return;
+
+  function sectionTop(el) {
+    return el.getBoundingClientRect().top + window.scrollY;
+  }
+
+  function computeActive() {
+    const header = document.querySelector(".site-header");
+    const strip = document.querySelector(".translate-strip");
+    const offset = (header?.offsetHeight ?? 72) + (strip?.offsetHeight ?? 0) + 32;
+    const y = window.scrollY + offset;
+    const sorted = sections.slice().sort((a, b) => sectionTop(a) - sectionTop(b));
+    let currentId = sorted[0]?.id ?? "home";
+    for (const sec of sorted) {
+      if (sectionTop(sec) <= y) currentId = sec.id;
+    }
+    links.forEach((a) => {
+      const href = a.getAttribute("href")?.slice(1);
+      a.classList.toggle("nav-active", href === currentId);
+    });
+  }
+
+  window.addEventListener("scroll", () => window.requestAnimationFrame(computeActive), { passive: true });
+  window.addEventListener("resize", computeActive);
+  computeActive();
+}
+
+initStudentVoicesCarousel();
+initNavScrollSpy();
 
 const contactForm = document.getElementById("contact-form");
 if (contactForm) {
