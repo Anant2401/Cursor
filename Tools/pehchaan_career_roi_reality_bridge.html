@@ -238,6 +238,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;heigh
       <h2 class="filter-card-title">Step 2 · Education path</h2>
       <p class="filter-flow-note" style="margin-bottom:14px;">Different college types mean very different totals. Pick what honestly matches your situation.</p>
       <div class="path-grid" id="path-grid"></div>
+      <div id="path-aid-panel"></div>
     </div>
   </section>
 
@@ -371,6 +372,20 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;heigh
     <div id="roi-journey-next" class="tool-journey-slot no-print"></div>
   </div>
 
+  <!-- FAILURE PATH -->
+  <div class="card" id="failure-card" style="display:none;">
+    <div class="card-title">⚠️ What If It Doesn't Work Out?</div>
+    <p style="font-size:12px;color:var(--gray);margin-bottom:12px;line-height:1.65;">Honest numbers for the failure scenario. This is not pessimism — it is the information you need before committing years and money.</p>
+    <div id="failure-content"></div>
+  </div>
+
+  <!-- NET MONTHLY AFTER CITY -->
+  <div class="card" id="net-salary-card" style="display:none;">
+    <div class="card-title">🏠 What You Actually Keep Each Month</div>
+    <p style="font-size:12px;color:var(--gray);margin-bottom:12px;line-height:1.65;">Gross salary minus typical living costs per city type. Plan your first year around what stays in your pocket — not the headline number.</p>
+    <div id="net-salary-content"></div>
+  </div>
+
   <!-- CG CONTEXT -->
   <div class="card" id="cg-card">
     <div class="card-title">📍 Chhattisgarh-Specific Context</div>
@@ -408,6 +423,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;heigh
 // STATE
 // ────────────────────────────────────────────
 var DB = null;
+var FA = null; // financial_aid data — loaded alongside DB
 var selCareer = null, selPath = null, selCoaching = null, selCity = null;
 var miscPct = 15;
 /** After calculate(): rows, salary object, timeline meta — drives live edits + salary slider. */
@@ -440,6 +456,10 @@ function getRoiDataCandidates(){
   : fetch(getRoiDataCandidates()[1]).then(function(r){ return r.json(); }))
   .then(function(d){
     DB = d;
+    fetch('../DB/canonical/financial_aid.json')
+      .then(function(r){ return r.json(); })
+      .then(function(faData){ FA = faData; })
+      .catch(function(){ FA = null; });
     initCareers();
     initCities();
     tryRoiUrlPrefill();
@@ -510,6 +530,7 @@ function onCareerChange(id){
     return;
   }
   renderPaths();
+  renderPathAidPanel(null);
   renderCoaching();
   if (stepRest) stepRest.classList.remove('hidden');
   document.getElementById('card-path').classList.remove('hidden');
@@ -534,7 +555,39 @@ function selPathFn(btn, pid){
   document.querySelectorAll('#path-grid .path-btn').forEach(function(b){ b.classList.remove('active'); });
   btn.classList.add('active');
   selPath = selCareer.education_paths.find(function(p){ return p.id === pid; });
+  renderPathAidPanel(selPath);
   checkReady();
+}
+
+function renderPathAidPanel(path) {
+  var container = document.getElementById('path-aid-panel');
+  if (!container) return;
+  if (!path || !FA || !path.financial_aid_ids || !path.financial_aid_ids.length) {
+    container.innerHTML = '';
+    return;
+  }
+  var aids = FA.financial_aid.filter(function(a) {
+    return path.financial_aid_ids.indexOf(a.aid_id) !== -1;
+  });
+  if (!aids.length) { container.innerHTML = ''; return; }
+  var html = '<div style="background:var(--amber-light);border:1px solid rgba(239,159,39,.4);border-radius:12px;padding:14px 16px;margin-top:10px;">';
+  html += '<div style="font-size:11px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;">💰 Scholarships & Loans for this path</div>';
+  aids.forEach(function(a) {
+    var maxAmt = a.max_amount_inr ? ' · Up to ₹' + Math.round(a.max_amount_inr / 1000) + ',000/yr' : '';
+    var reliability = a.disbursement_reliability ? ' · ' + a.disbursement_reliability : '';
+    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start;padding:8px 0;border-bottom:1px solid rgba(239,159,39,.2);">';
+    html += '<div style="flex:1;">';
+    html += '<div style="font-size:12px;font-weight:600;color:var(--text);">' + esc(a.name) + '</div>';
+    html += '<div style="font-size:11px;color:var(--gray);margin-top:2px;">' + esc(a.provider || '') + maxAmt + reliability + '</div>';
+    html += '</div>';
+    if (a.apply_url) {
+      html += '<a href="' + esc(a.apply_url) + '" target="_blank" rel="noopener" style="font-size:11px;font-weight:700;color:var(--teal-dark);text-decoration:none;padding:4px 10px;background:var(--teal-light);border-radius:8px;margin-left:10px;flex-shrink:0;">Apply →</a>';
+    }
+    html += '</div>';
+  });
+  html += '<div style="font-size:11px;color:#7A4A00;margin-top:8px;line-height:1.55;">Always verify eligibility and deadlines directly on the official portal. Pehchaan does not guarantee disbursement.</div>';
+  html += '</div>';
+  container.innerHTML = html;
 }
 
 function renderCoaching(){
@@ -546,7 +599,13 @@ function renderCoaching(){
   selCareer.coaching_options.forEach(function(c, i){
     html += '<label style="display:flex;gap:12px;align-items:flex-start;padding:12px;border:1.5px solid var(--border);border-radius:12px;cursor:pointer;margin-bottom:8px;transition:border-color .15s;" id="coachopt_' + i + '">';
     html += '<input type="radio" name="coaching" value="' + i + '" style="margin-top:3px;accent-color:var(--teal-dark);cursor:pointer;" onchange="selCoachingFn(' + i + ')">';
-    html += '<div><div style="font-size:13px;font-weight:600;color:var(--text);">' + esc(c.label) + '</div>';
+    var onlineBadge = '';
+    if (c.online_available === true) {
+      onlineBadge = '<span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;background:#E8F8F0;color:#0F6E56;margin-left:8px;">🌐 Online — no relocation</span>';
+    } else if (c.online_available === false) {
+      onlineBadge = '<span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;background:#F1EFF8;color:#534AB7;margin-left:8px;">🏫 In-person required</span>';
+    }
+    html += '<div><div style="font-size:13px;font-weight:600;color:var(--text);">' + esc(c.label) + onlineBadge + '</div>';
     html += '<div style="font-size:11px;color:var(--gray);margin-top:3px;">' + esc(c.note) + '</div>';
     html += '<div style="font-size:13px;font-weight:700;color:var(--teal-dark);margin-top:4px;">Total coaching investment: ₹' + fmt(c.total_coaching_cost) + '</div>';
     html += '</div></label>';
@@ -914,6 +973,36 @@ function calculate(){
   bindCostBreakdownInputs();
   recalcResultMetrics();
 
+  // EMI CALCULATOR — show if any education path has high cost
+  var emiHtml = '';
+  var totalFee = (selPath.tuition_total || 0) + (selPath.hostel_total || 0) + (selPath.other_fees_total || 0);
+  if (totalFee >= 200000) {
+    var loanAmt = totalFee;
+    var annualRate = 10.5;
+    var tenureYears = 10;
+    var r = (annualRate / 100) / 12;
+    var n = tenureYears * 12;
+    var emi = Math.round(loanAmt * r * Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1));
+    var y1Monthly = Math.round(s.year_1_mid / 12);
+    var emiRatio = y1Monthly > 0 ? Math.round((emi / y1Monthly) * 100) : 0;
+    var emiColor = emiRatio > 50 ? '#E24B4A' : emiRatio > 30 ? '#EF9F27' : '#1D9E75';
+    var emiWarning = emiRatio > 50
+      ? '⚠️ EMI is over 50% of your year-1 salary — this loan will be a significant burden. Prioritise government college or scholarship options.'
+      : (emiRatio > 30
+        ? 'EMI is about ' + emiRatio + '% of starting salary — manageable but tight. Build savings before taking this loan.'
+        : 'EMI is ' + emiRatio + '% of starting salary — within a reasonable range for education investment.');
+    emiHtml = '<div style="background:#E6F1FB;border:1px solid #B5D4F4;border-radius:12px;padding:14px 16px;margin-top:10px;">';
+    emiHtml += '<div style="font-size:11px;font-weight:700;color:#185FA5;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;">🏦 Education Loan EMI Estimate</div>';
+    emiHtml += '<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:10px;">';
+    emiHtml += '<div style="background:#fff;border-radius:8px;padding:10px;text-align:center;"><div style="font-size:10px;color:var(--gray);">Loan amount</div><div style="font-size:15px;font-weight:700;color:#185FA5;">₹' + fmt(loanAmt) + '</div></div>';
+    emiHtml += '<div style="background:#fff;border-radius:8px;padding:10px;text-align:center;"><div style="font-size:10px;color:var(--gray);">Monthly EMI</div><div style="font-size:15px;font-weight:700;color:' + emiColor + ';">₹' + fmt(emi) + '</div></div>';
+    emiHtml += '<div style="background:#fff;border-radius:8px;padding:10px;text-align:center;"><div style="font-size:10px;color:var(--gray);">EMI vs salary</div><div style="font-size:15px;font-weight:700;color:' + emiColor + ';">' + emiRatio + '%</div></div>';
+    emiHtml += '</div>';
+    emiHtml += '<div style="font-size:12px;color:#0C447C;line-height:1.65;">' + esc(emiWarning) + '</div>';
+    emiHtml += '<div style="font-size:11px;color:var(--gray);margin-top:6px;">Based on 10.5% annual rate, 10-year tenure (public sector bank standard). Verify with your bank before signing. <a href="https://vidyalakshmi.co.in" target="_blank" rel="noopener" style="color:#185FA5;font-weight:600;">Apply via Vidya Lakshmi Portal →</a></div>';
+    emiHtml += '</div>';
+  }
+
   // Salary grid
   var salHtml = '';
   var salData = [
@@ -932,11 +1021,163 @@ function calculate(){
   document.getElementById('sal-grid').innerHTML = salHtml;
   document.getElementById('sal-note').textContent = s.note;
 
-  // Reality check
-  document.getElementById('reality-content').innerHTML = '<div class="insight"><p>' + esc(c.honest_reality) + '</p></div><div style="margin-top:10px;font-size:12px;color:var(--gray);line-height:1.75;">Break-even note: ' + esc(c.break_even_note) + '</div>';
+  // Append EMI block to cost breakdown
+  var cbEl = document.getElementById('cost-breakdown');
+  if (cbEl && emiHtml) cbEl.insertAdjacentHTML('beforeend', emiHtml);
 
-  // CG context
-  document.getElementById('cg-content').innerHTML = '<div style="background:var(--teal-light);border-left:4px solid var(--teal);border-radius:0 10px 10px 0;padding:12px 14px;font-size:13px;color:var(--teal-dark);line-height:1.75;">' + esc(c.cg_context) + '</div>';
+  // REALITY CARD — expanded with new fields
+  var realHtml = '';
+
+  // Honest reality (existing)
+  realHtml += '<div class="insight"><p>' + esc(c.honest_reality) + '</p></div>';
+  realHtml += '<div style="margin-top:10px;font-size:12px;color:var(--gray);line-height:1.75;">Break-even note: ' + esc(c.break_even_note) + '</div>';
+
+  // Opportunity cost (new)
+  if (c.opportunity_cost_inr) {
+    var oc = c.opportunity_cost_inr;
+    realHtml += '<div style="background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:14px;margin-top:12px;">';
+    realHtml += '<div style="font-size:11px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;">⏳ Hidden Cost: Opportunity Cost</div>';
+    realHtml += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;">';
+    realHtml += '<div style="background:#fff;border-radius:8px;padding:10px;text-align:center;border:1px solid var(--border);"><div style="font-size:10px;color:var(--gray);">Years before first salary</div><div style="font-size:16px;font-weight:700;color:var(--teal-dark);">' + ((oc.prep_years || 0) + (oc.college_years || 0)) + ' years</div></div>';
+    realHtml += '<div style="background:#fff;border-radius:8px;padding:10px;text-align:center;border:1px solid var(--border);"><div style="font-size:10px;color:var(--gray);">Forgone income (mid estimate)</div><div style="font-size:16px;font-weight:700;color:var(--amber);">₹' + fmt(oc.total_mid || 0) + '</div></div>';
+    realHtml += '</div>';
+    if (oc.note) realHtml += '<div style="font-size:11px;color:var(--gray);line-height:1.55;">' + esc(oc.note) + '</div>';
+    realHtml += '</div>';
+  }
+
+  // AI disruption (new)
+  if (c.ai_disruption_note) {
+    var aiScore = c.ai_disruption_note.match(/(\d+)\/10/);
+    var aiNum = aiScore ? parseInt(aiScore[1], 10) : 5;
+    var aiBg = aiNum >= 8 ? 'var(--red-light)' : aiNum >= 6 ? 'var(--amber-light)' : 'var(--green-light,#E8F8F0)';
+    var aiBorder = aiNum >= 8 ? '#F7C1C1' : aiNum >= 6 ? 'rgba(239,159,39,.4)' : '#A8E4C0';
+    var aiText = aiNum >= 8 ? '#7A1F1F' : aiNum >= 6 ? '#7A4A00' : '#0F5132';
+    realHtml += '<div style="background:' + aiBg + ';border:1px solid ' + aiBorder + ';border-radius:12px;padding:14px;margin-top:12px;">';
+    realHtml += '<div style="font-size:11px;font-weight:700;color:' + aiText + ';text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;">🤖 AI Disruption Outlook</div>';
+    realHtml += '<div style="font-size:12px;color:' + aiText + ';line-height:1.65;">' + esc(c.ai_disruption_note) + '</div>';
+    realHtml += '</div>';
+  }
+
+  // Lateral entry paths (new)
+  if (c.lateral_entry_paths && c.lateral_entry_paths.length) {
+    realHtml += '<div style="margin-top:12px;">';
+    realHtml += '<div style="font-size:11px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;">🔀 Alternative & Cheaper Paths to This Career</div>';
+    c.lateral_entry_paths.forEach(function(lp) {
+      realHtml += '<div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--teal-light);">';
+      realHtml += '<span style="color:var(--teal);font-weight:700;flex-shrink:0;">→</span>';
+      realHtml += '<span style="font-size:12px;color:var(--text);line-height:1.6;">' + esc(lp) + '</span>';
+      realHtml += '</div>';
+    });
+    realHtml += '</div>';
+  }
+
+  document.getElementById('reality-content').innerHTML = realHtml;
+
+  // FAILURE PATH PANEL
+  var failCard = document.getElementById('failure-card');
+  var failContent = document.getElementById('failure-content');
+  if (c.failure_path && failCard && failContent) {
+    failCard.style.display = '';
+    var fp = c.failure_path;
+    var failHtml = '';
+    failHtml += '<div style="background:var(--red-light);border:1px solid #F7C1C1;border-radius:12px;padding:14px 16px;margin-bottom:12px;">';
+    if (fp.exam) {
+      failHtml += '<div style="font-size:11px;font-weight:700;color:#7A1F1F;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;">Exam: ' + esc(fp.exam) + '</div>';
+    }
+    if (fp.probability_of_not_cracking) {
+      failHtml += '<div style="font-size:13px;font-weight:600;color:#5A0F0F;margin-bottom:6px;">' + esc(fp.probability_of_not_cracking) + '</div>';
+    }
+    if (fp.what_happens) {
+      failHtml += '<div style="font-size:12px;color:#7A1F1F;line-height:1.65;">' + esc(fp.what_happens) + '</div>';
+    }
+    failHtml += '</div>';
+    if (fp.financial_loss_if_drop_year || fp.financial_loss_if_abandon) {
+      var lossText = fp.financial_loss_if_drop_year || fp.financial_loss_if_abandon || '';
+      failHtml += '<div style="background:var(--amber-light);border:1px solid rgba(239,159,39,.4);border-radius:10px;padding:12px 14px;margin-bottom:12px;">';
+      failHtml += '<div style="font-size:11px;font-weight:700;color:#7A4A00;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Financial loss if you stop</div>';
+      failHtml += '<div style="font-size:12px;color:#5A3200;line-height:1.65;">' + esc(lossText) + '</div>';
+      failHtml += '</div>';
+    }
+    if (fp.pivot_options && fp.pivot_options.length) {
+      failHtml += '<div style="font-size:11px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;">If this path doesn\'t work — real alternatives</div>';
+      fp.pivot_options.forEach(function(opt) {
+        failHtml += '<div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--teal-light);">';
+        failHtml += '<span style="color:var(--teal);font-weight:700;flex-shrink:0;">→</span>';
+        failHtml += '<span style="font-size:12px;color:var(--text);line-height:1.6;">' + esc(opt) + '</span>';
+        failHtml += '</div>';
+      });
+    }
+    if (fp.honest_note) {
+      failHtml += '<div style="background:var(--teal-light);border-left:4px solid var(--teal);border-radius:0 10px 10px 0;padding:12px 14px;margin-top:12px;font-size:12px;color:var(--teal-dark);line-height:1.75;">' + esc(fp.honest_note) + '</div>';
+    }
+    failContent.innerHTML = failHtml;
+  } else if (failCard) {
+    failCard.style.display = 'none';
+  }
+
+  // NET MONTHLY AFTER CITY
+  var netData = c.net_monthly_after_city;
+  var netCard = document.getElementById('net-salary-card');
+  var netContent = document.getElementById('net-salary-content');
+  if (netData && netCard && netContent) {
+    netCard.style.display = '';
+    var netHtml = '';
+    var cityTiers = [
+      { key: 'hometown', label: 'Staying at home (Korba / hometown)', icon: '🏠' },
+      { key: 'tier3_away', label: 'Tier 3 city (PG / rented room)', icon: '🏘️' },
+      { key: 'tier2', label: 'Tier 2 city (Raipur / Bilaspur)', icon: '🏙️' },
+      { key: 'metro', label: 'Metro city (Bengaluru / Delhi / Mumbai)', icon: '🌆' }
+    ];
+    cityTiers.forEach(function(tier) {
+      var netAmt = netData[tier.key];
+      if (netAmt === undefined || netAmt === null) return;
+      var isNeg = netAmt < 0;
+      var isLow = netAmt < 5000 && netAmt >= 0;
+      var barColor = isNeg ? '#E24B4A' : isLow ? '#EF9F27' : '#1D9E75';
+      var barWidth = isNeg ? 0 : Math.min(Math.round((netAmt / (s.year_1_mid / 12)) * 100), 100);
+      var warning = isNeg
+        ? '⚠️ Negative — salary does not cover living costs in this city at year-1 pay'
+        : isLow
+        ? '⚠️ Under ₹5,000/month left — very tight. Plan carefully before relocating.'
+        : '';
+      netHtml += '<div style="margin-bottom:12px;">';
+      netHtml += '<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px;">';
+      netHtml += '<span style="font-size:12px;font-weight:600;color:var(--text);">' + tier.icon + ' ' + esc(tier.label) + '</span>';
+      netHtml += '<span style="font-size:14px;font-weight:700;color:' + barColor + ';">₹' + fmt(Math.max(netAmt, 0)) + '/mo</span>';
+      netHtml += '</div>';
+      netHtml += '<div style="background:var(--teal-light);border-radius:6px;height:10px;overflow:hidden;">';
+      netHtml += '<div style="height:100%;border-radius:6px;background:' + barColor + ';width:' + barWidth + '%;transition:width .4s;"></div>';
+      netHtml += '</div>';
+      if (warning) {
+        netHtml += '<div style="font-size:11px;color:#7A1F1F;margin-top:4px;">' + esc(warning) + '</div>';
+      }
+      netHtml += '</div>';
+    });
+    if (netData.note) {
+      netHtml += '<div style="font-size:12px;color:var(--gray);background:var(--card-bg);border-radius:8px;padding:10px 12px;margin-top:4px;line-height:1.65;">' + esc(netData.note) + '</div>';
+    }
+    netContent.innerHTML = netHtml;
+  } else if (netCard) {
+    netCard.style.display = 'none';
+  }
+
+  // CG CONTEXT + STAY IN CG
+  var cgHtml = '';
+  if (c.stay_in_cg_possible) {
+    var stayVerdict = c.stay_in_cg_possible.verdict || '';
+    var stayNote = c.stay_in_cg_possible.note || '';
+    var stayIcon = stayVerdict.toLowerCase().indexOf('yes') !== -1 ? '✅' : stayVerdict.toLowerCase().indexOf('partial') !== -1 ? '🟡' : '❌';
+    var stayBg = stayVerdict.toLowerCase().indexOf('yes') !== -1 ? 'var(--green-light,#E8F8F0)' : stayVerdict.toLowerCase().indexOf('partial') !== -1 ? 'var(--amber-light)' : 'var(--red-light)';
+    var stayBorder = stayVerdict.toLowerCase().indexOf('yes') !== -1 ? '#A8E4C0' : stayVerdict.toLowerCase().indexOf('partial') !== -1 ? 'rgba(239,159,39,.4)' : '#F7C1C1';
+    var stayText = stayVerdict.toLowerCase().indexOf('yes') !== -1 ? '#0F5132' : stayVerdict.toLowerCase().indexOf('partial') !== -1 ? '#7A4A00' : '#7A1F1F';
+    cgHtml += '<div style="background:' + stayBg + ';border:1px solid ' + stayBorder + ';border-radius:12px;padding:12px 14px;margin-bottom:10px;">';
+    cgHtml += '<div style="font-size:11px;font-weight:700;color:' + stayText + ';text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;">' + stayIcon + ' Can you build this career and stay in CG?</div>';
+    cgHtml += '<div style="font-size:13px;font-weight:700;color:' + stayText + ';margin-bottom:4px;">' + esc(stayVerdict) + '</div>';
+    if (stayNote) cgHtml += '<div style="font-size:12px;color:' + stayText + ';line-height:1.65;opacity:.9;">' + esc(stayNote) + '</div>';
+    cgHtml += '</div>';
+  }
+  cgHtml += '<div style="background:var(--teal-light);border-left:4px solid var(--teal);border-radius:0 10px 10px 0;padding:12px 14px;font-size:13px;color:var(--teal-dark);line-height:1.75;">' + esc(c.cg_context) + '</div>';
+  document.getElementById('cg-content').innerHTML = cgHtml;
 
   document.getElementById('screen-tool').classList.add('hidden');
   document.getElementById('screen-result').classList.remove('hidden');
@@ -954,6 +1195,10 @@ function reset(){
   hideAll();
   document.getElementById('btn-calc').disabled=true;
   document.getElementById('screen-result').classList.add('hidden');
+  var netCard = document.getElementById('net-salary-card');
+  if (netCard) netCard.style.display = 'none';
+  var failCard = document.getElementById('failure-card');
+  if (failCard) failCard.style.display = 'none';
   document.getElementById('screen-tool').classList.remove('hidden');
   var teaser = document.getElementById('rh-teaser');
   if (teaser) teaser.textContent = '';

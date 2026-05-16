@@ -160,7 +160,47 @@
 
       "break_even_note": "With online coaching + good state engineering college: Total investment ~₹8-10L. Break-even vs zero investment in ~18-24 months of working. With IIT + Kota coaching: Total ~₹18-22L. Break-even ~3-4 years.",
       "honest_reality": "College tier matters enormously. An IITian averages ₹15-20 LPA placement. A Tier-3 private college graduate may struggle at ₹3-4 LPA. Skills and portfolio matter more at mid-career — but the first job is heavily college-dependent.",
-      "cg_context": "For CG students: NIT Raipur (home state quota rank < 15,000 in JEE) is excellent value. CSVTU-affiliated colleges in Bhilai/Raipur offer decent placement with NTPC/SECL for Civil/Mechanical. Local online coaching + rigorous self-study is now a genuine path."
+      "cg_context": "For CG students: NIT Raipur (home state quota rank < 15,000 in JEE) is excellent value. CSVTU-affiliated colleges in Bhilai/Raipur offer decent placement with NTPC/SECL for Civil/Mechanical. Local online coaching + rigorous self-study is now a genuine path.",
+      "opportunity_cost_inr": {
+        "prep_years": 1.5,
+        "college_years": 4,
+        "forgone_per_year_low": 120000,
+        "forgone_per_year_mid": 200000,
+        "total_low": 660000,
+        "total_mid": 1100000,
+        "note": "Based on unskilled/semi-skilled work income of ₹10,000–17,000/month in CG during the same years"
+      },
+      "failure_path": {
+        "exam": "JEE",
+        "probability_of_not_cracking": "98% of all JEE Main applicants do not get NIT or above",
+        "what_happens": "Most students join a state or private engineering college — JEE rank still determines which. A poor rank means a lower-tier college with weaker placements.",
+        "financial_loss_if_drop_year": "₹1.5–3L coaching cost + 1 year opportunity cost ₹1–2L",
+        "pivot_options": [
+          "State engineering college (CSVTU-affiliated) — still a valid software career path with skills focus",
+          "BCA + MCA — equivalent outcome for most IT jobs, lower fee, no JEE needed",
+          "Self-taught + GitHub portfolio — companies like startups hire purely on skills"
+        ],
+        "honest_note": "College tier affects your first job salary heavily. Skills and portfolio matter more after Year 3. Do not take a ₹50L loan for a private college ranked below 200 — the math does not work."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹6,00,000 / 12 = ₹50,000/month gross",
+        "hometown": 50000,
+        "tier3_away": 40000,
+        "tier2": 36000,
+        "metro": 22000,
+        "note": "Metro gross looks high but ₹50,000 minus ₹28,000 living costs leaves only ₹22,000 to save in Year 1. Plan your first 6 months carefully."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Partially",
+        "note": "NIT Raipur placements include NTPC, SECL, BHEL — you can stay in CG. But top software salaries (₹10L+) require Bengaluru, Hyderabad, or Pune. Remote work is possible after 1–2 years of experience."
+      },
+      "ai_disruption_note": "AI disruption score: 8/10. Entry-level coding tasks are increasingly AI-assisted. By 2028–30, pure code-writing jobs will shrink. Focus on system design, problem framing, and domain expertise — skills AI cannot replace. Students entering in 3–5 years: learn AI tools early, not as a threat but as a multiplier.",
+      "lateral_entry_paths": [
+        "BCA + MCA — equivalent to BTech for most IT jobs, lower fee, no JEE required",
+        "BSc Computer Science + certifications — same outcome, more affordable",
+        "Self-taught + GitHub portfolio — startups and product companies hire on skill alone",
+        "ITI → Polytechnic Diploma → Lateral BTech (3 years instead of 4, less fee)"
+      ]
     },
 
     {
@@ -257,7 +297,46 @@
 
       "break_even_note": "Government MBBS: ROI is extraordinary — even with ₹5-7L total cost and 7 years to first salary, the lifetime earning potential is unmatched. Private MBBS with ₹60-100L loan: break-even is 8-12 years post-graduation. Think carefully about private MBBS loan amounts.",
       "honest_reality": "The single most important fact about MBBS in India: every 50-point improvement in NEET score can save ₹20-100 lakh in fees. NEET preparation is a direct financial investment, not just an academic one.",
-      "cg_context": "RIMS Raipur and CIMS Bilaspur are genuine options for NEET rank under 40,000 for CG state quota. BAMS (Ayurveda) from CG government colleges: lower NEET cutoff, lower fees (~₹3-5L total), and government hospital appointments through CGVYAPAM."
+      "cg_context": "RIMS Raipur and CIMS Bilaspur are genuine options for NEET rank under 40,000 for CG state quota. BAMS (Ayurveda) from CG government colleges: lower NEET cutoff, lower fees (~₹3-5L total), and government hospital appointments through CGVYAPAM.",
+      "opportunity_cost_inr": {
+        "prep_years": 1.5,
+        "college_years": 5.5,
+        "forgone_per_year_low": 120000,
+        "forgone_per_year_mid": 200000,
+        "total_low": 840000,
+        "total_mid": 1400000,
+        "note": "7 years before first salary. Opportunity cost is real — factor this against lifetime earning potential which is the highest of any career."
+      },
+      "failure_path": {
+        "exam": "NEET",
+        "probability_of_not_cracking": "Over 85% of NEET applicants do not secure a government MBBS seat",
+        "what_happens": "Students either take private MBBS (₹50–100L total cost), take a drop year to retry, or pivot to allied health paths.",
+        "financial_loss_if_drop_year": "₹1.5–3L coaching + 1 year opportunity cost. Two drop years = ₹5–8L lost before starting.",
+        "pivot_options": [
+          "BAMS (Ayurveda) — NEET cutoff ~400 vs 550 for MBBS, govt college fees ₹3–5L total, strong government job prospects",
+          "BSc Nursing — NEET required but much lower cutoff, 4-year course, strong international demand",
+          "BPharm — Pharmacy degree, lower NEET cutoff, 4-year course, multiple career paths"
+        ],
+        "honest_note": "Every 50 NEET marks can save your family ₹20–50L in private college fees. The most important financial decision in MBBS is not which private college — it is how hard you prepare to avoid needing one."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹9,00,000 / 12 = ₹75,000/month gross",
+        "hometown": 75000,
+        "tier3_away": 65000,
+        "tier2": 61000,
+        "metro": 47000,
+        "note": "Government hospital posting in CG pays ₹6–9L/year with accommodation — effectively ₹75,000+/month with perks. Private hospital in metro pays more gross but costs more to live."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Yes — strongly preferred",
+        "note": "AIIMS Raipur, CIMS Bilaspur, and district hospitals all need doctors. CG has a documented doctor shortage — a qualified MBBS from CG has genuine employment security in the state. Government postings include accommodation."
+      },
+      "ai_disruption_note": "AI disruption score: 3/10. Medicine is the most AI-resistant career in this database. Diagnosis support tools exist but the patient relationship, physical examination, and clinical judgment cannot be automated. Safe career horizon: 30+ years.",
+      "lateral_entry_paths": [
+        "Class 12 PCB → NEET → BAMS (Ayurveda) — lower cutoff, government job prospects, ₹3–5L total fees at CG govt college",
+        "Class 12 PCB → NEET → BSc Nursing → GNM → ANM — multiple entry points at different score levels",
+        "Class 12 PCB → BPharm → Pharmaceutical industry or clinical research"
+      ]
     },
 
     {
@@ -327,7 +406,46 @@
 
       "break_even_note": "CA is one of the highest ROI professional qualifications in India. Total investment including coaching: ₹1.5-2.5 lakh (vs ₹50-80L for private MBBS or ₹15-20L for IIT path). Break-even is essentially from Day 1 of qualification.",
       "honest_reality": "Pass rate is brutal — CA Final first attempt is 10-15%. Average 4.5-5 years to qualify. During articleship (3 years), you earn ₹2,000-15,000/month stipend. The financial investment is low but the time investment is significant.",
-      "cg_context": "CA is deeply respected in every CG city. NTPC Korba, SECL, SAIL Bhilai all need CAs. Local articleship in Bilaspur/Korba is completely valid. A qualified CA from CG does not need to move to Mumbai — local practice is viable."
+      "cg_context": "CA is deeply respected in every CG city. NTPC Korba, SECL, SAIL Bhilai all need CAs. Local articleship in Bilaspur/Korba is completely valid. A qualified CA from CG does not need to move to Mumbai — local practice is viable.",
+      "opportunity_cost_inr": {
+        "prep_years": 0,
+        "college_years": 5,
+        "forgone_per_year_low": 120000,
+        "forgone_per_year_mid": 180000,
+        "total_low": 600000,
+        "total_mid": 900000,
+        "note": "Articleship stipend ₹2,000–15,000/month partially offsets this. Net opportunity cost is lower than it appears — you earn while you study."
+      },
+      "failure_path": {
+        "exam": "CA Finals",
+        "probability_of_not_cracking": "CA Final first-attempt pass rate is 10–15%. Average time to qualify: 4.5–5 years.",
+        "what_happens": "Most students continue retrying — up to 6 attempts allowed. Some pivot to BCom + MBA or accounting roles using CA Intermediate qualification.",
+        "financial_loss_if_abandon": "₹1.5–2.5L total invested + 3–5 years opportunity cost. CA Intermediate alone is valued by employers — not a wasted qualification.",
+        "pivot_options": [
+          "CA Intermediate passed → Junior Accountant, Finance Executive, Tax Analyst roles — ₹4–8 LPA",
+          "BCom + MBA (Finance) — parallel path many CA students take as backup",
+          "CMA India (Cost Accountant) — shorter exam, strong industry demand, similar accounting skills"
+        ],
+        "honest_note": "CA has the lowest financial investment of any top professional qualification in India (₹60,000 total ICAI fees). The cost is time, not money. If you clear it, ROI is extraordinary. If you stop at Intermediate, you still have a marketable qualification."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹10,00,000 / 12 = ₹83,333/month gross",
+        "hometown": 83333,
+        "tier3_away": 73333,
+        "tier2": 69333,
+        "metro": 55333,
+        "note": "CA in Korba or Bilaspur earns ₹6–12 LPA working with SECL, NTPC, local businesses — no metro required. Big4 firms in metro pay ₹15–25 LPA but living costs eat significantly into that."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Yes — fully",
+        "note": "CA is the most location-independent professional qualification. NTPC Korba, SECL Bilaspur, SAIL Bhilai, every hospital, every mid-size business needs a CA. A qualified CA from Korba does not need to move to Mumbai."
+      },
+      "ai_disruption_note": "AI disruption score: 7/10. Routine tax filing, bookkeeping, and audit sampling are being automated. But advisory, compliance interpretation, and client relationships cannot be. Future CA must be a strategic advisor, not a data entry operator. Invest in Excel, Power BI, and tax advisory skills.",
+      "lateral_entry_paths": [
+        "BCom + CA simultaneously — most efficient path, BCom provides backup degree",
+        "BBA + CA — strong combination for industry finance roles",
+        "CMA India (Cost Accountant) — shorter qualification, strong in manufacturing sector which is dominant in CG"
+      ]
     },
 
     {
@@ -397,7 +515,47 @@
 
       "break_even_note": "Banking is the highest ROI exam path for graduates. Total investment: ₹5,000-25,000. First salary: ₹50,000-65,000/month. Break-even: literally within the first month of joining.",
       "honest_reality": "Success rate is 0.1-0.2% (40 lakh apply, ~10,000 selected). BUT: if you prepare seriously for 8-12 months with daily mocks, your effective probability is much higher. Multiple attempts are allowed.",
-      "cg_context": "SBI, Bank of Baroda, Central Bank all have large offices in Bilaspur, Korba and Raipur. A Bank PO job means staying in CG with excellent salary, stability, pension benefits, and deep community respect."
+      "cg_context": "SBI, Bank of Baroda, Central Bank all have large offices in Bilaspur, Korba and Raipur. A Bank PO job means staying in CG with excellent salary, stability, pension benefits, and deep community respect.",
+      "opportunity_cost_inr": {
+        "prep_years": 1,
+        "college_years": 0,
+        "forgone_per_year_low": 120000,
+        "forgone_per_year_mid": 200000,
+        "total_low": 120000,
+        "total_mid": 200000,
+        "note": "Only 8–12 months of preparation after graduation. Opportunity cost is minimal compared to any other professional qualification."
+      },
+      "failure_path": {
+        "exam": "IBPS PO / SBI PO",
+        "probability_of_not_cracking": "Success rate is 0.1–0.2% per attempt (40 lakh applicants, ~10,000 selected). BUT serious preparation significantly improves individual odds.",
+        "what_happens": "Most serious candidates appear 3–5 times across multiple banking exams. The preparation is transferable to SSC CGL, RRB, and insurance exams.",
+        "financial_loss_if_abandon": "₹5,000–25,000 total investment. Almost no financial loss — the main cost is time.",
+        "pivot_options": [
+          "SSC CGL — same Quant + Reasoning + English preparation, central government job",
+          "RRB NTPC / Group D — railway jobs, same prep base, massive vacancy numbers",
+          "LIC AAO / Insurance exams — financial awareness is common preparation ground",
+          "State cooperative bank exams — lower competition, same skills"
+        ],
+        "honest_note": "Bank PO prep is the most reusable preparation in the government exam ecosystem. Every month you prepare is never wasted — it applies directly to 15+ other exams. Appear multiple times. The cost of each attempt is just ₹600–800 application fee."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹6,20,000 / 12 = ₹51,667/month gross (includes allowances)",
+        "hometown": 51667,
+        "tier3_away": 41667,
+        "tier2": 37667,
+        "metro": 23667,
+        "note": "Bank PO posted in Korba or Bilaspur earns ₹52,000–58,000/month in-hand with house rent allowance. Net savings are significantly higher than metro posting where costs are 3x."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Yes — with strong probability",
+        "note": "SBI, Bank of Baroda, Central Bank, PNB all have large branches in Bilaspur, Korba, Raipur, and Raigarh. CG students often get CG postings in first 2–3 years. Transfer policies exist but initial posting in home state is common for IBPS selections."
+      },
+      "ai_disruption_note": "AI disruption score: 6/10. Teller and data entry functions in banking are being automated. But relationship banking, credit appraisal, and branch management need human judgment. Bank PO role is evolving toward advisory and customer relationship — skills that are safe from automation.",
+      "lateral_entry_paths": [
+        "Any graduation stream qualifies — Arts, Science, Commerce all eligible",
+        "Start with RRB Clerk or IBPS Clerk — lower competition, same bank environment, promotion path to PO",
+        "State cooperative bank → Nationalized bank transfer — regional-level entry with lower competition"
+      ]
     },
 
     {
@@ -459,7 +617,47 @@
 
       "break_even_note": "Like Banking — the ROI on SSC CGL preparation is extraordinary. Total investment: ₹6,000-15,000. First in-hand salary: ₹40,000-68,000/month.",
       "honest_reality": "40 lakh+ candidates appear. Success rate 0.1-0.2%. BUT consistent daily preparation of 4-5 hours for 8-12 months dramatically changes your effective odds. Income Tax Inspector and AAO are the most sought-after posts.",
-      "cg_context": "Income Tax offices, SSC-recruited ASOs, and Auditors serve in Raipur, Bilaspur and Jagdalpur. Staying in CG with a central government pensioned job is completely achievable through SSC CGL."
+      "cg_context": "Income Tax offices, SSC-recruited ASOs, and Auditors serve in Raipur, Bilaspur and Jagdalpur. Staying in CG with a central government pensioned job is completely achievable through SSC CGL.",
+      "opportunity_cost_inr": {
+        "prep_years": 1,
+        "college_years": 0,
+        "forgone_per_year_low": 120000,
+        "forgone_per_year_mid": 200000,
+        "total_low": 120000,
+        "total_mid": 200000,
+        "note": "8–12 months of preparation post-graduation. Lowest opportunity cost of any exam-based government career."
+      },
+      "failure_path": {
+        "exam": "SSC CGL",
+        "probability_of_not_cracking": "40 lakh+ applicants, ~25,000 selected — success rate under 0.1% per attempt. Multiple attempts allowed with no age restriction under 32.",
+        "what_happens": "Preparation fully transfers to SSC CHSL, CPO, MTS, banking exams, and state PSC prelims. Not a wasted effort.",
+        "financial_loss_if_abandon": "₹6,000–15,000 total coaching investment. Negligible financial risk.",
+        "pivot_options": [
+          "SSC CHSL — same preparation, 12th-pass eligible, slightly lower competition",
+          "IBPS PO / Clerk — banking exam with same Quant + Reasoning base",
+          "RRB NTPC — railway jobs, massive vacancies, same preparation foundation",
+          "CGPSC Prelims — state civil service exam accepts same general studies preparation"
+        ],
+        "honest_note": "SSC CGL offers the highest ROI of any exam in India — ₹6,000 investment for a ₹40,000–68,000/month government job with pension. Income Tax Inspector and Assistant Accounts Officer are the most sought-after posts — target these specifically in your application."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹5,30,000 / 12 = ₹44,167/month gross",
+        "hometown": 44167,
+        "tier3_away": 34167,
+        "tier2": 30167,
+        "metro": 16167,
+        "note": "SSC CGL posting in Delhi or metro shows ₹44,000/month but leaves only ₹16,000 after city costs. CG-based SSC postings (Income Tax, Audit offices in Raipur) give the same salary with far lower living costs — net savings ₹35,000+/month."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Partially — depends on post",
+        "note": "Income Tax offices, SSC-recruited ASOs, and Auditors are posted in Raipur, Bilaspur, and Jagdalpur. Central Secretariat posts require Delhi. Choose your preferred post carefully based on where you want to live."
+      },
+      "ai_disruption_note": "AI disruption score: 6/10. Administrative and data entry tasks in government are being digitised. But policy implementation, public interface, and regulatory compliance remain human roles. Government jobs overall have strong AI-resistance due to governance and accountability requirements.",
+      "lateral_entry_paths": [
+        "Any graduation stream qualifies — zero stream restriction",
+        "SSC CHSL after 12th — start earlier, similar skills, promotable to CGL-level posts",
+        "State PSC Prelims — same general studies base, CG-specific posts with home-state posting"
+      ]
     },
 
     {
@@ -537,7 +735,47 @@
 
       "break_even_note": "From hometown with self-study: Investment ₹15,000-30,000 + 3-4 years opportunity cost. ROI is extraordinary if selected — the perks and career impact go far beyond salary. But probability is 0.1%. CGPSC is 10x more accessible with similar preparation.",
       "honest_reality": "UPSC CSE selects ~1,000 from 1 million applicants (0.1%). Average successful candidate appears 3.2 times. Average preparation time: 3-4 years. Many do NOT qualify — and those years are lost income opportunity. Have CGPSC or banking as a parallel target.",
-      "cg_context": "CGPSC Deputy Collector and DSP: total compensation worth ₹70,000-1,20,000/month equivalent with housing and perks. Selects 200-400 from CG only. Same preparation as UPSC. Many IAS aspirants from CG strategically appear for CGPSC first."
+      "cg_context": "CGPSC Deputy Collector and DSP: total compensation worth ₹70,000-1,20,000/month equivalent with housing and perks. Selects 200-400 from CG only. Same preparation as UPSC. Many IAS aspirants from CG strategically appear for CGPSC first.",
+      "opportunity_cost_inr": {
+        "prep_years": 3,
+        "college_years": 0,
+        "forgone_per_year_low": 150000,
+        "forgone_per_year_mid": 250000,
+        "total_low": 450000,
+        "total_mid": 750000,
+        "note": "3–4 years of preparation post-graduation. This is the real cost of UPSC — not coaching fees but foregone income and career start delay. Factor this honestly before committing."
+      },
+      "failure_path": {
+        "exam": "UPSC CSE",
+        "probability_of_not_cracking": "UPSC selects ~1,000 from 1 million applicants (0.1%). Average successful candidate appears 3.2 times. Many never clear it.",
+        "what_happens": "3–4 years of UPSC prep builds extraordinary transferable skills — research, writing, policy analysis, current affairs — that are highly valued in content, consulting, NGO, and policy sectors.",
+        "financial_loss_if_abandon": "₹1.5–5L coaching + ₹3–8L opportunity cost over 3–4 years. This is the most expensive failure path in government exams.",
+        "pivot_options": [
+          "CGPSC State Services — same preparation, CG-specific, selects 200–400/year vs UPSC's 1,000 from all India — far better odds",
+          "MBA — UPSC prep's analytical and verbal skills give strong CAT performance",
+          "Policy/research roles at think tanks, NGOs — UPSC preparation is directly valued",
+          "Content writing, journalism — UPSC candidates write better than 95% of working professionals"
+        ],
+        "honest_note": "CGPSC is Pehchaan's most recommended alternative for CG students with UPSC aspirations. Same preparation, same respect in CG society, better odds, and you stay in your home state. A CGPSC Deputy Collector in CG is as respected as an IAS officer in the state context."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹9,00,000 / 12 = ₹75,000/month cash salary (government housing worth ₹30,000–50,000/month additional)",
+        "hometown": 75000,
+        "tier3_away": 65000,
+        "tier2": 61000,
+        "metro": 47000,
+        "note": "IAS salary understates true compensation. Government accommodation (worth ₹30,000–50,000/month equivalent), vehicle, staff, and other perks make total compensation ₹1,00,000–1,50,000+/month equivalent. The pension value is additional."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "IAS: No | CGPSC: Yes",
+        "note": "IAS officers are posted anywhere in India by the central government — you cannot choose CG. CGPSC officers (Deputy Collector, DSP) serve in CG permanently. If staying in CG matters to you or your family, CGPSC is the right target, not UPSC."
+      },
+      "ai_disruption_note": "AI disruption score: 6/10. Administrative paperwork and data management in government is being digitised. But policy leadership, public accountability, crisis response, and community governance are deeply human functions. IAS/CGPSC careers are safe for a 30+ year horizon.",
+      "lateral_entry_paths": [
+        "Any graduation stream qualifies — BA, BCom, BSc, BTech all eligible",
+        "CGPSC State Services — same prep, CG-specific, 200–400 selections per year, home state posting",
+        "Other state PSC exams — MPPSC, RPSC accept same general studies preparation"
+      ]
     },
 
     {
@@ -607,7 +845,47 @@
 
       "break_even_note": "With free self-study: Investment = zero. First salary ₹3.5-6 LPA. Break-even = Day 1 of first job. With paid course ₹60,000: Recover in first 2-3 months of working.",
       "honest_reality": "India has a shortage of 11 lakh data professionals (NASSCOM 2025). Salaries growing 12-15% annually. BUT: entry-level market is competitive — a portfolio of 3-5 real projects on GitHub is worth more than any certification alone.",
-      "cg_context": "Data Analyst is 100% remote-friendly. A skilled analyst from Korba earns the same as one in Bengaluru working remotely. This is the career where geography does not matter — only skills matter."
+      "cg_context": "Data Analyst is 100% remote-friendly. A skilled analyst from Korba earns the same as one in Bengaluru working remotely. This is the career where geography does not matter — only skills matter.",
+      "opportunity_cost_inr": {
+        "prep_years": 0.5,
+        "college_years": 0,
+        "forgone_per_year_low": 120000,
+        "forgone_per_year_mid": 200000,
+        "total_low": 60000,
+        "total_mid": 100000,
+        "note": "Only 6 months of skill building. Lowest opportunity cost in the database. Free self-study = opportunity cost of zero financial investment."
+      },
+      "failure_path": {
+        "exam": "No exam — skill and portfolio based",
+        "probability_of_not_cracking": "No single pass/fail gate. Risk is building skills but not finding a job — more about portfolio quality than exam luck.",
+        "what_happens": "A weak portfolio means starting at MIS Executive or Operations Associate level (₹3–4 LPA) and building up. Not a failure — a slower start.",
+        "financial_loss_if_abandon": "₹0–60,000 depending on whether paid course taken. No loss if self-study path followed.",
+        "pivot_options": [
+          "MIS Executive — same Excel + reporting skills, easier entry, path to Data Analyst via experience",
+          "Operations Associate — process skills are transferable, promote to analyst internally",
+          "Finance Operations — Excel + data + finance domain, strong demand"
+        ],
+        "honest_note": "This is the lowest-risk high-upside career path in the database. Zero exam dependency. 100% remote possible. A student from Korba with SQL + Python + Power BI skills earns the same as someone in Bengaluru working remotely. Geography does not matter — only skills matter."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹6,60,000 / 12 = ₹55,000/month gross",
+        "hometown": 55000,
+        "tier3_away": 45000,
+        "tier2": 41000,
+        "metro": 27000,
+        "note": "Remote work makes 'hometown' the realistic scenario — ₹55,000/month gross with zero city costs. This is why Data Analyst is Pehchaan's top recommendation for students who want high income without leaving CG."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Yes — 100% remote possible",
+        "note": "Data Analytics is the most location-independent career in this database. After 6–12 months of experience, full remote work is standard at most companies. A skilled analyst in Korba earns the same as one in Bengaluru."
+      },
+      "ai_disruption_note": "AI disruption score: 8/10. Basic reporting and dashboard creation are being automated by AI tools. BUT demand for analysts who can frame the right questions, interpret results, and communicate business insights is growing. Invest in SQL, Python, and business communication — not just tool proficiency.",
+      "lateral_entry_paths": [
+        "BCom + Excel + Power BI + SQL — Commerce graduates become strong data analysts, no engineering degree needed",
+        "BSc Statistics + Python — statistics background is a natural advantage",
+        "BCA + SQL + Python — practical computing background, fast skill acquisition",
+        "Any graduate + free Google Data Analytics Certificate (Coursera) — portfolio-driven entry"
+      ]
     },
 
     {
@@ -669,7 +947,47 @@
 
       "break_even_note": "With free Google/Meta certifications: Investment = zero. Any income from first freelance client is pure ROI. With ₹60,000 paid course: Recover within 3-6 months of working.",
       "honest_reality": "The best digital marketers in India earn ₹25-40 LPA at senior level. BUT entry level is competitive and salaries start low (₹2-3 LPA at agencies). The real income accelerator is freelancing — 5 local clients at ₹10,000/month = ₹50,000/month from anywhere.",
-      "cg_context": "Businesses in Korba, Bilaspur and Raipur desperately need digital marketing help. A student who learns this skill can freelance locally — hospitals, schools, real estate firms, shops. ₹5,000-25,000/month per client is realistic. Location-independent work."
+      "cg_context": "Businesses in Korba, Bilaspur and Raipur desperately need digital marketing help. A student who learns this skill can freelance locally — hospitals, schools, real estate firms, shops. ₹5,000-25,000/month per client is realistic. Location-independent work.",
+      "opportunity_cost_inr": {
+        "prep_years": 0.5,
+        "college_years": 0,
+        "forgone_per_year_low": 120000,
+        "forgone_per_year_mid": 200000,
+        "total_low": 60000,
+        "total_mid": 100000,
+        "note": "3–6 months of learning. Can earn from freelance clients before finishing learning. Opportunity cost is the lowest in the database."
+      },
+      "failure_path": {
+        "exam": "No exam — portfolio and results based",
+        "probability_of_not_cracking": "No single failure gate. Risk is weak portfolio or no results to show. Agencies pay low (₹2–3 LPA) until you can show measurable campaign results.",
+        "what_happens": "Students who cannot show results start at content writing or social media executive level and build up. Entry barrier is low but differentiation requires real portfolio.",
+        "financial_loss_if_abandon": "₹0–60,000 maximum. Free certifications mean near-zero financial risk.",
+        "pivot_options": [
+          "Content Associate — writing skills from digital marketing prep are directly transferable",
+          "Sales Executive — understanding of funnels and customer psychology applies to sales",
+          "E-commerce Coordinator — platform management skills are directly relevant"
+        ],
+        "honest_note": "The real risk in digital marketing is not failing to learn — it is taking a ₹60,000 paid course when free Google and Meta certifications give the same result. Start free. Build a real portfolio by running small campaigns for local Korba/Bilaspur businesses. That portfolio is worth more than any certificate."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹3,50,000 / 12 = ₹29,167/month gross",
+        "hometown": 29167,
+        "tier3_away": 19167,
+        "tier2": 15167,
+        "metro": 1167,
+        "note": "CRITICAL: A digital marketer earning ₹3.5 LPA in a metro city has almost nothing left after living costs (₹1,167/month net). This career either needs a higher salary (₹5L+) before moving to metro, or remote work from hometown. Freelancing from Korba earning ₹5,000–25,000/client is far better than an agency job in Bengaluru at ₹3 LPA."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Yes — and strongly recommended",
+        "note": "Every business in Korba, Bilaspur, Raigarh, and Champa needs digital marketing. Start by offering services to local hospitals, schools, real estate firms, coaching institutes. Build experience and clients locally before thinking about metro jobs."
+      },
+      "ai_disruption_note": "AI disruption score: 6/10. AI tools are automating basic content creation and ad copy. But campaign strategy, audience understanding, and performance interpretation remain human. Learn AI tools (ChatGPT, Midjourney, Meta AI) as productivity multipliers — they make one marketer do the work of three.",
+      "lateral_entry_paths": [
+        "Any degree or even Class 12 pass — no degree restriction",
+        "Start with free Google Skillshop + Meta Blueprint certifications — zero cost entry",
+        "Build Instagram/YouTube channel as live portfolio — shows results, not just knowledge",
+        "Freelance 2–3 local clients first — real campaign data is better than any course certificate"
+      ]
     },
 
     {
@@ -732,7 +1050,46 @@
 
       "break_even_note": "Total investment: ₹10,000-1,25,000. First income from NTPC apprenticeship: ₹8,000-12,000/month stipend. Permanent NTPC employment: ₹25,000-40,000/month CTC. Break-even in 3-6 months of working. This is the highest ROI path in CG for non-exam students.",
       "honest_reality": "This is the most underrated career path in Chhattisgarh. Zero glamour, absolute security. NTPC Korba, SECL mines, SAIL Bhilai hire hundreds of ITI electricians every year as permanent employees. Government-level benefits, overtime, and advancement — without any loan or competitive exam pressure.",
-      "cg_context": "NTPC Korba is literally next door. Government ITI Korba offers Electrician trade. Get an ITI degree → appear for NTPC/SECL apprenticeship → permanent employment. This is the most direct career path available to a student from Korba or Champa."
+      "cg_context": "NTPC Korba is literally next door. Government ITI Korba offers Electrician trade. Get an ITI degree → appear for NTPC/SECL apprenticeship → permanent employment. This is the most direct career path available to a student from Korba or Champa.",
+      "opportunity_cost_inr": {
+        "prep_years": 0,
+        "college_years": 2,
+        "forgone_per_year_low": 80000,
+        "forgone_per_year_mid": 120000,
+        "total_low": 160000,
+        "total_mid": 240000,
+        "note": "Lowest opportunity cost of any trade career. Many ITI students do apprenticeships during study — partially offsetting opportunity cost with stipend income."
+      },
+      "failure_path": {
+        "exam": "CGVYAPAM ITI admission / NCVT exams",
+        "probability_of_not_cracking": "ITI admission is not competitive for most trades. NCVT (trade certificate) exam pass rate is high with sincere study.",
+        "what_happens": "Very low failure risk. Even without NTPC/SECL direct appointment, private contractor work is immediately available after ITI certification.",
+        "financial_loss_if_abandon": "₹10,000–75,000 total investment. Near-zero financial loss.",
+        "pivot_options": [
+          "Polytechnic Diploma — 3-year upgrade from ITI, leads to Junior Engineer designation",
+          "Private contractor work — immediate employment, build experience, start own electrical contracting business",
+          "PGDETT (Post Graduate Diploma in Electrical Technology) — upgrade path"
+        ],
+        "honest_note": "ITI Electrician from Korba ITI + NTPC apprenticeship is the most direct career path in CG. NTPC Korba is literally in the city. This path has more certainty than most professional degrees — lower cost, faster employment, and real hands-on work."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹2,50,000 / 12 = ₹20,833/month gross",
+        "hometown": 20833,
+        "tier3_away": 10833,
+        "tier2": 6833,
+        "metro": -7167,
+        "note": "CRITICAL: An ITI Electrician earning ₹2.5 LPA CANNOT afford to live in a metro city — costs exceed income. This career is only viable in hometown or Tier 3 cities. NTPC Korba mid-career pay of ₹35,000–55,000/month with accommodation is the correct target — not metro migration."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Yes — CG is the best location for this career",
+        "note": "NTPC Korba, SECL mines, CESC Raipur, CSEB (Chhattisgarh State Electricity Board), and hundreds of private industrial units in CG hire ITI Electricians. This career is strongest in CG — there is no reason to leave the state."
+      },
+      "ai_disruption_note": "AI disruption score: 8/10 for the disruption index — but this is misleading for trades. Physical electrical work — installation, maintenance, repair — cannot be automated. The score reflects that basic electrical design is AI-assisted. Hands-on trade skills are more secure than the score suggests. Focus on industrial automation awareness as an upgrade skill.",
+      "lateral_entry_paths": [
+        "Class 10 pass → Government ITI (no competitive exam pressure) → NCVT certification → NTPC apprenticeship",
+        "Class 10 → Polytechnic Diploma (3 years) → Junior Engineer designation → Higher salary band",
+        "NTPC apprenticeship (1 year stipend ₹8,000–12,000/month) → Permanent employment consideration"
+      ]
     },
 
     {
@@ -795,7 +1152,726 @@
 
       "break_even_note": "Government BSc Nursing: total ₹3-4L investment. First government hospital job: ₹25,000-35,000/month. Break-even in under 1 year of working. Extraordinary ROI.",
       "honest_reality": "India + international demand for nurses is extremely high. UK, Canada, and Middle East actively recruit Indian nurses with generous salaries. Government hospital nursing in India offers excellent job security and pension.",
-      "cg_context": "AIIMS Raipur and CIMS Bilaspur constantly need qualified nurses. BSc Nursing from government college in CG → government hospital job is a well-defined, achievable path for PCB students who want healthcare careers without MBBS-level NEET pressure."
+      "cg_context": "AIIMS Raipur and CIMS Bilaspur constantly need qualified nurses. BSc Nursing from government college in CG → government hospital job is a well-defined, achievable path for PCB students who want healthcare careers without MBBS-level NEET pressure.",
+      "opportunity_cost_inr": {
+        "prep_years": 0,
+        "college_years": 4,
+        "forgone_per_year_low": 120000,
+        "forgone_per_year_mid": 180000,
+        "total_low": 480000,
+        "total_mid": 720000,
+        "note": "4 years before first salary. But government BSc Nursing total fees ₹3–4L means net cost including opportunity cost is ₹8–12L — still very reasonable for a healthcare career."
+      },
+      "failure_path": {
+        "exam": "NEET (required for BSc Nursing admission)",
+        "probability_of_not_cracking": "NEET cutoff for nursing is significantly lower than MBBS — most sincere science students qualify with 3–4 months of focused NEET prep.",
+        "what_happens": "Students who do not clear NEET for nursing can pursue GNM Diploma (no NEET required at many states), ANM, or DMLT instead.",
+        "financial_loss_if_abandon": "Minimal — NEET prep cost is shared with MBBS/BAMS prep.",
+        "pivot_options": [
+          "GNM Diploma — 3-year nursing diploma, no NEET required in several states, government hospital employment",
+          "ANM — 2-year auxiliary nursing course, rural health posting, government job",
+          "DMLT / BMLT — Medical Lab Technology, 2–3 year course, strong demand in diagnostic sector"
+        ],
+        "honest_note": "BSc Nursing is Pehchaan's strongest recommendation for girl students in CG who want healthcare, stable government employment, and international career options. UK, Canada, UAE actively recruit Indian nurses at salaries of ₹1.5–5L/month equivalent. Government BSc Nursing college fees in CG are under ₹1L/year."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹3,50,000 / 12 = ₹29,167/month gross",
+        "hometown": 29167,
+        "tier3_away": 19167,
+        "tier2": 15167,
+        "metro": 1167,
+        "note": "Government hospital nurse in CG earns ₹30,000–55,000/month with 7th Pay Commission — staying in CG is financially better than metro private hospital. International nursing (UK/Canada) changes the equation completely — monthly take-home equivalent ₹1.5–4L after conversion."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Yes — excellent CG prospects",
+        "note": "AIIMS Raipur, CIMS Bilaspur, district hospitals, and private hospitals in Korba, Raipur, and Bilaspur all have steady nursing demand. CG has documented nursing shortages. Government nursing job in CG is achievable and comes with pension and job security."
+      },
+      "ai_disruption_note": "AI disruption score: 6/10 for the index — but physical patient care, emotional support, and clinical observation are irreplaceable. AI tools assist with monitoring and documentation. Nursing is a safe career for 30+ years. The human element of patient care is its protection.",
+      "lateral_entry_paths": [
+        "Class 12 PCB → GNM Diploma (3 years, no NEET at some institutions) → Government hospital posting",
+        "Class 12 PCB → ANM (2 years) → Rural health posting → Upgrade to GNM via bridge course",
+        "BSc Nursing → International nursing registration (NMC UK, NCLEX USA, DHA UAE) → Global career"
+      ]
+    },
+    {
+      "id": "cgpsc_state_services",
+      "label": "CGPSC Officer (Deputy Collector / DSP / BDO)",
+      "category": "Government & Civil Services",
+      "stream": [
+        "any"
+      ],
+      "duration_years": 3,
+      "total_duration_with_prep": 4,
+      "prep_duration_years": 3,
+      "prep_label": "CGPSC preparation (2–3 years post-graduation, same base as UPSC)",
+      "education_paths": [
+        {
+          "id": "graduation_self_study",
+          "label": "Any Graduation + CGPSC Self-Study (from hometown)",
+          "probability": "Realistic for disciplined students — 200–400 selected from CG only",
+          "tuition_total": 0,
+          "hostel_total": 0,
+          "other_fees_total": 15000,
+          "financial_aid_ids": [
+            "nsp_central_state"
+          ],
+          "note": "Books + test series + application fees ≈ ₹15,000 total. Zero degree cost if already graduated."
+        },
+        {
+          "id": "graduation_local_coaching",
+          "label": "Any Graduation + Local CGPSC Coaching (Raipur/Bilaspur)",
+          "probability": "Realistic — local coaching specifically covers CG GK and tribal society sections",
+          "tuition_total": 0,
+          "hostel_total": 96000,
+          "other_fees_total": 80000,
+          "financial_aid_ids": [
+            "nsp_central_state"
+          ],
+          "note": "Coaching ₹50,000–80,000/year + PG in Raipur ₹8,000/month × 12 = ₹1.76L total for 1 year"
+        },
+        {
+          "id": "graduation_delhi_coaching",
+          "label": "Any Graduation + Delhi UPSC/CGPSC Coaching (1 year)",
+          "probability": "Higher success rate but significantly higher cost",
+          "tuition_total": 0,
+          "hostel_total": 156000,
+          "other_fees_total": 150000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "education_loan_public_banks"
+          ],
+          "note": "Delhi coaching ₹1–1.5L/year + Delhi PG ₹13,000/month × 12 = ₹3L total. Not necessary — CG-specific content is better taught locally."
+        }
+      ],
+      "coaching_options": [
+        {
+          "label": "Self-study from hometown (Korba/Bilaspur) — 2–3 years",
+          "cost": 15000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 15000,
+          "online_available": true,
+          "note": "Books, test series, online current affairs — everything available. CG GK is best learned in CG."
+        },
+        {
+          "label": "Local CGPSC coaching (Raipur/Bilaspur) — 1 year",
+          "cost": 60000,
+          "living_per_month": 8000,
+          "living_months": 12,
+          "total_coaching_cost": 156000,
+          "online_available": false,
+          "note": "Covers CG-specific syllabus: tribal society, Chhattisgarh history, geography, local economy"
+        },
+        {
+          "label": "Delhi coaching (Vajiram/Vision/Drishti — UPSC base, CGPSC adaptation) — 1 year",
+          "cost": 150000,
+          "living_per_month": 13000,
+          "living_months": 12,
+          "total_coaching_cost": 306000,
+          "online_available": false,
+          "note": "Useful for General Studies foundation but expensive. Most CGPSC toppers prepare locally or online."
+        },
+        {
+          "label": "Online coaching (StudyIQ CG, Drishti CGPSC) — 2 years",
+          "cost": 20000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 20000,
+          "online_available": true,
+          "note": "₹10,000–20,000 for full course. Increasingly good CG-specific content available online."
+        }
+      ],
+      "salary": {
+        "year_1_low": 700000,
+        "year_1_mid": 900000,
+        "year_1_high": 1200000,
+        "year_3_low": 900000,
+        "year_3_mid": 1200000,
+        "year_3_high": 1500000,
+        "year_5_low": 1200000,
+        "year_5_mid": 1600000,
+        "year_5_high": 2200000,
+        "year_10_low": 1800000,
+        "year_10_mid": 2500000,
+        "year_10_high": 4000000,
+        "note": "Cash salary ₹7–10 LPA fresher. TRUE value: government housing (₹15,000–30,000/month equivalent), vehicle with driver, staff. Total compensation package ₹12–20 LPA equivalent. Source: CG Pay Commission 2026."
+      },
+      "break_even_note": "Self-study path: Total investment ₹15,000. First salary ₹58,000–75,000/month cash. Break-even in under 1 month of working — the highest ROI exam in Chhattisgarh. Even with Delhi coaching (₹3L total), break-even is under 3 months.",
+      "honest_reality": "CGPSC selects 200–400 officers annually from CG residents only. Compare this to UPSC selecting ~1,000 from all of India. Your competition is only CG students. The syllabus includes CG-specific topics (tribal society, Bastar, Chhattisgarh geography, local economy) that a student from Korba or Bilaspur understands natively. This is the most CG-advantaged exam that exists.",
+      "cg_context": "A CGPSC Deputy Collector or DSP is one of the most respected figures in any CG district. The posting is in CG — you stay in your home state permanently. SECL employee families, teachers' families, and farming families in Korba and Bilaspur have produced CGPSC officers through disciplined self-study. The syllabus rewards knowing your own state deeply.",
+      "opportunity_cost_inr": {
+        "prep_years": 3,
+        "college_years": 0,
+        "forgone_per_year_low": 150000,
+        "forgone_per_year_mid": 250000,
+        "total_low": 450000,
+        "total_mid": 750000,
+        "note": "3 years of preparation post-graduation. The real cost of CGPSC is foregone income, not fees. But the lifetime compensation package — salary + housing + perks + pension — makes this one of the highest lifetime ROI careers in CG."
+      },
+      "failure_path": {
+        "exam": "CGPSC Prelims → Mains → Interview",
+        "probability_of_not_cracking": "CGPSC has 3–5 attempts typically needed. Many serious candidates clear in 2–3 attempts. Success rate much higher than UPSC for disciplined CG students.",
+        "what_happens": "CGPSC preparation overlaps completely with UPSC, SSC CGL, and banking exams. No preparation is wasted.",
+        "financial_loss_if_abandon": "₹15,000–3L total investment. Extremely low financial risk.",
+        "pivot_options": [
+          "UPSC CSE — same General Studies preparation, attempt national exam",
+          "SSC CGL — same reasoning and GK base, central government job",
+          "CGVYAPAM — state-level subordinate posts (Patwari, Sub-Inspector, Tahsildar), same CG GK preparation",
+          "Banking exams — general awareness and reasoning skills transfer directly"
+        ],
+        "honest_note": "CGPSC is Pehchaan's most recommended career for aspirational CG students. If UPSC feels too distant and competitive, CGPSC is the right target — same respect in CG society, same preparation, fraction of the competition."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹9,00,000 / 12 = ₹75,000/month cash (plus perks)",
+        "hometown": 75000,
+        "tier3_away": 65000,
+        "tier2": 61000,
+        "metro": 47000,
+        "note": "CGPSC officers are posted in CG — 'metro' is not a relevant scenario. CG posting cash ₹75,000/month + government housing worth ₹20,000–30,000/month = total value ₹95,000–105,000/month. Pension adds further lifetime value."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Yes — permanently in CG",
+        "note": "CGPSC officers serve in Chhattisgarh for their entire career. Unlike IAS who can be posted anywhere in India, CGPSC officers work within CG. If staying in your home state matters — to you, your parents, or your family — CGPSC is the correct target, not UPSC."
+      },
+      "ai_disruption_note": "AI disruption score: 6/10. Administrative processes are being digitised but governance, public accountability, community development, and crisis response require human leadership. CGPSC careers are safe for a 30+ year horizon. The state government's own AI adoption makes tech-savvy officers more valuable, not less.",
+      "lateral_entry_paths": [
+        "Any graduation stream qualifies — BA, BCom, BSc, BTech all eligible",
+        "CGVYAPAM subordinate posts (Patwari, Sub-Inspector) → departmental promotion to gazetted officer level",
+        "SSC CGL or Banking exam first for income → continue CGPSC prep simultaneously"
+      ]
+    },
+    {
+      "id": "ayush_doctor",
+      "label": "AYUSH Doctor (BAMS / BHMS — Ayurveda / Homeopathy)",
+      "category": "Medicine & Health",
+      "stream": [
+        "science"
+      ],
+      "duration_years": 5.5,
+      "total_duration_with_prep": 7,
+      "prep_duration_years": 1.5,
+      "prep_label": "NEET coaching (same as MBBS but lower target score — rank ~40,000–80,000 acceptable for govt BAMS)",
+      "education_paths": [
+        {
+          "id": "govt_bams_cg",
+          "label": "Government BAMS College in CG (Shri Ayurved College Raipur / NIA Jaipur)",
+          "probability": "NEET rank ~40,000–80,000 for CG state quota — very achievable for sincere PCB students",
+          "tuition_total": 275000,
+          "hostel_total": 110000,
+          "other_fees_total": 60000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "education_loan_public_banks",
+            "cg_sc_st_scholarship",
+            "cg_mukhyamantri_uchch_shiksha"
+          ],
+          "note": "CG govt AYUSH college: ~₹50,000/year × 5.5 years tuition + hostel ₹20,000/year. Total ₹4.4L — fraction of private MBBS cost."
+        },
+        {
+          "id": "private_bams",
+          "label": "Private BAMS College (Mid-tier)",
+          "probability": "NEET rank up to 2,00,000 — accessible to most sincere NEET candidates",
+          "tuition_total": 900000,
+          "hostel_total": 220000,
+          "other_fees_total": 100000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "education_loan_public_banks"
+          ],
+          "note": "Private BAMS ₹1.5–2L/year × 5.5 years. Still 5–8x cheaper than private MBBS. Loan needed but manageable."
+        }
+      ],
+      "coaching_options": [
+        {
+          "label": "NEET coaching — same as MBBS prep (Kota / Raipur)",
+          "cost": 60000,
+          "living_per_month": 8000,
+          "living_months": 18,
+          "total_coaching_cost": 204000,
+          "online_available": false,
+          "note": "Target NEET score: 400–500 for govt BAMS CG quota. Much more achievable than 550+ for MBBS govt seat."
+        },
+        {
+          "label": "Online NEET coaching (Physics Wallah, Vedantu NEET) — 1.5 years",
+          "cost": 25000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 25000,
+          "online_available": true,
+          "note": "Target NEET 400+ is achievable with focused online preparation. Bio and Chemistry are the high-weightage sections."
+        }
+      ],
+      "salary": {
+        "year_1_low": 400000,
+        "year_1_mid": 600000,
+        "year_1_high": 900000,
+        "year_3_low": 600000,
+        "year_3_mid": 900000,
+        "year_3_high": 1500000,
+        "year_5_low": 900000,
+        "year_5_mid": 1400000,
+        "year_5_high": 3000000,
+        "year_10_low": 1400000,
+        "year_10_mid": 2500000,
+        "year_10_high": 6000000,
+        "note": "Govt AYUSH posting CG: ₹40,000–60,000/month with accommodation. Private clinic after 5 years: ₹80,000–2,00,000/month. Source: AYUSH Ministry 2025 + CG Health Department data."
+      },
+      "break_even_note": "Government BAMS in CG: Total investment ₹4.4L over 5.5 years. First government posting salary ₹40,000–60,000/month. Break-even in under 1 year of working. This is among the best ROI paths in healthcare — far superior to private MBBS at ₹50–100L cost.",
+      "honest_reality": "BAMS is not a consolation prize for MBBS — it is a distinct and respected medical path with its own government job pipeline. CG has documented doctor shortages in tribal areas (Bastar, Sarguja, Korba district rural areas). The state government actively recruits AYUSH doctors for primary health centres where MBBS doctors often refuse to go. This creates genuine employment security for BAMS graduates in CG.",
+      "cg_context": "CG government's AYUSH mission regularly recruits 200–500 AYUSH doctors for primary health centres across the state. Tribal districts (Korba, Kanker, Bastar) have high demand. A BAMS from a CG government college + CGPSC Medical Officer exam is one of the most secure healthcare career paths available in the state.",
+      "opportunity_cost_inr": {
+        "prep_years": 1.5,
+        "college_years": 5.5,
+        "forgone_per_year_low": 120000,
+        "forgone_per_year_mid": 180000,
+        "total_low": 840000,
+        "total_mid": 1260000,
+        "note": "7 years before first salary — same as MBBS. But government BAMS total fee is ₹4.4L vs ₹5–10L for govt MBBS, and a fraction of private MBBS cost. Net investment is significantly lower for equivalent career timeline."
+      },
+      "failure_path": {
+        "exam": "NEET",
+        "probability_of_not_cracking": "Target for govt BAMS is NEET 400+ — achievable for most serious PCB students who prepare for 12–18 months. Significantly lower bar than MBBS.",
+        "what_happens": "Students who cannot clear NEET even for BAMS have multiple allied health paths available without NEET.",
+        "financial_loss_if_abandon": "₹25,000–2L coaching cost. Same investment as MBBS prep — not additional.",
+        "pivot_options": [
+          "BSc Nursing — NEET required but even lower cutoff than BAMS",
+          "BPharm — pharmacy entrance, separate from NEET in many states",
+          "DMLT / BMLT — Medical Lab Technology, no NEET required",
+          "BNYS — Naturopathy degree, NEET required but very low cutoff"
+        ],
+        "honest_note": "If a student can score 400 in NEET, they have a clear path to a government healthcare job in CG. That target is within reach for any student who studies Biology, Chemistry and Physics seriously for 12–18 months. Do not give up on healthcare just because MBBS government seat is out of reach."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹6,00,000 / 12 = ₹50,000/month gross (many govt postings include accommodation)",
+        "hometown": 50000,
+        "tier3_away": 40000,
+        "tier2": 36000,
+        "metro": 22000,
+        "note": "Government AYUSH posting in CG districts includes accommodation — effective take-home is higher than gross salary suggests. Rural/tribal district posting often includes additional allowances."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Yes — CG is the best market for AYUSH",
+        "note": "CG has more AYUSH government vacancies than most states due to tribal district healthcare gaps. A BAMS graduate from CG who clears CGPSC Medical Officer exam works in CG permanently. Private clinic in Korba, Champa, or Raigarh is also a viable long-term path."
+      },
+      "ai_disruption_note": "AI disruption score: 3/10. Patient care, physical examination, and holistic health consultation cannot be automated. AYUSH's emphasis on lifestyle, nutrition, and preventive care aligns with global wellness trends that are growing, not shrinking. AI will support diagnosis — not replace doctors.",
+      "lateral_entry_paths": [
+        "Class 12 PCB → NEET (target 400+) → Government BAMS CG — most direct path",
+        "BAMS → MD Ayurveda (PG) → Specialist practice or research",
+        "BAMS → CGPSC Medical Officer exam → Permanent government healthcare posting in CG"
+      ]
+    },
+    {
+      "id": "civil_mechanical_engineer",
+      "label": "Civil / Mechanical Engineer",
+      "category": "Engineering & Tech",
+      "stream": [
+        "science"
+      ],
+      "duration_years": 4,
+      "total_duration_with_prep": 4,
+      "prep_duration_years": 1.5,
+      "prep_label": "JEE coaching (Class 11–12) + GATE preparation post-graduation for PSU jobs",
+      "education_paths": [
+        {
+          "id": "nit_raipur",
+          "label": "NIT Raipur (via JEE Main — CG Home State Quota)",
+          "probability": "JEE Main rank < 15,000 for CG state quota — most achievable NIT for CG students",
+          "tuition_total": 500000,
+          "hostel_total": 400000,
+          "other_fees_total": 80000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "education_loan_public_banks",
+            "pm_vidya_lakshmi"
+          ],
+          "note": "NIT Raipur home state quota — CG students get preference. ₹62,500/semester × 8 = ₹5L tuition total. Best value engineering degree in CG."
+        },
+        {
+          "id": "csvtu_good_private",
+          "label": "Good CSVTU-Affiliated Private College (Bhilai / Raipur / Durg)",
+          "probability": "State CET qualifiers — accessible to most JEE-prepared students",
+          "tuition_total": 600000,
+          "hostel_total": 280000,
+          "other_fees_total": 80000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "education_loan_public_banks",
+            "aicte_pragati_saksham"
+          ],
+          "note": "Good CSVTU-affiliated colleges place students at NTPC, SECL, BHEL. ₹70,000–1L/year for 4 years. GATE preparation after graduation opens PSU doors."
+        },
+        {
+          "id": "other_private_avg",
+          "label": "Average Private Engineering College (State CET / Direct Admission)",
+          "probability": "State CET or direct admission — widely accessible",
+          "tuition_total": 400000,
+          "hostel_total": 240000,
+          "other_fees_total": 60000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "education_loan_public_banks"
+          ],
+          "note": "₹50,000–70,000/year. Placement is weaker — GATE becomes more important for career trajectory."
+        }
+      ],
+      "coaching_options": [
+        {
+          "label": "JEE coaching local (Raipur/Bilaspur) — 2 years Class 11–12",
+          "cost": 60000,
+          "living_per_month": 8000,
+          "living_months": 24,
+          "total_coaching_cost": 252000,
+          "online_available": false,
+          "note": "For Civil/Mechanical, JEE Main rank matters more than JEE Advanced. Local coaching is sufficient for NIT Raipur target."
+        },
+        {
+          "label": "Online JEE coaching (Physics Wallah, Unacademy) — 2 years",
+          "cost": 30000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 30000,
+          "online_available": true,
+          "note": "Sufficient for JEE Main preparation. Physics Wallah specifically strong for Maths and Physics."
+        },
+        {
+          "label": "GATE coaching post-graduation — 6–12 months (for PSU jobs)",
+          "cost": 30000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 30000,
+          "online_available": true,
+          "note": "GATE is the golden ticket for Civil/Mechanical engineers in CG. NTPC, SECL, BHEL, SAIL hire through GATE score. This investment is critical."
+        }
+      ],
+      "salary": {
+        "year_1_low": 200000,
+        "year_1_mid": 450000,
+        "year_1_high": 1000000,
+        "year_3_low": 400000,
+        "year_3_mid": 800000,
+        "year_3_high": 1600000,
+        "year_5_low": 800000,
+        "year_5_mid": 1400000,
+        "year_5_high": 3000000,
+        "year_10_low": 1500000,
+        "year_10_mid": 2800000,
+        "year_10_high": 6000000,
+        "note": "Private company fresher: ₹2–4 LPA. GATE-selected PSU (NTPC/SECL/BHEL) fresher: ₹8–12 LPA with perks. The GATE path is 3–4x better starting salary in CG. Source: NTPC/SECL recruitment 2025."
+      },
+      "break_even_note": "Private college + GATE coaching: Total ₹10–12L. Private company job at ₹3 LPA: break-even ~4–5 years. GATE-selected PSU job at ₹9 LPA: break-even ~1.5 years. The single most important decision for a Civil/Mechanical engineer in CG is whether to target GATE seriously. It changes lifetime earnings by ₹2–4 crore.",
+      "honest_reality": "Civil and Mechanical engineering in CG has a two-tier market. Private construction/manufacturing jobs start at ₹2–4 LPA and grow slowly. PSU jobs (NTPC Korba, SECL, SAIL Bhilai, BHEL) start at ₹8–12 LPA with perks and grow to ₹15–25 LPA. GATE is the gate to PSU. If you are a Civil/Mechanical engineer in CG and you have not prepared for GATE, you are leaving ₹5–8 LPA on the table every year.",
+      "cg_context": "NIT Raipur Civil and Mechanical departments have dedicated placement relationships with NTPC Korba, SECL, SAIL Bhilai, and NMDC. CSVTU-affiliated colleges in Bhilai, Durg, and Raipur also place students at these companies. For a CG student, Civil/Mechanical engineering is a home-state career — the biggest employers are literally in your backyard.",
+      "opportunity_cost_inr": {
+        "prep_years": 1.5,
+        "college_years": 4,
+        "forgone_per_year_low": 120000,
+        "forgone_per_year_mid": 200000,
+        "total_low": 660000,
+        "total_mid": 1100000,
+        "note": "Same opportunity cost as Software Engineering. The GATE investment (additional 1 year after graduation) adds ₹1.5–2L more but unlocks PSU salary that recovers the entire investment in 6–12 months."
+      },
+      "failure_path": {
+        "exam": "JEE Main (admission) + GATE (PSU jobs)",
+        "probability_of_not_cracking": "JEE Main for NIT: top 2% nationally. State CET for CSVTU: achievable for most science students. GATE: 15–20% qualify; cutoff for PSU selection is top 1–2%.",
+        "what_happens": "JEE failure → state CET → CSVTU college → still a valid engineering path. GATE failure → private company job → retry GATE in next attempt (unlimited attempts).",
+        "financial_loss_if_abandon": "₹10–12L college investment. Not lost — degree is complete. Engineering degree has market value even without GATE.",
+        "pivot_options": [
+          "Private construction or infrastructure company — ₹2–4 LPA start, grows with experience",
+          "GATE retry — no attempt limit, retrying improves score significantly with one more year of prep",
+          "State PWD / CPWD recruitment — government engineering posts via state PSC",
+          "SSC JE (Junior Engineer) — government engineering posts via SSC, lower competition than GATE-PSU"
+        ],
+        "honest_note": "SSC JE is specifically for Civil and Mechanical engineers — government Junior Engineer posts via SSC. Lower competition than GATE, same government job outcome. Many engineers who miss PSU via GATE crack SSC JE in the same prep cycle."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹4,50,000 / 12 = ₹37,500/month (private) vs GATE-PSU ₹75,000/month",
+        "hometown": 37500,
+        "tier3_away": 27500,
+        "tier2": 23500,
+        "metro": 9500,
+        "note": "CRITICAL: Private engineering job in metro leaves only ₹9,500/month after costs. GATE-selected NTPC Korba posting — same state, no relocation, ₹75,000+/month with accommodation. The GATE investment is the most important financial decision in this career."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Yes — CG is one of the best markets for this career",
+        "note": "NTPC Korba, SECL, SAIL Bhilai, NMDC, CSEB, massive infrastructure projects — CG has more Civil/Mechanical engineering employment than most states of comparable size. You do not need to leave. NIT Raipur GATE-prepared students are specifically targeted by CG-based PSUs."
+      },
+      "ai_disruption_note": "AI disruption score: 6/10. Design software and structural analysis are AI-assisted. But site supervision, project execution, equipment maintenance, and safety management are deeply physical roles. Infrastructure and energy sector demand in India is projected to grow for 20+ years — Civil/Mechanical engineers in CG are well-positioned.",
+      "lateral_entry_paths": [
+        "ITI Electrician/Fitter → Polytechnic Diploma → Lateral entry BTech (3 years, 1 year saved)",
+        "Polytechnic Diploma (3 years, lower cost) → Junior Engineer role → BTech upgrade via AMIE",
+        "BTech → SSC JE — government Junior Engineer posts, lower competition than GATE-PSU path"
+      ]
+    },
+    {
+      "id": "teacher",
+      "label": "Government School Teacher (CTET / CGTET / B.Ed)",
+      "category": "Education & Social",
+      "stream": [
+        "any"
+      ],
+      "duration_years": 2,
+      "total_duration_with_prep": 3,
+      "prep_duration_years": 1,
+      "prep_label": "B.Ed (2 years) + CTET or CGTET preparation (6–8 months)",
+      "education_paths": [
+        {
+          "id": "bed_govt_college",
+          "label": "Graduation + B.Ed from Government College (CG)",
+          "probability": "Any graduation qualifies — merit-based B.Ed admission via CGVYAPAM entrance",
+          "tuition_total": 40000,
+          "hostel_total": 20000,
+          "other_fees_total": 10000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "cg_mukhyamantri_uchch_shiksha",
+            "cg_sc_st_scholarship",
+            "cg_obc_scholarship"
+          ],
+          "note": "Government B.Ed college in CG: ₹20,000/year × 2 years. Total cost including hostel under ₹70,000. Extremely affordable professional qualification."
+        },
+        {
+          "id": "bed_private_college",
+          "label": "Graduation + B.Ed from Private College (CG / nearby state)",
+          "probability": "Wide availability — most towns have private B.Ed colleges",
+          "tuition_total": 120000,
+          "hostel_total": 60000,
+          "other_fees_total": 20000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "cg_sc_st_scholarship"
+          ],
+          "note": "Private B.Ed: ₹60,000–80,000/year × 2 years. NCTE-recognised college is essential — verify before admission."
+        },
+        {
+          "id": "integrated_bed",
+          "label": "4-Year Integrated B.Ed Programme (after Class 12)",
+          "probability": "NCTE-approved institutions — applies directly after Class 12, saves 1 year",
+          "tuition_total": 200000,
+          "hostel_total": 120000,
+          "other_fees_total": 40000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "education_loan_public_banks",
+            "cg_sc_st_scholarship"
+          ],
+          "note": "4-year integrated B.Ed (BA + B.Ed or BSc + B.Ed) — directly eligible for TET after completion. Efficient path."
+        }
+      ],
+      "coaching_options": [
+        {
+          "label": "CTET / CGTET self-study — 6–8 months",
+          "cost": 5000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 5000,
+          "online_available": true,
+          "note": "CTET content is standard — books + free YouTube channels (Himanshi Singh, KVS Teaching) cover the entire syllabus. Coaching not needed."
+        },
+        {
+          "label": "CGTET local coaching (Bilaspur/Raipur) — 4 months",
+          "cost": 8000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 8000,
+          "online_available": false,
+          "note": "CG-specific content (CG GK, tribal culture, education policy) covered in local coaching. Useful supplement to self-study."
+        }
+      ],
+      "salary": {
+        "year_1_low": 250000,
+        "year_1_mid": 360000,
+        "year_1_high": 500000,
+        "year_3_low": 350000,
+        "year_3_mid": 480000,
+        "year_3_high": 650000,
+        "year_5_low": 480000,
+        "year_5_mid": 620000,
+        "year_5_high": 850000,
+        "year_10_low": 650000,
+        "year_10_mid": 900000,
+        "year_10_high": 1400000,
+        "note": "CG govt school teacher after 7th Pay Commission + DA: ₹30,000–45,000/month in-hand fresher. Reaches ₹55,000–70,000/month at 10 years. Pension value adds significantly to lifetime income. Source: CG Education Department pay slabs 2026."
+      },
+      "break_even_note": "Government B.Ed path: Total investment under ₹1L including TET prep. First government school salary ₹30,000–40,000/month. Break-even in under 3 months of working. With pension and 7th Pay Commission increments, lifetime compensation is among the best for a career requiring only 3 years of post-school investment.",
+      "honest_reality": "Government school teaching in CG is deeply underrated. The salary is lower than PSU engineering or banking at fresher level — but the job security, pension, and community respect are unmatched. A government teacher in Korba or Champa is a permanent, pensioned employee of the state. No company can fire you, no recession can touch your salary. For families who value stability, this is one of the best careers available.",
+      "cg_context": "CGVYAPAM conducts regular Teacher Recruitment drives — hundreds of vacancies every year. CG has a teacher shortage in rural and tribal areas, creating consistent demand. A B.Ed + CGTET qualified teacher from Korba can get posted near their hometown. Private school teaching in Raipur or Bilaspur starts lower but grows with experience. Coaching institutes in coal belt cities also hire qualified teachers at competitive salaries.",
+      "opportunity_cost_inr": {
+        "prep_years": 1,
+        "college_years": 2,
+        "forgone_per_year_low": 120000,
+        "forgone_per_year_mid": 180000,
+        "total_low": 360000,
+        "total_mid": 540000,
+        "note": "3 years total (B.Ed + TET prep). Lowest opportunity cost among professional education qualifications. B.Ed itself often taken alongside part-time tutoring — many students earn during the preparation phase."
+      },
+      "failure_path": {
+        "exam": "CTET / CGTET",
+        "probability_of_not_cracking": "CTET pass rate is 15–20% but most serious candidates clear in 2–3 attempts. No limit on attempts.",
+        "what_happens": "B.Ed degree holders can work at private schools (lower salary) while retrying government TET. The qualification is never wasted.",
+        "financial_loss_if_abandon": "₹70,000–2L total B.Ed investment. Private school employment is immediate with B.Ed even without TET — no investment is lost.",
+        "pivot_options": [
+          "Private school teaching (CBSE/ICSE schools in Raipur, Bilaspur) — immediate employment with B.Ed",
+          "Coaching institute faculty — strong demand in Korba, Bilaspur for subject teachers",
+          "UGC NET — college lecturer path, same subject knowledge, higher salary",
+          "CGVYAPAM other exams — lab assistant, librarian, other education department posts"
+        ],
+        "honest_note": "B.Ed is a low-risk qualification. Even without clearing TET immediately, private school and coaching institute jobs are available from day one. The government school path requires patience but the outcome — pensioned government employment for 30+ years — is worth it."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹3,60,000 / 12 = ₹30,000/month",
+        "hometown": 30000,
+        "tier3_away": 20000,
+        "tier2": 16000,
+        "metro": 2000,
+        "note": "Government school teaching in hometown: ₹30,000/month net with zero living costs = full savings. This career is specifically designed for staying in your community — metro posting makes no sense financially or professionally."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Yes — this career is designed to stay in CG",
+        "note": "CG government teachers are posted in CG. Most teachers are posted close to their home district. This is the definitive 'stay in your community and serve it' career. If staying near family in Korba, Champa, or Raigarh matters — teaching is the most practical path to achieving that."
+      },
+      "ai_disruption_note": "AI disruption score: 6/10. AI tutoring tools are changing how students learn independently. But the human teacher's role — mentorship, emotional support, classroom management, motivating struggling students — cannot be replaced. Government school teachers in CG work with students who most need human guidance. That need is growing, not shrinking.",
+      "lateral_entry_paths": [
+        "Any BA/BSc/BCom → B.Ed (2 years) → CTET/CGTET → Government school",
+        "Class 12 → 4-year integrated B.Ed → TET eligible at 21–22 years old",
+        "D.El.Ed (Diploma in Elementary Education) → Primary school teacher (Class 1–8)",
+        "Graduation + UGC NET → College lecturer (higher salary, more independence)"
+      ]
+    },
+    {
+      "id": "pharmacist",
+      "label": "Pharmacist (D.Pharm / B.Pharm)",
+      "category": "Medicine & Health",
+      "stream": [
+        "science"
+      ],
+      "duration_years": 2,
+      "total_duration_with_prep": 2,
+      "prep_duration_years": 0,
+      "prep_label": "Direct admission after Class 12 (PCB or PCM) — no competitive entrance exam pressure",
+      "education_paths": [
+        {
+          "id": "dpharm_govt",
+          "label": "D.Pharm (Diploma in Pharmacy) — Government College (2 years)",
+          "probability": "Merit-based admission after Class 12 PCB/PCM — widely accessible",
+          "tuition_total": 30000,
+          "hostel_total": 20000,
+          "other_fees_total": 10000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "cg_sc_st_scholarship",
+            "cg_mukhyamantri_uchch_shiksha"
+          ],
+          "note": "Government pharmacy college CG: ₹15,000/year × 2 years. Total under ₹60,000. Qualifies to open own medical store immediately after registration. Best short-course ROI in healthcare."
+        },
+        {
+          "id": "bpharm_govt",
+          "label": "B.Pharm (Bachelor of Pharmacy) — Government College (4 years)",
+          "probability": "State pharmacy entrance or NEET-adjacent scores — competitive but achievable",
+          "tuition_total": 120000,
+          "hostel_total": 80000,
+          "other_fees_total": 40000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "education_loan_public_banks",
+            "aicte_pragati_saksham",
+            "cg_sc_st_scholarship"
+          ],
+          "note": "Government B.Pharm: ₹30,000/year × 4 years. Opens pharma company, hospital pharmacy, and Drug Inspector career paths."
+        },
+        {
+          "id": "bpharm_private",
+          "label": "B.Pharm — Private Pharmacy College (4 years)",
+          "probability": "Wide availability — most cities have private pharmacy colleges",
+          "tuition_total": 360000,
+          "hostel_total": 160000,
+          "other_fees_total": 80000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "education_loan_public_banks",
+            "aicte_pragati_saksham"
+          ],
+          "note": "Private B.Pharm: ₹80,000–1.2L/year × 4 years. PCI-recognised college is essential — check before admission."
+        }
+      ],
+      "coaching_options": [
+        {
+          "label": "No coaching needed — direct merit-based D.Pharm admission",
+          "cost": 0,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 0,
+          "online_available": true,
+          "note": "D.Pharm admission is merit-based on Class 12 marks — no entrance exam coaching needed. This is one of the most accessible healthcare qualifications."
+        },
+        {
+          "label": "B.Pharm entrance preparation (state pharmacy entrance) — 3 months",
+          "cost": 5000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 5000,
+          "online_available": true,
+          "note": "CG B.Pharm entrance is not heavily competitive. Class 12 Chemistry and Biology revision is the main preparation. Self-study is sufficient."
+        }
+      ],
+      "salary": {
+        "year_1_low": 180000,
+        "year_1_mid": 300000,
+        "year_1_high": 500000,
+        "year_3_low": 300000,
+        "year_3_mid": 500000,
+        "year_3_high": 900000,
+        "year_5_low": 480000,
+        "year_5_mid": 800000,
+        "year_5_high": 2000000,
+        "year_10_low": 700000,
+        "year_10_mid": 1500000,
+        "year_10_high": 5000000,
+        "note": "Retail pharmacist/medical store employee: ₹15,000–25,000/month. Hospital pharmacy: ₹20,000–35,000/month. Own medical store after D.Pharm: ₹35,000–80,000/month profit (owner income). Pharma sales rep: ₹25,000–50,000/month + incentives. Source: PCI data + CG market 2026."
+      },
+      "break_even_note": "D.Pharm from government college: Total investment ₹60,000. First job salary ₹15,000–25,000/month. Break-even in 3–4 months. Own medical store path: initial inventory investment ₹2–5L, monthly profit ₹35,000–80,000 — break-even in under 1 year. Among the fastest ROI paths in the database.",
+      "honest_reality": "D.Pharm is one of the most underrated qualifications in India. Every medical store needs a registered pharmacist by law — demand is structural and permanent. In smaller cities like Korba, Champa, Raigarh, there is a genuine shortage of licensed pharmacists. Opening a medical store in these cities after D.Pharm registration is a realistic ₹40,000–80,000/month income path within 2–3 years. B.Pharm opens additional doors: hospital pharmacy, pharma sales, Drug Inspector exam, M.Pharm research.",
+      "cg_context": "Korba, Champa, Raigarh, and Janjgir-Champa district all have medical store shortages relative to population. A D.Pharm graduate who opens a medical store near NTPC Korba, SECL colonies, or industrial areas can build a stable ₹50,000–1,00,000/month business within 3–5 years. The investment is minimal. Government Drug Inspector posts (via state exam) are another strong CG-specific path for B.Pharm graduates.",
+      "opportunity_cost_inr": {
+        "prep_years": 0,
+        "college_years": 2,
+        "forgone_per_year_low": 80000,
+        "forgone_per_year_mid": 120000,
+        "total_low": 160000,
+        "total_mid": 240000,
+        "note": "Only 2 years for D.Pharm. Lowest opportunity cost in healthcare by far. Many D.Pharm students work part-time at medical stores during their course — reducing opportunity cost further."
+      },
+      "failure_path": {
+        "exam": "State Pharmacy Council Registration (after D.Pharm/B.Pharm)",
+        "probability_of_not_cracking": "Pharmacy council registration exam pass rate is high for students who complete the degree. Very low failure risk.",
+        "what_happens": "D.Pharm degree with registration allows immediate medical store employment or own store setup. Risk is extremely low.",
+        "financial_loss_if_abandon": "₹60,000–6L depending on govt/private D.Pharm or B.Pharm. All investment results in a recognised healthcare qualification.",
+        "pivot_options": [
+          "D.Pharm → work at medical store → save and open own store in 2–3 years",
+          "B.Pharm → GPAT entrance → M.Pharm research or teaching career",
+          "B.Pharm → Pharma Sales Representative (Sun Pharma, Cipla, Dr Reddy's)",
+          "D.Pharm/B.Pharm → Drug Inspector exam (state government regulatory post)"
+        ],
+        "honest_note": "Pharmacy is the only healthcare qualification where you can be self-employed from Day 1 after qualification. Own medical store = own business = no boss, no job insecurity. In CG's smaller cities, this is a highly underutilised path to stable, respected self-employment."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹3,00,000 / 12 = ₹25,000/month (salaried) — own store income ₹35,000–80,000/month",
+        "hometown": 25000,
+        "tier3_away": 15000,
+        "tier2": 11000,
+        "metro": -3000,
+        "note": "CRITICAL: A salaried pharmacist in a metro earns ₹25,000/month but pays ₹28,000 in living costs — net negative. This career is best in hometown or Tier 3 cities. Own medical store in Korba or Champa earns ₹35,000–80,000/month with zero city costs. The pharmacy path is a hometown wealth-building career, not a metro career."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Yes — hometown is the best location for this career",
+        "note": "Every town and city in CG needs pharmacists. Medical store licensing requires a registered pharmacist on premises by law. Korba, Champa, Raigarh, Janjgir — all have room for more medical stores. This is explicitly a 'stay in your town and build wealth there' career path."
+      },
+      "ai_disruption_note": "AI disruption score: 6/10 for the index — but physical dispensing, patient counselling, and drug interaction checking require human judgment. Automated dispensing exists in hospitals but not in retail pharmacy. Community pharmacist role in smaller cities like CG's Tier 3 towns has zero automation threat for 15+ years.",
+      "lateral_entry_paths": [
+        "Class 12 PCB or PCM → D.Pharm (2 years, no NEET) → Registration → Medical store",
+        "Class 12 → B.Pharm (4 years) → Pharma industry / hospital / Drug Inspector",
+        "D.Pharm → B.Pharm via lateral entry (2 years upgrade) → Wider career options",
+        "B.Pharm → GPAT → M.Pharm → Research or college teaching"
+      ]
     }
   ]
 }

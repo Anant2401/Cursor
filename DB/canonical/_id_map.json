@@ -12,6 +12,12 @@
       "skill_gap_job_id": "software_developer",
       "private_role_ids": [
         "qa_test_associate"
+      ],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_vidya_lakshmi",
+        "pm_yasasvi"
       ]
     },
     {
@@ -21,7 +27,12 @@
       "exam_roadmap_career_id": "ca",
       "plan_b_exam_id": "ca_foundation",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_yasasvi"
+      ]
     },
     {
       "career_id": "doctor_mbbs",
@@ -30,7 +41,16 @@
       "exam_roadmap_career_id": "neet",
       "plan_b_exam_id": "neet_medical",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_vidya_lakshmi",
+        "kvpy_inspire_dst",
+        "aicte_pragati_saksham",
+        "cg_sc_st_scholarship",
+        "pm_yasasvi"
+      ]
     },
     {
       "career_id": "ias_upsc",
@@ -39,7 +59,12 @@
       "exam_roadmap_career_id": "upsc",
       "plan_b_exam_id": "upsc_csds",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_yasasvi"
+      ]
     },
     {
       "career_id": "data_scientist",
@@ -51,6 +76,13 @@
       "private_role_ids": [
         "junior_data_analyst",
         "mis_executive"
+      ],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_vidya_lakshmi",
+        "kvpy_inspire_dst",
+        "pm_yasasvi"
       ]
     },
     {
@@ -60,16 +92,29 @@
       "exam_roadmap_career_id": "clat",
       "plan_b_exam_id": "clat_law",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_yasasvi"
+      ]
     },
     {
       "career_id": "teacher",
       "salary_explorer_id": 7,
-      "roi_career_id": null,
+      "roi_career_id": "teacher",
       "exam_roadmap_career_id": "teaching",
       "plan_b_exam_id": "cuet_ug",
       "skill_gap_job_id": "teacher_educator",
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "cg_mukhyamantri_uchch_shiksha",
+        "cg_sc_st_scholarship",
+        "cg_obc_scholarship",
+        "pm_yasasvi"
+      ]
     },
     {
       "career_id": "bank_po",
@@ -80,6 +125,12 @@
       "skill_gap_job_id": "bank_finance",
       "private_role_ids": [
         "finance_operations_associate"
+      ],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "cg_obc_scholarship",
+        "pm_yasasvi"
       ]
     },
     {
@@ -89,7 +140,12 @@
       "exam_roadmap_career_id": "ssc",
       "plan_b_exam_id": "ssc_banking",
       "skill_gap_job_id": "govt_jobs_admin",
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "cg_obc_scholarship",
+        "pm_yasasvi"
+      ]
     },
     {
       "career_id": "nursing",
@@ -98,7 +154,14 @@
       "exam_roadmap_career_id": "nursing",
       "plan_b_exam_id": "neet_medical",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "aicte_pragati_saksham",
+        "cg_sc_st_scholarship",
+        "cg_mukhyamantri_uchch_shiksha"
+      ]
     },
     {
       "career_id": "digital_marketing",
@@ -109,6 +172,10 @@
       "skill_gap_job_id": "digital_marketer",
       "private_role_ids": [
         "digital_marketing_executive"
+      ],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks"
       ]
     },
     {
@@ -118,16 +185,32 @@
       "exam_roadmap_career_id": "iti",
       "plan_b_exam_id": null,
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "cg_sc_st_scholarship",
+        "cg_obc_scholarship",
+        "cg_mukhyamantri_uchch_shiksha",
+        "niti_aayog_swanath_scholarship"
+      ]
     },
     {
       "career_id": "civil_mechanical_engineer",
       "salary_explorer_id": 11,
-      "roi_career_id": null,
+      "roi_career_id": "civil_mechanical_engineer",
       "exam_roadmap_career_id": "jee",
       "plan_b_exam_id": "jee_engineering",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_vidya_lakshmi",
+        "aicte_pragati_saksham",
+        "coal_india_secl_employee_scholarship",
+        "cg_sc_st_scholarship",
+        "pm_yasasvi"
+      ]
     },
     {
       "career_id": "journalist_content_writer",
@@ -138,6 +221,12 @@
       "skill_gap_job_id": "content_writer",
       "private_role_ids": [
         "content_associate"
+      ],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "cg_mukhyamantri_uchch_shiksha",
+        "hdfc_credila_education_loan"
       ]
     },
     {
@@ -147,16 +236,30 @@
       "exam_roadmap_career_id": "design",
       "plan_b_exam_id": "nid_nift_design",
       "skill_gap_job_id": "graphic_designer",
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "aicte_pragati_saksham",
+        "hdfc_credila_education_loan"
+      ]
     },
     {
       "career_id": "pharmacist",
       "salary_explorer_id": 15,
-      "roi_career_id": null,
+      "roi_career_id": "pharmacist",
       "exam_roadmap_career_id": "pharma",
       "plan_b_exam_id": "neet_medical",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_vidya_lakshmi",
+        "aicte_pragati_saksham",
+        "cg_sc_st_scholarship",
+        "coal_india_secl_employee_scholarship"
+      ]
     },
     {
       "career_id": "architect",
@@ -165,7 +268,13 @@
       "exam_roadmap_career_id": "arch",
       "plan_b_exam_id": "nid_nift_design",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_vidya_lakshmi",
+        "aicte_pragati_saksham"
+      ]
     },
     {
       "career_id": "psychologist_counsellor",
@@ -174,7 +283,12 @@
       "exam_roadmap_career_id": "psych",
       "plan_b_exam_id": "cuet_ug",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "cg_mukhyamantri_uchch_shiksha"
+      ]
     },
     {
       "career_id": "bba_mba_management",
@@ -185,6 +299,12 @@
       "skill_gap_job_id": null,
       "private_role_ids": [
         "operations_associate"
+      ],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_yasasvi",
+        "coal_india_secl_employee_scholarship"
       ]
     },
     {
@@ -194,7 +314,11 @@
       "exam_roadmap_career_id": "nda",
       "plan_b_exam_id": "nda_defence",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks"
+      ]
     },
     {
       "career_id": "social_worker_ngo",
@@ -203,7 +327,12 @@
       "exam_roadmap_career_id": "social",
       "plan_b_exam_id": "cuet_ug",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "cg_mukhyamantri_uchch_shiksha",
+        "cg_sc_st_scholarship"
+      ]
     },
     {
       "career_id": "commercial_pilot",
@@ -212,7 +341,11 @@
       "exam_roadmap_career_id": "pilot",
       "plan_b_exam_id": "nda_defence",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "education_loan_public_banks",
+        "hdfc_credila_education_loan"
+      ]
     },
     {
       "career_id": "fashion_designer",
@@ -221,7 +354,12 @@
       "exam_roadmap_career_id": "nift",
       "plan_b_exam_id": "nid_nift_design",
       "skill_gap_job_id": "graphic_designer",
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "hdfc_credila_education_loan",
+        "aicte_pragati_saksham"
+      ]
     },
     {
       "career_id": "event_manager",
@@ -230,7 +368,12 @@
       "exam_roadmap_career_id": "event",
       "plan_b_exam_id": "cat_mba",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "hdfc_credila_education_loan"
+      ]
     },
     {
       "career_id": "biotechnology_life_sciences",
@@ -239,7 +382,14 @@
       "exam_roadmap_career_id": "biotech",
       "plan_b_exam_id": "gate_pg",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_vidya_lakshmi",
+        "kvpy_inspire_dst",
+        "aicte_pragati_saksham"
+      ]
     },
     {
       "career_id": "hr_manager",
@@ -250,6 +400,11 @@
       "skill_gap_job_id": null,
       "private_role_ids": [
         "hr_recruiter_entry"
+      ],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_yasasvi"
       ]
     },
     {
@@ -259,7 +414,13 @@
       "exam_roadmap_career_id": "design",
       "plan_b_exam_id": "nid_nift_design",
       "skill_gap_job_id": "graphic_designer",
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "aicte_pragati_saksham",
+        "hdfc_credila_education_loan"
+      ]
     },
     {
       "career_id": "actuarial_scientist",
@@ -268,7 +429,12 @@
       "exam_roadmap_career_id": "cat",
       "plan_b_exam_id": "cat_mba",
       "skill_gap_job_id": "data_analyst",
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_yasasvi"
+      ]
     },
     {
       "career_id": "supply_chain_logistics",
@@ -279,16 +445,28 @@
       "skill_gap_job_id": null,
       "private_role_ids": [
         "logistics_coordinator"
+      ],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_yasasvi"
       ]
     },
     {
       "career_id": "ayush_doctor",
       "salary_explorer_id": 30,
-      "roi_career_id": null,
+      "roi_career_id": "ayush_doctor",
       "exam_roadmap_career_id": "ayush",
       "plan_b_exam_id": "neet_medical",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_vidya_lakshmi",
+        "cg_sc_st_scholarship",
+        "cg_mukhyamantri_uchch_shiksha"
+      ]
     },
     {
       "career_id": "content_creator_youtuber",
@@ -297,7 +475,10 @@
       "exam_roadmap_career_id": "content",
       "plan_b_exam_id": null,
       "skill_gap_job_id": "content_writer",
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state"
+      ]
     },
     {
       "career_id": "electrician_electrical_tech",
@@ -306,7 +487,13 @@
       "exam_roadmap_career_id": "iti",
       "plan_b_exam_id": null,
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "cg_sc_st_scholarship",
+        "cg_obc_scholarship",
+        "niti_aayog_swanath_scholarship"
+      ]
     },
     {
       "career_id": "dietitian_nutritionist",
@@ -315,7 +502,13 @@
       "exam_roadmap_career_id": "mph",
       "plan_b_exam_id": "neet_medical",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "kvpy_inspire_dst",
+        "aicte_pragati_saksham"
+      ]
     },
     {
       "career_id": "environmental_green_energy",
@@ -324,25 +517,43 @@
       "exam_roadmap_career_id": "enviro",
       "plan_b_exam_id": "gate_pg",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_vidya_lakshmi",
+        "kvpy_inspire_dst"
+      ]
     },
     {
       "career_id": "statistician_data_analyst_bsc",
       "salary_explorer_id": 35,
-      "roi_career_id": "data_analyst",
+      "roi_career_id": null,
       "exam_roadmap_career_id": "gate",
       "plan_b_exam_id": "gate_pg",
       "skill_gap_job_id": "data_analyst",
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "kvpy_inspire_dst",
+        "pm_yasasvi"
+      ]
     },
     {
       "career_id": "cgpsc_state_services",
       "salary_explorer_id": 36,
-      "roi_career_id": null,
+      "roi_career_id": "cgpsc_state_services",
       "exam_roadmap_career_id": "cgpsc",
       "plan_b_exam_id": "upsc_csds",
       "skill_gap_job_id": "govt_jobs_admin",
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "cg_sc_st_scholarship",
+        "cg_obc_scholarship",
+        "pm_yasasvi"
+      ]
     },
     {
       "career_id": "hotel_hospitality",
@@ -351,7 +562,13 @@
       "exam_roadmap_career_id": "hotel",
       "plan_b_exam_id": "cat_mba",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "hdfc_credila_education_loan",
+        "niti_aayog_swanath_scholarship"
+      ]
     },
     {
       "career_id": "fitness_trainer_sports",
@@ -360,7 +577,11 @@
       "exam_roadmap_career_id": "fitness",
       "plan_b_exam_id": "cuet_ug",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks"
+      ]
     },
     {
       "career_id": "public_health_professional",
@@ -369,7 +590,14 @@
       "exam_roadmap_career_id": "mph",
       "plan_b_exam_id": "neet_medical",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "kvpy_inspire_dst",
+        "cg_mukhyamantri_uchch_shiksha",
+        "cg_sc_st_scholarship"
+      ]
     },
     {
       "career_id": "occupational_therapist",
@@ -378,7 +606,12 @@
       "exam_roadmap_career_id": "neet",
       "plan_b_exam_id": "neet_medical",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "cg_mukhyamantri_uchch_shiksha"
+      ]
     },
     {
       "career_id": "dentist_bds",
@@ -387,7 +620,13 @@
       "exam_roadmap_career_id": "neetbds",
       "plan_b_exam_id": "neet_medical",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_vidya_lakshmi",
+        "cg_sc_st_scholarship"
+      ]
     },
     {
       "career_id": "physiotherapist_bpt",
@@ -396,7 +635,13 @@
       "exam_roadmap_career_id": "neet",
       "plan_b_exam_id": "neet_medical",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "aicte_pragati_saksham",
+        "cg_sc_st_scholarship"
+      ]
     },
     {
       "career_id": "company_secretary",
@@ -405,7 +650,12 @@
       "exam_roadmap_career_id": "cs",
       "plan_b_exam_id": "ca_foundation",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_yasasvi"
+      ]
     },
     {
       "career_id": "cost_accountant_cma",
@@ -414,25 +664,43 @@
       "exam_roadmap_career_id": "ca",
       "plan_b_exam_id": "ca_foundation",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_yasasvi"
+      ]
     },
     {
       "career_id": "ai_ml_engineer",
       "salary_explorer_id": 45,
-      "roi_career_id": "software_engineer",
+      "roi_career_id": null,
       "exam_roadmap_career_id": "jee",
       "plan_b_exam_id": "jee_engineering",
       "skill_gap_job_id": "software_developer",
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_vidya_lakshmi",
+        "aicte_pragati_saksham",
+        "pm_yasasvi"
+      ]
     },
     {
       "career_id": "cybersecurity_analyst",
       "salary_explorer_id": 46,
-      "roi_career_id": "software_engineer",
+      "roi_career_id": null,
       "exam_roadmap_career_id": "gate",
       "plan_b_exam_id": "gate_pg",
       "skill_gap_job_id": "software_developer",
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_vidya_lakshmi",
+        "aicte_pragati_saksham"
+      ]
     },
     {
       "career_id": "civil_judge_judicial",
@@ -441,7 +709,12 @@
       "exam_roadmap_career_id": "law",
       "plan_b_exam_id": "clat_law",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_yasasvi"
+      ]
     },
     {
       "career_id": "scientist_csir",
@@ -450,7 +723,13 @@
       "exam_roadmap_career_id": "gate",
       "plan_b_exam_id": "csir_net_sciences",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "kvpy_inspire_dst",
+        "pm_yasasvi"
+      ]
     },
     {
       "career_id": "agricultural_officer",
@@ -459,7 +738,14 @@
       "exam_roadmap_career_id": "agritech",
       "plan_b_exam_id": "upsc_csds",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "cg_sc_st_scholarship",
+        "cg_obc_scholarship",
+        "cg_mukhyamantri_uchch_shiksha"
+      ]
     },
     {
       "career_id": "medical_lab_technologist",
@@ -468,7 +754,14 @@
       "exam_roadmap_career_id": "neet",
       "plan_b_exam_id": "neet_medical",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "aicte_pragati_saksham",
+        "cg_sc_st_scholarship",
+        "kvpy_inspire_dst"
+      ]
     },
     {
       "career_id": "radiographer_imaging",
@@ -477,7 +770,13 @@
       "exam_roadmap_career_id": "neet",
       "plan_b_exam_id": "neet_medical",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "kvpy_inspire_dst",
+        "cg_sc_st_scholarship"
+      ]
     },
     {
       "career_id": "veterinarian_bvsc",
@@ -486,7 +785,13 @@
       "exam_roadmap_career_id": "neet",
       "plan_b_exam_id": "neet_medical",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "kvpy_inspire_dst",
+        "cg_sc_st_scholarship"
+      ]
     },
     {
       "career_id": "interior_designer",
@@ -495,7 +800,13 @@
       "exam_roadmap_career_id": "design",
       "plan_b_exam_id": "nid_nift_design",
       "skill_gap_job_id": "graphic_designer",
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "aicte_pragati_saksham",
+        "hdfc_credila_education_loan"
+      ]
     },
     {
       "career_id": "sales_business_development",
@@ -507,6 +818,10 @@
       "private_role_ids": [
         "sales_executive_b2b",
         "business_development_associate"
+      ],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks"
       ]
     },
     {
@@ -516,7 +831,14 @@
       "exam_roadmap_career_id": "iti",
       "plan_b_exam_id": null,
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "cg_sc_st_scholarship",
+        "cg_obc_scholarship",
+        "niti_aayog_swanath_scholarship",
+        "coal_india_secl_employee_scholarship"
+      ]
     },
     {
       "career_id": "chef_culinary",
@@ -525,7 +847,13 @@
       "exam_roadmap_career_id": "hotel",
       "plan_b_exam_id": "cat_mba",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "hdfc_credila_education_loan",
+        "niti_aayog_swanath_scholarship"
+      ]
     },
     {
       "career_id": "electrical_engineer_power",
@@ -534,7 +862,15 @@
       "exam_roadmap_career_id": "gate",
       "plan_b_exam_id": "gate_pg",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_vidya_lakshmi",
+        "aicte_pragati_saksham",
+        "coal_india_secl_employee_scholarship",
+        "cg_sc_st_scholarship"
+      ]
     },
     {
       "career_id": "clinical_research_associate",
@@ -543,7 +879,14 @@
       "exam_roadmap_career_id": "pharma",
       "plan_b_exam_id": "neet_medical",
       "skill_gap_job_id": null,
-      "private_role_ids": []
+      "private_role_ids": [],
+      "financial_aid_ids": [
+        "nsp_central_state",
+        "education_loan_public_banks",
+        "pm_vidya_lakshmi",
+        "kvpy_inspire_dst",
+        "aicte_pragati_saksham"
+      ]
     }
   ]
 }

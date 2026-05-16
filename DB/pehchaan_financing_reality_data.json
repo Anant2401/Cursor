@@ -5,6 +5,16 @@
     "title": "Financing & EMI reality",
     "disclaimer": "Illustrative numbers only. Actual loan rates, tenure, and eligibility depend on the bank, co-applicant, collateral, and RBI policy. Verify with your bank and a qualified financial advisor before signing."
   },
+  "canonical_aid_file": "DB/canonical/financial_aid.json",
+  "cg_priority_aids": [
+    "cg_mukhyamantri_uchch_shiksha",
+    "cg_sc_st_scholarship",
+    "cg_obc_scholarship",
+    "coal_india_secl_employee_scholarship",
+    "nsp_central_state",
+    "pm_vidya_lakshmi"
+  ],
+  "aid_type_order": ["scholarship", "loan_subsidy", "loan"],
   "intro": "Education loans and EMIs are where many families feel stuck. This page gives simple ballpark EMI math and honest pointers — then sends you to ROI and Salary Explorer for the full career picture.",
   "scholarship_pointers": [
     "National Scholarship Portal (NSP) — central and state schemes in one place; check income and category criteria every year.",

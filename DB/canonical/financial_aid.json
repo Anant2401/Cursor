@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema_version": "3.0.0",
-    "generated_on": "2026-05-07",
+    "generated_on": "2026-05-16",
     "source_files": [
       "DB/pehchaan_financing_reality_data.json"
     ],
@@ -38,13 +38,30 @@
       "aid_id": "nsp_central_state",
       "name": "National Scholarship Portal (Central and State Schemes)",
       "provider": "Government of India and State Governments",
+      "aid_type": "scholarship",
+      "scope": "national",
+      "max_amount_inr": 75000,
       "disbursement_reliability": "Often Delayed",
       "hidden_eligibility": [
-        "Income ceiling strict checks",
-        "Category and domicile verification",
-        "Attendance and progression conditions"
+        "Income ceiling of ₹2.5L–₹8L per annum depending on scheme — verify each year as limits change",
+        "Category and domicile certificate must match — OBC/SC/ST certificates must be from current state of residence",
+        "Attendance below 75% in previous semester can disqualify renewal even if you qualified initially",
+        "Some schemes require first-year marksheet before release — gap between admission and disbursement can be 6–12 months",
+        "Bank account must be in student's name linked to Aadhaar — joint accounts with parents are rejected"
       ],
       "application_complexity": 3,
+      "language_tags": [
+        "English",
+        "Hindi"
+      ],
+      "funding_friction": {
+        "document_burden": 4,
+        "timeline_uncertainty": 4,
+        "disbursement_risk": 3,
+        "hidden_eligibility_risk": 3
+      },
+      "honest_note": "NSP is real money but notoriously delayed. Apply in August when portal opens — do not wait for college to remind you. Keep all original documents ready before clicking Submit.",
+      "apply_url": "https://scholarships.gov.in",
       "linked_career_ids": [
         "software_engineer",
         "chartered_accountant",
@@ -67,23 +84,16 @@
         "bba_mba_management",
         "defence_officer",
         "social_worker_ngo",
-        "commercial_pilot",
         "fashion_designer",
-        "event_manager",
         "biotechnology_life_sciences",
         "hr_manager",
-        "animator_game_designer",
-        "actuarial_scientist",
         "supply_chain_logistics",
         "ayush_doctor",
-        "content_creator_youtuber",
-        "electrician_electrical_tech",
         "dietitian_nutritionist",
         "environmental_green_energy",
         "statistician_data_analyst_bsc",
         "cgpsc_state_services",
         "hotel_hospitality",
-        "fitness_trainer_sports",
         "public_health_professional",
         "occupational_therapist",
         "dentist_bds",
@@ -99,11 +109,11 @@
         "radiographer_imaging",
         "veterinarian_bvsc",
         "interior_designer",
-        "sales_business_development",
-        "welder_fabricator",
-        "chef_culinary",
         "electrical_engineer_power",
-        "clinical_research_associate"
+        "clinical_research_associate",
+        "electrician_electrical_tech",
+        "welder_fabricator",
+        "animator_game_designer"
       ],
       "linked_exam_ids": [
         "jee",
@@ -120,41 +130,59 @@
         "nift"
       ],
       "notes": [
-        "National Scholarship Portal (NSP) — central and state schemes in one place; check income and category criteria every year.",
-        "College-specific merit / sports scholarships — read the institute's official admission brochure PDF, not WhatsApp forwards.",
-        "If you are preparing for competitive exams, some coaching institutes publish fee waivers for top diagnostic scores — verify on their official site only.",
-        "National Scholarship Portal (Central and State Schemes)",
-        "Education Loan Programs (Public Sector Banks)"
+        "Portal opens every August — set a reminder; late applications are rejected, not deferred.",
+        "Check both central schemes (PM Scholarship, Begum Hazrat Mahal, etc.) AND your state's own schemes — they are separate applications.",
+        "College Freshers: apply within 30 days of admission with bonafide certificate from your college.",
+        "Renewal is not automatic — you must reapply every year and upload fresh documents.",
+        "If disbursement is delayed beyond 6 months, raise a grievance on the NSP portal itself under the 'Student Grievance' section."
       ],
       "provenance": {
         "sources": [
-          "DB/pehchaan_financing_reality_data.json"
+          "DB/pehchaan_financing_reality_data.json",
+          "https://scholarships.gov.in"
         ],
-        "confidence": 0.73
+        "confidence": 0.82
       },
       "freshness": {
-        "last_verified_on": "2026-05-07",
-        "review_cycle_days": 120
+        "last_verified_on": "2026-05-16",
+        "review_cycle_days": 90
       },
       "contradiction_handling": {
         "status": "none",
         "resolution_policy": "higher_confidence_wins",
         "conflicting_source_count": 0,
         "resolution_notes": "",
-        "last_reviewed_on": "2026-05-07"
+        "last_reviewed_on": "2026-05-16"
       }
     },
     {
       "aid_id": "education_loan_public_banks",
-      "name": "Education Loan Programs (Public Sector Banks)",
-      "provider": "Public and private banks in India",
+      "name": "Education Loan — Public Sector Banks (SBI, Bank of Baroda, PNB, Union Bank)",
+      "provider": "Public sector banks under IBA Model Education Loan Scheme",
+      "aid_type": "loan",
+      "scope": "national",
+      "max_amount_inr": 1500000,
       "disbursement_reliability": "Consistent",
       "hidden_eligibility": [
-        "Co-applicant CIBIL dependency",
-        "Course and institution eligibility",
-        "Collateral for higher loan slabs"
+        "Co-applicant (parent/guardian) CIBIL score below 650 leads to rejection — check this before applying",
+        "Loans above ₹7.5L require collateral — for most Tier 3 families this means property documents",
+        "Only courses at government-recognised institutions qualify — private colleges without AICTE/MCI approval are excluded",
+        "Moratorium period ends 12 months after course completion or 6 months after getting a job — whichever is earlier",
+        "Simple interest during study period — but it accumulates; a ₹5L loan at 10.5% adds ₹52,500/year in interest before EMIs begin"
       ],
       "application_complexity": 4,
+      "language_tags": [
+        "English",
+        "Hindi"
+      ],
+      "funding_friction": {
+        "document_burden": 4,
+        "timeline_uncertainty": 2,
+        "disbursement_risk": 2,
+        "hidden_eligibility_risk": 4
+      },
+      "honest_note": "Public bank loans are the safest option — lower rates, government-backed, and moratorium during study. The paperwork feels heavy but it protects your family. Avoid private NBFCs for education unless no other option exists.",
+      "apply_url": "https://vidyalakshmi.co.in",
       "linked_career_ids": [
         "software_engineer",
         "chartered_accountant",
@@ -164,36 +192,20 @@
         "lawyer",
         "teacher",
         "bank_po",
-        "ssc_government",
         "nursing",
-        "digital_marketing",
-        "iti_electrician",
         "civil_mechanical_engineer",
-        "journalist_content_writer",
-        "graphic_ui_designer",
         "pharmacist",
         "architect",
         "psychologist_counsellor",
         "bba_mba_management",
         "defence_officer",
-        "social_worker_ngo",
-        "commercial_pilot",
-        "fashion_designer",
-        "event_manager",
         "biotechnology_life_sciences",
-        "hr_manager",
-        "animator_game_designer",
-        "actuarial_scientist",
         "supply_chain_logistics",
         "ayush_doctor",
-        "content_creator_youtuber",
-        "electrician_electrical_tech",
         "dietitian_nutritionist",
         "environmental_green_energy",
         "statistician_data_analyst_bsc",
-        "cgpsc_state_services",
         "hotel_hospitality",
-        "fitness_trainer_sports",
         "public_health_professional",
         "occupational_therapist",
         "dentist_bds",
@@ -208,29 +220,438 @@
         "medical_lab_technologist",
         "radiographer_imaging",
         "veterinarian_bvsc",
-        "interior_designer",
-        "sales_business_development",
-        "welder_fabricator",
-        "chef_culinary",
         "electrical_engineer_power",
-        "clinical_research_associate"
+        "clinical_research_associate",
+        "animator_game_designer"
       ],
-      "linked_exam_ids": [],
+      "linked_exam_ids": [
+        "jee",
+        "neet",
+        "neetbds",
+        "gate",
+        "clat"
+      ],
       "notes": [
-        "Prefer education loans marketed for students (moratorium during study) over personal loans unless a CA has compared total cost.",
-        "A longer tenure lowers EMI but increases total interest — use the slider below to see the trade-off.",
-        "Co-applicant (parent) income and CIBIL score heavily affect approval in India — discuss early with your family.",
-        "Aid profile: National Scholarship Portal (Central and State Schemes) (Often Delayed)",
-        "Aid profile: Education Loan Programs (Public Sector Banks) (Consistent)"
+        "Apply through Vidya Lakshmi Portal (vidyalakshmi.co.in) — single window for all bank education loans; no need to visit each bank separately.",
+        "Prefer education loans with moratorium over personal loans — the EMI break during study is critical for families with no second income.",
+        "Co-applicant parent income and CIBIL score heavily affect approval — check CIBIL at least 3 months before applying so you have time to fix errors.",
+        "Longer tenure lowers EMI but increases total interest significantly — use an EMI calculator before signing.",
+        "Interest paid on education loans is fully deductible under Section 80E of Income Tax for 8 years — a real saving once you start working."
       ],
       "provenance": {
         "sources": [
-          "DB/pehchaan_financing_reality_data.json"
+          "DB/pehchaan_financing_reality_data.json",
+          "https://vidyalakshmi.co.in"
         ],
-        "confidence": 0.78
+        "confidence": 0.85
       },
       "freshness": {
-        "last_verified_on": "2026-05-07",
+        "last_verified_on": "2026-05-16",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-16"
+      }
+    },
+    {
+      "aid_id": "cg_mukhyamantri_uchch_shiksha",
+      "name": "Mukhyamantri Uchch Shiksha Protsahan Yojana (Chhattisgarh)",
+      "provider": "Government of Chhattisgarh, Higher Education Department",
+      "aid_type": "scholarship",
+      "scope": "state",
+      "state_id": "CG",
+      "max_amount_inr": 15000,
+      "disbursement_reliability": "Moderate",
+      "hidden_eligibility": [
+        "Domicile of Chhattisgarh is mandatory — students who moved out for 12th board exams may not qualify",
+        "Family income must be below ₹2.5L per annum — strictly verified with income certificate from tehsildar",
+        "Applies only to government and government-aided colleges — private college students often miss this",
+        "Must have passed 12th from a CG board school — CBSE students from CG schools need to verify eligibility separately",
+        "Only available for first degree programmes — polytechnic and ITI students need to check separate vocational schemes"
+      ],
+      "application_complexity": 2,
+      "language_tags": [
+        "Hindi",
+        "English"
+      ],
+      "funding_friction": {
+        "document_burden": 3,
+        "timeline_uncertainty": 3,
+        "disbursement_risk": 3,
+        "hidden_eligibility_risk": 3
+      },
+      "honest_note": "This is specifically for CG students studying in CG colleges — many eligible students miss it simply because nobody tells them. Check with your college's scholarship coordinator in July before the portal closes.",
+      "apply_url": "https://hte.cg.gov.in",
+      "cg_context": "Students in Korba, Bilaspur, Raigarh, and Champa studying at govt colleges like Govt Engineering College Bilaspur, MATS University, or Pt. Ravishankar Shukla University should check eligibility first.",
+      "linked_career_ids": [
+        "teacher",
+        "nursing",
+        "civil_mechanical_engineer",
+        "pharmacist",
+        "ayush_doctor",
+        "social_worker_ngo",
+        "journalist_content_writer",
+        "cgpsc_state_services",
+        "public_health_professional",
+        "agricultural_officer",
+        "medical_lab_technologist",
+        "physiotherapist_bpt",
+        "bank_po",
+        "ssc_government",
+        "company_secretary",
+        "statistician_data_analyst_bsc",
+        "electrician_electrical_tech",
+        "welder_fabricator"
+      ],
+      "linked_exam_ids": [
+        "cgpsc",
+        "cgvyapam"
+      ],
+      "notes": [
+        "Apply through the CG Higher Education Department portal (hte.cg.gov.in) or visit your college's scholarship cell directly.",
+        "Income certificate must be issued in the current financial year — last year's certificate is rejected.",
+        "Students from SC/ST categories get priority processing — keep caste certificate issued by CG government ready.",
+        "This scholarship can be stacked with NSP central schemes — apply for both; they are not mutually exclusive.",
+        "If your college has a dedicated scholarship coordinator, meet them in the first week of July — deadlines are often earlier than the portal suggests."
+      ],
+      "provenance": {
+        "sources": [
+          "https://hte.cg.gov.in",
+          "CG Higher Education Department notifications 2025"
+        ],
+        "confidence": 0.72
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-16",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-16"
+      }
+    },
+    {
+      "aid_id": "cg_sc_st_scholarship",
+      "name": "Pre-Matric and Post-Matric Scholarship for SC/ST Students (Chhattisgarh)",
+      "provider": "Government of Chhattisgarh, Tribal Welfare Department and Social Welfare Department",
+      "aid_type": "scholarship",
+      "scope": "state",
+      "state_id": "CG",
+      "max_amount_inr": 50000,
+      "disbursement_reliability": "Moderate",
+      "hidden_eligibility": [
+        "ST students must have community certificate issued in Chhattisgarh — certificates from other states not accepted for CG schemes",
+        "Post-Matric covers college fees, maintenance allowance, and study allowance — but maintenance component is often delayed",
+        "Hostel residents get higher maintenance allowance than day scholars — verify your hostel status is correctly recorded",
+        "Gap year students may lose eligibility — continuous enrollment from 12th to college matters",
+        "Private professional colleges require prior government approval to qualify — not all private colleges are on the approved list"
+      ],
+      "application_complexity": 3,
+      "language_tags": [
+        "Hindi",
+        "English"
+      ],
+      "funding_friction": {
+        "document_burden": 4,
+        "timeline_uncertainty": 3,
+        "disbursement_risk": 3,
+        "hidden_eligibility_risk": 4
+      },
+      "honest_note": "This is the most valuable scholarship for SC/ST students in CG — can cover full tuition at government colleges. But it requires correct paperwork submitted before the deadline. Many deserving students lose it over incomplete forms.",
+      "apply_url": "https://scholarships.gov.in",
+      "cg_context": "In Korba, Bilaspur, and Raigarh districts, SC/ST population is high. SECL and NMDC employees' children in SC/ST category should check both company welfare schemes AND government scholarships — both can apply simultaneously.",
+      "linked_career_ids": [
+        "teacher",
+        "nursing",
+        "civil_mechanical_engineer",
+        "doctor_mbbs",
+        "pharmacist",
+        "ayush_doctor",
+        "cgpsc_state_services",
+        "ias_upsc",
+        "agricultural_officer",
+        "social_worker_ngo",
+        "bank_po",
+        "ssc_government",
+        "lawyer",
+        "public_health_professional",
+        "medical_lab_technologist",
+        "physiotherapist_bpt",
+        "electrician_electrical_tech",
+        "iti_electrician",
+        "welder_fabricator",
+        "veterinarian_bvsc"
+      ],
+      "linked_exam_ids": [
+        "neet",
+        "jee",
+        "cgpsc",
+        "cgvyapam",
+        "ibps"
+      ],
+      "notes": [
+        "ST students in CG are eligible for both Central Post-Matric Scholarship AND CG state scholarship — apply for both on NSP.",
+        "Community certificate must be from the Chhattisgarh government — check the issuing authority carefully.",
+        "Tribal sub-plan funds are separate from general SC/ST funds — if your district is a tribal district (Korba, Raigarh), ask specifically about tribal sub-plan scholarships.",
+        "Amount covers tuition fee + maintenance allowance + study allowance — get the official rate card for your course and year.",
+        "Colleges often do not inform students about these — proactively contact the college scholarship cell or district Social Welfare Office."
+      ],
+      "provenance": {
+        "sources": [
+          "https://scholarships.gov.in",
+          "CG Tribal Welfare Department 2025 circular"
+        ],
+        "confidence": 0.75
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-16",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-16"
+      }
+    },
+    {
+      "aid_id": "cg_obc_scholarship",
+      "name": "OBC Post-Matric Scholarship (Chhattisgarh)",
+      "provider": "Government of Chhattisgarh, Other Backward Classes and Minorities Welfare Department",
+      "aid_type": "scholarship",
+      "scope": "state",
+      "state_id": "CG",
+      "max_amount_inr": 10000,
+      "disbursement_reliability": "Often Delayed",
+      "hidden_eligibility": [
+        "Family income must be below ₹1L per annum for central component — CG state component has a higher ₹3L ceiling",
+        "Only Non-Creamy Layer OBC certificate valid — creamy layer OBC students do not qualify",
+        "Approved course list is restrictive — some professional diploma courses are excluded",
+        "Students who have already completed one professional course are not eligible for a second",
+        "Annual renewal requires fresh income and caste certificate — previous year documents not accepted"
+      ],
+      "application_complexity": 3,
+      "language_tags": [
+        "Hindi",
+        "English"
+      ],
+      "funding_friction": {
+        "document_burden": 4,
+        "timeline_uncertainty": 4,
+        "disbursement_risk": 4,
+        "hidden_eligibility_risk": 4
+      },
+      "honest_note": "OBC scholarship in CG is smaller than SC/ST schemes but still meaningful — ₹5,000–10,000 per year. The delay in disbursement is the main frustration. Apply early and follow up at your district OBC Welfare Office.",
+      "apply_url": "https://scholarships.gov.in",
+      "cg_context": "Many families in Korba, Champa, and Bilaspur are OBC but are unaware that both central and state OBC scholarships exist independently. The district OBC Welfare Office in each city can confirm eligibility faster than the online portal.",
+      "linked_career_ids": [
+        "teacher",
+        "bank_po",
+        "ssc_government",
+        "cgpsc_state_services",
+        "nursing",
+        "civil_mechanical_engineer",
+        "pharmacist",
+        "iti_electrician",
+        "electrician_electrical_tech",
+        "welder_fabricator",
+        "hotel_hospitality",
+        "journalist_content_writer",
+        "social_worker_ngo",
+        "agricultural_officer",
+        "medical_lab_technologist",
+        "digital_marketing",
+        "bba_mba_management"
+      ],
+      "linked_exam_ids": [
+        "cgpsc",
+        "cgvyapam",
+        "ibps",
+        "ssc"
+      ],
+      "notes": [
+        "Apply on NSP portal — both central OBC scheme and CG state scheme applications are available there.",
+        "Non-Creamy Layer certificate must explicitly state 'Non-Creamy Layer' — a plain OBC certificate alone is not sufficient.",
+        "If your father's government job puts the family in Creamy Layer, you may not qualify — check the income calculation method carefully.",
+        "Delays of 6–18 months are common — do not depend on this money to pay the first semester fee; treat it as a reimbursement.",
+        "Stack this with merit scholarships from your college — they are not mutually exclusive."
+      ],
+      "provenance": {
+        "sources": [
+          "https://scholarships.gov.in",
+          "CG OBC Welfare Department notification 2025"
+        ],
+        "confidence": 0.7
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-16",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-16"
+      }
+    },
+    {
+      "aid_id": "pm_vidya_lakshmi",
+      "name": "PM Vidya Lakshmi Education Loan (Interest Subsidy Scheme)",
+      "provider": "Ministry of Education, Government of India",
+      "aid_type": "loan_subsidy",
+      "scope": "national",
+      "max_amount_inr": 1000000,
+      "disbursement_reliability": "Consistent",
+      "hidden_eligibility": [
+        "Only for loans from scheduled banks listed on Vidya Lakshmi portal — private NBFC loans do not qualify for subsidy",
+        "Interest subsidy applies only during the moratorium period — once EMIs start, full interest applies",
+        "Family income ceiling of ₹4.5L per annum for Dr. Ambedkar Central Sector Scheme subsidy component",
+        "Applicable only for professional and technical courses — BA/BCom/BSc general degrees often excluded from subsidy",
+        "Subsidy is credited directly to loan account — you do not receive cash; it reduces your outstanding principal"
+      ],
+      "application_complexity": 3,
+      "language_tags": [
+        "English",
+        "Hindi"
+      ],
+      "funding_friction": {
+        "document_burden": 3,
+        "timeline_uncertainty": 2,
+        "disbursement_risk": 2,
+        "hidden_eligibility_risk": 3
+      },
+      "honest_note": "If you are taking an education loan, apply through Vidya Lakshmi Portal — it is the single-window system connecting you to all major banks. The interest subsidy during study period is real money and completely underutilised by Tier 2-3 city students.",
+      "apply_url": "https://vidyalakshmi.co.in",
+      "linked_career_ids": [
+        "software_engineer",
+        "doctor_mbbs",
+        "lawyer",
+        "civil_mechanical_engineer",
+        "pharmacist",
+        "architect",
+        "dentist_bds",
+        "biotechnology_life_sciences",
+        "ayush_doctor",
+        "nursing",
+        "bba_mba_management",
+        "chartered_accountant",
+        "company_secretary",
+        "ai_ml_engineer",
+        "cybersecurity_analyst",
+        "data_scientist",
+        "electrical_engineer_power",
+        "environmental_green_energy",
+        "physiotherapist_bpt",
+        "veterinarian_bvsc",
+        "clinical_research_associate"
+      ],
+      "linked_exam_ids": [
+        "jee",
+        "neet",
+        "gate",
+        "clat",
+        "neetbds"
+      ],
+      "notes": [
+        "Apply through vidyalakshmi.co.in — one application reaches multiple banks simultaneously.",
+        "Dr. Ambedkar Central Sector Scheme provides full interest subsidy during moratorium for families with income below ₹4.5L — check eligibility before taking any loan.",
+        "Padho Pradesh scheme provides interest subsidy for minority students studying abroad — relevant if you are considering international education.",
+        "Bank processing takes 15–30 working days after application — apply before admission deadline, not after.",
+        "Rejection from one bank does not close your application — the portal automatically routes to other partner banks."
+      ],
+      "provenance": {
+        "sources": [
+          "https://vidyalakshmi.co.in",
+          "Ministry of Education official notification 2025"
+        ],
+        "confidence": 0.85
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-16",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-16"
+      }
+    },
+    {
+      "aid_id": "kvpy_inspire_dst",
+      "name": "KVPY / INSPIRE Scholarship (DST — Department of Science and Technology)",
+      "provider": "Department of Science and Technology, Government of India",
+      "aid_type": "scholarship",
+      "scope": "national",
+      "max_amount_inr": 80000,
+      "disbursement_reliability": "Consistent",
+      "hidden_eligibility": [
+        "KVPY: must score in top 1% in class 12 board OR qualify KVPY aptitude test — competitive and merit-based only",
+        "INSPIRE SHE: for students who scored top 1% in Class 12 board of their state — CG board toppers from each district qualify",
+        "INSPIRE Fellowship (PhD level): separate from SHE; relevant only after BSc/MSc",
+        "Must enroll in a BSc or integrated MSc programme — BA/BCom holders do not qualify",
+        "Renewal requires minimum 60% marks every year — below this, scholarship is suspended, not cancelled (can be reinstated)"
+      ],
+      "application_complexity": 3,
+      "language_tags": [
+        "English"
+      ],
+      "funding_friction": {
+        "document_burden": 3,
+        "timeline_uncertainty": 2,
+        "disbursement_risk": 1,
+        "hidden_eligibility_risk": 2
+      },
+      "honest_note": "INSPIRE SHE is ₹80,000/year for 5 years — among the best scholarships available for science students. Consistently paid by DST. If you scored well in your CG board 12th exams in Science, check whether you qualify before assuming you do not.",
+      "apply_url": "https://online-inspire.gov.in",
+      "linked_career_ids": [
+        "doctor_mbbs",
+        "data_scientist",
+        "biotechnology_life_sciences",
+        "scientist_csir",
+        "pharmacist",
+        "environmental_green_energy",
+        "statistician_data_analyst_bsc",
+        "public_health_professional",
+        "ai_ml_engineer",
+        "clinical_research_associate",
+        "veterinarian_bvsc",
+        "ayush_doctor",
+        "dietitian_nutritionist",
+        "radiographer_imaging"
+      ],
+      "linked_exam_ids": [
+        "neet",
+        "jee",
+        "bsc",
+        "biotech"
+      ],
+      "notes": [
+        "INSPIRE SHE is for the top 1% of each state board — in CG board terms, check your district rank, not just state rank.",
+        "Apply within 6 months of Class 12 result — late applications are summarily rejected with no appeal process.",
+        "Scholarship covers ₹60,000 annual scholarship + ₹20,000 for summer research attachment — both components matter.",
+        "Summer research attachment is at premier institutes — IISER, NII, TIFR, CSIR labs — real career-building experience.",
+        "Even if you do not qualify for INSPIRE SHE, your college or university may have their own merit scholarship for science toppers — ask specifically."
+      ],
+      "provenance": {
+        "sources": [
+          "https://online-inspire.gov.in",
+          "DST INSPIRE SHE 2025 guidelines"
+        ],
+        "confidence": 0.88
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-16",
         "review_cycle_days": 120
       },
       "contradiction_handling": {
@@ -238,7 +659,385 @@
         "resolution_policy": "higher_confidence_wins",
         "conflicting_source_count": 0,
         "resolution_notes": "",
-        "last_reviewed_on": "2026-05-07"
+        "last_reviewed_on": "2026-05-16"
+      }
+    },
+    {
+      "aid_id": "aicte_pragati_saksham",
+      "name": "AICTE Pragati Scholarship (Girls) and Saksham Scholarship (Differently Abled)",
+      "provider": "All India Council for Technical Education (AICTE)",
+      "aid_type": "scholarship",
+      "scope": "national",
+      "max_amount_inr": 50000,
+      "disbursement_reliability": "Consistent",
+      "hidden_eligibility": [
+        "Pragati is only for girl students — family income below ₹8L per annum",
+        "Only one girl child per family per year qualifies — if your sister already has Pragati, you cannot apply simultaneously",
+        "Must be enrolled in AICTE-approved college — check your college on AICTE portal before applying",
+        "Saksham requires minimum 40% disability certificate from government hospital",
+        "Both scholarships require first-year admission via state government counselling — direct admission students often do not qualify"
+      ],
+      "application_complexity": 2,
+      "language_tags": [
+        "English",
+        "Hindi"
+      ],
+      "funding_friction": {
+        "document_burden": 3,
+        "timeline_uncertainty": 2,
+        "disbursement_risk": 2,
+        "hidden_eligibility_risk": 3
+      },
+      "honest_note": "Pragati is specifically for girls in technical education — engineering, pharmacy, architecture. ₹50,000/year, reliably paid by AICTE. This is one of the most underutilised scholarships for girl students from Tier 2-3 cities. Parents — this scholarship makes a real difference.",
+      "apply_url": "https://www.aicte-india.org/bureaus/students-development-bureau/scholarships",
+      "linked_career_ids": [
+        "civil_mechanical_engineer",
+        "software_engineer",
+        "pharmacist",
+        "architect",
+        "electrical_engineer_power",
+        "ai_ml_engineer",
+        "cybersecurity_analyst",
+        "data_scientist",
+        "biotechnology_life_sciences",
+        "environmental_green_energy",
+        "animator_game_designer",
+        "graphic_ui_designer",
+        "interior_designer",
+        "clinical_research_associate",
+        "dietitian_nutritionist",
+        "medical_lab_technologist"
+      ],
+      "linked_exam_ids": [
+        "jee",
+        "neet",
+        "pharma",
+        "arch"
+      ],
+      "notes": [
+        "Apply through NSP portal — AICTE Pragati and Saksham are listed there; you do not need to go to AICTE website directly.",
+        "The 'one girl per family' rule catches many families off-guard — confirm this before both daughters apply.",
+        "AICTE approval status of your college can be checked at aicte-india.org/institutions — do this before submitting; it avoids rejection.",
+        "Scholarship amount covers tuition fee gap + incidental charges — not full tuition; understand what is covered.",
+        "If you are a girl student from CG in engineering or pharmacy, this scholarship plus NSP central scheme can together cover most of your fees at a government college."
+      ],
+      "provenance": {
+        "sources": [
+          "https://www.aicte-india.org",
+          "AICTE Pragati-Saksham guidelines 2025-26"
+        ],
+        "confidence": 0.87
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-16",
+        "review_cycle_days": 120
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-16"
+      }
+    },
+    {
+      "aid_id": "coal_india_secl_employee_scholarship",
+      "name": "SECL / Coal India Employee Dependent Scholarship",
+      "provider": "South Eastern Coalfields Limited (SECL) / Coal India Limited",
+      "aid_type": "scholarship",
+      "scope": "employer",
+      "state_id": "CG",
+      "max_amount_inr": 40000,
+      "disbursement_reliability": "Consistent",
+      "hidden_eligibility": [
+        "Only for children of serving and retired SECL / Coal India employees — contractual workers are excluded",
+        "Scholarship amount varies by category of employment — officer vs non-executive has different slabs",
+        "Must apply through parent's department welfare office — online portal alone is not sufficient",
+        "Minimum marks requirement varies by scheme year — usually 60% in previous qualifying exam",
+        "Medical and engineering students get higher amounts than general degree students — confirm current year slab"
+      ],
+      "application_complexity": 2,
+      "language_tags": [
+        "Hindi",
+        "English"
+      ],
+      "funding_friction": {
+        "document_burden": 2,
+        "timeline_uncertainty": 2,
+        "disbursement_risk": 1,
+        "hidden_eligibility_risk": 2
+      },
+      "honest_note": "If your parent works at SECL in Korba, Bilaspur, or Raigarh, this is the most reliable scholarship available to you — consistently paid through the welfare department. Most eligible families in coal belt cities miss this because nobody tells them about it at the time of college admission.",
+      "apply_url": "https://secl-cil.in",
+      "cg_context": "Critical for Korba district students — SECL headquarters is in Bilaspur and has major operations in Korba, Raigarh, Champa area. Many families in these cities have at least one member who works or worked at SECL. This scholarship is significantly underutilised.",
+      "linked_career_ids": [
+        "civil_mechanical_engineer",
+        "electrical_engineer_power",
+        "software_engineer",
+        "doctor_mbbs",
+        "nursing",
+        "pharmacist",
+        "bba_mba_management",
+        "chartered_accountant",
+        "lawyer",
+        "teacher",
+        "bank_po",
+        "ssc_government",
+        "data_scientist",
+        "environmental_green_energy",
+        "mining_engineer",
+        "cgpsc_state_services"
+      ],
+      "linked_exam_ids": [
+        "jee",
+        "neet",
+        "gate",
+        "ibps"
+      ],
+      "notes": [
+        "Visit parent's SECL department welfare officer directly — do not rely on online information as schemes change annually.",
+        "Deadline is usually 30 September each year for the previous academic year — keep your fee receipts and marksheets ready.",
+        "SECL has separate schemes for merit-based (top performers) and needs-based — apply for both; amounts stack.",
+        "Retired SECL employees' children are also eligible under some schemes — specifically check with the welfare department.",
+        "If your parent is in NMDC (Bailadila area) rather than SECL, similar schemes exist through NMDC welfare — the structure is comparable."
+      ],
+      "provenance": {
+        "sources": [
+          "https://secl-cil.in/welfare",
+          "SECL welfare department circular 2024-25"
+        ],
+        "confidence": 0.75
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-16",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-16"
+      }
+    },
+    {
+      "aid_id": "pm_yasasvi",
+      "name": "PM YASASVI Scholarship (OBC, EBC, DNT Students)",
+      "provider": "Ministry of Social Justice and Empowerment, Government of India",
+      "aid_type": "scholarship",
+      "scope": "national",
+      "max_amount_inr": 125000,
+      "disbursement_reliability": "Moderate",
+      "hidden_eligibility": [
+        "Family income must be below ₹2.5L per annum — strictly verified with Form 16 or income certificate",
+        "Entrance exam (YASASVI) is mandatory for Class 9 and 11 scholarship — college-level award has different process",
+        "OBC Non-Creamy Layer, EBC (Economically Backward Class), and DNT (De-notified Tribes) all qualify — check which category you fall under",
+        "Top Class Education scholarship component is for premier institutions only — IITs, NITs, IIMs, AIIMS, NLUs",
+        "Scholarship for hostellers is ₹1,25,000 per year; day scholars get ₹75,000 — your boarding status must be correctly declared"
+      ],
+      "application_complexity": 3,
+      "language_tags": [
+        "English",
+        "Hindi"
+      ],
+      "funding_friction": {
+        "document_burden": 3,
+        "timeline_uncertainty": 3,
+        "disbursement_risk": 3,
+        "hidden_eligibility_risk": 4
+      },
+      "honest_note": "PM YASASVI is relatively new (2022) and most families have not heard of it yet. If you are OBC or EBC and family income is below ₹2.5L, check eligibility — it is one of the largest scholarship amounts available for this category.",
+      "apply_url": "https://scholarships.gov.in",
+      "linked_career_ids": [
+        "software_engineer",
+        "doctor_mbbs",
+        "lawyer",
+        "ias_upsc",
+        "civil_mechanical_engineer",
+        "chartered_accountant",
+        "teacher",
+        "bank_po",
+        "ssc_government",
+        "data_scientist",
+        "ai_ml_engineer",
+        "civil_judge_judicial",
+        "bba_mba_management",
+        "cgpsc_state_services"
+      ],
+      "linked_exam_ids": [
+        "jee",
+        "neet",
+        "clat",
+        "gate",
+        "upsc",
+        "cgpsc"
+      ],
+      "notes": [
+        "Apply through NSP (scholarships.gov.in) — look under 'Ministry of Social Justice' for PM YASASVI.",
+        "For Class 9 and 11 students the NTA conducts the YASASVI entrance test — register separately on nta.ac.in.",
+        "Top Class Education component (for students in IITs, NITs, AIIMS, NLUs) is ₹2L/year — if you crack JEE or NEET and are OBC, this is significant.",
+        "EBC (Economically Backward Class) is different from BPL — income below ₹1L per annum from all sources qualifies as EBC; consult your tehsildar.",
+        "DNT (De-notified Tribes) are often overlooked — specific communities in CG fall under DNT; check the scheduled list for your community."
+      ],
+      "provenance": {
+        "sources": [
+          "https://scholarships.gov.in",
+          "Ministry of Social Justice PM YASASVI guidelines 2025"
+        ],
+        "confidence": 0.8
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-16",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-16"
+      }
+    },
+    {
+      "aid_id": "niti_aayog_swanath_scholarship",
+      "name": "PM Swanidhi / Swanath Scholarship (Orphans and Street Vendor Children)",
+      "provider": "National Scholarship Portal — Ministry of Education",
+      "aid_type": "scholarship",
+      "scope": "national",
+      "max_amount_inr": 60000,
+      "disbursement_reliability": "Consistent",
+      "hidden_eligibility": [
+        "Swanath is specifically for children of COVID-19 orphans, street vendors, or construction workers — very specific target group",
+        "Requires proof of parent's death or parent's street vendor registration card (PM SVANidhi beneficiary)",
+        "Only AICTE-approved technical institutions qualify for Swanath — general degree colleges excluded",
+        "Application window is narrow — typically open for 45 days only in August-September",
+        "Children in government care homes or NGO-run homes may need institutional letter additionally"
+      ],
+      "application_complexity": 3,
+      "language_tags": [
+        "English",
+        "Hindi"
+      ],
+      "funding_friction": {
+        "document_burden": 4,
+        "timeline_uncertainty": 2,
+        "disbursement_risk": 2,
+        "hidden_eligibility_risk": 4
+      },
+      "honest_note": "A small but very specific group qualifies — but if you do qualify (COVID orphan, street vendor's child), this scholarship is reliably paid and barely known. Tell any student you know who may be eligible.",
+      "apply_url": "https://scholarships.gov.in",
+      "linked_career_ids": [
+        "civil_mechanical_engineer",
+        "electrician_electrical_tech",
+        "iti_electrician",
+        "welder_fabricator",
+        "software_engineer",
+        "pharmacist",
+        "nursing",
+        "hotel_hospitality",
+        "digital_marketing"
+      ],
+      "linked_exam_ids": [
+        "jee",
+        "neet",
+        "pharma"
+      ],
+      "notes": [
+        "Swanath specifically targets children of parents who died of COVID-19 — death certificate referencing COVID is required.",
+        "Street vendor parent must have a PM SVANidhi loan account as proof of being a registered vendor.",
+        "Construction worker parent's child needs registration under BOCW (Building and Other Construction Workers) welfare board — CG has a BOCW board; check with district labour office.",
+        "Even a small scholarship like this matters — ₹60,000/year is the difference between dropping out and completing for many families.",
+        "Pehchaan counsellors: during mentoring, ask specifically about parent's occupation — this scholarship is completely invisible to most families."
+      ],
+      "provenance": {
+        "sources": [
+          "https://scholarships.gov.in",
+          "AICTE Swanath scheme 2025 guidelines"
+        ],
+        "confidence": 0.78
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-16",
+        "review_cycle_days": 120
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-16"
+      }
+    },
+    {
+      "aid_id": "hdfc_credila_education_loan",
+      "name": "HDFC Credila Education Loan (Private — for courses not covered by PSB)",
+      "provider": "HDFC Credila Financial Services",
+      "aid_type": "loan",
+      "scope": "national",
+      "max_amount_inr": 5000000,
+      "disbursement_reliability": "Consistent",
+      "hidden_eligibility": [
+        "No government subsidy applies — full interest from day one in some schemes; check moratorium availability",
+        "Rates vary significantly — 11% to 14% depending on co-applicant profile and institution",
+        "Co-applicant income and CIBIL score are the primary approval factors — same as PSBs but with higher rate",
+        "Processing fee of 1–1.5% of loan amount — factor this into cost",
+        "Pre-payment penalty exists in some schemes — read terms carefully before signing"
+      ],
+      "application_complexity": 3,
+      "language_tags": [
+        "English"
+      ],
+      "funding_friction": {
+        "document_burden": 3,
+        "timeline_uncertainty": 2,
+        "disbursement_risk": 1,
+        "hidden_eligibility_risk": 3
+      },
+      "honest_note": "Only consider HDFC Credila when your course or college is NOT eligible for a public sector bank loan. The rate is higher and no government subsidy applies. But they are faster and process non-standard courses (design, media, hospitality) that PSBs reject.",
+      "apply_url": "https://hdfccredila.com",
+      "linked_career_ids": [
+        "fashion_designer",
+        "animator_game_designer",
+        "graphic_ui_designer",
+        "interior_designer",
+        "film_media",
+        "journalist_content_writer",
+        "hotel_hospitality",
+        "event_manager",
+        "commercial_pilot",
+        "content_creator_youtuber",
+        "fitness_trainer_sports",
+        "chef_culinary"
+      ],
+      "linked_exam_ids": [
+        "nift",
+        "nid",
+        "nata"
+      ],
+      "notes": [
+        "Use HDFC Credila only when public sector bank has rejected your application or your course is not on their approved list.",
+        "Always compare total cost — Credila at 13% over 10 years vs SBI at 10.5% makes a meaningful difference in total outgo.",
+        "Moratorium period exists but confirm in writing before signing — verbal assurances are not binding.",
+        "Some private colleges have tie-ups with Credila for faster processing — but their interest in recommending Credila is commercial; still compare options.",
+        "Design, fashion, film, and hospitality management students from CG often cannot get PSB loans — Credila is a genuine option for them."
+      ],
+      "provenance": {
+        "sources": [
+          "https://hdfccredila.com",
+          "HDFC Credila loan product sheet 2025"
+        ],
+        "confidence": 0.8
+      },
+      "freshness": {
+        "last_verified_on": "2026-05-16",
+        "review_cycle_days": 90
+      },
+      "contradiction_handling": {
+        "status": "none",
+        "resolution_policy": "higher_confidence_wins",
+        "conflicting_source_count": 0,
+        "resolution_notes": "",
+        "last_reviewed_on": "2026-05-16"
       }
     }
   ]
