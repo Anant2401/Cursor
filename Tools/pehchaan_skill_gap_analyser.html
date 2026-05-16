@@ -55,7 +55,10 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
 .hero .skill-gap-how ul{margin:8px 0 0 1rem;padding:0;}
 .hero .skill-gap-how li{margin-bottom:5px;}
 
-.card-title{font-size:11px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;}
+.card{background:var(--white);border-radius:20px;padding:22px 20px;margin-bottom:14px;min-width:0;max-width:100%;box-sizing:border-box;}
+.card-title{font-size:11px;font-weight:700;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;line-height:1.45;position:relative;z-index:2;}
+#screen-results{min-width:0;max-width:100%;}
+#heatmap-content,#test-platforms{min-width:0;max-width:100%;}
 
 /* PROFILE INPUTS */
 .form-group{display:flex;flex-direction:column;gap:5px;}
@@ -207,6 +210,10 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
     </div>
   </section>
   <button type="button" class="btn-begin btn-pe-primary" id="btn-begin-skill" disabled>Continue to Step 2 →</button>
+  <div class="disclaimer-box">
+    <h4>Important — please read</h4>
+    <p>This tool offers general skill-planning guidance — not hiring advice or verified job offers. Learning times and resources are indicative; check each provider yourself.</p>
+  </div>
   <div class="brand-footer">
     <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
     <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
@@ -270,6 +277,10 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
       <button class="btn-analyse btn-pe-primary" id="btn-analyse" onclick="analyse()" disabled>Analyse My Skill Gap →</button>
     </div>
   </section>
+  <div class="disclaimer-box">
+    <h4>Important — please read</h4>
+    <p>This tool offers general skill-planning guidance — not hiring advice or verified job offers. Learning times and resources are indicative; check each provider yourself.</p>
+  </div>
   <div class="brand-footer">
     <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
     <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
@@ -329,6 +340,7 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
     <div class="card-title">🎯 Your First Job Path — Exactly What to Do</div>
     <div class="first-job-card" id="first-job-content"></div>
     <div style="margin-top:12px;" id="interview-prep"></div>
+    <div id="skill-gap-journey-next" class="tool-journey-slot no-print"></div>
   </div>
 
   <div style="background:var(--teal-light);border-radius:14px;padding:14px;margin-bottom:14px;">
@@ -337,10 +349,10 @@ select:focus,input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(29,1
 
   <button class="btn-reset" onclick="resetTool()">← Analyse a Different Job</button>
 
-  <div class="card pc-card-plain">
+  <div class="card contact-help-card">
     <div class="card-title">Still have questions?</div>
-    <p style="font-size:12px;color:var(--gray-text);line-height:1.75;margin-bottom:12px;">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p>
-    <a class="btn-pe-primary" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;margin-bottom:0;">Still have questions? Reach out to us</a>
+    <p class="meta contact-help-meta">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p>
+    <a class="btn-pe-primary contact-help-cta" href="../index.html#contact">Still have questions? Reach out to us</a>
   </div>
 
   <div class="disclaimer-box">
@@ -794,7 +806,7 @@ function analyse(){
     var hasIt = item.hasIt;
     heatHtml += '<div class="skill-row ' + (hasIt ? 'no-gap' : 'has-gap') + '">';
     heatHtml += '<div class="skill-row-top">';
-    heatHtml += '<div>';
+    heatHtml += '<div style="min-width:0;flex:1;">';
     heatHtml += '<div class="skill-name">' + (hasIt ? '✅ ' : '🔴 ') + esc(s.skill) + '</div>';
     heatHtml += '<div class="skill-level">Required level: ' + esc(s.level_required) + '</div>';
     if(!hasIt) heatHtml += '<div class="skill-time">⏱ ~' + (s.time_to_learn_weeks||4) + ' weeks to learn</div>';
@@ -922,7 +934,11 @@ function analyse(){
   var firstPath = j.first_job_path || 'Build 2-3 practical projects, complete role-specific mock tasks, and apply weekly through verified portals.';
   var timelineText = j.realistic_timeline || 'Usually 2-6 months depending on current skill base and consistency.';
   var interviewText = j.interview_prep || 'Practice role-specific mock interviews, revise your project stories, and keep examples ready for behavioral and technical rounds.';
-  document.getElementById('first-job-content').innerHTML = '<div class="fj-label">How to get your first job in this field</div><div class="fj-text">' + esc(firstPath) + '</div><div style="font-size:12px;color:var(--gray);margin-top:8px;"><strong>Realistic timeline:</strong> ' + esc(timelineText) + '</div>' + recHtml;
+  document.getElementById('first-job-content').innerHTML = '<div class="fj-label">How to get your first job in this field</div><div class="fj-text">' + esc(firstPath) + '</div><div style="font-size:12px;color:var(--gray);margin-top:8px;"><strong>Realistic timeline:</strong> ' + esc(timelineText) + '</div>';
+  var journeyEl = document.getElementById('skill-gap-journey-next');
+  if (journeyEl && window.PehchaanToolRecommendations && PehchaanToolRecommendations.mountToolRecommendations) {
+    PehchaanToolRecommendations.mountToolRecommendations(journeyEl, rec, esc);
+  } else if (journeyEl) journeyEl.innerHTML = recHtml || '';
   document.getElementById('interview-prep').innerHTML = '<div style="background:var(--blue-light);border-left:4px solid var(--blue);border-radius:0 10px 10px 0;padding:12px 14px;font-size:12px;color:#0C447C;line-height:1.75;"><strong>Interview preparation:</strong> ' + esc(interviewText) + '</div>';
 
   document.getElementById('screen-input').classList.add('hidden');

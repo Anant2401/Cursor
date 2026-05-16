@@ -380,7 +380,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
   </div>
   <div id="college-res-tiers"></div>
   <button class="btn-reset" type="button" onclick="backToCollegePicker()">← Change stream / state</button>
-  <div class="card pc-card-plain"><p style="font-size:12px;color:var(--gray);line-height:1.75;margin-bottom:10px;">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p><a class="btn-pe-primary" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;">Still have questions? Reach out to us</a></div>
+  <div class="card contact-help-card"><div class="card-title">Still have questions?</div><p class="meta contact-help-meta">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p><a class="btn-pe-primary contact-help-cta" href="../index.html#contact">Still have questions? Reach out to us</a></div>
   <div class="disclaimer"><h4>Important — please read</h4><p>Not admission counselling. Cutoffs, fees, domicile, and bonds change every year — verify only on official counselling and institute websites.</p></div>
   <div class="brand-footer"><div class="brand-tagline">Aapki pehchaan, aapki raah.</div><p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
     <p class="brand-consultation" style="font-size:11px;color:#64748B;line-height:1.75;margin-top:12px;max-width:42rem;margin-left:auto;margin-right:auto;">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p></div>
@@ -444,7 +444,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
   </div>
   <div id="course-res-alternatives"></div>
   <button class="btn-reset" type="button" onclick="backToCoursePicker()">← Choose another situation</button>
-  <div class="card pc-card-plain"><p style="font-size:12px;color:var(--gray);line-height:1.75;margin-bottom:10px;">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p><a class="btn-pe-primary" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;">Still have questions? Reach out to us</a></div>
+  <div class="card contact-help-card"><div class="card-title">Still have questions?</div><p class="meta contact-help-meta">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p><a class="btn-pe-primary contact-help-cta" href="../index.html#contact">Still have questions? Reach out to us</a></div>
   <div class="disclaimer"><h4>Important — please read</h4><p>Course paths are for planning awareness only. Verify accreditation, fees, and outcomes on official university and regulator websites.</p></div>
   <div class="brand-footer"><div class="brand-tagline">Aapki pehchaan, aapki raah.</div><p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>hello.pehchaan@gmail.com &nbsp;·&nbsp; buddy@pehchaancareers.in &nbsp;·&nbsp; pehchaancareers.in</p>
     <p class="brand-consultation" style="font-size:11px;color:#64748B;line-height:1.75;margin-top:12px;max-width:42rem;margin-left:auto;margin-right:auto;">This information is for discussion purposes only. Final decisions must be taken independently after consulting parents, guardians, teachers, and professional career counselors.</p></div>
@@ -486,7 +486,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
   </div>
   <div id="jobs-container"></div>
   <div id="metro-corporate-block"></div>
-  <div id="planb-next-tools"></div>
+  <div class="card tool-results-bundle" id="planb-results-tools-card" style="display:none"><div id="planb-next-tools" class="tool-journey-slot"></div></div>
 
   <button class="btn-reset" onclick="resetTool()">← Back to Exam Selection</button>
 
@@ -494,7 +494,7 @@ body::before{content:'Pehchaan Careers';position:fixed;top:50%;left:50%;transfor
     <p style="font-size:13px;color:var(--teal-dark);line-height:1.8;font-weight:500;">Remember: The goal is not to replace your exam dream with Plan B. The goal is to make sure that while you are working toward your dream, you are also building income, skills, and a professional identity that makes you stronger — not just a better exam taker, but a more complete human being ready for any outcome.</p>
   </div>
 
-  <div class="card pc-card-plain"><div class="card-title"><span class="sti-ico" aria-hidden="true">📩</span> Still have questions?</div><p style="font-size:12px;color:var(--gray);line-height:1.75;margin-bottom:10px;">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p><a class="btn-pe-primary" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;">Still have questions? Reach out to us</a></div>
+  <div class="card contact-help-card"><div class="card-title">Still have questions?</div><p class="meta contact-help-meta">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p><a class="btn-pe-primary contact-help-cta" href="../index.html#contact">Still have questions? Reach out to us</a></div>
 
   <div class="disclaimer">
     <h4>Important — please read</h4>
@@ -1783,12 +1783,6 @@ function showPlanB(){
       );
       recHtml = PehchaanToolRecommendations.buildRecommendationsHtml(rec, esc);
     }
-    var explicit = '';
-    if (window.PehchaanToolLinks) {
-      explicit = '<div class="card"><div class="card-title">Continue with related tools</div>' +
-        '<a style="display:inline-block;padding:10px 14px;margin:2px 4px 0 0;border-radius:10px;background:#085041;color:#EF9F27;font-size:12px;font-weight:700;text-decoration:none;" href="' + esc(PehchaanToolLinks.u('skillGap', ctx)) + '">Skill Gap Analyser →</a>' +
-        '</div>';
-    }
     var carried = '';
     if (routePrimary || routeExams || costBand || recognitionStatus) {
       carried = '<div class="card"><div class="card-title">College context carried forward</div>' +
@@ -1799,7 +1793,9 @@ function showPlanB(){
       if (recognitionStatus) carried += '<li><strong>Recognition status:</strong> ' + esc(recognitionStatus.replace(/_/g, ' ')) + '</li>';
       carried += '</ul></div>';
     }
-    nextHost.innerHTML = carried + recHtml + explicit;
+    nextHost.innerHTML = carried + recHtml;
+    var bundle = document.getElementById('planb-results-tools-card');
+    if (bundle) bundle.style.display = nextHost.innerHTML.trim() ? '' : 'none';
   }
 
   ['screen-pivot', 'screen-college', 'screen-course', 'screen-results-college', 'screen-results-course'].forEach(function(sid){
@@ -1827,6 +1823,8 @@ function resetTool(){
   renderMetroCorporate({});
   var nextHost = document.getElementById('planb-next-tools');
   if (nextHost) nextHost.innerHTML = '';
+  var bundleReset = document.getElementById('planb-results-tools-card');
+  if (bundleReset) bundleReset.style.display = 'none';
   window.scrollTo(0,0);
 }
 

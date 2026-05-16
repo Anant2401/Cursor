@@ -269,7 +269,7 @@ a.btn-pe-primary{display:block;text-align:center;text-decoration:none;box-sizing
   <div class="card contact-help-card" id="contact-help-card">
     <div class="card-title">Still have questions?</div>
     <p class="meta" style="margin-top:8px;">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p>
-    <a class="btn-pe-primary" href="../index.html#contact" style="margin-top:10px;">Still have questions? Reach out to us</a>
+    <a class="btn-pe-primary contact-help-cta" href="../index.html#contact">Still have questions? Reach out to us</a>
   </div>
 
   <div class="disclaimer">
@@ -831,9 +831,14 @@ function runFinder(){
       if (!box) {
         box = document.createElement('div');
         box.id = 'college-finder-next';
+        box.className = 'tool-journey-slot';
         wrap.appendChild(box);
       }
-      box.innerHTML = html;
+      if (window.PehchaanToolRecommendations.mountToolRecommendations) {
+        PehchaanToolRecommendations.mountToolRecommendations(box, rec, esc);
+      } else {
+        box.innerHTML = html;
+      }
     }
     document.getElementById('contact-help-card').style.display = 'block';
     window.scrollTo(0, document.getElementById('results-wrap').offsetTop - 20);

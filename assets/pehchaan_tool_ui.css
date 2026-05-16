@@ -405,6 +405,17 @@ body.pc-tool-ui .card:not(.filter-card):not(.pc-card-plain) {
   border-radius: 22px !important;
   overflow: hidden;
   background: var(--white, #fff) !important;
+  padding: 20px 18px 22px;
+  margin-bottom: 14px;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+body.pc-tool-ui .card:not(.filter-card):not(.pc-card-plain) > .card-title:first-child {
+  position: relative;
+  z-index: 2;
+  line-height: 1.45;
+  margin-top: 0;
 }
 body.pc-tool-ui .card:not(.filter-card):not(.pc-card-plain)::before {
   content: "";
@@ -478,6 +489,17 @@ body.pc-tool-ui .card-section {
   border-radius: 22px !important;
   overflow: hidden;
   background: var(--white, #fff) !important;
+  padding: 20px 18px 22px;
+  margin-bottom: 14px;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+body.pc-tool-ui .card-section > h3:first-child {
+  position: relative;
+  z-index: 2;
+  line-height: 1.45;
+  margin-top: 0;
 }
 body.pc-tool-ui .card-section::before {
   content: "";
@@ -494,4 +516,230 @@ body.pc-tool-ui .card-section::before {
   );
   z-index: 1;
   pointer-events: none;
+}
+
+/* ----- Contact help + disclaimer (College Finder parity) ----- */
+body.pc-tool-ui .card.contact-help-card {
+  padding: 18px 18px 20px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  position: relative;
+}
+body.pc-tool-ui .card.contact-help-card .card-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--teal-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0;
+}
+body.pc-tool-ui .card.contact-help-card .contact-help-meta,
+body.pc-tool-ui .card.contact-help-card .meta {
+  font-size: 12px;
+  color: var(--pc-gray, #64748b);
+  line-height: 1.75;
+  margin: 8px 0 0;
+}
+body.pc-tool-ui .card.contact-help-card .btn-pe-primary.contact-help-cta,
+body.pc-tool-ui .card.contact-help-card a.btn-pe-primary {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.disclaimer,
+.disclaimer-box {
+  background: #f8f7ff;
+  border: 1px solid #c4c0f5;
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-top: 12px;
+  margin-bottom: 14px;
+}
+.disclaimer h4,
+.disclaimer-box h4 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #4b46a0;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+.disclaimer p,
+.disclaimer-box p {
+  font-size: 12px;
+  color: var(--pc-gray, #64748b);
+  line-height: 1.75;
+  margin: 0 0 8px;
+}
+.disclaimer p:last-child,
+.disclaimer-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* Skill / resource cards: prevent text clipping in flex rows */
+.skill-row-top,
+.resource-item,
+.career-head {
+  min-width: 0;
+}
+.skill-name,
+.resource-name,
+.resource-info,
+.career-head-info {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.priority-badge {
+  flex-shrink: 0;
+}
+@media (max-width: 640px) {
+  .salary-preview {
+    white-space: normal !important;
+    text-align: left;
+    margin-left: 0;
+    width: 100%;
+  }
+  .skill-row-top {
+    flex-wrap: wrap;
+  }
+  .priority-badge {
+    margin-left: 0;
+    margin-top: 4px;
+  }
+}
+
+/* Continue exploring / What to do next — inside primary results container */
+.tool-journey-slot {
+  margin-top: 14px;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.tool-journey-slot .pehchaan-next-tools {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  min-width: 0;
+  max-width: 100%;
+}
+body.pc-tool-ui .card.tool-results-bundle,
+body.pc-tool-ui .card.journey-followup-card {
+  min-width: 0;
+  overflow: hidden;
+}
+body.pc-tool-ui .card .tool-journey-slot {
+  padding-top: 4px;
+}
+.tool-journey-slot-wrap[hidden] {
+  display: none !important;
+}
+
+/* Skill gap heatmap: keep long skill names inside the card */
+body.pc-tool-ui #heatmap-content,
+body.pc-tool-ui .resource-list {
+  min-width: 0;
+  max-width: 100%;
+}
+body.pc-tool-ui .skill-row {
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: visible;
+}
+body.pc-tool-ui .skill-row-top {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+body.pc-tool-ui #heatmap-content {
+  min-width: 0;
+  max-width: 100%;
+}
+body.pc-tool-ui #test-platforms > div {
+  min-width: 0;
+  max-width: 100%;
+}
+body.pc-tool-ui #test-platforms > div > div:last-child {
+  min-width: 0;
+  flex: 1;
+}
+
+/* Google Translate widget (tools + Parent's Guide) */
+.translate-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  padding: 10px 14px;
+  min-height: 0;
+  overflow: hidden;
+  background: #f8fafc;
+  font-size: 11px;
+  color: #64748b;
+  position: relative;
+  z-index: 5;
+}
+.translate-strip > span {
+  flex-shrink: 0;
+  line-height: 1.3;
+}
+.translate-strip #google_translate_element {
+  display: inline-flex !important;
+  align-items: center !important;
+  flex-shrink: 0;
+  height: auto !important;
+  max-height: 40px;
+  line-height: 1.2;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.translate-strip #google_translate_element .skiptranslate,
+.translate-strip #google_translate_element .goog-te-gadget {
+  display: inline-block !important;
+  height: auto !important;
+  max-height: 40px !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  position: static !important;
+}
+.translate-strip iframe {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+.goog-te-gadget {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 12px !important;
+  color: #085041 !important;
+}
+.goog-te-gadget-simple {
+  display: inline-flex !important;
+  align-items: center !important;
+  background: #fff !important;
+  border: 1px solid #d1e8df !important;
+  border-radius: 10px !important;
+  padding: 6px 10px !important;
+  line-height: 1.3 !important;
+  white-space: nowrap !important;
+}
+.goog-te-gadget-simple .goog-te-menu-value,
+.goog-te-gadget-simple .goog-te-menu-value span {
+  color: #085041 !important;
+  font-size: 12px !important;
+}
+.goog-te-gadget-simple img,
+.goog-te-gadget-icon {
+  display: none !important;
+}
+.goog-te-banner-frame,
+.skiptranslate iframe.goog-te-banner-frame {
+  display: none !important;
+}
+body {
+  top: 0 !important;
 }

@@ -472,16 +472,15 @@
     <button class="btn-restart" id="btn-restart">↺ Take the Test Again</button>
   </div>
 
-  <div class="card-section">
-    <h3>Still have questions?</h3>
-    <p style="font-size:12px;color:var(--gray-text);line-height:1.75;margin-top:8px;">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p>
-    <a class="btn-restart" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;margin-top:12px;">Still have questions? Reach out to us</a>
+  <div class="card contact-help-card">
+    <div class="card-title">Still have questions?</div>
+    <p class="meta contact-help-meta">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p>
+    <a class="btn-pe-primary contact-help-cta" href="../index.html#contact">Still have questions? Reach out to us</a>
   </div>
 
-  <!-- DISCLAIMER -->
-  <div class="card-section" style="border-color:#F5C878;background:var(--amber-light)">
-    <h3 style="color:#7A4A00">Important — please read</h3>
-    <p style="font-size:12px;color:#5A3200;line-height:1.85">This Stream Advisor is a freemium self-reflection tool designed to help Class 10 students explore their interests and tendencies. It is <strong>not a psychometric test, not a professional career assessment, and not a substitute for qualified career counselling.</strong> Results are based on your self-reported answers and are intended as a starting point for conversation — not a final verdict. Stream selection is an important decision that should involve your parents, teachers, and ideally a qualified career counsellor who understands your full situation. Pehchaan Careers does not guarantee any specific outcome based on this result. All career and salary information provided is general and may vary based on individual effort, institutional quality, and market conditions.</p>
+  <div class="disclaimer-box">
+    <h4>Important — please read</h4>
+    <p>This Stream Advisor is a freemium self-reflection tool designed to help Class 10 students explore their interests and tendencies. It is <strong>not a psychometric test, not a professional career assessment, and not a substitute for qualified career counselling.</strong> Results are based on your self-reported answers and are intended as a starting point for conversation — not a final verdict. Stream selection is an important decision that should involve your parents, teachers, and ideally a qualified career counsellor who understands your full situation. Pehchaan Careers does not guarantee any specific outcome based on this result. All career and salary information provided is general and may vary based on individual effort, institutional quality, and market conditions.</p>
   </div>
 
   <div class="brand-footer">
@@ -751,7 +750,7 @@ function buildResults() {
         { from: 'stream', stream: streamParam },
         { roleSelected: true }
       );
-      sn.innerHTML = PehchaanToolRecommendations.buildRecommendationsHtml(rec, esc);
+      PehchaanToolRecommendations.mountToolRecommendations(sn, rec, esc);
     } else if (window.PehchaanToolLinks && PehchaanToolLinks.buildStreamAdvisorNextInner) {
       sn.innerHTML = PehchaanToolLinks.buildStreamAdvisorNextInner(streamParam);
     } else if (window.PehchaanJourney && PehchaanJourney.buildToolUrl) {

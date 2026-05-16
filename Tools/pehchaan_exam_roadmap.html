@@ -488,24 +488,23 @@
     <h3>Starter resources (no paywall)</h3>
     <div class="section-sub">Curated links to begin without a coaching fee — always verify dates on the official portal.</div>
     <div class="resource-grid" id="resources-grid"></div>
-  </div>
-
-  <div id="roadmap-journey-next" class="no-print" style="display:none"></div>
-
-  <div class="card-section">
-    <h3>Still have questions?</h3>
-    <div class="section-sub">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</div>
-    <a class="btn-restart" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;">Still have questions? Reach out to us</a>
-  </div>
-
-  <div class="disclaimer-box">
-    <h4>Important — please read</h4>
-    <p>Exam dates shown are based on official announcements and historical patterns as of May 2026. Dates for 2027 exams are <strong>expected/tentative</strong> based on past trends — always confirm on official exam websites before registering. Pehchaan Careers does not guarantee the accuracy of future exam schedules. This roadmap is a starting point for planning — not a substitute for official notifications from UPSC, NTA, IBPS, SSC, or other exam bodies.</p>
+    <div id="roadmap-journey-next" class="tool-journey-slot no-print"></div>
   </div>
 
   <div class="res-actions res-actions-row no-print">
     <button type="button" class="btn-pdf" onclick="window.print()">Save Roadmap as PDF</button>
     <button type="button" class="btn-restart" onclick="restart()">← Build a Different Roadmap</button>
+  </div>
+
+  <div class="card contact-help-card no-print">
+    <div class="card-title">Still have questions?</div>
+    <p class="meta contact-help-meta">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p>
+    <a class="btn-pe-primary contact-help-cta" href="../index.html#contact">Still have questions? Reach out to us</a>
+  </div>
+
+  <div class="disclaimer-box">
+    <h4>Important — please read</h4>
+    <p>Exam dates shown are based on official announcements and historical patterns as of May 2026. Dates for 2027 exams are <strong>expected/tentative</strong> based on past trends — always confirm on official exam websites before registering. Pehchaan Careers does not guarantee the accuracy of future exam schedules. This roadmap is a starting point for planning — not a substitute for official notifications from UPSC, NTA, IBPS, SSC, or other exam bodies.</p>
   </div>
 
   <div class="brand-footer">
@@ -600,26 +599,23 @@ function getExamDataJsonCandidates() {
     out.push(u);
   }
   try {
-    add(new URL('../DB/canonical/pehchaan_exam_data.json', window.location.href).href);
-    add(new URL('../DB/canonical/exams.json', window.location.href).href);
-  } catch (e0) {}
-  try {
     add(new URL('../DB/pehchaan_exam_data.json', window.location.href).href);
-    add(new URL('../DB/exams.json', window.location.href).href);
   } catch (e0) {}
-  add('../DB/canonical/pehchaan_exam_data.json');
-  add('../DB/canonical/exams.json');
   add('../DB/pehchaan_exam_data.json');
-  add('../DB/exams.json');
-  try {
-    add(new URL('/DB/canonical/pehchaan_exam_data.json', window.location.origin).href);
-    add(new URL('/DB/canonical/exams.json', window.location.origin).href);
-  } catch (e1) {}
   try {
     add(new URL('/DB/pehchaan_exam_data.json', window.location.origin).href);
-    add(new URL('/DB/exams.json', window.location.origin).href);
-  } catch (e2) {}
+  } catch (e1) {}
   return out;
+}
+
+function findSelBtn(containerSelector, val) {
+  if (val == null || val === '') return null;
+  var v = String(val);
+  var nodes = document.querySelectorAll(containerSelector + ' .sel-btn');
+  for (var i = 0; i < nodes.length; i++) {
+    if (nodes[i].getAttribute('data-val') === v) return nodes[i];
+  }
+  return null;
 }
 
 function findCareerById(id) {
@@ -657,11 +653,11 @@ function tryExamRoadmapUrlPrefill() {
   var st = (p.state || '').trim();
   var rawTarget = ((p.career || '').trim() || (p.exam || '').trim());
   if (cls) {
-    var bcl = document.querySelector('#class-grid .sel-btn[data-val="' + cls + '"]');
+    var bcl = findSelBtn('#class-grid', cls);
     if (bcl) selectClass(bcl);
   }
   if (stream) {
-    var bst = document.querySelector('#stream-grid .sel-btn[data-val="' + stream + '"]');
+    var bst = findSelBtn('#stream-grid', stream);
     if (bst) selectStream(bst);
   }
   if (st) {
@@ -696,7 +692,7 @@ function tryExamRoadmapUrlPrefill() {
       var c0 = findCareerById(ids[0]);
       if (c0 && c0.stream && c0.stream.length) {
         var pick = c0.stream.filter(function(s) { return s !== 'any'; })[0] || c0.stream[0];
-        var bst2 = document.querySelector('#stream-grid .sel-btn[data-val="' + pick + '"]');
+        var bst2 = findSelBtn('#stream-grid', pick);
         if (bst2) selectStream(bst2);
       }
     }
@@ -782,8 +778,16 @@ function hideBootstrapOverlay() {
   }
   document.body.classList.remove('app-not-ready');
   document.body.classList.add('app-ready');
-  renderTrendingChips();
-  populateStateFilter();
+  try {
+    renderTrendingChips();
+  } catch (e1) {
+    console.warn('Exam roadmap: trending chips skipped', e1);
+  }
+  try {
+    populateStateFilter();
+  } catch (e2) {
+    console.warn('Exam roadmap: state filter skipped', e2);
+  }
 }
 
 function assignParsedPayload(data) {
@@ -842,7 +846,11 @@ async function loadPehchaanExamData() {
     assignParsedPayload(data);
     applyHeroStatsFromData();
     hideBootstrapOverlay();
-    tryExamRoadmapUrlPrefill();
+    try {
+      tryExamRoadmapUrlPrefill();
+    } catch (prefillErr) {
+      console.warn('Exam roadmap: URL prefill skipped', prefillErr);
+    }
   } catch (e) {
     var msg = (e && e.message) ? e.message : String(e);
     if (e && e.name === 'SyntaxError') msg = 'The JSON file could not be parsed. Check for invalid syntax.';
@@ -911,7 +919,9 @@ function renderCareerButtons() {
   var search = (searchEl && searchEl.value ? searchEl.value : '').toLowerCase().trim();
   var filtered = PehchaanExamDB.careers.filter(function(c) {
     var streamMatch = careerMatchesStream(c, selStream);
-    var searchMatch = !search || c.label.toLowerCase().includes(search) || c.group.toLowerCase().includes(search);
+    var label = String(c.label || '').toLowerCase();
+    var group = String(c.group || '').toLowerCase();
+    var searchMatch = !search || label.indexOf(search) >= 0 || group.indexOf(search) >= 0;
     var trendMatch = trendingFilterIds.length === 0 || trendingFilterIds.indexOf(c.id) >= 0;
     return streamMatch && searchMatch && trendMatch;
   });
@@ -1141,7 +1151,7 @@ function buildRoadmap() {
       },
       { examDriven: true, roleSelected: true, actionPlanStarted: true }
     );
-    jn.innerHTML = PehchaanToolRecommendations.buildRecommendationsHtml(rec, escapeHtml);
+    PehchaanToolRecommendations.mountToolRecommendations(jn, rec, escapeHtml);
   }
 }
 

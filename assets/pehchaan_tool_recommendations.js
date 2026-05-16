@@ -223,10 +223,28 @@
     return html;
   }
 
+  function mountToolRecommendations(hostEl, rec, escFn) {
+    if (!hostEl) return "";
+    var html = buildRecommendationsHtml(rec, escFn);
+    hostEl.innerHTML = html || "";
+    var wrap = hostEl.closest(".tool-journey-slot-wrap");
+    if (wrap) {
+      wrap.hidden = !html;
+    } else {
+      hostEl.style.display = html ? "" : "none";
+    }
+    var bundle = hostEl.closest(".tool-results-bundle");
+    if (bundle) {
+      bundle.style.display = html ? "" : "none";
+    }
+    return html;
+  }
+
   window.PehchaanToolRecommendations = {
     TOOL: TOOL,
     normalizeContext: normalizeContext,
     buildNextToolRecommendations: buildNextToolRecommendations,
-    buildRecommendationsHtml: buildRecommendationsHtml
+    buildRecommendationsHtml: buildRecommendationsHtml,
+    mountToolRecommendations: mountToolRecommendations
   };
 })();

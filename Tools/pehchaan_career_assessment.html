@@ -507,14 +507,17 @@
       <h3>Your Personalised Roadmap — What to Do Next</h3>
       <div class="section-sub">Action steps across every stage of your journey — from where you are right now to where you want to go.</div>
       <div id="steps-all"></div>
+      <div id="assessment-journey-next" class="tool-journey-slot no-print"></div>
     </div>
 
-    <div id="assessment-journey-next" class="no-print"></div>
+    <div class="res-actions">
+      <button class="btn-restart" id="btn-restart">↺ Take the Test Again</button>
+    </div>
 
-    <div class="card-section">
-      <h3>Still have questions?</h3>
-      <div class="section-sub">Did not find what you were looking for? Use this to go to the Contact Us card on the home page and send your query.</div>
-      <a class="btn-restart" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;">Still have questions? Reach out to us</a>
+    <div class="card contact-help-card">
+      <div class="card-title">Still have questions?</div>
+      <p class="meta contact-help-meta">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p>
+      <a class="btn-pe-primary contact-help-cta" href="../index.html#contact">Still have questions? Reach out to us</a>
     </div>
 
     <div class="disclaimer-box">
@@ -522,9 +525,6 @@
       <p>This assessment is a <strong>starting point for self-discovery</strong> — not a definitive verdict on your future. It is based on your responses to 49 questions on a single day and reflects your current interests and tendencies. Career decisions are complex and personal, and they are best made after <strong>discussing your results with your parents, teachers, school counsellors and career professionals</strong> who know you well. Pehchaan Careers strongly recommends using this report as a conversation starter — not a final decision. Your path is yours to choose.</p>
     </div>
 
-    <div class="res-actions">
-      <button class="btn-restart" id="btn-restart">↺ Take the Test Again</button>
-    </div>
     <div class="brand-footer">
       <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
       <p>This tool is brought to you by <strong>Pehchaan Careers</strong><br>
@@ -1044,7 +1044,7 @@ function buildResults() {
       { from: 'assessment', profile: profileCode },
       { roleSelected: true }
     );
-    aj.innerHTML = PehchaanToolRecommendations.buildRecommendationsHtml(rec, escapeHtml);
+    PehchaanToolRecommendations.mountToolRecommendations(aj, rec, escapeHtml);
   }
 
   showScreen('screen-results');

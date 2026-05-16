@@ -368,6 +368,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;heigh
   <div class="card" id="reality-card">
     <div class="card-title">🔍 Honest Reality Check</div>
     <div id="reality-content"></div>
+    <div id="roi-journey-next" class="tool-journey-slot no-print"></div>
   </div>
 
   <!-- CG CONTEXT -->
@@ -376,20 +377,18 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;heigh
     <div id="cg-content"></div>
   </div>
 
-  <div id="roi-journey-next" class="no-print"></div>
+  <button class="btn-reset" onclick="reset()">← Calculate for Another Career</button>
 
-  <div class="card pc-card-plain no-print">
+  <div class="card contact-help-card no-print">
     <div class="card-title">Still have questions?</div>
-    <p style="font-size:12px;color:var(--gray-text);line-height:1.7;margin-bottom:10px;">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p>
-    <a class="btn-pe-primary" href="../index.html#contact" style="display:block;text-align:center;text-decoration:none;">Still have questions? Reach out to us</a>
+    <p class="meta contact-help-meta">Did not find what you were looking for? Go to the Contact Us card on the home page and send your query.</p>
+    <a class="btn-pe-primary contact-help-cta" href="../index.html#contact">Still have questions? Reach out to us</a>
   </div>
 
   <div class="disclaimer">
     <h4>Important — please read</h4>
     <p>All costs and salaries are estimates based on 2026 data from Glassdoor India, AmbitionBox, official college fee structures, and government commission reports. Actual costs vary significantly by college, city, and individual circumstances. This tool is for planning and awareness — always verify costs directly with colleges and counsellors before making financial decisions.</p>
   </div>
-
-  <button class="btn-reset" onclick="reset()">← Calculate for Another Career</button>
 
   <div class="brand-footer">
     <div class="brand-tagline">Aapki pehchaan, aapki raah.</div>
@@ -770,7 +769,7 @@ function recalcResultMetrics(){
         { from: 'roi', career: cid, roiBand: band, stream: st0 },
         { roleSelected: true, actionPlanStarted: true }
       );
-      jEl.innerHTML = PehchaanToolRecommendations.buildRecommendationsHtml(rec, esc);
+      PehchaanToolRecommendations.mountToolRecommendations(jEl, rec, esc);
     } else if (window.PehchaanToolLinks) {
       var linksInner = PehchaanToolLinks.buildRoiNextLinksHtml(esc, {
         roiPct: roiPct,

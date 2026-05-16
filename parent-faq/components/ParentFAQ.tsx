@@ -4,6 +4,7 @@ import Fuse from "fuse.js";
 import { useMemo, useState } from "react";
 import type { DisplayLang, FaqItem } from "@/types/faq";
 import PehchaanToolChrome from "@/components/PehchaanToolChrome";
+import ToolClosingCards from "@/components/ToolClosingCards";
 
 const CONTACT_HREF = "https://pehchaancareers.in/#contact";
 
@@ -225,6 +226,8 @@ export default function ParentFAQ({ items }: { items: FaqItem[] }) {
           </>
         )}
       </div>
+
+      <ToolClosingCards />
     </PehchaanToolChrome>
   );
 }
