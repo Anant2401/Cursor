@@ -132,11 +132,19 @@
   .insight-box p{font-size:13px;color:#7A4A00;line-height:1.8;}
   .insight-box strong{color:#5A3200;}
 
-  /* FREE RESOURCES */
-  .resource-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
-  .resource-item{background:var(--card-bg);border:1px solid var(--border);border-radius:10px;padding:10px 12px;}
-  .resource-name{font-size:12px;font-weight:700;color:var(--teal-dark);margin-bottom:2px;}
+  /* FREE RESOURCES — full-width rows (same width as journey cards below) */
+  .card-section .resource-grid,
+  .card-section .tool-journey-slot{
+    width:100%;min-width:0;max-width:100%;box-sizing:border-box;
+  }
+  .resource-grid{display:grid;grid-template-columns:1fr;gap:10px;}
+  .resource-item{
+    width:100%;max-width:100%;box-sizing:border-box;min-width:0;
+    background:var(--card-bg);border:1.5px solid var(--border);border-radius:14px;padding:12px 16px;
+  }
+  .resource-name{font-size:12px;font-weight:700;color:var(--teal-dark);margin-bottom:2px;line-height:1.35;}
   .resource-desc{font-size:11px;color:var(--gray-text);line-height:1.5;}
+  .card-section .tool-journey-slot{margin-top:12px;padding-top:0;}
 
   /* DISCLAIMER / FOOTER */
   .disclaimer-box{background:#F8F7FF;border:1px solid #C4C0F5;border-radius:14px;padding:16px 20px;margin-bottom:14px;margin-top:8px;}
@@ -166,7 +174,6 @@
     .res-hero{padding:22px 18px;}
     .res-hero-name{font-size:17px;}
     .card-section{padding:16px 14px;}
-    .resource-grid{grid-template-columns:1fr;}
     .name-grid{grid-template-columns:1fr;}
   }
 
