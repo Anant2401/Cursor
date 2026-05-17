@@ -198,7 +198,7 @@
         <div>• Guidance cue: use this output for family and mentor discussion, then verify with real openings before final decisions.</div>
       </div>
       <div class="hero-stats">
-        <div class="hero-stat"><div class="v">12+</div><div class="l">Role tracks</div></div>
+        <div class="hero-stat"><div class="v">22+</div><div class="l">Role tracks</div></div>
         <div class="hero-stat"><div class="v">6</div><div class="l">Metro hubs</div></div>
         <div class="hero-stat"><div class="v">90</div><div class="l">Day action map</div></div>
       </div>
@@ -334,60 +334,42 @@
           tech_quality: ["QA/testing teams", "Application support teams", "Release/UAT teams"],
           content: ["Digital content teams", "Instructional content teams", "Editorial operations"],
           hr: ["Talent acquisition teams", "HR shared services", "Recruitment operations"],
-          supply_chain: ["Warehouse and logistics teams", "Procurement support teams", "Last-mile operations"]
+          supply_chain: ["Warehouse and logistics teams", "Procurement support teams", "Last-mile operations"],
+          tech_dev: ["Product engineering teams", "SaaS frontend teams", "Startup product squads"],
+          tech_support: ["IT helpdesk teams", "Global service desks", "Enterprise support centers"],
+          finance: ["Accounting teams", "Tally/ERP operations", "Finance back-office teams"],
+          content_creative: ["Brand content studios", "D2C creative teams", "Agency design pods"],
+          healthcare_private: ["Pharma field sales", "Medical representative teams", "Healthcare distribution"],
+          healthcare_admin: ["Hospital front office", "Patient services desks", "Healthcare operations"]
         };
         return map[id] || ["LinkedIn Jobs", "Naukri", "Company career portals"];
       }
 
-      function enrichRolePool(json) {
-        var familyTemplates = {
-          operations: ["Process Associate", "Back Office Executive", "Operations Coordinator", "Service Delivery Associate", "MIS Operations Executive", "Process Excellence Trainee"],
-          analytics: ["Junior Data Analyst", "Reporting Analyst", "MIS Executive", "Business Analyst Trainee", "Data Operations Associate", "Insights Analyst (Entry)"],
-          sales_combo: ["Inside Sales Executive", "Sales Development Representative", "Business Development Executive", "Channel Sales Coordinator", "Presales Associate", "Client Acquisition Executive"],
-          customer_ops: ["Customer Support Executive", "Customer Success Associate", "Customer Care Associate", "Escalation Desk Executive", "Client Support Specialist", "Relationship Support Executive"],
-          marketing: ["Digital Marketing Executive", "Social Media Associate", "Performance Marketing Trainee", "SEO Analyst", "Content Marketing Associate", "Growth Marketing Executive"],
-          finance_ops: ["Finance Operations Associate", "Accounts Receivable Executive", "Accounts Payable Executive", "Reconciliation Analyst", "Payroll Operations Associate", "Finance Process Executive"],
-          tech_quality: ["QA / Test Associate", "Manual Tester", "Application Support Analyst", "Technical Support Engineer", "UAT Coordinator", "Automation Trainee"],
-          content: ["Content Associate", "Content Writer", "Editorial Assistant", "Instructional Content Executive", "Research Content Analyst", "Copywriting Associate"],
-          hr: ["Recruitment Coordinator", "Talent Acquisition Associate", "HR Operations Executive", "HR Shared Services Associate", "Sourcing Specialist", "Onboarding Coordinator"],
-          supply_chain: ["Logistics Coordinator", "Supply Chain Associate", "Procurement Support Executive", "Warehouse Operations Executive", "Dispatch Planning Associate", "Inventory Control Executive"]
-        };
-        var familyToDb = { sales_combo: ["sales", "sales_growth"], analytics: ["analytics", "analytics_ops"] };
-        var all = (json.roles || []).slice();
-        var metroFallback = [
-          { metro_id: "bengaluru", demand_level: "high", salary_fresher: "₹3.0-5.4 LPA", salary_3yr: "₹5.8-10.2 LPA", city_reality_note: "Hiring varies by company and role scope." },
-          { metro_id: "hyderabad", demand_level: "high", salary_fresher: "₹2.9-5.2 LPA", salary_3yr: "₹5.6-9.8 LPA", city_reality_note: "Roles available across services and product firms." },
-          { metro_id: "delhi_ncr", demand_level: "high", salary_fresher: "₹3.0-5.4 LPA", salary_3yr: "₹5.8-10.5 LPA", city_reality_note: "Large hiring volume with competition." },
-          { metro_id: "pune", demand_level: "medium", salary_fresher: "₹2.8-5.0 LPA", salary_3yr: "₹5.2-9.4 LPA", city_reality_note: "Strong demand in shared services and IT operations." },
-          { metro_id: "chennai", demand_level: "medium", salary_fresher: "₹2.8-4.9 LPA", salary_3yr: "₹5.1-9.1 LPA", city_reality_note: "Stable openings in enterprise functions." },
-          { metro_id: "mumbai", demand_level: "high", salary_fresher: "₹3.1-5.8 LPA", salary_3yr: "₹6.0-11.0 LPA", city_reality_note: "Higher opportunity, higher competition." }
-        ];
-        Object.keys(familyTemplates).forEach(function (familyKey) {
-          var dbFamilies = familyToDb[familyKey] || [familyKey];
-          var present = all.filter(function (r) { return dbFamilies.indexOf(r.role_family) >= 0; });
-          var need = Math.max(0, 6 - present.length);
-          if (!need) return;
-          var sample = present[0] || all.find(function (r) { return r && r.role_family; }) || {};
-          familyTemplates[familyKey].slice(0, need).forEach(function (title, idx) {
-            all.push({
-              private_role_id: "auto_" + familyKey + "_" + (idx + 1),
-              status: "active",
-              role_family: dbFamilies[0],
-              title: title,
-              summary: "Entry-level private sector role aligned to your selected comfort area with practical growth path.",
-              must_have_skills: (sample.must_have_skills || ["Communication", "Role basics", "Execution discipline"]).slice(0, 5),
-              application_channels: (sample.application_channels || ["LinkedIn", "Naukri", "Company careers pages", "Referrals"]).slice(0, 4),
-              growth_paths: (sample.growth_paths || ["Senior role", "Team lead", "Specialist track"]).slice(0, 3),
-              metro_map: (sample.metro_map && sample.metro_map.length ? sample.metro_map : metroFallback),
-              plan_30_60_90: sample.plan_30_60_90 || {
-                day_0_30: ["Build role fundamentals and one proof task."],
-                day_31_60: ["Prepare targeted resume and practice interviews."],
-                day_61_90: ["Apply consistently and track conversion weekly."]
-              }
-            });
-          });
+      function isCatalogRole(r) {
+        if (!r || r.status === "deprecated") return false;
+        var id = String(r.private_role_id || "");
+        return id.length > 0 && id.indexOf("auto_") !== 0;
+      }
+
+      function normalizeTitle(title) {
+        return String(title || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+      }
+
+      function dedupeRoles(list) {
+        var out = [];
+        var seenIds = {};
+        var seenTitles = {};
+        (list || []).forEach(function (r) {
+          if (!isCatalogRole(r)) return;
+          var id = r.private_role_id;
+          if (seenIds[id]) return;
+          var titleKey = normalizeTitle(r.title);
+          if (titleKey && seenTitles[titleKey]) return;
+          seenIds[id] = true;
+          if (titleKey) seenTitles[titleKey] = true;
+          out.push(r);
         });
-        json.roles = all;
+        return out;
       }
 
       function bootstrap() {
@@ -395,9 +377,8 @@
           .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
           .then(function (json) {
             DB = json;
-            enrichRolePool(DB);
             byFamily = {};
-            (json.roles || []).forEach(function (r) {
+            (json.roles || []).filter(isCatalogRole).forEach(function (r) {
               var k = r.role_family || "other";
               if (!byFamily[k]) byFamily[k] = [];
               byFamily[k].push(r);
@@ -410,14 +391,14 @@
 
       function familyPoolForSelection(family) {
         var map = {
-          sales_combo: ["sales", "sales_growth"],
+          sales_combo: ["sales", "sales_growth", "healthcare_private"],
           analytics: ["analytics", "analytics_ops"],
-          operations: ["operations"],
+          operations: ["operations", "healthcare_admin"],
           customer_ops: ["customer_ops"],
           marketing: ["marketing"],
-          finance_ops: ["finance_ops"],
-          tech_quality: ["tech_quality"],
-          content: ["content"],
+          finance_ops: ["finance_ops", "finance"],
+          tech_quality: ["tech_quality", "tech_dev", "tech_support"],
+          content: ["content", "content_creative"],
           hr: ["hr"],
           supply_chain: ["supply_chain"]
         };
@@ -454,34 +435,34 @@
         familyPoolForSelection(family).forEach(function (f) {
           base = base.concat((byFamily[f] || []));
         });
-        base = base.filter(function (r, idx) { return base.indexOf(r) === idx; });
+        base = dedupeRoles(base);
         var relatedFamilies = {
           operations: ["customer_ops", "finance_ops", "supply_chain", "analytics_ops"],
-          sales_combo: ["sales", "sales_growth", "marketing", "customer_ops"],
-          analytics: ["analytics_ops", "tech_quality", "operations"],
-          customer_ops: ["operations", "sales_growth", "marketing"],
-          marketing: ["sales_growth", "content", "analytics"],
-          finance_ops: ["operations", "analytics_ops", "customer_ops"],
-          tech_quality: ["analytics", "analytics_ops", "operations"],
-          content: ["marketing", "customer_ops", "sales_growth"]
+          sales_combo: ["marketing", "customer_ops"],
+          analytics: ["tech_quality", "tech_dev"],
+          customer_ops: ["operations"],
+          marketing: ["content_creative"],
+          finance_ops: ["analytics_ops"],
+          tech_quality: ["analytics", "analytics_ops"],
+          content: ["marketing"],
+          hr: ["customer_ops"],
+          supply_chain: ["operations"]
         };
-        if (base.length < 5 && DB && Array.isArray(DB.roles)) {
+        if (base.length < 3 && DB && Array.isArray(DB.roles)) {
           var rel = relatedFamilies[family] || [];
           rel.forEach(function (rf) {
             if (base.length >= 8) return;
-            (byFamily[rf] || []).forEach(function (r) {
+            dedupeRoles(byFamily[rf] || []).forEach(function (r) {
               if (base.length >= 8) return;
               if (base.indexOf(r) < 0) base.push(r);
             });
           });
         }
+        base = dedupeRoles(base);
         if (!base.length) {
-          base = (DB && DB.roles || []).slice();
+          base = dedupeRoles((DB && DB.roles) || []);
         }
-        if (base.length < 5 && DB && Array.isArray(DB.roles)) {
-          var extras = DB.roles.filter(function (r) { return base.indexOf(r) < 0; });
-          base = base.concat(extras);
-        }
+        var maxResults = Math.min(8, base.length);
         return base
           .map(function (r) {
             var mm = (r.metro_map || []).find(function (m) { return m.metro_id === metro; }) || null;
@@ -504,7 +485,7 @@
             return { role: r, metroMap: mm, score: score, scoreBreakdown: scoreBreakdown };
           })
           .sort(function (a, b) { return b.score - a.score; })
-          .slice(0, 8);
+          .slice(0, maxResults);
       }
 
       function renderPlan() {
@@ -531,7 +512,6 @@
           var mustSkills = (r.must_have_skills || []).slice(0, 5).join(" · ");
           var growthPath = (r.growth_paths || []).slice(0, 3).join(" → ");
           var appChannels = (r.application_channels || []).slice(0, 4).join(", ");
-          var isTemplate = String(r.private_role_id || "").indexOf("auto_") === 0;
           var roleIcon = /analytics|data/.test(r.role_family || "") ? "📊" : /sales|marketing/.test(r.role_family || "") ? "🚀" : /finance/.test(r.role_family || "") ? "💼" : /tech/.test(r.role_family || "") ? "🧪" : /hr/.test(r.role_family || "") ? "🧭" : "🛠️";
           return '<article class="role-item">' +
             '<h3>' + roleIcon + ' ' + (idx + 1) + ". " + esc(r.title) + " (fit score: " + x.score + ")</h3>" +
@@ -539,7 +519,6 @@
             '<span class="role-chip chip-demand">Demand: ' + esc(mm && mm.demand_level || "medium") + '</span>' +
             '<span class="role-chip chip-pay">Fresher: ' + esc(mm && mm.salary_fresher || "Check openings") + '</span>' +
             '<span class="role-chip chip-proof">Proof-first hiring</span>' +
-            (isTemplate ? '<span class="role-chip" style="background:#FFF2DE;border-color:#EF9F27;color:#8A5000;border:1px solid #EF9F27;">Template role (verify live openings)</span>' : '') +
             '</div>' +
             '<div class="meta">Fresher in ' + esc(metroLabel(metro)) + ": " + esc(mm && mm.salary_fresher || "Check current openings") + " · ~3 years: " + esc(mm && mm.salary_3yr || "Varies by company") + "</div>" +
             '<div class="meta" style="margin-top:6px"><strong>Role summary:</strong> ' + esc(r.summary || "") + "</div>" +
