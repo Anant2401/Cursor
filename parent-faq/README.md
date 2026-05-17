@@ -28,7 +28,13 @@ copy ..\FAQDB\faqs.json .\data\faqs.json
 npm run build
 ```
 
-Output is written to **`out/`**. For the main Pehchaan static site, copy that folder into the repo’s **`../Tools/parents-guide/`** (overwrite) so URLs match `basePath: /Tools/parents-guide`. The homepage links to `Tools/parents-guide/index.html`.
+Output is written to **`out/`**. From the repo root, run:
+
+```bash
+node scripts/export-parents-guide.cjs
+```
+
+That builds this app and copies **`out/`** into **`Tools/parents-guide/`** (overwrite). Commit **`index.html` and the full `_next/` tree** together — CSS/JS hashes change every build; git must include `_next/` or the live site loads unstyled HTML only.
 
 Google Translate is wired via **`TranslateBootstrap`** (loads **`/assets/pehchaan_translate.js`** from the site root — same host as the main site).
 

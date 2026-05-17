@@ -27,14 +27,10 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Generated static export artifacts (do not commit)
-Tools/parents-guide/_next/
+# Parent's Guide: optional Next flight payloads (runtime uses index.html + _next/ only)
 Tools/parents-guide/__next*.txt
-Tools/parents-guide/*.txt
 Tools/parents-guide/_not-found/__next*.txt
 Tools/parents-guide/_not-found.txt
-Tools/parents-guide/_not-found/
-Tools/parents-guide/*.svg
 
 # Python
 __pycache__/

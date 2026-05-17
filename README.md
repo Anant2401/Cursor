@@ -38,7 +38,7 @@ Shared assets: **`assets/pehchaan_translate.js`**, **`assets/pehchaan_journey.js
 ## Parent’s Guide (FAQ)
 
 - **Source app:** `parent-faq/` (Next.js 16, static export, `basePath: /Tools/parents-guide`).
-- **Deployed static output:** `Tools/parents-guide/` (copy from `parent-faq/out/` after `npm run build`).
+- **Deployed static output:** `Tools/parents-guide/` — run `node scripts/export-parents-guide.cjs` (build + copy); commit HTML **and** `_next/` assets together.
 - **FAQ source of truth:** `FAQDB/faqs.json` — sync into `parent-faq/data/faqs.json` when editing (see `parent-faq/README.md`).
 
 ## Data (`DB/`)
@@ -57,7 +57,8 @@ Key JSON files used by the tools include:
 | Script | Purpose |
 |--------|---------|
 | **`monthly-json-update.cjs`** | Monthly one-shot orchestration: FAQ count, salary build, college registry migration + indexes, registry/integration validation, and parse-check of every `DB/*.json` file |
-| **`validate-tool-integration.cjs`** | Verifies `pehchaan_career_registry.json` + private-role mappings against salary, ROI, exam, Plan B, skill-gap, private-role, and college-registry JSON |
+| **`export-parents-guide.cjs`** | Builds `parent-faq/` and copies static export to `Tools/parents-guide/` |
+| **`validate-tool-integration.cjs`** | Verifies `pehchaan_career_registry.json` + private-role mappings; Parent’s Guide `index.html` ↔ `_next/` assets on disk and in git |
 | **`validate-local-links.cjs`** | Validates local `href`/`src`/`fetch()` targets exist (tools, assets, DB references) |
 | `build-salary-explorer-json.cjs` | Regenerates `DB/pehchaan_salary_explorer_data.json` from explorer HTML + in-file extras |
 | `count-faqs.cjs` | Prints FAQ count from `FAQDB/faqs.json` |

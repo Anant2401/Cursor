@@ -4,14 +4,77 @@
  * and that sitemap.xml lists exactly the same Tool URLs as toolHtmlPaths (canonical tools).
  * Run from repo root: node scripts/validate-tool-integration.cjs
  */
+const { execFileSync } = require("child_process");
 const fs = require("fs");
 const path = require("path");
 
 const root = path.join(__dirname, "..");
 
+function parentsGuideAssetTracked(relPosix) {
+  try {
+    execFileSync("git", ["check-ignore", "-q", relPosix], { cwd: root, stdio: "ignore" });
+    return false;
+  } catch (e) {
+    if (e.status !== 1) return true;
+  }
+  try {
+    execFileSync("git", ["ls-files", "--error-unmatch", relPosix], { cwd: root, stdio: "ignore" });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 function readJson(rel) {
   const p = path.join(root, rel);
   return JSON.parse(fs.readFileSync(p, "utf8"));
+}
+
+/** Parent's Guide is a Next export: index.html must have matching _next assets on disk (and in git). */
+function validateParentsGuideAssets(errs) {
+  const indexRel = "Tools/parents-guide/index.html";
+  const indexPath = path.join(root, indexRel);
+  if (!fs.existsSync(indexPath)) return;
+  const html = fs.readFileSync(indexPath, "utf8");
+  const urls = new Set();
+  for (const m of html.matchAll(/(?:href|src)=["'](\/Tools\/parents-guide\/[^"']+)["']/g)) {
+    urls.add(m[1]);
+  }
+  const nextUrls = [...urls].filter((u) => u.includes("/_next/"));
+  if (!nextUrls.length) {
+    errs.push("parents-guide index.html has no /_next/ asset references — export may be broken");
+    return;
+  }
+  let cssLinked = 0;
+  const missingOnDisk = [];
+  const untrackedInGit = [];
+  for (const url of nextUrls) {
+    const relPosix = url.replace(/^\//, "");
+    const disk = path.join(root, relPosix.replace(/\//g, path.sep));
+    if (!fs.existsSync(disk)) {
+      missingOnDisk.push(relPosix);
+      continue;
+    }
+    if (url.includes(".css")) cssLinked++;
+    if (fs.existsSync(path.join(root, ".git")) && !parentsGuideAssetTracked(relPosix)) {
+      untrackedInGit.push(relPosix);
+    }
+  }
+  if (missingOnDisk.length) {
+    errs.push(
+      `parents-guide index references ${missingOnDisk.length} missing _next file(s), e.g. ${missingOnDisk[0]} — run scripts/export-parents-guide.cjs`
+    );
+  }
+  if (untrackedInGit.length) {
+    errs.push(
+      `parents-guide has ${untrackedInGit.length} _next asset(s) not in git (deploy will be unstyled), e.g. ${untrackedInGit[0]} — git add Tools/parents-guide/ after export`
+    );
+  }
+  if (!cssLinked) {
+    errs.push(
+      "parents-guide index.html links no CSS under _next/ — page will render unstyled; run node scripts/export-parents-guide.cjs"
+    );
+  }
 }
 
 function main() {
@@ -118,6 +181,8 @@ function main() {
   for (const rel of toolHtmlPaths) {
     if (!fs.existsSync(path.join(root, rel))) errs.push(`linked tool path missing on disk: ${rel}`);
   }
+
+  validateParentsGuideAssets(errs);
 
   const siteOrigin = "https://pehchaancareers.in";
   const allowedToolLocs = new Set(toolHtmlPaths.map((rel) => `${siteOrigin}/${rel}`));
