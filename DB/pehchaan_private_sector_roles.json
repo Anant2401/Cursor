@@ -10,37 +10,67 @@
       "metro_id": "delhi_ncr",
       "label": "Delhi NCR",
       "cost_band": "high",
-      "dominant_sectors": ["BFSI", "Consulting", "E-commerce", "Enterprise Sales"]
+      "dominant_sectors": [
+        "BFSI",
+        "Consulting",
+        "E-commerce",
+        "Enterprise Sales"
+      ]
     },
     {
       "metro_id": "chennai",
       "label": "Chennai",
       "cost_band": "medium",
-      "dominant_sectors": ["Automotive", "IT Services", "BPO", "Manufacturing Operations"]
+      "dominant_sectors": [
+        "Automotive",
+        "IT Services",
+        "BPO",
+        "Manufacturing Operations"
+      ]
     },
     {
       "metro_id": "bengaluru",
       "label": "Bengaluru",
       "cost_band": "high",
-      "dominant_sectors": ["SaaS", "IT Services", "Startups", "GCC"]
+      "dominant_sectors": [
+        "SaaS",
+        "IT Services",
+        "Startups",
+        "GCC"
+      ]
     },
     {
       "metro_id": "hyderabad",
       "label": "Hyderabad",
       "cost_band": "medium",
-      "dominant_sectors": ["IT Services", "GCC", "Pharma Ops", "Customer Operations"]
+      "dominant_sectors": [
+        "IT Services",
+        "GCC",
+        "Pharma Ops",
+        "Customer Operations"
+      ]
     },
     {
       "metro_id": "pune",
       "label": "Pune",
       "cost_band": "medium",
-      "dominant_sectors": ["IT Services", "Auto", "BFSI Ops", "Shared Services"]
+      "dominant_sectors": [
+        "IT Services",
+        "Auto",
+        "BFSI Ops",
+        "Shared Services"
+      ]
     },
     {
       "metro_id": "mumbai",
       "label": "Mumbai",
       "cost_band": "high",
-      "dominant_sectors": ["BFSI", "Media", "Sales", "Logistics and Port-linked Ops"]
+      "dominant_sectors": [
+        "BFSI",
+        "Media",
+        "Sales",
+        "Logistics and Port-linked Ops"
+      ]
     }
   ],
   "roles": [
@@ -48,496 +78,3138 @@
       "private_role_id": "sales_executive_b2b",
       "status": "active",
       "career_canonical_id": "sales_business_development",
-      "skill_gap_job_id": "digital_marketer",
-      "plan_b_exam_links": ["cat_mba", "cuet_ug"],
+      "skill_gap_job_id": "sales_business_development",
+      "plan_b_exam_links": [
+        "cat_mba",
+        "cuet_ug"
+      ],
       "role_family": "sales",
       "title": "Sales Executive (B2B / Inside Sales)",
       "summary": "Handles lead outreach, product pitching, demos, and follow-up conversion for business clients.",
       "eligibility_min": "Any graduate with basic communication and spreadsheet comfort",
       "eligibility_preferred": "BBA/BCom or prior internship in sales or customer-facing role",
-      "must_have_skills": ["Communication", "CRM hygiene", "Follow-up discipline", "Basic Excel"],
-      "good_to_have_skills": ["Negotiation", "Outbound calling structure", "Email writing"],
-      "salary_variance_factors": ["Incentive structure", "Industry vertical", "Lead quality", "Shift timing"],
-      "proof_required": ["Mock pitch video", "Simple lead tracker sample", "Interview role-play readiness"],
-      "selection_process": ["Screening call", "Pitch simulation", "Manager round", "HR discussion"],
-      "application_channels": ["LinkedIn Jobs", "Naukri", "Company careers pages", "Referral outreach"],
-      "growth_paths": ["Senior Sales Executive", "Account Manager", "Business Development Manager"],
+      "must_have_skills": [
+        "Communication",
+        "CRM hygiene",
+        "Follow-up discipline",
+        "Basic Excel"
+      ],
+      "good_to_have_skills": [
+        "Negotiation",
+        "Outbound calling structure",
+        "Email writing"
+      ],
+      "salary_variance_factors": [
+        "Incentive structure",
+        "Industry vertical",
+        "Lead quality",
+        "Shift timing"
+      ],
+      "proof_required": [
+        "Mock pitch video",
+        "Simple lead tracker sample",
+        "Interview role-play readiness"
+      ],
+      "selection_process": [
+        "Screening call",
+        "Pitch simulation",
+        "Manager round",
+        "HR discussion"
+      ],
+      "application_channels": [
+        "LinkedIn Jobs",
+        "Naukri",
+        "Company careers pages",
+        "Referral outreach"
+      ],
+      "growth_paths": [
+        "Senior Sales Executive",
+        "Account Manager",
+        "Business Development Manager"
+      ],
       "metro_map": [
-        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹3.0-5.5 LPA", "salary_3yr": "₹6.0-11.0 LPA", "city_reality_note": "Large market and high target pressure; communication quality strongly affects growth." },
-        { "metro_id": "chennai", "demand_level": "medium", "salary_fresher": "₹2.8-4.8 LPA", "salary_3yr": "₹5.5-9.0 LPA", "city_reality_note": "Strong in B2B industrial segments; consistent follow-up matters more than flashy pitching." },
-        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹3.2-6.2 LPA", "salary_3yr": "₹7.0-13.0 LPA", "city_reality_note": "SaaS-heavy hiring; interviewers expect comfort with outbound metrics and CRM usage." },
-        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹3.0-5.3 LPA", "salary_3yr": "₹6.0-10.5 LPA", "city_reality_note": "Inside-sales and tech-sales roles are common; multilingual communication can help." },
-        { "metro_id": "pune", "demand_level": "medium", "salary_fresher": "₹2.8-5.0 LPA", "salary_3yr": "₹5.8-10.0 LPA", "city_reality_note": "Mid-market and IT service sales are frequent; process consistency is valued." },
-        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹3.2-6.0 LPA", "salary_3yr": "₹7.0-13.5 LPA", "city_reality_note": "Fast-paced market with variable incentives; commute and territory planning affect productivity." }
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.5 LPA",
+          "salary_3yr": "₹6.0-11.0 LPA",
+          "city_reality_note": "Large market and high target pressure; communication quality strongly affects growth."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.8-4.8 LPA",
+          "salary_3yr": "₹5.5-9.0 LPA",
+          "city_reality_note": "Strong in B2B industrial segments; consistent follow-up matters more than flashy pitching."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹3.2-6.2 LPA",
+          "salary_3yr": "₹7.0-13.0 LPA",
+          "city_reality_note": "SaaS-heavy hiring; interviewers expect comfort with outbound metrics and CRM usage."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.3 LPA",
+          "salary_3yr": "₹6.0-10.5 LPA",
+          "city_reality_note": "Inside-sales and tech-sales roles are common; multilingual communication can help."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.8-5.0 LPA",
+          "salary_3yr": "₹5.8-10.0 LPA",
+          "city_reality_note": "Mid-market and IT service sales are frequent; process consistency is valued."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.2-6.0 LPA",
+          "salary_3yr": "₹7.0-13.5 LPA",
+          "city_reality_note": "Fast-paced market with variable incentives; commute and territory planning affect productivity."
+        }
       ],
       "plan_30_60_90": {
-        "day_0_30": ["Build a one-page pitch for one product category.", "Learn basic CRM tracking using sample lead data."],
-        "day_31_60": ["Practice 20 cold-call openers and objection responses.", "Run a mock weekly sales pipeline review."],
-        "day_61_90": ["Apply to 40 targeted roles with tailored resume bullets.", "Request at least 10 referrals from alumni and known contacts."]
+        "day_0_30": [
+          "Build a one-page pitch for one product category.",
+          "Learn basic CRM tracking using sample lead data."
+        ],
+        "day_31_60": [
+          "Practice 20 cold-call openers and objection responses.",
+          "Run a mock weekly sales pipeline review."
+        ],
+        "day_61_90": [
+          "Apply to 40 targeted roles with tailored resume bullets.",
+          "Request at least 10 referrals from alumni and known contacts."
+        ]
       },
-      "data_freshness_note": "Compensation includes fixed + variable structures in many firms. Verify current offer structure before accepting."
+      "data_freshness_note": "Compensation includes fixed + variable structures in many firms. Verify current offer structure before accepting.",
+      "remote_eligible": false,
+      "remote_note": "Field sales and client meetings require physical presence for first 1–2 years. Some companies allow WFH for inside-sales targets after 6 months.",
+      "sample_companies": [
+        "Zoho",
+        "Freshworks",
+        "Info Edge (Naukri)",
+        "Indiamart",
+        "UpGrad",
+        "BYJU's"
+      ],
+      "first_job_traps": [
+        "Variable pay often not paid during 3-month probation — confirm fixed component in writing",
+        "Unrealistic targets in edtech and startup sales — ask for team average achievement, not top performer numbers",
+        "90-day notice period after probation locks you in longer than expected"
+      ],
+      "salary_fresher_inr": {
+        "low": 300000,
+        "high": 620000
+      },
+      "salary_3yr_inr": {
+        "low": 700000,
+        "high": 1300000
+      },
+      "cg_student_note": "Sales roles are one of the fastest ways to enter the metro job market with any graduation. Strong Hindi communication is an actual advantage for North India B2B sales. Start with companies that have structured training — Zoho and Info Edge are known for onboarding quality.",
+      "free_prep_resources": [
+        "LinkedIn Sales Navigator free trial — practice lead identification",
+        "HubSpot Academy free sales certifications — hubspot.com/resources/courses",
+        "Cold email templates: Woodpecker blog (free) for outreach structure"
+      ]
     },
     {
       "private_role_id": "customer_support_associate",
       "status": "active",
-      "career_canonical_id": "hotel_hospitality",
-      "skill_gap_job_id": "content_writer",
-      "plan_b_exam_links": ["ssc_banking", "cuet_ug"],
+      "career_canonical_id": "sales_business_development",
+      "skill_gap_job_id": "sales_business_development",
+      "plan_b_exam_links": [
+        "ssc_banking",
+        "cuet_ug"
+      ],
       "role_family": "customer_ops",
       "title": "Customer Support Associate",
       "summary": "Resolves user issues via chat, email, and calls while maintaining SLA and customer satisfaction targets.",
       "eligibility_min": "12th pass or graduate with basic English and typing speed",
       "eligibility_preferred": "Graduate with prior support or process exposure",
-      "must_have_skills": ["Ticket handling", "Written communication", "Empathy and de-escalation", "Basic product understanding"],
-      "good_to_have_skills": ["CRM tools", "Voice process etiquette", "Shift discipline"],
-      "salary_variance_factors": ["Voice vs non-voice process", "Night shift allowances", "Product complexity"],
-      "proof_required": ["Mock support email responses", "Basic typing test readiness", "Issue-resolution scenario answers"],
-      "selection_process": ["Communication screening", "Typing/written test", "Process interview", "HR round"],
-      "application_channels": ["Company careers", "Job boards", "Walk-in drives", "BPO hiring events"],
-      "growth_paths": ["Senior Support Associate", "Quality Analyst", "Team Lead"],
+      "must_have_skills": [
+        "Ticket handling",
+        "Written communication",
+        "Empathy and de-escalation",
+        "Basic product understanding"
+      ],
+      "good_to_have_skills": [
+        "CRM tools",
+        "Voice process etiquette",
+        "Shift discipline"
+      ],
+      "salary_variance_factors": [
+        "Voice vs non-voice process",
+        "Night shift allowances",
+        "Product complexity"
+      ],
+      "proof_required": [
+        "Mock support email responses",
+        "Basic typing test readiness",
+        "Issue-resolution scenario answers"
+      ],
+      "selection_process": [
+        "Communication screening",
+        "Typing/written test",
+        "Process interview",
+        "HR round"
+      ],
+      "application_channels": [
+        "Company careers",
+        "Job boards",
+        "Walk-in drives",
+        "BPO hiring events"
+      ],
+      "growth_paths": [
+        "Senior Support Associate",
+        "Quality Analyst",
+        "Team Lead"
+      ],
       "metro_map": [
-        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹2.4-4.2 LPA", "salary_3yr": "₹4.5-7.5 LPA", "city_reality_note": "Large support ecosystem; shift readiness and communication are key filters." },
-        { "metro_id": "chennai", "demand_level": "high", "salary_fresher": "₹2.3-4.0 LPA", "salary_3yr": "₹4.2-7.0 LPA", "city_reality_note": "Steady process hiring; consistency in QA scores can accelerate growth." },
-        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹2.6-4.5 LPA", "salary_3yr": "₹4.8-8.2 LPA", "city_reality_note": "Product support exposure helps long-term transition to operations or customer success." },
-        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹2.5-4.3 LPA", "salary_3yr": "₹4.6-7.8 LPA", "city_reality_note": "Strong GCC and process hiring; language and SLA discipline matter." },
-        { "metro_id": "pune", "demand_level": "medium", "salary_fresher": "₹2.3-4.0 LPA", "salary_3yr": "₹4.2-7.0 LPA", "city_reality_note": "Shared-service roles are common; non-voice processes often need stronger writing." },
-        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹2.5-4.4 LPA", "salary_3yr": "₹4.8-8.0 LPA", "city_reality_note": "High volume processes; commute planning is important for late shifts." }
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹2.4-4.2 LPA",
+          "salary_3yr": "₹4.5-7.5 LPA",
+          "city_reality_note": "Large support ecosystem; shift readiness and communication are key filters."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "high",
+          "salary_fresher": "₹2.3-4.0 LPA",
+          "salary_3yr": "₹4.2-7.0 LPA",
+          "city_reality_note": "Steady process hiring; consistency in QA scores can accelerate growth."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹2.6-4.5 LPA",
+          "salary_3yr": "₹4.8-8.2 LPA",
+          "city_reality_note": "Product support exposure helps long-term transition to operations or customer success."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹2.5-4.3 LPA",
+          "salary_3yr": "₹4.6-7.8 LPA",
+          "city_reality_note": "Strong GCC and process hiring; language and SLA discipline matter."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.3-4.0 LPA",
+          "salary_3yr": "₹4.2-7.0 LPA",
+          "city_reality_note": "Shared-service roles are common; non-voice processes often need stronger writing."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹2.5-4.4 LPA",
+          "salary_3yr": "₹4.8-8.0 LPA",
+          "city_reality_note": "High volume processes; commute planning is important for late shifts."
+        }
       ],
       "plan_30_60_90": {
-        "day_0_30": ["Practice written responses to 30 common support issues.", "Improve typing speed and grammar consistency."],
-        "day_31_60": ["Learn ticket triage workflow and escalation logic.", "Complete mock QA feedback cycles with a peer."],
-        "day_61_90": ["Apply to voice and non-voice roles across 5 target companies.", "Track interview outcomes and improve weak areas weekly."]
+        "day_0_30": [
+          "Practice written responses to 30 common support issues.",
+          "Improve typing speed and grammar consistency."
+        ],
+        "day_31_60": [
+          "Learn ticket triage workflow and escalation logic.",
+          "Complete mock QA feedback cycles with a peer."
+        ],
+        "day_61_90": [
+          "Apply to voice and non-voice roles across 5 target companies.",
+          "Track interview outcomes and improve weak areas weekly."
+        ]
       },
-      "data_freshness_note": "Process-level compensation can change quickly with shift policies and client mandates."
+      "data_freshness_note": "Process-level compensation can change quickly with shift policies and client mandates.",
+      "remote_eligible": true,
+      "remote_note": "Many BPO and product support roles are fully remote after 30–60 day in-person onboarding. Non-voice (email/chat) support is more remote-friendly than voice process.",
+      "sample_companies": [
+        "Concentrix",
+        "Teleperformance",
+        "WNS",
+        "Genpact",
+        "Amazon India",
+        "Flipkart"
+      ],
+      "first_job_traps": [
+        "Night shift allowance (often ₹3,000–5,000/month) quoted verbally but not in offer letter — get it in writing",
+        "6-month service bond common at large BPOs — breaking it costs ₹15,000–50,000",
+        "Voice process in night shift with no defined rotation cycle can cause health issues — ask about shift policy"
+      ],
+      "salary_fresher_inr": {
+        "low": 240000,
+        "high": 450000
+      },
+      "salary_3yr_inr": {
+        "low": 480000,
+        "high": 820000
+      },
+      "cg_student_note": "Customer support is the most accessible metro job for a CG graduate with good written English. Non-voice process (email/chat) at companies like Amazon or Flipkart can go fully remote after onboarding — meaning you can return to CG. Target non-voice roles specifically if remote work matters to you.",
+      "free_prep_resources": [
+        "TypingTest.com — improve typing speed to 40+ WPM (free)",
+        "Grammarly free tier — build email writing habits",
+        "ICICI Bank's free English communication course on NPTEL (nptel.ac.in)"
+      ]
     },
     {
       "private_role_id": "operations_associate",
       "status": "active",
-      "career_canonical_id": "bba_mba_management",
-      "skill_gap_job_id": "bank_finance",
-      "plan_b_exam_links": ["cat_mba", "cuet_ug", "ssc_banking"],
+      "career_canonical_id": "supply_chain_logistics",
+      "skill_gap_job_id": "bba_mba_management",
+      "plan_b_exam_links": [
+        "cat_mba",
+        "cuet_ug",
+        "ssc_banking"
+      ],
       "role_family": "operations",
       "title": "Operations Associate",
       "summary": "Executes daily business processes, reporting, coordination, and workflow handoffs across teams.",
       "eligibility_min": "Graduate with spreadsheet and process discipline",
       "eligibility_preferred": "BBA/BCom/BSc with internship in operations or back office",
-      "must_have_skills": ["Excel", "Documentation", "Process adherence", "Coordination"],
-      "good_to_have_skills": ["MIS basics", "Root-cause thinking", "SOP writing"],
-      "salary_variance_factors": ["Industry type", "Shift model", "Tools exposure", "Domain specialization"],
-      "proof_required": ["Sample process tracker", "Error-reduction case example", "Basic KPI interpretation"],
-      "selection_process": ["Aptitude", "Excel or process test", "Operations interview", "HR round"],
-      "application_channels": ["LinkedIn", "Naukri", "Shared-services company careers pages", "Referrals"],
-      "growth_paths": ["Senior Operations Associate", "Process Analyst", "Operations Team Lead"],
+      "must_have_skills": [
+        "Excel",
+        "Documentation",
+        "Process adherence",
+        "Coordination"
+      ],
+      "good_to_have_skills": [
+        "MIS basics",
+        "Root-cause thinking",
+        "SOP writing"
+      ],
+      "salary_variance_factors": [
+        "Industry type",
+        "Shift model",
+        "Tools exposure",
+        "Domain specialization"
+      ],
+      "proof_required": [
+        "Sample process tracker",
+        "Error-reduction case example",
+        "Basic KPI interpretation"
+      ],
+      "selection_process": [
+        "Aptitude",
+        "Excel or process test",
+        "Operations interview",
+        "HR round"
+      ],
+      "application_channels": [
+        "LinkedIn",
+        "Naukri",
+        "Shared-services company careers pages",
+        "Referrals"
+      ],
+      "growth_paths": [
+        "Senior Operations Associate",
+        "Process Analyst",
+        "Operations Team Lead"
+      ],
       "metro_map": [
-        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹2.8-4.8 LPA", "salary_3yr": "₹5.0-8.8 LPA", "city_reality_note": "High role volume; process consistency and reliability are primary drivers." },
-        { "metro_id": "chennai", "demand_level": "high", "salary_fresher": "₹2.7-4.6 LPA", "salary_3yr": "₹4.8-8.2 LPA", "city_reality_note": "Operations-heavy industries value quality compliance and reporting hygiene." },
-        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹3.0-5.2 LPA", "salary_3yr": "₹5.5-9.8 LPA", "city_reality_note": "Startup and GCC ops roles reward ownership and turnaround speed." },
-        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹2.9-5.0 LPA", "salary_3yr": "₹5.2-9.2 LPA", "city_reality_note": "Strong process hiring pipelines; interviewers probe problem-solving under SLA pressure." },
-        { "metro_id": "pune", "demand_level": "medium", "salary_fresher": "₹2.8-4.8 LPA", "salary_3yr": "₹5.0-8.8 LPA", "city_reality_note": "Shared-service and finance ops roles are common and stable." },
-        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹3.0-5.3 LPA", "salary_3yr": "₹5.8-10.0 LPA", "city_reality_note": "BFSI-linked operations can offer faster growth with stricter performance expectations." }
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹2.8-4.8 LPA",
+          "salary_3yr": "₹5.0-8.8 LPA",
+          "city_reality_note": "High role volume; process consistency and reliability are primary drivers."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "high",
+          "salary_fresher": "₹2.7-4.6 LPA",
+          "salary_3yr": "₹4.8-8.2 LPA",
+          "city_reality_note": "Operations-heavy industries value quality compliance and reporting hygiene."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.2 LPA",
+          "salary_3yr": "₹5.5-9.8 LPA",
+          "city_reality_note": "Startup and GCC ops roles reward ownership and turnaround speed."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹2.9-5.0 LPA",
+          "salary_3yr": "₹5.2-9.2 LPA",
+          "city_reality_note": "Strong process hiring pipelines; interviewers probe problem-solving under SLA pressure."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.8-4.8 LPA",
+          "salary_3yr": "₹5.0-8.8 LPA",
+          "city_reality_note": "Shared-service and finance ops roles are common and stable."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.3 LPA",
+          "salary_3yr": "₹5.8-10.0 LPA",
+          "city_reality_note": "BFSI-linked operations can offer faster growth with stricter performance expectations."
+        }
       ],
       "plan_30_60_90": {
-        "day_0_30": ["Create sample daily operations tracker in spreadsheet.", "Learn 10 core process metrics (TAT, SLA, error rate)."],
-        "day_31_60": ["Practice root-cause analysis on 3 mock process issues.", "Prepare SOP-style documentation sample."],
-        "day_61_90": ["Apply to 35 operations roles across company and platform channels.", "Do 5 mock interviews focused on process scenarios."]
+        "day_0_30": [
+          "Create sample daily operations tracker in spreadsheet.",
+          "Learn 10 core process metrics (TAT, SLA, error rate)."
+        ],
+        "day_31_60": [
+          "Practice root-cause analysis on 3 mock process issues.",
+          "Prepare SOP-style documentation sample."
+        ],
+        "day_61_90": [
+          "Apply to 35 operations roles across company and platform channels.",
+          "Do 5 mock interviews focused on process scenarios."
+        ]
       },
-      "data_freshness_note": "Ops designations vary by company; compare role responsibilities before salary comparison."
+      "data_freshness_note": "Ops designations vary by company; compare role responsibilities before salary comparison.",
+      "remote_eligible": false,
+      "remote_note": "Operations roles require team coordination and system access that typically needs office presence for first 6–12 months. Hybrid after that in many companies.",
+      "sample_companies": [
+        "Genpact",
+        "EXL Service",
+        "WNS",
+        "Mphasis",
+        "Infosys BPM",
+        "TCS BPS"
+      ],
+      "first_job_traps": [
+        "Operations Associate title can mean very different things — data entry vs process analyst vs coordinator. Clarify actual work before joining",
+        "Shift rotations in global operations teams are common and may not be disclosed clearly at offer stage",
+        "Career ceiling is low if you stay in pure operations without adding analytical skills — upskill to MIS within 18 months"
+      ],
+      "salary_fresher_inr": {
+        "low": 280000,
+        "high": 520000
+      },
+      "salary_3yr_inr": {
+        "low": 500000,
+        "high": 980000
+      },
+      "cg_student_note": "Operations Associate is a reliable metro entry point for BCom, BBA, and BSc graduates. Genpact and EXL in Hyderabad and Bengaluru run campus drives at CSVTU-affiliated colleges and state universities — check their portals in final semester. Upskill to MIS/Excel in parallel from day one to move out of the entry band faster.",
+      "free_prep_resources": [
+        "Excel for Operations: free course on Coursera (Excel Skills for Business by Macquarie)",
+        "Process Excellence basics: Lean basics on YouTube — search 'Lean for beginners Simplilearn'",
+        "KPI dictionary: Klipfolio.com/resources/kpi-examples (free)"
+      ]
     },
     {
       "private_role_id": "mis_executive",
       "status": "active",
       "career_canonical_id": "statistician_data_analyst_bsc",
       "skill_gap_job_id": "data_analyst",
-      "plan_b_exam_links": ["cat_mba", "cuet_ug", "gate_pg"],
+      "plan_b_exam_links": [
+        "cat_mba",
+        "cuet_ug",
+        "gate_pg"
+      ],
       "role_family": "analytics_ops",
       "title": "MIS Executive",
       "summary": "Builds periodic reports, dashboards, and operational insights for decision-making teams.",
       "eligibility_min": "Graduate with Excel and reporting comfort",
       "eligibility_preferred": "BCom/BSc/BBA with Excel and BI exposure",
-      "must_have_skills": ["Excel advanced formulas", "Data cleaning", "Report accuracy", "Basic visualization"],
-      "good_to_have_skills": ["Power BI", "SQL basics", "Automation mindset"],
-      "salary_variance_factors": ["Excel depth", "BI tool exposure", "Domain complexity", "Stakeholder handling"],
-      "proof_required": ["2 dashboard samples", "One automated report sample", "Formula and pivot proficiency"],
-      "selection_process": ["Excel test", "Reporting task", "Operations/analytics interview"],
-      "application_channels": ["LinkedIn", "Naukri", "Company careers pages", "Recruiter outreach"],
-      "growth_paths": ["Senior MIS Executive", "Business Analyst", "Reporting Lead"],
+      "must_have_skills": [
+        "Excel advanced formulas",
+        "Data cleaning",
+        "Report accuracy",
+        "Basic visualization"
+      ],
+      "good_to_have_skills": [
+        "Power BI",
+        "SQL basics",
+        "Automation mindset"
+      ],
+      "salary_variance_factors": [
+        "Excel depth",
+        "BI tool exposure",
+        "Domain complexity",
+        "Stakeholder handling"
+      ],
+      "proof_required": [
+        "2 dashboard samples",
+        "One automated report sample",
+        "Formula and pivot proficiency"
+      ],
+      "selection_process": [
+        "Excel test",
+        "Reporting task",
+        "Operations/analytics interview"
+      ],
+      "application_channels": [
+        "LinkedIn",
+        "Naukri",
+        "Company careers pages",
+        "Recruiter outreach"
+      ],
+      "growth_paths": [
+        "Senior MIS Executive",
+        "Business Analyst",
+        "Reporting Lead"
+      ],
       "metro_map": [
-        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹3.0-5.0 LPA", "salary_3yr": "₹5.5-9.0 LPA", "city_reality_note": "High demand in sales and operations teams; data accuracy is non-negotiable." },
-        { "metro_id": "chennai", "demand_level": "medium", "salary_fresher": "₹2.8-4.6 LPA", "salary_3yr": "₹5.0-8.2 LPA", "city_reality_note": "Stable demand in manufacturing and shared services reporting." },
-        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹3.2-5.5 LPA", "salary_3yr": "₹6.0-10.0 LPA", "city_reality_note": "Tool proficiency with BI stack improves growth significantly." },
-        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹3.0-5.2 LPA", "salary_3yr": "₹5.8-9.5 LPA", "city_reality_note": "Reporting and process analytics demand remains steady in GCC setups." },
-        { "metro_id": "pune", "demand_level": "medium", "salary_fresher": "₹2.9-4.8 LPA", "salary_3yr": "₹5.3-8.8 LPA", "city_reality_note": "MIS + finance operations combinations are common." },
-        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹3.2-5.6 LPA", "salary_3yr": "₹6.0-10.2 LPA", "city_reality_note": "Fast reporting cycles demand strong time discipline and error control." }
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.0 LPA",
+          "salary_3yr": "₹5.5-9.0 LPA",
+          "city_reality_note": "High demand in sales and operations teams; data accuracy is non-negotiable."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.8-4.6 LPA",
+          "salary_3yr": "₹5.0-8.2 LPA",
+          "city_reality_note": "Stable demand in manufacturing and shared services reporting."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹3.2-5.5 LPA",
+          "salary_3yr": "₹6.0-10.0 LPA",
+          "city_reality_note": "Tool proficiency with BI stack improves growth significantly."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.2 LPA",
+          "salary_3yr": "₹5.8-9.5 LPA",
+          "city_reality_note": "Reporting and process analytics demand remains steady in GCC setups."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.9-4.8 LPA",
+          "salary_3yr": "₹5.3-8.8 LPA",
+          "city_reality_note": "MIS + finance operations combinations are common."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.2-5.6 LPA",
+          "salary_3yr": "₹6.0-10.2 LPA",
+          "city_reality_note": "Fast reporting cycles demand strong time discipline and error control."
+        }
       ],
       "plan_30_60_90": {
-        "day_0_30": ["Master key Excel functions and pivot reporting.", "Build one monthly performance dashboard sample."],
-        "day_31_60": ["Add Power BI dashboard and one SQL-based report.", "Create an error-check checklist for reports."],
-        "day_61_90": ["Apply to 30 MIS/reporting roles with portfolio links.", "Practice task-based interviews with timed exercises."]
+        "day_0_30": [
+          "Master key Excel functions and pivot reporting.",
+          "Build one monthly performance dashboard sample."
+        ],
+        "day_31_60": [
+          "Add Power BI dashboard and one SQL-based report.",
+          "Create an error-check checklist for reports."
+        ],
+        "day_61_90": [
+          "Apply to 30 MIS/reporting roles with portfolio links.",
+          "Practice task-based interviews with timed exercises."
+        ]
       },
-      "data_freshness_note": "Many firms use title variants (MIS, Reporting, Data Ops). Compare role scope before applying."
+      "data_freshness_note": "Many firms use title variants (MIS, Reporting, Data Ops). Compare role scope before applying.",
+      "remote_eligible": true,
+      "remote_note": "MIS is one of the most remote-eligible roles in this database. After 3–6 months of onboarding, most reporting roles can be done fully from home with the right tools access.",
+      "sample_companies": [
+        "Genpact",
+        "EXL Service",
+        "Mu Sigma",
+        "Accenture",
+        "KPMG India",
+        "Deloitte India"
+      ],
+      "first_job_traps": [
+        "MIS Executive title at small companies often means manual data entry, not analysis — check if Power BI or Python is actually used",
+        "Reporting deadlines can require working weekends at month-end or quarter-end — ask about peak workload calendar",
+        "Many companies still use legacy Excel-only workflows that limit portfolio-building — prefer companies with BI tools"
+      ],
+      "salary_fresher_inr": {
+        "low": 300000,
+        "high": 550000
+      },
+      "salary_3yr_inr": {
+        "low": 550000,
+        "high": 1000000
+      },
+      "cg_student_note": "MIS Executive is the most remote-eligible non-tech role available. A BCom or BSc Statistics graduate from Bilaspur with strong Excel and Power BI skills can apply to Genpact or EXL in Hyderabad, complete 3 months of onboarding, and return to work from CG. This is the most realistic 'metro salary from hometown' path in the database.",
+      "free_prep_resources": [
+        "Excel: ExcelJet.net — all formulas with examples (free)",
+        "Power BI: Microsoft Learn free Power BI fundamentals — learn.microsoft.com",
+        "SQL for MIS: SQLZoo.net — interactive SQL practice (free)"
+      ]
     },
     {
       "private_role_id": "junior_data_analyst",
       "status": "active",
       "career_canonical_id": "data_scientist",
       "skill_gap_job_id": "data_analyst",
-      "plan_b_exam_links": ["gate_pg", "cat_mba", "jee_engineering"],
+      "plan_b_exam_links": [
+        "gate_pg",
+        "cat_mba",
+        "jee_engineering"
+      ],
       "role_family": "analytics",
       "title": "Junior Data Analyst",
       "summary": "Transforms raw business data into reports and actionable insights for product, operations, and management teams.",
       "eligibility_min": "Graduate with SQL and spreadsheet basics",
       "eligibility_preferred": "BTech/BSc/BCom with analytics projects",
-      "must_have_skills": ["SQL", "Excel", "Data interpretation", "Dashboard basics"],
-      "good_to_have_skills": ["Python", "Statistics", "A/B testing basics"],
-      "salary_variance_factors": ["Tool depth", "Portfolio quality", "Domain alignment", "Interview performance"],
-      "proof_required": ["2 SQL projects", "1 dashboard portfolio", "Case-study explanation ability"],
-      "selection_process": ["SQL/aptitude round", "Case task", "Analytics interview", "HR round"],
-      "application_channels": ["LinkedIn", "AngelList/Wellfound", "Company careers pages", "Referrals"],
-      "growth_paths": ["Data Analyst", "Product Analyst", "Analytics Engineer"],
+      "must_have_skills": [
+        "SQL",
+        "Excel",
+        "Data interpretation",
+        "Dashboard basics"
+      ],
+      "good_to_have_skills": [
+        "Python",
+        "Statistics",
+        "A/B testing basics"
+      ],
+      "salary_variance_factors": [
+        "Tool depth",
+        "Portfolio quality",
+        "Domain alignment",
+        "Interview performance"
+      ],
+      "proof_required": [
+        "2 SQL projects",
+        "1 dashboard portfolio",
+        "Case-study explanation ability"
+      ],
+      "selection_process": [
+        "SQL/aptitude round",
+        "Case task",
+        "Analytics interview",
+        "HR round"
+      ],
+      "application_channels": [
+        "LinkedIn",
+        "AngelList/Wellfound",
+        "Company careers pages",
+        "Referrals"
+      ],
+      "growth_paths": [
+        "Data Analyst",
+        "Product Analyst",
+        "Analytics Engineer"
+      ],
       "metro_map": [
-        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹4.0-6.8 LPA", "salary_3yr": "₹7.5-13.0 LPA", "city_reality_note": "Strong BFSI and consulting demand for reporting and analytics roles." },
-        { "metro_id": "chennai", "demand_level": "medium", "salary_fresher": "₹3.8-6.2 LPA", "salary_3yr": "₹7.0-11.5 LPA", "city_reality_note": "Steady enterprise analytics opportunities with process-heavy workflows." },
-        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹4.5-7.8 LPA", "salary_3yr": "₹8.5-15.0 LPA", "city_reality_note": "Portfolio depth and SQL rigor are heavily tested." },
-        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹4.2-7.0 LPA", "salary_3yr": "₹8.0-13.5 LPA", "city_reality_note": "GCC and product setups often hire analytics juniors with strong fundamentals." },
-        { "metro_id": "pune", "demand_level": "medium", "salary_fresher": "₹3.9-6.4 LPA", "salary_3yr": "₹7.2-12.0 LPA", "city_reality_note": "Roles often blend reporting and stakeholder communication responsibilities." },
-        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹4.2-7.2 LPA", "salary_3yr": "₹8.0-14.0 LPA", "city_reality_note": "Finance and media analytics roles can demand fast turnaround and high accuracy." }
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹4.0-6.8 LPA",
+          "salary_3yr": "₹7.5-13.0 LPA",
+          "city_reality_note": "Strong BFSI and consulting demand for reporting and analytics roles."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "medium",
+          "salary_fresher": "₹3.8-6.2 LPA",
+          "salary_3yr": "₹7.0-11.5 LPA",
+          "city_reality_note": "Steady enterprise analytics opportunities with process-heavy workflows."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹4.5-7.8 LPA",
+          "salary_3yr": "₹8.5-15.0 LPA",
+          "city_reality_note": "Portfolio depth and SQL rigor are heavily tested."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹4.2-7.0 LPA",
+          "salary_3yr": "₹8.0-13.5 LPA",
+          "city_reality_note": "GCC and product setups often hire analytics juniors with strong fundamentals."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹3.9-6.4 LPA",
+          "salary_3yr": "₹7.2-12.0 LPA",
+          "city_reality_note": "Roles often blend reporting and stakeholder communication responsibilities."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹4.2-7.2 LPA",
+          "salary_3yr": "₹8.0-14.0 LPA",
+          "city_reality_note": "Finance and media analytics roles can demand fast turnaround and high accuracy."
+        }
       ],
       "plan_30_60_90": {
-        "day_0_30": ["Complete SQL basics and one reporting project.", "Publish one dashboard with business narrative."],
-        "day_31_60": ["Build second project with data cleaning and KPI framing.", "Practice 20 SQL interview questions."],
-        "day_61_90": ["Apply to 40 analyst roles with tailored portfolio links.", "Track interview feedback and close weak skill gaps."]
+        "day_0_30": [
+          "Complete SQL basics and one reporting project.",
+          "Publish one dashboard with business narrative."
+        ],
+        "day_31_60": [
+          "Build second project with data cleaning and KPI framing.",
+          "Practice 20 SQL interview questions."
+        ],
+        "day_61_90": [
+          "Apply to 40 analyst roles with tailored portfolio links.",
+          "Track interview feedback and close weak skill gaps."
+        ]
       },
-      "data_freshness_note": "Top salary bands usually require strong project depth or niche domain skills."
+      "data_freshness_note": "Top salary bands usually require strong project depth or niche domain skills.",
+      "remote_eligible": true,
+      "remote_note": "Data analyst roles are remote-eligible at most companies after 6–12 months. Startups and product companies often allow full remote from day one for strong portfolios.",
+      "sample_companies": [
+        "Mu Sigma",
+        "Genpact Analytics",
+        "EXL Analytics",
+        "Razorpay",
+        "Swiggy",
+        "PhonePe"
+      ],
+      "first_job_traps": [
+        "Job description says 'Python required' but actual role is Excel + SQL — verify tool stack in interview",
+        "Analytics roles at service companies (Mu Sigma model) involve high-pressure client work with tight deadlines",
+        "Salary bands are wide — ₹4–8 LPA fresher. Portfolio quality is the single biggest differentiator, not college name"
+      ],
+      "salary_fresher_inr": {
+        "low": 400000,
+        "high": 780000
+      },
+      "salary_3yr_inr": {
+        "low": 750000,
+        "high": 1500000
+      },
+      "cg_student_note": "Data Analyst is the highest ROI metro role for a BCom or BSc graduate from CG who is willing to learn SQL and Excel for 6 months. Remote-eligible after first year — meaning you can earn Bengaluru salaries from Korba. Build your portfolio at kaggle.com (free datasets) and publish 2 projects before applying.",
+      "free_prep_resources": [
+        "SQL: LeetCode.com/explore (free SQL problems) — start with Easy category",
+        "Portfolio data: Kaggle.com — free datasets and notebooks",
+        "Google Data Analytics Certificate: Coursera (free to audit) — most widely recognised entry certificate"
+      ]
     },
     {
       "private_role_id": "digital_marketing_executive",
       "status": "active",
       "career_canonical_id": "digital_marketing",
       "skill_gap_job_id": "digital_marketer",
-      "plan_b_exam_links": ["cuet_ug", "cat_mba"],
+      "plan_b_exam_links": [
+        "cuet_ug",
+        "cat_mba"
+      ],
       "role_family": "marketing",
       "title": "Digital Marketing Executive",
       "summary": "Runs campaigns, SEO/SEM tasks, ad optimization, and social content performance tracking.",
       "eligibility_min": "Any graduate with strong writing and campaign learning intent",
       "eligibility_preferred": "Portfolio of campaign simulations or internship work",
-      "must_have_skills": ["Campaign basics", "SEO/SEM understanding", "Analytics tracking", "Copy clarity"],
-      "good_to_have_skills": ["Performance marketing", "Creatives testing", "Marketing automation basics"],
-      "salary_variance_factors": ["Paid ads ownership", "Niche domain", "Performance metrics", "Portfolio quality"],
-      "proof_required": ["Campaign plan sample", "Keyword research sheet", "Analytics snapshot"],
-      "selection_process": ["Assignment round", "Campaign discussion", "Functional interview"],
-      "application_channels": ["Agency careers pages", "LinkedIn", "Naukri", "Freelance-to-full-time path"],
-      "growth_paths": ["Performance Marketer", "Growth Associate", "Digital Marketing Manager"],
+      "must_have_skills": [
+        "Campaign basics",
+        "SEO/SEM understanding",
+        "Analytics tracking",
+        "Copy clarity"
+      ],
+      "good_to_have_skills": [
+        "Performance marketing",
+        "Creatives testing",
+        "Marketing automation basics"
+      ],
+      "salary_variance_factors": [
+        "Paid ads ownership",
+        "Niche domain",
+        "Performance metrics",
+        "Portfolio quality"
+      ],
+      "proof_required": [
+        "Campaign plan sample",
+        "Keyword research sheet",
+        "Analytics snapshot"
+      ],
+      "selection_process": [
+        "Assignment round",
+        "Campaign discussion",
+        "Functional interview"
+      ],
+      "application_channels": [
+        "Agency careers pages",
+        "LinkedIn",
+        "Naukri",
+        "Freelance-to-full-time path"
+      ],
+      "growth_paths": [
+        "Performance Marketer",
+        "Growth Associate",
+        "Digital Marketing Manager"
+      ],
       "metro_map": [
-        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹3.0-5.2 LPA", "salary_3yr": "₹6.0-10.5 LPA", "city_reality_note": "Agency and D2C demand is high; measurable results improve offer quality." },
-        { "metro_id": "chennai", "demand_level": "medium", "salary_fresher": "₹2.8-4.8 LPA", "salary_3yr": "₹5.5-9.0 LPA", "city_reality_note": "Content and local-language marketing capability can differentiate candidates." },
-        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹3.4-6.0 LPA", "salary_3yr": "₹6.8-12.0 LPA", "city_reality_note": "Growth and product marketing exposure can accelerate transitions." },
-        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹3.1-5.4 LPA", "salary_3yr": "₹6.2-10.8 LPA", "city_reality_note": "Performance marketing skills are commonly preferred in interviews." },
-        { "metro_id": "pune", "demand_level": "medium", "salary_fresher": "₹2.9-5.0 LPA", "salary_3yr": "₹5.8-9.8 LPA", "city_reality_note": "SMB and SaaS marketing roles can offer broad learning scope." },
-        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹3.3-5.8 LPA", "salary_3yr": "₹6.5-11.5 LPA", "city_reality_note": "Media and brand ecosystems reward fast campaign iteration and reporting." }
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.2 LPA",
+          "salary_3yr": "₹6.0-10.5 LPA",
+          "city_reality_note": "Agency and D2C demand is high; measurable results improve offer quality."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.8-4.8 LPA",
+          "salary_3yr": "₹5.5-9.0 LPA",
+          "city_reality_note": "Content and local-language marketing capability can differentiate candidates."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹3.4-6.0 LPA",
+          "salary_3yr": "₹6.8-12.0 LPA",
+          "city_reality_note": "Growth and product marketing exposure can accelerate transitions."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹3.1-5.4 LPA",
+          "salary_3yr": "₹6.2-10.8 LPA",
+          "city_reality_note": "Performance marketing skills are commonly preferred in interviews."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.9-5.0 LPA",
+          "salary_3yr": "₹5.8-9.8 LPA",
+          "city_reality_note": "SMB and SaaS marketing roles can offer broad learning scope."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.3-5.8 LPA",
+          "salary_3yr": "₹6.5-11.5 LPA",
+          "city_reality_note": "Media and brand ecosystems reward fast campaign iteration and reporting."
+        }
       ],
       "plan_30_60_90": {
-        "day_0_30": ["Complete one SEO and one ads fundamentals certification.", "Create a sample campaign plan for one category."],
-        "day_31_60": ["Run a small-budget campaign simulation and analyze outcomes.", "Build a portfolio deck of 2-3 marketing case studies."],
-        "day_61_90": ["Apply to 35 agency/in-house marketing roles.", "Reach out to 10 hiring managers with portfolio summary."]
+        "day_0_30": [
+          "Complete one SEO and one ads fundamentals certification.",
+          "Create a sample campaign plan for one category."
+        ],
+        "day_31_60": [
+          "Run a small-budget campaign simulation and analyze outcomes.",
+          "Build a portfolio deck of 2-3 marketing case studies."
+        ],
+        "day_61_90": [
+          "Apply to 35 agency/in-house marketing roles.",
+          "Reach out to 10 hiring managers with portfolio summary."
+        ]
       },
-      "data_freshness_note": "Marketing salaries vary by campaign ownership and performance-linked incentives."
+      "data_freshness_note": "Marketing salaries vary by campaign ownership and performance-linked incentives.",
+      "remote_eligible": true,
+      "remote_note": "Digital marketing is one of the most remote-friendly roles available. Most agencies and D2C brands allow WFH after onboarding. Freelance path from hometown is fully viable.",
+      "sample_companies": [
+        "Dentsu India",
+        "WATConsult",
+        "iProspect",
+        "Bewakoof (D2C)",
+        "Meesho",
+        "Nykaa"
+      ],
+      "first_job_traps": [
+        "Agency roles often pay ₹2.5–3.5 LPA for 60-hour weeks — compare work culture, not just salary",
+        "Paid ads budget ownership is often promised but not given to freshers — clarify budget access before joining",
+        "Performance-linked incentives in digital marketing rarely materialise in the first year — budget for fixed salary only"
+      ],
+      "salary_fresher_inr": {
+        "low": 300000,
+        "high": 600000
+      },
+      "salary_3yr_inr": {
+        "low": 600000,
+        "high": 1200000
+      },
+      "cg_student_note": "Digital marketing is the only role in this database where you can build a real portfolio from Korba before applying. Run campaigns for local businesses — hospitals, coaching institutes, real estate — for free or low cost. That real campaign data (CPL, ROAS, CTR) is worth more in an interview than any certificate. Start local, apply metro.",
+      "free_prep_resources": [
+        "Google Skillshop: Free Google Ads and Analytics certifications — skillshop.google.com",
+        "Meta Blueprint: Free Meta Ads certifications — facebook.com/business/learn",
+        "SEO: Ahrefs free SEO course — ahrefs.com/seo (no login needed)"
+      ]
     },
     {
       "private_role_id": "content_associate",
       "status": "active",
       "career_canonical_id": "journalist_content_writer",
       "skill_gap_job_id": "content_writer",
-      "plan_b_exam_links": ["cuet_ug", "cat_mba"],
+      "plan_b_exam_links": [
+        "cuet_ug",
+        "cat_mba"
+      ],
       "role_family": "content",
       "title": "Content Associate",
       "summary": "Creates blogs, product copy, social content, and SEO-aligned articles for digital channels.",
       "eligibility_min": "Any graduate with writing sample quality",
       "eligibility_preferred": "Portfolio with domain-specific writing and SEO awareness",
-      "must_have_skills": ["Clear writing", "Research synthesis", "Editing", "SEO basics"],
-      "good_to_have_skills": ["Content strategy", "AI-assisted drafting with human editing", "CMS familiarity"],
-      "salary_variance_factors": ["Niche expertise", "Portfolio quality", "Agency vs product company", "Volume expectations"],
-      "proof_required": ["3 published or mock long-form pieces", "One SEO article", "One conversion-focused copy sample"],
-      "selection_process": ["Writing assignment", "Editorial review", "Team interview"],
-      "application_channels": ["LinkedIn", "Content agency pages", "Freelance platforms", "Direct outreach"],
-      "growth_paths": ["Senior Content Associate", "Content Strategist", "Editorial Lead"],
+      "must_have_skills": [
+        "Clear writing",
+        "Research synthesis",
+        "Editing",
+        "SEO basics"
+      ],
+      "good_to_have_skills": [
+        "Content strategy",
+        "AI-assisted drafting with human editing",
+        "CMS familiarity"
+      ],
+      "salary_variance_factors": [
+        "Niche expertise",
+        "Portfolio quality",
+        "Agency vs product company",
+        "Volume expectations"
+      ],
+      "proof_required": [
+        "3 published or mock long-form pieces",
+        "One SEO article",
+        "One conversion-focused copy sample"
+      ],
+      "selection_process": [
+        "Writing assignment",
+        "Editorial review",
+        "Team interview"
+      ],
+      "application_channels": [
+        "LinkedIn",
+        "Content agency pages",
+        "Freelance platforms",
+        "Direct outreach"
+      ],
+      "growth_paths": [
+        "Senior Content Associate",
+        "Content Strategist",
+        "Editorial Lead"
+      ],
       "metro_map": [
-        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹2.8-4.8 LPA", "salary_3yr": "₹5.2-8.8 LPA", "city_reality_note": "Strong content demand in education, policy, and startup ecosystems." },
-        { "metro_id": "chennai", "demand_level": "medium", "salary_fresher": "₹2.6-4.4 LPA", "salary_3yr": "₹4.8-8.0 LPA", "city_reality_note": "Domain writing and quality consistency help role stability." },
-        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹3.0-5.2 LPA", "salary_3yr": "₹5.8-9.8 LPA", "city_reality_note": "Tech and SaaS writing opportunities are strong with portfolio-backed candidates." },
-        { "metro_id": "hyderabad", "demand_level": "medium", "salary_fresher": "₹2.8-4.8 LPA", "salary_3yr": "₹5.0-8.6 LPA", "city_reality_note": "Content + marketing hybrid roles are common in growth-stage firms." },
-        { "metro_id": "pune", "demand_level": "medium", "salary_fresher": "₹2.7-4.6 LPA", "salary_3yr": "₹5.0-8.5 LPA", "city_reality_note": "Edtech and SaaS writing can offer good entry opportunities." },
-        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹3.0-5.3 LPA", "salary_3yr": "₹5.8-10.0 LPA", "city_reality_note": "Media and brand ecosystems prioritize speed and editorial quality." }
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹2.8-4.8 LPA",
+          "salary_3yr": "₹5.2-8.8 LPA",
+          "city_reality_note": "Strong content demand in education, policy, and startup ecosystems."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.6-4.4 LPA",
+          "salary_3yr": "₹4.8-8.0 LPA",
+          "city_reality_note": "Domain writing and quality consistency help role stability."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.2 LPA",
+          "salary_3yr": "₹5.8-9.8 LPA",
+          "city_reality_note": "Tech and SaaS writing opportunities are strong with portfolio-backed candidates."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.8-4.8 LPA",
+          "salary_3yr": "₹5.0-8.6 LPA",
+          "city_reality_note": "Content + marketing hybrid roles are common in growth-stage firms."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.7-4.6 LPA",
+          "salary_3yr": "₹5.0-8.5 LPA",
+          "city_reality_note": "Edtech and SaaS writing can offer good entry opportunities."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.3 LPA",
+          "salary_3yr": "₹5.8-10.0 LPA",
+          "city_reality_note": "Media and brand ecosystems prioritize speed and editorial quality."
+        }
       ],
       "plan_30_60_90": {
-        "day_0_30": ["Create 3 writing samples across different formats.", "Learn basic SEO structure and headline writing."],
-        "day_31_60": ["Build one niche-focused mini-portfolio site.", "Edit and improve pieces based on peer feedback."],
-        "day_61_90": ["Apply to 40 content roles and internships.", "Send direct outreach with two best writing samples."]
+        "day_0_30": [
+          "Create 3 writing samples across different formats.",
+          "Learn basic SEO structure and headline writing."
+        ],
+        "day_31_60": [
+          "Build one niche-focused mini-portfolio site.",
+          "Edit and improve pieces based on peer feedback."
+        ],
+        "day_61_90": [
+          "Apply to 40 content roles and internships.",
+          "Send direct outreach with two best writing samples."
+        ]
       },
-      "data_freshness_note": "Pay varies significantly by domain specialization and writing quality benchmark."
+      "data_freshness_note": "Pay varies significantly by domain specialization and writing quality benchmark.",
+      "remote_eligible": true,
+      "remote_note": "Content writing is fully remote from day one at most companies. Freelance path is viable immediately after building a portfolio of 3–5 strong pieces.",
+      "sample_companies": [
+        "Pepper Content",
+        "Internshala (hiring)",
+        "Razorpay Blog",
+        "Swiggy Content",
+        "Josh Talks",
+        "ET Now Digital"
+      ],
+      "first_job_traps": [
+        "Content mills pay ₹1–2 per word for low-quality volume work — avoid these and target branded content teams",
+        "AI content tools have lowered entry salaries for generic content — niche expertise or a strong editorial voice differentiates",
+        "Many 'content internships' are unpaid or ₹5,000/month — set a floor of ₹12,000/month for any serious engagement"
+      ],
+      "salary_fresher_inr": {
+        "low": 270000,
+        "high": 520000
+      },
+      "salary_3yr_inr": {
+        "low": 520000,
+        "high": 980000
+      },
+      "cg_student_note": "Content writing is the most accessible remote role for a CG graduate who writes well in English. Pepper Content and similar platforms allow you to build a paid portfolio without leaving home. Once you have 5 published pieces in a niche (education, finance, health), you can apply directly to branded content teams at metro companies.",
+      "free_prep_resources": [
+        "Hemingway App: hemingwayapp.com — improve sentence clarity (free)",
+        "SEO content writing: Yoast free SEO training — yoast.com/academy",
+        "Portfolio publishing: Medium.com or Substack (free) — publish your best 3 pieces here"
+      ]
     },
     {
       "private_role_id": "hr_recruiter_entry",
       "status": "active",
       "career_canonical_id": "hr_manager",
-      "skill_gap_job_id": "bank_finance",
-      "plan_b_exam_links": ["cat_mba", "cuet_ug"],
+      "skill_gap_job_id": "hr_manager",
+      "plan_b_exam_links": [
+        "cat_mba",
+        "cuet_ug"
+      ],
       "role_family": "hr",
       "title": "HR Recruiter (Entry)",
       "summary": "Sources candidates, screens resumes, coordinates interviews, and supports hiring funnels.",
       "eligibility_min": "Graduate with communication and coordination skills",
       "eligibility_preferred": "BBA/MBA(HR) or internship in talent acquisition",
-      "must_have_skills": ["Sourcing basics", "Screening calls", "Interview coordination", "Tracker discipline"],
-      "good_to_have_skills": ["ATS familiarity", "Employer-brand messaging", "Stakeholder communication"],
-      "salary_variance_factors": ["Hiring volume", "Tech vs non-tech hiring", "Agency vs in-house"],
-      "proof_required": ["Sample candidate tracker", "Mock screening script", "Basic JD understanding"],
-      "selection_process": ["Communication round", "Scenario questions", "Manager/HR interview"],
-      "application_channels": ["LinkedIn", "Naukri", "Consulting agency pages", "Referral pipeline"],
-      "growth_paths": ["Talent Acquisition Specialist", "HRBP Associate", "Recruitment Lead"],
+      "must_have_skills": [
+        "Sourcing basics",
+        "Screening calls",
+        "Interview coordination",
+        "Tracker discipline"
+      ],
+      "good_to_have_skills": [
+        "ATS familiarity",
+        "Employer-brand messaging",
+        "Stakeholder communication"
+      ],
+      "salary_variance_factors": [
+        "Hiring volume",
+        "Tech vs non-tech hiring",
+        "Agency vs in-house"
+      ],
+      "proof_required": [
+        "Sample candidate tracker",
+        "Mock screening script",
+        "Basic JD understanding"
+      ],
+      "selection_process": [
+        "Communication round",
+        "Scenario questions",
+        "Manager/HR interview"
+      ],
+      "application_channels": [
+        "LinkedIn",
+        "Naukri",
+        "Consulting agency pages",
+        "Referral pipeline"
+      ],
+      "growth_paths": [
+        "Talent Acquisition Specialist",
+        "HRBP Associate",
+        "Recruitment Lead"
+      ],
       "metro_map": [
-        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹3.0-5.0 LPA", "salary_3yr": "₹5.8-10.0 LPA", "city_reality_note": "Recruitment consulting and in-house roles both available; metrics are tightly tracked." },
-        { "metro_id": "chennai", "demand_level": "medium", "salary_fresher": "₹2.8-4.6 LPA", "salary_3yr": "₹5.2-8.8 LPA", "city_reality_note": "Volume hiring in services creates stable entry opportunities." },
-        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹3.2-5.5 LPA", "salary_3yr": "₹6.2-11.0 LPA", "city_reality_note": "Tech hiring cycles can be competitive; sourcing skill quality matters." },
-        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹3.0-5.2 LPA", "salary_3yr": "₹5.8-10.2 LPA", "city_reality_note": "GCC and services hiring support steady recruiter demand." },
-        { "metro_id": "pune", "demand_level": "medium", "salary_fresher": "₹2.9-4.8 LPA", "salary_3yr": "₹5.4-9.2 LPA", "city_reality_note": "Balanced mix of in-house and agency opportunities." },
-        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹3.2-5.6 LPA", "salary_3yr": "₹6.0-10.8 LPA", "city_reality_note": "BFSI and corporate hiring cycles can create high-pressure timelines." }
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.0 LPA",
+          "salary_3yr": "₹5.8-10.0 LPA",
+          "city_reality_note": "Recruitment consulting and in-house roles both available; metrics are tightly tracked."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.8-4.6 LPA",
+          "salary_3yr": "₹5.2-8.8 LPA",
+          "city_reality_note": "Volume hiring in services creates stable entry opportunities."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹3.2-5.5 LPA",
+          "salary_3yr": "₹6.2-11.0 LPA",
+          "city_reality_note": "Tech hiring cycles can be competitive; sourcing skill quality matters."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.2 LPA",
+          "salary_3yr": "₹5.8-10.2 LPA",
+          "city_reality_note": "GCC and services hiring support steady recruiter demand."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.9-4.8 LPA",
+          "salary_3yr": "₹5.4-9.2 LPA",
+          "city_reality_note": "Balanced mix of in-house and agency opportunities."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.2-5.6 LPA",
+          "salary_3yr": "₹6.0-10.8 LPA",
+          "city_reality_note": "BFSI and corporate hiring cycles can create high-pressure timelines."
+        }
       ],
       "plan_30_60_90": {
-        "day_0_30": ["Learn role screening basics and common hiring metrics.", "Create a sample candidate tracker and email templates."],
-        "day_31_60": ["Practice mock screening calls and interview scheduling workflows.", "Learn ATS basics and sourcing methods."],
-        "day_61_90": ["Apply to 30 recruiter roles and 20 recruiting internships.", "Build referral outreach to current recruiters on LinkedIn."]
+        "day_0_30": [
+          "Learn role screening basics and common hiring metrics.",
+          "Create a sample candidate tracker and email templates."
+        ],
+        "day_31_60": [
+          "Practice mock screening calls and interview scheduling workflows.",
+          "Learn ATS basics and sourcing methods."
+        ],
+        "day_61_90": [
+          "Apply to 30 recruiter roles and 20 recruiting internships.",
+          "Build referral outreach to current recruiters on LinkedIn."
+        ]
       },
-      "data_freshness_note": "Recruiting compensation can include variable components tied to closure and hiring targets."
+      "data_freshness_note": "Recruiting compensation can include variable components tied to closure and hiring targets.",
+      "remote_eligible": false,
+      "remote_note": "HR and recruitment roles require stakeholder presence and interview coordination that generally needs office time for first 6–12 months. Hybrid after that.",
+      "sample_companies": [
+        "Naukri (Info Edge)",
+        "TeamLease",
+        "ABC Consultants",
+        "Randstad India",
+        "Persistent Systems HR",
+        "Wipro HR"
+      ],
+      "first_job_traps": [
+        "Recruitment consulting firms often have aggressive closure targets — ask about average team closure rate, not top performer numbers",
+        "Variable pay in consulting recruitment can be delayed by client payment cycles — cash-flow plan your first 3 months",
+        "HRBP and generalist roles require MBA HR — recruiter roles do not. Be clear about which path you want before joining"
+      ],
+      "salary_fresher_inr": {
+        "low": 280000,
+        "high": 550000
+      },
+      "salary_3yr_inr": {
+        "low": 520000,
+        "high": 1100000
+      },
+      "cg_student_note": "HR Recruiter is an accessible metro entry for BBA or any graduate from CG with strong communication. TeamLease and Randstad run volume hiring drives that are open to candidates from any state. Start with recruitment consulting (volume hiring) to build process knowledge, then move to in-house HR at a product or tech company within 2–3 years for better compensation.",
+      "free_prep_resources": [
+        "LinkedIn Talent Solutions free webinars — business.linkedin.com/talent-solutions",
+        "SHRM free HR resources — shrm.org/resources-and-tools",
+        "Naukri Resdex free trial for sourcing practice — naukri.com/recruiter"
+      ]
     },
     {
       "private_role_id": "finance_operations_associate",
       "status": "active",
       "career_canonical_id": "bank_po",
       "skill_gap_job_id": "bank_finance",
-      "plan_b_exam_links": ["ssc_banking", "cat_mba", "ca_foundation"],
+      "plan_b_exam_links": [
+        "ssc_banking",
+        "cat_mba",
+        "ca_foundation"
+      ],
       "role_family": "finance_ops",
       "title": "Finance Operations Associate",
       "summary": "Supports reconciliations, invoice processing, reporting, and compliance workflows in finance teams.",
       "eligibility_min": "Graduate with finance/accounting basics",
       "eligibility_preferred": "BCom/BBA/MCom or internship in finance operations",
-      "must_have_skills": ["Excel", "Reconciliation basics", "Attention to detail", "Process compliance"],
-      "good_to_have_skills": ["ERP familiarity", "Audit support basics", "MIS reporting"],
-      "salary_variance_factors": ["Domain complexity", "ERP skill level", "Shift model", "Accuracy metrics"],
-      "proof_required": ["Sample reconciliation sheet", "Process-control checklist", "Finance workflow understanding"],
-      "selection_process": ["Aptitude or accounting test", "Excel test", "Functional interview"],
-      "application_channels": ["Company careers pages", "Naukri", "LinkedIn", "Referrals"],
-      "growth_paths": ["Senior Finance Ops Associate", "Process Analyst (Finance)", "Assistant Manager Finance Ops"],
+      "must_have_skills": [
+        "Excel",
+        "Reconciliation basics",
+        "Attention to detail",
+        "Process compliance"
+      ],
+      "good_to_have_skills": [
+        "ERP familiarity",
+        "Audit support basics",
+        "MIS reporting"
+      ],
+      "salary_variance_factors": [
+        "Domain complexity",
+        "ERP skill level",
+        "Shift model",
+        "Accuracy metrics"
+      ],
+      "proof_required": [
+        "Sample reconciliation sheet",
+        "Process-control checklist",
+        "Finance workflow understanding"
+      ],
+      "selection_process": [
+        "Aptitude or accounting test",
+        "Excel test",
+        "Functional interview"
+      ],
+      "application_channels": [
+        "Company careers pages",
+        "Naukri",
+        "LinkedIn",
+        "Referrals"
+      ],
+      "growth_paths": [
+        "Senior Finance Ops Associate",
+        "Process Analyst (Finance)",
+        "Assistant Manager Finance Ops"
+      ],
       "metro_map": [
-        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹3.0-5.0 LPA", "salary_3yr": "₹5.8-9.8 LPA", "city_reality_note": "BFSI and enterprise shared-services drive continuous demand." },
-        { "metro_id": "chennai", "demand_level": "medium", "salary_fresher": "₹2.9-4.8 LPA", "salary_3yr": "₹5.5-9.0 LPA", "city_reality_note": "Steady hiring in accounting and captive finance processes." },
-        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹3.2-5.4 LPA", "salary_3yr": "₹6.0-10.2 LPA", "city_reality_note": "Global process centers often expect process and system agility." },
-        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹3.1-5.2 LPA", "salary_3yr": "₹5.8-10.0 LPA", "city_reality_note": "Finance shared-services roles remain a stable entry path." },
-        { "metro_id": "pune", "demand_level": "high", "salary_fresher": "₹3.0-5.0 LPA", "salary_3yr": "₹5.8-9.8 LPA", "city_reality_note": "Good volume in global business services and captive centers." },
-        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹3.3-5.8 LPA", "salary_3yr": "₹6.2-10.8 LPA", "city_reality_note": "Higher opportunities but also stronger competition from finance-focused candidates." }
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.0 LPA",
+          "salary_3yr": "₹5.8-9.8 LPA",
+          "city_reality_note": "BFSI and enterprise shared-services drive continuous demand."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.9-4.8 LPA",
+          "salary_3yr": "₹5.5-9.0 LPA",
+          "city_reality_note": "Steady hiring in accounting and captive finance processes."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹3.2-5.4 LPA",
+          "salary_3yr": "₹6.0-10.2 LPA",
+          "city_reality_note": "Global process centers often expect process and system agility."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹3.1-5.2 LPA",
+          "salary_3yr": "₹5.8-10.0 LPA",
+          "city_reality_note": "Finance shared-services roles remain a stable entry path."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.0 LPA",
+          "salary_3yr": "₹5.8-9.8 LPA",
+          "city_reality_note": "Good volume in global business services and captive centers."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.3-5.8 LPA",
+          "salary_3yr": "₹6.2-10.8 LPA",
+          "city_reality_note": "Higher opportunities but also stronger competition from finance-focused candidates."
+        }
       ],
       "plan_30_60_90": {
-        "day_0_30": ["Refresh accounting basics and Excel reconciliation workflows.", "Create one sample monthly close tracker."],
-        "day_31_60": ["Practice finance process interview scenarios.", "Learn one ERP workflow concept and terminology."],
-        "day_61_90": ["Apply to 35 finance ops roles with role-specific resume keywords.", "Request referrals from alumni in BFSI/shared services."]
+        "day_0_30": [
+          "Refresh accounting basics and Excel reconciliation workflows.",
+          "Create one sample monthly close tracker."
+        ],
+        "day_31_60": [
+          "Practice finance process interview scenarios.",
+          "Learn one ERP workflow concept and terminology."
+        ],
+        "day_61_90": [
+          "Apply to 35 finance ops roles with role-specific resume keywords.",
+          "Request referrals from alumni in BFSI/shared services."
+        ]
       },
-      "data_freshness_note": "Role responsibilities differ by organization; validate whether posting is accounting, reporting, or transaction-heavy."
+      "data_freshness_note": "Role responsibilities differ by organization; validate whether posting is accounting, reporting, or transaction-heavy.",
+      "remote_eligible": false,
+      "remote_note": "Finance operations roles require system access, data security, and team coordination that typically needs office presence for first 6–12 months. Hybrid possible after that.",
+      "sample_companies": [
+        "Genpact",
+        "EXL Service",
+        "WNS Global",
+        "Accenture Operations",
+        "Mphasis Finance",
+        "Capita India"
+      ],
+      "first_job_traps": [
+        "Month-end and quarter-end closing requires working weekends — ask specifically about overtime policy and compensation",
+        "ERP access restrictions in first 3 months as a trainee can limit what you actually learn — ask about training completeness",
+        "Finance ops title at smaller companies can mean pure data entry — verify if reconciliation, reporting, and analysis are included"
+      ],
+      "salary_fresher_inr": {
+        "low": 280000,
+        "high": 540000
+      },
+      "salary_3yr_inr": {
+        "low": 550000,
+        "high": 1020000
+      },
+      "cg_student_note": "Finance Operations Associate is one of the most reliable metro entry roles for BCom graduates from CG. Genpact and EXL in Hyderabad and Pune run large BCom fresher drives. The qualification path: BCom + Tally + Excel certification. CA Foundation or CMA Foundation alongside this role accelerates career growth significantly.",
+      "free_prep_resources": [
+        "Tally ERP 9 free learning: TallyHelp.com official tutorials",
+        "Accounting basics: AccountingCoach.com (free) — all fundamentals with quizzes",
+        "SAP FICO basics: SAP Learning Hub free trial — learning.sap.com"
+      ]
     },
     {
       "private_role_id": "logistics_coordinator",
       "status": "active",
       "career_canonical_id": "supply_chain_logistics",
-      "skill_gap_job_id": "bank_finance",
-      "plan_b_exam_links": ["cat_mba", "cuet_ug", "ssc_banking"],
+      "skill_gap_job_id": "supply_chain_logistics",
+      "plan_b_exam_links": [
+        "cat_mba",
+        "cuet_ug",
+        "ssc_banking"
+      ],
       "role_family": "supply_chain",
       "title": "Logistics Coordinator",
       "summary": "Coordinates shipments, delivery timelines, vendor communication, and fulfillment issue resolution.",
       "eligibility_min": "Graduate with process discipline and communication",
       "eligibility_preferred": "Commerce/operations background with ERP or logistics exposure",
-      "must_have_skills": ["Coordination", "Tracking and escalation", "Spreadsheet operations", "Vendor communication"],
-      "good_to_have_skills": ["Supply chain basics", "Inventory awareness", "ERP familiarity"],
-      "salary_variance_factors": ["Industry vertical", "Shift and field component", "System/tool proficiency"],
-      "proof_required": ["Sample shipment tracker", "Escalation workflow understanding", "Delivery KPI interpretation"],
-      "selection_process": ["Aptitude/process round", "Operations scenario interview", "HR round"],
-      "application_channels": ["Logistics company careers pages", "LinkedIn", "Naukri", "Regional hiring drives"],
-      "growth_paths": ["Senior Logistics Coordinator", "Warehouse Ops Lead", "Supply Chain Analyst"],
+      "must_have_skills": [
+        "Coordination",
+        "Tracking and escalation",
+        "Spreadsheet operations",
+        "Vendor communication"
+      ],
+      "good_to_have_skills": [
+        "Supply chain basics",
+        "Inventory awareness",
+        "ERP familiarity"
+      ],
+      "salary_variance_factors": [
+        "Industry vertical",
+        "Shift and field component",
+        "System/tool proficiency"
+      ],
+      "proof_required": [
+        "Sample shipment tracker",
+        "Escalation workflow understanding",
+        "Delivery KPI interpretation"
+      ],
+      "selection_process": [
+        "Aptitude/process round",
+        "Operations scenario interview",
+        "HR round"
+      ],
+      "application_channels": [
+        "Logistics company careers pages",
+        "LinkedIn",
+        "Naukri",
+        "Regional hiring drives"
+      ],
+      "growth_paths": [
+        "Senior Logistics Coordinator",
+        "Warehouse Ops Lead",
+        "Supply Chain Analyst"
+      ],
       "metro_map": [
-        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹2.8-4.8 LPA", "salary_3yr": "₹5.2-8.8 LPA", "city_reality_note": "Strong e-commerce and warehousing ecosystem creates regular openings." },
-        { "metro_id": "chennai", "demand_level": "high", "salary_fresher": "₹2.8-4.7 LPA", "salary_3yr": "₹5.0-8.5 LPA", "city_reality_note": "Manufacturing and port-linked logistics roles are common." },
-        { "metro_id": "bengaluru", "demand_level": "medium", "salary_fresher": "₹2.9-5.0 LPA", "salary_3yr": "₹5.4-9.0 LPA", "city_reality_note": "City-scale delivery and fulfillment operations support stable demand." },
-        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹2.9-4.9 LPA", "salary_3yr": "₹5.3-8.9 LPA", "city_reality_note": "Growing warehousing and pharma supply chains provide opportunities." },
-        { "metro_id": "pune", "demand_level": "high", "salary_fresher": "₹2.8-4.8 LPA", "salary_3yr": "₹5.2-8.7 LPA", "city_reality_note": "Auto and industrial logistics coordination roles are frequent." },
-        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹3.0-5.2 LPA", "salary_3yr": "₹5.6-9.4 LPA", "city_reality_note": "Port-adjacent and high-volume logistics operations can involve tighter timelines." }
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹2.8-4.8 LPA",
+          "salary_3yr": "₹5.2-8.8 LPA",
+          "city_reality_note": "Strong e-commerce and warehousing ecosystem creates regular openings."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "high",
+          "salary_fresher": "₹2.8-4.7 LPA",
+          "salary_3yr": "₹5.0-8.5 LPA",
+          "city_reality_note": "Manufacturing and port-linked logistics roles are common."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.9-5.0 LPA",
+          "salary_3yr": "₹5.4-9.0 LPA",
+          "city_reality_note": "City-scale delivery and fulfillment operations support stable demand."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹2.9-4.9 LPA",
+          "salary_3yr": "₹5.3-8.9 LPA",
+          "city_reality_note": "Growing warehousing and pharma supply chains provide opportunities."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "high",
+          "salary_fresher": "₹2.8-4.8 LPA",
+          "salary_3yr": "₹5.2-8.7 LPA",
+          "city_reality_note": "Auto and industrial logistics coordination roles are frequent."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.2 LPA",
+          "salary_3yr": "₹5.6-9.4 LPA",
+          "city_reality_note": "Port-adjacent and high-volume logistics operations can involve tighter timelines."
+        }
       ],
       "plan_30_60_90": {
-        "day_0_30": ["Learn supply chain terminology and fulfillment KPIs.", "Build sample dispatch and tracking sheet."],
-        "day_31_60": ["Practice escalation and delay-management scenarios.", "Understand basic warehouse and transit workflow."],
-        "day_61_90": ["Apply to 30 logistics roles plus 15 operations support roles.", "Create targeted resume emphasizing reliability and coordination."]
+        "day_0_30": [
+          "Learn supply chain terminology and fulfillment KPIs.",
+          "Build sample dispatch and tracking sheet."
+        ],
+        "day_31_60": [
+          "Practice escalation and delay-management scenarios.",
+          "Understand basic warehouse and transit workflow."
+        ],
+        "day_61_90": [
+          "Apply to 30 logistics roles plus 15 operations support roles.",
+          "Create targeted resume emphasizing reliability and coordination."
+        ]
       },
-      "data_freshness_note": "Compensation varies by field intensity, location coverage, and shift requirements."
+      "data_freshness_note": "Compensation varies by field intensity, location coverage, and shift requirements.",
+      "remote_eligible": false,
+      "remote_note": "Logistics coordination requires vendor calls, physical tracking systems, and often warehouse coordination. In-person for first year. Limited hybrid possible after.",
+      "sample_companies": [
+        "Delhivery",
+        "Blue Dart",
+        "XpressBees",
+        "Ecom Express",
+        "Mahindra Logistics",
+        "Amazon Logistics"
+      ],
+      "first_job_traps": [
+        "Field logistics roles (last-mile coordination) have irregular hours and weekend work — confirm schedule before joining",
+        "Attrition in logistics is high — company stability matters more than brand name. Check Glassdoor before accepting",
+        "Some coordinator roles are actually data entry for tracking — ask if vendor negotiation and escalation are part of scope"
+      ],
+      "salary_fresher_inr": {
+        "low": 280000,
+        "high": 500000
+      },
+      "salary_3yr_inr": {
+        "low": 500000,
+        "high": 900000
+      },
+      "cg_student_note": "Logistics is growing fast in India with e-commerce expansion. CG students who understand warehouse operations, road transport networks, and coordination have genuine relevance — the hinterland supply chain connects directly to places like Korba. Delhivery and XpressBees are growing aggressively and hire BCom and BBA graduates.",
+      "free_prep_resources": [
+        "Supply chain basics: Coursera — Supply Chain Fundamentals by MIT (free to audit)",
+        "Logistics terminology: Council of Supply Chain Management Professionals glossary — cscmp.org (free)",
+        "Excel for logistics: YouTube — 'Excel for Supply Chain Management' by Leila Gharani (free)"
+      ]
     },
     {
       "private_role_id": "qa_test_associate",
       "status": "active",
       "career_canonical_id": "software_engineer",
       "skill_gap_job_id": "software_developer",
-      "plan_b_exam_links": ["jee_engineering", "gate_pg", "cuet_ug"],
+      "plan_b_exam_links": [
+        "jee_engineering",
+        "gate_pg",
+        "cuet_ug"
+      ],
       "role_family": "tech_quality",
       "title": "QA / Test Associate",
       "summary": "Tests software features, reports defects, validates fixes, and supports release quality checks.",
       "eligibility_min": "Graduate with logical reasoning and basic software understanding",
       "eligibility_preferred": "BTech/BSc/BCA with testing practice projects",
-      "must_have_skills": ["Test case writing", "Bug reporting", "Functional testing", "Basic SDLC understanding"],
-      "good_to_have_skills": ["API testing", "Automation basics", "Jira/Test management tools"],
-      "salary_variance_factors": ["Manual vs automation mix", "Domain complexity", "Tool exposure", "Release ownership"],
-      "proof_required": ["Sample test cases", "Bug report samples", "One tested demo application"],
-      "selection_process": ["Logic or aptitude test", "Testing assignment", "Technical interview", "HR round"],
-      "application_channels": ["LinkedIn", "Company careers", "Startup hiring boards", "Referral channels"],
-      "growth_paths": ["QA Engineer", "Automation Tester", "Quality Analyst Lead"],
+      "must_have_skills": [
+        "Test case writing",
+        "Bug reporting",
+        "Functional testing",
+        "Basic SDLC understanding"
+      ],
+      "good_to_have_skills": [
+        "API testing",
+        "Automation basics",
+        "Jira/Test management tools"
+      ],
+      "salary_variance_factors": [
+        "Manual vs automation mix",
+        "Domain complexity",
+        "Tool exposure",
+        "Release ownership"
+      ],
+      "proof_required": [
+        "Sample test cases",
+        "Bug report samples",
+        "One tested demo application"
+      ],
+      "selection_process": [
+        "Logic or aptitude test",
+        "Testing assignment",
+        "Technical interview",
+        "HR round"
+      ],
+      "application_channels": [
+        "LinkedIn",
+        "Company careers",
+        "Startup hiring boards",
+        "Referral channels"
+      ],
+      "growth_paths": [
+        "QA Engineer",
+        "Automation Tester",
+        "Quality Analyst Lead"
+      ],
       "metro_map": [
-        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹3.2-5.8 LPA", "salary_3yr": "₹6.0-11.0 LPA", "city_reality_note": "Service and product firms both hire; assignment performance matters." },
-        { "metro_id": "chennai", "demand_level": "high", "salary_fresher": "₹3.0-5.5 LPA", "salary_3yr": "₹5.8-10.2 LPA", "city_reality_note": "Strong IT services ecosystem with predictable entry-level opportunities." },
-        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹3.5-6.5 LPA", "salary_3yr": "₹6.8-12.5 LPA", "city_reality_note": "Automation readiness can significantly improve growth trajectory." },
-        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹3.3-6.0 LPA", "salary_3yr": "₹6.2-11.5 LPA", "city_reality_note": "GCC and product hiring create steady quality roles." },
-        { "metro_id": "pune", "demand_level": "high", "salary_fresher": "₹3.1-5.8 LPA", "salary_3yr": "₹6.0-10.8 LPA", "city_reality_note": "Service and captive tech centers hire QA for large delivery teams." },
-        { "metro_id": "mumbai", "demand_level": "medium", "salary_fresher": "₹3.2-5.9 LPA", "salary_3yr": "₹6.2-11.2 LPA", "city_reality_note": "Roles available but competition can be stronger for product-oriented teams." }
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹3.2-5.8 LPA",
+          "salary_3yr": "₹6.0-11.0 LPA",
+          "city_reality_note": "Service and product firms both hire; assignment performance matters."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.5 LPA",
+          "salary_3yr": "₹5.8-10.2 LPA",
+          "city_reality_note": "Strong IT services ecosystem with predictable entry-level opportunities."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹3.5-6.5 LPA",
+          "salary_3yr": "₹6.8-12.5 LPA",
+          "city_reality_note": "Automation readiness can significantly improve growth trajectory."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹3.3-6.0 LPA",
+          "salary_3yr": "₹6.2-11.5 LPA",
+          "city_reality_note": "GCC and product hiring create steady quality roles."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "high",
+          "salary_fresher": "₹3.1-5.8 LPA",
+          "salary_3yr": "₹6.0-10.8 LPA",
+          "city_reality_note": "Service and captive tech centers hire QA for large delivery teams."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "medium",
+          "salary_fresher": "₹3.2-5.9 LPA",
+          "salary_3yr": "₹6.2-11.2 LPA",
+          "city_reality_note": "Roles available but competition can be stronger for product-oriented teams."
+        }
       ],
       "plan_30_60_90": {
-        "day_0_30": ["Learn test case fundamentals and defect lifecycle.", "Test one sample web app and document defects."],
-        "day_31_60": ["Build API testing basics and regression checklist.", "Prepare short testing portfolio with screenshots."],
-        "day_61_90": ["Apply to 40 QA/test roles with project evidence.", "Practice assignment-style interviews weekly."]
+        "day_0_30": [
+          "Learn test case fundamentals and defect lifecycle.",
+          "Test one sample web app and document defects."
+        ],
+        "day_31_60": [
+          "Build API testing basics and regression checklist.",
+          "Prepare short testing portfolio with screenshots."
+        ],
+        "day_61_90": [
+          "Apply to 40 QA/test roles with project evidence.",
+          "Practice assignment-style interviews weekly."
+        ]
       },
-      "data_freshness_note": "QA demand remains strong, but automation literacy increasingly affects compensation and growth."
+      "data_freshness_note": "QA demand remains strong, but automation literacy increasingly affects compensation and growth.",
+      "remote_eligible": true,
+      "remote_note": "QA roles are highly remote-eligible. Many IT service companies allow full WFH after 3–6 months of onboarding. Manual testing especially remote-friendly.",
+      "sample_companies": [
+        "TCS",
+        "Infosys",
+        "Wipro",
+        "Mphasis",
+        "Hexaware",
+        "Persistent Systems"
+      ],
+      "first_job_traps": [
+        "Service bond at TCS, Infosys, Wipro — 6–12 month bond, breaking costs ₹50,000–75,000. Read contract before signing",
+        "Manual testing is being automated — learn Selenium or API testing basics within first year or growth will stall",
+        "QA in service companies can mean repetitive regression testing with no variety — ask about project rotation policy"
+      ],
+      "salary_fresher_inr": {
+        "low": 320000,
+        "high": 650000
+      },
+      "salary_3yr_inr": {
+        "low": 620000,
+        "high": 1250000
+      },
+      "cg_student_note": "QA is the most reliable metro job for a BTech graduate from CG who missed campus placement or wants to enter IT without deep coding. TCS and Infosys run off-campus drives regularly — register on their NextStep/Instep portals in your final year. After 1–2 years as manual QA, learn Selenium automation to double your salary band.",
+      "free_prep_resources": [
+        "Software Testing basics: Guru99.com — complete free testing tutorial",
+        "Selenium free: Selenium.dev official documentation + YouTube 'Selenium for beginners'",
+        "TCS NextStep registration: nextstep.tcs.com (register before final semester)"
+      ]
     },
     {
       "private_role_id": "business_development_associate",
       "status": "active",
       "career_canonical_id": "sales_business_development",
-      "skill_gap_job_id": "digital_marketer",
-      "plan_b_exam_links": ["cat_mba", "cuet_ug"],
+      "skill_gap_job_id": "sales_business_development",
+      "plan_b_exam_links": [
+        "cat_mba",
+        "cuet_ug"
+      ],
       "role_family": "sales_growth",
       "title": "Business Development Associate",
       "summary": "Builds pipeline through outreach, discovery calls, and qualification for revenue and growth teams.",
       "eligibility_min": "Any graduate with communication confidence",
       "eligibility_preferred": "Internship in sales, growth, or customer-facing function",
-      "must_have_skills": ["Discovery questioning", "Lead qualification", "Follow-up rhythm", "CRM updating"],
-      "good_to_have_skills": ["Outbound sequencing", "Product understanding", "Negotiation basics"],
-      "salary_variance_factors": ["Incentive plan", "Target ownership", "Sales cycle length", "Domain expertise"],
-      "proof_required": ["Lead qualification script", "Call disposition tracker sample", "Mock objection handling"],
-      "selection_process": ["Screening call", "Role-play", "Hiring manager interview", "HR round"],
-      "application_channels": ["LinkedIn", "Startup job boards", "Company career pages", "Referral asks"],
-      "growth_paths": ["Business Development Executive", "Account Executive", "Growth Manager"],
+      "must_have_skills": [
+        "Discovery questioning",
+        "Lead qualification",
+        "Follow-up rhythm",
+        "CRM updating"
+      ],
+      "good_to_have_skills": [
+        "Outbound sequencing",
+        "Product understanding",
+        "Negotiation basics"
+      ],
+      "salary_variance_factors": [
+        "Incentive plan",
+        "Target ownership",
+        "Sales cycle length",
+        "Domain expertise"
+      ],
+      "proof_required": [
+        "Lead qualification script",
+        "Call disposition tracker sample",
+        "Mock objection handling"
+      ],
+      "selection_process": [
+        "Screening call",
+        "Role-play",
+        "Hiring manager interview",
+        "HR round"
+      ],
+      "application_channels": [
+        "LinkedIn",
+        "Startup job boards",
+        "Company career pages",
+        "Referral asks"
+      ],
+      "growth_paths": [
+        "Business Development Executive",
+        "Account Executive",
+        "Growth Manager"
+      ],
       "metro_map": [
-        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹3.0-5.6 LPA", "salary_3yr": "₹6.2-11.5 LPA", "city_reality_note": "Large B2B and education sales market with aggressive targets." },
-        { "metro_id": "chennai", "demand_level": "medium", "salary_fresher": "₹2.8-5.0 LPA", "salary_3yr": "₹5.8-9.8 LPA", "city_reality_note": "Steady growth in enterprise and industrial client acquisition roles." },
-        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹3.3-6.2 LPA", "salary_3yr": "₹7.0-13.0 LPA", "city_reality_note": "SaaS-driven sales development roles can scale quickly with performance." },
-        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹3.0-5.6 LPA", "salary_3yr": "₹6.2-11.0 LPA", "city_reality_note": "High hiring across inside-sales and growth teams." },
-        { "metro_id": "pune", "demand_level": "medium", "salary_fresher": "₹2.9-5.2 LPA", "salary_3yr": "₹6.0-10.2 LPA", "city_reality_note": "Balanced demand in IT, education, and service-sector growth teams." },
-        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹3.2-6.0 LPA", "salary_3yr": "₹6.8-12.5 LPA", "city_reality_note": "Large sales market with higher upside but sharper performance expectations." }
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.6 LPA",
+          "salary_3yr": "₹6.2-11.5 LPA",
+          "city_reality_note": "Large B2B and education sales market with aggressive targets."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.8-5.0 LPA",
+          "salary_3yr": "₹5.8-9.8 LPA",
+          "city_reality_note": "Steady growth in enterprise and industrial client acquisition roles."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹3.3-6.2 LPA",
+          "salary_3yr": "₹7.0-13.0 LPA",
+          "city_reality_note": "SaaS-driven sales development roles can scale quickly with performance."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.6 LPA",
+          "salary_3yr": "₹6.2-11.0 LPA",
+          "city_reality_note": "High hiring across inside-sales and growth teams."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.9-5.2 LPA",
+          "salary_3yr": "₹6.0-10.2 LPA",
+          "city_reality_note": "Balanced demand in IT, education, and service-sector growth teams."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.2-6.0 LPA",
+          "salary_3yr": "₹6.8-12.5 LPA",
+          "city_reality_note": "Large sales market with higher upside but sharper performance expectations."
+        }
       ],
       "plan_30_60_90": {
-        "day_0_30": ["Prepare one outreach script and one discovery-call checklist.", "Practice product explanation in 60-second format."],
-        "day_31_60": ["Simulate lead qualification and CRM updates for 20 mock prospects.", "Practice objection handling with peer mock calls."],
-        "day_61_90": ["Apply to 40 BDA roles with role-targeted resume points.", "Use referral outreach to increase interview conversion."]
+        "day_0_30": [
+          "Prepare one outreach script and one discovery-call checklist.",
+          "Practice product explanation in 60-second format."
+        ],
+        "day_31_60": [
+          "Simulate lead qualification and CRM updates for 20 mock prospects.",
+          "Practice objection handling with peer mock calls."
+        ],
+        "day_61_90": [
+          "Apply to 40 BDA roles with role-targeted resume points.",
+          "Use referral outreach to increase interview conversion."
+        ]
       },
-      "data_freshness_note": "Incentive-heavy roles can alter total earnings materially. Confirm fixed vs variable split before joining."
+      "data_freshness_note": "Incentive-heavy roles can alter total earnings materially. Confirm fixed vs variable split before joining.",
+      "remote_eligible": false,
+      "remote_note": "BDA roles in startups and SaaS companies are typically in-person or hybrid for first year due to team culture and performance monitoring requirements.",
+      "sample_companies": [
+        "Zoho",
+        "Freshworks",
+        "LeadSquared",
+        "Clevertap",
+        "Chargebee",
+        "Razorpay"
+      ],
+      "first_job_traps": [
+        "Edtech BDA roles (BYJU's model) have high-pressure sales tactics and frequent target changes — research company thoroughly",
+        "Incentive-heavy offers with ₹2.5 LPA fixed + ₹3 LPA variable are risky — budget only for fixed component",
+        "High attrition in BDA roles means job security is low — build skills that transfer to Account Executive role within 18 months"
+      ],
+      "salary_fresher_inr": {
+        "low": 300000,
+        "high": 620000
+      },
+      "salary_3yr_inr": {
+        "low": 620000,
+        "high": 1300000
+      },
+      "cg_student_note": "BDA at a good SaaS company (Zoho, Freshworks, Razorpay) is a genuine career-building role. At an edtech company with aggressive targets and variable-heavy pay, it can be financially damaging. Research the company's Glassdoor reviews before accepting. Zoho specifically is known for strong training and fair treatment of freshers.",
+      "free_prep_resources": [
+        "HubSpot Sales free certification: academy.hubspot.com",
+        "Cold outreach: Jason Bay YouTube channel 'Outbound Squad' (free)",
+        "CRM practice: HubSpot free CRM — crm.hubspot.com (free forever)"
+      ]
     },
     {
       "private_role_id": "customer_success_associate",
       "status": "active",
       "career_canonical_id": "sales_business_development",
-      "skill_gap_job_id": "hr_manager",
-      "plan_b_exam_links": ["cuet_ug", "cat_mba"],
+      "skill_gap_job_id": "sales_business_development",
+      "plan_b_exam_links": [
+        "cuet_ug",
+        "cat_mba"
+      ],
       "role_family": "customer_ops",
       "title": "Customer Success Associate",
       "summary": "Supports onboarding, adoption, retention, and issue-resolution workflows for new and existing customers.",
       "eligibility_min": "Graduate with strong communication and problem-solving approach",
       "eligibility_preferred": "Experience in support, operations, or account coordination",
-      "must_have_skills": ["Customer communication", "Issue diagnosis", "Ticketing and follow-up", "SLA awareness"],
-      "good_to_have_skills": ["CRM handling", "Excel reporting", "Escalation management"],
-      "salary_variance_factors": ["Product complexity", "Customer segment", "Shift model", "Retention ownership"],
-      "proof_required": ["Customer handling scenarios", "Resolution tracker sample", "Email communication quality"],
-      "selection_process": ["Communication screen", "Scenario or role-play", "Manager interview", "HR round"],
-      "application_channels": ["LinkedIn", "Company careers pages", "Naukri", "Referral asks"],
-      "growth_paths": ["Customer Success Executive", "Account Manager", "Customer Success Lead"],
+      "must_have_skills": [
+        "Customer communication",
+        "Issue diagnosis",
+        "Ticketing and follow-up",
+        "SLA awareness"
+      ],
+      "good_to_have_skills": [
+        "CRM handling",
+        "Excel reporting",
+        "Escalation management"
+      ],
+      "salary_variance_factors": [
+        "Product complexity",
+        "Customer segment",
+        "Shift model",
+        "Retention ownership"
+      ],
+      "proof_required": [
+        "Customer handling scenarios",
+        "Resolution tracker sample",
+        "Email communication quality"
+      ],
+      "selection_process": [
+        "Communication screen",
+        "Scenario or role-play",
+        "Manager interview",
+        "HR round"
+      ],
+      "application_channels": [
+        "LinkedIn",
+        "Company careers pages",
+        "Naukri",
+        "Referral asks"
+      ],
+      "growth_paths": [
+        "Customer Success Executive",
+        "Account Manager",
+        "Customer Success Lead"
+      ],
       "metro_map": [
-        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹3.0-5.2 LPA", "salary_3yr": "₹5.8-10.2 LPA", "city_reality_note": "Strong demand from SaaS, edtech, and service companies." },
-        { "metro_id": "chennai", "demand_level": "medium", "salary_fresher": "₹2.8-4.8 LPA", "salary_3yr": "₹5.2-9.0 LPA", "city_reality_note": "Steady openings in support and customer lifecycle teams." },
-        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹3.2-5.8 LPA", "salary_3yr": "₹6.2-11.2 LPA", "city_reality_note": "Customer-facing SaaS roles with faster progression." },
-        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹3.0-5.4 LPA", "salary_3yr": "₹5.8-10.5 LPA", "city_reality_note": "GCC and product ecosystem support consistent hiring." },
-        { "metro_id": "pune", "demand_level": "medium", "salary_fresher": "₹2.9-5.0 LPA", "salary_3yr": "₹5.5-9.6 LPA", "city_reality_note": "Growth teams in technology and services create demand." },
-        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹3.2-5.8 LPA", "salary_3yr": "₹6.0-10.8 LPA", "city_reality_note": "Strong hiring in BFSI and enterprise support environments." }
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.2 LPA",
+          "salary_3yr": "₹5.8-10.2 LPA",
+          "city_reality_note": "Strong demand from SaaS, edtech, and service companies."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.8-4.8 LPA",
+          "salary_3yr": "₹5.2-9.0 LPA",
+          "city_reality_note": "Steady openings in support and customer lifecycle teams."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹3.2-5.8 LPA",
+          "salary_3yr": "₹6.2-11.2 LPA",
+          "city_reality_note": "Customer-facing SaaS roles with faster progression."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.4 LPA",
+          "salary_3yr": "₹5.8-10.5 LPA",
+          "city_reality_note": "GCC and product ecosystem support consistent hiring."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.9-5.0 LPA",
+          "salary_3yr": "₹5.5-9.6 LPA",
+          "city_reality_note": "Growth teams in technology and services create demand."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.2-5.8 LPA",
+          "salary_3yr": "₹6.0-10.8 LPA",
+          "city_reality_note": "Strong hiring in BFSI and enterprise support environments."
+        }
       ],
       "plan_30_60_90": {
-        "day_0_30": ["Learn product fundamentals and onboarding workflows.", "Create sample customer communication templates."],
-        "day_31_60": ["Practice ticket triage and escalation scenarios.", "Build one retention-risk tracker in spreadsheet/CRM."],
-        "day_61_90": ["Apply to 35 customer success and support roles.", "Use targeted referrals in customer operations teams."]
+        "day_0_30": [
+          "Learn product fundamentals and onboarding workflows.",
+          "Create sample customer communication templates."
+        ],
+        "day_31_60": [
+          "Practice ticket triage and escalation scenarios.",
+          "Build one retention-risk tracker in spreadsheet/CRM."
+        ],
+        "day_61_90": [
+          "Apply to 35 customer success and support roles.",
+          "Use targeted referrals in customer operations teams."
+        ]
       },
-      "data_freshness_note": "Compensation may include variable retention bonuses in some companies."
+      "data_freshness_note": "Compensation may include variable retention bonuses in some companies.",
+      "remote_eligible": true,
+      "remote_note": "Customer success is increasingly remote-eligible, especially at SaaS companies. After 3–6 months of onboarding, most CSA roles can be done fully from home.",
+      "sample_companies": [
+        "Freshworks",
+        "Zoho",
+        "Clevertap",
+        "Intercom India",
+        "Chargebee",
+        "Kapture CRM"
+      ],
+      "first_job_traps": [
+        "Customer success is sometimes used as a euphemism for support — clarify whether role includes retention ownership, upsell, or purely issue resolution",
+        "Variable retention bonus often not paid to freshers — do not count this in monthly budget",
+        "Confusion between 'Customer Support' and 'Customer Success' titles — CS is strategic, support is operational. Both exist but pay differently"
+      ],
+      "salary_fresher_inr": {
+        "low": 300000,
+        "high": 580000
+      },
+      "salary_3yr_inr": {
+        "low": 580000,
+        "high": 1120000
+      },
+      "cg_student_note": "Customer Success at a SaaS company is the best non-technical metro role for learning product thinking and business communication. Freshworks in Chennai and Bengaluru actively hire freshers for CSA roles. Remote-eligible after onboarding — making it possible to return to CG. Strong English communication is the main requirement.",
+      "free_prep_resources": [
+        "Customer Success basics: Gainsight free CS academy — gainsight.com/customer-success-resources",
+        "Product knowledge: ProductHunt.com — understand SaaS products before interviews",
+        "Communication: Coursera — 'English for Career Development' by Penn (free to audit)"
+      ]
     },
     {
       "private_role_id": "recruitment_coordinator",
       "status": "active",
-      "career_canonical_id": "bba_mba_management",
+      "career_canonical_id": "hr_manager",
       "skill_gap_job_id": "hr_manager",
-      "plan_b_exam_links": ["cat_mba", "cuet_ug"],
+      "plan_b_exam_links": [
+        "cat_mba",
+        "cuet_ug"
+      ],
       "role_family": "hr",
       "title": "Recruitment Coordinator",
       "summary": "Coordinates hiring schedules, candidate communication, interview logistics, and recruiter workflows.",
       "eligibility_min": "Graduate with communication and process discipline",
       "eligibility_preferred": "Exposure to HR internships or campus placement cells",
-      "must_have_skills": ["Interview coordination", "Candidate communication", "Documentation accuracy", "Scheduling and follow-up"],
-      "good_to_have_skills": ["ATS basics", "Sourcing support", "Stakeholder management"],
-      "salary_variance_factors": ["Hiring volume", "Industry type", "Recruitment tool stack", "Campus vs lateral mix"],
-      "proof_required": ["Interview scheduling tracker", "Candidate communication samples", "Process checklist"],
-      "selection_process": ["Communication screening", "Coordination scenario round", "HR manager interview"],
-      "application_channels": ["LinkedIn", "Naukri", "Company HR pages", "Recruitment agency networks"],
-      "growth_paths": ["Talent Acquisition Associate", "Recruiter", "HR Operations Specialist"],
+      "must_have_skills": [
+        "Interview coordination",
+        "Candidate communication",
+        "Documentation accuracy",
+        "Scheduling and follow-up"
+      ],
+      "good_to_have_skills": [
+        "ATS basics",
+        "Sourcing support",
+        "Stakeholder management"
+      ],
+      "salary_variance_factors": [
+        "Hiring volume",
+        "Industry type",
+        "Recruitment tool stack",
+        "Campus vs lateral mix"
+      ],
+      "proof_required": [
+        "Interview scheduling tracker",
+        "Candidate communication samples",
+        "Process checklist"
+      ],
+      "selection_process": [
+        "Communication screening",
+        "Coordination scenario round",
+        "HR manager interview"
+      ],
+      "application_channels": [
+        "LinkedIn",
+        "Naukri",
+        "Company HR pages",
+        "Recruitment agency networks"
+      ],
+      "growth_paths": [
+        "Talent Acquisition Associate",
+        "Recruiter",
+        "HR Operations Specialist"
+      ],
       "metro_map": [
-        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹2.8-4.8 LPA", "salary_3yr": "₹5.2-9.0 LPA", "city_reality_note": "Large hiring ecosystems create steady coordination roles." },
-        { "metro_id": "chennai", "demand_level": "medium", "salary_fresher": "₹2.7-4.6 LPA", "salary_3yr": "₹5.0-8.5 LPA", "city_reality_note": "IT and shared-services hiring keeps regular demand." },
-        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹3.0-5.2 LPA", "salary_3yr": "₹5.8-9.8 LPA", "city_reality_note": "Tech ecosystem supports year-round recruitment activity." },
-        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹2.9-5.0 LPA", "salary_3yr": "₹5.5-9.4 LPA", "city_reality_note": "High-volume recruiter teams need strong coordination support." },
-        { "metro_id": "pune", "demand_level": "medium", "salary_fresher": "₹2.8-4.8 LPA", "salary_3yr": "₹5.2-8.8 LPA", "city_reality_note": "Service-sector and GCC hiring generate opportunities." },
-        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹3.0-5.4 LPA", "salary_3yr": "₹5.8-10.0 LPA", "city_reality_note": "Large corporate hiring creates wider role availability." }
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹2.8-4.8 LPA",
+          "salary_3yr": "₹5.2-9.0 LPA",
+          "city_reality_note": "Large hiring ecosystems create steady coordination roles."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.7-4.6 LPA",
+          "salary_3yr": "₹5.0-8.5 LPA",
+          "city_reality_note": "IT and shared-services hiring keeps regular demand."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.2 LPA",
+          "salary_3yr": "₹5.8-9.8 LPA",
+          "city_reality_note": "Tech ecosystem supports year-round recruitment activity."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹2.9-5.0 LPA",
+          "salary_3yr": "₹5.5-9.4 LPA",
+          "city_reality_note": "High-volume recruiter teams need strong coordination support."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.8-4.8 LPA",
+          "salary_3yr": "₹5.2-8.8 LPA",
+          "city_reality_note": "Service-sector and GCC hiring generate opportunities."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.4 LPA",
+          "salary_3yr": "₹5.8-10.0 LPA",
+          "city_reality_note": "Large corporate hiring creates wider role availability."
+        }
       ],
       "plan_30_60_90": {
-        "day_0_30": ["Learn recruitment process flow and interview lifecycle.", "Build sample hiring-status dashboard in Excel."],
-        "day_31_60": ["Practice recruiter-candidate communication and scheduling SOPs.", "Study ATS terminology and hiring metrics basics."],
-        "day_61_90": ["Apply to 30 HR coordination and TA support roles.", "Ask for referrals from HR alumni and recruiters."]
+        "day_0_30": [
+          "Learn recruitment process flow and interview lifecycle.",
+          "Build sample hiring-status dashboard in Excel."
+        ],
+        "day_31_60": [
+          "Practice recruiter-candidate communication and scheduling SOPs.",
+          "Study ATS terminology and hiring metrics basics."
+        ],
+        "day_61_90": [
+          "Apply to 30 HR coordination and TA support roles.",
+          "Ask for referrals from HR alumni and recruiters."
+        ]
       },
-      "data_freshness_note": "Roles can be coordinator-heavy or sourcing-heavy; verify JD scope before joining."
+      "data_freshness_note": "Roles can be coordinator-heavy or sourcing-heavy; verify JD scope before joining.",
+      "remote_eligible": false,
+      "remote_note": "Coordination roles require candidate and hiring manager interaction that typically needs office presence for first year. Partial hybrid possible after establishing processes.",
+      "sample_companies": [
+        "Randstad India",
+        "Manpower Group",
+        "TeamLease",
+        "Wipro HR Shared Services",
+        "Accenture HR Ops",
+        "IBM Kenexa"
+      ],
+      "first_job_traps": [
+        "Recruitment coordination at large service companies involves high-volume, repetitive scheduling — not strategic HR. Know what you are signing up for",
+        "Notice period extension requests are common at HR companies during peak hiring seasons — read contract clause carefully",
+        "This role alone does not qualify you for HRBP or generalist HR — pair it with MBA HR or PGDHRM within 2–3 years"
+      ],
+      "salary_fresher_inr": {
+        "low": 260000,
+        "high": 520000
+      },
+      "salary_3yr_inr": {
+        "low": 490000,
+        "high": 980000
+      },
+      "cg_student_note": "Recruitment coordinator is a reliable entry point into the HR function for BBA graduates from CG. Randstad and Manpower Group hire from any state. Use this role to learn ATS tools (Workday, Taleo, Greenhouse) and build a specific skill that makes you a specialist recruiter in tech, BFSI, or healthcare — specialisation doubles salary within 3 years.",
+      "free_prep_resources": [
+        "LinkedIn Recruiter basics: LinkedIn Learning free trial (1 month)",
+        "ATS understanding: Workable blog — workable.com/resources (free HR articles)",
+        "HR metrics: SHRM free resources — shrm.org/hr-today"
+      ]
     },
     {
       "private_role_id": "inside_sales_executive",
       "status": "active",
       "career_canonical_id": "sales_business_development",
       "skill_gap_job_id": "sales_business_development",
-      "plan_b_exam_links": ["cat_mba", "cuet_ug"],
+      "plan_b_exam_links": [
+        "cat_mba",
+        "cuet_ug"
+      ],
       "role_family": "sales",
       "title": "Inside Sales Executive",
       "summary": "Runs outreach, qualification, product demos, and conversion follow-ups for pipeline growth.",
       "eligibility_min": "Graduate with communication confidence",
       "eligibility_preferred": "Sales internship, telecalling, or business development exposure",
-      "must_have_skills": ["Cold outreach", "Discovery calls", "Objection handling", "CRM updates"],
-      "good_to_have_skills": ["Demo delivery", "Proposal writing", "Negotiation basics"],
-      "salary_variance_factors": ["Target ownership", "Incentive structure", "Domain and ticket size", "Conversion rates"],
-      "proof_required": ["Outreach call script", "Lead tracker sample", "Mock product pitch"],
-      "selection_process": ["Screening call", "Role-play round", "Hiring manager interview", "HR round"],
-      "application_channels": ["LinkedIn", "Startup job portals", "Naukri", "Company careers pages"],
-      "growth_paths": ["Senior Inside Sales Executive", "Account Executive", "Sales Manager"],
+      "must_have_skills": [
+        "Cold outreach",
+        "Discovery calls",
+        "Objection handling",
+        "CRM updates"
+      ],
+      "good_to_have_skills": [
+        "Demo delivery",
+        "Proposal writing",
+        "Negotiation basics"
+      ],
+      "salary_variance_factors": [
+        "Target ownership",
+        "Incentive structure",
+        "Domain and ticket size",
+        "Conversion rates"
+      ],
+      "proof_required": [
+        "Outreach call script",
+        "Lead tracker sample",
+        "Mock product pitch"
+      ],
+      "selection_process": [
+        "Screening call",
+        "Role-play round",
+        "Hiring manager interview",
+        "HR round"
+      ],
+      "application_channels": [
+        "LinkedIn",
+        "Startup job portals",
+        "Naukri",
+        "Company careers pages"
+      ],
+      "growth_paths": [
+        "Senior Inside Sales Executive",
+        "Account Executive",
+        "Sales Manager"
+      ],
       "metro_map": [
-        { "metro_id": "delhi_ncr", "demand_level": "high", "salary_fresher": "₹3.0-5.6 LPA", "salary_3yr": "₹6.0-11.2 LPA", "city_reality_note": "High-volume sales markets with faster role cycles." },
-        { "metro_id": "chennai", "demand_level": "medium", "salary_fresher": "₹2.8-5.0 LPA", "salary_3yr": "₹5.6-9.8 LPA", "city_reality_note": "B2B and service-led inside sales roles are stable." },
-        { "metro_id": "bengaluru", "demand_level": "high", "salary_fresher": "₹3.3-6.2 LPA", "salary_3yr": "₹6.8-12.8 LPA", "city_reality_note": "SaaS and tech sales teams drive strong hiring." },
-        { "metro_id": "hyderabad", "demand_level": "high", "salary_fresher": "₹3.0-5.8 LPA", "salary_3yr": "₹6.2-11.4 LPA", "city_reality_note": "Good opportunities in enterprise and edtech sales." },
-        { "metro_id": "pune", "demand_level": "medium", "salary_fresher": "₹2.9-5.2 LPA", "salary_3yr": "₹5.8-10.2 LPA", "city_reality_note": "Balanced pipeline roles across IT and services." },
-        { "metro_id": "mumbai", "demand_level": "high", "salary_fresher": "₹3.2-6.0 LPA", "salary_3yr": "₹6.6-12.2 LPA", "city_reality_note": "Large market with high upside in performance-driven teams." }
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.6 LPA",
+          "salary_3yr": "₹6.0-11.2 LPA",
+          "city_reality_note": "High-volume sales markets with faster role cycles."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.8-5.0 LPA",
+          "salary_3yr": "₹5.6-9.8 LPA",
+          "city_reality_note": "B2B and service-led inside sales roles are stable."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹3.3-6.2 LPA",
+          "salary_3yr": "₹6.8-12.8 LPA",
+          "city_reality_note": "SaaS and tech sales teams drive strong hiring."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.8 LPA",
+          "salary_3yr": "₹6.2-11.4 LPA",
+          "city_reality_note": "Good opportunities in enterprise and edtech sales."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.9-5.2 LPA",
+          "salary_3yr": "₹5.8-10.2 LPA",
+          "city_reality_note": "Balanced pipeline roles across IT and services."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.2-6.0 LPA",
+          "salary_3yr": "₹6.6-12.2 LPA",
+          "city_reality_note": "Large market with high upside in performance-driven teams."
+        }
       ],
       "plan_30_60_90": {
-        "day_0_30": ["Build outreach messaging and qualification framework.", "Practice a 3-minute product pitch and FAQ handling."],
-        "day_31_60": ["Run mock call simulations with objection handling.", "Build a lead-to-conversion dashboard sample."],
-        "day_61_90": ["Apply to 40 inside-sales roles and follow up weekly.", "Use referral outreach to improve interview hit rate."]
+        "day_0_30": [
+          "Build outreach messaging and qualification framework.",
+          "Practice a 3-minute product pitch and FAQ handling."
+        ],
+        "day_31_60": [
+          "Run mock call simulations with objection handling.",
+          "Build a lead-to-conversion dashboard sample."
+        ],
+        "day_61_90": [
+          "Apply to 40 inside-sales roles and follow up weekly.",
+          "Use referral outreach to improve interview hit rate."
+        ]
       },
-      "data_freshness_note": "Always check fixed salary vs incentive share before accepting offers."
+      "data_freshness_note": "Always check fixed salary vs incentive share before accepting offers.",
+      "remote_eligible": false,
+      "remote_note": "Inside sales roles require team huddles, performance monitoring, and manager oversight that typically needs office presence for first year. Some companies move to hybrid after proven performance.",
+      "sample_companies": [
+        "Zoho",
+        "Freshworks",
+        "Info Edge",
+        "Indiamart",
+        "JustDial",
+        "Housing.com"
+      ],
+      "first_job_traps": [
+        "Always check fixed vs variable split — ₹2.5L fixed + ₹3L variable means you could earn only ₹2.5L if targets are unrealistic",
+        "Inside sales in edtech sector has had high-pressure, unethical selling practices — research specific company on Glassdoor",
+        "100% targets in Month 1 with no ramp-up period is a red flag — ask about ramp-up policy explicitly before joining"
+      ],
+      "salary_fresher_inr": {
+        "low": 300000,
+        "high": 620000
+      },
+      "salary_3yr_inr": {
+        "low": 620000,
+        "high": 1280000
+      },
+      "cg_student_note": "Inside sales at a product company (Zoho, Freshworks, Info Edge) builds real skills. Inside sales at an edtech company with aggressive tactics can damage your confidence and career trajectory. The company matters more than the role title here. Zoho's sales training programme is specifically known for being fair and structured for freshers.",
+      "free_prep_resources": [
+        "Sales fundamentals: HubSpot Academy free Sales Software certification — academy.hubspot.com",
+        "Objection handling: 'Way of the Wolf' by Jordan Belfort (book) — available at libraries",
+        "Product pitch practice: Toastmasters International free guest sessions — toastmasters.org"
+      ]
+    },
+    {
+      "private_role_id": "junior_frontend_developer",
+      "status": "active",
+      "career_canonical_id": "software_engineer",
+      "skill_gap_job_id": "software_developer",
+      "plan_b_exam_links": [
+        "jee_engineering",
+        "gate_pg"
+      ],
+      "role_family": "tech_dev",
+      "title": "Junior Frontend Developer",
+      "summary": "Builds and maintains web interfaces using HTML, CSS, JavaScript, and one frontend framework. Works with design and backend teams on user-facing features.",
+      "eligibility_min": "BTech/BCA/BSc CS with frontend portfolio",
+      "eligibility_preferred": "Projects with React or Vue, GitHub profile, internship in product company",
+      "must_have_skills": [
+        "HTML/CSS",
+        "JavaScript fundamentals",
+        "One framework (React preferred)",
+        "Git basics"
+      ],
+      "good_to_have_skills": [
+        "Responsive design",
+        "REST API integration",
+        "Basic TypeScript",
+        "Figma reading"
+      ],
+      "salary_variance_factors": [
+        "Framework depth",
+        "Portfolio quality",
+        "Product vs service company",
+        "Startup vs enterprise"
+      ],
+      "proof_required": [
+        "3 GitHub projects with live links",
+        "One React/Vue component portfolio",
+        "Responsive design sample"
+      ],
+      "selection_process": [
+        "Portfolio review",
+        "JavaScript/coding round",
+        "Take-home assignment",
+        "Technical interview",
+        "HR round"
+      ],
+      "application_channels": [
+        "LinkedIn",
+        "Wellfound (AngelList)",
+        "GitHub Jobs",
+        "Company careers pages",
+        "Referrals"
+      ],
+      "growth_paths": [
+        "Frontend Developer",
+        "Full-Stack Developer",
+        "UI Engineer",
+        "Frontend Lead"
+      ],
+      "metro_map": [
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹4.0-7.5 LPA",
+          "salary_3yr": "₹8.0-15.0 LPA",
+          "city_reality_note": "Strong product and startup demand; React skills open most doors."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "medium",
+          "salary_fresher": "₹3.8-7.0 LPA",
+          "salary_3yr": "₹7.5-13.5 LPA",
+          "city_reality_note": "GCC and service companies hire frontend; product exposure preferred."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹4.5-8.5 LPA",
+          "salary_3yr": "₹9.0-17.0 LPA",
+          "city_reality_note": "Highest demand and salary; portfolio depth heavily tested at product companies."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹4.2-7.8 LPA",
+          "salary_3yr": "₹8.5-15.5 LPA",
+          "city_reality_note": "GCC and product companies both hire; React ecosystem strongly preferred."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹4.0-7.2 LPA",
+          "salary_3yr": "₹8.0-14.0 LPA",
+          "city_reality_note": "IT service and captive centers hire frontend; JavaScript fundamentals are tested."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "medium",
+          "salary_fresher": "₹4.2-7.5 LPA",
+          "salary_3yr": "₹8.2-15.0 LPA",
+          "city_reality_note": "BFSI and media tech companies hire frontend; fintech sector is growing."
+        }
+      ],
+      "plan_30_60_90": {
+        "day_0_30": [
+          "Build 2 complete projects in React with live deployment on Vercel or Netlify.",
+          "Push all code to GitHub with clear README files."
+        ],
+        "day_31_60": [
+          "Add one API-integrated project (weather app, movie search, etc.).",
+          "Complete JavaScript 30-day challenge (javascript30.com — free)."
+        ],
+        "day_61_90": [
+          "Apply to 40 frontend roles with GitHub portfolio link.",
+          "Practice 20 JavaScript interview questions daily."
+        ]
+      },
+      "data_freshness_note": "Frontend frameworks evolve quickly — React dominates in 2026. TypeScript is increasingly required for senior roles.",
+      "remote_eligible": true,
+      "remote_note": "Frontend development is one of the most remote-eligible tech roles. Many startups and product companies allow full remote after portfolio verification. Some companies hire remote from day one.",
+      "sample_companies": [
+        "Razorpay",
+        "Freshworks",
+        "Zoho",
+        "Swiggy",
+        "Cred",
+        "Meesho"
+      ],
+      "first_job_traps": [
+        "Service bond at IT service companies — 6–12 months, breaking costs ₹50,000–75,000. Prefer product companies without bonds",
+        "Angular-only shops are limiting — React and Vue are more marketable. Check tech stack before joining",
+        "Junior frontend roles at agencies can mean 60-hour weeks with low pay — agency model is grinding. Prefer product company"
+      ],
+      "salary_fresher_inr": {
+        "low": 400000,
+        "high": 850000
+      },
+      "salary_3yr_inr": {
+        "low": 800000,
+        "high": 1700000
+      },
+      "cg_student_note": "Frontend development is the most accessible tech career for a BTech or BCA graduate from CG who did not get a campus placement. You can build your portfolio from Korba — no metro needed for preparation. Deploy 3 React projects on Vercel, put the links on LinkedIn, and apply directly. Razorpay and Freshworks hire for skills, not college name.",
+      "free_prep_resources": [
+        "HTML/CSS/JS: The Odin Project — theodinproject.com (completely free, structured)",
+        "React: official React docs + react.dev — free",
+        "Portfolio deployment: Vercel.com — free tier for frontend projects",
+        "Interview prep: Frontend Interview Handbook — frontendinterviewhandbook.com (free)"
+      ]
+    },
+    {
+      "private_role_id": "it_helpdesk_analyst",
+      "status": "active",
+      "career_canonical_id": "software_engineer",
+      "skill_gap_job_id": "software_developer",
+      "plan_b_exam_links": [
+        "jee_engineering",
+        "gate_pg"
+      ],
+      "role_family": "tech_support",
+      "title": "IT Helpdesk / Technical Support Analyst",
+      "summary": "First line of IT support — resolves hardware, software, network, and application issues for internal employees or external customers via tickets, calls, and remote tools.",
+      "eligibility_min": "12th pass or any graduate with basic computer knowledge",
+      "eligibility_preferred": "BCA/BSc CS/BTech with ITIL foundation or any IT certification",
+      "must_have_skills": [
+        "Ticketing system basics",
+        "Windows troubleshooting",
+        "Basic networking",
+        "Communication"
+      ],
+      "good_to_have_skills": [
+        "ITIL foundation",
+        "Active Directory basics",
+        "Remote desktop tools",
+        "Linux basics"
+      ],
+      "salary_variance_factors": [
+        "Voice vs non-voice",
+        "Night shift allowance",
+        "ITIL certification",
+        "Specialisation in cloud/network"
+      ],
+      "proof_required": [
+        "Mock troubleshooting scenario response",
+        "Basic networking terminology quiz",
+        "Communication sample"
+      ],
+      "selection_process": [
+        "Technical screening",
+        "Troubleshooting scenario round",
+        "Communication assessment",
+        "HR round"
+      ],
+      "application_channels": [
+        "TCS iON",
+        "Infosys BPM careers",
+        "HCL careers",
+        "IBM careers",
+        "Naukri IT support filter"
+      ],
+      "growth_paths": [
+        "Senior Support Analyst",
+        "System Administrator",
+        "IT Operations Lead",
+        "Cloud Support Associate"
+      ],
+      "metro_map": [
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹2.8-4.8 LPA",
+          "salary_3yr": "₹4.8-8.5 LPA",
+          "city_reality_note": "Large IT service firms hire at scale; ITIL certification gives salary bump."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "high",
+          "salary_fresher": "₹2.7-4.5 LPA",
+          "salary_3yr": "₹4.5-8.0 LPA",
+          "city_reality_note": "Strong GCC helpdesk hiring; language diversity handled well here."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.2 LPA",
+          "salary_3yr": "₹5.2-9.5 LPA",
+          "city_reality_note": "Global client accounts need support; ITIL and cloud basics accelerate growth."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹2.9-5.0 LPA",
+          "salary_3yr": "₹5.0-9.0 LPA",
+          "city_reality_note": "GCC support operations are large; night shift adds ₹4,000-6,000/month."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.8-4.8 LPA",
+          "salary_3yr": "₹4.8-8.5 LPA",
+          "city_reality_note": "Captive IT support centers provide stable entry-level volume."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "medium",
+          "salary_fresher": "₹3.0-5.0 LPA",
+          "salary_3yr": "₹5.0-9.0 LPA",
+          "city_reality_note": "BFSI IT support roles require stricter data security protocols."
+        }
+      ],
+      "plan_30_60_90": {
+        "day_0_30": [
+          "Complete ITIL 4 Foundation free study material (AXELOS free resources).",
+          "Practice 20 common IT troubleshooting scenarios."
+        ],
+        "day_31_60": [
+          "Learn basic Active Directory concepts and remote desktop tools.",
+          "Build a mock ticket response portfolio for 10 common issues."
+        ],
+        "day_61_90": [
+          "Apply to TCS iON, Infosys BPM, HCL, and IBM support roles.",
+          "Target companies with defined ITIL training programmes."
+        ]
+      },
+      "data_freshness_note": "IT helpdesk is evolving toward cloud support (AWS, Azure) — adding one cloud basics certification within first year significantly improves growth.",
+      "remote_eligible": true,
+      "remote_note": "Non-voice IT support (email/ticket) is increasingly remote. Voice support requires office presence due to noise standards. Check process type before joining.",
+      "sample_companies": [
+        "TCS iON",
+        "Infosys BPM",
+        "HCL Technologies",
+        "IBM India",
+        "Tata Communications",
+        "Concentrix Tech"
+      ],
+      "first_job_traps": [
+        "Night shift (US/UK hours) is common and often mandatory for first 6 months — factor health impact into decision",
+        "Rotational shifts with no defined schedule affect sleep and social life significantly — ask about shift pattern before joining",
+        "IT helpdesk ceiling is low without upskilling — commit to getting AWS Cloud Practitioner or ITIL certification within first year"
+      ],
+      "salary_fresher_inr": {
+        "low": 270000,
+        "high": 520000
+      },
+      "salary_3yr_inr": {
+        "low": 480000,
+        "high": 950000
+      },
+      "cg_student_note": "IT Helpdesk is the most accessible tech entry for any graduate from CG — including 12th pass holders. TCS iON and Infosys BPM run hiring drives open to all graduates from any state. After 1 year, add AWS Cloud Practitioner certification (₹12,000 exam fee) and your salary band immediately jumps. This is the lowest-barrier metro tech entry available.",
+      "free_prep_resources": [
+        "ITIL basics: Axelos free ITIL 4 Foundation study guide — axelos.com",
+        "CompTIA IT Fundamentals: free study resources on Professor Messer — professormesser.com",
+        "AWS Cloud Practitioner free: aws.amazon.com/training/digital (free digital training)"
+      ]
+    },
+    {
+      "private_role_id": "junior_accountant_tally",
+      "status": "active",
+      "career_canonical_id": "chartered_accountant",
+      "skill_gap_job_id": "chartered_accountant",
+      "plan_b_exam_links": [
+        "ca_foundation",
+        "cat_mba"
+      ],
+      "role_family": "finance",
+      "title": "Junior Accountant (Tally / ERP)",
+      "summary": "Handles day-to-day bookkeeping, invoice processing, bank reconciliation, GST filing support, and financial data entry using Tally or ERP systems.",
+      "eligibility_min": "BCom with Tally ERP knowledge",
+      "eligibility_preferred": "BCom with Tally Prime certification + basic GST knowledge + Excel",
+      "must_have_skills": [
+        "Tally ERP / Tally Prime",
+        "Bank reconciliation",
+        "Invoice processing",
+        "Basic GST understanding"
+      ],
+      "good_to_have_skills": [
+        "Excel pivot and VLOOKUP",
+        "SAP basics",
+        "TDS and TCS awareness",
+        "Payroll basics"
+      ],
+      "salary_variance_factors": [
+        "GST complexity handled",
+        "ERP vs manual entry",
+        "Industry vertical",
+        "CA firm vs industry"
+      ],
+      "proof_required": [
+        "Tally certification copy",
+        "Sample ledger entry exercise",
+        "Basic GST return understanding"
+      ],
+      "selection_process": [
+        "Tally practical test",
+        "Accounting scenario questions",
+        "Manager interview",
+        "HR round"
+      ],
+      "application_channels": [
+        "Naukri",
+        "Indeed India",
+        "CA firm portals",
+        "Local CA referrals",
+        "LinkedIn"
+      ],
+      "growth_paths": [
+        "Senior Accountant",
+        "Accounts Executive",
+        "Finance Manager (with CA/CMA)"
+      ],
+      "metro_map": [
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹2.5-4.5 LPA",
+          "salary_3yr": "₹4.5-8.0 LPA",
+          "city_reality_note": "Highest volume of accounting jobs in India; CA firms and SMBs both hire."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "high",
+          "salary_fresher": "₹2.4-4.2 LPA",
+          "salary_3yr": "₹4.2-7.5 LPA",
+          "city_reality_note": "Manufacturing and services sector accounting demand is consistent."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹2.8-5.0 LPA",
+          "salary_3yr": "₹5.0-9.0 LPA",
+          "city_reality_note": "Startup and tech company accounting teams pay slightly more; GST complexity higher."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹2.7-4.8 LPA",
+          "salary_3yr": "₹4.8-8.5 LPA",
+          "city_reality_note": "Pharma and IT sector accounting teams are the primary employers."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "high",
+          "salary_fresher": "₹2.6-4.5 LPA",
+          "salary_3yr": "₹4.5-8.0 LPA",
+          "city_reality_note": "Auto and manufacturing sector accounting demand is stable."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.5 LPA",
+          "salary_3yr": "₹5.5-10.0 LPA",
+          "city_reality_note": "BFSI and large corporate accounting teams pay best; CA firm experience valued."
+        }
+      ],
+      "plan_30_60_90": {
+        "day_0_30": [
+          "Complete Tally Prime certification from official TallyHelp or NIIT.",
+          "Practice GST ledger entries and bank reconciliation in Tally."
+        ],
+        "day_31_60": [
+          "Learn Excel VLOOKUP, pivot tables, and basic MIS reports.",
+          "Complete one mock month-end closing exercise."
+        ],
+        "day_61_90": [
+          "Apply to 40 junior accountant roles on Naukri with Tally certification highlighted.",
+          "Target CA firms for Article Assistant exposure alongside regular accounting roles."
+        ]
+      },
+      "data_freshness_note": "GST compliance knowledge significantly improves hiring chances. Tally Prime (latest version) is preferred over Tally ERP 9.",
+      "remote_eligible": false,
+      "remote_note": "Accounting roles require access to company books, physical vouchers, and banking operations. In-person for first 1–2 years is standard. Some large companies allow hybrid for reporting-only tasks.",
+      "sample_companies": [
+        "Deloitte India (accounts)",
+        "Grant Thornton",
+        "Local CA firms (Big-4 article clerks)",
+        "Flipkart Finance ops",
+        "Tata Capital",
+        "HDFC Finance ops"
+      ],
+      "first_job_traps": [
+        "CA firm article assistant stipend is ₹2,000–8,000/month — not a livable salary in metro. Budget carefully or do CA exam simultaneously",
+        "Tally-only shops do not teach SAP or modern ERP — limits future mobility. Prefer companies using SAP or Oracle",
+        "Junior accountant roles at small companies can mean doing everything from data entry to GST returns without proper training — verify learning scope"
+      ],
+      "salary_fresher_inr": {
+        "low": 240000,
+        "high": 500000
+      },
+      "salary_3yr_inr": {
+        "low": 420000,
+        "high": 900000
+      },
+      "cg_student_note": "Junior Accountant with Tally is one of the most reliable metro entries for BCom graduates from CG. The Tally certification costs ₹3,000–5,000 from NIIT or Tally Academy and immediately makes your resume competitive. NTPC and SECL supplier companies in Raipur and Bilaspur also hire Tally accountants — you may not even need to move to a metro.",
+      "free_prep_resources": [
+        "Tally free learning: TallyHelp.com official tutorials — free",
+        "GST basics: ClearTax GST guide — cleartax.in/guide/gst (free)",
+        "Accounting fundamentals: AccountingCoach.com — free with quizzes"
+      ]
+    },
+    {
+      "private_role_id": "social_media_manager_entry",
+      "status": "active",
+      "career_canonical_id": "digital_marketing",
+      "skill_gap_job_id": "digital_marketer",
+      "plan_b_exam_links": [
+        "cuet_ug",
+        "cat_mba"
+      ],
+      "role_family": "content_creative",
+      "title": "Social Media Manager (Entry)",
+      "summary": "Creates and schedules content, manages brand presence across Instagram/LinkedIn/Twitter, tracks engagement metrics, and supports campaign execution.",
+      "eligibility_min": "Any graduate with active personal social media presence and Canva skills",
+      "eligibility_preferred": "Portfolio of brand accounts managed or mock content calendars with metrics",
+      "must_have_skills": [
+        "Canva or basic design",
+        "Content calendar management",
+        "Platform analytics reading",
+        "Caption writing"
+      ],
+      "good_to_have_skills": [
+        "Reels/Shorts video editing",
+        "Paid social basics",
+        "Community management",
+        "Scheduling tools (Buffer, Hootsuite)"
+      ],
+      "salary_variance_factors": [
+        "Platform ownership (paid vs organic)",
+        "Brand vs agency",
+        "Portfolio quality",
+        "Video content capability"
+      ],
+      "proof_required": [
+        "1-week sample content calendar",
+        "3 mock posts with rationale",
+        "Analytics screenshot from any platform managed"
+      ],
+      "selection_process": [
+        "Portfolio review",
+        "Content assignment",
+        "Creative interview",
+        "HR round"
+      ],
+      "application_channels": [
+        "LinkedIn",
+        "Internshala",
+        "Agency career pages",
+        "D2C brand careers",
+        "Direct DM to founders"
+      ],
+      "growth_paths": [
+        "Social Media Strategist",
+        "Content Lead",
+        "Digital Marketing Manager"
+      ],
+      "metro_map": [
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹2.8-5.2 LPA",
+          "salary_3yr": "₹5.5-10.0 LPA",
+          "city_reality_note": "Strong D2C and startup demand; content virality is valued alongside consistency."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.6-4.8 LPA",
+          "salary_3yr": "₹5.0-9.0 LPA",
+          "city_reality_note": "Regional brand demand growing; vernacular content capability is an advantage."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹3.2-6.0 LPA",
+          "salary_3yr": "₹6.2-11.5 LPA",
+          "city_reality_note": "SaaS and consumer startup demand is strong; data-backed content strategy preferred."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.5 LPA",
+          "salary_3yr": "₹5.8-10.5 LPA",
+          "city_reality_note": "Growing brand and agency ecosystem; video content skills increasingly valued."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.8-5.0 LPA",
+          "salary_3yr": "₹5.2-9.5 LPA",
+          "city_reality_note": "SMB and edtech brands hire; consistency and brand voice adherence key."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.3-6.2 LPA",
+          "salary_3yr": "₹6.5-12.0 LPA",
+          "city_reality_note": "Media and fashion brands are the strongest employers; high creative bar."
+        }
+      ],
+      "plan_30_60_90": {
+        "day_0_30": [
+          "Create a 30-day mock content calendar for one brand of your choice.",
+          "Design 10 posts in Canva across different formats."
+        ],
+        "day_31_60": [
+          "Track engagement metrics on your own or mock accounts for 4 weeks.",
+          "Learn Buffer or Hootsuite scheduling workflow (both have free tiers)."
+        ],
+        "day_61_90": [
+          "Apply to 35 social media and content roles with portfolio link.",
+          "Reach out directly to D2C brands and startups with a 3-post sample."
+        ]
+      },
+      "data_freshness_note": "Video content (Reels, Shorts) is now expected alongside static posts. Canva video and CapCut skills are increasingly needed.",
+      "remote_eligible": true,
+      "remote_note": "Social media management is fully remote-eligible from day one. Many D2C brands and agencies hire remote social media managers across India. Build your portfolio from Korba and apply directly.",
+      "sample_companies": [
+        "Bewakoof",
+        "Mamaearth",
+        "Sugar Cosmetics",
+        "Nykaa",
+        "Pepper Content",
+        "Social Beat Agency"
+      ],
+      "first_job_traps": [
+        "Agency social media jobs often require managing 8–12 brand accounts simultaneously — burnout risk is high",
+        "Brands that ask for 'creative freedom' often mean 'we have no strategy — figure it out' — risky for freshers",
+        "Metrics ownership is often not given to freshers — clarify whether you will have access to real analytics or just scheduled posting"
+      ],
+      "salary_fresher_inr": {
+        "low": 270000,
+        "high": 620000
+      },
+      "salary_3yr_inr": {
+        "low": 540000,
+        "high": 1200000
+      },
+      "cg_student_note": "This is the only role in this database that you can get without leaving Korba for preparation AND potentially without leaving Korba for the job. Build your portfolio by managing social media for a local business — SECL colony, a hospital, a coaching institute. Show real metrics. Apply remotely. This is genuinely possible.",
+      "free_prep_resources": [
+        "Canva free tier: canva.com — design all your sample posts here",
+        "Meta Blueprint free: facebook.com/business/learn — learn paid social basics",
+        "Buffer free: buffer.com — free scheduling for 3 channels to practice workflow"
+      ]
+    },
+    {
+      "private_role_id": "pharmacy_sales_representative",
+      "status": "active",
+      "career_canonical_id": "pharmacist",
+      "skill_gap_job_id": "pharmacist",
+      "plan_b_exam_links": [
+        "neet_medical"
+      ],
+      "role_family": "healthcare_private",
+      "title": "Pharmacy Sales Representative (Medical Representative)",
+      "summary": "Promotes pharmaceutical products to doctors, hospitals, and pharmacies. Builds relationships with healthcare professionals, achieves sales targets, and manages territory.",
+      "eligibility_min": "BPharm or BSc Biology/Chemistry with strong communication",
+      "eligibility_preferred": "BPharm with science fundamentals and field visit willingness",
+      "must_have_skills": [
+        "Product knowledge basics",
+        "Doctor relationship building",
+        "Territory planning",
+        "Reporting discipline"
+      ],
+      "good_to_have_skills": [
+        "Basic pharmacology",
+        "CRM for pharma",
+        "Data-driven target planning",
+        "Regional language advantage"
+      ],
+      "salary_variance_factors": [
+        "Company tier (Sun Pharma vs local)",
+        "Territory size",
+        "Incentive structure",
+        "Product category (OTC vs ethical)"
+      ],
+      "proof_required": [
+        "Doctor visit simulation",
+        "Product explanation mock",
+        "Territory planning sample"
+      ],
+      "selection_process": [
+        "Communication screening",
+        "Product knowledge test",
+        "Sales role-play",
+        "Regional manager interview"
+      ],
+      "application_channels": [
+        "Naukri pharma filter",
+        "Pharmajobs.in",
+        "Company careers pages",
+        "LinkedIn pharma network"
+      ],
+      "growth_paths": [
+        "Senior MR",
+        "Area Sales Manager",
+        "Regional Business Manager"
+      ],
+      "metro_map": [
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹2.8-5.0 LPA",
+          "salary_3yr": "₹5.2-9.5 LPA",
+          "city_reality_note": "Large hospital cluster demand; relationship skills and medical terminology matter."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "high",
+          "salary_fresher": "₹2.7-4.8 LPA",
+          "salary_3yr": "₹5.0-9.0 LPA",
+          "city_reality_note": "Strong pharma manufacturing presence; MR roles plentiful across hospital network."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "medium",
+          "salary_fresher": "₹3.0-5.5 LPA",
+          "salary_3yr": "₹5.8-10.5 LPA",
+          "city_reality_note": "Metro specialty pharma market; higher clinical knowledge bar at top hospitals."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹2.9-5.2 LPA",
+          "salary_3yr": "₹5.2-10.0 LPA",
+          "city_reality_note": "Pharma hub — Cipla, Dr. Reddy's base. Strong MR demand across the city."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.8-5.0 LPA",
+          "salary_3yr": "₹5.0-9.5 LPA",
+          "city_reality_note": "Healthcare and pharma companies both hire; territory planning skills valued."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.2-5.8 LPA",
+          "salary_3yr": "₹5.8-11.0 LPA",
+          "city_reality_note": "Pharma headquarters city; specialty MR roles pay more but require deeper knowledge."
+        }
+      ],
+      "plan_30_60_90": {
+        "day_0_30": [
+          "Study 10 common drug categories and their mechanisms in plain language.",
+          "Practice a 3-minute product detail pitch to a mock doctor."
+        ],
+        "day_31_60": [
+          "Build a territory planning sheet with hospital and clinic mapping.",
+          "Practice objection handling for common doctor responses."
+        ],
+        "day_61_90": [
+          "Apply to Sun Pharma, Cipla, Lupin, Abbott, and Dr. Reddy's MR positions.",
+          "Target regional pharma companies alongside national ones for faster hiring."
+        ]
+      },
+      "data_freshness_note": "Pharmaceutical sales incentive structures vary significantly by company and product category. Ethical pharma pays lower base but better long-term than OTC segments.",
+      "remote_eligible": false,
+      "remote_note": "Field-based role by definition. Doctor visits, hospital calls, and pharmacy relationships require physical presence. Company vehicle or travel allowance is typically provided.",
+      "sample_companies": [
+        "Sun Pharma",
+        "Cipla",
+        "Lupin",
+        "Dr. Reddy's Laboratories",
+        "Abbott India",
+        "Mankind Pharma"
+      ],
+      "first_job_traps": [
+        "Monthly doctor visit targets with no territory support leaves you funding your own travel — confirm company vehicle or travel allowance",
+        "Incentive-only structure in some small pharma companies means ₹0 variable pay if territory is poor — prefer companies with fixed + variable split",
+        "Product category matters: OTC has easier conversations but lower margins; ethical drugs need deeper knowledge but better long-term growth"
+      ],
+      "salary_fresher_inr": {
+        "low": 270000,
+        "high": 550000
+      },
+      "salary_3yr_inr": {
+        "low": 520000,
+        "high": 1000000
+      },
+      "cg_student_note": "Pharmacy sales rep is the one role in this database where a BPharm graduate from CG can be posted back to CG. Sun Pharma, Cipla, and Lupin all have territory roles in Korba, Bilaspur, and Raipur — you build a career serving your home region. No metro migration needed for this role. The CG healthcare network you grew up around is your territory advantage.",
+      "free_prep_resources": [
+        "Drug basics: MedlinePlus.gov — free plain-language drug information",
+        "Pharma sales approach: Pharmaceutical Sales by Vidal Cisneros Jr. (book, available at libraries)",
+        "CNPR free study guide: NAPSRx.org — National Association of Pharmaceutical Sales Reps free resources"
+      ]
+    },
+    {
+      "private_role_id": "hospital_admin_executive",
+      "status": "active",
+      "career_canonical_id": "public_health_professional",
+      "skill_gap_job_id": "public_health_professional",
+      "plan_b_exam_links": [
+        "neet_medical"
+      ],
+      "role_family": "healthcare_admin",
+      "title": "Hospital Admin Executive / Front Office Executive",
+      "summary": "Manages patient registration, appointment scheduling, billing coordination, insurance claims support, and front-desk operations at hospitals or diagnostic centres.",
+      "eligibility_min": "Any graduate with communication skills and computer basics",
+      "eligibility_preferred": "BHM (Hospital Management) or any graduate with hospital admin internship",
+      "must_have_skills": [
+        "Patient communication",
+        "Appointment scheduling",
+        "Basic billing understanding",
+        "Computer proficiency"
+      ],
+      "good_to_have_skills": [
+        "Hospital Management Software (HMS)",
+        "Insurance TPA process basics",
+        "Medical terminology basics",
+        "Cash handling accuracy"
+      ],
+      "salary_variance_factors": [
+        "Hospital tier (Apollo vs local)",
+        "Shift model",
+        "Billing vs front desk vs ops",
+        "City of posting"
+      ],
+      "proof_required": [
+        "Mock patient registration form completion",
+        "Communication scenario response",
+        "Basic computer proficiency"
+      ],
+      "selection_process": [
+        "Communication screening",
+        "Process scenario round",
+        "Hospital manager interview",
+        "HR round"
+      ],
+      "application_channels": [
+        "Apollo Hospitals careers",
+        "Fortis Healthcare careers",
+        "Manipal Hospitals careers",
+        "Naukri healthcare filter",
+        "LinkedIn"
+      ],
+      "growth_paths": [
+        "Senior Admin Executive",
+        "Patient Services Manager",
+        "Hospital Operations Lead"
+      ],
+      "metro_map": [
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹2.5-4.5 LPA",
+          "salary_3yr": "₹4.5-8.0 LPA",
+          "city_reality_note": "Max, Fortis, Apollo all run large admin teams; night shift is common."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "high",
+          "salary_fresher": "₹2.4-4.2 LPA",
+          "salary_3yr": "₹4.2-7.5 LPA",
+          "city_reality_note": "Medical tourism hub; international patient coordination is a premium skill."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹2.8-5.0 LPA",
+          "salary_3yr": "₹5.0-9.0 LPA",
+          "city_reality_note": "Growing hospital network; Manipal and Apollo run large campuses."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹2.7-4.8 LPA",
+          "salary_3yr": "₹4.8-8.5 LPA",
+          "city_reality_note": "KIMS, Apollo Hyderabad, and Yashoda all hire admin teams at scale."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.6-4.5 LPA",
+          "salary_3yr": "₹4.5-8.0 LPA",
+          "city_reality_note": "Ruby Hall Clinic, Jehangir Hospital and others provide stable demand."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹2.8-5.2 LPA",
+          "salary_3yr": "₹5.0-9.5 LPA",
+          "city_reality_note": "Kokilaben, Lilavati, Breach Candy — premium hospital admin roles available."
+        }
+      ],
+      "plan_30_60_90": {
+        "day_0_30": [
+          "Learn medical terminology basics — 100 common terms from MedlinePlus.",
+          "Practice patient communication scenarios and de-escalation."
+        ],
+        "day_31_60": [
+          "Understand TPA (Third Party Administrator) insurance claim process basics.",
+          "Learn one Hospital Management Software — many offer free demos."
+        ],
+        "day_61_90": [
+          "Apply to Apollo, Fortis, Manipal, and Max admin openings.",
+          "Target diagnostic chains (Dr. Lal PathLabs, SRL) for alternative healthcare admin entry."
+        ]
+      },
+      "data_freshness_note": "Healthcare admin is growing with hospital chain expansion. BHM degree accelerates growth but is not mandatory for entry.",
+      "remote_eligible": false,
+      "remote_note": "Hospital admin requires patient-facing physical presence by definition. Billing and insurance coordination may move partial remote in the future but not yet standard.",
+      "sample_companies": [
+        "Apollo Hospitals",
+        "Fortis Healthcare",
+        "Manipal Hospitals",
+        "Max Healthcare",
+        "Narayana Health",
+        "Aster DM Healthcare"
+      ],
+      "first_job_traps": [
+        "Hospital admin involves shift work including nights and weekends — confirm rotation schedule before accepting",
+        "Patient-facing roles in busy hospitals involve high emotional labour — this is real work, not just administration",
+        "Salary growth is slow without a BHM or MBA Hospital Management — plan a part-time PG qualification within 3 years"
+      ],
+      "salary_fresher_inr": {
+        "low": 240000,
+        "high": 500000
+      },
+      "salary_3yr_inr": {
+        "low": 440000,
+        "high": 850000
+      },
+      "cg_student_note": "Hospital admin is one of the most stable metro entry roles and is growing as hospital chains expand. Importantly, AIIMS Raipur, CIMS Bilaspur, and private hospitals in Korba also hire admin staff — you may not need to go to a metro. Start in CG hospitals to build experience, then apply to Apollo or Fortis for the salary step-up after 2–3 years.",
+      "free_prep_resources": [
+        "Medical terminology: MedlinePlus.gov — free plain-language terms",
+        "Hospital admin basics: AHIMA free resources — ahima.org",
+        "TPA process: IRDA official website — irdai.gov.in — free insurance regulatory guidance"
+      ]
+    },
+    {
+      "private_role_id": "graphic_design_executive",
+      "status": "active",
+      "career_canonical_id": "graphic_ui_designer",
+      "skill_gap_job_id": "graphic_designer",
+      "plan_b_exam_links": [
+        "nid_nift_design",
+        "cuet_ug"
+      ],
+      "role_family": "content_creative",
+      "title": "Graphic Design Executive",
+      "summary": "Creates visual assets for digital and print — social media graphics, brand collateral, marketing materials, UI mockups, and presentation decks.",
+      "eligibility_min": "Any graduate with strong Canva or Adobe portfolio",
+      "eligibility_preferred": "BFA/BDes or any graduate with Illustrator, Photoshop, Figma proficiency and 10+ portfolio pieces",
+      "must_have_skills": [
+        "Canva or Adobe Illustrator",
+        "Typography basics",
+        "Color theory",
+        "Brand consistency"
+      ],
+      "good_to_have_skills": [
+        "Adobe Photoshop",
+        "Figma for UI mockups",
+        "Motion graphics basics",
+        "Print specifications"
+      ],
+      "salary_variance_factors": [
+        "Software depth (Canva vs Adobe suite)",
+        "Portfolio quality",
+        "Agency vs in-house",
+        "UI/UX crossover skills"
+      ],
+      "proof_required": [
+        "10+ portfolio pieces across different formats",
+        "One brand identity package sample",
+        "One social media content series"
+      ],
+      "selection_process": [
+        "Portfolio shortlisting",
+        "Design assignment",
+        "Creative discussion",
+        "HR round"
+      ],
+      "application_channels": [
+        "Behance portfolio (primary)",
+        "LinkedIn",
+        "Agency career pages",
+        "Direct DM to creative directors",
+        "Dribbble"
+      ],
+      "growth_paths": [
+        "Senior Graphic Designer",
+        "Creative Lead",
+        "UI/UX Designer (with Figma upskill)",
+        "Art Director"
+      ],
+      "metro_map": [
+        {
+          "metro_id": "delhi_ncr",
+          "demand_level": "high",
+          "salary_fresher": "₹2.8-5.5 LPA",
+          "salary_3yr": "₹5.5-10.5 LPA",
+          "city_reality_note": "Strong agency and brand in-house demand; print knowledge useful for heritage brands."
+        },
+        {
+          "metro_id": "chennai",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.6-5.0 LPA",
+          "salary_3yr": "₹5.0-9.5 LPA",
+          "city_reality_note": "Agency and corporate in-house roles; regional brand aesthetic knowledge helps."
+        },
+        {
+          "metro_id": "bengaluru",
+          "demand_level": "high",
+          "salary_fresher": "₹3.2-6.2 LPA",
+          "salary_3yr": "₹6.5-12.5 LPA",
+          "city_reality_note": "Startup and SaaS brand design roles pay best; Figma and UI crossover skills valued."
+        },
+        {
+          "metro_id": "hyderabad",
+          "demand_level": "high",
+          "salary_fresher": "₹3.0-5.8 LPA",
+          "salary_3yr": "₹6.0-11.5 LPA",
+          "city_reality_note": "Growing brand and agency scene; motion graphics increasingly valued."
+        },
+        {
+          "metro_id": "pune",
+          "demand_level": "medium",
+          "salary_fresher": "₹2.8-5.2 LPA",
+          "salary_3yr": "₹5.5-10.0 LPA",
+          "city_reality_note": "IT and education brand teams hire; clean, functional design preferred over experimental."
+        },
+        {
+          "metro_id": "mumbai",
+          "demand_level": "high",
+          "salary_fresher": "₹3.2-6.5 LPA",
+          "salary_3yr": "₹6.5-13.0 LPA",
+          "city_reality_note": "Media, fashion, and FMCG brands pay premiums for strong visual design — highest ceiling city."
+        }
+      ],
+      "plan_30_60_90": {
+        "day_0_30": [
+          "Create 10 portfolio pieces across social media, brand, and print formats.",
+          "Publish portfolio on Behance with clear case study descriptions."
+        ],
+        "day_31_60": [
+          "Learn Figma basics (free) and create one mobile app UI mockup.",
+          "Add motion/animation skills using Adobe After Effects or Canva animations."
+        ],
+        "day_61_90": [
+          "Apply to 35 graphic design roles with Behance portfolio link.",
+          "Send direct portfolio to 10 creative directors at agencies and D2C brands."
+        ]
+      },
+      "data_freshness_note": "UI/UX crossover via Figma is the highest value upskill for graphic designers in 2026. Canva-only designers are increasingly commoditised — Adobe suite proficiency differentiates.",
+      "remote_eligible": true,
+      "remote_note": "Graphic design is highly remote-eligible. Agencies and in-house brand teams across India hire remote designers based on portfolio alone. Freelance path from hometown is immediately viable.",
+      "sample_companies": [
+        "Dentsu Creative",
+        "Ogilvy India",
+        "Bewakoof (in-house)",
+        "Nykaa Creative",
+        "Pepper Content Design",
+        "Springworks"
+      ],
+      "first_job_traps": [
+        "Agency roles often have 'unlimited revisions' client culture that leads to 60-hour weeks — ask about revision policy before joining",
+        "Canva-only proficiency is becoming table-stakes — invest 2 months in learning Adobe Illustrator before applying",
+        "Many design internships are unpaid or ₹5,000/month — set a floor of ₹12,000/month for any engagement"
+      ],
+      "salary_fresher_inr": {
+        "low": 260000,
+        "high": 620000
+      },
+      "salary_3yr_inr": {
+        "low": 550000,
+        "high": 1300000
+      },
+      "cg_student_note": "Graphic design is portfolio-driven, not degree-driven. A student from Korba who builds 10 strong pieces on Behance and learns Figma can apply to metro roles remotely. You do not need to go to Mumbai or Bengaluru to prepare — and with remote eligibility, you may not need to go there to work either. Start with Canva, move to Illustrator, then Figma.",
+      "free_prep_resources": [
+        "Canva Design School: canva.com/designschool — free structured design courses",
+        "Figma: figma.com/free — completely free for education and portfolio work",
+        "Adobe Express free tier: express.adobe.com — free design tool with templates",
+        "Portfolio hosting: Behance.net — free portfolio site, industry standard"
+      ]
     }
   ]
 }

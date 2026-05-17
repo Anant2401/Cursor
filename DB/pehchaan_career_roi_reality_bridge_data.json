@@ -2,7 +2,6 @@
   "last_updated": "2026-05-03",
   "version": "1.0",
   "notes": "All data sourced from official/verified sources. Fees as of 2026. Salaries from Glassdoor, AmbitionBox, Indeed India 2026. Living costs from Numbeo, GoDigit 2026.",
-
   "city_costs": {
     "hometown": {
       "label": "At home / with family during college (no paid PG or rented flat)",
@@ -56,18 +55,18 @@
       "total_monthly_mid": 28000
     }
   },
-
   "careers": [
     {
       "id": "software_engineer",
       "label": "Software Engineer (BTech CSE)",
       "category": "Engineering & Tech",
-      "stream": ["science"],
+      "stream": [
+        "science"
+      ],
       "duration_years": 4,
       "total_duration_with_prep": 4,
       "prep_duration_years": 1.5,
       "prep_label": "JEE coaching (1.5 years Class 11-12)",
-
       "education_paths": [
         {
           "id": "iit",
@@ -106,7 +105,6 @@
           "note": "₹50,000-80,000/year — lower ranked colleges"
         }
       ],
-
       "coaching_options": [
         {
           "label": "Kota Coaching (Allen/Resonance/Aakash) — 2 years",
@@ -141,7 +139,6 @@
           "note": "Almost free — books + internet. Possible with strong discipline"
         }
       ],
-
       "salary": {
         "year_1_low": 350000,
         "year_1_mid": 600000,
@@ -157,7 +154,6 @@
         "year_10_high": 20000000,
         "note": "Fresher: ₹3.5-12 LPA. 5 yrs: ₹12-60 LPA. Source: Glassdoor/AmbitionBox India 2026"
       },
-
       "break_even_note": "With online coaching + good state engineering college: Total investment ~₹8-10L. Break-even vs zero investment in ~18-24 months of working. With IIT + Kota coaching: Total ~₹18-22L. Break-even ~3-4 years.",
       "honest_reality": "College tier matters enormously. An IITian averages ₹15-20 LPA placement. A Tier-3 private college graduate may struggle at ₹3-4 LPA. Skills and portfolio matter more at mid-career — but the first job is heavily college-dependent.",
       "cg_context": "For CG students: NIT Raipur (home state quota rank < 15,000 in JEE) is excellent value. CSVTU-affiliated colleges in Bhilai/Raipur offer decent placement with NTPC/SECL for Civil/Mechanical. Local online coaching + rigorous self-study is now a genuine path.",
@@ -202,17 +198,17 @@
         "ITI → Polytechnic Diploma → Lateral BTech (3 years instead of 4, less fee)"
       ]
     },
-
     {
       "id": "mbbs_doctor",
       "label": "Doctor (MBBS + MD)",
       "category": "Medicine & Health",
-      "stream": ["science"],
+      "stream": [
+        "science"
+      ],
       "duration_years": 5.5,
       "total_duration_with_prep": 7,
       "prep_duration_years": 1.5,
       "prep_label": "NEET coaching (1.5 years Class 11-12)",
-
       "education_paths": [
         {
           "id": "govt_aiims",
@@ -251,7 +247,6 @@
           "note": "Top private deemed: ₹18-22 LPA × 5.5 years = ₹1 crore+ total"
         }
       ],
-
       "coaching_options": [
         {
           "label": "Kota NEET Coaching (Allen/Aakash/Resonance) — 2 years",
@@ -278,7 +273,6 @@
           "note": "₹15,000-25,000/year online + NTA Abhyas free mock tests"
         }
       ],
-
       "salary": {
         "year_1_low": 600000,
         "year_1_mid": 900000,
@@ -294,7 +288,6 @@
         "year_10_high": 30000000,
         "note": "Govt hospital MBBS: ₹6-15 LPA. Specialist: ₹20-50 LPA. Super-specialist: ₹50-200 LPA."
       },
-
       "break_even_note": "Government MBBS: ROI is extraordinary — even with ₹5-7L total cost and 7 years to first salary, the lifetime earning potential is unmatched. Private MBBS with ₹60-100L loan: break-even is 8-12 years post-graduation. Think carefully about private MBBS loan amounts.",
       "honest_reality": "The single most important fact about MBBS in India: every 50-point improvement in NEET score can save ₹20-100 lakh in fees. NEET preparation is a direct financial investment, not just an academic one.",
       "cg_context": "RIMS Raipur and CIMS Bilaspur are genuine options for NEET rank under 40,000 for CG state quota. BAMS (Ayurveda) from CG government colleges: lower NEET cutoff, lower fees (~₹3-5L total), and government hospital appointments through CGVYAPAM.",
@@ -338,17 +331,17 @@
         "Class 12 PCB → BPharm → Pharmaceutical industry or clinical research"
       ]
     },
-
     {
       "id": "ca",
       "label": "Chartered Accountant (CA)",
       "category": "Finance & Business",
-      "stream": ["commerce"],
+      "stream": [
+        "commerce"
+      ],
       "duration_years": 5,
       "total_duration_with_prep": 5,
       "prep_duration_years": 0,
       "prep_label": "No entrance exam required — direct registration after Class 12",
-
       "education_paths": [
         {
           "id": "ca_icai",
@@ -360,7 +353,6 @@
           "note": "ICAI total exam fees: ~₹8,000-15,000 total. Study material free download."
         }
       ],
-
       "coaching_options": [
         {
           "label": "CA Coaching Institute (local Bilaspur/Raipur) — 3 years",
@@ -387,7 +379,6 @@
           "note": "BCom from local college ₹15,000-20,000/year. Many students do this simultaneously."
         }
       ],
-
       "salary": {
         "year_1_low": 600000,
         "year_1_mid": 1000000,
@@ -403,7 +394,6 @@
         "year_10_high": 25000000,
         "note": "CA freshers: ₹6-15 LPA. 5 yrs: ₹15-30 LPA. Big4 partner level: ₹50-100 LPA."
       },
-
       "break_even_note": "CA is one of the highest ROI professional qualifications in India. Total investment including coaching: ₹1.5-2.5 lakh (vs ₹50-80L for private MBBS or ₹15-20L for IIT path). Break-even is essentially from Day 1 of qualification.",
       "honest_reality": "Pass rate is brutal — CA Final first attempt is 10-15%. Average 4.5-5 years to qualify. During articleship (3 years), you earn ₹2,000-15,000/month stipend. The financial investment is low but the time investment is significant.",
       "cg_context": "CA is deeply respected in every CG city. NTPC Korba, SECL, SAIL Bhilai all need CAs. Local articleship in Bilaspur/Korba is completely valid. A qualified CA from CG does not need to move to Mumbai — local practice is viable.",
@@ -447,17 +437,17 @@
         "CMA India (Cost Accountant) — shorter qualification, strong in manufacturing sector which is dominant in CG"
       ]
     },
-
     {
       "id": "bank_po",
       "label": "Bank PO (IBPS PO / SBI PO)",
       "category": "Banking & Finance",
-      "stream": ["any"],
+      "stream": [
+        "any"
+      ],
       "duration_years": 1.5,
       "total_duration_with_prep": 1.5,
       "prep_duration_years": 1,
       "prep_label": "IBPS/SBI PO preparation (8-12 months post-graduation)",
-
       "education_paths": [
         {
           "id": "graduation_any",
@@ -469,7 +459,6 @@
           "note": "Exam fee: ₹850-1000 per attempt. No separate education cost."
         }
       ],
-
       "coaching_options": [
         {
           "label": "Online Banking Coaching (Oliveboard/Adda247/Testbook) — 6-10 months",
@@ -496,7 +485,6 @@
           "note": "Completely free — books + free mock tests on Oliveboard/Testbook"
         }
       ],
-
       "salary": {
         "year_1_low": 480000,
         "year_1_mid": 620000,
@@ -512,7 +500,6 @@
         "year_10_high": 3000000,
         "note": "IBPS PO in-hand: ₹52,000-58,000/month. SBI PO: ₹58,000-65,000/month. Source: rank1st.in 2026"
       },
-
       "break_even_note": "Banking is the highest ROI exam path for graduates. Total investment: ₹5,000-25,000. First salary: ₹50,000-65,000/month. Break-even: literally within the first month of joining.",
       "honest_reality": "Success rate is 0.1-0.2% (40 lakh apply, ~10,000 selected). BUT: if you prepare seriously for 8-12 months with daily mocks, your effective probability is much higher. Multiple attempts are allowed.",
       "cg_context": "SBI, Bank of Baroda, Central Bank all have large offices in Bilaspur, Korba and Raipur. A Bank PO job means staying in CG with excellent salary, stability, pension benefits, and deep community respect.",
@@ -557,17 +544,17 @@
         "State cooperative bank → Nationalized bank transfer — regional-level entry with lower competition"
       ]
     },
-
     {
       "id": "ssc_cgl",
       "label": "SSC CGL (Central Government Job)",
       "category": "Government Jobs",
-      "stream": ["any"],
+      "stream": [
+        "any"
+      ],
       "duration_years": 1.5,
       "total_duration_with_prep": 1.5,
       "prep_duration_years": 1,
       "prep_label": "SSC CGL preparation (8-12 months)",
-
       "education_paths": [
         {
           "id": "graduation_any",
@@ -579,7 +566,6 @@
           "note": "Exam fee: ₹100-200. No education cost beyond graduation."
         }
       ],
-
       "coaching_options": [
         {
           "label": "Online SSC Coaching (Wifistudy/KD Campus/Testbook) — 6-10 months",
@@ -598,7 +584,6 @@
           "note": "₹10,000-20,000 at local SSC coaching centres in Tier 2 cities"
         }
       ],
-
       "salary": {
         "year_1_low": 400000,
         "year_1_mid": 530000,
@@ -614,7 +599,6 @@
         "year_10_high": 2000000,
         "note": "SSC CGL in-hand: ₹40,000-81,000/month depending on post. Source: mahendras.org 2026"
       },
-
       "break_even_note": "Like Banking — the ROI on SSC CGL preparation is extraordinary. Total investment: ₹6,000-15,000. First in-hand salary: ₹40,000-68,000/month.",
       "honest_reality": "40 lakh+ candidates appear. Success rate 0.1-0.2%. BUT consistent daily preparation of 4-5 hours for 8-12 months dramatically changes your effective odds. Income Tax Inspector and AAO are the most sought-after posts.",
       "cg_context": "Income Tax offices, SSC-recruited ASOs, and Auditors serve in Raipur, Bilaspur and Jagdalpur. Staying in CG with a central government pensioned job is completely achievable through SSC CGL.",
@@ -659,17 +643,17 @@
         "State PSC Prelims — same general studies base, CG-specific posts with home-state posting"
       ]
     },
-
     {
       "id": "upsc_ias",
       "label": "IAS / IPS (UPSC Civil Services)",
       "category": "Government & Civil Services",
-      "stream": ["any"],
+      "stream": [
+        "any"
+      ],
       "duration_years": 4,
       "total_duration_with_prep": 4,
       "prep_duration_years": 3,
       "prep_label": "UPSC preparation (average 3-4 years post-graduation)",
-
       "education_paths": [
         {
           "id": "graduation_any",
@@ -681,7 +665,6 @@
           "note": "Exam fee: ₹100. No education qualification required beyond graduation."
         }
       ],
-
       "coaching_options": [
         {
           "label": "Delhi Coaching (Vajiram/Vision IAS/Drishti) — 1 year",
@@ -716,7 +699,6 @@
           "note": "CGPSC same prep as UPSC + CG-specific GK. Much more accessible. 200-400 vacancies for CG only."
         }
       ],
-
       "salary": {
         "year_1_low": 750000,
         "year_1_mid": 900000,
@@ -732,7 +714,6 @@
         "year_10_high": 4000000,
         "note": "IAS salary ₹75,000-2.5L/month cash. TRUE value: government housing (~₹50,000 equivalent/month), vehicle, staff, pension. Total compensation worth ₹60,000-1.5L/month extra perks."
       },
-
       "break_even_note": "From hometown with self-study: Investment ₹15,000-30,000 + 3-4 years opportunity cost. ROI is extraordinary if selected — the perks and career impact go far beyond salary. But probability is 0.1%. CGPSC is 10x more accessible with similar preparation.",
       "honest_reality": "UPSC CSE selects ~1,000 from 1 million applicants (0.1%). Average successful candidate appears 3.2 times. Average preparation time: 3-4 years. Many do NOT qualify — and those years are lost income opportunity. Have CGPSC or banking as a parallel target.",
       "cg_context": "CGPSC Deputy Collector and DSP: total compensation worth ₹70,000-1,20,000/month equivalent with housing and perks. Selects 200-400 from CG only. Same preparation as UPSC. Many IAS aspirants from CG strategically appear for CGPSC first.",
@@ -777,17 +758,18 @@
         "Other state PSC exams — MPPSC, RPSC accept same general studies preparation"
       ]
     },
-
     {
       "id": "data_analyst",
       "label": "Data Analyst / Data Science",
       "category": "Engineering & Tech",
-      "stream": ["science", "commerce"],
+      "stream": [
+        "science",
+        "commerce"
+      ],
       "duration_years": 1,
       "total_duration_with_prep": 1,
       "prep_duration_years": 0.5,
       "prep_label": "Skills bootcamp (6-12 months) — no entrance exam",
-
       "education_paths": [
         {
           "id": "degree_plus_skills",
@@ -799,7 +781,6 @@
           "note": "No specific degree required. Skills certificate + portfolio > formal degree."
         }
       ],
-
       "coaching_options": [
         {
           "label": "Paid Data Analytics Course (upGrad/Simplilearn/Coursera Pro) — 6 months",
@@ -826,7 +807,6 @@
           "note": "100% free: Alex the Analyst YouTube, Kaggle, Google Colab, free SQL practice on HackerRank"
         }
       ],
-
       "salary": {
         "year_1_low": 350000,
         "year_1_mid": 660000,
@@ -842,7 +822,6 @@
         "year_10_high": 15000000,
         "note": "Fresher Data Analyst: ₹3.5-6 LPA (Glassdoor 2026 avg: ₹6.6 LPA). Senior: ₹14-22 LPA. MNC senior: ₹25-35 LPA."
       },
-
       "break_even_note": "With free self-study: Investment = zero. First salary ₹3.5-6 LPA. Break-even = Day 1 of first job. With paid course ₹60,000: Recover in first 2-3 months of working.",
       "honest_reality": "India has a shortage of 11 lakh data professionals (NASSCOM 2025). Salaries growing 12-15% annually. BUT: entry-level market is competitive — a portfolio of 3-5 real projects on GitHub is worth more than any certification alone.",
       "cg_context": "Data Analyst is 100% remote-friendly. A skilled analyst from Korba earns the same as one in Bengaluru working remotely. This is the career where geography does not matter — only skills matter.",
@@ -887,17 +866,17 @@
         "Any graduate + free Google Data Analytics Certificate (Coursera) — portfolio-driven entry"
       ]
     },
-
     {
       "id": "digital_marketing",
       "label": "Digital Marketing Professional",
       "category": "Design & Creative",
-      "stream": ["any"],
+      "stream": [
+        "any"
+      ],
       "duration_years": 0.5,
       "total_duration_with_prep": 0.5,
       "prep_duration_years": 0.5,
       "prep_label": "Skills learning (3-6 months) + portfolio building",
-
       "education_paths": [
         {
           "id": "any_degree_or_12th",
@@ -909,7 +888,6 @@
           "note": "No formal education requirement. Portfolio and certifications matter most."
         }
       ],
-
       "coaching_options": [
         {
           "label": "Premium Digital Marketing Course (NIIT/Manipal/IIDE) — 6 months",
@@ -928,7 +906,6 @@
           "note": "100% FREE. Google Digital Garage, Meta Blueprint, HubSpot all free with certificates"
         }
       ],
-
       "salary": {
         "year_1_low": 200000,
         "year_1_mid": 350000,
@@ -944,7 +921,6 @@
         "year_10_high": 8000000,
         "note": "Fresher: ₹2-6 LPA. Performance marketers 2-4 yrs: ₹5-18 LPA. Source: amquesteducation.com 2026"
       },
-
       "break_even_note": "With free Google/Meta certifications: Investment = zero. Any income from first freelance client is pure ROI. With ₹60,000 paid course: Recover within 3-6 months of working.",
       "honest_reality": "The best digital marketers in India earn ₹25-40 LPA at senior level. BUT entry level is competitive and salaries start low (₹2-3 LPA at agencies). The real income accelerator is freelancing — 5 local clients at ₹10,000/month = ₹50,000/month from anywhere.",
       "cg_context": "Businesses in Korba, Bilaspur and Raipur desperately need digital marketing help. A student who learns this skill can freelance locally — hospitals, schools, real estate firms, shops. ₹5,000-25,000/month per client is realistic. Location-independent work.",
@@ -989,17 +965,17 @@
         "Freelance 2–3 local clients first — real campaign data is better than any course certificate"
       ]
     },
-
     {
       "id": "iti_electrician",
       "label": "ITI Electrician (Industrial Trade)",
       "category": "Vocational & Technical",
-      "stream": ["any"],
+      "stream": [
+        "any"
+      ],
       "duration_years": 2,
       "total_duration_with_prep": 2,
       "prep_duration_years": 0,
       "prep_label": "Class 10 → ITI direct admission (no competitive exam pressure)",
-
       "education_paths": [
         {
           "id": "govt_iti",
@@ -1020,7 +996,6 @@
           "note": "Private ITI: ₹15,000-25,000/year. Still very affordable."
         }
       ],
-
       "coaching_options": [
         {
           "label": "No coaching needed — direct ITI admission after Class 10",
@@ -1031,7 +1006,6 @@
           "note": "ITI admission is merit-based on Class 10 marks. No competitive exam coaching required."
         }
       ],
-
       "salary": {
         "year_1_low": 150000,
         "year_1_mid": 250000,
@@ -1047,7 +1021,6 @@
         "year_10_high": 2500000,
         "note": "NTPC Korba ITI Electrician: ₹35,000-55,000/month total compensation at mid-career. Private contractor: ₹20,000-40,000/month."
       },
-
       "break_even_note": "Total investment: ₹10,000-1,25,000. First income from NTPC apprenticeship: ₹8,000-12,000/month stipend. Permanent NTPC employment: ₹25,000-40,000/month CTC. Break-even in 3-6 months of working. This is the highest ROI path in CG for non-exam students.",
       "honest_reality": "This is the most underrated career path in Chhattisgarh. Zero glamour, absolute security. NTPC Korba, SECL mines, SAIL Bhilai hire hundreds of ITI electricians every year as permanent employees. Government-level benefits, overtime, and advancement — without any loan or competitive exam pressure.",
       "cg_context": "NTPC Korba is literally next door. Government ITI Korba offers Electrician trade. Get an ITI degree → appear for NTPC/SECL apprenticeship → permanent employment. This is the most direct career path available to a student from Korba or Champa.",
@@ -1091,17 +1064,17 @@
         "NTPC apprenticeship (1 year stipend ₹8,000–12,000/month) → Permanent employment consideration"
       ]
     },
-
     {
       "id": "bsc_nursing",
       "label": "BSc Nursing",
       "category": "Medicine & Health",
-      "stream": ["science"],
+      "stream": [
+        "science"
+      ],
       "duration_years": 4,
       "total_duration_with_prep": 4,
       "prep_duration_years": 0,
       "prep_label": "NEET score required (but much lower cutoff than MBBS)",
-
       "education_paths": [
         {
           "id": "govt_nursing",
@@ -1122,7 +1095,6 @@
           "note": "Private Nursing: ₹50,000-1,00,000/year. Far cheaper than private MBBS."
         }
       ],
-
       "coaching_options": [
         {
           "label": "NEET coaching (same as for MBBS — PCB focused)",
@@ -1133,7 +1105,6 @@
           "note": "Local NEET coaching ₹35,000-45,000/year in Raipur. Nursing requires lower NEET rank than MBBS."
         }
       ],
-
       "salary": {
         "year_1_low": 200000,
         "year_1_mid": 350000,
@@ -1149,7 +1120,6 @@
         "year_10_high": 5000000,
         "note": "Govt hospital nurse mid-career: ₹30,000-55,000/month. Private: ₹12,000-25,000/month start. International (UAE/UK/Canada): ₹1.5-5 LPA equivalent monthly."
       },
-
       "break_even_note": "Government BSc Nursing: total ₹3-4L investment. First government hospital job: ₹25,000-35,000/month. Break-even in under 1 year of working. Extraordinary ROI.",
       "honest_reality": "India + international demand for nurses is extremely high. UK, Canada, and Middle East actively recruit Indian nurses with generous salaries. Government hospital nursing in India offers excellent job security and pension.",
       "cg_context": "AIIMS Raipur and CIMS Bilaspur constantly need qualified nurses. BSc Nursing from government college in CG → government hospital job is a well-defined, achievable path for PCB students who want healthcare careers without MBBS-level NEET pressure.",
@@ -1871,6 +1841,598 @@
         "Class 12 → B.Pharm (4 years) → Pharma industry / hospital / Drug Inspector",
         "D.Pharm → B.Pharm via lateral entry (2 years upgrade) → Wider career options",
         "B.Pharm → GPAT → M.Pharm → Research or college teaching"
+      ]
+    },
+    {
+      "id": "lawyer",
+      "label": "Lawyer / Advocate (LLB / BA LLB)",
+      "category": "Law & Justice",
+      "stream": [
+        "any"
+      ],
+      "duration_years": 3,
+      "total_duration_with_prep": 4,
+      "prep_duration_years": 1,
+      "prep_label": "CLAT / CUET / State Law Entrance coaching (Class 11–12 for integrated, post-grad for 3yr LLB)",
+      "education_paths": [
+        {
+          "id": "hnlu_nlu_clat",
+          "label": "HNLU Raipur or NLU (via CLAT — 5yr BA LLB)",
+          "probability": "CLAT top 3,000 rank for HNLU — achievable with 8–10 months serious preparation",
+          "tuition_total": 350000,
+          "hostel_total": 300000,
+          "other_fees_total": 50000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "education_loan_public_banks",
+            "pm_yasasvi",
+            "cg_sc_st_scholarship"
+          ],
+          "note": "HNLU Raipur is a top-10 NLU — CG students get state quota advantage. Total 5 years ₹70,000/yr tuition + hostel. Best law ROI available in CG."
+        },
+        {
+          "id": "state_law_college_5yr",
+          "label": "State Law College CG (5yr BA LLB — State Entrance / CUET)",
+          "probability": "State entrance or CUET score — accessible to most students who prepare sincerely",
+          "tuition_total": 75000,
+          "hostel_total": 120000,
+          "other_fees_total": 30000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "cg_sc_st_scholarship",
+            "cg_obc_scholarship"
+          ],
+          "note": "Govt law college in Raipur or Bilaspur: ₹15,000/year × 5 years. Lowest cost law degree available. Income depends on practice quality, not college tier."
+        },
+        {
+          "id": "llb_3yr_after_grad",
+          "label": "3yr LLB after any Graduation (State Law College)",
+          "probability": "Merit-based admission after graduation — widely accessible",
+          "tuition_total": 45000,
+          "hostel_total": 60000,
+          "other_fees_total": 20000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "cg_sc_st_scholarship"
+          ],
+          "note": "₹15,000/year × 3 years. Total under ₹1.25L. Most affordable professional qualification available. Can continue working or studying during this time in many cases."
+        },
+        {
+          "id": "private_law_college_5yr",
+          "label": "Private Law College (5yr BA LLB)",
+          "probability": "State entrance or management quota — widely available",
+          "tuition_total": 500000,
+          "hostel_total": 200000,
+          "other_fees_total": 50000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "education_loan_public_banks"
+          ],
+          "note": "Private law colleges: ₹80,000–1.5L/year × 5 years. Bar Council recognition is mandatory — verify before admission. College tier has limited impact on litigation income."
+        }
+      ],
+      "coaching_options": [
+        {
+          "label": "CLAT self-study — 10 months (for NLU target)",
+          "cost": 8000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 8000,
+          "online_available": true,
+          "note": "Books + mock tests + LegalEdge/Career Launcher online material. CLAT is language and reasoning heavy — self-study is viable for disciplined students."
+        },
+        {
+          "label": "CLAT coaching — local or online (10 months)",
+          "cost": 50000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 50000,
+          "online_available": true,
+          "note": "Online CLAT coaching from Raipur/Bilaspur is sufficient — no need to relocate for CLAT prep. Career Launcher, CLATapult, Unacademy CLAT all available online."
+        },
+        {
+          "label": "No entrance coaching (State law college / 3yr LLB path)",
+          "cost": 0,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 0,
+          "online_available": true,
+          "note": "State law college admissions are merit-based on graduation marks — no entrance coaching needed for the 3yr LLB path."
+        }
+      ],
+      "salary": {
+        "year_1_low": 150000,
+        "year_1_mid": 350000,
+        "year_1_high": 800000,
+        "year_3_low": 300000,
+        "year_3_mid": 700000,
+        "year_3_high": 2000000,
+        "year_5_low": 500000,
+        "year_5_mid": 1500000,
+        "year_5_high": 5000000,
+        "year_10_low": 1000000,
+        "year_10_mid": 4000000,
+        "year_10_high": 20000000,
+        "note": "Law has the widest salary range of any career in this database. Litigation income: ₹10,000–40,000/month for first 3–5 years. HNLU graduate in corporate law at a Mumbai firm: ₹8–25 LPA from day one. Self-employed senior advocate in Raipur: ₹5–30 LPA. Source: Bar Council of India + AmbitionBox 2026."
+      },
+      "break_even_note": "State law college 3yr LLB: Total investment under ₹1.25L. First income ₹10,000–15,000/month in litigation — break-even in under 1 year. HNLU + corporate law: Total ₹7L investment, first salary ₹8–12 LPA — break-even in under 1 year. WARNING: General litigation in small cities takes 3–5 years to build income to ₹30,000+/month. Plan your finances for this reality.",
+      "honest_reality": "Law is the most unpredictable career in this database. There is no floor and no ceiling. A district court advocate in Korba earns ₹15,000–40,000/month for years before building a practice. An HNLU graduate at a corporate law firm in Mumbai earns ₹12 LPA from day one. The college you attend and the city you practice in matter more in law than in almost any other profession. If you want stability, litigation is not it — corporate law, in-house counsel roles, or government legal jobs are the stable paths.",
+      "cg_context": "HNLU (Hidayatullah National Law University) in Raipur is one of India's top-10 NLUs — a genuine CG advantage. District courts in Bilaspur, Korba, and Raigarh have steady work in mining disputes, land acquisition cases, labour law (SECL/NTPC related), and criminal cases. CG's mining and steel sector creates consistent demand for corporate and regulatory lawyers in Raipur. A Bilaspur-based advocate with SECL and NTPC labour law expertise can build a solid ₹5–15 LPA practice.",
+      "opportunity_cost_inr": {
+        "prep_years": 1,
+        "college_years": 3,
+        "forgone_per_year_low": 120000,
+        "forgone_per_year_mid": 200000,
+        "total_low": 480000,
+        "total_mid": 800000,
+        "note": "4 years total (1yr prep + 3yr LLB) or 6 years (1yr prep + 5yr BA LLB). The 3yr LLB path after any graduation is the lowest opportunity cost professional qualification available."
+      },
+      "failure_path": {
+        "exam": "CLAT (for NLU path) / Bar Council Enrollment (mandatory to practice)",
+        "probability_of_not_cracking": "CLAT: top 3,000 from 70,000+ applicants for NLUs — competitive but not impossible. State law college admission is straightforward. Bar Council enrollment exam: most law graduates pass.",
+        "what_happens": "CLAT miss means state law college — still a valid path to practice. The difference is starting network and corporate law access, not ability to practice.",
+        "financial_loss_if_abandon": "₹45,000–7.5L depending on path chosen. State law college path has near-zero financial risk.",
+        "pivot_options": [
+          "Legal process outsourcing (LPO) — document review, contract drafting for international firms, ₹4–8 LPA, fully remote possible",
+          "In-house legal executive at any company — corporate compliance, contract management, ₹4–10 LPA",
+          "Government legal jobs — Public Prosecutor, Government Pleader via state PSC",
+          "Legal journalism / content — law blogs, LegalWire, Bar & Bench pay legal writers"
+        ],
+        "honest_note": "The 3yr LLB is the lowest-risk professional qualification in India. ₹45,000 total investment, no entrance exam pressure, and even a partially-built legal career has transferable skills. If litigation income feels too slow, LPO and in-house roles pay well from day one with a law degree."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹3,50,000 / 12 = ₹29,167/month (litigation start — corporate law starts higher)",
+        "hometown": 29167,
+        "tier3_away": 19167,
+        "tier2": 15167,
+        "metro": 1167,
+        "note": "CRITICAL: A junior advocate in metro litigation earns ₹15,000–25,000/month — metro living costs make this near-impossible. Either pursue corporate law (₹8 LPA+) in metro OR build a litigation practice in Korba/Bilaspur/Raipur where living costs are a fraction. Do not go to a metro for litigation without a confirmed corporate law offer."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Yes — CG has real legal work",
+        "note": "Bilaspur High Court, district courts across CG, SECL and NTPC labour disputes, mining regulatory cases, land acquisition matters — CG generates consistent legal work. A lawyer who understands CG's tribal land laws, mining regulations, and local industrial disputes has a genuine niche that metro lawyers cannot easily replicate."
+      },
+      "ai_disruption_note": "AI disruption score: 6/10. Contract review, legal research, and document drafting are being AI-assisted. But courtroom advocacy, client relationships, judicial strategy, and regulatory interpretation require human judgment. Corporate lawyers who embrace AI tools will be more productive. Litigators are less affected — courts require physical presence and human advocacy.",
+      "lateral_entry_paths": [
+        "Class 12 → CLAT → BA LLB 5yr at NLU — best corporate law outcome",
+        "Any graduation → 3yr LLB at state college → litigation or in-house roles — lowest cost path",
+        "LLB → LLM (specialisation in corporate law, IP, taxation) → ₹10–20 LPA in niche practice",
+        "LLB + CS (Company Secretary) — extremely strong combination for corporate governance and board compliance roles"
+      ]
+    },
+    {
+      "id": "bba_mba_management",
+      "label": "BBA + MBA (Management / Business Administration)",
+      "category": "Business & Management",
+      "stream": [
+        "any"
+      ],
+      "duration_years": 5,
+      "total_duration_with_prep": 6,
+      "prep_duration_years": 1,
+      "prep_label": "CAT coaching post-BBA (1–2 years) for IIM or top MBA. CUET for BBA entry.",
+      "education_paths": [
+        {
+          "id": "bba_govt_mba_iim",
+          "label": "BBA (Govt/Good Private) + IIM MBA via CAT (5yr total)",
+          "probability": "CAT 99 percentile for IIM — top 1% nationally. Achievable for consistently high performers with 1–2 years focused CAT prep.",
+          "tuition_total": 2700000,
+          "hostel_total": 500000,
+          "other_fees_total": 200000,
+          "financial_aid_ids": [
+            "education_loan_public_banks",
+            "pm_vidya_lakshmi",
+            "pm_yasasvi"
+          ],
+          "note": "IIM MBA: ₹20–25L total fees. BBA: ₹3–5L. Combined ₹27–30L. The IIM outcome justifies the investment — ₹20–30 LPA average placement. But 99 percentile CAT is the gate."
+        },
+        {
+          "id": "bba_private_mba_state",
+          "label": "BBA Private College + State CET MBA (5yr total)",
+          "probability": "State MBA entrance (CMAT, ATMA, state CET) — accessible to most BBA graduates",
+          "tuition_total": 700000,
+          "hostel_total": 240000,
+          "other_fees_total": 100000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "education_loan_public_banks",
+            "cg_obc_scholarship"
+          ],
+          "note": "Private BBA ₹1–1.5L/yr × 3yr + decent MBA college ₹2–4L/yr × 2yr = ₹7–10L total. Placement at ₹4–8 LPA. ROI is tight — college quality matters significantly."
+        },
+        {
+          "id": "bba_only_management_trainee",
+          "label": "BBA Only → Management Trainee / Sales (3yr — no MBA)",
+          "probability": "Merit-based BBA admission — widely accessible",
+          "tuition_total": 200000,
+          "hostel_total": 120000,
+          "other_fees_total": 40000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "cg_mukhyamantri_uchch_shiksha",
+            "cg_sc_st_scholarship"
+          ],
+          "note": "Govt BBA ₹40,000–60,000/yr × 3yr. Many students build solid careers without MBA — NTPC/SECL management trainees, bank officers, sales managers. MBA can be pursued later via distance mode while working."
+        },
+        {
+          "id": "bba_mba_ntpc_secl_pathway",
+          "label": "BBA + MBA → NTPC/SECL Management Trainee (CG path)",
+          "probability": "NTPC/SECL management trainee selection: competitive but CG students have home state advantage",
+          "tuition_total": 500000,
+          "hostel_total": 200000,
+          "other_fees_total": 80000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "education_loan_public_banks",
+            "coal_india_secl_employee_scholarship"
+          ],
+          "note": "Target: NTPC ET (Executive Trainee) via GATE Management or SECL Management Trainee. In-hand ₹60,000–80,000/month + perks. Stay in CG possible."
+        }
+      ],
+      "coaching_options": [
+        {
+          "label": "CAT coaching — 1 year (for IIM target)",
+          "cost": 80000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 80000,
+          "online_available": true,
+          "note": "TIME, IMS, Career Launcher — all available online. CAT is Quant + VARC + DILR. 1 year of focused prep after BBA is standard. Online coaching from Korba/Bilaspur is fully viable."
+        },
+        {
+          "label": "State MBA entrance self-study (CMAT / state CET) — 4 months",
+          "cost": 5000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 5000,
+          "online_available": true,
+          "note": "State MBA entrances are significantly less competitive than CAT. Self-study with mock tests is sufficient for most state CET MBA entrances."
+        },
+        {
+          "label": "No entrance coaching — BBA only path or distance MBA",
+          "cost": 0,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 0,
+          "online_available": true,
+          "note": "Many management trainees at NTPC and SECL hold BBA + IGNOU/distance MBA — viable for PSU management track. IGNOU MBA: ₹35,000 total, fully distance."
+        }
+      ],
+      "salary": {
+        "year_1_low": 300000,
+        "year_1_mid": 500000,
+        "year_1_high": 2500000,
+        "year_3_low": 500000,
+        "year_3_mid": 900000,
+        "year_3_high": 5000000,
+        "year_5_low": 800000,
+        "year_5_mid": 1500000,
+        "year_5_high": 10000000,
+        "year_10_low": 1500000,
+        "year_10_mid": 3500000,
+        "year_10_high": 20000000,
+        "note": "Two completely different markets: BBA only/state MBA = ₹3–7 LPA fresher. IIM MBA = ₹20–30 LPA Day 1. The year_1_high reflects IIM placements — not the typical outcome. Mid figures represent the BBA + decent MBA path. Source: IIM placement reports + AmbitionBox 2026."
+      },
+      "break_even_note": "BBA only (govt college): Total ₹3.6L, first salary ₹25,000–35,000/month — break-even under 1 year. BBA + state MBA: Total ₹10.4L, first salary ₹35,000–55,000/month — break-even 2–3 years. BBA + IIM MBA: Total ₹34L, first salary ₹1.5–2.5L/month — break-even under 2 years. The IIM path has extraordinary ROI IF you clear CAT at 99 percentile.",
+      "honest_reality": "MBA college quality determines almost everything in this career. An IIM degree is a genuine life-changer — average placement ₹20–30 LPA, median ₹15 LPA. An MBA from an unknown college charging ₹5–10L may produce a ₹3.5 LPA job you could have got with BBA alone. The most important financial decision in this career: if you cannot get into a top-20 MBA college, seriously evaluate whether the MBA fee is justified versus working with your BBA and building experience.",
+      "cg_context": "NIT Raipur Management, Symbiosis Raipur, and KIIT offer decent BBA programmes. NTPC Korba, SECL Bilaspur, and large CG-based companies hire management trainees locally — this is the strongest CG-specific pathway. SECL Management Trainee (Finance/HR/Marketing) via their direct recruitment is a ₹60,000–80,000/month entry with perks and full CG posting. This path requires BBA/BCom + MBA but not IIM.",
+      "opportunity_cost_inr": {
+        "prep_years": 1,
+        "college_years": 5,
+        "forgone_per_year_low": 120000,
+        "forgone_per_year_mid": 200000,
+        "total_low": 720000,
+        "total_mid": 1200000,
+        "note": "6 years total (BBA 3yr + CAT prep 1yr + MBA 2yr). Significant opportunity cost. Partially offset if you work during BBA or use distance MBA path while employed."
+      },
+      "failure_path": {
+        "exam": "CAT (for IIM/top MBA)",
+        "probability_of_not_cracking": "CAT 99 percentile: top 1% — very competitive. CAT 90+ percentile for decent MBA college: achievable with 6–8 months serious preparation.",
+        "what_happens": "Most CAT takers do not get IIM — they join state colleges or good private MBA programmes. This is not failure — it is the typical outcome. Plan for state MBA as the base case and IIM as the stretch target.",
+        "financial_loss_if_abandon": "₹3.6L–34L depending on path. BBA is always a useful standalone qualification — investment is not lost.",
+        "pivot_options": [
+          "BBA → Bank PO exam — Banking exams value BBA commerce background, ₹6–8 LPA entry",
+          "BBA → Sales / Business Development — immediate employment, ₹3–6 LPA, fast growth",
+          "BBA + IGNOU distance MBA — pursue MBA while working, ₹35,000 total cost, no career gap",
+          "BBA → NTPC/SECL Management Trainee — CG-specific high-value path, ₹7–9 LPA with perks"
+        ],
+        "honest_note": "The distance MBA while working is the most underrated option in Indian management education. IGNOU MBA (₹35,000 total) + 3 years of real work experience is often more valuable to an employer than a ₹10L private MBA with no work experience. Consider this seriously before taking an MBA loan."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹5,00,000 / 12 = ₹41,667/month (BBA + state MBA path)",
+        "hometown": 41667,
+        "tier3_away": 31667,
+        "tier2": 27667,
+        "metro": 13667,
+        "note": "BBA + state MBA in metro: ₹41,667 gross - ₹28,000 costs = ₹13,667 net. Manageable but not comfortable. NTPC/SECL Management Trainee in CG: ₹65,000–80,000/month + accommodation — far better net outcome without leaving home state."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Yes — strong CG pathway exists",
+        "note": "NTPC Korba and SECL Bilaspur both recruit Management Trainees in Finance, HR, and Operations. These are permanent, pensioned roles with full CG posting. This is the most direct 'stay in CG and earn well' management career available — no IIM required."
+      },
+      "ai_disruption_note": "AI disruption score: 6/10. Routine management tasks — reporting, scheduling, data analysis — are being automated. But strategic decision-making, stakeholder management, and leadership cannot be replaced. Managers who use AI tools as productivity multipliers will be more valuable, not less. MBA students entering the market in 3–5 years must be AI-literate from day one.",
+      "lateral_entry_paths": [
+        "BCA / BCom / BA → CAT → MBA (stream does not restrict MBA eligibility)",
+        "BBA → NTPC/SECL Management Trainee → IGNOU MBA distance while working",
+        "Any graduation → PGDM at AICTE-approved institute (equivalent to MBA, 2yr)",
+        "Work 2–3 years → CAT with work experience → Executive MBA (stronger profile, better outcome)"
+      ]
+    },
+    {
+      "id": "agricultural_officer",
+      "label": "Agricultural Officer (State Agriculture Service / IBPS AFO)",
+      "category": "Government & Civil Services",
+      "stream": [
+        "science"
+      ],
+      "duration_years": 4,
+      "total_duration_with_prep": 5,
+      "prep_duration_years": 1,
+      "prep_label": "BSc Agriculture (4yr) + CGPSC Agriculture Service or IBPS AFO exam preparation (6–12 months)",
+      "education_paths": [
+        {
+          "id": "bsc_ag_govt_cg",
+          "label": "BSc Agriculture — Government College CG (IGKV Raipur / affiliated colleges)",
+          "probability": "State agriculture entrance or Class 12 PCB/PCM merit — accessible to most science students",
+          "tuition_total": 80000,
+          "hostel_total": 80000,
+          "other_fees_total": 30000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "cg_mukhyamantri_uchch_shiksha",
+            "cg_sc_st_scholarship",
+            "cg_obc_scholarship"
+          ],
+          "note": "IGKV Raipur (Indira Gandhi Krishi Vishwavidyalaya) and affiliated govt colleges: ₹20,000/year × 4 years. Hostel included at most campuses. Best value agriculture degree in CG."
+        },
+        {
+          "id": "bsc_ag_private_cg",
+          "label": "BSc Agriculture — Private Agriculture College CG (4yr)",
+          "probability": "Entrance or merit-based — wide availability across CG",
+          "tuition_total": 360000,
+          "hostel_total": 160000,
+          "other_fees_total": 60000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "education_loan_public_banks",
+            "cg_sc_st_scholarship"
+          ],
+          "note": "Private agriculture colleges: ₹70,000–1.2L/year × 4 years. ICAR-approved college is essential — check before admission."
+        }
+      ],
+      "coaching_options": [
+        {
+          "label": "CGPSC Agriculture Service self-study — 8–12 months",
+          "cost": 10000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 10000,
+          "online_available": true,
+          "note": "Same CGPSC General Studies base as IAS/CGPSC Officer prep + Agriculture-specific paper. Books + test series + CG agriculture policy knowledge. Self-study from hometown is fully viable."
+        },
+        {
+          "label": "IBPS AFO preparation — 4–6 months",
+          "cost": 5000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 5000,
+          "online_available": true,
+          "note": "IBPS Agriculture Field Officer — banking track for agriculture graduates. Same Quant + Reasoning + Agriculture knowledge. Online self-study is sufficient."
+        },
+        {
+          "label": "Combined coaching — CGPSC Agri + IBPS AFO (1 year)",
+          "cost": 40000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 40000,
+          "online_available": true,
+          "note": "Many coaching centres in Raipur now offer combined CGPSC + IBPS AFO packages. Preparation overlaps significantly — efficient use of time."
+        }
+      ],
+      "salary": {
+        "year_1_low": 480000,
+        "year_1_mid": 600000,
+        "year_1_high": 900000,
+        "year_3_low": 600000,
+        "year_3_mid": 800000,
+        "year_3_high": 1200000,
+        "year_5_low": 750000,
+        "year_5_mid": 1000000,
+        "year_5_high": 1600000,
+        "year_10_low": 1000000,
+        "year_10_mid": 1500000,
+        "year_10_high": 2500000,
+        "note": "CGPSC Agriculture Officer: ₹40,000–60,000/month + allowances. IBPS AFO (Bank Agriculture Field Officer): ₹45,000–65,000/month. State agriculture department field postings often include accommodation. Source: CG Agriculture Department pay slabs + IBPS 2026."
+      },
+      "break_even_note": "Govt BSc Agriculture + CGPSC prep: Total investment ₹2.2L. First government salary ₹40,000–60,000/month. Break-even under 6 months. Among the strongest ROI ratios of any government career path — very low investment, very stable outcome.",
+      "honest_reality": "Agricultural Officer is one of the most underrated government careers in CG. The state has 70%+ rural population, paddy and maize are major crops, and forest produce value chains are growing. The CG government recruits Agriculture Officers every 2–3 years through CGPSC. These postings are in CG — often in the student's own district. Field work is demanding but the role has real community impact and the salary-to-investment ratio is among the best in government service.",
+      "cg_context": "Chhattisgarh's paddy production, maize cultivation in Kawardha and Rajnandgaon, and tribal forest produce (tendu patta, mahua, amla) create genuine local demand for agriculture knowledge. CGPSC Agriculture Service exam specifically tests CG crop patterns, irrigation systems, and local soil types — a student from a farming family in Korba or Champa district has native knowledge that an urban student simply does not. This is a career where your roots are an advantage.",
+      "opportunity_cost_inr": {
+        "prep_years": 1,
+        "college_years": 4,
+        "forgone_per_year_low": 80000,
+        "forgone_per_year_mid": 120000,
+        "total_low": 400000,
+        "total_mid": 600000,
+        "note": "5 years total. Opportunity cost is lower than most careers — many BSc Agriculture students come from farming families where forgone income is limited. Hostel on campus further reduces the cost burden."
+      },
+      "failure_path": {
+        "exam": "CGPSC Agriculture Service / IBPS AFO",
+        "probability_of_not_cracking": "CGPSC Agriculture Service selects 50–150 officers — competitive but far less so than IAS. IBPS AFO has better selection numbers. Most sincere candidates clear one of these within 2–3 attempts.",
+        "what_happens": "BSc Agriculture opens multiple alternative employment paths immediately — seed companies, fertiliser firms, agri-input companies, NABARD, agri startups.",
+        "financial_loss_if_abandon": "₹2.2L–5.8L total investment. BSc Agriculture is never a wasted degree — private sector demand is growing.",
+        "pivot_options": [
+          "Agri-input companies (seed/fertiliser sales) — Bayer, Mahindra Agri, PI Industries hire BSc Ag freshers at ₹3–5 LPA + field vehicle",
+          "NABARD development assistant — banking + agriculture combination, stable government role",
+          "MBA Agribusiness — 2yr PG specialisation, ₹6–15 LPA in agri-tech and food companies",
+          "Agri-tech startups — DeHaat, Ninjacart, Jai Kisan hire BSc Ag graduates for field operations"
+        ],
+        "honest_note": "BSc Agriculture is one of the few degrees where the private sector is actively recruiting while government exams are being prepared. You do not need to choose one or the other — apply to private agri-input companies while preparing for CGPSC. The field experience actually strengthens your government exam preparation."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹6,00,000 / 12 = ₹50,000/month (govt posting often includes accommodation)",
+        "hometown": 50000,
+        "tier3_away": 40000,
+        "tier2": 36000,
+        "metro": 22000,
+        "note": "Agricultural Officers are posted in CG districts — metro is not the relevant scenario. District posting cash salary + government accommodation = effective take-home of ₹55,000–65,000/month equivalent. Rural/tribal district postings often carry additional hardship allowance."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Yes — permanently in CG",
+        "note": "CGPSC Agriculture Officers serve in CG for their entire career. Postings are in agricultural districts — Durg, Rajnandgaon, Kawardha, Kanker, Bastar. Students from farming families in these districts are specifically valued for their local knowledge. This is the most 'stay close to your roots' government career available."
+      },
+      "ai_disruption_note": "AI disruption score: 6/10. Crop monitoring via satellite and drone, soil testing automation, and yield prediction are AI-assisted. But field extension work — advising farmers, demonstrating techniques, building trust with rural communities — is deeply human. AI makes Agricultural Officers more effective, not redundant. A tech-savvy Agricultural Officer in CG will be significantly more impactful by 2028–30.",
+      "lateral_entry_paths": [
+        "Class 12 PCB/PCM → BSc Agriculture (IGKV or state college) → CGPSC Agri Service",
+        "BSc Agriculture → MBA Agribusiness (MANAGE Hyderabad, XIMB, IRMA) → ₹8–15 LPA private sector",
+        "BSc Agriculture → IBPS AFO → Bank Agriculture Field Officer (stable banking career)",
+        "BSc Agriculture → NABARD Grade A exam → Development banking and rural finance"
+      ]
+    },
+    {
+      "id": "company_secretary",
+      "label": "Company Secretary (CS — ICSI)",
+      "category": "Finance & Commerce",
+      "stream": [
+        "commerce",
+        "any"
+      ],
+      "duration_years": 4,
+      "total_duration_with_prep": 4,
+      "prep_duration_years": 0,
+      "prep_label": "CSEET → CS Executive → CS Professional + 21 months training — can start after Class 12, no entrance exam",
+      "education_paths": [
+        {
+          "id": "cs_after_class12",
+          "label": "CS after Class 12 (CSEET → Executive → Professional — 4–5 years)",
+          "probability": "No competitive entrance exam — start immediately after Class 12. Pass rate for each module is 30–40% per attempt.",
+          "tuition_total": 35000,
+          "hostel_total": 0,
+          "other_fees_total": 15000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "pm_yasasvi",
+            "cg_mukhyamantri_uchch_shiksha"
+          ],
+          "note": "Total ICSI registration + module fees: ₹35,000 for entire CS qualification. Lowest fees of any professional qualification in India. No college needed — fully ICSI-managed. Coaching optional at ₹30,000–60,000 extra."
+        },
+        {
+          "id": "cs_with_bcom",
+          "label": "BCom + CS simultaneously (most common path)",
+          "probability": "BCom admission merit-based, CS registration open anytime — both run in parallel",
+          "tuition_total": 135000,
+          "hostel_total": 60000,
+          "other_fees_total": 25000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "education_loan_public_banks",
+            "cg_mukhyamantri_uchch_shiksha",
+            "pm_yasasvi"
+          ],
+          "note": "BCom govt college ₹15,000–20,000/yr × 3yr + CS ICSI fees ₹35,000. Total ₹1.2–1.5L. Running both together is the most efficient path — BCom provides a backup degree and content overlap with CS modules."
+        },
+        {
+          "id": "cs_with_llb",
+          "label": "CS + LLB combination (strong corporate governance path)",
+          "probability": "Both open to any graduate — can be pursued simultaneously after BCom",
+          "tuition_total": 225000,
+          "hostel_total": 100000,
+          "other_fees_total": 50000,
+          "financial_aid_ids": [
+            "nsp_central_state",
+            "education_loan_public_banks",
+            "pm_yasasvi"
+          ],
+          "note": "CS + LLB is the strongest combination for company secretarial practice. Board-level roles and SEBI compliance work specifically value this combination. ₹3–5L total investment for both qualifications."
+        }
+      ],
+      "coaching_options": [
+        {
+          "label": "CS self-study (ICSI study material) — all modules",
+          "cost": 0,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 0,
+          "online_available": true,
+          "note": "ICSI provides comprehensive study material for all modules — self-study is the standard approach. Many successful CS professionals never attended formal coaching."
+        },
+        {
+          "label": "CS coaching — online (Unacademy, ICSI-empanelled coaches)",
+          "cost": 40000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 40000,
+          "online_available": true,
+          "note": "Online CS coaching for Executive and Professional modules. Affordable and available from Korba/Bilaspur. Particularly useful for Company Law and Securities Law papers."
+        },
+        {
+          "label": "CS coaching — local (Raipur / Bilaspur CS coaching centres)",
+          "cost": 60000,
+          "living_per_month": 0,
+          "living_months": 0,
+          "total_coaching_cost": 60000,
+          "online_available": false,
+          "note": "Physical coaching centres in Raipur offer CS Executive and Professional coaching. Useful for students who prefer structured classroom learning."
+        }
+      ],
+      "salary": {
+        "year_1_low": 300000,
+        "year_1_mid": 600000,
+        "year_1_high": 1200000,
+        "year_3_low": 600000,
+        "year_3_mid": 1000000,
+        "year_3_high": 2000000,
+        "year_5_low": 900000,
+        "year_5_mid": 1600000,
+        "year_5_high": 4000000,
+        "year_10_low": 1500000,
+        "year_10_mid": 3500000,
+        "year_10_high": 10000000,
+        "note": "Trainee stipend during 21 months: ₹5,000–15,000/month. Post-membership first role: ₹4–8 LPA in CG/Tier-2 companies, ₹8–15 LPA in listed companies. Senior CS at listed PSU (NTPC, SECL level): ₹15–30 LPA. Mumbai Big-4 compliance: ₹20–50 LPA. Source: ICSI salary survey 2026."
+      },
+      "break_even_note": "BCom + CS path: Total investment ₹1.75L. First post-qualification salary ₹4–6 LPA. Break-even under 4 months. Second-highest ROI ratio in the entire Commerce stream after CA — and with significantly lower exam difficulty than CA Finals. The 21-month training stipend (₹5,000–15,000/month) partially offsets the waiting period.",
+      "honest_reality": "CS is narrower than CA in headcount demand but commands strong salaries in a specific high-value niche — every listed company in India (BSE/NSE listed) is legally required to have a Company Secretary. There are 5,000+ listed entities and only 65,000 practising CS members. The demand is structural and guaranteed. The challenge is that most opportunities are in metros and large industrial cities — CG has limited listed company headquarters but has PSUs (NTPC, SECL are listed) and large private companies that need CS support.",
+      "cg_context": "NTPC (listed on NSE/BSE) and SAIL Bhilai (listed) have Company Secretary functions based partly in CG. Large mining companies, steel plants, and power sector companies in CG need compliance professionals. A CS from CG who understands mining regulations, environmental compliance, and tribal land acquisition law has a genuinely valuable niche. Raipur is emerging as a corporate hub — demand for CS professionals is growing as more companies incorporate there.",
+      "opportunity_cost_inr": {
+        "prep_years": 0,
+        "college_years": 4,
+        "forgone_per_year_low": 120000,
+        "forgone_per_year_mid": 180000,
+        "total_low": 480000,
+        "total_mid": 720000,
+        "note": "4–5 years total qualification. Training stipend (₹5,000–15,000/month for 21 months) partially covers opportunity cost during the training phase. Net opportunity cost is lower than it appears — you earn while completing mandatory training."
+      },
+      "failure_path": {
+        "exam": "CS Executive and CS Professional (ICSI)",
+        "probability_of_not_cracking": "CS pass rate per module: 30–40% per attempt. Average time to complete: 4–5 years. Multiple attempts are normal and unlimited attempts are allowed.",
+        "what_happens": "CS Foundation / Executive passed (even without Professional) is valued by employers for compliance, legal, and finance roles. Partial CS qualification is not a wasted credential.",
+        "financial_loss_if_abandon": "₹35,000–2.25L total investment. Extremely low financial risk — lowest of any professional qualification in this database.",
+        "pivot_options": [
+          "CS Executive completed → Legal/Compliance Executive roles at ₹4–7 LPA",
+          "CS Foundation → BCom + CA Foundation simultaneously — strong Commerce combination",
+          "CS + LLB lateral — pivot to corporate law practice without completing full CS",
+          "CMA India (Cost Accountant) — similar Commerce base, manufacturing sector demand"
+        ],
+        "honest_note": "CS has the lowest financial risk of any professional qualification in India — ₹35,000 total ICSI fees for the entire course. Even if you take 6 years to complete it, the per-year investment is under ₹6,000. The cost of trying is negligible. The cost of not trying — missing a career with ₹15–30 LPA potential in a structurally secure niche — is significant."
+      },
+      "net_monthly_after_city": {
+        "basis": "year_1_mid salary ₹6,00,000 / 12 = ₹50,000/month (post-qualification, excludes training stipend period)",
+        "hometown": 50000,
+        "tier3_away": 40000,
+        "tier2": 36000,
+        "metro": 22000,
+        "note": "Most CS roles are in metros or large cities — Raipur is the relevant CG hub. ₹50,000/month in Raipur with ₹14,000 living costs = ₹36,000 net savings. Senior CS at NTPC Korba level: ₹1.2–2L/month — the best CG outcome for this career."
+      },
+      "stay_in_cg_possible": {
+        "verdict": "Partially — Raipur and PSU postings are viable",
+        "note": "Full-time CS roles in Korba or Bilaspur are limited. Raipur has growing corporate demand. NTPC Korba and SECL Bilaspur (both listed companies) have CS functions — these are the most direct CG-based CS roles. For higher salary growth, Hyderabad, Pune, or Mumbai offer significantly more listed company opportunities."
+      },
+      "ai_disruption_note": "AI disruption score: 6/10. Routine compliance filing, document management, and regulatory reporting are being automated. But board advisory, regulatory interpretation, shareholder relations, and corporate governance strategy require deep human judgment and accountability. CS professionals who embrace compliance automation tools will handle 3x the workload — making them more valuable, not less.",
+      "lateral_entry_paths": [
+        "Class 12 Commerce → CSEET → CS Executive + Professional (no degree required to start)",
+        "BCom → CS simultaneously — content overlap reduces total study time",
+        "LLB → CS — strongest combination for listed company board-level roles",
+        "CA Foundation → CS Foundation exemption — CA and CS content overlaps significantly"
       ]
     }
   ]

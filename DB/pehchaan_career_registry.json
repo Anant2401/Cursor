@@ -15,7 +15,9 @@
       "exam_roadmap_career_id": "jee",
       "plan_b_exam_id": "jee_engineering",
       "private_role_ids": [
-        "qa_test_associate"
+        "qa_test_associate",
+        "junior_frontend_developer",
+        "it_helpdesk_analyst"
       ]
     },
     {
@@ -27,7 +29,9 @@
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "ca",
       "plan_b_exam_id": "ca_foundation",
-      "private_role_ids": []
+      "private_role_ids": [
+        "junior_accountant_tally"
+      ]
     },
     {
       "canonical_id": "doctor_mbbs",
@@ -132,7 +136,8 @@
       "exam_roadmap_career_id": "content",
       "plan_b_exam_id": null,
       "private_role_ids": [
-        "digital_marketing_executive"
+        "digital_marketing_executive",
+        "social_media_manager_entry"
       ]
     },
     {
@@ -179,7 +184,9 @@
       "skill_gap_job_id": "graphic_designer",
       "exam_roadmap_career_id": "design",
       "plan_b_exam_id": "nid_nift_design",
-      "private_role_ids": []
+      "private_role_ids": [
+        "graphic_design_executive"
+      ]
     },
     {
       "canonical_id": "pharmacist",
@@ -190,7 +197,9 @@
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "pharma",
       "plan_b_exam_id": "neet_medical",
-      "private_role_ids": []
+      "private_role_ids": [
+        "pharmacy_sales_representative"
+      ]
     },
     {
       "canonical_id": "architect",
@@ -449,7 +458,9 @@
       "skill_gap_job_id": null,
       "exam_roadmap_career_id": "mph",
       "plan_b_exam_id": "neet_medical",
-      "private_role_ids": []
+      "private_role_ids": [
+        "hospital_admin_executive"
+      ]
     },
     {
       "canonical_id": "occupational_therapist",

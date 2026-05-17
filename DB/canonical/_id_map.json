@@ -11,7 +11,9 @@
       "plan_b_exam_id": "jee_engineering",
       "skill_gap_job_id": "software_developer",
       "private_role_ids": [
-        "qa_test_associate"
+        "qa_test_associate",
+        "junior_frontend_developer",
+        "it_helpdesk_analyst"
       ],
       "financial_aid_ids": [
         "nsp_central_state",
@@ -27,7 +29,9 @@
       "exam_roadmap_career_id": "ca",
       "plan_b_exam_id": "ca_foundation",
       "skill_gap_job_id": null,
-      "private_role_ids": [],
+      "private_role_ids": [
+        "junior_accountant_tally"
+      ],
       "financial_aid_ids": [
         "nsp_central_state",
         "education_loan_public_banks",
@@ -88,10 +92,10 @@
     {
       "career_id": "lawyer",
       "salary_explorer_id": 6,
-      "roi_career_id": null,
+      "roi_career_id": "lawyer",
       "exam_roadmap_career_id": "clat",
       "plan_b_exam_id": "clat_law",
-      "skill_gap_job_id": null,
+      "skill_gap_job_id": "lawyer",
       "private_role_ids": [],
       "financial_aid_ids": [
         "nsp_central_state",
@@ -171,7 +175,8 @@
       "plan_b_exam_id": null,
       "skill_gap_job_id": "digital_marketer",
       "private_role_ids": [
-        "digital_marketing_executive"
+        "digital_marketing_executive",
+        "social_media_manager_entry"
       ],
       "financial_aid_ids": [
         "nsp_central_state",
@@ -236,7 +241,9 @@
       "exam_roadmap_career_id": "design",
       "plan_b_exam_id": "nid_nift_design",
       "skill_gap_job_id": "graphic_designer",
-      "private_role_ids": [],
+      "private_role_ids": [
+        "graphic_design_executive"
+      ],
       "financial_aid_ids": [
         "nsp_central_state",
         "education_loan_public_banks",
@@ -251,7 +258,9 @@
       "exam_roadmap_career_id": "pharma",
       "plan_b_exam_id": "neet_medical",
       "skill_gap_job_id": "pharmacist",
-      "private_role_ids": [],
+      "private_role_ids": [
+        "pharmacy_sales_representative"
+      ],
       "financial_aid_ids": [
         "nsp_central_state",
         "education_loan_public_banks",
@@ -293,10 +302,10 @@
     {
       "career_id": "bba_mba_management",
       "salary_explorer_id": 18,
-      "roi_career_id": null,
+      "roi_career_id": "bba_mba_management",
       "exam_roadmap_career_id": "cat",
       "plan_b_exam_id": "cat_mba",
-      "skill_gap_job_id": null,
+      "skill_gap_job_id": "bba_mba_management",
       "private_role_ids": [
         "operations_associate"
       ],
@@ -590,7 +599,9 @@
       "exam_roadmap_career_id": "mph",
       "plan_b_exam_id": "neet_medical",
       "skill_gap_job_id": null,
-      "private_role_ids": [],
+      "private_role_ids": [
+        "hospital_admin_executive"
+      ],
       "financial_aid_ids": [
         "nsp_central_state",
         "education_loan_public_banks",
@@ -646,10 +657,10 @@
     {
       "career_id": "company_secretary",
       "salary_explorer_id": 43,
-      "roi_career_id": null,
+      "roi_career_id": "company_secretary",
       "exam_roadmap_career_id": "cs",
       "plan_b_exam_id": "ca_foundation",
-      "skill_gap_job_id": null,
+      "skill_gap_job_id": "company_secretary",
       "private_role_ids": [],
       "financial_aid_ids": [
         "nsp_central_state",
@@ -734,10 +745,10 @@
     {
       "career_id": "agricultural_officer",
       "salary_explorer_id": 49,
-      "roi_career_id": null,
+      "roi_career_id": "agricultural_officer",
       "exam_roadmap_career_id": "agritech",
       "plan_b_exam_id": "upsc_csds",
-      "skill_gap_job_id": null,
+      "skill_gap_job_id": "agricultural_officer",
       "private_role_ids": [],
       "financial_aid_ids": [
         "nsp_central_state",
